@@ -1,0 +1,23 @@
+# Resultados de simulações (Pastas grandes, Zips e PDFs)
+Scripts/results/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# R e IDEs
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rapp.history
+Rplots.pdf
+
+# Sistema Operacional
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
