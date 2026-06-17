@@ -162,7 +162,7 @@ par(mfrow=c(1,1))
 
 
 monitora <- function(obj){
-  plot(obj)
+  # plot(obj) # Desativado para evitar gerar PDFs gigantescos de giga-bytes no loop
   #ggplot(y = c(obj@summary[,1],obj@summary[,2],obj@summary[,6]), geom = 'line') 
   #plot(type="l",cbind(obj@summary[,1],obj@summary[,2],obj@summary[,6]))
   #conta = conta + 1L
@@ -360,6 +360,9 @@ alg_gen <- ga("binary", fitness=function(x) f(x), nBits = 59, popSize = 10, pcro
               keepBest = T,  monitor=monitora, optim = F)                #o keepBest salva os melhores individuos de cada geração
 toc()         #Fim da medição do tempo
 beep()        #Sinal sonoro de aviso de fim
+
+# Plotar o gráfico final do Algoritmo Genético (curva evolutiva completa em uma única página)
+plot(alg_gen)
 
 #sumario
 #View(sumario)
