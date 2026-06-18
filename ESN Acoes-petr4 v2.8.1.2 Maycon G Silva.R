@@ -2,7 +2,7 @@
 
 #getwd()
 #setwd("C:\\Users\\Fabian\\Documents\\Doutorado FURG\\Programas e Dados")
-setwd("C:\\Users\\Fabô\\Documents\\UniRV\\2026-1\\Bancas TFC e orientações")
+setwd("D:\\MAYCON\\PROJETOS\\ESNAUTO\\Scripts\\data")
 
 #BIBLIOTECAS
 library(ggplot2)               #Plota os gráficos
