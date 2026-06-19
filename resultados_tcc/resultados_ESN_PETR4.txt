@@ -1,0 +1,38 @@
+=========================================================
+  RESULTADOS ESN - PETR4 - TCC Maycon G Silva
+  Melhor cenario: Run 2 (2563) | Win GED | W Normal
+  Fitness = -0.23753732723132 | Epoca = 117
+=========================================================
+
+--- HIPERPARAMETROS DO MELHOR MODELO ---
+a             = 0.870902030197374 
+sr            = 0.406802420062409 
+initLen       = 9 
+tam_reservoir = 27 
+reg           = 2.2289743444227e-05 
+Win           = Distribuicao GED (mean=14.573152, sd=8.032086, nu=7.686645)
+W             = Distribuicao Normal (mean=0, sd=1)
+
+--- RESULTADOS DE VALIDACAO (Treino 50% x Validacao 25%) ---
+MAE  treino    = 0.200985156496794 
+MAE  validacao = 0.262596210761081 
+MAE  fitness (40% treino + 60% validacao) = 0.237951789055366 
+RMSE treino    = 0.348029214182006 
+RMSE validacao = 0.353306258471454 
+RMSE fitness (40% treino + 60% validacao) = 0.351195440755675 
+
+--- COMPARATIVO DOS 12 CENARIOS ---
+Run | Win       | W        | Fitness
+----|-----------|----------|-------------------
+ 1  | Normal    | Normal   | -0.237677866441124
+ 1  | Uniforme  | Uniforme | -0.237615495045405
+ 1  | GED       | Uniforme | -0.237570293137095
+ 1  | GED       | Normal   | -0.237554065492480
+ 2  | Normal    | Normal   | -0.237657850811713
+ 2  | Uniforme  | Uniforme | -0.237728636730753
+ 2  | GED       | Uniforme | -0.237560947512039
+ 2  | GED       | Normal   | -0.237537327231320  << MELHOR
+ 3  | Normal    | Normal   | -0.237632776064883
+ 3  | Uniforme  | Uniforme | -0.237679761973989
+ 3  | GED       | Uniforme | -0.237579832804644
+ 3  | GED       | Normal   | -0.237554481567632

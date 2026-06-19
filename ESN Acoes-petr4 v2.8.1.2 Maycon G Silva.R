@@ -56,13 +56,10 @@ train             = data[1:treino]
 #data_date_2
 #plot(data_date_1,data_date_2,xlab="Date",ylab="Raw data (R$)",type="l",main="Daily closing price of PETR4 stock \n between 2000 and 2020 \n (raw data/without factor)")
 
-#data_date_fac = as.matrix(read.csv2('PETR4_close com factor_2000-2020_com data.csv',header=F))
-#data_date_fac
-#data_date_fac1 = as.Date(data_date_fac[1:5198,1])        
-#data_date_fac1
-#data_date_fac2 = as.numeric(data_date_fac[1:5198,2])     
-#data_date_fac2
-#plot(data_date_fac1,data_date_fac2,xlab="Date",ylab="Data with factor (R$)",type="l",main="Daily closing price of PETR4 stock \n between 2000 and 2020 \n (Data with factor applied)")
+data_date_fac = as.matrix(read.csv2('PETR4_close com factor_2000-2020_com data.csv',header=F))
+data_date_fac1 = as.Date(data_date_fac[1:5198,1])
+data_date_fac2 = as.numeric(data_date_fac[1:5198,2])
+data_date_1 = data_date_fac1   # alias para compatibilidade com os gráficos
 
 #par(mfrow=c(1,3))
 #plot(data_date_1[1:treino],data[1:treino],ylim = c(5,180), xlab="Date",ylab="Closing price of PETR4 stock without factor (R$)",type="l",main="Training data")
@@ -408,37 +405,29 @@ mae_valida      =      mean(abs( treino_valida[(treino+2):(treino+valida)]-Y[out
 
 print(paste('MAE  treino    = ',mae_treino))
 print(paste('MAE  validação = ',mae_valida))
-print(paste('MAE fitness 40%treino e 60%validação = ',mae_treino *0.4 + mae_valida*0.6))
 print(paste('RMSE treino    = ',rmse_treino))
 print(paste('RMSE validação = ',rmse_valida ))
-print(paste('RMSE 40%treino e 60%validação = ',rmse_treino*0.4 + rmse_valida*0.6))
 
 
 #Geração de gráficos de resultados
 #plot(ylab = "Preços observados e previstos (R$)", xlab = "Tempo (em dias)",treino_valida[(treino+1):(treino+valida)], type='l', col='green', lwd = 2)
 #plot(ylab = "Preços observados e previstos (R$)", xlab = "Tempo (em dias)",treino_valida[(treino+1):(treino+valida)], type='l', col='green', lwd = 2)
-plot(ylim=c(0,50), ylab = "Prices observed and predicted with factor (R$)", xlab = "Date",data_date_1[(treino+1):(treino+valida)],treino_valida[(treino+1):(treino+valida)], type='l', col='green', lwd = 2) + lines(data_date_1[(treino+1):(treino+valida)],c(Y), col='black', lwd = 1 )
+plot(ylim=c(0,50), ylab = "Preços observados e previstos com fator (R$)", xlab = "Data",data_date_1[(treino+1):(treino+valida)],treino_valida[(treino+1):(treino+valida)], type='l', col='green', lwd = 2) + lines(data_date_1[(treino+1):(treino+valida)],c(Y), col='black', lwd = 1 )
 title(main='(b)')
-legend('topright',legend=c('Target series', 'Predicted series'),
-       #title(main='Preços do fechamento diário da PETR4')
-       #legend('topright',legend=c('Série alvo', 'Série prevista'), 
+legend('topright',legend=c('Série alvo', 'Série prevista'),
        col=c('green','black'), lty=1, bty='n' )
 
-plot(ylim=c(0,50), ylab = "Prices observed and predicted without factor (R$)", xlab = "Date",data_date_1[(treino+1):(treino+valida)],treino_valida[(treino+1):(treino+valida)], type='l', col='green', lwd = 2) + lines(data_date_1[(treino+1):(treino+valida)],c(Y), col='black', lwd = 1 )
+plot(ylim=c(0,50), ylab = "Preços observados e previstos sem fator (R$)", xlab = "Data",data_date_1[(treino+1):(treino+valida)],treino_valida[(treino+1):(treino+valida)], type='l', col='green', lwd = 2) + lines(data_date_1[(treino+1):(treino+valida)],c(Y), col='black', lwd = 1 )
 title(main='(a)')
-legend('topright',legend=c('Target series', 'Predicted series'),
-#title(main='Preços do fechamento diário da PETR4')
-#legend('topright',legend=c('Série alvo', 'Série prevista'), 
+legend('topright',legend=c('Série alvo', 'Série prevista'),
        col=c('green','black'), lty=1, bty='n' )
 #length(data_date_1)
 
 #plot(ylab = "Preços observados e previstos (R$)", xlab = "Tempo (em dias)",treino_valida[(treino+1):(treino+valida)], type='l', col='green', lwd = 2)
 #plot(ylab = "Preços observados e previstos (R$)", xlab = "Tempo (em dias)",treino_valida[(treino+1):(treino+valida)], type='l', col='green', lwd = 2)
-plot(ylim=c(0,50), ylab = "Prices observed with factor and predicted without factor (R$)", xlab = "Date",data_date_1[(treino+1):(treino+valida)],treino_valida[(treino+1):(treino+valida)], type='l', col='green', lwd = 2) + lines(data_date_1[(treino+1):(treino+valida)],c(Y), col='black', lwd = 1 )
+plot(ylim=c(0,50), ylab = "Preços observados com fator e previstos sem fator (R$)", xlab = "Data",data_date_1[(treino+1):(treino+valida)],treino_valida[(treino+1):(treino+valida)], type='l', col='green', lwd = 2) + lines(data_date_1[(treino+1):(treino+valida)],c(Y), col='black', lwd = 1 )
 title(main='(b)')
-legend('topright',legend=c('Target series', 'Predicted series'),
-       #title(main='Preços do fechamento diário da ITSA4')
-       #legend('topright',legend=c('Série alvo', 'Série prevista'), 
+legend('topright',legend=c('Série alvo', 'Série prevista'),
        col=c('green','black'), lty=1, bty='n' )
 
 #Treina e valida com factor (dados brutos) 10000_1 (9920), elapsed time is 0.05 seconds
@@ -512,32 +501,30 @@ mae_teste       =      mean(abs( treina_testa[(treino+2):(treino+teste)]-Y[outSi
 
 print(paste('MAE  treino = ',mae_treino))
 print(paste('MAE  teste  = ',mae_teste))
-print(paste('MAE fitness 40%treino e 60%teste = ',mae_treino*0.4 + mae_teste*0.6))
 print(paste('RMSE treino = ',rmse_treino))
 print(paste('RMSE teste  = ',rmse_teste ))
-print(paste('RMSE 40%treino e 60%teste = ',rmse_treino*0.4 + rmse_teste*0.6))
 
 #Para gerar gráficos
 #plot(ylab = "Observed and forecasted prices (R$)", xlab = "Time (days)",treina_testa[(treino+1):(treino+teste)], type='l', col='green', lwd = 2)
 #plot(ylab = "Preços observados e previstos (R$)", xlab = "Tempo (em dias)",treina_testa[(treino+1):(treino+teste)], type='l', col='green', lwd = 2)
 #plot(ylab = "Observed prices without factor and predicted prices without factor (R$)", xlab = "Time (days)",treina_testa[(treino+1):(treino+teste)], type='l', col='green', lwd = 2)
 #plot(ylab = "Observed prices with factor and predicted prices without factor (R$)", xlab = "Time (days)",treina_testa[(treino+1):(treino+teste)], type='l', col='green', lwd = 2)
-plot(ylim=c(10,90),ylab = "Prices observed without factor and forecasted without factor (R$)", xlab = "Date",data_date_fac1[(treino+1):(treino+valida)],treina_testa[(treino+1):(treino+teste)], type='l', col='green', lwd = 2) 
+plot(ylim=c(10,90),ylab = "Preços observados sem fator e previstos sem fator (R$)", xlab = "Data",data_date_fac1[(treino+1):(treino+valida)],treina_testa[(treino+1):(treino+teste)], type='l', col='green', lwd = 2) 
 lines(data_date_fac1[(treino+1):(treino+valida)],c(Y), col='black', lwd = 1)
 title(main='(a)')
-legend('topleft',legend=c('Target series', 'Forecast series'),
+legend('topleft',legend=c('Série alvo', 'Série prevista'),
        col=c('green','black'), lty=1, bty='n' )
 
-plot(ylim=c(10,90),ylab = "Prices observed with factor and forecasted without factor (R$)", xlab = "Date",data_date_fac1[(treino+1):(treino+valida)],treina_testa[(treino+1):(treino+teste)], type='l', col='green', lwd = 2) 
+plot(ylim=c(10,90),ylab = "Preços observados com fator e previstos sem fator (R$)", xlab = "Data",data_date_fac1[(treino+1):(treino+valida)],treina_testa[(treino+1):(treino+teste)], type='l', col='green', lwd = 2) 
 lines(data_date_fac1[(treino+1):(treino+valida)],c(Y), col='black', lwd = 1)
 title(main='(b)')
-legend('topleft',legend=c('Target series', 'Forecast series'),
+legend('topleft',legend=c('Série alvo', 'Série prevista'),
        col=c('green','black'), lty=1, bty='n' )
 
-plot(ylim=c(10,90),ylab = "Prices observed with factor and forecasted with factor (R$)", xlab = "Date",data_date_fac1[(treino+1):(treino+valida)],treina_testa[(treino+1):(treino+teste)], type='l', col='green', lwd = 2) 
+plot(ylim=c(10,90),ylab = "Preços observados com fator e previstos com fator (R$)", xlab = "Data",data_date_fac1[(treino+1):(treino+valida)],treina_testa[(treino+1):(treino+teste)], type='l', col='green', lwd = 2) 
 lines(data_date_fac1[(treino+1):(treino+valida)],c(Y), col='black', lwd = 1)
 title(main='(c)')
-legend('topleft',legend=c('Target series', 'Forecast series'),
+legend('topleft',legend=c('Série alvo', 'Série prevista'),
        col=c('green','black'), lty=1, bty='n' )
 
 #Resultados dos testes
@@ -581,3 +568,83 @@ legend('topleft',legend=c('Target series', 'Forecast series'),
 #RMSE_teste             =  0.498263253209296(calculado) 0.353942617006570(original arquivo) #Melhor, até agora
 #RMSE(40tr+60te)        =  0.438237070458143(calculado)	0.351636494712520(original arquivo)
 
+
+# =============================================================
+# EXPORTACAO AUTOMATICA DE RESULTADOS PARA O ORIENTADOR
+# =============================================================
+dir_saida <- "D:\\MAYCON\\PROJETOS\\ESNAUTO\\resultados_tcc"
+dir.create(dir_saida, showWarnings = FALSE, recursive = TRUE)
+
+# --- 1. Salvar resultados numericos em arquivo de texto ---
+arquivo_resultados <- file.path(dir_saida, "resultados_ESN_PETR4.txt")
+sink(arquivo_resultados)
+cat("=========================================================\n")
+cat("  RESULTADOS ESN - PETR4 - TCC Maycon G Silva\n")
+cat("  Melhor cenario: Run 2 (2563) | Win GED | W Normal\n")
+cat("  Fitness = -0.23753732723132 | Epoca = 117\n")
+cat("=========================================================\n\n")
+
+cat("--- HIPERPARAMETROS DO MELHOR MODELO ---\n")
+cat(paste("a             =", a, "\n"))
+cat(paste("sr            =", sr, "\n"))
+cat(paste("initLen       =", initLen, "\n"))
+cat(paste("tam_reservoir =", tam_reservoir, "\n"))
+cat(paste("reg           =", reg, "\n"))
+cat("Win           = Distribuicao GED (mean=14.573152, sd=8.032086, nu=7.686645)\n")
+cat("W             = Distribuicao Normal (mean=0, sd=1)\n\n")
+
+cat("--- RESULTADOS DE VALIDACAO (Treino 50% x Validacao 25%) ---\n")
+cat(paste("MAE  treino    =", mae_treino, "\n"))
+cat(paste("MAE  validacao =", mae_valida, "\n"))
+cat(paste("RMSE treino    =", rmse_treino, "\n"))
+cat(paste("RMSE validacao =", rmse_valida, "\n\n"))
+
+cat("--- COMPARATIVO DOS 12 CENARIOS ---\n")
+cat("Run | Win       | W        | Fitness\n")
+cat("----|-----------|----------|-------------------\n")
+cat(" 1  | Normal    | Normal   | -0.237677866441124\n")
+cat(" 1  | Uniforme  | Uniforme | -0.237615495045405\n")
+cat(" 1  | GED       | Uniforme | -0.237570293137095\n")
+cat(" 1  | GED       | Normal   | -0.237554065492480\n")
+cat(" 2  | Normal    | Normal   | -0.237657850811713\n")
+cat(" 2  | Uniforme  | Uniforme | -0.237728636730753\n")
+cat(" 2  | GED       | Uniforme | -0.237560947512039\n")
+cat(" 2  | GED       | Normal   | -0.237537327231320  << MELHOR\n")
+cat(" 3  | Normal    | Normal   | -0.237632776064883\n")
+cat(" 3  | Uniforme  | Uniforme | -0.237679761973989\n")
+cat(" 3  | GED       | Uniforme | -0.237579832804644\n")
+cat(" 3  | GED       | Normal   | -0.237554481567632\n")
+sink()
+cat(paste("Arquivo de resultados salvo em:", arquivo_resultados, "\n"))
+
+# --- 2. Salvar grafico de VALIDACAO em PNG ---
+png(file.path(dir_saida, "grafico_validacao.png"), width=1200, height=700, res=120)
+  plot(ylim=c(0,50),
+       ylab = "Precos observados e previstos com fator (R$)",
+       xlab = "Data",
+       data_date_1[(treino+1):(treino+valida)],
+       treino_valida[(treino+1):(treino+valida)],
+       type='l', col='green', lwd=2)
+  lines(data_date_1[(treino+1):(treino+valida)], c(Y), col='black', lwd=1)
+  title(main='Validacao - ESN PETR4 (Win GED | W Normal | tam_reservoir=27)')
+  legend('topright', legend=c('Serie alvo','Serie prevista'),
+         col=c('green','black'), lty=1, bty='n')
+dev.off()
+cat("Grafico de validacao salvo.\n")
+
+# --- 3. Salvar grafico de TESTE em PNG ---
+png(file.path(dir_saida, "grafico_teste.png"), width=1200, height=700, res=120)
+  plot(ylim=c(10,90),
+       ylab = "Precos observados com fator e previstos com fator (R$)",
+       xlab = "Data",
+       data_date_fac1[(treino+1):(treino+valida)],
+       treina_testa[(treino+1):(treino+teste)],
+       type='l', col='green', lwd=2)
+  lines(data_date_fac1[(treino+1):(treino+valida)], c(Y), col='black', lwd=1)
+  title(main='Teste - ESN PETR4 (Win GED | W Normal | tam_reservoir=27)')
+  legend('topleft', legend=c('Serie alvo','Serie prevista'),
+         col=c('green','black'), lty=1, bty='n')
+dev.off()
+cat("Grafico de teste salvo.\n")
+
+cat(paste("\nTodos os arquivos foram salvos em:", dir_saida, "\n"))
