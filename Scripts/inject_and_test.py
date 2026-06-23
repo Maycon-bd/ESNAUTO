@@ -114,16 +114,17 @@ def build_r_matrix_w(w_file, epoch, tam_reservoir):
     if not rows:
         return None
     n = tam_reservoir
-    matrix = [rows.get(i, []) for i in range(1, n + 1)]
 
-    # Transposição para col-major (R preenche por coluna)
+    # Cada linha do arquivo correspondente à W_GA_t (transposta de W_GA)
+    # Como W_GA_t é escrita linha a linha, a linha i do arquivo é a coluna i de W_GA.
+    # Para o R preencher por coluna no matrix(nrow=n, ncol=n, c(...)), basta concatenar as colunas
+    # de W_GA na ordem 1, 2, ..., n. Ou seja, apenas juntar as linhas do arquivo em sequência.
     vals_colmajor = []
-    for col in range(n):
-        for row in range(n):
-            if col < len(matrix[row]):
-                vals_colmajor.append(matrix[row][col])
-            else:
-                vals_colmajor.append("0")
+    for i in range(1, n + 1):
+        row_vals = rows.get(i, [])
+        if len(row_vals) < n:
+            row_vals = (row_vals + ["0"] * n)[:n]
+        vals_colmajor.extend(row_vals)
 
     vals_str = ", ".join(vals_colmajor)
     r_code = (
@@ -131,6 +132,7 @@ def build_r_matrix_w(w_file, epoch, tam_reservoir):
         f"  {vals_str}))\n"
     )
     return r_code
+
 
 
 def build_r_matrix_wout(wout_file, epoch):
@@ -333,7 +335,7 @@ cat(paste("RMSE_teste  =", rmse_teste, "\\n"))
 dir.create("{out_dir_r}", showWarnings=FALSE, recursive=TRUE)
 
 png(file.path("{out_dir_r}", "{graph_val_name}"), width=1200, height=700, res=120)
-  plot(ylim=c(0,50),
+  plot(ylim=c(0,40),
        ylab="Precos observados e previstos com factor (R$)",
        xlab="Data",
        data_date_1[(treino+1):(treino+valida)],
@@ -346,7 +348,7 @@ png(file.path("{out_dir_r}", "{graph_val_name}"), width=1200, height=700, res=12
 dev.off()
 
 png(file.path("{out_dir_r}", "{graph_test_name}"), width=1200, height=700, res=120)
-  plot(ylim=c(10,90),
+  plot(ylim=c(0,40),
        ylab="Precos observados com factor e previstos com factor (R$)",
        xlab="Data",
        data_date_fac1[(treino+1):(treino+valida)],
@@ -510,6 +512,8 @@ def inject_and_test(session_dir, logger):
 
     # Melhor cenário por MAE de Teste
     best_test_mae = min(resultados_scenarios, key=lambda x: x["test_MAE_teste_float"])
+    # Melhor cenário por RMSE de Teste
+    best_test_rmse = min(resultados_scenarios, key=lambda x: x["test_RMSE_teste_float"])
     # Melhor cenário por MAE de Validação
     best_val_mae = min(resultados_scenarios, key=lambda x: x["val_MAE_valida_float"])
     # Melhor cenário escolhido pelo GA (ranking original["melhor_geral"])
@@ -519,6 +523,7 @@ def inject_and_test(session_dir, logger):
 
     logger.info("---")
     logger.info(f"Melhor por MAE de Teste: Run {best_test_mae['run']} | Win {best_test_mae['win_dist']} | W {best_test_mae['w_dist']} | MAE={best_test_mae['test_MAE_teste']}")
+    logger.info(f"Melhor por RMSE de Teste: Run {best_test_rmse['run']} | Win {best_test_rmse['win_dist']} | W {best_test_rmse['w_dist']} | RMSE={best_test_rmse['test_RMSE_teste']}")
     logger.info(f"Melhor por MAE de Validação: Run {best_val_mae['run']} | Win {best_val_mae['win_dist']} | W {best_val_mae['w_dist']} | MAE={best_val_mae['val_MAE_valida']}")
     logger.info(f"Melhor por Fitness do GA: Run {best_ga_match.get('run')} | Win {best_ga_match.get('win_dist')} | W {best_ga_match.get('w_dist')} | Fitness={best_ga_match.get('fitness')}")
     logger.info("---")
@@ -539,7 +544,7 @@ def inject_and_test(session_dir, logger):
     else:
         logger.warn(f"Gráfico de teste de origem não encontrado: {best_test_graph_src}")
 
-    # Escrever relatório consolidado
+    # 1. Escrever relatório consolidado em formato texto (.txt)
     txt_path = os.path.join(output_dir, "resultados_validacao_teste.txt")
     with open(txt_path, "w", encoding="utf-8") as f:
         f.write("=" * 70 + "\n")
@@ -560,7 +565,7 @@ def inject_and_test(session_dir, logger):
             )
         f.write("\n")
 
-        # Escrever melhor de teste
+        # Escrever melhor de teste MAE
         f.write("--- MELHOR CENÁRIO DE TESTE (Menor MAE de Teste) ---\n")
         f.write(f"Cenário:      Run {best_test_mae['run']} | Win {best_test_mae['win_dist']} | W {best_test_mae['w_dist']}\n")
         f.write(f"Época GA:     {best_test_mae['epoca_melhor_fitness']}\n")
@@ -576,10 +581,32 @@ def inject_and_test(session_dir, logger):
         f.write(f"  MAE  Teste     = {best_test_mae.get('test_MAE_teste', '?')}\n")
         f.write(f"  RMSE Teste     = {best_test_mae.get('test_RMSE_teste', '?')}\n\n")
 
+        # Escrever melhor de teste RMSE
+        f.write("--- MELHOR CENÁRIO DE TESTE (Menor RMSE de Teste) ---\n")
+        f.write(f"Cenário:      Run {best_test_rmse['run']} | Win {best_test_rmse['win_dist']} | W {best_test_rmse['w_dist']}\n")
+        f.write(f"Época GA:     {best_test_rmse['epoca_melhor_fitness']}\n")
+        f.write(f"Hiperparâmetros:\n")
+        f.write(f"  a             = {best_test_rmse['a']}\n")
+        f.write(f"  sr            = {best_test_rmse['sr']}\n")
+        f.write(f"  initLen       = {best_test_rmse['initLen']}\n")
+        f.write(f"  tam_reservoir = {best_test_rmse['tam_reservoir']}\n")
+        f.write(f"  reg           = {best_test_rmse['reg']}\n")
+        f.write(f"Resultados:\n")
+        f.write(f"  MAE  Validação = {best_test_rmse.get('val_MAE_valida', '?')}\n")
+        f.write(f"  RMSE Validação = {best_test_rmse.get('val_RMSE_valida', '?')}\n")
+        f.write(f"  MAE  Teste     = {best_test_rmse.get('test_MAE_teste', '?')}\n")
+        f.write(f"  RMSE Teste     = {best_test_rmse.get('test_RMSE_teste', '?')}\n\n")
+
         # Escrever melhor de validação
         f.write("--- MELHOR CENÁRIO DE VALIDAÇÃO (Menor MAE de Validação) ---\n")
         f.write(f"Cenário:      Run {best_val_mae['run']} | Win {best_val_mae['win_dist']} | W {best_val_mae['w_dist']}\n")
         f.write(f"Época GA:     {best_val_mae['epoca_melhor_fitness']}\n")
+        f.write(f"Hiperparâmetros:\n")
+        f.write(f"  a             = {best_val_mae['a']}\n")
+        f.write(f"  sr            = {best_val_mae['sr']}\n")
+        f.write(f"  initLen       = {best_val_mae['initLen']}\n")
+        f.write(f"  tam_reservoir = {best_val_mae['tam_reservoir']}\n")
+        f.write(f"  reg           = {best_val_mae['reg']}\n")
         f.write(f"Resultados:\n")
         f.write(f"  MAE  Validação = {best_val_mae.get('val_MAE_valida', '?')}\n")
         f.write(f"  RMSE Validação = {best_val_mae.get('val_RMSE_valida', '?')}\n")
@@ -591,14 +618,133 @@ def inject_and_test(session_dir, logger):
         f.write(f"Cenário:      Run {best_ga_match.get('run')} | Win {best_ga_match.get('win_dist')} | W {best_ga_match.get('w_dist')}\n")
         f.write(f"Fitness GA:   {best_ga_match.get('fitness')}\n")
         f.write(f"Época GA:     {best_ga_match.get('epoca_melhor_fitness')}\n")
+        f.write(f"Hiperparâmetros:\n")
+        f.write(f"  a             = {best_ga_match.get('a')}\n")
+        f.write(f"  sr            = {best_ga_match.get('sr')}\n")
+        f.write(f"  initLen       = {best_ga_match.get('initLen')}\n")
+        f.write(f"  tam_reservoir = {best_ga_match.get('tam_reservoir')}\n")
+        f.write(f"  reg           = {best_ga_match.get('reg')}\n")
         f.write(f"Resultados:\n")
         f.write(f"  MAE  Validação = {best_ga_match.get('val_MAE_valida', '?')}\n")
         f.write(f"  RMSE Validação = {best_ga_match.get('val_RMSE_valida', '?')}\n")
         f.write(f"  MAE  Teste     = {best_ga_match.get('test_MAE_teste', '?')}\n")
         f.write(f"  RMSE Teste     = {best_ga_match.get('test_RMSE_teste', '?')}\n")
 
-    logger.ok(f"Relatório geral com os 12 cenários salvo com sucesso em: {txt_path}")
+    # 2. Escrever relatório consolidado em formato Markdown (.md) com formatação em negrito
+    md_path = os.path.join(output_dir, "resultados_validacao_teste.md")
+    with open(md_path, "w", encoding="utf-8") as f:
+        f.write("======================================================================\n\n")
+        f.write("         RESULTADOS ESN — PETR4 TCC Maycon G Silva\n\n")
+        f.write(f"         Relatório Gerado em: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+        f.write("======================================================================\n\n\n\n")
+
+        f.write("--- TABELA COMPARATIVA DOS 12 CENÁRIOS ---\n\n")
+        f.write("As métricas a seguir foram obtidas avaliando as matrizes ótimas nas partições de validação e teste.\n\n\n\n")
+        
+        f.write("| Run | Distribuição Win | Distribuição W | MAE (Validação) | RMSE (Validação) | MAE (Teste) | RMSE (Teste) |\n")
+        f.write("|-----|------------------|----------------|-----------------|------------------|-------------|--------------|\n")
+        for r in resultados_scenarios:
+            is_best_val_mae = (r["folder"] == best_val_mae["folder"])
+            is_best_test_mae = (r["folder"] == best_test_mae["folder"])
+            is_best_test_rmse = (r["folder"] == best_test_rmse["folder"])
+            
+            win_dist = r['win_dist']
+            w_dist = r['w_dist']
+            val_mae = r.get('val_MAE_valida', '?')
+            val_rmse = r.get('val_RMSE_valida', '?')
+            test_mae = r.get('test_MAE_teste', '?')
+            test_rmse = r.get('test_RMSE_teste', '?')
+            
+            if is_best_val_mae:
+                win_dist = f"**{win_dist}**"
+                w_dist = f"**{w_dist}**"
+                val_mae = f"**{val_mae}**"
+                val_rmse = f"**{val_rmse}**"
+            elif is_best_test_mae:
+                win_dist = f"**{win_dist}**"
+                w_dist = f"**{w_dist}**"
+                test_mae = f"**{test_mae}**"
+            elif is_best_test_rmse:
+                win_dist = f"**{win_dist}**"
+                w_dist = f"**{w_dist}**"
+                test_rmse = f"**{test_rmse}**"
+                
+            f.write(
+                f"| {r['run']:3s} | {win_dist:16s} | {w_dist:14s} | "
+                f"{val_mae:15s} | {val_rmse:16s} | "
+                f"{test_mae:11s} | {test_rmse:12s} |\n"
+            )
+        f.write("\n\n")
+
+        # Escrever melhor de teste MAE
+        f.write("--- MELHOR CENÁRIO DE TESTE (Menor MAE de Teste) ---\n\n")
+        f.write(f"Cenário:      Run {best_test_mae['run']} | Win {best_test_mae['win_dist']} | W {best_test_mae['w_dist']}\n\n")
+        f.write(f"Época GA:     {best_test_mae['epoca_melhor_fitness']}\n\n")
+        f.write(f"Hiperparâmetros:\n\n")
+        f.write(f"  a             = {best_test_mae['a']}\n\n")
+        f.write(f"  sr            = {best_test_mae['sr']}\n\n")
+        f.write(f"  initLen       = {best_test_mae['initLen']}\n\n")
+        f.write(f"  tam_reservoir = {best_test_mae['tam_reservoir']}\n\n")
+        f.write(f"  reg           = {best_test_mae['reg']}\n\n")
+        f.write(f"Resultados:\n\n")
+        f.write(f"  MAE  Validação = {best_test_mae.get('val_MAE_valida', '?')}\n\n")
+        f.write(f"  RMSE Validação = {best_test_mae.get('val_RMSE_valida', '?')}\n\n")
+        f.write(f"  MAE  Teste     = {best_test_mae.get('test_MAE_teste', '?')}\n\n")
+        f.write(f"  RMSE Teste     = {best_test_mae.get('test_RMSE_teste', '?')}\n\n\n")
+
+        # Escrever melhor de teste RMSE
+        f.write("--- MELHOR CENÁRIO DE TESTE (Menor RMSE de Teste) ---\n\n")
+        f.write(f"Cenário:      Run {best_test_rmse['run']} | Win {best_test_rmse['win_dist']} | W {best_test_rmse['w_dist']}\n\n")
+        f.write(f"Época GA:     {best_test_rmse['epoca_melhor_fitness']}\n\n")
+        f.write(f"Hiperparâmetros:\n\n")
+        f.write(f"  a             = {best_test_rmse['a']}\n\n")
+        f.write(f"  sr            = {best_test_rmse['sr']}\n\n")
+        f.write(f"  initLen       = {best_test_rmse['initLen']}\n\n")
+        f.write(f"  tam_reservoir = {best_test_rmse['tam_reservoir']}\n\n")
+        f.write(f"  reg           = {best_test_rmse['reg']}\n\n")
+        f.write(f"Resultados:\n\n")
+        f.write(f"  MAE  Validação = {best_test_rmse.get('val_MAE_valida', '?')}\n\n")
+        f.write(f"  RMSE Validação = {best_test_rmse.get('val_RMSE_valida', '?')}\n\n")
+        f.write(f"  MAE  Teste     = {best_test_rmse.get('test_MAE_teste', '?')}\n\n")
+        f.write(f"  RMSE Teste     = {best_test_rmse.get('test_RMSE_teste', '?')}\n\n\n")
+
+        # Escrever melhor de validação
+        f.write("--- MELHOR CENÁRIO DE VALIDAÇÃO (Menor MAE de Validação) ---\n\n")
+        f.write(f"Cenário:      Run {best_val_mae['run']} | Win {best_val_mae['win_dist']} | W {best_val_mae['w_dist']}\n\n")
+        f.write(f"Época GA:     {best_val_mae['epoca_melhor_fitness']}\n\n")
+        f.write(f"Hiperparâmetros:\n\n")
+        f.write(f"  a             = {best_val_mae['a']}\n\n")
+        f.write(f"  sr            = {best_val_mae['sr']}\n\n")
+        f.write(f"  initLen       = {best_val_mae['initLen']}\n\n")
+        f.write(f"  tam_reservoir = {best_val_mae['tam_reservoir']}\n\n")
+        f.write(f"  reg           = {best_val_mae['reg']}\n\n")
+        f.write(f"Resultados:\n\n")
+        f.write(f"  MAE  Validação = {best_val_mae.get('val_MAE_valida', '?')}\n\n")
+        f.write(f"  RMSE Validação = {best_val_mae.get('val_RMSE_valida', '?')}\n\n")
+        f.write(f"  MAE  Teste     = {best_val_mae.get('test_MAE_teste', '?')}\n\n")
+        f.write(f"  RMSE Teste     = {best_val_mae.get('test_RMSE_teste', '?')}\n\n\n")
+
+        # Escrever melhor do GA
+        f.write("--- CENÁRIO SELECIONADO PELO GA (Melhor Fitness) ---\n\n")
+        f.write(f"Cenário:      Run {best_ga_match.get('run')} | Win {best_ga_match.get('win_dist')} | W {best_ga_match.get('w_dist')}\n\n")
+        f.write(f"Fitness GA:   {best_ga_match.get('fitness')}\n\n")
+        f.write(f"Época GA:     {best_ga_match.get('epoca_melhor_fitness')}\n\n")
+        f.write(f"Hiperparâmetros:\n\n")
+        f.write(f"  a             = {best_ga_match.get('a')}\n\n")
+        f.write(f"  sr            = {best_ga_match.get('sr')}\n\n")
+        f.write(f"  initLen       = {best_ga_match.get('initLen')}\n\n")
+        f.write(f"  tam_reservoir = {best_ga_match.get('tam_reservoir')}\n\n")
+        f.write(f"  reg           = {best_ga_match.get('reg')}\n\n")
+        f.write(f"Resultados:\n\n")
+        f.write(f"  MAE  Validação = {best_ga_match.get('val_MAE_valida', '?')}\n\n")
+        f.write(f"  RMSE Validação = {best_ga_match.get('val_RMSE_valida', '?')}\n\n")
+        f.write(f"  MAE  Teste     = {best_ga_match.get('test_MAE_teste', '?')}\n\n")
+        f.write(f"  RMSE Teste     = {best_ga_match.get('test_RMSE_teste', '?')}\n")
+
+    logger.ok(f"Relatórios txt e md salvos com sucesso em: {output_dir}")
     return True
+
+
 
 
 def main():
