@@ -167,8 +167,38 @@ registrar_distribuicao(
   descricao = "Distribuição de Laplace / Dupla Exponencial"
 )
 
+# Normal (Média -0.08) — preset usado no reservatório W do script R original
+registrar_distribuicao(
+  nome = "Normal (Média -0.08)",
+  funcao = function(n, params) {
+    rnorm(n, mean = params$mean, sd = params$sd)
+  },
+  params_default = list(mean = -0.08, sd = 1),
+  descricao = "Normal com média -0.08 e desvio padrão 1 (usada em W no script original)"
+)
 
+# Pearson V (requer pacote PearsonDS)
+registrar_distribuicao(
+  nome = "Pearson V",
+  funcao = function(n, params) {
+    if (!requireNamespace("PearsonDS", quietly = TRUE)) {
+      stop("Pacote 'PearsonDS' necessário para a distribuição Pearson V. Instale com: install.packages('PearsonDS')")
+    }
+    PearsonDS::rpearsonV(n, shape = params$shape, location = params$location, scale = params$scale)
+  },
+  params_default = list(shape = 2.5, location = 0, scale = 1),
+  descricao = "Distribuição Pearson V (pacote PearsonDS)"
+)
 
+# F de Snedecor
+registrar_distribuicao(
+  nome = "F de Snedecor",
+  funcao = function(n, params) {
+    rf(n, df1 = params$df1, df2 = params$df2)
+  },
+  params_default = list(df1 = 5, df2 = 10),
+  descricao = "Distribuição F de Snedecor (graus de liberdade df1 e df2)"
+)
 
 # =============================================================================
 # FUNÇÕES DE PREPARAÇÃO DE DADOS

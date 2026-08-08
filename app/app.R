@@ -1,8 +1,6 @@
 # =============================================================================
-# app.R — Aplicação Shiny: Comparação ESN vs LSTM vs GRU
+# app.R — Aplicação Shiny: Comparação ESN vs LSTM vs GRU (UI/UX Premium)
 # TFC - Maycon G Silva
-# =============================================================================
-# Para executar: shiny::runApp("app")
 # =============================================================================
 
 library(shiny)
@@ -20,65 +18,68 @@ source("modules/mod_comparacao.R", local = TRUE)
 # =============================================================================
 
 ui <- navbarPage(
-  title = "🔬 ESN vs LSTM vs GRU — Comparação de Modelos",
-  theme = NULL,  # Usa tema padrão Shiny (leve e funcional)
+  title = div(
+    style = "display: flex; align-items: center; gap: 10px;",
+    span(style = "font-size: 1.25rem;", "⚡"),
+    span(style = "font-weight: 800; letter-spacing: -0.02em;", "ESNAUTO Benchmark Studio"),
+    span(style = "font-size: 0.75rem; background: rgba(255,255,255,0.15); padding: 2px 8px; border-radius: 12px; font-weight: 600;", "ESN vs Deep Learning")
+  ),
+  theme = NULL,
   
-  # CSS customizado para melhorar a aparência
   header = tags$head(
-    tags$style(HTML("
-      body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-      .navbar { background: linear-gradient(135deg, #2c3e50, #34495e) !important; }
-      .navbar-default .navbar-brand { color: #ecf0f1 !important; font-weight: bold; }
-      .navbar-default .navbar-nav > li > a { color: #bdc3c7 !important; }
-      .navbar-default .navbar-nav > .active > a { background: #1abc9c !important; color: white !important; }
-      .btn-success { background: #27ae60; border: none; }
-      .btn-success:hover { background: #2ecc71; }
-      .btn-primary { background: #2980b9; border: none; }
-      .btn-primary:hover { background: #3498db; }
-      .btn-warning { background: #8e44ad; border: none; color: white; }
-      .btn-warning:hover { background: #9b59b6; color: white; }
-      .well { border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-      h3, h4 { color: #2c3e50; }
-      .tab-content { padding-top: 10px; }
-      .nav-tabs > li.active > a { border-top: 3px solid #1abc9c; }
-    "))
+    tags$link(rel = "stylesheet", type = "text/css", href = "custom.css")
   ),
   
   # ============================
   # ABA 1: DADOS
   # ============================
-  tabPanel("📊 Dados",
+  tabPanel("📊 Dados PETR4",
     fluidRow(
       column(12,
-        h3("Série Temporal PETR4 — Preço de Fechamento com Fator"),
-        wellPanel(
+        div(class = "section-subtitle", "BASE DE DADOS & PREPARAÇÃO"),
+        h3(class = "section-title", "Série Temporal PETR4 (Preços de Fechamento com Fator)"),
+        
+        # Action Card para Seleção de Dados
+        div(class = "well",
           fluidRow(
-            column(6,
-              fileInput("arquivo_dados", "Carregar arquivo de dados (.txt/.csv):",
-                        accept = c(".txt", ".csv")),
-              helpText("Ou use o arquivo padrão PETR4_close com factor_2000-2020.txt")
+            column(7,
+              fileInput("arquivo_dados", "📂 Carregar Novo Arquivo (.txt / .csv):",
+                        accept = c(".txt", ".csv"), width = "100%"),
+              helpText("Formato esperado: Vetor de preços ou CSV com valores de fechamento ajustados.")
             ),
-            column(6,
-              actionButton("btn_carregar_default", "📂 Usar Dados Padrão PETR4",
+            column(5,
+              actionButton("btn_carregar_default", "⚡ Carregar Série Padrão PETR4 (2000-2020)",
                            class = "btn-info",
-                           style = "margin-top: 25px; width: 100%; padding: 10px; font-size: 14px;")
+                           style = "margin-top: 25px; width: 100%; height: 48px;")
             )
           )
         ),
         
+        # KPI Cards Rápidos
+        uiOutput("kpi_dados_summary"),
+        
+        br(),
+        
         fluidRow(
           column(4,
-            wellPanel(
-              h5("📐 Divisão dos Dados"),
-              numericInput("treino_n", "Treino (n):", value = 2600, min = 100),
-              numericInput("valida_n", "Validação (n):", value = 1299, min = 100),
-              numericInput("teste_n", "Teste (n):", value = 1299, min = 100),
+            div(class = "well",
+              h4(style = "margin-top:0;", "📐 Configuração dos Splits"),
+              p(style = "color: var(--text-muted); font-size: 0.85rem;", "Defina o número de observações para cada partição:"),
+              numericInput("treino_n", "Treino (50% por padrão):", value = 2600, min = 100),
+              numericInput("valida_n", "Validação (25% por padrão):", value = 1299, min = 100),
+              numericInput("teste_n", "Teste (25% por padrão):", value = 1299, min = 100),
+              hr(),
               verbatimTextOutput("info_dados")
             )
           ),
           column(8,
-            plotOutput("grafico_serie", height = "350px"),
-            plotOutput("grafico_splits", height = "250px")
+            div(class = "well",
+              h4(style = "margin-top:0;", "📈 Série Temporal Completa"),
+              plotOutput("grafico_serie", height = "280px"),
+              hr(),
+              h4("🎯 Particionamento (Treino / Validação / Teste)"),
+              plotOutput("grafico_splits", height = "240px")
+            )
           )
         )
       )
@@ -88,67 +89,75 @@ ui <- navbarPage(
   # ============================
   # ABA 2: ESN
   # ============================
-  tabPanel("🧠 ESN",
+  tabPanel("🧠 ESN (Reservoir)",
     esn_ui("esn")
   ),
   
   # ============================
   # ABA 3: LSTM
   # ============================
-  tabPanel("📈 LSTM",
+  tabPanel("📈 LSTM Network",
     lstm_ui("lstm")
   ),
   
   # ============================
   # ABA 4: GRU
   # ============================
-  tabPanel("📉 GRU",
+  tabPanel("📉 GRU Network",
     gru_ui("gru")
   ),
   
   # ============================
   # ABA 5: COMPARAÇÃO
   # ============================
-  tabPanel("⚖️ Comparação",
+  tabPanel("⚖️ Comparativo & Custo-Benefício",
     comparacao_ui("comparacao")
   ),
   
   # ============================
   # ABA 6: DISTRIBUIÇÕES
   # ============================
-  tabPanel("🎲 Distribuições",
+  tabPanel("🎲 Distribuições da ESN",
     fluidRow(
       column(12,
-        h3("📋 Distribuições Registradas"),
-        helpText("Sistema extensível: novas distribuições podem ser adicionadas via registrar_distribuicao()"),
-        tableOutput("tabela_distribuicoes"),
-        hr(),
-        h4("🔧 Como adicionar uma nova distribuição"),
-        wellPanel(
-          tags$pre(
-            style = "background: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px;",
-            '# Adicione no arquivo utils/data_prep.R ou no console R:\n',
-            'registrar_distribuicao(\n',
-            '  nome = "Cauchy",\n',
-            '  funcao = function(n, params) {\n',
-            '    rcauchy(n, location = params$location, scale = params$scale)\n',
-            '  },\n',
-            '  params_default = list(location = 0, scale = 1),\n',
-            '  descricao = "Distribuição de Cauchy"\n',
-            ')'
-          )
-        ),
+        div(class = "section-subtitle", "EXTENSIBILIDADE DE DISTRIBUIÇÕES"),
+        h3(class = "section-title", "Catálogo de Distribuições Registradas"),
+        p(style = "color: var(--text-muted);", "Estas distribuições estão disponíveis para inicialização das matrizes de pesos W_in e W da ESN:"),
         
-        h4("📊 Visualização das Distribuições"),
+        tableOutput("tabela_distribuicoes"),
+        
+        hr(),
+        
         fluidRow(
-          column(4,
-            selectInput("dist_visualizar", "Selecione a distribuição:",
-                        choices = NULL),
-            numericInput("dist_n_amostras", "Nº de amostras:", value = 1000, min = 100, max = 10000),
-            actionButton("btn_gerar_dist", "Gerar Amostras", class = "btn-info")
+          column(5,
+            div(class = "well",
+              h4(style = "margin-top:0;", "💡 Como Adicionar Novas Distribuições"),
+              p(style = "font-size: 0.88rem; color: var(--text-secondary);", 
+                "O projeto utiliza um sistema de registro desacoplado. Para registrar uma nova distribuição, chame no R:"),
+              tags$pre(
+                'registrar_distribuicao(\n',
+                '  nome = "MinhaDistribuicao",\n',
+                '  funcao = function(n, params) { ... },\n',
+                '  params_default = list(...),\n',
+                '  descricao = "..."\n',
+                ')'
+              )
+            )
           ),
-          column(8,
-            plotOutput("grafico_distribuicao", height = "350px")
+          column(7,
+            div(class = "well",
+              h4(style = "margin-top:0;", "📊 Visualizador de Amostragem Teórica"),
+              fluidRow(
+                column(7,
+                  selectInput("dist_visualizar", "Selecione a Distribuição:", choices = NULL)
+                ),
+                column(5,
+                  numericInput("dist_n_amostras", "Nº Amostras:", value = 2000, min = 100)
+                )
+              ),
+              actionButton("btn_gerar_dist", "🎲 Gerar Amostras", class = "btn-info", style = "width: 100%; margin-bottom: 15px;"),
+              plotOutput("grafico_distribuicao", height = "280px")
+            )
           )
         )
       )
@@ -162,12 +171,28 @@ ui <- navbarPage(
 
 server <- function(input, output, session) {
   
-  # ============================================
   # Dados reativos
-  # ============================================
   dados <- reactiveVal(NULL)
   
-  # Carregar dados padrão
+  # Auto-carregar dados PETR4 ao inicializar
+  observe({
+    caminhos <- c(
+      "../Scripts/data/PETR4_close com factor_2000-2020.txt",
+      "Scripts/data/PETR4_close com factor_2000-2020.txt",
+      "data/PETR4_close com factor_2000-2020.txt"
+    )
+    for (cp in caminhos) {
+      if (file.exists(cp)) {
+        tryCatch({
+          data_fac <- as.matrix(read.csv2(cp, header = FALSE))
+          dados(as.numeric(data_fac))
+        }, error = function(e) {})
+        break
+      }
+    }
+  })
+  
+  # Carregar dados padrão por botão
   observeEvent(input$btn_carregar_default, {
     caminhos <- c(
       "../Scripts/data/PETR4_close com factor_2000-2020.txt",
@@ -184,52 +209,93 @@ server <- function(input, output, session) {
     }
     
     if (is.null(caminho_encontrado)) {
-      showNotification("❌ Arquivo de dados padrão não encontrado!", type = "error")
+      showNotification("❌ Arquivo PETR4_close com factor_2000-2020.txt não encontrado!", type = "error")
       return()
     }
     
     tryCatch({
       data_fac <- as.matrix(read.csv2(caminho_encontrado, header = FALSE))
       dados(as.numeric(data_fac))
-      showNotification(paste("✅ Dados carregados:", length(dados()), "observações"), type = "message")
+      showNotification(paste("✅ Série PETR4 carregada com sucesso:", length(dados()), "amostras"), type = "message")
     }, error = function(e) {
       showNotification(paste("❌ Erro ao carregar:", e$message), type = "error")
     })
   })
   
-  # Carregar arquivo do usuário
+  # Carregar arquivo customizado
   observeEvent(input$arquivo_dados, {
     req(input$arquivo_dados)
     tryCatch({
       data_fac <- as.matrix(read.csv2(input$arquivo_dados$datapath, header = FALSE))
       dados(as.numeric(data_fac))
-      showNotification(paste("✅ Dados carregados:", length(dados()), "observações"), type = "message")
+      showNotification(paste("✅ Dados personalizados carregados:", length(dados()), "amostras"), type = "message")
     }, error = function(e) {
-      showNotification(paste("❌ Erro ao carregar:", e$message), type = "error")
+      showNotification(paste("❌ Erro ao carregar arquivo:", e$message), type = "error")
     })
   })
   
-  # Info dos dados
+  # Summary KPI cards
+  output$kpi_dados_summary <- renderUI({
+    req(dados())
+    d <- dados()
+    n_total <- length(d)
+    n_tr <- input$treino_n
+    n_va <- input$valida_n
+    n_te <- input$teste_n
+    
+    fluidRow(
+      column(3,
+        div(class = "kpi-card",
+          div(class = "kpi-title", "Total de Amostras"),
+          div(class = "kpi-value", sprintf("%d", n_total)),
+          div(class = "kpi-subtitle", "Preços PETR4 com fator")
+        )
+      ),
+      column(3,
+        div(class = "kpi-card", style = "border-top: 3px solid #059669;",
+          div(class = "kpi-title", "Partição Treino"),
+          div(class = "kpi-value", sprintf("%d", n_tr)),
+          div(class = "kpi-subtitle", sprintf("%.1f%% do dataset", (n_tr/n_total)*100))
+        )
+      ),
+      column(3,
+        div(class = "kpi-card", style = "border-top: 3px solid #d97706;",
+          div(class = "kpi-title", "Partição Validação"),
+          div(class = "kpi-value", sprintf("%d", n_va)),
+          div(class = "kpi-subtitle", sprintf("%.1f%% do dataset", (n_va/n_total)*100))
+        )
+      ),
+      column(3,
+        div(class = "kpi-card", style = "border-top: 3px solid #dc2626;",
+          div(class = "kpi-title", "Partição Teste"),
+          div(class = "kpi-value", sprintf("%d", n_te)),
+          div(class = "kpi-subtitle", sprintf("%.1f%% do dataset", (n_te/n_total)*100))
+        )
+      )
+    )
+  })
+  
+  # Text summary
   output$info_dados <- renderPrint({
     req(dados())
     d <- dados()
-    cat(sprintf("Total de observações: %d\n", length(d)))
-    cat(sprintf("Treino:    %d (%.1f%%)\n", input$treino_n, input$treino_n/length(d)*100))
-    cat(sprintf("Validação: %d (%.1f%%)\n", input$valida_n, input$valida_n/length(d)*100))
-    cat(sprintf("Teste:     %d (%.1f%%)\n", input$teste_n, input$teste_n/length(d)*100))
-    cat(sprintf("Usado:     %d / %d\n", input$treino_n + input$valida_n + input$teste_n, length(d)))
-    cat(sprintf("\nMín: %.2f | Máx: %.2f | Média: %.2f\n", min(d), max(d), mean(d)))
+    cat(sprintf("• Mínimo:  R$ %.2f\n", min(d)))
+    cat(sprintf("• Máximo:  R$ %.2f\n", max(d)))
+    cat(sprintf("• Média:   R$ %.2f\n", mean(d)))
+    cat(sprintf("• Desvio:  R$ %.2f\n", sd(d)))
   })
   
-  # Gráfico da série completa
+  # Gráfico da série temporal
   output$grafico_serie <- renderPlot({
     req(dados())
     d <- dados()
-    par(mar = c(4, 4, 3, 1))
-    plot(d, type = 'l', col = '#2c3e50', lwd = 1,
-         xlab = "Tempo (dias)", ylab = "Preço com fator (R$)",
-         main = "Série Temporal Completa — PETR4")
-    grid(col = "#ecf0f1")
+    par(mar = c(3.5, 4, 1.5, 1), bg = "transparent")
+    plot(d, type = 'l', col = '#4f46e5', lwd = 1.5,
+         xlab = "Dias", ylab = "Preço Ajustado (R$)",
+         axes = FALSE)
+    axis(1, col = "#cbd5e1", col.axis = "#475569")
+    axis(2, col = "#cbd5e1", col.axis = "#475569")
+    grid(col = "#e2e8f0", lty = "dotted")
   })
   
   # Gráfico dos splits
@@ -240,41 +306,33 @@ server <- function(input, output, session) {
     vn <- input$valida_n
     ten <- input$teste_n
     
-    par(mar = c(4, 4, 2, 1))
-    plot(d, type = 'n', xlab = "Tempo (dias)", ylab = "Preço (R$)",
-         main = "Divisão: Treino | Validação | Teste")
+    par(mar = c(3.5, 4, 1.5, 1), bg = "transparent")
+    plot(d, type = 'n', xlab = "Dias", ylab = "Preço Ajustado (R$)", axes = FALSE)
+    axis(1, col = "#cbd5e1", col.axis = "#475569")
+    axis(2, col = "#cbd5e1", col.axis = "#475569")
+    grid(col = "#e2e8f0", lty = "dotted")
     
-    # Treino
-    lines(1:tn, d[1:tn], col = '#27ae60', lwd = 1.5)
-    # Validação
-    lines((tn+1):(tn+vn), d[(tn+1):(tn+vn)], col = '#f39c12', lwd = 1.5)
-    # Teste
+    lines(1:tn, d[1:tn], col = '#059669', lwd = 2)
+    lines((tn+1):(tn+vn), d[(tn+1):(tn+vn)], col = '#d97706', lwd = 2)
     if (tn + vn + ten <= length(d)) {
-      lines((tn+vn+1):(tn+vn+ten), d[(tn+vn+1):(tn+vn+ten)], col = '#e74c3c', lwd = 1.5)
+      lines((tn+vn+1):(tn+vn+ten), d[(tn+vn+1):(tn+vn+ten)], col = '#dc2626', lwd = 2)
     }
     
-    abline(v = tn, col = '#27ae60', lty = 2)
-    abline(v = tn + vn, col = '#f39c12', lty = 2)
+    abline(v = tn, col = '#059669', lty = 3, lwd = 1.5)
+    abline(v = tn + vn, col = '#d97706', lty = 3, lwd = 1.5)
     
-    legend('topright', legend = c('Treino', 'Validação', 'Teste'),
-           col = c('#27ae60', '#f39c12', '#e74c3c'), lty = 1, lwd = 2, bty = 'n')
+    legend('topleft', legend = c('Treino', 'Validação', 'Teste'),
+           col = c('#059669', '#d97706', '#dc2626'), lty = 1, lwd = 2.5, bty = 'n', text.col = '#0f172a')
   })
   
-  # ============================================
-  # Módulos dos modelos
-  # ============================================
+  # Módulos
   metricas_esn  <- esn_server("esn", dados)
   metricas_lstm <- lstm_server("lstm", dados)
   metricas_gru  <- gru_server("gru", dados)
   
-  # ============================================
-  # Módulo de comparação
-  # ============================================
   comparacao_server("comparacao", metricas_esn, metricas_lstm, metricas_gru)
   
-  # ============================================
-  # Aba Distribuições
-  # ============================================
+  # Distribuições
   observe({
     dists <- listar_distribuicoes()
     updateSelectInput(session, "dist_visualizar", choices = dists)
@@ -288,9 +346,10 @@ server <- function(input, output, session) {
       d <- obter_distribuicao(nome)
       params_str <- paste(names(d$params_default), "=", d$params_default, collapse = ", ")
       data.frame(
-        Nome = nome,
-        Descricao = d$descricao,
-        Parametros_Default = params_str,
+        "Distribuição" = nome,
+        "Descrição" = d$descricao,
+        "Parâmetros Padrão" = params_str,
+        check.names = FALSE,
         stringsAsFactors = FALSE
       )
     }))
@@ -300,14 +359,19 @@ server <- function(input, output, session) {
     req(input$dist_visualizar)
     output$grafico_distribuicao <- renderPlot({
       amostras <- gerar_amostras(input$dist_visualizar, input$dist_n_amostras)
-      par(mfrow = c(1, 2), mar = c(4, 4, 3, 1))
-      hist(amostras, breaks = 50, col = '#3498db', border = 'white',
-           main = paste("Histograma -", input$dist_visualizar),
-           xlab = "Valor", ylab = "Frequência")
-      plot(density(amostras), col = '#e74c3c', lwd = 2,
-           main = paste("Densidade -", input$dist_visualizar),
-           xlab = "Valor")
-      polygon(density(amostras), col = '#e74c3c33', border = '#e74c3c')
+      par(mfrow = c(1, 2), mar = c(3.5, 3.5, 2.5, 1), bg = "transparent")
+      
+      hist(amostras, breaks = 45, col = '#4f46e5', border = '#ffffff',
+           main = paste("Histograma:", input$dist_visualizar),
+           xlab = "Valor", ylab = "Frequência", col.main = "#0f172a")
+      grid(col = "#e2e8f0")
+      
+      dens <- density(amostras)
+      plot(dens, col = '#059669', lwd = 2.5,
+           main = paste("Densidade:", input$dist_visualizar),
+           xlab = "Valor", col.main = "#0f172a")
+      polygon(dens, col = '#05966922', border = '#059669')
+      grid(col = "#e2e8f0")
     })
   })
 }

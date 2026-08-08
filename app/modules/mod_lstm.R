@@ -16,50 +16,63 @@ lstm_ui <- function(id) {
   tagList(
     fluidRow(
       column(4,
-        wellPanel(
-          h4("⚙️ Configuração LSTM"),
-          sliderInput(ns("units"), "Neurônios (units):", 
+        div(class = "well model-card-lstm",
+          div(class = "section-subtitle", "HIPERPARÂMETROS DEEP LEARNING"),
+          h4(style = "margin-top:0; color: var(--lstm-color); font-weight: 800;", "📈 LSTM Architecture"),
+          hr(),
+          
+          sliderInput(ns("units"), "Neurônios (Units - 1ª camada):", 
                       min = 10, max = 200, value = 50, step = 10),
-          sliderInput(ns("timesteps"), "Timesteps (janela):", 
+          sliderInput(ns("timesteps"), "Janela Temporal (Timesteps):", 
                       min = 5, max = 60, value = 10, step = 5),
-          sliderInput(ns("dropout"), "Dropout:", 
+          sliderInput(ns("dropout"), "Taxa de Dropout:", 
                       min = 0.0, max = 0.5, value = 0.2, step = 0.05),
-          sliderInput(ns("epochs"), "Epochs:", 
+          sliderInput(ns("epochs"), "Épocas de Treinamento:", 
                       min = 10, max = 300, value = 50, step = 10),
-          selectInput(ns("batch_size"), "Batch Size:",
-                      choices = c(8, 16, 32, 64), selected = 16),
-          selectInput(ns("optimizer"), "Otimizador:",
-                      choices = c("adam", "rmsprop", "sgd"), selected = "adam"),
-          checkboxInput(ns("segunda_camada"), "Adicionar 2ª camada LSTM", value = FALSE),
+          
+          fluidRow(
+            column(6,
+              selectInput(ns("batch_size"), "Batch Size:", choices = c(8, 16, 32, 64), selected = 16)
+            ),
+            column(6,
+              selectInput(ns("optimizer"), "Otimizador:", choices = c("adam", "rmsprop", "sgd"), selected = "adam")
+            )
+          ),
+          
+          checkboxInput(ns("segunda_camada"), "Adicionar 2ª Camada Recorrente", value = FALSE),
           conditionalPanel(
             condition = paste0("input['", ns("segunda_camada"), "']"),
-            sliderInput(ns("units2"), "Neurônios 2ª camada:", 
-                        min = 10, max = 100, value = 25, step = 5)
+            sliderInput(ns("units2"), "Neurônios (Units - 2ª camada):", min = 10, max = 100, value = 25, step = 5)
           ),
+          
           hr(),
-          actionButton(ns("btn_rodar"), "🚀 Treinar LSTM", 
+          actionButton(ns("btn_rodar"), "🚀 Treinar Modelo LSTM", 
                        class = "btn-primary btn-block",
-                       style = "width:100%; font-size:16px; padding:10px;")
+                       style = "width:100%; height: 46px;")
         )
       ),
       column(8,
-        tabsetPanel(
-          tabPanel("📊 Resultados",
-            br(),
-            verbatimTextOutput(ns("resultados_texto")),
-            tableOutput(ns("tabela_metricas"))
-          ),
-          tabPanel("📈 Gráfico Validação",
-            br(),
-            plotOutput(ns("grafico_validacao"), height = "400px")
-          ),
-          tabPanel("📉 Gráfico Teste",
-            br(),
-            plotOutput(ns("grafico_teste"), height = "400px")
-          ),
-          tabPanel("📉 Curva de Treino",
-            br(),
-            plotOutput(ns("grafico_loss"), height = "400px")
+        div(class = "well",
+          tabsetPanel(
+            tabPanel("📊 Métricas de Desempenho",
+              br(),
+              verbatimTextOutput(ns("resultados_texto")),
+              hr(),
+              h5(style = "font-weight: 700;", "📋 Tabela de Resumo:"),
+              tableOutput(ns("tabela_metricas"))
+            ),
+            tabPanel("📈 Validação (In-sample)",
+              br(),
+              plotOutput(ns("grafico_validacao"), height = "380px")
+            ),
+            tabPanel("📉 Teste (Out-of-sample)",
+              br(),
+              plotOutput(ns("grafico_teste"), height = "380px")
+            ),
+            tabPanel("📉 Curva de Perda (Loss)",
+              br(),
+              plotOutput(ns("grafico_loss"), height = "380px")
+            )
           )
         )
       )
@@ -275,12 +288,17 @@ lstm_server <- function(id, dados_reativo) {
       real <- resultados$validacao$real
       prev <- resultados$validacao$previsto
       
-      plot(real, type = 'l', col = '#2ecc71', lwd = 2,
-           ylab = "Preço (R$)", xlab = "Tempo (dias)",
-           main = "LSTM — Validação: Real vs Previsto")
-      lines(prev, col = '#3498db', lwd = 1.5)
+      par(mar = c(3.5, 4, 2, 1), bg = "transparent")
+      plot(real, type = 'l', col = '#0f172a', lwd = 2,
+           ylab = "Preço PETR4 (R$)", xlab = "Dias",
+           main = "LSTM — Previsão na Fase de Validação", axes = FALSE, col.main = "#0f172a")
+      axis(1, col = "#cbd5e1", col.axis = "#475569")
+      axis(2, col = "#cbd5e1", col.axis = "#475569")
+      grid(col = "#e2e8f0", lty = "dotted")
+      
+      lines(prev, col = '#2563eb', lwd = 1.8)
       legend('topright', legend = c('Série Real', 'LSTM Previsto'),
-             col = c('#2ecc71', '#3498db'), lty = 1, lwd = c(2, 1.5), bty = 'n')
+             col = c('#0f172a', '#2563eb'), lty = 1, lwd = c(2, 1.8), bty = 'n', text.col = '#0f172a')
     })
     
     output$grafico_teste <- renderPlot({
@@ -288,16 +306,22 @@ lstm_server <- function(id, dados_reativo) {
       real <- resultados$teste$real
       prev <- resultados$teste$previsto
       
-      plot(real, type = 'l', col = '#2ecc71', lwd = 2,
-           ylab = "Preço (R$)", xlab = "Tempo (dias)",
-           main = "LSTM — Teste: Real vs Previsto")
-      lines(prev, col = '#3498db', lwd = 1.5)
+      par(mar = c(3.5, 4, 2, 1), bg = "transparent")
+      plot(real, type = 'l', col = '#0f172a', lwd = 2,
+           ylab = "Preço PETR4 (R$)", xlab = "Dias",
+           main = "LSTM — Previsão na Fase de Teste", axes = FALSE, col.main = "#0f172a")
+      axis(1, col = "#cbd5e1", col.axis = "#475569")
+      axis(2, col = "#cbd5e1", col.axis = "#475569")
+      grid(col = "#e2e8f0", lty = "dotted")
+      
+      lines(prev, col = '#2563eb', lwd = 1.8)
       legend('topright', legend = c('Série Real', 'LSTM Previsto'),
-             col = c('#2ecc71', '#3498db'), lty = 1, lwd = c(2, 1.5), bty = 'n')
+             col = c('#0f172a', '#2563eb'), lty = 1, lwd = c(2, 1.8), bty = 'n', text.col = '#0f172a')
     })
     
     output$grafico_loss <- renderPlot({
       req(resultados$historico)
+      par(mar = c(3.5, 4, 2, 1), bg = "transparent")
       plot(resultados$historico)
     })
     

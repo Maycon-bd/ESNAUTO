@@ -419,40 +419,51 @@ esn_ui <- function(id) {
   tagList(
     fluidRow(
       column(4,
-        wellPanel(
-          h4("⚙️ Configuração ESN"),
-          selectInput(ns("cenario"), "Cenário Pré-otimizado:",
-            choices = NULL  # Preenchido no server
-          ),
+        div(class = "well model-card-esn",
+          div(class = "section-subtitle", "PARÂMETROS DA REDE"),
+          h4(style = "margin-top:0; color: var(--esn-color); font-weight: 800;", "🧠 Echo State Network"),
           hr(),
-          h5("Ou rodar novo (distribuições):"),
-          selectInput(ns("dist_win"), "Distribuição Win:",
-            choices = NULL  # Preenchido dinamicamente
+          
+          checkboxInput(ns("usar_pre_otimizado"), "Usar Cenário Pré-Otimizado (GA)", value = TRUE),
+          
+          conditionalPanel(
+            condition = paste0("input['", ns("usar_pre_otimizado"), "']"),
+            selectInput(ns("cenario"), "Selecione o Cenário:", choices = NULL)
           ),
-          selectInput(ns("dist_w"), "Distribuição W:",
-            choices = NULL  # Preenchido dinamicamente
+          
+          conditionalPanel(
+            condition = paste0("!input['", ns("usar_pre_otimizado"), "']"),
+            div(style = "background: var(--bg-app); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 12px;",
+              h5(style = "margin-top:0; font-weight:700;", "🎲 Distribuições Personalizadas:"),
+              selectInput(ns("dist_win"), "Distribuição W_in (Entrada):", choices = NULL),
+              selectInput(ns("dist_w"), "Distribuição W (Reservatório):", choices = NULL)
+            )
           ),
-          checkboxInput(ns("usar_pre_otimizado"), "Usar cenário pré-otimizado", value = TRUE),
+          
           hr(),
-          actionButton(ns("btn_rodar"), "🚀 Rodar ESN", 
+          actionButton(ns("btn_rodar"), "🚀 Executar ESN", 
                        class = "btn-success btn-block",
-                       style = "width:100%; font-size:16px; padding:10px;")
+                       style = "width:100%; height: 46px;")
         )
       ),
       column(8,
-        tabsetPanel(
-          tabPanel("📊 Resultados",
-            br(),
-            verbatimTextOutput(ns("resultados_texto")),
-            tableOutput(ns("tabela_metricas"))
-          ),
-          tabPanel("📈 Gráfico Validação",
-            br(),
-            plotOutput(ns("grafico_validacao"), height = "400px")
-          ),
-          tabPanel("📉 Gráfico Teste",
-            br(),
-            plotOutput(ns("grafico_teste"), height = "400px")
+        div(class = "well",
+          tabsetPanel(
+            tabPanel("📊 Métricas de Desempenho",
+              br(),
+              verbatimTextOutput(ns("resultados_texto")),
+              hr(),
+              h5(style = "font-weight: 700;", "📋 Tabela de Resumo:"),
+              tableOutput(ns("tabela_metricas"))
+            ),
+            tabPanel("📈 Validação (In-sample)",
+              br(),
+              plotOutput(ns("grafico_validacao"), height = "380px")
+            ),
+            tabPanel("📉 Teste (Out-of-sample)",
+              br(),
+              plotOutput(ns("grafico_teste"), height = "380px")
+            )
           )
         )
       )
@@ -494,7 +505,7 @@ esn_server <- function(id, dados_reativo) {
     observeEvent(input$btn_rodar, {
       req(dados_reativo())
       
-      withProgress(message = "Rodando ESN...", value = 0, {
+      withProgress(message = "Executando ESN...", value = 0, {
         dados <- dados_reativo()
         dados_split <- dividir_dados(dados)
         
@@ -502,7 +513,7 @@ esn_server <- function(id, dados_reativo) {
           cen <- cenarios[[input$cenario]]
           
           if (is.null(cen$W)) {
-            showNotification("Este cenário tem a matriz W omitida por tamanho. Use outro cenário.", type = "error")
+            showNotification("Este cenário tem a matriz W omitida por tamanho. Selecione outro cenário.", type = "error")
             return()
           }
           
@@ -511,10 +522,10 @@ esn_server <- function(id, dados_reativo) {
             tam_reservoir = cen$tam_reservoir, reg = cen$reg
           )
           
-          setProgress(0.3, detail = "Validação...")
+          setProgress(0.3, detail = "Calculando Validação...")
           res_val <- esn_validacao(dados_split, params, cen$Win, cen$W, cen$Wout)
           
-          setProgress(0.6, detail = "Teste...")
+          setProgress(0.6, detail = "Calculando Teste...")
           res_teste <- esn_teste(dados_split, params, cen$Win, cen$W, cen$Wout)
           
         } else {
@@ -525,10 +536,10 @@ esn_server <- function(id, dados_reativo) {
           Win_new <- matrix(gerar_amostras(input$dist_win, tam_r * 2), nrow = tam_r, ncol = 2)
           W_new <- matrix(gerar_amostras(input$dist_w, tam_r * tam_r), nrow = tam_r, ncol = tam_r)
           
-          setProgress(0.3, detail = "Validação...")
+          setProgress(0.3, detail = "Calculando Validação...")
           res_val <- esn_validacao(dados_split, params, Win_new, W_new, Wout = NULL)
           
-          setProgress(0.6, detail = "Teste...")
+          setProgress(0.6, detail = "Calculando Teste...")
           res_teste <- esn_teste(dados_split, params, Win_new, W_new, res_val$Wout)
         }
         
@@ -550,28 +561,36 @@ esn_server <- function(id, dados_reativo) {
     # Saídas
     output$resultados_texto <- renderPrint({
       req(resultados$validacao)
-      cat("========== RESULTADOS ESN ==========\n\n")
-      cat("--- Métricas Validação ---\n")
-      cat(sprintf("  MAE:  %.6f\n", resultados$validacao$metricas_valida$MAE))
-      cat(sprintf("  RMSE: %.6f\n", resultados$validacao$metricas_valida$RMSE))
-      cat(sprintf("  MAPE: %.4f%%\n", resultados$validacao$metricas_valida$MAPE))
-      cat(sprintf("  R²:   %.6f\n", resultados$validacao$metricas_valida$R2))
-      cat(sprintf("  Tempo: %.4f s\n\n", resultados$validacao$tempo))
-      cat("--- Métricas Teste ---\n")
-      cat(sprintf("  MAE:  %.6f\n", resultados$teste$metricas_teste$MAE))
-      cat(sprintf("  RMSE: %.6f\n", resultados$teste$metricas_teste$RMSE))
-      cat(sprintf("  MAPE: %.4f%%\n", resultados$teste$metricas_teste$MAPE))
-      cat(sprintf("  R²:   %.6f\n", resultados$teste$metricas_teste$R2))
-      cat(sprintf("  Tempo: %.4f s\n", resultados$teste$tempo))
+      cat("=====================================================\n")
+      cat("  MÉTRICAS DETALHADAS — ECHO STATE NETWORK (ESN)\n")
+      cat("=====================================================\n\n")
+      cat("• FASE DE VALIDAÇÃO (In-Sample):\n")
+      cat(sprintf("  - MAE:   %.6f\n", resultados$validacao$metricas_valida$MAE))
+      cat(sprintf("  - RMSE:  %.6f\n", resultados$validacao$metricas_valida$RMSE))
+      cat(sprintf("  - MAPE:  %.2f%%\n", resultados$validacao$metricas_valida$MAPE))
+      cat(sprintf("  - R²:    %.4f\n", resultados$validacao$metricas_valida$R2))
+      cat(sprintf("  - Tempo: %.4f segundos\n\n", resultados$validacao$tempo))
+      cat("• FASE DE TESTE (Out-of-Sample):\n")
+      cat(sprintf("  - MAE:   %.6f\n", resultados$teste$metricas_teste$MAE))
+      cat(sprintf("  - RMSE:  %.6f\n", resultados$teste$metricas_teste$RMSE))
+      cat(sprintf("  - MAPE:  %.2f%%\n", resultados$teste$metricas_teste$MAPE))
+      cat(sprintf("  - R²:    %.4f\n", resultados$teste$metricas_teste$R2))
+      cat(sprintf("  - Tempo: %.4f segundos\n", resultados$teste$tempo))
     })
     
     output$tabela_metricas <- renderTable({
       req(resultados$validacao)
-      rbind(
-        data.frame(Fase = "Validação", resultados$validacao$metricas_valida),
-        data.frame(Fase = "Teste", resultados$teste$metricas_teste)
+      data.frame(
+        "Fase" = c("Validação", "Teste"),
+        "MAE"  = sprintf("%.6f", c(resultados$validacao$metricas_valida$MAE, resultados$teste$metricas_teste$MAE)),
+        "RMSE" = sprintf("%.6f", c(resultados$validacao$metricas_valida$RMSE, resultados$teste$metricas_teste$RMSE)),
+        "MAPE %" = sprintf("%.2f%%", c(resultados$validacao$metricas_valida$MAPE, resultados$teste$metricas_teste$MAPE)),
+        "R²"   = sprintf("%.4f", c(resultados$validacao$metricas_valida$R2, resultados$teste$metricas_teste$R2)),
+        "Tempo (s)" = sprintf("%.4f", c(resultados$validacao$tempo, resultados$teste$tempo)),
+        check.names = FALSE,
+        stringsAsFactors = FALSE
       )
-    }, digits = 6)
+    })
     
     output$grafico_validacao <- renderPlot({
       req(resultados$validacao)
@@ -580,12 +599,17 @@ esn_server <- function(id, dados_reativo) {
       real <- ds$treino_valida[(ds$idx$treino_n + 1):(ds$idx$treino_n + ds$idx$valida_n)]
       prev <- resultados$validacao$previsao_valida
       
-      plot(real, type = 'l', col = '#2ecc71', lwd = 2,
-           ylab = "Preço (R$)", xlab = "Tempo (dias)",
-           main = "ESN — Validação: Real vs Previsto")
-      lines(prev, col = '#e74c3c', lwd = 1.5)
-      legend('topright', legend = c('Série Real', 'ESN Previsto'),
-             col = c('#2ecc71', '#e74c3c'), lty = 1, lwd = c(2, 1.5), bty = 'n')
+      par(mar = c(3.5, 4, 2, 1), bg = "transparent")
+      plot(real, type = 'l', col = '#0f172a', lwd = 2,
+           ylab = "Preço PETR4 (R$)", xlab = "Dias",
+           main = "ESN — Previsão na Fase de Validação", axes = FALSE, col.main = "#0f172a")
+      axis(1, col = "#cbd5e1", col.axis = "#475569")
+      axis(2, col = "#cbd5e1", col.axis = "#475569")
+      grid(col = "#e2e8f0", lty = "dotted")
+      
+      lines(prev, col = '#059669', lwd = 1.8)
+      legend('topright', legend = c('Série Real', 'ESN Prevista'),
+             col = c('#0f172a', '#059669'), lty = 1, lwd = c(2, 1.8), bty = 'n', text.col = '#0f172a')
     })
     
     output$grafico_teste <- renderPlot({
@@ -595,12 +619,17 @@ esn_server <- function(id, dados_reativo) {
       real <- ds$treina_testa[(ds$idx$treino_n + 1):(ds$idx$treino_n + ds$idx$teste_n)]
       prev <- resultados$teste$previsao_teste
       
-      plot(real, type = 'l', col = '#2ecc71', lwd = 2,
-           ylab = "Preço (R$)", xlab = "Tempo (dias)",
-           main = "ESN — Teste: Real vs Previsto")
-      lines(prev, col = '#e74c3c', lwd = 1.5)
-      legend('topright', legend = c('Série Real', 'ESN Previsto'),
-             col = c('#2ecc71', '#e74c3c'), lty = 1, lwd = c(2, 1.5), bty = 'n')
+      par(mar = c(3.5, 4, 2, 1), bg = "transparent")
+      plot(real, type = 'l', col = '#0f172a', lwd = 2,
+           ylab = "Preço PETR4 (R$)", xlab = "Dias",
+           main = "ESN — Previsão na Fase de Teste", axes = FALSE, col.main = "#0f172a")
+      axis(1, col = "#cbd5e1", col.axis = "#475569")
+      axis(2, col = "#cbd5e1", col.axis = "#475569")
+      grid(col = "#e2e8f0", lty = "dotted")
+      
+      lines(prev, col = '#059669', lwd = 1.8)
+      legend('topright', legend = c('Série Real', 'ESN Prevista'),
+             col = c('#0f172a', '#059669'), lty = 1, lwd = c(2, 1.8), bty = 'n', text.col = '#0f172a')
     })
     
     # Retornar métricas para comparação
