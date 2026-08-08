@@ -1,148 +1,103 @@
-======================================================================
+# 📊 Resultados de Validação e Teste — ESN PETR4 (TCC Maycon G Silva)
+
+**Relatório Gerado em:** `2026-06-23 15:35:18`  
+**Série Temporal:** PETR4 (Preços de Fechamento com Fator 2000–2020)  
+**Particionamento:** Treino (50% — ~2.600 obs), Validação (25% — ~1.299 obs), Teste Out-of-Sample (25% — ~1.299 obs)
+
+---
+
+## 📌 Definições das Métricas e Hiperparâmetros
+
+### Métricas Avaliadas:
+* **MAE (Mean Absolute Error)**: $\text{MAE} = \frac{1}{N} \sum_{t=1}^{N} |y_t - \hat{y}_t|$
+* **RMSE (Root Mean Squared Error)**: $\text{RMSE} = \sqrt{\frac{1}{N} \sum_{t=1}^{N} (y_t - \hat{y}_t)^2}$
+
+### Hiperparâmetros Otimizados pelo Algoritmo Genético (GA):
+* $a$ (**Leaking Rate / Taxa de Vazão**): Define a inércia do reservatório $[0.01, 1.00]$.
+* $sr$ (**Spectral Radius / Raio Espectral**): Escala os autovalores da matriz $W$ $[0.01, 0.99]$.
+* $initLen$ (**Período de Lavagem**): Número de passos iniciais descartados para eliminar estados transientes $[1, 200]$.
+* $tam\_reservoir$ (**Tamanho do Reservatório**): Número de neurônios da camada oculta $[3, 50]$.
+* $reg$ (**Regularização Ridge**): Penalização na regressão de saída $W_{out}$.
+
+---
+
+## 📋 Tabela Comparativa dos 12 Cenários
+
+| Run | Distribuição $W_{in}$ | Distribuição $W$ | MAE (Validação) | RMSE (Validação) | MAE (Teste) | RMSE (Teste) |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | Normal | Normal | 0,262989 | 0,354089 | 0,327753 | 0,498237 |
+| 2 | Normal | Normal | 0,262678 | 0,353766 | 0,329319 | 0,500719 |
+| **3** | **Normal** | **Normal** | **0,262530** | **0,353380** | 🥇 **0,327472** | **0,499604** |
+| 1 | Uniforme | Uniforme | 0,262587 | 0,354005 | 0,329109 | 0,500850 |
+| 2 | Uniforme | Uniforme | 0,262754 | 0,353715 | 0,327522 | 0,498210 |
+| **3** | **Uniforme** | **Uniforme** | **0,263092** | **0,354226** | **0,328366** | 🥇 **0,497529** |
+| 1 | GED | Uniforme | 0,262616 | 0,353289 | 0,328019 | 0,498720 |
+| **2** | **GED** | **Uniforme** | 🎯 **0,262317** | 🎯 **0,352963** | **0,328367** | **0,498909** |
+| 3 | GED | Uniforme | 0,262679 | 0,353419 | 0,327917 | 0,498610 |
+| 1 | GED | Normal | 0,262636 | 0,353440 | 0,327816 | 0,498587 |
+| **2** | **GED** | **Normal** | ⚡ **0,262599** | **0,353327** | **0,327953** | **0,498714** |
+| 3 | GED | Normal | 0,262567 | 0,353550 | 0,328017 | 0,498591 |
+
+---
+
+## 🏆 Cenários Destaques
+
+### 🥇 1. MELHOR CENÁRIO DE TESTE (Menor MAE de Teste)
+- **Cenário:** `Run 3 | Win Normal | W Normal`
+- **Época GA:** `2754`
+- **Hiperparâmetros Ótimos:**
+  - $a = 0{,}768843$
+  - $sr = 0{,}682584$
+  - $initLen = 98$
+  - $tam\_reservoir = 3$
+  - $reg = 9{,}455393 \times 10^{-5}$
+- **Resultados:**
+  - **MAE Validação:** `0.262530` | **RMSE Validação:** `0.353380`
+  - **MAE Teste:** `0.327472` | **RMSE Teste:** `0.499604`
+
+---
+
+### 🥇 2. MELHOR CENÁRIO DE TESTE (Menor RMSE de Teste)
+- **Cenário:** `Run 3 | Win Uniforme | W Uniforme`
+- **Época GA:** `3658`
+- **Hiperparâmetros Ótimos:**
+  - $a = 0{,}879409$
+  - $sr = 0{,}427593$
+  - $initLen = 112$
+  - $tam\_reservoir = 27$
+  - $reg = 1{,}531518 \times 10^{-5}$
+- **Resultados:**
+  - **MAE Validação:** `0.263092` | **RMSE Validação:** `0.354226`
+  - **MAE Teste:** `0.328366` | **RMSE Teste:** `0.497529`
+
+---
+
+### 🎯 3. MELHOR CENÁRIO DE VALIDAÇÃO (Menor MAE de Validação)
+- **Cenário:** `Run 2 | Win GED | W Uniforme`
+- **Época GA:** `2000`
+- **Hiperparâmetros Ótimos:**
+  - $a = 0{,}379504$
+  - $sr = 0{,}128549$
+  - $initLen = 67$
+  - $tam\_reservoir = 22$
+  - $reg = 4{,}883182 \times 10^{-5}$
+- **Resultados:**
+  - **MAE Validação:** `0.262317` | **RMSE Validação:** `0.352963`
+  - **MAE Teste:** `0.328367` | **RMSE Teste:** `0.498909`
+
+---
+
+### ⚡ 4. CENÁRIO SELECIONADO PELO GA (Melhor Fitness GA)
+- **Cenário:** `Run 2 | Win GED | W Normal`
+- **Fitness GA:** `-0.237537`
+- **Época GA:** `117`
+- **Hiperparâmetros Ótimos:**
+  - $a = 0{,}870902$
+  - $sr = 0{,}406802$
+  - $initLen = 9$
+  - $tam\_reservoir = 27$
+  - $reg = 2{,}228974 \times 10^{-5}$
+- **Resultados:**
+  - **MAE Validação:** `0.262599` | **RMSE Validação:** `0.353327`
+  - **MAE Teste:** `0.327953` | **RMSE Teste:** `0.498714`
 
-         RESULTADOS ESN — PETR4 TCC Maycon G Silva
-
-         Relatório Gerado em: 2026-06-23 15:35:18
-
-======================================================================
-
-
-
---- TABELA COMPARATIVA DOS 12 CENÁRIOS ---
-
-As métricas a seguir foram obtidas avaliando as matrizes ótimas nas partições de validação e teste.
-
-
-
-| Run | Distribuição Win | Distribuição W | MAE (Validação) | RMSE (Validação) | MAE (Teste) | RMSE (Teste) |
-|-----|------------------|----------------|-----------------|------------------|-------------|--------------|
-| 1   | Normal           | Normal         | 0.26298873220676 | 0.354088606915066 | 0.327753399193782 | 0.498237427328656 |
-| 2   | Normal           | Normal         | 0.262678302532645 | 0.353765616019076 | 0.329318704574647 | 0.500718938900147 |
-| 3   | **Normal**       | **Normal**     | 0.262529668011459 | 0.353379918120715 | **0.32747163804535** | 0.499603898525658 |
-| 1   | Uniforme         | Uniforme       | 0.262586953584626 | 0.354004961529989 | 0.329109120279466 | 0.500849569983114 |
-| 2   | Uniforme         | Uniforme       | 0.262753663898188 | 0.353714883823454 | 0.327522328236599 | 0.4982098735005 |
-| 3   | **Uniforme**     | **Uniforme**   | 0.263092483529666 | 0.354225626770399 | 0.328366437256995 | **0.497529311770955** |
-| 1   | GED              | Uniforme       | 0.26261574814034 | 0.353288931617119 | 0.328018562317869 | 0.498720218133032 |
-| 2   | **GED**          | **Uniforme**   | **0.26231708772512** | **0.352963273425167** | 0.328367458657593 | 0.498908502774209 |
-| 3   | GED              | Uniforme       | 0.262678971836972 | 0.353419288563406 | 0.327916872697785 | 0.498609863631295 |
-| 1   | GED              | Normal         | 0.262635666150002 | 0.353439536353175 | 0.32781558770127 | 0.498586604675989 |
-| 2   | GED              | Normal         | 0.262598655973632 | 0.35332729097702 | 0.327952966786408 | 0.498713551346167 |
-| 3   | GED              | Normal         | 0.262566799856984 | 0.353549791926368 | 0.328016989055505 | 0.498591012328835 |
-
-
---- MELHOR CENÁRIO DE TESTE (Menor MAE de Teste) ---
-
-Cenário:      Run 3 | Win Normal | W Normal
-
-Época GA:     2754
-
-Hiperparâmetros:
-
-  a             = 0.768842840903022
-
-  sr            = 0.682584248231874
-
-  initLen       = 98
-
-  tam_reservoir = 3
-
-  reg           = 9.45539313111546e-05
-
-Resultados:
-
-  MAE  Validação = 0.262529668011459
-
-  RMSE Validação = 0.353379918120715
-
-  MAE  Teste     = 0.32747163804535
-
-  RMSE Teste     = 0.499603898525658
-
-
---- MELHOR CENÁRIO DE TESTE (Menor RMSE de Teste) ---
-
-Cenário:      Run 3 | Win Uniforme | W Uniforme
-
-Época GA:     3658
-
-Hiperparâmetros:
-
-  a             = 0.879408870001755
-
-  sr            = 0.427592678777151
-
-  initLen       = 112
-
-  tam_reservoir = 27
-
-  reg           = 1.53151837573386e-05
-
-Resultados:
-
-  MAE  Validação = 0.263092483529666
-
-  RMSE Validação = 0.354225626770399
-
-  MAE  Teste     = 0.328366437256995
-
-  RMSE Teste     = 0.497529311770955
-
-
---- MELHOR CENÁRIO DE VALIDAÇÃO (Menor MAE de Validação) ---
-
-Cenário:      Run 2 | Win GED | W Uniforme
-
-Época GA:     2000
-
-Hiperparâmetros:
-
-  a             = 0.379504238160997
-
-  sr            = 0.128548649205392
-
-  initLen       = 67
-
-  tam_reservoir = 22
-
-  reg           = 4.88318178082192e-05
-
-Resultados:
-
-  MAE  Validação = 0.26231708772512
-
-  RMSE Validação = 0.352963273425167
-
-  MAE  Teste     = 0.328367458657593
-
-  RMSE Teste     = 0.498908502774209
-
-
---- CENÁRIO SELECIONADO PELO GA (Melhor Fitness) ---
-
-Cenário:      Run 2 | Win GED | W Normal
-
-Fitness GA:   -0.23753732723132
-
-Época GA:     117
-
-Hiperparâmetros:
-
-  a             = 0.870902030197374
-
-  sr            = 0.406802420062409
-
-  initLen       = 9
-
-  tam_reservoir = 27
-
-  reg           = 2.2289743444227e-05
-
-Resultados:
-
-  MAE  Validação = 0.262598655973632
-
-  RMSE Validação = 0.35332729097702
-
-  MAE  Teste     = 0.327952966786408
-
-  RMSE Teste     = 0.498713551346167
