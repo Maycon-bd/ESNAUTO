@@ -7,6 +7,146 @@ source("utils/data_prep.R", local = TRUE)
 source("utils/metrics.R", local = TRUE)
 
 # =============================================================================
+# FUNÇÃO CENTRAL DE TREINAMENTO LSTM (reutilizável)
+# =============================================================================
+
+treinar_modelo_lstm <- function(dados, units = 50, timesteps = 10, dropout = 0.2,
+                                epochs = 50, batch_size = 16, optimizer = "adam",
+                                segunda_camada = FALSE, units2 = 25,
+                                set_progress = NULL) {
+  if (!requireNamespace("keras3", quietly = TRUE)) {
+    stop("Pacote 'keras3' não instalado. Instale com install.packages('keras3') e keras3::install_keras()")
+  }
+  
+  library(keras3)
+  
+  if (is.function(set_progress)) set_progress(0.1, "Preparando dados para LSTM...")
+  
+  treino_n <- 2600
+  valida_n <- 1299
+  teste_n <- 1299
+  batch_size <- as.integer(batch_size)
+  
+  # Normalizar usando apenas treino
+  treino_raw <- dados[1:treino_n]
+  min_val <- min(treino_raw)
+  max_val <- max(treino_raw)
+  
+  dados_norm <- (dados - min_val) / (max_val - min_val)
+  
+  # --- Dados de Treino + Validação ---
+  treino_valida_norm <- dados_norm[1:(treino_n + valida_n)]
+  n_tv <- length(treino_valida_norm)
+  n_janelas_tv <- n_tv - timesteps
+  
+  X_tv <- array(0, dim = c(n_janelas_tv, timesteps, 1))
+  y_tv <- numeric(n_janelas_tv)
+  for (i in 1:n_janelas_tv) {
+    X_tv[i, , 1] <- treino_valida_norm[i:(i + timesteps - 1)]
+    y_tv[i] <- treino_valida_norm[i + timesteps]
+  }
+  
+  n_treino_j <- treino_n - timesteps
+  X_treino <- X_tv[1:n_treino_j, , , drop = FALSE]
+  y_treino <- y_tv[1:n_treino_j]
+  
+  X_valida <- X_tv[(n_treino_j + 1):n_janelas_tv, , , drop = FALSE]
+  y_valida <- y_tv[(n_treino_j + 1):n_janelas_tv]
+  
+  # --- Dados de Treino + Teste (pulando validação) ---
+  treina_testa_norm <- c(dados_norm[1:treino_n], 
+                         dados_norm[(treino_n + valida_n + 1):(treino_n + valida_n + teste_n)])
+  n_tt <- length(treina_testa_norm)
+  n_janelas_tt <- n_tt - timesteps
+  
+  X_tt <- array(0, dim = c(n_janelas_tt, timesteps, 1))
+  y_tt <- numeric(n_janelas_tt)
+  for (i in 1:n_janelas_tt) {
+    X_tt[i, , 1] <- treina_testa_norm[i:(i + timesteps - 1)]
+    y_tt[i] <- treina_testa_norm[i + timesteps]
+  }
+  
+  idx_teste_inicio <- n_treino_j + 1
+  X_teste <- X_tt[idx_teste_inicio:n_janelas_tt, , , drop = FALSE]
+  y_teste <- y_tt[idx_teste_inicio:n_janelas_tt]
+  
+  # Construir modelo
+  if (is.function(set_progress)) set_progress(0.2, "Construindo arquitetura LSTM...")
+  
+  model <- keras_model_sequential()
+  if (segunda_camada) {
+    model %>%
+      layer_lstm(units = units, input_shape = c(timesteps, 1), return_sequences = TRUE) %>%
+      layer_dropout(rate = dropout) %>%
+      layer_lstm(units = units2, return_sequences = FALSE) %>%
+      layer_dropout(rate = dropout) %>%
+      layer_dense(units = 1)
+  } else {
+    model %>%
+      layer_lstm(units = units, input_shape = c(timesteps, 1), return_sequences = FALSE) %>%
+      layer_dropout(rate = dropout) %>%
+      layer_dense(units = 1)
+  }
+  
+  model %>% compile(loss = 'mean_squared_error', optimizer = optimizer)
+  
+  callbacks_list <- list()
+  if (is.function(set_progress)) {
+    set_progress(0.05, "Iniciando treinamento da rede LSTM...")
+    cb_prog <- callback_lambda(
+      on_epoch_end = function(epoch, logs) {
+        pct <- (epoch + 1) / epochs
+        loss_val <- if (!is.null(logs$val_loss)) logs$val_loss else logs$loss
+        set_progress(pct, sprintf("Época %d/%d (%.0f%%) — Loss: %.5f", epoch + 1, epochs, pct * 100, loss_val))
+      }
+    )
+    callbacks_list <- list(cb_prog)
+  }
+  
+  t_inicio <- proc.time()
+  
+  historico <- model %>% fit(
+    X_treino, y_treino,
+    epochs = epochs,
+    batch_size = batch_size,
+    validation_data = list(X_valida, y_valida),
+    callbacks = callbacks_list,
+    verbose = 0
+  )
+  
+  t_fim <- proc.time()
+  tempo_total <- (t_fim - t_inicio)["elapsed"]
+  
+  # Previsões
+  if (is.function(set_progress)) set_progress(0.95, "Gerando previsões e métricas out-of-sample...")
+  
+  pred_valida_norm <- as.numeric(predict(model, X_valida, verbose = 0))
+  pred_valida <- pred_valida_norm * (max_val - min_val) + min_val
+  real_valida <- y_valida * (max_val - min_val) + min_val
+  
+  pred_teste_norm <- as.numeric(predict(model, X_teste, verbose = 0))
+  pred_teste <- pred_teste_norm * (max_val - min_val) + min_val
+  real_teste <- y_teste * (max_val - min_val) + min_val
+  
+  metricas_valida <- calcular_todas_metricas(real_valida, pred_valida, tempo_total)
+  metricas_teste <- calcular_todas_metricas(real_teste, pred_teste, tempo_total)
+  
+  list(
+    modelo = "LSTM",
+    validacao = list(real = real_valida, previsto = pred_valida, metricas = metricas_valida),
+    teste = list(real = real_teste, previsto = pred_teste, metricas = metricas_teste),
+    historico = historico,
+    tempo = tempo_total,
+    metricas = list(
+      modelo = "LSTM",
+      validacao = metricas_valida,
+      teste = metricas_teste,
+      tempo = tempo_total
+    )
+  )
+}
+
+# =============================================================================
 # UI SHINY DO MÓDULO LSTM
 # =============================================================================
 
@@ -48,7 +188,7 @@ lstm_ui <- function(id) {
           hr(),
           actionButton(ns("btn_rodar"), "🚀 Treinar Modelo LSTM", 
                        class = "btn-primary btn-block",
-                       style = "width:100%; height: 46px;")
+                       style = "width:100%; height: 52px; font-size: 1.05rem; font-weight: 800; border-radius: 12px;")
         )
       ),
       column(8,
@@ -84,7 +224,7 @@ lstm_ui <- function(id) {
 # SERVER SHINY DO MÓDULO LSTM
 # =============================================================================
 
-lstm_server <- function(id, dados_reativo) {
+lstm_server <- function(id, dados_reativo, resultados_externos = NULL) {
   moduleServer(id, function(input, output, session) {
     ns <- session$ns
     
@@ -92,167 +232,53 @@ lstm_server <- function(id, dados_reativo) {
       validacao = NULL,
       teste = NULL,
       metricas = NULL,
-      historico = NULL
+      historico = NULL,
+      tempo = 0
     )
+    
+    # Sincronizar caso receba execução de um botão universal externo
+    if (!is.null(resultados_externos)) {
+      observe({
+        res <- resultados_externos()
+        req(res)
+        if (identical(res$modelo, "LSTM")) {
+          resultados$validacao <- res$validacao
+          resultados$teste <- res$teste
+          resultados$historico <- res$historico
+          resultados$tempo <- res$tempo
+          resultados$metricas <- res$metricas
+        }
+      })
+    }
     
     observeEvent(input$btn_rodar, {
       req(dados_reativo())
       
-      # Verificar se keras3 está disponível
       if (!requireNamespace("keras3", quietly = TRUE)) {
         showNotification("❌ Pacote 'keras3' não instalado. Instale com install.packages('keras3') e keras3::install_keras()", 
                          type = "error", duration = 10)
         return()
       }
       
-      library(keras3)
-      
       withProgress(message = "Treinando LSTM...", value = 0, {
-        dados <- dados_reativo()
-        timesteps <- input$timesteps
-        batch_size <- as.integer(input$batch_size)
-        
-        # =============================================
-        # Preparar dados para LSTM
-        # =============================================
-        setProgress(0.1, detail = "Preparando dados...")
-        
-        treino_n <- 2600
-        valida_n <- 1299
-        teste_n <- 1299
-        
-        # Normalizar usando apenas treino
-        treino_raw <- dados[1:treino_n]
-        min_val <- min(treino_raw)
-        max_val <- max(treino_raw)
-        
-        dados_norm <- (dados - min_val) / (max_val - min_val)
-        
-        # --- Dados de Treino + Validação ---
-        treino_valida_norm <- dados_norm[1:(treino_n + valida_n)]
-        
-        n_tv <- length(treino_valida_norm)
-        n_janelas_tv <- n_tv - timesteps
-        
-        X_tv <- array(0, dim = c(n_janelas_tv, timesteps, 1))
-        y_tv <- numeric(n_janelas_tv)
-        for (i in 1:n_janelas_tv) {
-          X_tv[i, , 1] <- treino_valida_norm[i:(i + timesteps - 1)]
-          y_tv[i] <- treino_valida_norm[i + timesteps]
-        }
-        
-        # Separar treino e validação
-        n_treino_j <- treino_n - timesteps
-        
-        X_treino <- X_tv[1:n_treino_j, , , drop = FALSE]
-        y_treino <- y_tv[1:n_treino_j]
-        
-        X_valida <- X_tv[(n_treino_j + 1):n_janelas_tv, , , drop = FALSE]
-        y_valida <- y_tv[(n_treino_j + 1):n_janelas_tv]
-        
-        # --- Dados de Treino + Teste (pulando validação) ---
-        treina_testa_norm <- c(dados_norm[1:treino_n], 
-                               dados_norm[(treino_n + valida_n + 1):(treino_n + valida_n + teste_n)])
-        n_tt <- length(treina_testa_norm)
-        n_janelas_tt <- n_tt - timesteps
-        
-        X_tt <- array(0, dim = c(n_janelas_tt, timesteps, 1))
-        y_tt <- numeric(n_janelas_tt)
-        for (i in 1:n_janelas_tt) {
-          X_tt[i, , 1] <- treina_testa_norm[i:(i + timesteps - 1)]
-          y_tt[i] <- treina_testa_norm[i + timesteps]
-        }
-        
-        # Janelas de teste começam após treino
-        idx_teste_inicio <- n_treino_j + 1
-        X_teste <- X_tt[idx_teste_inicio:n_janelas_tt, , , drop = FALSE]
-        y_teste <- y_tt[idx_teste_inicio:n_janelas_tt]
-        
-        # =============================================
-        # Construir modelo LSTM
-        # =============================================
-        setProgress(0.2, detail = "Construindo modelo...")
-        
-        model <- keras_model_sequential()
-        
-        if (input$segunda_camada) {
-          model %>%
-            layer_lstm(units = input$units, input_shape = c(timesteps, 1),
-                       return_sequences = TRUE) %>%
-            layer_dropout(rate = input$dropout) %>%
-            layer_lstm(units = input$units2, return_sequences = FALSE) %>%
-            layer_dropout(rate = input$dropout) %>%
-            layer_dense(units = 1)
-        } else {
-          model %>%
-            layer_lstm(units = input$units, input_shape = c(timesteps, 1),
-                       return_sequences = FALSE) %>%
-            layer_dropout(rate = input$dropout) %>%
-            layer_dense(units = 1)
-        }
-        
-        model %>% compile(
-          loss = 'mean_squared_error',
-          optimizer = input$optimizer
-        )
-        
-        # =============================================
-        # Treinar
-        # =============================================
-        setProgress(0.3, detail = "Treinando (pode demorar)...")
-        
-        t_inicio <- proc.time()
-        
-        historico <- model %>% fit(
-          X_treino, y_treino,
+        res <- treinar_modelo_lstm(
+          dados = dados_reativo(),
+          units = input$units,
+          timesteps = input$timesteps,
+          dropout = input$dropout,
           epochs = input$epochs,
-          batch_size = batch_size,
-          validation_data = list(X_valida, y_valida),
-          verbose = 0
+          batch_size = input$batch_size,
+          optimizer = input$optimizer,
+          segunda_camada = input$segunda_camada,
+          units2 = input$units2,
+          set_progress = function(val, msg) setProgress(val, detail = msg)
         )
         
-        t_fim <- proc.time()
-        tempo_total <- (t_fim - t_inicio)["elapsed"]
-        
-        # =============================================
-        # Previsões
-        # =============================================
-        setProgress(0.8, detail = "Gerando previsões...")
-        
-        # Validação
-        pred_valida_norm <- as.numeric(predict(model, X_valida, verbose = 0))
-        pred_valida <- pred_valida_norm * (max_val - min_val) + min_val
-        real_valida <- y_valida * (max_val - min_val) + min_val
-        
-        # Teste
-        pred_teste_norm <- as.numeric(predict(model, X_teste, verbose = 0))
-        pred_teste <- pred_teste_norm * (max_val - min_val) + min_val
-        real_teste <- y_teste * (max_val - min_val) + min_val
-        
-        # Métricas
-        metricas_valida <- calcular_todas_metricas(real_valida, pred_valida, tempo_total)
-        metricas_teste <- calcular_todas_metricas(real_teste, pred_teste, tempo_total)
-        
-        setProgress(0.95, detail = "Finalizando...")
-        
-        resultados$validacao <- list(
-          real = real_valida,
-          previsto = pred_valida,
-          metricas = metricas_valida
-        )
-        resultados$teste <- list(
-          real = real_teste,
-          previsto = pred_teste,
-          metricas = metricas_teste
-        )
-        resultados$historico <- historico
-        resultados$tempo <- tempo_total
-        resultados$metricas <- list(
-          modelo = "LSTM",
-          validacao = metricas_valida,
-          teste = metricas_teste,
-          tempo = tempo_total
-        )
+        resultados$validacao <- res$validacao
+        resultados$teste <- res$teste
+        resultados$historico <- res$historico
+        resultados$tempo <- res$tempo
+        resultados$metricas <- res$metricas
       })
       
       showNotification("✅ LSTM treinado com sucesso!", type = "message")

@@ -1,8 +1,10 @@
 # =============================================================================
 # mod_comparacao.R — Módulo de Comparação ESN vs LSTM vs GRU (UI/UX Redesign)
+# Suporta Histórico Permanente de Otimizações do GA em CSV e Comparativo de Recordes
 # =============================================================================
 
 source("utils/metrics.R", local = TRUE)
+source("utils/history_tracker.R", local = TRUE)
 
 # =============================================================================
 # UI
@@ -16,7 +18,26 @@ comparacao_ui <- function(id) {
       column(12,
         div(class = "section-subtitle", "BENCHMARK DE MODELOS"),
         h3(class = "section-title", "⚖️ Comparação de Desempenho & Custo-Benefício"),
-        p(style = "color: var(--text-muted); margin-bottom: 24px;",
+        
+        # Universal Execution Banner
+        div(class = "well universal-benchmark-panel",
+          fluidRow(
+            column(8,
+              h4(style = "margin: 0 0 6px 0; color: #0f172a; font-weight: 800; display: flex; align-items: center; gap: 8px;",
+                 span(style = "font-size: 1.3rem;", "⚡"),
+                 "Execução Automatizada do Benchmark Completo"),
+              p(style = "margin: 0; color: #475569; font-size: 0.9rem;",
+                "Executa sequencialmente a ESN (com parâmetros ótimos ou GA live), a rede LSTM e a rede GRU sob a mesma partição (Treino: 2.600, Validação: 1.299, Teste: 1.299) e consolida todas as métricas e gráficos instantaneamente.")
+            ),
+            column(4, style = "text-align: right; display: flex; align-items: center; justify-content: flex-end;",
+              actionButton(ns("btn_executar_tudo_comp"), "🚀 Executar Todos os Modelos", 
+                           class = "btn-gradient-universal", 
+                           style = "min-height: 52px; padding: 12px 26px; font-weight: 800; font-size: 1.05rem; border-radius: 12px;")
+            )
+          )
+        ),
+        
+        p(style = "color: var(--text-muted); margin-bottom: 20px;",
           "Esta aba consolida as métricas dos modelos executados para provar a hipótese de eficiência computacional da ESN."),
         
         # Summary Model Cards Top Row
@@ -91,6 +112,23 @@ comparacao_ui <- function(id) {
         div(class = "well", style = "border-left: 6px solid #059669; background: #f0fdf4;",
           h4(style = "margin-top:0; color: #047857;", "🏆 Análise de Custo-Benefício Computacional"),
           uiOutput(ns("conclusao"))
+        ),
+        
+        hr(),
+        
+        # Historical GA CSV Table
+        div(class = "well",
+          div(style = "display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;",
+            h4(style = "margin: 0; font-weight: 800;", "📜 Histórico Permanente de Otimizações do GA (CSV)"),
+            actionButton(ns("btn_atualizar_historico_comp"), "🔄 Atualizar Histórico", class = "btn-default", style = "font-size: 0.85rem;")
+          ),
+          p(style = "color: var(--text-muted); font-size: 0.9rem;", 
+            "Histórico completo de todas as execuções do Algoritmo Genético salvas em ", 
+            tags$code("historico_otimizacoes_ga.csv"), 
+            ", comparando os recordes e a evolução dos hiperparâmetros."),
+          div(style = "overflow-x: auto; max-height: 380px;",
+            tableOutput(ns("tabela_historico_comp"))
+          )
         )
       )
     )
@@ -101,9 +139,15 @@ comparacao_ui <- function(id) {
 # SERVER
 # =============================================================================
 
-comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
+comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru, on_executar_tudo = NULL) {
   moduleServer(id, function(input, output, session) {
     ns <- session$ns
+    
+    observeEvent(input$btn_executar_tudo_comp, {
+      if (is.function(on_executar_tudo)) {
+        on_executar_tudo()
+      }
+    })
     
     # Cards de resumo
     output$card_esn <- renderUI({
@@ -120,8 +164,13 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
           span(style = "font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;", "RMSE Teste: "),
           span(style = "font-family: var(--font-mono); font-size: 1rem; font-weight: 600;", sprintf("%.4f", m$teste$RMSE))
         ),
-        div(style = "margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--text-secondary);",
-          sprintf("⏱️ Tempo de treino: %.3f seg", m$tempo)
+        div(style = "margin-bottom: 6px;",
+          span(style = "font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;", "R² Teste: "),
+          span(style = "font-family: var(--font-mono); font-size: 1rem; font-weight: 600;", sprintf("%.4f", m$teste$R2))
+        ),
+        div(
+          span(style = "font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;", "Tempo Treino: "),
+          span(style = "font-family: var(--font-mono); font-size: 1.1rem; font-weight: 700; color: var(--esn-color);", sprintf("%.3f s", m$tempo))
         )
       )
     })
@@ -129,7 +178,7 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
     output$card_lstm <- renderUI({
       m <- metricas_lstm()
       if (is.null(m)) {
-        return(div(style = "color: var(--text-muted); font-size: 0.9rem; padding: 10px 0;", "⏳ Modelo ainda não foi executado. Vá na aba LSTM e clique em Treinar."))
+        return(div(style = "color: var(--text-muted); font-size: 0.9rem; padding: 10px 0;", "⏳ Modelo ainda não foi executado. Vá na aba LSTM e clique em Rodar."))
       }
       tagList(
         div(style = "margin-bottom: 6px;",
@@ -140,8 +189,13 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
           span(style = "font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;", "RMSE Teste: "),
           span(style = "font-family: var(--font-mono); font-size: 1rem; font-weight: 600;", sprintf("%.4f", m$teste$RMSE))
         ),
-        div(style = "margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--text-secondary);",
-          sprintf("⏱️ Tempo de treino: %.2f seg", m$tempo)
+        div(style = "margin-bottom: 6px;",
+          span(style = "font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;", "R² Teste: "),
+          span(style = "font-family: var(--font-mono); font-size: 1rem; font-weight: 600;", sprintf("%.4f", m$teste$R2))
+        ),
+        div(
+          span(style = "font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;", "Tempo Treino: "),
+          span(style = "font-family: var(--font-mono); font-size: 1.1rem; font-weight: 700; color: var(--lstm-color);", sprintf("%.3f s", m$tempo))
         )
       )
     })
@@ -149,7 +203,7 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
     output$card_gru <- renderUI({
       m <- metricas_gru()
       if (is.null(m)) {
-        return(div(style = "color: var(--text-muted); font-size: 0.9rem; padding: 10px 0;", "⏳ Modelo ainda não foi executado. Vá na aba GRU e clique em Treinar."))
+        return(div(style = "color: var(--text-muted); font-size: 0.9rem; padding: 10px 0;", "⏳ Modelo ainda não foi executado. Vá na aba GRU e clique em Rodar."))
       }
       tagList(
         div(style = "margin-bottom: 6px;",
@@ -160,13 +214,18 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
           span(style = "font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;", "RMSE Teste: "),
           span(style = "font-family: var(--font-mono); font-size: 1rem; font-weight: 600;", sprintf("%.4f", m$teste$RMSE))
         ),
-        div(style = "margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--text-secondary);",
-          sprintf("⏱️ Tempo de treino: %.2f seg", m$tempo)
+        div(style = "margin-bottom: 6px;",
+          span(style = "font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;", "R² Teste: "),
+          span(style = "font-family: var(--font-mono); font-size: 1rem; font-weight: 600;", sprintf("%.4f", m$teste$R2))
+        ),
+        div(
+          span(style = "font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;", "Tempo Treino: "),
+          span(style = "font-family: var(--font-mono); font-size: 1.1rem; font-weight: 700; color: var(--gru-color);", sprintf("%.3f s", m$tempo))
         )
       )
     })
     
-    # Tabela Validação
+    # Tabelas
     output$tabela_validacao <- renderTable({
       modelos <- list(
         ESN  = metricas_esn(),
@@ -174,9 +233,12 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
         GRU  = metricas_gru()
       )
       modelos <- modelos[!sapply(modelos, is.null)]
-      if (length(modelos) == 0) return(data.frame(Status = "Nenhum modelo foi executado ainda."))
       
-      do.call(rbind, lapply(names(modelos), function(nome) {
+      if (length(modelos) == 0) {
+        return(data.frame(Mensagem = "Nenhum modelo executado ainda."))
+      }
+      
+      df <- do.call(rbind, lapply(names(modelos), function(nome) {
         m <- modelos[[nome]]
         data.frame(
           "Modelo" = nome,
@@ -184,14 +246,12 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
           "RMSE"   = sprintf("%.6f", m$validacao$RMSE),
           "MAPE %" = sprintf("%.2f%%", m$validacao$MAPE),
           "R²"     = sprintf("%.4f", m$validacao$R2),
-          "Tempo (s)" = sprintf("%.3f", m$tempo),
-          check.names = FALSE,
           stringsAsFactors = FALSE
         )
       }))
+      df
     })
     
-    # Tabela Teste
     output$tabela_teste <- renderTable({
       modelos <- list(
         ESN  = metricas_esn(),
@@ -199,9 +259,12 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
         GRU  = metricas_gru()
       )
       modelos <- modelos[!sapply(modelos, is.null)]
-      if (length(modelos) == 0) return(data.frame(Status = "Nenhum modelo foi executado ainda."))
       
-      do.call(rbind, lapply(names(modelos), function(nome) {
+      if (length(modelos) == 0) {
+        return(data.frame(Mensagem = "Nenhum modelo executado ainda."))
+      }
+      
+      df <- do.call(rbind, lapply(names(modelos), function(nome) {
         m <- modelos[[nome]]
         data.frame(
           "Modelo" = nome,
@@ -210,13 +273,13 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
           "MAPE %" = sprintf("%.2f%%", m$teste$MAPE),
           "R²"     = sprintf("%.4f", m$teste$R2),
           "Tempo (s)" = sprintf("%.3f", m$tempo),
-          check.names = FALSE,
           stringsAsFactors = FALSE
         )
       }))
+      df
     })
     
-    # Gráfico de barras (MAE & RMSE)
+    # Gráficos
     output$grafico_barras <- renderPlot({
       modelos <- list(
         ESN  = metricas_esn(),
@@ -224,36 +287,25 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
         GRU  = metricas_gru()
       )
       modelos <- modelos[!sapply(modelos, is.null)]
-      if (length(modelos) < 2) {
-        par(bg = "transparent")
-        plot.new()
-        text(0.5, 0.5, "Execute pelo menos 2 modelos para gerar os gráficos comparativos.", 
-             cex = 1.1, col = "#64748b", font = 2)
-        return()
-      }
+      
+      if (length(modelos) == 0) return(NULL)
       
       nomes <- names(modelos)
-      cores <- c(ESN = "#059669", LSTM = "#2563eb", GRU = "#7c3aed")
-      
-      mae_vals  <- sapply(modelos, function(m) m$teste$MAE)
+      mae_vals <- sapply(modelos, function(m) m$teste$MAE)
       rmse_vals <- sapply(modelos, function(m) m$teste$RMSE)
       
-      par(mfrow = c(1, 2), mar = c(4, 4, 3, 1), bg = "transparent")
+      dados_mat <- rbind(MAE = mae_vals, RMSE = rmse_vals)
       
-      bp1 <- barplot(mae_vals, col = cores[nomes], main = "MAE no Teste",
-                     ylab = "Erro Absoluto Médio", border = NA, ylim = c(0, max(mae_vals) * 1.25),
-                     col.main = "#0f172a")
+      par(mar = c(3.5, 4, 3, 1), bg = "transparent")
+      bp <- barplot(dados_mat, beside = TRUE, col = c("#4f46e5", "#06b6d4"),
+                    main = "Comparação no Teste (Out-of-sample)",
+                    ylab = "Erro (R$)", border = NA, ylim = c(0, max(dados_mat) * 1.3),
+                    col.main = "#0f172a")
       grid(col = "#e2e8f0", nx = NA, ny = NULL)
-      text(bp1, mae_vals, labels = sprintf("%.4f", mae_vals), pos = 3, cex = 0.9, font = 2, col = "#0f172a")
-      
-      bp2 <- barplot(rmse_vals, col = cores[nomes], main = "RMSE no Teste",
-                     ylab = "Raiz do Erro Quadrático", border = NA, ylim = c(0, max(rmse_vals) * 1.25),
-                     col.main = "#0f172a")
-      grid(col = "#e2e8f0", nx = NA, ny = NULL)
-      text(bp2, rmse_vals, labels = sprintf("%.4f", rmse_vals), pos = 3, cex = 0.9, font = 2, col = "#0f172a")
+      legend("topright", legend = c("MAE", "RMSE"), fill = c("#4f46e5", "#06b6d4"), bty = "n", border = NA)
+      text(bp, dados_mat, labels = sprintf("%.4f", dados_mat), pos = 3, cex = 0.85, font = 2, col = "#0f172a")
     })
     
-    # Gráfico de tempo
     output$grafico_tempo <- renderPlot({
       modelos <- list(
         ESN  = metricas_esn(),
@@ -261,17 +313,12 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
         GRU  = metricas_gru()
       )
       modelos <- modelos[!sapply(modelos, is.null)]
-      if (length(modelos) < 2) {
-        par(bg = "transparent")
-        plot.new()
-        text(0.5, 0.5, "Execute pelo menos 2 modelos para comparar o tempo.", 
-             cex = 1.1, col = "#64748b", font = 2)
-        return()
-      }
+      
+      if (length(modelos) == 0) return(NULL)
       
       nomes <- names(modelos)
-      cores <- c(ESN = "#059669", LSTM = "#2563eb", GRU = "#7c3aed")
       tempos <- sapply(modelos, function(m) m$tempo)
+      cores <- c(ESN = "#059669", LSTM = "#2563eb", GRU = "#7c3aed")
       
       par(mar = c(4, 4, 3, 1), bg = "transparent")
       bp <- barplot(tempos, col = cores[nomes], main = "Tempo de Execução (Segundos)",
@@ -280,7 +327,7 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
       grid(col = "#e2e8f0", nx = NA, ny = NULL)
       text(bp, tempos, labels = paste0(sprintf("%.2f", tempos), "s"), pos = 3, cex = 1, font = 2, col = "#0f172a")
       
-      if ("ESN" %in% nomes && tempos["ESN"] > 0) {
+      if ("ESN" %in% nomes && !is.na(tempos["ESN"]) && tempos["ESN"] > 0) {
         razoes <- tempos / tempos["ESN"]
         mtext(paste0(nomes, ": ", round(razoes, 1), "x"), side = 1, line = 2.5, 
               at = bp, cex = 0.9, font = 2, col = cores[nomes])
@@ -345,6 +392,28 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru) {
           }
         )
       )
+    })
+    
+    # Tabela do Histórico CSV
+    historico_reativo <- reactiveVal(carregar_historico_ga())
+    
+    observeEvent(input$btn_atualizar_historico_comp, {
+      historico_reativo(carregar_historico_ga())
+    })
+    
+    output$tabela_historico_comp <- renderTable({
+      df <- historico_reativo()
+      if (nrow(df) == 0) {
+        return(data.frame(Mensagem = "Nenhuma otimização registrada ainda. Execute o GA Live para gravar no histórico!"))
+      }
+      
+      cols_exibir <- c("id_execucao", "timestamp", "geracoes", "dist_win", "dist_w", 
+                       "tam_reservoir", "mae_valida", "mae_teste", "delta_recorde_pct")
+      
+      df_sub <- df[, intersect(cols_exibir, names(df))]
+      names(df_sub) <- c("ID", "Data/Hora", "Gerações", "Win", "W", "Reservatório", 
+                         "MAE Valida", "MAE Teste", "Comparativo com Recorde")[1:ncol(df_sub)]
+      df_sub
     })
   })
 }

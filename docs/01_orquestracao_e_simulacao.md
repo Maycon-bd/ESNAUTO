@@ -20,14 +20,14 @@ ESNAUTO/
 ## 📝 Detalhamento de Cada Arquivo
 
 ### 1. `automate_simulations.py`
-- **Caminho**: [automate_simulations.py](file:///g:/Outros%20computadores/Meu%20computador/TFC1/ESNAUTO/automate_simulations.py)
+- **Caminho**: [`automate_simulations.py`](../automate_simulations.py)
 - **Linguagem**: Python 3 (Biblioteca Padrão)
 - **Função**: Orquestrador principal do sistema. Gerencia o ciclo de vida das simulações sequenciais dos 4 cenários experimentais repetidos em 3 rodadas (totalizando 12 simulações por execução).
 
 #### 🔑 Principais Funcionalidades:
 - **Criação de Sessão Única**: A cada disparo, gera uma pasta de execução com data/hora em `Scripts/results/Run_YYYYMMDD_HHMMSS_{Mode}/`.
 - **Gerenciamento de Subpastas**: Cria automaticamente `scenarios/`, `pdfs/` e `zips/` dentro da sessão.
-- **Invocação do Rscript**: Detecta o binário `Rscript.exe` no sistema Windows ou Linux e dispara o script `acoes_petr4_esn.R` com 5 argumentos CLI.
+- **Invocação do Rscript**: Detecta o binário `Rscript.exe` no sistema Windows ou Linux (incluindo busca automática em `C:\Program Files\R`) e dispara o script `acoes_petr4_esn.R` com 5 argumentos CLI.
 - **Cópias e Compactação**: Ao final de cada cenário, realiza a cópia direta do PDF gerado para a pasta `pdfs/` e empacota o cenário em um arquivo `.zip` individual em `zips/`.
 
 #### 💻 Parâmetros de Linha de Comando:
@@ -48,7 +48,7 @@ python automate_simulations.py --itera 5000
 ---
 
 ### 2. `run_simulations.bat`
-- **Caminho**: [run_simulations.bat](file:///g:/Outros%20computadores/Meu%20computador/TFC1/ESNAUTO/run_simulations.bat)
+- **Caminho**: [`run_simulations.bat`](../run_simulations.bat)
 - **Linguagem**: Batch Script (Windows CMD)
 - **Função**: Interface amigável de linha de comando para uso no Windows. Evita a necessidade de digitar comandos longos no terminal.
 
@@ -60,7 +60,7 @@ python automate_simulations.py --itera 5000
 ---
 
 ### 3. `Scripts/acoes_petr4_esn.R`
-- **Caminho**: [Scripts/acoes_petr4_esn.R](file:///g:/Outros%20computadores/Meu%20computador/TFC1/ESNAUTO/Scripts/acoes_petr4_esn.R)
+- **Caminho**: [`Scripts/acoes_petr4_esn.R`](../Scripts/acoes_petr4_esn.R)
 - **Linguagem**: R (v4.0+)
 - **Função**: Script numérico central que implementa o modelo ESN (Echo State Network) e a otimização de hiperparâmetros via Algoritmo Genético (pacote `GA`).
 
@@ -88,6 +88,6 @@ python automate_simulations.py --itera 5000
 ---
 
 ### 4. `Scripts/gerar_graficos_corrigidos.R`
-- **Caminho**: [Scripts/gerar_graficos_corrigidos.R](file:///g:/Outros%20computadores/Meu%20computador/TFC1/ESNAUTO/Scripts/gerar_graficos_corrigidos.R)
+- **Caminho**: [`Scripts/gerar_graficos_corrigidos.R`](../Scripts/gerar_graficos_corrigidos.R)
 - **Linguagem**: R
 - **Função**: Script auxiliar pós-simulação para a plotagem em alta resolução (PNG 300 DPI) das curvas de predição *Validação* vs. *Valores Reais* e *Teste Out-of-Sample* vs. *Valores Reais*. Utiliza correções visuais e paletas de cores otimizadas para a monografia do TCC.

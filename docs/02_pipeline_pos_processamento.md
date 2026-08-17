@@ -29,7 +29,7 @@ graph TD
     C -->|Extrai hiperparâmetros e matrizes| D[inject_and_test.py]
     D -->|Executa Rscript dinâmico| E[Resultados no Teste Out-of-Sample]
     E -->|Gera pngs e relatórios| F[package_results.py]
-    F -->|Entrega consolidada| G[entrega/entrega_YYYYMMDD_HHMMSS.zip]
+    F -->|Entrega consolidada| G[entrega/ESN_PETR4_TCC_Maycon_*.zip]
 ```
 
 ---
@@ -37,7 +37,7 @@ graph TD
 ## 📝 Detalhamento de Cada Arquivo
 
 ### 1. `Scripts/analyze_results.py` (Fase 2)
-- **Caminho**: [Scripts/analyze_results.py](file:///g:/Outros%20computadores/Meu%20computador/TFC1/ESNAUTO/Scripts/analyze_results.py)
+- **Caminho**: [`Scripts/analyze_results.py`](../Scripts/analyze_results.py)
 - **Linguagem**: Python 3
 - **Função**: Varre os arquivos de log (`Dados PETR4 resumo fitness...csv`) e de resultados de cada um dos 12 cenários dentro da pasta da sessão informada.
 
@@ -48,51 +48,49 @@ graph TD
 
 #### 💻 Uso:
 ```bash
-python Scripts/analyze_results.py Scripts/results/Run_20260623_150000_Prod
+python Scripts/analyze_results.py Scripts/results/Run_YYYYMMDD_HHMMSS_Mode
 ```
 
 ---
 
 ### 2. `Scripts/inject_and_test.py` (Fase 3)
-- **Caminho**: [Scripts/inject_and_test.py](file:///g:/Outros%20computadores/Meu%20computador/TFC1/ESNAUTO/Scripts/inject_and_test.py)
+- **Caminho**: [`Scripts/inject_and_test.py`](../Scripts/inject_and_test.py)
 - **Linguagem**: Python 3 (gerando script R temporário via `subprocess`)
-- **Função**: Garante a avaliação imune a *data leakage*. Lê o `ranking.json`, seleciona o 1º colocado (melhor reservatório na validação) e recupera suas matrizes de pesos $W_{in}$ e $W$.
+- **Função**: Garante a avaliação imune a *data leakage*. Lê o `ranking.json`, processa todos os cenários e recupera suas matrizes de pesos $W_{in}$ e $W$.
 
 #### 🔑 Principais Funcionalidades:
-- **Extração de Matrizes**: Localiza os arquivos `matriz_Win_epoca_...txt` e `matriz_W_epoca_...txt` do melhor cenário.
+- **Extração de Matrizes**: Localiza os arquivos de matrizes e parâmetros dos cenários.
 - **Script R Temporário Dinâmico**: Gera e executa um script R temporário que injeta diretamente essas matrizes numéricas no modelo ESN.
-- **Avaliação de Teste (25%)**: Roda a predição na partição cega de teste (anos 2015-2020) e calcula os erros MAE e RMSE finais.
-- **Saídas**: Salva os relatórios `resultados_validacao_teste.txt` e os gráficos `grafico_validacao.png` e `grafico_teste.png`.
+- **Avaliação de Teste (25%)**: Roda a predição na partição cega de teste (anos 2015-2020) e calcula os erros MAE, RMSE, MAPE e R² finais.
+- **Saídas**: Salva os relatórios `resultados_validacao_teste.txt`, `resultados_validacao_teste.md` e os gráficos `grafico_validacao.png` e `grafico_teste.png`.
 
 #### 💻 Uso:
 ```bash
-python Scripts/inject_and_test.py Scripts/results/Run_20260623_150000_Prod
+python Scripts/inject_and_test.py Scripts/results/Run_YYYYMMDD_HHMMSS_Mode
 ```
 
 ---
 
 ### 3. `Scripts/package_results.py` (Fase 4)
-- **Caminho**: [Scripts/package_results.py](file:///g:/Outros%20computadores/Meu%20computador/TFC1/ESNAUTO/Scripts/package_results.py)
+- **Caminho**: [`Scripts/package_results.py`](../Scripts/package_results.py)
 - **Linguagem**: Python 3
 - **Função**: Módulo de empacotamento final de entrega para o orientador.
 
 #### 🔑 Principais Funcionalidades:
-- **Validação de Arquivos Obrigatórios**: Confirma que os relatórios em `.txt` e gráficos `.png` foram gerados sem erros.
-- **Diretório `entrega/`**: Cria o diretório `entrega/` dentro da sessão e copia todos os artefatos finais.
-- **Empacotamento ZIP**: Cria um arquivo `.zip` final compactado contendo todos os relatórios e figuras para envio imediato.
+- **Validação de Arquivos Obrigatórios**: Confirma que os relatórios e gráficos foram gerados sem erros.
+- **Diretório `entrega/`**: Copia todos os artefatos finais, JSONs e ZIPs individuais para a pasta `entrega/`.
+- **Empacotamento ZIP**: Cria um arquivo `.zip` final consolidado contendo todos os relatórios e figuras para envio imediato.
 
 #### 💻 Uso:
 ```bash
-python Scripts/package_results.py Scripts/results/Run_20260623_150000_Prod
+python Scripts/package_results.py Scripts/results/Run_YYYYMMDD_HHMMSS_Mode
 ```
 
 ---
 
 ### 4. Scripts Auxiliares de Rascunho / Scratch (`scratch_*.py`)
 
-Estes scripts são utilitários de suporte desenvolvidos para auxílio no diagnóstico e inspeção rápida de resultados:
-
-- **[scratch_best.py](file:///g:/Outros%20computadores/Meu%20computador/TFC1/ESNAUTO/scratch_best.py)**: Script Python para rápida varredura e impressão no terminal dos melhores hiperparâmetros encontrados em uma pasta de simulação sem rodar o pipeline completo.
-- **[scratch_mark.py](file:///g:/Outros%20computadores/Meu%20computador/TFC1/ESNAUTO/scratch_mark.py)**: Script de marcação e inclusão de anotações e tags nos relatórios brutos de resultado.
-- **[scratch_matrices.py](file:///g:/Outros%20computadores/Meu%20computador/TFC1/ESNAUTO/scratch_matrices.py)**: Utilitário para validar as dimensões, o raio espectral real e as propriedades estatísticas das matrizes $W_{in}$ e $W$ gravadas durante a simulação em R.
-- **[scratch_verify.py](file:///g:/Outros%20computadores/Meu%20computador/TFC1/ESNAUTO/scratch_verify.py)**: Script de verificação de integridade dos arquivos CSV para detectar possíveis linhas truncadas ou simulações interrompidas.
+- **[`scratch_best.py`](../scratch_best.py)**: Script Python para rápida varredura e impressão no terminal dos melhores hiperparâmetros encontrados em uma pasta de simulação sem rodar o pipeline completo.
+- **[`scratch_mark.py`](../scratch_mark.py)**: Script de marcação e inclusão de anotações e tags nos relatórios brutos de resultado.
+- **[`scratch_matrices.py`](../scratch_matrices.py)**: Utilitário para validar as dimensões, o raio espectral real e as propriedades estatísticas das matrizes $W_{in}$ e $W$ gravadas durante a simulação em R.
+- **[`scratch_verify.py`](../scratch_verify.py)**: Script de verificação de integridade dos arquivos CSV para detectar possíveis linhas truncadas ou simulações interrompidas.
