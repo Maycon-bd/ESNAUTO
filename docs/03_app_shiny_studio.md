@@ -114,3 +114,43 @@ Todas as execuções do GA são consolidadas em:
 - **Novo Recorde Mundial Global**: Caso uma combinação supere o melhor MAE de teste de todos os tempos, as matrizes numéricas $W_{in}$, $W$ e $W_{out}$ e os parâmetros ótimos são exportados automaticamente em:
   `Scripts/results/melhor_recorde_global/`
 
+---
+
+## 👨‍💻 Autoria, Propósito & Legado Acadêmico
+
+### 1. Autoria do Software
+- **Autor e Desenvolvedor:** **Maycon Garcia Silva**
+- **Trabalho Acadêmico:** Trabalho de Conclusão de Curso (TFC) — Modelagem Preditiva de Séries Financeiras com ESN e Deep Learning.
+- **Licença & Acesso:** Código acadêmico aberto para pesquisa, extensão e melhoria contínua.
+
+### 2. Por que uma Aplicação Web Executada Localmente (Localhost / Desktop R Shiny)?
+A aplicação foi projetada como um **site web executado em ambiente local (127.0.0.1:8080)**. Embora a hospedagem em servidores de nuvem pública seja comum na web, para o escopo deste projeto a execução local apresenta vantagens técnicas determinantes:
+1. **Poder Computacional Irrestrito**: Simulações genéticas com até 15.000 gerações e treinamento de redes neurais profundas (LSTM/GRU com 80 épocas) exigem 100% dos núcleos de CPU e acesso direto à memória RAM/GPU da estação de trabalho, sem limites de *timeout* ou quotas restritivas de serviços em nuvem gratuitos.
+2. **I/O de Alta Velocidade e Gravação Atômica**: Gravação em tempo real de matrizes de pesos com dezenas de milhares de elementos e logs linha a linha em disco local sem sobrecarga de rede.
+3. **Controle Físico e Latência Zero**: O acoplamento entre o loop de inferência em C/R e o front-end Shiny através do servidor local e IPC Flags garante resposta instantânea para pausar, retomar e cancelar sem perda de dados.
+
+### 3. Legado para os Futuros Orientandos do Laboratório
+Este software e seu código-fonte foram intencionalmente estruturados de forma **modular, limpa e amplamente documentada** para servir como ponto de partida e legado para os **futuros alunos e orientandos do orientador**, facilitando a continuidade e expansão desta linha de pesquisa:
+- **Novas Distribuições de Matrizes**: O catálogo em `app/utils/data_prep.R` possui arquitetura desacoplada via `registrar_distribuicao()`, permitindo adicionar novas distribuições estocásticas em poucas linhas.
+- **Novas Topologias de Reservoir Computing**: A estrutura analítica de `ga_engine.R` e `esn_core.R` permite plugar facilmente variações como *Deep Echo State Networks (Deep-ESN)*, *Leaky ESN* e reservatórios com topologias de mundo pequeno (*Small-World Networks*).
+- **Novas Metaheurísticas de Otimização**: A função de fitness e a interface de cromossomo de 55 bits podem ser herdadas para comparação com *Particle Swarm Optimization (PSO)*, *Differential Evolution (DE)* ou *Bayesian Optimization*.
+- **Outras Séries Temporais Financeiras**: O particionamento em `app/app.R` permite carregar novos ativos (ex: VALE3, IBOV, Criptomoedas, Commodities) e re-executar todo o benchmark instantaneamente.
+
+---
+
+## 🛠️ Stack Tecnológico Utilizado & Referências Oficiais de Software
+
+O desenvolvimento deste software integra um ecossistema científico e de engenharia de ponta:
+
+| Tecnologia / Pacote | Versão / Função no Projeto | Referência Bibliográfica Oficial |
+| :--- | :--- | :--- |
+| **R Language & Environment** | Motor estatístico, matricial e inferência numérica | **R CORE TEAM**. *R: A Language and Environment for Statistical Computing*. Vienna, Austria: R Foundation for Statistical Computing, 2024. Disponível em: <https://www.R-project.org/>. |
+| **R Shiny Framework** | Interface web interativa reativa e servidor WebSocket | **CHANG, W. et al.** *shiny: Web Application Framework for R*. R package version 1.9.1, 2024. Disponível em: <https://CRAN.R-project.org/package=shiny>. |
+| **GA (Genetic Algorithms)** | Otimização estocástica e operadores evolutivos | **SCRUCCA, L.** *GA: A Package for Genetic Algorithms in R*. Journal of Statistical Software, v. 53, n. 4, p. 1–37, 2013. DOI: 10.18637/jss.v053.i04. |
+| **httpuv** | Biblioteca de servidor HTTP assíncrono e WebSocket | **CHENG, J. et al.** *httpuv: HTTP and WebSocket Server Library for R*. R package version 1.6.15, 2024. Disponível em: <https://CRAN.R-project.org/package=httpuv>. |
+| **Keras 3 & TensorFlow** | Treinamento e inferência de redes neurais LSTM e GRU | **CHOLLET, F. et al.** *Keras: Deep Learning for humans*. GitHub, 2015. / **ABADI, M. et al.** *TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems*, 2016. |
+| **pracma** | Funções matemáticas e pseudoinversa de Moore-Penrose | **BORCHERS, H. W.** *pracma: Practical Numerical Math Functions*. R package version 2.4.4, 2023. Disponível em: <https://CRAN.R-project.org/package=pracma>. |
+| **lhs** | Amostragem por Hipercubo Latino para Geração 0 | **CARNELL, R.** *lhs: Latin Hypercube Samples*. R package version 1.1.6, 2022. Disponível em: <https://CRAN.R-project.org/package=lhs>. |
+| **Python 3** | Orquestração batch, scripts de injeção e teste fora da amostra | **VAN ROSSUM, G.; DRAKE, F. L.** *Python 3 Reference Manual*. Scotts Valley, CA: CreateSpace, 2009. |
+| **Vanilla CSS & UI/UX** | Design system com Glassmorphism, Micro-animações e Responsividade | **WORLD WIDE WEB CONSORTIUM (W3C)**. *Cascading Style Sheets (CSS) Snapshot 2023*. W3C Working Group Note, 2023. |
+

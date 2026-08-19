@@ -124,11 +124,33 @@ Os resultados empíricos confirmam a hipótese central deste trabalho:
 2. **Eficiência Temporal Extrema**: O cálculo dos pesos da camada de saída $W_{\text{out}}$ da ESN por regressão linear regularizada (Ridge) requer apenas **0.21 segundos**, contra **63.89 segundos** da GRU e **54.11 segundos** da LSTM (treinadas via gradiente descendente com retropropagação no tempo - BPTT).
 3. **Eficiência da Otimização Global**: Mesmo contabilizando a execução completa de 60 gerações do Algoritmo Genético em tempo real (~79 segundos), o tempo total de exploração de milhares de redes pelo AG é comparável ao tempo de ajuste de uma única rede recorrente profunda, porém com garantia de exploração global do mapa de parâmetros.
 
+## 2.3 Implementação Computacional, Autoria do Software e Legado Acadêmico
+
+Todo o ecossistema computacional, incluindo o motor de busca evolutiva com hipermutação cataclísmica, a interface de monitoramento em tempo real e o pipeline de benchmark integrado (**ESNAUTO Benchmark Studio**), é de **autoria e desenvolvimento de Maycon Garcia Silva**, concebido especificamente como instrumento experimental para este Trabalho de Conclusão de Curso.
+
+### Considerações sobre a Execução em Ambiente Local (*Localhost / Desktop R Shiny*):
+A aplicação foi projetada para operar como uma interface web executada localmente no computador do pesquisador. Em vez de utilizar serviços de nuvem pública sujeitos a *timeouts* e quotas de computação, a execução local assegura:
+1. **Disponibilidade Total de Hardware**: Acesso direto a todos os *threads* de processamento da CPU e memória física da máquina para a execução de corridas longas de até 15.000 gerações do GA e treino profundo de redes neurais recorrentes.
+2. **Latência Zero e Segurança de Estado**: Comunicação instantânea de pacotes de rede via WebSocket (`httpuv::service`) e flags de arquivo no disco local, viabilizando as funções de pausa, retomada e salvamento atômico do melhor modelo encontrado.
+
+### Disponibilização para Futuras Pesquisas e Novos Orientandos:
+Visando dar continuidade a esta linha de pesquisa e fomentar novos trabalhos acadêmicos no grupo, o código-fonte integral, a arquitetura de classes e a documentação técnica são disponibilizados como **código aberto para os futuros orientandos do professor/orientador**. A estrutura desacoplada do projeto permite a esses pesquisadores:
+- Integrar novas distribuições de probabilidade no reservatório com apenas uma chamada à função `registrar_distribuicao()`;
+- Desenvolver e comparar novas topologias de redes em reservatório (*Deep ESN*, *Leaky ESN*);
+- Avaliar outras técnicas de otimização metaheurística (*Particle Swarm Optimization*, *Differential Evolution*);
+- Estender a modelagem para outros ativos do mercado de capitais (índices, moedas e *commodities*).
+
 ---
 
 # 3. REFERÊNCIAS BIBLIOGRÁFICAS (FORMATO ABNT)
 
+- **ABADI, M. et al.** TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems. *arXiv preprint arXiv:1603.04467*, 2016.
+- **BORCHERS, H. W.** *pracma: Practical Numerical Math Functions*. R package version 2.4.4, 2023. Disponível em: <https://CRAN.R-project.org/package=pracma>.
+- **CARNELL, R.** *lhs: Latin Hypercube Samples*. R package version 1.1.6, 2022. Disponível em: <https://CRAN.R-project.org/package=lhs>.
+- **CHANG, W. et al.** *shiny: Web Application Framework for R*. R package version 1.9.1, 2024. Disponível em: <https://CRAN.R-project.org/package=shiny>.
+- **CHENG, J. et al.** *httpuv: HTTP and WebSocket Server Library for R*. R package version 1.6.15, 2024. Disponível em: <https://CRAN.R-project.org/package=httpuv>.
 - **CHO, K. et al.** Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation. *Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)*, p. 1724–1734, 2014.
+- **CHOLLET, F. et al.** *Keras: Deep Learning for humans*. GitHub, 2015. Disponível em: <https://github.com/keras-team/keras>.
 - **ESHELMAN, L. J.** The CHC Adaptive Search Algorithm: How to Have Safe Search When Engaging in Alternative Genetic Selection. *Foundations of Genetic Algorithms*, v. 1, p. 265–283, 1991.
 - **GOLDBERG, D. E.** *Genetic Algorithms in Search, Optimization, and Machine Learning*. Boston: Addison-Wesley Longman Publishing Co., 1989.
 - **HOCHREITER, S.; SCHMIDHUBER, J.** Long Short-Term Memory. *Neural Computation*, v. 9, n. 8, p. 1735–1780, 1997.
@@ -136,3 +158,6 @@ Os resultados empíricos confirmam a hipótese central deste trabalho:
 - **KRISHNAKUMAR, K.** Micro-genetic algorithms for stationary and non-stationary function optimization. *SPIE Proceedings: Intelligent Control and Adaptive Systems*, v. 1196, p. 289–296, 1989.
 - **LUKOŠEVIČIUS, M.; JAEGER, H.** Reservoir computing approaches to recurrent neural network training. *Computer Science Review*, v. 3, n. 3, p. 127–149, 2009.
 - **McKAY, M. D.; BECKMAN, R. J.; CONOVER, W. J.** A Comparison of Three Methods for Selecting Values of Input Variables in the Analysis of Output from a Computer Code. *Technometrics*, v. 21, n. 2, p. 239–245, 1979.
+- **R CORE TEAM.** *R: A Language and Environment for Statistical Computing*. Vienna, Austria: R Foundation for Statistical Computing, 2024. Disponível em: <https://www.R-project.org/>.
+- **SCRUCCA, L.** GA: A Package for Genetic Algorithms in R. *Journal of Statistical Software*, v. 53, n. 4, p. 1–37, 2013. DOI: 10.18637/jss.v053.i04.
+- **VAN ROSSUM, G.; DRAKE, F. L.** *Python 3 Reference Manual*. Scotts Valley, CA: CreateSpace, 2009.

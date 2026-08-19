@@ -7,6 +7,7 @@
 library(shiny)
 
 # Carregar módulos e utilitários
+source("utils/hardware_config.R", local = TRUE)
 source("utils/data_prep.R", local = TRUE)
 source("utils/metrics.R", local = TRUE)
 source("utils/esn_core.R", local = TRUE)
@@ -505,19 +506,110 @@ ui <- navbarPage(
             )
           ),
           
-          # Sub-Aba 5: Referências ABNT
+          # Sub-Aba 5: Autoria, Propósito & Legado Acadêmico
+          tabPanel("👨‍💻 Autoria & Legado Acadêmico",
+            div(class = "well", style = "margin-top: 15px;",
+              h4(style = "color: #4f46e5; font-weight: 800;", "Autoria do Software e Propósito Acadêmico"),
+              p("Este software, seu motor de otimização evolutiva com cataclismo, seu painel de controle em tempo real e todo o pipeline comparativo são de ", strong("autoria e desenvolvimento de Maycon Garcia Silva"), ", desenvolvidos como produto de engenharia e base experimental para este Trabalho de Conclusão de Curso (TFC)."),
+              
+              hr(),
+              h4(style = "color: #059669; font-weight: 800;", "Por que um Software Web Executado em Ambiente Local (Localhost)?"),
+              p("A arquitetura foi intencionalmente concebida para rodar em servidor web local (127.0.0.1:8080). Embora hospedar em nuvem pública seja comum na web tradicional, em pesquisas avançadas de Inteligência Artificial a execução local é crucial por três razões:"),
+              tags$ul(
+                tags$li(strong("Poder Computacional Total:"), " Acesso irrestrito a todos os núcleos da CPU e GPU da máquina sem limites de timeout ou custos proibitivos de servidores em nuvem durante simulações pesadas de até 15.000 gerações."),
+                tags$li(strong("I/O de Alta Performance:"), " Gravação em disco e persistência atômica linha a linha de dezenas de matrizes e logs em tempo real sem latência de rede."),
+                tags$li(strong("Controle Interativo com Latência Zero:"), " A comunicação IPC atômica e bomba WebSocket local garantem resposta instantânea nos botões de pausa, retomada e cancelamento com salvamento.")
+              ),
+              
+              hr(),
+              h4(style = "color: #d97706; font-weight: 800;", "Legado e Continuidade para os Futuros Orientandos"),
+              div(class = "alert alert-success", style = "font-size: 0.92rem; line-height: 1.6;",
+                strong("🎓 Convite à Pesquisa Aberta:"), " Todo o código-fonte deste projeto foi estruturado de forma modular e amplamente documentado para servir de base sólida para os ", strong("futuros alunos e orientandos do orientador"), ". O repositório está pronto para receber novas contribuições, tais como:",
+                tags$ul(style = "margin-top: 8px;",
+                  tags$li("Inclusão de novas distribuições estocásticas no catálogo de matrizes da ESN via ", code("registrar_distribuicao()"), ";"),
+                  tags$li("Exploração de novas topologias (ex: Deep ESN, Leaky ESN, Redes Mundo Pequeno);"),
+                  tags$li("Acoplamento de novas metaheurísticas além do GA (ex: PSO, Algoritmos Imunológicos, Otimização Bayesiana);"),
+                  tags$li("Extensão do benchmark para novos ativos do mercado financeiro (VALE3, IBOV, Criptoativos, Commodities).")
+                )
+              )
+            )
+          ),
+          
+          # Sub-Aba 6: Preparação para GPU & Extensão de Hardware
+          tabPanel("🚀 Aceleração em GPU & Extensão",
+            div(class = "well", style = "margin-top: 15px;",
+              h4(style = "color: #0284c7; font-weight: 800;", "Arquitetura Preparada para Processamento Massivo em GPU (CUDA / OpenCL)"),
+              p("O projeto atualmente processa a otimização da ESN e do GA em CPU multicore de alta eficiência, mas sua ", strong("arquitetura de software já foi estruturada e desacoplada"), " com pontos de injeção (", code("hooks"), ") prontos para a integração do novo módulo de aceleração por GPU dedicada (NVIDIA CUDA), desenvolvido no âmbito da pesquisa paralela do laboratório:"),
+              
+              hr(),
+              h4(style = "color: #0284c7; font-weight: 800;", "Gargalos Identificados & Oportunidades de Speedup (50x a 200x)"),
+              tags$table(class = "table table-bordered table-striped",
+                tags$thead(
+                  tags$tr(
+                    tags$th("Gargalo Computacional"),
+                    tags$th("Abordagem Atual (CPU)"),
+                    tags$th("Nova Abordagem (GPU Dedicada)"),
+                    tags$th("Ganho Esperado")
+                  )
+                ),
+                tags$tbody(
+                  tags$tr(
+                    tags$td(strong("Avaliação da População do GA")),
+                    tags$td("Loop sequencial avaliando indivíduo por indivíduo"),
+                    tags$td("Tensor 3D em lote: avalia todos os P indivíduos simultaneamente em CUDA"),
+                    tags$td(span(class = "badge-tag badge-best", "🚀 50x a 100x mais rápido"))
+                  ),
+                  tags$tr(
+                    tags$td(strong("Regressão Ridge (Camada Wout)")),
+                    tags$td("Inversão analítica via pracma / solve em CPU"),
+                    tags$td("Resolução de sistemas lineares via Cholesky em GPU (cuSOLVER)"),
+                    tags$td(span(class = "badge-tag badge-best", "⚡ 10x a 30x mais rápido"))
+                  ),
+                  tags$tr(
+                    tags$td(strong("Deep Learning (LSTM & GRU)")),
+                    tags$td("Keras 3 / TensorFlow com aceleração híbrida"),
+                    tags$td("Execução com alocação dinâmica de VRAM (Memory Growth habilitado)"),
+                    tags$td(span(class = "badge-tag badge-esn", "✅ Já integrado nativamente"))
+                  )
+                )
+              ),
+              
+              hr(),
+              h4(style = "color: #0284c7; font-weight: 800;", "Camada de Abstração & Guia para o Desenvolvedor da GPU"),
+              p("O desenvolvedor responsável pela implementação do módulo GPU pode injetar o código diretamente no arquivo ", code("app/utils/hardware_config.R"), " nos seguintes métodos:"),
+              tags$ul(
+                tags$li(code("esn_forward_gpu_hook()"), ": Propagação tensorial em lote do reservatório."),
+                tags$li(code("esn_ridge_gpu_hook()"), ": Resolução da camada de saída na VRAM."),
+                tags$li(code("ga_fitness_batch_gpu_hook()"), ": Avaliação massiva da população em GPU.")
+              ),
+              div(class = "alert alert-info", style = "font-size: 0.88rem;",
+                "📖 Para o guia técnico completo com exemplos em LibTorch/C++ e PyTorch/CuPy, consulte o documento: ", strong("docs/07_guia_extensao_aceleracao_gpu.md")
+              )
+            )
+          ),
+          
+          # Sub-Aba 7: Referências ABNT
           tabPanel("📑 Referências Bibliográficas (ABNT)",
             div(class = "well", style = "margin-top: 15px;",
-              h4(style = "color: #0f172a; font-weight: 800;", "Referências Formais para o TFC"),
+              h4(style = "color: #0f172a; font-weight: 800;", "Referências Formais do Trabalho e das Tecnologias Utilizadas"),
               tags$ul(style = "line-height: 1.8;",
+                tags$li(strong("ABADI, M. et al."), " TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems. ", tags$em("arXiv preprint arXiv:1603.04467"), ", 2016."),
+                tags$li(strong("BORCHERS, H. W."), " ", tags$em("pracma: Practical Numerical Math Functions"), ". R package version 2.4.4, 2023."),
+                tags$li(strong("CARNELL, R."), " ", tags$em("lhs: Latin Hypercube Samples"), ". R package version 1.1.6, 2022."),
+                tags$li(strong("CHANG, W. et al."), " ", tags$em("shiny: Web Application Framework for R"), ". R package version 1.9.1, 2024."),
+                tags$li(strong("CHENG, J. et al."), " ", tags$em("httpuv: HTTP and WebSocket Server Library for R"), ". R package version 1.6.15, 2024."),
                 tags$li(strong("CHO, K. et al."), " Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation. ", tags$em("Proceedings of EMNLP"), ", p. 1724–1734, 2014."),
+                tags$li(strong("CHOLLET, F. et al."), " ", tags$em("Keras: Deep Learning for humans"), ". GitHub, 2015."),
                 tags$li(strong("ESHELMAN, L. J."), " The CHC Adaptive Search Algorithm: How to Have Safe Search When Engaging in Alternative Genetic Selection. ", tags$em("Foundations of Genetic Algorithms"), ", v. 1, p. 265–283, 1991."),
                 tags$li(strong("GOLDBERG, D. E."), " ", tags$em("Genetic Algorithms in Search, Optimization, and Machine Learning"), ". Boston: Addison-Wesley, 1989."),
                 tags$li(strong("HOCHREITER, S.; SCHMIDHUBER, J."), " Long Short-Term Memory. ", tags$em("Neural Computation"), ", v. 9, n. 8, p. 1735–1780, 1997."),
                 tags$li(strong("JAEGER, H."), " ", tags$em("The “echo state” approach to analysing and training recurrent neural networks"), ". GMD Report 148, German National Research Center for Information Technology, 2001."),
                 tags$li(strong("KRISHNAKUMAR, K."), " Micro-genetic algorithms for stationary and non-stationary function optimization. ", tags$em("SPIE Proceedings: Intelligent Control and Adaptive Systems"), ", v. 1196, p. 289–296, 1989."),
                 tags$li(strong("LUKOŠEVIČIUS, M.; JAEGER, H."), " Reservoir computing approaches to recurrent neural network training. ", tags$em("Computer Science Review"), ", v. 3, n. 3, p. 127–149, 2009."),
-                tags$li(strong("McKAY, M. D.; BECKMAN, R. J.; CONOVER, W. J."), " A Comparison of Three Methods for Selecting Values of Input Variables in the Analysis of Output from a Computer Code. ", tags$em("Technometrics"), ", v. 21, n. 2, p. 239–245, 1979.")
+                tags$li(strong("McKAY, M. D.; BECKMAN, R. J.; CONOVER, W. J."), " A Comparison of Three Methods for Selecting Values of Input Variables in the Analysis of Output from a Computer Code. ", tags$em("Technometrics"), ", v. 21, n. 2, p. 239–245, 1979."),
+                tags$li(strong("R CORE TEAM."), " ", tags$em("R: A Language and Environment for Statistical Computing"), ". Vienna: R Foundation for Statistical Computing, 2024."),
+                tags$li(strong("SCRUCCA, L."), " GA: A Package for Genetic Algorithms in R. ", tags$em("Journal of Statistical Software"), ", v. 53, n. 4, p. 1–37, 2013."),
+                tags$li(strong("VAN ROSSUM, G.; DRAKE, F. L."), " ", tags$em("Python 3 Reference Manual"), ". Scotts Valley: CreateSpace, 2009.")
               )
             )
           )
