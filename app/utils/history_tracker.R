@@ -29,7 +29,7 @@ inicializar_historico_csv <- function() {
     cabecalhos <- data.frame(
       id_execucao = character(),
       timestamp = character(),
-      geracoes = integer(),
+      geracoes = character(),
       pop_size = integer(),
       dist_win = character(),
       dist_w = character(),
@@ -120,7 +120,7 @@ registrar_execucao_ga <- function(params, metricas_valida, metricas_teste, fitne
   nova_linha <- data.frame(
     id_execucao = novo_id,
     timestamp = ts_atual,
-    geracoes = as.integer(geracoes),
+    geracoes = as.character(geracoes),
     pop_size = as.integer(pop_size),
     dist_win = dist_win,
     dist_w = dist_w,

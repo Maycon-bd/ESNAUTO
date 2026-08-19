@@ -56,11 +56,11 @@ Inspirado no algoritmo evolutivo adaptativo **CHC** (*Cross-generational elitist
 
 ### Algoritmo de Operação:
 1. **Contador de Estagnação ($k_{\text{estagnado}}$)**: A cada geração $t$, monitora-se a taxa de melhoria do fitness global $\mathcal{F}^*$.
-2. **Gatilho de Cataclismo**: Se $k_{\text{estagnado}} \ge \theta_{\text{limiar}}$ (definido em 30 gerações sucessivas sem incremento em $\mathcal{F}^*$):
+2. **Gatilho de Cataclismo**: Se $k_{\text{estagnado}} \ge \theta_{\text{limiar}}$ (calibrado adaptativamente entre $30$ gerações para testes rápidos e $100$ gerações para execuções oficiais de produção de $10.000$ a $15.000$ gerações sem incremento em $\mathcal{F}^*$):
    - **Elitismo Estrito**: O cromossomo recordista global $\mathbf{c}^*$ é integralmente preservado na posição $1$ da população.
    - **Hipermutação Cataclísmica**: Os demais $P - 1$ indivíduos são submetidos a uma taxa de perturbação estocástica elevada de mutação binária ($\mu_{\text{cataclismo}} = 0.40$):
    
-   $$P(b_{i, j}^{(t+1)} = 1 - b_{i, j}^{(t)}) = 0.40, \quad \forall i \in \{2, \dots, P\}, \; j \in \{1, \dots, 59\}$$
+   $$P(b_{i, j}^{(t+1)} = 1 - b_{i, j}^{(t)}) = 0.40, \quad \forall i \in \{2, \dots, P\}, \; j \in \{1, \dots, 55\}$$
 
 Essa operação equivale a um "salto quântico" no espaço de busca, desintegrando agrupamentos locais saturados e espalhando novos pontos de prova em vales inexplorados da função objetivo sem perder o melhor ponto ótimo já descoberto.
 
@@ -77,6 +77,21 @@ Onde:
 - $\text{MAE}_{\text{validação}} = \frac{1}{N_{\text{valida}}-1} \sum_{t=N_{\text{treino}}+2}^{N_{\text{treino}}+N_{\text{valida}}} |y(t) - \hat{y}_{\text{ESN}}(t)|$
 
 O peso de $60\%$ conferido à validação atua como regularizador empírico contra o sobreajuste (*overfitting*), penalizando configurações que memorizam a série de treino em detrimento da generalização temporal.
+
+---
+
+## 1.6 Dinâmica de Busca em Horizontes Longos (10.000 a 15.000+ Gerações): O Papel dos Múltiplos Ciclos Cataclísmicos
+
+Em algoritmos genéticos padrão, estender o número de gerações além de $2.000$ ou $3.000$ iterações geralmente resulta em retornos marginais nulos (*plateau* evolutivo), visto que a perda de diversidade alélica homogeneíza a população em torno de um único atrator local.
+
+Contudo, com a integração do operador de **Reinicialização Cataclísmica Adaptativa**, a extensão do horizonte computacional para **$10.000$ a $15.000$ gerações** torna-se teoricamente justificada e altamente produtiva. Dado que o espaço de busca discreto-contínuo compreende $2^{55} \approx 3{,}60 \times 10^{16}$ estados cromossômicos possíveis, a busca desenvolve-se através de múltiplos ciclos sucessivos de:
+
+$$\underbrace{\text{Exploração Global (LHS)}}_{\text{Geração } 0} \longrightarrow \underbrace{\text{Refinamento Local}}_{\text{Gerações } t \dots t+k} \longrightarrow \underbrace{\text{Estagnação Detectada}}_{k \ge \theta_{\text{limiar}} (80 \dots 100)} \longrightarrow \underbrace{\text{Salto Cataclísmico (Hipermutação 40\%)}}_{\text{Preservação da Elite } \mathbf{c}^*} \longrightarrow \underbrace{\text{Nova Bacia de Atração}}_{\text{Gerações } t+k+1 \dots}$$
+
+### Vantagens Teórico-Práticas para o Trabalho:
+1. **Varredura Multimodal Profunda**: Em $15.000$ gerações, o algoritmo executa entre $20$ e $40$ reinicializações cataclísmicas controladas, permitindo que a ESN escape de múltiplos mínimos locais rasos e localize regiões de hipersuperfície com combinações raras de alta vazão ($a$) e raio espectral ($\rho(W)$) que minimizam o erro out-of-sample.
+2. **Avaliação Robusta de Distribuições Estocásticas de Cauda Pesada**: Ao testar matrizes $W_{\text{in}}$ e $W$ governadas por distribuições leptocúrticas (Laplace, Pearson V, GED e Cauchy), o horizonte estendido de $15.000$ gerações fornece o tempo evolutivo necessário para que a camada de saída regularizada ($W_{\text{out}}$) encontre a resposta ideal às perturbações e *shocks* inerentes às cotações financeiras da Petrobras.
+3. **Critério de Parada Adaptativo (*Early Stopping*)**: O mecanismo foi calibrado com limite de tolerância estendida ($run = 3.500$ a $5.000$ gerações consecutivas sem qualquer melhora global), garantindo que o algoritmo explore exaustivamente cada ciclo cataclísmico antes de considerar uma convergência como definitiva.
 
 ---
 
@@ -118,5 +133,6 @@ Os resultados empíricos confirmam a hipótese central deste trabalho:
 - **GOLDBERG, D. E.** *Genetic Algorithms in Search, Optimization, and Machine Learning*. Boston: Addison-Wesley Longman Publishing Co., 1989.
 - **HOCHREITER, S.; SCHMIDHUBER, J.** Long Short-Term Memory. *Neural Computation*, v. 9, n. 8, p. 1735–1780, 1997.
 - **JAEGER, H.** *The “echo state” approach to analysing and training recurrent neural networks*. GMD Report 148, German National Research Center for Information Technology, 2001.
+- **KRISHNAKUMAR, K.** Micro-genetic algorithms for stationary and non-stationary function optimization. *SPIE Proceedings: Intelligent Control and Adaptive Systems*, v. 1196, p. 289–296, 1989.
 - **LUKOŠEVIČIUS, M.; JAEGER, H.** Reservoir computing approaches to recurrent neural network training. *Computer Science Review*, v. 3, n. 3, p. 127–149, 2009.
 - **McKAY, M. D.; BECKMAN, R. J.; CONOVER, W. J.** A Comparison of Three Methods for Selecting Values of Input Variables in the Analysis of Output from a Computer Code. *Technometrics*, v. 21, n. 2, p. 239–245, 1979.

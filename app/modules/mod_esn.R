@@ -7,6 +7,7 @@
 # Carregar utilitários
 source("utils/data_prep.R", local = TRUE)
 source("utils/metrics.R", local = TRUE)
+source("utils/esn_core.R", local = TRUE)
 source("utils/history_tracker.R", local = TRUE)
 source("utils/ga_engine.R", local = TRUE)
 
@@ -566,6 +567,7 @@ esn_server <- function(id, dados_reativo, resultados_externos = NULL) {
               maxiter = input$ga_maxiter,
               pop_size = input$ga_popsize,
               anti_estagnacao = input$ga_anti_estag,
+              session = session,
               set_progress = function(val, msg) {
                 setProgress(pct_base + val * pct_range, 
                             detail = sprintf("[%d/%d] Win: %s + W: %s — %s", k, n_comb, cur_win, cur_w, msg))
@@ -574,9 +576,14 @@ esn_server <- function(id, dados_reativo, resultados_externos = NULL) {
             
             lista_resultados_ga[[k]] <- res_ga_k
             
-            if (res_ga_k$fitness > melhor_fitness) {
+            if (!is.null(res_ga_k$fitness) && res_ga_k$fitness > melhor_fitness) {
               melhor_fitness <- res_ga_k$fitness
               melhor_res_ga <- res_ga_k
+            }
+            
+            if (isTRUE(res_ga_k$cancelado) || isTRUE(obter_status_controle_ga()$cancelar)) {
+              showNotification("⏹️ Otimização interrompida pelo usuário! Melhor modelo salvo no histórico.", type = "warning", duration = 8)
+              break
             }
           }
           

@@ -12,6 +12,7 @@ suppressPackageStartupMessages({
 
 source("utils/data_prep.R", local = TRUE)
 source("utils/metrics.R", local = TRUE)
+source("utils/esn_core.R", local = TRUE)
 source("utils/history_tracker.R", local = TRUE)
 
 # =============================================================================
@@ -24,13 +25,14 @@ dec_to_binary_vector <- function(val, nbits) {
   as.integer(rev(raw_bits))
 }
 
-gerar_populacao_lhs <- function(pop_size, nbits = 59) {
+gerar_populacao_lhs <- function(pop_size, nbits = 55) {
   # 5 Dimensões de Hiperparâmetros:
   # 1. a: 17 bits (1 a 131071)
   # 2. sr: 17 bits (1 a 131071)
   # 3. initLen: 7 bits (0 a 127) -> (+2 = 2 a 129)
   # 4. tam_reservoir: 5 bits (0 a 31) -> (+2 = 2 a 33)
   # 5. reg: 9 bits (0 a 511)
+  # Total: 17 + 17 + 7 + 5 + 9 = 55 bits
   
   P <- pop_size
   
@@ -55,11 +57,112 @@ gerar_populacao_lhs <- function(pop_size, nbits = 59) {
     bits_tr  <- dec_to_binary_vector(tr_vals[i], 5)
     bits_reg <- dec_to_binary_vector(reg_vals[i], 9)
     
-    pop_matrix[i, ] <- c(bits_a, bits_sr, bits_iL, bits_tr, bits_reg)
+    crom <- c(bits_a, bits_sr, bits_iL, bits_tr, bits_reg)
+    if (length(crom) < nbits) {
+      crom <- c(crom, sample(0:1, nbits - length(crom), replace = TRUE))
+    } else if (length(crom) > nbits) {
+      crom <- crom[1:nbits]
+    }
+    
+    pop_matrix[i, ] <- crom
   }
   
   pop_matrix
 }
+
+# =============================================================================
+# CONTROLE GLOBAL DE EXECUÇÃO (PAUSAR / CANCELAR)
+# =============================================================================
+
+.controle_ga <- new.env(parent = emptyenv())
+.controle_ga$pausado <- FALSE
+.controle_ga$cancelar <- FALSE
+.controle_ga$servidor_id <- NULL
+.controle_ga$porta <- 8089
+
+.flag_cancelar <- file.path(tempdir(), "ga_cancelar.flag")
+.flag_pausar   <- file.path(tempdir(), "ga_pausar.flag")
+
+pausar_ga <- function(pausar = TRUE) {
+  .controle_ga$pausado <- pausar
+  if (pausar) {
+    tryCatch(file.create(.flag_pausar, showWarnings = FALSE), error = function(e) {})
+  } else {
+    if (file.exists(.flag_pausar)) tryCatch(unlink(.flag_pausar), error = function(e) {})
+  }
+}
+
+cancelar_ga <- function() {
+  .controle_ga$cancelar <- TRUE
+  tryCatch(file.create(.flag_cancelar, showWarnings = FALSE), error = function(e) {})
+}
+
+resetar_controle_ga <- function() {
+  .controle_ga$pausado <- FALSE
+  .controle_ga$cancelar <- FALSE
+  if (file.exists(.flag_cancelar)) tryCatch(unlink(.flag_cancelar), error = function(e) {})
+  if (file.exists(.flag_pausar)) tryCatch(unlink(.flag_pausar), error = function(e) {})
+}
+
+obter_status_controle_ga <- function() {
+  list(
+    pausado = isTRUE(.controle_ga$pausado) || file.exists(.flag_pausar), 
+    cancelar = isTRUE(.controle_ga$cancelar) || file.exists(.flag_cancelar)
+  )
+}
+
+iniciar_servidor_controle <- function() {
+  if (!is.null(.controle_ga$servidor_id)) {
+    return(.controle_ga$porta)
+  }
+  
+  portas_teste <- c(8089, 8090, 8091, 8092)
+  for (p in portas_teste) {
+    tryCatch({
+      .controle_ga$servidor_id <- httpuv::startServer("127.0.0.1", p, list(
+        call = function(req) {
+          path <- req$PATH_INFO
+          if (grepl("cancel", path)) {
+            cancelar_ga()
+          } else if (grepl("pause", path)) {
+            pausar_ga(TRUE)
+          } else if (grepl("resume", path)) {
+            pausar_ga(FALSE)
+          }
+          
+          status_json <- sprintf('{"pausado": %s, "cancelar": %s}', 
+                                 tolower(as.character(isTRUE(.controle_ga$pausado) || file.exists(.flag_pausar))),
+                                 tolower(as.character(isTRUE(.controle_ga$cancelar) || file.exists(.flag_cancelar))))
+          
+          list(
+            status = 200L,
+            headers = list(
+              "Content-Type" = "application/json",
+              "Access-Control-Allow-Origin" = "*",
+              "Access-Control-Allow-Methods" = "GET, POST, OPTIONS",
+              "Access-Control-Allow-Headers" = "*"
+            ),
+            body = status_json
+          )
+        }
+      ))
+      .controle_ga$porta <- p
+      break
+    }, error = function(e) {})
+  }
+  
+  return(.controle_ga$porta)
+}
+
+parar_servidor_controle <- function() {
+  if (!is.null(.controle_ga$servidor_id)) {
+    tryCatch(httpuv::stopServer(.controle_ga$servidor_id), error = function(e) {})
+    .controle_ga$servidor_id <- NULL
+  }
+}
+
+# Iniciar servidor de controle em segundo plano
+tryCatch(iniciar_servidor_controle(), error = function(e) {})
 
 # =============================================================================
 # 2. FUNÇÃO PRINCIPAL DE OTIMIZAÇÃO LIVE DO GA COM LHS + CATACLISMO
@@ -69,10 +172,26 @@ otimizar_esn_ga_live <- function(dados,
                                  win_dist = "GED", 
                                  w_dist = "Normal", 
                                  maxiter = 200, 
-                                 pop_size = 15,
+                                 pop_size = 10,
+                                 run_stop = NULL,
                                  anti_estagnacao = TRUE,
                                  limite_estagnacao = 30,
-                                 set_progress = NULL) {
+                                 set_progress = NULL,
+                                 session = NULL) {
+  
+  if (is.null(run_stop)) {
+    run_stop <- if (maxiter >= 5000) 3500 else maxiter
+  }
+  
+  # Registrar referências iniciais de cancelamento / pausa para detecção de clique
+  initial_cancel_ts <- if (!is.null(session)) tryCatch(isolate(session$input$btn_cancelar_execucao), error = function(e) NULL) else NULL
+  initial_pause_ts  <- if (!is.null(session)) tryCatch(isolate(session$input$btn_pausar_execucao), error = function(e) NULL) else NULL
+  initial_resume_ts <- if (!is.null(session)) tryCatch(isolate(session$input$btn_retomar_execucao), error = function(e) NULL) else NULL
+  
+  # Calibração adaptativa da sensibilidade do Cataclismo
+  if (is.null(limite_estagnacao) || limite_estagnacao == 30) {
+    limite_estagnacao <- if (maxiter >= 10000) 100 else if (maxiter >= 5000) 80 else if (maxiter >= 1000) 50 else 30
+  }
   
   if (is.function(set_progress)) set_progress(0.05, "Inicializando Hipercubo Latino (LHS) e Partições...")
   
@@ -100,6 +219,7 @@ otimizar_esn_ga_live <- function(dados,
   melhor_estado$iter_sem_melhora <- 0
   melhor_estado$total_cataclismos <- 0
   melhor_estado$modo_cataclismo <- FALSE
+  melhor_estado$iter_executadas <- 0
   
   # 1. Função de Fitness
   fitness_func <- function(cromossoma) {
@@ -211,10 +331,85 @@ otimizar_esn_ga_live <- function(dados,
     return(mutate)
   }
   
-  # 3. Monitor de Gerações e Ativador de Cataclismos
+  # 3. Monitor de Gerações, Interrupções e Ativador de Cataclismos
   monitor_ga_cataclisma <- function(obj) {
     iter_atual <- obj@iter
+    melhor_estado$iter_executadas <- iter_atual
     melhor_estado$iter_sem_melhora <- melhor_estado$iter_sem_melhora + 1
+    
+    # Processar eventos assíncronos do Shiny e WebSocket (cliques em botões)
+    if (requireNamespace("httpuv", quietly = TRUE)) {
+      tryCatch(httpuv::service(10), error = function(e) {})
+    }
+    if (requireNamespace("later", quietly = TRUE)) {
+      tryCatch(later::run_now(0.005), error = function(e) {})
+    }
+    
+    # Sincronizar inputs da sessão Shiny em tempo real
+    if (!is.null(session)) {
+      if (session$isClosed()) {
+        cancelar_ga()
+      } else {
+        cur_cancel <- tryCatch(isolate(session$input$btn_cancelar_execucao), error = function(e) NULL)
+        if (!is.null(cur_cancel) && !identical(cur_cancel, initial_cancel_ts)) {
+          cancelar_ga()
+        }
+        
+        cur_pause <- tryCatch(isolate(session$input$btn_pausar_execucao), error = function(e) NULL)
+        cur_resume <- tryCatch(isolate(session$input$btn_retomar_execucao), error = function(e) NULL)
+        if (!is.null(cur_pause) && !identical(cur_pause, initial_pause_ts)) {
+          if (is.null(cur_resume) || identical(cur_resume, initial_resume_ts) || (is.numeric(cur_pause) && is.numeric(cur_resume) && cur_pause > cur_resume)) {
+            pausar_ga(TRUE)
+          }
+        }
+        if (!is.null(cur_resume) && !identical(cur_resume, initial_resume_ts)) {
+          if (is.null(cur_pause) || identical(cur_pause, initial_pause_ts) || (is.numeric(cur_resume) && is.numeric(cur_pause) && cur_resume >= cur_pause)) {
+            pausar_ga(FALSE)
+          }
+        }
+      }
+    }
+    
+    # 1. Verificar Cancelamento (Flag em memória ou disco)
+    if (isTRUE(.controle_ga$cancelar) || file.exists(.flag_cancelar)) {
+      stop("BENCHMARK_CANCELADO_PELO_USUARIO")
+    }
+    
+    # 2. Verificar Pausa (Flag em memória ou disco)
+    if (isTRUE(.controle_ga$pausado) || file.exists(.flag_pausar)) {
+      pct <- iter_atual / maxiter
+      if (is.function(set_progress)) {
+        set_progress(pct, sprintf("⏸️ [PAUSADO] Geração %d/%d — Clique em '▶️ Retomar' para continuar.", iter_atual, maxiter))
+      }
+      while ((isTRUE(.controle_ga$pausado) || file.exists(.flag_pausar)) && (!isTRUE(.controle_ga$cancelar) && !file.exists(.flag_cancelar))) {
+        Sys.sleep(0.1)
+        if (requireNamespace("httpuv", quietly = TRUE)) {
+          tryCatch(httpuv::service(50), error = function(e) {})
+        }
+        if (requireNamespace("later", quietly = TRUE)) {
+          tryCatch(later::run_now(0.01), error = function(e) {})
+        }
+        if (!is.null(session)) {
+          if (session$isClosed()) {
+            cancelar_ga()
+            break
+          }
+          cur_cancel <- tryCatch(isolate(session$input$btn_cancelar_execucao), error = function(e) NULL)
+          if (!is.null(cur_cancel) && !identical(cur_cancel, initial_cancel_ts)) {
+            cancelar_ga()
+            break
+          }
+          cur_resume <- tryCatch(isolate(session$input$btn_retomar_execucao), error = function(e) NULL)
+          if (!is.null(cur_resume) && !identical(cur_resume, initial_resume_ts)) {
+            pausar_ga(FALSE)
+            break
+          }
+        }
+      }
+      if (isTRUE(.controle_ga$cancelar) || file.exists(.flag_cancelar)) {
+        stop("BENCHMARK_CANCELADO_PELO_USUARIO")
+      }
+    }
     
     # Detecção de Estagnação -> Ativar Cataclismo
     if (anti_estagnacao && melhor_estado$iter_sem_melhora >= limite_estagnacao) {
@@ -244,31 +439,47 @@ otimizar_esn_ga_live <- function(dados,
   if (is.function(set_progress)) set_progress(0.02, "Iniciando Algoritmo Genético (LHS + Cataclismo)...")
   t_inicio <- proc.time()
   
-  alg_gen <- ga(
-    type = "binary",
-    fitness = fitness_func,
-    nBits = 59,
-    popSize = pop_size,
-    population = populacao_inicial_lhs,
-    selection = gabin_tourSelection,
-    crossover = gabin_spCrossover,
-    mutation = mutacao_adaptativa_cataclisma,
-    pcrossover = 0.85,
-    elitism = max(1, round(pop_size * 0.1)),
-    maxiter = maxiter,
-    run = maxiter,
-    keepBest = TRUE,
-    monitor = monitor_ga_cataclisma,
-    parallel = FALSE
-  )
+  cancelado_usuario <- FALSE
+  alg_gen <- NULL
+  
+  tryCatch({
+    alg_gen <- ga(
+      type = "binary",
+      fitness = fitness_func,
+      nBits = 55,
+      popSize = pop_size,
+      population = populacao_inicial_lhs,
+      selection = gabin_tourSelection,
+      crossover = gabin_spCrossover,
+      mutation = mutacao_adaptativa_cataclisma,
+      pcrossover = 0.85,
+      elitism = max(1, round(pop_size * 0.1)),
+      maxiter = maxiter,
+      run = run_stop,
+      keepBest = TRUE,
+      monitor = monitor_ga_cataclisma,
+      parallel = FALSE
+    )
+  }, error = function(e) {
+    if (grepl("BENCHMARK_CANCELADO_PELO_USUARIO", e$message)) {
+      cancelado_usuario <<- TRUE
+    } else {
+      stop(e)
+    }
+  })
   
   t_fim <- proc.time()
   tempo_exec <- (t_fim - t_inicio)["elapsed"]
   
-  # Fallback de segurança se necessário
+  # Fallback de segurança se cancelado antes de qualquer indivíduo ser avaliado
   if (is.null(melhor_estado$params)) {
-    solucao_bits <- alg_gen@solution[1, ]
-    fitness_func(solucao_bits)
+    if (!is.null(alg_gen) && !is.null(alg_gen@solution)) {
+      solucao_bits <- alg_gen@solution[1, ]
+      fitness_func(solucao_bits)
+    } else {
+      pop_init <- gerar_populacao_lhs(pop_size = pop_size, nbits = 55)
+      fitness_func(pop_init[1, ])
+    }
   }
   
   params_opt <- melhor_estado$params
@@ -286,12 +497,14 @@ otimizar_esn_ga_live <- function(dados,
   
   # 8. Registro Persistente no CSV Histórico e Verificação de Recorde
   if (is.function(set_progress)) set_progress(0.95, "Gravando histórico no CSV e verificando recordes...")
+  gen_registradas <- if (isTRUE(cancelado_usuario)) paste0(melhor_estado$iter_executadas, " (Cancelado)") else maxiter
+  
   registro_info <- registrar_execucao_ga(
     params = params_opt,
     metricas_valida = res_valida$metricas_valida,
     metricas_teste = res_teste$metricas_teste,
     fitness = melhor_estado$fitness,
-    geracoes = maxiter,
+    geracoes = gen_registradas,
     pop_size = pop_size,
     dist_win = win_dist,
     dist_w = w_dist,
@@ -304,6 +517,8 @@ otimizar_esn_ga_live <- function(dados,
   list(
     modelo = "ESN",
     origem = "GA_LIVE_LHS_CATACLYSM",
+    cancelado = cancelado_usuario,
+    iter_executadas = melhor_estado$iter_executadas,
     params = params_opt,
     dist_win = win_dist,
     dist_w = w_dist,

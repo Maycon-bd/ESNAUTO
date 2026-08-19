@@ -37,7 +37,7 @@ graph TD
 | 03 | [`03_app_shiny_studio.md`](03_app_shiny_studio.md) | **ESNAUTO Benchmark Studio (R Shiny App)** | `app/app.R`, `app/modules/*`, `app/utils/*` (`ga_engine.R`, `history_tracker.R`), `app/www/custom.css` |
 | 04 | [`04_dados_e_resultados.md`](04_dados_e_resultados.md) | **Gestão de Dados e Estrutura de Resultados** | `Scripts/data/*`, `historico_otimizacoes_ga.csv`, `melhor_recorde_global/`, `resultados_tcc/*` |
 | 05 | [`05_relatorios_e_monografia.md`](05_relatorios_e_monografia.md) | **Relatórios e Documentos Acadêmicos** | `reports/*`, `resultados_validacao_teste.md`, `resultados_validacao_teste2.md` |
-| 06 | [`06_secao_artigo_tfc_otimizacao_ga.md`](06_secao_artigo_tfc_otimizacao_ga.md) | **Texto Completo Formatado para o Artigo do TFC** | *Metodologia formal do GA com LHS e Cataclismo, formulação matemática de 59 bits, tabelas de benchmark e referências ABNT* |
+| 06 | [`06_secao_artigo_tfc_otimizacao_ga.md`](06_secao_artigo_tfc_otimizacao_ga.md) | **Texto Completo Formatado para o Artigo do TFC** | *Metodologia formal do GA com LHS e Cataclismo, formulação matemática de 55 bits, busca profunda em 15.000+ gerações, tabelas de benchmark e referências ABNT* |
 
 ---
 
