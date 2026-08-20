@@ -51,12 +51,13 @@ graph TD
 | 05 | [`05_relatorios_e_monografia.md`](05_relatorios_e_monografia.md) | **Relatórios e Documentos Acadêmicos** | `reports/*`, `resultados_validacao_teste.md`, `resultados_validacao_teste2.md` |
 | 06 | [`06_secao_artigo_tfc_otimizacao_ga.md`](06_secao_artigo_tfc_otimizacao_ga.md) | **Texto Completo Formatado para o Artigo do TFC** | *Metodologia formal do GA com LHS e Cataclismo, formulação matemática de 55 bits, busca profunda em 15.000+ gerações, tabelas de benchmark e referências ABNT* |
 | 07 | [`07_guia_extensao_aceleracao_gpu.md`](07_guia_extensao_aceleracao_gpu.md) | **Guia de Extensão para Aceleração em GPU (CUDA/OpenCL)** | *Camada de abstração de hardware, gargalos tensoriais, blueprint de hooks em lote e templates em LibTorch/PyTorch* |
+| 08 | [`08_comparativo_quatro_ondas_estocasticas.md`](08_comparativo_quatro_ondas_estocasticas.md) | **Pesquisa & Comparativo das 4 Ondas Estocásticas** | *Análise das 4 Ondas (Caudas Pesadas, Choques & Assimetria, Esparsidade & Snedecor, Benchmarks Canônicos), hipóteses financeiras e ranking multicritério para o artigo* |
 
 ---
 
 ## ⚡ Guia de Navegação Rápida
 
-- **Para redigir a metodologia e resultados do artigo do seu TFC**: Consulte diretamente [`06_secao_artigo_tfc_otimizacao_ga.md`](06_secao_artigo_tfc_otimizacao_ga.md).
+- **Para redigir a metodologia e resultados do artigo do seu TFC**: Consulte diretamente [`06_secao_artigo_tfc_otimizacao_ga.md`](06_secao_artigo_tfc_otimizacao_ga.md) e [`08_comparativo_quatro_ondas_estocasticas.md`](08_comparativo_quatro_ondas_estocasticas.md).
 - **Para rodar o app web interativo (R Shiny)**: Veja [`03_app_shiny_studio.md`](03_app_shiny_studio.md).
 - **Para rodar simulações em lote**: Veja [`01_orquestracao_e_simulacao.md`](01_orquestracao_e_simulacao.md).
 - **Para analisar resultados e gerar entrega**: Veja [`02_pipeline_pos_processamento.md`](02_pipeline_pos_processamento.md).

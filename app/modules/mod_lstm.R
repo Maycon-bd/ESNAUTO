@@ -5,6 +5,7 @@
 
 source("utils/data_prep.R", local = TRUE)
 source("utils/metrics.R", local = TRUE)
+source("utils/history_tracker.R", local = TRUE)
 
 # =============================================================================
 # FUNÇÃO CENTRAL DE TREINAMENTO LSTM (reutilizável)
@@ -279,6 +280,8 @@ lstm_server <- function(id, dados_reativo, resultados_externos = NULL) {
         resultados$historico <- res$historico
         resultados$tempo <- res$tempo
         resultados$metricas <- res$metricas
+        
+        salvar_resultado_dl("LSTM", res$validacao$metricas, res$teste$metricas, res$tempo, epochs = input$epochs, timesteps = input$timesteps, units = input$units)
       })
       
       showNotification("✅ LSTM treinado com sucesso!", type = "message")
