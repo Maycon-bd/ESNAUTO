@@ -3,39 +3,35 @@ import shutil
 import zipfile
 
 print("===================================================================")
-print("[ETAPA] CRIANDO PACOTE ESTRUTURADO PARA O ORIENTADOR")
+print("[ETAPA] RECRIANDO PACOTE DO ORIENTADOR (COM LINK DO GITHUB)")
 print("===================================================================")
 
 base_dir = r"d:\MAYCON\PROJETOS\ESNAUTO"
 staging_dir = os.path.join(base_dir, "pacote_orientador_tfc")
 zip_output = os.path.join(base_dir, "PACOTE_TFC_ORIENTADOR_MAYCON_GARCIA_SILVA.zip")
 
-# Limpar pasta de staging se já existir
+# Limpar pasta de staging
 if os.path.exists(staging_dir):
     shutil.rmtree(staging_dir)
 os.makedirs(staging_dir, exist_ok=True)
 
-# 1. Criar subpastas organizadas
+# 1. Criar subpastas
 pastas = [
-    "01_Artigo_e_Monografia",
+    "01_Relatorios_Tecnicos_e_Metodologia",
     "02_Figuras_Alta_Resolucao",
-    "03_Planilhas_e_Dados_Brutos",
-    "04_Codigo_Fonte_App_Studio",
-    "05_Scripts_de_Reproducao"
+    "03_Planilhas_e_Dados_Brutos"
 ]
 for p in pastas:
     os.makedirs(os.path.join(staging_dir, p), exist_ok=True)
 
-# 2. Copiar Artigos e Textos Acadêmicos
-artigos = [
-    ("docs/artigo_completo_tfc_esn_petr4.md", "01_Artigo_e_Monografia/Artigo_Completo_TFC_Maycon_Garcia_Silva.md"),
-    ("docs/artigo_completo_tfc_esn_petr4.tex", "01_Artigo_e_Monografia/Artigo_LaTeX_IEEE_Maycon_Garcia_Silva.tex"),
-    ("docs/08_comparativo_quatro_ondas_estocasticas.md", "01_Artigo_e_Monografia/Relatorio_Tecnico_4_Ondas_Estocasticas.md"),
-    ("docs/06_secao_artigo_tfc_otimizacao_ga.md", "01_Artigo_e_Monografia/Metodologia_GA_LHS_Cataclismo.md"),
-    ("reports/MayconGarciaSilva_monografia.docx", "01_Artigo_e_Monografia/Monografia_TFC_MayconGarciaSilva.docx"),
-    ("reports/Relatorio_Automacao_ESN.docx", "01_Artigo_e_Monografia/Relatorio_Automacao_ESN.docx")
+# 2. Copiar Relatórios Técnicos e Metodologia
+relatorios = [
+    ("docs/08_comparativo_quatro_ondas_estocasticas.md", "01_Relatorios_Tecnicos_e_Metodologia/Relatorio_Tecnico_4_Ondas_Estocasticas.md"),
+    ("docs/06_secao_artigo_tfc_otimizacao_ga.md", "01_Relatorios_Tecnicos_e_Metodologia/Metodologia_GA_LHS_Cataclismo.md"),
+    ("reports/MayconGarciaSilva_monografia.docx", "01_Relatorios_Tecnicos_e_Metodologia/Monografia_TFC_MayconGarciaSilva.docx"),
+    ("reports/Relatorio_Automacao_ESN.docx", "01_Relatorios_Tecnicos_e_Metodologia/Relatorio_Automacao_ESN.docx")
 ]
-for src, dst in artigos:
+for src, dst in relatorios:
     s = os.path.join(base_dir, src)
     if os.path.exists(s):
         shutil.copy2(s, os.path.join(staging_dir, dst))
@@ -61,109 +57,72 @@ for src, dst in dados:
         shutil.copy2(s, os.path.join(staging_dir, dst))
         print(f"  + [03] {dst}")
 
-# 5. Copiar Código Fonte do App Shiny
-app_dir = os.path.join(base_dir, "app")
-dst_app = os.path.join(staging_dir, "04_Codigo_Fonte_App_Studio")
-for root, dirs, files in os.walk(app_dir):
-    rel_root = os.path.relpath(root, app_dir)
-    target_dir = os.path.join(dst_app, rel_root) if rel_root != "." else dst_app
-    os.makedirs(target_dir, exist_ok=True)
-    for f in files:
-        shutil.copy2(os.path.join(root, f), os.path.join(target_dir, f))
-print("  + [04] 04_Codigo_Fonte_App_Studio/ (Todo o código Shiny incluído)")
-
-# 6. Copiar Scripts de Reprodução
-scripts = [
-    ("Scripts/gerar_graficos_artigo_finais.R", "05_Scripts_de_Reproducao/gerar_todas_as_figuras.R"),
-    ("automate_simulations.py", "05_Scripts_de_Reproducao/automate_simulations.py"),
-    ("ESN Acoes-petr4 v2.8.1.2 Maycon G Silva.R", "05_Scripts_de_Reproducao/ESN_Acoes_petr4_v2.8.1.2.R")
-]
-for src, dst in scripts:
-    s = os.path.join(base_dir, src)
-    if os.path.exists(s):
-        shutil.copy2(s, os.path.join(staging_dir, dst))
-        print(f"  + [05] {dst}")
-
-# 7. Criar GUIA DO ORIENTADOR
-guia_conteudo = """# 🎓 GUIA DE AVALIAÇÃO DO TFC — PARA O ORIENTADOR
-## **Tema:** Previsão de Séries Temporais Financeiras (PETR4) via Echo State Networks com Distribuições Não-Gaussianas e Algoritmo Genético Híbrido (LHS + Cataclismo)
-**Autor:** Maycon Garcia Silva  
-**Data:** Agosto / 2026
+# 5. Criar GUIA DO ORIENTADOR com Link Público do GitHub
+guia_conteudo = """# GUIA DE AVALIACAO DOS RESULTADOS DO TFC — PARA O ORIENTADOR
+## Tema: Previsao de Series Temporais Financeiras (PETR4) via Echo State Networks com Distribuicoes Nao-Gaussianas e Algoritmo Genetico Hibrido (LHS + Cataclismo)
+Autor: Maycon Garcia Silva  
+Data: Agosto / 2026  
+Repositorio Publico no GitHub: https://github.com/Maycon-bd/ESNAUTO
 
 ---
 
 ### Prezado(a) Professor(a) Orientador(a),
 
-Este pacote contém todos os artefatos, dados brutos, gráficos em alta resolução, códigos-fonte e artigos resultantes da pesquisa experimental realizada no Trabalho de Fim de Curso (TFC).
+Este pacote contem os relatorios tecnicos, dados brutos consolidados das 30 rodadas experimentais das 4 Ondas Estocasticas e figuras em alta resolucao desenvolvidos no Trabalho de Fim de Curso (TFC).
+
+O codigo-fonte completo do aplicativo web (ESNAUTO Benchmark Studio) e os scripts de reproducao estao disponiveis publicamente no GitHub:
+👉 https://github.com/Maycon-bd/ESNAUTO
 
 ---
 
-### 📁 ESTRUTURA DESTE PACOTE
+### ESTRUTURA DESTE PACOTE
 
-```
-├── 01_Artigo_e_Monografia/
-│   ├── Artigo_Completo_TFC_Maycon_Garcia_Silva.md    # Texto integral formatado com normas ABNT
-│   ├── Artigo_LaTeX_IEEE_Maycon_Garcia_Silva.tex     # Template LaTeX pronto (para Overleaf/TeXStudio)
-│   ├── Relatorio_Tecnico_4_Ondas_Estocasticas.md      # Detalhamento minucioso das 30 rodadas
-│   ├── Metodologia_GA_LHS_Cataclismo.md              # Formulação de 59 bits e amostragem LHS
-│   └── Monografia_TFC_MayconGarciaSilva.docx         # Versão editável em Word da Monografia
+├── 01_Relatorios_Tecnicos_e_Metodologia/
+│   ├── Relatorio_Tecnico_4_Ondas_Estocasticas.md      # Relatorio completo das 30 rodadas oficiais
+│   ├── Metodologia_GA_LHS_Cataclismo.md              # Formulacao do GA (59 bits, LHS e CHC)
+│   ├── Monografia_TFC_MayconGarciaSilva.docx         # Versao editavel em Word da Monografia
+│   └── Relatorio_Automacao_ESN.docx                 # Relatorio tecnico do pipeline
 │
 ├── 02_Figuras_Alta_Resolucao/
 │   ├── fig1_boxplot_mae_ondas.png / .pdf             # Boxplot de erro MAE no teste cego vs DL
 │   ├── fig2_tempo_treinamento_speedup.png / .pdf     # Speedup >500x da ESN vs LSTM/GRU (escala log)
-│   ├── fig3_campeoes_teste_serie.png / .pdf          # Série temporal teste out-of-sample vs real
-│   ├── fig4_dispersao_residuos.png / .pdf            # Dispersão Real x Previsto (R²=0.9940) e resíduos
-│   └── fig5_ranking_multicriterio.png / .pdf         # Ranking ponderado multicritério (Score 0-100)
+│   ├── fig3_campeoes_teste_serie.png / .pdf          # Serie temporal teste out-of-sample vs real
+│   ├── fig4_dispersao_residuos.png / .pdf            # Dispersao Real x Previsto (R²=0.9940) e residuos
+│   └── fig5_ranking_multicriterio.png / .pdf         # Ranking oficial ponderado multicriterio (Score 0-100)
 │
-├── 03_Planilhas_e_Dados_Brutos/
-│   ├── historico_30_rodadas_ga_4_ondas.csv           # Dados brutos das 30 rodadas oficiais (GA 10.000 gerações)
-│   ├── historico_baselines_dl_lstm_gru.csv           # Métricas dos baselines de Deep Learning
-│   ├── PETR4_close_com_factor_2000-2020.txt          # Série temporal bruta PETR4 (5.198 cotações)
-│   └── PETR4_serie_temporal_com_datas.csv            # Série temporal indexada por datas
-│
-├── 04_Codigo_Fonte_App_Studio/
-│   └── (Aplicação R Shiny completa ESNAUTO Benchmark Studio)
-│
-└── 05_Scripts_de_Reproducao/
-    ├── gerar_todas_as_figuras.R                      # Script R que gera automaticamente todas as figuras
-    └── ESN_Acoes_petr4_v2.8.1.2.R                    # Implementação canônica da ESN
-```
+└── 03_Planilhas_e_Dados_Brutos/
+    ├── historico_30_rodadas_ga_4_ondas.csv           # Dados brutos das 30 rodadas oficiais (GA 10.000 geracoes)
+    ├── historico_baselines_dl_lstm_gru.csv           # Metricas dos baselines de Deep Learning (LSTM e GRU)
+    ├── PETR4_close_com_factor_2000-2020.txt          # Serie temporal bruta PETR4 (5.198 cotacoes)
+    └── PETR4_serie_temporal_com_datas.csv            # Serie temporal indexada por datas
 
 ---
 
-### 🏆 SÍNTESE DOS PRINCIPAIS RESULTADOS CIENTÍFICOS
+### SINTESE DOS PRINCIPAIS RESULTADOS EXPERIMENTAIS
 
-1. **Volume Computacional:** Foram realizadas **30 rodadas oficiais de produção** de Algoritmo Genético em busca profunda de **10.000 gerações**, totalizando mais de **25 horas e 40 minutos** de processamento local em dataset de 5.198 amostras (50% Treino, 25% Validação, 25% Teste Cego).
-2. **Superioridade sobre Deep Learning Recorrente:** Todas as 30 configurações de ESN superaram a **LSTM** ($MAE = 0.4521, R^2 = 0.9839$) e a **GRU** ($MAE = 0.3566, R^2 = 0.9912$) em erro no teste cego.
-3. **Recordes Oficiais Obtidos:**
-   * **Campeã Geral de Teste:** ESN Onda 2 (*Laplace + Normal*) $\rightarrow$ **MAE Teste = 0.3272**, **$R^2$ = 0.9940** (Score: **98.8 / 100**).
-   * **Campeã de Aderência:** ESN Onda 2 (*Laplace + Cauchy*) $\rightarrow$ **Menor RMSE = 0.4953**, **Maior $R^2$ = 0.9941**.
-   * **Eficiência:** Tempo de treino Ridge da ESN: **0.05 segundos** (**>500x mais rápida** que as redes profundas).
+1. Volume Computacional: Foram realizadas 30 rodadas oficiais de producao de Algoritmo Genetico em busca profunda de 10.000 geracoes, totalizando mais de 25 horas e 40 minutos de processamento local em dataset de 5.198 amostras (50% Treino, 25% Validacao, 25% Teste Cego).
+2. Superioridade sobre Deep Learning Recorrente: Todas as 30 configuracoes de ESN superaram a LSTM (MAE = 0.4521, R² = 0.9839) e a GRU (MAE = 0.3566, R² = 0.9912) em erro no teste cego.
+3. Recordes Oficiais Obtidos:
+   * Campea Geral de Teste: ESN Onda 2 (Laplace + Normal) -> MAE Teste = 0.3272, R² = 0.9940 (Score: 98.8 / 100).
+   * Campea de Aderencia: ESN Onda 2 (Laplace + Cauchy) -> Menor RMSE = 0.4953, Maior R² = 0.9941.
+   * Eficiencia: Tempo de treino Ridge da ESN: 0.05 segundos (>500x mais rapida que as redes profundas).
 
 ---
 
-### 🚀 COMO EXECUTAR O APLICATIVO WEB OU REPRODUZIR AS FIGURAS
+### CODIGO-FONTE E REPRODUCAO NO GITHUB
 
-* **Para abrir o aplicativo interativo no R / RStudio:**
-  ```r
-  shiny::runApp("04_Codigo_Fonte_App_Studio", port = 8080)
-  ```
-* **Para regenerar todas as figuras em PDF/PNG:**
-  ```bash
-  Rscript 05_Scripts_de_Reproducao/gerar_todas_as_figuras.R
-  ```
-
-Estou à total disposição para eventuais dúvidas ou esclarecimentos!
+Todo o codigo-fonte do aplicativo web Shiny (ESNAUTO Studio), os modulos de redes neurais e os scripts de reproducao automatizada estao versionados e acessiveis no repositorio:
+https://github.com/Maycon-bd/ESNAUTO
 
 Atenciosamente,  
-**Maycon Garcia Silva**
+Maycon Garcia Silva
 """
 
 with open(os.path.join(staging_dir, "GUIA_DO_ORIENTADOR.md"), "w", encoding="utf-8") as f:
     f.write(guia_conteudo)
-print("  + GUIA_DO_ORIENTADOR.md criado com sucesso!")
+print("  + GUIA_DO_ORIENTADOR.md criado com o link do GitHub!")
 
-# 8. Compactar tudo no ZIP final
+# 6. Compactar
 print(f"\nCompactando pasta no arquivo {zip_output}...")
 with zipfile.ZipFile(zip_output, 'w', zipfile.ZIP_DEFLATED) as zf:
     for root, dirs, files in os.walk(staging_dir):
@@ -173,7 +132,7 @@ with zipfile.ZipFile(zip_output, 'w', zipfile.ZIP_DEFLATED) as zf:
             zf.write(full_path, arcname=rel_path)
 
 print("\n===================================================================")
-print(f"[SUCESSO] PACOTE FINAL DO ORIENTADOR GERADO COM SUCESSO!")
+print(f"[SUCESSO] PACOTE FINAL GERADO COM SUCESSO!")
 print(f"Localizacao: {zip_output}")
 print(f"Tamanho: {os.path.getsize(zip_output) / 1024 / 1024:.2f} MB")
 print("===================================================================")
