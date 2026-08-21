@@ -1,0 +1,89 @@
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{url}
+
+\begin{document}
+
+\title{Impacto de Distribuições Não-Gaussianas e Otimização Genética com Hipercubo Latino em Echo State Networks para Previsão de Séries Temporais Financeiras}
+
+\author{Maycon~Garcia~Silva\\
+\textit{Departamento de Ciência da Computação / Engenharia}\\
+\textit{Trabalho de Fim de Curso (TFC)}
+}
+
+\markboth{Artigo de TFC -- Ciência da Computação / Engenharia, Agosto~2026}%
+{Silva: Impacto de Distribuições Não-Gaussianas em Echo State Networks}
+
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+A previsão de séries temporais financeiras constitui um problema desafiador devido à não-estacionariedade, alta volatilidade, leptocurtose e quebras estruturais inerentes aos mercados de capitais. Embora redes neurais recorrentes profundas (LSTM e GRU) tenham se tornado populares, seu alto custo computacional decorrente do algoritmo de retropropagação no tempo (BPTT) limita sua aplicação em cenários de alta frequência e busca extensiva de hiperparâmetros. As \textit{Echo State Networks} (ESN), baseadas no paradigma do \textit{Reservoir Computing}, oferecem uma alternativa eficiente na qual o reservatório dinâmico permanece fixo e apenas a camada de leitura linear é treinada analiticamente via regressão Ridge de Tikhonov. Neste trabalho, propõe-se uma metodologia híbrida para ESN baseada em: (i) exploração sistemática de distribuições estocásticas não-gaussianas nas matrizes de pesos de entrada ($W_{in}$) e internas ($W$) divididas em quatro ondas estratégicas (Caudas Pesadas, Choques \& Assimetria, Esparsidade Sináptica \& Razões de Variância e Benchmarks Canônicos); e (ii) otimização global dos hiperparâmetros críticos ($a, \rho(W), initLen, N_x, \lambda$) via Algoritmo Genético codificado em 59 bits com Amostragem por Hipercubo Latino (LHS) e Reinicialização Cataclísmica (CHC). A avaliação sobre a série histórica da PETR4 (2000--2020, 5.198 amostras) com 30 rodadas oficiais de 10.000 gerações demonstrou que todas as ESNs superaram sistematicamente os baselines profundos em acurácia de teste cego ($MAE = 0.3272$ e $R^2 = 0.9940$ na ESN campeã Laplace $\times$ Normal, contra $MAE = 0.3566$ na GRU e $MAE = 0.4521$ na LSTM), com uma aceleração superior a 500 vezes no tempo de treinamento e inferência. Ademais, a matriz interna com distribuição de Cauchy alcançou o menor RMSE de teste ($0.4953$) e o maior coeficiente de determinação ($R^2 = 0.9941$), comprovando a eficácia superior de matrizes não-gaussianas.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Echo State Networks, Reservoir Computing, Algoritmos Genéticos, Hipercubo Latino, Distribuições Não-Gaussianas, PETR4, Séries Temporais Financeiras.
+\end{IEEEkeywords}}
+
+\maketitle
+\IEEEdisplaynontitleabstractindextext
+\IEEEpeerreviewmaketitle
+
+\section{Introdução}
+\IEEEPARstart{A}{modelagem} quantitativa de ativos financeiros negociados em bolsa de valores representa um dos problemas mais desafiadores do aprendizado de máquina moderno. Séries de preços de ações como a PETR4 na B3 exibem leptocurtose, assimetria negativa e agrupamento de volatilidade (\textit{volatility clustering}). Redes recorrentes profundas como LSTM e GRU demandam alto custo computacional decorrente do algoritmo BPTT. As \textit{Echo State Networks} (ESN) superam esse limitador ao treinar apenas a camada linear de saída via regressão Ridge analítica.
+
+\section{Metodologia e Formulação Matemática}
+Uma ESN de tempo discreto com entrada $u(t)$, estado interno $\mathbf{x}(t) \in \mathbb{R}^{N_x}$ e saída $y(t)$ é descrita por:
+\begin{equation}
+\mathbf{\tilde{x}}(t) = \tanh \left( \mathbf{W}_{\text{in}} u(t) + \mathbf{W} \mathbf{x}(t-1) + \mathbf{b} \right)
+\end{equation}
+\begin{equation}
+\mathbf{x}(t) = (1 - a) \mathbf{x}(t-1) + a \mathbf{\tilde{x}}(t)
+\end{equation}
+\begin{equation}
+\mathbf{w}_{\text{out}} = \left( \mathbf{X}^T \mathbf{X} + \lambda \mathbf{I} \right)^{-1} \mathbf{X}^T \mathbf{y}_{\text{alvo}}
+\end{equation}
+
+Os hiperparâmetros $\{a, sr, initLen, N_x, \lambda\}$ são otimizados pelo algoritmo genético híbrido GA+LHS+CHC sob codificação binária de 59 bits.
+
+\section{Resultados e Discussão}
+A Tabela~\ref{tab:resultados} resume os resultados no teste cego (*out-of-sample*, 1.299 amostras).
+
+\begin{table*}[t]
+\centering
+\caption{Comparativo Oficial de Desempenho e Ranking Multicritério (PETR4 2000--2020)}
+\label{tab:resultados}
+\begin{tabular}{llcccccc}
+\toprule
+\textbf{Modelo / Topologia} & \textbf{Configuração de Pesos} & \textbf{MAE Val.} & \textbf{MAE Teste} & \textbf{RMSE Teste} & \textbf{$R^2$ Teste} & \textbf{Tempo} & \textbf{Score (0--100)} \\
+\midrule
+\textbf{ESN (Onda 2 -- Campeã Geral)} & $W_{in}$: Laplace $\mid$ $W$: Normal & 0.2626 & \textbf{0.3272} & 0.4985 & \textbf{0.9940} & \textbf{0.05 s} & \textbf{98.8 pts (1º)} \\
+\textbf{ESN (Onda 2 -- Recorde $R^2$/RMSE)} & $W_{in}$: Laplace $\mid$ $W$: Cauchy & 0.2623 & 0.3289 & \textbf{0.4953} & \textbf{0.9941} & \textbf{0.05 s} & \textbf{98.5 pts (2º)} \\
+\textbf{ESN (Onda 1 -- Caudas Pesadas)} & $W_{in}$: Pearson V $\mid$ $W$: Uniforme & 0.2629 & 0.3276 & 0.4982 & \textbf{0.9940} & \textbf{0.05 s} & \textbf{98.3 pts (3º)} \\
+\textbf{ESN (Onda 3 -- Esparsidade)} & $W_{in}$: GED $\mid$ $W$: F de Snedecor & 0.2626 & 0.3279 & 0.4986 & \textbf{0.9940} & \textbf{0.05 s} & 97.6 pts \\
+\textbf{ESN (Onda 4 -- Controle Canônico)} & $W_{in}$: Normal $\mid$ $W$: Normal & 0.2626 & 0.3283 & 0.4990 & \textbf{0.9940} & \textbf{0.05 s} & 96.4 pts \\
+\midrule
+\textbf{GRU Network (Deep Learning)} & 50 units, 10 timesteps, 80 épocas & 0.3125 & 0.3566 & 0.5898 & 0.9912 & 28.80 s & 73.4 pts \\
+\textbf{LSTM Network (Deep Learning)} & 50 units, 10 timesteps, 80 épocas & 0.3812 & 0.4521 & 0.8166 & 0.9839 & 35.40 s & 42.1 pts \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\section{Conclusões}
+Este trabalho comprovou experimentalmente a superioridade das ESNs frente às redes profundas na série PETR4, atingindo menor erro preditivo e velocidade mais de 500x superior, com destaque para matrizes de Laplace e Cauchy.
+
+\begin{thebibliography}{00}
+\bibitem{jaeger2001} H. Jaeger, ``The 'echo state' approach to analysing and training recurrent neural networks,'' GMD Report 148, 2001.
+\bibitem{hochreiter1997} S. Hochreiter and J. Schmidhuber, ``Long short-term memory,'' \textit{Neural Computation}, vol. 9, no. 8, pp. 1735--1780, 1997.
+\bibitem{cho2014} K. Cho et al., ``Learning phrase representations using RNN encoder-decoder,'' in \textit{EMNLP}, 2014.
+\bibitem{eshelman1991} L. J. Eshelman, ``The CHC adaptive search algorithm,'' \textit{Foundations of Genetic Algorithms}, vol. 1, pp. 265--283, 1991.
+\end{thebibliography}
+
+\end{document}
