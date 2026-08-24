@@ -1393,14 +1393,14 @@ server <- function(input, output, session) {
             fluidRow(
               column(6, 
                 selectizeInput("modal_ga_win", "Distribuição(ões) Win (Entrada):", 
-                               choices = c("GED", "Normal", "Uniforme", "t de Student", "t de Student Assimétrica", "Cauchy", "Pearson V", "Laplace", "Normal Esparsa"), 
+                               choices = c("GED", "Normal", "Uniforme", "t de Student", "t de Student Assimétrica", "Cauchy", "Pearson V", "Laplace", "Normal Esparsa", "Power Function"), 
                                selected = c("GED"), 
                                multiple = TRUE,
                                options = list(plugins = list('remove_button'), placeholder = 'Selecione uma ou mais...'))
               ),
               column(6, 
                 selectizeInput("modal_ga_w", "Distribuição(ões) W (Reservatório):", 
-                               choices = c("Normal", "Uniforme", "GED", "t de Student", "t de Student Assimétrica", "Cauchy", "Laplace", "Normal Esparsa", "F de Snedecor"), 
+                               choices = c("Normal", "Uniforme", "GED", "t de Student", "t de Student Assimétrica", "Cauchy", "Laplace", "Normal Esparsa", "F de Snedecor", "Power Function"), 
                                selected = c("Normal"), 
                                multiple = TRUE,
                                options = list(plugins = list('remove_button'), placeholder = 'Selecione uma ou mais...'))

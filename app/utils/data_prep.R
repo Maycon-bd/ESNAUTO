@@ -200,6 +200,20 @@ registrar_distribuicao(
   descricao = "Distribuição F de Snedecor (graus de liberdade df1 e df2)"
 )
 
+# Power Function (parâmetros do EasyFit para PETR4: alpha = 0.50339, a = 2.4759, b = 34.548)
+registrar_distribuicao(
+  nome = "Power Function",
+  funcao = function(n, params) {
+    alpha <- params$alpha
+    a <- params$a
+    b <- params$b
+    u <- runif(n, min = 0, max = 1)
+    a + (b - a) * (u ^ (1 / alpha))
+  },
+  params_default = list(alpha = 0.50339, a = 2.4759, b = 34.548),
+  descricao = "Distribuição Power Function (ajuste EasyFit PETR4 50%: alpha=0.50339, a=2.4759, b=34.548)"
+)
+
 # =============================================================================
 # FUNÇÕES DE PREPARAÇÃO DE DADOS
 # =============================================================================
