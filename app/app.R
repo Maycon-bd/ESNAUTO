@@ -1385,6 +1385,7 @@ server <- function(input, output, session) {
                 actionButton("btn_modal_ga_onda2", "🌊 Onda 2: Shocks & Assimetrias", class = "btn-default btn-xs", style = "font-size: 0.78rem; font-weight: 600; background: #fef3c7; color: #b45309;"),
                 actionButton("btn_modal_ga_onda3", "🌊 Onda 3: Esparsidade & Snedecor", class = "btn-default btn-xs", style = "font-size: 0.78rem; font-weight: 600; background: #f3e8ff; color: #7e22ce;"),
                 actionButton("btn_modal_ga_onda4", "🌊 Onda 4: Híbridos", class = "btn-default btn-xs", style = "font-size: 0.78rem; font-weight: 600; background: #fae8ff; color: #a21caf;"),
+                actionButton("btn_modal_ga_onda5", "🌊 Onda 5: EasyFit Empirical", class = "btn-default btn-xs", style = "font-size: 0.78rem; font-weight: 600; background: #ecfdf5; color: #047857;"),
                 actionButton("btn_modal_ga_all_win", "+ Todos Win", class = "btn-default btn-xs", style = "font-size: 0.78rem;"),
                 actionButton("btn_modal_ga_all_w", "+ Todos W", class = "btn-default btn-xs", style = "font-size: 0.78rem;")
               )
@@ -1393,14 +1394,14 @@ server <- function(input, output, session) {
             fluidRow(
               column(6, 
                 selectizeInput("modal_ga_win", "Distribuição(ões) Win (Entrada):", 
-                               choices = c("GED", "Normal", "Uniforme", "t de Student", "t de Student Assimétrica", "Cauchy", "Pearson V", "Laplace", "Normal Esparsa", "Power Function"), 
+                               choices = c("GED", "Normal", "Uniforme", "t de Student", "t de Student Assimétrica", "Cauchy", "Pearson V", "Laplace", "Normal Esparsa", "Power Function", "Dagum (4P)", "Johnson SB"), 
                                selected = c("GED"), 
                                multiple = TRUE,
                                options = list(plugins = list('remove_button'), placeholder = 'Selecione uma ou mais...'))
               ),
               column(6, 
                 selectizeInput("modal_ga_w", "Distribuição(ões) W (Reservatório):", 
-                               choices = c("Normal", "Uniforme", "GED", "t de Student", "t de Student Assimétrica", "Cauchy", "Laplace", "Normal Esparsa", "F de Snedecor", "Power Function"), 
+                               choices = c("Normal", "Uniforme", "GED", "t de Student", "t de Student Assimétrica", "Cauchy", "Laplace", "Normal Esparsa", "F de Snedecor", "Power Function", "Dagum (4P)", "Johnson SB"), 
                                selected = c("Normal"), 
                                multiple = TRUE,
                                options = list(plugins = list('remove_button'), placeholder = 'Selecione uma ou mais...'))
@@ -1477,6 +1478,11 @@ server <- function(input, output, session) {
   observeEvent(input$btn_modal_ga_onda4, {
     updateSelectizeInput(session, "modal_ga_win", selected = c("Normal", "Uniforme", "Normal Esparsa"))
     updateSelectizeInput(session, "modal_ga_w", selected = c("Uniforme", "Normal"))
+  })
+  
+  observeEvent(input$btn_modal_ga_onda5, {
+    updateSelectizeInput(session, "modal_ga_win", selected = c("Power Function", "Dagum (4P)", "Johnson SB"))
+    updateSelectizeInput(session, "modal_ga_w", selected = c("Normal", "Uniforme", "Power Function", "Dagum (4P)", "Johnson SB"))
   })
   
   observeEvent(input$btn_modal_ga_all_win, {

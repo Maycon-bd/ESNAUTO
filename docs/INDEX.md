@@ -52,12 +52,13 @@ graph TD
 | 06 | [`06_secao_artigo_tfc_otimizacao_ga.md`](06_secao_artigo_tfc_otimizacao_ga.md) | **Texto Completo Formatado para o Artigo do TFC** | *Metodologia formal do GA com LHS e Cataclismo, formulação matemática de 55 bits, busca profunda em 15.000+ gerações, tabelas de benchmark e referências ABNT* |
 | 07 | [`07_guia_extensao_aceleracao_gpu.md`](07_guia_extensao_aceleracao_gpu.md) | **Guia de Extensão para Aceleração em GPU (CUDA/OpenCL)** | *Camada de abstração de hardware, gargalos tensoriais, blueprint de hooks em lote e templates em LibTorch/PyTorch* |
 | 08 | [`08_comparativo_quatro_ondas_estocasticas.md`](08_comparativo_quatro_ondas_estocasticas.md) | **Pesquisa & Comparativo das 4 Ondas Estocásticas** | *Análise das 4 Ondas (Caudas Pesadas, Choques & Assimetria, Esparsidade & Snedecor, Benchmarks Canônicos), hipóteses financeiras e ranking multicritério para o artigo* |
+| 09 | [`09_onda_5_ajustes_empiricos_easyfit.md`](09_onda_5_ajustes_empiricos_easyfit.md) | **Onda 5: Ajustes Empíricos do EasyFit (Power Function, Dagum 4P, Johnson SB)** | *15 execuções de produção em GA 10.000 gerações com distribuições empíricas do EasyFit, formulação analítica e comparativos vs Deep Learning* |
 
 ---
 
 ## ⚡ Guia de Navegação Rápida
 
-- **Para redigir a metodologia e resultados do artigo do seu TFC**: Consulte diretamente [`06_secao_artigo_tfc_otimizacao_ga.md`](06_secao_artigo_tfc_otimizacao_ga.md) e [`08_comparativo_quatro_ondas_estocasticas.md`](08_comparativo_quatro_ondas_estocasticas.md).
+- **Para redigir a metodologia e resultados do artigo do seu TFC**: Consulte diretamente [`06_secao_artigo_tfc_otimizacao_ga.md`](06_secao_artigo_tfc_otimizacao_ga.md), [`08_comparativo_quatro_ondas_estocasticas.md`](08_comparativo_quatro_ondas_estocasticas.md) e [`09_onda_5_ajustes_empiricos_easyfit.md`](09_onda_5_ajustes_empiricos_easyfit.md).
 - **Para rodar o app web interativo (R Shiny)**: Veja [`03_app_shiny_studio.md`](03_app_shiny_studio.md).
 - **Para rodar simulações em lote**: Veja [`01_orquestracao_e_simulacao.md`](01_orquestracao_e_simulacao.md).
 - **Para analisar resultados e gerar entrega**: Veja [`02_pipeline_pos_processamento.md`](02_pipeline_pos_processamento.md).

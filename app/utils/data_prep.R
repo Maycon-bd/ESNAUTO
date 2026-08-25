@@ -207,11 +207,42 @@ registrar_distribuicao(
     alpha <- params$alpha
     a <- params$a
     b <- params$b
-    u <- runif(n, min = 0, max = 1)
+    u <- runif(n, min = 1e-10, max = 1 - 1e-10)
     a + (b - a) * (u ^ (1 / alpha))
   },
   params_default = list(alpha = 0.50339, a = 2.4759, b = 34.548),
   descricao = "Distribuição Power Function (ajuste EasyFit PETR4 50%: alpha=0.50339, a=2.4759, b=34.548)"
+)
+
+# Dagum (4P) (parâmetros do EasyFit para PETR4: k = 0.30596, alpha = 2.0664, beta = 17.968, gamma = 2.4775)
+registrar_distribuicao(
+  nome = "Dagum (4P)",
+  funcao = function(n, params) {
+    k <- params$k
+    alpha <- params$alpha
+    beta <- params$beta
+    gamma <- params$gamma
+    u <- runif(n, min = 1e-10, max = 1 - 1e-10)
+    gamma + beta * ((u ^ (-1 / k) - 1) ^ (-1 / alpha))
+  },
+  params_default = list(k = 0.30596, alpha = 2.0664, beta = 17.968, gamma = 2.4775),
+  descricao = "Distribuição Dagum (4P) (ajuste EasyFit PETR4 50%: k=0.30596, alpha=2.0664, beta=17.968, gamma=2.4775)"
+)
+
+# Johnson SB (parâmetros do EasyFit para PETR4: gamma = 0.56742, delta = 0.49965, lambda = 27.881, xi = 1.9165)
+registrar_distribuicao(
+  nome = "Johnson SB",
+  funcao = function(n, params) {
+    gamma <- params$gamma
+    delta <- params$delta
+    lambda <- params$lambda
+    xi <- params$xi
+    z <- rnorm(n, mean = 0, sd = 1)
+    y <- 1 / (1 + exp(-(z - gamma) / delta))
+    xi + lambda * y
+  },
+  params_default = list(gamma = 0.56742, delta = 0.49965, lambda = 27.881, xi = 1.9165),
+  descricao = "Distribuição Johnson SB (ajuste EasyFit PETR4 50%: gamma=0.56742, delta=0.49965, lambda=27.881, xi=1.9165)"
 )
 
 # =============================================================================

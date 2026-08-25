@@ -391,17 +391,18 @@ esn_ui <- function(id) {
             div(style = "background: #f0fdf4; border: 1px solid #bbf7d0; padding: 14px; border-radius: var(--radius-md); margin-bottom: 14px;",
               h5(style = "margin-top:0; color: #166534; font-weight: 800;", "🧬 Configuração do GA Live:"),
               selectizeInput(ns("ga_win_dist"), "Distribuição(ões) W_in (Entrada):", 
-                             choices = c("GED", "Normal", "Uniforme", "t de Student", "t de Student Assimétrica", "Cauchy", "Pearson V", "Laplace", "Normal Esparsa", "Power Function"), 
+                             choices = c("GED", "Normal", "Uniforme", "t de Student", "t de Student Assimétrica", "Cauchy", "Pearson V", "Laplace", "Normal Esparsa", "Power Function", "Dagum (4P)", "Johnson SB"), 
                              selected = c("GED"), 
                              multiple = TRUE,
                              options = list(plugins = list('remove_button'), placeholder = 'Selecione distribuições...')),
               selectizeInput(ns("ga_w_dist"), "Distribuição(ões) W (Reservatório):", 
-                             choices = c("Normal", "Uniforme", "GED", "t de Student", "t de Student Assimétrica", "Cauchy", "Laplace", "Normal Esparsa", "F de Snedecor", "Power Function"), 
+                             choices = c("Normal", "Uniforme", "GED", "t de Student", "t de Student Assimétrica", "Cauchy", "Laplace", "Normal Esparsa", "F de Snedecor", "Power Function", "Dagum (4P)", "Johnson SB"), 
                              selected = c("Normal"), 
                              multiple = TRUE,
                              options = list(plugins = list('remove_button'), placeholder = 'Selecione distribuições...')),
               div(style = "display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap;",
                 actionButton(ns("btn_ga_preset_tcc"), "⚡ 4 Cenários TCC", class = "btn-default btn-xs", style = "font-size: 0.75rem; padding: 2px 6px;"),
+                actionButton(ns("btn_ga_preset_onda5"), "🌊 Onda 5 (EasyFit)", class = "btn-success btn-xs", style = "font-size: 0.75rem; padding: 2px 6px; font-weight: 700; background: #059669; border-color: #047857; color: white;"),
                 actionButton(ns("btn_ga_all_win"), "+ Todos Win", class = "btn-default btn-xs", style = "font-size: 0.75rem; padding: 2px 6px;"),
                 actionButton(ns("btn_ga_all_w"), "+ Todos W", class = "btn-default btn-xs", style = "font-size: 0.75rem; padding: 2px 6px;")
               ),
@@ -492,6 +493,11 @@ esn_server <- function(id, dados_reativo, resultados_externos = NULL) {
     observeEvent(input$btn_ga_preset_tcc, {
       updateSelectizeInput(session, "ga_win_dist", selected = c("GED", "Normal", "Uniforme"))
       updateSelectizeInput(session, "ga_w_dist", selected = c("Normal", "Uniforme"))
+    })
+    
+    observeEvent(input$btn_ga_preset_onda5, {
+      updateSelectizeInput(session, "ga_win_dist", selected = c("Power Function", "Dagum (4P)", "Johnson SB"))
+      updateSelectizeInput(session, "ga_w_dist", selected = c("Normal", "Uniforme", "Power Function", "Dagum (4P)", "Johnson SB"))
     })
     
     observeEvent(input$btn_ga_all_win, {

@@ -42,12 +42,16 @@ O repositório inclui:
 
 ## ✨ Principais Recursos
 
-- 🧠 **Reservoir Computing Otimizado**: Suporte a distribuições de pesos **Normal**, **Uniforme** e **GED** (*Generalized Error Distribution*) para as matrizes $W_{in}$ e $W$.
-- 🧬 **Otimização via Algoritmo Genético**: Ajuste automático dos hiperparâmetros vitais da ESN via pacote `GA` do R.
-- 📈 **Deep Learning Benchmarking (LSTM & GRU)**: Implementação completa com `keras3` e backend `TensorFlow` para comparação rigorosa de acurácia (MAE, RMSE, MAPE, $R^2$) e custo computacional (tempo de treinamento).
+- 🧠 **Reservoir Computing Estocástico Multidistribuição**: Suporte nativo a 12 distribuições de probabilidades para $W_{in}$ e $W$:
+  - **Onda 1 (Caudas Pesadas):** Pearson V, $t$ de Student, Laplace.
+  - **Onda 2 (Choques & Assimetrias):** Cauchy, $t$ de Student Assimétrica, Laplace.
+  - **Onda 3 (Esparsidade & Snedecor):** Normal Esparsa, GED, $F$ de Snedecor.
+  - **Onda 4 (Benchmarks Canônicos):** Normal e Uniforme.
+  - **Onda 5 (Ajustes Empíricos EasyFit):** Power Function, Dagum (4P) e Johnson SB.
+- 🧬 **Otimização Global via Algoritmo Genético Híbrido**: Mapeamento binário de 55/59 bits com Amostragem Inicial por Hipercubo Latino (**LHS**) e mecanismo anti-estagnação por Reinicialização Cataclísmica (**CHC**).
+- 📈 **Deep Learning Benchmarking (LSTM & GRU)**: Implementação completa com `keras3` e backend `TensorFlow` para comparação rigorosa de acurácia (MAE, RMSE, MAPE, $R^2$) e custo computacional.
 - 📊 **Particionamento Temporal Rigoroso**: Divisão temporal da série PETR4 em **Treino (50% = 2.600 amostras)**, **Validação (25% = 1.299 amostras)** e **Teste Out-of-Sample (25% = 1.299 amostras)**.
-- 🖥️ **ESNAUTO Studio (R Shiny)**: Interface com 6 abas (Dados, ESN, LSTM, GRU, Comparativo Custo-Benefício e Catálogo de Distribuições).
-- 🛠️ **Arquitetura Orientada a Fases**: Pipeline modular em Python para ranqueamento JSON, reinjeção de matrizes ótimas e empacotamento de relatórios.
+- 🖥️ **ESNAUTO Studio (R Shiny)**: Interface web com botões rápidos por Onda Estratégica, ajuste live, cancelamento/pausa em tempo real e visualização de resíduos.
 
 ---
 
@@ -63,6 +67,8 @@ Para facilitar o entendimento de cada módulo do sistema, o projeto conta com um
 | 🖥️ **ESNAUTO Studio (Shiny)** | [`docs/03_app_shiny_studio.md`](docs/03_app_shiny_studio.md) | Explicação de `app/app.R`, módulos ESN/LSTM/GRU/Comparação, utilitários e CSS. |
 | 📊 **Dados & Resultados** | [`docs/04_dados_e_resultados.md`](docs/04_dados_e_resultados.md) | Estrutura de dados PETR4 (`Scripts/data/`), sessões de resultado (`Scripts/results/`) e gráficos consolidados (`resultados_tcc/`). |
 | 📄 **Relatórios & Monografia** | [`docs/05_relatorios_e_monografia.md`](docs/05_relatorios_e_monografia.md) | Detalhamento da monografia do TCC, relatório de arquitetura e tabelas de validação/teste. |
+| 🌊 **As 4 Ondas Estocásticas** | [`docs/08_comparativo_quatro_ondas_estocasticas.md`](docs/08_comparativo_quatro_ondas_estocasticas.md) | Relatório das 30 rodadas oficiais de produção (Caudas Pesadas, Choques, Esparsidade e Benchmarks). |
+| 🌊 **Onda 5: Ajustes EasyFit** | [`docs/09_onda_5_ajustes_empiricos_easyfit.md`](docs/09_onda_5_ajustes_empiricos_easyfit.md) | Relatório das 15 rodadas oficiais com Power Function, Dagum (4P) e Johnson SB. |
 
 ---
 
