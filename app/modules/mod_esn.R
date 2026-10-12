@@ -328,10 +328,10 @@ executar_modelo_esn <- function(dados, cenario_id = "9220_GED_Normal_15", set_pr
   )
   
   if (is.function(set_progress)) set_progress(0.3, "Calculando Validação da ESN...")
-  res_val <- esn_validacao(dados_split, params, cen$Win, cen$W, cen$Wout)
+  res_val <- esn_validacao(dados_split, params, cen$Win, cen$W, Wout = NULL)
   
   if (is.function(set_progress)) set_progress(0.6, "Calculando Teste Out-of-Sample da ESN...")
-  res_teste <- esn_teste(dados_split, params, cen$Win, cen$W, cen$Wout)
+  res_teste <- esn_teste(dados_split, params, cen$Win, cen$W, res_val$Wout)
   
   list(
     modelo = "ESN",
@@ -526,6 +526,14 @@ esn_server <- function(id, dados_reativo, resultados_externos = NULL) {
       origem = "PRESET"
     )
     
+    observeEvent(dados_reativo(), {
+      resultados$validacao <- NULL
+      resultados$teste <- NULL
+      resultados$metricas <- NULL
+      resultados$registro <- NULL
+      resultados$todas_combinacoes <- NULL
+    }, ignoreInit = TRUE, priority = 100)
+
     # Sincronizar caso receba execução de um botão universal externo
     if (!is.null(resultados_externos)) {
       observe({
@@ -545,6 +553,8 @@ esn_server <- function(id, dados_reativo, resultados_externos = NULL) {
     # Rodar ESN
     observeEvent(input$btn_rodar, {
       req(dados_reativo())
+      session$userData$execucao_ativa <- TRUE
+      on.exit(session$userData$execucao_ativa <- FALSE, add = TRUE)
       dados <- dados_reativo()
       
       if (input$modo_operacao == "ga_live") {
@@ -629,10 +639,10 @@ esn_server <- function(id, dados_reativo, resultados_externos = NULL) {
             )
             
             setProgress(0.3, detail = "Calculando Validação...")
-            res_val <- esn_validacao(dados_split, params, cen$Win, cen$W, cen$Wout)
+            res_val <- esn_validacao(dados_split, params, cen$Win, cen$W, Wout = NULL)
             
             setProgress(0.6, detail = "Calculando Teste...")
-            res_teste <- esn_teste(dados_split, params, cen$Win, cen$W, cen$Wout)
+            res_teste <- esn_teste(dados_split, params, cen$Win, cen$W, res_val$Wout)
             
           } else {
             tam_r <- 27
@@ -784,7 +794,7 @@ esn_server <- function(id, dados_reativo, resultados_externos = NULL) {
       
       par(mar = c(3.5, 4, 2, 1), bg = "transparent")
       plot(real, type = 'l', col = '#0f172a', lwd = 2,
-           ylab = "Preço PETR4 (R$)", xlab = "Dias",
+           ylab = paste("Preço", attr(dados_reativo(), "acao"), "(R$)"), xlab = "Dias",
            main = "ESN — Previsão na Fase de Validação", axes = FALSE, col.main = "#0f172a")
       axis(1, col = "#cbd5e1", col.axis = "#475569")
       axis(2, col = "#cbd5e1", col.axis = "#475569")
@@ -804,7 +814,7 @@ esn_server <- function(id, dados_reativo, resultados_externos = NULL) {
       
       par(mar = c(3.5, 4, 2, 1), bg = "transparent")
       plot(real, type = 'l', col = '#0f172a', lwd = 2,
-           ylab = "Preço PETR4 (R$)", xlab = "Dias",
+           ylab = paste("Preço", attr(dados_reativo(), "acao"), "(R$)"), xlab = "Dias",
            main = "ESN — Previsão na Fase de Teste", axes = FALSE, col.main = "#0f172a")
       axis(1, col = "#cbd5e1", col.axis = "#475569")
       axis(2, col = "#cbd5e1", col.axis = "#475569")
@@ -818,6 +828,8 @@ esn_server <- function(id, dados_reativo, resultados_externos = NULL) {
     # Tabela do Histórico CSV
     historico_reativo <- reactiveVal(carregar_historico_ga())
     
+    observeEvent(dados_reativo(), historico_reativo(carregar_historico_ga()), ignoreInit = TRUE)
+
     observeEvent(input$btn_atualizar_csv, {
       historico_reativo(carregar_historico_ga())
     })

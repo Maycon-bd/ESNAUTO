@@ -1,0 +1,544 @@
+{
+  "url": "https://api.crossref.org/works/10.32604%2Fcsse.2021.014189",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            24
+          ]
+        ],
+        "date-time": "2026-09-24T13:54:11Z",
+        "timestamp": 1790258051425,
+        "version": "4.1.0"
+      },
+      "reference-count": 25,
+      "publisher": "Tech Science Press",
+      "issue": "3",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                5,
+                24
+              ]
+            ],
+            "date-time": "2022-05-24T00:00:00Z",
+            "timestamp": 1653350400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 508,
+          "URL": "https://doi.org/10.32604/TSP-CROSSMARKPOLICY"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "DOI": "10.32604/csse.2021.014189",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            21
+          ]
+        ],
+        "date-time": "2021-01-21T01:21:10Z",
+        "timestamp": 1611192070000
+      },
+      "page": "509-520",
+      "update-policy": "https://doi.org/10.32604/tsp-crossmarkpolicy",
+      "source": "Crossref",
+      "is-referenced-by-count": 17,
+      "title": [
+        "Stock Price Forecasting: An Echo State Network Approach"
+      ],
+      "prefix": "10.32604",
+      "volume": "36",
+      "author": [
+        {
+          "given": "Guang",
+          "family": "Sun",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jingjing",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Chen",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiangyang",
+          "family": "Yin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ziyu",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Peng",
+          "family": "Guo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Junqi",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiaoping",
+          "family": "Fan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bin",
+          "family": "Pan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "17807",
+      "reference": [
+        {
+          "key": "ref1",
+          "doi-asserted-by": "crossref",
+          "first-page": "4347",
+          "DOI": "10.1109/JIOT.2019.2946753",
+          "article-title": "Dominant data set selection algorithms for electricity consumption time-series data analysis based on affine transformation",
+          "volume": "7",
+          "author": "Wu",
+          "year": "2020",
+          "journal-title": "IEEE Internet of Things Journal"
+        },
+        {
+          "key": "ref2",
+          "doi-asserted-by": "crossref",
+          "first-page": "199",
+          "DOI": "10.1057/jors.1971.52",
+          "article-title": "Time series analysis forecasting and control",
+          "volume": "22",
+          "author": "Bartholomew",
+          "year": "1971",
+          "journal-title": "Journal of the Operational Research Society"
+        },
+        {
+          "key": "ref3",
+          "first-page": "847",
+          "article-title": "Personal data security and supervision in the age of large data",
+          "volume": "25",
+          "author": "Du",
+          "year": "2019",
+          "journal-title": "Intelligent Automation and Soft Computing"
+        },
+        {
+          "key": "ref4",
+          "first-page": "209",
+          "article-title": "Modeling and analysis of stock price forecast based on lstm",
+          "volume": "55",
+          "author": "Peng",
+          "year": "2019",
+          "journal-title": "Computer Engineering and Applications"
+        },
+        {
+          "key": "ref5",
+          "doi-asserted-by": "crossref",
+          "first-page": "237",
+          "DOI": "10.32604/csse.2019.34.237",
+          "article-title": "R&D investment enhance the financial performance of company driven by big data computing and analysis",
+          "volume": "34",
+          "author": "Qi",
+          "year": "2019",
+          "journal-title": "Computer Systems Science and Engineering"
+        },
+        {
+          "key": "ref6",
+          "doi-asserted-by": "crossref",
+          "first-page": "79",
+          "DOI": "10.1016/j.ijar.2015.12.011",
+          "article-title": "Stock market forecasting by using a hybrid model of exponential fuzzy time-series",
+          "volume": "70",
+          "author": "Talarposhti",
+          "year": "2016",
+          "journal-title": "International Journal of Approximate Reasoning"
+        },
+        {
+          "key": "ref7",
+          "doi-asserted-by": "crossref",
+          "first-page": "283",
+          "DOI": "10.32604/cmc.2018.03791",
+          "article-title": "Research on hybrid model of garlic short-term price forecasting based on big data",
+          "volume": "57",
+          "author": "O’Hare",
+          "year": "2018",
+          "journal-title": "Computers, Materials & Continua"
+        },
+        {
+          "key": "ref8",
+          "doi-asserted-by": "crossref",
+          "first-page": "421",
+          "DOI": "10.32604/cmc.2019.03782",
+          "article-title": "The application of BP neural networks to analysis the national vulnerability",
+          "volume": "58",
+          "author": "Zhao",
+          "year": "2019",
+          "journal-title": "Computers, Materials & Continua"
+        },
+        {
+          "key": "ref9",
+          "doi-asserted-by": "crossref",
+          "first-page": "697",
+          "DOI": "10.32604/cmc.2019.05375",
+          "article-title": "Investigation on the Chinese text sentiment analysis based on convolutional neural networks in deep learning",
+          "volume": "58",
+          "author": "Xu",
+          "year": "2019",
+          "journal-title": "Computers, Materials & Continua"
+        },
+        {
+          "key": "ref10",
+          "doi-asserted-by": "crossref",
+          "first-page": "166246",
+          "DOI": "10.1109/ACCESS.2019.2953888",
+          "article-title": "Spatial-temporal graph attention networks: A deep learning approach for traffic forecasting",
+          "volume": "7",
+          "author": "Zhang",
+          "year": "2019",
+          "journal-title": "IEEE Access"
+        },
+        {
+          "key": "ref11",
+          "doi-asserted-by": "crossref",
+          "first-page": "173",
+          "DOI": "10.1016/j.physa.2015.08.052",
+          "article-title": "Value-at-risk forecasts by a spatiotemporal model in Chinese stock market",
+          "volume": "441",
+          "author": "Gong",
+          "year": "2016",
+          "journal-title": "Physica A: Statistical Mechanics and Its Applications"
+        },
+        {
+          "key": "ref12",
+          "doi-asserted-by": "crossref",
+          "first-page": "179",
+          "DOI": "10.1207/s15516709cog1402_1",
+          "article-title": "Finding structure in time",
+          "volume": "14",
+          "author": "Elman",
+          "year": "1990",
+          "journal-title": "Cognitive Science"
+        },
+        {
+          "key": "ref13",
+          "doi-asserted-by": "crossref",
+          "unstructured": "M. I. Jordan, “Serial order: A parallel distributed processing approach,” Advances in Psychology, vol. 121, pp. 471–495, 1997.",
+          "DOI": "10.1016/S0166-4115(97)80111-2"
+        },
+        {
+          "key": "ref14",
+          "doi-asserted-by": "crossref",
+          "first-page": "1735",
+          "DOI": "10.1162/neco.1997.9.8.1735",
+          "article-title": "Long short-term memory",
+          "volume": "9",
+          "author": "Hochreiter",
+          "year": "1997",
+          "journal-title": "Neural Computation"
+        },
+        {
+          "key": "ref15",
+          "first-page": "1",
+          "article-title": "Large-batch training for LSTM and beyond",
+          "volume": "9",
+          "author": "You",
+          "year": "2019",
+          "journal-title": "Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis"
+        },
+        {
+          "key": "ref16",
+          "doi-asserted-by": "crossref",
+          "first-page": "41",
+          "DOI": "10.31209/2018.100000021",
+          "article-title": "Delay-dependent stability of recurrent neural networks with time-varying delay",
+          "volume": "24",
+          "author": "Zhang",
+          "year": "2018",
+          "journal-title": "Intelligent Automation and Soft Computing"
+        },
+        {
+          "key": "ref17",
+          "doi-asserted-by": "crossref",
+          "first-page": "4927",
+          "DOI": "10.1109/ACCESS.2018.2887354",
+          "article-title": "Spiking echo state convolutional neural network for robust time-series classification",
+          "volume": "7",
+          "author": "Zhang",
+          "year": "2018",
+          "journal-title": "IEEE Access"
+        },
+        {
+          "key": "ref18",
+          "first-page": "1",
+          "article-title": "Convolutional multitimescale echo state network",
+          "author": "Ma",
+          "year": "2019",
+          "journal-title": "IEEE Transactions on Cybernetics"
+        },
+        {
+          "key": "ref19",
+          "doi-asserted-by": "crossref",
+          "first-page": "312",
+          "DOI": "10.20965/jaciii.2015.p0312",
+          "article-title": "PSO based deterministic ESN models for stock price forecasting",
+          "volume": "19",
+          "author": "Dan",
+          "year": "2015",
+          "journal-title": "Journal of Advanced Computational Intelligence and Intelligent Informatics"
+        },
+        {
+          "key": "ref20",
+          "doi-asserted-by": "crossref",
+          "first-page": "78",
+          "DOI": "10.1126/science.1091277",
+          "article-title": "Harnessing nonlinearity: Predicting chaotic systems and saving energy in wireless communications",
+          "volume": "304",
+          "author": "Herbert",
+          "year": "2004",
+          "journal-title": "Science"
+        },
+        {
+          "key": "ref21",
+          "series-title": "German National Research Center for Information Technology",
+          "first-page": "148",
+          "article-title": "The echo state approach to analyzing and training recurrent neural networks-with an erratum note",
+          "author": "Herbert",
+          "year": "2001"
+        },
+        {
+          "key": "ref22",
+          "first-page": "1",
+          "article-title": "Evolving local plasticity rules for synergistic learning in echo state networks",
+          "volume": "31",
+          "author": "Wang",
+          "year": "2019",
+          "journal-title": "IEEE Transactions on Neural Networks and Learning Systems"
+        },
+        {
+          "key": "ref23",
+          "doi-asserted-by": "crossref",
+          "first-page": "138364",
+          "DOI": "10.1109/ACCESS.2019.2943026",
+          "article-title": "Network traffic prediction using variational mode decomposition and multi- reservoirs echo state network",
+          "volume": "7",
+          "author": "Han",
+          "year": "2019",
+          "journal-title": "IEEE Access"
+        },
+        {
+          "key": "ref24",
+          "first-page": "1136",
+          "article-title": "Pruning algorithm for modular echo state network based on sensitivity analysis",
+          "volume": "45",
+          "author": "Wang",
+          "year": "2019",
+          "journal-title": "Acta Automatica Sinica"
+        },
+        {
+          "key": "ref25",
+          "series-title": "IEEE Int. Instrumentation and Measurement Technology Conf.",
+          "first-page": "1",
+          "article-title": "Clustered complex echo state networks for traffic forecasting with prior knowledge",
+          "volume": "78",
+          "author": "Peng",
+          "year": "2011"
+        }
+      ],
+      "container-title": [
+        "Computer Systems Science and Engineering"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.techscience.com/ueditor/files/TSP_CSSE_36-3/TSP_CSSE_14189/TSP_CSSE_14189.pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            6
+          ]
+        ],
+        "date-time": "2024-12-06T21:47:20Z",
+        "timestamp": 1733521640000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.techscience.com/csse/v36n3/41260"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "references-count": 25,
+      "journal-issue": {
+        "issue": "3",
+        "published-print": {
+          "date-parts": [
+            [
+              2021
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.32604/csse.2021.014189",
+      "relation": {},
+      "ISSN": [
+        "0267-6192"
+      ],
+      "issn-type": [
+        {
+          "value": "0267-6192",
+          "type": "print"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "2020-09-04",
+          "order": 0,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "2020-11-21",
+          "order": 1,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "2021-01-18",
+          "order": 2,
+          "name": "published",
+          "label": "Published Online",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        }
+      ]
+    }
+  }
+}

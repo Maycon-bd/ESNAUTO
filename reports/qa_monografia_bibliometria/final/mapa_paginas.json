@@ -1,0 +1,344 @@
+[
+  {
+    "texto": "INTRODUÇÃO",
+    "pagina": 15,
+    "estilo": "TITULO TCC",
+    "numero": "1"
+  },
+  {
+    "texto": "REVISÃO DA LITERATURA",
+    "pagina": 22,
+    "estilo": "TITULO TCC",
+    "numero": "2"
+  },
+  {
+    "texto": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+    "pagina": 22,
+    "estilo": "SEÇÃO TCC",
+    "numero": "2.1"
+  },
+  {
+    "texto": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+    "pagina": 23,
+    "estilo": "SEÇÃO TCC",
+    "numero": "2.2"
+  },
+  {
+    "texto": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+    "pagina": 24,
+    "estilo": "SEÇÃO TCC",
+    "numero": "2.3"
+  },
+  {
+    "texto": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+    "pagina": 26,
+    "estilo": "SEÇÃO TCC",
+    "numero": "2.4"
+  },
+  {
+    "texto": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+    "pagina": 28,
+    "estilo": "SEÇÃO TCC",
+    "numero": "2.5"
+  },
+  {
+    "texto": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+    "pagina": 29,
+    "estilo": "SEÇÃO TCC",
+    "numero": "2.6"
+  },
+  {
+    "texto": "TRABALHOS RELACIONADOS",
+    "pagina": 30,
+    "estilo": "SEÇÃO TCC",
+    "numero": "2.7"
+  },
+  {
+    "texto": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+    "pagina": 32,
+    "estilo": "SEÇÃO TCC",
+    "numero": "2.8"
+  },
+  {
+    "texto": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+    "pagina": 33,
+    "estilo": "SEÇÃO TCC",
+    "numero": "2.9"
+  },
+  {
+    "texto": "Tabela 1 – Síntese das dimensões investigadas no portfólio bibliográfico (n=34)",
+    "pagina": 34,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "Tabela 2 – Mapa de cobertura: estudo × dimensão analítica",
+    "pagina": 34,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "Figura 1 – Cobertura das dimensões P1–P5 nos estudos",
+    "pagina": 36,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "Figura 2 – Frequência das palavras-chave declaradas pelos autores",
+    "pagina": 37,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "Figura 3 – Rede de coocorrência de palavras-chave",
+    "pagina": 38,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "Figura 4 – Expressões recorrentes nos títulos dos estudos",
+    "pagina": 39,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "MATERIAL E MÉTODOS",
+    "pagina": 40,
+    "estilo": "TITULO TCC",
+    "numero": "3"
+  },
+  {
+    "texto": "CLASSIFICAÇÃO DA PESQUISA",
+    "pagina": 40,
+    "estilo": "SEÇÃO TCC",
+    "numero": "3.1"
+  },
+  {
+    "texto": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+    "pagina": 41,
+    "estilo": "SEÇÃO TCC",
+    "numero": "3.2"
+  },
+  {
+    "texto": "Tabela 3 – Caracterização estatística dos preços ajustados da PETR4 (2000–2020)",
+    "pagina": 43,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "IMPLEMENTAÇÃO DAS ESNS EM R",
+    "pagina": 43,
+    "estilo": "SEÇÃO TCC",
+    "numero": "3.3"
+  },
+  {
+    "texto": "QUADRO 1 – Organização das cinco ondas experimentais",
+    "pagina": 43,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "QUADRO 2 – Hiperparâmetros codificados pelo Algoritmo Genético",
+    "pagina": 44,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+    "pagina": 45,
+    "estilo": "SEÇÃO TCC",
+    "numero": "3.4"
+  },
+  {
+    "texto": "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+    "pagina": 46,
+    "estilo": "SEÇÃO TCC",
+    "numero": "3.5"
+  },
+  {
+    "texto": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+    "pagina": 46,
+    "estilo": "SEÇÃO TCC",
+    "numero": "3.6"
+  },
+  {
+    "texto": "QUADRO 3 – Síntese do desenho experimental executado",
+    "pagina": 47,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+    "pagina": 47,
+    "estilo": "SEÇÃO TCC",
+    "numero": "3.7"
+  },
+  {
+    "texto": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+    "pagina": 48,
+    "estilo": "SEÇÃO TCC",
+    "numero": "3.8"
+  },
+  {
+    "texto": "Ambiente computacional",
+    "pagina": 49,
+    "estilo": "SUBÇÃO 2",
+    "numero": "3.8.1"
+  },
+  {
+    "texto": "Estrutura do repositório",
+    "pagina": 49,
+    "estilo": "SUBÇÃO 2",
+    "numero": "3.8.2"
+  },
+  {
+    "texto": "Protocolo de revisão sistemática da literatura",
+    "pagina": 49,
+    "estilo": "SUBÇÃO 2",
+    "numero": "3.8.3"
+  },
+  {
+    "texto": "Procedimento de re-execução dos experimentos",
+    "pagina": 51,
+    "estilo": "SUBÇÃO 2",
+    "numero": "3.8.4"
+  },
+  {
+    "texto": "RESULTADOS E DISCUSSÃO",
+    "pagina": 53,
+    "estilo": "TITULO TCC",
+    "numero": "4"
+  },
+  {
+    "texto": "VISÃO GERAL DOS EXPERIMENTOS",
+    "pagina": 53,
+    "estilo": "SEÇÃO TCC",
+    "numero": "4.1"
+  },
+  {
+    "texto": "DESEMPENHO PREDITIVO GLOBAL",
+    "pagina": 53,
+    "estilo": "SEÇÃO TCC",
+    "numero": "4.2"
+  },
+  {
+    "texto": "Tabela 4 – Comparação dos principais resultados no conjunto de teste",
+    "pagina": 54,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+    "pagina": 55,
+    "estilo": "SEÇÃO TCC",
+    "numero": "4.3"
+  },
+  {
+    "texto": "Tabela 5 – Configurações selecionadas das cinco ondas experimentais",
+    "pagina": 55,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "ESTABILIDADE, GENERALIZAÇÃO E ONDA 5",
+    "pagina": 56,
+    "estilo": "SEÇÃO TCC",
+    "numero": "4.4"
+  },
+  {
+    "texto": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+    "pagina": 56,
+    "estilo": "SEÇÃO TCC",
+    "numero": "4.5"
+  },
+  {
+    "texto": "CUSTO COMPUTACIONAL",
+    "pagina": 57,
+    "estilo": "SEÇÃO TCC",
+    "numero": "4.6"
+  },
+  {
+    "texto": "Tabela 6 – Decomposição do custo computacional documentado",
+    "pagina": 57,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+    "pagina": 57,
+    "estilo": "SEÇÃO TCC",
+    "numero": "4.7"
+  },
+  {
+    "texto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+    "pagina": 59,
+    "estilo": "SEÇÃO TCC",
+    "numero": "4.8"
+  },
+  {
+    "texto": "Tabela 7 – Teste de Diebold-Mariano na execução controlada complementar",
+    "pagina": 59,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "AVALIAÇÃO DAS HIPÓTESES",
+    "pagina": 59,
+    "estilo": "SEÇÃO TCC",
+    "numero": "4.9"
+  },
+  {
+    "texto": "Tabela 8 – Síntese da avaliação das hipóteses",
+    "pagina": 59,
+    "estilo": "Legenda",
+    "numero": ""
+  },
+  {
+    "texto": "Tabela 9 – Comparação com trabalhos relacionados à PETR4",
+    "pagina": 61,
+    "estilo": "Normal",
+    "numero": ""
+  },
+  {
+    "texto": "CONTRIBUIÇÕES DO ESNAUTO",
+    "pagina": 61,
+    "estilo": "SEÇÃO TCC",
+    "numero": "4.10"
+  },
+  {
+    "texto": "DISCUSSÃO",
+    "pagina": 64,
+    "estilo": "TITULO TCC",
+    "numero": "5"
+  },
+  {
+    "texto": "VALIDADE INTERNA E ESTATÍSTICA",
+    "pagina": 64,
+    "estilo": "SEÇÃO TCC",
+    "numero": "5.1"
+  },
+  {
+    "texto": "VALIDADE EXTERNA",
+    "pagina": 65,
+    "estilo": "SEÇÃO TCC",
+    "numero": "5.2"
+  },
+  {
+    "texto": "TRABALHOS FUTUROS",
+    "pagina": 66,
+    "estilo": "SEÇÃO TCC",
+    "numero": "5.3"
+  },
+  {
+    "texto": "CONCLUSÃO",
+    "pagina": 68,
+    "estilo": "TITULO TCC",
+    "numero": "6"
+  },
+  {
+    "texto": "REFERÊNCIAS",
+    "pagina": 70,
+    "estilo": "TITULO TCC",
+    "numero": ""
+  }
+]

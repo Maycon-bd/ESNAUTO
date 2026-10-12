@@ -1,0 +1,943 @@
+{
+  "url": "https://api.crossref.org/works/10.1364%2FOE.454973",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            12
+          ]
+        ],
+        "date-time": "2026-05-12T18:23:59Z",
+        "timestamp": 1778610239515,
+        "version": "3.51.4"
+      },
+      "reference-count": 49,
+      "publisher": "Optica Publishing Group",
+      "issue": "13",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                6,
+                13
+              ]
+            ],
+            "date-time": "2022-06-13T00:00:00Z",
+            "timestamp": 1655078400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.1364/OA_License_v2#VOR-OA"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                6,
+                13
+              ]
+            ],
+            "date-time": "2022-06-13T00:00:00Z",
+            "timestamp": 1655078400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://opg.optica.org/policies/opg-tdm-policy.json"
+        }
+      ],
+      "funder": [
+        {
+          "name": "Chongqing Normal University Ph.D. Startup Fund",
+          "award": [
+            "21XLB035"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "21XLB035"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Special funds for Postdoctoral research of Chongqing",
+          "award": [
+            "2010010004713415"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "2010010004713415"
+              ]
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100012226",
+          "name": "Fundamental Research Funds for the Central Universities",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "XDJK2018B012"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "XDJK2018B012"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/501100012226",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "opg.optica.org"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Opt. Express"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            6,
+            20
+          ]
+        ]
+      },
+      "abstract": "<jats:p>The essence of stock market forecasting is to reveal the intrinsic operation rules of stock market, however it is a terribly arduous challenge for investors. The application of nanophotonic technology in the intelligence field provides a new approach for stock market forecasting with its unique advantages. In this work, a novel nanophotonic reservoir computing (RC) system based on silicon optomechanical oscillators (OMO) with photonic crystal (PhC) cavities for stock market forecasting is implemented. The long-term closing prices of four representative stock indexes are accurately forecast with small prediction errors, and the forecasting results with distinct characteristics are exhibited in the mature stock market and emerging stock market separately. Our work offers solutions and suggestions for surmounting the concept drift problem in stock market environment. The comprehensive influence of RC parameters on forecasting performance are displayed via the mapping diagrams, while some intriguing results indicate that the mature stock markets are more sensitive to the variation of RC parameters than the emerging stock markets. Furthermore, the direction trend forecasting results illustrate that our system has certain direction forecasting ability. Additionally, the stock forecasting problem with short listing time and few data in the stock market is solved through transfer learning (TL) in stock sector. The generalization ability (GA) of our nanophotonic reservoir computing system is also verified via four stocks in the same region and industry. Therefore, our work contributes to a novel RC model for stock market forecasting in the nanophotonic field, and provides a new prototype system for more applications in the intelligent information processing field.</jats:p>",
+      "DOI": "10.1364/oe.454973",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2022,
+            6,
+            7
+          ]
+        ],
+        "date-time": "2022-06-07T17:00:53Z",
+        "timestamp": 1654621253000
+      },
+      "page": "23359",
+      "update-policy": "https://doi.org/10.1364/crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 7,
+      "title": [
+        "Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators"
+      ],
+      "prefix": "10.1364",
+      "volume": "30",
+      "author": [
+        {
+          "given": "Bocheng",
+          "family": "Liu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Southwest University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yiyuan",
+          "family": "Xie",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Southwest University"
+            },
+            {
+              "name": "University of Electronic Science and Technology of Chengdu"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Xiao",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Southwest University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yichen",
+          "family": "Ye",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Southwest University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Tingting",
+          "family": "Song",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Chongqing Normal University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Junxiong",
+          "family": "Chai",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Southwest University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Qianfeng",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Southwest University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Manying",
+          "family": "Feng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Southwest University"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "285",
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            6,
+            13
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "oe-30-13-23359-R1",
+          "doi-asserted-by": "publisher",
+          "first-page": "14346",
+          "DOI": "10.1016/j.eswa.2011.04.222",
+          "volume": "38",
+          "author": "Wang",
+          "year": "2011",
+          "journal-title": "Expert. Syst. with Appl."
+        },
+        {
+          "key": "oe-30-13-23359-R2",
+          "doi-asserted-by": "publisher",
+          "first-page": "5501",
+          "DOI": "10.1016/j.eswa.2013.04.013",
+          "volume": "40",
+          "author": "Ticknor",
+          "year": "2013",
+          "journal-title": "Expert. Syst. with Appl."
+        },
+        {
+          "key": "oe-30-13-23359-R3",
+          "doi-asserted-by": "publisher",
+          "first-page": "2510",
+          "DOI": "10.1016/j.asoc.2010.09.007",
+          "volume": "11",
+          "author": "Hsieh",
+          "year": "2011",
+          "journal-title": "Appl. Soft Comput."
+        },
+        {
+          "key": "oe-30-13-23359-R4",
+          "doi-asserted-by": "publisher",
+          "first-page": "113609",
+          "DOI": "10.1016/j.eswa.2020.113609",
+          "volume": "159",
+          "author": "Zhang",
+          "year": "2020",
+          "journal-title": "Expert. Syst. with Appl."
+        },
+        {
+          "key": "oe-30-13-23359-R6",
+          "doi-asserted-by": "publisher",
+          "first-page": "194",
+          "DOI": "10.1016/j.eswa.2016.02.006",
+          "volume": "55",
+          "author": "Cavalcante",
+          "year": "2016",
+          "journal-title": "Expert. Syst. with Appl."
+        },
+        {
+          "key": "oe-30-13-23359-R7",
+          "doi-asserted-by": "publisher",
+          "first-page": "66",
+          "DOI": "10.1016/j.asoc.2015.06.005",
+          "volume": "35",
+          "author": "Laboissiere",
+          "year": "2015",
+          "journal-title": "Appl. Soft Comput."
+        },
+        {
+          "key": "oe-30-13-23359-R8",
+          "doi-asserted-by": "publisher",
+          "first-page": "320",
+          "DOI": "10.1016/j.eswa.2015.09.029",
+          "volume": "44",
+          "author": "Göçken",
+          "year": "2016",
+          "journal-title": "Expert. Syst. with Appl."
+        },
+        {
+          "key": "oe-30-13-23359-R9",
+          "doi-asserted-by": "publisher",
+          "first-page": "138",
+          "DOI": "10.1016/j.knosys.2017.09.023",
+          "volume": "137",
+          "author": "Gunduz",
+          "year": "2017",
+          "journal-title": "Knowledge-Based Syst."
+        },
+        {
+          "key": "oe-30-13-23359-R10",
+          "doi-asserted-by": "publisher",
+          "first-page": "67",
+          "DOI": "10.1016/j.ins.2020.12.068",
+          "volume": "556",
+          "author": "Chen",
+          "year": "2021",
+          "journal-title": "Inf. Sci."
+        },
+        {
+          "key": "oe-30-13-23359-R11",
+          "doi-asserted-by": "publisher",
+          "first-page": "745",
+          "DOI": "10.1007/s12652-020-02057-0",
+          "volume": "12",
+          "author": "Zhao",
+          "year": "2021",
+          "journal-title": "J. Ambient Intell. Humaniz. Comput."
+        },
+        {
+          "key": "oe-30-13-23359-R12",
+          "doi-asserted-by": "publisher",
+          "first-page": "2513",
+          "DOI": "10.1016/j.cor.2004.03.016",
+          "volume": "32",
+          "author": "Huang",
+          "year": "2005",
+          "journal-title": "Comput. Oper. Res."
+        },
+        {
+          "key": "oe-30-13-23359-R13",
+          "doi-asserted-by": "publisher",
+          "first-page": "452",
+          "DOI": "10.1016/j.ijinfomgt.2019.05.027",
+          "volume": "50",
+          "author": "Yang",
+          "year": "2020",
+          "journal-title": "Int. J. Inf. Manag."
+        },
+        {
+          "key": "oe-30-13-23359-R14",
+          "doi-asserted-by": "publisher",
+          "first-page": "8",
+          "DOI": "10.1016/j.neunet.2017.03.004",
+          "volume": "90",
+          "author": "Wang",
+          "year": "2017",
+          "journal-title": "Neural Networks"
+        },
+        {
+          "key": "oe-30-13-23359-R15",
+          "doi-asserted-by": "publisher",
+          "first-page": "457",
+          "DOI": "10.1016/j.eswa.2018.07.019",
+          "volume": "113",
+          "author": "Baek",
+          "year": "2018",
+          "journal-title": "Expert. Syst. with Appl."
+        },
+        {
+          "key": "oe-30-13-23359-R16",
+          "doi-asserted-by": "publisher",
+          "first-page": "3855",
+          "DOI": "10.1016/j.neucom.2011.08.005",
+          "volume": "74",
+          "author": "Gheyas",
+          "year": "2011",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "oe-30-13-23359-R17",
+          "doi-asserted-by": "publisher",
+          "first-page": "113464",
+          "DOI": "10.1016/j.eswa.2020.113464",
+          "volume": "156",
+          "author": "Bustos",
+          "year": "2020",
+          "journal-title": "Expert. Syst. with Appl."
+        },
+        {
+          "key": "oe-30-13-23359-R18",
+          "doi-asserted-by": "publisher",
+          "first-page": "124907",
+          "DOI": "10.1016/j.physa.2020.124907",
+          "volume": "557",
+          "author": "Hu",
+          "year": "2020",
+          "journal-title": "Phys. A"
+        },
+        {
+          "key": "oe-30-13-23359-R19",
+          "doi-asserted-by": "publisher",
+          "first-page": "7897",
+          "DOI": "10.1007/s00521-019-04236-3",
+          "volume": "32",
+          "author": "Chung",
+          "year": "2020",
+          "journal-title": "Neural Comput. Appl."
+        },
+        {
+          "key": "oe-30-13-23359-R20",
+          "doi-asserted-by": "publisher",
+          "first-page": "3852",
+          "DOI": "10.1007/s10489-020-01766-5",
+          "volume": "50",
+          "author": "Xu",
+          "year": "2020",
+          "journal-title": "Appl. Intell."
+        },
+        {
+          "key": "oe-30-13-23359-R21",
+          "doi-asserted-by": "publisher",
+          "first-page": "115022",
+          "DOI": "10.1016/j.eswa.2021.115022",
+          "volume": "178",
+          "author": "Wang",
+          "year": "2021",
+          "journal-title": "Expert. Syst. with Appl."
+        },
+        {
+          "key": "oe-30-13-23359-R22",
+          "doi-asserted-by": "publisher",
+          "first-page": "5777",
+          "DOI": "10.1364/OE.26.005777",
+          "volume": "26",
+          "author": "Kuriki",
+          "year": "2018",
+          "journal-title": "Opt. Express"
+        },
+        {
+          "key": "oe-30-13-23359-R23",
+          "doi-asserted-by": "publisher",
+          "first-page": "8679",
+          "DOI": "10.1364/OE.24.008679",
+          "volume": "24",
+          "author": "Nakayama",
+          "year": "2016",
+          "journal-title": "Opt. Express"
+        },
+        {
+          "key": "oe-30-13-23359-R24",
+          "doi-asserted-by": "publisher",
+          "first-page": "041037",
+          "DOI": "10.1103/PhysRevX.10.041037",
+          "volume": "10",
+          "author": "Rafayelyan",
+          "year": "2020",
+          "journal-title": "Phys. Rev. X"
+        },
+        {
+          "key": "oe-30-13-23359-R25",
+          "doi-asserted-by": "publisher",
+          "first-page": "100",
+          "DOI": "10.1016/j.neunet.2019.03.005",
+          "volume": "115",
+          "author": "Tanaka",
+          "year": "2019",
+          "journal-title": "Neural Networks"
+        },
+        {
+          "key": "oe-30-13-23359-R26",
+          "doi-asserted-by": "publisher",
+          "first-page": "3541",
+          "DOI": "10.1038/ncomms4541",
+          "volume": "5",
+          "author": "Vandoorne",
+          "year": "2014",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "oe-30-13-23359-R27",
+          "doi-asserted-by": "publisher",
+          "first-page": "561",
+          "DOI": "10.1515/nanoph-2016-0132",
+          "volume": "6",
+          "author": "Van der Sande",
+          "year": "2017",
+          "journal-title": "Nanophotonics"
+        },
+        {
+          "key": "oe-30-13-23359-R28",
+          "doi-asserted-by": "publisher",
+          "first-page": "1364",
+          "DOI": "10.1038/ncomms2368",
+          "volume": "4",
+          "author": "Brunner",
+          "year": "2013",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "oe-30-13-23359-R29",
+          "doi-asserted-by": "publisher",
+          "first-page": "756",
+          "DOI": "10.1364/OPTICA.5.000756",
+          "volume": "5",
+          "author": "Bueno",
+          "year": "2018",
+          "journal-title": "Optica"
+        },
+        {
+          "key": "oe-30-13-23359-R30",
+          "doi-asserted-by": "publisher",
+          "first-page": "3854",
+          "DOI": "10.1364/OL.40.003854",
+          "volume": "40",
+          "author": "Brunner",
+          "year": "2015",
+          "journal-title": "Opt. Lett."
+        },
+        {
+          "key": "oe-30-13-23359-R31",
+          "doi-asserted-by": "publisher",
+          "first-page": "19126",
+          "DOI": "10.1038/srep19126",
+          "volume": "6",
+          "author": "Shastri",
+          "year": "2016",
+          "journal-title": "Sci. Rep."
+        },
+        {
+          "key": "oe-30-13-23359-R32",
+          "doi-asserted-by": "publisher",
+          "first-page": "015005",
+          "DOI": "10.1103/RevModPhys.89.015005",
+          "volume": "89",
+          "author": "Rotter",
+          "year": "2017",
+          "journal-title": "Rev. Mod. Phys."
+        },
+        {
+          "key": "oe-30-13-23359-R33",
+          "doi-asserted-by": "publisher",
+          "first-page": "10211",
+          "DOI": "10.1364/OE.26.010211",
+          "volume": "26",
+          "author": "Hou",
+          "year": "2018",
+          "journal-title": "Opt. Express"
+        },
+        {
+          "key": "oe-30-13-23359-R34",
+          "doi-asserted-by": "publisher",
+          "first-page": "22783",
+          "DOI": "10.1364/OE.20.022783",
+          "volume": "20",
+          "author": "Duport",
+          "year": "2012",
+          "journal-title": "Opt. Express"
+        },
+        {
+          "key": "oe-30-13-23359-R35",
+          "doi-asserted-by": "publisher",
+          "first-page": "3301",
+          "DOI": "10.1109/TNNLS.2015.2404346",
+          "volume": "26",
+          "author": "Nguimdo",
+          "year": "2015",
+          "journal-title": "IEEE Trans. Neural Netw. Learning Syst."
+        },
+        {
+          "key": "oe-30-13-23359-R36",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.1109/JSTQE.2020.2987077",
+          "volume": "26",
+          "author": "Guo",
+          "year": "2020",
+          "journal-title": "IEEE J. Sel. Top. Quantum Electron."
+        },
+        {
+          "key": "oe-30-13-23359-R37",
+          "doi-asserted-by": "publisher",
+          "first-page": "7500307",
+          "DOI": "10.1109/JSTQE.2020.3011879",
+          "volume": "27",
+          "author": "Bogris",
+          "year": "2020",
+          "journal-title": "IEEE J. Sel. Top. Quantum Electron."
+        },
+        {
+          "key": "oe-30-13-23359-R38",
+          "doi-asserted-by": "publisher",
+          "first-page": "1319",
+          "DOI": "10.1515/nanoph-2020-0592",
+          "volume": "10",
+          "author": "Arregui",
+          "year": "2021",
+          "journal-title": "Nanophotonics"
+        },
+        {
+          "key": "oe-30-13-23359-R39",
+          "doi-asserted-by": "publisher",
+          "first-page": "6842",
+          "DOI": "10.1038/srep06842",
+          "volume": "4",
+          "author": "Luan",
+          "year": "2014",
+          "journal-title": "Sci. Rep."
+        },
+        {
+          "key": "oe-30-13-23359-R40",
+          "doi-asserted-by": "publisher",
+          "first-page": "061104",
+          "DOI": "10.1063/1.4865204",
+          "volume": "104",
+          "author": "Yang",
+          "year": "2014",
+          "journal-title": "Appl. Phys. Lett."
+        },
+        {
+          "key": "oe-30-13-23359-R41",
+          "doi-asserted-by": "publisher",
+          "first-page": "1391",
+          "DOI": "10.1103/RevModPhys.86.1391",
+          "volume": "86",
+          "author": "Aspelmeyer",
+          "year": "2014",
+          "journal-title": "Rev. Mod. Phys."
+        },
+        {
+          "key": "oe-30-13-23359-R42",
+          "doi-asserted-by": "publisher",
+          "first-page": "1172",
+          "DOI": "10.1126/science.1156032",
+          "volume": "321",
+          "author": "Kippenberg",
+          "year": "2008",
+          "journal-title": "Science"
+        },
+        {
+          "key": "oe-30-13-23359-R43",
+          "doi-asserted-by": "publisher",
+          "first-page": "15570",
+          "DOI": "10.1038/ncomms15570",
+          "volume": "8",
+          "author": "Wu",
+          "year": "2017",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "oe-30-13-23359-R44",
+          "doi-asserted-by": "publisher",
+          "first-page": "14965",
+          "DOI": "10.1038/ncomms14965",
+          "volume": "8",
+          "author": "Navarro-Urrios",
+          "year": "2017",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "oe-30-13-23359-R45",
+          "doi-asserted-by": "publisher",
+          "first-page": "013601",
+          "DOI": "10.1103/PhysRevLett.114.013601",
+          "volume": "114",
+          "author": "Bakemeier",
+          "year": "2015",
+          "journal-title": "Phys. Rev. Lett."
+        },
+        {
+          "key": "oe-30-13-23359-R46",
+          "doi-asserted-by": "publisher",
+          "first-page": "399",
+          "DOI": "10.1038/nphoton.2016.73",
+          "volume": "10",
+          "author": "Monifi",
+          "year": "2016",
+          "journal-title": "Nat. Photonics"
+        },
+        {
+          "key": "oe-30-13-23359-R47",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.1016/j.optcom.2016.05.007",
+          "volume": "377",
+          "author": "Xie",
+          "year": "2016",
+          "journal-title": "Opt. Commun."
+        },
+        {
+          "key": "oe-30-13-23359-R48",
+          "doi-asserted-by": "publisher",
+          "first-page": "375",
+          "DOI": "10.1364/OL.42.000375",
+          "volume": "42",
+          "author": "Nguimdo",
+          "year": "2017",
+          "journal-title": "Opt. Lett."
+        },
+        {
+          "key": "oe-30-13-23359-R49",
+          "doi-asserted-by": "publisher",
+          "first-page": "441",
+          "DOI": "10.1038/nphoton.2017.93",
+          "volume": "11",
+          "author": "Shen",
+          "year": "2017",
+          "journal-title": "Nat. Photonics"
+        },
+        {
+          "key": "oe-30-13-23359-R50",
+          "doi-asserted-by": "publisher",
+          "first-page": "52",
+          "DOI": "10.1038/s41586-020-03070-1",
+          "volume": "589",
+          "author": "Feldmann",
+          "year": "2021",
+          "journal-title": "Nature"
+        }
+      ],
+      "container-title": [
+        "Optics Express"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://opg.optica.org/viewmedia.cfm?URI=oe-30-13-23359&seq=0",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            6
+          ]
+        ],
+        "date-time": "2024-08-06T19:29:08Z",
+        "timestamp": 1722972548000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://opg.optica.org/abstract.cfm?URI=oe-30-13-23359"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            6,
+            13
+          ]
+        ]
+      },
+      "references-count": 49,
+      "journal-issue": {
+        "issue": "13",
+        "published-online": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.1364/oe.454973",
+      "relation": {},
+      "ISSN": [
+        "1094-4087"
+      ],
+      "issn-type": [
+        {
+          "value": "1094-4087",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            6,
+            13
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "Optica Publishing Group",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "https://doi.org/10.1364/OE.454973",
+          "name": "articlelink",
+          "label": "Crossref DOI link to publisher maintained version"
+        },
+        {
+          "value": "research-article",
+          "name": "content_type",
+          "label": "Article type"
+        },
+        {
+          "value": "Screened by Similarity Check",
+          "name": "cross_check",
+          "label": "Similarity check"
+        },
+        {
+          "value": "Yes",
+          "order": 0,
+          "name": "peer_reviewed",
+          "label": "Peer reviewed",
+          "group": {
+            "name": "peer_review",
+            "label": "Peer review"
+          }
+        },
+        {
+          "value": "Single blind",
+          "order": 1,
+          "name": "review_process",
+          "label": "Review process",
+          "group": {
+            "name": "peer_review",
+            "label": "Peer review"
+          }
+        },
+        {
+          "value": "31 January 2022",
+          "order": 0,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "6 June 2022",
+          "order": 1,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "13 June 2022",
+          "order": 2,
+          "name": "published",
+          "label": "Published",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "© 2022 Optica Publishing Group under the terms of the Optica Open Access Publishing Agreement",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ]
+    }
+  }
+}

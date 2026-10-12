@@ -1,0 +1,471 @@
+[PÁGINA PDF 1]
+XXV ENMC, XIII ECTM, 9º MCSul e IX SEMENGO
+19 a 21 de Outubro de 2022, Formato Virtual
+ASSOCIAÇÃO DE REDES DE ESTADO DE ECO COM MÉTODOS
+ESTATÍSTICOS CLÁSSICOS DE PREVISÃO:
+UMA REVISÃO BIBLIOMÉTRICA
+Fabian Corrêa Cardoso1 – fabiancorrea@furg.br
+Rafael Alceste Berri2 – rafaelberri@furg.br
+Eduardo Nunes Borges2 – eduardoborges@furg.br
+Giancarlo Lucca2 – giancarlo.lucca@furg.br
+Viviane Leite Dias de Mattos3 – vivianemattos@furg.br1 Universidade Federal do Rio Grande, Programa de Pós-Graduação em Modelagem Computacional -
+Rio Grande, RS, Brazil2 Universidade Federal do Rio Grande, Centro de Ciências Computacionais - Rio Grande, RS, Brazil3 Universidade Federal do Rio Grande, Instituto de Matemática, Estatística e Física - Rio Grande, RS,
+Brazil
+Resumo. A previsão é um tópico científico importante que está relacionado possivelmente
+com o medo do Homem do futuro e do desconhecido. Com a evolução da Estatística e das
+técnicas de previsão, o apoio a tomadas de decisões vem tornando-se mais viável. Mais
+recentemente,  combinado  com  a  evolução  da  Aprendizagem  da  Máquina  no  campo  da
+Inteligência Artificial, as previsões vem se tornando cotidianas. Embora, seria pertinente
+para a Ciência a associação da Estatística com o Aprendizado de Máquina, possibilitando
+melhores previsões e, portanto, melhorando as decisões de futuro. Assim, propõe-se uma
+revisão  bibliométrica  sobre  associação  de  métodos  Estatísticos  com  uma  Rede  Neural
+Recorrente chamada Echo State Network (ESN), a fim de trazer-se o estado da arte desta
+associação. Para isso, criaram-se perguntas de pesquisa para orientar a revisão. A fim de
+fornecer uma revisão completa, pesquisou-se por artigos nas bases de bibliografia científica
+Scopus,  Web  of  Science,  ACM  e  IEEE.  Depois  de  considerar  uma  metodologia  para
+selecionar artigos, concluiu-se com um escopo de 23 estudos. Ao final, descobriu-se que não
+há tantos trabalhos que associem técnicas Estatísticas com algoritmos de Aprendizado de
+Máquina, especialmente ESN para previsão de ações, e ilustrou-se este campo de pesquisa.
+Palavras-chave: Computação  de  Reservatório,  Previsão  de  Séries  Temporais,  ARIMA,
+GARCH, ESN
+1. INTRODUÇÃO
+Há algumas maneiras de realizarem-se previsões a curto prazo, seja por equações físicas
+(previsão da velocidade  do vento,  o sistema  Lorenz  para  previsão  atmosférica  etc.), por
+técnicas de Aprendizagem de Máquina (Rede Neural Recorrente, Redes de Estados de Eco
+etc.), ou por técnicas Estatísticas (Média Móvel Integrada Autoregressiva, Autoregressivo
+Heteroscedástico Condicional Generalizado etc.).
+Anais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, 
+9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica
+ 19 a 21 Outubro 2022
+
+[PÁGINA PDF 2]
+XXV ENMC, XIII ECTM, 9º MCSul e IX SEMENGO
+19 a 21 de Outubro de 2022, Formato Virtual
+Uma Rede de Estados de Eco ( Echo State Network  - ESN, em inglês) é uma classe
+particular de Rede Neural Recorrente ( Recurrent Neural Network  - RNN, em inglês) que
+utiliza Computação de Reservatório ( Reservoir Computing - RC, em inglês) e pode produzir
+previsões (Chen et al., 2019). A RC é uma técnica de rede neural que utiliza pesos aleatórios
+tanto na entrada quanto no reservatório, os quais não são alterados ou treinados, e comporta-
+se  como  um  complexo  filtro  dinâmico  não  linear  que  transforma  os  sinais  de  entrada
+(Schrauwen; Verstraeten; van Campenhout, 2007).
+A técnica Estatística ARIMA ( Autoregressive Independent Moving Average , em inglês)
+usa a metodologia Box-Jenkins para processar estimativas e previsões, sendo um modelo de
+série temporal linear que assume que a série temporal está livre de flutuações periódicas
+(Elsaraiti  &  Merabet,  2021).  A  técnica  Estatística  GARCH  ( Generalized  Autoregressive
+Conditional Heteroscedastic , em inglês) é um modelo não linear que utiliza observações
+presentes e passadas e variância condicional para fazer previsões (Murali et al., 2020).
+Geralmente, pesquisadores usam ou métodos Estatísticos ou métodos de Aprendizado de
+Máquina para prever preços de ações. Mas, com objetivo de criar uma técnica que permita o
+uso da Aprendizagem de Máquina (ESN) com a técnica Estatística (GARCH), e aproveitando
+ambas para prever séries temporais do preços de ações, foi realizada uma revisão sistemática,
+iniciada por uma bibliometria.
+O  restante  da organização  deste  estudo  é  o  seguinte:  a seção  2  apresenta  a  revisão
+bibliográfica  sobre  a  ESN  e  as  técnicas  estatísticas,  em  seguida,  a  Seção  3  apresenta  a
+metodologia, na Seção 4, apontamos e discutimos os resultados obtidos e, finalmente, na
+Seção 5 são descritas as conclusões da pesquisa conduzida.
+2. ESN E MÉTODOS ESTATÍSTICOS
+Nesta seção, apresenta-se uma breve revisão de ESN, métodos estatísticos de previsão e a
+possibilidade de associação entre eles.
+2.1 Rede de estados de eco
+Jaeger (2001) apresentou a ESN 1 formalmente, no qual propôs a implementação de uma
+nova RNN  utilizando  a RC. Como a RNN, a  ESN  tem  uma memória  que pode ser de
+curto/longo prazo. Em Maass; Natschlaeger; Markram (2002), foi proposta uma rede neural
+equivalente à ESN, a Liquid State Machine (LSM). Ambas são tipos de RNN e utilizam RC,
+conforme Ojha et al. (2017).
+2.2 ARIMA-GARCH
+ARIMA é um dos modelos lineares mais utilizados para previsão de séries temporais (Pai
+& Lin, 2005). Normalmente, é denotado como ARIMA (p,d,q), onde p é o número de itens
+autoregressivos, d é o número de diferenças utilizadas em séries temporais, geralmente para
+torná-lo  estacionário,  e  q é  o  número  de  termos  médios  móveis.  Pode  ser  determinado
+analisando a Função de Autocorrelação (ACF) e a Função de Autocorrelação Parcial (PACF)
+também calculando o Akaike Information Criterion (AIC) ou Bayesian Information Criterion
+(BIC) (Zhang et al., 2018).
+GARCH é um modelo estocástico de volatilidade e, geralmente, é usado para verificar a
+presença de agrupamento de volatilidade em séries temporais (Murali et al., 2020). De acordo
+com (Jiang, 2021), GARCH "descreve a variância do erro como uma função dos tamanhos
+reais dos termos de erro dos períodos de tempo anteriores".
+1 Para maiores detalhes sobre ESN veja Lukoševičius (2012).
+Anais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, 
+9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica
+ 19 a 21 Outubro 2022
+
+[PÁGINA PDF 3]
+XXV ENMC, XIII ECTM, 9º MCSul e IX SEMENGO
+19 a 21 de Outubro de 2022, Formato Virtual
+2.3 Associação das metodologias
+Associar  um  método  Estatístico  a  uma  rede  neural  é  denominado  hibridization (em
+inglês). Nesta técnica, duas técnicas com abordagens diferentes são misturadas/mescladas
+para ajudar uma delas a ter um melhor desempenho.
+É possível em um sistema híbrido decompor a série temporal em componentes de baixa e
+alta volatilidade para que cada método possa lidar com peças separadas (Panigrahi & Behera,
+2017) para aproveitar a força de cada técnica. Como Zhang (2003) explicou, "a combinação
+de modelos diferentes pode aumentar a chance de capturar padrões diferentes nos dados e
+melhorar o desempenho das previsões".
+Mas, de outra forma, Babu & Reddy (2014) dizem que "os modelos híbridos devem
+conter um número limitado de modelos individuais para manter a simplicidade do modelo,
+bem como para manter a precisão".
+Para melhor compreensão sugere-se a leitura de trabalhos que já estudaram a associação
+de  ARIMA  com  vários  métodos  de  Aprendizagem  de Máquina,  citam-se:  Faruk (2010),
+Khashei & Bijari (2011), Khandelwal; Adhikari; Verma (2015) e Santos Jr.; de Oliveira; de
+Mattos Neto (2019).
+3. METODOLOGIA
+Para começar uma revisão sistemática, é necessário definir as questões de pesquisa, de
+acordo com os objetivos do trabalho a ser desenvolvido (Scannavino et al., 2017). Assim, as
+seguintes questões de pesquisa foram definidas:
+Questões 1. Quais são os modelos existentes de RC? Quais são as terminologias comuns
+para descrever estes modelos? Algum dos modelos define apropriadamente todos os outros
+para qualquer aplicação? Se não define adequadamente, pode-se combinar o conhecimento
+desses modelos e sistemas para criar um modelo unificado?
+Questões 2. A RC pode fazer previsões? Se sim, pode ser aplicada à Séries Temporais
+Financeiras?
+Como a RC e a ESN são tecnologias relativamente novas, escolheu-se focar a consulta
+nestas  expressões  e  mesclá-las  com  expressões  estatísticas  e  financeiras.  Além  disso,  a
+expressão " Machine Learning " foi incluída, porque a ESN é um tipo de Aprendizado de
+Máquina e também a expressão " Data Set", porque procuravam-se trabalhos que pudessem
+ser replicados, para melhor compreensão sobre a ESN.
+As etapas usadas para conduzir este trabalho de busca em bases de dados até a seleção
+dos artigos foram: ler títulos; ler resumos; ler introduções e conclusões. Em cada etapa foram
+utilizados alguns critérios, conforme descritos abaixo.
+Os critérios de seleção por título foram a necessidade de conter técnicas híbridas ou de
+possuir ao menos uma das palavras-chave da consulta. Os critérios para inclusão dos artigos
+durante a leitura dos resumos foram: explica os fundamentos teóricos da RC ou da ESN;
+descreve a operação da RC ou da ESN; concentra-se na arquitetura/estrutura de software da
+RC ou da ESN; descreve aplicações da RC ou da ESN em Séries Temporais Financeiras, está
+relacionado a pelo menos uma das questões de pesquisa. Observa-se que para ser incluído, o
+trabalho deve confirmar pelo menos um deles.
+Os seguintes critérios de seleção de artigos foram considerados durante a análise das
+introduções  e  das  conclusões:  os  objetivos  estão  claramente  definidos;  a  arquitetura  do
+sistema/quadro/projeto/experimento  é  claramente  definida;  o  artigo  apresenta  a  fonte  do
+conjunto de dados utilizado; o estudo propõe uma nova tecnologia relacionada à RC ou ESN;
+o estudo apresenta o estado da arte ou idéias para trabalhos futuros sobre RC ou ESN; o
+estudo relaciona a RC ou ESN a métodos estatísticos; o estudo apresenta resultados da RC ou
+Anais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, 
+9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica
+ 19 a 21 Outubro 2022
+
+[PÁGINA PDF 4]
+XXV ENMC, XIII ECTM, 9º MCSul e IX SEMENGO
+19 a 21 de Outubro de 2022, Formato Virtual
+ESN analisados estatisticamente; o estudo apresenta resultados de RC ou ESN comparando
+esses resultados com métodos estatísticos; o estudo utiliza séries temporais financeiras.
+As pesquisas foram realizadas nas bases dados de bibliografia científica Scopus, ACM
+Digital Library, Web of Science e IEEE Xplorer, com o objetivo inicial de pesquisar termos
+relacionados,  como  por  exemplo:  “Echo  State”  e  “Reservoir  Computing”,  abrangendo  o
+objeto de estudo desta rede neural específica. Como uma linha adicional de pesquisa, foram
+pesquisadas expressões relacionadas ao escopo do trabalho, tais como: “Machine Learning”.
+Considerando as bases e " All Fields ", a primeira consulta foi: (" Reservoir Computing "
+OR " Echo State " OR ESN) AND (" Machine Learning " OR  Prediction OR  Forecast OR
+Regression OR GARCH OR ARIMA OR " Time Series " OR  Stock OR " Exchange Market "
+OR Volatility OR "Data Set"). Esta consulta foi muito ampla e retornou 14627 artigos.
+Então  foi  criada  outra  consulta  para  " All  Fields ":  (" Echo  State "  OR  " Reservoir
+Computing"  OR  ESN)  AND  (Prediction OR  Forecast OR  Regression OR  GARCH  OR
+ARIMA OR "Time Series") AND (Stock OR "Exchange Market" OR Volatility OR "Machine
+Learning" OR "Data Set"), separando-se as expressões de estatística e de finanças, mantendo-
+se "Machine Learning" e "Data Set" com o último. No entanto, retornou muitos, 4581 artigos.
+Como a expressão ESN estava retornando artigos relacionados à Psicologia, decidiu-se
+removê-la, e também eliminar a expressão " Machine Learning" por não estar exatamente no
+foco  do  trabalho.  Um  novo  critério  foi  adotado,  acrescentando-se  os  termos  “ survey” e
+“review” para verificar  se as expressões cobriam todo o conteúdo. Também limitou-se a
+pesquisa entre 2018 e 2022 (ambos incluídos), ou seja, o estado da arte. Então, a consulta
+conclusiva utilizada em " All Fields" foi: ( Survey OR Review) AND (" Reservoir Computing"
+OR "Echo State") AND ( Prediction OR Forecast OR Regression OR GARCH OR ARIMA
+OR "Time Series") AND (" Stock Market" OR " Exchange Market" OR Volatility OR " Data
+Set"). Esta consulta retornou 1331 artigos, 18 da ACM, 1 da IEEE, 1312 da Scopus, e zero da
+Web of Science. Depois, a duplicidade e os livros foram removidos, resultando 1311 artigos.
+A ferramenta JabRef 2 (JabRef development Team, 2021) foi utilizada para organizar as
+referências bibliográficas das bases de dados, unindo-as em um único arquivo BibTex. Para a
+análise e apresentação dos resultados da bibliometria, foi utilizado o comando biblioshiny 4 da
+biblioteca Bibliometrix3 (Aria & Cuccurullo, 2017) no RStudio4 (R Core Team, 2019).
+4. RESULTADOS E DISCUSSÃO
+Ao analisarem-se os títulos reduziu-se para 170 artigos (conforme descrito na Seção 3).
+Ao lerem-se os resumos, com base nos critérios de inclusão, o número de artigos reduziu-se
+para  86.  No  entanto,  11  não  puderam  ser  obtidos,  pois  não  eram  públicos  ou  exigiam
+pagamento.  Assim,  leram-se  75  introduções  e  conclusões,  e,  adotando-se  os  critérios  de
+seleção, o resultado foi de 23 artigos selecionados para serem analisados. Após a leitura
+destes, apresentam-se os resultados. O Quadro 1 mostra os artigos selecionados com autores,
+títulos e onde foi publicado.
+Quadro 1 - Artigos selecionados
+Nº. Autores Títulos Revista/Evento
+1 Aceituno et al. (2020) Tailoring Echo State Networks for optimal learning IScience
+2 Barbosa et al. (2021) Symmetry-Aware Reservoir Computing Physical Review E
+Continua
+2 Disponível em: https://www.jabref.org
+3 Disponível em: https://www.bibliometrix.org
+4 Disponível em: https://www.rstudio.com/products/rstudio/download/
+Anais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, 
+9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica
+ 19 a 21 Outubro 2022
+
+[PÁGINA PDF 5]
+XXV ENMC, XIII ECTM, 9º MCSul e IX SEMENGO
+19 a 21 de Outubro de 2022, Formato Virtual
+Continuação
+3 Bissaro et al. (2021) Regular  Echo  State  Networks:  simple  and  
+accurate reservoir models to real-world applications
+Proceedings  of  the  36th
+Annual ACM Symposium
+on  Applied  Computing
+2021
+4 Bollt (2021) On  explaining  the  surprising  success  of  
+reservoir  computing  forecaster  of  chaos:  The  
+universal  machine  learning  dynamical  system  
+with contrast to VAR and DMD
+Chaos
+5 Budhiraja et  al.
+(2021)
+A  Reservoir  Computing  approach  for  forecasting  
+and  regenerating  both  dynamical  and  
+time-delay controlled Financial System behavior
+Plos One
+6 de  Santos  Jr.  et  al.
+(2019)
+An  intelligent  hybridization  of  ARIMA  with  
+Machine Learning models for Time Series forecasting
+Knowledge-Based
+Systems
+7 Gauthier et al. (2021) Next generation Reservoir Computing Nature Communications
+8 Haluszczynski  et  al.
+(2020)
+Reducing  network  size  and  improving  
+prediction stability of Reservoir Computing
+Chaos
+9 Kim & King (2020) Time  Series  prediction  using  deep  Echo  
+State Networks
+Neural  Computing  and
+Applications 
+10 Kumbure et al. (2022) Machine  Learning  techniques  and  data  for  
+Stock Market forecasting: A literature review
+Expert  Systems  with
+Applications
+11 Lim et al. (2020) Predicting  critical  transitions  in  multiscale  
+dynamical systems using reservoir computing
+Chaos
+12 Maat et al. (2018) Efficient  optimization  of  Echo  State  Networks  
+for Time Series datasets
+2018  International  Joint
+Conference  on  Neural
+Networks (IJCNN) IEEE
+13 Makridakis  et  al.
+(2018)
+Statistical  and  Machine  Learning  forecasting  
+methods: Concerns and ways forward
+Plos One
+14 Mallya (2021) Echo  State  Networks  and  existing  paradigms  
+for Stock Market prediction
+2021  International
+Conference  on  Emerging
+Smart  Computing  and
+Informatics (ESCI)
+15 Pérez-Pons  et  al.
+(2022)
+Machine  Learning  and  traditional  econometric  
+models: A systematic mapping study
+Journal  of  Artificial
+Intelligence  and  Soft
+Computing Research
+16 Ribeiro et al. (2021) Novel  hybrid  model  based  on  Echo  State  
+Neural  Network  applied  to  the  prediction  of  
+stock price return volatility
+Expert  Systems  with
+Applications
+17 Sakemi et al. (2020) Model-size  reduction  for  Reservoir  Computing  
+by concatenating internal states through time
+Nature Scientific Reports
+18 Shen et al. (2018) A  novel  Echo  State  Network  for  
+multivariate and nonlinear Time Series prediction
+Applied Soft Computing 
+19 Shivani et al. (2019) A  comparative  study  of  ARIMA  and  RNN  
+for short term wind speed forecasting
+2019  10 th International
+Conference  on
+Computing,
+Communication  and
+Networking  Technologies
+(ICCCNT) IEEE
+20 Singh et al. (2021) Soft  computing  model  coupled  with  statistical  
+models to estimate future of Stock Market
+Neural  Computing  and
+Applications
+21 Takkar  &  Chaudhari
+(2021)
+A  comprehensive  survey  on  deep  neural  
+networks  for  Stock  Market:  The  need,  challenges,  
+and future directions
+Expert  Systems  with
+Applications 
+22 Zhang et al. (2019) Evolutionary  Echo  State  Network  for  
+long-term Time Series prediction: on the edge of chaos
+Applied Intelligence
+Anais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, 
+9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica
+ 19 a 21 Outubro 2022
+
+[PÁGINA PDF 6]
+XXV ENMC, XIII ECTM, 9º MCSul e IX SEMENGO
+19 a 21 de Outubro de 2022, Formato Virtual
+23 Zheng et al. (2020) Long-Short  term  Echo  State  Network  
+for Time Series prediction
+IEEE Access
+A Fig. 1 apresenta um dendrograma de expressões de duas palavras nos resumos. Para
+elaboração  desse gráfico  foi escolhida  a  configuração  do biblioshiny:  Factorial  Analysis,
+Topic Dendrogram, Multidimensional Scaling, Abstracts, Bigrams, número de termos = 34 e
+número de grupos = 4. Está demonstrado na Fig. 1 que a ESN não aparece associada a
+expressões financeiras (grupo verde); além disso, pode ser visto que este tipo de rede neural
+está relacionada ao desempenho preditivo (grupo azul). Também é perceptível que a ESN não
+aparece  relacionada  às expressões de previsão  estatística  (grupo vermelho).  Pelo fato de
+expressões  com  uma  palavra  não  permitirem  análise  significativa,  foram  escolhidas
+expressões com duas, também pelo fato do número de artigos analisados ser pouco não foi
+viável utilizar expressões com três.
+Figura 1 – Grupos de expressões de duas palavras nos resumos
+Figura 2 – Palavras-Chaves mais utilizadas pelos autores nos artigos
+Na Fig. 2 observa-se que as palavras-chave utilizadas na consulta estavam de acordo
+com as escolhidas pelos autores nos artigos e mostra que os principais tópicos são ESN,
+previsão, predição, RNN e regressão (que é uma técnica Estatística de previsão).
+Anais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, 
+9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica
+ 19 a 21 Outubro 2022
+
+
+[PÁGINA PDF 7]
+XXV ENMC, XIII ECTM, 9º MCSul e IX SEMENGO
+19 a 21 de Outubro de 2022, Formato Virtual
+Na Fig. 3 observa-se uma evolução das publicações por ano, as poucas ocorrências em
+2022 podem ser explicadas pelo período em que as consultas desta revisão foram realizadas,
+no primeiro semestre desse ano.
+Figura 3 – Publicação de artigos por ano
+Figura 4 – Impacto de citação dos autores
+Na Fig. 4 percebe-se que os autores mais citados são Assimakopoulos, Makridakis e
+Spiliotis, os quais produzem em conjunto. Estes autores trabalham com técnicas de previsão
+estatística, mas também sobre técnicas de aprendizado de máquina, como pode-se ver em
+Makridakis; Spiliotis; Assimakopoulos (2018). Percebe-se que de Oliveira e de Mattos Neto
+também publicaram juntos, e relacionam-se com os métodos estatísticos e sobre associação
+dos métodos estudados, como em Santos Jr.; de Oliveira; de Mattos Neto (2019).
+Figura 5 – Artigos por revista ou evento
+Na Fig. 5 nota-se que os periódicos que concentram mais artigos são Chaos, Expert
+Systems with Applications, Neural Computing and Applications e Plos One, as quais tem os
+respectivos conceitos Qualis: A3, A1, B1 e A1. Demais periódicos tiveram apenas 1 artigo.
+Anais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, 
+9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica
+ 19 a 21 Outubro 2022
+
+
+[PÁGINA PDF 8]
+XXV ENMC, XIII ECTM, 9º MCSul e IX SEMENGO
+19 a 21 de Outubro de 2022, Formato Virtual
+Na Fig. 6 vê-se que “ time series” é a expressão que mais aparece nos resumos, seguida
+principalmente por  “stock market ”,  “recurrent neural ”, “ reservoir computing ”  e  “machine
+learning”. Mostra também que boa parte dos estudos estão ligados a séries temporais e
+constróem relações entre aprendizado de máquina, RCs e mercado de ações.
+Figura 6 – Frequência de expressões com duas palavras nos resumos
+Na Fig. 7 observa-se que as expressões de duas palavras nos títulos são “ time series”,
+“stock market” e “series prediction”, todas relacionadas aos tópicos da pesquisa.
+Figura 7 – Nuvem de palavras de expressões com duas palavras nos títulos
+A Fig. 8 mostra que a principal tendência nestes tópicos está relacionada ao aprendizado
+de máquina e à previsão e que RNN e ESN aparecem como uma tendência após 2020.
+Figura 8 – Assuntos tendência
+Anais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, 
+9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica
+ 19 a 21 Outubro 2022
+
+
+[PÁGINA PDF 9]
+XXV ENMC, XIII ECTM, 9º MCSul e IX SEMENGO
+19 a 21 de Outubro de 2022, Formato Virtual
+5. CONSIDERAÇÕES FINAIS
+Foi possível responder às questões de pesquisa: quais são os modelos existentes de RC e
+quais as terminologias comuns para descrever estes modelos? os modelos de RC existentes
+são ESN e LSM. e estas são suas terminologias; algum dos modelos define apropriadamente
+todos os outros para qualquer aplicação? ambas definem adequadamente uma a outra para
+qualquer  aplicação;  a  RC  pode  fazer  previsões?  sim,  pode  realizar  previsões;  pode  ser
+aplicada à Séries Temporais Financeiras? sim, pode.
+Conclui-se que não foi encontrada associação de técnicas Estatísticas e Aprendizado de
+Máquina para previsão específica do preço de ações. Assim, a bibliometria foi válida e, após,
+será realizada a metassíntese.
+Como trabalho futuro está a revisão sistemática, após uma releitura mais detalhada dos 23
+artigos selecionados, no qual serão apontados os data sets dos artigos, se o estudo relaciona
+RC ou ESN com métodos Estatísticos, se o estudo apresenta resultados de RC ou ESN com
+métodos Estatísticos ou se propõe nova metodologia de RC.
+Agradecimentos
+Agradeço à CAPES pela bolsa de doutorado, a qual torna este trabalho possível  e ao
+Programa de Pós-Graduação em Modelagem Computacional da Universidade Federal do Rio
+Grande. Este trabalho também foi parcialmente financiado pelo CNPq (305805/2021-5).
+REFERÊNCIAS
+Aria, M.; Cuccurullo, C. Bibliometrix: An R-tool for comprehensive science mapping analysis. Journal of 
+informetrics, v. 11, n. 4, p. 959-975, 2017.
+Babu, C.N.; Reddy, B.E. A moving-average-filter-based hybrid ARIMA–ANN model for forecasting time series 
+data, Appl. Soft Comput. J. (2014), http://dx.doi.org/10.1016/j.asoc.2014.05.028.
+Chen, Y.; He, Z.; Shang, Z.; Li, C.; Li, L.; Xu, M. A novel combined model based on echo state network for 
+multi-step ahead wind speed forecasting: A case study of NREL. Energy conversion and management, v. 
+179, p. 13-29, 2019.
+Elsaraiti, M.; Merabet, A. A comparative analysis of the Arima and LSTM predictive models and their 
+effectiveness for predicting wind speed. Energies, v. 14, n. 20, p. 6782, 2021.
+Faruk, D.Ö. A hybrid neural network and ARIMA model for water quality time series prediction. Engineering 
+applications of artificial intelligence, v. 23, n. 4, p. 586-594, 2010.
+Hyndman, R.J., & Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: 
+Melbourne, Australia. Available at: https://otexts.com/fpp3. Accessed on: agust 15th 2022.
+JabRef Development Team (2021). JabRef - An open-source, cross-platform citation and reference management 
+software. Version 5.1.
+Jaeger, H. The echo state approach to analysing and training recurrent neural networks-with an erratum note. 
+Bonn, Germany: German National Research Center for Information Technology GMD Technical Report, 
+148 (34):13, 2001.
+Jiang, W. Applications of deep learning in stock market prediction: recent progress. Expert Systems with 
+Applications, v. 184, p. 115537, 2021.
+Khandelwal, I.; Adhikari, R.; Verma, G. Time series forecasting using hybrid ARIMA and ANN models based on
+DWT decomposition. Procedia Computer Science, v. 48, p. 173-179, 2015.
+Khashei, M.; Bijari, M. A novel hybridization of artificial neural networks and ARIMA models for time series 
+forecasting. Applied soft computing, v. 11, n. 2, p. 2664-2675, 2011.
+Anais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, 
+9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica
+ 19 a 21 Outubro 2022
+
+[PÁGINA PDF 10]
+XXV ENMC, XIII ECTM, 9º MCSul e IX SEMENGO
+19 a 21 de Outubro de 2022, Formato Virtual
+Lukoševičius, M. A practical guide to applying echo state networks. In: Neural networks: Tricks of the trade.
+Springer, Berlin, Heidelberg, 2012. p. 659-686.
+Maass, W.; Natschlaeger; T.; Markram, H. Real-time computing without stable states: A new framework for 
+neural computation based on perturbations, Neural Computation. 14(11), 2531–2560, (2002).
+Makridakis, S.; Spiliotis, E.; Assimakopoulos, V. Statistical and Machine Learning forecasting methods: 
+Concerns and ways forward. PloS one, v. 13, n. 3, p. e0194889, 2018.
+Murali, P., Revathy, R., Balamurali, S.; Tayade, A.S. Integration of RNN with GARCH refined by whale 
+optimization algorithm for yield forecasting: a hybrid machine learning approach. Journal of Ambient 
+Intelligence Human Computing (2020). https://doi.org/10.1007/s12652-020-01922-2.
+Ojha, V .K.; Abraham, A.; Snášel, V . Metaheuristic design of feedforward neural networks: A review of two 
+decades of research. Engineering Applications of Artificial Intelligence, v. 60, p. 97-116, 2017.
+Pai, P.-F.; Lin, C.-S. A hybrid ARIMA and support vector machines model in stock price forecasting. Omega, v. 
+33, n. 6, p. 497-505, 2005.
+Panigrahi, S.; Behera, H.S. A hybrid ETS–ANN model for time series forecasting. Engineering applications of 
+artificial intelligence, v. 66, p. 49-59, 2017.
+R Core Team (2019). R: A language and environment for statistical computing. R Foundation for Statistical
+Computing, Vienna, Austria. Disponível em: https://www.R-project.org/. Acesso em: 14 ago. 2021.
+Scannavino, K.R.F., Nakagawa, E.Y ., Fabbri, S.C.P.F., Ferrari, F.C. (2017). Revisão Sistemática da Literatura em
+Engenharia de Software: teoria e prática. Livros Técnicos e Científicos (LTC), 2017.
+Schrauwen, B.; Verstraeten, D.; van Campenhout, J. An overview of reservoir computing: theory, applications 
+and implementations. In: Proceedings of the 15th European symposium on artificial neural networks. p. 471-
+482 2007. 2007.
+Santos Jr., D.S.deO.; de Oliveira, J.F.L.; de Mattos Neto, P.S.G. An intelligent hybridization of ARIMA with 
+machine learning models for time series forecasting. Knowledge-Based Systems, v. 175, p. 72-86, 2019.
+Zhang, G.P. Time series forecasting using a hybrid ARIMA and neural network model. Neurocomputing, v. 50, 
+p. 159-175, 2003.
+Zhang, Z.; Zhou, G.; Liao, X.; Lu, J. Research on tool wear prediction based on LSTM and ARIMA. In: 
+Proceedings of the 2018 international conference on big data engineering and technology. 2018. p. 73-77.
+ECHO STATE NETWORK AND CLASSICAL STATISTICAL TECHNIQUES
+HYBRIDIZATION FOR FORECASTING: A BIBLIOMETRIC REVIEW 
+Abstract. Forecasting is an important scientific topic which is related possibly with the Man
+fear of future and about what is unknown. With the evolution of statistic field in last century,
+today future is not so obscure. More recently, combined with the machine learning evolution
+in the artificial intelligence field, forecasts became not so difficult. Although, both fields do
+not work together as they could, commonly each field makes research on its own. Having this
+in mind, we proposed a bibliometric review on hybridization of statistical methods with a
+specific Recurrent Neural Network called Echo State Network for forecasting and bringing
+the hybridization state of the art. To do so, firstly, we created research questions to guide the
+review. In order to provide a complete review, we searched the Scopus, Web of Science, ACM
+and  IEEE  scientific  bibliographic  databases  for  articles  about  this.  After  considering  a
+methodology to select articles, we have finished with a scope of 23 different studies. At the
+end, we discovered there are not so many works which make hybridization with statistical
+techniques and machine learning algorithms to forecast and we bring light to an important
+research field.
+Keywords: Reservoir Computing, Time Series Forecasting, ARIMA, GARCH, ESN
+Anais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, 
+9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica
+ 19 a 21 Outubro 2022

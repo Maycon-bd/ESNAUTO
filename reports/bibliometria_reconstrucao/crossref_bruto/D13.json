@@ -1,0 +1,555 @@
+{
+  "url": "https://api.crossref.org/works/10.1140%2Fepjp%2Fs13360-025-07077-3",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            26
+          ]
+        ],
+        "date-time": "2025-11-26T20:04:15Z",
+        "timestamp": 1764187455472,
+        "version": "3.46.0"
+      },
+      "reference-count": 27,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "11",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                26
+              ]
+            ],
+            "date-time": "2025-11-26T00:00:00Z",
+            "timestamp": 1764115200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                26
+              ]
+            ],
+            "date-time": "2025-11-26T00:00:00Z",
+            "timestamp": 1764115200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/501100001843",
+          "name": "Science and Engineering Research Board",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "CRG/2022/004784"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "CRG/2022/004784"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/501100001843",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Eur. Phys. J. Plus"
+      ],
+      "DOI": "10.1140/epjp/s13360-025-07077-3",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            26
+          ]
+        ],
+        "date-time": "2025-11-26T07:15:08Z",
+        "timestamp": 1764141308000
+      },
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Multivariate time series prediction using clustered echo state network"
+      ],
+      "prefix": "10.1140",
+      "volume": "140",
+      "author": [
+        {
+          "given": "S.",
+          "family": "Hariharan",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1415-2473",
+          "authenticated-orcid": false,
+          "given": "R.",
+          "family": "Suresh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "V. K.",
+          "family": "Chandrasekar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            26
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "issue": "34",
+          "key": "7077_CR1",
+          "first-page": "13",
+          "volume": "148",
+          "author": "H Jaeger",
+          "year": "2001",
+          "unstructured": "H. Jaeger, The “echo state’’ approach to analysing and training recurrent neural networks-with an erratum note. Bonn, Germany: German natl. res. cent. inf. technol. gmd tech. rep. 148(34), 13 (2001)",
+          "journal-title": "Bonn, Germany: German natl. res. cent. inf. technol. gmd tech. rep."
+        },
+        {
+          "key": "7077_CR2",
+          "unstructured": "Herbert Jaeger, Adaptive nonlinear system identification with echo state networks. Adv neural inf process syst 15, (2002)"
+        },
+        {
+          "key": "7077_CR3",
+          "unstructured": "Chenxi Sun, Moxian Song, Shenda Hong, Hongyan Li. A review of designs and applications of echo state networks. (2020) arXiv:2012.02974"
+        },
+        {
+          "issue": "1",
+          "key": "7077_CR4",
+          "doi-asserted-by": "publisher",
+          "first-page": "2056",
+          "DOI": "10.1038/s41467-024-45187-1",
+          "volume": "15",
+          "author": "M Yan",
+          "year": "2024",
+          "unstructured": "M. Yan, C. Huang, P. Bienstman, P. Tino, W. Lin, J. Sun, Emerging opportunities and challenges for the future of reservoir computing. Nat. Commun. 15(1), 2056 (2024)",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "issue": "5",
+          "key": "7077_CR5",
+          "doi-asserted-by": "publisher",
+          "first-page": "1364",
+          "DOI": "10.1109/TNN.2007.894082",
+          "volume": "18",
+          "author": "Z Deng",
+          "year": "2007",
+          "unstructured": "Z. Deng, Y. Zhang, Collective behavior of a small-world recurrent neural system with scale-free distribution. IEEE Trans. Neural Netw. 18(5), 1364–1375 (2007)",
+          "journal-title": "IEEE Trans. Neural Netw."
+        },
+        {
+          "key": "7077_CR6",
+          "doi-asserted-by": "publisher",
+          "first-page": "460",
+          "DOI": "10.1007/s10489-015-0652-3",
+          "volume": "43",
+          "author": "E Najibi",
+          "year": "2015",
+          "unstructured": "E. Najibi, H. Rostami, Scesn, spesn, swesn: Three recurrent neural echo state networks with clustered reservoirs for prediction of nonlinear and chaotic time series. Appl. Intell. 43, 460–472 (2015)",
+          "journal-title": "Appl. Intell."
+        },
+        {
+          "issue": "4",
+          "key": "7077_CR7",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pone.0120750",
+          "volume": "10",
+          "author": "X Li",
+          "year": "2015",
+          "unstructured": "X. Li, L. Zhong, F. Xue, A. Zhang, A priori data-driven multi-clustered reservoir generation algorithm for echo state network. Plos One 10(4), e0120750 (2015)",
+          "journal-title": "Plos One"
+        },
+        {
+          "key": "7077_CR8",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Laércio Oliveira Junior, Florian Stelzer, Liang Zhao. Clustered echo state networks for signal observation and frequency filtering. In symposium on knowledge discovery, mining and learning (KDMiLe), pages 25–32. SBC, 2020",
+          "DOI": "10.5753/kdmile.2020.11955"
+        },
+        {
+          "issue": "10–12",
+          "key": "7077_CR9",
+          "doi-asserted-by": "publisher",
+          "first-page": "2177",
+          "DOI": "10.1016/j.neucom.2010.01.015",
+          "volume": "73",
+          "author": "Q Song",
+          "year": "2010",
+          "unstructured": "Q. Song, Z. Feng, Effects of connectivity structure of complex echo state network on its prediction performance for nonlinear time series. Neurocomputing 73(10–12), 2177–2185 (2010)",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "7077_CR10",
+          "doi-asserted-by": "crossref",
+          "unstructured": "James McAllister, John Wade, Conor Houghton, Cian O’ Donnell. Topological and simplicial features in reservoir computing networks. In UK workshop on computational intelligence, pages 55–71. Springer, (2024)",
+          "DOI": "10.1007/978-3-031-78857-4_5"
+        },
+        {
+          "key": "7077_CR11",
+          "unstructured": "D. C.R. Arroyo. A modified echo state network model using non-random topology. PhD thesis, Universidade de São Paulo, (2023)"
+        },
+        {
+          "key": "7077_CR12",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Peng Yu, Lei Miao, Guo Jia. Clustered complex echo state networks for traffic forecasting with prior knowledge. In 2011 IEEE international instrumentation and measurement technology conference, pages 1–5. IEEE, (2011)",
+          "DOI": "10.1109/IMTC.2011.5944078"
+        },
+        {
+          "key": "7077_CR13",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Fangzheng Xue, Qian Li, Xiumin Li, Hongjun Zhou. The application of shesn on financial time series prediction. In 2016 3rd international conference on information science and control engineering (ICISCE), pages 692–696. IEEE, (2016)",
+          "DOI": "10.1109/ICISCE.2016.153"
+        },
+        {
+          "issue": "10",
+          "key": "7077_CR14",
+          "doi-asserted-by": "publisher",
+          "first-page": "2173",
+          "DOI": "10.1109/TCYB.2015.2467167",
+          "volume": "46",
+          "author": "X Meiling",
+          "year": "2016",
+          "unstructured": "X. Meiling, M. Han, Adaptive elastic echo state network for multivariate time series prediction. IEEE Trans. Cybern. 46(10), 2173–2183 (2016)",
+          "journal-title": "IEEE Trans. Cybern."
+        },
+        {
+          "key": "7077_CR15",
+          "doi-asserted-by": "publisher",
+          "first-page": "524",
+          "DOI": "10.1016/j.asoc.2017.10.038",
+          "volume": "62",
+          "author": "L Shen",
+          "year": "2018",
+          "unstructured": "L. Shen, J. Chen, Z. Zeng, J. Yang, J. Jin, A novel echo state network for multivariate and nonlinear time series prediction. Appl. Soft Comput. 62, 524–535 (2018)",
+          "journal-title": "Appl. Soft Comput."
+        },
+        {
+          "issue": "9",
+          "key": "7077_CR16",
+          "doi-asserted-by": "publisher",
+          "first-page": "4888",
+          "DOI": "10.1016/j.jfranklin.2019.01.027",
+          "volume": "356",
+          "author": "X Yao",
+          "year": "2019",
+          "unstructured": "X. Yao, Z. Wang, Broad echo state network for multivariate time series prediction. J. Franklin Inst. 356(9), 4888–4906 (2019)",
+          "journal-title": "J. Franklin Inst."
+        },
+        {
+          "issue": "6",
+          "key": "7077_CR17",
+          "first-page": "2305",
+          "volume": "49",
+          "author": "X Meiling",
+          "year": "2018",
+          "unstructured": "X. Meiling, M. Han, T. Qiu, H. Lin, Hybrid regularized echo state network for multivariate chaotic time series prediction. IEEE Trans. Cybern. 49(6), 2305–2315 (2018)",
+          "journal-title": "IEEE Trans. Cybern."
+        },
+        {
+          "issue": "1",
+          "key": "7077_CR18",
+          "doi-asserted-by": "publisher",
+          "first-page": "238",
+          "DOI": "10.1109/TNNLS.2016.2574963",
+          "volume": "29",
+          "author": "M Han",
+          "year": "2017",
+          "unstructured": "M. Han, X. Meiling, Laplacian echo state network for multivariate time series prediction. IEEE Trans. Neural Netw. Learn. Syst. 29(1), 238–244 (2017)",
+          "journal-title": "IEEE Trans. Neural Netw. Learn. Syst."
+        },
+        {
+          "issue": "4",
+          "key": "7077_CR19",
+          "doi-asserted-by": "publisher",
+          "first-page": "2163",
+          "DOI": "10.1109/TCYB.2020.2977375",
+          "volume": "52",
+          "author": "X Na",
+          "year": "2020",
+          "unstructured": "X. Na, M. Han, W. Ren, K. Zhong, Modified bbo-based multivariate time-series prediction system with feature subset selection and model parameter optimization. IEEE Trans. Cybern. 52(4), 2163–2173 (2020)",
+          "journal-title": "IEEE Trans. Cybern."
+        },
+        {
+          "issue": "11",
+          "key": "7077_CR20",
+          "doi-asserted-by": "publisher",
+          "first-page": "9302",
+          "DOI": "10.1109/TNNLS.2022.3157830",
+          "volume": "34",
+          "author": "X Na",
+          "year": "2022",
+          "unstructured": "X. Na, W. Ren, M. Liu, M. Han, Hierarchical echo state network with sparse learning: A method for multidimensional chaotic time series prediction. IEEE Trans. neural netw. Learn Syst. 34(11), 9302–9313 (2022)",
+          "journal-title": "IEEE Trans. neural netw. Learn Syst."
+        },
+        {
+          "issue": "4",
+          "key": "7077_CR21",
+          "doi-asserted-by": "publisher",
+          "first-page": "6150",
+          "DOI": "10.1109/TII.2022.3198465",
+          "volume": "19",
+          "author": "W Ren",
+          "year": "2022",
+          "unstructured": "W. Ren, D. Ma, M. Han, Multivariate time series predictor with parameter optimization and feature selection based on modified binary salp swarm algorithm. IEEE Trans. Industr. Inf. 19(4), 6150–6159 (2022)",
+          "journal-title": "IEEE Trans. Industr. Inf."
+        },
+        {
+          "issue": "4",
+          "key": "7077_CR22",
+          "doi-asserted-by": "publisher",
+          "first-page": "946",
+          "DOI": "10.1109/TCYB.2016.2533545",
+          "volume": "47",
+          "author": "Zeeshan Khawar Malik",
+          "year": "2016",
+          "unstructured": "Zeeshan Khawar Malik, Amir Hussain, Wu. Qingming Jonathan, Multilayered echo state machine: a novel architecture and algorithm. IEEE Trans. Cybern. 47(4), 946–959 (2016)",
+          "journal-title": "IEEE Trans. Cybern."
+        },
+        {
+          "key": "7077_CR23",
+          "doi-asserted-by": "publisher",
+          "first-page": "200",
+          "DOI": "10.3389/fnins.2010.00200",
+          "volume": "4",
+          "author": "David Meunier",
+          "year": "2010",
+          "unstructured": "David Meunier, Renaud Lambiotte, Edward T. Bullmore, Modular and hierarchically modular organization of brain networks. Front. neurosci. 4, 200 (2010)",
+          "journal-title": "Front. neurosci."
+        },
+        {
+          "issue": "1393",
+          "key": "7077_CR24",
+          "first-page": "91",
+          "volume": "355",
+          "author": "Claus-C Hilgetag",
+          "year": "2000",
+          "unstructured": "Claus-C. Hilgetag, Gully APC. Burns, Marc A. O’Neill, Jack W. Scannell, Malcolm P. Young, Anatomical connectivity defines the organization of clusters of cortical areas in the macaque and the cat philosophical transactions of the royal society of london. Ser. B: Biol. Sci. 355(1393), 91–110 (2000)",
+          "journal-title": "Ser. B: Biol. Sci."
+        },
+        {
+          "key": "7077_CR25",
+          "unstructured": "National stock exchange of India. All reports. https://www.nseindia.com/all-reports. Accessed: 2025-01-28"
+        },
+        {
+          "key": "7077_CR26",
+          "unstructured": "NOAA space weather prediction center. Real-time solar wind. https://www.swpc.noaa.gov/products/real-time-solar-wind, 2025. Accessed: 2025-01-28"
+        },
+        {
+          "issue": "1",
+          "key": "7077_CR27",
+          "doi-asserted-by": "publisher",
+          "first-page": "3",
+          "DOI": "10.1080/00031305.1975.10479105",
+          "volume": "29",
+          "author": "Donald W Marquardt",
+          "year": "1975",
+          "unstructured": "Donald W. Marquardt, Ronald D. Snee, Ridge regression in practice. The American Stat. 29(1), 3–20 (1975)",
+          "journal-title": "The American Stat."
+        }
+      ],
+      "container-title": [
+        "The European Physical Journal Plus"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1140/epjp/s13360-025-07077-3.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://link.springer.com/article/10.1140/epjp/s13360-025-07077-3/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1140/epjp/s13360-025-07077-3.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            26
+          ]
+        ],
+        "date-time": "2025-11-26T20:02:36Z",
+        "timestamp": 1764187356000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://link.springer.com/10.1140/epjp/s13360-025-07077-3"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            26
+          ]
+        ]
+      },
+      "references-count": 27,
+      "journal-issue": {
+        "issue": "11",
+        "published-online": {
+          "date-parts": [
+            [
+              2025,
+              11
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "7077"
+      ],
+      "URL": "https://doi.org/10.1140/epjp/s13360-025-07077-3",
+      "relation": {},
+      "ISSN": [
+        "2190-5444"
+      ],
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "2190-5444"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            26
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "20 September 2025",
+          "order": 1,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "14 November 2025",
+          "order": 2,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "26 November 2025",
+          "order": 3,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "order": 1,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Declarations"
+          }
+        },
+        {
+          "value": "The authors declare that they have no Conflict of interest.",
+          "order": 2,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Conflict of interest"
+          }
+        }
+      ],
+      "article-number": "1133"
+    }
+  }
+}

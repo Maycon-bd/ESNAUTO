@@ -1,0 +1,588 @@
+{
+  "url": "https://api.crossref.org/works/10.1007%2F978-3-031-77738-7_26",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            29
+          ]
+        ],
+        "date-time": "2026-05-29T19:37:49Z",
+        "timestamp": 1780083469786,
+        "version": "3.54.0"
+      },
+      "publisher-location": "Cham",
+      "reference-count": 26,
+      "publisher": "Springer Nature Switzerland",
+      "isbn-type": [
+        {
+          "value": "9783031777370",
+          "type": "print"
+        },
+        {
+          "value": "9783031777387",
+          "type": "electronic"
+        }
+      ],
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                14
+              ]
+            ],
+            "date-time": "2024-11-14T00:00:00Z",
+            "timestamp": 1731542400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                14
+              ]
+            ],
+            "date-time": "2024-11-14T00:00:00Z",
+            "timestamp": 1731542400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "DOI": "10.1007/978-3-031-77738-7_26",
+      "type": "book-chapter",
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            19
+          ]
+        ],
+        "date-time": "2024-11-19T16:41:14Z",
+        "timestamp": 1732034474000
+      },
+      "page": "315-327",
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 3,
+      "title": [
+        "Comparing MAE and RMSE as Fitness of Genetic Algorithm for Optimizing Echo State Network Hyperparameters with Different Probabilistic Distributions"
+      ],
+      "prefix": "10.1007",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0005-1896-446X",
+          "authenticated-orcid": false,
+          "given": "Henrique Vaz",
+          "family": "de Araújo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2842-0387",
+          "authenticated-orcid": false,
+          "given": "Fabian Corrêa",
+          "family": "Cardoso",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3512-6290",
+          "authenticated-orcid": false,
+          "given": "Viviane Leite Dias",
+          "family": "de Mattos",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1595-7676",
+          "authenticated-orcid": false,
+          "given": "Eduardo Nunes",
+          "family": "Borges",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3776-0260",
+          "authenticated-orcid": false,
+          "given": "Giancarlo",
+          "family": "Lucca",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6996-7602",
+          "authenticated-orcid": false,
+          "given": "Bruno Lopes",
+          "family": "Dalmazo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5125-2756",
+          "authenticated-orcid": false,
+          "given": "Rafael Alceste",
+          "family": "Berri",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            14
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "issue": "1",
+          "key": "26_CR1",
+          "doi-asserted-by": "publisher",
+          "first-page": "3",
+          "DOI": "10.1016/j.ins.2003.03.023",
+          "volume": "170",
+          "author": "G Armano",
+          "year": "2005",
+          "unstructured": "Armano, G., Marchesi, M., Murru, A.: A hybrid genetic-neural architecture for stock indexes forecasting. Inf. Sci. 170(1), 3–33 (2005)",
+          "journal-title": "Inf. Sci."
+        },
+        {
+          "key": "26_CR2",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Cardoso, F.C., Berri, R.A., Borges, E.N., Dalmazo, B.L., Lucca, G., de Mattos, V.L.D.: Echo state network and classical statistical techniques for time series forecasting: a review. Knowl.-Based Syst. 111639 (2024). https://doi.org/10.1016/j.knosys.2024.111639",
+          "DOI": "10.1016/j.knosys.2024.111639"
+        },
+        {
+          "key": "26_CR3",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Cardoso, F.C., et al.: Bovdb: a data set of stock prices of all companies in B3 from 1995 to 2020. J. Inf. Data Manag. 13(1) (2022)",
+          "DOI": "10.5753/jidm.2022.2345"
+        },
+        {
+          "key": "26_CR4",
+          "unstructured": "Casella, G., Berger, R.L.: Inferência estatística. Cengage Learning (2010)"
+        },
+        {
+          "key": "26_CR5",
+          "series-title": "Lecture Notes in Computer Science (Lecture Notes in Artificial Intelligence)",
+          "doi-asserted-by": "publisher",
+          "first-page": "1067",
+          "DOI": "10.1007/11540007_137",
+          "volume-title": "Fuzzy Systems and Knowledge Discovery",
+          "author": "Y Chen",
+          "year": "2005",
+          "unstructured": "Chen, Y., Abraham, A., Yang, J., Yang, B.: Hybrid methods for stock index modeling. In: Wang, L., Jin, Y. (eds.) FSKD 2005. LNCS (LNAI), vol. 3614, pp. 1067–1070. Springer, Heidelberg (2005). https://doi.org/10.1007/11540007_137"
+        },
+        {
+          "key": "26_CR6",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Chung, H., Shin, K.S.: Genetic algorithm-optimized long short-term memory network for stock market prediction. Sustainability 10(10), 3765 (2018)",
+          "DOI": "10.3390/su10103765"
+        },
+        {
+          "key": "26_CR7",
+          "unstructured": "Gallicchio, C., Micheli, A.: Deep echo state network (deepesn): a brief survey. arXiv preprint arXiv:1712.04323 (2017)"
+        },
+        {
+          "key": "26_CR8",
+          "first-page": "4675",
+          "volume": "38",
+          "author": "F Hamad",
+          "year": "2023",
+          "unstructured": "Hamad, F., Younus, N., Muftah, M.M., Jaber, M.: Specify under-lining distribution for clustering linearly separable data: normal and uniform distribution case. J. Data Acquisition Process. 38, 4675 (2023)",
+          "journal-title": "J. Data Acquisition Process."
+        },
+        {
+          "key": "26_CR9",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Holland, J.H.: Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence. MIT Press, Cambridge (1992)",
+          "DOI": "10.7551/mitpress/1090.001.0001"
+        },
+        {
+          "key": "26_CR10",
+          "unstructured": "Jaeger, H.: The “echo state” approach to analysing and training recurrent neural networks-with an erratum note. German National Research Center for Information Technology GMD Technical Report, Bonn, Germany, vol. 148, no. 34, p. 13 (2001)"
+        },
+        {
+          "key": "26_CR11",
+          "doi-asserted-by": "crossref",
+          "unstructured": "James, G., Witten, D., Hastie, T., Tibshirani, R., et al.: An Introduction to Statistical Learning, vol. 112. Springer, Heidelberg (2013)",
+          "DOI": "10.1007/978-1-4614-7138-7"
+        },
+        {
+          "key": "26_CR12",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Lukoševičius, M., Uselis, A.: Efficient implementations of echo state network cross-validation. Cogn. Comput. 1–15 (2021)",
+          "DOI": "10.1007/s12559-021-09849-2"
+        },
+        {
+          "key": "26_CR13",
+          "unstructured": "Morettin, P.A.: Econometria financeira: um curso em séries temporais financeiras. Editora Blucher (2017)"
+        },
+        {
+          "key": "26_CR14",
+          "first-page": "13",
+          "volume": "6",
+          "author": "S Nayak",
+          "year": "2014",
+          "unstructured": "Nayak, S., Misra, B.B., Behera, H.S.: Impact of data normalization on stock index forecasting. Int. J. Comput. Inf. Syst. Ind. Manag. Appl. 6, 13–13 (2014)",
+          "journal-title": "Int. J. Comput. Inf. Syst. Ind. Manag. Appl."
+        },
+        {
+          "key": "26_CR15",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Nelson, D.B.: Conditional heteroskedasticity in asset returns: a new approach. Econometrica J. Econom. Soc. 347–370 (1991)",
+          "DOI": "10.2307/2938260"
+        },
+        {
+          "key": "26_CR16",
+          "doi-asserted-by": "publisher",
+          "first-page": "6303",
+          "DOI": "10.1007/s11227-019-02851-4",
+          "volume": "75",
+          "author": "HM Nguyen",
+          "year": "2019",
+          "unstructured": "Nguyen, H.M., Kalra, G., Jun, T.J., Woo, S., Kim, D.: Esnemble: an echo state network-based ensemble for workload prediction and resource allocation of web applications in the cloud. J. Supercomput. 75, 6303–6323 (2019)",
+          "journal-title": "J. Supercomput."
+        },
+        {
+          "key": "26_CR17",
+          "unstructured": "Peterson, B.G., et al.: Package “performanceanalytics.” R Team Cooperation 3, 13–14 (2018)"
+        },
+        {
+          "issue": "6",
+          "key": "26_CR18",
+          "doi-asserted-by": "publisher",
+          "first-page": "1456",
+          "DOI": "10.1109/72.728395",
+          "volume": "9",
+          "author": "EW Saad",
+          "year": "1998",
+          "unstructured": "Saad, E.W., Prokhorov, D.V., Wunsch, D.C.: Comparative study of stock trend prediction using time delay, recurrent and probabilistic neural networks. IEEE Trans. Neural Networks 9(6), 1456–1470 (1998)",
+          "journal-title": "IEEE Trans. Neural Networks"
+        },
+        {
+          "issue": "1",
+          "key": "26_CR19",
+          "first-page": "57",
+          "volume": "4",
+          "author": "S Saigal",
+          "year": "2012",
+          "unstructured": "Saigal, S., Mehrotra, D.: Performance comparison of time series data using predictive data mining techniques. Adv. Inf. Mining 4(1), 57–66 (2012)",
+          "journal-title": "Adv. Inf. Mining"
+        },
+        {
+          "key": "26_CR20",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Scrucca, L.: On some extensions to GA package: hybrid optimisation, parallelisation and islands evolution. arXiv preprint arXiv:1605.01931 (2016)",
+          "DOI": "10.32614/RJ-2017-008"
+        },
+        {
+          "issue": "3",
+          "key": "26_CR21",
+          "doi-asserted-by": "publisher",
+          "first-page": "1464",
+          "DOI": "10.1109/23.589532",
+          "volume": "44",
+          "author": "J Sola",
+          "year": "1997",
+          "unstructured": "Sola, J., Sevilla, J.: Importance of input data normalization for the application of neural networks to complex industrial problems. IEEE Trans. Nucl. Sci. 44(3), 1464–1468 (1997)",
+          "journal-title": "IEEE Trans. Nucl. Sci."
+        },
+        {
+          "issue": "3",
+          "key": "26_CR22",
+          "doi-asserted-by": "publisher",
+          "first-page": "509",
+          "DOI": "10.32604/csse.2021.014189",
+          "volume": "36",
+          "author": "G Sun",
+          "year": "2021",
+          "unstructured": "Sun, G., et al.: Stock price forecasting: an echo state network approach. Comput. Syst. Sci. Eng. 36(3), 509–520 (2021)",
+          "journal-title": "Comput. Syst. Sci. Eng."
+        },
+        {
+          "key": "26_CR23",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Villanueva, R.A.M., Chen, Z.J.: ggplot2: elegant graphics for data analysis (2019)",
+          "DOI": "10.1080/15366367.2019.1565254"
+        },
+        {
+          "key": "26_CR24",
+          "doi-asserted-by": "publisher",
+          "first-page": "191",
+          "DOI": "10.1016/j.neunet.2020.02.016",
+          "volume": "126",
+          "author": "PR Vlachas",
+          "year": "2020",
+          "unstructured": "Vlachas, P.R., et al.: Backpropagation algorithms and reservoir computing in recurrent neural networks for the forecasting of complex spatiotemporal dynamics. Neural Netw. 126, 191–217 (2020)",
+          "journal-title": "Neural Netw."
+        },
+        {
+          "issue": "2",
+          "key": "26_CR25",
+          "doi-asserted-by": "publisher",
+          "first-page": "297",
+          "DOI": "10.1016/j.jeconom.2010.01.013",
+          "volume": "157",
+          "author": "D Zhu",
+          "year": "2010",
+          "unstructured": "Zhu, D., Galbraith, J.W.: A generalized asymmetric student-t distribution with application to financial econometrics. J. Econom. 157(2), 297–305 (2010)",
+          "journal-title": "J. Econom."
+        },
+        {
+          "key": "26_CR26",
+          "doi-asserted-by": "publisher",
+          "first-page": "201",
+          "DOI": "10.1016/j.ins.2012.09.017",
+          "volume": "221",
+          "author": "H Zhu",
+          "year": "2013",
+          "unstructured": "Zhu, H., Leung, H., He, Z.: A variational bayesian approach to robust sensor fusion based on student-t distribution. Inf. Sci. 221, 201–214 (2013)",
+          "journal-title": "Inf. Sci."
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Intelligent Data Engineering and Automated Learning – IDEAL 2024"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1007/978-3-031-77738-7_26",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            19
+          ]
+        ],
+        "date-time": "2024-11-19T16:50:16Z",
+        "timestamp": 1732035016000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://link.springer.com/10.1007/978-3-031-77738-7_26"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            14
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783031777370",
+        "9783031777387"
+      ],
+      "references-count": 26,
+      "URL": "https://doi.org/10.1007/978-3-031-77738-7_26",
+      "relation": {},
+      "ISSN": [
+        "0302-9743",
+        "1611-3349"
+      ],
+      "issn-type": [
+        {
+          "value": "0302-9743",
+          "type": "print"
+        },
+        {
+          "value": "1611-3349",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            14
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "14 November 2024",
+          "order": 1,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ChapterHistory",
+            "label": "Chapter History"
+          }
+        },
+        {
+          "value": "IDEAL",
+          "order": 1,
+          "name": "conference_acronym",
+          "label": "Conference Acronym",
+          "group": {
+            "name": "ConferenceInfo",
+            "label": "Conference Information"
+          }
+        },
+        {
+          "value": "International Conference on Intelligent Data Engineering and Automated Learning",
+          "order": 2,
+          "name": "conference_name",
+          "label": "Conference Name",
+          "group": {
+            "name": "ConferenceInfo",
+            "label": "Conference Information"
+          }
+        },
+        {
+          "value": "Valencia",
+          "order": 3,
+          "name": "conference_city",
+          "label": "Conference City",
+          "group": {
+            "name": "ConferenceInfo",
+            "label": "Conference Information"
+          }
+        },
+        {
+          "value": "Spain",
+          "order": 4,
+          "name": "conference_country",
+          "label": "Conference Country",
+          "group": {
+            "name": "ConferenceInfo",
+            "label": "Conference Information"
+          }
+        },
+        {
+          "value": "2024",
+          "order": 5,
+          "name": "conference_year",
+          "label": "Conference Year",
+          "group": {
+            "name": "ConferenceInfo",
+            "label": "Conference Information"
+          }
+        },
+        {
+          "value": "19 November 2024",
+          "order": 7,
+          "name": "conference_start_date",
+          "label": "Conference Start Date",
+          "group": {
+            "name": "ConferenceInfo",
+            "label": "Conference Information"
+          }
+        },
+        {
+          "value": "21 November 2024",
+          "order": 8,
+          "name": "conference_end_date",
+          "label": "Conference End Date",
+          "group": {
+            "name": "ConferenceInfo",
+            "label": "Conference Information"
+          }
+        },
+        {
+          "value": "ideal2024",
+          "order": 10,
+          "name": "conference_id",
+          "label": "Conference ID",
+          "group": {
+            "name": "ConferenceInfo",
+            "label": "Conference Information"
+          }
+        }
+      ]
+    }
+  }
+}

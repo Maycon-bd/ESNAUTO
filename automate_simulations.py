@@ -4,6 +4,9 @@ import subprocess
 import shutil
 import argparse
 import random
+import json
+import hashlib
+import math
 from datetime import datetime
 
 # Configurações globais
@@ -51,7 +54,20 @@ def main():
     parser.add_argument("--test", "-t", action="store_true", help="Rodar em modo teste rápido com 200 iterações")
     parser.add_argument("--run", "-r", type=str, default=None, help="Número da rodada/execução (substitui o '_1' final). Se omitido, roda as rodadas 1, 2 e 3 sequencialmente.")
     parser.add_argument("--itera", "-i", type=int, default=10000, help="Número total de iterações do GA (padrão: 10000)")
+    parser.add_argument("--acao", choices=("PETR4", "VALE3"), default="PETR4", help="Dataset da ação para previsão")
     args = parser.parse_args()
+    data_path = os.path.join(SCRIPTS_DIR, "data", f"{args.acao}_close com factor_2000-2020.txt")
+    with open(data_path, encoding="utf-8-sig") as f:
+        prices = [float(line.strip().replace(",", ".")) for line in f if line.strip()]
+    if len(prices) < 400 or any(not math.isfinite(x) or x <= 0 for x in prices):
+        parser.error("Dataset inválido")
+    n = len(prices)
+    train, valid = (2600, 1299) if n == 5198 else (math.ceil(n / 2), n // 4)
+    with open(data_path, "rb") as f:
+        digest = hashlib.sha256(f.read()).hexdigest()
+    metadata = {"acao": args.acao, "arquivo": os.path.basename(data_path), "amostras": n,
+                "treino_n": train, "valida_n": valid, "teste_n": n - train - valid,
+                "sha256": digest}
 
     # Define número de iterações
     iterations = 200 if args.test else args.itera
@@ -65,7 +81,7 @@ def main():
     # Criação do diretório estruturado da sessão
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     mode_tag = "Test" if args.test else "Prod"
-    session_name = f"Run_{timestamp}_{mode_tag}"
+    session_name = f"Run_{timestamp}_{mode_tag}_{args.acao}"
     session_dir = os.path.join(RESULTS_DIR, session_name)
     scenarios_dir = os.path.join(session_dir, "scenarios")
     pdfs_dir = os.path.join(session_dir, "pdfs")
@@ -74,6 +90,10 @@ def main():
     os.makedirs(scenarios_dir, exist_ok=True)
     os.makedirs(pdfs_dir, exist_ok=True)
     os.makedirs(zips_dir, exist_ok=True)
+
+    with open(os.path.join(session_dir, "dataset.json"), "w", encoding="utf-8") as f:
+        json.dump(metadata, f, ensure_ascii=False, indent=2)
+    print(f"Ação selecionada: {args.acao} ({n} amostras)")
 
     print_banner(f"INICIANDO AUTOMAÇÃO DE SIMULAÇÕES ESN - TCC")
     print(f"Modo: {'TESTE (200 iterações)' if args.test else f'PRODUÇÃO ({iterations} iterações)'}")
@@ -97,7 +117,7 @@ def main():
             random_id = random.randint(1000, 9999)
             
             # Nomenclatura exata solicitada pelo usuário para a pasta e zip
-            folder_name = f"AlgGen PETR4 ESN_mae_otim40x60 com factor {iterations}_{run_number} ({random_id}) Win {win_dist} e W {w_dist}"
+            folder_name = f"AlgGen {args.acao} ESN_mae_otim40x60 com factor {iterations}_{run_number} ({random_id}) Win {win_dist} e W {w_dist}"
             scenario_dir = os.path.join(scenarios_dir, folder_name)
             os.makedirs(scenario_dir, exist_ok=True)
 
@@ -106,7 +126,7 @@ def main():
             
             # Montar comando Rscript usando caminho dinâmico detectado e passando o diretório de destino
             rscript_exec = get_rscript_path()
-            cmd = [rscript_exec, SCRIPT_R_NAME, win_dist, w_dist, str(iterations), run_number, scenario_dir]
+            cmd = [rscript_exec, SCRIPT_R_NAME, win_dist, w_dist, str(iterations), run_number, scenario_dir, args.acao]
             print(f"Executando: {' '.join(cmd)}")
             print(f"Diretório de trabalho: {SCRIPTS_DIR}")
             print("Aguarde a finalização do processo (isso pode demorar)...")

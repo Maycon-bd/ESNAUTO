@@ -1,0 +1,628 @@
+{
+  "origem": "PDFs locais de Artigos citados; primeiras quatro páginas",
+  "resumo": {
+    "pdfs": 34,
+    "com_texto_extraido": 33,
+    "com_candidato_doi": 26,
+    "com_marcador_keywords": 24,
+    "erros": 0
+  },
+  "registros": [
+    {
+      "arquivo": "Abebe - Asymmetric generalized error distribution with its properties and applications.pdf",
+      "sha256": "6c09320127ccbfa9c16dbbdcf716b021ab7e82e2c3ac86926db098920514f7d8",
+      "paginas": 14,
+      "caracteres_primeiras_paginas": 18982,
+      "titulo_embutido_nao_validado": "Asymmetric generalized error distribution with its properties and applications",
+      "autor_embutido_nao_validado": "﻿Tayu Nigusie﻿ ﻿Abebe﻿; ﻿Ayele Taye﻿ ﻿Goshu﻿",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.3389/fams.2024.1398137",
+          "pagina": 1,
+          "contexto": "error distribution with its \nproperties and applications.\nFront. Appl. Math. Stat. 10:1398137.\ndoi: 10.3389/fams.2024.1398137\nCOPYRIGHT\n© 2024 Abebe and Goshu. This is an open-\naccess article distributed under the terms of \nt"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "KEYWORDS\nAR algorithms, asymmetric generalized error distribution, generalized error \ndistribution, maximum likelihood estimation, probability, statistics, symmetric \ndistribution\n1 Introduction\nThere has been a growing interest in the construction of flexible parametric families of \ndistributions that exhibit asymmetry and peakedness differing from those of symmetric \ndistributions (1–3). Many of these methods center around overcoming the assumptions of \nnormality found in the empirical analysis of many parametric models.\nAn empirical analysis"
+      ],
+      "texto_inicial_para_conferencia": "Frontiers in Applied Mathematics and Statistics 01 frontiersin.org\nAsymmetric generalized error \ndistribution with its properties \nand applications\nTayu Nigusie Abebe * and Ayele Taye Goshu \nDepartment of Mathematics, Kotebe University of Education, Addis Ababa, Ethiopia\nThe main finding of this study is the derivation of a new probability distribution \nthat reveals interesting properties, especially with various asymmetry and kurtosis \nbehavior. We call this distribution the asymmetric generalized error distribution \n(AGED). AGED is a new contribution to the field of statistical theory, offering \nmore flexible probability density functions, cumulative distribution functions, \nand hazard functions than the base distribution. The AGED also includes normal, \nuniform, Laplace, asymmetric Laplace, and generalized error distribution (GED) \nas special cases. The mathematical and statistical features of the distribution \nare derived and discussed. Estimators of the parameters of the distribution are \nobtained using the maximum likelihood approach. In a simulation study, random \nsamples are generated from the new probability distribution to illustrate what \nideal data looks like. Using real data from diverse applications such as health, \nindustry, and cybersecurity domains, the performance of the new distribution \nis compared to that of other distributions. The new distribution is found to be a \nbetter fit for the data, showing great adaptability in the context of real data \nanalysis",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "paginas": 17,
+      "caracteres_primeiras_paginas": 5535,
+      "titulo_embutido_nao_validado": "",
+      "autor_embutido_nao_validado": "",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1007/978-3-031-77738-7",
+          "pagina": 4,
+          "contexto": "witzerland AG 2024\nV. Julian et al. (Eds.): IDEAL 2024, LNCS 15347, pp. 1–13, 2024.\nhttps://doi.org/10.1007/978-3-031-77738-7\n_26\nAuthor Proof"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords\n(separated by '-')\nStock price forecasting - Financial Time Series - ESN\nComparing MAE and RMSE as Fitness\nof Genetic Algorithm for Optimizing Echo\nState Network Hyperparameters\nwith Diﬀerent Probabilistic Distributions\nHenrique Vaz de Araújo1 , Fabian Corrêa Cardoso2,3(B) ,\nViviane Leite Dias de Mattos1 , Eduardo Nunes Borges1 ,\nGiancarlo Lucca4 , Bruno Lopes Dalmazo1 , and Rafael Alceste Berri1\n1 Federal University of Rio Grande, Rio Grande, RS 96203-900, Brazil\n{henriquevaz03,vivianemattos,eduardoborges,dalmazo,rafaelberri}@furg.br\n",
+        "Keywords: Stock price forecasting · Financial Time Series · ESN\n1 Introduction\nTime Series (TS) forecasting involves mathematical models and statistical tech-\nniques, which can obtain patterns in data and use them to make predictions.\nTherefore, Echo State Network (ESN) is quite viable, as it presents more volatile\ntraining. However, there is an optimization problem in its hyperparameters, as\nthere are certain degrees of randomness in its architecture, causing variation\nproblems [16]. In order to optimize the hyperparameters, we use MAE and RMS"
+      ],
+      "texto_inicial_para_conferencia": "Metadata of the chapter that will be visualized in\nSpringerLink\nBook Title Intelligent Data Engineering and Automated Learning – IDEAL 2024\nSeries Title\nChapter Title Comparing MAE and RMSE as Fitness of Genetic Algorithm for Optimizing Echo State Network\nHyperparameters with Different Probabilistic Distributions\nCopyright Year 2025\nCopyright HolderName The Author(s), under exclusive license to Springer Nature Switzerland AG\nAuthor Family Name Araújo\nParticle de\nGiven Name Henrique Vaz\nPrefix\nSuffix\nRole\nDivision\nOrganization Federal University of Rio Grande\nAddress Rio Grande, RS, 96203-900, Brazil\nEmail henriquevaz03@furg.br\nORCID http://orcid.org/0009-0005-1896-446X\nCorresponding Author Family Name Cardoso\nParticle\nGiven Name Fabian Corrêa\nPrefix\nSuffix\nRole\nDivision Computational Modeling Graduate Program\nOrganization Federal University of Rio Grande\nAddress Rio Grande, RS, 96203-900, Brazil\nDivision Faculty of Software Engineering\nOrganization University of Rio Verde\nAddress Rio Verde, GO, 75901-970, Brazil\nEmail fabiancorrea@furg.br\nORCID http://orcid.org/0000-0002-2842-0387\nAuthor Family Name Mattos\nParticle de\nGiven Name Viviane Leite Dias\nPrefix\nSuffix\nRole\nDivision\nOrganization Federal University of Rio Grande\nAddress Rio Grande, RS, 96203-900, Brazil\nEmail vivianemattos@furg.br\nORCID http://orcid.org/0000-0002-3512-6290\nAuthor Family Name Borges\nParticle\nGiven Name Eduardo Nunes\nPrefix\nSuffix\nRole\nDivision\nOrganization Federal University of Rio Grande\nAddress Rio G",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "paginas": 48,
+      "caracteres_primeiras_paginas": 17624,
+      "titulo_embutido_nao_validado": "A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Time Series Forecasting",
+      "autor_embutido_nao_validado": "Sudersan Behera ",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1007/s11831-023-09942-9",
+          "pagina": 1,
+          "contexto": "123456789)1 3\nArchives of Computational Methods in Engineering (2023) 30:4401–4448 \nhttps://doi.org/10.1007/s11831-023-09942-9\nSURVEY ARTICLE\nA Comprehensive Survey on Higher Order Neural Networks \nand Evolutionary Optimizatio"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [],
+      "texto_inicial_para_conferencia": "Vol.:(0123456789)1 3\nArchives of Computational Methods in Engineering (2023) 30:4401–4448 \nhttps://doi.org/10.1007/s11831-023-09942-9\nSURVEY ARTICLE\nA Comprehensive Survey on Higher Order Neural Networks \nand Evolutionary Optimization Learning Algorithms in Financial Time \nSeries Forecasting\nSudersan Behera1 · Sarat Chandra Nayak2  · A. V. S. Pavan Kumar1\nReceived: 27 February 2023 / Accepted: 5 May 2023 / Published online: 23 May 2023 \n© The Author(s) under exclusive licence to International Center for Numerical Methods in Engineering (CIMNE) 2023\nAbstract\nThe financial market volatility has been a focus of study for experts over past decades. While stockbrokers and investors \nexpect reliable projections of future stock indices, it instead displays unpredictable, complicated, and nonlinear reactions \nwhich paves path towards designing accurate prediction mechanisms for approximate stock market behaviour. Many com-\nputational intelligence methods have been used in the field of economic forecasting alongside more conventional methods. \nYet, a trustworthy forecasting depends heavily on the correct selection of an efficient model and optimum set of model \nhyperparameters. In this regard, artificial neural networks (ANNs) specifically higher-order neural networks (HONNs) have \nshown notable performance in modelling the chaotic behaviour of financial data and predicting future data. Improved preci-\nsion and nonlinear decision boundaries are two benefits of using HONN. They can sto",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Cardoso -  A data set of stock prices of all companies in B3from 1995 to 2020.pdf",
+      "sha256": "6409dc381b5eb4889c05cd84177f3ff5487c20cc5a997f87ff3fd9774681e586",
+      "paginas": 18,
+      "caracteres_primeiras_paginas": 15709,
+      "titulo_embutido_nao_validado": "",
+      "autor_embutido_nao_validado": "",
+      "dois_candidatos": [],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: B3, Data set, Stocks, Time series\n1. INTRODUCTION\nStocks are securities that represent properties of a company by the shareholders [Wang 2021]. The\nStock Exchange (SE) allows companies to raise financial resources by selling stocks and corporate\nbonds. Thus, a stock market is where buying and selling transactions take place. We highlight\nthat there are different stock markets around the world: the NYSE (New York Stock Exchange)1,\nthe Chinese SSE (Shanghai Stock Exchange)2, the SZSE (ShenZhen Stock Exchange)3, and the B3\n(Brasil, Bolsa"
+      ],
+      "texto_inicial_para_conferencia": "BovDB: a data set of stock prices of all companies in B3\nfrom 1995 to 2020\nFabian Corrêa Cardoso 1, Juan Andrey Valverde Malska 2, Paulo Junior Ramiro 2, Giancarlo Lucca 1,\nEduardo Nunes Borges 2, Viviane Leite Dias de Mattos 3, Rafael Alceste Berri 2\n1 Programa de Pós-Graduação em Modelagem Computacional (PPGMC)\nUniversidade Federal do Rio Grande (FURG), Rio Grande – RS – Brazil\n2 Centro de Ciências Computacionais (C3)\nUniversidade Federal do Rio Grande (FURG), Rio Grande – RS – Brazil\n3 Instituto de Matemática, Estatística e Física (IMEF)\nUniversidade Federal do Rio Grande (FURG), Rio Grande – RS – Brazil\n{fabiancorrea, juanandreyvmalska, paulojr2016canaa, giancarlo.lucca, eduardoborges, vivianemattos,\nrafaelberri}@furg.br\nAbstract. Stock markets are responsible for the movement of vast amounts of financial resources worldwide. This\nmarket generates a high volume of transaction data, which after being analyzed are very useful for many applications.\nIn this article, we present BovDB, a data set that was built considering a source of the Brazilian Stock Exchange (B3)\nwith information related to the years between 1995 and 2020. We have approached the events’ impact on the stocks by\napplying a cumulative factor to correct prices. The results were compared with public data from InfoMoney and BR\nInvesting, showing that our methods, are valid and follow the market standards, based on the proposed factor. BovDB\ndata set can be used as a benchmark for different applications and it i",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.pdf",
+      "sha256": "703cec38e2b31cc6b2e3f38258db73ef814c238b13f70ffa0b58f23622476a80",
+      "paginas": 21,
+      "caracteres_primeiras_paginas": 14733,
+      "titulo_embutido_nao_validado": "Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study",
+      "autor_embutido_nao_validado": "Chi-Sheng Chen; Xinyu Zhang; En-Jui Kuo; Rong Fu; Qiuzhe Xie; Fan Zhang",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1109/TQE.2020.DOI",
+          "pagina": 1,
+          "contexto": "Date of publication xxxx 00, 0000, date of current version xxxx 00, 0000.\nDigital Object Identifier 10.1109/TQE.2020.DOI\nQuantum Temporal Convolutional Neural\nNetworks for Cross-Sectional Equity\nReturn Prediction: A Comp"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [],
+      "texto_inicial_para_conferencia": "Date of publication xxxx 00, 0000, date of current version xxxx 00, 0000.\nDigital Object Identifier 10.1109/TQE.2020.DOI\nQuantum Temporal Convolutional Neural\nNetworks for Cross-Sectional Equity\nReturn Prediction: A Comparative\nBenchmark Study\nCHI-SHENG CHEN 1* , XINYU ZHANG 2* , EN-JUI KUO 5, RONG FU 2, QIUZHE XIE 3, and FAN\nZHANG4\n1Beth Israel Deaconess Medical Center & Harvard Medical School, Boston, MA 02115 USA\n2Luddy School of Informatics, Computing, and Engineering, Indiana University Bloomington, Bloomington, IN 47405 USA\n3Institute of Electronics Engineering, National Taiwan University, 106319, Taiwan\n4Department of Mathematics, Boise State University, Boise, ID 83702 USA\n5Department of Electrophysics, National Yang Ming Chiao Tung University, 30010,Taiwan\n*Chi-Sheng Chen and Xinyu Zhang contributed equally to this work\nCorresponding author: Fan Zhang (email: fanzhang@boisestate.edu)\nABSTRACTQuantummachinelearningoffersapromisingpathwayforenhancingstockmarketprediction,\nparticularly under complex, noisy, and highly dynamic financial environments. However, many classical\nforecasting models struggle with noisy input, regime shifts, and limited generalization capacity. To address\nthesechallenges,weproposeaQuantumTemporalConvolutionalNeuralNetwork(QTCNN)thatcombines\naclassicaltemporalencoderwithparameter-efficientquantumconvolutioncircuitsforcross-sectionalequity\nreturn prediction. The temporal encoder extracts multi-scale patterns from sequential technical indicators,\nw",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.pdf",
+      "sha256": "8bb4b1967da28dc961a42231543f70cdf22fc798527b1724c7f1e7cd5714bde6",
+      "paginas": 39,
+      "caracteres_primeiras_paginas": 18347,
+      "titulo_embutido_nao_validado": "Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series",
+      "autor_embutido_nao_validado": "Federico Vittorio Cortesi; Giuseppe Iannone; Giulia Crippa; Tomaso Poggio; Pierfrancesco Beneventano",
+      "dois_candidatos": [],
+      "trechos_marcadores_palavras_chave": [],
+      "texto_inicial_para_conferencia": "Same Error, Different Function:\nThe Optimizer as an Implicit Prior in Financial Time Series\nFederico Cortesi * 1 Giuseppe Iannone * 1 Giulia Crippa 2 Tomaso Poggio1 Pierfrancesco Beneventano 1\nAbstract\nNeural networks applied to financial time series\noperate in a regime of underspecification, where\nmodel predictors achieve indistinguishable out-\nof-sample error. Using large-scale volatility fore-\ncasting for S&P 500 stocks, we show that dif-\nferent model–training-pipeline pairs with identi-\ncal test loss learn qualitatively different functions.\nAcross architectures, predictive accuracy remains\nunchanged, yet optimizer choice reshapes non-\nlinear response profiles and temporal dependence\ndifferently. These divergences have material con-\nsequences for decisions: volatility-ranked portfo-\nlios trace a near-vertical Sharpe–turnover frontier,\nwith nearly 3× turnover dispersion at comparable\nSharpe ratios. We conclude that in underspeci-\nfied settings, optimization acts as a consequential\nsource of inductive bias, thus model evaluation\nshould extend beyond scalar loss to encompass\nfunctional and decision-level implications.\n1. Introduction\nModel leaderboard ties.In financial time series forecast-\ning, substantially different predictors often achieve indistin-\nguishable out-of-sample performance under standard loss\nmetrics. Recent benchmark efforts and empirical studies\ndocument that deep architectures often match, and some-\ntimes fail to exceed, linear econometric baselines (see Hu",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "paginas": 23,
+      "caracteres_primeiras_paginas": 10986,
+      "titulo_embutido_nao_validado": "",
+      "autor_embutido_nao_validado": "",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.18800/contabilidad.2025ESP.002",
+          "pagina": 1,
+          "contexto": "https://doi.org/10.18800/contabilidad.2025ESP.002\nContabilidad y Negocios 20 (esp.) 2025, pp. 48-70 / e-ISSN 2221-724X\nAplicação de algoritmo de apre"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords : machine learning, portfolio selection, technical analysis, fundamental analysis\nAplicação de algoritmo de aprendizado de máquina (AM) para previsão do \ncomportamento das ações negociadas no mercado brasileiro\nA economia moderna é repleta opções de investimentos, o que torna a alocação de capital um \nprocesso complexo, demorado e ariscado. Para auxiliar a tomada de decisão dos investidores, \nferramentas de inteligência artificial buscam a descoberta de padrões ocultos nos dados e forne -\ncem informações úteis, tempestivas e precisas. ",
+        "Palavras-chave:  aprendizado de máquina, seleção portfólio, análise técnica, análise funda -\nmentalista\n1. Introdução\nA alocação de capital tem sido um grande desafio para os investidores da economia \nmoderna devido à grande quantidade, variedade e volatilidade dos investimentos. \nO mercado atual possui desde opções conservadoras como, as poupanças e títulos \ndo governo, até as mais arriscadas como, bolsa de valores e cripto moedas. Visando \ndiversificar os investimentos, aumentar a rentabilidade e encontrar alternativas para \nenfrentar fatores"
+      ],
+      "texto_inicial_para_conferencia": "https://doi.org/10.18800/contabilidad.2025ESP.002\nContabilidad y Negocios 20 (esp.) 2025, pp. 48-70 / e-ISSN 2221-724X\nAplicação de algoritmo de aprendizado \nde máquina (AM) para previsão do \ncomportamento das ações negociadas no \nmercado brasileiro\nGabriel Donadio Costa\nUniversidade Federal de Santa Catarina - UFSC, Brasil\nRogério João Lunkes\nUniversidade Federal de Santa Catarina - UFSC, Brasil\nAplicación de algoritmo de aprendizaje automático para predecir el \ncomportamiento de las acciones negociadas en el mercado brasileño\nLa economía moderna ofrece diversas opciones de inversión, lo que hace que la asignación de \ncapital sea un proceso complejo, lento y arriesgado. Para ayudar en la toma de decisiones de los \ninversionistas, las herramientas de inteligencia artificial buscan descubrir patrones ocultos en \nlos datos, y proporcionar informaciones útiles, oportunas y precisas. Este estudio evalúa la apli -\ncación de algoritmos de aprendizaje automático (AA) en la selección de carteras en el mercado \nbrasileño. Investigaciones recientes han buscado predecir el comportamiento del mercado \nbursátil implementando AA junto con métodos convencionales, como análisis técnicos o funda -\nmentales (Anghel, 2021; Kamara et al., 2022; Nti et al., 2020b); sin embargo, pocos combinan los \nanálisis en mercados emergentes y volátiles como Brasil. Por lo tanto, se entrenaron tres mode -\nlos de AA utilizando variables provenientes del análisis técnico y/o fundamental. La muestra \nincluyó 40.",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "paginas": 26,
+      "caracteres_primeiras_paginas": 12719,
+      "titulo_embutido_nao_validado": "",
+      "autor_embutido_nao_validado": "",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1109/TTE.2021.3111906",
+          "pagina": 1,
+          "contexto": "Ma, Longhua\nPublished in:\nIEEE Transactions on Transportation Electrification\nLink to article, DOI:\n10.1109/TTE.2021.3111906\nPublication date:\n2022\nDocument Version\nPeer reviewed version\nLink back to DTU Orbit\nCitation (APA)"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: Proton exchange membrane fuel cells, prognostics prediction, stacked echo state network,\ngenetic algorithm, projection-encoding\n⇤The work is supported by National Natural Science Foundation of China (62173264), Ningbo Science and Technology\nPlan Project (2019B10116), the “SPGC” (640170582) and “PRESS” (807300026B) projects granted by the Danish Energy\nTechnology Development and Demonstration program (EUDP) and the Danish Agency for Science & Higher Education,\nrespectively. The work is also supported by the Fundamental Research Funds f"
+      ],
+      "texto_inicial_para_conferencia": " \n \nGeneral rights \nCopyright and moral rights for the publications made accessible in the public portal are retained by the authors and/or other copyright \nowners and it is a condition of accessing publications that users recognise and abide by the legal requirements associated with these rights. \n \n Users may download and print one copy of any publication from the public portal for the purpose of private study or research. \n You may not further distribute the material or use it for any profit-making activity or commercial gain \n You may freely distribute the URL identifying the publication in the public portal \n \nIf you believe that this document breaches copyright please contact us providing details, and we will remove access to the work immediately \nand investigate your claim. \n  \n \n   \n \n \nDownloaded from orbit.dtu.dk on: mar. 08, 2026\nDegradation prediction of PEMFCs using stacked echo state network based on genetic\nalgorithm optimization\nDeng, Zhihua; Chen, Qihong; Zhang, Liyan; Zhou, Keliang; Zong, Yi; Liu, Hao; Li, Jishen; Ma, Longhua\nPublished in:\nIEEE Transactions on Transportation Electrification\nLink to article, DOI:\n10.1109/TTE.2021.3111906\nPublication date:\n2022\nDocument Version\nPeer reviewed version\nLink back to DTU Orbit\nCitation (APA):\nDeng, Z., Chen, Q., Zhang, L., Zhou, K., Zong, Y., Liu, H., Li, J., & Ma, L. (2022). Degradation prediction of\nPEMFCs using stacked echo state network based on genetic algorithm optimization. IEEE Transactions on\nTransporta",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+      "sha256": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48",
+      "paginas": 15,
+      "caracteres_primeiras_paginas": 12124,
+      "titulo_embutido_nao_validado": "On Financial Distributions Modelling Methods: Application on Regression Models for Time Series",
+      "autor_embutido_nao_validado": "Paul R. Dewick",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.3390/jrfm15100461",
+          "pagina": 1,
+          "contexto": "mal distribution must be identiﬁed to allow\nJ. Risk Financial Manag. 2022, 15, 461. https://doi.org/10.3390/jrfm15100461 https://www.mdpi.com/journal/jrfm"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: time series; regression; distribution; volatility; goodness-of-ﬁt\n1. Introduction\nThe ﬁnancial market is a complex system that is the result of decisions of interacting\nagents and traders who speculate and can act impulsively. This collective of chaotic\nbehavior can lead to wild swings within the ﬁnancial system, Devi (2021). This can drive\nthe system into a variety of interesting phenomena such as phase transitions, bubbles, and\ncrashes and so on. Due to the 2008 ﬁnancial crisis, there is a renewed interest in the choice\nof an adequa"
+      ],
+      "texto_inicial_para_conferencia": "Citation: Dewick, Paul R. 2022. On\nFinancial Distributions Modelling\nMethods: Application on Regression\nModels for Time Series. Journal of Risk\nand Financial Management 15: 461.\nhttps://doi.org/10.3390/\njrfm15100461\nAcademic Editor: Thanasis Stengos\nReceived: 5 September 2022\nAccepted: 9 October 2022\nPublished: 13 October 2022\nPublisher’s Note: MDPI stays neutral\nwith regard to jurisdictional claims in\npublished maps and institutional afﬁl-\niations.\nCopyright: © 2022 by the author.\nLicensee MDPI, Basel, Switzerland.\nThis article is an open access article\ndistributed under the terms and\nconditions of the Creative Commons\nAttribution (CC BY) license (https://\ncreativecommons.org/licenses/by/\n4.0/).\nJournal of \nRisk and Financial \nManagement \nArticle\nOn Financial Distributions Modelling Methods: Application on\nRegression Models for Time Series\nPaul R. Dewick\nFaculty of Science and Technology, University of Canberra, Canberra 2617, Australia;\npaul.dewick@canberra.edu.au\nAbstract: The ﬁnancial market is a complex system with chaotic behavior that can lead to wild swings\nwithin the ﬁnancial system. This can drive the system into a variety of interesting phenomenon such\nas phase transitions, bubbles, and crashes, and so on. Of interest in ﬁnancial modelling is identifying\nthe distribution and the stylized facts of a particular time series, as the distribution and stylized facts\ncan determine if volatility is present, resulting in ﬁnancial risk and contagion. Regression modelling\nhas",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+      "sha256": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7",
+      "paginas": 6,
+      "caracteres_primeiras_paginas": 9043,
+      "titulo_embutido_nao_validado": "SIS-2022-BookofSPapers.pdf",
+      "autor_embutido_nao_validado": "User",
+      "dois_candidatos": [],
+      "trechos_marcadores_palavras_chave": [
+        "Key words:daily ﬁnancial returns, excess kurtosis, skewness, ﬁnite mixtures ofGEDPierdomenico DuttiloUniversity “G. d’Annunzio” of Chieti-Pescara, Viale Pindaro 42, 65127 Pescara, Italy e-mail: pier-domenico.duttilo@unich.itStefano Antonio GattoneDISFIPEQ, University “G. d’Annunzio” of Chieti-Pescara, Viale Pindaro 42, 65127 Pescara, Italye-mail: gattone@unich.it11364\n2 Pierdomenico Duttilo and Stefano Antonio Gattone1 IntroductionCommonly, ﬁnancial time series such as daily returns on stocks, indices, currencies,cryptocurrencies and many other"
+      ],
+      "texto_inicial_para_conferencia": "Modelling Financial Returns with FiniteMixtures of GEDModellazione dei Rendimenti Finanziari con MistureFinite di GEDPierdomenico Duttilo and Stefano Antonio GattoneAbstractAs widely identiﬁed by the empirical evidence, daily returns on ﬁnancialassets are not Normally distributed, because they are characterized by excess kur-tosis and different degrees of skewness. Finite mixtures of distributions have beenproposed in literature to capture these features. In this work a ﬁnite mixture of twoGeneralized Error Distributions (GED) is applied to ﬁt the distribution of the dailyreturns on the Dow Jones Industrial Average (DJIA) index for the period from Jan-uary 4, 2016 to January 31, 2022. Moreover, in order to highlight the ﬂexibilityof the shape parameter over time, the entire analysis period was divided in threedifferent sub-periods and for each one the mixture of GED was estimated.AbstractCome ampiamente identiﬁcato dall’evidenza empirica, i rendimenti gior-nalieri delle attivit`a ﬁnanziarie non sono distribuiti normalmente, poich´e sonocaratterizzati da curtosi eccessiva e diversi gradi di asimmetria. Per catturarequeste caratteristiche, in letteratura sono state proposte misture ﬁnite di distribuzioni.In questo lavoro viene applicata una mistura ﬁnita di due distribuzioni GED (Gen-eralized Error Distribution) per stimare la distribuzione dei rendimenti giornalieridell’indice Dow Jones Industrial Average (DJIA) per il periodo dal 4 gennaio 2016al 31 gennaio 2022. Inoltre, al ",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Duttilo P - Modelling financial returns with mixtures of generalized normal distributions.pdf",
+      "sha256": "1cff61a7865858c443b72d28b3f76d0377f24bc387f4b4b7dbcbe644e552d54c",
+      "paginas": 166,
+      "caracteres_primeiras_paginas": 676,
+      "titulo_embutido_nao_validado": "",
+      "autor_embutido_nao_validado": "",
+      "dois_candidatos": [],
+      "trechos_marcadores_palavras_chave": [],
+      "texto_inicial_para_conferencia": "UNIVERSITA’ DEGLI STUDI “G. d’Annunzio” Chieti-Pescara \n \n                SCUOLA SUPERIORE “G. d’Annunzio” \nDOTTORATO DI RICERCA IN HUMAN SCIENCE CON CURRICULUM IN \nECONOMICS AND STATISTICS \n \nCICLO XXXVI \n \nMODELLING FINANCIAL RETURNS WITH MIXTURES \nOF GENERALIZED NORMAL DISTRIBUTIONS \nDipartimento di Scienze Filosofiche, Pedagogiche ed \nEconomico-Quantitative \n  \n \nSettore Scientifico Disciplinare SECS-S/01 Statistica \nDottorando Coordinatore  \nDott. Pierdomenico Duttilo      Prof. Marco Di Marzio \n \n \n \n  \nT utor \nProf. Stefano Antonio Gattone  \n \n \nAnni Accademici 2020/23 \nMODELLING FINANCIAL RETURNS WITH\nMIXTURES OF GENERALIZED NORMAL\nDISTRIBUTIONS\n\nTo my parents",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "paginas": 19,
+      "caracteres_primeiras_paginas": 15167,
+      "titulo_embutido_nao_validado": "Training Multilayer Perceptron with Genetic Algorithms and Particle Swarm Optimization for Modeling Stock Price Index Prediction",
+      "autor_embutido_nao_validado": "Fatih Ecer, Sina Ardabili, Shahab S. Band and Amir Mosavi",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.3390/e22111239",
+          "pagina": 1,
+          "contexto": "s the direction of stock price and used for prediction. Determining the\nEntropy 2020, 22, 1239; doi:10.3390/e22111239 www.mdpi.com /journal/entropy"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: stock market; machine learning; multilayer perceptron; ﬁnancial data; artiﬁcial\nintelligence; artiﬁcial neural networks; online trading; big data; social science data; evolutionary\nalgorithms; optimization\n1. Introduction\nAccurately predicting the stock market (SM) index direction has frequently been a topic of great\ninterest for many researchers, economists, traders and ﬁnancial analysts [1]. Nonetheless, the SM ﬁeld\nis neither static nor predictable. In fact, SM trends are sensitive to both external and internal drivers.\nThus, SM in"
+      ],
+      "texto_inicial_para_conferencia": "entropy\nArticle\nTraining Multilayer Perceptron with Genetic\nAlgorithms and Particle Swarm Optimization for\nModeling Stock Price Index Prediction\nFatih Ecer 1\n , Sina Ardabili 2,3 , Shahab S. Band 4\n and Amir Mosavi 5,6,7, *\n1 Department of Business Administration, Afyon Kocatepe University, Afyonkarahisar 03030, Turkey;\nfecer@aku.edu.tr\n2 Biosystem Engineering Department, University of Mohaghegh Ardabili, Ardabil 5619911367, Iran;\ns.ardabili@ieee.org\n3 Kando Kalman Faculty of Electrical Engineering, Obuda University, 1034 Budapest, Hungary\n4 Future Technology Research Center, College of Future, National Yunlin University of Science and Technology,\n123 University Road, Section 3, Douliou, Yunlin 64002, Taiwan; shamshirbands@yuntech.edu.tw\n5 Faculty of Civil Engineering, Technische Universität Dresden, 01069 Dresden, Germany\n6 Institute of Research and Development, Duy Tan University, Da Nang 550000, Vietnam\n7 School of Economics and Business, Norwegian University of Life Sciences, 1430 As, Norway\n* Correspondence: amir.mosavi@mailbox.tu-dresden.de or amirhoseinmosavi@duytan.edu.vn\nReceived: 22 August 2020; Accepted: 28 October 2020; Published: 31 October 2020\n/gid00030/gid00035/gid00032/gid00030/gid00038/gid00001/gid00033/gid00042/gid00045/gid00001\n/gid00048/gid00043/gid00031/gid00028/gid00047/gid00032/gid00046\nAbstract: Predicting stock market (SM) trends is an issue of great interest among researchers, investors\nand traders since the successful prediction of SMs’ direction m",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "paginas": 18,
+      "caracteres_primeiras_paginas": 16754,
+      "titulo_embutido_nao_validado": "Multivariate time series prediction using clustered echo state network",
+      "autor_embutido_nao_validado": "S. Hariharan ",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1140/epjp/s13360-025-07077-3",
+          "pagina": 1,
+          "contexto": "Eur. Phys. J. Plus        (2025) 140:1133 \nhttps://doi.org/10.1140/epjp/s13360-025-07077-3\nRegular Article\nMultivariate time series prediction using clustered echo state network\nS. Hariharan"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [],
+      "texto_inicial_para_conferencia": "Eur. Phys. J. Plus        (2025) 140:1133 \nhttps://doi.org/10.1140/epjp/s13360-025-07077-3\nRegular Article\nMultivariate time series prediction using clustered echo state network\nS. Hariharan, R. Suresh a , V . K. Chandrasekar\nDepartment of Physics, Centre for Nonlinear Science and Engineering, School of Electrical and Electronics Engineering, SASTRA Deemed University,\nThanjavur 613401, India\nReceived: 20 September 2025 / Accepted: 14 November 2025\n© The Author(s), under exclusive licence to Società Italiana di Fisica and Springer-Verlag GmbH Germany, part of Springer Nature 2025\nAbstract Many natural and physical processes can be understood by analyzing multiple system variables evolving, forming a multi-\nvariate time series. Predicting such time series is challenging due to the inherent noise and interdependencies among variables. Echo\nstate networks (ESNs), a class of Reservoir Computing (RC) models, offer an efﬁcient alternative to conventional recurrent neural\nnetworks by training only the output weights while keeping the reservoir dynamics ﬁxed, reducing computational complexity. We\npropose a clustered ESNs (CESNs) that enhances the ability to model and predict multivariate time series by organizing the reservoir\nnodes into clusters, each corresponding to a distinct input variable. Input signals are directly mapped to their associated clusters, and\nintra-cluster connections remain dense, while inter-cluster connections are sparse, mimicking the modular architecture of bi",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "paginas": 22,
+      "caracteres_primeiras_paginas": 13460,
+      "titulo_embutido_nao_validado": "FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction",
+      "autor_embutido_nao_validado": "Zeinab A. Hassaan, Mohammed H.Yacoub, and Lobna A.Said",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.3390/make7040160",
+          "pagina": 1,
+          "contexto": "ining for Financial\nTime Series Prediction.Mach. Learn.\nKnowl. Extr. 2025, 7, 160. https://\ndoi.org/10.3390/make7040160\nCopyright: © 2025 by the authors.\nLicensee MDPI, Basel, Switzerland.\nThis article is an open access"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: reservoir computing; echo state network; recurrent neural network; chaotic\nsystems; hardware accelerator; field programmable gate array\n1. Introduction\nIntelligent decision-making in financial market prediction is essential for a stock\ntrading strategy [1]. Time series data is used across various fields of the natural and social\nsciences, including biologically inspired systems, population dynamics, financial markets,\nclimate studies, and global flow models [2]. Time series data can be classified into linear\nand nonlinear categories; "
+      ],
+      "texto_inicial_para_conferencia": "Academic Editor: Fabrizio Riguzzi\nReceived: 12 October 2025\nRevised: 13 November 2025\nAccepted: 18 November 2025\nPublished: 3 December 2025\nCitation: Hassaan, Z.A.; Yacoub,\nM.H.; Said, L.A. FPGA-Accelerated\nESN with Chaos Training for Financial\nTime Series Prediction.Mach. Learn.\nKnowl. Extr. 2025, 7, 160. https://\ndoi.org/10.3390/make7040160\nCopyright: © 2025 by the authors.\nLicensee MDPI, Basel, Switzerland.\nThis article is an open access article\ndistributed under the terms and\nconditions of the Creative Commons\nAttribution (CC BY) license\n(https://creativecommons.org/\nlicenses/by/4.0/).\nArticle\nFPGA-Accelerated ESN with Chaos Training for Financial Time\nSeries Prediction\nZeinab A. Hassaan 1\n , Mohammed H. Yacoub 2 and Lobna A. Said 1,*\n1 Nanoelectronics Integrated Systems Center (NISC), Nile University, Giza 12588, Egypt; zhssaan@nu.edu.eg\n2 School of Engineering and Applied Sciences, Nile University, Giza 12588, Egypt; m.hassan2127@nu.edu.eg\n* Correspondence: l.a.said@ieee.org\nAbstract\nImproving financial time series forecasting presents challenges because models often\nstruggle to identify diverse fault patterns in unseen data. This issue is critical in fintech,\nwhere accurate and reliable forecasting of financial data is essential for effective risk\nmanagement and informed investment strategies. This work addresses these challenges by\ninitializing the weights and biases of two proposed models, Gated Recurrent Units (GRUs)\nand the Echo State Network (ESN), with different ",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Jaeger - Echo state network.pdf",
+      "sha256": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "paginas": 9,
+      "caracteres_primeiras_paginas": 14630,
+      "titulo_embutido_nao_validado": "Echo state network - Scholarpedia",
+      "autor_embutido_nao_validado": "",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.4249/scholarpedia.2330",
+          "pagina": 1,
+          "contexto": "Echo state network\nHerbert Jaeger (2007), Scholarpedia, 2(9):2330.doi:10.4249/scholarpedia.2330 revision #196567 [link to/cite this article]\nHerbert Jaeger, Jacobs University Bremen, Bremen, Germ"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [],
+      "texto_inicial_para_conferencia": "Echo state network\nHerbert Jaeger (2007), Scholarpedia, 2(9):2330.doi:10.4249/scholarpedia.2330 revision #196567 [link to/cite this article]\nHerbert Jaeger, Jacobs University Bremen, Bremen, Germany\nEcho state networks (ESN) provide an architecture and supervised learning principle for recurrent neural\nnetworks (RNNs). The main idea is (i) to drive a random, large, fixed recurrent neural network with the input\nsignal, thereby inducing in each neuron within this \"reservoir\" network a nonlinear response signal, and (ii)\ncombine a desired output signal by a trainable linear combination of all of these response signals.\nThe basic idea of ESNs is shared with Liquid State Machines (LSM), which were developed independently from\nand simultaneously with ESNs by Wolfgang Maass (Maass W., Natschlaeger T., Markram H. 2002). Increasingly\noften, LSMs, ESNs and the more recently explored Backpropagation Decorrelation learning rule for RNNs\n(Schiller and Steil 2005) are subsumed under the name of Reservoir Computing. Schiller and Steil (2005) also\nshowed that in traditional training methods for RNNs, where all weights (not only the output weights) are\nadapted, the dominant changes are in the output weights. In cognitive neuroscience, a related mechanism has\nbeen investigated by Peter F. Dominey in the context of modelling sequence processing in mammalian brains,\nespecially speech recognition in the human brain (e.g., Dominey 1995, Dominey, Hoen and Inui 2006). The basic\nidea also informed a ",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "paginas": 21,
+      "caracteres_primeiras_paginas": 9855,
+      "titulo_embutido_nao_validado": "Forecasting Crude Oil Prices Using Reservoir Computing Models",
+      "autor_embutido_nao_validado": "Kaushal Kumar ",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1007/s10614-024-10797-w",
+          "pagina": 1,
+          "contexto": "Vol.:(0123456789)\nComputational Economics (2025) 66:2543–2563\nhttps://doi.org/10.1007/s10614-024-10797-w\nForecasting Crude Oil Prices Using Reservoir Computing \nModels\nKaushal Kumar1 \nAccepted: 10 Novembe"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords Crude oil prices · Time series analysis · Reservoir computing · Financial \nmarket prediction · Forecasting\n * Kaushal Kumar \n kaushal.kumar@stud.uni-heidelberg.de\n1 Institute for Mathematics, Heidelberg University, Im Neuenheimer Feld 205, Heidelberg 69120, \nBaden-Württemberg, Germany\n2544 K. Kumar \n1 Introduction\nAccurately predicting financial market prices, particularly crude oil prices, is cru-\ncial for effective decision-making and policy formulation. Machine learning and \ndeep learning methods have become pivotal tools in this do"
+      ],
+      "texto_inicial_para_conferencia": "Vol.:(0123456789)\nComputational Economics (2025) 66:2543–2563\nhttps://doi.org/10.1007/s10614-024-10797-w\nForecasting Crude Oil Prices Using Reservoir Computing \nModels\nKaushal Kumar1 \nAccepted: 10 November 2024 / Published online: 28 November 2024 \n© The Author(s) 2024\nAbstract\nAccurate forecasting of crude oil prices is crucial for informed financial decision-\nmaking. This study presents a cutting-edge Reservoir Computing (RC) model spe-\ncifically designed for precise crude oil price predictions, outperforming traditional \nmethods such as ARIMA, LSTM, and GRU. Using daily closing prices from major \nindices spanning January 2010 to December 2023, we conducted a thorough eval-\nuation. The RC model consistently demonstrates superior accuracy and computa-\ntional efficiency. Quantitative metrics reveal the RC model’s dominance with a \nMean Absolute Error (MAE) of 0.0094, Mean Squared Error (MSE) of 0.00035, \nRoot Mean Squared Error (RMSE) of 0.0196, and a notably low Mean Absolute \nPercentage Error (MAPE) of 1.450% . Additionally, the RC model’s runtime of \n1.11 s underscores its computational efficiency, far surpassing ARIMA (493.22 s), \nLSTM (423.55 s), and GRU (15.73 s). During periods of economic disruption, such \nas the COVID-19 lockdowns, the RC model effectively captured sharp price fluc-\ntuations, highlighting its robust forecasting capability. These findings emphasize \nthe RC model’s potential as a reliable tool for enhancing decision-making processes \nin the dynamic ene",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+      "sha256": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+      "paginas": 34,
+      "caracteres_primeiras_paginas": 8181,
+      "titulo_embutido_nao_validado": "Enhancing Trading Performance Through Sentiment Analysis with Large Language Models: Evidence from the S&P 500",
+      "autor_embutido_nao_validado": "Haojie Liu; Zihan Lin; Randall R. Rojas",
+      "dois_candidatos": [],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: S&P 500, sentiment analysis, large language model, time-series forecasting,\ntrading\n1 Introduction\nIn the stock market, one of the most important factors to rely on is a strategy that consis-\ntently predicts market movements. Traditionally, such strategies have focused on technical\n1\narXiv:2507.09739v1  [q-fin.CP]  13 Jul 2025\nindicators and time series models, which analyze historical price data and trends to forecast\nfuture stock movements. However, with the rise of Natural Language Processing (NLP),\nsentiment analysis has emerged a"
+      ],
+      "texto_inicial_para_conferencia": "Enhancing Trading Performance Through\nSentiment Analysis with Large Language\nModels: Evidence from the S&P 500\nHaojie Liu 1, Zihan Lin 2, and Randall R. Rojas 2\n1Department of Statistics and Data Science\n2Department of Economics\nUniversity of California, Los Angeles\nJuly 15, 2025\nAbstract\nThis study integrates real-time sentiment analysis from financial news, GPT-2\n(Radford et al., 2019) and FinBERT (Araci, 2019), with technical indicators and time-\nseries models like ARIMA and ETS to optimize S&P 500 trading strategies. By merg-\ning sentiment data with momentum and trend-based metrics, including a benchmark\nbuy-and-hold and sentiment-based approach, is evaluated through assets values and\nreturns. Results show that combining sentiment-driven insights with traditional mod-\nels improves trading performance, offering a more dynamic approach to stock trading\nthat adapts to market changes in volatile environments.\nKeywords: S&P 500, sentiment analysis, large language model, time-series forecasting,\ntrading\n1 Introduction\nIn the stock market, one of the most important factors to rely on is a strategy that consis-\ntently predicts market movements. Traditionally, such strategies have focused on technical\n1\narXiv:2507.09739v1  [q-fin.CP]  13 Jul 2025\nindicators and time series models, which analyze historical price data and trends to forecast\nfuture stock movements. However, with the rise of Natural Language Processing (NLP),\nsentiment analysis has emerged as a valuable addition to fi",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+      "sha256": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac",
+      "paginas": 23,
+      "caracteres_primeiras_paginas": 15257,
+      "titulo_embutido_nao_validado": "Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators",
+      "autor_embutido_nao_validado": "B. Liu, Y. Xie, X. Jiang, Y. Ye, T. Song, J. Chai, Q. Tang, M. Feng",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1364/OE.454973",
+          "pagina": 1,
+          "contexto": " research upsurge in economic and financial fields\nduring the latest years.\n#454973 https://doi.org/10.1364/OE.454973\nJournal © 2022 Received 31 Jan 2022; revised 27 May 2022; accepted 6 Jun 2022; published 13 Jun 202"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [],
+      "texto_inicial_para_conferencia": "Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23359\nForecasting stock market with nanophotonic\nreservoir computing system based on silicon\noptomechanical oscillators\nBOCHENG LIU,1 YIYUAN XIE,1,2,* XIAO JIANG ,1 YICHEN YE,1\nTINGTING SONG ,3 JUNXIONG CHAI ,1 QIANFENG TANG ,1 AND\nMANYING FENG 1\n1School of Electronics and Information Engineering, Southwest University, Chongqing 400715, China\n2School of Optoelectronic Information, University of Electronic Science and Technology of Chengdu,\nSichuan 611731, China\n3School of Computer and Information Science, Chongqing Normal University, Chongqing 401331, China\n*yyxie@swu.edu.cn\nAbstract: Theessenceofstockmarketforecastingistorevealtheintrinsicoperationrulesofstock\nmarket, however it is a terribly arduous challenge for investors. The application of nanophotonic\ntechnology in the intelligence field provides a new approach for stock market forecasting with\nits unique advantages. In this work, a novel nanophotonic reservoir computing (RC) system\nbased on silicon optomechanical oscillators (OMO) with photonic crystal (PhC) cavities for\nstock market forecasting is implemented. The long-term closing prices of four representative\nstock indexes are accurately forecast with small prediction errors, and the forecasting results\nwith distinct characteristics are exhibited in the mature stock market and emerging stock market\nseparately. Our work offers solutions and suggestions for surmounting the concept drift problem\nin stock m",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Millea - Explorations in Echo State Network.pdf",
+      "sha256": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+      "paginas": 90,
+      "caracteres_primeiras_paginas": 2945,
+      "titulo_embutido_nao_validado": "",
+      "autor_embutido_nao_validado": "",
+      "dois_candidatos": [],
+      "trechos_marcadores_palavras_chave": [],
+      "texto_inicial_para_conferencia": "Explorations\nin\nEcho State Networks\nAdrian Millea\nMaster’s Thesis\nSupervised by\nDr. Marco Wiering (Department of Artificial Intelligence,\nUniversity of Groningen, Groningen, The Netherlands)\nProf. Mark Embrechts (Department of Decision Sciences and\nEngineering Systems, Rensselaer Polytechnic Institute, Troy\nNY, USA)\nUniversity of Groningen, Department of Artiﬁcial Intelligence\nNijenborgh 9 9747 AG, Groningen, The Netherlands\nJune 2014\n\nAbstract\nEcho State Networks are powerful recurrent neural networks that can predict time-series very well.\nHowever, they are often unstable, making the process of ﬁnding an ESN for a speciﬁc dataset quite\nhard. We will explore this process, by employing diﬀerent versions of the activation function, diﬀerent\nweight matrices and diﬀerent topologies. We will show the close connection between the ESN and\nCompressed Sensing, a recent ﬁeld in signal processing. Moreover, we will try to tackle some of the\nmain problems in the ESN construction process: minimize the variability between diﬀerent initializa-\ntions of the weight matrix, automate the process of ﬁnding an ESN without the need for extensive\nmanual trial-and-error sequences and ﬁnally eliminate noise from the activation function to increase\nprecision and lower computational costs associated with it. A high level of performance is achieved\non many time-series prediction tasks. We also employ the ESN to trade on the FOReign EXchange\nmarket using a basic trading strategy, and we achieve signiﬁca",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+      "sha256": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+      "paginas": 25,
+      "caracteres_primeiras_paginas": 3,
+      "titulo_embutido_nao_validado": "",
+      "autor_embutido_nao_validado": "",
+      "dois_candidatos": [],
+      "trechos_marcadores_palavras_chave": [],
+      "texto_inicial_para_conferencia": "\n\n\n",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+      "sha256": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+      "paginas": 2,
+      "caracteres_primeiras_paginas": 7386,
+      "titulo_embutido_nao_validado": "Forecasting Financial Market Volatility: Methodologies, Challenges, and Implications ",
+      "autor_embutido_nao_validado": "Tongji Ping",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.35248/2168-9458.23.10.239",
+          "pagina": 1,
+          "contexto": "JSFT-23-24653; Revised: 23-Jun-2023, Manuscript No. JSFT-23-24653 (R); Published: 30-Jun-2023, DOI: 10.35248/2168-9458.23.10.239.\nCitation: Ping T (2023) Forecasting Financial Market Volatility: Methodologies, Challenges, and Imp"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [],
+      "texto_inicial_para_conferencia": "Forecasting Financial Market Volatility: Methodologies, Challenges, and \nImplications\nTongji Ping*\nDepartment of Statistics, Jiangxi University of Finance and Economics, Nanchang, China\nDESCRIPTION\nFinancial market volatility, characterized by rapid and significant \nprice fluctuations, is a fundamental aspect of global economies.  \nThe ability to forecast market volatility is crucial for investors, \ntraders, policymakers, and risk managers seeking to make  \ninformed decisions and mitigate potential risks. This article aims  \nto delve into the fascinating world of forecasting financial  \nmarket volatility, exploring the methodologies, challenges, and  \nimplications associated with this complex endeavor [1-3].\nImportance of forecasting financial market volatility\nAccurate forecasts of financial market volatility provide valuable  \ninsights into the uncertainty and potential risks surrounding  \nasset prices. These forecasts help market participants anticipate \nand prepare for market downturns, manage portfolio risks, \ndesign hedging strategies, and optimize investment decisions. \nAdditionally, policymakers rely on volatility forecasts to assess \nmarket stability and implement appropriate regulatory measures. \nBy understanding the dynamics of market volatility, investors  \nand decision-makers can enhance their ability to navigate volatile \nfinancial landscapes [4-6].\nHistorical volatility: This approach relies on analyzing past price  \nmovements and volatility patterns to predict",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "paginas": 11,
+      "caracteres_primeiras_paginas": 22198,
+      "titulo_embutido_nao_validado": "",
+      "autor_embutido_nao_validado": "",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.18280/ijcmem.110401",
+          "pagina": 1,
+          "contexto": "censed under the CC BY 4.0 license \n(http://creativecommons.org/licenses/by/4.0/). \nhttps://doi.org/10.18280/ijcmem.110401 ABSTRACT \nReceived: 18 August 2023 \nRevised: 19 October 2023 \nAccepted: 14 November 2023 \nAvailable"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: \nneural network, deep learning, Lorenz \nsystem, echo state network, reservoir \ncomputing, prediction \n1. INTRODUCTION\nDeep learning, a subfield of machine learning, has \nrevolutionized various scientific domains by enabling accurate \npredictions in complex systems  [1]. One particular area that \nposes persistent challenges is the accurate prediction of \nchaotic systems. Chaos is the behavior of a system that is \nsensitive to initial conditions [2]. If a system is nonlinear and \nchaotic, it is impossible to predict its future in most c"
+      ],
+      "texto_inicial_para_conferencia": "Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System \nSoukaina Seddik* , Hayat Routaib , Anass Elhaddadi\nApplied Science Laboratory LSA, ENSAH, Abdelmalek Essaadi University, Al Hoceima 32000, Morocco  \nCorresponding Author Email: seddik.soukaina@etu.uae.ac.ma\nCopyright: ©2023 IIETA. This article is published by IIETA and is licensed under the CC BY 4.0 license \n(http://creativecommons.org/licenses/by/4.0/). \nhttps://doi.org/10.18280/ijcmem.110401 ABSTRACT \nReceived: 18 August 2023 \nRevised: 19 October 2023 \nAccepted: 14 November 2023 \nAvailable online: 30 December 2023 \nIn recent years, machine learning, especially deep neural networks, has made substantial \nprogress, consistently surpassing conventional time -series forecasting methods across \nvarious domains. This paper introduces a novel hybrid approach that combines the Lorenz \nsystem and the echo state network (ESN) to tackle and reduce the \"butterfly effect\" in chaos \nforecasting. The core contribution lies in harnessing the Lorenz system's unique properties, \nwhere initially converging trajectories gradually diverge, to train the ESN —a neural \nnetwork celebrated for its non-linear computational capabilities, echo state property, and \ninput forgetting capability. The primary aim is to establish a more robust and precise \nframework for predicting chaotic systems, given their sensitivity to initial conditions. This \nresearch endeavors to provide a versatile tool with wide-ranging applicatio",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "paginas": 15,
+      "caracteres_primeiras_paginas": 10606,
+      "titulo_embutido_nao_validado": "Echo State Networks for Bitcoin Time Series Prediction",
+      "autor_embutido_nao_validado": "Mansi Sharma; Enrico Sartor; Marc Cavazza; Helmut Prendinger",
+      "dois_candidatos": [],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: chaotic time series, cryptocurrency forecasting, echo state\nnetworks, lyapunov exponent\n1 Introduction\nTime series data are pervasive in both human activities and natural\nprocesses, including finance [30,7,15], energy consumption [6], and cli-\nmate variability [23]. Accurate forecasting supports decision-making, but\nvolatility, non-linearity, and noise in real-world data challenge traditional\nmodels. Traditionally, forecasting used statistical models like ARIMA\nand Exponential Smoothing for their simplicity and interpretability\n[2,25]"
+      ],
+      "texto_inicial_para_conferencia": "Echo State Networks for Bitcoin Time Series\nPrediction\nMansi Sharma1[0000−0001−9196−6342], Enrico Sartor2[0009−0009−2697−6849], Marc\nCavazza3[0000−0001−6113−9696], and Helmut Prendinger4[0000−0003−4654−9835]\n1 DFKI, Saarland Informatics Campus, Germany\n2 Politecnico di Milano, Italy\n3 University of Stirling, UK\n4 National Institute of Informatics, Japan\nmansi.sharma@dfki.de\nAbstract. Forecasting stock and cryptocurrency prices is challenging\ndue to high volatility and non-stationarity, influenced by factors like\neconomic changes and market sentiment. Previous research shows that\nEcho State Networks (ESNs) can effectively model short-term stock mar-\nket movements, capturing nonlinear patterns in dynamic data. To the\nbest of our knowledge, this work is among the first to explore ESNs for\ncryptocurrency forecasting, especially during extreme volatility. We also\nconduct chaos analysis through the Lyapunov exponent in chaotic pe-\nriods and show that our approach outperforms existing machine learn-\ning methods by a significant margin. Our findings are consistent with\nthe Lyapunov exponent analysis, showing that ESNs are robust during\nchaotic periods and excel under high chaos compared to Boosting and\nNaïve methods.\nKeywords: chaotic time series, cryptocurrency forecasting, echo state\nnetworks, lyapunov exponent\n1 Introduction\nTime series data are pervasive in both human activities and natural\nprocesses, including finance [30,7,15], energy consumption [6], and cli-\nmate variability ",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "paginas": 19,
+      "caracteres_primeiras_paginas": 10365,
+      "titulo_embutido_nao_validado": "Author template for journal articles",
+      "autor_embutido_nao_validado": "lenovo",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.21203/rs.3.rs-1909702/v1",
+          "pagina": 1,
+          "contexto": "timization, parameters, Reservoir Computing, SLR\nPosted Date: August 4th, 2022\nDOI: https://doi.org/10.21203/rs.3.rs-1909702/v1\nLicense:   This work is licensed under a Creative Commons Attribution 4.0 International License. "
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: Echo State Network, methods, Optimization, parameters, Reservoir Computing, SLR\nPosted Date: August 4th, 2022\nDOI: https://doi.org/10.21203/rs.3.rs-1909702/v1\nLicense:   This work is licensed under a Creative Commons Attribution 4.0 International License.  \nRead Full License\n1 \nEcho State Network Optimization: A \nSystematic Literature Review \nRebh Soltani c, Emna Benmohamed a,b, Hela Ltifi a,c \naREsearch Groups in Intelligent Machines, University of Sfax, National School of Engineers \n(ENIS), BP 1173, Sfax, 3038, Tunisia. \nbComputer",
+        "Keywords: Echo State Network; methods; Optimization; parameters; Reservoir Computing; SLR. \n1. Introduction \nIn the last decades the use of Reservoir Computing is increasing [1] especially with the efficiency \nof the Echo State Network. The ESN [2] is new variant of Recurrent Neur al Networks (RNN). The \nname of ESN springs from the input history echoes. These echoes represent the reservoir activation \nstates (randomly generated), which include the input history. The ESN is d istinguished from the \nother RNN by its hidden layer that is a large-"
+      ],
+      "texto_inicial_para_conferencia": "Echo State Network Optimization: A Systematic\nLiterature Review\nRebh Soltani  (  rebhsoltani2013@gmail.com )\nUniversity of Kairouan\nEmna Benmohamed \nUniversity of Sfax, National School of Engineers (ENIS)\nHela Lti\u0000 \nUniversity of Kairouan\nResearch Article\nKeywords: Echo State Network, methods, Optimization, parameters, Reservoir Computing, SLR\nPosted Date: August 4th, 2022\nDOI: https://doi.org/10.21203/rs.3.rs-1909702/v1\nLicense:   This work is licensed under a Creative Commons Attribution 4.0 International License.  \nRead Full License\n1 \nEcho State Network Optimization: A \nSystematic Literature Review \nRebh Soltani c, Emna Benmohamed a,b, Hela Ltifi a,c \naREsearch Groups in Intelligent Machines, University of Sfax, National School of Engineers \n(ENIS), BP 1173, Sfax, 3038, Tunisia. \nbComputer Science Department, Faculty of sciences of Gafsa, University of Gafsa, Tunisia. \ncComputer Science and Mathematics Department, Faculty of sciences and techniques of Sidi \nBouzid, University of Kairouan, Tunisia. \n \nAbstract \n \nIn the recent years, numerous studies have demonstrated the importance and efficiency of \nReservoir Computing (RC) approaches. The choice of parameters and architectur e in reservoir \ncomputing, on the other hand, frequently leads to an optimization task. T his paper attempts to \npresent an overview of the related work on Echo State Network (ESN) optimizatio n and to collect \nresearch papers through a systematic Literature Review (SLR). This review cov ers 74 i",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Sudiatmika - Comparison of LSTM and GRU Models Performance.pdf",
+      "sha256": "610bedfb14458d480dfd1adb4e89a8ff39487fe2e9b5a7eb3411e87e519af1fc",
+      "paginas": 9,
+      "caracteres_primeiras_paginas": 13700,
+      "titulo_embutido_nao_validado": "",
+      "autor_embutido_nao_validado": "Aditya Halim Putra",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.35877/jetech2760",
+          "pagina": 1,
+          "contexto": "atmika, et.al., ARRUS Journal of Engineering and Technology, Vol. 4, No. 1 (2024)  \nhttps://doi.org/10.35877/jetech2760  \n \n  ISSN : 2776-7914 (Print) / 2807-3045 (Online) \n \n \n \n \n \nThis open access article is distribu"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: LSTM, GRU, gold prices, forecasting, recurrent neural networks, performance \nevaluation \n \n \n \n1. Introduction  \nIn the realm of financial forecasting, the accurate prediction of asset prices remains a critical \nendeavor for investors, policymakers, and financial analysts alike. Gold, known for its role as \na safe -haven asset and its sensitivity to economic uncertainties, presents a particularly \nintriguing subject for predictive modeling. This study focuses on comparing the effectiveness \nof two prominent recurrent neural network (R"
+      ],
+      "texto_inicial_para_conferencia": " \n \nSudiatmika, et.al., ARRUS Journal of Engineering and Technology, Vol. 4, No. 1 (2024)  \nhttps://doi.org/10.35877/jetech2760  \n \n  ISSN : 2776-7914 (Print) / 2807-3045 (Online) \n \n \n \n \n \nThis open access article is distributed under a Creative Commons Attribution (CC-BY-NC) 4.0 \nlicense.  \n157 \n \nRESEARCH ARTICLE \nComparison of LSTM and GRU Models Performance \nin Forecasting Gold Prices: A Case Study Using \nHistorical Data from Yahoo Finance \nI Putu Gede Abdi Sudiatmika1*,  I maade agus wirahadi putra2 \n1Computer Systems, Faculty of Informatics and Computer, Institut Teknologi \ndan Bisnis Stikom Bali. Indonesia. \n2Informatics Management, Faculty of Business and Vocational Studies , Institut \nTeknologi dan Bisnis Stikom Bali. Indonesia. \n \nAbstract: This research aims to compare the performance of two types of \nrecurrent neural network models, Long Short -Term Memory (LSTM) and \nGated Recurrent Unit (GRU), in forecasting gold prices based on historical \nclosing price data. Historical gold price data from December 14, 2017, to \nMarch 14, 2024, was downloaded using the yfinance library. The data was \nnormalized using MinMaxScaler and split into training and testing sets with an \n80:20 ratio. LSTM and GRU models were constructed with two recurrent \nlayers followed by a Dense layer for output. Both models were trained using \nthe training data and evaluated using Mean Squared Error (MSE), Mean \nAbsolute Error (MAE), and R-squared (R²) metrics. The experimental results \nindicate",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "paginas": 12,
+      "caracteres_primeiras_paginas": 8871,
+      "titulo_embutido_nao_validado": "Stock Price Forecasting: An Echo State Network Approach",
+      "autor_embutido_nao_validado": " Jingjing Lin",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.32604/csse.2021.014189",
+          "pagina": 1,
+          "contexto": "ny medium, provided the original\nwork is properly cited.\nComputer Systems Science & Engineering\nDOI:10.32604/csse.2021.014189\nArticle\nechT PressScience"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: Stock data forecast; echo state network; deep learning\n1 Introduction\nIn the era of big data, time-series data are present in domains such as stocks, traf ﬁc, electricity, and\nwebsite traf ﬁc[ 1–3]. Research in this area, along with the mining of time-series data, has thus become\nvaluable and challenging work [ 4,5]. Finance professionals devote a great deal of time and money to\ntapping the potential value of economic-, industry-, and enterprise-related data [ 6]. The forecasting and\nanalysis of stock data have signi ﬁcant effects on "
+      ],
+      "texto_inicial_para_conferencia": "Stock Price Forecasting: An Echo State Network Approach\nGuang Sun1, Jingjing Lin 1,*, Chen Y ang1, Xiangyang Yin 1, Ziyu Li 1, Peng Guo 1,2, Junqi Sun 3,\nXiaoping Fan1 and Bin Pan 1\n1Hunan University of Finance and Economics, Changsha, China\n2University Malaysia Sabah, Kota Kinabalu, Malaysia\n3Yali High School International Department, Changsha, China\n/C3 Corresponding Author: Jingjing Lin. Email: 17573148817@163.com\nReceived: 04 September 2020; Accepted: 21 November 2020\nAbstract: Forecasting stock prices using deep learning models suffers from pro-\nblems such as low accuracy, slow convergence, and complex network structures.\nThis study developed an echo state network (ESN) model to mitigate such pro-\nblems. We compared our ESN with a long short-term memory (LSTM) network\nby forecasting the stock data of Kweichow Moutai, a leading enterprise in China ’s\nliquor industry. By analyzing data for 120, 240, and 300 days, we generated fore-\ncast data for the next 40, 80, and 100 days, respectively, using both ESN and\nLSTM. In terms of accuracy, ESN had the unique advantage of capturing non-\nlinear data. Mean absolute error (MAE) was used to present the accuracy results.\nThe MAEs of the data forecast by ESN were 0.024, 0.024, and 0.025, which were,\nrespectively, 0.065, 0.007, and 0.009 less than those of LSTM. In terms of con-\nvergence, ESN has a reservoir state-space structure, which makes it perform faster\nthan other models. Root-mean-square error (RMSE) was used to present the co",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "paginas": 15,
+      "caracteres_primeiras_paginas": 19503,
+      "titulo_embutido_nao_validado": "",
+      "autor_embutido_nao_validado": "",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1007/s40435-024-01405-8",
+          "pagina": 1,
+          "contexto": "International Journal of Dynamics and Control (2023) 12:2764–2777\nhttps://doi.org/10.1007/s40435-024-01405-8\nStocks price prediction based on optimized echo state network\nby sparrow search algorithm\nZhengjie "
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords Stocks price · Sparrow search algorithm · Echo state network\n1 Introduction\nThe stocks market serve as a barometer of a country’s\neconomic development, to some extent. In recent years,\nnumerous scholars have conducted diverse studies on the\nstocks market, proposing a range of analytical and fore-\ncasting methods to address its unique characteristics. These\nmethods include fundamental analysis, technical analysis\nand time series analysis. However, the stocks market is a\ndynamic, nonlinear system with high noise, which poses\nchallenges f"
+      ],
+      "texto_inicial_para_conferencia": "International Journal of Dynamics and Control (2023) 12:2764–2777\nhttps://doi.org/10.1007/s40435-024-01405-8\nStocks price prediction based on optimized echo state network\nby sparrow search algorithm\nZhengjie Tian 1 · Lijun Pei 1\nReceived: 19 November 2023 / Revised: 7 February 2024 / Accepted: 8 February 2024 / Published online: 11 March 2024\n© The Author(s), under exclusive licence to Springer-Verlag GmbH Germany, part of Springer Nature 2024\nAbstract\nThe stock market reﬂects the level of economic development of a country to a certain extent. Therefore, stock price forecasting\nhas become a popular research issue. More and more attention has been paid to the establishment of stock price forecasting\nmodels. However, the stock market is a nonlinear system ﬁlled with high noise, and the traditional fundamental analysis,\ntechnical analysis and ARIMA model cannot achieve the ideal prediction result. Although traditional neural networks have\ngood adaptability and nonlinear approximation capability, but they also have drawbacks, such as slow training speed and\neasiness to fall into local optimization. The echo state network–sparrow search algorithm (SSA–ESN) model employed in\nthis paper uses the sparrow search algorithm to optimize the parameters of echo state network (ESN). It has not only better\nprediction result but also inheriting the excellent properties of ESN. The SSA–ESN model is used to predict several stocks\nprice, and the results are compared with those of BP neural netwo",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "paginas": 11,
+      "caracteres_primeiras_paginas": 12641,
+      "titulo_embutido_nao_validado": "",
+      "autor_embutido_nao_validado": "",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.5121/ijaia.2016.7103",
+          "pagina": 1,
+          "contexto": "nal Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 \n \nDOI : 10.5121/ijaia.2016.7103                                                                                                    "
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "KEYWORDS \n \nStock Exchange Prediction, Autoregressive Models & Linear Models  \n  \n1. INTRODUCTION \n \nAccording to Nascimento [1], the necessity for economic growth is a consensus in any country. A \npath for its achievement is through the capital mar kets, which directs the investments to \nalternatives that provides the highest returns. This is defined as a system of transferable securities \ndistribution capable of providing liquidity to issu ance of securities that at the same time makes \nthe capitalization process viable. It occurs throug h ne"
+      ],
+      "texto_inicial_para_conferencia": "International Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 \n \nDOI : 10.5121/ijaia.2016.7103                                                                                                                       21 \n\u0001\n\u0002\u0003\u0003\u0004\u0005\u0002\u0006\u0007\u0001\b\u0002\t\n\u000b\u0001\u0005\f\u0001\r\u000e\f\n\u0002\u0004\u0001\u0004\n\u000f\u0004\n\t\t\u000e\u0005\f\u0001\u0010\u0005\u0004\u0001\n\t\u0011\u0005\u0006\u0012\u0001\n\u0013\u0006\u0007\u0002\f\u000f\n\u0001\u0003\u0004\n\u000b\u000e\u0006\u0011\u000e\u0005\f\u0001\u0014\u0001\u0006\u0002\t\n\u0001\t\u0011\u0015\u000b\u0016\u0001\u0005\u0010\u0001\n\u0003\n\u0011\u0004\u0017\u0001\u0003\n\u0011\u0004\u0005\b\u0004\u0018\t\u0019\u0001\b\u0004\u0002\u001a\u000e\r\u0001\n\u0001\nNadson S. Timbó, Sofiane Labidi, Thiago P. do Nascimento, Milson L. Lima, \nGilberto Nunes Neto and Rodrigo C. Matos  \n \nPost-graduation Program in Electrical Engineering, Federal University of Maranhão, São \nLuís, Brazil 65080–805                                                           \n \nABSTRACT \n \nThe stock exchange is an important apparatus for ec onomic growth as it is an opportunity for investors  to \nacquire equity and, at the same time, provide resou rces for organizations expansions. On the other han d, a \nmajor concern regarding entering this market is rel ated with the dynamic in which deals are made since  \nthe pricing of shares happens in a smart and oscill atory way. Due to this context, several researchers  are \nstudying techniques in order to predict the stock e xchange, maximize profits and reduce risks. Thus, t his \nstudy proposes a linear regression model for stock exchange prediction which, combined with financial \nindicators, provides support decision-making by investors. \n \nKEYWORDS \n \nStock Exchange Prediction, Autoregressive Models & Linear Models  \n  \n1. INTRODUCTION \n \nAccording to Nasc",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "paginas": 13,
+      "caracteres_primeiras_paginas": 22954,
+      "titulo_embutido_nao_validado": "Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility",
+      "autor_embutido_nao_validado": "Gabriel Trierweiler Ribeiro",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1016/j.eswa.2021.115490",
+          "pagina": 1,
+          "contexto": "xpert Systems With Applications \njournal homepag e: www.else vier.com/loc ate/eswa \nhttps://doi.org/10.1016/j.eswa.2021.115490 \nReceived 30 August 2020; Received in revised form 18 March 2021; Accepted 24 June 2021   "
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: \nVolatility prediction \nEcho state network \nHeterogeneous autoregressive model \nParticle swarm optimization \nABSTRACT  \nThe prediction of stock price return volatilities is important for financial companies and investors to help to \nmeasure and managing market risk and to support financial decision-making. The literature points out alter -\nnative prediction models - such as the widely used heterogeneous autoregressive (HAR) specification - which \nattempt to forecast realized volatilities accurately. However, recent variants of artific",
+        "keywords \nas features for prediction of energy prices volatility; Choudhury et al. \n(2014) proposed the use of features derived from clustering with Self \nOrganizing Maps (SOM) followed by an SVM prediction model for price \nreturn and volatility forecasting in the Indian market. \nThe alternative prediction models can use only past values of the \nvolatility series, yielding univariate models, or can use any other indi -\ncator as a feature, therefore yielding multivariate models. The multi -\nvariate approach may lead to better predictions if appr"
+      ],
+      "texto_inicial_para_conferencia": "Expert Systems With Applications 184 (2021) 115490\nAvailable online 29 June 2021\n0957-4174/© 2021 Elsevier Ltd. All rights reserved.\nNovel hybrid model based on echo state neural network applied to the \nprediction of stock price return volatility \nGabriel Trierweiler Ribeiro\na , *\n, Andr ´e Alves Portela Santos\nb , c\n, Viviana Cocco Mariani\nd\n, \nLeandro dos Santos Coelho\ne \na\nDepartment of Electrical Engineering, Federal University of Parana (UFPR), Curitiba, PR, Brazil \nb\nDepartment of Economics, Federal University of Santa Catarina (UFSC), Florianopolis, SC, Brazil \nc\nBusiness School, University of Edinburgh, Scotland \nd\nMechanical Engineering Graduate Program (PPGEM), Pontifical Catholic University of Parana (PUCPR), Curitiba, PR, Brazil \ne\nIndustrial and Systems Engineering Graduate Program (PPGEPS), Pontifical Catholic University of Parana (PUCPR), Curitiba, PR, Brazil   \nARTICLE INFO  \nKeywords: \nVolatility prediction \nEcho state network \nHeterogeneous autoregressive model \nParticle swarm optimization \nABSTRACT  \nThe prediction of stock price return volatilities is important for financial companies and investors to help to \nmeasure and managing market risk and to support financial decision-making. The literature points out alter -\nnative prediction models - such as the widely used heterogeneous autoregressive (HAR) specification - which \nattempt to forecast realized volatilities accurately. However, recent variants of artificial neural networks, such as \nthe echo state ",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+      "sha256": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+      "paginas": 26,
+      "caracteres_primeiras_paginas": 16860,
+      "titulo_embutido_nao_validado": "Artificial intelligence-based stock market price prediction, a review",
+      "autor_embutido_nao_validado": "Vishwas H N, Usha B A, Sangeetha K N",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.21595/mme.2025.24861",
+          "pagina": 1,
+          "contexto": "d 27 February 2025; accepted 13 August 2025; published online 12 November 2025 \nDOI https://doi.org/10.21595/mme.2025.24861 \nCopyright © 2025 Vishwas H N, et al. This is an open access article distributed under the Creative"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: artificial intelligence (AI), autoregressive integrated moving average artificial neural \nnetwork (ARIMA-ANN) (time-series forecasting), generative adversarial network (GAN), \nK-means long short-term memory (LSTM), stock senti wordnet (SSWN), hybrid quantum neural \nnetwork (HQNN), spectral GPT. \n1. Introduction \nThe stock market, a critical component of the global financial system, reflects economic health, \nand serves as a platform for investment and w ealth creation. The accurate prediction of stock \nmarket price trends is essential"
+      ],
+      "texto_inicial_para_conferencia": " \n MATHEMATICAL MODELS IN ENGINEERING 1 \nArtificial intelligence-based stock market price \nprediction, a review \nVishwas H N1, Usha B A2, Sangeetha K N3 \n1BMS Institute of Technology and Management, Visvesvaraya Technological University,  \nBelagavi, Karnataka, 590018, India  \n2BMS Institute of Technology and Management, Bengaluru, Karnataka 590119, India \n3JSS Academy of Technical Education, Bengaluru, Karnataka, 560060, India \n1Corresponding author \nE-mail: 1vishwashn@gmail.com, 2ushaajay1@gmail.com, 3sangeethakn@jssateb.ac.in \nReceived 27 February 2025; accepted 13 August 2025; published online 12 November 2025 \nDOI https://doi.org/10.21595/mme.2025.24861 \nCopyright © 2025 Vishwas H N, et al. This is an open access article distributed under the Creative Commons Attribution License, which \npermits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. \nAbstract. The stock market, a cornerstone of the global  financial system, is characterized by its \ndynamic and volatile nature, which makes accurate price-trend prediction challenging. However, \ntraditional statistical models often fail to captu re this complexity. R ecent advancements in \nArtificial Intelligence (AI), particularly Machine Learning (ML) and Deep Learning (DL), have \ntransformed stock market forecas ting by using diverse datasets and algorithms. This review \nexamines recent studies on AI methodologies for stock market price trend prediction models by \nanal",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "paginas": 17,
+      "caracteres_primeiras_paginas": 13008,
+      "titulo_embutido_nao_validado": "Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing",
+      "autor_embutido_nao_validado": "Fang Wang ",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1007/s44196-025-00906-4",
+          "pagina": 1,
+          "contexto": " randomly initialized reservoir that\nInt J Comput Intell Syst         (2025) 18:180 https://doi.org/10.1007/s44196-025-00906-4\n0123456789().: V,-vol 123"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords Optical reservoir computing · Parallel data processing · Multivariate forecasting · Multistep prediction\n1 Introduction\nOver the past few decades, machine learning (ML) has emerged as a transformative tool in ﬁnancial market\nprediction, particularly for forecasting market indices [ 1]. The core challenge in this ﬁeld lies in effectively\nintegrating diverse information sources and building models capable of capturing the inherent complexity of\nﬁnancial markets. A wide range of ML techniques-including regression, classiﬁcation, deep lear"
+      ],
+      "texto_inicial_para_conferencia": "Int J Comput Intell Syst         (2025) 18:180 \nRESEARCH ARTICLE\nEnhanced Multistep Prediction of Multivariate Market\nIndices Using Weighted Optical Reservoir Computing\nFang Wang 1 · Ting Bu 2 · Yuping Huang 1,2\nReceived: 14 February 2025 / Revised: 10 June 2025 / Accepted: 20 June 2025\n© The Author(s) 2025\nAbstract\nWe propose and experimentally demonstrate an innovative weighted optical reservoir computing system for market\nindex prediction. By integrating fundamental market data with macroeconomic indicators and technical metrics,\nwe capture the broader dynamics of the stock market. Our system shows signiﬁcantly higher performance than\nthe state-of-the-art methods such as linear regression, decision trees, and neural network architectures including\nlong short-term memory. It effectively captures the market’s high volatility and nonlinear behaviors under limited\ndata conditions, demonstrating strong potential for real-time, parallel, multi-dimensional data processing, and\nprediction.\nKeywords Optical reservoir computing · Parallel data processing · Multivariate forecasting · Multistep prediction\n1 Introduction\nOver the past few decades, machine learning (ML) has emerged as a transformative tool in ﬁnancial market\nprediction, particularly for forecasting market indices [ 1]. The core challenge in this ﬁeld lies in effectively\nintegrating diverse information sources and building models capable of capturing the inherent complexity of\nﬁnancial markets. A wide range of ML techniq",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Wang W - Stock market index prediction based on reservoir computing models.pdf",
+      "sha256": "7485fa096c0855232ab45109b346462e14790d945c6f491dfbab2b26db63d761",
+      "paginas": 14,
+      "caracteres_primeiras_paginas": 24003,
+      "titulo_embutido_nao_validado": "Stock market index prediction based on reservoir computing models",
+      "autor_embutido_nao_validado": "Wei-Jia Wang",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1016/j.eswa.2021.115022",
+          "pagina": 1,
+          "contexto": "xpert Systems With Applications \njournal homepag e: www.else vier.com/loc ate/eswa \nhttps://doi.org/10.1016/j.eswa.2021.115022 \nReceived 13 March 2020; Received in revised form 27 February 2021; Accepted 8 April 2021   "
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: \nFinancial market prediction \nStock market index prediction \nFinancial time series \nReservoir computing \nDeep learning \nABSTRACT  \nPrediction of the financial market price is critical for financial decision-making and market policy-making. \nRecently, various machine learning and deep learning methods have been adopted to predict financial mar -\nkets ’ movements using historical time series of prices. However, accurate prediction of financial prices is still a \nlong-standing challenge that always calls for new approaches. In this study"
+      ],
+      "texto_inicial_para_conferencia": "Expert Systems With Applications 178 (2021) 115022\nAvailable online 16 April 2021\n0957-4174/© 2021 Elsevier Ltd. All rights reserved.\nStock market index prediction based on reservoir computing models \nWei-Jia Wang\na , 1\n, Yong Tang\nb , d , * , 2\n, Jason Xiong\nc , 3\n, Yi-Cheng Zhang\nd \na\nSchool of Information and Software Engineering, University of Electronic Science and Technology of China, Chengdu 610054, China \nb\nSchool of Computer Science and Engineering, University of Electronic Science and Technology of China, Chengdu 610054, China \nc\nDepartment of Computer Information Systems, Walker College of Business, Appalachian State University, Boone, NC 28608, USA \nd\nDepartment of Physics, University of Fribourg, Chemin du Mus ´ee 3, CH-1700 Fribourg, Switzerland   \nARTICLE INFO  \nKeywords: \nFinancial market prediction \nStock market index prediction \nFinancial time series \nReservoir computing \nDeep learning \nABSTRACT  \nPrediction of the financial market price is critical for financial decision-making and market policy-making. \nRecently, various machine learning and deep learning methods have been adopted to predict financial mar -\nkets ’ movements using historical time series of prices. However, accurate prediction of financial prices is still a \nlong-standing challenge that always calls for new approaches. In this study, a novel machine learning model of \nreservoir computing is developed to predict stock market indices. The performance of the proposed new model is \nsystematicall",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+      "sha256": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787",
+      "paginas": 7,
+      "caracteres_primeiras_paginas": 17183,
+      "titulo_embutido_nao_validado": "Comparative Analysis of LSTM, GRU, and Transformer Models for Stock Price Prediction",
+      "autor_embutido_nao_validado": "",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1145/3700058.3700075",
+          "pagina": 1,
+          "contexto": ". \n. \nLatest updates: hps://dl.acm.org/doi/10.1145/3700058.3700075\n. \n. \nRESEARCH-ARTICLE\nComparative Analysis of LSTM, GRU, and Transformer Models for Stock\nPrice Pr"
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords\nArtificial intelligence, stock forecasting, LSTM, GRU Model, Trans-\nformer, Tesla\nACM Reference Format:\nJue Xiao, Tingting Deng, and Shuochen Bi. 2024. Comparative Analysis of\nLSTM GRU and Transformer Models for Stock Price Prediction. In Interna-\ntional Conference on Digital Economy, Blockchain and Artificial Intelligence\n(DEBAI 2024), August 23–25, 2024, Guangzhou, China. ACM, New York, NY,\nUSA, 6 pages. https://doi.org/10.1145/3700058.3700075\n1 Introduction\nThe financial markets are integral to global economic progress, and\nthe stoc"
+      ],
+      "texto_inicial_para_conferencia": ". \n. \nLatest updates: hps://dl.acm.org/doi/10.1145/3700058.3700075\n. \n. \nRESEARCH-ARTICLE\nComparative Analysis of LSTM, GRU, and Transformer Models for Stock\nPrice Prediction\nJUE XIAO, University of Connecticut, Storrs, CT, United States\n. \nTINGTING DENG, University of Rochester, Rochester, NY, United States\n. \nSHUOCHEN BI, D'Amore-McKim School of Business, Boston, MA, United States\n. \n. \n. \nOpen Access Support provided by:\n. \nUniversity of Connecticut\n. \nUniversity of Rochester\n. \nD'Amore-McKim School of Business\n. \nPDF Download\n3700058.3700075.pdf\n03 April 2026\nTotal Citations: 20\nTotal Downloads: 1018\n. \n. \nPublished: 17 December 2024\n. \n. \nCitation in BibTeX format\n. \n. \nDEBAI 2024: International Conference\non Digital Economy, Blockchain and\nArtificial Intelligence\nAugust 23 - 25, 2024\nGuangzhou, China\n. \n. \nDEBAI '24: Proceedings of the International Conference on Digital Economy, Blockchain and Artiﬁcial Intelligence (August 2024)\nhps://doi.org/10.1145/3700058.3700075\nISBN: 9798400710261\n.\n\nComparative Analysis of LSTM GRU and Transformer Models for\nStock Price Prediction\nJue Xiao∗\nIndependent Researcher\nThe School of Business at University\nof Connecticut\nJersey City, United States\njue.xiao@uconn.edu\nTingting Deng\nIndependent Researcher\nSimon Business School at University\nof Rochester\nChantilly, United States\ndengtin1@gmail.com\nShuochen Bi\nIndependent Researcher\nD’Amore-McKim School of Business\nat Northeastern University\nBoston, United States\nbi.shu@northeastern.edu\nA",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    },
+    {
+      "arquivo": "Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "paginas": 15,
+      "caracteres_primeiras_paginas": 11911,
+      "titulo_embutido_nao_validado": "Application of ESN prediction model based on compressed sensing in stock market",
+      "autor_embutido_nao_validado": "Hao Zhang",
+      "dois_candidatos": [
+        {
+          "doi_candidato": "10.1016/j.cnsns.2021.105857",
+          "pagina": 1,
+          "contexto": "tructural \n∗ Corresponding author. \nE-mail address: sdlgzmw_11@163.com (M. Zheng). \nhttps://doi.org/10.1016/j.cnsns.2021.105857 \n1007-5704/© 2021 Elsevier B.V. All rights reserved. "
+        }
+      ],
+      "trechos_marcadores_palavras_chave": [
+        "Keywords: \nCompressed sensing \nESN \nReserve pool \nTime series \na b s t r a c t \nEcho State Network (ESN) is often used for time series prediction and chaotic series pre- \ndiction . But in the training process of ESN model, the reserve pool will involve a large \nnumber of calculations, so the reserve pool may have node redundancy, resulting in inac- \ncurate training model. It is very important to select the active nodes in the reserve pool \nbecause the predicted nodes are very few compared with all the nodes in the reserve pool. \nBased on the ch"
+      ],
+      "texto_inicial_para_conferencia": "Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 \nContents lists available at ScienceDirect \nCommun Nonlinear Sci Numer Simulat \njournal homepage: www.elsevier.com/locate/cnsns \nResearch paper \nApplication of ESN prediction model based on compressed \nsensing in stock market \nHao Zhang a , Mingwen Zheng a , ∗, Yanping Zhang a , Xiao Yu b , Wenchao Li a , \nHui Gao a \na School of Mathematics and Statistics, Shandong University of Technology, Zibo 2550 0 0, China \nb School of Computer Science and Technology, Shandong University of Technology, Zibo 2550 0 0, China \na r t i c l e i n f o \nArticle history: \nReceived 29 December 2020 \nRevised 6 March 2021 \nAccepted 19 April 2021 \nAvailable online 27 April 2021 \nKeywords: \nCompressed sensing \nESN \nReserve pool \nTime series \na b s t r a c t \nEcho State Network (ESN) is often used for time series prediction and chaotic series pre- \ndiction . But in the training process of ESN model, the reserve pool will involve a large \nnumber of calculations, so the reserve pool may have node redundancy, resulting in inac- \ncurate training model. It is very important to select the active nodes in the reserve pool \nbecause the predicted nodes are very few compared with all the nodes in the reserve pool. \nBased on the characteristics of the original vector, compressed sensing can reduce the di- \nmension of the vector so as to obtain the activated nodes. In this paper, the ESN model is \nadded with compressed sensing, which simpliﬁes the reserve pool ",
+      "status": "Extração inicial; identificação e metadados ainda precisam de validação"
+    }
+  ]
+}

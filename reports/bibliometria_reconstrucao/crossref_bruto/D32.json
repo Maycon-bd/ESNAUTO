@@ -1,0 +1,1073 @@
+{
+  "url": "https://api.crossref.org/works/10.1016%2Fj.eswa.2021.115022",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            29
+          ]
+        ],
+        "date-time": "2026-09-29T17:33:01Z",
+        "timestamp": 1790703181378,
+        "version": "4.1.0"
+      },
+      "reference-count": 72,
+      "publisher": "Elsevier BV",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2021-09-01T00:00:00Z",
+            "timestamp": 1630454400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2021-09-01T00:00:00Z",
+            "timestamp": 1630454400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/legal/tdmrep-license"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2021-09-01T00:00:00Z",
+            "timestamp": 1630454400000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-017"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2021-09-01T00:00:00Z",
+            "timestamp": 1630454400000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-037"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2021-09-01T00:00:00Z",
+            "timestamp": 1630454400000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-012"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2021-09-01T00:00:00Z",
+            "timestamp": 1630454400000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-029"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2021-09-01T00:00:00Z",
+            "timestamp": 1630454400000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-004"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/501100001809",
+          "name": "National Natural Science Foundation of China",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100001809",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Expert Systems with Applications"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            9
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.eswa.2021.115022",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2021,
+            4,
+            18
+          ]
+        ],
+        "date-time": "2021-04-18T19:27:14Z",
+        "timestamp": 1618774034000
+      },
+      "page": "115022",
+      "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 66,
+      "special_numbering": "C",
+      "title": [
+        "Stock market index prediction based on reservoir computing models"
+      ],
+      "prefix": "10.1016",
+      "volume": "178",
+      "author": [
+        {
+          "given": "Wei-Jia",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yong",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jason",
+          "family": "Xiong",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yi-Cheng",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0005",
+          "doi-asserted-by": "crossref",
+          "first-page": "205",
+          "DOI": "10.1007/BF00126626",
+          "article-title": "Introduction to financial forecasting",
+          "volume": "6",
+          "author": "Abu-Mostafa",
+          "year": "1996",
+          "journal-title": "Applied Intelligence"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0010",
+          "doi-asserted-by": "crossref",
+          "first-page": "468",
+          "DOI": "10.1038/ncomms1476",
+          "article-title": "Information processing using a single dynamical node as complex system",
+          "volume": "2",
+          "author": "Appeltant",
+          "year": "2011",
+          "journal-title": "Nature Communications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0015",
+          "doi-asserted-by": "crossref",
+          "first-page": "177",
+          "DOI": "10.1016/j.eswa.2017.03.028",
+          "article-title": "A dynamic trading rule based on filtered flag pattern recognition for stock market price forecasting",
+          "volume": "81",
+          "author": "Arévalo",
+          "year": "2017",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0020",
+          "series-title": "International conference on computer modelling and simulation",
+          "first-page": "106",
+          "article-title": "Stock price prediction using the arima model",
+          "author": "Ariyo",
+          "year": "2014"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0025",
+          "series-title": "International conference on advances in electronics computers and communications",
+          "first-page": "1",
+          "article-title": "Selected indian stock predictions using a hybrid arima-garch model",
+          "author": "Babu",
+          "year": "2014"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0030",
+          "doi-asserted-by": "crossref",
+          "first-page": "457",
+          "DOI": "10.1016/j.eswa.2018.07.019",
+          "article-title": "Modaugnet: A new forecasting framework for stock market index value with an overfitting prevention lstm module and a prediction lstm module",
+          "volume": "113",
+          "author": "Baek",
+          "year": "2018",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0035",
+          "doi-asserted-by": "crossref",
+          "first-page": "7046",
+          "DOI": "10.1016/j.eswa.2015.05.013",
+          "article-title": "Evaluating multiple classifiers for stock price direction prediction",
+          "volume": "42",
+          "author": "Ballings",
+          "year": "2015",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0040",
+          "series-title": "International conference on business and information management",
+          "first-page": "131",
+          "article-title": "Forecasting of indian stock market using time-series arima model",
+          "author": "Banerjee",
+          "year": "2014"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0045",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Bao, Yu-Kun, Liu, Zhi-Tao, Guo, Lei, & Wang, Wen (2005). Forecasting stock composite index by fuzzy support vector machines regression. In International conference on machine learning and cybernetics (pp. 3535–3540). Vol. 6.",
+          "DOI": "10.1109/ICMLC.2005.1527554"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0050",
+          "doi-asserted-by": "crossref",
+          "first-page": "509",
+          "DOI": "10.1126/science.286.5439.509",
+          "article-title": "Emergence of scaling in random networks",
+          "volume": "286",
+          "author": "Barabási",
+          "year": "1999",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0055",
+          "doi-asserted-by": "crossref",
+          "first-page": "211",
+          "DOI": "10.1016/S0378-7206(01)00091-X",
+          "article-title": "Business data mining — A machine learning perspective",
+          "volume": "39",
+          "author": "Bose",
+          "year": "2001",
+          "journal-title": "Information & Management"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0060",
+          "doi-asserted-by": "crossref",
+          "first-page": "99",
+          "DOI": "10.1007/s10489-006-0007-1",
+          "article-title": "Movement prediction from real-world images using a liquid state machine",
+          "volume": "26",
+          "author": "Burgsteiner",
+          "year": "2007",
+          "journal-title": "Applied Intelligence"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0065",
+          "doi-asserted-by": "crossref",
+          "first-page": "76",
+          "DOI": "10.1016/j.neunet.2012.11.011",
+          "article-title": "Reservoir computing and extreme learning machines for non-linear time-series data analysis",
+          "volume": "38",
+          "author": "Butcher",
+          "year": "2013",
+          "journal-title": "Neural Networks"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0070",
+          "doi-asserted-by": "crossref",
+          "first-page": "37",
+          "DOI": "10.46503/NLUF8557",
+          "article-title": "Forecasting stock market trend: A comparison of machine learning algorithms",
+          "volume": "6",
+          "author": "Cervelló-Royo",
+          "year": "2020",
+          "journal-title": "Financ. Mark. Valuat."
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0075",
+          "doi-asserted-by": "crossref",
+          "first-page": "6889",
+          "DOI": "10.1016/j.eswa.2008.08.077",
+          "article-title": "A neural network with a case based dynamic window for stock trading prediction",
+          "volume": "36",
+          "author": "Chang",
+          "year": "2009",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0080",
+          "doi-asserted-by": "crossref",
+          "first-page": "187",
+          "DOI": "10.1016/j.eswa.2017.04.030",
+          "article-title": "Deep learning networks for stock market analysis and prediction: Methodology, data representations, and case studies",
+          "volume": "83",
+          "author": "Chong",
+          "year": "2017",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0085",
+          "first-page": "1",
+          "article-title": "Using deep learning to develop a stock price prediction model based on individual investor emotions",
+          "author": "Chun",
+          "year": "2020",
+          "journal-title": "The Journal of Behavioral Finance"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0090",
+          "doi-asserted-by": "crossref",
+          "first-page": "2204",
+          "DOI": "10.1038/s41467-017-02337-y",
+          "article-title": "Reservoir computing using dynamic memristors for temporal information processing",
+          "volume": "8",
+          "author": "Du",
+          "year": "2017",
+          "journal-title": "Nature Communications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0095",
+          "doi-asserted-by": "crossref",
+          "first-page": "283",
+          "DOI": "10.1177/097265270600500305",
+          "article-title": "Artificial neural network models for forecasting stock price index in the bombay stock exchange",
+          "volume": "5",
+          "author": "Dutta",
+          "year": "2006",
+          "journal-title": "Journal of Emerging Market Finance"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0100",
+          "first-page": "17",
+          "article-title": "On the evolution of random graphs",
+          "volume": "5",
+          "author": "Erdős",
+          "year": "1960",
+          "journal-title": "Publications of the Mathematical Institute of the Hungarian Academy of Sciences"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0105",
+          "doi-asserted-by": "crossref",
+          "first-page": "2903",
+          "DOI": "10.1140/epjst/e2014-02303-y",
+          "article-title": "Multivariate nonlinear time-series estimation using delay-based reservoir computing",
+          "volume": "223",
+          "author": "Escalona-Morán",
+          "year": "2014",
+          "journal-title": "European Physical Journal Special Topics"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0110",
+          "doi-asserted-by": "crossref",
+          "first-page": "75",
+          "DOI": "10.2469/faj.v51.n1.1861",
+          "article-title": "Random walks in stock market prices",
+          "volume": "51",
+          "author": "Fama",
+          "year": "1995",
+          "journal-title": "Financial Analysts Journal"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0115",
+          "series-title": "International conference on hybrid intelligent systems",
+          "first-page": "602",
+          "article-title": "Using reservoir computing for forecasting time series: Brazilian case study",
+          "author": "Ferreira",
+          "year": "2008"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0120",
+          "doi-asserted-by": "crossref",
+          "first-page": "2161",
+          "DOI": "10.3846/tede.2018.6394",
+          "article-title": "Hybrid fuzzy neural network to predict price direction in the german dax-30 index",
+          "volume": "24",
+          "author": "Garcia",
+          "year": "2018",
+          "journal-title": "Technological and Economic Development of Economy"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0125",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.eswa.2020.114444",
+          "article-title": "Forecasting daily stock trend using multi-filter feature selection and deep learning",
+          "volume": "168",
+          "author": "Haq",
+          "year": "2021",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0130",
+          "doi-asserted-by": "crossref",
+          "first-page": "171",
+          "DOI": "10.1016/j.eswa.2006.04.007",
+          "article-title": "A fusion model of hmm, ann and ga for stock market forecasting",
+          "volume": "33",
+          "author": "Hassan",
+          "year": "2007",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0135",
+          "doi-asserted-by": "crossref",
+          "first-page": "1735",
+          "DOI": "10.1162/neco.1997.9.8.1735",
+          "article-title": "Long short-term memory",
+          "volume": "9",
+          "author": "Hochreiter",
+          "year": "1997",
+          "journal-title": "Neural Computation"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0140",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1063/1.5010285",
+          "article-title": "Detection of generalized synchronization using echo state networks",
+          "volume": "28",
+          "author": "Ibáñez-Soria",
+          "year": "2018",
+          "journal-title": "Chaos"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0145",
+          "doi-asserted-by": "crossref",
+          "first-page": "629",
+          "DOI": "10.1080/07408170600897486",
+          "article-title": "Kernel principal component analysis and support vector machines for stock price prediction",
+          "volume": "39",
+          "author": "Ince",
+          "year": "2007",
+          "journal-title": "IIE Transactions"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0150",
+          "first-page": "13",
+          "article-title": "The echo state approach to analysing and training recurrent neural network-with an erratum note",
+          "volume": "148",
+          "author": "Jaeger",
+          "year": "2001",
+          "journal-title": "Ger. Natl. Res. Cent. Inf. Technol. GMD Tech. Rep."
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0155",
+          "doi-asserted-by": "crossref",
+          "first-page": "78",
+          "DOI": "10.1126/science.1091277",
+          "article-title": "Harnessing nonlinearity: Predicting chaotic systems and saving energy in wireless communication",
+          "volume": "304",
+          "author": "Jaeger",
+          "year": "2004",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0160",
+          "doi-asserted-by": "crossref",
+          "first-page": "237",
+          "DOI": "10.1016/j.neucom.2016.11.100",
+          "article-title": "On the application of reservoir computing networks for noisy image recognition",
+          "volume": "277",
+          "author": "Jalalvand",
+          "year": "2018",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0165",
+          "doi-asserted-by": "crossref",
+          "first-page": "255",
+          "DOI": "10.1007/s00521-004-0428-x",
+          "article-title": "Stock market prediction using artificial neural network with optimal feature transformation",
+          "volume": "13",
+          "author": "Kim",
+          "year": "2004",
+          "journal-title": "Neural Computing & Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0170",
+          "doi-asserted-by": "crossref",
+          "first-page": "25",
+          "DOI": "10.1016/j.eswa.2018.03.002",
+          "article-title": "Forecasting the volatility of stock price index: A hybrid model integrating lstm with multiple garch-type models",
+          "volume": "103",
+          "author": "Kim",
+          "year": "2018",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0175",
+          "doi-asserted-by": "crossref",
+          "first-page": "436",
+          "DOI": "10.1038/nature14539",
+          "article-title": "Deep learning",
+          "volume": "521",
+          "author": "LeCun",
+          "year": "2015",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0180",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.eswa.2020.113704",
+          "article-title": "Stock market forecasting with super-high dimensional time-series data using convlstm, trend sampling, and specialized data augmentation",
+          "volume": "161",
+          "author": "Lee",
+          "year": "2020",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0185",
+          "doi-asserted-by": "crossref",
+          "first-page": "1541",
+          "DOI": "10.1016/j.ijforecast.2020.05.001",
+          "article-title": "The role of text-extracted investor sentiment in chinese stock price prediction with the enhancement of deep learning",
+          "volume": "36",
+          "author": "Li",
+          "year": "2020",
+          "journal-title": "International Journal of Forecasting"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0190",
+          "doi-asserted-by": "crossref",
+          "first-page": "7313",
+          "DOI": "10.1016/j.eswa.2008.09.049",
+          "article-title": "Short-term stock price prediction based on echo state networks",
+          "volume": "36",
+          "author": "Lin",
+          "year": "2009",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0195",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.eswa.2019.113082",
+          "article-title": "Dstp-rnn: A dual-stage two-phase attention-based recurrent neural network for long-term and multivariate time series prediction",
+          "volume": "143",
+          "author": "Liu",
+          "year": "2020",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0200",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.asoc.2020.106205",
+          "article-title": "An integrated framework of deep learning and knowledge graph for prediction of stock price trend: An application in chinese stock exchange market",
+          "volume": "91",
+          "author": "Long",
+          "year": "2020",
+          "journal-title": "Applied Soft Computing"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0205",
+          "doi-asserted-by": "crossref",
+          "first-page": "127",
+          "DOI": "10.1016/j.cosrev.2009.03.005",
+          "article-title": "Reservoir computing approaches to recurrent neural network training",
+          "volume": "3",
+          "author": "Lukoševičius",
+          "year": "2009",
+          "journal-title": "Computer Science Review"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0210",
+          "doi-asserted-by": "crossref",
+          "first-page": "365",
+          "DOI": "10.1007/s13218-012-0204-5",
+          "article-title": "Reservoir computing trends",
+          "volume": "26",
+          "author": "Lukoševičius",
+          "year": "2012",
+          "journal-title": "Künstliche Intelligenz"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0215",
+          "doi-asserted-by": "crossref",
+          "first-page": "2531",
+          "DOI": "10.1162/089976602760407955",
+          "article-title": "Real-time computing without stable states: A new framework for neural comput. based on perturbations",
+          "volume": "14",
+          "author": "Maass",
+          "year": "2002",
+          "journal-title": "Neural Computation"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0220",
+          "series-title": "International joint conference on neural networks",
+          "first-page": "1419",
+          "article-title": "Stock market’s price movement prediction with lstm neural network",
+          "author": "Nelson",
+          "year": "2017"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0225",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.eswa.2020.113237",
+          "article-title": "Developing a deep learning framework with two-stage feature selection for multivariate financial time series forecasting",
+          "volume": "148",
+          "author": "Niu",
+          "year": "2020",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0230",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.eswa.2019.112828",
+          "article-title": "Comparing the effectiveness of deep feedforward neural networks and shallow architectures for predicting stock price indices",
+          "volume": "139",
+          "author": "Orimoloye",
+          "year": "2020",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0235",
+          "doi-asserted-by": "crossref",
+          "first-page": "259",
+          "DOI": "10.1016/j.eswa.2014.07.040",
+          "article-title": "Predicting stock and stock price index movement using trend deterministic data preparation and machine learning techniques",
+          "volume": "42",
+          "author": "Patel",
+          "year": "2015",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0240",
+          "doi-asserted-by": "crossref",
+          "first-page": "2162",
+          "DOI": "10.1016/j.eswa.2014.10.031",
+          "article-title": "Predicting stock market index using fusion of machine learning techniques",
+          "volume": "42",
+          "author": "Patel",
+          "year": "2015",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0245",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Pauwels, J., der Sande, G. V., Bouwens, A., Haelterman, M., & Massar, S. (2018). Towards high-performance spatially parallel optical reservoir computing. In M. Sciamanna, & P. Bienstman (Eds.), Neuro-inspired Photonic Comput. (pp. 7 – 12). International Society for Optics and Photonics SPIE. Vol. 10689.",
+          "DOI": "10.1117/12.2306372"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0250",
+          "doi-asserted-by": "crossref",
+          "first-page": "25",
+          "DOI": "10.1007/s10489-006-0001-7",
+          "article-title": "Stock market prediction with multiple classifiers",
+          "volume": "26",
+          "author": "Qian",
+          "year": "2007",
+          "journal-title": "Applied Intelligence"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0255",
+          "series-title": "International joint conference on artificial intelligence",
+          "first-page": "2627",
+          "article-title": "A dual-stage attention-based recurrent neural network for time series prediction",
+          "author": "Qin",
+          "year": "2017"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0260",
+          "doi-asserted-by": "crossref",
+          "first-page": "3234",
+          "DOI": "10.1016/j.eswa.2014.12.003",
+          "article-title": "Recurrent neural network and a hybrid model for prediction of stock returns",
+          "volume": "42",
+          "author": "Rather",
+          "year": "2015",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0265",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Rezaei, H., Faaljou, H., & Mansourfar, G. (2020). Stock price prediction using deep learning and frequency decomposition. Expert Systems With Applications (p. 114332).",
+          "DOI": "10.1016/j.eswa.2020.114332"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0270",
+          "doi-asserted-by": "crossref",
+          "first-page": "519",
+          "DOI": "10.1016/j.neucom.2007.07.018",
+          "article-title": "Soft-computing techniques and arma model for time series prediction",
+          "volume": "71",
+          "author": "Rojas",
+          "year": "2008",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0275",
+          "doi-asserted-by": "crossref",
+          "first-page": "10",
+          "DOI": "10.1016/j.physa.2016.03.006",
+          "article-title": "Investigation of market efficiency and financial stability between s&p 500 and london stock exchange: Monthly and yearly forecasting of time series stock returns using arma model",
+          "volume": "456",
+          "author": "Rounaghi",
+          "year": "2016",
+          "journal-title": "Physica A"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0280",
+          "doi-asserted-by": "crossref",
+          "first-page": "533",
+          "DOI": "10.1038/323533a0",
+          "article-title": "Learning representations by back-propagating errors",
+          "volume": "323",
+          "author": "Rumelhart",
+          "year": "1986",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0285",
+          "series-title": "Eur. symp. artif. neural netw.",
+          "first-page": "471",
+          "article-title": "An overview of reservoir computing: Theory, applications and implementations",
+          "author": "Schrauwen",
+          "year": "2007"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0290",
+          "series-title": "International conference on advances in computing, communications and informatics",
+          "first-page": "1643",
+          "article-title": "Stock price prediction using lstm, rnn and cnn-sliding window model",
+          "author": "Selvin",
+          "year": "2017"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0295",
+          "doi-asserted-by": "crossref",
+          "first-page": "186",
+          "DOI": "10.1016/j.neucom.2011.11.021",
+          "article-title": "Prediction for noisy nonlinear time series by echo state network based on dual estimation",
+          "volume": "82",
+          "author": "Sheng",
+          "year": "2012",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0300",
+          "doi-asserted-by": "crossref",
+          "first-page": "484",
+          "DOI": "10.1038/nature16961",
+          "article-title": "Mastering the game of go with deep neural network and tree search",
+          "volume": "529",
+          "author": "Silver",
+          "year": "2016",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0305",
+          "doi-asserted-by": "crossref",
+          "first-page": "100",
+          "DOI": "10.1016/j.neunet.2019.03.005",
+          "article-title": "Recent advances in physical reservoir computing: A review",
+          "volume": "115",
+          "author": "Tanaka",
+          "year": "2019",
+          "journal-title": "Neural Networks"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0310",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Trafalis, T. B., & Ince, H. (2000). Support vector machine for regression and applications to financial forecasting. In IEEE-INNS-ENNS international joint conference on neural networks. neural computing: New challenges and perspectives for the new millennium (pp. 348–353). Vol. 6.",
+          "DOI": "10.1109/IJCNN.2000.859420"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0315",
+          "doi-asserted-by": "crossref",
+          "first-page": "391",
+          "DOI": "10.1016/j.neunet.2007.04.003",
+          "article-title": "An experimental unification of reservoir computing methods",
+          "volume": "20",
+          "author": "Verstraeten",
+          "year": "2007",
+          "journal-title": "Neural Networks"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0320",
+          "doi-asserted-by": "crossref",
+          "first-page": "440",
+          "DOI": "10.1038/30918",
+          "article-title": "Collective dynamics of ‘small-world’ networks",
+          "volume": "393",
+          "author": "Watts",
+          "year": "1998",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0325",
+          "doi-asserted-by": "crossref",
+          "first-page": "258",
+          "DOI": "10.1016/j.eswa.2018.06.016",
+          "article-title": "Predicting short-term stock prices using ensemble methods and online data sources",
+          "volume": "112",
+          "author": "Weng",
+          "year": "2018",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0330",
+          "doi-asserted-by": "crossref",
+          "first-page": "1958",
+          "DOI": "10.1016/j.neucom.2010.01.016",
+          "article-title": "A comparative study of reservoir computing strategies for monthly time series prediction",
+          "volume": "73",
+          "author": "Wyffels",
+          "year": "2010",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0335",
+          "doi-asserted-by": "crossref",
+          "first-page": "1609",
+          "DOI": "10.1007/s00521-019-04212-x",
+          "article-title": "Stock price prediction based on deep neural networks",
+          "volume": "32",
+          "author": "Yu",
+          "year": "2020",
+          "journal-title": "Neural Computing & Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0340",
+          "doi-asserted-by": "crossref",
+          "first-page": "60",
+          "DOI": "10.1016/j.eswa.2017.12.026",
+          "article-title": "A novel data-driven stock price trend prediction system",
+          "volume": "97",
+          "author": "Zhang",
+          "year": "2018",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0345",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Zhang, L., Aggarwal, C., & Qi, G.-J. (2017). Stock price prediction via discovering multi-frequency trading patterns. In ACM SIGKDD international conference on knowledge discovery and data mining KDD ’17 (pp. 2141–2149).",
+          "DOI": "10.1145/3097983.3098117"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0350",
+          "doi-asserted-by": "crossref",
+          "first-page": "8849",
+          "DOI": "10.1016/j.eswa.2008.11.028",
+          "article-title": "Stock market prediction of s&p 500 via combination of improved bco approach and bp neural network",
+          "volume": "36",
+          "author": "Zhang",
+          "year": "2009",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0355",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.eswa.2020.113609",
+          "article-title": "A novel deep learning framework: Prediction and analysis of financial time series using ceemd and lstm",
+          "volume": "159",
+          "author": "Zhang",
+          "year": "2020",
+          "journal-title": "Expert Systems With Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115022_b0360",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Zhou, F., min Zhou, H., Yang, Z., & Yang, L. (2019). Emd2fnn: A strategy combining empirical mode decomposition and factorization machine based neural network for stock market trend prediction. Expert Systems With Applications, 115, 136–151.",
+          "DOI": "10.1016/j.eswa.2018.07.065"
+        }
+      ],
+      "container-title": [
+        "Expert Systems with Applications"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0957417421004632?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0957417421004632?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            17
+          ]
+        ],
+        "date-time": "2025-10-17T05:14:49Z",
+        "timestamp": 1760678089000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0957417421004632"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            9
+          ]
+        ]
+      },
+      "references-count": 72,
+      "alternative-id": [
+        "S0957417421004632"
+      ],
+      "URL": "https://doi.org/10.1016/j.eswa.2021.115022",
+      "relation": {},
+      "ISSN": [
+        "0957-4174"
+      ],
+      "issn-type": [
+        {
+          "value": "0957-4174",
+          "type": "print"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "Stock market index prediction based on reservoir computing models",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "Expert Systems with Applications",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "https://doi.org/10.1016/j.eswa.2021.115022",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "© 2021 Elsevier Ltd. All rights reserved.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ],
+      "article-number": "115022"
+    }
+  }
+}

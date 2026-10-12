@@ -1,0 +1,466 @@
+{
+  "url": "https://api.crossref.org/works/10.3390%2Fjrfm15100461",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            2
+          ]
+        ],
+        "date-time": "2025-11-02T08:24:29Z",
+        "timestamp": 1762071869251,
+        "version": "build-2065373602"
+      },
+      "reference-count": 34,
+      "publisher": "MDPI AG",
+      "issue": "10",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                13
+              ]
+            ],
+            "date-time": "2022-10-13T00:00:00Z",
+            "timestamp": 1665619200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "JRFM"
+      ],
+      "abstract": "<jats:p>The financial market is a complex system with chaotic behavior that can lead to wild swings within the financial system. This can drive the system into a variety of interesting phenomenon such as phase transitions, bubbles, and crashes, and so on. Of interest in financial modelling is identifying the distribution and the stylized facts of a particular time series, as the distribution and stylized facts can determine if volatility is present, resulting in financial risk and contagion. Regression modelling has been used within this study as a methodology to identify the goodness-of-fit between the original and generated time series model, which serves as a criterion for model selection. Different time series modelling methods that include the common Box–Jenkins ARIMA, ARMA-GARCH type methods, the Geometric Brownian Motion type models and Tsallis entropy based models when data size permits, can use this methodology in model selection. Determining the time series distribution and stylized facts has utility, as the distribution allows for further modelling opportunities such as bivariate regression and copula modelling, apart from the usual forecasting. Determining the distribution and stylized facts also allows for the identification of the parameters that are used within a Geometric Brownian Motion forecasting model. This study has used the Carbon Emissions Futures price between the dates of 1 May 2012 and 1 May 2022, to highlight this application of regression modelling.</jats:p>",
+      "DOI": "10.3390/jrfm15100461",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            13
+          ]
+        ],
+        "date-time": "2022-10-13T22:21:11Z",
+        "timestamp": 1665699671000
+      },
+      "page": "461",
+      "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 3,
+      "title": [
+        "On Financial Distributions Modelling Methods: Application on Regression Models for Time Series"
+      ],
+      "prefix": "10.3390",
+      "volume": "15",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9282-6122",
+          "authenticated-orcid": false,
+          "given": "Paul R.",
+          "family": "Dewick",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Faculty of Science and Technology, University of Canberra, Canberra 2617, Australia"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "1968",
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            13
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "ref_1",
+          "first-page": "3029",
+          "article-title": "Using apgarch/avgarch models Gaussian and non-Gaussian for modeling volatility exchange rate",
+          "volume": "13",
+          "author": "Abdulla",
+          "year": "2022",
+          "journal-title": "International Journal of Nonlinear Analysis and Applications"
+        },
+        {
+          "key": "ref_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "e0239652",
+          "DOI": "10.1371/journal.pone.0239652",
+          "article-title": "Compound distributions for financial returns",
+          "volume": "15",
+          "author": "Afuecheta",
+          "year": "2020",
+          "journal-title": "PLoS ONE"
+        },
+        {
+          "key": "ref_3",
+          "first-page": "012047",
+          "article-title": "Stock price prediction using geometric Brownian motion",
+          "volume": "974",
+          "author": "Agustini",
+          "year": "2018",
+          "journal-title": "Journal of Physics: Conference Series"
+        },
+        {
+          "key": "ref_4",
+          "unstructured": "Bentes, Sónia R., Menezes, Rui, and Mendes, Diana A. (2008). Stock market volatility: An approach based on Tsallis entropy. arXiv."
+        },
+        {
+          "key": "ref_5",
+          "doi-asserted-by": "crossref",
+          "first-page": "307",
+          "DOI": "10.1016/0304-4076(86)90063-1",
+          "article-title": "Generalized autoregressive conditional heteroskedasticity",
+          "volume": "31",
+          "author": "Bollerslev",
+          "year": "1986",
+          "journal-title": "Journal of Econometrics"
+        },
+        {
+          "key": "ref_6",
+          "doi-asserted-by": "crossref",
+          "first-page": "3345",
+          "DOI": "10.1080/00036846.2019.1578853",
+          "article-title": "Asymmetry and leverage in GARCH models: A news impact curve perspective",
+          "volume": "51",
+          "author": "Caporin",
+          "year": "2019",
+          "journal-title": "Applied Economics"
+        },
+        {
+          "key": "ref_7",
+          "doi-asserted-by": "crossref",
+          "first-page": "179",
+          "DOI": "10.1016/j.inteco.2018.11.001",
+          "article-title": "The accuracy of asymmetric GARCH model estimation",
+          "volume": "157",
+          "author": "Charles",
+          "year": "2019",
+          "journal-title": "International Economics"
+        },
+        {
+          "key": "ref_8",
+          "unstructured": "Charpentire, Arthur (2014). Computational Actuarial Science with R, CRC Press."
+        },
+        {
+          "key": "ref_9",
+          "doi-asserted-by": "crossref",
+          "first-page": "44",
+          "DOI": "10.1016/j.physa.2015.04.032",
+          "article-title": "Alternative way to characterize a q-Gaussian distribution by a robust heavy tail measurement",
+          "volume": "435",
+          "author": "Nascimento",
+          "year": "2015",
+          "journal-title": "Physica A: Statistical Mechanics and Its Applications"
+        },
+        {
+          "key": "ref_10",
+          "unstructured": "de Santa Helena, Emerson Luis, and de Lima, Wagner Santos (2022, April 24). Package ‘qGaussian’. R Package Version 0.1.8. Available online: https://CRAN.R-project.org/package=qGaussian."
+        },
+        {
+          "key": "ref_11",
+          "doi-asserted-by": "crossref",
+          "first-page": "126109",
+          "DOI": "10.1016/j.physa.2021.126109",
+          "article-title": "Asymmetric Tsallis distributions for modeling financial market dynamics",
+          "volume": "578",
+          "author": "Devi",
+          "year": "2021",
+          "journal-title": "Physica A: Statistical Mechanics and Its Applications"
+        },
+        {
+          "key": "ref_12",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Dewick, Paul R., and Shuangzhe, Liu (2022). Copula modelling to analyse financial data. Journal of Risk and Financial Management, 15.",
+          "DOI": "10.3390/jrfm15030104"
+        },
+        {
+          "key": "ref_13",
+          "unstructured": "Ermogenous, Angeliki (2022, May 12). Brownian Motion and Its Applications in the Stock Market. Available online: https://ecommons.udayton.edu/cgi/viewcontent.cgi?article=1010&context=mth_epumd."
+        },
+        {
+          "key": "ref_14",
+          "doi-asserted-by": "crossref",
+          "first-page": "3943",
+          "DOI": "10.1080/03610918.2020.1727518",
+          "article-title": "Selecting from among 12 alternative distributions of financial data",
+          "volume": "51",
+          "author": "Fukuda",
+          "year": "2021",
+          "journal-title": "Communications in Statistics-Simulation and Computation"
+        },
+        {
+          "key": "ref_15",
+          "doi-asserted-by": "crossref",
+          "first-page": "012023",
+          "DOI": "10.1088/1757-899X/548/1/012023",
+          "article-title": "Modeling and forecasting of volatility using arma-garch: Case study on malaysia natural rubber prices",
+          "volume": "548",
+          "author": "Ghani",
+          "year": "2019",
+          "journal-title": "IOP Conference Series: Materials Science and Engineering"
+        },
+        {
+          "key": "ref_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "137",
+          "DOI": "10.1080/02664763.2016.1165803",
+          "article-title": "A robust statistical approach to select adequate error distributions for financial returns",
+          "volume": "44",
+          "author": "Hambuckers",
+          "year": "2017",
+          "journal-title": "Journal of Applied Statistics"
+        },
+        {
+          "key": "ref_17",
+          "first-page": "1047",
+          "article-title": "Empirical Realities for Minimal Description Risky Asset Model. The Need for Fractal Features",
+          "volume": "38",
+          "author": "Heyde",
+          "year": "2001",
+          "journal-title": "Journal of the Korean Mathematical Society"
+        },
+        {
+          "key": "ref_18",
+          "first-page": "29",
+          "article-title": "Fractal scaling and Black-Scholes [A new view of long-range dependence in stock prices]",
+          "volume": "1",
+          "author": "Heyde",
+          "year": "2001",
+          "journal-title": "JASSA"
+        },
+        {
+          "key": "ref_19",
+          "doi-asserted-by": "crossref",
+          "first-page": "948",
+          "DOI": "10.1080/1331677X.2020.1805636",
+          "article-title": "An analytical approximation of option prices via TGARCH model",
+          "volume": "34",
+          "author": "Hongwiengjan",
+          "year": "2021",
+          "journal-title": "Economic Research-Ekonomska Istraživanja"
+        },
+        {
+          "key": "ref_20",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Islam, Mohammad Rafiqul, and Nguyen, Nguyet (2021). Comparison of Financial Models for Stock Price Prediction. Joint Mathematics Meetings (JMM), 13.",
+          "DOI": "10.3390/jrfm13080181"
+        },
+        {
+          "key": "ref_21",
+          "doi-asserted-by": "crossref",
+          "first-page": "2130006",
+          "DOI": "10.1142/S021830132130006X",
+          "article-title": "Perspective on Tsallis statistics for nuclear and particle physics",
+          "volume": "30",
+          "author": "Kapusta",
+          "year": "2021",
+          "journal-title": "International Journal of Modern Physics E"
+        },
+        {
+          "key": "ref_22",
+          "first-page": "4599",
+          "article-title": "Modeling and Forecasting Volatility of Financial Data using Geometric Brownian Motion",
+          "volume": "4",
+          "author": "Khamis",
+          "year": "2017",
+          "journal-title": "International Journal of Advanced Research in Science, Engineering and Technology"
+        },
+        {
+          "key": "ref_23",
+          "doi-asserted-by": "crossref",
+          "first-page": "478",
+          "DOI": "10.1016/S2212-5671(13)00056-7",
+          "article-title": "Comparing the performances of GARCH-type models in capturing the stock market volatility in Malaysia",
+          "volume": "5",
+          "author": "Lim",
+          "year": "2013",
+          "journal-title": "Procedia Economics and Finance"
+        },
+        {
+          "key": "ref_24",
+          "doi-asserted-by": "crossref",
+          "first-page": "455",
+          "DOI": "10.1007/s00362-006-0026-3",
+          "article-title": "On estimation in conditional heteroskedastic time series models under non-normal distributions",
+          "volume": "49",
+          "author": "Liu",
+          "year": "2008",
+          "journal-title": "Statistical Papers"
+        },
+        {
+          "key": "ref_25",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Liu, Timina, Liu, Shuangzhe, and Shi, Lei (2020). Time Series Analysis Using SAS Enterprise Guide, Springer Nature.",
+          "DOI": "10.1007/978-981-15-0321-4"
+        },
+        {
+          "key": "ref_26",
+          "unstructured": "Oliveira, Gustavo H. F. M., Cavalcante, Rodolfo C., Cabral, George G., Minku, Leandro L., and Oliveira, Adriano L. I. (, January November). Time series forecasting in the presence of concept drift: A pso-based approach. Paper presented at the 2017 IEEE 29th International Conference on Tools with Artificial Intelligence ICTAI), Boston, MA, USA."
+        },
+        {
+          "key": "ref_27",
+          "doi-asserted-by": "crossref",
+          "first-page": "58",
+          "DOI": "10.1016/j.physa.2013.08.026",
+          "article-title": "Universality of non-extensive Tsallis statistics and time series analysis: Theory and applications",
+          "volume": "395",
+          "author": "Pavlos",
+          "year": "2014",
+          "journal-title": "Physica A: Statistical Mechanics and Its Applications"
+        },
+        {
+          "key": "ref_28",
+          "first-page": "012008",
+          "article-title": "q-Gaussian distributions and multiplicative stochastic processes for analysis of multiple financial time series",
+          "volume": "201",
+          "author": "Sato",
+          "year": "2010",
+          "journal-title": "Journal of Physics: Conference Series"
+        },
+        {
+          "key": "ref_29",
+          "unstructured": "Shalizi, Cosma, and Dutang, Christophe (2020, May 15). tsallisqexp: Tsallis Distribution. R Package Version 0.9-4. Available online: https://CRAN.R-project.org/package=tsallisqexp."
+        },
+        {
+          "key": "ref_30",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Sheraz, Muhammad, and Nasir, Imran (2021). Information-Theoretic Measures and Modeling Stock Market Volatility: A Comparative Approach. Risks, 9.",
+          "DOI": "10.3390/risks9050089"
+        },
+        {
+          "key": "ref_31",
+          "doi-asserted-by": "crossref",
+          "first-page": "107",
+          "DOI": "10.3905/jpm.2011.37.2.107",
+          "article-title": "Fat-tailed models for risk estimation",
+          "volume": "37",
+          "author": "Stoyanov",
+          "year": "2011",
+          "journal-title": "The Journal of Portfolio Management"
+        },
+        {
+          "key": "ref_32",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Teräsvirta, Timo (2009). An introduction to univariate GARCH models. Handbook of Financial Time Series, Springer.",
+          "DOI": "10.1007/978-3-540-71297-8_1"
+        },
+        {
+          "key": "ref_33",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Tsallis, Constantino (2017). Economics and Finance: q-Statistical stylized features galore. Entropy, 19.",
+          "DOI": "10.3390/e19090457"
+        },
+        {
+          "key": "ref_34",
+          "unstructured": "Wheelwright, Steven, Makridakis, Spyros, and Hyndman, Rob J. (1998). Forecasting: Methods and Applications, John Wiley & Sons."
+        }
+      ],
+      "container-title": [
+        "Journal of Risk and Financial Management"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.mdpi.com/1911-8074/15/10/461/pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            11
+          ]
+        ],
+        "date-time": "2025-10-11T00:53:41Z",
+        "timestamp": 1760144021000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.mdpi.com/1911-8074/15/10/461"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            13
+          ]
+        ]
+      },
+      "references-count": 34,
+      "journal-issue": {
+        "issue": "10",
+        "published-online": {
+          "date-parts": [
+            [
+              2022,
+              10
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "jrfm15100461"
+      ],
+      "URL": "https://doi.org/10.3390/jrfm15100461",
+      "relation": {},
+      "ISSN": [
+        "1911-8074"
+      ],
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "1911-8074"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            13
+          ]
+        ]
+      }
+    }
+  }
+}

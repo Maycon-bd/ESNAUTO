@@ -1,0 +1,723 @@
+{
+  "url": "https://api.crossref.org/works/10.1007%2Fs44196-025-00906-4",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            11
+          ]
+        ],
+        "date-time": "2025-09-11T19:27:54Z",
+        "timestamp": 1757618874034,
+        "version": "3.44.0"
+      },
+      "reference-count": 44,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                15
+              ]
+            ],
+            "date-time": "2025-07-15T00:00:00Z",
+            "timestamp": 1752537600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                15
+              ]
+            ],
+            "date-time": "2025-07-15T00:00:00Z",
+            "timestamp": 1752537600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Int J Comput Intell Syst"
+      ],
+      "DOI": "10.1007/s44196-025-00906-4",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            15
+          ]
+        ],
+        "date-time": "2025-07-15T06:08:17Z",
+        "timestamp": 1752559697000
+      },
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing"
+      ],
+      "prefix": "10.1007",
+      "volume": "18",
+      "author": [
+        {
+          "given": "Fang",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ting",
+          "family": "Bu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Yuping",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            15
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "906_CR1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Lo, A.W.: What is an index? Available at SSRN 2672755 (2015)",
+          "DOI": "10.2139/ssrn.2672755"
+        },
+        {
+          "key": "906_CR2",
+          "unstructured": "Shen, S., Jiang, H., Zhang, T.: Stock market forecasting using machine learning algorithms. Department of Electrical Engineering, Stanford University, Stanford, CA, 1–5 (2012)"
+        },
+        {
+          "key": "906_CR3",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Leung, C.K.-S., MacKinnon, R.K., Wang, Y.: A machine learning approach for stock price prediction. In: Proceedings of the 18th International Database Engineering & Applications Symposium, pp. 274–277 (2014)",
+          "DOI": "10.1145/2628194.2628211"
+        },
+        {
+          "key": "906_CR4",
+          "doi-asserted-by": "publisher",
+          "first-page": "226",
+          "DOI": "10.1016/j.eswa.2019.01.012",
+          "volume": "124",
+          "author": "BM Henrique",
+          "year": "2019",
+          "unstructured": "Henrique, B.M., Sobreiro, V.A., Kimura, H.: Literature review: Machine learning techniques applied to financial market prediction. Expert Syst. Appl. 124, 226–251 (2019)",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "906_CR5",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.eswa.2021.115537",
+          "volume": "184",
+          "author": "W Jiang",
+          "year": "2021",
+          "unstructured": "Jiang, W.: Applications of deep learning in stock market prediction: recent progress. Expert Syst. Appl. 184, 115537 (2021)",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "906_CR6",
+          "doi-asserted-by": "publisher",
+          "first-page": "599",
+          "DOI": "10.1016/j.procs.2020.03.326",
+          "volume": "167",
+          "author": "M Vijh",
+          "year": "2020",
+          "unstructured": "Vijh, M., Chandola, D., Tikkiwal, V.A., Kumar, A.: Stock closing price prediction using machine learning techniques. Procedia computer science 167, 599–606 (2020)",
+          "journal-title": "Procedia computer science"
+        },
+        {
+          "key": "906_CR7",
+          "doi-asserted-by": "publisher",
+          "first-page": "18569",
+          "DOI": "10.1007/s11042-016-4159-7",
+          "volume": "76",
+          "author": "R Singh",
+          "year": "2017",
+          "unstructured": "Singh, R., Srivastava, S.: Stock prediction using deep learning. Multimedia Tools and Applications 76, 18569–18584 (2017)",
+          "journal-title": "Multimedia Tools and Applications"
+        },
+        {
+          "issue": "4",
+          "key": "906_CR8",
+          "doi-asserted-by": "publisher",
+          "first-page": "164",
+          "DOI": "10.1002/isaf.1459",
+          "volume": "26",
+          "author": "M Nikou",
+          "year": "2019",
+          "unstructured": "Nikou, M., Mansourfar, G., Bagherzadeh, J.: Stock price prediction using deep learning algorithm and its comparison with machine learning algorithms. Intelligent Systems in Accounting, Finance and Management 26(4), 164–174 (2019)",
+          "journal-title": "Intelligent Systems in Accounting, Finance and Management"
+        },
+        {
+          "key": "906_CR9",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.eswa.2022.116659",
+          "volume": "197",
+          "author": "MM Kumbure",
+          "year": "2022",
+          "unstructured": "Kumbure, M.M., Lohrmann, C., Luukka, P., Porras, J.: Machine learning techniques and data for stock market forecasting: A literature review. Expert Syst. Appl. 197, 116659 (2022)",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "906_CR10",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Nelson, D.M., Pereira, A.C., De Oliveira, R.A.: Stock market’s price movement prediction with lstm neural networks. In: 2017 International Joint Conference on Neural Networks (IJCNN), pp. 1419–1426 (2017). Ieee",
+          "DOI": "10.1109/IJCNN.2017.7966019"
+        },
+        {
+          "key": "906_CR11",
+          "doi-asserted-by": "publisher",
+          "first-page": "1168",
+          "DOI": "10.1016/j.procs.2020.03.049",
+          "volume": "170",
+          "author": "A Moghar",
+          "year": "2020",
+          "unstructured": "Moghar, A., Hamiche, M.: Stock market prediction using lstm recurrent neural network. Procedia computer science 170, 1168–1173 (2020)",
+          "journal-title": "Procedia computer science"
+        },
+        {
+          "key": "906_CR12",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Wang, Y., Liu, Y., Wang, M., Liu, R.: Lstm model optimization on stock price forecasting. In: 2018 17th International Symposium on Distributed Computing and Applications for Business Engineering and Science (dcabes), pp. 173–177 (2018). IEEE",
+          "DOI": "10.1109/DCABES.2018.00052"
+        },
+        {
+          "key": "906_CR13",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Mehtab, S., Sen, J., Dutta, A.: Stock price prediction using machine learning and lstm-based deep learning models. In: Machine Learning and Metaheuristics Algorithms, and Applications: Second Symposium, SoMMA 2020, Chennai, India, October 14–17, 2020, Revised Selected Papers 2, pp. 88–106 (2021). Springer",
+          "DOI": "10.1007/978-981-16-0419-5_8"
+        },
+        {
+          "key": "906_CR14",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.frl.2021.102280",
+          "volume": "46",
+          "author": "P Ghosh",
+          "year": "2022",
+          "unstructured": "Ghosh, P., Neufeld, A., Sahoo, J.K.: Forecasting directional movements of stock prices for intraday trading using lstm and random forests. Financ. Res. Lett. 46, 102280 (2022)",
+          "journal-title": "Financ. Res. Lett."
+        },
+        {
+          "key": "906_CR15",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Sunny, M.A.I., Maswood, M.M.S., Alharbi, A.G.: Deep learning-based stock price prediction using lstm and bi-directional lstm model. In: 2020 2nd Novel Intelligent and Leading Emerging Sciences Conference (NILES), pp. 87–92 (2020). IEEE",
+          "DOI": "10.1109/NILES50944.2020.9257950"
+        },
+        {
+          "key": "906_CR16",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Selvin, S., Vinayakumar, R., Gopalakrishnan, E., Menon, V.K., Soman, K.: Stock price prediction using lstm, rnn and cnn-sliding window model. In: 2017 International Conference on Advances in Computing, Communications and Informatics (icacci), pp. 1643–1647 (2017). IEEE",
+          "DOI": "10.1109/ICACCI.2017.8126078"
+        },
+        {
+          "issue": "1",
+          "key": "906_CR17",
+          "doi-asserted-by": "publisher",
+          "first-page": "42",
+          "DOI": "10.1016/j.jfds.2016.03.002",
+          "volume": "2",
+          "author": "R Dash",
+          "year": "2016",
+          "unstructured": "Dash, R., Dash, P.K.: A hybrid stock trading framework integrating technical analysis with machine learning techniques. The Journal of Finance and Data Science 2(1), 42–57 (2016)",
+          "journal-title": "The Journal of Finance and Data Science"
+        },
+        {
+          "key": "906_CR18",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Steil, J.J.: Backpropagation-decorrelation: online recurrent learning with o (n) complexity. In: 2004 IEEE International Joint Conference on Neural Networks (IEEE Cat. No. 04CH37541), vol. 2, pp. 843–848 (2004). IEEE",
+          "DOI": "10.1109/IJCNN.2004.1380039"
+        },
+        {
+          "issue": "11",
+          "key": "906_CR19",
+          "doi-asserted-by": "publisher",
+          "first-page": "2531",
+          "DOI": "10.1162/089976602760407955",
+          "volume": "14",
+          "author": "W Maass",
+          "year": "2002",
+          "unstructured": "Maass, W., Natschläger, T., Markram, H.: Real-time computing without stable states: A new framework for neural computation based on perturbations. Neural Comput. 14(11), 2531–2560 (2002)",
+          "journal-title": "Neural Comput."
+        },
+        {
+          "issue": "34",
+          "key": "906_CR20",
+          "first-page": "13",
+          "volume": "148",
+          "author": "H Jaeger",
+          "year": "2001",
+          "unstructured": "Jaeger, H.: The “echo state’’ approach to analysing and training recurrent neural networks-with an erratum note. Bonn, Germany: German national research center for information technology gmd technical report 148(34), 13 (2001)",
+          "journal-title": "Bonn, Germany: German national research center for information technology gmd technical report"
+        },
+        {
+          "issue": "15",
+          "key": "906_CR21",
+          "doi-asserted-by": "publisher",
+          "first-page": "3784",
+          "DOI": "10.1364/OL.464288",
+          "volume": "47",
+          "author": "T Bu",
+          "year": "2022",
+          "unstructured": "Bu, T., Zhang, H., Kumar, S., Jin, M., Kumar, P., Huang, Y.: Efficient optical reservoir computing for parallel data processing. Opt. Lett. 47(15), 3784–3787 (2022)",
+          "journal-title": "Opt. Lett."
+        },
+        {
+          "issue": "3",
+          "key": "906_CR22",
+          "doi-asserted-by": "publisher",
+          "first-page": "1086",
+          "DOI": "10.1364/OSAC.417996",
+          "volume": "4",
+          "author": "P Kumar",
+          "year": "2021",
+          "unstructured": "Kumar, P., Jin, M., Bu, T., Kumar, S., Huang, Y.-P.: Efficient reservoir computing using field programmable gate array and electro-optic modulation. OSA Continuum 4(3), 1086–1098 (2021)",
+          "journal-title": "OSA Continuum"
+        },
+        {
+          "issue": "4",
+          "key": "906_CR23",
+          "volume": "10",
+          "author": "M Rafayelyan",
+          "year": "2020",
+          "unstructured": "Rafayelyan, M., Dong, J., Tan, Y., Krzakala, F., Gigan, S.: Large-scale optical reservoir computing for spatiotemporal chaotic systems prediction. Phys. Rev. X 10(4), 041037 (2020)",
+          "journal-title": "Phys. Rev. X"
+        },
+        {
+          "key": "906_CR24",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Schrauwen, B., Verstraeten, D., Van Campenhout, J.: An overview of reservoir computing: theory, applications and implementations. In: Proceedings of the 15th European Symposium on Artificial Neural Networks. P. 471-482 2007, pp. 471–482 (2007)",
+          "DOI": "10.1007/978-3-540-74690-4_48"
+        },
+        {
+          "key": "906_CR25",
+          "doi-asserted-by": "publisher",
+          "first-page": "100",
+          "DOI": "10.1016/j.neunet.2019.03.005",
+          "volume": "115",
+          "author": "G Tanaka",
+          "year": "2019",
+          "unstructured": "Tanaka, G., Yamane, T., Héroux, J.B., Nakane, R., Kanazawa, N., Takeda, S., Numata, H., Nakano, D., Hirose, A.: Recent advances in physical reservoir computing: A review. Neural Netw. 115, 100–123 (2019)",
+          "journal-title": "Neural Netw."
+        },
+        {
+          "issue": "20",
+          "key": "906_CR26",
+          "doi-asserted-by": "publisher",
+          "first-page": "22783",
+          "DOI": "10.1364/OE.20.022783",
+          "volume": "20",
+          "author": "F Duport",
+          "year": "2012",
+          "unstructured": "Duport, F., Schneider, B., Smerieri, A., Haelterman, M., Massar, S.: All-optical reservoir computing. Opt. Express 20(20), 22783–22795 (2012)",
+          "journal-title": "Opt. Express"
+        },
+        {
+          "issue": "3",
+          "key": "906_CR27",
+          "first-page": "561",
+          "volume": "6",
+          "author": "G Sande",
+          "year": "2017",
+          "unstructured": "Sande, G., Brunner, D., Soriano, M.C.: Advances in photonic reservoir computing. Nanophotonics 6(3), 561–576 (2017)",
+          "journal-title": "Advances in photonic reservoir computing. Nanophotonics"
+        },
+        {
+          "issue": "1",
+          "key": "906_CR28",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.1109/JSTQE.2019.2936281",
+          "volume": "26",
+          "author": "J Dong",
+          "year": "2019",
+          "unstructured": "Dong, J., Rafayelyan, M., Krzakala, F., Gigan, S.: Optical reservoir computing using multiple light scattering for chaotic systems prediction. IEEE J. Sel. Top. Quantum Electron. 26(1), 1–12 (2019)",
+          "journal-title": "IEEE J. Sel. Top. Quantum Electron."
+        },
+        {
+          "issue": "8",
+          "key": "906_CR29",
+          "doi-asserted-by": "publisher",
+          "first-page": "1848",
+          "DOI": "10.1364/OL.420388",
+          "volume": "46",
+          "author": "S Kumar",
+          "year": "2021",
+          "unstructured": "Kumar, S., Bu, T., Zhang, H., Huang, I., Huang, Y.: Robust and efficient single-pixel image classification with nonlinear optics. Opt. Lett. 46(8), 1848–1851 (2021)",
+          "journal-title": "Opt. Lett."
+        },
+        {
+          "key": "906_CR30",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.mlwa.2022.100320",
+          "volume": "9",
+          "author": "HN Bhandari",
+          "year": "2022",
+          "unstructured": "Bhandari, H.N., Rimal, B., Pokhrel, N.R., Rimal, R., Dahal, K.R., Khatri, R.K.: Predicting stock market index using lstm. Machine Learning with Applications 9, 100320 (2022)",
+          "journal-title": "Machine Learning with Applications"
+        },
+        {
+          "key": "906_CR31",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.chaos.2020.110045",
+          "volume": "139",
+          "author": "M Sangiorgio",
+          "year": "2020",
+          "unstructured": "Sangiorgio, M., Dercole, F.: Robustness of lstm neural networks for multi-step forecasting of chaotic time series. Chaos, Solitons & Fractals 139, 110045 (2020)",
+          "journal-title": "Chaos, Solitons & Fractals"
+        },
+        {
+          "issue": "4",
+          "key": "906_CR32",
+          "doi-asserted-by": "publisher",
+          "first-page": "996",
+          "DOI": "10.1016/j.ijforecast.2014.03.016",
+          "volume": "30",
+          "author": "J Li",
+          "year": "2014",
+          "unstructured": "Li, J., Chen, W.: Forecasting macroeconomic time series: Lasso-based approaches and their forecast combinations with dynamic factor models. Int. J. Forecast. 30(4), 996–1015 (2014)",
+          "journal-title": "Int. J. Forecast."
+        },
+        {
+          "key": "906_CR33",
+          "doi-asserted-by": "publisher",
+          "first-page": "552",
+          "DOI": "10.1016/j.najef.2018.06.013",
+          "volume": "47",
+          "author": "S Basak",
+          "year": "2019",
+          "unstructured": "Basak, S., Kar, S., Saha, S., Khaidem, L., Dey, S.R.: Predicting the direction of stock market prices using tree-based classifiers. The North American Journal of Economics and Finance 47, 552–567 (2019)",
+          "journal-title": "The North American Journal of Economics and Finance"
+        },
+        {
+          "key": "906_CR34",
+          "doi-asserted-by": "publisher",
+          "first-page": "25",
+          "DOI": "10.1007/s10489-006-0001-7",
+          "volume": "26",
+          "author": "B Qian",
+          "year": "2007",
+          "unstructured": "Qian, B., Rasheed, K.: Stock market prediction with multiple classifiers. Appl. Intell. 26, 25–33 (2007)",
+          "journal-title": "Appl. Intell."
+        },
+        {
+          "issue": "8",
+          "key": "906_CR35",
+          "doi-asserted-by": "publisher",
+          "first-page": "1735",
+          "DOI": "10.1162/neco.1997.9.8.1735",
+          "volume": "9",
+          "author": "S Hochreiter",
+          "year": "1997",
+          "unstructured": "Hochreiter, S., Schmidhuber, J.: Long short-term memory. Neural Comput. 9(8), 1735–1780 (1997)",
+          "journal-title": "Neural Comput."
+        },
+        {
+          "issue": "12",
+          "key": "906_CR36",
+          "first-page": "2346",
+          "volume": "31",
+          "author": "J Lu",
+          "year": "2018",
+          "unstructured": "Lu, J., Liu, A., Dong, F., Gu, F., Gama, J., Zhang, G.: Learning under concept drift: A review. IEEE Trans. Knowl. Data Eng. 31(12), 2346–2363 (2018)",
+          "journal-title": "IEEE Trans. Knowl. Data Eng."
+        },
+        {
+          "issue": "4",
+          "key": "906_CR37",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.1145/2523813",
+          "volume": "46",
+          "author": "J Gama",
+          "year": "2014",
+          "unstructured": "Gama, J., Žliobaitė, I., Bifet, A., Pechenizkiy, M., Bouchachia, A.: A survey on concept drift adaptation. ACM computing surveys (CSUR) 46(4), 1–37 (2014)",
+          "journal-title": "ACM computing surveys (CSUR)"
+        },
+        {
+          "issue": "4",
+          "key": "906_CR38",
+          "doi-asserted-by": "publisher",
+          "first-page": "786",
+          "DOI": "10.1111/j.1467-6419.2007.00519.x",
+          "volume": "21",
+          "author": "C-H Park",
+          "year": "2007",
+          "unstructured": "Park, C.-H., Irwin, S.H.: What do we know about the profitability of technical analysis? Journal of Economic surveys 21(4), 786–826 (2007)",
+          "journal-title": "Journal of Economic surveys"
+        },
+        {
+          "issue": "4",
+          "key": "906_CR39",
+          "doi-asserted-by": "publisher",
+          "first-page": "1705",
+          "DOI": "10.1111/0022-1082.00265",
+          "volume": "55",
+          "author": "AW Lo",
+          "year": "2000",
+          "unstructured": "Lo, A.W., Mamaysky, H., Wang, J.: Foundations of technical analysis: Computational algorithms, statistical inference, and empirical implementation. J. Financ. 55(4), 1705–1765 (2000)",
+          "journal-title": "J. Financ."
+        },
+        {
+          "issue": "4",
+          "key": "906_CR40",
+          "doi-asserted-by": "publisher",
+          "first-page": "3007",
+          "DOI": "10.1007/s10462-019-09754-z",
+          "volume": "53",
+          "author": "IK Nti",
+          "year": "2020",
+          "unstructured": "Nti, I.K., Adekoya, A.F., Weyori, B.A.: A systematic review of fundamental and technical analysis of stock market predictions. Artif. Intell. Rev. 53(4), 3007–3057 (2020)",
+          "journal-title": "Artif. Intell. Rev."
+        },
+        {
+          "issue": "3",
+          "key": "906_CR41",
+          "doi-asserted-by": "publisher",
+          "first-page": "1087",
+          "DOI": "10.1111/j.1540-6261.1997.tb02726.x",
+          "volume": "52",
+          "author": "J Dow",
+          "year": "1997",
+          "unstructured": "Dow, J., Gorton, G.: Stock market efficiency and economic efficiency: Is there a connection? J. Financ. 52(3), 1087–1129 (1997)",
+          "journal-title": "J. Financ."
+        },
+        {
+          "key": "906_CR42",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Chen, N.-F., Roll, R., Ross, S.A.: Economic forces and the stock market. Journal of business, 383–403 (1986)",
+          "DOI": "10.1086/296344"
+        },
+        {
+          "issue": "2",
+          "key": "906_CR43",
+          "doi-asserted-by": "publisher",
+          "first-page": "157",
+          "DOI": "10.2307/2534506",
+          "volume": "1990",
+          "author": "R Morck",
+          "year": "1990",
+          "unstructured": "Morck, R., Shleifer, A., Vishny, R.W., Shapiro, M., Poterba, J.M.: The stock market and investment: is the market a sideshow? Brook. Pap. Econ. Act. 1990(2), 157–215 (1990)",
+          "journal-title": "Brook. Pap. Econ. Act."
+        },
+        {
+          "issue": "3",
+          "key": "906_CR44",
+          "doi-asserted-by": "publisher",
+          "first-page": "776",
+          "DOI": "10.1162/REST_a_00300",
+          "volume": "95",
+          "author": "RF Engle",
+          "year": "2013",
+          "unstructured": "Engle, R.F., Ghysels, E., Sohn, B.: Stock market volatility and macroeconomic fundamentals. Rev. Econ. Stat. 95(3), 776–797 (2013)",
+          "journal-title": "Rev. Econ. Stat."
+        }
+      ],
+      "container-title": [
+        "International Journal of Computational Intelligence Systems"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1007/s44196-025-00906-4.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://link.springer.com/article/10.1007/s44196-025-00906-4/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1007/s44196-025-00906-4.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            7
+          ]
+        ],
+        "date-time": "2025-09-07T10:26:35Z",
+        "timestamp": 1757240795000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://link.springer.com/10.1007/s44196-025-00906-4"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            15
+          ]
+        ]
+      },
+      "references-count": 44,
+      "journal-issue": {
+        "issue": "1",
+        "published-online": {
+          "date-parts": [
+            [
+              2025,
+              12
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "906"
+      ],
+      "URL": "https://doi.org/10.1007/s44196-025-00906-4",
+      "relation": {},
+      "ISSN": [
+        "1875-6883"
+      ],
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "1875-6883"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            15
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "14 February 2025",
+          "order": 1,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "10 June 2025",
+          "order": 2,
+          "name": "revised",
+          "label": "Revised",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "20 June 2025",
+          "order": 3,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "15 July 2025",
+          "order": 4,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "order": 1,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Declarations"
+          }
+        },
+        {
+          "value": "The authors declare that there is no conflict of interest.",
+          "order": 2,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Conflict of interest"
+          }
+        }
+      ],
+      "article-number": "180"
+    }
+  }
+}

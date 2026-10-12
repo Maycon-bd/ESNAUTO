@@ -1,0 +1,583 @@
+{
+  "url": "https://api.crossref.org/works/10.1007%2Fs40435-024-01405-8",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            24
+          ]
+        ],
+        "date-time": "2026-06-24T15:40:51Z",
+        "timestamp": 1782315651253,
+        "version": "3.54.5"
+      },
+      "reference-count": 27,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "8",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                11
+              ]
+            ],
+            "date-time": "2024-03-11T00:00:00Z",
+            "timestamp": 1710115200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                11
+              ]
+            ],
+            "date-time": "2024-03-11T00:00:00Z",
+            "timestamp": 1710115200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/501100001809",
+          "name": "National Natural Science Foundation of China",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "11972327"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "11972327"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/501100001809",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Int. J. Dynam. Control"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            8
+          ]
+        ]
+      },
+      "DOI": "10.1007/s40435-024-01405-8",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            11
+          ]
+        ],
+        "date-time": "2024-03-11T04:13:02Z",
+        "timestamp": 1710130382000
+      },
+      "page": "2764-2777",
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 9,
+      "title": [
+        "Stocks price prediction based on optimized echo state network by sparrow search algorithm"
+      ],
+      "prefix": "10.1007",
+      "volume": "12",
+      "author": [
+        {
+          "given": "Zhengjie",
+          "family": "Tian",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3767-5656",
+          "authenticated-orcid": false,
+          "given": "Lijun",
+          "family": "Pei",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            11
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "issue": "3",
+          "key": "1405_CR1",
+          "doi-asserted-by": "publisher",
+          "first-page": "561",
+          "DOI": "10.1049/cje.2018.01.003",
+          "volume": "27",
+          "author": "A Sun",
+          "year": "2018",
+          "unstructured": "Sun A, Zhao T, Chen J, Chang J (2018) Comparative study: common ANN and LS-SVM exchange rate performance prediction. Chin J Electron 27(3):561–564. https://doi.org/10.1049/cje.2018.01.003",
+          "journal-title": "Chin J Electron"
+        },
+        {
+          "key": "1405_CR2",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.1155/2014/614342",
+          "volume": "2014",
+          "author": "AA Adebiyi",
+          "year": "2014",
+          "unstructured": "Adebiyi AA, Adewumi AO, Ayo CK (2014) Comparison of ARIMA and artificial neural networks models for stock price prediction. J Appl Math 2014:1–7. https://doi.org/10.1155/2014/614342",
+          "journal-title": "J Appl Math"
+        },
+        {
+          "key": "1405_CR3",
+          "unstructured": "Lu H, Li D, Sun H\n(2015) Prediction for chaotic\ntime series of optimized BP\nneural network based on\nPSO. Comput Eng Appl\n51(02):224–229+264"
+        },
+        {
+          "key": "1405_CR4",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s00521-019-04698-5",
+          "author": "C Xiao",
+          "year": "2020",
+          "unstructured": "Xiao C, Xia W, Jiang J (2020) Stock price forecast based on combined model of ARI–MA–LS–SVM. Neural Comput Appl. https://doi.org/10.1007/s00521-019-04698-5",
+          "journal-title": "Neural Comput Appl"
+        },
+        {
+          "key": "1405_CR5",
+          "doi-asserted-by": "publisher",
+          "first-page": "114332",
+          "DOI": "10.1016/j.eswa.2020.114332",
+          "volume": "169",
+          "author": "H Rezaei",
+          "year": "2021",
+          "unstructured": "Rezaei H, Faaljou H, Mansourfar G (2021) Stock price prediction using deep learning and frequency decomposition. Expert Syst Appl 169:114332. https://doi.org/10.1016/j.eswa.2020.114332",
+          "journal-title": "Expert Syst Appl"
+        },
+        {
+          "key": "1405_CR6",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/J.ESWA.2022.117706",
+          "author": "H Emam",
+          "year": "2022",
+          "unstructured": "Emam H, Shahadat MH, Pär-Ola Z et al (2022) Machine learning with belief rule-based expert systems to predict stock price movements. Expert Syst Appl. https://doi.org/10.1016/J.ESWA.2022.117706",
+          "journal-title": "Expert Syst Appl"
+        },
+        {
+          "key": "1405_CR7",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1080/03610918.2021.1872631",
+          "author": "DK Shetty",
+          "year": "2021",
+          "unstructured": "Shetty DK, Ismail B (2021) Forecasting stocks price using hybrid non-stationary time series model with ERNN. Commun Stat Simul Comput. https://doi.org/10.1080/03610918.2021.1872631",
+          "journal-title": "Commun Stat Simul Comput"
+        },
+        {
+          "key": "1405_CR8",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1080/03610918.2018.1458138",
+          "author": "M Khashei",
+          "year": "2018",
+          "unstructured": "Khashei M, Hajirahimi Z (2018) A comparative study of series arima/mlp hybrid models for stock price forecasting. Commun Stat Simul Comput. https://doi.org/10.1080/03610918.2018.1458138",
+          "journal-title": "Commun Stat Simul Comput"
+        },
+        {
+          "key": "1405_CR9",
+          "doi-asserted-by": "publisher",
+          "first-page": "107405",
+          "DOI": "10.1016/j.compeleceng.2021.107405",
+          "volume": "95",
+          "author": "A Bose",
+          "year": "2021",
+          "unstructured": "Bose A, Hsu C-H, Roy SS, Lee KC, Mohammadi-ivatloo B, Abimannan S (2021) Forecasting stock price by hybrid model of cascading multivariate adaptive regression splines and deep neural network. Comput Electr Eng 95:107405. https://doi.org/10.1016/j.compeleceng.2021.107405",
+          "journal-title": "Comput Electr Eng"
+        },
+        {
+          "key": "1405_CR10",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.eswa.2023.122891",
+          "author": "W Jujie",
+          "year": "2024",
+          "unstructured": "Jujie W, Jing L, Weiyi J (2024) An enhanced interval-valued decomposition integration model for stock price prediction based on comprehensive feature extraction and optimized deep learning. Expert Syst Appl. https://doi.org/10.1016/j.eswa.2023.122891",
+          "journal-title": "Expert Syst Appl"
+        },
+        {
+          "key": "1405_CR11",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.asej.2022.101793",
+          "author": "D Haocheng",
+          "year": "2022",
+          "unstructured": "Haocheng D (2022) Research on Amazon’s stock price forecasting based on arbitrage pricing model based on big data. Ain Shams Eng J. https://doi.org/10.1016/j.asej.2022.101793",
+          "journal-title": "Ain Shams Eng J"
+        },
+        {
+          "issue": "22",
+          "key": "1405_CR12",
+          "doi-asserted-by": "publisher",
+          "first-page": "21",
+          "DOI": "10.1007/s00500-022-07451-8",
+          "volume": "26",
+          "author": "K Gourav",
+          "year": "2022",
+          "unstructured": "Gourav K, Pratap US, Sanjeev J (2022) An adaptive particle swarm optimization-based hybrid long short-term memory model for stock price time series forecasting. Soft Comput 26(22):21–21. https://doi.org/10.1007/s00500-022-07451-8",
+          "journal-title": "Soft Comput"
+        },
+        {
+          "key": "1405_CR13",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.neucom.2022.07.016",
+          "author": "T Xiao",
+          "year": "2022",
+          "unstructured": "Xiao T, Xiang Z, Zhigang L (2022) Multi-scale local cues and hierarchical attention-based LSTM for stock price trend prediction. Neurocomputing. https://doi.org/10.1016/j.neucom.2022.07.016",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "1405_CR14",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/J.ESWA.2022.118125",
+          "author": "W Meng-xian",
+          "year": "2022",
+          "unstructured": "Meng-xian W, Zhi X, Hong-gang P et al (2022) Stock price prediction for new energy vehicle enterprises: an integrated method based on time series and cloud models. Expert Syst Appl. https://doi.org/10.1016/J.ESWA.2022.118125",
+          "journal-title": "Expert Syst Appl"
+        },
+        {
+          "key": "1405_CR15",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/J.KNOSYS.2022.109324",
+          "author": "L Tengteng",
+          "year": "2022",
+          "unstructured": "Tengteng L, Xiang M, Shuo L et al (2022) A stock price prediction method based on meta-learning and variational mode decomposition. Knowl Based Syst. https://doi.org/10.1016/J.KNOSYS.2022.109324",
+          "journal-title": "Knowl Based Syst"
+        },
+        {
+          "issue": "5667",
+          "key": "1405_CR16",
+          "doi-asserted-by": "publisher",
+          "first-page": "78",
+          "DOI": "10.1126/science.1091277",
+          "volume": "304",
+          "author": "H Jaeger",
+          "year": "2004",
+          "unstructured": "Jaeger H (2004) Harnessing nonlinearity: predicting chaotic systems and saving energy in wireless communication. Science 304(5667):78–80. https://doi.org/10.1126/science.1091277",
+          "journal-title": "Science"
+        },
+        {
+          "issue": "3",
+          "key": "1405_CR17",
+          "doi-asserted-by": "publisher",
+          "first-page": "414",
+          "DOI": "10.1016/j.neunet.2007.04.006",
+          "volume": "20",
+          "author": "MD Skowronski",
+          "year": "2007",
+          "unstructured": "Skowronski MD, Harris JG (2007) Automatic speech recognition using a predictive echo state network classifier. Neural Netw 20(3):414–423. https://doi.org/10.1016/j.neunet.2007.04.006",
+          "journal-title": "Neural Netw"
+        },
+        {
+          "issue": "3",
+          "key": "1405_CR18",
+          "doi-asserted-by": "publisher",
+          "first-page": "7313",
+          "DOI": "10.1016/j.eswa.2008.09.049",
+          "volume": "36",
+          "author": "X Lin",
+          "year": "2009",
+          "unstructured": "Lin X, Yang Z, Song Y (2009) Short-term stock price prediction based on echo state networks. Expert Syst Appl 36(3):7313–7317. https://doi.org/10.1016/j.eswa.2008.09.049",
+          "journal-title": "Expert Syst Appl"
+        },
+        {
+          "key": "1405_CR19",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Ishu K, van der Zant T, Becanovic V, Ploger P (2004) Identification of motion with echo state network. Oceans’04 MTS/IEEE Techno-Ocean’04 (IEEE Cat. No.04CH37600). https://doi.org/10.1109/oceans.2004.1405751",
+          "DOI": "10.1109/oceans.2004.1405751"
+        },
+        {
+          "key": "1405_CR20",
+          "unstructured": "Zhang B (2017) Short-term stock price forecast model based on echo state network. Comput Appl Softw 34(05):268–272+333"
+        },
+        {
+          "issue": "1",
+          "key": "1405_CR21",
+          "doi-asserted-by": "publisher",
+          "first-page": "87",
+          "DOI": "10.1260/1748-3018.7.1.87",
+          "volume": "7",
+          "author": "H Zhang",
+          "year": "2013",
+          "unstructured": "Zhang H, Liang J, Chai Z (2013) Stock prediction based on phase space reconstruction and echo state networks. J Algorithms Comput Technol 7(1):87–100. https://doi.org/10.1260/1748-3018.7.1.87",
+          "journal-title": "J Algorithms Comput Technol"
+        },
+        {
+          "issue": "1",
+          "key": "1405_CR22",
+          "doi-asserted-by": "publisher",
+          "first-page": "22",
+          "DOI": "10.1080/21642583.2019.1708830",
+          "volume": "8",
+          "author": "J Xue",
+          "year": "2020",
+          "unstructured": "Xue J, Shen B (2020) A novel swarm intelligence optimization approach: sparrow search algorithm. Syst Sci Control Eng 8(1):22–34. https://doi.org/10.1080/21642583.2019.1708830",
+          "journal-title": "Syst Sci Control Eng"
+        },
+        {
+          "key": "1405_CR23",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1155/2022/3680419",
+          "author": "F Liu",
+          "year": "2022",
+          "unstructured": "Liu F, Qin P, You J, Yanyan F (2022) “Sparrow search algorithm-optimized long short-term memory model for stock trend prediction” edited by A. M. Anter. Comput Intell Neurosci. https://doi.org/10.1155/2022/3680419",
+          "journal-title": "Comput Intell Neurosci"
+        },
+        {
+          "issue": "2",
+          "key": "1405_CR24",
+          "doi-asserted-by": "publisher",
+          "first-page": "802",
+          "DOI": "10.1039/D2RA06869A",
+          "volume": "13",
+          "author": "X Liu",
+          "year": "2023",
+          "unstructured": "Liu X, Yang J, Yuan L (2023) Predicting the high heating value and nitrogen content of torrefied biomass using a support vector machine optimized by a sparrow search algorithm. RSC Adv 13(2):802–807. https://doi.org/10.1039/D2RA06869A",
+          "journal-title": "RSC Adv"
+        },
+        {
+          "key": "1405_CR25",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.3390/en15010130",
+          "volume": "15",
+          "author": "G-C Liao",
+          "year": "2022",
+          "unstructured": "Liao G-C (2022) Fusion of improved sparrow search algorithm and long short-term memory neural network application in load forecasting. Energies 15:1–30. https://doi.org/10.3390/en15010130",
+          "journal-title": "Energies"
+        },
+        {
+          "issue": "11",
+          "key": "1405_CR26",
+          "doi-asserted-by": "publisher",
+          "first-page": "9107",
+          "DOI": "10.3390/su15119107",
+          "volume": "15",
+          "author": "C Tan",
+          "year": "2023",
+          "unstructured": "Tan C, Tan W, Shen Y, Yang L (2023) Multistep wind power prediction using time-varying filtered empirical modal decomposition and improved adaptive sparrow search algorithm-optimized phase space reconstruction-echo state network. Sustainability 15(11):9107. https://doi.org/10.3390/su15119107",
+          "journal-title": "Sustainability"
+        },
+        {
+          "key": "1405_CR27",
+          "doi-asserted-by": "publisher",
+          "first-page": "704",
+          "DOI": "10.3390/s23020704",
+          "volume": "23",
+          "author": "Y Zheng",
+          "year": "2023",
+          "unstructured": "Zheng Y, Li L, Qian L, Cheng B, Hou W, Zhuang Y (2023) Sine-SSA-BP ship trajectory prediction based on chaotic mapping improved sparrow search algorithm. Sensors 23:704. https://doi.org/10.3390/s23020704",
+          "journal-title": "Sensors"
+        }
+      ],
+      "container-title": [
+        "International Journal of Dynamics and Control"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1007/s40435-024-01405-8.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://link.springer.com/article/10.1007/s40435-024-01405-8/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1007/s40435-024-01405-8.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            24
+          ]
+        ],
+        "date-time": "2024-08-24T00:07:13Z",
+        "timestamp": 1724458033000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://link.springer.com/10.1007/s40435-024-01405-8"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            11
+          ]
+        ]
+      },
+      "references-count": 27,
+      "journal-issue": {
+        "issue": "8",
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              8
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "1405"
+      ],
+      "URL": "https://doi.org/10.1007/s40435-024-01405-8",
+      "relation": {},
+      "ISSN": [
+        "2195-268X",
+        "2195-2698"
+      ],
+      "issn-type": [
+        {
+          "value": "2195-268X",
+          "type": "print"
+        },
+        {
+          "value": "2195-2698",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            11
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "19 November 2023",
+          "order": 1,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "7 February 2024",
+          "order": 2,
+          "name": "revised",
+          "label": "Revised",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "8 February 2024",
+          "order": 3,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "11 March 2024",
+          "order": 4,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "order": 1,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Declarations"
+          }
+        },
+        {
+          "value": "Authors have no conflict of interest to declare.",
+          "order": 2,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Conflict of interest"
+          }
+        }
+      ]
+    }
+  }
+}

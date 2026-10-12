@@ -1,0 +1,707 @@
+{
+  "url": "https://api.crossref.org/works?query.title=BovDB%3A+a+data+set+of+stock+prices+of+all+companies+in+B3+from+1995+to+2020&rows=3",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+      "facets": {},
+      "total-results": 10905196,
+      "items": [
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                24
+              ]
+            ],
+            "date-time": "2026-03-24T22:41:25Z",
+            "timestamp": 1774392085408,
+            "version": "3.50.1"
+          },
+          "reference-count": 0,
+          "publisher": "Sociedade Brasileira de Computacao - SB",
+          "issue": "1",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "short-container-title": [
+            "jidm"
+          ],
+          "abstract": "<jats:p>Stock markets are responsible for the movement of vast amounts of financial resources worldwide. This market generates a high volume of transaction data, which after being analyzed are very useful for many applications. In this article, we present BovDB, a data set that was built considering a source of the Brazilian Stock Exchange (B3) with information related to the years between 1995 and 2020. We have approached the events’ impact on the stocks byapplying a cumulative factor to correct prices. The results were compared with public data from InfoMoney and BR Investing, showing that our methods, are valid and follow the market standards, based on the proposed factor. BovDBdata set can be used as a benchmark for different applications and it is available in open access for any researcher on GitHub.</jats:p>",
+          "DOI": "10.5753/jidm.2022.2345",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                5
+              ]
+            ],
+            "date-time": "2022-10-05T21:11:35Z",
+            "timestamp": 1665004295000
+          },
+          "source": "Crossref",
+          "is-referenced-by-count": 5,
+          "title": [
+            "BovDB: a data set of stock prices of all companies in B3 from 1995 to 2020"
+          ],
+          "prefix": "10.5753",
+          "volume": "13",
+          "author": [
+            {
+              "given": "Fabian",
+              "family": "Corrêa Cardoso",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Juan Andrey",
+              "family": "Valverde Malska",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Paulo Junior",
+              "family": "Ramiro",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Giancarlo",
+              "family": "Lucca",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Eduardo",
+              "family": "Nunes Borges",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Viviane",
+              "family": "Leite Dias de Mattos",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Rafael",
+              "family": "Alceste Berri",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            }
+          ],
+          "member": "3742",
+          "published-online": {
+            "date-parts": [
+              [
+                2022,
+                8,
+                15
+              ]
+            ]
+          },
+          "container-title": [
+            "Journal of Information and Data Management"
+          ],
+          "link": [
+            {
+              "URL": "https://sol.sbc.org.br/journals/index.php/jidm/article/download/2345/1979",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://sol.sbc.org.br/journals/index.php/jidm/article/download/2345/1979",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2022,
+                10,
+                5
+              ]
+            ],
+            "date-time": "2022-10-05T21:11:43Z",
+            "timestamp": 1665004303000
+          },
+          "score": 71.67235,
+          "resource": {
+            "primary": {
+              "URL": "https://sol.sbc.org.br/journals/index.php/jidm/article/view/2345"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                8,
+                15
+              ]
+            ]
+          },
+          "references-count": 0,
+          "journal-issue": {
+            "issue": "1",
+            "published-online": {
+              "date-parts": [
+                [
+                  2022,
+                  8,
+                  15
+                ]
+              ]
+            }
+          },
+          "URL": "https://doi.org/10.5753/jidm.2022.2345",
+          "ISSN": [
+            "2178-7107",
+            "2178-7107"
+          ],
+          "issn-type": [
+            {
+              "value": "2178-7107",
+              "type": "electronic"
+            },
+            {
+              "value": "2178-7107",
+              "type": "print"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                8,
+                15
+              ]
+            ]
+          }
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                2,
+                21
+              ]
+            ],
+            "date-time": "2025-02-21T01:11:06Z",
+            "timestamp": 1740100266679,
+            "version": "3.37.3"
+          },
+          "reference-count": 0,
+          "publisher": "Sociedade Brasileira de Computação",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "abstract": "<jats:p>Stock markets are responsible for the movement of huge amounts of financial resources around the world. This market generates a high volume of transaction data, which after being analyzed are very useful for many applications. In this paper we present BovDB, a data set that was built considering as source the Brazilian Stock Exchange (B3) with information related to the years between 1995 and 2020. We have approached the events’ impact on the stocks by applying a cumulative factor to correct prices. The results were compared with public data from InfoMoney and BR Investing, showing that our methods are valid and in accordance with the market standards. BovDB data set can be used as a benchmark for different applications and is publicly available for any researcher on GitHub.</jats:p>",
+          "DOI": "10.5753/dsw.2021.17411",
+          "type": "proceedings-article",
+          "created": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                13
+              ]
+            ],
+            "date-time": "2021-10-13T13:24:35Z",
+            "timestamp": 1634131475000
+          },
+          "page": "21-32",
+          "source": "Crossref",
+          "is-referenced-by-count": 0,
+          "title": [
+            "BovDB: A data set of stock quotes for Machine Learning on all companies from B3 between 1995 and 2020"
+          ],
+          "prefix": "10.5753",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0002-2842-0387",
+              "authenticated-orcid": false,
+              "given": "Fabian Corrêa",
+              "family": "Cardoso",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Juan",
+              "family": "Malska",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-2683-345X",
+              "authenticated-orcid": false,
+              "given": "Paulo",
+              "family": "Ramiro",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-3776-0260",
+              "authenticated-orcid": false,
+              "given": "Giancarlo",
+              "family": "Lucca",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-1595-7676",
+              "authenticated-orcid": false,
+              "given": "Eduardo N.",
+              "family": "Borges",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-3512-6290",
+              "authenticated-orcid": false,
+              "given": "Viviane de",
+              "family": "Mattos",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Rafael",
+              "family": "Berri",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            }
+          ],
+          "member": "3742",
+          "published-online": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                4
+              ]
+            ]
+          },
+          "event": {
+            "number": "3",
+            "acronym": "DSW 2021",
+            "name": "Dataset Showcase Workshop",
+            "location": "Brasil"
+          },
+          "container-title": [
+            "Anais do III Dataset Showcase Workshop (DSW 2021)"
+          ],
+          "link": [
+            {
+              "URL": "https://sol.sbc.org.br/index.php/dsw/article/download/17411/17247",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://sol.sbc.org.br/index.php/dsw/article/download/17411/17247",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                13
+              ]
+            ],
+            "date-time": "2021-10-13T13:24:45Z",
+            "timestamp": 1634131485000
+          },
+          "score": 59.27772,
+          "resource": {
+            "primary": {
+              "URL": "https://sol.sbc.org.br/index.php/dsw/article/view/17411"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                4
+              ]
+            ]
+          },
+          "references-count": 0,
+          "URL": "https://doi.org/10.5753/dsw.2021.17411",
+          "published": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                5
+              ]
+            ],
+            "date-time": "2024-03-05T03:42:10Z",
+            "timestamp": 1709610130008
+          },
+          "reference-count": 18,
+          "publisher": "Universitas Muhammadiyah Sidoarjo",
+          "issue": "4",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2023,
+                    9,
+                    15
+                  ]
+                ],
+                "date-time": "2023-09-15T00:00:00Z",
+                "timestamp": 1694736000000
+              },
+              "content-version": "unspecified",
+              "delay-in-days": 0,
+              "URL": "https://creativecommons.org/licenses/by/4.0"
+            }
+          ],
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "short-container-title": [
+            "ijler"
+          ],
+          "abstract": "<jats:p>This research employs quantitative methods and secondary data analysis to investigate the relationship between financial variables and stock prices in the food and beverage industry. Utilizing a purposive sampling method, 50 samples from 10 food and beverage companies listed on the IDX are examined over a five-year period. The study reveals that Net Profit Margin and Capital Structure both exert a positive and significant influence on stock prices, whereas Profitability demonstrates a significant negative impact. Notably, when considered together, these three variables collectively influence stock prices. This study's findings have implications for investors, financial analysts, and policymakers, offering insights into the complex interplay between financial metrics and stock market performance within the food and beverage sector.&#x0D;\nHighlights:&#x0D;\n&#x0D;\nFinancial Metrics Impact: Net Profit Margin and Capital Structure positively influence stock prices, while Profitability has a negative impact.&#x0D;\nSector-Specific Insights: The study focuses on the food and beverage industry, offering sector-specific implications for stakeholders.&#x0D;\nMethodological Approach: Quantitative analysis using secondary data and multiple linear analysis techniques informs the research findings.&#x0D;\n&#x0D;\nKeywords: Stock Prices, Financial Factors, Food and Beverage Industry, Secondary Data Analysis, Multiple Linear Analysis.</jats:p>",
+          "DOI": "10.21070/ijler.v18i4.968",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                27
+              ]
+            ],
+            "date-time": "2023-11-27T02:17:27Z",
+            "timestamp": 1701051447000
+          },
+          "source": "Crossref",
+          "is-referenced-by-count": 0,
+          "title": [
+            "Financial Factors Shaping Stock Prices: Evidence from Food and Beverage Companies (2016-2020)"
+          ],
+          "prefix": "10.21070",
+          "volume": "18",
+          "author": [
+            {
+              "given": "Silvia Al",
+              "family": "Vionita",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Wisnu Panggah",
+              "family": "Setiyono",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            }
+          ],
+          "member": "8674",
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                15
+              ]
+            ]
+          },
+          "reference": [
+            {
+              "key": "12081",
+              "doi-asserted-by": "crossref",
+              "unstructured": "A. Abrori and Suwitho, \"Pengaruh Profitabilitas, Likuiditas, dan Solvabilitas Terhadap Nilai Perusahaan,\" Jurnal Ilmu Dan Riset Manajemen, vol. 8, pp. 1-16, 2019.",
+              "DOI": "10.24843/EJMUNUD.2019.v08.i03.p15"
+            },
+            {
+              "key": "12082",
+              "unstructured": "S. N. Bobsaid and A. Wahyuati, \"Pengaruh Profitabilitas, Likuiditas, dan Kebijakan Dividen Terhadap Harga Saham,\" Jurnal Ilmu Dan Riset Manajemen, vol. 5, no. 6, pp. 1-15, 2016. [Online]. Available: https://ejournal.stiesia.ac.id/jirm/article/viewFile/1581/1541."
+            },
+            {
+              "key": "12083",
+              "unstructured": "\"Dasar-Dasar Manajemen Keuangan (Edisi Pertama),\" Brigham dan Houston, 2010."
+            },
+            {
+              "key": "12084",
+              "unstructured": "T. Di, B. Efek, I. Bei, and E. Idx, \"Pengaruh Inflasi, Kebijakan Dividen, Profitabilitas, dan Ukuran Perusahaan Terhadap Harga Saham pada Perusahaan Infrastruktur, Utility, dan Transportasi yang Terdaftar di Bursa Efek Indonesia (BEI),\" 2021."
+            },
+            {
+              "key": "12085",
+              "unstructured": "B. F. Fista and D. Widyawati, \"Pengaruh Kebijakan Dividen, Pertumbuhan Penjualan, Profitabilitas, dan Ukuran Perusahaan terhadap Nilai Perusahaan,\" Jurnal Ilmu Dan Riset Akuntansi, vol. 6, no. 5, pp. 2051-2070, 2017."
+            },
+            {
+              "key": "12086",
+              "doi-asserted-by": "crossref",
+              "unstructured": "M. Hayyinah and R. Augustina, \"Pengaruh Earning Per Share, Price To Book Value, dan Net Profit Margin Terhadap Harga Saham Perusahaan Transportasi yang Terdaftar di BEI Tahun 2016 – 2018,\" Jurnal Ilmiah Ecobuss, vol. 8, no. 2, pp. 75-80, 2020. [Online]. Available: https://doi.org/10.51747/ecobuss.v8i2.629.",
+              "DOI": "10.51747/ecobuss.v8i2.629"
+            },
+            {
+              "key": "12087",
+              "unstructured": "A. N. Hergianti, \"Pengaruh Pertumbuhan Perusahaan, Profitabilitas, dan Leverage Terhadap Nilai Perusahaan,\" Jurnal Ilmu Dan Riset Akuntansi, vol. 9, pp. 1-20, 2020."
+            },
+            {
+              "key": "12088",
+              "unstructured": "I. Syahroni, N. Lukiana, and K. Br Sitepu, \"E-ISSN :2622-304X , P-ISSN : 2622-3031 Available online at: http://proceedings.stiewidyagamalumajang.ac.id/index.php/Progress,\" Proceedings, vol. 1, no. 1, pp. 360-371, 2018."
+            },
+            {
+              "key": "12089",
+              "unstructured": "L. Lukman and M. Soliqin, \"Pengaruh Economic Value Added, Financial Leverage, dan Profitabilitas Terhadap Harga Saham PT. Summarecon Agung Tbk,\" Ekonomi, vol. 20, 2018."
+            },
+            {
+              "key": "12090",
+              "doi-asserted-by": "crossref",
+              "unstructured": "D. Lumowa, \"Analisa Pengaruh Profitabilitas Terhadap Harga Saham Perusahaan LQ 45 Di Bursa Efek Indonesia,\" Accountability, vol. 4, no. 2, pp. 72-86, 2015. [Online]. Available: https://doi.org/10.32400/ja.10526.4.2.2015.72-86.",
+              "DOI": "10.32400/ja.10526.4.2.2015.72-86"
+            },
+            {
+              "key": "12091",
+              "doi-asserted-by": "crossref",
+              "unstructured": "A. Rianisari, H. Husnah, and C. R. K. Bidin, \"Pengaruh Likuiditas, Leverage, dan Profitabilitas Terhadap Harga Saham Industri Makanan Dan Minuman Di Bei,\" Jurnal Ilmu Manajemen Universitas Tadulako (JIMUT), vol. 4, no. 2, pp. 113-120, 2020. [Online]. Available: https://doi.org/10.22487/jimut.v4i2.112.",
+              "DOI": "10.22487/jimut.v4i2.112"
+            },
+            {
+              "key": "12092",
+              "unstructured": "P. Roa, D. A. Kurs, and T. Harga, \"Pengaruh ROA, ROE, Inflasi, dan Kurs Terhadap Harga Saham,\" 2021."
+            },
+            {
+              "key": "12093",
+              "unstructured": "M. Sadiyah, Subakir, and Fauziyah, \"Pengaruh Struktur Modal, Likuiditas, Dan Profitabilitas Terhadap Harga Saham Perusahaan Otomotif,\" Majalah Ekonomi, vol. XXIV, no. 1411, pp. 84-91, 2019."
+            },
+            {
+              "key": "12094",
+              "doi-asserted-by": "crossref",
+              "unstructured": "H. Samosir et al., \"Pengaruh Current Ratio (CR), Net Profit Margin (NPM), dan Kebijakan Dividen Terhadap Harga Saham pada Perusahaan Consumer Goods Yang Terdaftar Di Bursa Efek Indonesia (BEI) Pada Periode 2013-2017,\" Owner, vol. 3, no. 2, p. 15. [Online]. Available: https://doi.org/10.33395/owner.v3i2.117.",
+              "DOI": "10.33395/owner.v3i2.117"
+            },
+            {
+              "key": "12095",
+              "unstructured": "A. B. Santoso, \"Tutorial & Solusi Pengolahan Data Regresi,\" 2018."
+            },
+            {
+              "key": "12096",
+              "unstructured": "E. M. Unud, \"Pengaruh EVA, MVA, dan Likuiditas Terhadap Harga,\" Pasar modal, vol. 5, no. 1, pp. 443-469, 2016."
+            },
+            {
+              "key": "12097",
+              "doi-asserted-by": "crossref",
+              "unstructured": "D. Yuliani and Suwitho, \"Pengaruh Inflasi, Current Ratio, Dan Earning Per Share Terhadap Harga Saham Pada Perusahaan Food and Beverages,\" Jurnal Ilmu Dan Riset Manajemen, vol. 9, no. 1, pp. 1-17, 2020.",
+              "DOI": "10.21460/jrak.2021.171.358"
+            },
+            {
+              "key": "12098",
+              "unstructured": "Sugiyono, \"Metode Penelitian Kuantitatif Kualitatif dan R&D,\" Alfabeta, 2019."
+            }
+          ],
+          "container-title": [
+            "Indonesian Journal of Law and Economics Review"
+          ],
+          "link": [
+            {
+              "URL": "https://ijler.umsida.ac.id/index.php/ijler/article/download/968/1241",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://ijler.umsida.ac.id/index.php/ijler/article/download/968/1241",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                5
+              ]
+            ],
+            "date-time": "2024-03-05T03:22:20Z",
+            "timestamp": 1709608940000
+          },
+          "score": 30.516365,
+          "resource": {
+            "primary": {
+              "URL": "https://ijler.umsida.ac.id/index.php/ijler/article/view/968"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                15
+              ]
+            ]
+          },
+          "references-count": 18,
+          "journal-issue": {
+            "issue": "4",
+            "published-online": {
+              "date-parts": [
+                [
+                  2023,
+                  9,
+                  11
+                ]
+              ]
+            }
+          },
+          "URL": "https://doi.org/10.21070/ijler.v18i4.968",
+          "ISSN": [
+            "2598-9928"
+          ],
+          "issn-type": [
+            {
+              "value": "2598-9928",
+              "type": "electronic"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                9,
+                15
+              ]
+            ]
+          }
+        }
+      ],
+      "items-per-page": 3,
+      "query": {
+        "start-index": 0,
+        "search-terms": null
+      }
+    }
+  }
+}

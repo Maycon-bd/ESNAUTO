@@ -200,6 +200,9 @@ def generate_r_script(best, output_dir, data_dir, logger, graph_val_name, graph_
     fitness    = best.get("fitness", "?")
     run_num    = best.get("run", "?")
 
+    acao = best.get("acao", "PETR4")
+    if acao not in ("PETR4", "VALE3"):
+        raise ValueError("Ação inválida no manifesto da sessão")
     r_script = f"""
 # ============================================================
 # Script R gerado automaticamente pelo pipeline — FASE 3
@@ -213,18 +216,22 @@ library(pracma)
 
 # Dados
 data_fac <- as.matrix(read.csv2(
-  'PETR4_close com factor_2000-2020.txt', header=FALSE))
+  '{acao}_close com factor_2000-2020.txt', header=FALSE))
 data <- as.numeric(data_fac)
 
-data_date_fac <- as.matrix(read.csv2(
-  'PETR4_close com factor_2000-2020_com data.csv', header=FALSE))
-data_date_fac1 <- as.Date(data_date_fac[1:5198, 1])
-data_date_1    <- data_date_fac1
+# VALE3 foi fornecida sem datas: usar índices de observação, sem inferir pregões.
+if ("{acao}" == "PETR4") {{
+  data_date_fac <- as.matrix(read.csv2('PETR4_close com factor_2000-2020_com data.csv', header=FALSE))
+  data_date_fac1 <- as.Date(data_date_fac[seq_along(data), 1])
+}} else {{
+  data_date_fac1 <- seq_along(data)
+}}
+data_date_1 <- data_date_fac1
 
-# Partições
-treino <- 2600
-valida <- 1299
-teste  <- 1299
+# Partições: preservar o protocolo PETR4 e adaptar ao tamanho de VALE3.
+treino <- if (length(data) == 5198) 2600 else ceiling(length(data) / 2)
+valida <- floor(length(data) / 4)
+teste <- length(data) - treino - valida
 
 inSize <- outSize <- 1
 
@@ -335,27 +342,27 @@ cat(paste("RMSE_teste  =", rmse_teste, "\\n"))
 dir.create("{out_dir_r}", showWarnings=FALSE, recursive=TRUE)
 
 png(file.path("{out_dir_r}", "{graph_val_name}"), width=1200, height=700, res=120)
-  plot(ylim=c(0,40),
+  plot(ylim=range(data),
        ylab="Precos observados e previstos com factor (R$)",
-       xlab="Data",
+       xlab=if ("{acao}" == "PETR4") "Data" else "Observação",
        data_date_1[(treino+1):(treino+valida)],
        treino_valida[(treino+1):(treino+valida)],
        type='l', col='green', lwd=2)
   lines(data_date_1[(treino+1):(treino+valida)], c(Y_val), col='black', lwd=1)
-  title(main=paste("Validacao — ESN PETR4 | Win {win_dist} | W {w_dist} | N={n}"))
+  title(main=paste("Validacao — ESN {acao} | Win {win_dist} | W {w_dist} | N={n}"))
   legend('topright', legend=c('Serie alvo','Serie prevista'),
          col=c('green','black'), lty=1, bty='n')
 dev.off()
 
 png(file.path("{out_dir_r}", "{graph_test_name}"), width=1200, height=700, res=120)
-  plot(ylim=c(0,40),
+  plot(ylim=range(data),
        ylab="Precos observados com factor e previstos com factor (R$)",
-       xlab="Data",
-       data_date_fac1[(treino+1):(treino+valida)],
+       xlab=if ("{acao}" == "PETR4") "Data" else "Observação",
+       data_date_fac1[(treino+valida+1):(treino+valida+teste)],
        treina_testa[(treino+1):(treino+teste)],
        type='l', col='green', lwd=2)
-  lines(data_date_fac1[(treino+1):(treino+valida)], c(Y), col='black', lwd=1)
-  title(main=paste("Teste — ESN PETR4 | Win {win_dist} | W {w_dist} | N={n}"))
+  lines(data_date_fac1[(treino+valida+1):(treino+valida+teste)], c(Y), col='black', lwd=1)
+  title(main=paste("Teste — ESN {acao} | Win {win_dist} | W {w_dist} | N={n}"))
   legend('topleft', legend=c('Serie alvo','Serie prevista'),
          col=c('green','black'), lty=1, bty='n')
 dev.off()
@@ -449,6 +456,16 @@ def inject_and_test(session_dir, logger):
     if not scenarios:
         logger.error("Nenhum cenário encontrado no ranking_completo.")
         return False
+
+    manifest_path = os.path.join(session_dir, "dataset.json")
+    acao = "PETR4"
+    if os.path.isfile(manifest_path):
+        with open(manifest_path, encoding="utf-8") as f:
+            acao = json.load(f)["acao"]
+    if acao not in ("PETR4", "VALE3"):
+        raise ValueError("Dataset desconhecido")
+    for scenario in scenarios:
+        scenario["acao"] = acao
 
     # Diretório de saída
     output_dir = os.path.join(session_dir, "entrega")
@@ -548,7 +565,7 @@ def inject_and_test(session_dir, logger):
     txt_path = os.path.join(output_dir, "resultados_validacao_teste.txt")
     with open(txt_path, "w", encoding="utf-8") as f:
         f.write("=" * 70 + "\n")
-        f.write("         RESULTADOS ESN — PETR4 TCC Maycon G Silva\n")
+        f.write(f"         RESULTADOS ESN — {acao} TCC Maycon G Silva\n")
         f.write(f"         Relatório Gerado em: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
         f.write("=" * 70 + "\n\n")
 
@@ -634,7 +651,7 @@ def inject_and_test(session_dir, logger):
     md_path = os.path.join(output_dir, "resultados_validacao_teste.md")
     with open(md_path, "w", encoding="utf-8") as f:
         f.write("======================================================================\n\n")
-        f.write("         RESULTADOS ESN — PETR4 TCC Maycon G Silva\n\n")
+        f.write(f"         RESULTADOS ESN — {acao} TCC Maycon G Silva\n\n")
         f.write(f"         Relatório Gerado em: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
         f.write("======================================================================\n\n\n\n")
 

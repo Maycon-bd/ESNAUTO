@@ -1,0 +1,440 @@
+{
+  "url": "https://api.crossref.org/works/10.21595%2Fmme.2025.24861",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            21
+          ]
+        ],
+        "date-time": "2026-09-21T14:18:26Z",
+        "timestamp": 1790000306768,
+        "version": "4.0.1"
+      },
+      "reference-count": 24,
+      "publisher": "JVE International Ltd.",
+      "issue": "4",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                12
+              ]
+            ],
+            "date-time": "2025-11-12T00:00:00Z",
+            "timestamp": 1762905600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "extrica.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Math. models, eng."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            31
+          ]
+        ]
+      },
+      "abstract": "<jats:p>The stock market, a cornerstone of the global financial system, is characterized by its dynamic and volatile nature, which makes accurate price-trend prediction challenging. However, traditional statistical models often fail to capture this complexity. Recent advancements in Artificial Intelligence (AI), particularly Machine Learning (ML) and Deep Learning (DL), have transformed stock market forecasting by using diverse datasets and algorithms. This review examines recent studies on AI methodologies for stock market price trend prediction models by analyzing architectures, datasets, performance metrics, and limitations, with a focus on hybrid models, sentiment analysis, and dataset diversity. Hybrid approaches, including the Multi-Model Generative Adversarial Network Hybrid Prediction Algorithm (MMGAN-HPA), K-means long short-term memory (LSTM), and LSTM autoregressive output (LSTM-ARO), improve predictive accuracy by combining statistical methods with deep learning. Sentiment analysis models such as Stock Senti WordNet (SSWN) and Hybrid Quantum Neural Network (HQNN) integrate social media sentiment to capture market dynamics. Real-time frameworks that use stream processing show promise for high-frequency trading applications. This review addresses key challenges including data noise, nonstationarity, overfitting risks, and black-box model interpretability. Solutions include GAN-based synthetic data generation, transformer-based architectures such as SpectralGPT, and optimization techniques for computational efficiency. This review provides a taxonomy of AI-based approaches, while identifying gaps for future research. These findings highlight the potential of AI in financial forecasting while emphasizing the need for interdisciplinary collaboration to address its limitations in data quality, methodology, interpretability, and ethics.</jats:p>",
+      "DOI": "10.21595/mme.2025.24861",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            12
+          ]
+        ],
+        "date-time": "2025-11-12T22:16:08Z",
+        "timestamp": 1762985768000
+      },
+      "page": "204-229",
+      "update-policy": "https://doi.org/10.21595/mme.crossmarkpolicy",
+      "source": "Crossref",
+      "is-referenced-by-count": 2,
+      "title": [
+        "Artificial intelligence-based stock market price prediction, a review"
+      ],
+      "prefix": "10.21595",
+      "volume": "11",
+      "author": [
+        {
+          "given": "Vishwas",
+          "family": "H N",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Usha",
+          "family": "B A",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sangeetha",
+          "family": "K N",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "9051",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            12
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "key-10.21595/mme.2025.24861-cit1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "A. Almaafi, S. Bajaba, and F. Alnori, “Stock price prediction using ARIMA versus XGBoost models: the case of the largest telecommunication company in the Middle East,” <i>International Journal of Information Technology</i>, Vol. 15, No. 4, pp. 1813–1818, May 2023, https://doi.org/10.1007/s41870-023-01260-4",
+          "DOI": "10.1007/s41870-023-01260-4"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit2",
+          "doi-asserted-by": "crossref",
+          "unstructured": "F. Pokou, J. Sadefo Kamdem, and F. Benhmad, “Hybridization of ARIMA with learning models for forecasting of stock market time series,” <i>Computational Economics</i>, Vol. 63, No. 4, pp. 1349–1399, Nov. 2023, https://doi.org/10.1007/s10614-023-10499-9",
+          "DOI": "10.1007/s10614-023-10499-9"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit3",
+          "doi-asserted-by": "crossref",
+          "unstructured": "S. R. Polamuri, D. K. Srinivas, and D. A. Krishna Mohan, “Multi-model generative adversarial network hybrid prediction algorithm (MMGAN-HPA) for stock market prices prediction,” <i>Journal of King Saud University – Computer and Information Sciences</i>, Vol. 34, No. 9, pp. 7433–7444, Oct. 2022, https://doi.org/10.1016/j.jksuci.2021.07.001",
+          "DOI": "10.1016/j.jksuci.2021.07.001"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit4",
+          "doi-asserted-by": "crossref",
+          "unstructured": "J. Zhang and X. Chen, “A two-stage model for stock price prediction based on variational mode decomposition and ensemble machine learning method,” <i>Soft Computing</i>, Vol. 28, No. 3,  pp. 2385–2408, Jun. 2023, https://doi.org/10.1007/s00500-023-08441-0",
+          "DOI": "10.1007/s00500-023-08441-0"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit5",
+          "doi-asserted-by": "crossref",
+          "unstructured": "D. Chandola, A. Mehta, S. Singh, V. A. Tikkiwal, and H. Agrawal, “Forecasting directional movement of stock prices using deep learning,” <i>Annals of Data Science</i>, Vol. 10, No. 5, pp. 1361–1378, Aug. 2022, https://doi.org/10.1007/s40745-022-00432-6",
+          "DOI": "10.1007/s40745-022-00432-6"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit6",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Y. Chen, J. Wu, and Z. Wu, “China’s commercial bank stock price prediction using a novel K-means-LSTM hybrid approach,” <i>Expert Systems with Applications</i>, Vol. 202, p. 117370, Sep. 2022, https://doi.org/10.1016/j.eswa.2022.117370",
+          "DOI": "10.1016/j.eswa.2022.117370"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit7",
+          "doi-asserted-by": "crossref",
+          "unstructured": "M. Diqi, M. E. Hiswati, and A. S. Nur, “StockGAN: robust stock price prediction using GAN algorithm,” <i>International Journal of Information Technology</i>, Vol. 14, No. 5, pp. 2309–2315, Apr. 2022, https://doi.org/10.1007/s41870-022-00929-6",
+          "DOI": "10.1007/s41870-022-00929-6"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit8",
+          "doi-asserted-by": "crossref",
+          "unstructured": "S. Albahli, A. Irtaza, T. Nazir, A. Mehmood, A. Alkhalifah, and W. Albattah, “A machine learning method for prediction of stock market using real-time twitter data,” <i>Electronics</i>, Vol. 11, No. 20, p. 3414, Oct. 2022, https://doi.org/10.3390/electronics11203414",
+          "DOI": "10.3390/electronics11203414"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit9",
+          "doi-asserted-by": "crossref",
+          "unstructured": "M. Gandhudi, A. P. J. A., U. Fiore, and G. G. R., “Explainable hybrid quantum neural networks for analyzing the influence of tweets on stock price prediction,” <i>Computers and Electrical Engineering</i>, Vol. 118, p. 109302, Aug. 2024, https://doi.org/10.1016/j.compeleceng.2024.109302",
+          "DOI": "10.1016/j.compeleceng.2024.109302"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit10",
+          "doi-asserted-by": "crossref",
+          "unstructured": "A. Pagliaro, “Artificial intelligence vs. efficient markets: a critical reassessment of predictive models in the big data era,” <i>Electronics</i>, Vol. 14, No. 9, p. 1721, Apr. 2025, https://doi.org/10.3390/electronics14091721",
+          "DOI": "10.3390/electronics14091721"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit11",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Y. Li, L. Chen, C. Sun, G. Liu, C. Chen, and Y. Zhang, “Accurate stock price forecasting based on deep learning and hierarchical frequency decomposition,” <i>IEEE Access</i>, Vol. 12, pp. 49878–49894, Jan. 2024, https://doi.org/10.1109/access.2024.3384430",
+          "DOI": "10.1109/ACCESS.2024.3384430"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit12",
+          "doi-asserted-by": "crossref",
+          "unstructured": "K. C. Bandhu, R. Litoriya, A. Jain, A. V. Shukla, and S. Vaidya, “An improved technique for stock price prediction on real-time exploiting stream processing and deep learning,” <i>Multimedia Tools and Applications</i>, Vol. 83, No. 19, pp. 57269–57289, Dec. 2023, https://doi.org/10.1007/s11042-023-17130-x",
+          "DOI": "10.1007/s11042-023-17130-x"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit13",
+          "doi-asserted-by": "crossref",
+          "unstructured": "B. Gülmez, “Stock price prediction with optimized deep LSTM network with artificial rabbits optimization algorithm,” <i>Expert Systems with Applications</i>, Vol. 227, p. 120346, Oct. 2023, https://doi.org/10.1016/j.eswa.2023.120346",
+          "DOI": "10.1016/j.eswa.2023.120346"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit14",
+          "doi-asserted-by": "crossref",
+          "unstructured": "J. M. Sangeetha and K. J. Alfia, “Financial stock market forecast using evaluated linear regression based machine learning technique,” <i>Measurement: Sensors</i>, Vol. 31, p. 100950, Feb. 2024, https://doi.org/10.1016/j.measen.2023.100950",
+          "DOI": "10.1016/j.measen.2023.100950"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit15",
+          "doi-asserted-by": "crossref",
+          "unstructured": "L. L. X. Yeo, Q. Cao, and C. Quek, “Dynamic portfolio rebalancing with lag-optimised trading indicators using SeroFAM and genetic algorithms,” <i>Expert Systems with Applications</i>, Vol. 216, p. 119440, Apr. 2023, https://doi.org/10.1016/j.eswa.2022.119440",
+          "DOI": "10.1016/j.eswa.2022.119440"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit16",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Y. Zhao and G. Yang, “Deep learning-based integrated framework for stock price movement prediction,” <i>Applied Soft Computing</i>, Vol. 133, p. 109921, Jan. 2023, https://doi.org/10.1016/j.asoc.2022.109921",
+          "DOI": "10.1016/j.asoc.2022.109921"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit17",
+          "doi-asserted-by": "crossref",
+          "unstructured": "E. Alshawarbeh, A. T. Abdulrahman, and E. Hussam, “Statistical modeling of high frequency datasets using the ARIMA-ANN hybrid,” <i>Mathematics</i>, Vol. 11, No. 22, p. 4594, Nov. 2023, https://doi.org/10.3390/math11224594",
+          "DOI": "10.3390/math11224594"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit18",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Z. Tian and L. Pei, “Stocks price prediction based on optimized echo state network by sparrow search algorithm,” <i>International Journal of Dynamics and Control</i>, Vol. 12, No. 8, pp. 2764–2777, Mar. 2024, https://doi.org/10.1007/s40435-024-01405-8",
+          "DOI": "10.1007/s40435-024-01405-8"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit19",
+          "doi-asserted-by": "crossref",
+          "unstructured": "M. Lu and X. Xu, “TRNN: An efficient time-series recurrent neural network for stock price prediction,” <i>Information Sciences</i>, Vol. 657, p. 119951, Feb. 2024, https://doi.org/10.1016/j.ins.2023.119951",
+          "DOI": "10.1016/j.ins.2023.119951"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit20",
+          "doi-asserted-by": "crossref",
+          "unstructured": "H. N. Bhandari, B. Rimal, N. R. Pokhrel, R. Rimal, K. R. Dahal, and R. K. C. Khatri, “Predicting stock market index using LSTM,” <i>Machine Learning with Applications</i>, Vol. 9, p. 100320, Sep. 2022, https://doi.org/10.1016/j.mlwa.2022.100320",
+          "DOI": "10.1016/j.mlwa.2022.100320"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit21",
+          "doi-asserted-by": "crossref",
+          "unstructured": "S. Rath, N. R. Das, and B. K. Pattanayak, “Stacked BI-LSTM and E-optimized CNN-a hybrid deep learning model for stock price prediction,” <i>Optical Memory and Neural Networks</i>, Vol. 33, No. 2, pp. 102–120, Jul. 2024, https://doi.org/10.3103/s1060992x24700024",
+          "DOI": "10.3103/S1060992X24700024"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit22",
+          "doi-asserted-by": "crossref",
+          "unstructured": "M. Li, Y. Zhu, Y. Shen, and M. Angelova, “Clustering-enhanced stock price prediction using deep learning,” <i>World Wide Web</i>, Vol. 26, No. 1, pp. 207–232, Apr. 2022, https://doi.org/10.1007/s11280-021-01003-0",
+          "DOI": "10.1007/s11280-021-01003-0"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit23",
+          "doi-asserted-by": "crossref",
+          "unstructured": "P. Banerjee and R. Nayak, “Recommendations on financial models for stock price prediction,” <i>SN Computer Science</i>, Vol. 5, No. 1, p. 178, Jan. 2024, https://doi.org/10.1007/s42979-023-02507-4",
+          "DOI": "10.1007/s42979-023-02507-4"
+        },
+        {
+          "key": "key-10.21595/mme.2025.24861-cit24",
+          "doi-asserted-by": "crossref",
+          "unstructured": "D. Hong et al., “SpectralGPT: Spectral remote sensing foundation model,” <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i>, Vol. 46, No. 8, pp. 5227–5244, Aug. 2024, https://doi.org/10.1109/tpami.2024.3362475",
+          "DOI": "10.1109/TPAMI.2024.3362475"
+        }
+      ],
+      "container-title": [
+        "Mathematical Models in Engineering"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.extrica.com/article/24861/pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.extrica.com/article/24861/xml",
+          "content-type": "application/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.extrica.com/article/24861/pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            6
+          ]
+        ],
+        "date-time": "2026-07-06T08:44:30Z",
+        "timestamp": 1783327470000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.extrica.com/article/24861"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            12
+          ]
+        ]
+      },
+      "references-count": 24,
+      "journal-issue": {
+        "issue": "4",
+        "published-online": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              31
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              31
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.21595/mme.2025.24861",
+      "relation": {},
+      "ISSN": [
+        "2351-5279",
+        "2424-4627"
+      ],
+      "issn-type": [
+        {
+          "value": "2351-5279",
+          "type": "print"
+        },
+        {
+          "value": "2424-4627",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            12
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "Review article",
+          "order": 0,
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "Yes",
+          "order": 1,
+          "name": "crosschecked",
+          "label": "CrossChecked"
+        },
+        {
+          "value": "Mathematical Models in Engineering",
+          "order": 2,
+          "name": "journal_title",
+          "label": "Journal Title"
+        },
+        {
+          "value": "2025-02-27",
+          "order": 3,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "2025-08-13",
+          "order": 4,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "2025-11-12",
+          "order": 5,
+          "name": "published",
+          "label": "Published",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "© 2025 Vishwas H N, et al.",
+          "order": 6,
+          "name": "copyright",
+          "label": "Copyright",
+          "group": {
+            "name": "rights",
+            "label": "Rights"
+          }
+        }
+      ]
+    }
+  }
+}

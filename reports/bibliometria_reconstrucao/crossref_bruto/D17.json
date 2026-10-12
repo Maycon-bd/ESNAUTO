@@ -1,0 +1,1359 @@
+{
+  "url": "https://api.crossref.org/works?query.title=Enhancing+Trading+Performance+Through+Sentiment+Analysis+with+Large+Language+Models%3A+Evidence+from+the+S%26P+500&rows=3",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+      "facets": {},
+      "total-results": 19323268,
+      "items": [
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2026-08-01T02:29:15Z",
+            "timestamp": 1785551355318,
+            "version": "3.56.0"
+          },
+          "posted": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "group-title": "SSRN",
+          "reference-count": 29,
+          "publisher": "Elsevier BV",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "DOI": "10.2139/ssrn.4706629",
+          "type": "posted-content",
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                25
+              ]
+            ],
+            "date-time": "2024-01-25T16:20:25Z",
+            "timestamp": 1706199625000
+          },
+          "source": "Crossref",
+          "is-referenced-by-count": 3,
+          "title": [
+            "Sentiment Trading with Large Language Models"
+          ],
+          "prefix": "10.2139",
+          "author": [
+            {
+              "given": "Kemal",
+              "family": "Kirtac",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Guido",
+              "family": "Germano",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "member": "78",
+          "reference": [
+            {
+              "key": "ref1",
+              "doi-asserted-by": "crossref",
+              "first-page": "293",
+              "DOI": "10.1086/718327",
+              "article-title": "Artificial intelligence and jobs: Evidence from online vacancies",
+              "volume": "40",
+              "author": "D Acemoglu",
+              "year": "2022",
+              "journal-title": "Journal of Labor Economics"
+            },
+            {
+              "key": "ref2",
+              "author": "G Alain",
+              "year": "2016",
+              "journal-title": "Understanding intermediate layers using linear classifier probes"
+            },
+            {
+              "key": "ref3",
+              "first-page": "1645",
+              "volume": "61",
+              "author": "M Baker",
+              "year": "2006",
+              "journal-title": "Investor sentiment and the cross-section of stock returns"
+            },
+            {
+              "key": "ref4",
+              "doi-asserted-by": "crossref",
+              "first-page": "1593",
+              "DOI": "10.1093/qje/qjw024",
+              "article-title": "Measuring economic policy uncertainty",
+              "volume": "131",
+              "author": "S R Baker",
+              "year": "2016",
+              "journal-title": "Quarterly Journal of Economics"
+            },
+            {
+              "key": "ref5",
+              "article-title": "The structure of economic news",
+              "author": "L Bybee",
+              "year": "2019",
+              "journal-title": "SSRN"
+            },
+            {
+              "key": "ref6",
+              "doi-asserted-by": "crossref",
+              "first-page": "299",
+              "DOI": "10.1016/j.jfineco.2018.11.009",
+              "article-title": "How news and its context drive risk and returns around the world",
+              "volume": "133",
+              "author": "C W Calomiris",
+              "year": "2019",
+              "journal-title": "Journal of Financial Economics"
+            },
+            {
+              "key": "ref7",
+              "doi-asserted-by": "crossref",
+              "first-page": "396",
+              "DOI": "10.1007/s11142-013-9258-3",
+              "article-title": "The information content of mandatory risk factor disclosures in corporate filings",
+              "volume": "19",
+              "author": "J L Campbell",
+              "year": "2014",
+              "journal-title": "Review of Accounting Studies"
+            },
+            {
+              "key": "ref8",
+              "first-page": "57",
+              "volume": "52",
+              "author": "M M Carhart",
+              "year": "1997",
+              "journal-title": "On persistence in mutual fund performance"
+            },
+            {
+              "key": "ref9",
+              "doi-asserted-by": "crossref",
+              "first-page": "4171",
+              "DOI": "10.18653/v1/N19-1423",
+              "article-title": "BERT: Pre-training of deep bidirectional transformers for language understanding",
+              "volume": "1",
+              "author": "J Devlin",
+              "year": "2019",
+              "journal-title": "Proceedings of the 2019 Conference of the North American Chapter"
+            },
+            {
+              "key": "ref10",
+              "first-page": "3",
+              "volume": "33",
+              "author": "E F Fama",
+              "year": "1993",
+              "journal-title": "Common risk factors in the returns on stocks and bonds"
+            },
+            {
+              "key": "ref11",
+              "first-page": "5514",
+              "volume": "68",
+              "author": "R Frankel",
+              "year": "2022",
+              "journal-title": "Disclosure sentiment: Machine learning vs. dictionary methods"
+            },
+            {
+              "key": "ref12",
+              "doi-asserted-by": "crossref",
+              "first-page": "1267",
+              "DOI": "10.1111/jofi.12027",
+              "article-title": "Sentiment during recessions",
+              "volume": "68",
+              "author": "D Garcia",
+              "year": "2013",
+              "journal-title": "Journal of Finance"
+            },
+            {
+              "key": "ref13",
+              "doi-asserted-by": "crossref",
+              "first-page": "801",
+              "DOI": "10.1093/qje/qjx045",
+              "article-title": "Transparency and deliberation within the FOMC: A computational linguistics approach",
+              "volume": "133",
+              "author": "S Hansen",
+              "year": "2018",
+              "journal-title": "Quarterly Journal of Economics"
+            },
+            {
+              "key": "ref14",
+              "doi-asserted-by": "crossref",
+              "first-page": "1423",
+              "DOI": "10.1086/688176",
+              "article-title": "Text-based network industries and endogenous product differentiation",
+              "volume": "124",
+              "author": "G Hoberg",
+              "year": "2016",
+              "journal-title": "Journal of Political Economy"
+            },
+            {
+              "key": "ref15",
+              "doi-asserted-by": "crossref",
+              "first-page": "806",
+              "DOI": "10.1111/1911-3846.12832",
+              "article-title": "FinBERT: A large language model for extracting information from financial text",
+              "volume": "40",
+              "author": "A H Huang",
+              "year": "2023",
+              "journal-title": "Contemporary Accounting Research"
+            },
+            {
+              "key": "ref16",
+              "year": "2023",
+              "journal-title": "Hugging Face's transformer models"
+            },
+            {
+              "key": "ref17",
+              "doi-asserted-by": "crossref",
+              "first-page": "712",
+              "DOI": "10.1016/j.jfineco.2013.08.018",
+              "article-title": "Word power: A new approach for content analysis",
+              "volume": "110",
+              "author": "N Jegadeesh",
+              "year": "2013",
+              "journal-title": "Journal of Financial Economics"
+            },
+            {
+              "key": "ref18",
+              "article-title": "Predicting returns with text data",
+              "author": "Z Ke",
+              "year": "2020",
+              "journal-title": "SSRN"
+            },
+            {
+              "key": "ref19",
+              "first-page": "1367",
+              "article-title": "The impact of investor sentiment on the market's reaction to stock splits",
+              "volume": "27",
+              "author": "M Lemmon",
+              "year": "2014",
+              "journal-title": "Review of Financial Studies"
+            },
+            {
+              "key": "ref20",
+              "doi-asserted-by": "crossref",
+              "first-page": "35",
+              "DOI": "10.1111/j.1540-6261.2010.01625.x",
+              "article-title": "When is a liability not a liability? Textual analysis, dictionaries, and 10-Ks",
+              "volume": "66",
+              "author": "T Loughran",
+              "year": "2011",
+              "journal-title": "Journal of Finance"
+            },
+            {
+              "key": "ref21",
+              "author": "T Loughran",
+              "year": "2022",
+              "journal-title": "Master Loughran-MacDonald Word Dictionary"
+            },
+            {
+              "key": "ref22",
+              "first-page": "13",
+              "article-title": "Event studies in economics and finance",
+              "volume": "35",
+              "author": "A C Mackinlay",
+              "year": "1997",
+              "journal-title": "Journal of Economic Literature"
+            },
+            {
+              "key": "ref23",
+              "doi-asserted-by": "crossref",
+              "first-page": "782",
+              "DOI": "10.1002/asi.23062",
+              "article-title": "Good debt or bad debt: Detecting semantic orientations in economic texts",
+              "volume": "65",
+              "author": "P Malo",
+              "year": "2014",
+              "journal-title": "Journal of the Association for Information Science and Technology"
+            },
+            {
+              "key": "ref24",
+              "doi-asserted-by": "crossref",
+              "first-page": "137",
+              "DOI": "10.1016/j.jfineco.2016.01.032",
+              "article-title": "News implied volatility and disaster concerns",
+              "volume": "123",
+              "author": "A Manela",
+              "year": "2017",
+              "journal-title": "Journal of Financial Economics"
+            },
+            {
+              "key": "ref25",
+              "article-title": "Improving language understanding by generative pre-training",
+              "author": "A Radford",
+              "year": "2018",
+              "journal-title": "OpenAI Blog"
+            },
+            {
+              "key": "ref26",
+              "doi-asserted-by": "crossref",
+              "first-page": "221",
+              "DOI": "10.1016/j.jeconom.2020.07.053",
+              "article-title": "Measuring news sentiment",
+              "volume": "228",
+              "author": "A H Shapiro",
+              "year": "2022",
+              "journal-title": "Journal of Econometrics"
+            },
+            {
+              "key": "ref27",
+              "doi-asserted-by": "crossref",
+              "first-page": "1139",
+              "DOI": "10.1111/j.1540-6261.2007.01232.x",
+              "article-title": "Giving content to investor sentiment: The role of media in the stock market",
+              "volume": "62",
+              "author": "P C Tetlock",
+              "year": "2007",
+              "journal-title": "Journal of Finance"
+            },
+            {
+              "key": "ref28",
+              "first-page": "38",
+              "author": "T Wolf",
+              "year": "2020",
+              "journal-title": "Transformers: State-of-the-Art Natural Language Processing"
+            },
+            {
+              "key": "ref29",
+              "author": "S Zhang",
+              "year": "2022",
+              "journal-title": "OPT: Open pre-trained transformer language models"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                17
+              ]
+            ],
+            "date-time": "2025-03-17T16:37:30Z",
+            "timestamp": 1742229450000
+          },
+          "score": 39.970398,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ssrn.com/abstract=4706629"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "references-count": 29,
+          "URL": "https://doi.org/10.2139/ssrn.4706629",
+          "published": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "subtype": "preprint"
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                10,
+                11
+              ]
+            ],
+            "date-time": "2026-10-11T22:42:34Z",
+            "timestamp": 1791758554229,
+            "version": "4.3.4"
+          },
+          "reference-count": 29,
+          "publisher": "Elsevier BV",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    4,
+                    1
+                  ]
+                ],
+                "date-time": "2024-04-01T00:00:00Z",
+                "timestamp": 1711929600000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    4,
+                    1
+                  ]
+                ],
+                "date-time": "2024-04-01T00:00:00Z",
+                "timestamp": 1711929600000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.elsevier.com/legal/tdmrep-license"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    4,
+                    12
+                  ]
+                ],
+                "date-time": "2024-04-12T00:00:00Z",
+                "timestamp": 1712880000000
+              },
+              "content-version": "vor",
+              "delay-in-days": 11,
+              "URL": "http://creativecommons.org/licenses/by/4.0/"
+            }
+          ],
+          "content-domain": {
+            "domain": [
+              "elsevier.com",
+              "sciencedirect.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "short-container-title": [
+            "Finance Research Letters"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                4
+              ]
+            ]
+          },
+          "DOI": "10.1016/j.frl.2024.105227",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                15
+              ]
+            ],
+            "date-time": "2024-03-15T00:23:52Z",
+            "timestamp": 1710462232000
+          },
+          "page": "105227",
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 110,
+          "special_numbering": "PB",
+          "title": [
+            "Sentiment trading with large language models"
+          ],
+          "prefix": "10.1016",
+          "volume": "62",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0009-0007-2044-1830",
+              "authenticated-orcid": false,
+              "given": "Kemal",
+              "family": "Kirtac",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Guido",
+              "family": "Germano",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "member": "78",
+          "reference": [
+            {
+              "issue": "S1",
+              "key": "10.1016/j.frl.2024.105227_b1",
+              "doi-asserted-by": "crossref",
+              "first-page": "S293",
+              "DOI": "10.1086/718327",
+              "article-title": "Artificial intelligence and jobs: Evidence from online vacancies",
+              "volume": "40",
+              "author": "Acemoglu",
+              "year": "2022",
+              "journal-title": "J. Labor Econ."
+            },
+            {
+              "key": "10.1016/j.frl.2024.105227_b2",
+              "series-title": "Understanding intermediate layers using linear classifier probes",
+              "author": "Alain",
+              "year": "2016"
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.frl.2024.105227_b3",
+              "doi-asserted-by": "crossref",
+              "first-page": "1593",
+              "DOI": "10.1093/qje/qjw024",
+              "article-title": "Measuring economic policy uncertainty",
+              "volume": "131",
+              "author": "Baker",
+              "year": "2016",
+              "journal-title": "Q. J. Econ."
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.frl.2024.105227_b4",
+              "doi-asserted-by": "crossref",
+              "first-page": "1645",
+              "DOI": "10.1111/j.1540-6261.2006.00885.x",
+              "article-title": "Investor sentiment and the cross-section of stock returns",
+              "volume": "61",
+              "author": "Baker",
+              "year": "2006",
+              "journal-title": "J. Finance"
+            },
+            {
+              "key": "10.1016/j.frl.2024.105227_b5",
+              "first-page": "3446225",
+              "article-title": "The structure of economic news",
+              "author": "Bybee",
+              "year": "2019",
+              "journal-title": "SSRN"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.frl.2024.105227_b6",
+              "doi-asserted-by": "crossref",
+              "first-page": "299",
+              "DOI": "10.1016/j.jfineco.2018.11.009",
+              "article-title": "How news and its context drive risk and returns around the world",
+              "volume": "133",
+              "author": "Calomiris",
+              "year": "2019",
+              "journal-title": "J. Financ. Econ."
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.frl.2024.105227_b7",
+              "doi-asserted-by": "crossref",
+              "first-page": "396",
+              "DOI": "10.1007/s11142-013-9258-3",
+              "article-title": "The information content of mandatory risk factor disclosures in corporate filings",
+              "volume": "19",
+              "author": "Campbell",
+              "year": "2014",
+              "journal-title": "Rev. Account. Stud."
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.frl.2024.105227_b8",
+              "doi-asserted-by": "crossref",
+              "first-page": "57",
+              "DOI": "10.1111/j.1540-6261.1997.tb03808.x",
+              "article-title": "On persistence in mutual fund performance",
+              "volume": "52",
+              "author": "Carhart",
+              "year": "1997",
+              "journal-title": "J. Finance"
+            },
+            {
+              "key": "10.1016/j.frl.2024.105227_b9",
+              "series-title": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+              "first-page": "4171",
+              "article-title": "BERT: Pre-training of deep bidirectional transformers for language understanding",
+              "author": "Devlin",
+              "year": "2019"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.frl.2024.105227_b10",
+              "doi-asserted-by": "crossref",
+              "first-page": "3",
+              "DOI": "10.1016/0304-405X(93)90023-5",
+              "article-title": "Common risk factors in the returns on stocks and bonds",
+              "volume": "33",
+              "author": "Fama",
+              "year": "1993",
+              "journal-title": "J. Financ. Econ."
+            },
+            {
+              "issue": "7",
+              "key": "10.1016/j.frl.2024.105227_b11",
+              "doi-asserted-by": "crossref",
+              "first-page": "5514",
+              "DOI": "10.1287/mnsc.2021.4156",
+              "article-title": "Disclosure sentiment: Machine learning vs. dictionary methods",
+              "volume": "68",
+              "author": "Frankel",
+              "year": "2022",
+              "journal-title": "Manage. Sci."
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.frl.2024.105227_b12",
+              "doi-asserted-by": "crossref",
+              "first-page": "1267",
+              "DOI": "10.1111/jofi.12027",
+              "article-title": "Sentiment during recessions",
+              "volume": "68",
+              "author": "Garcia",
+              "year": "2013",
+              "journal-title": "J. Finance"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.frl.2024.105227_b13",
+              "doi-asserted-by": "crossref",
+              "first-page": "801",
+              "DOI": "10.1093/qje/qjx045",
+              "article-title": "Transparency and deliberation within the FOMC: A computational linguistics approach",
+              "volume": "133",
+              "author": "Hansen",
+              "year": "2018",
+              "journal-title": "Q. J. Econ."
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.frl.2024.105227_b14",
+              "doi-asserted-by": "crossref",
+              "first-page": "1423",
+              "DOI": "10.1086/688176",
+              "article-title": "Text-based network industries and endogenous product differentiation",
+              "volume": "124",
+              "author": "Hoberg",
+              "year": "2016",
+              "journal-title": "J. Polit. Econ."
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.frl.2024.105227_b15",
+              "doi-asserted-by": "crossref",
+              "first-page": "806",
+              "DOI": "10.1111/1911-3846.12832",
+              "article-title": "FinBERT: A large language model for extracting information from financial text",
+              "volume": "40",
+              "author": "Huang",
+              "year": "2023",
+              "journal-title": "Contemp. Account. Res."
+            },
+            {
+              "key": "10.1016/j.frl.2024.105227_b16",
+              "series-title": "Hugging face’s transformer models",
+              "author": "Hugging Face",
+              "year": "2023"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.frl.2024.105227_b17",
+              "doi-asserted-by": "crossref",
+              "first-page": "712",
+              "DOI": "10.1016/j.jfineco.2013.08.018",
+              "article-title": "Word power: A new approach for content analysis",
+              "volume": "110",
+              "author": "Jegadeesh",
+              "year": "2013",
+              "journal-title": "J. Financ. Econ."
+            },
+            {
+              "key": "10.1016/j.frl.2024.105227_b18",
+              "first-page": "3389884",
+              "article-title": "Predicting returns with text data",
+              "author": "Ke",
+              "year": "2020",
+              "journal-title": "SSRN"
+            },
+            {
+              "issue": "5",
+              "key": "10.1016/j.frl.2024.105227_b19",
+              "first-page": "1367",
+              "article-title": "The impact of investor sentiment on the market’s reaction to stock splits",
+              "volume": "27",
+              "author": "Lemmon",
+              "year": "2014",
+              "journal-title": "Rev. Financ. Stud."
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.frl.2024.105227_b20",
+              "doi-asserted-by": "crossref",
+              "first-page": "35",
+              "DOI": "10.1111/j.1540-6261.2010.01625.x",
+              "article-title": "When is a liability not a liability? Textual analysis, dictionaries, and 10-ks",
+              "volume": "66",
+              "author": "Loughran",
+              "year": "2011",
+              "journal-title": "J. Finance"
+            },
+            {
+              "key": "10.1016/j.frl.2024.105227_b21",
+              "series-title": "Master Loughran-MacDonald word dictionary",
+              "author": "Loughran",
+              "year": "2022"
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.frl.2024.105227_b22",
+              "first-page": "13",
+              "article-title": "Event studies in economics and finance",
+              "volume": "35",
+              "author": "MacKinlay",
+              "year": "1997",
+              "journal-title": "J. Econ. Lit."
+            },
+            {
+              "issue": "4",
+              "key": "10.1016/j.frl.2024.105227_b23",
+              "doi-asserted-by": "crossref",
+              "first-page": "782",
+              "DOI": "10.1002/asi.23062",
+              "article-title": "Good debt or bad debt: Detecting semantic orientations in economic texts",
+              "volume": "65",
+              "author": "Malo",
+              "year": "2014",
+              "journal-title": "J. Assoc. Inf. Sci. Technol."
+            },
+            {
+              "issue": "1",
+              "key": "10.1016/j.frl.2024.105227_b24",
+              "doi-asserted-by": "crossref",
+              "first-page": "137",
+              "DOI": "10.1016/j.jfineco.2016.01.032",
+              "article-title": "News implied volatility and disaster concerns",
+              "volume": "123",
+              "author": "Manela",
+              "year": "2017",
+              "journal-title": "J. Financ. Econ."
+            },
+            {
+              "key": "10.1016/j.frl.2024.105227_b25",
+              "series-title": "Improving Language Understanding by Generative Pre-Training",
+              "author": "Radford",
+              "year": "2018"
+            },
+            {
+              "issue": "2",
+              "key": "10.1016/j.frl.2024.105227_b26",
+              "doi-asserted-by": "crossref",
+              "first-page": "221",
+              "DOI": "10.1016/j.jeconom.2020.07.053",
+              "article-title": "Measuring news sentiment",
+              "volume": "228",
+              "author": "Shapiro",
+              "year": "2022",
+              "journal-title": "J. Econometrics"
+            },
+            {
+              "issue": "3",
+              "key": "10.1016/j.frl.2024.105227_b27",
+              "doi-asserted-by": "crossref",
+              "first-page": "1139",
+              "DOI": "10.1111/j.1540-6261.2007.01232.x",
+              "article-title": "Giving content to investor sentiment: The role of media in the stock market",
+              "volume": "62",
+              "author": "Tetlock",
+              "year": "2007",
+              "journal-title": "J. Finance"
+            },
+            {
+              "key": "10.1016/j.frl.2024.105227_b28",
+              "series-title": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+              "first-page": "38",
+              "article-title": "Transformers: State-of-the-art natural language processing",
+              "author": "Wolf",
+              "year": "2020"
+            },
+            {
+              "key": "10.1016/j.frl.2024.105227_b29",
+              "series-title": "OPT: Open pre-trained transformer language models",
+              "author": "Zhang",
+              "year": "2022"
+            }
+          ],
+          "container-title": [
+            "Finance Research Letters"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S1544612324002575?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S1544612324002575?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                4,
+                13
+              ]
+            ],
+            "date-time": "2024-04-13T00:02:33Z",
+            "timestamp": 1712966553000
+          },
+          "score": 39.873913,
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1544612324002575"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                4
+              ]
+            ]
+          },
+          "references-count": 29,
+          "alternative-id": [
+            "S1544612324002575"
+          ],
+          "URL": "https://doi.org/10.1016/j.frl.2024.105227",
+          "ISSN": [
+            "1544-6123"
+          ],
+          "issn-type": [
+            {
+              "value": "1544-6123",
+              "type": "print"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                4
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "Elsevier",
+              "name": "publisher",
+              "label": "This article is maintained by"
+            },
+            {
+              "value": "Sentiment trading with large language models",
+              "name": "articletitle",
+              "label": "Article Title"
+            },
+            {
+              "value": "Finance Research Letters",
+              "name": "journaltitle",
+              "label": "Journal Title"
+            },
+            {
+              "value": "https://doi.org/10.1016/j.frl.2024.105227",
+              "name": "articlelink",
+              "label": "CrossRef DOI link to publisher maintained version"
+            },
+            {
+              "value": "article",
+              "name": "content_type",
+              "label": "Content Type"
+            },
+            {
+              "value": "© 2024 The Authors. Published by Elsevier Inc.",
+              "name": "copyright",
+              "label": "Copyright"
+            }
+          ],
+          "article-number": "105227"
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                6
+              ]
+            ],
+            "date-time": "2025-12-06T04:49:13Z",
+            "timestamp": 1764996553821,
+            "version": "3.28.0"
+          },
+          "reference-count": 24,
+          "publisher": "IEEE",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    7,
+                    27
+                  ]
+                ],
+                "date-time": "2024-07-27T00:00:00Z",
+                "timestamp": 1722038400000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-029"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2024,
+                    7,
+                    27
+                  ]
+                ],
+                "date-time": "2024-07-27T00:00:00Z",
+                "timestamp": 1722038400000
+              },
+              "content-version": "stm-asf",
+              "delay-in-days": 0,
+              "URL": "https://doi.org/10.15223/policy-037"
+            }
+          ],
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                7,
+                27
+              ]
+            ]
+          },
+          "DOI": "10.1109/icnc-fskd64080.2024.10702242",
+          "type": "proceedings-article",
+          "created": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                8
+              ]
+            ],
+            "date-time": "2024-10-08T17:34:48Z",
+            "timestamp": 1728408888000
+          },
+          "page": "1-6",
+          "source": "Crossref",
+          "is-referenced-by-count": 2,
+          "title": [
+            "Enhancing Emotion Perception in Sentiment Analysis through Large-Scale Language Models"
+          ],
+          "prefix": "10.1109",
+          "author": [
+            {
+              "given": "Qiang",
+              "family": "Li",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "State Grid Information and Telecommunication Group Co., Ltd, State Grid Corporation of China,Beijing,China,100021"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Feng",
+              "family": "Zhao",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Beijing SGITG Accenture Information Technology Center Co., Ltd., State Grid Corporation of China,Beijing,China,100021"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Jianning",
+              "family": "Zheng",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "State Grid Information and Telecommunication Group Co., Ltd, State Grid Corporation of China,Beijing,China,100021"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Hui",
+              "family": "Xiang",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "State Grid Information and Telecommunication Group Co., Ltd, State Grid Corporation of China,Beijing,China,100021"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Hong",
+              "family": "Ouyang",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "State Grid Information and Telecommunication Group Co., Ltd, State Grid Corporation of China,Beijing,China,100021"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Linlin",
+              "family": "Zhao",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Beijing SGITG Accenture Information Technology Center Co., Ltd., State Grid Corporation of China,Beijing,China,100021"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Yongyuan",
+              "family": "Chen",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Beijing SGITG Accenture Information Technology Center Co., Ltd., State Grid Corporation of China,Beijing,China,100021"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Ting",
+              "family": "Guo",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "State Grid Information and Telecommunication Group Co., Ltd, State Grid Corporation of China,Beijing,China,100021"
+                }
+              ],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            }
+          ],
+          "member": "263",
+          "reference": [
+            {
+              "key": "ref1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.asej.2014.04.011"
+            },
+            {
+              "key": "ref2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s10462-022-10144-1"
+            },
+            {
+              "key": "ref3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1038/nature14539"
+            },
+            {
+              "journal-title": "Roberta: A robustly optimized bert pretraining approach",
+              "year": "2019",
+              "author": "Liu",
+              "key": "ref4"
+            },
+            {
+              "journal-title": "Bert: Pre-training of deep bidirectional transformers for language understanding",
+              "year": "2018",
+              "author": "Devlin",
+              "key": "ref5"
+            },
+            {
+              "key": "ref6",
+              "article-title": "Improving language understanding by generative pretraining",
+              "author": "Radford",
+              "year": "2018",
+              "journal-title": "OpertAI"
+            },
+            {
+              "journal-title": "XLNet: Generalized Autoregressive Pretraining for Language Understanding",
+              "year": "2019",
+              "author": "Yang",
+              "key": "ref7"
+            },
+            {
+              "key": "ref8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/ICNNB.2005.1614615"
+            },
+            {
+              "issue": "22",
+              "key": "ref9",
+              "first-page": "41",
+              "article-title": "An empirical study of the naive Bayes classifier",
+              "volume-title": "IJCAI 2001 workshop on empirical methods in artificial intelligence",
+              "volume": "3",
+              "author": "Rish",
+              "year": "2001"
+            },
+            {
+              "key": "ref10",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TNNLS.2021.3084827"
+            },
+            {
+              "key": "ref11",
+              "first-page": "64",
+              "article-title": "Recurrent neural networks",
+              "volume": "5",
+              "author": "Medsker",
+              "year": "2001",
+              "journal-title": "Design and Applications"
+            },
+            {
+              "key": "ref12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s11023-020-09548-1"
+            },
+            {
+              "journal-title": "Llama 2: Open foundation and fine-tuned chat models",
+              "year": "2023",
+              "author": "Touvron",
+              "key": "ref13"
+            },
+            {
+              "journal-title": "Qwen technical report",
+              "year": "2023",
+              "author": "Bai",
+              "key": "ref14"
+            },
+            {
+              "key": "ref15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.3390/ijgi8080355"
+            },
+            {
+              "key": "ref16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1162/neco_a_01199"
+            },
+            {
+              "journal-title": "Dailydialog: A manually labelled multi-turn dialogue dataset",
+              "year": "2017",
+              "author": "Li",
+              "key": "ref17"
+            },
+            {
+              "key": "ref18",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/CSCWD61410.2024.10580730"
+            },
+            {
+              "journal-title": "SentiCSE: A Sentiment-aware Contrastive Sentence Embedding Framework with Sentiment-guided Textual Similarity",
+              "year": "2024",
+              "author": "Kim",
+              "key": "ref19"
+            },
+            {
+              "journal-title": "Sentiment analysis through llm negotiations",
+              "year": "2023",
+              "author": "Sun",
+              "key": "ref20"
+            },
+            {
+              "journal-title": "KazSAnDRA: Kazakh Sentiment Analysis Dataset of Reviews and Attitudes",
+              "year": "2024",
+              "author": "Yeshpanov",
+              "key": "ref21"
+            },
+            {
+              "journal-title": "Sentiment analysis through llm negotiations",
+              "year": "2023",
+              "author": "Sun",
+              "key": "ref22"
+            },
+            {
+              "journal-title": "FaiMA: Feature-aware In-context Learning for Multi-domain Aspect-based Sentiment Analysis",
+              "year": "2024",
+              "author": "Yang",
+              "key": "ref23"
+            },
+            {
+              "journal-title": "LlamBERT: Large-scale low-cost data annotation in NLP",
+              "year": "2024",
+              "author": "Csanády",
+              "key": "ref24"
+            }
+          ],
+          "event": {
+            "name": "2024 20th International Conference on Natural Computation, Fuzzy Systems and Knowledge Discovery (ICNC-FSKD)",
+            "start": {
+              "date-parts": [
+                [
+                  2024,
+                  7,
+                  27
+                ]
+              ]
+            },
+            "location": "Guangzhou, China",
+            "end": {
+              "date-parts": [
+                [
+                  2024,
+                  7,
+                  29
+                ]
+              ]
+            }
+          },
+          "container-title": [
+            "2024 20th International Conference on Natural Computation, Fuzzy Systems and Knowledge Discovery (ICNC-FSKD)"
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx8/10702183/10701613/10702242.pdf?arnumber=10702242",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2024-10-09T17:45:00Z",
+            "timestamp": 1728495900000
+          },
+          "score": 39.24347,
+          "resource": {
+            "primary": {
+              "URL": "https://ieeexplore.ieee.org/document/10702242/"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                7,
+                27
+              ]
+            ]
+          },
+          "references-count": 24,
+          "URL": "https://doi.org/10.1109/icnc-fskd64080.2024.10702242",
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                7,
+                27
+              ]
+            ]
+          }
+        }
+      ],
+      "items-per-page": 3,
+      "query": {
+        "start-index": 0,
+        "search-terms": null
+      }
+    }
+  }
+}

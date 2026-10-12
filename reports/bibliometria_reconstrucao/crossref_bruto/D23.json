@@ -1,0 +1,1426 @@
+{
+  "url": "https://api.crossref.org/works?query.title=Echo+State+Networks+for+Bitcoin+Time+Series+Prediction&rows=3",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+      "facets": {},
+      "total-results": 4836322,
+      "items": [
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                4
+              ]
+            ],
+            "date-time": "2026-08-04T11:43:49Z",
+            "timestamp": 1785843829770,
+            "version": "3.56.0"
+          },
+          "publisher-location": "Singapore",
+          "reference-count": 30,
+          "publisher": "Springer Nature Singapore",
+          "isbn-type": [
+            {
+              "value": "9789819541089",
+              "type": "print"
+            },
+            {
+              "value": "9789819541096",
+              "type": "electronic"
+            }
+          ],
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    11,
+                    17
+                  ]
+                ],
+                "date-time": "2025-11-17T00:00:00Z",
+                "timestamp": 1763337600000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2025,
+                    11,
+                    17
+                  ]
+                ],
+                "date-time": "2025-11-17T00:00:00Z",
+                "timestamp": 1763337600000
+              },
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+            }
+          ],
+          "content-domain": {
+            "domain": [
+              "link.springer.com"
+            ],
+            "crossmark-restriction": false
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2026
+              ]
+            ]
+          },
+          "DOI": "10.1007/978-981-95-4109-6_25",
+          "type": "book-chapter",
+          "created": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                16
+              ]
+            ],
+            "date-time": "2025-11-16T20:14:30Z",
+            "timestamp": 1763324070000
+          },
+          "page": "365-380",
+          "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 0,
+          "title": [
+            "Echo State Networks for Bitcoin Time Series Prediction"
+          ],
+          "prefix": "10.1007",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0001-9196-6342",
+              "authenticated-orcid": false,
+              "given": "Mansi",
+              "family": "Sharma",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0009-0009-2697-6849",
+              "authenticated-orcid": false,
+              "given": "Enrico",
+              "family": "Sartor",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-6113-9696",
+              "authenticated-orcid": false,
+              "given": "Marc",
+              "family": "Cavazza",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-4654-9835",
+              "authenticated-orcid": false,
+              "given": "Helmut",
+              "family": "Prendinger",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "member": "297",
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ]
+          },
+          "reference": [
+            {
+              "key": "25_CR1",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Alessandretti, L., ElBahrawy, A., Aiello, L.M., Baronchelli, A.: Anticipating cryptocurrency prices using machine learning. Complexity 2018, 1–16 (2018)",
+              "DOI": "10.1155/2018/8983590"
+            },
+            {
+              "key": "25_CR2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.eswa.2019.112896",
+              "volume": "140",
+              "author": "K Bandara",
+              "year": "2020",
+              "unstructured": "Bandara, K., Bergmeir, C., Smyl, S.: Forecasting across time series databases using recurrent neural networks on groups of similar series: a clustering approach. Expert Syst. Appl. 140, 112896 (2020)",
+              "journal-title": "Expert Syst. Appl."
+            },
+            {
+              "key": "25_CR3",
+              "doi-asserted-by": "publisher",
+              "first-page": "1",
+              "DOI": "10.1016/j.econlet.2017.09.013",
+              "volume": "161",
+              "author": "AF Bariviera",
+              "year": "2017",
+              "unstructured": "Bariviera, A.F.: The inefficiency of bitcoin revisited: a dynamic approach. Econ. Lett. 161, 1–4 (2017)",
+              "journal-title": "Econ. Lett."
+            },
+            {
+              "key": "25_CR4",
+              "unstructured": "Binance: Binance: The world’s leading cryptocurrency exchange (2025)"
+            },
+            {
+              "key": "25_CR5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.asoc.2020.106187",
+              "volume": "90",
+              "author": "TA Borges",
+              "year": "2020",
+              "unstructured": "Borges, T.A., Neves, R.F.: Ensemble of machine learning algorithms for cryptocurrency investment with different data resampling methods. Appl. Soft Comput. 90, 106187 (2020)",
+              "journal-title": "Appl. Soft Comput."
+            },
+            {
+              "key": "25_CR6",
+              "doi-asserted-by": "publisher",
+              "first-page": "709",
+              "DOI": "10.1016/j.energy.2018.09.144",
+              "volume": "165",
+              "author": "JS Chou",
+              "year": "2018",
+              "unstructured": "Chou, J.S., Tran, D.S.: Forecasting energy consumption time series using machine learning techniques based on usage patterns of residential householders. Energy 165, 709–726 (2018)",
+              "journal-title": "Energy"
+            },
+            {
+              "key": "25_CR7",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Dan, J., Guo, W., Shi, W., Fang, B., Tingping, Z.: Deterministic echo state networks based stock price forecasting. In: Abstract and Applied Analysis, vol. 2014, pp. 1–6 (2014)",
+              "DOI": "10.1155/2014/137148"
+            },
+            {
+              "key": "25_CR8",
+              "unstructured": "Elsayed, S., Thyssens, D., Rashed, A., Jomaa, H.S., Schmidt-Thieme, L.: Do we really need deep learning models for time series forecasting? arXiv preprint arXiv:2101.02118 (2021)"
+            },
+            {
+              "issue": "2",
+              "key": "25_CR9",
+              "doi-asserted-by": "publisher",
+              "first-page": "654",
+              "DOI": "10.1016/j.ejor.2017.11.054",
+              "volume": "270",
+              "author": "T Fischer",
+              "year": "2018",
+              "unstructured": "Fischer, T., Krauss, C.: Deep learning with long short-term memory networks for financial market predictions. Eur. J. Oper. Res. 270(2), 654–669 (2018)",
+              "journal-title": "Eur. J. Oper. Res."
+            },
+            {
+              "key": "25_CR10",
+              "doi-asserted-by": "publisher",
+              "first-page": "78",
+              "DOI": "10.1126/science.1091277",
+              "volume": "304",
+              "author": "H Jaeger",
+              "year": "2004",
+              "unstructured": "Jaeger, H., Haas, H.: Harnessing nonlinearity: predicting chaotic systems and saving energy in wireless communication. Science 304, 78–80 (2004)",
+              "journal-title": "Science"
+            },
+            {
+              "key": "25_CR11",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Jaquart, P., Dann, D., Martin, C.: Machine learning for bitcoin pricing-a structured literature review. In: Wirtschaftsinformatik (Zentrale Tracks), pp. 174–188 (2020)",
+              "DOI": "10.30844/wi_2020_b4-jaquart"
+            },
+            {
+              "key": "25_CR12",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Jaquart, P., Dann, D., Weinhardt, C.: Short-term bitcoin market prediction via machine learning. J. Finan. Data Sci. (2021)",
+              "DOI": "10.1016/j.jfds.2021.03.001"
+            },
+            {
+              "key": "25_CR13",
+              "unstructured": "Kenny, M.: Investigating the Predictability of a Chaotic Time-Series Data using Reservoir Computing, Deep-Learning and Machine-Learning on the Short-, Medium-and Long-Term Pricing of Bitcoin and Ethereum. Master’s thesis, Technological University Dublin, Dublin, Ireland (2020)"
+            },
+            {
+              "issue": "10",
+              "key": "25_CR14",
+              "doi-asserted-by": "publisher",
+              "first-page": "12228",
+              "DOI": "10.3390/en81012228",
+              "volume": "8",
+              "author": "G Li",
+              "year": "2015",
+              "unstructured": "Li, G., Li, B.J., Yu, X.G., Cheng, C.T.: Echo state network with Bayesian regularization for forecasting short-term power production of small hydropower plants. Energies 8(10), 12228–12241 (2015)",
+              "journal-title": "Energies"
+            },
+            {
+              "key": "25_CR15",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Lin, X., Yang, Z., Song, Y.: Short-term stock price prediction based on echo state networks. Expert Syst. Appl. 36(3), 7313–7317 (2009)",
+              "DOI": "10.1016/j.eswa.2008.09.049"
+            },
+            {
+              "key": "25_CR16",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Lukoeviius, M.: A practical guide to applying echo state networks. In: Neural Networks (2012)",
+              "DOI": "10.1007/978-3-642-35289-8_36"
+            },
+            {
+              "issue": "3",
+              "key": "25_CR17",
+              "doi-asserted-by": "publisher",
+              "first-page": "1",
+              "DOI": "10.1371/journal.pone.0194889",
+              "volume": "13",
+              "author": "S Makridakis",
+              "year": "2018",
+              "unstructured": "Makridakis, S., Spiliotis, E., Assimakopoulos, V.: Statistical and machine learning forecasting methods: concerns and ways forward. PLoS ONE 13(3), 1–26 (2018)",
+              "journal-title": "PLoS ONE"
+            },
+            {
+              "key": "25_CR18",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Makridakis, S., et al.: Statistical, machine learning and deep learning forecasting methods: comparisons and ways forward. J. Oper. Res. Soc. 74(3), 840–859 (2023)",
+              "DOI": "10.1080/01605682.2022.2118629"
+            },
+            {
+              "key": "25_CR19",
+              "doi-asserted-by": "publisher",
+              "first-page": "6",
+              "DOI": "10.1016/j.econlet.2016.10.033",
+              "volume": "150",
+              "author": "S Nadarajah",
+              "year": "2017",
+              "unstructured": "Nadarajah, S., Chu, J.: On the inefficiency of bitcoin. Econ. Lett. 150, 6–9 (2017)",
+              "journal-title": "Econ. Lett."
+            },
+            {
+              "key": "25_CR20",
+              "unstructured": "Nakamoto, S., Bitcoin, A.: A peer-to-peer electronic cash system. Bitcoin.https://bitcoin.org/bitcoin.pdf. 4(2), 15 (2008)"
+            },
+            {
+              "key": "25_CR21",
+              "unstructured": "Peters, E.: Fractal Market Analysis: Applying Chaos Theory to Investment and Economics. Wiley, Wiley Finance, Hoboken (1994)"
+            },
+            {
+              "key": "25_CR22",
+              "unstructured": "de Prado, M.: Advances in Financial Machine Learning. Wiley, Hoboken (2018)"
+            },
+            {
+              "key": "25_CR23",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.bdr.2020.100178",
+              "volume": "23",
+              "author": "X Ren",
+              "year": "2021",
+              "unstructured": "Ren, X., Li, X., Ren, K., Song, J., Xu, Z., Deng, K., Wang, X.: Deep learning-based weather prediction: a survey. Big Data Res. 23, 100178 (2021)",
+              "journal-title": "Big Data Res."
+            },
+            {
+              "issue": "1–2",
+              "key": "25_CR24",
+              "doi-asserted-by": "publisher",
+              "first-page": "117",
+              "DOI": "10.1016/0167-2789(93)90009-P",
+              "volume": "65",
+              "author": "MT Rosenstein",
+              "year": "1993",
+              "unstructured": "Rosenstein, M.T., Collins, J.J., De Luca, C.J.: A practical method for calculating largest lyapunov exponents from small data sets. Physica D 65(1–2), 117–134 (1993)",
+              "journal-title": "Physica D"
+            },
+            {
+              "key": "25_CR25",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Smyl, S.: A hybrid method of exponential smoothing and recurrent neural networks for time series forecasting. Int. J. Forecast. 36 (2019)",
+              "DOI": "10.1016/j.ijforecast.2019.03.017"
+            },
+            {
+              "key": "25_CR26",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Spiliotis, E., Nikolopoulos, K., Assimakopoulos, V.: Tales from tails: on the empirical distributions of forecasting errors and their implication to risk. Int. J. Forecast. 35 (2018)",
+              "DOI": "10.1016/j.ijforecast.2018.10.004"
+            },
+            {
+              "key": "25_CR27",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.frl.2018.12.032",
+              "volume": "32",
+              "author": "X Sun",
+              "year": "2020",
+              "unstructured": "Sun, X., Liu, M., Sima, Z.: A novel cryptocurrency price trend forecasting model based on lightgbm. Financ. Res. Lett. 32, 101084 (2020)",
+              "journal-title": "Financ. Res. Lett."
+            },
+            {
+              "key": "25_CR28",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Urquhart, A.: The inefficiency of bitcoin. Econ. Lett. 148(C), 80–82 (2016)",
+              "DOI": "10.1016/j.econlet.2016.09.019"
+            },
+            {
+              "key": "25_CR29",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Wood, K., Roberts, S., Zohren, S.: Slow momentum with fast reversion: A trading strategy using deep learning and changepoint detection. J. Finan. Data Sci. 4(1), 111–129 (2021)",
+              "DOI": "10.3905/jfds.2021.1.081"
+            },
+            {
+              "issue": "1",
+              "key": "25_CR30",
+              "doi-asserted-by": "publisher",
+              "first-page": "87",
+              "DOI": "10.1260/1748-3018.7.1.87",
+              "volume": "7",
+              "author": "H Zhang",
+              "year": "2013",
+              "unstructured": "Zhang, H., Liang, J., Chai, Z.: Stock prediction based on phase space reconstruction and echo state networks. J. Algorithms Comput. Technol. 7(1), 87–100 (2013)",
+              "journal-title": "J. Algorithms Comput. Technol."
+            }
+          ],
+          "container-title": [
+            "Communications in Computer and Information Science",
+            "Neural Information Processing"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://link.springer.com/content/pdf/10.1007/978-981-95-4109-6_25",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                8,
+                4
+              ]
+            ],
+            "date-time": "2026-08-04T10:48:05Z",
+            "timestamp": 1785840485000
+          },
+          "score": 50.8936,
+          "resource": {
+            "primary": {
+              "URL": "https://link.springer.com/10.1007/978-981-95-4109-6_25"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ]
+          },
+          "ISBN": [
+            "9789819541089",
+            "9789819541096"
+          ],
+          "references-count": 30,
+          "URL": "https://doi.org/10.1007/978-981-95-4109-6_25",
+          "ISSN": [
+            "1865-0929",
+            "1865-0937"
+          ],
+          "issn-type": [
+            {
+              "value": "1865-0929",
+              "type": "print"
+            },
+            {
+              "value": "1865-0937",
+              "type": "electronic"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                17
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "17 November 2025",
+              "order": 1,
+              "name": "first_online",
+              "label": "First Online",
+              "group": {
+                "name": "ChapterHistory",
+                "label": "Chapter History"
+              }
+            },
+            {
+              "value": "ICONIP",
+              "order": 1,
+              "name": "conference_acronym",
+              "label": "Conference Acronym",
+              "group": {
+                "name": "ConferenceInfo",
+                "label": "Conference Information"
+              }
+            },
+            {
+              "value": "International Conference on Neural Information Processing",
+              "order": 2,
+              "name": "conference_name",
+              "label": "Conference Name",
+              "group": {
+                "name": "ConferenceInfo",
+                "label": "Conference Information"
+              }
+            },
+            {
+              "value": "Okinawa",
+              "order": 3,
+              "name": "conference_city",
+              "label": "Conference City",
+              "group": {
+                "name": "ConferenceInfo",
+                "label": "Conference Information"
+              }
+            },
+            {
+              "value": "Japan",
+              "order": 4,
+              "name": "conference_country",
+              "label": "Conference Country",
+              "group": {
+                "name": "ConferenceInfo",
+                "label": "Conference Information"
+              }
+            },
+            {
+              "value": "2025",
+              "order": 5,
+              "name": "conference_year",
+              "label": "Conference Year",
+              "group": {
+                "name": "ConferenceInfo",
+                "label": "Conference Information"
+              }
+            },
+            {
+              "value": "20 November 2025",
+              "order": 7,
+              "name": "conference_start_date",
+              "label": "Conference Start Date",
+              "group": {
+                "name": "ConferenceInfo",
+                "label": "Conference Information"
+              }
+            },
+            {
+              "value": "24 November 2025",
+              "order": 8,
+              "name": "conference_end_date",
+              "label": "Conference End Date",
+              "group": {
+                "name": "ConferenceInfo",
+                "label": "Conference Information"
+              }
+            },
+            {
+              "value": "32",
+              "order": 9,
+              "name": "conference_number",
+              "label": "Conference Number",
+              "group": {
+                "name": "ConferenceInfo",
+                "label": "Conference Information"
+              }
+            },
+            {
+              "value": "iconip2025",
+              "order": 10,
+              "name": "conference_id",
+              "label": "Conference ID",
+              "group": {
+                "name": "ConferenceInfo",
+                "label": "Conference Information"
+              }
+            },
+            {
+              "value": "https://iconip2025.apnns.org/",
+              "order": 11,
+              "name": "conference_url",
+              "label": "Conference URL",
+              "group": {
+                "name": "ConferenceInfo",
+                "label": "Conference Information"
+              }
+            }
+          ]
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2026-09-30T03:23:47Z",
+            "timestamp": 1790738627613,
+            "version": "4.1.0"
+          },
+          "reference-count": 33,
+          "publisher": "Springer Science and Business Media LLC",
+          "issue": "23",
+          "license": [
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    4,
+                    30
+                  ]
+                ],
+                "date-time": "2020-04-30T00:00:00Z",
+                "timestamp": 1588204800000
+              },
+              "content-version": "tdm",
+              "delay-in-days": 0,
+              "URL": "https://www.springer.com/tdm"
+            },
+            {
+              "start": {
+                "date-parts": [
+                  [
+                    2020,
+                    4,
+                    30
+                  ]
+                ],
+                "date-time": "2020-04-30T00:00:00Z",
+                "timestamp": 1588204800000
+              },
+              "content-version": "vor",
+              "delay-in-days": 0,
+              "URL": "https://www.springer.com/tdm"
+            }
+          ],
+          "content-domain": {
+            "domain": [
+              "link.springer.com"
+            ],
+            "crossmark-restriction": false
+          },
+          "short-container-title": [
+            "Neural Comput &amp; Applic"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2020,
+                12
+              ]
+            ]
+          },
+          "DOI": "10.1007/s00521-020-04948-x",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                29
+              ]
+            ],
+            "date-time": "2020-04-29T22:02:45Z",
+            "timestamp": 1588197765000
+          },
+          "page": "17769-17787",
+          "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+          "source": "Crossref",
+          "is-referenced-by-count": 95,
+          "title": [
+            "Time series prediction using deep echo state networks"
+          ],
+          "prefix": "10.1007",
+          "volume": "32",
+          "author": [
+            {
+              "given": "Taehwan",
+              "family": "Kim",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Brian R.",
+              "family": "King",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "member": "297",
+          "published-online": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                30
+              ]
+            ]
+          },
+          "reference": [
+            {
+              "issue": "3–4",
+              "key": "4948_CR1",
+              "doi-asserted-by": "publisher",
+              "first-page": "341",
+              "DOI": "10.1089/10665270360688057",
+              "volume": "10",
+              "author": "Z Bar-Joseph",
+              "year": "2003",
+              "unstructured": "Bar-Joseph Z, Gerber GK, Gifford DK, Jaakkola TS, Simon I (2003) Continuous representations of time-series gene expression data. J Comput Biol 10(3–4):341–356",
+              "journal-title": "J Comput Biol"
+            },
+            {
+              "key": "4948_CR2",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Taylor SJ (2007) Modeling financial time series",
+              "DOI": "10.1142/6578"
+            },
+            {
+              "key": "4948_CR3",
+              "volume-title": "Time-series analysis: a comprehensive introduction for social scientists",
+              "author": "JM Gottman",
+              "year": "1981",
+              "unstructured": "Gottman JM (1981) Time-series analysis: a comprehensive introduction for social scientists, vol 400. Cambridge University Press, Cambridge"
+            },
+            {
+              "issue": "9",
+              "key": "4948_CR4",
+              "doi-asserted-by": "publisher",
+              "first-page": "1253",
+              "DOI": "10.1016/0026-2714(95)00154-9",
+              "volume": "36",
+              "author": "R Billinton",
+              "year": "1996",
+              "unstructured": "Billinton R, Chen H, Ghajar R (1996) Time-series models for reliability evaluation of power systems including wind energy. Microelectron Reliab 36(9):1253–1261",
+              "journal-title": "Microelectron Reliab"
+            },
+            {
+              "key": "4948_CR5",
+              "doi-asserted-by": "publisher",
+              "first-page": "324",
+              "DOI": "10.1038/350324a0",
+              "volume": "350",
+              "author": "M Ghil",
+              "year": "1991",
+              "unstructured": "Ghil M, Vautard R (1991) Interdecadal oscillations and the warming trend in global temperature time series. Nature 350:324–327",
+              "journal-title": "Nature"
+            },
+            {
+              "issue": "2",
+              "key": "4948_CR6",
+              "doi-asserted-by": "publisher",
+              "first-page": "112",
+              "DOI": "10.1007/s00521-004-0413-4",
+              "volume": "13",
+              "author": "I Maqsood",
+              "year": "2004",
+              "unstructured": "Maqsood I, Khan MR, Abraham A (2004) An ensemble of neural networks for weather forecasting. Neural Comput Appl 13(2):112–122",
+              "journal-title": "Neural Comput Appl"
+            },
+            {
+              "issue": "3",
+              "key": "4948_CR7",
+              "doi-asserted-by": "publisher",
+              "first-page": "626",
+              "DOI": "10.1109/TPWRS.2002.800906",
+              "volume": "17",
+              "author": "JW Taylor",
+              "year": "2002",
+              "unstructured": "Taylor JW, Buizza R (2002) Neural network load forecasting with weather ensemble predictions. IEEE Trans Power Syst 17(3):626–632",
+              "journal-title": "IEEE Trans Power Syst"
+            },
+            {
+              "issue": "3",
+              "key": "4948_CR8",
+              "doi-asserted-by": "publisher",
+              "first-page": "7313",
+              "DOI": "10.1016/j.eswa.2008.09.049",
+              "volume": "36",
+              "author": "X Lin",
+              "year": "2009",
+              "unstructured": "Lin X, Yang Z, Song Y (2009) Short-term stock price prediction based on echo state networks. Expert Syst Appl 36(3):7313–7317",
+              "journal-title": "Expert Syst Appl"
+            },
+            {
+              "key": "4948_CR9",
+              "unstructured": "Bernal A, Fok S, Pidaparthi R (2012) Financial market time series prediction with recurrent neural networks the challenge of time series prediction echo state network implementation, pp 1–5"
+            },
+            {
+              "key": "4948_CR10",
+              "unstructured": "Jaeger H (2001) The “echo state” approach to analysing and training recurrent neural networks-with an erratum note. German National Research Institute for Computer Science"
+            },
+            {
+              "key": "4948_CR11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/S0925-2312(01)00702-0",
+              "author": "PG Zhang",
+              "year": "2003",
+              "unstructured": "Zhang PG (2003) Time series forecasting using a hybrid ARIMA and neural network model. Neurocomputing. https://doi.org/10.1016/S0925-2312(01)00702-0",
+              "journal-title": "Neurocomputing"
+            },
+            {
+              "key": "4948_CR12",
+              "first-page": "29",
+              "volume": "1994",
+              "author": "GP Nason",
+              "year": "2006",
+              "unstructured": "Nason GP (2006) Stationary and non-stationary time series. Stat Volcanol 1994:29",
+              "journal-title": "Stat Volcanol"
+            },
+            {
+              "key": "4948_CR13",
+              "unstructured": "Palachy S (2019) Stationarity in time series analysis. Towards Data Science. https://towardsdatascience.com/stationarity-in-time-series-analysis-90c94f27322"
+            },
+            {
+              "key": "4948_CR14",
+              "unstructured": "Zaiontz C (2018) Dickey–Fuller test. http://www.real-statistics.com/time-series-analysis/stochastic-processes/dickey-fuller-test/"
+            },
+            {
+              "key": "4948_CR15",
+              "doi-asserted-by": "publisher",
+              "first-page": "1",
+              "DOI": "10.1111/j.1467-9892.2009.00647.x",
+              "volume": "3",
+              "author": "GN Boshnakov",
+              "year": "2010",
+              "unstructured": "Boshnakov GN (2010) Introductory time series with R. J Time Ser Anal 3:1. https://doi.org/10.1111/j.1467-9892.2009.00647.x",
+              "journal-title": "J Time Ser Anal"
+            },
+            {
+              "issue": "2",
+              "key": "4948_CR16",
+              "doi-asserted-by": "publisher",
+              "first-page": "107",
+              "DOI": "10.1142/S0218488598000094",
+              "volume": "6",
+              "author": "S Hochreiter",
+              "year": "1998",
+              "unstructured": "Hochreiter S (1998) The vanishing gradient problem during learning recurrent neural nets and problem solutions. Int J Uncertainty Fuzziness Knowl Based Syst 6(2):107–116. https://doi.org/10.1142/S0218488598000094",
+              "journal-title": "Int J Uncertainty Fuzziness Knowl Based Syst"
+            },
+            {
+              "key": "4948_CR17",
+              "doi-asserted-by": "publisher",
+              "first-page": "850",
+              "DOI": "10.1197/jamia.M2577",
+              "volume": "2",
+              "author": "F Cummins",
+              "year": "2000",
+              "unstructured": "Cummins F, Gers FA, Schmidhuber J (2000) Learning to forget: continual prediction with LSTM. Neural Comput 2:850–855. https://doi.org/10.1197/jamia.M2577",
+              "journal-title": "Neural Comput"
+            },
+            {
+              "key": "4948_CR18",
+              "unstructured": "Chung J, Gulcehre C, Cho K, Bengio Y (2014) Empirical evaluation of gated recurrent neural networks on sequence modeling, pp 1–9. Retrieved from http://arxiv.org/abs/1412.3555"
+            },
+            {
+              "issue": "3",
+              "key": "4948_CR19",
+              "doi-asserted-by": "publisher",
+              "first-page": "127",
+              "DOI": "10.1016/J.COSREV.2009.03.005",
+              "volume": "3",
+              "author": "M Lukoševičius",
+              "year": "2009",
+              "unstructured": "Lukoševičius M, Jaeger H (2009) Reservoir computing approaches to recurrent neural network training. Comput Sci Rev 3(3):127–149. https://doi.org/10.1016/J.COSREV.2009.03.005",
+              "journal-title": "Comput Sci Rev"
+            },
+            {
+              "key": "4948_CR20",
+              "volume-title": "Neural networks: tricks of the trade. Lecture Notes in Computer Science",
+              "author": "M Lukoševičius",
+              "year": "2012",
+              "unstructured": "Lukoševičius M (2012) A practical guide to applying Echo State Networks. In: Montavon G, Orr GB, Müller KR (eds) Neural networks: tricks of the trade. Lecture Notes in Computer Science, vol 7700. Springer, Berlin"
+            },
+            {
+              "key": "4948_CR21",
+              "unstructured": "Gallicchio C, Micheli A, Pedrelli L (2018) Deep Echo State Networks for diagnosis of Parkinson’s disease. Retrieved from http://arxiv.org/abs/1802.06708"
+            },
+            {
+              "issue": "5",
+              "key": "4948_CR22",
+              "doi-asserted-by": "publisher",
+              "first-page": "787",
+              "DOI": "10.1109/TNNLS.2012.2188414",
+              "volume": "23",
+              "author": "D Li",
+              "year": "2012",
+              "unstructured": "Li D, Han M, Wang J (2012) Chaotic time series prediction based on a novel robust echo state network. IEEE Trans Neural Netw Learn Syst 23(5):787–797. https://doi.org/10.1109/TNNLS.2012.2188414",
+              "journal-title": "IEEE Trans Neural Netw Learn Syst"
+            },
+            {
+              "key": "4948_CR23",
+              "doi-asserted-by": "publisher",
+              "first-page": "186",
+              "DOI": "10.1016/J.NEUCOM.2011.11.021",
+              "volume": "82",
+              "author": "C Sheng",
+              "year": "2012",
+              "unstructured": "Sheng C, Zhao J, Liu Y, Wang W (2012) Prediction for noisy nonlinear time series by echo state network based on dual estimation. Neurocomputing 82:186–195. https://doi.org/10.1016/J.NEUCOM.2011.11.021",
+              "journal-title": "Neurocomputing"
+            },
+            {
+              "key": "4948_CR24",
+              "doi-asserted-by": "publisher",
+              "first-page": "17",
+              "DOI": "10.1016/J.KNOSYS.2017.05.022",
+              "volume": "130",
+              "author": "X Sun",
+              "year": "2017",
+              "unstructured": "Sun X, Li T, Li Q, Huang Y, Li Y (2017) Deep belief echo-state network and its application to time series prediction. Knowl-Based Syst 130:17–29. https://doi.org/10.1016/J.KNOSYS.2017.05.022",
+              "journal-title": "Knowl-Based Syst"
+            },
+            {
+              "key": "4948_CR25",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.eswa.2008.09.049",
+              "author": "X Lin",
+              "year": "2009",
+              "unstructured": "Lin X, Yang Z, Song Y (2009) Short-term stock price prediction based on echo state networks. Expert Syst Appl. https://doi.org/10.1016/j.eswa.2008.09.049",
+              "journal-title": "Expert Syst Appl"
+            },
+            {
+              "key": "4948_CR26",
+              "doi-asserted-by": "publisher",
+              "first-page": "87",
+              "DOI": "10.1016/j.neucom.2016.12.089",
+              "volume": "268",
+              "author": "C Gallicchio",
+              "year": "2017",
+              "unstructured": "Gallicchio C, Micheli A, Pedrelli L (2017) Deep reservoir computing: a critical experimental analysis. Neurocomputing 268:87–99. https://doi.org/10.1016/j.neucom.2016.12.089",
+              "journal-title": "Neurocomputing"
+            },
+            {
+              "key": "4948_CR27",
+              "unstructured": "Gallicchio C, Micheli A (2017) Deep Echo State Network (DeepESN): a brief survey, pp 1–13. Retrieved from http://arxiv.org/abs/1712.04323"
+            },
+            {
+              "key": "4948_CR28",
+              "unstructured": "Ma Q, Shen L, Cottrell GW (2017) Deep-ESN: a multiple projection-encoding hierarchical reservoir computing framework. 14(8), 1–15. Retrieved from http://arxiv.org/abs/1711.05255"
+            },
+            {
+              "key": "4948_CR29",
+              "unstructured": "Yahoo Finance S&P 500 data. https://finance.yahoo.com/quote/%5EGSPC/history/"
+            },
+            {
+              "key": "4948_CR30",
+              "doi-asserted-by": "crossref",
+              "unstructured": "Stolfi DH, Alba E, Yao X (2017) Predicting car park occupancy rates in Smart Cities. In: Smart Cities: second international conference, Smart-CT 2017, Spain, 14–16 June 2017, pp 107–117",
+              "DOI": "10.1007/978-3-319-59513-9_11"
+            },
+            {
+              "key": "4948_CR31",
+              "unstructured": "Weeks E (2015) Chaotic time series analysis. Department of Physics. Emory University. http://www.physics.emory.edu/faculty/weeks/research/tseries1.html"
+            },
+            {
+              "key": "4948_CR32",
+              "unstructured": "The Pennsylvania State Climatologist. http://www.climate.psu.edu/"
+            },
+            {
+              "key": "4948_CR33",
+              "doi-asserted-by": "publisher",
+              "first-page": "113",
+              "DOI": "10.1007/s13748-013-0040-3",
+              "volume": "2",
+              "author": "H Fanaee-T",
+              "year": "2015",
+              "unstructured": "Fanaee-T H, Gama J (2015) Event labeling combining ensemble detectors and background knowledge. Prog Artifi Intell 2:113–127",
+              "journal-title": "Prog Artifi Intell"
+            }
+          ],
+          "container-title": [
+            "Neural Computing and Applications"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://link.springer.com/content/pdf/10.1007/s00521-020-04948-x.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://link.springer.com/article/10.1007/s00521-020-04948-x/fulltext.html",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://link.springer.com/content/pdf/10.1007/s00521-020-04948-x.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2021,
+                4,
+                29
+              ]
+            ],
+            "date-time": "2021-04-29T20:12:21Z",
+            "timestamp": 1619727141000
+          },
+          "score": 39.663013,
+          "resource": {
+            "primary": {
+              "URL": "https://link.springer.com/10.1007/s00521-020-04948-x"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                30
+              ]
+            ]
+          },
+          "references-count": 33,
+          "journal-issue": {
+            "issue": "23",
+            "published-print": {
+              "date-parts": [
+                [
+                  2020,
+                  12
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "4948"
+          ],
+          "URL": "https://doi.org/10.1007/s00521-020-04948-x",
+          "ISSN": [
+            "0941-0643",
+            "1433-3058"
+          ],
+          "issn-type": [
+            {
+              "value": "0941-0643",
+              "type": "print"
+            },
+            {
+              "value": "1433-3058",
+              "type": "electronic"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2020,
+                4,
+                30
+              ]
+            ]
+          },
+          "assertion": [
+            {
+              "value": "29 October 2019",
+              "order": 1,
+              "name": "received",
+              "label": "Received",
+              "group": {
+                "name": "ArticleHistory",
+                "label": "Article History"
+              }
+            },
+            {
+              "value": "15 April 2020",
+              "order": 2,
+              "name": "accepted",
+              "label": "Accepted",
+              "group": {
+                "name": "ArticleHistory",
+                "label": "Article History"
+              }
+            },
+            {
+              "value": "30 April 2020",
+              "order": 3,
+              "name": "first_online",
+              "label": "First Online",
+              "group": {
+                "name": "ArticleHistory",
+                "label": "Article History"
+              }
+            },
+            {
+              "order": 1,
+              "name": "Ethics",
+              "group": {
+                "name": "EthicsHeading",
+                "label": "Compliance with ethical standards"
+              }
+            },
+            {
+              "value": "The authors declare that they have no conflict of interest.",
+              "order": 2,
+              "name": "Ethics",
+              "group": {
+                "name": "EthicsHeading",
+                "label": "Conflict of interest"
+              }
+            }
+          ]
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                3,
+                23
+              ]
+            ],
+            "date-time": "2026-03-23T19:47:20Z",
+            "timestamp": 1774295240198,
+            "version": "3.50.1"
+          },
+          "reference-count": 19,
+          "publisher": "IEEE",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2013,
+                10
+              ]
+            ]
+          },
+          "DOI": "10.1109/icaci.2013.6748520",
+          "type": "proceedings-article",
+          "created": {
+            "date-parts": [
+              [
+                2014,
+                3,
+                7
+              ]
+            ],
+            "date-time": "2014-03-07T21:03:40Z",
+            "timestamp": 1394226220000
+          },
+          "page": "299-304",
+          "source": "Crossref",
+          "is-referenced-by-count": 11,
+          "title": [
+            "Ensembles of echo state networks for time series prediction"
+          ],
+          "prefix": "10.1109",
+          "author": [
+            {
+              "given": "Wei",
+              "family": "Yao",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Zhigang",
+              "family": "Zeng",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Cheng",
+              "family": "Lian",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "Huiming",
+              "family": "Tang",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            }
+          ],
+          "member": "263",
+          "reference": [
+            {
+              "key": "19",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/MCI.2011.941590"
+            },
+            {
+              "key": "17",
+              "doi-asserted-by": "crossref",
+              "first-page": "513",
+              "DOI": "10.1109/TSMCB.2011.2168604",
+              "article-title": "Extreme learning machine for regression and multiclass classification",
+              "volume": "42",
+              "author": "huang",
+              "year": "2012",
+              "journal-title": "IEEE Transactions on Systems Man and Cybernetics Part B Cybernetics"
+            },
+            {
+              "key": "18",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1007/s13042-011-0019-y"
+            },
+            {
+              "key": "15",
+              "doi-asserted-by": "crossref",
+              "first-page": "1246",
+              "DOI": "10.1016/j.engappai.2011.10.013",
+              "article-title": "Improving the accuracy of prediction of PM 10 pollution by the wavelet transformation and an ensemble of neural predictors",
+              "volume": "25",
+              "author": "siwek",
+              "year": "2012",
+              "journal-title": "Engineering Applications of Artificial Intelligence"
+            },
+            {
+              "key": "16",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TNNLS.2013.2250299"
+            },
+            {
+              "key": "13",
+              "first-page": "305",
+              "article-title": "Adaptive ensemble models of extreme learning machines for time series prediction",
+              "author": "heeswijk",
+              "year": "2009",
+              "journal-title": "ICANN 2009"
+            },
+            {
+              "key": "14",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.asoc.2012.03.028"
+            },
+            {
+              "key": "11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.cosrev.2009.03.005"
+            },
+            {
+              "key": "12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.ijforecast.2010.09.005"
+            },
+            {
+              "key": "3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/72.728395"
+            },
+            {
+              "key": "2",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/TKDE.2003.1185838"
+            },
+            {
+              "key": "1",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.engappai.2009.09.015"
+            },
+            {
+              "key": "10",
+              "doi-asserted-by": "crossref",
+              "first-page": "78",
+              "DOI": "10.1126/science.1091277",
+              "article-title": "Harnessing nonlinearity: Predicting chaotic systems and saving energy in wireless communication",
+              "volume": "304",
+              "author": "jaeger",
+              "year": "2004",
+              "journal-title": "Science"
+            },
+            {
+              "key": "7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.neucom.2009.07.005"
+            },
+            {
+              "key": "6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.eswa.2009.07.064"
+            },
+            {
+              "key": "5",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.fss.2009.10.018"
+            },
+            {
+              "key": "4",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1016/j.engappai.2010.04.003"
+            },
+            {
+              "key": "9",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1109/78.782193"
+            },
+            {
+              "key": "8",
+              "doi-asserted-by": "crossref",
+              "first-page": "24",
+              "DOI": "10.1109/MCI.2009.932254",
+              "article-title": "Time series prediction using support vector machines: A survey",
+              "volume": "4",
+              "author": "sapankevych",
+              "year": "2009",
+              "journal-title": "IEEE Computational Intelligence Magazine"
+            }
+          ],
+          "event": {
+            "name": "2013 Sixth International Conference on Advanced Computational Intelligence (ICACI)",
+            "location": "Hangzhou, China",
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  10,
+                  19
+                ]
+              ]
+            },
+            "end": {
+              "date-parts": [
+                [
+                  2013,
+                  10,
+                  21
+                ]
+              ]
+            }
+          },
+          "container-title": [
+            "2013 Sixth International Conference on Advanced Computational Intelligence (ICACI)"
+          ],
+          "link": [
+            {
+              "URL": "http://xplorestaging.ieee.org/ielx7/6739901/6748463/06748520.pdf?arnumber=6748520",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2017,
+                6,
+                22
+              ]
+            ],
+            "date-time": "2017-06-22T09:13:59Z",
+            "timestamp": 1498122839000
+          },
+          "score": 38.113586,
+          "resource": {
+            "primary": {
+              "URL": "http://ieeexplore.ieee.org/document/6748520/"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2013,
+                10
+              ]
+            ]
+          },
+          "references-count": 19,
+          "URL": "https://doi.org/10.1109/icaci.2013.6748520",
+          "published": {
+            "date-parts": [
+              [
+                2013,
+                10
+              ]
+            ]
+          }
+        }
+      ],
+      "items-per-page": 3,
+      "query": {
+        "start-index": 0,
+        "search-terms": null
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "url": "https://api.crossref.org/works/10.18800%2Fcontabilidad.2025ESP.002",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            15
+          ]
+        ],
+        "date-time": "2025-10-15T14:42:15Z",
+        "timestamp": 1760539335715,
+        "version": "build-2065373602"
+      },
+      "reference-count": 0,
+      "publisher": "Sistema de Bibliotecas PUCP",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                3
+              ]
+            ],
+            "date-time": "2025-07-03T00:00:00Z",
+            "timestamp": 1751500800000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "CYN"
+      ],
+      "abstract": "<jats:p>Modern economy offers several investment options, making capital assignments complex, slow and risky. In order to assist investors in the decision-making process, artificial intelligence tools aim at finding patterns hidden in data and providing useful, timely and accurate information. This work analyzes the application of machine learning algorithms in the selection of portfolios in the Brazilian market. Recent research intended to predict the stock market behavior implementing machine learning with conventional methods such as technical or fundamental analysis (Anghel, 2021; Kamara et al., 2022; Nti et al., 2020b); while few combine analyses in emerging and volatile markets like Brazil. Thus, three machine learning models were trained using variables from the technical and/or fundamental analysis. The sample included 40,562 observations from six companies listed on B3, from August 1994 to December 2021. Models trained only with fundamental or technical variables evidenced low accuracy, which was translated into low learning and generalization capacity of the algorithm. In contrast, the model including the combination of technical and fundamental variables revealed an average accuracy of 70,7 % on 5 folds, which was supported by the literature that indicates that hybrid models can provide greater accuracy and lower volatility. In addition, results exceed the accuracy of previous studies (e.g. Emir et al., 2012; Kim, 2003; Zhang &amp; Zhao, 2009), which indicates that the Support Vector Machine - SVM can also be applied to emerging markets, even in crisis times, such as COVID-19 pandemic.</jats:p>",
+      "DOI": "10.18800/contabilidad.2025esp.002",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            15
+          ]
+        ],
+        "date-time": "2025-10-15T14:01:07Z",
+        "timestamp": 1760536867000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil",
+        "Aplicación de algoritmo de aprendizaje automático para predecir el comportamiento de las acciones negociadas en el mercado brasileño",
+        "Aplicação de algoritmo de aprendizado de máquina (AM) para previsão do comportamento das ações negociadas no mercado brasileiro"
+      ],
+      "prefix": "10.18800",
+      "author": [
+        {
+          "given": "Gabriel",
+          "family": "Donadio Costa",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Rogério João",
+          "family": "Lunkes",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "8100",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            3
+          ]
+        ]
+      },
+      "container-title": [
+        "Contabilidad y Negocios"
+      ],
+      "original-title": [],
+      "link": [
+        {
+          "URL": "https://revistas.pucp.edu.pe/index.php/contabilidadyNegocios/article/download/29896/27628",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://revistas.pucp.edu.pe/index.php/contabilidadyNegocios/article/download/29896/27628",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            15
+          ]
+        ],
+        "date-time": "2025-10-15T14:01:07Z",
+        "timestamp": 1760536867000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://revistas.pucp.edu.pe/index.php/contabilidadyNegocios/article/view/29896"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            3
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.18800/contabilidad.2025esp.002",
+      "relation": {},
+      "ISSN": [
+        "2221-724X",
+        "1992-1896"
+      ],
+      "issn-type": [
+        {
+          "value": "2221-724X",
+          "type": "electronic"
+        },
+        {
+          "value": "1992-1896",
+          "type": "print"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            3
+          ]
+        ]
+      }
+    }
+  }
+}

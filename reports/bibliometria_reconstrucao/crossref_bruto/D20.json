@@ -1,0 +1,383 @@
+{
+  "url": "https://api.crossref.org/works?query.title=Conditional+Heteroskedasticity+in+Asset+Returns%3A+A+New+Approach&rows=3",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+      "facets": {},
+      "total-results": 5175699,
+      "items": [
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                10,
+                10
+              ]
+            ],
+            "date-time": "2026-10-10T15:09:46Z",
+            "timestamp": 1791644986002,
+            "version": "4.3.4"
+          },
+          "reference-count": 0,
+          "publisher": "JSTOR",
+          "issue": "2",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "short-container-title": [
+            "Econometrica"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                1991,
+                3
+              ]
+            ]
+          },
+          "DOI": "10.2307/2938260",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2006,
+                7,
+                5
+              ]
+            ],
+            "date-time": "2006-07-05T13:30:42Z",
+            "timestamp": 1152106242000
+          },
+          "page": "347",
+          "source": "Crossref",
+          "is-referenced-by-count": 7149,
+          "title": [
+            "Conditional Heteroskedasticity in Asset Returns: A New Approach"
+          ],
+          "prefix": "10.2307",
+          "volume": "59",
+          "author": [
+            {
+              "given": "Daniel B.",
+              "family": "Nelson",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "member": "1121",
+          "container-title": [
+            "Econometrica"
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                18
+              ]
+            ],
+            "date-time": "2018-04-18T06:38:24Z",
+            "timestamp": 1524033504000
+          },
+          "score": 51.43864,
+          "resource": {
+            "primary": {
+              "URL": "https://www.jstor.org/stable/2938260?origin=crossref"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                1991,
+                3
+              ]
+            ]
+          },
+          "references-count": 0,
+          "journal-issue": {
+            "issue": "2",
+            "published-print": {
+              "date-parts": [
+                [
+                  1991,
+                  3
+                ]
+              ]
+            }
+          },
+          "URL": "https://doi.org/10.2307/2938260",
+          "ISSN": [
+            "0012-9682"
+          ],
+          "issn-type": [
+            {
+              "value": "0012-9682",
+              "type": "print"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                1991,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                15
+              ]
+            ],
+            "date-time": "2025-12-15T20:09:22Z",
+            "timestamp": 1765829362657,
+            "version": "3.48.0"
+          },
+          "reference-count": 0,
+          "publisher": "Oxford University PressOxford",
+          "isbn-type": [
+            {
+              "type": "print",
+              "value": "9780198774310"
+            },
+            {
+              "type": "electronic",
+              "value": "9781383033120"
+            }
+          ],
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                1995,
+                11,
+                16
+              ]
+            ]
+          },
+          "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>GARCH models have been applied in modelling the relation between conditional variance and asset risk premia. These models, however, have at least three major drawbacks in asset pricing applications: (i) Researchers beginning with Black (1976) have found a negative correlation between current returns and future returns volatility. GARCH models rule this out by assumption. (ii) GARCH models impose parameter restrictions that are often violated by estimated coefficients and that may unduly restrict the dynamics of the conditional variance process. (iii) Interpreting whether shocks to conditional variance “persist” or not is difficult in GARCH models, because the usual norms measuring persistence often do not agree. A new form of ARCH is proposed that meets these objections. The method is used to estimate a model of the risk premium on the CRSP Value-Weighted Market Index from 1962 to 1987.</jats:p>",
+          "DOI": "10.1093/oso/9780198774310.003.0005",
+          "type": "book-chapter",
+          "created": {
+            "date-parts": [
+              [
+                2023,
+                11,
+                1
+              ]
+            ],
+            "date-time": "2023-11-01T05:35:20Z",
+            "timestamp": 1698816920000
+          },
+          "page": "87-113",
+          "source": "Crossref",
+          "is-referenced-by-count": 1,
+          "title": [
+            "Conditional Heteroskedasticity in Asset Returns: A New Approach"
+          ],
+          "prefix": "10.1093",
+          "author": [
+            {
+              "given": "Daniel B",
+              "family": "Nelson",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            }
+          ],
+          "member": "286",
+          "container-title": [
+            "Arch"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://academic.oup.com/book/chapter-pdf/52165944/isbn-9780198774310-book-part-5.pdf",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                15
+              ]
+            ],
+            "date-time": "2025-12-15T20:05:16Z",
+            "timestamp": 1765829116000
+          },
+          "score": 51.414585,
+          "resource": {
+            "primary": {
+              "URL": "https://academic.oup.com/book/52277/chapter/421087465"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                1995,
+                11,
+                16
+              ]
+            ]
+          },
+          "ISBN": [
+            "9780198774310",
+            "9781383033120"
+          ],
+          "references-count": 0,
+          "URL": "https://doi.org/10.1093/oso/9780198774310.003.0005",
+          "published": {
+            "date-parts": [
+              [
+                1995,
+                11,
+                16
+              ]
+            ]
+          }
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2022,
+                4,
+                2
+              ]
+            ],
+            "date-time": "2022-04-02T20:58:19Z",
+            "timestamp": 1648933099440
+          },
+          "reference-count": 0,
+          "publisher": "Elsevier BV",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "short-container-title": [
+            "SSRN Journal"
+          ],
+          "DOI": "10.2139/ssrn.3077239",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                23
+              ]
+            ],
+            "date-time": "2018-10-23T09:44:02Z",
+            "timestamp": 1540287842000
+          },
+          "source": "Crossref",
+          "is-referenced-by-count": 3,
+          "title": [
+            "Conditional Heteroskedasticity in Crypto-Asset Returns"
+          ],
+          "prefix": "10.2139",
+          "author": [
+            {
+              "given": "Charles",
+              "family": "Shaw",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            }
+          ],
+          "member": "78",
+          "container-title": [
+            "SSRN Electronic Journal"
+          ],
+          "language": "en",
+          "deposited": {
+            "date-parts": [
+              [
+                2018,
+                10,
+                23
+              ]
+            ],
+            "date-time": "2018-10-23T09:44:25Z",
+            "timestamp": 1540287865000
+          },
+          "score": 45.419735,
+          "resource": {
+            "primary": {
+              "URL": "https://www.ssrn.com/abstract=3077239"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2018
+              ]
+            ]
+          },
+          "references-count": 0,
+          "URL": "https://doi.org/10.2139/ssrn.3077239",
+          "ISSN": [
+            "1556-5068"
+          ],
+          "issn-type": [
+            {
+              "value": "1556-5068",
+              "type": "electronic"
+            }
+          ],
+          "published-other": {
+            "date-parts": [
+              [
+                2018
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2018
+              ]
+            ]
+          }
+        }
+      ],
+      "items-per-page": 3,
+      "query": {
+        "start-index": 0,
+        "search-terms": null
+      }
+    }
+  }
+}

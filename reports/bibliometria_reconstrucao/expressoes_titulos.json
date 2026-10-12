@@ -1,0 +1,2097 @@
+{
+  "n_documentos": 34,
+  "unidade": "Presença de par de palavras por documento",
+  "minimo_grafico": 2,
+  "stemming": false,
+  "expansao_acronimos": false,
+  "stopwords": [
+    "a",
+    "an",
+    "and",
+    "are",
+    "as",
+    "at",
+    "be",
+    "been",
+    "being",
+    "by",
+    "for",
+    "from",
+    "has",
+    "have",
+    "in",
+    "into",
+    "is",
+    "it",
+    "its",
+    "of",
+    "on",
+    "or",
+    "that",
+    "the",
+    "their",
+    "these",
+    "this",
+    "through",
+    "to",
+    "using",
+    "was",
+    "were",
+    "with",
+    "without"
+  ],
+  "records": [
+    {
+      "id": "D01",
+      "titulo_original_base": "Asymmetric generalized error distribution with its properties and applications",
+      "titulo_analisado": "Asymmetric generalized error distribution with its properties and applications",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "asymmetric",
+        "generalized",
+        "error",
+        "distribution",
+        "with",
+        "its",
+        "properties",
+        "and",
+        "applications"
+      ],
+      "bigrams": [
+        "asymmetric generalized",
+        "error distribution",
+        "generalized error"
+      ]
+    },
+    {
+      "id": "D02",
+      "titulo_original_base": "Comparing MAE and RMSE as Fitness of Genetic Algorithm for Optimizing Echo State Network Hyperparameters with Different Probabilistic Distributions",
+      "titulo_analisado": "Comparing MAE and RMSE as Fitness of Genetic Algorithm for Optimizing Echo State Network Hyperparameters with Different Probabilistic Distributions",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "comparing",
+        "mae",
+        "and",
+        "rmse",
+        "as",
+        "fitness",
+        "of",
+        "genetic",
+        "algorithm",
+        "for",
+        "optimizing",
+        "echo",
+        "state",
+        "network",
+        "hyperparameters",
+        "with",
+        "different",
+        "probabilistic",
+        "distributions"
+      ],
+      "bigrams": [
+        "comparing mae",
+        "different probabilistic",
+        "echo state",
+        "genetic algorithm",
+        "network hyperparameters",
+        "optimizing echo",
+        "probabilistic distributions",
+        "state network"
+      ]
+    },
+    {
+      "id": "D03",
+      "titulo_original_base": "A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Time Series Forecasting",
+      "titulo_analisado": "A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Time Series Forecasting",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "a",
+        "comprehensive",
+        "survey",
+        "on",
+        "higher",
+        "order",
+        "neural",
+        "networks",
+        "and",
+        "evolutionary",
+        "optimization",
+        "learning",
+        "algorithms",
+        "in",
+        "financial",
+        "time",
+        "series",
+        "forecasting"
+      ],
+      "bigrams": [
+        "comprehensive survey",
+        "evolutionary optimization",
+        "financial time",
+        "higher order",
+        "learning algorithms",
+        "neural networks",
+        "optimization learning",
+        "order neural",
+        "series forecasting",
+        "time series"
+      ]
+    },
+    {
+      "id": "D04",
+      "titulo_original_base": "BovDB: a data set of stock prices of all companies in B3 from 1995 to 2020",
+      "titulo_analisado": "BovDB: a data set of stock prices of all companies in B3 from 1995 to 2020",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "bovdb",
+        "a",
+        "data",
+        "set",
+        "of",
+        "stock",
+        "prices",
+        "of",
+        "all",
+        "companies",
+        "in",
+        "b",
+        "from",
+        "to"
+      ],
+      "bigrams": [
+        "all companies",
+        "data set",
+        "stock prices"
+      ]
+    },
+    {
+      "id": "D05",
+      "titulo_original_base": "Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study",
+      "titulo_analisado": "Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "quantum",
+        "temporal",
+        "convolutional",
+        "neural",
+        "networks",
+        "for",
+        "cross",
+        "sectional",
+        "equity",
+        "return",
+        "prediction",
+        "a",
+        "comparative",
+        "benchmark",
+        "study"
+      ],
+      "bigrams": [
+        "benchmark study",
+        "comparative benchmark",
+        "convolutional neural",
+        "cross sectional",
+        "equity return",
+        "neural networks",
+        "quantum temporal",
+        "return prediction",
+        "sectional equity",
+        "temporal convolutional"
+      ]
+    },
+    {
+      "id": "D06",
+      "titulo_original_base": "Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series",
+      "titulo_analisado": "Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "tokens": [
+        "same",
+        "error",
+        "different",
+        "function",
+        "the",
+        "optimizer",
+        "as",
+        "an",
+        "implicit",
+        "prior",
+        "in",
+        "financial",
+        "time",
+        "series"
+      ],
+      "bigrams": [
+        "different function",
+        "error different",
+        "financial time",
+        "implicit prior",
+        "same error",
+        "time series"
+      ]
+    },
+    {
+      "id": "D07",
+      "titulo_original_base": "Aplicação de algoritmo de aprendizado de máquina (AM) para previsão do comportamento das ações negociadas no mercado brasileiro",
+      "titulo_analisado": "Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil",
+      "origem_titulo": "Título inglês declarado no PDF, página 2; não é tradução produzida para a análise",
+      "tokens": [
+        "application",
+        "of",
+        "machine",
+        "learning",
+        "algorithm",
+        "to",
+        "predict",
+        "the",
+        "behavior",
+        "of",
+        "stocks",
+        "marketed",
+        "in",
+        "brazil"
+      ],
+      "bigrams": [
+        "learning algorithm",
+        "machine learning",
+        "stocks marketed"
+      ]
+    },
+    {
+      "id": "D08",
+      "titulo_original_base": "Degradation Prediction of PEMFCs Using Stacked Echo State Network Based on Genetic Algorithm Optimization",
+      "titulo_analisado": "Degradation Prediction of PEMFCs Using Stacked Echo State Network Based on Genetic Algorithm Optimization",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "degradation",
+        "prediction",
+        "of",
+        "pemfcs",
+        "using",
+        "stacked",
+        "echo",
+        "state",
+        "network",
+        "based",
+        "on",
+        "genetic",
+        "algorithm",
+        "optimization"
+      ],
+      "bigrams": [
+        "algorithm optimization",
+        "degradation prediction",
+        "echo state",
+        "genetic algorithm",
+        "network based",
+        "stacked echo",
+        "state network"
+      ]
+    },
+    {
+      "id": "D09",
+      "titulo_original_base": "On Financial Distributions Modelling Methods: Application on Regression Models for Time Series",
+      "titulo_analisado": "On Financial Distributions Modelling Methods: Application on Regression Models for Time Series",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "on",
+        "financial",
+        "distributions",
+        "modelling",
+        "methods",
+        "application",
+        "on",
+        "regression",
+        "models",
+        "for",
+        "time",
+        "series"
+      ],
+      "bigrams": [
+        "distributions modelling",
+        "financial distributions",
+        "methods application",
+        "modelling methods",
+        "regression models",
+        "time series"
+      ]
+    },
+    {
+      "id": "D10",
+      "titulo_original_base": "Modelling Financial Returns with Finite Mixtures of GED",
+      "titulo_analisado": "Modelling Financial Returns with Finite Mixtures of GED",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "tokens": [
+        "modelling",
+        "financial",
+        "returns",
+        "with",
+        "finite",
+        "mixtures",
+        "of",
+        "ged"
+      ],
+      "bigrams": [
+        "financial returns",
+        "finite mixtures",
+        "modelling financial"
+      ]
+    },
+    {
+      "id": "D11",
+      "titulo_original_base": "Modelling Financial Returns with Mixtures of Generalized Normal Distributions",
+      "titulo_analisado": "Modelling Financial Returns with Mixtures of Generalized Normal Distributions",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "tokens": [
+        "modelling",
+        "financial",
+        "returns",
+        "with",
+        "mixtures",
+        "of",
+        "generalized",
+        "normal",
+        "distributions"
+      ],
+      "bigrams": [
+        "financial returns",
+        "generalized normal",
+        "modelling financial",
+        "normal distributions"
+      ]
+    },
+    {
+      "id": "D12",
+      "titulo_original_base": "Training Multilayer Perceptron with Genetic Algorithms and Particle Swarm Optimization for Modeling Stock Price Index Prediction",
+      "titulo_analisado": "Training Multilayer Perceptron with Genetic Algorithms and Particle Swarm Optimization for Modeling Stock Price Index Prediction",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "training",
+        "multilayer",
+        "perceptron",
+        "with",
+        "genetic",
+        "algorithms",
+        "and",
+        "particle",
+        "swarm",
+        "optimization",
+        "for",
+        "modeling",
+        "stock",
+        "price",
+        "index",
+        "prediction"
+      ],
+      "bigrams": [
+        "genetic algorithms",
+        "index prediction",
+        "modeling stock",
+        "multilayer perceptron",
+        "particle swarm",
+        "price index",
+        "stock price",
+        "swarm optimization",
+        "training multilayer"
+      ]
+    },
+    {
+      "id": "D13",
+      "titulo_original_base": "Multivariate time series prediction using clustered echo state network",
+      "titulo_analisado": "Multivariate time series prediction using clustered echo state network",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "multivariate",
+        "time",
+        "series",
+        "prediction",
+        "using",
+        "clustered",
+        "echo",
+        "state",
+        "network"
+      ],
+      "bigrams": [
+        "clustered echo",
+        "echo state",
+        "multivariate time",
+        "series prediction",
+        "state network",
+        "time series"
+      ]
+    },
+    {
+      "id": "D14",
+      "titulo_original_base": "FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction",
+      "titulo_analisado": "FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "fpga",
+        "accelerated",
+        "esn",
+        "with",
+        "chaos",
+        "training",
+        "for",
+        "financial",
+        "time",
+        "series",
+        "prediction"
+      ],
+      "bigrams": [
+        "accelerated esn",
+        "chaos training",
+        "financial time",
+        "fpga accelerated",
+        "series prediction",
+        "time series"
+      ]
+    },
+    {
+      "id": "D15",
+      "titulo_original_base": "Echo state network",
+      "titulo_analisado": "Echo state network",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "echo",
+        "state",
+        "network"
+      ],
+      "bigrams": [
+        "echo state",
+        "state network"
+      ]
+    },
+    {
+      "id": "D16",
+      "titulo_original_base": "Forecasting Crude Oil Prices Using Reservoir Computing Models",
+      "titulo_analisado": "Forecasting Crude Oil Prices Using Reservoir Computing Models",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "forecasting",
+        "crude",
+        "oil",
+        "prices",
+        "using",
+        "reservoir",
+        "computing",
+        "models"
+      ],
+      "bigrams": [
+        "computing models",
+        "crude oil",
+        "forecasting crude",
+        "oil prices",
+        "reservoir computing"
+      ]
+    },
+    {
+      "id": "D17",
+      "titulo_original_base": "Enhancing Trading Performance Through Sentiment Analysis with Large Language Models: Evidence from the S&P 500",
+      "titulo_analisado": "Enhancing Trading Performance Through Sentiment Analysis with Large Language Models: Evidence from the S&P 500",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "tokens": [
+        "enhancing",
+        "trading",
+        "performance",
+        "through",
+        "sentiment",
+        "analysis",
+        "with",
+        "large",
+        "language",
+        "models",
+        "evidence",
+        "from",
+        "the",
+        "s",
+        "p"
+      ],
+      "bigrams": [
+        "enhancing trading",
+        "language models",
+        "large language",
+        "models evidence",
+        "s p",
+        "sentiment analysis",
+        "trading performance"
+      ]
+    },
+    {
+      "id": "D18",
+      "titulo_original_base": "Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators",
+      "titulo_analisado": "Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "forecasting",
+        "stock",
+        "market",
+        "with",
+        "nanophotonic",
+        "reservoir",
+        "computing",
+        "system",
+        "based",
+        "on",
+        "silicon",
+        "optomechanical",
+        "oscillators"
+      ],
+      "bigrams": [
+        "computing system",
+        "forecasting stock",
+        "nanophotonic reservoir",
+        "optomechanical oscillators",
+        "reservoir computing",
+        "silicon optomechanical",
+        "stock market",
+        "system based"
+      ]
+    },
+    {
+      "id": "D19",
+      "titulo_original_base": "Explorations in echo state networks",
+      "titulo_analisado": "Explorations in echo state networks",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "tokens": [
+        "explorations",
+        "in",
+        "echo",
+        "state",
+        "networks"
+      ],
+      "bigrams": [
+        "echo state",
+        "state networks"
+      ]
+    },
+    {
+      "id": "D20",
+      "titulo_original_base": "Conditional Heteroskedasticity in Asset Returns: A New Approach",
+      "titulo_analisado": "Conditional Heteroskedasticity in Asset Returns: A New Approach",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "conditional",
+        "heteroskedasticity",
+        "in",
+        "asset",
+        "returns",
+        "a",
+        "new",
+        "approach"
+      ],
+      "bigrams": [
+        "asset returns",
+        "conditional heteroskedasticity",
+        "new approach"
+      ]
+    },
+    {
+      "id": "D21",
+      "titulo_original_base": "Forecasting Financial Market Volatility: Methodologies, Challenges, and Implications",
+      "titulo_analisado": "Forecasting Financial Market Volatility: Methodologies, Challenges, and Implications",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "tokens": [
+        "forecasting",
+        "financial",
+        "market",
+        "volatility",
+        "methodologies",
+        "challenges",
+        "and",
+        "implications"
+      ],
+      "bigrams": [
+        "financial market",
+        "forecasting financial",
+        "market volatility",
+        "methodologies challenges",
+        "volatility methodologies"
+      ]
+    },
+    {
+      "id": "D22",
+      "titulo_original_base": "Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System",
+      "titulo_analisado": "Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "minimizing",
+        "chaos",
+        "in",
+        "echo",
+        "state",
+        "networks",
+        "a",
+        "hybrid",
+        "approach",
+        "using",
+        "the",
+        "lorenz",
+        "system"
+      ],
+      "bigrams": [
+        "echo state",
+        "hybrid approach",
+        "lorenz system",
+        "minimizing chaos",
+        "state networks"
+      ]
+    },
+    {
+      "id": "D23",
+      "titulo_original_base": "Echo State Networks for Bitcoin Time Series Prediction",
+      "titulo_analisado": "Echo State Networks for Bitcoin Time Series Prediction",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "echo",
+        "state",
+        "networks",
+        "for",
+        "bitcoin",
+        "time",
+        "series",
+        "prediction"
+      ],
+      "bigrams": [
+        "bitcoin time",
+        "echo state",
+        "series prediction",
+        "state networks",
+        "time series"
+      ]
+    },
+    {
+      "id": "D24",
+      "titulo_original_base": "Echo State Network Optimization: A Systematic Literature Review",
+      "titulo_analisado": "Echo State Network Optimization: A Systematic Literature Review",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "echo",
+        "state",
+        "network",
+        "optimization",
+        "a",
+        "systematic",
+        "literature",
+        "review"
+      ],
+      "bigrams": [
+        "echo state",
+        "literature review",
+        "network optimization",
+        "state network",
+        "systematic literature"
+      ]
+    },
+    {
+      "id": "D25",
+      "titulo_original_base": "Comparison of LSTM and GRU Models Performance in Forecasting Gold Prices: A Case Study Using Historical Data from Yahoo Finance",
+      "titulo_analisado": "Comparison of LSTM and GRU Models Performance in Forecasting Gold Prices: A Case Study Using Historical Data from Yahoo Finance",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "comparison",
+        "of",
+        "lstm",
+        "and",
+        "gru",
+        "models",
+        "performance",
+        "in",
+        "forecasting",
+        "gold",
+        "prices",
+        "a",
+        "case",
+        "study",
+        "using",
+        "historical",
+        "data",
+        "from",
+        "yahoo",
+        "finance"
+      ],
+      "bigrams": [
+        "case study",
+        "forecasting gold",
+        "gold prices",
+        "gru models",
+        "historical data",
+        "models performance",
+        "yahoo finance"
+      ]
+    },
+    {
+      "id": "D26",
+      "titulo_original_base": "Stock Price Forecasting: An Echo State Network Approach",
+      "titulo_analisado": "Stock Price Forecasting: An Echo State Network Approach",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "stock",
+        "price",
+        "forecasting",
+        "an",
+        "echo",
+        "state",
+        "network",
+        "approach"
+      ],
+      "bigrams": [
+        "echo state",
+        "network approach",
+        "price forecasting",
+        "state network",
+        "stock price"
+      ]
+    },
+    {
+      "id": "D27",
+      "titulo_original_base": "Stocks price prediction based on optimized echo state network by sparrow search algorithm",
+      "titulo_analisado": "Stocks price prediction based on optimized echo state network by sparrow search algorithm",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "stocks",
+        "price",
+        "prediction",
+        "based",
+        "on",
+        "optimized",
+        "echo",
+        "state",
+        "network",
+        "by",
+        "sparrow",
+        "search",
+        "algorithm"
+      ],
+      "bigrams": [
+        "echo state",
+        "optimized echo",
+        "prediction based",
+        "price prediction",
+        "search algorithm",
+        "sparrow search",
+        "state network",
+        "stocks price"
+      ]
+    },
+    {
+      "id": "D28",
+      "titulo_original_base": "Approach Based on Linear Regression for Stock Exchange Prediction – Case Study of Petr4 Petrobrás, Brazil",
+      "titulo_analisado": "Approach Based on Linear Regression for Stock Exchange Prediction – Case Study of Petr4 Petrobrás, Brazil",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "approach",
+        "based",
+        "on",
+        "linear",
+        "regression",
+        "for",
+        "stock",
+        "exchange",
+        "prediction",
+        "case",
+        "study",
+        "of",
+        "petr",
+        "petrobr",
+        "s",
+        "brazil"
+      ],
+      "bigrams": [
+        "approach based",
+        "case study",
+        "exchange prediction",
+        "linear regression",
+        "petr petrobr",
+        "petrobr s",
+        "prediction case",
+        "s brazil",
+        "stock exchange"
+      ]
+    },
+    {
+      "id": "D29",
+      "titulo_original_base": "Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility",
+      "titulo_analisado": "Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "novel",
+        "hybrid",
+        "model",
+        "based",
+        "on",
+        "echo",
+        "state",
+        "neural",
+        "network",
+        "applied",
+        "to",
+        "the",
+        "prediction",
+        "of",
+        "stock",
+        "price",
+        "return",
+        "volatility"
+      ],
+      "bigrams": [
+        "echo state",
+        "hybrid model",
+        "model based",
+        "network applied",
+        "neural network",
+        "novel hybrid",
+        "price return",
+        "return volatility",
+        "state neural",
+        "stock price"
+      ]
+    },
+    {
+      "id": "D30",
+      "titulo_original_base": "Artificial intelligence-based stock market price prediction, a review",
+      "titulo_analisado": "Artificial intelligence-based stock market price prediction, a review",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "artificial",
+        "intelligence",
+        "based",
+        "stock",
+        "market",
+        "price",
+        "prediction",
+        "a",
+        "review"
+      ],
+      "bigrams": [
+        "artificial intelligence",
+        "based stock",
+        "intelligence based",
+        "market price",
+        "price prediction",
+        "stock market"
+      ]
+    },
+    {
+      "id": "D31",
+      "titulo_original_base": "Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing",
+      "titulo_analisado": "Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "enhanced",
+        "multistep",
+        "prediction",
+        "of",
+        "multivariate",
+        "market",
+        "indices",
+        "using",
+        "weighted",
+        "optical",
+        "reservoir",
+        "computing"
+      ],
+      "bigrams": [
+        "enhanced multistep",
+        "market indices",
+        "multistep prediction",
+        "multivariate market",
+        "optical reservoir",
+        "reservoir computing",
+        "weighted optical"
+      ]
+    },
+    {
+      "id": "D32",
+      "titulo_original_base": "Stock market index prediction based on reservoir computing models",
+      "titulo_analisado": "Stock market index prediction based on reservoir computing models",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "stock",
+        "market",
+        "index",
+        "prediction",
+        "based",
+        "on",
+        "reservoir",
+        "computing",
+        "models"
+      ],
+      "bigrams": [
+        "computing models",
+        "index prediction",
+        "market index",
+        "prediction based",
+        "reservoir computing",
+        "stock market"
+      ]
+    },
+    {
+      "id": "D33",
+      "titulo_original_base": "Comparative Analysis of LSTM, GRU, and Transformer Models for Stock Price Prediction",
+      "titulo_analisado": "Comparative Analysis of LSTM, GRU, and Transformer Models for Stock Price Prediction",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "comparative",
+        "analysis",
+        "of",
+        "lstm",
+        "gru",
+        "and",
+        "transformer",
+        "models",
+        "for",
+        "stock",
+        "price",
+        "prediction"
+      ],
+      "bigrams": [
+        "comparative analysis",
+        "lstm gru",
+        "price prediction",
+        "stock price",
+        "transformer models"
+      ]
+    },
+    {
+      "id": "D34",
+      "titulo_original_base": "Application of ESN prediction model based on compressed sensing in stock market",
+      "titulo_analisado": "Application of ESN prediction model based on compressed sensing in stock market",
+      "origem_titulo": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "tokens": [
+        "application",
+        "of",
+        "esn",
+        "prediction",
+        "model",
+        "based",
+        "on",
+        "compressed",
+        "sensing",
+        "in",
+        "stock",
+        "market"
+      ],
+      "bigrams": [
+        "compressed sensing",
+        "esn prediction",
+        "model based",
+        "prediction model",
+        "stock market"
+      ]
+    }
+  ],
+  "frequencias": [
+    {
+      "expressao": "echo state",
+      "documentos": 11,
+      "ids": [
+        "D02",
+        "D08",
+        "D13",
+        "D15",
+        "D19",
+        "D22",
+        "D23",
+        "D24",
+        "D26",
+        "D27",
+        "D29"
+      ]
+    },
+    {
+      "expressao": "state network",
+      "documentos": 7,
+      "ids": [
+        "D02",
+        "D08",
+        "D13",
+        "D15",
+        "D24",
+        "D26",
+        "D27"
+      ]
+    },
+    {
+      "expressao": "time series",
+      "documentos": 6,
+      "ids": [
+        "D03",
+        "D06",
+        "D09",
+        "D13",
+        "D14",
+        "D23"
+      ]
+    },
+    {
+      "expressao": "reservoir computing",
+      "documentos": 4,
+      "ids": [
+        "D16",
+        "D18",
+        "D31",
+        "D32"
+      ]
+    },
+    {
+      "expressao": "stock market",
+      "documentos": 4,
+      "ids": [
+        "D18",
+        "D30",
+        "D32",
+        "D34"
+      ]
+    },
+    {
+      "expressao": "stock price",
+      "documentos": 4,
+      "ids": [
+        "D12",
+        "D26",
+        "D29",
+        "D33"
+      ]
+    },
+    {
+      "expressao": "financial time",
+      "documentos": 3,
+      "ids": [
+        "D03",
+        "D06",
+        "D14"
+      ]
+    },
+    {
+      "expressao": "price prediction",
+      "documentos": 3,
+      "ids": [
+        "D27",
+        "D30",
+        "D33"
+      ]
+    },
+    {
+      "expressao": "series prediction",
+      "documentos": 3,
+      "ids": [
+        "D13",
+        "D14",
+        "D23"
+      ]
+    },
+    {
+      "expressao": "state networks",
+      "documentos": 3,
+      "ids": [
+        "D19",
+        "D22",
+        "D23"
+      ]
+    },
+    {
+      "expressao": "case study",
+      "documentos": 2,
+      "ids": [
+        "D25",
+        "D28"
+      ]
+    },
+    {
+      "expressao": "computing models",
+      "documentos": 2,
+      "ids": [
+        "D16",
+        "D32"
+      ]
+    },
+    {
+      "expressao": "financial returns",
+      "documentos": 2,
+      "ids": [
+        "D10",
+        "D11"
+      ]
+    },
+    {
+      "expressao": "genetic algorithm",
+      "documentos": 2,
+      "ids": [
+        "D02",
+        "D08"
+      ]
+    },
+    {
+      "expressao": "index prediction",
+      "documentos": 2,
+      "ids": [
+        "D12",
+        "D32"
+      ]
+    },
+    {
+      "expressao": "model based",
+      "documentos": 2,
+      "ids": [
+        "D29",
+        "D34"
+      ]
+    },
+    {
+      "expressao": "modelling financial",
+      "documentos": 2,
+      "ids": [
+        "D10",
+        "D11"
+      ]
+    },
+    {
+      "expressao": "neural networks",
+      "documentos": 2,
+      "ids": [
+        "D03",
+        "D05"
+      ]
+    },
+    {
+      "expressao": "prediction based",
+      "documentos": 2,
+      "ids": [
+        "D27",
+        "D32"
+      ]
+    },
+    {
+      "expressao": "accelerated esn",
+      "documentos": 1,
+      "ids": [
+        "D14"
+      ]
+    },
+    {
+      "expressao": "algorithm optimization",
+      "documentos": 1,
+      "ids": [
+        "D08"
+      ]
+    },
+    {
+      "expressao": "all companies",
+      "documentos": 1,
+      "ids": [
+        "D04"
+      ]
+    },
+    {
+      "expressao": "approach based",
+      "documentos": 1,
+      "ids": [
+        "D28"
+      ]
+    },
+    {
+      "expressao": "artificial intelligence",
+      "documentos": 1,
+      "ids": [
+        "D30"
+      ]
+    },
+    {
+      "expressao": "asset returns",
+      "documentos": 1,
+      "ids": [
+        "D20"
+      ]
+    },
+    {
+      "expressao": "asymmetric generalized",
+      "documentos": 1,
+      "ids": [
+        "D01"
+      ]
+    },
+    {
+      "expressao": "based stock",
+      "documentos": 1,
+      "ids": [
+        "D30"
+      ]
+    },
+    {
+      "expressao": "benchmark study",
+      "documentos": 1,
+      "ids": [
+        "D05"
+      ]
+    },
+    {
+      "expressao": "bitcoin time",
+      "documentos": 1,
+      "ids": [
+        "D23"
+      ]
+    },
+    {
+      "expressao": "chaos training",
+      "documentos": 1,
+      "ids": [
+        "D14"
+      ]
+    },
+    {
+      "expressao": "clustered echo",
+      "documentos": 1,
+      "ids": [
+        "D13"
+      ]
+    },
+    {
+      "expressao": "comparative analysis",
+      "documentos": 1,
+      "ids": [
+        "D33"
+      ]
+    },
+    {
+      "expressao": "comparative benchmark",
+      "documentos": 1,
+      "ids": [
+        "D05"
+      ]
+    },
+    {
+      "expressao": "comparing mae",
+      "documentos": 1,
+      "ids": [
+        "D02"
+      ]
+    },
+    {
+      "expressao": "comprehensive survey",
+      "documentos": 1,
+      "ids": [
+        "D03"
+      ]
+    },
+    {
+      "expressao": "compressed sensing",
+      "documentos": 1,
+      "ids": [
+        "D34"
+      ]
+    },
+    {
+      "expressao": "computing system",
+      "documentos": 1,
+      "ids": [
+        "D18"
+      ]
+    },
+    {
+      "expressao": "conditional heteroskedasticity",
+      "documentos": 1,
+      "ids": [
+        "D20"
+      ]
+    },
+    {
+      "expressao": "convolutional neural",
+      "documentos": 1,
+      "ids": [
+        "D05"
+      ]
+    },
+    {
+      "expressao": "cross sectional",
+      "documentos": 1,
+      "ids": [
+        "D05"
+      ]
+    },
+    {
+      "expressao": "crude oil",
+      "documentos": 1,
+      "ids": [
+        "D16"
+      ]
+    },
+    {
+      "expressao": "data set",
+      "documentos": 1,
+      "ids": [
+        "D04"
+      ]
+    },
+    {
+      "expressao": "degradation prediction",
+      "documentos": 1,
+      "ids": [
+        "D08"
+      ]
+    },
+    {
+      "expressao": "different function",
+      "documentos": 1,
+      "ids": [
+        "D06"
+      ]
+    },
+    {
+      "expressao": "different probabilistic",
+      "documentos": 1,
+      "ids": [
+        "D02"
+      ]
+    },
+    {
+      "expressao": "distributions modelling",
+      "documentos": 1,
+      "ids": [
+        "D09"
+      ]
+    },
+    {
+      "expressao": "enhanced multistep",
+      "documentos": 1,
+      "ids": [
+        "D31"
+      ]
+    },
+    {
+      "expressao": "enhancing trading",
+      "documentos": 1,
+      "ids": [
+        "D17"
+      ]
+    },
+    {
+      "expressao": "equity return",
+      "documentos": 1,
+      "ids": [
+        "D05"
+      ]
+    },
+    {
+      "expressao": "error different",
+      "documentos": 1,
+      "ids": [
+        "D06"
+      ]
+    },
+    {
+      "expressao": "error distribution",
+      "documentos": 1,
+      "ids": [
+        "D01"
+      ]
+    },
+    {
+      "expressao": "esn prediction",
+      "documentos": 1,
+      "ids": [
+        "D34"
+      ]
+    },
+    {
+      "expressao": "evolutionary optimization",
+      "documentos": 1,
+      "ids": [
+        "D03"
+      ]
+    },
+    {
+      "expressao": "exchange prediction",
+      "documentos": 1,
+      "ids": [
+        "D28"
+      ]
+    },
+    {
+      "expressao": "financial distributions",
+      "documentos": 1,
+      "ids": [
+        "D09"
+      ]
+    },
+    {
+      "expressao": "financial market",
+      "documentos": 1,
+      "ids": [
+        "D21"
+      ]
+    },
+    {
+      "expressao": "finite mixtures",
+      "documentos": 1,
+      "ids": [
+        "D10"
+      ]
+    },
+    {
+      "expressao": "forecasting crude",
+      "documentos": 1,
+      "ids": [
+        "D16"
+      ]
+    },
+    {
+      "expressao": "forecasting financial",
+      "documentos": 1,
+      "ids": [
+        "D21"
+      ]
+    },
+    {
+      "expressao": "forecasting gold",
+      "documentos": 1,
+      "ids": [
+        "D25"
+      ]
+    },
+    {
+      "expressao": "forecasting stock",
+      "documentos": 1,
+      "ids": [
+        "D18"
+      ]
+    },
+    {
+      "expressao": "fpga accelerated",
+      "documentos": 1,
+      "ids": [
+        "D14"
+      ]
+    },
+    {
+      "expressao": "generalized error",
+      "documentos": 1,
+      "ids": [
+        "D01"
+      ]
+    },
+    {
+      "expressao": "generalized normal",
+      "documentos": 1,
+      "ids": [
+        "D11"
+      ]
+    },
+    {
+      "expressao": "genetic algorithms",
+      "documentos": 1,
+      "ids": [
+        "D12"
+      ]
+    },
+    {
+      "expressao": "gold prices",
+      "documentos": 1,
+      "ids": [
+        "D25"
+      ]
+    },
+    {
+      "expressao": "gru models",
+      "documentos": 1,
+      "ids": [
+        "D25"
+      ]
+    },
+    {
+      "expressao": "higher order",
+      "documentos": 1,
+      "ids": [
+        "D03"
+      ]
+    },
+    {
+      "expressao": "historical data",
+      "documentos": 1,
+      "ids": [
+        "D25"
+      ]
+    },
+    {
+      "expressao": "hybrid approach",
+      "documentos": 1,
+      "ids": [
+        "D22"
+      ]
+    },
+    {
+      "expressao": "hybrid model",
+      "documentos": 1,
+      "ids": [
+        "D29"
+      ]
+    },
+    {
+      "expressao": "implicit prior",
+      "documentos": 1,
+      "ids": [
+        "D06"
+      ]
+    },
+    {
+      "expressao": "intelligence based",
+      "documentos": 1,
+      "ids": [
+        "D30"
+      ]
+    },
+    {
+      "expressao": "language models",
+      "documentos": 1,
+      "ids": [
+        "D17"
+      ]
+    },
+    {
+      "expressao": "large language",
+      "documentos": 1,
+      "ids": [
+        "D17"
+      ]
+    },
+    {
+      "expressao": "learning algorithm",
+      "documentos": 1,
+      "ids": [
+        "D07"
+      ]
+    },
+    {
+      "expressao": "learning algorithms",
+      "documentos": 1,
+      "ids": [
+        "D03"
+      ]
+    },
+    {
+      "expressao": "linear regression",
+      "documentos": 1,
+      "ids": [
+        "D28"
+      ]
+    },
+    {
+      "expressao": "literature review",
+      "documentos": 1,
+      "ids": [
+        "D24"
+      ]
+    },
+    {
+      "expressao": "lorenz system",
+      "documentos": 1,
+      "ids": [
+        "D22"
+      ]
+    },
+    {
+      "expressao": "lstm gru",
+      "documentos": 1,
+      "ids": [
+        "D33"
+      ]
+    },
+    {
+      "expressao": "machine learning",
+      "documentos": 1,
+      "ids": [
+        "D07"
+      ]
+    },
+    {
+      "expressao": "market index",
+      "documentos": 1,
+      "ids": [
+        "D32"
+      ]
+    },
+    {
+      "expressao": "market indices",
+      "documentos": 1,
+      "ids": [
+        "D31"
+      ]
+    },
+    {
+      "expressao": "market price",
+      "documentos": 1,
+      "ids": [
+        "D30"
+      ]
+    },
+    {
+      "expressao": "market volatility",
+      "documentos": 1,
+      "ids": [
+        "D21"
+      ]
+    },
+    {
+      "expressao": "methodologies challenges",
+      "documentos": 1,
+      "ids": [
+        "D21"
+      ]
+    },
+    {
+      "expressao": "methods application",
+      "documentos": 1,
+      "ids": [
+        "D09"
+      ]
+    },
+    {
+      "expressao": "minimizing chaos",
+      "documentos": 1,
+      "ids": [
+        "D22"
+      ]
+    },
+    {
+      "expressao": "modeling stock",
+      "documentos": 1,
+      "ids": [
+        "D12"
+      ]
+    },
+    {
+      "expressao": "modelling methods",
+      "documentos": 1,
+      "ids": [
+        "D09"
+      ]
+    },
+    {
+      "expressao": "models evidence",
+      "documentos": 1,
+      "ids": [
+        "D17"
+      ]
+    },
+    {
+      "expressao": "models performance",
+      "documentos": 1,
+      "ids": [
+        "D25"
+      ]
+    },
+    {
+      "expressao": "multilayer perceptron",
+      "documentos": 1,
+      "ids": [
+        "D12"
+      ]
+    },
+    {
+      "expressao": "multistep prediction",
+      "documentos": 1,
+      "ids": [
+        "D31"
+      ]
+    },
+    {
+      "expressao": "multivariate market",
+      "documentos": 1,
+      "ids": [
+        "D31"
+      ]
+    },
+    {
+      "expressao": "multivariate time",
+      "documentos": 1,
+      "ids": [
+        "D13"
+      ]
+    },
+    {
+      "expressao": "nanophotonic reservoir",
+      "documentos": 1,
+      "ids": [
+        "D18"
+      ]
+    },
+    {
+      "expressao": "network applied",
+      "documentos": 1,
+      "ids": [
+        "D29"
+      ]
+    },
+    {
+      "expressao": "network approach",
+      "documentos": 1,
+      "ids": [
+        "D26"
+      ]
+    },
+    {
+      "expressao": "network based",
+      "documentos": 1,
+      "ids": [
+        "D08"
+      ]
+    },
+    {
+      "expressao": "network hyperparameters",
+      "documentos": 1,
+      "ids": [
+        "D02"
+      ]
+    },
+    {
+      "expressao": "network optimization",
+      "documentos": 1,
+      "ids": [
+        "D24"
+      ]
+    },
+    {
+      "expressao": "neural network",
+      "documentos": 1,
+      "ids": [
+        "D29"
+      ]
+    },
+    {
+      "expressao": "new approach",
+      "documentos": 1,
+      "ids": [
+        "D20"
+      ]
+    },
+    {
+      "expressao": "normal distributions",
+      "documentos": 1,
+      "ids": [
+        "D11"
+      ]
+    },
+    {
+      "expressao": "novel hybrid",
+      "documentos": 1,
+      "ids": [
+        "D29"
+      ]
+    },
+    {
+      "expressao": "oil prices",
+      "documentos": 1,
+      "ids": [
+        "D16"
+      ]
+    },
+    {
+      "expressao": "optical reservoir",
+      "documentos": 1,
+      "ids": [
+        "D31"
+      ]
+    },
+    {
+      "expressao": "optimization learning",
+      "documentos": 1,
+      "ids": [
+        "D03"
+      ]
+    },
+    {
+      "expressao": "optimized echo",
+      "documentos": 1,
+      "ids": [
+        "D27"
+      ]
+    },
+    {
+      "expressao": "optimizing echo",
+      "documentos": 1,
+      "ids": [
+        "D02"
+      ]
+    },
+    {
+      "expressao": "optomechanical oscillators",
+      "documentos": 1,
+      "ids": [
+        "D18"
+      ]
+    },
+    {
+      "expressao": "order neural",
+      "documentos": 1,
+      "ids": [
+        "D03"
+      ]
+    },
+    {
+      "expressao": "particle swarm",
+      "documentos": 1,
+      "ids": [
+        "D12"
+      ]
+    },
+    {
+      "expressao": "petr petrobr",
+      "documentos": 1,
+      "ids": [
+        "D28"
+      ]
+    },
+    {
+      "expressao": "petrobr s",
+      "documentos": 1,
+      "ids": [
+        "D28"
+      ]
+    },
+    {
+      "expressao": "prediction case",
+      "documentos": 1,
+      "ids": [
+        "D28"
+      ]
+    },
+    {
+      "expressao": "prediction model",
+      "documentos": 1,
+      "ids": [
+        "D34"
+      ]
+    },
+    {
+      "expressao": "price forecasting",
+      "documentos": 1,
+      "ids": [
+        "D26"
+      ]
+    },
+    {
+      "expressao": "price index",
+      "documentos": 1,
+      "ids": [
+        "D12"
+      ]
+    },
+    {
+      "expressao": "price return",
+      "documentos": 1,
+      "ids": [
+        "D29"
+      ]
+    },
+    {
+      "expressao": "probabilistic distributions",
+      "documentos": 1,
+      "ids": [
+        "D02"
+      ]
+    },
+    {
+      "expressao": "quantum temporal",
+      "documentos": 1,
+      "ids": [
+        "D05"
+      ]
+    },
+    {
+      "expressao": "regression models",
+      "documentos": 1,
+      "ids": [
+        "D09"
+      ]
+    },
+    {
+      "expressao": "return prediction",
+      "documentos": 1,
+      "ids": [
+        "D05"
+      ]
+    },
+    {
+      "expressao": "return volatility",
+      "documentos": 1,
+      "ids": [
+        "D29"
+      ]
+    },
+    {
+      "expressao": "s brazil",
+      "documentos": 1,
+      "ids": [
+        "D28"
+      ]
+    },
+    {
+      "expressao": "s p",
+      "documentos": 1,
+      "ids": [
+        "D17"
+      ]
+    },
+    {
+      "expressao": "same error",
+      "documentos": 1,
+      "ids": [
+        "D06"
+      ]
+    },
+    {
+      "expressao": "search algorithm",
+      "documentos": 1,
+      "ids": [
+        "D27"
+      ]
+    },
+    {
+      "expressao": "sectional equity",
+      "documentos": 1,
+      "ids": [
+        "D05"
+      ]
+    },
+    {
+      "expressao": "sentiment analysis",
+      "documentos": 1,
+      "ids": [
+        "D17"
+      ]
+    },
+    {
+      "expressao": "series forecasting",
+      "documentos": 1,
+      "ids": [
+        "D03"
+      ]
+    },
+    {
+      "expressao": "silicon optomechanical",
+      "documentos": 1,
+      "ids": [
+        "D18"
+      ]
+    },
+    {
+      "expressao": "sparrow search",
+      "documentos": 1,
+      "ids": [
+        "D27"
+      ]
+    },
+    {
+      "expressao": "stacked echo",
+      "documentos": 1,
+      "ids": [
+        "D08"
+      ]
+    },
+    {
+      "expressao": "state neural",
+      "documentos": 1,
+      "ids": [
+        "D29"
+      ]
+    },
+    {
+      "expressao": "stock exchange",
+      "documentos": 1,
+      "ids": [
+        "D28"
+      ]
+    },
+    {
+      "expressao": "stock prices",
+      "documentos": 1,
+      "ids": [
+        "D04"
+      ]
+    },
+    {
+      "expressao": "stocks marketed",
+      "documentos": 1,
+      "ids": [
+        "D07"
+      ]
+    },
+    {
+      "expressao": "stocks price",
+      "documentos": 1,
+      "ids": [
+        "D27"
+      ]
+    },
+    {
+      "expressao": "swarm optimization",
+      "documentos": 1,
+      "ids": [
+        "D12"
+      ]
+    },
+    {
+      "expressao": "system based",
+      "documentos": 1,
+      "ids": [
+        "D18"
+      ]
+    },
+    {
+      "expressao": "systematic literature",
+      "documentos": 1,
+      "ids": [
+        "D24"
+      ]
+    },
+    {
+      "expressao": "temporal convolutional",
+      "documentos": 1,
+      "ids": [
+        "D05"
+      ]
+    },
+    {
+      "expressao": "trading performance",
+      "documentos": 1,
+      "ids": [
+        "D17"
+      ]
+    },
+    {
+      "expressao": "training multilayer",
+      "documentos": 1,
+      "ids": [
+        "D12"
+      ]
+    },
+    {
+      "expressao": "transformer models",
+      "documentos": 1,
+      "ids": [
+        "D33"
+      ]
+    },
+    {
+      "expressao": "volatility methodologies",
+      "documentos": 1,
+      "ids": [
+        "D21"
+      ]
+    },
+    {
+      "expressao": "weighted optical",
+      "documentos": 1,
+      "ids": [
+        "D31"
+      ]
+    },
+    {
+      "expressao": "yahoo finance",
+      "documentos": 1,
+      "ids": [
+        "D25"
+      ]
+    }
+  ]
+}

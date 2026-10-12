@@ -9,6 +9,7 @@ Uso:
 """
 
 import os
+import json
 import sys
 import shutil
 import argparse
@@ -96,7 +97,15 @@ def package(session_dir, logger):
 
     # 5. Criar ZIP final
     datahora = datetime.now().strftime("%Y%m%d_%H%M%S")
-    zip_nome = f"ESN_PETR4_TCC_Maycon_{datahora}"
+    acao = "PETR4"
+    manifest_path = os.path.join(session_dir, "dataset.json")
+    if os.path.isfile(manifest_path):
+        with open(manifest_path, encoding="utf-8") as f:
+            acao = json.load(f)["acao"]
+        shutil.copy2(manifest_path, os.path.join(entrega_dir, "dataset.json"))
+    if acao not in ("PETR4", "VALE3"):
+        raise ValueError("Dataset desconhecido")
+    zip_nome = f"ESN_{acao}_TCC_Maycon_{datahora}"
     zip_path = os.path.join(session_dir, zip_nome)
 
     logger.info(f"Criando ZIP final: {zip_nome}.zip ...")

@@ -1,0 +1,542 @@
+{
+  "url": "https://api.crossref.org/works?query.title=Modelling+Financial+Returns+with+Finite+Mixtures+of+GED&rows=3",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+      "facets": {},
+      "total-results": 1263221,
+      "items": [
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                13
+              ]
+            ],
+            "date-time": "2026-04-13T15:14:00Z",
+            "timestamp": 1776093240834,
+            "version": "3.50.1"
+          },
+          "reference-count": 0,
+          "publisher": "University of Zielona Góra, Poland",
+          "issue": "1-2",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "short-container-title": [
+            "Discuss. Math. Probability and Statistics"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2017
+              ]
+            ]
+          },
+          "DOI": "10.7151/dmps.1190",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2018,
+                1,
+                2
+              ]
+            ],
+            "date-time": "2018-01-02T03:45:30Z",
+            "timestamp": 1514864730000
+          },
+          "page": "101",
+          "source": "Crossref",
+          "is-referenced-by-count": 2,
+          "title": [
+            "Gaussian mixtures and financial returns"
+          ],
+          "prefix": "10.7151",
+          "volume": "37",
+          "author": [
+            {
+              "given": "C.",
+              "family": "Cuevas-Covarrubias",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "J.",
+              "family": "Inigo-Martinez",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            },
+            {
+              "given": "R.",
+              "family": "Jimenez-Padilla",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "role": "author",
+                  "vocabulary": "crossref"
+                }
+              ]
+            }
+          ],
+          "member": "37438",
+          "container-title": [
+            "Discussiones Mathematicae Probability and Statistics"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "https://www.discuss.wmie.uz.zgora.pl/ps/pdfs/1190.pdf",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                2,
+                26
+              ]
+            ],
+            "date-time": "2026-02-26T13:03:20Z",
+            "timestamp": 1772111000000
+          },
+          "score": 27.864758,
+          "resource": {
+            "primary": {
+              "URL": "http://www.discuss.wmie.uz.zgora.pl/ps/index.php?doi=10.7151/dmps.1190"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2017
+              ]
+            ]
+          },
+          "references-count": 0,
+          "journal-issue": {
+            "issue": "1-2",
+            "published-print": {
+              "date-parts": [
+                [
+                  2017
+                ]
+              ]
+            }
+          },
+          "URL": "https://doi.org/10.7151/dmps.1190",
+          "ISSN": [
+            "1509-9423",
+            "2084-0381"
+          ],
+          "issn-type": [
+            {
+              "value": "1509-9423",
+              "type": "print"
+            },
+            {
+              "value": "2084-0381",
+              "type": "electronic"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2017
+              ]
+            ]
+          }
+        },
+        {
+          "institution": [
+            {
+              "name": "National Bureau of Economic Research",
+              "acronym": [
+                "NBER"
+              ],
+              "place": [
+                "Cambridge, MA"
+              ]
+            }
+          ],
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                9,
+                19
+              ]
+            ],
+            "date-time": "2026-09-19T11:16:28Z",
+            "timestamp": 1789816588652,
+            "version": "4.0.1"
+          },
+          "publisher-location": "Cambridge, MA",
+          "reference-count": 0,
+          "publisher": "National Bureau of Economic Research",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "DOI": "10.3386/w12018",
+          "type": "report",
+          "created": {
+            "date-parts": [
+              [
+                2007,
+                10,
+                24
+              ]
+            ],
+            "date-time": "2007-10-24T14:32:44Z",
+            "timestamp": 1193236364000
+          },
+          "source": "Crossref",
+          "is-referenced-by-count": 2,
+          "title": [
+            "Bias Corrected Estimates of GED Returns"
+          ],
+          "prefix": "10.3386",
+          "author": [
+            {
+              "given": "James",
+              "family": "Heckman",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Paul",
+              "family": "LaFontaine",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "member": "1960",
+          "published-online": {
+            "date-parts": [
+              [
+                2006,
+                2
+              ]
+            ]
+          },
+          "deposited": {
+            "date-parts": [
+              [
+                2026,
+                9,
+                19
+              ]
+            ],
+            "date-time": "2026-09-19T11:00:57Z",
+            "timestamp": 1789815657000
+          },
+          "score": 26.081459,
+          "resource": {
+            "primary": {
+              "URL": "http://www.nber.org/papers/w12018.pdf"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2006,
+                2
+              ]
+            ]
+          },
+          "references-count": 0,
+          "URL": "https://doi.org/10.3386/w12018",
+          "published": {
+            "date-parts": [
+              [
+                2006,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "indexed": {
+            "date-parts": [
+              [
+                2026,
+                10,
+                7
+              ]
+            ],
+            "date-time": "2026-10-07T21:19:23Z",
+            "timestamp": 1791407963053,
+            "version": "4.3.3"
+          },
+          "reference-count": 15,
+          "publisher": "University of Chicago Press",
+          "issue": "3",
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "short-container-title": [
+            "Journal of Labor Economics"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2006,
+                7
+              ]
+            ]
+          },
+          "DOI": "10.1086/504278",
+          "type": "journal-article",
+          "created": {
+            "date-parts": [
+              [
+                2006,
+                7,
+                25
+              ]
+            ],
+            "date-time": "2006-07-25T15:44:32Z",
+            "timestamp": 1153842272000
+          },
+          "page": "661-700",
+          "source": "Crossref",
+          "is-referenced-by-count": 78,
+          "title": [
+            "Bias‐Corrected Estimates of GED Returns"
+          ],
+          "prefix": "10.1086",
+          "volume": "24",
+          "author": [
+            {
+              "given": "James J.",
+              "family": "Heckman",
+              "sequence": "first",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            },
+            {
+              "given": "Paul A.",
+              "family": "LaFontaine",
+              "sequence": "additional",
+              "affiliation": [],
+              "role": [
+                {
+                  "vocabulary": "crossref",
+                  "role": "author"
+                }
+              ]
+            }
+          ],
+          "member": "200",
+          "reference": [
+            {
+              "key": "rf1",
+              "volume-title": "Krueger",
+              "volume": "1366",
+              "author": "Angrist Joshua D",
+              "year": "1999"
+            },
+            {
+              "key": "rf2",
+              "volume-title": "Smith",
+              "author": "Boesel David",
+              "year": "1998"
+            },
+            {
+              "key": "rf3",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1086/504276"
+            },
+            {
+              "issue": "12",
+              "key": "rf4",
+              "first-page": "19",
+              "volume": "123",
+              "author": "Boudett Katherine",
+              "year": "2000",
+              "journal-title": "Monthly Labor Review"
+            },
+            {
+              "key": "rf5",
+              "volume-title": "Department of Economics",
+              "author": "Cameron Stephen V"
+            },
+            {
+              "key": "rf6",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1086/298316"
+            },
+            {
+              "key": "rf7",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1111/1468-2354.t01-1-00074"
+            },
+            {
+              "key": "rf8",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.2307/1912352"
+            },
+            {
+              "key": "rf9",
+              "volume-title": "LaFontaine",
+              "author": "Heckman James J",
+              "year": "2007"
+            },
+            {
+              "key": "rf10",
+              "volume-title": "Cohort analysis in social research: Beyond the identification problem, ed. William M. Mason and Stephen E. Fienberg.",
+              "author": "Heckman James J"
+            },
+            {
+              "key": "rf11",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1086/504455"
+            },
+            {
+              "key": "rf12",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1086/383112"
+            },
+            {
+              "key": "rf13",
+              "author": "Jaeger David A",
+              "year": "2006",
+              "journal-title": "Journal of Population Economics (forthcoming)."
+            },
+            {
+              "key": "rf14",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1177/0193841X9902300501"
+            },
+            {
+              "key": "rf15",
+              "doi-asserted-by": "publisher",
+              "DOI": "10.1080/01621459.1996.10476997"
+            }
+          ],
+          "container-title": [
+            "Journal of Labor Economics"
+          ],
+          "language": "en",
+          "link": [
+            {
+              "URL": "http://www.journals.uchicago.edu/doi/pdf/10.1086/504278",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "deposited": {
+            "date-parts": [
+              [
+                2018,
+                4,
+                7
+              ]
+            ],
+            "date-time": "2018-04-07T12:06:10Z",
+            "timestamp": 1523102770000
+          },
+          "score": 25.671692,
+          "resource": {
+            "primary": {
+              "URL": "https://www.journals.uchicago.edu/doi/10.1086/504278"
+            }
+          },
+          "issued": {
+            "date-parts": [
+              [
+                2006,
+                7
+              ]
+            ]
+          },
+          "references-count": 15,
+          "journal-issue": {
+            "issue": "3",
+            "published-print": {
+              "date-parts": [
+                [
+                  2006,
+                  7
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "10.1086/504278"
+          ],
+          "URL": "https://doi.org/10.1086/504278",
+          "ISSN": [
+            "0734-306X",
+            "1537-5307"
+          ],
+          "issn-type": [
+            {
+              "value": "0734-306X",
+              "type": "print"
+            },
+            {
+              "value": "1537-5307",
+              "type": "electronic"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2006,
+                7
+              ]
+            ]
+          }
+        }
+      ],
+      "items-per-page": 3,
+      "query": {
+        "start-index": 0,
+        "search-terms": null
+      }
+    }
+  }
+}

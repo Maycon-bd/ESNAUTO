@@ -1,0 +1,654 @@
+{
+  "url": "https://api.crossref.org/works/10.3389%2Ffams.2024.1398137",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            30
+          ]
+        ],
+        "date-time": "2026-09-30T21:14:39Z",
+        "timestamp": 1790802879298,
+        "version": "4.1.0"
+      },
+      "reference-count": 50,
+      "publisher": "Frontiers Media SA",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                5,
+                30
+              ]
+            ],
+            "date-time": "2024-05-30T00:00:00Z",
+            "timestamp": 1717027200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "frontiersin.org"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Front. Appl. Math. Stat."
+      ],
+      "abstract": "<jats:p>The main finding of this study is the derivation of a new probability distribution that reveals interesting properties, especially with various asymmetry and kurtosis behavior. We call this distribution the asymmetric generalized error distribution (AGED). AGED is a new contribution to the field of statistical theory, offering more flexible probability density functions, cumulative distribution functions, and hazard functions than the base distribution. The AGED also includes normal, uniform, Laplace, asymmetric Laplace, and generalized error distribution (GED) as special cases. The mathematical and statistical features of the distribution are derived and discussed. Estimators of the parameters of the distribution are obtained using the maximum likelihood approach. In a simulation study, random samples are generated from the new probability distribution to illustrate what ideal data looks like. Using real data from diverse applications such as health, industry, and cybersecurity domains, the performance of the new distribution is compared to that of other distributions. The new distribution is found to be a better fit for the data, showing great adaptability in the context of real data analysis. We expect the distribution to be applied to many more real data, and the findings of the study can be used as a basis for future research in the field.</jats:p>",
+      "DOI": "10.3389/fams.2024.1398137",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            30
+          ]
+        ],
+        "date-time": "2024-05-30T12:12:56Z",
+        "timestamp": 1717071176000
+      },
+      "update-policy": "https://doi.org/10.3389/crossmark-policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 3,
+      "title": [
+        "Asymmetric generalized error distribution with its properties and applications"
+      ],
+      "prefix": "10.3389",
+      "volume": "10",
+      "author": [
+        {
+          "given": "Tayu Nigusie",
+          "family": "Abebe",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ayele Taye",
+          "family": "Goshu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "1965",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            30
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "ref1",
+          "doi-asserted-by": "publisher",
+          "first-page": "554",
+          "DOI": "10.1080/03610926.2012.746986",
+          "article-title": "Some skew-symmetric distributions which include the bimodal ones",
+          "volume": "44",
+          "author": "Cahoy",
+          "year": "2015",
+          "journal-title": "Commun Stat Theory Methods"
+        },
+        {
+          "key": "ref2",
+          "doi-asserted-by": "publisher",
+          "first-page": "427",
+          "DOI": "10.1016/j.jspi.2003.11.014",
+          "article-title": "Statistical inference for a general class of asymmetric distributions",
+          "volume": "128",
+          "author": "Arellano-Valle",
+          "year": "2005",
+          "journal-title": "J Stat Plan Infer"
+        },
+        {
+          "key": "ref3",
+          "doi-asserted-by": "publisher",
+          "first-page": "359",
+          "DOI": "10.1080/01621459.1998.10474117",
+          "article-title": "On Bayesian modelling of fat tails and skewness",
+          "volume": "93",
+          "author": "Fernández",
+          "year": "1998",
+          "journal-title": "J Am Stat Assoc"
+        },
+        {
+          "key": "ref4",
+          "doi-asserted-by": "publisher",
+          "first-page": "195",
+          "DOI": "10.12785/jsap/020302",
+          "article-title": "Analyzing skewed data with the epsilon skew gamma distribution",
+          "volume": "2",
+          "author": "Abdulah",
+          "year": "2013",
+          "journal-title": "J Stat Appl Probab"
+        },
+        {
+          "key": "ref5",
+          "doi-asserted-by": "publisher",
+          "first-page": "223",
+          "DOI": "10.17578/19-4-1",
+          "article-title": "Skewed generalized error distribution of financial assets and option pricing",
+          "volume": "19",
+          "author": "Theodossiou",
+          "year": "2015",
+          "journal-title": "Multinatl Financ J"
+        },
+        {
+          "key": "ref6",
+          "doi-asserted-by": "publisher",
+          "first-page": "639",
+          "DOI": "10.1002/jae.1003",
+          "article-title": "Are output growth-rate distributions fat-tailed? Some evidence from OECD countries",
+          "volume": "23",
+          "author": "Fagiolo",
+          "year": "2008",
+          "journal-title": "J Appl Econ"
+        },
+        {
+          "key": "ref7",
+          "volume-title": "Robust statistics: The approach based on influence functions",
+          "author": "Hampel",
+          "year": "2011"
+        },
+        {
+          "key": "ref8",
+          "doi-asserted-by": "publisher",
+          "first-page": "93",
+          "DOI": "10.1016/j.jmva.2004.10.002",
+          "article-title": "On fundamental skew distributions",
+          "volume": "96",
+          "author": "Arellano-Valle",
+          "year": "2005",
+          "journal-title": "J Multivar Anal"
+        },
+        {
+          "key": "ref9",
+          "volume-title": "Bayesian analysis of the epsilon skew exponential power distribution",
+          "author": "Weldensea",
+          "year": "2019"
+        },
+        {
+          "key": "ref10",
+          "doi-asserted-by": "publisher",
+          "first-page": "3005",
+          "DOI": "10.1080/03610926.2018.1473600",
+          "article-title": "An alternative skew exponential power distribution formulation",
+          "volume": "48",
+          "author": "Hutson",
+          "year": "2019",
+          "journal-title": "Commun Stat Theory Methods"
+        },
+        {
+          "key": "ref11",
+          "doi-asserted-by": "publisher",
+          "first-page": "1131",
+          "DOI": "10.1016/j.jmaa.2014.09.030",
+          "article-title": "Asymptotic expansions of the moments of extremes from general error distribution",
+          "volume": "422",
+          "author": "Jia",
+          "year": "2015",
+          "journal-title": "J Math Anal Appl"
+        },
+        {
+          "key": "ref12",
+          "doi-asserted-by": "publisher",
+          "first-page": "859",
+          "DOI": "10.1080/02664760050120542",
+          "article-title": "Problems of inference for Azzalini’s Skewnormal distribution",
+          "volume": "27",
+          "author": "Pewsey",
+          "year": "2000",
+          "journal-title": "J Appl Stat"
+        },
+        {
+          "key": "ref13",
+          "doi-asserted-by": "publisher",
+          "first-page": "715",
+          "DOI": "10.1093/biomet/83.4.715",
+          "article-title": "The multivariate skew-Normal distribution",
+          "volume": "83",
+          "author": "Azzalini",
+          "year": "1996",
+          "journal-title": "Biometrika"
+        },
+        {
+          "key": "ref14",
+          "doi-asserted-by": "publisher",
+          "first-page": "291",
+          "DOI": "10.1016/S0378-3758(99)00096-8",
+          "article-title": "The epsilon–skew–Normal distribution for analyzing near-Normal data",
+          "volume": "83",
+          "author": "Mudholkar",
+          "year": "2000",
+          "journal-title": "J Stat Plan Infer"
+        },
+        {
+          "key": "ref15",
+          "doi-asserted-by": "publisher",
+          "first-page": "875",
+          "DOI": "10.1007/s00362-011-0391-4",
+          "article-title": "An extension of the half-Normal distribution",
+          "volume": "53",
+          "author": "Olmos",
+          "year": "2012",
+          "journal-title": "Stat Pap"
+        },
+        {
+          "key": "ref16",
+          "doi-asserted-by": "publisher",
+          "first-page": "171",
+          "DOI": "10.6092/ISSN.1973-2201",
+          "article-title": "A class of distributions which includes the Normal ones",
+          "author": "Azzalini",
+          "year": "1985",
+          "journal-title": "Scand J Stat"
+        },
+        {
+          "key": "ref17",
+          "doi-asserted-by": "publisher",
+          "first-page": "199",
+          "DOI": "10.6092/issn.1973-2201/711",
+          "article-title": "Further results on a class of distributions which includes the Normal ones",
+          "volume": "46",
+          "author": "Azzalini",
+          "year": "1986",
+          "journal-title": "Statistica"
+        },
+        {
+          "key": "ref18",
+          "doi-asserted-by": "publisher",
+          "first-page": "201",
+          "DOI": "10.1093/biomet/63.1.201",
+          "article-title": "Bayes estimation subject to uncertainty about parameter constraints",
+          "volume": "63",
+          "author": "Ohagan",
+          "year": "1976",
+          "journal-title": "Biometrika"
+        },
+        {
+          "key": "ref19",
+          "doi-asserted-by": "publisher",
+          "first-page": "1673",
+          "DOI": "10.1080/03610920601126118",
+          "article-title": "The extended skew-exponential power distribution and its derivation",
+          "volume": "36",
+          "author": "Salinas",
+          "year": "2007",
+          "journal-title": "Commun Stat Theory Methods"
+        },
+        {
+          "key": "ref20",
+          "doi-asserted-by": "publisher",
+          "first-page": "439",
+          "DOI": "10.1198/016214504000000359",
+          "article-title": "Inferential aspects of the skew exponential power distribution",
+          "volume": "99",
+          "author": "Diciccio",
+          "year": "2004",
+          "journal-title": "J Am Stat Assoc"
+        },
+        {
+          "key": "ref21",
+          "doi-asserted-by": "publisher",
+          "first-page": "117",
+          "DOI": "10.1088/0957-0233/12/1/702",
+          "article-title": "Statistical distributions",
+          "volume": "12",
+          "author": "Evans",
+          "year": "2001",
+          "journal-title": "Meas Sci Technol"
+        },
+        {
+          "key": "ref22",
+          "first-page": "296",
+          "article-title": "On the law of frequency of error",
+          "volume": "31",
+          "author": "Subbotin",
+          "year": "1923",
+          "journal-title": "Математический Сборник"
+        },
+        {
+          "key": "ref23",
+          "first-page": "12",
+          "article-title": "Some comments on “Bayes” estimators",
+          "volume": "27",
+          "author": "Tiao",
+          "year": "1973",
+          "journal-title": "Am Stat"
+        },
+        {
+          "key": "ref24",
+          "doi-asserted-by": "publisher",
+          "first-page": "991",
+          "DOI": "10.1093/icc/dtr036",
+          "article-title": "A new class of asymmetric exponential power densities with applications to economics and finance",
+          "volume": "20",
+          "author": "Bottazzi",
+          "year": "2011",
+          "journal-title": "Ind Corp Chang"
+        },
+        {
+          "key": "ref25",
+          "doi-asserted-by": "crossref",
+          "unstructured": "GillerG. L.\n          Giller Investments ResearchA generalized error distribution2005",
+          "DOI": "10.2139/ssrn.2265027"
+        },
+        {
+          "key": "ref26",
+          "volume-title": "The skewed generalized T distribution tree package vignette",
+          "author": "Davis",
+          "year": "2015"
+        },
+        {
+          "key": "ref27",
+          "volume-title": "Statistical distributions",
+          "author": "Catherine",
+          "year": "2011"
+        },
+        {
+          "key": "ref28",
+          "doi-asserted-by": "publisher",
+          "first-page": "1075",
+          "DOI": "10.1214/aoms/1177728074",
+          "article-title": "Tables for computing bivariate Normal probabilities",
+          "volume": "27",
+          "author": "Owen",
+          "year": "1956",
+          "journal-title": "Ann Math Stat"
+        },
+        {
+          "key": "ref29",
+          "doi-asserted-by": "publisher",
+          "first-page": "455",
+          "DOI": "10.2307/2347148",
+          "article-title": "Algorithm AS 76: an integral useful in calculating non-central T and bivariate Normal probabilities",
+          "author": "Young",
+          "year": "1974",
+          "journal-title": "Appl Stat"
+        },
+        {
+          "key": "ref30",
+          "doi-asserted-by": "publisher",
+          "first-page": "379",
+          "DOI": "10.1111/j.1467-9876.1978.tb01084.x",
+          "article-title": "A remark on algorithm AS 76: an integral useful in calculating non-central T and bivariate Normal probabilities",
+          "volume": "27",
+          "author": "Hill",
+          "year": "1978",
+          "journal-title": "J R Stat Soc C Appl Stat"
+        },
+        {
+          "key": "ref31",
+          "doi-asserted-by": "publisher",
+          "first-page": "580",
+          "DOI": "10.2307/2347894",
+          "article-title": "Algorithm AS R80: a remark on algorithm AS 76: an integral useful in calculating noncentral T and bivariate Normal probabilities",
+          "volume": "38",
+          "author": "Boys",
+          "year": "1989",
+          "journal-title": "J R Stat Soc C Appl Stat"
+        },
+        {
+          "key": "ref32",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1007/b98855",
+          "volume-title": "Elements of large-sample theory",
+          "author": "Lehmann",
+          "year": "1999"
+        },
+        {
+          "key": "ref33",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1201/9780429258589",
+          "volume-title": "Practical statistics for medical research",
+          "author": "Altman",
+          "year": "1990"
+        },
+        {
+          "key": "ref34",
+          "doi-asserted-by": "publisher",
+          "first-page": "1537",
+          "DOI": "10.3390/math8091537",
+          "article-title": "A reliability model based on the incomplete generalized Integro-exponential function",
+          "volume": "8",
+          "author": "Astorga",
+          "year": "2020",
+          "journal-title": "Mathematics"
+        },
+        {
+          "key": "ref35",
+          "first-page": "333",
+          "article-title": "Package ‘car’",
+          "volume-title": "Vienna: R Found. Statist. Comput.",
+          "author": "Fox",
+          "year": "2012"
+        },
+        {
+          "key": "ref36",
+          "volume-title": "Introduction to Probabiity",
+          "author": "Karr",
+          "year": "1999"
+        },
+        {
+          "key": "ref37",
+          "volume-title": "R: a language and environment for statistical computing",
+          "year": "2010"
+        },
+        {
+          "key": "ref38",
+          "first-page": "19",
+          "article-title": "A note on the fisher information matrix for the skew-generalized-Normal model",
+          "volume": "37",
+          "author": "Arellano Valle",
+          "year": "2013",
+          "journal-title": "SORT-Statistics and Operations Res. Trans"
+        },
+        {
+          "key": "ref39",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1007/978-1-4419-5945-4",
+          "volume-title": "Numerical analysis for statisticians",
+          "author": "Lange",
+          "year": "2010"
+        },
+        {
+          "key": "ref40",
+          "doi-asserted-by": "publisher",
+          "first-page": "133",
+          "DOI": "10.1515/mcma-2016-0104",
+          "article-title": "The acceptance-rejection method for low-discrepancy sequences",
+          "volume": "22",
+          "author": "Nguyen",
+          "year": "2016",
+          "journal-title": "Monte Carlo Methods Appl"
+        },
+        {
+          "key": "ref41",
+          "first-page": "47",
+          "volume-title": "Statistical inference (Cengage Learning)",
+          "author": "Casella",
+          "year": ""
+        },
+        {
+          "key": "ref42",
+          "doi-asserted-by": "publisher",
+          "first-page": "37",
+          "DOI": "10.1016/0895-7177(96)00038-6",
+          "article-title": "Smoothness and dimension reduction in quasi-Monte Carlo methods",
+          "volume": "23",
+          "author": "Moskowitz",
+          "year": "1996",
+          "journal-title": "Math Comput Model"
+        },
+        {
+          "key": "ref43",
+          "doi-asserted-by": "publisher",
+          "first-page": "1351651",
+          "DOI": "10.3389/fams.2024.1351651",
+          "article-title": "Bias reduction of maximum likelihood estimation in Exponentiated Teissier distribution",
+          "volume": "10",
+          "author": "Ahmed",
+          "year": "2024",
+          "journal-title": "Front Appl Math Stat"
+        },
+        {
+          "key": "ref44",
+          "unstructured": "Heart Failure Datasets2023"
+        },
+        {
+          "key": "ref45",
+          "unstructured": "GjikaE.\n          2021"
+        },
+        {
+          "key": "ref46",
+          "doi-asserted-by": "publisher",
+          "first-page": "358",
+          "DOI": "10.2307/2347795",
+          "article-title": "A comparison of maximum likelihood and Bayesian estimators for the three-parameter Weibull distribution",
+          "volume": "36",
+          "author": "Smith",
+          "year": "1987",
+          "journal-title": "J R Stat Soc C Appl Stat"
+        },
+        {
+          "key": "ref47",
+          "doi-asserted-by": "publisher",
+          "first-page": "726",
+          "DOI": "10.3390/sym13040726",
+          "article-title": "New method for generating new families of distributions",
+          "volume": "13",
+          "author": "Baharith",
+          "year": "2021",
+          "journal-title": "Symmetry"
+        },
+        {
+          "key": "ref48",
+          "doi-asserted-by": "publisher",
+          "first-page": "716",
+          "DOI": "10.1109/TAC.1974.1100705",
+          "article-title": "A new look at the statistical model identification",
+          "volume": "19",
+          "author": "Akaike",
+          "year": "1974",
+          "journal-title": "IEEE Trans Autom Control"
+        },
+        {
+          "key": "ref49",
+          "doi-asserted-by": "crossref",
+          "first-page": "461",
+          "DOI": "10.1214/aos/1176344136",
+          "article-title": "Estimating the dimension of a model",
+          "volume": "6",
+          "author": "Schwarz",
+          "year": "1978",
+          "journal-title": "Ann Stat"
+        },
+        {
+          "key": "ref50",
+          "doi-asserted-by": "publisher",
+          "first-page": "186",
+          "DOI": "10.54216/IJNS.230215",
+          "article-title": "Neutrosophic Beta-Lindley distribution: mathematical properties and modeling bladder Cancer data",
+          "volume": "23",
+          "author": "Algamal",
+          "year": "2024",
+          "journal-title": "Int J Neutrosophic Sci"
+        }
+      ],
+      "container-title": [
+        "Frontiers in Applied Mathematics and Statistics"
+      ],
+      "original-title": [],
+      "link": [
+        {
+          "URL": "https://www.frontiersin.org/articles/10.3389/fams.2024.1398137/full",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            30
+          ]
+        ],
+        "date-time": "2024-05-30T12:13:07Z",
+        "timestamp": 1717071187000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.frontiersin.org/articles/10.3389/fams.2024.1398137/full"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            30
+          ]
+        ]
+      },
+      "references-count": 50,
+      "alternative-id": [
+        "10.3389/fams.2024.1398137"
+      ],
+      "URL": "https://doi.org/10.3389/fams.2024.1398137",
+      "relation": {},
+      "ISSN": [
+        "2297-4687"
+      ],
+      "issn-type": [
+        {
+          "value": "2297-4687",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            30
+          ]
+        ]
+      },
+      "article-number": "1398137"
+    }
+  }
+}

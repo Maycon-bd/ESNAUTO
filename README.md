@@ -1,4 +1,4 @@
-# ⚡ ESNAUTO — Automação ESN & GA + Benchmark Studio (PETR4)
+# ⚡ ESNAUTO — Automação ESN & GA + Benchmark Studio (PETR4 e VALE3)
 
 [![R](https://img.shields.io/badge/R-4.6%2B-blue.svg)](https://www.r-project.org/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-green.svg)](https://www.python.org/)
@@ -150,6 +150,21 @@ keras3::install_keras()
 O orquestrador Python utiliza apenas bibliotecas padrão (`os`, `sys`, `json`, `subprocess`, `shutil`, `argparse`, `datetime`, `random`). Não requer instalações adicionais via `pip`.
 
 ---
+
+## Seleção da ação (PETR4 ou VALE3)
+
+No Studio, escolha **Ação para previsão** no topo da tela. A troca carrega o dataset do projeto, atualiza as partições e limpa os resultados em memória. O seletor vale para ESN, GA, LSTM, GRU e benchmark completo. Durante uma execução, a troca fica bloqueada.
+
+| Ação | Observações | Treino | Validação | Teste |
+|---|---:|---:|---:|---:|
+| PETR4 | 5.198 | 2.600 | 1.299 | 1.299 |
+| VALE3 | 5.192 | 2.596 | 1.298 | 1.298 |
+
+As partições configuradas na aba Dados são utilizadas pelos modelos. Os históricos e recordes de VALE3 ficam em `Scripts/results/VALE3/`; PETR4 conserva seus arquivos anteriores. Arquivos personalizados recebem identidade pelo conteúdo e histórico próprio.
+
+Na automação, use `python automate_simulations.py --acao VALE3` (ou `--test --run 1` para uma bateria menor). O atalho `run_simulations.bat` também pergunta a ação. Cada sessão batch inclui `dataset.json`, com ação, tamanho, partições e SHA-256 do arquivo. O pipeline de análise, avaliação e empacotamento reconhece a ação selecionada.
+
+Veja [o protocolo para os resultados da monografia](docs/11_selecao_datasets_petr4_vale3.md). A inclusão do dataset não constitui uma bateria científica concluída.
 
 ## 🚀 Como Executar
 

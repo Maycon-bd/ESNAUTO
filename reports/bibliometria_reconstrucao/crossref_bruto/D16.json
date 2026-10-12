@@ -1,0 +1,680 @@
+{
+  "url": "https://api.crossref.org/works/10.1007%2Fs10614-024-10797-w",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            3
+          ]
+        ],
+        "date-time": "2026-08-03T19:37:30Z",
+        "timestamp": 1785785850506,
+        "version": "3.56.0"
+      },
+      "reference-count": 47,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "3",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                28
+              ]
+            ],
+            "date-time": "2024-11-28T00:00:00Z",
+            "timestamp": 1732752000000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                28
+              ]
+            ],
+            "date-time": "2024-11-28T00:00:00Z",
+            "timestamp": 1732752000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/501100001661",
+          "name": "Ruprecht-Karls-Universität Heidelberg",
+          "doi-asserted-by": "crossref",
+          "id": [
+            {
+              "id": "10.13039/501100001661",
+              "id-type": "DOI",
+              "asserted-by": "crossref"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Comput Econ"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            9
+          ]
+        ]
+      },
+      "abstract": "<jats:title>Abstract</jats:title>\n          <jats:p>Accurate forecasting of crude oil prices is crucial for informed financial decision-making. This study presents a cutting-edge Reservoir Computing (RC) model specifically designed for precise crude oil price predictions, outperforming traditional methods such as ARIMA, LSTM, and GRU. Using daily closing prices from major indices spanning January 2010 to December 2023, we conducted a thorough evaluation. The RC model consistently demonstrates superior accuracy and computational efficiency. Quantitative metrics reveal the RC model’s dominance with a Mean Absolute Error (MAE) of 0.0094, Mean Squared Error (MSE) of 0.00035, Root Mean Squared Error (RMSE) of 0.0196, and a notably low Mean Absolute Percentage Error (MAPE) of <jats:inline-formula>\n              <jats:alternatives>\n                <jats:tex-math>$$1.450\\%$$</jats:tex-math>\n                <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n                  <mml:mrow>\n                    <mml:mn>1.450</mml:mn>\n                    <mml:mo>%</mml:mo>\n                  </mml:mrow>\n                </mml:math>\n              </jats:alternatives>\n            </jats:inline-formula>. Additionally, the RC model’s runtime of 1.11 s underscores its computational efficiency, far surpassing ARIMA (493.22 s), LSTM (423.55 s), and GRU (15.73 s). During periods of economic disruption, such as the COVID-19 lockdowns, the RC model effectively captured sharp price fluctuations, highlighting its robust forecasting capability. These findings emphasize the RC model’s potential as a reliable tool for enhancing decision-making processes in the dynamic energy market, particularly for real-time applications such as infectious disease case count forecasting. This study advocates for the broader adoption of Reservoir Computing models to improve predictive accuracy and operational efficiency in energy economics.</jats:p>",
+      "DOI": "10.1007/s10614-024-10797-w",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            27
+          ]
+        ],
+        "date-time": "2024-11-27T23:36:42Z",
+        "timestamp": 1732750602000
+      },
+      "page": "2543-2563",
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 7,
+      "title": [
+        "Forecasting Crude Oil Prices Using Reservoir Computing Models"
+      ],
+      "prefix": "10.1007",
+      "volume": "66",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2555-9623",
+          "authenticated-orcid": false,
+          "given": "Kaushal",
+          "family": "Kumar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            28
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "10797_CR1",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Abraham, B., Ledolter, J. (1983). Statistical methods for forecasting. https://api.semanticscholar.org/CorpusID:61135356",
+          "DOI": "10.1002/9780470316610"
+        },
+        {
+          "key": "10797_CR2",
+          "unstructured": "Aroussi, R. (2021). yfinance. https://github.com/ranaroussi/yfinance. Accessed: 31/05/2023."
+        },
+        {
+          "key": "10797_CR3",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Bottou, L. (2010). Large-scale machine learning with stochastic gradient descent. In Lechevallier, Y., Saporta, G. (eds.) Proceedings of COMPSTAT’2010, pp. 177–186. Physica-Verlag HD, Heidelberg.",
+          "DOI": "10.1007/978-3-7908-2604-3_16"
+        },
+        {
+          "issue": "3",
+          "key": "10797_CR4",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1088/2634-4386/ac7db7",
+          "volume": "2",
+          "author": "M Cucchi",
+          "year": "2022",
+          "unstructured": "Cucchi, M., Abreu, S., Ciccone, G., Brunner, D., & Kleemann, H. (2022). Hands-on reservoir computing: A tutorial for practical implementation. Neuromorphic Computing and Engineering, 2(3), 032002. https://doi.org/10.1088/2634-4386/ac7db7",
+          "journal-title": "Neuromorphic Computing and Engineering"
+        },
+        {
+          "key": "10797_CR5",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jocs.2020.101237",
+          "volume": "47",
+          "author": "NAK Doan",
+          "year": "2020",
+          "unstructured": "Doan, N. A. K., Polifke, W., & Magri, L. (2020). Physics-informed echo state networks. Journal of Computational Science, 47, 101237. https://doi.org/10.1016/j.jocs.2020.101237",
+          "journal-title": "Journal of Computational Science"
+        },
+        {
+          "key": "10797_CR6",
+          "unstructured": "Elsworth, S., Güttel, S. (2020). Time Series Forecasting Using LSTM Networks: A Symbolic Approach."
+        },
+        {
+          "key": "10797_CR7",
+          "unstructured": "Goodfellow, I., Bengio, Y., Courville, A. (2016). Deep Learning. MIT Press. http://www.deeplearningbook.org"
+        },
+        {
+          "issue": "4",
+          "key": "10797_CR8",
+          "doi-asserted-by": "publisher",
+          "first-page": "477",
+          "DOI": "10.3390/ai2040030",
+          "volume": "2",
+          "author": "MJ Hamayel",
+          "year": "2021",
+          "unstructured": "Hamayel, M. J., & Owda, A. Y. (2021). A novel cryptocurrency price prediction model using gru, lstm and bi-lstm machine learning algorithms. AI, 2(4), 477–496. https://doi.org/10.3390/ai2040030",
+          "journal-title": "AI"
+        },
+        {
+          "key": "10797_CR9",
+          "unstructured": "Haykin, S. S. (2009). Neural Networks and Learning Machines. Pearson International Edition. Pearson. https://books.google.de/books?id=KCwWOAAACAAJ"
+        },
+        {
+          "issue": "8",
+          "key": "10797_CR10",
+          "doi-asserted-by": "publisher",
+          "first-page": "1735",
+          "DOI": "10.1162/neco.1997.9.8.1735",
+          "volume": "9",
+          "author": "S Hochreiter",
+          "year": "1997",
+          "unstructured": "Hochreiter, S., & Schmidhuber, J. (1997). Long Short-Term Memory. Neural Computation, 9(8), 1735–1780. https://doi.org/10.1162/neco.1997.9.8.1735",
+          "journal-title": "Neural Computation"
+        },
+        {
+          "key": "10797_CR11",
+          "volume-title": "Forecasting: Principles and Practice",
+          "author": "R Hyndman",
+          "year": "2018",
+          "unstructured": "Hyndman, R., & Athanasopoulos, G. (2018). Forecasting: Principles and Practice (2nd ed.). Australia: OTexts.",
+          "edition": "2"
+        },
+        {
+          "key": "10797_CR12",
+          "unstructured": "Jaeger, H. (2001). The”echo state” approach to analysing and training recurrent neural networks."
+        },
+        {
+          "key": "10797_CR13",
+          "unstructured": "Jaeger, H. (2002). Adaptive nonlinear system identification with echo state networks. In Proceedings of the 15th International Conference on Neural Information Processing Systems. NIPS’02, pp. 609–616. MIT Press, Cambridge, MA, USA."
+        },
+        {
+          "key": "10797_CR14",
+          "unstructured": "Jaeger, H. (2021). A tutorial on training recurrent neural networks, covering bptt, rtrl, ekf and the \"echo state network\" approach. https://api.semanticscholar.org/CorpusID:237370083"
+        },
+        {
+          "issue": "9",
+          "key": "10797_CR15",
+          "doi-asserted-by": "publisher",
+          "first-page": "2330",
+          "DOI": "10.4249/scholarpedia.2330",
+          "volume": "2",
+          "author": "H Jaeger",
+          "year": "2007",
+          "unstructured": "Jaeger, H. (2007). Echo state network. Scholarpedia, 2(9), 2330.",
+          "journal-title": "Scholarpedia"
+        },
+        {
+          "issue": "5667",
+          "key": "10797_CR16",
+          "doi-asserted-by": "publisher",
+          "first-page": "78",
+          "DOI": "10.1126/science.1091277",
+          "volume": "304",
+          "author": "H Jaeger",
+          "year": "2004",
+          "unstructured": "Jaeger, H., & Haas, H. (2004). Harnessing nonlinearity: Predicting chaotic systems and saving energy in wireless communication. Science, 304(5667), 78–80.",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10797_CR17",
+          "unstructured": "Kingma, D. P., Ba, J., Adam, A. (2017). Method for Stochastic Optimization."
+        },
+        {
+          "key": "10797_CR18",
+          "unstructured": "Kumar, K. (2023). Machine learning in parameter estimation of nonlinear systems. arXiv preprint arXiv:2308.12393"
+        },
+        {
+          "key": "10797_CR19",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Kumar, K. (2023). Reservoir computing in epidemiological forecasting: Predicting chicken pox incidence. medRxiv https://doi.org/10.1101/2023.04.24.23289018",
+          "DOI": "10.1101/2023.04.24.23289018"
+        },
+        {
+          "key": "10797_CR20",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.ribaf.2021.101489",
+          "volume": "58",
+          "author": "T-H Le",
+          "year": "2021",
+          "unstructured": "Le, T.-H., Le, A. T., & Le, H.-C. (2021). The historic oil price fluctuation during the covid-19 pandemic: What are the causes? Research in International Business and Finance, 58, 101489. https://doi.org/10.1016/j.ribaf.2021.101489",
+          "journal-title": "Research in International Business and Finance"
+        },
+        {
+          "key": "10797_CR21",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.petrol.2021.109309",
+          "volume": "208",
+          "author": "X Li",
+          "year": "2022",
+          "unstructured": "Li, X., Ma, X., Xiao, F., & Xiao, C. (2022). Time-series production forecasting method based on the integration of bidirectional gated recurrent unit (bi-gru) network and sparrow search algorithm (ssa). Journal of Petroleum Science and Engineering, 208, 109309. https://doi.org/10.1016/j.petrol.2021.109309",
+          "journal-title": "Journal of Petroleum Science and Engineering"
+        },
+        {
+          "issue": "3",
+          "key": "10797_CR22",
+          "doi-asserted-by": "publisher",
+          "first-page": "1370",
+          "DOI": "10.1109/TSTE.2019.2926147",
+          "volume": "11",
+          "author": "C Li",
+          "year": "2020",
+          "unstructured": "Li, C., Tang, G., Xue, X., Saeed, A., & Hu, X. (2020). Short-term wind speed interval prediction based on ensemble gru model. IEEE Transactions on Sustainable Energy, 11(3), 1370–1380. https://doi.org/10.1109/TSTE.2019.2926147",
+          "journal-title": "IEEE Transactions on Sustainable Energy"
+        },
+        {
+          "key": "10797_CR23",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Lukoševičius, M. (2012). In Montavon, G., Orr, G.B., Müller, K.-R. (eds.) A Practical Guide to Applying Echo State Networks, pp. 659–686. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-35289-8_36",
+          "DOI": "10.1007/978-3-642-35289-8_36"
+        },
+        {
+          "issue": "3",
+          "key": "10797_CR24",
+          "doi-asserted-by": "publisher",
+          "first-page": "127",
+          "DOI": "10.1016/j.cosrev.2009.03.005",
+          "volume": "3",
+          "author": "M Lukoševičius",
+          "year": "2009",
+          "unstructured": "Lukoševičius, M., & Jaeger, H. (2009). Reservoir computing approaches to recurrent neural network training. Computer Science Review, 3(3), 127–149. https://doi.org/10.1016/j.cosrev.2009.03.005",
+          "journal-title": "Computer Science Review"
+        },
+        {
+          "issue": "11",
+          "key": "10797_CR25",
+          "doi-asserted-by": "publisher",
+          "first-page": "2531",
+          "DOI": "10.1162/089976602760407955",
+          "volume": "14",
+          "author": "W Maass",
+          "year": "2002",
+          "unstructured": "Maass, W., Natschläger, T., & Markram, H. (2002). Real-time computing without stable states: A new framework for neural computation based on perturbations. Neural Computation, 14(11), 2531–2560. https://doi.org/10.1162/089976602760407955",
+          "journal-title": "Neural Computation"
+        },
+        {
+          "key": "10797_CR26",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Nakajima, K. (2020). Physical reservoir computing-an introductory perspective. Japanese Journal of Applied Physics, 59",
+          "DOI": "10.35848/1347-4065/ab8d4f"
+        },
+        {
+          "issue": "4",
+          "key": "10797_CR27",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.5028373",
+          "volume": "28",
+          "author": "J Pathak",
+          "year": "2018",
+          "unstructured": "Pathak, J., Wikner, A., Fussell, R., Chandra, S., Hunt, B. R., Girvan, M., & Ott, E. (2018). Hybrid forecasting of chaotic processes: Using machine learning in conjunction with a knowledge-based model. Chaos: An Interdisciplinary Journal of Nonlinear Science, 28(4), 041101. https://doi.org/10.1063/1.5028373",
+          "journal-title": "Chaos: An Interdisciplinary Journal of Nonlinear Science"
+        },
+        {
+          "key": "10797_CR28",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3390/en13246623",
+          "author": "RA Rajagukguk",
+          "year": "2020",
+          "unstructured": "Rajagukguk, R. A., Ramadhan, R. A. A., & Lee, H.-J. (2020). A review on deep learning models for forecasting time series data of solar irradiance and photovoltaic power. Energies. https://doi.org/10.3390/en13246623",
+          "journal-title": "Energies"
+        },
+        {
+          "issue": "7",
+          "key": "10797_CR29",
+          "doi-asserted-by": "publisher",
+          "first-page": "2719",
+          "DOI": "10.3934/era.2022139",
+          "volume": "30",
+          "author": "B Ren",
+          "year": "2022",
+          "unstructured": "Ren, B., & Ma, H. (2022). Global optimization of hyper-parameters in reservoir computing. Electronic Research Archive, 30(7), 2719–2729. https://doi.org/10.3934/era.2022139",
+          "journal-title": "Electronic Research Archive"
+        },
+        {
+          "key": "10797_CR30",
+          "doi-asserted-by": "publisher",
+          "first-page": "400",
+          "DOI": "10.1214/aoms/1177729586",
+          "volume": "22",
+          "author": "HE Robbins",
+          "year": "1951",
+          "unstructured": "Robbins, H. E. (1951). A stochastic approximation method. Annals of Mathematical Statistics, 22, 400–407.",
+          "journal-title": "Annals of Mathematical Statistics"
+        },
+        {
+          "key": "10797_CR31",
+          "unstructured": "Ruder, S. (2017). An overview of gradient descent optimization algorithms."
+        },
+        {
+          "key": "10797_CR32",
+          "doi-asserted-by": "publisher",
+          "first-page": "533",
+          "DOI": "10.1038/323533a0",
+          "volume": "323",
+          "author": "DE Rumelhart",
+          "year": "1986",
+          "unstructured": "Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. Nature, 323, 533–536. https://doi.org/10.1038/323533a0",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10797_CR33",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.asoc.2020.106181",
+          "volume": "90",
+          "author": "OB Sezer",
+          "year": "2020",
+          "unstructured": "Sezer, O. B., Gudelek, M. U., & Ozbayoglu, A. M. (2020). Financial time series forecasting with deep learning: A systematic literature review: 2005–2019. Applied Soft Computing, 90, 106181. https://doi.org/10.1016/j.asoc.2020.106181",
+          "journal-title": "Applied Soft Computing"
+        },
+        {
+          "issue": "3",
+          "key": "10797_CR34",
+          "doi-asserted-by": "publisher",
+          "first-page": "1041",
+          "DOI": "10.3182/20140824-6-ZA-1003.00837.",
+          "volume": "47",
+          "author": "C Sheng",
+          "year": "2014",
+          "unstructured": "Sheng, C., Zhao, J., Wang, W., & Liu, Q. (2014). Echo state network based prediction intervals estimation for blast furnace gas pipeline pressure in steel industry. IFAC Proceedings Volumes, 47(3), 1041–1046. https://doi.org/10.3182/20140824-6-ZA-1003.00837. 19th IFAC World Congress.",
+          "journal-title": "IFAC Proceedings Volumes"
+        },
+        {
+          "key": "10797_CR35",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Shih, S.-Y., Sun, F.-K., Lee, H.-y. (2019). Temporal Pattern Attention for Multivariate Time Series Forecasting.",
+          "DOI": "10.1007/s10994-019-05815-0"
+        },
+        {
+          "key": "10797_CR36",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Siami-Namini, S., Tavakoli, N., Siami Namin, A. (2018). A comparison of arima and lstm in forecasting time series. In 2018 17th IEEE International Conference on Machine Learning and Applications (ICMLA), pp. 1394–1401 . https://doi.org/10.1109/ICMLA.2018.00227",
+          "DOI": "10.1109/ICMLA.2018.00227"
+        },
+        {
+          "key": "10797_CR37",
+          "doi-asserted-by": "publisher",
+          "first-page": "100",
+          "DOI": "10.1016/j.neunet.2019.03.005",
+          "volume": "115",
+          "author": "G Tanaka",
+          "year": "2019",
+          "unstructured": "Tanaka, G., Yamane, T., Héroux, J. B., Nakane, R., Kanazawa, N., Takeda, S., Numata, H., Nakano, D., & Hirose, A. (2019). Recent advances in physical reservoir computing: A review. Neural Networks, 115, 100–123. https://doi.org/10.1016/j.neunet.2019.03.005",
+          "journal-title": "Neural Networks"
+        },
+        {
+          "key": "10797_CR38",
+          "doi-asserted-by": "publisher",
+          "first-page": "76690",
+          "DOI": "10.1109/ACCESS.2019.2921578",
+          "volume": "7",
+          "author": "Q Tao",
+          "year": "2019",
+          "unstructured": "Tao, Q., Liu, F., Li, Y., & Sidorov, D. (2019). Air pollution forecasting using a deep learning model based on 1d convnets and bidirectional gru. IEEE Access, 7, 76690–76698. https://doi.org/10.1109/ACCESS.2019.2921578",
+          "journal-title": "IEEE Access"
+        },
+        {
+          "key": "10797_CR39",
+          "doi-asserted-by": "publisher",
+          "first-page": "494",
+          "DOI": "10.1007/978-3-030-61616-8_40",
+          "volume-title": "Artificial Neural Networks and Machine Learning - ICANN 2020",
+          "author": "N Trouvain",
+          "year": "2020",
+          "unstructured": "Trouvain, N., Pedrelli, L., Dinh, T. T., & Hinaut, X. (2020). Reservoirpy: An efficient and user-friendly library to design echo state networks. In I. Farkaš, P. Masulli, & S. Wermter (Eds.), Artificial Neural Networks and Machine Learning - ICANN 2020 (pp. 494–505). Cham: Springer."
+        },
+        {
+          "issue": "1",
+          "key": "10797_CR40",
+          "doi-asserted-by": "publisher",
+          "first-page": "71",
+          "DOI": "10.1016/S0040-1625(00)00113-X",
+          "volume": "69",
+          "author": "F-M Tseng",
+          "year": "2002",
+          "unstructured": "Tseng, F.-M., Yu, H.-C., & Tzeng, G.-H. (2002). Combining neural network model with seasonal time series arima model. Technological Forecasting and Social Change, 69(1), 71–87. https://doi.org/10.1016/S0040-1625(00)00113-X",
+          "journal-title": "Technological Forecasting and Social Change"
+        },
+        {
+          "key": "10797_CR41",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.neucom.2023.126317",
+          "volume": "545",
+          "author": "CH Valencia",
+          "year": "2023",
+          "unstructured": "Valencia, C. H., Vellasco, M. M. B. R., & Figueiredo, K. (2023). Echo state networks: Novel reservoir selection and hyperparameter optimization model for time series forecasting. Neurocomputing, 545, 126317. https://doi.org/10.1016/j.neucom.2023.126317",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "10797_CR42",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.eswa.2021.115022",
+          "volume": "178",
+          "author": "W-J Wang",
+          "year": "2021",
+          "unstructured": "Wang, W.-J., Tang, Y., Xiong, J., & Zhang, Y.-C. (2021). Stock market index prediction based on reservoir computing models. Expert Systems with Applications, 178, 115022. https://doi.org/10.1016/j.eswa.2021.115022",
+          "journal-title": "Expert Systems with Applications"
+        },
+        {
+          "key": "10797_CR43",
+          "doi-asserted-by": "publisher",
+          "first-page": "161",
+          "DOI": "10.1016/j.neucom.2021.02.046",
+          "volume": "441",
+          "author": "PB Weerakody",
+          "year": "2021",
+          "unstructured": "Weerakody, P. B., Wong, K. W., Wang, G., & Ela, W. (2021). A review of irregular time series data handling with gated recurrent neural networks. Neurocomputing, 441, 161–178. https://doi.org/10.1016/j.neucom.2021.02.046",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "10797_CR44",
+          "unstructured": "Wikipedia contributors: Echo state network — Wikipedia, The Free Encyclopedia. [Online; accessed 27-December-2023] (2023). https://en.wikipedia.org/w/index.php?title=Echo_state_network&oldid=1185484546"
+        },
+        {
+          "key": "10797_CR45",
+          "unstructured": "Yperman, J., Becker, T. (2017). Bayesian optimization of hyper-parameters in reservoir computing."
+        },
+        {
+          "key": "10797_CR46",
+          "doi-asserted-by": "publisher",
+          "first-page": "159",
+          "DOI": "10.1016/S0925-2312(01)00702-0",
+          "volume": "50",
+          "author": "GP Zhang",
+          "year": "2003",
+          "unstructured": "Zhang, G. P. (2003). Time series forecasting using a hybrid arima and neural network model. Neurocomputing, 50, 159–175. https://doi.org/10.1016/S0925-2312(01)00702-0",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "issue": "5",
+          "key": "10797_CR47",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1088/1757-899X/569/5/052037",
+          "volume": "569",
+          "author": "X Zhang",
+          "year": "2019",
+          "unstructured": "Zhang, X., Liang, X., Zhiyuli, A., Zhang, S., Xu, R., & Wu, B. (2019). At-lstm: An attention-based lstm model for financial time series prediction. IOP Conference Series: Materials Science and Engineering, 569(5), 052037. https://doi.org/10.1088/1757-899X/569/5/052037",
+          "journal-title": "IOP Conference Series: Materials Science and Engineering"
+        }
+      ],
+      "container-title": [
+        "Computational Economics"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1007/s10614-024-10797-w.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://link.springer.com/article/10.1007/s10614-024-10797-w/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1007/s10614-024-10797-w.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            8
+          ]
+        ],
+        "date-time": "2025-09-08T14:48:36Z",
+        "timestamp": 1757342916000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://link.springer.com/10.1007/s10614-024-10797-w"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            28
+          ]
+        ]
+      },
+      "references-count": 47,
+      "journal-issue": {
+        "issue": "3",
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              9
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "10797"
+      ],
+      "URL": "https://doi.org/10.1007/s10614-024-10797-w",
+      "relation": {},
+      "ISSN": [
+        "0927-7099",
+        "1572-9974"
+      ],
+      "issn-type": [
+        {
+          "value": "0927-7099",
+          "type": "print"
+        },
+        {
+          "value": "1572-9974",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            28
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "10 November 2024",
+          "order": 1,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "28 November 2024",
+          "order": 2,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "order": 1,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Declarations"
+          }
+        },
+        {
+          "value": "I have no conflict of interest or conflict of interest to disclose.",
+          "order": 2,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Conflict of interest"
+          }
+        },
+        {
+          "value": "This study involves the analysis of publicly available financial data and does not involve any human subjects or sensitive information. Therefore, no specific ethical considerations were required for this research.",
+          "order": 3,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Ethical Approval"
+          }
+        }
+      ]
+    }
+  }
+}

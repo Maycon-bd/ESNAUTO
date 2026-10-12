@@ -168,11 +168,11 @@ def analyze(session_dir, logger):
         win_file = wout_file = w_file = None
         for f in os.listdir(folder_path):
             fl = f.lower()
-            if "petr4 win esn" in fl and f.endswith(".csv"):
+            if " win esn" in fl and f.endswith(".csv"):
                 win_file = os.path.join(folder_path, f)
-            elif "petr4 w reserv" in fl and f.endswith(".csv"):
+            elif " w reserv" in fl and f.endswith(".csv"):
                 w_file = os.path.join(folder_path, f)
-            elif "petr4 wout esn" in fl and f.endswith(".csv"):
+            elif " wout esn" in fl and f.endswith(".csv"):
                 wout_file = os.path.join(folder_path, f)
 
         ultima_epoca_matrizes = None

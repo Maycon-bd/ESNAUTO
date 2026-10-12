@@ -23,9 +23,11 @@ treinar_modelo_lstm <- function(dados, units = 50, timesteps = 10, dropout = 0.2
   
   if (is.function(set_progress)) set_progress(0.1, "Preparando dados para LSTM...")
   
-  treino_n <- 2600
-  valida_n <- 1299
-  teste_n <- 1299
+  idx <- particoes_dados(dados)
+  treino_n <- idx$treino_n
+  valida_n <- idx$valida_n
+  teste_n <- idx$teste_n
+  if (timesteps >= treino_n) stop("Timesteps deve ser menor que a partição de treino.")
   batch_size <- as.integer(batch_size)
   
   # Normalizar usando apenas treino
@@ -237,6 +239,14 @@ lstm_server <- function(id, dados_reativo, resultados_externos = NULL) {
       tempo = 0
     )
     
+    observeEvent(dados_reativo(), {
+      resultados$validacao <- NULL
+      resultados$teste <- NULL
+      resultados$metricas <- NULL
+      resultados$historico <- NULL
+      resultados$tempo <- 0
+    }, ignoreInit = TRUE, priority = 100)
+
     # Sincronizar caso receba execução de um botão universal externo
     if (!is.null(resultados_externos)) {
       observe({
@@ -254,6 +264,8 @@ lstm_server <- function(id, dados_reativo, resultados_externos = NULL) {
     
     observeEvent(input$btn_rodar, {
       req(dados_reativo())
+      session$userData$execucao_ativa <- TRUE
+      on.exit(session$userData$execucao_ativa <- FALSE, add = TRUE)
       
       if (!requireNamespace("keras3", quietly = TRUE)) {
         showNotification("❌ Pacote 'keras3' não instalado. Instale com install.packages('keras3') e keras3::install_keras()", 
@@ -319,7 +331,7 @@ lstm_server <- function(id, dados_reativo, resultados_externos = NULL) {
       
       par(mar = c(3.5, 4, 2, 1), bg = "transparent")
       plot(real, type = 'l', col = '#0f172a', lwd = 2,
-           ylab = "Preço PETR4 (R$)", xlab = "Dias",
+           ylab = paste("Preço", attr(dados_reativo(), "acao"), "(R$)"), xlab = "Dias",
            main = "LSTM — Previsão na Fase de Validação", axes = FALSE, col.main = "#0f172a")
       axis(1, col = "#cbd5e1", col.axis = "#475569")
       axis(2, col = "#cbd5e1", col.axis = "#475569")
@@ -337,7 +349,7 @@ lstm_server <- function(id, dados_reativo, resultados_externos = NULL) {
       
       par(mar = c(3.5, 4, 2, 1), bg = "transparent")
       plot(real, type = 'l', col = '#0f172a', lwd = 2,
-           ylab = "Preço PETR4 (R$)", xlab = "Dias",
+           ylab = paste("Preço", attr(dados_reativo(), "acao"), "(R$)"), xlab = "Dias",
            main = "LSTM — Previsão na Fase de Teste", axes = FALSE, col.main = "#0f172a")
       axis(1, col = "#cbd5e1", col.axis = "#475569")
       axis(2, col = "#cbd5e1", col.axis = "#475569")

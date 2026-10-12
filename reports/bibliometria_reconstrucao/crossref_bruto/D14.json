@@ -1,0 +1,571 @@
+{
+  "url": "https://api.crossref.org/works/10.3390%2Fmake7040160",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            3
+          ]
+        ],
+        "date-time": "2026-08-03T04:16:24Z",
+        "timestamp": 1785730584261,
+        "version": "3.56.0"
+      },
+      "reference-count": 32,
+      "publisher": "MDPI AG",
+      "issue": "4",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                12,
+                3
+              ]
+            ],
+            "date-time": "2025-12-03T00:00:00Z",
+            "timestamp": 1764720000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100019465",
+          "name": "Arab-German Young Academy of Sciences and Humanities",
+          "doi-asserted-by": "crossref",
+          "id": [
+            {
+              "id": "10.13039/100019465",
+              "id-type": "DOI",
+              "asserted-by": "crossref"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "MAKE"
+      ],
+      "abstract": "<jats:p>Improving financial time series forecasting presents challenges because models often struggle to identify diverse fault patterns in unseen data. This issue is critical in fintech, where accurate and reliable forecasting of financial data is essential for effective risk management and informed investment strategies. This work addresses these challenges by initializing the weights and biases of two proposed models, Gated Recurrent Units (GRUs) and the Echo State Network (ESN), with different chaotic sequences to enhance prediction accuracy and capabilities. We compare reservoir computing (RC) and recurrent neural network (RNN) models with and without the integration of chaotic systems, utilizing standard initialization. The models are validated on six different datasets, including the 500 largest publicly traded companies in the US (S&amp;P500), the Irish Stock Exchange Quotient (ISEQ) dataset, the XAU and USD forex pair (XAU/USD), the USD and JPY forex pair with respect to the currency exchange rate (USD/JPY), Chinese daily stock prices, and the top 100 index of UK companies (FTSE 100). The ESN model, combined with the Lorenz system, achieves the lowest error among other models, reinforcing the effectiveness of chaos-trained models for prediction. The proposed ESN model, accelerated by the Kintex-Ultrascale KCU105 FPGA board, achieves a maximum frequency of 83.5 MHz and a power consumption of 0.677 W. The results of the hardware simulation align with MATLAB R2025b fixed-point analysis.</jats:p>",
+      "DOI": "10.3390/make7040160",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            3
+          ]
+        ],
+        "date-time": "2025-12-03T16:47:37Z",
+        "timestamp": 1764780457000
+      },
+      "page": "160",
+      "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 3,
+      "title": [
+        "FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction"
+      ],
+      "prefix": "10.3390",
+      "volume": "7",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0003-7418-480X",
+          "authenticated-orcid": false,
+          "given": "Zeinab A.",
+          "family": "Hassaan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Nanoelectronics Integrated Systems Center (NISC), Nile University, Giza 12588, Egypt"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohammed H.",
+          "family": "Yacoub",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Engineering and Applied Sciences, Nile University, Giza 12588, Egypt"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8223-4625",
+          "authenticated-orcid": false,
+          "given": "Lobna A.",
+          "family": "Said",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Nanoelectronics Integrated Systems Center (NISC), Nile University, Giza 12588, Egypt"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "1968",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            3
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "ref_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "125249",
+          "DOI": "10.1016/j.eswa.2024.125249",
+          "article-title": "Sparse compressed deep echo state network with improved arithmetic optimization algorithm for chaotic time series prediction",
+          "volume": "259",
+          "author": "Wang",
+          "year": "2025",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "106038",
+          "DOI": "10.1016/j.engappai.2023.106038",
+          "article-title": "Machine learning techniques for stock price prediction and graphic signal recognition",
+          "volume": "121",
+          "author": "Chen",
+          "year": "2023",
+          "journal-title": "Eng. Appl. Artif. Intell."
+        },
+        {
+          "key": "ref_3",
+          "doi-asserted-by": "crossref",
+          "first-page": "167",
+          "DOI": "10.1016/j.ins.2021.04.094",
+          "article-title": "Time series analysis and prediction of nonlinear systems with ensemble learning framework applied to deep learning neural networks",
+          "volume": "572",
+          "author": "Wen",
+          "year": "2021",
+          "journal-title": "Inf. Sci."
+        },
+        {
+          "key": "ref_4",
+          "doi-asserted-by": "crossref",
+          "first-page": "128473",
+          "DOI": "10.1016/j.eswa.2025.128473",
+          "article-title": "Economic insight through an optimized deep learning model for stock market prediction regarding Dow Jones industrial Average index",
+          "volume": "291",
+          "author": "Yu",
+          "year": "2025",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_5",
+          "doi-asserted-by": "crossref",
+          "first-page": "112588",
+          "DOI": "10.1016/j.engappai.2025.112588",
+          "article-title": "A combined Adaptive Gaussian Short-Term Fourier Transform and Mamba framework for stock price prediction",
+          "volume": "162",
+          "author": "Huang",
+          "year": "2025",
+          "journal-title": "Eng. Appl. Artif. Intell."
+        },
+        {
+          "key": "ref_6",
+          "doi-asserted-by": "crossref",
+          "first-page": "124533",
+          "DOI": "10.1016/j.eswa.2024.124533",
+          "article-title": "Chaos theory meets deep learning: A new approach to time series forecasting",
+          "volume": "255",
+          "author": "Jia",
+          "year": "2024",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_7",
+          "doi-asserted-by": "crossref",
+          "first-page": "128938",
+          "DOI": "10.1016/j.neucom.2024.128938",
+          "article-title": "Temporal convolution derived multi-layered reservoir computing",
+          "volume": "617",
+          "author": "Viehweg",
+          "year": "2025",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "ref_8",
+          "doi-asserted-by": "crossref",
+          "first-page": "117514",
+          "DOI": "10.1016/j.eswa.2022.117514",
+          "article-title": "Dual attention-based sequential auto-encoder for COVID-19 outbreak forecasting: A case study in Vietnam",
+          "volume": "203",
+          "author": "Pham",
+          "year": "2022",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_9",
+          "doi-asserted-by": "crossref",
+          "first-page": "2056",
+          "DOI": "10.1038/s41467-024-45187-1",
+          "article-title": "Emerging opportunities and challenges for the future of reservoir computing",
+          "volume": "15",
+          "author": "Yan",
+          "year": "2024",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "ref_10",
+          "doi-asserted-by": "crossref",
+          "first-page": "108687",
+          "DOI": "10.1016/j.engappai.2024.108687",
+          "article-title": "Predictive analysis of stochastic stock pattern utilizing fractional order dynamics and heteroscedastic with a radial neural network framework",
+          "volume": "135",
+          "author": "Bukhari",
+          "year": "2024",
+          "journal-title": "Eng. Appl. Artif. Intell."
+        },
+        {
+          "key": "ref_11",
+          "doi-asserted-by": "crossref",
+          "first-page": "109964",
+          "DOI": "10.1016/j.engappai.2024.109964",
+          "article-title": "Short-term prediction of dissolved oxygen and water temperature using deep learning with dual proportional-integral-derivative error corrector in pond culture",
+          "volume": "142",
+          "author": "Zhou",
+          "year": "2025",
+          "journal-title": "Eng. Appl. Artif. Intell."
+        },
+        {
+          "key": "ref_12",
+          "doi-asserted-by": "crossref",
+          "first-page": "373",
+          "DOI": "10.5194/npg-27-373-2020",
+          "article-title": "Data-driven predictions of a multiscale Lorenz 96 chaotic system using machine-learning methods: Reservoir computing, artificial neural network, and long short-term memory network",
+          "volume": "27",
+          "author": "Chattopadhyay",
+          "year": "2020",
+          "journal-title": "Nonlinear Process. Geophys."
+        },
+        {
+          "key": "ref_13",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Gonbadi, L., Rostami, H., Sahafizadeh, E., Rostami, S., Nejad, M.M., and Shirzadi, A. (2025). Input driven optimization of echo state network parameters for prediction on chaotic time series. Sci. Rep., 15.",
+          "DOI": "10.1038/s41598-025-18261-x"
+        },
+        {
+          "key": "ref_14",
+          "doi-asserted-by": "crossref",
+          "first-page": "122260",
+          "DOI": "10.1016/j.ins.2025.122260",
+          "article-title": "A mirrored echo state network with application to time series prediction",
+          "volume": "716",
+          "author": "Chen",
+          "year": "2025",
+          "journal-title": "Inf. Sci."
+        },
+        {
+          "key": "ref_15",
+          "doi-asserted-by": "crossref",
+          "first-page": "17265",
+          "DOI": "10.1109/TNNLS.2025.3553060",
+          "article-title": "Grouped Vector Autoregression Reservoir Computing Based on Randomly Distributed Embedding for Multistep-Ahead Prediction",
+          "volume": "36",
+          "author": "Wang",
+          "year": "2025",
+          "journal-title": "IEEE Trans. Neural Netw. Learn. Syst."
+        },
+        {
+          "key": "ref_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "9302",
+          "DOI": "10.1109/TNNLS.2022.3157830",
+          "article-title": "Hierarchical Echo State Network With Sparse Learning: A Method for Multidimensional Chaotic Time Series Prediction",
+          "volume": "34",
+          "author": "Na",
+          "year": "2023",
+          "journal-title": "IEEE Trans. Neural Netw. Learn. Syst."
+        },
+        {
+          "key": "ref_17",
+          "doi-asserted-by": "crossref",
+          "first-page": "117637",
+          "DOI": "10.1016/j.eswa.2022.117637",
+          "article-title": "Adopting a dendritic neural model for predicting stock price index movement",
+          "volume": "205",
+          "author": "Tang",
+          "year": "2022",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_18",
+          "doi-asserted-by": "crossref",
+          "first-page": "1688",
+          "DOI": "10.1109/TNNLS.2020.3043309",
+          "article-title": "Integer Echo State Networks: Efficient Reservoir Computing for Digital Hardware",
+          "volume": "33",
+          "author": "Kleyko",
+          "year": "2022",
+          "journal-title": "IEEE Trans. Neural Netw. Learn. Syst."
+        },
+        {
+          "key": "ref_19",
+          "doi-asserted-by": "crossref",
+          "first-page": "112534",
+          "DOI": "10.1016/j.engappai.2025.112534",
+          "article-title": "Gated recurrent unit accelerators for financial time series prediction on field-programmable gate array",
+          "volume": "162",
+          "author": "Hassaan",
+          "year": "2025",
+          "journal-title": "Eng. Appl. Artif. Intell."
+        },
+        {
+          "key": "ref_20",
+          "doi-asserted-by": "crossref",
+          "first-page": "106888",
+          "DOI": "10.1016/j.engappai.2023.106888",
+          "article-title": "Artificial Neural Network Chaotic PRNG and simple encryption on FPGA",
+          "volume": "126",
+          "author": "Sharobim",
+          "year": "2023",
+          "journal-title": "Eng. Appl. Artif. Intell."
+        },
+        {
+          "key": "ref_21",
+          "doi-asserted-by": "crossref",
+          "first-page": "6962",
+          "DOI": "10.1109/TCSI.2025.3564875",
+          "article-title": "Dynamic Tsetlin Machine Accelerators for On-Chip Training Using FPGAs",
+          "volume": "72",
+          "author": "Mao",
+          "year": "2025",
+          "journal-title": "IEEE Trans. Circuits Syst. I Regul. Pap."
+        },
+        {
+          "key": "ref_22",
+          "doi-asserted-by": "crossref",
+          "first-page": "2497",
+          "DOI": "10.1109/TCSI.2023.3262479",
+          "article-title": "SoC Reconfigurable Architecture for Implementing Software Trained Recurrent Neural Networks on FPGA",
+          "volume": "70",
+          "author": "Wasef",
+          "year": "2023",
+          "journal-title": "IEEE Trans. Circuits Syst. I Regul. Pap."
+        },
+        {
+          "key": "ref_23",
+          "doi-asserted-by": "crossref",
+          "first-page": "128511",
+          "DOI": "10.1016/j.neucom.2024.128511",
+          "article-title": "Review of neural network model acceleration techniques based on FPGA platforms",
+          "volume": "610",
+          "author": "Liu",
+          "year": "2024",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "ref_24",
+          "unstructured": "(2012). Foreign Currency Financial Reporting from Euro to Yen to Yuan, Wiley."
+        },
+        {
+          "key": "ref_25",
+          "doi-asserted-by": "crossref",
+          "first-page": "5969",
+          "DOI": "10.1109/TCSI.2024.3464687",
+          "article-title": "Reconfigurable and Energy-Efficient Architecture for Deploying Multi-Layer RNNs on FPGA",
+          "volume": "71",
+          "author": "Zhang",
+          "year": "2024",
+          "journal-title": "IEEE Trans. Circuits Syst. I Regul. Pap."
+        },
+        {
+          "key": "ref_26",
+          "doi-asserted-by": "crossref",
+          "first-page": "155845",
+          "DOI": "10.1016/j.aeue.2025.155845",
+          "article-title": "High-performance FPGA-accelerated LSTM neural network for chaotic time series prediction",
+          "volume": "199",
+          "author": "AbdElbaky",
+          "year": "2025",
+          "journal-title": "AEU Int. J. Electron. Commun."
+        },
+        {
+          "key": "ref_27",
+          "doi-asserted-by": "crossref",
+          "first-page": "214",
+          "DOI": "10.1016/j.neucom.2021.09.072",
+          "article-title": "Stock movement prediction via gated recurrent unit network based on reinforcement learning with incorporated attention mechanisms",
+          "volume": "467",
+          "author": "Xu",
+          "year": "2022",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "ref_28",
+          "doi-asserted-by": "crossref",
+          "first-page": "117594",
+          "DOI": "10.1109/ACCESS.2025.3586558",
+          "article-title": "A Hybrid LSTM-GRU Model for Stock Price Prediction",
+          "volume": "13",
+          "author": "Farhadi",
+          "year": "2025",
+          "journal-title": "IEEE Access"
+        },
+        {
+          "key": "ref_29",
+          "doi-asserted-by": "crossref",
+          "first-page": "126074",
+          "DOI": "10.1016/j.eswa.2024.126074",
+          "article-title": "Decomposition-based deep projection-encoding echo state network for multi-scale and multi-step wind speed prediction",
+          "volume": "266",
+          "author": "Li",
+          "year": "2025",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_30",
+          "doi-asserted-by": "crossref",
+          "first-page": "17310",
+          "DOI": "10.1109/TNNLS.2025.3563937",
+          "article-title": "Broad-ESN Based on Radical Activation Function for Predicting Time Series With Multiple Variables",
+          "volume": "36",
+          "author": "Gong",
+          "year": "2025",
+          "journal-title": "IEEE Trans. Neural Netw. Learn. Syst."
+        },
+        {
+          "key": "ref_31",
+          "doi-asserted-by": "crossref",
+          "first-page": "093126",
+          "DOI": "10.1063/5.0283425",
+          "article-title": "Predicting complex time series with deep echo state networks",
+          "volume": "35",
+          "author": "Delshad",
+          "year": "2025",
+          "journal-title": "Chaos"
+        },
+        {
+          "key": "ref_32",
+          "doi-asserted-by": "crossref",
+          "first-page": "110079",
+          "DOI": "10.1016/j.engappai.2025.110079",
+          "article-title": "On the spatial prediction of the turbulent flow behind an array of cylinders via echo state networks",
+          "volume": "144",
+          "author": "Cierpka",
+          "year": "2025",
+          "journal-title": "Eng. Appl. Artif. Intell."
+        }
+      ],
+      "container-title": [
+        "Machine Learning and Knowledge Extraction"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.mdpi.com/2504-4990/7/4/160/pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            13
+          ]
+        ],
+        "date-time": "2025-12-13T05:10:33Z",
+        "timestamp": 1765602633000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.mdpi.com/2504-4990/7/4/160"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            3
+          ]
+        ]
+      },
+      "references-count": 32,
+      "journal-issue": {
+        "issue": "4",
+        "published-online": {
+          "date-parts": [
+            [
+              2025,
+              12
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "make7040160"
+      ],
+      "URL": "https://doi.org/10.3390/make7040160",
+      "relation": {},
+      "ISSN": [
+        "2504-4990"
+      ],
+      "issn-type": [
+        {
+          "value": "2504-4990",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            3
+          ]
+        ]
+      }
+    }
+  }
+}

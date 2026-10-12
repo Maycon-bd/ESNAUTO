@@ -1,0 +1,906 @@
+{
+  "url": "https://api.crossref.org/works/10.1016%2Fj.eswa.2021.115490",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            3
+          ]
+        ],
+        "date-time": "2026-08-03T19:37:29Z",
+        "timestamp": 1785785849580,
+        "version": "3.56.0"
+      },
+      "reference-count": 59,
+      "publisher": "Elsevier BV",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2021-12-01T00:00:00Z",
+            "timestamp": 1638316800000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2021-12-01T00:00:00Z",
+            "timestamp": 1638316800000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/legal/tdmrep-license"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2021-12-01T00:00:00Z",
+            "timestamp": 1638316800000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-017"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2021-12-01T00:00:00Z",
+            "timestamp": 1638316800000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-037"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2021-12-01T00:00:00Z",
+            "timestamp": 1638316800000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-012"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2021-12-01T00:00:00Z",
+            "timestamp": 1638316800000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-029"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                12,
+                1
+              ]
+            ],
+            "date-time": "2021-12-01T00:00:00Z",
+            "timestamp": 1638316800000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-004"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/501100003593",
+          "name": "National Council for Scientific and Technological Development",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100003593",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100004612",
+          "name": "Araucaria Foundation",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100004612",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Expert Systems with Applications"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            12
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.eswa.2021.115490",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            29
+          ]
+        ],
+        "date-time": "2021-06-29T11:36:23Z",
+        "timestamp": 1624966583000
+      },
+      "page": "115490",
+      "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 73,
+      "special_numbering": "C",
+      "title": [
+        "Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility"
+      ],
+      "prefix": "10.1016",
+      "volume": "184",
+      "author": [
+        {
+          "given": "Gabriel",
+          "family": "Trierweiler Ribeiro",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "André",
+          "family": "Alves Portela Santos",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Viviana",
+          "family": "Cocco Mariani",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Leandro",
+          "family": "dos Santos Coelho",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0005",
+          "doi-asserted-by": "crossref",
+          "first-page": "17",
+          "DOI": "10.1016/j.eneco.2017.07.014",
+          "article-title": "Google search keywords that best predict energy price volatility",
+          "volume": "67",
+          "author": "Afkhami",
+          "year": "2017",
+          "journal-title": "Energy Economics. Elsevier B.V."
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0010",
+          "series-title": "Energy Economics",
+          "first-page": "104434",
+          "article-title": "Modelling the volatility of TOCOM energy futures: A regime switching realised volatility approach",
+          "author": "Alizadeh",
+          "year": "2019"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0015",
+          "article-title": "Exchange Rate Returns Standardized by Realized Volatility are (Nearly) Gaussian",
+          "author": "Andersen",
+          "year": "2000",
+          "journal-title": "Cambridge, MA."
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0020",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/S0304-405X(01)00055-1",
+          "article-title": "The distribution of realized stock return volatility",
+          "author": "Andersen",
+          "year": "2001",
+          "journal-title": "Journal of Financial Economics"
+        },
+        {
+          "issue": "1",
+          "key": "10.1016/j.eswa.2021.115490_b0025",
+          "doi-asserted-by": "crossref",
+          "first-page": "279",
+          "DOI": "10.1111/j.1468-0262.2005.00572.x",
+          "article-title": "Correcting the errors: Volatility forecast evaluation using high-frequency data and realized volatilities",
+          "volume": "73",
+          "author": "Andersen",
+          "year": "2005",
+          "journal-title": "Econometrica"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0030",
+          "doi-asserted-by": "crossref",
+          "first-page": "29",
+          "DOI": "10.1016/j.tust.2016.12.009",
+          "article-title": "Development of hybrid intelligent models for predicting TBM penetration rate in hard rock condition",
+          "volume": "63",
+          "author": "Armaghani",
+          "year": "2017",
+          "journal-title": "Tunnelling and Underground Space Technology"
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.eswa.2021.115490_b0035",
+          "first-page": "191",
+          "article-title": "Hybrid ann-based techniques in predicting cohesion of sandy-soil combined with fiber",
+          "volume": "20",
+          "author": "Armaghani",
+          "year": "2020",
+          "journal-title": "Geomechanics and Engineering"
+        },
+        {
+          "issue": "6",
+          "key": "10.1016/j.eswa.2021.115490_b0040",
+          "article-title": "On the use of neuro-swarm system to forecast the pile settlement",
+          "volume": "10",
+          "author": "Armaghani",
+          "year": "2020",
+          "journal-title": "Applied Sciences (Switzerland)"
+        },
+        {
+          "issue": "2",
+          "key": "10.1016/j.eswa.2021.115490_b0045",
+          "doi-asserted-by": "crossref",
+          "first-page": "120",
+          "DOI": "10.1016/j.jfds.2018.02.002",
+          "article-title": "Financial news predicts stock market volatility better than close price",
+          "volume": "4",
+          "author": "Atkins",
+          "year": "2018",
+          "journal-title": "The Journal of Finance and Data Science Elsevier Ltd"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0050",
+          "article-title": "Nonlinear Black-box System Identification through Neural Networks of a Hysteretic Piezoelectric Robotic Micromanipulator",
+          "author": "Ayala",
+          "year": "2015",
+          "journal-title": "IFAC-PapersOnLine"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0055",
+          "first-page": "1",
+          "article-title": "Stock market movement forecast: A Systematic review",
+          "volume": "156",
+          "author": "Bustos",
+          "year": "2020",
+          "journal-title": "Expert Systems with Applications Elsevier Ltd"
+        },
+        {
+          "issue": "2",
+          "key": "10.1016/j.eswa.2021.115490_b0060",
+          "first-page": "247",
+          "article-title": "Combining multivariate volatility forecasts: An economic-based approach",
+          "volume": "15",
+          "author": "Caldeira",
+          "year": "2017",
+          "journal-title": "Journal of Financial Econometrics"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0065",
+          "doi-asserted-by": "crossref",
+          "first-page": "187",
+          "DOI": "10.1016/j.eswa.2017.04.030",
+          "article-title": "Deep learning networks for stock market analysis and prediction: Methodology, data representations, and case studies",
+          "volume": "83",
+          "author": "Chong",
+          "year": "2017",
+          "journal-title": "Expert Systems with Applications Elsevier Ltd"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0070",
+          "doi-asserted-by": "crossref",
+          "first-page": "419",
+          "DOI": "10.1016/j.neucom.2013.10.002",
+          "article-title": "A real time clustering and SVM based price-volatility prediction for optimal trading strategy",
+          "volume": "131",
+          "author": "Choudhury",
+          "year": "2014",
+          "journal-title": "Neurocomputing Elsevier"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0075",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Coelho, L. dos S. et al. (2014) ‘Optimal chiller loading for energy conservation using a new differential cuckoo search approach’, Energy. Elsevier Ltd, 75, pp. 237–243. 10.1016/j.energy.2014.07.060.",
+          "DOI": "10.1016/j.energy.2014.07.060"
+        },
+        {
+          "issue": "2",
+          "key": "10.1016/j.eswa.2021.115490_b0080",
+          "doi-asserted-by": "crossref",
+          "first-page": "174",
+          "DOI": "10.1093/jjfinec/nbp001",
+          "article-title": "A simple approximate long-memory model of realized volatility",
+          "volume": "7",
+          "author": "Corsi",
+          "year": "2009",
+          "journal-title": "Journal of Financial Econometrics"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0085",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1155/2014/137148",
+          "article-title": "Deterministic echo state networks based stock price forecasting",
+          "volume": "2014",
+          "author": "Dan",
+          "year": "2014",
+          "journal-title": "Abstract and Applied Analysis"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0090",
+          "doi-asserted-by": "crossref",
+          "first-page": "28",
+          "DOI": "10.1016/j.jimonfin.2017.05.006",
+          "article-title": "Forecasting oil price realized volatility using information channels from other asset classes",
+          "volume": "76",
+          "author": "Degiannakis",
+          "year": "2017",
+          "journal-title": "Journal of International Money and Finance Elsevier Ltd"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0095",
+          "article-title": "Estimation of ultimate bearing capacity of driven piles in c-φ soil using MLP-GWO and ANFIS-GWO models: a comparative study",
+          "author": "Dehghanbanadaki",
+          "year": "2020",
+          "journal-title": "Soft Computing. [Online] Available from"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0100",
+          "first-page": "1",
+          "article-title": "Statistical comparisons of classifiers over multiple data sets",
+          "volume": "7",
+          "author": "Demsar",
+          "year": "2006",
+          "journal-title": "Journal of Machine Learning Research"
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.eswa.2021.115490_b0105",
+          "doi-asserted-by": "crossref",
+          "first-page": "145",
+          "DOI": "10.18267/j.efaj.193",
+          "article-title": "Forecasting stock market realized variance with echo state neural networks",
+          "volume": "12",
+          "author": "Fičura",
+          "year": "2018",
+          "journal-title": "European Financial and Accounting Journal"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0110",
+          "doi-asserted-by": "crossref",
+          "first-page": "194",
+          "DOI": "10.1016/j.physa.2018.10.013",
+          "article-title": "Modeling stock market volatility using new HAR-type models",
+          "volume": "516",
+          "author": "Gong",
+          "year": "2019",
+          "journal-title": "Physica A: Statistical Mechanics and its Applications Elsevier B.V."
+        },
+        {
+          "issue": "17",
+          "key": "10.1016/j.eswa.2021.115490_b0115",
+          "doi-asserted-by": "crossref",
+          "first-page": "14047",
+          "DOI": "10.1007/s00521-020-04803-z",
+          "article-title": "Development of fuzzy-GMDH model optimized by GSA to predict rock tensile strength based on experimental datasets",
+          "volume": "32",
+          "author": "Harandizadeh",
+          "year": "2020",
+          "journal-title": "Neural Computing and Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0125",
+          "doi-asserted-by": "crossref",
+          "first-page": "598",
+          "DOI": "10.1016/j.renene.2020.03.042",
+          "article-title": "Forecasting energy consumption and wind power generation using deep echo state network",
+          "volume": "154",
+          "author": "Hu",
+          "year": "2020",
+          "journal-title": "Renewable Energy Elsevier Ltd"
+        },
+        {
+          "issue": "1",
+          "key": "10.1016/j.eswa.2021.115490_b0130",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1038/s41598-020-76569-2",
+          "article-title": "A combination of fuzzy Delphi method and hybrid ANN-based systems to forecast ground vibration resulting from blasting",
+          "volume": "10",
+          "author": "Huang",
+          "year": "2020",
+          "journal-title": "Scientific Reports"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0135",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Kennedy, J. and Eberhart, R. (1995) ‘Particle swarm optimization’, in Neural Networks, 1995. Proceedings., IEEE International Conference on. Perth, Australia: IEEE, pp. 1942–1948. 10.1109/ICNN.1995.488968.",
+          "DOI": "10.1109/ICNN.1995.488968"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0140",
+          "doi-asserted-by": "crossref",
+          "first-page": "25",
+          "DOI": "10.1016/j.eswa.2018.03.002",
+          "article-title": "Forecasting the volatility of stock price index: A hybrid model integrating LSTM with multiple GARCH-type models",
+          "volume": "103",
+          "author": "Kim",
+          "year": "2018",
+          "journal-title": "Expert Systems with Applications Elsevier Ltd"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0145",
+          "unstructured": "Klein, C. E. et al. (2018) ‘Cheetah based optimization algorithm: A novel swarm intelligence paradigm’, in ESANN 2018 proceedings, European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning. Bruges, Belgium. Available at: http://www.i6doc.com/en/."
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0150",
+          "unstructured": "Korndörfer, C. (2018) ‘pyESN’. Available at: https://github.com/cknd/pyESN/blob/master/pyESN.py."
+        },
+        {
+          "issue": "20",
+          "key": "10.1016/j.eswa.2021.115490_b0155",
+          "doi-asserted-by": "crossref",
+          "first-page": "7245",
+          "DOI": "10.1016/j.eswa.2015.04.058",
+          "article-title": "Gold price volatility: A forecasting approach using the Artificial Neural Network-GARCH model",
+          "volume": "42",
+          "author": "Kristjanpoller",
+          "year": "2015",
+          "journal-title": "Expert Systems with Applications. Elsevier Ltd"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0160",
+          "doi-asserted-by": "crossref",
+          "first-page": "119",
+          "DOI": "10.1016/j.asoc.2018.08.024",
+          "article-title": "Stacked autoencoder with echo-state regression for tourism demand forecasting using search query data",
+          "volume": "73",
+          "author": "Lv",
+          "year": "2018",
+          "journal-title": "Applied Soft Computing. Elsevier B.V."
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0165",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Ma, F. et al. (2018) ‘Forecasting the aggregate oil price volatility in a data-rich environment’, Economic Modelling. Elsevier Ltd, 72 (October 2017), pp. 320–332. 10.1016/j.econmod.2018.02.009.",
+          "DOI": "10.1016/j.econmod.2018.02.009"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0170",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Ma, Q., Shen, L. and Cottrell, G. W. (2020) ‘DeePr-ESN: A deep projection-encoding echo-state network’, Information Sciences. Elsevier Inc., 511, pp. 152–171. 10.1016/j.ins.2019.09.049.",
+          "DOI": "10.1016/j.ins.2019.09.049"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0175",
+          "doi-asserted-by": "crossref",
+          "first-page": "736",
+          "DOI": "10.1016/j.renene.2017.11.089",
+          "article-title": "Wind speed forecasting approach based on singular spectrum analysis and adaptive neuro fuzzy inference system",
+          "volume": "126",
+          "author": "Moreno",
+          "year": "2018",
+          "journal-title": "Renewable Energy Elsevier Ltd"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0180",
+          "series-title": "Distribution-free multiple comparisons",
+          "author": "Nemenyi",
+          "year": "1963"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0185",
+          "first-page": "2825",
+          "article-title": "Scikit-learn : Machine Learning in Python",
+          "volume": "12",
+          "author": "Pedregosa",
+          "year": "2011",
+          "journal-title": "Journal of Machine Learning Research"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0190",
+          "doi-asserted-by": "crossref",
+          "first-page": "95",
+          "DOI": "10.1016/j.resourpol.2016.01.003",
+          "article-title": "A boosting approach to forecasting the volatility of gold-price fluctuations under flexible loss",
+          "volume": "47",
+          "author": "Pierdzioch",
+          "year": "2016",
+          "journal-title": "Resources Policy"
+        },
+        {
+          "issue": "8",
+          "key": "10.1016/j.eswa.2021.115490_b0195",
+          "doi-asserted-by": "crossref",
+          "first-page": "5508",
+          "DOI": "10.1016/j.asoc.2011.05.008",
+          "article-title": "Cuckoo optimization algorithm",
+          "volume": "11",
+          "author": "Rajabioun",
+          "year": "2011",
+          "journal-title": "Applied Soft Computing. Elsevier B.V."
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0200",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1016/j.eswa.2019.03.046",
+          "article-title": "Forecasting volatility with a stacked model based on a hybridized artificial neural network",
+          "volume": "129",
+          "author": "Ramos-Pérez",
+          "year": "2019",
+          "journal-title": "Expert Systems with Applications"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0205",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Ribeiro, G. T. et al. (2016) ‘Short-term load forecasting using wavenet ensemble approaches’, in Proceedings of the International Joint Conference on Neural Networks. 10.1109/IJCNN.2016.7727272.",
+          "DOI": "10.1109/IJCNN.2016.7727272"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0210",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Ribeiro, G. T. et al. (2020) ‘Bayesian optimized echo state network applied to short-term load forecasting’, Energies, 13(9), p. 2390. 10.3390/en13092390.",
+          "DOI": "10.3390/en13092390"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0215",
+          "doi-asserted-by": "crossref",
+          "first-page": "272",
+          "DOI": "10.1016/j.engappai.2019.03.012",
+          "article-title": "Enhanced ensemble structures using wavelet neural networks applied to short-term load forecasting",
+          "volume": "82",
+          "author": "Ribeiro",
+          "year": "2019",
+          "journal-title": "Engineering Applications of Artificial Intelligence Elsevier Ltd"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0220",
+          "article-title": "Ensemble approach based on bagging, boosting and stacking for short-term prediction in agribusiness time series",
+          "volume": "86",
+          "author": "Ribeiro",
+          "year": "2020",
+          "journal-title": "Applied Soft Computing Journal. Elsevier B.V."
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0225",
+          "doi-asserted-by": "crossref",
+          "first-page": "121",
+          "DOI": "10.1016/j.neucom.2017.11.062",
+          "article-title": "Ensemble of optimized echo state networks for remaining useful life prediction",
+          "volume": "281",
+          "author": "Rigamonti",
+          "year": "2018",
+          "journal-title": "Neurocomputing. Elsevier B.V."
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0230",
+          "doi-asserted-by": "crossref",
+          "first-page": "351",
+          "DOI": "10.1016/j.eneco.2018.06.015",
+          "article-title": "A Markov switching long memory model of crude oil price return volatility",
+          "volume": "74",
+          "author": "Di Sanzo",
+          "year": "2018",
+          "journal-title": "Energy Economics. Elsevier B.V."
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0235",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Seabold, S. and Perktold, J. (2010) ‘Statsmodels : Econometric and Statistical Modeling with Python’, in Proceedings of the 9th Pytohn in Science Conference (SCIPY 2010). Austin, TX, USA, pp. 92–96.",
+          "DOI": "10.25080/Majora-92bf1922-011"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0240",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Vasconcelos Segundo, E. H. de, Mariani, V. C. and Coelho, L. dos S. (2019a) ‘Design of heat exchangers using falcon optimization algorithm’, Applied Thermal Engineering. Elsevier, 156(January), pp. 119–144. 10.1016/j.applthermaleng.2019.04.038.",
+          "DOI": "10.1016/j.applthermaleng.2019.04.038"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0245",
+          "article-title": "Metaheuristic inspired on owls behavior applied to heat exchangers design",
+          "volume": "14",
+          "author": "Vasconcelos Segundo",
+          "year": "2019",
+          "journal-title": "Thermal Science and Engineering Progress Elsevier Ltd"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0250",
+          "doi-asserted-by": "crossref",
+          "first-page": "824",
+          "DOI": "10.1016/j.ribaf.2015.01.004",
+          "article-title": "Forecasting realized volatility: HAR against principal components combining, neural networks and GARCH",
+          "volume": "39",
+          "author": "Vortelinos",
+          "year": "2017",
+          "journal-title": "Research in International Business and Finance. Elsevier B.V."
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0255",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.intfin.2019.101133",
+          "article-title": "Exogenous drivers of Bitcoin and Cryptocurrency volatility – A mixed data sampling approach to forecasting",
+          "author": "Walther",
+          "year": "2019",
+          "journal-title": "Journal of International Financial Markets, Institutions and Money. Elsevier B.V."
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0260",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Wolpert, D.H. and Macready, W.G. (1997) ‘No free lunch theorems for optimization’, IEEE Transactions on Evolutionary Computation, 1 (1), p. 67–82. Available from: doi:10.1109/4235.585893.",
+          "DOI": "10.1109/4235.585893"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0265",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Wolpert D.H. (2002) ‘The Supervised Learning No-Free-Lunch Theorems’. In: Roy R., Köppen M., Ovaska S., Furuhashi T., Hoffmann F. (eds) Soft Computing and Industry. Springer, London. Doi: 10.1007/978-1-4471-0123-9_3.",
+          "DOI": "10.1007/978-1-4471-0123-9_3"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0270",
+          "doi-asserted-by": "crossref",
+          "first-page": "182",
+          "DOI": "10.1016/j.eswa.2017.10.022",
+          "article-title": "A novel heterogeneous ensemble credit scoring model based on bstacking approach",
+          "volume": "93",
+          "author": "Xia",
+          "year": "2018",
+          "journal-title": "Expert Systems with Applications Elsevier Ltd"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0275",
+          "article-title": "Fault prognostics by an ensemble of Echo State Networks in presence of event based measurements",
+          "volume": "87",
+          "author": "Xu",
+          "year": "2020",
+          "journal-title": "Engineering Applications of Artificial Intelligence Elsevier Ltd"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0280",
+          "doi-asserted-by": "crossref",
+          "first-page": "11",
+          "DOI": "10.1016/j.neunet.2019.01.003",
+          "article-title": "Prediction and identification of discrete-time dynamic nonlinear systems based on adaptive echo state network",
+          "volume": "113",
+          "author": "Yao",
+          "year": "2019",
+          "journal-title": "Neural Networks"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0285",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Yao, X., Fan, S., Zhao, B. and Cao, S. (2020) ‘Controller design based on echo state network with delay output for nonlinear system’, Complexity. [Online] 2020. Available from: doi:10.1155/2020/8643029.",
+          "DOI": "10.1155/2020/8643029"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0290",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1016/j.neunet.2012.07.005",
+          "article-title": "Re-visiting the echo state property",
+          "volume": "35",
+          "author": "Yildiz",
+          "year": "2012",
+          "journal-title": "Neural Networks Elsevier Ltd"
+        },
+        {
+          "issue": "1",
+          "key": "10.1016/j.eswa.2021.115490_b0295",
+          "doi-asserted-by": "crossref",
+          "first-page": "87",
+          "DOI": "10.1260/1748-3018.7.1.87",
+          "article-title": "Stock prediction based on phase space reconstruction and echo state networks",
+          "volume": "7",
+          "author": "Zhang",
+          "year": "2013",
+          "journal-title": "Journal of Algorithms & Computational Technology"
+        },
+        {
+          "key": "10.1016/j.eswa.2021.115490_b0300",
+          "first-page": "774",
+          "article-title": "Short term electricity load forecasting using a hybrid model",
+          "volume": "158",
+          "author": "Zhang",
+          "year": "2018",
+          "journal-title": "Energy. Elsevier B.V."
+        }
+      ],
+      "container-title": [
+        "Expert Systems with Applications"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0957417421009003?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0957417421009003?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            17
+          ]
+        ],
+        "date-time": "2025-10-17T05:29:28Z",
+        "timestamp": 1760678968000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0957417421009003"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            12
+          ]
+        ]
+      },
+      "references-count": 59,
+      "alternative-id": [
+        "S0957417421009003"
+      ],
+      "URL": "https://doi.org/10.1016/j.eswa.2021.115490",
+      "relation": {},
+      "ISSN": [
+        "0957-4174"
+      ],
+      "issn-type": [
+        {
+          "value": "0957-4174",
+          "type": "print"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            12
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "Expert Systems with Applications",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "https://doi.org/10.1016/j.eswa.2021.115490",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "© 2021 Elsevier Ltd. All rights reserved.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ],
+      "article-number": "115490"
+    }
+  }
+}

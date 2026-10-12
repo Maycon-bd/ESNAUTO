@@ -1,0 +1,74 @@
+{
+  "arquivo": "C:\\Users\\User\\Downloads\\Artigo para XXV ENMC ASSOCIACAO-DE-REDES-DE-ESTADO-DE-ECO-COM-METODOS-ESTATISTICOS-CLASSICOS-DE-PREVISAO-Uma-revisao-bibliometrica publicado.pdf",
+  "paginas": 10,
+  "figuras_e_tabelas": [
+    {
+      "pagina": 6,
+      "trecho": "etwork  \nfor Time Series prediction\nIEEE Access\nA Fig. 1 apresenta um dendrograma de expressões de duas palavras nos resumos. Para\nelaboração  desse gráfico  foi escolhida  a  configuração  do biblioshiny:  Factorial  Analysis,\nTopic Dendrogram, Multidimensional Scaling, Abstracts, Bigrams, número de termos = 34 e\nnúmero de grupos = 4. Está demonstrado na Fig. 1 que a ESN não aparece associada a\nexpressões financeiras (grupo verde); além disso, pode ser visto que este tipo de rede neural\nestá relacionada ao desempenho preditivo (grupo azul). Também é perceptível que a ESN não\naparece  relacionada  às expressões de previsão  estatística  (grupo vermelho).  Pelo fato de\nexpressões  com  uma  palavra  não  permitirem  análise  significativa,  foram  escolhidas\nexpressões com duas, também pelo fato do número de artigos analisados ser pouco nã"
+    },
+    {
+      "pagina": 6,
+      "trecho": " = 34 e\nnúmero de grupos = 4. Está demonstrado na Fig. 1 que a ESN não aparece associada a\nexpressões financeiras (grupo verde); além disso, pode ser visto que este tipo de rede neural\nestá relacionada ao desempenho preditivo (grupo azul). Também é perceptível que a ESN não\naparece  relacionada  às expressões de previsão  estatística  (grupo vermelho).  Pelo fato de\nexpressões  com  uma  palavra  não  permitirem  análise  significativa,  foram  escolhidas\nexpressões com duas, também pelo fato do número de artigos analisados ser pouco não foi\nviável utilizar expressões com três.\nFigura 1 – Grupos de expressões de duas palavras nos resumos\nFigura 2 – Palavras-Chaves mais utilizadas pelos autores nos artigos\nNa Fig. 2 observa-se que as palavras-chave utilizadas na consulta estavam de acordo\ncom as escolhidas pelos autores nos artigos e mostr"
+    },
+    {
+      "pagina": 6,
+      "trecho": "ouco não foi\nviável utilizar expressões com três.\nFigura 1 – Grupos de expressões de duas palavras nos resumos\nFigura 2 – Palavras-Chaves mais utilizadas pelos autores nos artigos\nNa Fig. 2 observa-se que as palavras-chave utilizadas na consulta estavam de acordo\ncom as escolhidas pelos autores nos artigos e mostra que os principais tópicos são ESN,\nprevisão, predição, RNN e regressão (que é uma técnica Estatística de previsão).\nAnais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, \n9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica\n 19 a 21 Outubro 2022\n"
+    },
+    {
+      "pagina": 6,
+      "trecho": "Grupos de expressões de duas palavras nos resumos\nFigura 2 – Palavras-Chaves mais utilizadas pelos autores nos artigos\nNa Fig. 2 observa-se que as palavras-chave utilizadas na consulta estavam de acordo\ncom as escolhidas pelos autores nos artigos e mostra que os principais tópicos são ESN,\nprevisão, predição, RNN e regressão (que é uma técnica Estatística de previsão).\nAnais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, \n9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica\n 19 a 21 Outubro 2022\n"
+    },
+    {
+      "pagina": 6,
+      "trecho": "aves mais utilizadas pelos autores nos artigos\nNa Fig. 2 observa-se que as palavras-chave utilizadas na consulta estavam de acordo\ncom as escolhidas pelos autores nos artigos e mostra que os principais tópicos são ESN,\nprevisão, predição, RNN e regressão (que é uma técnica Estatística de previsão).\nAnais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, \n9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica\n 19 a 21 Outubro 2022\n"
+    },
+    {
+      "pagina": 7,
+      "trecho": "GO\n19 a 21 de Outubro de 2022, Formato Virtual\nNa Fig. 3 observa-se uma evolução das publicações por ano, as poucas ocorrências em\n2022 podem ser explicadas pelo período em que as consultas desta revisão foram realizadas,\nno primeiro semestre desse ano.\nFigura 3 – Publicação de artigos por ano\nFigura 4 – Impacto de citação dos autores\nNa Fig. 4 percebe-se que os autores mais citados são Assimakopoulos, Makridakis e\nSpiliotis, os quais produzem em conjunto. Estes autores trabalham com técnicas de previsão\nestatística, mas também sobre técnicas de aprendizado de máquina, como pode-se ver em\nMakridakis; Spiliotis; Assimakopoulos (2018). Percebe-se que de Oliveira e de Mattos Neto\ntambém publicaram juntos, e relacionam-se com os métodos estatísticos e sobre associação\ndos métodos estudados, como em Santos Jr.; de Oliveira; de Mattos Neto (201"
+    },
+    {
+      "pagina": 7,
+      "trecho": "foram realizadas,\nno primeiro semestre desse ano.\nFigura 3 – Publicação de artigos por ano\nFigura 4 – Impacto de citação dos autores\nNa Fig. 4 percebe-se que os autores mais citados são Assimakopoulos, Makridakis e\nSpiliotis, os quais produzem em conjunto. Estes autores trabalham com técnicas de previsão\nestatística, mas também sobre técnicas de aprendizado de máquina, como pode-se ver em\nMakridakis; Spiliotis; Assimakopoulos (2018). Percebe-se que de Oliveira e de Mattos Neto\ntambém publicaram juntos, e relacionam-se com os métodos estatísticos e sobre associação\ndos métodos estudados, como em Santos Jr.; de Oliveira; de Mattos Neto (2019).\nFigura 5 – Artigos por revista ou evento\nNa Fig. 5 nota-se que os periódicos que concentram mais artigos são Chaos, Expert\nSystems with Applications, Neural Computing and Applications e Plos One, as q"
+    },
+    {
+      "pagina": 7,
+      "trecho": "sse ano.\nFigura 3 – Publicação de artigos por ano\nFigura 4 – Impacto de citação dos autores\nNa Fig. 4 percebe-se que os autores mais citados são Assimakopoulos, Makridakis e\nSpiliotis, os quais produzem em conjunto. Estes autores trabalham com técnicas de previsão\nestatística, mas também sobre técnicas de aprendizado de máquina, como pode-se ver em\nMakridakis; Spiliotis; Assimakopoulos (2018). Percebe-se que de Oliveira e de Mattos Neto\ntambém publicaram juntos, e relacionam-se com os métodos estatísticos e sobre associação\ndos métodos estudados, como em Santos Jr.; de Oliveira; de Mattos Neto (2019).\nFigura 5 – Artigos por revista ou evento\nNa Fig. 5 nota-se que os periódicos que concentram mais artigos são Chaos, Expert\nSystems with Applications, Neural Computing and Applications e Plos One, as quais tem os\nrespectivos conceitos Qualis:"
+    },
+    {
+      "pagina": 7,
+      "trecho": " ano\nFigura 4 – Impacto de citação dos autores\nNa Fig. 4 percebe-se que os autores mais citados são Assimakopoulos, Makridakis e\nSpiliotis, os quais produzem em conjunto. Estes autores trabalham com técnicas de previsão\nestatística, mas também sobre técnicas de aprendizado de máquina, como pode-se ver em\nMakridakis; Spiliotis; Assimakopoulos (2018). Percebe-se que de Oliveira e de Mattos Neto\ntambém publicaram juntos, e relacionam-se com os métodos estatísticos e sobre associação\ndos métodos estudados, como em Santos Jr.; de Oliveira; de Mattos Neto (2019).\nFigura 5 – Artigos por revista ou evento\nNa Fig. 5 nota-se que os periódicos que concentram mais artigos são Chaos, Expert\nSystems with Applications, Neural Computing and Applications e Plos One, as quais tem os\nrespectivos conceitos Qualis: A3, A1, B1 e A1. Demais periódicos tiveram a"
+    },
+    {
+      "pagina": 7,
+      "trecho": "m Santos Jr.; de Oliveira; de Mattos Neto (2019).\nFigura 5 – Artigos por revista ou evento\nNa Fig. 5 nota-se que os periódicos que concentram mais artigos são Chaos, Expert\nSystems with Applications, Neural Computing and Applications e Plos One, as quais tem os\nrespectivos conceitos Qualis: A3, A1, B1 e A1. Demais periódicos tiveram apenas 1 artigo.\nAnais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, \n9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica\n 19 a 21 Outubro 2022\n"
+    },
+    {
+      "pagina": 7,
+      "trecho": "019).\nFigura 5 – Artigos por revista ou evento\nNa Fig. 5 nota-se que os periódicos que concentram mais artigos são Chaos, Expert\nSystems with Applications, Neural Computing and Applications e Plos One, as quais tem os\nrespectivos conceitos Qualis: A3, A1, B1 e A1. Demais periódicos tiveram apenas 1 artigo.\nAnais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, \n9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica\n 19 a 21 Outubro 2022\n"
+    },
+    {
+      "pagina": 8,
+      "trecho": "GO\n19 a 21 de Outubro de 2022, Formato Virtual\nNa Fig. 6 vê-se que “ time series” é a expressão que mais aparece nos resumos, seguida\nprincipalmente por  “stock market ”,  “recurrent neural ”, “ reservoir computing ”  e  “machine\nlearning”. Mostra também que boa parte dos estudos estão ligados a séries temporais e\nconstróem relações entre aprendizado de máquina, RCs e mercado de ações.\nFigura 6 – Frequência de expressões com duas palavras nos resumos\nNa Fig. 7 observa-se que as expressões de duas palavras nos títulos são “ time series”,\n“stock market” e “series prediction”, todas relacionadas aos tópicos da pesquisa.\nFigura 7 – Nuvem de palavras de expressões com duas palavras nos títulos\nA Fig. 8 mostra que a principal tendência nestes tópicos está relacionada ao aprendizado\nde máquina e à previsão e que RNN e ESN aparecem como uma tendê"
+    },
+    {
+      "pagina": 8,
+      "trecho": "e aprendizado de máquina, RCs e mercado de ações.\nFigura 6 – Frequência de expressões com duas palavras nos resumos\nNa Fig. 7 observa-se que as expressões de duas palavras nos títulos são “ time series”,\n“stock market” e “series prediction”, todas relacionadas aos tópicos da pesquisa.\nFigura 7 – Nuvem de palavras de expressões com duas palavras nos títulos\nA Fig. 8 mostra que a principal tendência nestes tópicos está relacionada ao aprendizado\nde máquina e à previsão e que RNN e ESN aparecem como uma tendência após 2020.\nFigura 8 – Assuntos tendência\nAnais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, \n9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica\n 19 a 21 Outubro 2022\n"
+    },
+    {
+      "pagina": 8,
+      "trecho": "ia de expressões com duas palavras nos resumos\nNa Fig. 7 observa-se que as expressões de duas palavras nos títulos são “ time series”,\n“stock market” e “series prediction”, todas relacionadas aos tópicos da pesquisa.\nFigura 7 – Nuvem de palavras de expressões com duas palavras nos títulos\nA Fig. 8 mostra que a principal tendência nestes tópicos está relacionada ao aprendizado\nde máquina e à previsão e que RNN e ESN aparecem como uma tendência após 2020.\nFigura 8 – Assuntos tendência\nAnais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, \n9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica\n 19 a 21 Outubro 2022\n"
+    },
+    {
+      "pagina": 8,
+      "trecho": "ion”, todas relacionadas aos tópicos da pesquisa.\nFigura 7 – Nuvem de palavras de expressões com duas palavras nos títulos\nA Fig. 8 mostra que a principal tendência nestes tópicos está relacionada ao aprendizado\nde máquina e à previsão e que RNN e ESN aparecem como uma tendência após 2020.\nFigura 8 – Assuntos tendência\nAnais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, \n9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica\n 19 a 21 Outubro 2022\n"
+    },
+    {
+      "pagina": 8,
+      "trecho": "ras de expressões com duas palavras nos títulos\nA Fig. 8 mostra que a principal tendência nestes tópicos está relacionada ao aprendizado\nde máquina e à previsão e que RNN e ESN aparecem como uma tendência após 2020.\nFigura 8 – Assuntos tendência\nAnais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, \n9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica\n 19 a 21 Outubro 2022\n"
+    },
+    {
+      "pagina": 8,
+      "trecho": " RNN e ESN aparecem como uma tendência após 2020.\nFigura 8 – Assuntos tendência\nAnais do XXV ENMC – Encontro Nacional de Modelagem Computacional,  XIII ECTM – Encontro de Ciências e Tecnologia de Materiais, \n9º MCSul – Conferência Sul em Modelagem Computacional e IX SEMENGO – Seminário e Workshop em Engenharia Oceânica\n 19 a 21 Outubro 2022\n"
+    }
+  ]
+}

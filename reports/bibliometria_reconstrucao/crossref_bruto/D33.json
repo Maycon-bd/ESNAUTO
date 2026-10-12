@@ -1,0 +1,303 @@
+{
+  "url": "https://api.crossref.org/works/10.1145%2F3700058.3700075",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            2
+          ]
+        ],
+        "date-time": "2026-10-02T23:57:32Z",
+        "timestamp": 1790985452862,
+        "version": "4.1.0"
+      },
+      "publisher-location": "New York, NY, USA",
+      "reference-count": 10,
+      "publisher": "ACM",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                8,
+                23
+              ]
+            ],
+            "date-time": "2024-08-23T00:00:00Z",
+            "timestamp": 1724371200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "dl.acm.org"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            23
+          ]
+        ]
+      },
+      "DOI": "10.1145/3700058.3700075",
+      "type": "proceedings-article",
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            18
+          ]
+        ],
+        "date-time": "2024-12-18T05:49:51Z",
+        "timestamp": 1734500991000
+      },
+      "page": "103-108",
+      "update-policy": "https://doi.org/10.1145/crossmark-policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 34,
+      "title": [
+        "Comparative Analysis of LSTM, GRU, and Transformer Models for Stock Price Prediction"
+      ],
+      "prefix": "10.1145",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0003-1303-2546",
+          "authenticated-orcid": false,
+          "given": "Jue",
+          "family": "Xiao",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Independent Researcher, The School of Business at University of Connecticut, Jersey City, United States"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-5614-5355",
+          "authenticated-orcid": false,
+          "given": "Tingting",
+          "family": "Deng",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Independent Researcher, Simon Business School at University of Rochester, Chantilly, United States"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-1106-8914",
+          "authenticated-orcid": false,
+          "given": "Shuochen",
+          "family": "Bi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Independent Researcher, D'Amore-McKim School of Business at Northeastern University, Boston, United States"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "320",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            17
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "e_1_3_3_1_1_2",
+          "volume-title": "E-Services",
+          "author": "Patil P.",
+          "year": "2017",
+          "unstructured": "Patil, Pushp P., Yogesh K. Dwivedi, and Nripendra P. Rana. \"Digital payments adoption: an analysis of literature.\" Digital Nations–Smart Cities, Innovation, and Sustainability: 16th IFIP WG 6.11 Conference on E-Business, E-Services, and E-Society, I3E 2017, Delhi, India, November 21–23, 2017, Proceedings 16. Springer International Publishing, 2017."
+        },
+        {
+          "issue": "1",
+          "key": "e_1_3_3_1_2_2",
+          "first-page": "39",
+          "article-title": "A review of fraud detection techniques: Credit card",
+          "volume": "45",
+          "author": "Chaudhary K.",
+          "year": "2019",
+          "unstructured": "Chaudhary, K., Yadav, J., & Mallick, B. (2019). A review of fraud detection techniques: Credit card. International Journal of Computer Applications, 45(1), 39-44.",
+          "journal-title": "International Journal of Computer Applications"
+        },
+        {
+          "key": "e_1_3_3_1_3_2",
+          "volume-title": "Bioplastic derived from corn stover: Life cycle assessment and artificial intelligence-based analysis of uncertainty and variability. Science of The Total Environment, 174349",
+          "author": "Li J.",
+          "year": "2024",
+          "unstructured": "Li, J., Wang, Y., Xu, C., Liu, S., Dai, J., & Lan, K. (2024). Bioplastic derived from corn stover: Life cycle assessment and artificial intelligence-based analysis of uncertainty and variability. Science of The Total Environment, 174349."
+        },
+        {
+          "key": "e_1_3_3_1_4_2",
+          "volume-title": "2017 International Conference on Computing Networking and Informatics (ICCNI) (pp. 1-9",
+          "author": "Awoyemi J. O.",
+          "year": "2020",
+          "unstructured": "Awoyemi, J. O., Adetunmbi, A. O., & Oluwadare, S. A. (2020). Credit card fraud detection using machine learning techniques: A comparative analysis. In 2017 International Conference on Computing Networking and Informatics (ICCNI) (pp. 1-9, 2020, October). IEEE."
+        },
+        {
+          "key": "e_1_3_3_1_5_2",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Ma Haowei. \"Automatic positioning system of medical service robot Haowei Ma et al. \"CRISPR/Cas-based nanobiosensors: A reinforced approach for specific and sensitive recognition of mycotoxins.\" Food Bioscience 56 (2023): 103110.",
+          "DOI": "10.1016/j.fbio.2023.103110"
+        },
+        {
+          "issue": "2",
+          "key": "e_1_3_3_1_6_2",
+          "first-page": "82",
+          "article-title": "The Challenges and Opportunities of Financial Technology Innovation to Bank Financing Business and Risk Management",
+          "volume": "7",
+          "author": "Bao W.",
+          "year": "2024",
+          "unstructured": "Bao, W., Xiao, J., Deng, T., Bi, S., & Wang, J. (2024). The Challenges and Opportunities of Financial Technology Innovation to Bank Financing Business and Risk Management. Financial Engineering and Risk Management, 7(2), 82-88.",
+          "journal-title": "Financial Engineering and Risk Management"
+        },
+        {
+          "key": "e_1_3_3_1_7_2",
+          "volume-title": "37-45",
+          "author": "Taylor J.",
+          "year": "2022",
+          "unstructured": "Taylor, Sean J., and Benjamin Letham. \"Forecasting at scale.\" The American Statistician 72.1 (2022): 37-45."
+        },
+        {
+          "key": "e_1_3_3_1_8_2",
+          "volume-title": "Alex Xingbang Weng, and Krista MPerreira.\"The effect of social media use on mental health ofcollege students during the pandemic.\" Health Economics",
+          "author": "Fruehwirth",
+          "year": "2024",
+          "unstructured": "Fruehwirth, Jane Cooley, Alex Xingbang Weng, and Krista MPerreira.\"The effect of social media use on mental health ofcollege students during the pandemic.\" Health Economics (2024)."
+        },
+        {
+          "key": "e_1_3_3_1_9_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1109/TDSC.2007.70228"
+        },
+        {
+          "key": "e_1_3_3_1_10_2",
+          "volume-title": "Optimization of logistics cargo tracking and transportation efficiency based on data science deep learning models. Applied and Computational Engineering. 2024 Jul 8",
+          "author": "Li A",
+          "unstructured": "Li A, Zhuang S, Yang T, Lu W, Xu J. Optimization of logistics cargo tracking and transportation efficiency based on data science deep learning models. Applied and Computational Engineering. 2024 Jul 8; 69: 71-7."
+        }
+      ],
+      "event": {
+        "name": "DEBAI 2024: International Conference on Digital Economy, Blockchain and Artificial Intelligence",
+        "location": "Guangzhou China",
+        "acronym": "DEBAI 2024"
+      },
+      "container-title": [
+        "Proceedings of the International Conference on Digital Economy, Blockchain and Artificial Intelligence"
+      ],
+      "original-title": [],
+      "link": [
+        {
+          "URL": "https://dl.acm.org/doi/10.1145/3700058.3700075",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://dl.acm.org/doi/pdf/10.1145/3700058.3700075",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            19
+          ]
+        ],
+        "date-time": "2025-06-19T00:05:57Z",
+        "timestamp": 1750291557000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://dl.acm.org/doi/10.1145/3700058.3700075"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            23
+          ]
+        ]
+      },
+      "references-count": 10,
+      "alternative-id": [
+        "10.1145/3700058.3700075",
+        "10.1145/3700058"
+      ],
+      "URL": "https://doi.org/10.1145/3700058.3700075",
+      "relation": {},
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            23
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "2024-12-17",
+          "order": 3,
+          "name": "published",
+          "label": "Published",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        }
+      ]
+    }
+  }
+}

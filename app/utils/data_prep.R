@@ -252,25 +252,48 @@ registrar_distribuicao(
 #' Carrega os dados PETR4 com fator
 #' @param caminho Caminho para o arquivo de dados
 #' @return Vetor numérico com os preços de fechamento
-carregar_dados_petr4 <- function(caminho = NULL) {
+datasets_disponiveis <- c(PETR4 = "PETR4_close com factor_2000-2020.txt",
+                           VALE3 = "VALE3_close com factor_2000-2020.txt")
+
+ler_serie_precos <- function(caminho) {
+  tabela <- read.table(caminho, header = FALSE, sep = ";", dec = ".",
+                       colClasses = "character", stringsAsFactors = FALSE)
+  if (ncol(tabela) != 1L) stop("Informe uma única coluna de preços, sem cabeçalho ou datas.")
+  valores <- suppressWarnings(as.numeric(gsub(",", ".", tabela[[1]], fixed = TRUE)))
+  if (length(valores) < 400L || any(!is.finite(valores)) || any(valores <= 0))
+    stop("A série deve conter pelo menos 400 preços numéricos, finitos e positivos.")
+  valores
+}
+
+carregar_dados_acao <- function(acao = "PETR4", caminho = NULL) {
+  if (!acao %in% names(datasets_disponiveis)) stop("Ação desconhecida: ", acao)
   if (is.null(caminho)) {
-    # Tenta encontrar o arquivo automaticamente
-    caminhos_possiveis <- c(
-      "Scripts/data/PETR4_close com factor_2000-2020.txt",
-      "../Scripts/data/PETR4_close com factor_2000-2020.txt",
-      "data/PETR4_close com factor_2000-2020.txt"
-    )
-    for (cp in caminhos_possiveis) {
-      if (file.exists(cp)) {
-        caminho <- cp
-        break
-      }
-    }
-    if (is.null(caminho)) stop("Arquivo de dados PETR4 não encontrado. Especifique o caminho.")
+    candidatos <- file.path(c("Scripts/data", "../Scripts/data", "data"), datasets_disponiveis[[acao]])
+    encontrados <- candidatos[file.exists(candidatos)]
+    if (!length(encontrados)) stop("Arquivo de dados não encontrado para ", acao)
+    caminho <- encontrados[1]
   }
-  
-  data_fac <- as.matrix(read.csv2(caminho, header = FALSE))
-  as.numeric(data_fac)
+  dados <- ler_serie_precos(caminho)
+  attr(dados, "acao") <- acao
+  dados
+}
+
+carregar_dados_petr4 <- function(caminho = NULL) carregar_dados_acao("PETR4", caminho)
+
+particoes_padrao <- function(n) {
+  if (n == 5198L) return(list(treino_n = 2600L, valida_n = 1299L, teste_n = 1299L))
+  treino <- ceiling(n / 2)
+  valida <- floor(n / 4)
+  list(treino_n = treino, valida_n = valida, teste_n = n - treino - valida)
+}
+
+particoes_dados <- function(dados) {
+  idx <- attr(dados, "particoes")
+  if (is.null(idx)) idx <- particoes_padrao(length(dados))
+  valores <- unlist(idx)
+  if (length(valores) != 3L || any(!is.finite(valores)) || any(valores != floor(valores)) ||
+      any(valores < 100) || sum(valores) > length(dados)) stop("Partições inválidas para a série carregada.")
+  idx
 }
 
 #' Carrega os dados PETR4 com datas
@@ -305,7 +328,8 @@ carregar_dados_petr4_com_datas <- function(caminho = NULL) {
 #' @param treino_pct Percentual de treino (default 50%)
 #' @param valida_pct Percentual de validação (default 25%)
 #' @return Lista com vetores treino, validacao, teste e seus índices
-dividir_dados <- function(dados, treino_n = 2600, valida_n = 1299, teste_n = 1299) {
+dividir_dados <- function(dados, treino_n = particoes_dados(dados)$treino_n,
+                          valida_n = particoes_dados(dados)$valida_n, teste_n = particoes_dados(dados)$teste_n) {
   n <- length(dados)
   
   # Validar
@@ -381,7 +405,9 @@ criar_janelas_deslizantes <- function(dados, timesteps = 10) {
 #' @param teste_n Tamanho do teste
 #' @return Lista com X_treino, y_treino, X_valida, y_valida, X_teste, y_teste, scaling
 preparar_dados_lstm_gru <- function(dados, timesteps = 10, 
-                                     treino_n = 2600, valida_n = 1299, teste_n = 1299) {
+                                     treino_n = particoes_dados(dados)$treino_n,
+                                     valida_n = particoes_dados(dados)$valida_n,
+                                     teste_n = particoes_dados(dados)$teste_n) {
   # Normalizar usando apenas dados de treino
   treino_raw <- dados[1:treino_n]
   scaling <- normalizar_minmax(treino_raw)

@@ -1,0 +1,140 @@
+{
+  "url": "https://api.crossref.org/works/10.4249%2Fscholarpedia.2330",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            10
+          ]
+        ],
+        "date-time": "2026-10-10T16:03:57Z",
+        "timestamp": 1791648237904,
+        "version": "4.3.4"
+      },
+      "reference-count": 0,
+      "publisher": "Scholarpedia",
+      "issue": "9",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Scholarpedia"
+      ],
+      "DOI": "10.4249/scholarpedia.2330",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2010,
+            2,
+            19
+          ]
+        ],
+        "date-time": "2010-02-19T13:44:40Z",
+        "timestamp": 1266587080000
+      },
+      "page": "2330",
+      "source": "Crossref",
+      "is-referenced-by-count": 355,
+      "title": [
+        "Echo state network"
+      ],
+      "prefix": "10.4249",
+      "volume": "2",
+      "author": [
+        {
+          "given": "Herbert",
+          "family": "Jaeger",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "2952",
+      "published-online": {
+        "date-parts": [
+          [
+            2007
+          ]
+        ]
+      },
+      "container-title": [
+        "Scholarpedia"
+      ],
+      "original-title": [],
+      "language": "en",
+      "deposited": {
+        "date-parts": [
+          [
+            2011,
+            2,
+            23
+          ]
+        ],
+        "date-time": "2011-02-23T21:17:17Z",
+        "timestamp": 1298495837000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "http://www.scholarpedia.org/article/Echo_state_network"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2007
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "9",
+        "published-online": {
+          "date-parts": [
+            [
+              2007
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "2330"
+      ],
+      "URL": "https://doi.org/10.4249/scholarpedia.2330",
+      "relation": {},
+      "ISSN": [
+        "1941-6016"
+      ],
+      "issn-type": [
+        {
+          "value": "1941-6016",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2007
+          ]
+        ]
+      }
+    }
+  }
+}

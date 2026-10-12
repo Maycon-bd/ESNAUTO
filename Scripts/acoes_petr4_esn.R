@@ -9,15 +9,19 @@ num_itera  <- if (length(args) >= 3) as.integer(args[3]) else 10000L
 num_run    <- if (length(args) >= 4) args[4] else "1"
 output_dir <- if (length(args) >= 5) args[5] else "."
 
+acao <- if (length(args) >= 6) args[6] else "PETR4"
+source("../app/utils/data_prep.R")
+if (!acao %in% names(datasets_disponiveis)) stop("Ação desconhecida")
+
 # Definição dinâmica dos nomes dos arquivos de saída
 sufixo          <- paste0("com_factor ", num_itera, "_", num_run, ".csv")
-arq_esn         <- file.path(output_dir, paste0("Dados PETR4 ESN_mae_otim40x60 ", sufixo))
-arq_bestSol_fit <- file.path(output_dir, paste0("Dados PETR4 bestSol melhores_fitness mae_otim40x60 ", sufixo))
-arq_win         <- file.path(output_dir, paste0("Dados PETR4 Win ESN_mae_otim40X60 ", sufixo))
-arq_w           <- file.path(output_dir, paste0("Dados PETR4 W reservatório ESN_mae_otim40X60 ", sufixo))
-arq_wout        <- file.path(output_dir, paste0("Dados PETR4 Wout ESN_mae_otim40X60 ", sufixo))
-arq_resumo      <- file.path(output_dir, paste0("Dados PETR4 resumo fitness ESN_mae_otim40X60 ", sufixo))
-arq_bestSol     <- file.path(output_dir, paste0("Dados PETR4 bestSol mae_otim40x60 ", sufixo))
+arq_esn         <- file.path(output_dir, paste0("Dados ", acao, " ESN_mae_otim40x60 ", sufixo))
+arq_bestSol_fit <- file.path(output_dir, paste0("Dados ", acao, " bestSol melhores_fitness mae_otim40x60 ", sufixo))
+arq_win         <- file.path(output_dir, paste0("Dados ", acao, " Win ESN_mae_otim40X60 ", sufixo))
+arq_w           <- file.path(output_dir, paste0("Dados ", acao, " W reservatório ESN_mae_otim40X60 ", sufixo))
+arq_wout        <- file.path(output_dir, paste0("Dados ", acao, " Wout ESN_mae_otim40X60 ", sufixo))
+arq_resumo      <- file.path(output_dir, paste0("Dados ", acao, " resumo fitness ESN_mae_otim40X60 ", sufixo))
+arq_bestSol     <- file.path(output_dir, paste0("Dados ", acao, " bestSol mae_otim40x60 ", sufixo))
 
 library(ggplot2)               #Plota os gráficos
 library(PerformanceAnalytics)  #Assimetria e curtose
@@ -31,8 +35,7 @@ library(fGarch)                #rged
 
 
 #Para fins de simplificação serão considerados apenas os valores de fechamento das ações
-data_fac <- as.matrix(read.csv2("data/PETR4_close com factor_2000-2020.txt",header=F)) #5198 sem factor
-data_fac = as.numeric(data_fac)
+data_fac <- carregar_dados_acao(acao)
 #data = as.matrix(read.csv2('PETR4_close_2000-2020.txt',header=F))       #5198 sem factor
 #data = as.numeric(data)
 #data
@@ -45,9 +48,10 @@ data_fac = as.numeric(data_fac)
 #treino   = 3118                #60% 
 #valida   = 1040                #20% 
 #teste    = 1040                #20% 
-treino   = 2600                #50% 
-valida   = 1299                #25% 
-teste    = 1299                #25% 
+idx <- particoes_dados(data_fac)
+treino <- idx$treino_n
+valida <- idx$valida_n
+teste <- idx$teste_n
 
 
 #treino = data(1:treino)
@@ -105,9 +109,9 @@ pdf(pdf_file, width=10, height=7)
 
 par(mfrow=c(1,2))
 #hist(data, ylim=c(0,1200), breaks = (c(8.589, 18.672, 28.755, 38.838, 48.921, 59.004, 69.087, 79.17, 89.253, 99.336, 109.419, 119.502, 129.585, 139.668, 149.751, 159.834, 169.917, 180)),xlab = "Closing price of PETR4 stock (R$)" ,main = "(a)")
-hist(data_fac, ylim=c(0,1200), xlab = "Closing price with factor of PETR4 stock (R$)" ,main = "(b)")
+hist(data_fac, ylim=c(0,1200), xlab = paste("Closing price with factor of", acao, "stock (R$)") ,main = "(b)")
 #boxplot(data,ylim=c(0,185),ylab = "Closing price of PETR4 stock (R$)",main="(a)") #com outliers
-boxplot(data_fac,ylim=c(0,185),ylab = "Closing price with factor of PETR4 stock (R$)",main="(b)") #com outliers
+boxplot(data_fac,ylim=c(0,185),ylab = paste("Closing price with factor of", acao, "stock (R$)"),main="(b)") #com outliers
 par(mfrow=c(1,1))
 
 #par(mfrow=c(1,2))

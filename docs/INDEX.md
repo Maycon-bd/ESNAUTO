@@ -63,3 +63,5 @@ graph TD
 - **Para rodar simulações em lote**: Veja [`01_orquestracao_e_simulacao.md`](01_orquestracao_e_simulacao.md).
 - **Para analisar resultados e gerar entrega**: Veja [`02_pipeline_pos_processamento.md`](02_pipeline_pos_processamento.md).
 - **Para entender o formato das bases e CSVs de recordes salvos**: Veja [`04_dados_e_resultados.md`](04_dados_e_resultados.md).
+
+- [Seleção de datasets PETR4 e VALE3](11_selecao_datasets_petr4_vale3.md): seletor, partições, persistência e protocolo para a monografia.

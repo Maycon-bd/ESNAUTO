@@ -1,0 +1,384 @@
+{
+  "bibliometrix_version": "5.5.0",
+  "registros": 34,
+  "registros_keywords": 24,
+  "termos_distintos": 92,
+  "termos_rede": 14,
+  "ligacoes_rede": 33,
+  "frequencia_minima": 2,
+  "data_source": "RECONSTRUIDA_PDFS_CROSSREF",
+  "importacao_bib_validada": true,
+  "carregador_biblioshiny_validado": true,
+  "matriz_validada_por_contagem_independente": true,
+  "campos_nao_disponiveis": ["TC: citações recebidas", "CR: listas de referências", "C1: afiliações"],
+  "frequencias": [
+    {
+      "termo": "echo state network",
+      "documentos": 9
+    },
+    {
+      "termo": "reservoir computing",
+      "documentos": 5
+    },
+    {
+      "termo": "deep learning",
+      "documentos": 3
+    },
+    {
+      "termo": "stock price forecasting",
+      "documentos": 3
+    },
+    {
+      "termo": "time series",
+      "documentos": 3
+    },
+    {
+      "termo": "artificial intelligence",
+      "documentos": 2
+    },
+    {
+      "termo": "financial market prediction",
+      "documentos": 2
+    },
+    {
+      "termo": "financial time series",
+      "documentos": 2
+    },
+    {
+      "termo": "forecasting",
+      "documentos": 2
+    },
+    {
+      "termo": "gru",
+      "documentos": 2
+    },
+    {
+      "termo": "lstm",
+      "documentos": 2
+    },
+    {
+      "termo": "machine learning",
+      "documentos": 2
+    },
+    {
+      "termo": "optimization",
+      "documentos": 2
+    },
+    {
+      "termo": "recurrent neural network",
+      "documentos": 2
+    },
+    {
+      "termo": "ar algorithms",
+      "documentos": 1
+    },
+    {
+      "termo": "artificial intelligence (ai)",
+      "documentos": 1
+    },
+    {
+      "termo": "artificial neural networks",
+      "documentos": 1
+    },
+    {
+      "termo": "asymmetric generalized error distribution",
+      "documentos": 1
+    },
+    {
+      "termo": "autoregressive integrated moving average artificial neural network (arima-ann) (time-series forecasting)",
+      "documentos": 1
+    },
+    {
+      "termo": "autoregressive models & linear models",
+      "documentos": 1
+    },
+    {
+      "termo": "b3",
+      "documentos": 1
+    },
+    {
+      "termo": "big data",
+      "documentos": 1
+    },
+    {
+      "termo": "chaotic systems",
+      "documentos": 1
+    },
+    {
+      "termo": "chaotic time series",
+      "documentos": 1
+    },
+    {
+      "termo": "compressed sensing",
+      "documentos": 1
+    },
+    {
+      "termo": "crude oil prices",
+      "documentos": 1
+    },
+    {
+      "termo": "cryptocurrency forecasting",
+      "documentos": 1
+    },
+    {
+      "termo": "daily financial returns",
+      "documentos": 1
+    },
+    {
+      "termo": "data set",
+      "documentos": 1
+    },
+    {
+      "termo": "distribution",
+      "documentos": 1
+    },
+    {
+      "termo": "evolutionary algorithms",
+      "documentos": 1
+    },
+    {
+      "termo": "excess kurtosis",
+      "documentos": 1
+    },
+    {
+      "termo": "field programmable gate array",
+      "documentos": 1
+    },
+    {
+      "termo": "financial data",
+      "documentos": 1
+    },
+    {
+      "termo": "finite mixtures of ged",
+      "documentos": 1
+    },
+    {
+      "termo": "fundamental analysis",
+      "documentos": 1
+    },
+    {
+      "termo": "generalized error distribution",
+      "documentos": 1
+    },
+    {
+      "termo": "generative adversarial network (gan)",
+      "documentos": 1
+    },
+    {
+      "termo": "genetic algorithm",
+      "documentos": 1
+    },
+    {
+      "termo": "gold prices",
+      "documentos": 1
+    },
+    {
+      "termo": "goodness-of-fit",
+      "documentos": 1
+    },
+    {
+      "termo": "hardware accelerator",
+      "documentos": 1
+    },
+    {
+      "termo": "heterogeneous autoregressive model",
+      "documentos": 1
+    },
+    {
+      "termo": "hybrid quantum neural network (hqnn)",
+      "documentos": 1
+    },
+    {
+      "termo": "k-means long short-term memory (lstm)",
+      "documentos": 1
+    },
+    {
+      "termo": "large language model",
+      "documentos": 1
+    },
+    {
+      "termo": "lorenz system",
+      "documentos": 1
+    },
+    {
+      "termo": "lyapunov exponent",
+      "documentos": 1
+    },
+    {
+      "termo": "maximum likelihood estimation",
+      "documentos": 1
+    },
+    {
+      "termo": "methods",
+      "documentos": 1
+    },
+    {
+      "termo": "multilayer perceptron",
+      "documentos": 1
+    },
+    {
+      "termo": "multistep prediction",
+      "documentos": 1
+    },
+    {
+      "termo": "multivariate forecasting",
+      "documentos": 1
+    },
+    {
+      "termo": "neural network",
+      "documentos": 1
+    },
+    {
+      "termo": "online trading",
+      "documentos": 1
+    },
+    {
+      "termo": "optical reservoir computing",
+      "documentos": 1
+    },
+    {
+      "termo": "parallel data processing",
+      "documentos": 1
+    },
+    {
+      "termo": "parameters",
+      "documentos": 1
+    },
+    {
+      "termo": "particle swarm optimization",
+      "documentos": 1
+    },
+    {
+      "termo": "performance evaluation",
+      "documentos": 1
+    },
+    {
+      "termo": "portfolio selection",
+      "documentos": 1
+    },
+    {
+      "termo": "prediction",
+      "documentos": 1
+    },
+    {
+      "termo": "probability",
+      "documentos": 1
+    },
+    {
+      "termo": "prognostics prediction",
+      "documentos": 1
+    },
+    {
+      "termo": "projection-encoding",
+      "documentos": 1
+    },
+    {
+      "termo": "proton exchange membrane fuel cells",
+      "documentos": 1
+    },
+    {
+      "termo": "regression",
+      "documentos": 1
+    },
+    {
+      "termo": "reserve pool",
+      "documentos": 1
+    },
+    {
+      "termo": "s&p 500",
+      "documentos": 1
+    },
+    {
+      "termo": "sentiment analysis",
+      "documentos": 1
+    },
+    {
+      "termo": "skewness",
+      "documentos": 1
+    },
+    {
+      "termo": "slr",
+      "documentos": 1
+    },
+    {
+      "termo": "social science data",
+      "documentos": 1
+    },
+    {
+      "termo": "sparrow search algorithm",
+      "documentos": 1
+    },
+    {
+      "termo": "spectral gpt",
+      "documentos": 1
+    },
+    {
+      "termo": "stacked echo state network",
+      "documentos": 1
+    },
+    {
+      "termo": "statistics",
+      "documentos": 1
+    },
+    {
+      "termo": "stock exchange prediction",
+      "documentos": 1
+    },
+    {
+      "termo": "stock market",
+      "documentos": 1
+    },
+    {
+      "termo": "stock market index prediction",
+      "documentos": 1
+    },
+    {
+      "termo": "stock senti wordnet (sswn)",
+      "documentos": 1
+    },
+    {
+      "termo": "stocks",
+      "documentos": 1
+    },
+    {
+      "termo": "stocks price",
+      "documentos": 1
+    },
+    {
+      "termo": "symmetric distribution",
+      "documentos": 1
+    },
+    {
+      "termo": "technical analysis",
+      "documentos": 1
+    },
+    {
+      "termo": "tesla",
+      "documentos": 1
+    },
+    {
+      "termo": "time series analysis",
+      "documentos": 1
+    },
+    {
+      "termo": "time-series forecasting",
+      "documentos": 1
+    },
+    {
+      "termo": "trading",
+      "documentos": 1
+    },
+    {
+      "termo": "transformer",
+      "documentos": 1
+    },
+    {
+      "termo": "volatility",
+      "documentos": 1
+    },
+    {
+      "termo": "volatility prediction",
+      "documentos": 1
+    }
+  ]
+}

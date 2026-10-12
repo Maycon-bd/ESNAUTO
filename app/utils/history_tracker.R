@@ -1,3 +1,17 @@
+# A identidade é local à sessão Shiny; PETR4 mantém os caminhos legados.
+acao_historico <- function() {
+  dominio <- shiny::getDefaultReactiveDomain()
+  if (!is.null(dominio) && is.function(dominio$userData$acao_dataset))
+    return(dominio$userData$acao_dataset())
+  "PETR4"
+}
+
+caminho_por_acao <- function(caminho) {
+  acao <- acao_historico()
+  if (identical(acao, "PETR4")) return(caminho)
+  file.path(dirname(caminho), acao, basename(caminho))
+}
+
 # =============================================================================
 # history_tracker.R — Rastreador e Histórico Persistente de Otimizações do GA
 # Salva em CSV, compara com execuções anteriores e mantém recordes globais
@@ -14,12 +28,12 @@ OBTER_CAMINHO_HISTORICO_CSV <- function() {
   for (cp in caminhos) {
     dir_pai <- dirname(cp)
     if (dir.exists(dir_pai)) {
-      return(cp)
+      return(caminho_por_acao(cp))
     }
   }
   # Fallback: criar no diretório atual
   if (!dir.exists("data")) dir.create("data", recursive = TRUE)
-  return("data/historico_otimizacoes_ga.csv")
+  return(caminho_por_acao("data/historico_otimizacoes_ga.csv"))
 }
 
 # Inicializar o arquivo CSV caso não exista
@@ -182,10 +196,10 @@ OBTER_CAMINHO_HISTORICO_DL_CSV <- function() {
   )
   for (cp in caminhos) {
     dir_pai <- dirname(cp)
-    if (dir.exists(dir_pai)) return(cp)
+    if (dir.exists(dir_pai)) return(caminho_por_acao(cp))
   }
   if (!dir.exists("data")) dir.create("data", recursive = TRUE)
-  return("data/historico_dl_benchmark.csv")
+  return(caminho_por_acao("data/historico_dl_benchmark.csv"))
 }
 
 inicializar_historico_dl_csv <- function() {
@@ -253,29 +267,5 @@ carregar_resultado_dl <- function(modelo = "LSTM") {
     }
   }, error = function(e) {})
   
-  # Baseline oficial TCC caso ainda não haja treino em disco
-  if (modelo == "LSTM") {
-    return(list(
-      modelo = "LSTM",
-      validacao = list(metricas = list(MAE = 0.3812, RMSE = 0.5241)),
-      teste = list(metricas = list(MAE = 0.4521, RMSE = 0.8166, R2 = 0.9839)),
-      tempo = 35.40,
-      epochs = 80,
-      timesteps = 10,
-      units = 50,
-      timestamp = "Oficial TCC"
-    ))
-  } else {
-    return(list(
-      modelo = "GRU",
-      validacao = list(metricas = list(MAE = 0.3125, RMSE = 0.4418)),
-      teste = list(metricas = list(MAE = 0.3566, RMSE = 0.5898, R2 = 0.9912)),
-      tempo = 28.80,
-      epochs = 80,
-      timesteps = 10,
-      units = 50,
-      timestamp = "Oficial TCC"
-    ))
-  }
+  NULL
 }
-

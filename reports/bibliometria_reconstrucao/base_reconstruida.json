@@ -1,0 +1,1469 @@
+{
+  "origem": "Reconstrução a partir dos PDFs e da monografia, com conferência Crossref quando disponível",
+  "n": 34,
+  "n_com_keywords": 24,
+  "dicionario_normalizacao": {
+    "esn": "echo state network",
+    "echo state networks": "echo state network",
+    "recurrent neural networks": "recurrent neural network",
+    "gru model": "gru",
+    "stock data forecast": "stock price forecasting",
+    "stock forecasting": "stock price forecasting"
+  },
+  "documento_sha256": "353bb59df4ed3891fde2cb507667a1bd1c1655806c1f53cd53318c8af395436e",
+  "records": [
+    {
+      "id": "D01",
+      "arquivo_pdf": "Abebe - Asymmetric generalized error distribution with its properties and applications.pdf",
+      "sha256_pdf": "6c09320127ccbfa9c16dbbdcf716b021ab7e82e2c3ac86926db098920514f7d8",
+      "referencia_original": "ABEBE, E.; GOSHU, A. Asymmetric generalized error distribution with its properties and applications. Frontiers in Applied Mathematics and Statistics, v. 10, art. 1398137, 2024. DOI: 10.3389/fams.2024.1398137.",
+      "paragrafo_docx": 516,
+      "title": "Asymmetric generalized error distribution with its properties and applications",
+      "authors": [
+        "Abebe, Tayu Nigusie",
+        "Goshu, Ayele Taye"
+      ],
+      "year": 2024,
+      "ano_referencia_monografia": 2024,
+      "doi": "10.3389/fams.2024.1398137",
+      "source": "Frontiers in Applied Mathematics and Statistics",
+      "type": "article",
+      "abstract": "The main finding of this study is the derivation of a new probability distribution that reveals interesting properties, especially with various asymmetry and kurtosis behavior. We call this distribution the asymmetric generalized error distribution (AGED). AGED is a new contribution to the field of statistical theory, offering more flexible probability density functions, cumulative distribution functions, and hazard functions than the base distribution. The AGED also includes normal, uniform, Laplace, asymmetric Laplace, and generalized error distribution (GED) as special cases. The mathematical and statistical features of the distribution are derived and discussed. Estimators of the parameters of the distribution are obtained using the maximum likelihood approach. In a simulation study, random samples are generated from the new probability distribution to illustrate what ideal data looks like. Using real data from diverse applications such as health, industry, and cybersecurity domains, the performance of the new distribution is compared to that of other distributions. The new distribution is found to be a better fit for the data, showing great adaptability in the context of real data analysis. We expect the distribution to be applied to many more real data, and the findings of the study can be used as a basis for future research in the field.",
+      "notes": [],
+      "keywords_originais": [
+        "AR algorithms",
+        "asymmetric generalized error distribution",
+        "generalized error distribution",
+        "maximum likelihood estimation",
+        "probability",
+        "statistics",
+        "symmetric distribution"
+      ],
+      "keywords_normalizadas": [
+        "ar algorithms",
+        "asymmetric generalized error distribution",
+        "generalized error distribution",
+        "maximum likelihood estimation",
+        "probability",
+        "statistics",
+        "symmetric distribution"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.3389%2Ffams.2024.1398137",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D01.json"
+      },
+      "ano_crossref": 2024
+    },
+    {
+      "id": "D02",
+      "arquivo_pdf": "Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_pdf": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "referencia_original": "ARAÚJO, H. V.; CARDOSO, F. C.; MATTOS, V. L. D.; BORGES, E. N.; LUCCA, G.; DALMAZO, B. L.; BERRI, R. A. Comparing MAE and RMSE as fitness of genetic algorithm for optimizing echo state network hyperparameters with different probabilistic distributions. In: JULIAN, V. et al. (ed.). IDEAL 2024. Cham: Springer, 2024. p. 314-325. (LNCS, v. 15347). DOI: 10.1007/978-3-031-77738-7_26.",
+      "paragrafo_docx": 517,
+      "title": "Comparing MAE and RMSE as Fitness of Genetic Algorithm for Optimizing Echo State Network Hyperparameters with Different Probabilistic Distributions",
+      "authors": [
+        "de Araújo, Henrique Vaz",
+        "Cardoso, Fabian Corrêa",
+        "de Mattos, Viviane Leite Dias",
+        "Borges, Eduardo Nunes",
+        "Lucca, Giancarlo",
+        "Dalmazo, Bruno Lopes",
+        "Berri, Rafael Alceste"
+      ],
+      "year": 2024,
+      "ano_referencia_monografia": 2024,
+      "doi": "10.1007/978-3-031-77738-7_26",
+      "source": "Lecture Notes in Computer Science",
+      "type": "inproceedings",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [
+        "Stock price forecasting",
+        "Financial Time Series",
+        "ESN"
+      ],
+      "keywords_normalizadas": [
+        "echo state network",
+        "financial time series",
+        "stock price forecasting"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.1007%2F978-3-031-77738-7_26",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D02.json"
+      },
+      "ano_crossref": 2024
+    },
+    {
+      "id": "D03",
+      "arquivo_pdf": "Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "referencia_original": "BEHERA, S.; NAYAK, S. C. N.; KUMAR, P. A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Time Series Forecasting. Archives of Computational Methods in Engineering, v. 30, p. 4401-4448, 2023. DOI: 10.1007/s11831-023-09942-9.",
+      "paragrafo_docx": 518,
+      "title": "A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Time Series Forecasting",
+      "authors": [
+        "Behera, Sudersan",
+        "Nayak, Sarat Chandra",
+        "Kumar, A. V. S. Pavan"
+      ],
+      "year": 2023,
+      "ano_referencia_monografia": 2023,
+      "doi": "10.1007/s11831-023-09942-9",
+      "source": "Archives of Computational Methods in Engineering",
+      "type": "article",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [],
+      "keywords_normalizadas": [],
+      "origem_keywords": "Ausente nas páginas iniciais inspecionadas; não inferido",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.1007%2Fs11831-023-09942-9",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D03.json"
+      },
+      "ano_crossref": 2023
+    },
+    {
+      "id": "D04",
+      "arquivo_pdf": "Cardoso -  A data set of stock prices of all companies in B3from 1995 to 2020.pdf",
+      "sha256_pdf": "6409dc381b5eb4889c05cd84177f3ff5487c20cc5a997f87ff3fd9774681e586",
+      "referencia_original": "CARDOSO, F. C.; MALSKA, J. A. V.; RAMIRO, P. J.; LUCCA, G.; BORGES, E. N.; MATTOS, V. L. D.; BERRI, R. A. BovDB: a data set of stock prices of all companies in B3 from 1995 to 2020. Journal of Information and Data Management, v. 13, n. 1, p. 77-94, ago. 2022b.",
+      "paragrafo_docx": 520,
+      "title": "BovDB: a data set of stock prices of all companies in B3 from 1995 to 2020",
+      "authors": [
+        "Corrêa Cardoso, Fabian",
+        "Valverde Malska, Juan Andrey",
+        "Ramiro, Paulo Junior",
+        "Lucca, Giancarlo",
+        "Nunes Borges, Eduardo",
+        "Leite Dias de Mattos, Viviane",
+        "Alceste Berri, Rafael"
+      ],
+      "year": 2022,
+      "ano_referencia_monografia": 2022,
+      "doi": "10.5753/jidm.2022.2345",
+      "source": "Journal of Information and Data Management",
+      "type": "article",
+      "abstract": "Stock markets are responsible for the movement of vast amounts of financial resources worldwide. This market generates a high volume of transaction data, which after being analyzed are very useful for many applications. In this article, we present BovDB, a data set that was built considering a source of the Brazilian Stock Exchange (B3) with information related to the years between 1995 and 2020. We have approached the events’ impact on the stocks byapplying a cumulative factor to correct prices. The results were compared with public data from InfoMoney and BR Investing, showing that our methods, are valid and follow the market standards, based on the proposed factor. BovDBdata set can be used as a benchmark for different applications and it is available in open access for any researcher on GitHub.",
+      "notes": [],
+      "keywords_originais": [
+        "B3",
+        "Data set",
+        "Stocks",
+        "Time series"
+      ],
+      "keywords_normalizadas": [
+        "b3",
+        "data set",
+        "stocks",
+        "time series"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works?query.title=BovDB%3A+a+data+set+of+stock+prices+of+all+companies+in+B3+from+1995+to+2020&rows=3",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D04.json"
+      },
+      "ano_crossref": 2022
+    },
+    {
+      "id": "D05",
+      "arquivo_pdf": "Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.pdf",
+      "sha256_pdf": "703cec38e2b31cc6b2e3f38258db73ef814c238b13f70ffa0b58f23622476a80",
+      "referencia_original": "CHEN, C.; ZHANG, X.; KUO, E.; FU, R.; XIE, Q.; ZHANG, F. Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study. 2025. (Preprint arXiv:2512.06630v2). Submetido ao IEEE Transactions on Quantum Engineering.",
+      "paragrafo_docx": 521,
+      "title": "Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study",
+      "authors": [
+        "Chen, Chi-Sheng",
+        "Zhang, Xinyu",
+        "Kuo, EnJui",
+        "Fu, Rong",
+        "XIE, QIUZHE",
+        "Zhang, Fan"
+      ],
+      "year": 2026,
+      "ano_referencia_monografia": 2025,
+      "doi": "",
+      "source": "arXiv:2512.06630v2",
+      "type": "misc",
+      "abstract": "",
+      "notes": [
+        "DOI de exemplo no template IEEE do PDF foi rejeitado.",
+        "Rodapé do PDF: arXiv:2512.06630v2, 13 Feb 2026; a monografia informa 2025.",
+        "Registro Crossref relacionado não foi usado como DOI da versão preprint local."
+      ],
+      "keywords_originais": [],
+      "keywords_normalizadas": [],
+      "origem_keywords": "Ausente nas páginas iniciais inspecionadas; não inferido",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works?query.title=Quantum+Temporal+Convolutional+Neural+Networks+for+Cross-Sectional+Equity+Return+Prediction%3A+A+Comparative+Benchmark+Study&rows=3",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D05.json"
+      },
+      "doi_versao_relacionada_crossref": "10.2139/ssrn.6946091",
+      "ano_crossref": 2026
+    },
+    {
+      "id": "D06",
+      "arquivo_pdf": "Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.pdf",
+      "sha256_pdf": "8bb4b1967da28dc961a42231543f70cdf22fc798527b1724c7f1e7cd5714bde6",
+      "referencia_original": "CORTESI, F.; IANNONE, G.; CRIPPA, G.; POGGIO, T.; BENEVENTANO, P. Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series. [Preprint], 2025.",
+      "paragrafo_docx": 523,
+      "title": "Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series",
+      "authors": [
+        "CORTESI, F",
+        "IANNONE, G",
+        "CRIPPA, G",
+        "POGGIO, T",
+        "BENEVENTANO, P"
+      ],
+      "year": 2026,
+      "ano_referencia_monografia": 2025,
+      "doi": "",
+      "source": "arXiv:2603.02620v1",
+      "type": "misc",
+      "abstract": "",
+      "notes": [
+        "Rodapé do PDF: arXiv:2603.02620v1, 3 Mar 2026; a monografia informa 2025.",
+        "Resultado Crossref não aceito automaticamente: título ou autoria não reconciliados."
+      ],
+      "keywords_originais": [],
+      "keywords_normalizadas": [],
+      "origem_keywords": "Ausente nas páginas iniciais inspecionadas; não inferido",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Conferência local; enriquecimento externo pendente",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works?query.title=Same+Error%2C+Different+Function%3A+The+Optimizer+as+an+Implicit+Prior+in+Financial+Time+Series&rows=3",
+        "data": "2026-10-12",
+        "similaridade_titulo": 0.5731,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D06.json"
+      }
+    },
+    {
+      "id": "D07",
+      "arquivo_pdf": "Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256_pdf": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "referencia_original": "COSTA, G. D.; LUNKES, R. J. Aplicação de algoritmo de aprendizado de máquina (AM) para previsão do comportamento das ações negociadas no mercado brasileiro. Contabilidad y Negocios, v. 20, n. esp., p. 48-70, 2025. DOI: 10.18800/contabilidad.2025ESP.002.",
+      "paragrafo_docx": 524,
+      "title": "Aplicação de algoritmo de aprendizado de máquina (AM) para previsão do comportamento das ações negociadas no mercado brasileiro",
+      "authors": [
+        "COSTA, G. D",
+        "LUNKES, R. J"
+      ],
+      "year": 2025,
+      "ano_referencia_monografia": 2025,
+      "doi": "10.18800/contabilidad.2025ESP.002",
+      "source": "Contabilidad y Negocios",
+      "type": "article",
+      "abstract": "",
+      "notes": [
+        "Resultado Crossref não aceito automaticamente: título ou autoria não reconciliados."
+      ],
+      "keywords_originais": [
+        "machine learning",
+        "portfolio selection",
+        "technical analysis",
+        "fundamental analysis"
+      ],
+      "keywords_normalizadas": [
+        "fundamental analysis",
+        "machine learning",
+        "portfolio selection",
+        "technical analysis"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Conferência local; enriquecimento externo pendente",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.18800%2Fcontabilidad.2025ESP.002",
+        "data": "2026-10-12",
+        "similaridade_titulo": 0.3492,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D07.json"
+      }
+    },
+    {
+      "id": "D08",
+      "arquivo_pdf": "Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_pdf": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "referencia_original": "DENG, Z.; CHEN, Q.; ZHANG, L.; ZHOU, K.; ZONG, Y.; LIU, H.; LI, J.; MA, L. Degradation prediction of PEMFCs using stacked echo state network based on genetic algorithm optimization. IEEE Transactions on Transportation Electrification, v. 8, n. 1, p. 1454-1466, 2022. DOI: 10.1109/TTE.2021.3111906.",
+      "paragrafo_docx": 525,
+      "title": "Degradation Prediction of PEMFCs Using Stacked Echo State Network Based on Genetic Algorithm Optimization",
+      "authors": [
+        "Deng, Zhihua",
+        "Chen, Qihong",
+        "Zhang, Liyan",
+        "Zhou, Keliang",
+        "Zong, Yi",
+        "Liu, Hao",
+        "Li, Jishen",
+        "Ma, Longhua"
+      ],
+      "year": 2022,
+      "ano_referencia_monografia": 2022,
+      "doi": "10.1109/tte.2021.3111906",
+      "source": "IEEE Transactions on Transportation Electrification",
+      "type": "article",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [
+        "Proton exchange membrane fuel cells",
+        "prognostics prediction",
+        "stacked echo state network",
+        "genetic algorithm",
+        "projection-encoding"
+      ],
+      "keywords_normalizadas": [
+        "genetic algorithm",
+        "prognostics prediction",
+        "projection-encoding",
+        "proton exchange membrane fuel cells",
+        "stacked echo state network"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.1109%2FTTE.2021.3111906",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D08.json"
+      },
+      "ano_crossref": 2022
+    },
+    {
+      "id": "D09",
+      "arquivo_pdf": "Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+      "sha256_pdf": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48",
+      "referencia_original": "DEWICK, P. R. On Financial Distributions Modelling Methods: Application on Regression Models for Time Series. Journal of Risk and Financial Management, v. 15, n. 10, art. 461, 2022. DOI: 10.3390/jrfm15100461.",
+      "paragrafo_docx": 527,
+      "title": "On Financial Distributions Modelling Methods: Application on Regression Models for Time Series",
+      "authors": [
+        "Dewick, Paul R."
+      ],
+      "year": 2022,
+      "ano_referencia_monografia": 2022,
+      "doi": "10.3390/jrfm15100461",
+      "source": "Journal of Risk and Financial Management",
+      "type": "article",
+      "abstract": "The financial market is a complex system with chaotic behavior that can lead to wild swings within the financial system. This can drive the system into a variety of interesting phenomenon such as phase transitions, bubbles, and crashes, and so on. Of interest in financial modelling is identifying the distribution and the stylized facts of a particular time series, as the distribution and stylized facts can determine if volatility is present, resulting in financial risk and contagion. Regression modelling has been used within this study as a methodology to identify the goodness-of-fit between the original and generated time series model, which serves as a criterion for model selection. Different time series modelling methods that include the common Box–Jenkins ARIMA, ARMA-GARCH type methods, the Geometric Brownian Motion type models and Tsallis entropy based models when data size permits, can use this methodology in model selection. Determining the time series distribution and stylized facts has utility, as the distribution allows for further modelling opportunities such as bivariate regression and copula modelling, apart from the usual forecasting. Determining the distribution and stylized facts also allows for the identification of the parameters that are used within a Geometric Brownian Motion forecasting model. This study has used the Carbon Emissions Futures price between the dates of 1 May 2012 and 1 May 2022, to highlight this application of regression modelling.",
+      "notes": [],
+      "keywords_originais": [
+        "time series",
+        "regression",
+        "distribution",
+        "volatility",
+        "goodness-of-fit"
+      ],
+      "keywords_normalizadas": [
+        "distribution",
+        "goodness-of-fit",
+        "regression",
+        "time series",
+        "volatility"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.3390%2Fjrfm15100461",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D09.json"
+      },
+      "ano_crossref": 2022
+    },
+    {
+      "id": "D10",
+      "arquivo_pdf": "Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+      "sha256_pdf": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7",
+      "referencia_original": "DUTTILO, P; GATTONE, S. A. Modelling Financial Returns with Finite Mixtures of GED. 51st Scientific Meeting of the Italian Statistical Society, p. 1364-1369, 2022. Università degli Studi “G. d’Annunzio” Chieti-Pescara.",
+      "paragrafo_docx": 529,
+      "title": "Modelling Financial Returns with Finite Mixtures of GED",
+      "authors": [
+        "DUTTILO, P",
+        "GATTONE, S. A"
+      ],
+      "year": 2022,
+      "ano_referencia_monografia": 2022,
+      "doi": "",
+      "source": "51st Scientific Meeting of the Italian Statistical Society (SIS 2022)",
+      "type": "inproceedings",
+      "abstract": "",
+      "notes": [
+        "Ano 2022 conforme referência e edição SIS 2022; a Tabela 2 informa 2023b.",
+        "Resultado Crossref não aceito automaticamente: título ou autoria não reconciliados."
+      ],
+      "keywords_originais": [
+        "daily financial returns",
+        "excess kurtosis",
+        "skewness",
+        "finite mixtures of GED"
+      ],
+      "keywords_normalizadas": [
+        "daily financial returns",
+        "excess kurtosis",
+        "finite mixtures of ged",
+        "skewness"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Conferência local; enriquecimento externo pendente",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works?query.title=Modelling+Financial+Returns+with+Finite+Mixtures+of+GED&rows=3",
+        "data": "2026-10-12",
+        "similaridade_titulo": 0.4337,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D10.json"
+      }
+    },
+    {
+      "id": "D11",
+      "arquivo_pdf": "Duttilo P - Modelling financial returns with mixtures of generalized normal distributions.pdf",
+      "sha256_pdf": "1cff61a7865858c443b72d28b3f76d0377f24bc387f4b4b7dbcbe644e552d54c",
+      "referencia_original": "DUTTILO, P. Modelling Financial Returns with Mixtures of Generalized Normal Distributions. 2023. Tese (Doutorado em Human Science — Economics and Statistics) — Università degli Studi “G. d’Annunzio” Chieti-Pescara, 2023. Tutor: Prof. Stefano Antonio Gattone; Coordenador: Prof. Marco Di Marzio.",
+      "paragrafo_docx": 528,
+      "title": "Modelling Financial Returns with Mixtures of Generalized Normal Distributions",
+      "authors": [
+        "DUTTILO, P"
+      ],
+      "year": 2023,
+      "ano_referencia_monografia": 2023,
+      "doi": "",
+      "source": "Università degli Studi G. d'Annunzio Chieti-Pescara",
+      "type": "phdthesis",
+      "abstract": "",
+      "notes": [
+        "Tese de doutorado, e não artigo.",
+        "Resultado Crossref não aceito automaticamente: título ou autoria não reconciliados."
+      ],
+      "keywords_originais": [],
+      "keywords_normalizadas": [],
+      "origem_keywords": "Ausente nas páginas iniciais inspecionadas; não inferido",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Conferência local; enriquecimento externo pendente",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works?query.title=Modelling+Financial+Returns+with+Mixtures+of+Generalized+Normal+Distributions&rows=3",
+        "data": "2026-10-12",
+        "similaridade_titulo": 0.4372,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D11.json"
+      }
+    },
+    {
+      "id": "D12",
+      "arquivo_pdf": "Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256_pdf": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "referencia_original": "ECER, F.; ARDABILI, S.; BAND, S. S.; MOSAVI, A. Training Multilayer Perceptron with Genetic Algorithms and Particle Swarm Optimization for Modeling Stock Price Index Prediction. Entropy, v. 22, n. 11, art. 1239, 2020. DOI: 10.3390/e22111239.",
+      "paragrafo_docx": 530,
+      "title": "Training Multilayer Perceptron with Genetic Algorithms and Particle Swarm Optimization for Modeling Stock Price Index Prediction",
+      "authors": [
+        "Ecer, Fatih",
+        "Ardabili, Sina",
+        "Band, Shahab S.",
+        "Mosavi, Amir"
+      ],
+      "year": 2020,
+      "ano_referencia_monografia": 2020,
+      "doi": "10.3390/e22111239",
+      "source": "Entropy",
+      "type": "article",
+      "abstract": "Predicting stock market (SM) trends is an issue of great interest among researchers, investors and traders since the successful prediction of SMs’ direction may promise various benefits. Because of the fairly nonlinear nature of the historical data, accurate estimation of the SM direction is a rather challenging issue. The aim of this study is to present a novel machine learning (ML) model to forecast the movement of the Borsa Istanbul (BIST) 100 index. Modeling was performed by multilayer perceptron–genetic algorithms (MLP–GA) and multilayer perceptron–particle swarm optimization (MLP–PSO) in two scenarios considering Tanh (x) and the default Gaussian function as the output function. The historical financial time series data utilized in this research is from 1996 to 2020, consisting of nine technical indicators. Results are assessed using Root Mean Square Error (RMSE), Mean Absolute Percentage Error (MAPE) and correlation coefficient values to compare the accuracy and performance of the developed models. Based on the results, the involvement of the Tanh (x) as the output function, improved the accuracy of models compared with the default Gaussian function, significantly. MLP–PSO with population size 125, followed by MLP–GA with population size 50, provided higher accuracy for testing, reporting RMSE of 0.732583 and 0.733063, MAPE of 28.16%, 29.09% and correlation coefficient of 0.694 and 0.695, respectively. According to the results, using the hybrid ML method could successfully improve the prediction accuracy.",
+      "notes": [
+        "Referência anterior ao recorte; mantida como fonte complementar para análise do conjunto."
+      ],
+      "keywords_originais": [
+        "stock market",
+        "machine learning",
+        "multilayer perceptron",
+        "financial data",
+        "artificial intelligence",
+        "artificial neural networks",
+        "online trading",
+        "big data",
+        "social science data",
+        "evolutionary algorithms",
+        "optimization"
+      ],
+      "keywords_normalizadas": [
+        "artificial intelligence",
+        "artificial neural networks",
+        "big data",
+        "evolutionary algorithms",
+        "financial data",
+        "machine learning",
+        "multilayer perceptron",
+        "online trading",
+        "optimization",
+        "social science data",
+        "stock market"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "Referências anteriores ao recorte",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.3390%2Fe22111239",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D12.json"
+      },
+      "ano_crossref": 2020
+    },
+    {
+      "id": "D13",
+      "arquivo_pdf": "Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256_pdf": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "referencia_original": "HARIHARAN, S.; SURESH, R.; CHANDRASEKAR, V. K. Multivariate time series prediction using clustered echo state network. The European Physical Journal Plus, v. 140, art. 1133, 2025. DOI: 10.1140/epjp/s13360-025-07077-3.",
+      "paragrafo_docx": 532,
+      "title": "Multivariate time series prediction using clustered echo state network",
+      "authors": [
+        "Hariharan, S.",
+        "Suresh, R.",
+        "Chandrasekar, V. K."
+      ],
+      "year": 2025,
+      "ano_referencia_monografia": 2025,
+      "doi": "10.1140/epjp/s13360-025-07077-3",
+      "source": "The European Physical Journal Plus",
+      "type": "article",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [],
+      "keywords_normalizadas": [],
+      "origem_keywords": "Ausente nas páginas iniciais inspecionadas; não inferido",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.1140%2Fepjp%2Fs13360-025-07077-3",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D13.json"
+      },
+      "ano_crossref": 2025
+    },
+    {
+      "id": "D14",
+      "arquivo_pdf": "Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256_pdf": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "referencia_original": "HASSAAN, Z. A.; YACOUB, M. H.; SAID, L. A. FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction. Machine Learning and Knowledge Extraction, v. 7, art. 160, 2025. DOI: 10.3390/make7040160.",
+      "paragrafo_docx": 533,
+      "title": "FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction",
+      "authors": [
+        "Hassaan, Zeinab A.",
+        "Yacoub, Mohammed H.",
+        "Said, Lobna A."
+      ],
+      "year": 2025,
+      "ano_referencia_monografia": 2025,
+      "doi": "10.3390/make7040160",
+      "source": "Machine Learning and Knowledge Extraction",
+      "type": "article",
+      "abstract": "Improving financial time series forecasting presents challenges because models often struggle to identify diverse fault patterns in unseen data. This issue is critical in fintech, where accurate and reliable forecasting of financial data is essential for effective risk management and informed investment strategies. This work addresses these challenges by initializing the weights and biases of two proposed models, Gated Recurrent Units (GRUs) and the Echo State Network (ESN), with different chaotic sequences to enhance prediction accuracy and capabilities. We compare reservoir computing (RC) and recurrent neural network (RNN) models with and without the integration of chaotic systems, utilizing standard initialization. The models are validated on six different datasets, including the 500 largest publicly traded companies in the US (S&P500), the Irish Stock Exchange Quotient (ISEQ) dataset, the XAU and USD forex pair (XAU/USD), the USD and JPY forex pair with respect to the currency exchange rate (USD/JPY), Chinese daily stock prices, and the top 100 index of UK companies (FTSE 100). The ESN model, combined with the Lorenz system, achieves the lowest error among other models, reinforcing the effectiveness of chaos-trained models for prediction. The proposed ESN model, accelerated by the Kintex-Ultrascale KCU105 FPGA board, achieves a maximum frequency of 83.5 MHz and a power consumption of 0.677 W. The results of the hardware simulation align with MATLAB R2025b fixed-point analysis.",
+      "notes": [],
+      "keywords_originais": [
+        "reservoir computing",
+        "echo state network",
+        "recurrent neural network",
+        "chaotic systems",
+        "hardware accelerator",
+        "field programmable gate array"
+      ],
+      "keywords_normalizadas": [
+        "chaotic systems",
+        "echo state network",
+        "field programmable gate array",
+        "hardware accelerator",
+        "recurrent neural network",
+        "reservoir computing"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.3390%2Fmake7040160",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D14.json"
+      },
+      "ano_crossref": 2025
+    },
+    {
+      "id": "D15",
+      "arquivo_pdf": "Jaeger - Echo state network.pdf",
+      "sha256_pdf": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "referencia_original": "JAEGER, Herbert. Echo state network. Scholarpedia, v. 2, n. 9, p. 2330, 2007. DOI: 10.4249/scholarpedia.2330.",
+      "paragrafo_docx": 537,
+      "title": "Echo state network",
+      "authors": [
+        "Jaeger, Herbert"
+      ],
+      "year": 2007,
+      "ano_referencia_monografia": 2007,
+      "doi": "10.4249/scholarpedia.2330",
+      "source": "Scholarpedia",
+      "type": "article",
+      "abstract": "",
+      "notes": [
+        "Referência anterior ao recorte; mantida como fonte complementar para análise do conjunto."
+      ],
+      "keywords_originais": [],
+      "keywords_normalizadas": [],
+      "origem_keywords": "Ausente nas páginas iniciais inspecionadas; não inferido",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "Referências anteriores ao recorte",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.4249%2Fscholarpedia.2330",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D15.json"
+      },
+      "ano_crossref": 2007
+    },
+    {
+      "id": "D16",
+      "arquivo_pdf": "Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256_pdf": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "referencia_original": "KUMAR, K. Forecasting Crude Oil Prices Using Reservoir Computing Models. Computational Economics, v. 66, p. 2543-2563, 2025. DOI: 10.1007/s10614-024-10797-w.",
+      "paragrafo_docx": 538,
+      "title": "Forecasting Crude Oil Prices Using Reservoir Computing Models",
+      "authors": [
+        "Kumar, Kaushal"
+      ],
+      "year": 2025,
+      "ano_referencia_monografia": 2025,
+      "doi": "10.1007/s10614-024-10797-w",
+      "source": "Computational Economics",
+      "type": "article",
+      "abstract": "Abstract Accurate forecasting of crude oil prices is crucial for informed financial decision-making. This study presents a cutting-edge Reservoir Computing (RC) model specifically designed for precise crude oil price predictions, outperforming traditional methods such as ARIMA, LSTM, and GRU. Using daily closing prices from major indices spanning January 2010 to December 2023, we conducted a thorough evaluation. The RC model consistently demonstrates superior accuracy and computational efficiency. Quantitative metrics reveal the RC model’s dominance with a Mean Absolute Error (MAE) of 0.0094, Mean Squared Error (MSE) of 0.00035, Root Mean Squared Error (RMSE) of 0.0196, and a notably low Mean Absolute Percentage Error (MAPE) of $$1.450\\%$$ 1.450 % . Additionally, the RC model’s runtime of 1.11 s underscores its computational efficiency, far surpassing ARIMA (493.22 s), LSTM (423.55 s), and GRU (15.73 s). During periods of economic disruption, such as the COVID-19 lockdowns, the RC model effectively captured sharp price fluctuations, highlighting its robust forecasting capability. These findings emphasize the RC model’s potential as a reliable tool for enhancing decision-making processes in the dynamic energy market, particularly for real-time applications such as infectious disease case count forecasting. This study advocates for the broader adoption of Reservoir Computing models to improve predictive accuracy and operational efficiency in energy economics.",
+      "notes": [
+        "Ano Crossref 2024 difere de 2025; ano local preservado para a versão do PDF."
+      ],
+      "keywords_originais": [
+        "Crude oil prices",
+        "Time series analysis",
+        "Reservoir computing",
+        "Financial market prediction",
+        "Forecasting"
+      ],
+      "keywords_normalizadas": [
+        "crude oil prices",
+        "financial market prediction",
+        "forecasting",
+        "reservoir computing",
+        "time series analysis"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.1007%2Fs10614-024-10797-w",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D16.json"
+      },
+      "ano_crossref": 2024
+    },
+    {
+      "id": "D17",
+      "arquivo_pdf": "Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+      "sha256_pdf": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+      "referencia_original": "LIU, H.; LIN, Z.; ROJAS, R. R. Enhancing Trading Performance Through Sentiment Analysis with Large Language Models: Evidence from the S&P 500. 2025. (Preprint arXiv:2507.09739).",
+      "paragrafo_docx": 541,
+      "title": "Enhancing Trading Performance Through Sentiment Analysis with Large Language Models: Evidence from the S&P 500",
+      "authors": [
+        "LIU, H",
+        "LIN, Z",
+        "ROJAS, R. R"
+      ],
+      "year": 2025,
+      "ano_referencia_monografia": 2025,
+      "doi": "",
+      "source": "arXiv:2507.09739v1",
+      "type": "misc",
+      "abstract": "",
+      "notes": [
+        "Resultado Crossref não aceito automaticamente: título ou autoria não reconciliados."
+      ],
+      "keywords_originais": [
+        "S&P 500",
+        "sentiment analysis",
+        "large language model",
+        "time-series forecasting",
+        "trading"
+      ],
+      "keywords_normalizadas": [
+        "large language model",
+        "s&p 500",
+        "sentiment analysis",
+        "time-series forecasting",
+        "trading"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Conferência local; enriquecimento externo pendente",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works?query.title=Enhancing+Trading+Performance+Through+Sentiment+Analysis+with+Large+Language+Models%3A+Evidence+from+the+S%26P+500&rows=3",
+        "data": "2026-10-12",
+        "similaridade_titulo": 0.6706,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D17.json"
+      }
+    },
+    {
+      "id": "D18",
+      "arquivo_pdf": "Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+      "sha256_pdf": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac",
+      "referencia_original": "LIU, B.; XIE, Y.; JIANG, X.; YE, Y.; SONG, T.; CHAI, J.; TANG, Q.; FENG, M. Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators. Optics Express, v. 30, n. 13, p. 23359-23381, 2022. DOI: 10.1364/OE.454973.",
+      "paragrafo_docx": 540,
+      "title": "Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators",
+      "authors": [
+        "Liu, Bocheng",
+        "Xie, Yiyuan",
+        "Jiang, Xiao",
+        "Ye, Yichen",
+        "Song, Tingting",
+        "Chai, Junxiong",
+        "Tang, Qianfeng",
+        "Feng, Manying"
+      ],
+      "year": 2022,
+      "ano_referencia_monografia": 2022,
+      "doi": "10.1364/oe.454973",
+      "source": "Optics Express",
+      "type": "article",
+      "abstract": "The essence of stock market forecasting is to reveal the intrinsic operation rules of stock market, however it is a terribly arduous challenge for investors. The application of nanophotonic technology in the intelligence field provides a new approach for stock market forecasting with its unique advantages. In this work, a novel nanophotonic reservoir computing (RC) system based on silicon optomechanical oscillators (OMO) with photonic crystal (PhC) cavities for stock market forecasting is implemented. The long-term closing prices of four representative stock indexes are accurately forecast with small prediction errors, and the forecasting results with distinct characteristics are exhibited in the mature stock market and emerging stock market separately. Our work offers solutions and suggestions for surmounting the concept drift problem in stock market environment. The comprehensive influence of RC parameters on forecasting performance are displayed via the mapping diagrams, while some intriguing results indicate that the mature stock markets are more sensitive to the variation of RC parameters than the emerging stock markets. Furthermore, the direction trend forecasting results illustrate that our system has certain direction forecasting ability. Additionally, the stock forecasting problem with short listing time and few data in the stock market is solved through transfer learning (TL) in stock sector. The generalization ability (GA) of our nanophotonic reservoir computing system is also verified via four stocks in the same region and industry. Therefore, our work contributes to a novel RC model for stock market forecasting in the nanophotonic field, and provides a new prototype system for more applications in the intelligent information processing field.",
+      "notes": [],
+      "keywords_originais": [],
+      "keywords_normalizadas": [],
+      "origem_keywords": "Ausente nas páginas iniciais inspecionadas; não inferido",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.1364%2FOE.454973",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D18.json"
+      },
+      "ano_crossref": 2022
+    },
+    {
+      "id": "D19",
+      "arquivo_pdf": "Millea - Explorations in Echo State Network.pdf",
+      "sha256_pdf": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+      "referencia_original": "MILLEA, A. Explorations in echo state networks. 2014. Dissertação (Mestrado em Ciência da Computação) – University of Groningen, Holanda, 2014.",
+      "paragrafo_docx": 543,
+      "title": "Explorations in echo state networks",
+      "authors": [
+        "MILLEA, A"
+      ],
+      "year": 2014,
+      "ano_referencia_monografia": 2014,
+      "doi": "",
+      "source": "University of Groningen",
+      "type": "mastersthesis",
+      "abstract": "",
+      "notes": [
+        "Dissertação de mestrado, e não artigo.",
+        "Referência anterior ao recorte; mantida como fonte complementar para análise do conjunto.",
+        "Resultado Crossref não aceito automaticamente: título ou autoria não reconciliados."
+      ],
+      "keywords_originais": [],
+      "keywords_normalizadas": [],
+      "origem_keywords": "Ausente nas páginas iniciais inspecionadas; não inferido",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "grupo_temporal": "Referências anteriores ao recorte",
+      "identificacao_status": "Conferência local; enriquecimento externo pendente",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works?query.title=Explorations+in+echo+state+networks&rows=3",
+        "data": "2026-10-12",
+        "similaridade_titulo": 0.7273,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D19.json"
+      }
+    },
+    {
+      "id": "D20",
+      "arquivo_pdf": "Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+      "sha256_pdf": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+      "referencia_original": "NELSON, D. B. Conditional Heteroskedasticity in Asset Returns: A New Approach. Econometrica, v. 59, n. 2, p. 347-370, mar. 1991.",
+      "paragrafo_docx": 544,
+      "title": "Conditional Heteroskedasticity in Asset Returns: A New Approach",
+      "authors": [
+        "Nelson, Daniel B."
+      ],
+      "year": 1991,
+      "ano_referencia_monografia": 1991,
+      "doi": "10.2307/2938260",
+      "source": "Econometrica",
+      "type": "article",
+      "abstract": "",
+      "notes": [
+        "Metadados locais apoiados na referência do DOCX; PDF inicial requer OCR.",
+        "Referência anterior ao recorte; mantida como fonte complementar para análise do conjunto."
+      ],
+      "keywords_originais": [],
+      "keywords_normalizadas": [],
+      "origem_keywords": "Ausente nas páginas iniciais inspecionadas; não inferido",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "Referências anteriores ao recorte",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works?query.title=Conditional+Heteroskedasticity+in+Asset+Returns%3A+A+New+Approach&rows=3",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D20.json"
+      },
+      "ano_crossref": 1991
+    },
+    {
+      "id": "D21",
+      "arquivo_pdf": "Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+      "sha256_pdf": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+      "referencia_original": "PING, Tongji. Forecasting Financial Market Volatility: Methodologies, Challenges, and Implications. Journal of Stock & Forex Trading, v. 10, n. 2, art. 239, 2023. DOI: 10.35248/2168-9458.23.10.239.",
+      "paragrafo_docx": 546,
+      "title": "Forecasting Financial Market Volatility: Methodologies, Challenges, and Implications",
+      "authors": [
+        "PING, Tongji"
+      ],
+      "year": 2023,
+      "ano_referencia_monografia": 2023,
+      "doi": "10.35248/2168-9458.23.10.239",
+      "source": "Journal of Stock & Forex Trading",
+      "type": "article",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [],
+      "keywords_normalizadas": [],
+      "origem_keywords": "Ausente nas páginas iniciais inspecionadas; não inferido",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Conferência local; enriquecimento externo pendente"
+    },
+    {
+      "id": "D22",
+      "arquivo_pdf": "Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_pdf": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "referencia_original": "SEDDIK, S; ROUTAIB, H.; ELHADDADI, A. Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System. International Journal of Computational Methods and Experimental Measurements, v. 11, n. 4, p. 193-203, 2023. DOI: 10.18280/ijcmem.110401.",
+      "paragrafo_docx": 548,
+      "title": "Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System",
+      "authors": [
+        "Seddik, Soukaina",
+        "Routaib, Hayat",
+        "Elhaddadi, Anass"
+      ],
+      "year": 2023,
+      "ano_referencia_monografia": 2023,
+      "doi": "10.18280/ijcmem.110401",
+      "source": "International Journal of Computational Methods and Experimental Measurements",
+      "type": "article",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [
+        "neural network",
+        "deep learning",
+        "Lorenz system",
+        "echo state network",
+        "reservoir computing",
+        "prediction"
+      ],
+      "keywords_normalizadas": [
+        "deep learning",
+        "echo state network",
+        "lorenz system",
+        "neural network",
+        "prediction",
+        "reservoir computing"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.18280%2Fijcmem.110401",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D22.json"
+      },
+      "ano_crossref": 2023
+    },
+    {
+      "id": "D23",
+      "arquivo_pdf": "Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_pdf": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "referencia_original": "SHARMA, M.; SARTOR, E.; CAVAZZA, M.; PRENDINGER, H.. Echo State Networks for Bitcoin Time Series Prediction. Neural Information Processing (ICONIP 2025). 2025. (Preprint arXiv:2508.05416).",
+      "paragrafo_docx": 549,
+      "title": "Echo State Networks for Bitcoin Time Series Prediction",
+      "authors": [
+        "Sharma, Mansi",
+        "Sartor, Enrico",
+        "Cavazza, Marc",
+        "Prendinger, Helmut"
+      ],
+      "year": 2025,
+      "ano_referencia_monografia": 2025,
+      "doi": "",
+      "source": "arXiv:2508.05416; preprint",
+      "type": "misc",
+      "abstract": "",
+      "notes": [
+        "Registro Crossref relacionado não foi usado como DOI da versão preprint local."
+      ],
+      "keywords_originais": [
+        "chaotic time series",
+        "cryptocurrency forecasting",
+        "echo state networks",
+        "lyapunov exponent"
+      ],
+      "keywords_normalizadas": [
+        "chaotic time series",
+        "cryptocurrency forecasting",
+        "echo state network",
+        "lyapunov exponent"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works?query.title=Echo+State+Networks+for+Bitcoin+Time+Series+Prediction&rows=3",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D23.json"
+      },
+      "doi_versao_relacionada_crossref": "10.1007/978-981-95-4109-6_25",
+      "ano_crossref": 2025
+    },
+    {
+      "id": "D24",
+      "arquivo_pdf": "Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "referencia_original": "SOLTANI, R.; BENMOHAMED, E.; LTIFI, H. Echo State Network Optimization: A Systematic Literature Review. Neural Processing Letters, 2023.",
+      "paragrafo_docx": 550,
+      "title": "Echo State Network Optimization: A Systematic Literature Review",
+      "authors": [
+        "Soltani, Rebh",
+        "Benmohamed, Emna",
+        "Ltifi, Hela"
+      ],
+      "year": 2022,
+      "ano_referencia_monografia": 2023,
+      "doi": "10.21203/rs.3.rs-1909702/v1",
+      "source": "Research Square; preprint v1",
+      "type": "misc",
+      "abstract": "Abstract In the recent years, numerous studies have demonstrated the importance and efficiency of Reservoir Computing (RC) approaches. The choice of parameters and architecture in reservoir computing, on the other hand, frequently leads to an optimization task. This paper attempts to present an overview of the related work on Echo State Network (ESN) optimization and to collect research papers through a systematic Literature Review (SLR). This review covers 74 items published since 2004 and 2021 that are concerned with the issue of our focus. The collected papers are selected, analysed and reported. The results indicate that there are two techniques of parameters optimization (bio-inspired and non-bio-inspired methods) have been extensively used for various reasons. But the bio-inspired ones are the greatest. The potential use of Particle Swarm Optimization (PSO) has also been noted. A significant portion of the research done in this field focuses on the study of reservoirs and how they behave in relation to their unique qualities. In order to test reservoirs with varied parameters, topologies, or training techniques, NARMA, the Mackey glass, and Lorenz time-series prediction dataset are the most commonly employed in the literature. This research debate diverse point of view about ESN's hyper-parameter optimization, metrics, datasets, evaluation measures, and bio-inspired and non-bio-inspired techniques, this paper identifies and explores a number of research gaps.",
+      "notes": [
+        "PDF v1 de 2022; a monografia cita publicação de 2023. Análise usa a versão disponível."
+      ],
+      "keywords_originais": [
+        "Echo State Network",
+        "methods",
+        "Optimization",
+        "parameters",
+        "Reservoir Computing",
+        "SLR"
+      ],
+      "keywords_normalizadas": [
+        "echo state network",
+        "methods",
+        "optimization",
+        "parameters",
+        "reservoir computing",
+        "slr"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.21203%2Frs.3.rs-1909702%2Fv1",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D24.json"
+      },
+      "ano_crossref": 2022
+    },
+    {
+      "id": "D25",
+      "arquivo_pdf": "Sudiatmika - Comparison of LSTM and GRU Models Performance.pdf",
+      "sha256_pdf": "610bedfb14458d480dfd1adb4e89a8ff39487fe2e9b5a7eb3411e87e519af1fc",
+      "referencia_original": "SUDIATMIKA, I. P. G. A.; PUTRA, I M. Agus Wirahadi. Comparison of LSTM and GRU Models Performance in Forecasting Gold Prices: A Case Study Using Historical Data from Yahoo Finance. ARRUS Journal of Engineering and Technology, v. 4, n. 1, p. 157-165, 2024. DOI: 10.35877/jetech2760.",
+      "paragrafo_docx": 551,
+      "title": "Comparison of LSTM and GRU Models Performance in Forecasting Gold Prices: A Case Study Using Historical Data from Yahoo Finance",
+      "authors": [
+        "Sudiatmika, I Putu Gede Abdi",
+        "Putra, I Made Agus Wirahadi"
+      ],
+      "year": 2024,
+      "ano_referencia_monografia": 2024,
+      "doi": "10.35877/jetech2760",
+      "source": "ARRUS Journal of Engineering and Technology",
+      "type": "article",
+      "abstract": "This research aims to compare the performance of two types of recurrent neural network models, Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU), in forecasting gold prices based on historical closing price data. Historical gold price data from December 14, 2017, to March 14, 2024, was downloaded using the yfinance library. The data was normalized using MinMaxScaler and split into training and testing sets with an 80:20 ratio. LSTM and GRU models were constructed with two recurrent layers followed by a Dense layer for output. Both models were trained using the training data and evaluated using Mean Squared Error (MSE), Mean Absolute Error (MAE), and R-squared (R2) metrics. The experimental results indicate that the GRU model outperformed the LSTM model in predicting gold prices. GRU achieved an MSE of 337.70, MAE of 14.05, and R2 of 0.933, whereas LSTM achieved an MSE of 808.98, MAE of 22.71, and R2 of 0.839. Based on the model performance evaluation, it can be concluded that GRU consistently produced more accurate predictions closer to the actual values of gold prices compared to LSTM. This finding suggests that GRU may be a preferable choice in applications for forecasting gold prices using historical data.",
+      "notes": [],
+      "keywords_originais": [
+        "LSTM",
+        "GRU",
+        "gold prices",
+        "forecasting",
+        "recurrent neural networks",
+        "performance evaluation"
+      ],
+      "keywords_normalizadas": [
+        "forecasting",
+        "gold prices",
+        "gru",
+        "lstm",
+        "performance evaluation",
+        "recurrent neural network"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.35877%2Fjetech2760",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D25.json"
+      },
+      "ano_crossref": 2024
+    },
+    {
+      "id": "D26",
+      "arquivo_pdf": "Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256_pdf": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "referencia_original": "SUN, G.; LIN, J.; YANG, C.; YIN, X.; LI, Z.; GUO, P.; SUN, J.; FAN, X.; PAN, B. Stock Price Forecasting: An Echo State Network Approach. Computer Systems Science and Engineering, v. 36, n. 3, p. 509-520, 2021. DOI: 10.32604/csse.2021.014189.",
+      "paragrafo_docx": 552,
+      "title": "Stock Price Forecasting: An Echo State Network Approach",
+      "authors": [
+        "Sun, Guang",
+        "Lin, Jingjing",
+        "Yang, Chen",
+        "Yin, Xiangyang",
+        "Li, Ziyu",
+        "Guo, Peng",
+        "Sun, Junqi",
+        "Fan, Xiaoping",
+        "Pan, Bin"
+      ],
+      "year": 2021,
+      "ano_referencia_monografia": 2021,
+      "doi": "10.32604/csse.2021.014189",
+      "source": "Computer Systems Science and Engineering",
+      "type": "article",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [
+        "Stock data forecast",
+        "echo state network",
+        "deep learning"
+      ],
+      "keywords_normalizadas": [
+        "deep learning",
+        "echo state network",
+        "stock price forecasting"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.32604%2Fcsse.2021.014189",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D26.json"
+      },
+      "ano_crossref": 2021
+    },
+    {
+      "id": "D27",
+      "arquivo_pdf": "Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_pdf": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "referencia_original": "TIAN, Z.; PEI, L. Stocks price prediction based on optimized echo state network by sparrow search algorithm. International Journal of Dynamics and Control, v. 12, p. 2764-2777, 2024. DOI: 10.1007/s40435-024-01405-8.",
+      "paragrafo_docx": 553,
+      "title": "Stocks price prediction based on optimized echo state network by sparrow search algorithm",
+      "authors": [
+        "Tian, Zhengjie",
+        "Pei, Lijun"
+      ],
+      "year": 2024,
+      "ano_referencia_monografia": 2024,
+      "doi": "10.1007/s40435-024-01405-8",
+      "source": "International Journal of Dynamics and Control",
+      "type": "article",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [
+        "Stocks price",
+        "Sparrow search algorithm",
+        "Echo state network"
+      ],
+      "keywords_normalizadas": [
+        "echo state network",
+        "sparrow search algorithm",
+        "stocks price"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.1007%2Fs40435-024-01405-8",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D27.json"
+      },
+      "ano_crossref": 2024
+    },
+    {
+      "id": "D28",
+      "arquivo_pdf": "Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256_pdf": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "referencia_original": "TIMBÓ, N. S.; LABIDI, S.; NASCIMENTO, T. P.; LIMA, M. L.; NUNES NETO, G.; MATOS, R. C.. Approach Based on Linear Regression for Stock Exchange Prediction – Case Study of Petr4 Petrobrás, Brazil. International Journal of Artificial Intelligence & Applications (IJAIA), v. 7, n. 1, p. 21-31, jan. 2016. DOI: 10.5121/ijaia.2016.7103.",
+      "paragrafo_docx": 554,
+      "title": "Approach Based on Linear Regression for Stock Exchange Prediction – Case Study of Petr4 Petrobrás, Brazil",
+      "authors": [
+        "S.Timbo, Nadson",
+        "Labidi, Sofiane",
+        "Nascimento, Thiago P.do",
+        "L. Lima, Milson",
+        "Nunes Neto, Gilberto",
+        "C.Matos, Rodrigo"
+      ],
+      "year": 2016,
+      "ano_referencia_monografia": 2016,
+      "doi": "10.5121/ijaia.2016.7103",
+      "source": "International Journal of Artificial Intelligence & Applications",
+      "type": "article",
+      "abstract": "",
+      "notes": [
+        "Referência anterior ao recorte; mantida como fonte complementar para análise do conjunto."
+      ],
+      "keywords_originais": [
+        "Stock Exchange Prediction",
+        "Autoregressive Models & Linear Models"
+      ],
+      "keywords_normalizadas": [
+        "autoregressive models & linear models",
+        "stock exchange prediction"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "Referências anteriores ao recorte",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.5121%2Fijaia.2016.7103",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D28.json"
+      },
+      "ano_crossref": 2016
+    },
+    {
+      "id": "D29",
+      "arquivo_pdf": "Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256_pdf": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "referencia_original": "RIBEIRO, G. T.; SANTOS, A. A. P.; MARIANI, V. C.; COELHO, L. S. Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility. Expert Systems with Applications, v. 184, art. 115490, 2021. DOI: 10.1016/j.eswa.2021.115490.",
+      "paragrafo_docx": 547,
+      "title": "Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility",
+      "authors": [
+        "Trierweiler Ribeiro, Gabriel",
+        "Alves Portela Santos, André",
+        "Cocco Mariani, Viviana",
+        "dos Santos Coelho, Leandro"
+      ],
+      "year": 2021,
+      "ano_referencia_monografia": 2021,
+      "doi": "10.1016/j.eswa.2021.115490",
+      "source": "Expert Systems with Applications",
+      "type": "article",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [
+        "Volatility prediction",
+        "Echo state network",
+        "Heterogeneous autoregressive model",
+        "Particle swarm optimization"
+      ],
+      "keywords_normalizadas": [
+        "echo state network",
+        "heterogeneous autoregressive model",
+        "particle swarm optimization",
+        "volatility prediction"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.1016%2Fj.eswa.2021.115490",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D29.json"
+      },
+      "ano_crossref": 2021
+    },
+    {
+      "id": "D30",
+      "arquivo_pdf": "Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+      "sha256_pdf": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+      "referencia_original": "VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, 2025. DOI: 10.21595/mme.2025.24861.",
+      "paragrafo_docx": 555,
+      "title": "Artificial intelligence-based stock market price prediction, a review",
+      "authors": [
+        "H N, Vishwas",
+        "B A, Usha",
+        "K N, Sangeetha"
+      ],
+      "year": 2025,
+      "ano_referencia_monografia": 2025,
+      "doi": "10.21595/mme.2025.24861",
+      "source": "Mathematical Models in Engineering",
+      "type": "article",
+      "abstract": "The stock market, a cornerstone of the global financial system, is characterized by its dynamic and volatile nature, which makes accurate price-trend prediction challenging. However, traditional statistical models often fail to capture this complexity. Recent advancements in Artificial Intelligence (AI), particularly Machine Learning (ML) and Deep Learning (DL), have transformed stock market forecasting by using diverse datasets and algorithms. This review examines recent studies on AI methodologies for stock market price trend prediction models by analyzing architectures, datasets, performance metrics, and limitations, with a focus on hybrid models, sentiment analysis, and dataset diversity. Hybrid approaches, including the Multi-Model Generative Adversarial Network Hybrid Prediction Algorithm (MMGAN-HPA), K-means long short-term memory (LSTM), and LSTM autoregressive output (LSTM-ARO), improve predictive accuracy by combining statistical methods with deep learning. Sentiment analysis models such as Stock Senti WordNet (SSWN) and Hybrid Quantum Neural Network (HQNN) integrate social media sentiment to capture market dynamics. Real-time frameworks that use stream processing show promise for high-frequency trading applications. This review addresses key challenges including data noise, nonstationarity, overfitting risks, and black-box model interpretability. Solutions include GAN-based synthetic data generation, transformer-based architectures such as SpectralGPT, and optimization techniques for computational efficiency. This review provides a taxonomy of AI-based approaches, while identifying gaps for future research. These findings highlight the potential of AI in financial forecasting while emphasizing the need for interdisciplinary collaboration to address its limitations in data quality, methodology, interpretability, and ethics.",
+      "notes": [],
+      "keywords_originais": [
+        "artificial intelligence (AI)",
+        "autoregressive integrated moving average artificial neural network (ARIMA-ANN) (time-series forecasting)",
+        "generative adversarial network (GAN)",
+        "K-means long short-term memory (LSTM)",
+        "stock senti wordnet (SSWN)",
+        "hybrid quantum neural network (HQNN)",
+        "spectral GPT"
+      ],
+      "keywords_normalizadas": [
+        "artificial intelligence (ai)",
+        "autoregressive integrated moving average artificial neural network (arima-ann) (time-series forecasting)",
+        "generative adversarial network (gan)",
+        "hybrid quantum neural network (hqnn)",
+        "k-means long short-term memory (lstm)",
+        "spectral gpt",
+        "stock senti wordnet (sswn)"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.21595%2Fmme.2025.24861",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D30.json"
+      },
+      "ano_crossref": 2025
+    },
+    {
+      "id": "D31",
+      "arquivo_pdf": "Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_pdf": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "referencia_original": "WANG, F.; BU, T.; HUANG, Y.. Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing. International Journal of Computational Intelligence Systems, v. 18, art. 180, 2025. DOI: 10.1007/s44196-025-00906-4.",
+      "paragrafo_docx": 556,
+      "title": "Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing",
+      "authors": [
+        "Wang, Fang",
+        "Bu, Ting",
+        "Huang, Yuping"
+      ],
+      "year": 2025,
+      "ano_referencia_monografia": 2025,
+      "doi": "10.1007/s44196-025-00906-4",
+      "source": "International Journal of Computational Intelligence Systems",
+      "type": "article",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [
+        "Optical reservoir computing",
+        "Parallel data processing",
+        "Multivariate forecasting",
+        "Multistep prediction"
+      ],
+      "keywords_normalizadas": [
+        "multistep prediction",
+        "multivariate forecasting",
+        "optical reservoir computing",
+        "parallel data processing"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.1007%2Fs44196-025-00906-4",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D31.json"
+      },
+      "ano_crossref": 2025
+    },
+    {
+      "id": "D32",
+      "arquivo_pdf": "Wang W - Stock market index prediction based on reservoir computing models.pdf",
+      "sha256_pdf": "7485fa096c0855232ab45109b346462e14790d945c6f491dfbab2b26db63d761",
+      "referencia_original": "WANG, W.; TANG, Y.; XIONG, J.; ZHANG, Y.. Stock market index prediction based on reservoir computing models. Expert Systems with Applications, v. 178, art. 115022, 2021. DOI: 10.1016/j.eswa.2021.115022.",
+      "paragrafo_docx": 557,
+      "title": "Stock market index prediction based on reservoir computing models",
+      "authors": [
+        "Wang, Wei-Jia",
+        "Tang, Yong",
+        "Xiong, Jason",
+        "Zhang, Yi-Cheng"
+      ],
+      "year": 2021,
+      "ano_referencia_monografia": 2021,
+      "doi": "10.1016/j.eswa.2021.115022",
+      "source": "Expert Systems with Applications",
+      "type": "article",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [
+        "Financial market prediction",
+        "Stock market index prediction",
+        "Financial time series",
+        "Reservoir computing",
+        "Deep learning"
+      ],
+      "keywords_normalizadas": [
+        "deep learning",
+        "financial market prediction",
+        "financial time series",
+        "reservoir computing",
+        "stock market index prediction"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.1016%2Fj.eswa.2021.115022",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D32.json"
+      },
+      "ano_crossref": 2021
+    },
+    {
+      "id": "D33",
+      "arquivo_pdf": "Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+      "sha256_pdf": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787",
+      "referencia_original": "XIAO, J.; DENG, T.; BI, S. Comparative Analysis of LSTM, GRU, and Transformer Models for Stock Price Prediction. In: INTERNATIONAL CONFERENCE ON DIGITAL ECONOMY, BLOCKCHAIN AND ARTIFICIAL INTELLIGENCE (DEBAI 2024), 2024, Guangzhou. Proceedings [...]. New York: ACM, 2024. p. 103-108. DOI: 10.1145/3700058.3700075.",
+      "paragrafo_docx": 558,
+      "title": "Comparative Analysis of LSTM, GRU, and Transformer Models for Stock Price Prediction",
+      "authors": [
+        "Xiao, Jue",
+        "Deng, Tingting",
+        "Bi, Shuochen"
+      ],
+      "year": 2024,
+      "ano_referencia_monografia": 2024,
+      "doi": "10.1145/3700058.3700075",
+      "source": "Proceedings of the International Conference on Digital Economy, Blockchain and Artificial Intelligence",
+      "type": "inproceedings",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [
+        "Artificial intelligence",
+        "stock forecasting",
+        "LSTM",
+        "GRU Model",
+        "Transformer",
+        "Tesla"
+      ],
+      "keywords_normalizadas": [
+        "artificial intelligence",
+        "gru",
+        "lstm",
+        "stock price forecasting",
+        "tesla",
+        "transformer"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.1145%2F3700058.3700075",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D33.json"
+      },
+      "ano_crossref": 2024
+    },
+    {
+      "id": "D34",
+      "arquivo_pdf": "Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "referencia_original": "ZHANG, H; ZHENG, M.; ZHANG, Y.; YU, X.; LI, W.; GAO, H. Application of ESN prediction model based on compressed sensing in stock market. Communications in Nonlinear Science and Numerical Simulation, v. 101, art. 105857, 2021. DOI: 10.1016/j.cnsns.2021.105857.",
+      "paragrafo_docx": 559,
+      "title": "Application of ESN prediction model based on compressed sensing in stock market",
+      "authors": [
+        "Zhang, Hao",
+        "Zheng, Mingwen",
+        "Zhang, Yanping",
+        "Yu, Xiao",
+        "Li, Wenchao",
+        "Gao, Hui"
+      ],
+      "year": 2021,
+      "ano_referencia_monografia": 2021,
+      "doi": "10.1016/j.cnsns.2021.105857",
+      "source": "Communications in Nonlinear Science and Numerical Simulation",
+      "type": "article",
+      "abstract": "",
+      "notes": [],
+      "keywords_originais": [
+        "Compressed sensing",
+        "ESN",
+        "Reserve pool",
+        "Time series"
+      ],
+      "keywords_normalizadas": [
+        "compressed sensing",
+        "echo state network",
+        "reserve pool",
+        "time series"
+      ],
+      "origem_keywords": "Transcrição conferida dos trechos Keywords/Index Terms do PDF",
+      "origem_metadados": "Referência do DOCX e conferência das páginas iniciais do PDF; título/autores/DOI conferidos em Crossref",
+      "grupo_temporal": "2021–2026",
+      "identificacao_status": "Título e primeiro autor reconciliados com Crossref",
+      "crossref": {
+        "consulta": "https://api.crossref.org/works/10.1016%2Fj.cnsns.2021.105857",
+        "data": "2026-10-12",
+        "similaridade_titulo": 1.0,
+        "cache": "reports\\bibliometria_reconstrucao\\crossref_bruto\\D34.json"
+      },
+      "ano_crossref": 2021
+    }
+  ]
+}

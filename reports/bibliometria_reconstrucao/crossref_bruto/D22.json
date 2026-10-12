@@ -1,0 +1,262 @@
+{
+  "url": "https://api.crossref.org/works/10.18280%2Fijcmem.110401",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            11
+          ]
+        ],
+        "date-time": "2025-11-11T07:52:58Z",
+        "timestamp": 1762847578902,
+        "version": "build-2065373602"
+      },
+      "reference-count": 0,
+      "publisher": "Acadlore Publishing Services Limited",
+      "issue": "4",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                30
+              ]
+            ],
+            "date-time": "2023-12-30T00:00:00Z",
+            "timestamp": 1703894400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://iieta.org/sites/default/files/TEXT%20AND%20DATA%20MINING%20SERVICE%20AGREEMENT.pdf"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "www.iieta.org"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "IJCMEM"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            30
+          ]
+        ]
+      },
+      "DOI": "10.18280/ijcmem.110401",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            29
+          ]
+        ],
+        "date-time": "2023-12-29T23:09:21Z",
+        "timestamp": 1703891361000
+      },
+      "page": "193-203",
+      "update-policy": "https://doi.org/10.18280/crossmarkpolicy",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System"
+      ],
+      "prefix": "10.56578",
+      "volume": "11",
+      "author": [
+        {
+          "given": "Soukaina",
+          "family": "Seddik",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Hayat",
+          "family": "Routaib",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Anass",
+          "family": "Elhaddadi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "35910",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            30
+          ]
+        ]
+      },
+      "container-title": [
+        "International Journal of Computational Methods and Experimental Measurements"
+      ],
+      "original-title": [],
+      "link": [
+        {
+          "URL": "https://iieta.org/journals/ijcmem/paper/10.18280/ijcmem.110401",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            11
+          ]
+        ],
+        "date-time": "2025-11-11T07:48:48Z",
+        "timestamp": 1762847328000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.acadlore.com/article/IJCMEM/2023_11_4/ijcmem.110401"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            30
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "4",
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              30
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              30
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.18280/ijcmem.110401",
+      "relation": {},
+      "ISSN": [
+        "2046-0546",
+        "2046-0554"
+      ],
+      "issn-type": [
+        {
+          "type": "print",
+          "value": "2046-0546"
+        },
+        {
+          "type": "electronic",
+          "value": "2046-0554"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            30
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "18 August 2023",
+          "order": 0,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "19 October 2023",
+          "order": 1,
+          "name": "revised",
+          "label": "Revised",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "14 November 2023",
+          "order": 2,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "30 December 2023",
+          "order": 3,
+          "name": "published",
+          "label": "Published",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        }
+      ]
+    }
+  }
+}

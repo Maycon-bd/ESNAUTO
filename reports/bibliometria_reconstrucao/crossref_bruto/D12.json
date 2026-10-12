@@ -1,0 +1,1062 @@
+{
+  "url": "https://api.crossref.org/works/10.3390%2Fe22111239",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            4
+          ]
+        ],
+        "date-time": "2026-10-04T02:32:47Z",
+        "timestamp": 1791081167693,
+        "version": "4.1.0"
+      },
+      "reference-count": 85,
+      "publisher": "MDPI AG",
+      "issue": "11",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                10,
+                31
+              ]
+            ],
+            "date-time": "2020-10-31T00:00:00Z",
+            "timestamp": 1604102400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/501100000780",
+          "name": "European Commission",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "EFOP-3.6.1-16-2016-00010"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "EFOP-3.6.1-16-2016-00010"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/501100000780",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Entropy"
+      ],
+      "abstract": "<jats:p>Predicting stock market (SM) trends is an issue of great interest among researchers, investors and traders since the successful prediction of SMs’ direction may promise various benefits. Because of the fairly nonlinear nature of the historical data, accurate estimation of the SM direction is a rather challenging issue. The aim of this study is to present a novel machine learning (ML) model to forecast the movement of the Borsa Istanbul (BIST) 100 index. Modeling was performed by multilayer perceptron–genetic algorithms (MLP–GA) and multilayer perceptron–particle swarm optimization (MLP–PSO) in two scenarios considering Tanh (x) and the default Gaussian function as the output function. The historical financial time series data utilized in this research is from 1996 to 2020, consisting of nine technical indicators. Results are assessed using Root Mean Square Error (RMSE), Mean Absolute Percentage Error (MAPE) and correlation coefficient values to compare the accuracy and performance of the developed models. Based on the results, the involvement of the Tanh (x) as the output function, improved the accuracy of models compared with the default Gaussian function, significantly. MLP–PSO with population size 125, followed by MLP–GA with population size 50, provided higher accuracy for testing, reporting RMSE of 0.732583 and 0.733063, MAPE of 28.16%, 29.09% and correlation coefficient of 0.694 and 0.695, respectively. According to the results, using the hybrid ML method could successfully improve the prediction accuracy.</jats:p>",
+      "DOI": "10.3390/e22111239",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            31
+          ]
+        ],
+        "date-time": "2020-10-31T21:39:56Z",
+        "timestamp": 1604180396000
+      },
+      "page": "1239",
+      "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 77,
+      "title": [
+        "Training Multilayer Perceptron with Genetic Algorithms and Particle Swarm Optimization for Modeling Stock Price Index Prediction"
+      ],
+      "prefix": "10.3390",
+      "volume": "22",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6174-3241",
+          "authenticated-orcid": false,
+          "given": "Fatih",
+          "family": "Ecer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Business Administration, Afyon Kocatepe University, Afyonkarahisar 03030, Turkey"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7744-7906",
+          "authenticated-orcid": false,
+          "given": "Sina",
+          "family": "Ardabili",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Biosystem Engineering Department, University of Mohaghegh Ardabili, Ardabil 5619911367, Iran"
+            },
+            {
+              "name": "Kando Kalman Faculty of Electrical Engineering, Obuda University, 1034 Budapest, Hungary"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6605-498X",
+          "authenticated-orcid": false,
+          "given": "Shahab S.",
+          "family": "Band",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Future Technology Research Center, College of Future, National Yunlin University of Science and Technology, 123 University Road, Section 3, Douliou, Yunlin 64002, Taiwan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4842-0613",
+          "authenticated-orcid": false,
+          "given": "Amir",
+          "family": "Mosavi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Faculty of Civil Engineering, Technische Universität Dresden, 01069 Dresden, Germany"
+            },
+            {
+              "name": "Institute of Research and Development, Duy Tan University, Da Nang 550000, Vietnam"
+            },
+            {
+              "name": "School of Economics and Business, Norwegian University of Life Sciences, 1430 As, Norway"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "1968",
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            31
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "ref_1",
+          "first-page": "1",
+          "article-title": "Stock price prediction using neural network with hybridized market indicators",
+          "volume": "3",
+          "author": "Adebiyi",
+          "year": "2012",
+          "journal-title": "J. Emerg. Trends Comput. Inf. Sci."
+        },
+        {
+          "key": "ref_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "196",
+          "DOI": "10.1016/j.asoc.2014.12.028",
+          "article-title": "A bat-neural network multi-agent system (BNNMAS) for stock price prediction: Case study of DAX stock price",
+          "volume": "29",
+          "author": "Hafezi",
+          "year": "2015",
+          "journal-title": "Appl. Soft Comput."
+        },
+        {
+          "key": "ref_3",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1016/j.engappai.2019.03.019",
+          "article-title": "A new metric for individual stock trend prediction",
+          "volume": "82",
+          "author": "Liu",
+          "year": "2019",
+          "journal-title": "Eng. Appl. Artif. Intell."
+        },
+        {
+          "key": "ref_4",
+          "doi-asserted-by": "crossref",
+          "first-page": "204",
+          "DOI": "10.1016/j.rfe.2007.05.002",
+          "article-title": "Random walk and breaking trend in financial series: An econometric critique of unit root tests",
+          "volume": "17",
+          "author": "Rahman",
+          "year": "2008",
+          "journal-title": "Rev. Financ. Econ."
+        },
+        {
+          "key": "ref_5",
+          "doi-asserted-by": "crossref",
+          "first-page": "41",
+          "DOI": "10.1093/rfs/1.1.41",
+          "article-title": "Stock market prices do not follow random walks: Evidence from a simple specification test",
+          "volume": "1",
+          "author": "Lo",
+          "year": "1988",
+          "journal-title": "Rev. Financ. Stud."
+        },
+        {
+          "key": "ref_6",
+          "first-page": "1",
+          "article-title": "Performance evaluation of neural networks and GARCH models for forecasting volatility and option strike prices in a bull call spread strategy",
+          "volume": "8",
+          "author": "Vejendla",
+          "year": "2013",
+          "journal-title": "J. Econ. Policy Res."
+        },
+        {
+          "key": "ref_7",
+          "first-page": "195",
+          "article-title": "An adaptive stock index trading decision support system",
+          "volume": "59",
+          "author": "Chiang",
+          "year": "2016",
+          "journal-title": "J. Econ. Policy Res."
+        },
+        {
+          "key": "ref_8",
+          "doi-asserted-by": "crossref",
+          "first-page": "800",
+          "DOI": "10.1016/j.knosys.2010.05.004",
+          "article-title": "Integration of genetic fuzzy systems and artificial neural networks for stock price forecasting",
+          "volume": "23",
+          "author": "Hadavandi",
+          "year": "2010",
+          "journal-title": "Knowl. Based Syst."
+        },
+        {
+          "key": "ref_9",
+          "doi-asserted-by": "crossref",
+          "first-page": "636",
+          "DOI": "10.1080/10798587.2013.839287",
+          "article-title": "Stock market prediction using a combination of stepwise regression analysis, differential evolution-based fuzzy clustering, and a fuzzy inference neural network",
+          "volume": "19",
+          "author": "Enke",
+          "year": "2013",
+          "journal-title": "Intell. Autom. Soft Comput."
+        },
+        {
+          "key": "ref_10",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1016/j.chaos.2016.01.004",
+          "article-title": "Application of artificial neural network for the prediction of stock market returns: The case of the Japanese stock market",
+          "volume": "85",
+          "author": "Qiu",
+          "year": "2016",
+          "journal-title": "Chaos Solitons Fractals"
+        },
+        {
+          "key": "ref_11",
+          "first-page": "14072",
+          "article-title": "Applying a GA kernel on optimizing technical analysis rules for stock picking and portfolio composition",
+          "volume": "38",
+          "author": "Gorgulho",
+          "year": "2011",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_12",
+          "doi-asserted-by": "crossref",
+          "first-page": "11347",
+          "DOI": "10.1016/j.eswa.2011.03.001",
+          "article-title": "Intelligent stock trading system based on improved technical analysis and Echo State Network",
+          "volume": "38",
+          "author": "Lin",
+          "year": "2011",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_13",
+          "doi-asserted-by": "crossref",
+          "first-page": "5963",
+          "DOI": "10.1016/j.eswa.2015.03.017",
+          "article-title": "Stock market trading rule based on pattern recognition and technical analysis: Forecasting the DJIA index with intraday data",
+          "volume": "42",
+          "author": "Guijarro",
+          "year": "2015",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_14",
+          "doi-asserted-by": "crossref",
+          "first-page": "327",
+          "DOI": "10.1007/s10489-014-0520-6",
+          "article-title": "Modeling fitting-function-based fuzzy time series patterns for evolving stock index forecasting",
+          "volume": "41",
+          "author": "Chen",
+          "year": "2014",
+          "journal-title": "Appl. Intell."
+        },
+        {
+          "key": "ref_15",
+          "doi-asserted-by": "crossref",
+          "first-page": "221",
+          "DOI": "10.1142/S0219024999000145",
+          "article-title": "Neural networks for technical analysis: A study on KLCI",
+          "volume": "2",
+          "author": "Yao",
+          "year": "1999",
+          "journal-title": "Int. J. Theor. Appl. Financ."
+        },
+        {
+          "key": "ref_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "307",
+          "DOI": "10.1016/S0925-2312(03)00372-2",
+          "article-title": "Financial time series forecasting using support vector machines",
+          "volume": "55",
+          "author": "Kim",
+          "year": "2003",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "key": "ref_17",
+          "first-page": "1",
+          "article-title": "A decision tree—Rough set hybrid system for stock market trend prediction",
+          "volume": "6",
+          "author": "Nair",
+          "year": "2010",
+          "journal-title": "Int. J. Comput. Appl."
+        },
+        {
+          "key": "ref_18",
+          "doi-asserted-by": "crossref",
+          "first-page": "7596",
+          "DOI": "10.1016/j.eswa.2013.06.071",
+          "article-title": "Applying Artificial Neural Networks to prediction of stock price and improvement of the directional prediction index—Case study of PETR4, Petrobras, Brazil",
+          "volume": "40",
+          "author": "Nobre",
+          "year": "2013",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_19",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Shakeri, B., Zarandi, M.F., Tarimoradi, M., and Turksan, I. (2015, January 17–19). Fuzzy clustering rule-based expert system for stock price movement prediction. Proceedings of the 2015 Annual Conference of the North American Fuzzy Information Processing Society (NAFIPS), Redmond, WA, USA.",
+          "DOI": "10.1109/NAFIPS-WConSC.2015.7284198"
+        },
+        {
+          "key": "ref_20",
+          "doi-asserted-by": "crossref",
+          "first-page": "259",
+          "DOI": "10.1016/j.eswa.2014.07.040",
+          "article-title": "Predicting stock and stock price index movement using trend deterministic data preparation and machine learning techniques",
+          "volume": "42",
+          "author": "Patel",
+          "year": "2015",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_21",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Santoso, M., Sutjiadi, R., and Lim, R. (2018). Indonesian Stock Prediction using Support Vector Machine (SVM). MATEC Web of Conferences, EDP Sciences.",
+          "DOI": "10.1051/matecconf/201816401031"
+        },
+        {
+          "key": "ref_22",
+          "doi-asserted-by": "crossref",
+          "first-page": "13159",
+          "DOI": "10.1007/s10586-017-1321-6",
+          "article-title": "Stock market prediction using subtractive clustering for a neuro fuzzy hybrid approach",
+          "volume": "22",
+          "author": "Chandar",
+          "year": "2019",
+          "journal-title": "Clust. Comput."
+        },
+        {
+          "key": "ref_23",
+          "doi-asserted-by": "crossref",
+          "first-page": "37",
+          "DOI": "10.46503/NLUF8557",
+          "article-title": "Forecasting stock market trend: A comparison of machine learning algorithms",
+          "volume": "6",
+          "author": "Guijarro",
+          "year": "2020",
+          "journal-title": "Financ. Mark. Valuat."
+        },
+        {
+          "key": "ref_24",
+          "doi-asserted-by": "crossref",
+          "first-page": "5311",
+          "DOI": "10.1016/j.eswa.2010.10.027",
+          "article-title": "Predicting direction of stock price index movement using artificial neural networks and support vector machines: The sample of the Istanbul Stock Exchange",
+          "volume": "38",
+          "author": "Kara",
+          "year": "2011",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_25",
+          "first-page": "231",
+          "article-title": "Forecasting stock index movement with artificial neural networks: The case of istanbul stock exchange",
+          "volume": "14",
+          "author": "Karymshakov",
+          "year": "2012",
+          "journal-title": "Trak. Univ. J. Soc. Sci."
+        },
+        {
+          "key": "ref_26",
+          "doi-asserted-by": "crossref",
+          "first-page": "444",
+          "DOI": "10.1016/j.amc.2017.09.049",
+          "article-title": "Minute-ahead stock price forecasting based on singular spectrum analysis and support vector regression",
+          "volume": "320",
+          "author": "Lahmiri",
+          "year": "2018",
+          "journal-title": "Appl. Math. Comput."
+        },
+        {
+          "key": "ref_27",
+          "doi-asserted-by": "crossref",
+          "first-page": "188",
+          "DOI": "10.1016/j.ins.2014.05.006",
+          "article-title": "Particle swarm optimization of ensemble neural networks with fuzzy aggregation for time series prediction of the Mexican Stock Exchange",
+          "volume": "280",
+          "author": "Pulido",
+          "year": "2014",
+          "journal-title": "Inf. Sci."
+        },
+        {
+          "key": "ref_28",
+          "doi-asserted-by": "crossref",
+          "first-page": "388",
+          "DOI": "10.1016/j.physa.2015.09.061",
+          "article-title": "Interest rate next-day variation prediction based on hybrid feedforward neural network, particle swarm optimization, and multiresolution techniques",
+          "volume": "444",
+          "author": "Lahmiri",
+          "year": "2016",
+          "journal-title": "Phys. A Stat. Mech. Appl."
+        },
+        {
+          "key": "ref_29",
+          "first-page": "25",
+          "article-title": "Evaluating the employment of technical indicators in predicting stock price index variations using artificial neural networks (case study: Tehran Stock Exchange)",
+          "volume": "7",
+          "author": "Aldin",
+          "year": "2012",
+          "journal-title": "Int. J. Bus. Manag."
+        },
+        {
+          "key": "ref_30",
+          "first-page": "2758",
+          "article-title": "Stock market prediction using ANN",
+          "volume": "5",
+          "author": "Gurjar",
+          "year": "2018",
+          "journal-title": "Int. Res. J. Eng. Technol. (IRJET)"
+        },
+        {
+          "key": "ref_31",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Yu, L., Wang, S., and Lai, K.K. (2005, January 15–17). Mining stock market tendency using GA-based support vector machines. Proceedings of the First International Workshop on Internet and Network Economics, Hong Kong, China.",
+          "DOI": "10.1007/11600930_33"
+        },
+        {
+          "key": "ref_32",
+          "doi-asserted-by": "crossref",
+          "first-page": "7056",
+          "DOI": "10.1016/j.eswa.2010.03.012",
+          "article-title": "Integrating independent component analysis-based denoising scheme with neural network for stock price prediction",
+          "volume": "37",
+          "author": "Lu",
+          "year": "2010",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_33",
+          "doi-asserted-by": "crossref",
+          "first-page": "75",
+          "DOI": "10.1016/j.eswa.2016.01.016",
+          "article-title": "Efficient stock price prediction using a self evolving recurrent neuro-fuzzy inference system optimized through a modified differential harmony search technique",
+          "volume": "52",
+          "author": "Dash",
+          "year": "2016",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_34",
+          "first-page": "24",
+          "article-title": "A comparison of PNN and SVM for stock market trend prediction using economic and technical information",
+          "volume": "29",
+          "author": "Lahmiri",
+          "year": "2011",
+          "journal-title": "Int. J. Comput. Appl."
+        },
+        {
+          "key": "ref_35",
+          "first-page": "237",
+          "article-title": "Short-term prediction of Tehran Stock Exchange Price Index (TEPIX): Using artificial neural network (ANN)",
+          "volume": "4",
+          "author": "Dastgir",
+          "year": "2012",
+          "journal-title": "J. Secur. Exch."
+        },
+        {
+          "key": "ref_36",
+          "doi-asserted-by": "crossref",
+          "first-page": "229",
+          "DOI": "10.1007/s00521-012-0821-9",
+          "article-title": "Applications. Forecasting IBEX-35 moves using support vector machines",
+          "volume": "23",
+          "author": "Dunis",
+          "year": "2013",
+          "journal-title": "Neural Comput. Appl."
+        },
+        {
+          "key": "ref_37",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Lahmiri, S., Boukadoum, M., and Chartier, S. (2013, January 27–30). Information fusion and S&P500 trend prediction. Proceedings of the 2013 ACS International Conference on Computer Systems and Applications (AICCSA), Ifrane, Morocco.",
+          "DOI": "10.1109/AICCSA.2013.6616488"
+        },
+        {
+          "key": "ref_38",
+          "doi-asserted-by": "crossref",
+          "first-page": "869",
+          "DOI": "10.1016/j.procs.2014.05.338",
+          "article-title": "Forecasting direction of China security index 300 movement with least squares support vector machine",
+          "volume": "31",
+          "author": "Wang",
+          "year": "2014",
+          "journal-title": "Procedia Comput. Sci."
+        },
+        {
+          "key": "ref_39",
+          "doi-asserted-by": "crossref",
+          "first-page": "214",
+          "DOI": "10.1016/j.procs.2015.03.200",
+          "article-title": "Classification and prediction of stock market index based on fuzzy metagraph",
+          "volume": "47",
+          "author": "Anbalagan",
+          "year": "2015",
+          "journal-title": "Procedia Comput. Sci."
+        },
+        {
+          "key": "ref_40",
+          "doi-asserted-by": "crossref",
+          "first-page": "7046",
+          "DOI": "10.1016/j.eswa.2015.05.013",
+          "article-title": "Evaluating multiple classifiers for stock price direction prediction",
+          "volume": "42",
+          "author": "Ballings",
+          "year": "2015",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_41",
+          "doi-asserted-by": "crossref",
+          "first-page": "64",
+          "DOI": "10.1016/j.jkss.2015.07.002",
+          "article-title": "Hybrid nonlinear adaptive scheme for stock market prediction using feedback FLANN and factor analysis",
+          "volume": "45",
+          "author": "Anish",
+          "year": "2016",
+          "journal-title": "J. Korean Stat. Soc."
+        },
+        {
+          "key": "ref_42",
+          "first-page": "3870",
+          "article-title": "A multiple-criteria approach for forecasting stock price direction: Nonlinear probability models with application in S&P 500 Index",
+          "volume": "11",
+          "author": "Jabbarzadeh",
+          "year": "2016",
+          "journal-title": "Int. J. Appl. Eng. Res."
+        },
+        {
+          "key": "ref_43",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Jiao, Y., and Jakubowicz, J. (2017, January 11–14). Predicting stock movement direction with machine learning: An extensive study on S&P 500 stocks. Proceedings of the 2017 IEEE International Conference on Big Data (Big Data), Boston, MA, USA.",
+          "DOI": "10.1109/BigData.2017.8258518"
+        },
+        {
+          "key": "ref_44",
+          "doi-asserted-by": "crossref",
+          "first-page": "2161",
+          "DOI": "10.3846/tede.2018.6394",
+          "article-title": "Hybrid fuzzy neural network to predict price direction in the German DAX-30 index",
+          "volume": "24",
+          "author": "Garcia",
+          "year": "2018",
+          "journal-title": "Technol. Econ. Dev. Econ."
+        },
+        {
+          "key": "ref_45",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Nadh, V.L., and Prasad, G.S. (2019). Stock market prediction based on machine learning approaches. Computational Intelligence and Big Data Analytics, Springer.",
+          "DOI": "10.1007/978-981-13-0544-3_7"
+        },
+        {
+          "key": "ref_46",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Manojlović, T., and Štajduhar, I. (2015, January 25–29). Predicting stock market trends using random forests: A sample of the Zagreb stock exchange. Proceedings of the 2015 38th International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO), Opatija, Croatia.",
+          "DOI": "10.1109/MIPRO.2015.7160456"
+        },
+        {
+          "key": "ref_47",
+          "doi-asserted-by": "crossref",
+          "first-page": "11",
+          "DOI": "10.1016/j.eswa.2018.03.039",
+          "article-title": "Forecasting stock market index daily direction: A Bayesian Network approach",
+          "volume": "105",
+          "author": "Malagrino",
+          "year": "2018",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_48",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Dash, R., Samal, S., Rautray, R., and Dash, R. (2019). A TOPSIS approach of ranking classifiers for stock index price movement prediction. Soft Computing in Data Analytics, Springer.",
+          "DOI": "10.1007/978-981-13-0514-6_63"
+        },
+        {
+          "key": "ref_49",
+          "doi-asserted-by": "crossref",
+          "first-page": "652",
+          "DOI": "10.1016/j.asoc.2018.11.008",
+          "article-title": "Hybrid Variational Mode Decomposition and evolutionary robust kernel extreme learning machine for stock price and movement prediction on daily basis",
+          "volume": "74",
+          "author": "Bisoi",
+          "year": "2019",
+          "journal-title": "Appl. Soft Comput."
+        },
+        {
+          "key": "ref_50",
+          "first-page": "103",
+          "article-title": "Artificial Neural Networks in Predicting Financial Performance: An Application for Turkey’s Top 500 Companies",
+          "volume": "47",
+          "author": "Ecer",
+          "year": "2013",
+          "journal-title": "Econ. Comput. Econ. Cybern. Studies Res."
+        },
+        {
+          "key": "ref_51",
+          "doi-asserted-by": "crossref",
+          "first-page": "301",
+          "DOI": "10.1016/j.jobe.2016.04.010",
+          "article-title": "Modeling and simulation controlling system of HVAC using fuzzy and predictive (radial basis function, RBF) controllers",
+          "volume": "6",
+          "author": "Ardabili",
+          "year": "2016",
+          "journal-title": "J. Build. Eng."
+        },
+        {
+          "key": "ref_52",
+          "first-page": "81",
+          "article-title": "Comparing the bank failure prediction performance of neural networks and support vector machines: The Turkish case",
+          "volume": "26",
+          "author": "Ecer",
+          "year": "2013",
+          "journal-title": "Econ. Res."
+        },
+        {
+          "key": "ref_53",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Gundoshmian, T.M., Ardabili, S., Mosavi, A., and Varkonyi-Koczy, A.R. (2019, January 4–7). Prediction of combine harvester performance using hybrid machine learning modeling and response surface methodology. Proceedings of the International Conference on Global Research and Education, Balatonfüred, Hungary.",
+          "DOI": "10.20944/preprints201908.0202.v1"
+        },
+        {
+          "key": "ref_54",
+          "unstructured": "Ardabili, S.F. (2014). Simulation and Comparison of Control System in Mushroom Growing Rooms Environment. [Master’s Thesis, University of Tabriz]."
+        },
+        {
+          "key": "ref_55",
+          "doi-asserted-by": "crossref",
+          "first-page": "228",
+          "DOI": "10.1016/j.eswa.2018.09.005",
+          "article-title": "Global stock market investment strategies based on financial network indicators using machine learning techniques",
+          "volume": "117",
+          "author": "Lee",
+          "year": "2019",
+          "journal-title": "Expert Syst. Appl."
+        },
+        {
+          "key": "ref_56",
+          "first-page": "14",
+          "article-title": "Predicting the daily return direction of the stock market using hybrid machine learning algorithms",
+          "volume": "1",
+          "author": "Zhong",
+          "year": "2019",
+          "journal-title": "Financ. Innov."
+        },
+        {
+          "key": "ref_57",
+          "doi-asserted-by": "crossref",
+          "first-page": "287",
+          "DOI": "10.1109/4235.797971",
+          "article-title": "The compact genetic algorithm",
+          "volume": "3",
+          "author": "Harik",
+          "year": "1999",
+          "journal-title": "IEEE Trans. Evol. Comput."
+        },
+        {
+          "key": "ref_58",
+          "first-page": "1",
+          "article-title": "Predicting stock market trends using machine learning algorithms via public sentiment and political situation analysis",
+          "volume": "12",
+          "author": "Khan",
+          "year": "2019",
+          "journal-title": "Soft Comput."
+        },
+        {
+          "key": "ref_59",
+          "doi-asserted-by": "crossref",
+          "first-page": "619",
+          "DOI": "10.1016/S0167-8191(05)80052-3",
+          "article-title": "The parallel genetic algorithm as function optimizer",
+          "volume": "17",
+          "author": "Schomisch",
+          "year": "1991",
+          "journal-title": "Parallel Comput."
+        },
+        {
+          "key": "ref_60",
+          "doi-asserted-by": "crossref",
+          "first-page": "2276",
+          "DOI": "10.1109/TSG.2016.2609740",
+          "article-title": "Multiobjective optimization of multi-carrier energy system using a combination of ANFIS and genetic algorithms",
+          "volume": "9",
+          "author": "Kampouropoulos",
+          "year": "2018",
+          "journal-title": "IEEE Trans. Smart Grid"
+        },
+        {
+          "key": "ref_61",
+          "doi-asserted-by": "crossref",
+          "first-page": "301",
+          "DOI": "10.1007/s11269-013-0446-5",
+          "article-title": "Predicting monsoon floods in rivers embedding wavelet transform, genetic algorithm and neural network",
+          "volume": "28",
+          "author": "Sahay",
+          "year": "2014",
+          "journal-title": "Water Resour. Manag."
+        },
+        {
+          "key": "ref_62",
+          "doi-asserted-by": "crossref",
+          "first-page": "255",
+          "DOI": "10.1016/j.ijhydene.2008.10.010",
+          "article-title": "Optimization of fermentative hydrogen production process using genetic algorithm based on neural network and response surface methodology",
+          "volume": "34",
+          "author": "Wang",
+          "year": "2009",
+          "journal-title": "Int. J. Hydrog. Energy"
+        },
+        {
+          "key": "ref_63",
+          "doi-asserted-by": "crossref",
+          "first-page": "785",
+          "DOI": "10.1007/s00500-005-0008-8",
+          "article-title": "Genetic polynomial regression as input selection algorithm for non-linear identification",
+          "volume": "10",
+          "author": "Maertens",
+          "year": "2006",
+          "journal-title": "Soft Comput."
+        },
+        {
+          "key": "ref_64",
+          "doi-asserted-by": "crossref",
+          "first-page": "4069",
+          "DOI": "10.1080/00207540410001708470",
+          "article-title": "Optimal part deposition orientation in FDM by using a multicriteria genetic algorithm",
+          "volume": "42",
+          "author": "Pandey",
+          "year": "2004",
+          "journal-title": "Int. J. Prod. Res."
+        },
+        {
+          "key": "ref_65",
+          "unstructured": "Horn, J., Nafpliotis, N., and Goldberg, D.E. (1994, January 27–29). A niched Pareto genetic algorithm for multiobjective optimization. Proceedings of the First IEEE Conference on Evolutionary Computation (IEEE World Congress on Computational Intelligence), Orlando, FL, USA."
+        },
+        {
+          "key": "ref_66",
+          "first-page": "369",
+          "article-title": "Self-tuning PID Controller using Genetic Algorithm",
+          "volume": "11",
+          "author": "Mansoor",
+          "year": "2011",
+          "journal-title": "Iraqi J. Stat. Sci."
+        },
+        {
+          "key": "ref_67",
+          "doi-asserted-by": "crossref",
+          "first-page": "783",
+          "DOI": "10.1007/s00477-010-0364-5",
+          "article-title": "Frequency analysis of droughts using the Plackett copula and parameter estimation by genetic algorithm",
+          "volume": "24",
+          "author": "Song",
+          "year": "2010",
+          "journal-title": "Stoch. Environ. Res. Risk Assess."
+        },
+        {
+          "key": "ref_68",
+          "doi-asserted-by": "crossref",
+          "first-page": "1053",
+          "DOI": "10.17576/jsm-2015-4407-18",
+          "article-title": "Feedforward backpropagation, genetic algorithm approaches for predicting reference evapotranspiration",
+          "volume": "44",
+          "author": "Abdullah",
+          "year": "2015",
+          "journal-title": "Sains Malays."
+        },
+        {
+          "key": "ref_69",
+          "doi-asserted-by": "crossref",
+          "first-page": "33",
+          "DOI": "10.1007/s11721-007-0002-0",
+          "article-title": "Particle swarm optimization",
+          "volume": "1",
+          "author": "Poli",
+          "year": "2007",
+          "journal-title": "Swarm Intell."
+        },
+        {
+          "key": "ref_70",
+          "unstructured": "Sun, J., Feng, B., and Xu, W. (2004, January 19–23). Particle swarm optimization with particles having quantum behavior. Proceedings of the 2004 Congress on Evolutionary Computation (IEEE Cat. No. 04TH8753), Portland, OR, USA."
+        },
+        {
+          "key": "ref_71",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Parsopoulos, K.E., and Vrahatis, M.N. (2002, January 22–27). Particle swarm optimization method in multiobjective problems. Proceedings of the 2002 ACM symposium on Applied computing, New York, NY, USA.",
+          "DOI": "10.1145/508791.508907"
+        },
+        {
+          "key": "ref_72",
+          "unstructured": "Kennedy, J., and Eberhart, R. (December, January 27). Particle swarm optimization. Proceedings of the ICNN’95-International Conference on Neural Networks, Perth, WA, Australia."
+        },
+        {
+          "key": "ref_73",
+          "doi-asserted-by": "crossref",
+          "first-page": "257",
+          "DOI": "10.1061/(ASCE)0733-9496(2008)134:3(257)",
+          "article-title": "Use of multiobjective particle swarm optimization in water resources management",
+          "volume": "134",
+          "author": "Baltar",
+          "year": "2008",
+          "journal-title": "J. Water Resour. Plan. Manag."
+        },
+        {
+          "key": "ref_74",
+          "unstructured": "Clerc, M. (2010). Particle Swarm Optimization, John Wiley & Sons."
+        },
+        {
+          "key": "ref_75",
+          "unstructured": "Shi, Y. (2001, January 27–30). Particle swarm optimization: Developments, applications and resources. Proceedings of the 2001 Congress on Evolutionary Computation (IEEE Cat. No. 01TH8546), Seoul, Korea."
+        },
+        {
+          "key": "ref_76",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Shi, Y., and Eberhart, R.C. (1998, January 25–27). Parameter selection in particle swarm optimization. Proceedings of the International Conference on Evolutionary Programming, San Diego, CA, USA.",
+          "DOI": "10.1007/BFb0040810"
+        },
+        {
+          "key": "ref_77",
+          "first-page": "1",
+          "article-title": "Technologies. Neuro-fuzzy DC motor speed control using particle swarm optimization",
+          "volume": "15",
+          "author": "Allaoua",
+          "year": "2009",
+          "journal-title": "Leonardo Electron. J. Pract. Technol."
+        },
+        {
+          "key": "ref_78",
+          "doi-asserted-by": "crossref",
+          "first-page": "529",
+          "DOI": "10.1109/JSEN.2015.2483745",
+          "article-title": "Accurate wireless sensor localization technique based on hybrid PSO-ANN algorithm for indoor and outdoor track cycling",
+          "volume": "16",
+          "author": "Gharghan",
+          "year": "2015",
+          "journal-title": "IEEE Sensors J."
+        },
+        {
+          "key": "ref_79",
+          "doi-asserted-by": "crossref",
+          "first-page": "391",
+          "DOI": "10.1007/s00521-015-2072-z",
+          "article-title": "Developing a hybrid PSO–ANN model for estimating the ultimate bearing capacity of rock-socketed piles",
+          "volume": "28",
+          "author": "Armaghani",
+          "year": "2017",
+          "journal-title": "Neural Comput. Appl."
+        },
+        {
+          "key": "ref_80",
+          "first-page": "742",
+          "article-title": "Integrative Discovery of Multifaceted Sequence Patterns by Frame-Relayed Search and Hybrid PSO-ANN",
+          "volume": "15",
+          "author": "Liou",
+          "year": "2009",
+          "journal-title": "J. UCS"
+        },
+        {
+          "key": "ref_81",
+          "doi-asserted-by": "crossref",
+          "first-page": "2098",
+          "DOI": "10.1007/s11227-017-2228-y",
+          "article-title": "An innovative neural network approach for stock market prediction",
+          "volume": "76",
+          "author": "Pang",
+          "year": "2020",
+          "journal-title": "J. Supercomput."
+        },
+        {
+          "key": "ref_82",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Mosavi, A., Salimi, M., Faizollahzadeh Ardabili, S., Rabczuk, T., Shamshirband, S., and Varkonyi-Koczy, A.R. (2019). State of the art of machine learning models in energy systems, a systematic review. Energies, 12.",
+          "DOI": "10.3390/en12071301"
+        },
+        {
+          "key": "ref_83",
+          "doi-asserted-by": "crossref",
+          "first-page": "102741",
+          "DOI": "10.1016/j.dsp.2020.102741",
+          "article-title": "An improved deep learning model for predicting stock market price time series",
+          "volume": "7",
+          "author": "Liu",
+          "year": "2020",
+          "journal-title": "Digit. Signal Process."
+        },
+        {
+          "key": "ref_84",
+          "doi-asserted-by": "crossref",
+          "first-page": "150199",
+          "DOI": "10.1109/ACCESS.2020.3015966",
+          "article-title": "Predicting Stock Market Trends Using Machine Learning and Deep Learning Algorithms Via Continuous and Binary Data: A Comparative Analysis",
+          "volume": "8",
+          "author": "Nabipour",
+          "year": "2020",
+          "journal-title": "IEEE Access"
+        },
+        {
+          "key": "ref_85",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Nabipour, M., Nayyeri, P., Jabani, H., Mosavi, A., and Salwana, E. (2020). Deep learning for stock market prediction. Entropy, 22.",
+          "DOI": "10.20944/preprints202003.0256.v1"
+        }
+      ],
+      "container-title": [
+        "Entropy"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.mdpi.com/1099-4300/22/11/1239/pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            11
+          ]
+        ],
+        "date-time": "2025-10-11T10:27:25Z",
+        "timestamp": 1760178445000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.mdpi.com/1099-4300/22/11/1239"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            31
+          ]
+        ]
+      },
+      "references-count": 85,
+      "journal-issue": {
+        "issue": "11",
+        "published-online": {
+          "date-parts": [
+            [
+              2020,
+              11
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "e22111239"
+      ],
+      "URL": "https://doi.org/10.3390/e22111239",
+      "relation": {},
+      "ISSN": [
+        "1099-4300"
+      ],
+      "issn-type": [
+        {
+          "value": "1099-4300",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            31
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -157,8 +157,8 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru, on_
         if (nrow(hist_ga) > 0) {
           m_esn <- list(
             modelo = "ESN",
-            validacao = list(MAE = as.numeric(hist_ga$mae_valida[1]), RMSE = as.numeric(hist_ga$rmse_valida[1]), MAPE = 1.35, R2 = 0.994),
-            teste = list(MAE = as.numeric(hist_ga$mae_teste[1]), RMSE = as.numeric(hist_ga$rmse_teste[1]), MAPE = 1.84, R2 = as.numeric(hist_ga$r2_teste[1])),
+            validacao = list(MAE = as.numeric(hist_ga$mae_valida[1]), RMSE = as.numeric(hist_ga$rmse_valida[1]), MAPE = NA_real_, R2 = NA_real_),
+            teste = list(MAE = as.numeric(hist_ga$mae_teste[1]), RMSE = as.numeric(hist_ga$rmse_teste[1]), MAPE = NA_real_, R2 = as.numeric(hist_ga$r2_teste[1])),
             tempo = as.numeric(hist_ga$tempo_segundos[1])
           )
         }
@@ -416,6 +416,10 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru, on_
     
     # Tabela do Histórico CSV
     historico_reativo <- reactiveVal(carregar_historico_ga())
+    observe({
+      acao_historico()
+      historico_reativo(carregar_historico_ga())
+    })
     
     observeEvent(input$btn_atualizar_historico_comp, {
       historico_reativo(carregar_historico_ga())

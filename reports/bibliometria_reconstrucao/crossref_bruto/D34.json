@@ -1,0 +1,604 @@
+{
+  "url": "https://api.crossref.org/works/10.1016%2Fj.cnsns.2021.105857",
+  "data_recuperacao": "2026-10-12",
+  "resposta": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            4
+          ]
+        ],
+        "date-time": "2026-08-04T11:33:58Z",
+        "timestamp": 1785843238589,
+        "version": "3.56.0"
+      },
+      "reference-count": 20,
+      "publisher": "Elsevier BV",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                1
+              ]
+            ],
+            "date-time": "2021-10-01T00:00:00Z",
+            "timestamp": 1633046400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                1
+              ]
+            ],
+            "date-time": "2021-10-01T00:00:00Z",
+            "timestamp": 1633046400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/legal/tdmrep-license"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                1
+              ]
+            ],
+            "date-time": "2021-10-01T00:00:00Z",
+            "timestamp": 1633046400000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-017"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                1
+              ]
+            ],
+            "date-time": "2021-10-01T00:00:00Z",
+            "timestamp": 1633046400000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-037"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                1
+              ]
+            ],
+            "date-time": "2021-10-01T00:00:00Z",
+            "timestamp": 1633046400000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-012"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                1
+              ]
+            ],
+            "date-time": "2021-10-01T00:00:00Z",
+            "timestamp": 1633046400000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-029"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2021,
+                10,
+                1
+              ]
+            ],
+            "date-time": "2021-10-01T00:00:00Z",
+            "timestamp": 1633046400000
+          },
+          "content-version": "stm-asf",
+          "delay-in-days": 0,
+          "URL": "https://doi.org/10.15223/policy-004"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/501100001809",
+          "name": "National Natural Science Foundation of China",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100001809",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100007129",
+          "name": "Shandong Province Natural Science Foundation",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100007129",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Communications in Nonlinear Science and Numerical Simulation"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            10
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.cnsns.2021.105857",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2021,
+            4,
+            27
+          ]
+        ],
+        "date-time": "2021-04-27T07:59:34Z",
+        "timestamp": 1619510374000
+      },
+      "page": "105857",
+      "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 18,
+      "special_numbering": "C",
+      "title": [
+        "Application of ESN prediction model based on compressed sensing in stock market"
+      ],
+      "prefix": "10.1016",
+      "volume": "101",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9909-542X",
+          "authenticated-orcid": false,
+          "given": "Hao",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0948-7535",
+          "authenticated-orcid": false,
+          "given": "Mingwen",
+          "family": "Zheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yanping",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6203-5602",
+          "authenticated-orcid": false,
+          "given": "Xiao",
+          "family": "Yu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wenchao",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hui",
+          "family": "Gao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "key": "10.1016/j.cnsns.2021.105857_sbref0001",
+          "series-title": "GMD Technical Report 148",
+          "article-title": "The “echo state” approach to analysing and training recurrent neural networks-with an erratum note",
+          "author": "Jaeger",
+          "year": "2001"
+        },
+        {
+          "issue": "11",
+          "key": "10.1016/j.cnsns.2021.105857_bib0002",
+          "doi-asserted-by": "crossref",
+          "first-page": "2413",
+          "DOI": "10.1109/TNNLS.2015.2479117",
+          "article-title": "Echo state networks with orthogonal pigeon-inspired optimization for image restoration",
+          "volume": "27",
+          "author": "Duan",
+          "year": "2015",
+          "journal-title": "IEEE Trans Neural Netw LearnSyst"
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.cnsns.2021.105857_bib0003",
+          "doi-asserted-by": "crossref",
+          "first-page": "335",
+          "DOI": "10.1016/j.neunet.2007.04.016",
+          "article-title": "Optimization and applications of echo state networks with leaky-integrator neurons.",
+          "volume": "20",
+          "author": "Jaeger",
+          "year": "2007",
+          "journal-title": "Neural Netw"
+        },
+        {
+          "key": "10.1016/j.cnsns.2021.105857_bib0004",
+          "series-title": "International conference on neural information processing",
+          "article-title": "Optimized echo state network with intrinsic plasticity for eeg-based emotion recognition",
+          "author": "Fourati",
+          "year": "2017"
+        },
+        {
+          "issue": "MAY17",
+          "key": "10.1016/j.cnsns.2021.105857_bib0005",
+          "doi-asserted-by": "crossref",
+          "first-page": "191",
+          "DOI": "10.1016/j.neucom.2017.01.053",
+          "article-title": "Genetic algorithm optimized double-reservoir echo state network for multi-regime time series prediction",
+          "volume": "238",
+          "author": "Zhong",
+          "year": "2017",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "issue": "1",
+          "key": "10.1016/j.cnsns.2021.105857_bib0006",
+          "doi-asserted-by": "crossref",
+          "first-page": "131",
+          "DOI": "10.1109/TNN.2010.2089641",
+          "article-title": "Minimum complexity echo state network",
+          "volume": "22",
+          "author": "Rodan",
+          "year": "2011",
+          "journal-title": "IEEE Trans Neural Netw"
+        },
+        {
+          "key": "10.1016/j.cnsns.2021.105857_bib0007",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1007/978-3-642-35289-8_36",
+          "article-title": "A practical guide to applying echo state networks",
+          "author": "Lukovsevivcius",
+          "year": "2012",
+          "journal-title": "Lect Notes Comput Sci"
+        },
+        {
+          "issue": "4",
+          "key": "10.1016/j.cnsns.2021.105857_bib0008",
+          "doi-asserted-by": "crossref",
+          "first-page": "1289",
+          "DOI": "10.1109/TIT.2006.871582",
+          "article-title": "Compressed sensing",
+          "volume": "52",
+          "author": "Donoho",
+          "year": "2006",
+          "journal-title": "IEEE Trans Inf Theory"
+        },
+        {
+          "issue": "6",
+          "key": "10.1016/j.cnsns.2021.105857_bib0009",
+          "doi-asserted-by": "crossref",
+          "first-page": "1182",
+          "DOI": "10.1002/mrm.21391",
+          "article-title": "Sparse MRI: the application of compressed sensing for rapid MR imaging",
+          "volume": "58",
+          "author": "Lustig",
+          "year": "2007",
+          "journal-title": "Magn Reson Med"
+        },
+        {
+          "issue": "4",
+          "key": "10.1016/j.cnsns.2021.105857_bib0010",
+          "doi-asserted-by": "crossref",
+          "first-page": "586",
+          "DOI": "10.1109/JSTSP.2007.910281",
+          "article-title": "Gradient projection for sparse reconstruction: application to compressed sensing and other inverse problems",
+          "volume": "1",
+          "author": "Figueiredo",
+          "year": "2008",
+          "journal-title": "IEEE J Sel Top Signal Process"
+        },
+        {
+          "issue": "9–10",
+          "key": "10.1016/j.cnsns.2021.105857_bib0011",
+          "doi-asserted-by": "crossref",
+          "first-page": "589",
+          "DOI": "10.1016/j.crma.2008.03.014",
+          "article-title": "The restricted isometry property and its implications for compressed sensing",
+          "volume": "346",
+          "author": "Candès",
+          "year": "2008",
+          "journal-title": "C R Math"
+        },
+        {
+          "key": "10.1016/j.cnsns.2021.105857_bib0012",
+          "doi-asserted-by": "crossref",
+          "first-page": "106178",
+          "DOI": "10.1016/j.optlaseng.2020.106178",
+          "article-title": "An effective image encryption algorithm based on compressive sensing and 2D-SLIM",
+          "volume": "134",
+          "author": "Xu",
+          "year": "2020",
+          "journal-title": "Opt Lasers Eng"
+        },
+        {
+          "key": "10.1016/j.cnsns.2021.105857_bib0013",
+          "doi-asserted-by": "crossref",
+          "first-page": "107684",
+          "DOI": "10.1016/j.sigpro.2020.107684",
+          "article-title": "Color image compression and encryption scheme based on compressive sensing and double random encryption strategy",
+          "author": "Chai",
+          "year": "2020",
+          "journal-title": "Signal Process"
+        },
+        {
+          "issue": "1",
+          "key": "10.1016/j.cnsns.2021.105857_bib0014",
+          "doi-asserted-by": "crossref",
+          "first-page": "183",
+          "DOI": "10.1137/080716542",
+          "article-title": "A fast iterative shrinkage-thresholding algorithm for linear inverse problems",
+          "volume": "2",
+          "author": "Beck",
+          "year": "2009",
+          "journal-title": "Siam J Imaging Sci"
+        },
+        {
+          "issue": "12",
+          "key": "10.1016/j.cnsns.2021.105857_bib0015",
+          "doi-asserted-by": "crossref",
+          "first-page": "4203",
+          "DOI": "10.1109/TIT.2005.858979",
+          "article-title": "Decoding by linear programming",
+          "volume": "51",
+          "author": "Candes",
+          "year": "2005",
+          "journal-title": "IEEE Trans Inf Theory"
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.cnsns.2021.105857_bib0016",
+          "doi-asserted-by": "crossref",
+          "first-page": "253",
+          "DOI": "10.1007/s00365-007-9003-x",
+          "article-title": "A simple proof of the restricted isometry property for random matrices",
+          "volume": "28",
+          "author": "Baraniuk",
+          "year": "2008",
+          "journal-title": "Constr Approx"
+        },
+        {
+          "key": "10.1016/j.cnsns.2021.105857_bib0017",
+          "series-title": "2015 53rd Annual allerton conference on communication, control, and computing (Allerton)",
+          "first-page": "1336",
+          "article-title": "A deep learning approach to structured signal recovery",
+          "author": "Mousavi",
+          "year": "2015"
+        },
+        {
+          "issue": "1",
+          "key": "10.1016/j.cnsns.2021.105857_bib0018",
+          "doi-asserted-by": "crossref",
+          "first-page": "59",
+          "DOI": "10.1016/j.acha.2010.10.002",
+          "article-title": "Compressed sensing with coherent and redundant dictionaries",
+          "volume": "31",
+          "author": "Candès",
+          "year": "2011",
+          "journal-title": "Appl Comput Harmonic Anal"
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.cnsns.2021.105857_bib0019",
+          "doi-asserted-by": "crossref",
+          "first-page": "549",
+          "DOI": "10.1016/j.sigpro.2005.05.029",
+          "article-title": "Extensions of compressed sensing",
+          "volume": "86",
+          "author": "Tsaig",
+          "year": "2006",
+          "journal-title": "Signal Process"
+        },
+        {
+          "key": "10.1016/j.cnsns.2021.105857_bib0020",
+          "unstructured": "Jafarpour S., Cevher V., Schapire R.E. Model-based compressive sensing2008."
+        }
+      ],
+      "container-title": [
+        "Communications in Nonlinear Science and Numerical Simulation"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S1007570421001696?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S1007570421001696?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            19
+          ]
+        ],
+        "date-time": "2025-10-19T13:59:35Z",
+        "timestamp": 1760882375000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1007570421001696"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            10
+          ]
+        ]
+      },
+      "references-count": 20,
+      "alternative-id": [
+        "S1007570421001696"
+      ],
+      "URL": "https://doi.org/10.1016/j.cnsns.2021.105857",
+      "relation": {},
+      "ISSN": [
+        "1007-5704"
+      ],
+      "issn-type": [
+        {
+          "value": "1007-5704",
+          "type": "print"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            10
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "Application of ESN prediction model based on compressed sensing in stock market",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "Communications in Nonlinear Science and Numerical Simulation",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "https://doi.org/10.1016/j.cnsns.2021.105857",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "© 2021 Elsevier B.V. All rights reserved.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ],
+      "article-number": "105857"
+    }
+  }
+}

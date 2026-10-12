@@ -127,16 +127,9 @@ ui <- navbarPage(
           div(
             style = "display: flex; align-items: center; gap: 10px;",
             span(style = "display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981;"),
-            span(style = "font-weight: 800; font-size: 1.15rem; color: #0f172a;", "Série Histórica PETR4 (2000–2020)"),
-            span(class = "badge-tag badge-esn", "5.198 Amostras")
+            uiOutput("dataset_banner", inline = TRUE)
           ),
-          div(
-            style = "font-size: 0.92rem; color: #64748b;",
-            "Particionamento Oficial: ",
-            strong("Treino (2.600 | 50%)"), " • ",
-            strong("Validação (1.299 | 25%)"), " • ",
-            strong("Teste Out-of-Sample (1.299 | 25%)")
-          )
+          selectInput("acao_dataset", "Ação para previsão:", choices = names(datasets_disponiveis), selected = "PETR4")
         ),
         div(
           style = "display: flex; align-items: center; gap: 12px; flex-wrap: wrap;",
@@ -176,11 +169,11 @@ ui <- navbarPage(
   # ============================
   # ABA 1: DADOS
   # ============================
-  tabPanel("📊 Dados PETR4", value = "tab_dados",
+  tabPanel("📊 Dados da Ação", value = "tab_dados",
     fluidRow(
       column(12,
         div(class = "section-subtitle", "BASE DE DADOS & PREPARAÇÃO"),
-        h3(class = "section-title", "Série Temporal PETR4 (Preços de Fechamento com Fator)"),
+        h3(class = "section-title", "Série Temporal (Preços de Fechamento com Fator)"),
         
         # Action Card para Seleção de Dados
         div(class = "well",
@@ -192,7 +185,7 @@ ui <- navbarPage(
             ),
             column(5,
               div(style = "margin-top: 25px;",
-                actionButton("btn_carregar_default", "⚡ Carregar Série Padrão PETR4 (2000-2020)",
+                actionButton("btn_carregar_default", "⚡ Recarregar Ação Selecionada",
                              class = "btn-info btn-block",
                              style = "height: 52px; font-size: 1.02rem; font-weight: 700; border-radius: 12px;")
               )
@@ -630,7 +623,19 @@ ui <- navbarPage(
 server <- function(input, output, session) {
   
   # Dados reativos
-  dados <- reactiveVal(NULL)
+  dados_raw <- reactiveVal(NULL)
+  acao_atual <- reactiveVal("PETR4")
+  session$userData$acao_dataset <- acao_atual
+  session$userData$execucao_ativa <- FALSE
+  dados <- reactive({
+    d <- dados_raw()
+    req(d)
+    attr(d, "particoes") <- list(treino_n = input$treino_n, valida_n = input$valida_n, teste_n = input$teste_n)
+    req(input$treino_n, input$valida_n, input$teste_n)
+    validate(need(tryCatch({ particoes_dados(d); TRUE }, error = function(e) FALSE),
+                  "Partições inválidas para a série carregada."))
+    d
+  })
   
   # Holders reativos para sincronização da execução universal
   resultado_esn_externo  <- reactiveVal(NULL)
@@ -713,66 +718,50 @@ server <- function(input, output, session) {
     showNotification("⏹️ Interrupção solicitada! Consolidando e salvando o melhor resultado encontrado até o momento...", type = "error", duration = 6)
   }, ignoreInit = TRUE)
   
-  # Auto-carregar dados PETR4 ao inicializar
-  observe({
-    caminhos <- c(
-      "../Scripts/data/PETR4_close com factor_2000-2020.txt",
-      "Scripts/data/PETR4_close com factor_2000-2020.txt",
-      "data/PETR4_close com factor_2000-2020.txt"
-    )
-    for (cp in caminhos) {
-      if (file.exists(cp)) {
-        tryCatch({
-          data_fac <- as.matrix(read.csv2(cp, header = FALSE))
-          dados(as.numeric(data_fac))
-        }, error = function(e) {})
-        break
-      }
+  aplicar_dataset <- function(d, acao) {
+    if (isTRUE(session$userData$execucao_ativa)) {
+      showNotification("Aguarde o fim da execução para trocar o dataset.", type = "warning")
+      updateSelectInput(session, "acao_dataset", selected = acao_atual())
+      return(invisible(FALSE))
     }
-  })
-  
-  # Carregar dados padrão por botão
-  observeEvent(input$btn_carregar_default, {
-    caminhos <- c(
-      "../Scripts/data/PETR4_close com factor_2000-2020.txt",
-      "Scripts/data/PETR4_close com factor_2000-2020.txt",
-      "data/PETR4_close com factor_2000-2020.txt"
-    )
-    
-    caminho_encontrado <- NULL
-    for (cp in caminhos) {
-      if (file.exists(cp)) {
-        caminho_encontrado <- cp
-        break
-      }
-    }
-    
-    if (is.null(caminho_encontrado)) {
-      showNotification("❌ Arquivo PETR4_close com factor_2000-2020.txt não encontrado!", type = "error")
-      return()
-    }
-    
-    tryCatch({
-      data_fac <- as.matrix(read.csv2(caminho_encontrado, header = FALSE))
-      dados(as.numeric(data_fac))
-      showNotification(paste("✅ Série PETR4 carregada com sucesso:", length(dados()), "amostras"), type = "message")
-    }, error = function(e) {
-      showNotification(paste("❌ Erro ao carregar:", e$message), type = "error")
-    })
-  })
-  
-  # Carregar arquivo customizado
+    idx <- particoes_padrao(length(d))
+    acao_atual(acao)
+    attr(d, "acao") <- acao
+    dados_raw(d)
+    updateNumericInput(session, "treino_n", value = idx$treino_n)
+    updateNumericInput(session, "valida_n", value = idx$valida_n)
+    updateNumericInput(session, "teste_n", value = idx$teste_n)
+    resultado_esn_externo(NULL)
+    resultado_lstm_externo(NULL)
+    resultado_gru_externo(NULL)
+    ultimo_benchmark_executado(NULL)
+    showNotification(paste(acao, "carregada:", length(d), "amostras"), type = "message")
+  }
+
+  carregar_selecionada <- function() {
+    tryCatch(aplicar_dataset(carregar_dados_acao(input$acao_dataset), input$acao_dataset),
+      error = function(e) {
+        updateSelectInput(session, "acao_dataset", selected = acao_atual())
+        showNotification(e$message, type = "error")
+      })
+  }
+  observeEvent(input$acao_dataset, carregar_selecionada(), ignoreInit = FALSE)
+  observeEvent(input$btn_carregar_default, carregar_selecionada())
   observeEvent(input$arquivo_dados, {
     req(input$arquivo_dados)
     tryCatch({
-      data_fac <- as.matrix(read.csv2(input$arquivo_dados$datapath, header = FALSE))
-      dados(as.numeric(data_fac))
-      showNotification(paste("✅ Dados personalizados carregados:", length(dados()), "amostras"), type = "message")
-    }, error = function(e) {
-      showNotification(paste("❌ Erro ao carregar arquivo:", e$message), type = "error")
-    })
+      identidade <- paste0("CUSTOM_", unname(tools::md5sum(input$arquivo_dados$datapath)))
+      aplicar_dataset(ler_serie_precos(input$arquivo_dados$datapath), identidade)
+    }, error = function(e) showNotification(e$message, type = "error"))
   })
-  
+  output$dataset_banner <- renderUI({
+    req(dados())
+    idx <- particoes_dados(dados())
+    tagList(strong(paste("Série Histórica", acao_atual())),
+      span(class = "badge-tag badge-esn", paste(length(dados()), "amostras")),
+      span(sprintf("Treino: %d • Validação: %d • Teste: %d", idx$treino_n, idx$valida_n, idx$teste_n)))
+  })
+
   # Summary KPI cards
   output$kpi_dados_summary <- renderUI({
     req(dados())
@@ -787,7 +776,7 @@ server <- function(input, output, session) {
         div(class = "kpi-card",
           div(class = "kpi-title", "Total de Amostras"),
           div(class = "kpi-value", sprintf("%d", n_total)),
-          div(class = "kpi-subtitle", "Preços PETR4 com fator")
+          div(class = "kpi-subtitle", paste("Preços", acao_atual(), "com fator"))
         )
       ),
       column(3,
@@ -870,6 +859,12 @@ server <- function(input, output, session) {
                                             tempo_total_s = NULL, hora_inicio = NULL, hora_fim = NULL,
                                             modo_esn = NULL) {
     historico_df <- carregar_historico_ga()
+    if ((is.null(res_esn) && nrow(historico_df) == 0) ||
+        (is.null(res_lstm) && is.null(carregar_resultado_dl("LSTM"))) ||
+        (is.null(res_gru) && is.null(carregar_resultado_dl("GRU")))) {
+      showNotification(paste("Execute ESN, LSTM e GRU para obter o resumo de", acao_atual()), type = "message")
+      return(invisible(NULL))
+    }
     
     # ESN
     esn_win <- if (!is.null(res_esn$dist_win)) res_esn$dist_win else if (nrow(historico_df) > 0) historico_df$dist_win[1] else "GED"
@@ -940,7 +935,7 @@ server <- function(input, output, session) {
             span(style = "font-size: 1.6rem;", "🎉"),
             div(
               h4(style = "margin: 0; font-weight: 800; color: #0f172a;", "Benchmark Completo Finalizado!"),
-              span(style = "font-size: 0.85rem; color: #64748b;", "Série PETR4 (2000–2020) • Particionamento Oficial 50% / 25% / 25%")
+              span(style = "font-size: 0.85rem; color: #64748b;", paste("Série", acao_atual(), "• Partições definidas na aba Dados"))
             )
         ),
         span(class = "badge-tag", style = "background: #dcfce7; color: #166534; font-weight: 800; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem;", "🏁 Concluído com Sucesso")
@@ -1085,10 +1080,12 @@ server <- function(input, output, session) {
                                          epochs_dl = 80, 
                                          timesteps_dl = 10) {
     if (is.null(dados())) {
-      showNotification("❌ Carregue os dados da PETR4 antes de iniciar o benchmark!", type = "error")
+      showNotification("❌ Carregue o dataset selecionado antes de iniciar o benchmark!", type = "error")
       return()
     }
     
+    session$userData$execucao_ativa <- TRUE
+    on.exit(session$userData$execucao_ativa <- FALSE, add = TRUE)
     d <- dados()
     t_inicio_total <- proc.time()
     hora_inicio <- Sys.time()
@@ -1359,7 +1356,7 @@ server <- function(input, output, session) {
                      style = "font-weight: 700; height: 46px; padding: 0 24px; font-size: 1rem; border-radius: 10px;")
       ),
       div(
-        p("Esta ação executará todos os modelos sequencialmente sob as **mesmas condições experimentais** (Série PETR4 2000-2020, Splits 50/25/25):"),
+        p("Esta ação executará todos os modelos sequencialmente sob as **mesmas condições experimentais** (dataset e partições selecionados na aba Dados):"),
         hr(),
         
         radioButtons("tipo_execucao_esn", "Modo de Otimização da ESN:",
