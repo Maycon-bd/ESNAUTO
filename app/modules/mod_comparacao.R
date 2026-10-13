@@ -415,7 +415,8 @@ comparacao_server <- function(id, metricas_esn, metricas_lstm, metricas_gru, on_
     })
     
     # Tabela do Histórico CSV
-    historico_reativo <- reactiveVal(carregar_historico_ga())
+    # Na inicialização ainda não existe um consumidor reativo para o dataset.
+    historico_reativo <- reactiveVal(isolate(carregar_historico_ga()))
     observe({
       acao_historico()
       historico_reativo(carregar_historico_ga())

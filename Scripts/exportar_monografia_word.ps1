@@ -2,6 +2,7 @@ param(
   [Parameter(Mandatory=$true)][string]$InputPath,
   [Parameter(Mandatory=$true)][string]$PdfPath,
   [switch]$AtualizarListas,
+  [switch]$UsarPaginaAjustada,
   [string]$PageMapPath
 )
 $ErrorActionPreference = 'Stop'
@@ -26,7 +27,8 @@ try {
     $style = [string]$paragraph.Style.NameLocal
     if ($text.Contains("`t")) { continue }
     if ($style -in @('TITULO TCC','SEÇÃO TCC','SUBÇÃO 2','Caption') -or $text -match '^(Tabela|QUADRO|Figura)\s+\d+\s*[–—-]') {
-      $pageMap += [pscustomobject]@{texto=$text; pagina=$paragraph.Range.Information(1); estilo=$style; numero=$paragraph.Range.ListFormat.ListString}
+      $tipoInformacao = if ($UsarPaginaAjustada) { 3 } else { 1 }
+      $pageMap += [pscustomobject]@{texto=$text; pagina=$paragraph.Range.Information($tipoInformacao); estilo=$style; numero=$paragraph.Range.ListFormat.ListString}
     }
   }
   if ($AtualizarListas) {
@@ -43,7 +45,7 @@ try {
         $found = @($found | Where-Object { $_.numero -eq $sectionNumber })
       }
       if ($found.Count -eq 1) {
-        $match = [regex]::Match($text, '\d+\s*$')
+        $match = [regex]::Match($text, '\d+(?=\s*$)')
         $newPage = [string]$found[0].pagina
         if ($match.Value.Trim() -ne $newPage) {
           # Alterar somente os algarismos: o marcador final pode conter uma

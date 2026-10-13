@@ -21,6 +21,13 @@ test_dir <- tempfile("dataset_test_")
 dir.create(test_dir)
 OBTER_CAMINHO_HISTORICO_CSV <- function() caminho_por_acao(file.path(test_dir, "ga.csv"))
 OBTER_CAMINHO_HISTORICO_DL_CSV <- function() caminho_por_acao(file.path(test_dir, "dl.csv"))
+# Reproduzir a abertura real: testServer isola implicitamente a criação do
+# servidor e, sozinho, não detecta leituras reativas indevidas na inicialização.
+startup_session <- shiny::MockShinySession$new()
+shiny::withReactiveDomain(startup_session, {
+  server(startup_session$input, startup_session$output, startup_session)
+})
+startup_session$close()
 shiny::testServer(server, {
   session$setInputs(acao_dataset = "PETR4", treino_n = 2600, valida_n = 1299, teste_n = 1299)
   stopifnot(length(dados()) == 5198, acao_atual() == "PETR4")

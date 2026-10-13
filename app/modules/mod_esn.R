@@ -826,7 +826,9 @@ esn_server <- function(id, dados_reativo, resultados_externos = NULL) {
     })
     
     # Tabela do Histórico CSV
-    historico_reativo <- reactiveVal(carregar_historico_ga())
+    # A criação do módulo ocorre fora de um consumidor reativo. A leitura
+    # inicial não deve registrar dependências; a troca de dados atualiza abaixo.
+    historico_reativo <- reactiveVal(isolate(carregar_historico_ga()))
     
     observeEvent(dados_reativo(), historico_reativo(carregar_historico_ga()), ignoreInit = TRUE)
 
