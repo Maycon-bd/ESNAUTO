@@ -358,6 +358,7 @@ for (scenario_name in names(scenarios)) {
         mae_validation = NA_real_, rmse_validation = NA_real_, r2_validation = NA_real_,
         mae_test = NA_real_, rmse_test = NA_real_, r2_test = NA_real_,
         fit_eval_time_s = NA_real_,
+        matrix_file = "",
         error = res$message,
         stringsAsFactors = FALSE
       )
