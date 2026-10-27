@@ -65,3 +65,4 @@ graph TD
 - **Para entender o formato das bases e CSVs de recordes salvos**: Veja [`04_dados_e_resultados.md`](04_dados_e_resultados.md).
 
 - [Seleção de datasets PETR4 e VALE3](11_selecao_datasets_petr4_vale3.md): seletor, partições, persistência e protocolo para a monografia.
+- [Assistência à monografia](assistencia_monografia/uso.md): configuração local, catálogo de fontes, auditoria inicial e plano de revisão por capítulo.

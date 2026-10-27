@@ -1,0 +1,17 @@
+Loading required package: shiny
+Warning: package 'shiny' was built under R version 4.6.1
+createTcpServer: address already in use
+createTcpServer: address already in use
+createTcpServer: address already in use
+createTcpServer: address already in use
+createTcpServer: address already in use
+
+Listening on http://127.0.0.1:3839
+Warning: package 'keras3' was built under R version 4.6.1
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793052273.370812   15940 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793052309.819475   15940 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\User\DOCUME~1\VIRTUA~1\r-keras\Lib\site-packages\keras\src\layers\rnn\rnn.py:199: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.

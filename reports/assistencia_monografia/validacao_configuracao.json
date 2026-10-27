@@ -1,0 +1,30 @@
+{
+  "skill_validation": "quick_validate.py validou a skill; Python local com PyYAML",
+  "fontes_catalogadas": 25,
+  "pdfs_no_acervo": 34,
+  "paragrafos_extraidos": 1081,
+  "hash_base_preservado": "b182bfe623d934644b7b2c462ed3adcbb6bae98e114819bb649bb40ece41f3dc",
+  "fontes_inalteradas_desde_snapshot": true,
+  "snapshot_positivo_e_deteccao_de_divergencia": true,
+  "csv_dm_hash_validado": true,
+  "metricas_dm_conferidas_sem_retreinamento": {
+    "esn": {
+      "n": 1298,
+      "MAE": 0.3288500124552542,
+      "RMSE": 0.4984523142124567
+    },
+    "gru": {
+      "n": 1298,
+      "MAE": 0.418175291762921,
+      "RMSE": 0.5924524400695385
+    },
+    "lstm": {
+      "n": 1298,
+      "MAE": 0.4666122610094461,
+      "RMSE": 0.6352872292462941
+    }
+  },
+  "testes_dm_reexecutados": false,
+  "word_alterado": false,
+  "skill_descoberta_na_interface": "nao_testada_nesta_sessao"
+}

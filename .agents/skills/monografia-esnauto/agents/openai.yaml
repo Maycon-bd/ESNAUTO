@@ -1,0 +1,6 @@
+interface:
+  display_name: "Monografia ESNAUTO"
+  short_description: "Revisão da monografia com evidências rastreáveis"
+  default_prompt: "Use $monografia-esnauto para revisar a monografia PETR4 com base nas fontes e na auditoria do projeto."
+policy:
+  allow_implicit_invocation: true

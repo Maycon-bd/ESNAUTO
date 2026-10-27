@@ -1,0 +1,30 @@
+{
+  "cenario": {
+    "folder": "AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme",
+    "folder_path": "Scripts/results/Run_20260815_140903_Test\\scenarios\\AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme",
+    "run": "2",
+    "win_dist": "GED",
+    "w_dist": "Uniforme",
+    "fitness": -0.237607228766201,
+    "a": 0.424701116188936,
+    "sr": 0.513576611149682,
+    "initLen": 34,
+    "tam_reservoir": 31,
+    "reg": 4.84443422700587e-05,
+    "epoca_melhor_fitness": 123,
+    "epoca_matrizes": 963,
+    "win_file": "Scripts/results/Run_20260815_140903_Test\\scenarios\\AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme\\Dados PETR4 Win ESN_mae_otim40X60 com_factor 200_2.csv",
+    "w_file": "Scripts/results/Run_20260815_140903_Test\\scenarios\\AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme\\Dados PETR4 W reservatório ESN_mae_otim40X60 com_factor 200_2.csv",
+    "wout_file": "Scripts/results/Run_20260815_140903_Test\\scenarios\\AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme\\Dados PETR4 Wout ESN_mae_otim40X60 com_factor 200_2.csv"
+  },
+  "historico_geracoes": 200,
+  "criterio_selecao": "maior fitness no lote preservado, sem seleção pelo teste",
+  "original_sha256": {
+    "Scripts\\results\\Run_20260815_140903_Test\\scenarios\\AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme\\Dados PETR4 Win ESN_mae_otim40X60 com_factor 200_2.csv": "8cafb817181f5778a788e974c1aeb848cb1e834c894ed000c13ba942509fc69b",
+    "Scripts\\results\\Run_20260815_140903_Test\\scenarios\\AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme\\Dados PETR4 W reservatório ESN_mae_otim40X60 com_factor 200_2.csv": "e6f6eedb04e535c5818df833495afc2c4257e926d99281a10c93383242f8e576",
+    "Scripts\\results\\Run_20260815_140903_Test\\scenarios\\AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme\\Dados PETR4 Wout ESN_mae_otim40X60 com_factor 200_2.csv": "ff3c43c003bacb78324afe3cdba82cfdb6679eaa3ef7dcbb6ad68d045bab9ea6",
+    "Scripts\\results\\Run_20260815_140903_Test\\scenarios\\AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme\\Dados PETR4 resumo fitness ESN_mae_otim40X60 com_factor 200_2.csv": "461b14b0f6163e20380d040f1a42f3b81ccee230b4ad033563c7ad1d2c949986"
+  },
+  "tese_referencia": "Cardoso (2025), página 90, Figuras 29 e 30 (página física 93 do PDF)",
+  "limite": "Lote legado de 200 gerações; não reconstrói o melhor resultado histórico das 45 execuções de produção."
+}

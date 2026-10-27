@@ -1,0 +1,113 @@
+{
+  "origem": "C:\\Users\\User\\Downloads\\MayconGarciaSilva_monografia_revisao_orientador com observações.docx",
+  "sha256_origem": "710a26eb336f4510a16243172df3ca4c4cc91ecde62a77dcd85383e48e46bef7",
+  "saida": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\MayconGarciaSilva_monografia_observacoes_atendidas.docx",
+  "alteracoes": [
+    {
+      "tipo": "recado_atendido",
+      "antes": "Fonte estava diferente.",
+      "depois": "Removido da cópia limpa; atendimento de fonte e tamanho registrado."
+    },
+    {
+      "tipo": "recado_atendido",
+      "antes": "Tamanho da fonte estava 8,5 pts.",
+      "depois": "Removido da cópia limpa; atendimento de fonte e tamanho registrado."
+    },
+    {
+      "tipo": "recado_atendido",
+      "antes": "Tamanho da fonte da tabela...",
+      "depois": "Removido da cópia limpa; atendimento de fonte e tamanho registrado."
+    },
+    {
+      "tipo": "recado_atendido",
+      "antes": "Tamanho da fonte na tabela.",
+      "depois": "Removido da cópia limpa; atendimento de fonte e tamanho registrado."
+    },
+    {
+      "tipo": "numeracao_secoes",
+      "motivo": "Restaurar indicativos automáticos dos capítulos, seções e subseções, ocultos nos estilos da origem, de acordo com o sumário."
+    },
+    {
+      "tipo": "fonte_tabela",
+      "tabela_ooxml": 1,
+      "tamanho_final_pt": 12,
+      "motivo": "Preservar 12 pt nas Tabelas 1 e 2 corrigidas pelo orientador; ampliar tabelas antes em 6,5–10 pt para 11 pt."
+    },
+    {
+      "tipo": "fonte_tabela",
+      "tabela_ooxml": 2,
+      "tamanho_final_pt": 12,
+      "motivo": "Preservar 12 pt nas Tabelas 1 e 2 corrigidas pelo orientador; ampliar tabelas antes em 6,5–10 pt para 11 pt."
+    },
+    {
+      "tipo": "fonte_tabela",
+      "tabela_ooxml": 3,
+      "tamanho_final_pt": 11,
+      "motivo": "Preservar 12 pt nas Tabelas 1 e 2 corrigidas pelo orientador; ampliar tabelas antes em 6,5–10 pt para 11 pt."
+    },
+    {
+      "tipo": "fonte_tabela",
+      "tabela_ooxml": 4,
+      "tamanho_final_pt": 11,
+      "motivo": "Preservar 12 pt nas Tabelas 1 e 2 corrigidas pelo orientador; ampliar tabelas antes em 6,5–10 pt para 11 pt."
+    },
+    {
+      "tipo": "fonte_tabela",
+      "tabela_ooxml": 5,
+      "tamanho_final_pt": 11,
+      "motivo": "Preservar 12 pt nas Tabelas 1 e 2 corrigidas pelo orientador; ampliar tabelas antes em 6,5–10 pt para 11 pt."
+    },
+    {
+      "tipo": "fonte_tabela",
+      "tabela_ooxml": 6,
+      "tamanho_final_pt": 11,
+      "motivo": "Preservar 12 pt nas Tabelas 1 e 2 corrigidas pelo orientador; ampliar tabelas antes em 6,5–10 pt para 11 pt."
+    },
+    {
+      "tipo": "fonte_tabela",
+      "tabela_ooxml": 7,
+      "tamanho_final_pt": 11,
+      "motivo": "Preservar 12 pt nas Tabelas 1 e 2 corrigidas pelo orientador; ampliar tabelas antes em 6,5–10 pt para 11 pt."
+    },
+    {
+      "tipo": "fonte_tabela",
+      "tabela_ooxml": 8,
+      "tamanho_final_pt": 11,
+      "motivo": "Preservar 12 pt nas Tabelas 1 e 2 corrigidas pelo orientador; ampliar tabelas antes em 6,5–10 pt para 11 pt."
+    },
+    {
+      "tipo": "fonte_tabela",
+      "tabela_ooxml": 9,
+      "tamanho_final_pt": 11,
+      "motivo": "Preservar 12 pt nas Tabelas 1 e 2 corrigidas pelo orientador; ampliar tabelas antes em 6,5–10 pt para 11 pt."
+    },
+    {
+      "tipo": "fonte_tabela",
+      "tabela_ooxml": 10,
+      "tamanho_final_pt": 11,
+      "motivo": "Preservar 12 pt nas Tabelas 1 e 2 corrigidas pelo orientador; ampliar tabelas antes em 6,5–10 pt para 11 pt."
+    },
+    {
+      "tipo": "fonte_tabela",
+      "tabela_ooxml": 11,
+      "tamanho_final_pt": 11,
+      "motivo": "Preservar 12 pt nas Tabelas 1 e 2 corrigidas pelo orientador; ampliar tabelas antes em 6,5–10 pt para 11 pt."
+    },
+    {
+      "tipo": "fonte_tabela",
+      "tabela_ooxml": 12,
+      "tamanho_final_pt": 11,
+      "motivo": "Preservar 12 pt nas Tabelas 1 e 2 corrigidas pelo orientador; ampliar tabelas antes em 6,5–10 pt para 11 pt."
+    }
+  ],
+  "contagens": {
+    "estrangeirismos": 195,
+    "variaveis": 98,
+    "marcacoes_vermelhas_limpas": 239
+  },
+  "conteudo_preservado_exceto_recados": true,
+  "imagens": 6,
+  "tabelas": 13,
+  "secoes": 6,
+  "observacoes": "Base explícita devolvida pelo orientador em 26/10/2026; snapshot antigo não foi renovado. Alterações editoriais sem reexecução de experimentos."
+}

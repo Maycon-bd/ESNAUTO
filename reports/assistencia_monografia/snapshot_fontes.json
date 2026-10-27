@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-24T01:18:12.586479+00:00",
+  "catalog_sha256": "b26124bea03fdaa44d3a7b6671d257b870ceea929e6626d123836d1873b273e1",
+  "base_editorial_id": "monografia_vigente",
+  "sources": [
+    {
+      "id": "monografia_vigente",
+      "path": "reports/monografia/MayconGarciaSilva_monografia_PETR4_revisao_orientador.docx",
+      "tipo": "file",
+      "bloco": "EDITORIAL",
+      "papel": "Base editorial PETR4",
+      "exists": true,
+      "sha256": "b182bfe623d934644b7b2c462ed3adcbb6bae98e114819bb649bb40ece41f3dc",
+      "bytes": 645671,
+      "paragraphs_including_tables": 1081,
+      "has_comments_part": false
+    },
+    {
+      "id": "monografia_original",
+      "path": "reports/MayconGarciaSilva_monografia.docx",
+      "tipo": "file",
+      "bloco": "HISTORICO",
+      "papel": "Versão original; não usar como instrução vigente",
+      "exists": true,
+      "sha256": "ce3ecf7316c6ea10ecc7d00e3918313a688d3dfcc50326185db6ab217c4d6612",
+      "bytes": 378967
+    },
+    {
+      "id": "monografia_bibliometria",
+      "path": "reports/monografia/MayconGarciaSilva_monografia_bibliometria_VALE3.docx",
+      "tipo": "file",
+      "bloco": "HISTORICO",
+      "papel": "Versão anterior da revisão bibliográfica",
+      "exists": true,
+      "sha256": "ba3dba9e811558b37d606226a92b456685e538f746d5b1077c976386e5ec8326",
+      "bytes": 202892
+    },
+    {
+      "id": "monografia_vale3",
+      "path": "reports/monografia/MayconGarciaSilva_monografia_resultados_VALE3.docx",
+      "tipo": "file",
+      "bloco": "VALE3-EXT",
+      "papel": "Versão anterior com segundo ativo",
+      "exists": true,
+      "sha256": "ade5c3f014c4faf2e852ffd2f710def9a93729d443eb6d54ffe2743b8ff80c6f",
+      "bytes": 430643
+    },
+    {
+      "id": "ondas_1_4",
+      "path": "docs/08_comparativo_quatro_ondas_estocasticas.md",
+      "tipo": "file",
+      "bloco": "PETR4-HIST",
+      "papel": "Relatório das 30 execuções das Ondas 1 a 4",
+      "exists": true,
+      "sha256": "037251565c8be1f2edddbcdbb2227bec1cba6793095c669ad335277191208511",
+      "bytes": 14974
+    },
+    {
+      "id": "onda_5",
+      "path": "docs/09_onda_5_ajustes_empiricos_easyfit.md",
+      "tipo": "file",
+      "bloco": "PETR4-HIST",
+      "papel": "Relatório das 15 execuções da Onda 5",
+      "exists": true,
+      "sha256": "6216f5788b3e14eabf405693c2d8e9f68bc36c6839c9a7baa1f0450ad388e7e6",
+      "bytes": 6326
+    },
+    {
+      "id": "historico_ga",
+      "path": "Scripts/results/historico_otimizacoes_ga.csv",
+      "tipo": "file",
+      "bloco": "PETR4-HIST",
+      "papel": "Histórico agregado local; não substitui vetores ausentes",
+      "exists": true,
+      "sha256": "e59c0407f815caa95dc7ccd5ec96d1cf624844108997593c5b8bebb288bb9204",
+      "bytes": 478
+    },
+    {
+      "id": "dm_relatorio",
+      "path": "docs/10_diebold_mariano_tfc.md",
+      "tipo": "file",
+      "bloco": "PETR4-DM",
+      "papel": "Protocolo e interpretação da rodada complementar",
+      "exists": true,
+      "sha256": "0b1362147e5522f9910026502ccc33304196bd9008e4fcdcb3c5f3b4323983ed",
+      "bytes": 9882
+    },
+    {
+      "id": "dm_manifesto",
+      "path": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/execution_manifest.json",
+      "tipo": "file",
+      "bloco": "PETR4-DM",
+      "papel": "Manifesto imutável anterior ao cálculo DM; interpretar com dm_execution.json",
+      "exists": true,
+      "sha256": "97c3b31d44a5fc763e584f5913c13884b98fe2c1e6273ef34994cc258414452d",
+      "bytes": 14090
+    },
+    {
+      "id": "dm_execucao",
+      "path": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/dm/dm_execution.json",
+      "tipo": "file",
+      "bloco": "PETR4-DM",
+      "papel": "Registro da execução posterior dos testes",
+      "exists": true,
+      "sha256": "6613b080649802ca1539cc643e3abdc042d78b292fafd23ce23406f3bd1bf690",
+      "bytes": 4547
+    },
+    {
+      "id": "dm_previsoes",
+      "path": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/predictions/previsoes_dm.csv",
+      "tipo": "file",
+      "bloco": "PETR4-DM",
+      "papel": "Vetores datados congelados para os quatro testes",
+      "exists": true,
+      "sha256": "0dd4007600d58047913f2c10ba8ce4f3801e5ee37f4c0e759bc46d2bff070d5e",
+      "bytes": 103299
+    },
+    {
+      "id": "dm_resultados",
+      "path": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/dm/resultados_dm.csv",
+      "tipo": "file",
+      "bloco": "PETR4-DM",
+      "papel": "Resultados dos quatro contrastes",
+      "exists": true,
+      "sha256": "bbd0a1bae158726bbf48f0b3e7d52e8fb9f981f4aed9824e7fafabb06f44126b",
+      "bytes": 1455
+    },
+    {
+      "id": "ilustracao_procedencia",
+      "path": "reports/revisao_orientador_petr4/procedencia.json",
+      "tipo": "file",
+      "bloco": "PETR4-ILUST",
+      "papel": "Origem das Figuras 5 e 6; lote legado",
+      "exists": true,
+      "sha256": "61882e40614bef15f8fa31e900c5c2e95d59661472bfe4fed6b1d3f1d81a2ce9",
+      "bytes": 2647
+    },
+    {
+      "id": "ilustracao_metricas",
+      "path": "reports/revisao_orientador_petr4/metricas.csv",
+      "tipo": "file",
+      "bloco": "PETR4-ILUST",
+      "papel": "Métricas do lote ilustrativo",
+      "exists": true,
+      "sha256": "4e3dc3efe94ad894c809643afb86131397a7ec55daa99e91dc729bf3a60d7143",
+      "bytes": 126
+    },
+    {
+      "id": "ilustracao_previsoes",
+      "path": "reports/revisao_orientador_petr4/previsoes_teste.csv",
+      "tipo": "file",
+      "bloco": "PETR4-ILUST",
+      "papel": "Previsões da ilustração; não confundir com DM",
+      "exists": true,
+      "sha256": "493342a5fe7635e05912b9fc1cb83796f2685bd33d42f3b14d1358ebb561a1b2",
+      "bytes": 68565
+    },
+    {
+      "id": "bibliografia",
+      "path": "reports/bibliometria_reconstrucao/artigos_reconstruidos.bib",
+      "tipo": "file",
+      "bloco": "LIT-34",
+      "papel": "Metadados reconstruídos; conferir versão antes de citar",
+      "exists": true,
+      "sha256": "0211bac0fb6869285bc89c1e57fef52de6349850bddcfa3e2f181fea2c8b8c59",
+      "bytes": 33198
+    },
+    {
+      "id": "base_bibliografica",
+      "path": "reports/bibliometria_reconstrucao/base_reconstruida.json",
+      "tipo": "file",
+      "bloco": "LIT-34",
+      "papel": "Coleção e decisões de identificação",
+      "exists": true,
+      "sha256": "1415a3f6f582cd4899fa01de18bfe9a467f4c0bd0895f7828097dc4264fc2170",
+      "bytes": 83523
+    },
+    {
+      "id": "bibliometria_validacao",
+      "path": "reports/bibliometria_reconstrucao/validacao_bibliometrix.json",
+      "tipo": "file",
+      "bloco": "LIT-34",
+      "papel": "Cobertura de 34 registros e 24 listas de palavras-chave",
+      "exists": true,
+      "sha256": "a9af161afc4e1e596a84ed83112b73a5dff97ddc6892e68dde19552438748bcd",
+      "bytes": 7623
+    },
+    {
+      "id": "bibliometria_texto",
+      "path": "reports/bibliometria_reconstrucao/Resultados_e_texto_para_monografia.md",
+      "tipo": "file",
+      "bloco": "LIT-34",
+      "papel": "Procedência, diferenças de versão e limites",
+      "exists": true,
+      "sha256": "9015f418ad916491483a4680f30d30cc763260dd2b62626551579f88557dc70d",
+      "bytes": 10998
+    },
+    {
+      "id": "pdfs_citados",
+      "path": "Artigos citados",
+      "tipo": "directory",
+      "bloco": "LIT-34",
+      "papel": "Acervo PDF para leitura e verificação de afirmações",
+      "exists": true,
+      "pdfs": [
+        {
+          "path": "Artigos citados/Abebe - Asymmetric generalized error distribution with its properties and applications.pdf",
+          "sha256": "6c09320127ccbfa9c16dbbdcf716b021ab7e82e2c3ac86926db098920514f7d8"
+        },
+        {
+          "path": "Artigos citados/Araújo - Comparing MAE and RMSE as Fitness.pdf",
+          "sha256": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2"
+        },
+        {
+          "path": "Artigos citados/Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+          "sha256": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8"
+        },
+        {
+          "path": "Artigos citados/Cardoso -  A data set of stock prices of all companies in B3from 1995 to 2020.pdf",
+          "sha256": "6409dc381b5eb4889c05cd84177f3ff5487c20cc5a997f87ff3fd9774681e586"
+        },
+        {
+          "path": "Artigos citados/Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.pdf",
+          "sha256": "703cec38e2b31cc6b2e3f38258db73ef814c238b13f70ffa0b58f23622476a80"
+        },
+        {
+          "path": "Artigos citados/Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.pdf",
+          "sha256": "8bb4b1967da28dc961a42231543f70cdf22fc798527b1724c7f1e7cd5714bde6"
+        },
+        {
+          "path": "Artigos citados/Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+          "sha256": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829"
+        },
+        {
+          "path": "Artigos citados/Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+          "sha256": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69"
+        },
+        {
+          "path": "Artigos citados/Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+          "sha256": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48"
+        },
+        {
+          "path": "Artigos citados/Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+          "sha256": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7"
+        },
+        {
+          "path": "Artigos citados/Duttilo P - Modelling financial returns with mixtures of generalized normal distributions.pdf",
+          "sha256": "1cff61a7865858c443b72d28b3f76d0377f24bc387f4b4b7dbcbe644e552d54c"
+        },
+        {
+          "path": "Artigos citados/Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+          "sha256": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557"
+        },
+        {
+          "path": "Artigos citados/Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+          "sha256": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287"
+        },
+        {
+          "path": "Artigos citados/Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+          "sha256": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278"
+        },
+        {
+          "path": "Artigos citados/Jaeger - Echo state network.pdf",
+          "sha256": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537"
+        },
+        {
+          "path": "Artigos citados/Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+          "sha256": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1"
+        },
+        {
+          "path": "Artigos citados/Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+          "sha256": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612"
+        },
+        {
+          "path": "Artigos citados/Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+          "sha256": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac"
+        },
+        {
+          "path": "Artigos citados/Millea - Explorations in Echo State Network.pdf",
+          "sha256": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052"
+        },
+        {
+          "path": "Artigos citados/Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+          "sha256": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c"
+        },
+        {
+          "path": "Artigos citados/Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+          "sha256": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801"
+        },
+        {
+          "path": "Artigos citados/Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+          "sha256": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7"
+        },
+        {
+          "path": "Artigos citados/Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+          "sha256": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc"
+        },
+        {
+          "path": "Artigos citados/Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+          "sha256": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d"
+        },
+        {
+          "path": "Artigos citados/Sudiatmika - Comparison of LSTM and GRU Models Performance.pdf",
+          "sha256": "610bedfb14458d480dfd1adb4e89a8ff39487fe2e9b5a7eb3411e87e519af1fc"
+        },
+        {
+          "path": "Artigos citados/Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+          "sha256": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f"
+        },
+        {
+          "path": "Artigos citados/Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+          "sha256": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5"
+        },
+        {
+          "path": "Artigos citados/Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+          "sha256": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353"
+        },
+        {
+          "path": "Artigos citados/Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+          "sha256": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba"
+        },
+        {
+          "path": "Artigos citados/Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+          "sha256": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67"
+        },
+        {
+          "path": "Artigos citados/Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+          "sha256": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac"
+        },
+        {
+          "path": "Artigos citados/Wang W - Stock market index prediction based on reservoir computing models.pdf",
+          "sha256": "7485fa096c0855232ab45109b346462e14790d945c6f491dfbab2b26db63d761"
+        },
+        {
+          "path": "Artigos citados/Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+          "sha256": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787"
+        },
+        {
+          "path": "Artigos citados/Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+          "sha256": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8"
+        }
+      ]
+    },
+    {
+      "id": "vale3_discussao",
+      "path": "reports/vale3_comparacao/discussao_resultados.md",
+      "tipo": "file",
+      "bloco": "VALE3-EXT",
+      "papel": "12 execuções, persistência e limitações do segundo ativo",
+      "exists": true,
+      "sha256": "be57669a85623ce79171454185b6cc222381ab8452d466866038eae6c5a7fe63",
+      "bytes": 5557
+    },
+    {
+      "id": "motor_ga",
+      "path": "app/utils/ga_engine.R",
+      "tipo": "file",
+      "bloco": "CODIGO-ATUAL",
+      "papel": "GA atual; não presumir identidade com todas as execuções históricas",
+      "exists": true,
+      "sha256": "d107402af08415a0e9cc4913676cc0e3791725736b22145e945ccb5b5d31ecff",
+      "bytes": 19805
+    },
+    {
+      "id": "motor_esn",
+      "path": "app/utils/esn_core.R",
+      "tipo": "file",
+      "bloco": "CODIGO-ATUAL",
+      "papel": "Lógica de validação e teste do motor atual",
+      "exists": true,
+      "sha256": "7327fde095ada68dff1febf68f4aa6be0e06d64721437c50c451511552b29410",
+      "bytes": 4615
+    },
+    {
+      "id": "preparacao_dados",
+      "path": "app/utils/data_prep.R",
+      "tipo": "file",
+      "bloco": "CODIGO-ATUAL",
+      "papel": "Dados, distribuições e montagem de partições",
+      "exists": true,
+      "sha256": "44879675114f72a8341334ad25d806b0c29c818266196bf25f7bcb75dad01857",
+      "bytes": 16942
+    },
+    {
+      "id": "esn_controlada",
+      "path": "Scripts/diebold_mariano/02_esn_controlled.R",
+      "tipo": "file",
+      "bloco": "PETR4-DM",
+      "papel": "Executor controlado com fronteira estrita de treino",
+      "exists": true,
+      "sha256": "c9bc246dae8e1297b480fb0d20ec0ccad4d0e8420eb5e8f417151cb0f9bd8d28",
+      "bytes": 2057
+    }
+  ],
+  "scope": "Identidade e extração textual; não valida ciência, fontes citadas ou layout"
+}

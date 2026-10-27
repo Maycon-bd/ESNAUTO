@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "data_contexto": "2026-10-23",
+  "caminhos_relativos_a": "raiz_do_projeto",
+  "base_editorial_id": "monografia_vigente",
+  "fontes": [
+    {"id":"monografia_vigente","path":"reports/monografia/MayconGarciaSilva_monografia_PETR4_revisao_orientador.docx","tipo":"file","bloco":"EDITORIAL","papel":"Base editorial PETR4"},
+    {"id":"monografia_original","path":"reports/MayconGarciaSilva_monografia.docx","tipo":"file","bloco":"HISTORICO","papel":"Versão original; não usar como instrução vigente"},
+    {"id":"monografia_bibliometria","path":"reports/monografia/MayconGarciaSilva_monografia_bibliometria_VALE3.docx","tipo":"file","bloco":"HISTORICO","papel":"Versão anterior da revisão bibliográfica"},
+    {"id":"monografia_vale3","path":"reports/monografia/MayconGarciaSilva_monografia_resultados_VALE3.docx","tipo":"file","bloco":"VALE3-EXT","papel":"Versão anterior com segundo ativo"},
+    {"id":"ondas_1_4","path":"docs/08_comparativo_quatro_ondas_estocasticas.md","tipo":"file","bloco":"PETR4-HIST","papel":"Relatório das 30 execuções das Ondas 1 a 4"},
+    {"id":"onda_5","path":"docs/09_onda_5_ajustes_empiricos_easyfit.md","tipo":"file","bloco":"PETR4-HIST","papel":"Relatório das 15 execuções da Onda 5"},
+    {"id":"historico_ga","path":"Scripts/results/historico_otimizacoes_ga.csv","tipo":"file","bloco":"PETR4-HIST","papel":"Histórico agregado local; não substitui vetores ausentes"},
+    {"id":"dm_relatorio","path":"docs/10_diebold_mariano_tfc.md","tipo":"file","bloco":"PETR4-DM","papel":"Protocolo e interpretação da rodada complementar"},
+    {"id":"dm_manifesto","path":"Scripts/results/diebold_mariano/controlled_runs/seed_20260926/execution_manifest.json","tipo":"file","bloco":"PETR4-DM","papel":"Manifesto imutável anterior ao cálculo DM; interpretar com dm_execution.json"},
+    {"id":"dm_execucao","path":"Scripts/results/diebold_mariano/controlled_runs/seed_20260926/dm/dm_execution.json","tipo":"file","bloco":"PETR4-DM","papel":"Registro da execução posterior dos testes"},
+    {"id":"dm_previsoes","path":"Scripts/results/diebold_mariano/controlled_runs/seed_20260926/predictions/previsoes_dm.csv","tipo":"file","bloco":"PETR4-DM","papel":"Vetores datados congelados para os quatro testes"},
+    {"id":"dm_resultados","path":"Scripts/results/diebold_mariano/controlled_runs/seed_20260926/dm/resultados_dm.csv","tipo":"file","bloco":"PETR4-DM","papel":"Resultados dos quatro contrastes"},
+    {"id":"ilustracao_procedencia","path":"reports/revisao_orientador_petr4/procedencia.json","tipo":"file","bloco":"PETR4-ILUST","papel":"Origem das Figuras 5 e 6; lote legado"},
+    {"id":"ilustracao_metricas","path":"reports/revisao_orientador_petr4/metricas.csv","tipo":"file","bloco":"PETR4-ILUST","papel":"Métricas do lote ilustrativo"},
+    {"id":"ilustracao_previsoes","path":"reports/revisao_orientador_petr4/previsoes_teste.csv","tipo":"file","bloco":"PETR4-ILUST","papel":"Previsões da ilustração; não confundir com DM"},
+    {"id":"bibliografia","path":"reports/bibliometria_reconstrucao/artigos_reconstruidos.bib","tipo":"file","bloco":"LIT-34","papel":"Metadados reconstruídos; conferir versão antes de citar"},
+    {"id":"base_bibliografica","path":"reports/bibliometria_reconstrucao/base_reconstruida.json","tipo":"file","bloco":"LIT-34","papel":"Coleção e decisões de identificação"},
+    {"id":"bibliometria_validacao","path":"reports/bibliometria_reconstrucao/validacao_bibliometrix.json","tipo":"file","bloco":"LIT-34","papel":"Cobertura de 34 registros e 24 listas de palavras-chave"},
+    {"id":"bibliometria_texto","path":"reports/bibliometria_reconstrucao/Resultados_e_texto_para_monografia.md","tipo":"file","bloco":"LIT-34","papel":"Procedência, diferenças de versão e limites"},
+    {"id":"pdfs_citados","path":"Artigos citados","tipo":"directory","bloco":"LIT-34","papel":"Acervo PDF para leitura e verificação de afirmações"},
+    {"id":"vale3_discussao","path":"reports/vale3_comparacao/discussao_resultados.md","tipo":"file","bloco":"VALE3-EXT","papel":"12 execuções, persistência e limitações do segundo ativo"},
+    {"id":"motor_ga","path":"app/utils/ga_engine.R","tipo":"file","bloco":"CODIGO-ATUAL","papel":"GA atual; não presumir identidade com todas as execuções históricas"},
+    {"id":"motor_esn","path":"app/utils/esn_core.R","tipo":"file","bloco":"CODIGO-ATUAL","papel":"Lógica de validação e teste do motor atual"},
+    {"id":"preparacao_dados","path":"app/utils/data_prep.R","tipo":"file","bloco":"CODIGO-ATUAL","papel":"Dados, distribuições e montagem de partições"},
+    {"id":"esn_controlada","path":"Scripts/diebold_mariano/02_esn_controlled.R","tipo":"file","bloco":"PETR4-DM","papel":"Executor controlado com fronteira estrita de treino"}
+  ],
+  "materiais_nao_localizados": [
+    {"referencia":"methodi_ordinatio.xlsx","status":"nao_localizado_no_acervo_examinado"},
+    {"referencia":"extracao_completa.xlsx","status":"nao_localizado_no_acervo_examinado"},
+    {"referencia":"manual institucional vigente da UniRV","status":"nao_localizado_como_arquivo_separado"}
+  ]
+}
