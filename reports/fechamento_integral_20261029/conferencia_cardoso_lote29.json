@@ -1,0 +1,61 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_antes": "bdb37cc278346de7b0da09ea09e349acec749b46d2614609b5afa5216b3efd88",
+  "sha256_rascunho_apos_edicao": "63a9f294efb0ca549aef9caa87c02aca44df419aa294cee8390b06dc2d6412eb",
+  "tese": {
+    "arquivo": "reports/tese_Fabian_Correa_Cardoso.pdf",
+    "sha256": "0713862798eb01327e7534ff86e694d76bb8bf9bc2113ba6407bef04f14b2e26",
+    "alcance": "Resumo e comparações nas Tabelas 16 e 32; leitura dirigida, não integral.",
+    "pontos": [
+      {
+        "localizacao": "Tabela 16, p. 84 impressa / p. 87 PDF (ITSA4)",
+        "arma_egarch_mae": "0,000013794",
+        "arma_egarch_rmse": "0,000036582",
+        "esn_mae": "0,000017793",
+        "esn_rmse": "0,000040582"
+      },
+      {
+        "localizacao": "Tabela 32, p. 101 impressa / p. 104 PDF (PETR4)",
+        "arma_egarch_mae": "0,000022638",
+        "arma_egarch_rmse": "0,000107948",
+        "esn_mae": "0,000016448",
+        "esn_rmse": "0,000110424"
+      }
+    ],
+    "diagnostico": "A tese resume ARMA-EGARCH como melhor nos estudos de caso, mas a Tabela 32 mostra menor MAE da ESN na PETR4; redação agora especifica RMSE e ressalva a exceção por MAE. Dados e desfecho de volatilidade diferem da monografia.",
+    "figuras_apresentacao": {
+      "localizacao": "p. 90 impressa / p. 93 PDF, Figuras 29 e 30",
+      "conferencia": "Figura 29 representa evolução do fitness do GA e Figura 30 apresenta alvo e previsão; correspondem às referências de apresentação das Figuras 5 e 6 da monografia, sem equivalência de dados ou protocolo. Página visualmente examinada."
+    }
+  },
+  "fontes_visuais": [
+    {
+      "id": "ENMC",
+      "arquivo": "C:\\Users\\User\\Downloads\\Artigo para XXV ENMC ASSOCIACAO-DE-REDES-DE-ESTADO-DE-ECO-COM-METODOS-ESTATISTICOS-CLASSICOS-DE-PREVISAO-Uma-revisao-bibliometrica publicado.pdf",
+      "sha256": "c5d77693669f8e06c93e0d6839841082124727bcadaa4b2377c9a567db634fd8",
+      "paginas_pdf_examinadas": [
+        6,
+        8
+      ],
+      "alcance": "Conferência dirigida de figuras e trechos; não é leitura integral."
+    },
+    {
+      "id": "KBS",
+      "arquivo": "C:\\Users\\User\\Downloads\\Artigo para Knowledge Based Systems Echo state network and classical statistical techniques for time series forecasting- A review de Cardoso et alii 1-s2.0-S0950705124002740-main publicado.pdf",
+      "sha256": "89d97780ebca6100cdee8523f7e9c4659b4193d5be167fd9b2308ff2eee5976f",
+      "paginas_pdf_examinadas": [
+        6,
+        7
+      ],
+      "alcance": "Conferência dirigida de figuras e trechos; não é leitura integral."
+    }
+  ],
+  "diagnostico_figuras": "ENMC Figura 2 apresenta frequência de palavras-chave e Figura 7 expressões de títulos; KBS Figura 1 mostra frequência de palavras-chave e Figura 2 bigramas de resumos. Sustentam o uso como referências visuais em sentido amplo, sem confundir suas amostras com a coleção da monografia.",
+  "similaridade": "Figuras e números dos artigos não foram reproduzidos como dados da monografia; a comparação pontual não certifica ausência global de plágio.",
+  "texto_antes": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Naqueles estudos de caso, ARMA-EGARCH apresentou melhor desempenho, ressaltando a dependência entre método, dados e desfecho. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG.",
+  "texto_depois": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG.",
+  "estado": "validado_em_rascunho_nao_promovido",
+  "sha256_rascunho_apos_exportacao": "ee6e179ab0ba157fb9f1348a1ac75c38813be767c3a27367481727f59641af50",
+  "verificacao_visual": "Página PDF 32 inspecionada, 75 idênticas ao lote28b; 76 páginas; 45 verificações sem falhas."
+}

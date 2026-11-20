@@ -1,0 +1,22 @@
+{
+  "base": "v001",
+  "docx": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revisao_parecer_integridade.docx",
+  "sha256_docx": "dcd2ad06f6ef5f7c30cb7dc679838903c1d39074b62d34ada15e2662f8b06547",
+  "pdf": "reports\\correcao_parecer_integridade\\revisao_matriz170_sintese.pdf",
+  "sha256_pdf": "98c8fb6650e8b3af7fcd5424d119991ac4a9f1666cb20a437c3770abc1a5ba4c",
+  "paginas": 76,
+  "n_fontes": 34,
+  "n_celulas": 170,
+  "estados": {
+    "-": 41,
+    "?": 43,
+    "D": 75,
+    "S": 11
+  },
+  "n_paragrafos_corpo_reescritos": 62,
+  "n_celulas_tabelas_reescritas": 187,
+  "verificacao_estrutural": "170 células do Word iguais à matriz e cinco sínteses iguais às contagens; todos os PDFs conferem com hashes; v001 preservada; construtor confere demais partes OOXML.",
+  "verificacao_visual": "Páginas físicas 34–37 abertas nesta exportação: tabela inteira na página, quadro sem contato de nomes com códigos, cabeçalho repetido, gráfico legível sem recortes. Não é inspeção integral das 76 páginas.",
+  "pendencias": "Resumo/abstract, procedência do ajuste, H4/H5, contribuição e origem do código, fontes complementares, metadados restantes, listas/paginação final e fechamento do parecer.",
+  "promovida": false
+}

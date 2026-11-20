@@ -1,0 +1,32 @@
+{
+  "lote": 111,
+  "arquivo": "reports\\monografia\\trabalho\\fechamento_integral_20261029.docx",
+  "sha256": "c152e5c6daec08abafd9a1034bf027dfd577075cc90da3d1f10202384ea37469",
+  "paginas": 76,
+  "verificacoes_estruturais": 45,
+  "falhas": 0,
+  "paginas_visualmente_conferidas": [
+    13,
+    14,
+    16,
+    20,
+    26,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "resultado_visual": "Textos, itálicos, tabelas e figuras legíveis; sem sobreposição ou corte nas páginas alteradas.",
+  "base_editorial": "v005; cópia de trabalho ainda não promovida",
+  "correcoes": [
+    "Removida entrada HQNN sem uso",
+    "Expansão SVM na primeira menção",
+    "Expansão TPE na primeira menção",
+    "Expansão MAPE na primeira menção"
+  ]
+}

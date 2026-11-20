@@ -1,0 +1,20 @@
+{
+  "sha_antes": "61fac8da8ab082633bbaa113ed697fd32ccfd7d72c2142f003b18b5b10083e2a",
+  "sha_depois": "ebcaf9c36be05a2209b888240c0b9e50cf5c448b159dc34039896da7756bf3af",
+  "paragrafos": [
+    171,
+    459
+  ],
+  "motivo": "Distinguir o motor atual da codificação efetivamente utilizada nas execuções históricas; não há alteração de resultados.",
+  "backup": "reports\\fechamento_integral_20261029\\antes_edicao_lote57.docx",
+  "alteracoes": [
+    {
+      "antes": "Também se busca otimizar conjuntamente a taxa de vazamento, o raio espectral, o descarte inicial, o tamanho do reservatório e a regularização Ridge por meio de cromossomo binário de 55 bits.",
+      "depois": "Também se busca otimizar conjuntamente a taxa de vazamento, o raio espectral, o descarte inicial, o tamanho do reservatório e a regularização Ridge. A implementação atual utiliza um cromossomo binário de 55 bits para esses parâmetros."
+    },
+    {
+      "antes": "O cromossomo binário de 55 bits codifica",
+      "depois": "Na implementação atual, o cromossomo binário de 55 bits codifica"
+    }
+  ]
+}

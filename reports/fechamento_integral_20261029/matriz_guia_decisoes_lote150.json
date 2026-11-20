@@ -1,0 +1,2935 @@
+{
+  "sha256_docx": "f933c9281afbbab9b3f49a3fccec01278eb77085d6358c2007c2719ed14682ed",
+  "matriz_historica": "reports\\auditoria_integral_fasoft_20261028\\conferencia_guia.md",
+  "requisitos": [
+    {
+      "id": "G01",
+      "pagina_guia": "10",
+      "requisito": "A4 de 21 × 29,7 cm",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Seções OOXML e dimensões do PDF.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "A4 e margens da seção 1",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "A4 e margens da seção 2",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "A4 e margens da seção 3",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "A4 e margens da seção 4",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "A4 e margens da seção 5",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "A4 e margens da seção 6",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "A4 e margens da seção 1",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "A4 e margens da seção 2",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "A4 e margens da seção 3",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "A4 e margens da seção 4",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "A4 e margens da seção 5",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "A4 e margens da seção 6",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G02",
+      "pagina_guia": "10",
+      "requisito": "Margens superior/esquerda 3 cm e inferior/direita 2 cm",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Todas as seções; inspeção de texto fora da mancha.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "A4 e margens da seção 1",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "A4 e margens da seção 2",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "A4 e margens da seção 3",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "A4 e margens da seção 4",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "A4 e margens da seção 5",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "A4 e margens da seção 6",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "A4 e margens da seção 1",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "A4 e margens da seção 2",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "A4 e margens da seção 3",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "A4 e margens da seção 4",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "A4 e margens da seção 5",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "A4 e margens da seção 6",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G03",
+      "pagina_guia": "10",
+      "requisito": "Arial ou Times New Roman, tamanho 12 no texto geral",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Corpo em Times New Roman 12; resolver herança em docDefaults.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Corpo em Times New Roman 12",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Corpo em Times New Roman 12",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G04",
+      "pagina_guia": "10",
+      "requisito": "Texto preto, com cores permitidas nas ilustrações",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Runs e páginas renderizadas; cores dos seis gráficos preservadas.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Texto em preto ou automático",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Texto em preto ou automático",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G05",
+      "pagina_guia": "10",
+      "requisito": "Corpo justificado",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Estilos e parágrafos efetivos, sem fontes/notas/legendas nessa regra geral.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Corpo justificado",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Corpo justificado",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G06",
+      "pagina_guia": "10",
+      "requisito": "Primeira linha de 1,25 cm e espaço 1,5",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Corpo; alíneas e elementos especiais seguem seus modelos.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Corpo em entrelinhas 1,5",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Corpo com primeira linha de 1,25 cm",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Corpo com primeira linha de 1,25 cm",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "Corpo em entrelinhas 1,5",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G07",
+      "pagina_guia": "10–11",
+      "requisito": "Contagem desde a folha de rosto; números visíveis desde a introdução",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "PDF nativo: página impressa igual à física menos a capa.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Paginação textual contínua excluindo capa",
+          "ok": true,
+          "detalhe": 59
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido em todas as páginas do PDF atual",
+        "decisao": "PDF18(introdução) mostra17; numeração segue até75noPDF76. Capa excluída da contagem e pré-textuais contados sem número visível; correspondência contínua confirmada em59páginas textuais/pós-textuais.",
+        "evidencia": "paginacao_atual_lote149.json"
+      }
+    },
+    {
+      "id": "G08",
+      "pagina_guia": "10 e 50",
+      "requisito": "Número 12 no alto à direita",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Cabeçalhos e inspeção das páginas textuais.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido em todas as páginas do PDF atual",
+        "decisao": "59números textuais/pós-textuais em12pt no alto à direita,com posição e tamanho extraídos do PDF.",
+        "evidencia": "paginacao_atual_lote149.json"
+      }
+    },
+    {
+      "id": "G09",
+      "pagina_guia": "11 e 36",
+      "requisito": "Pré-textuais e pós-textuais em páginas distintas",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Elementos obrigatórios, dedicatória, agradecimentos, epígrafe e listas.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no exemplar eletrônico",
+        "decisao": "Elementos pré-textuais iniciam em páginas próprias,conforme sequência visual e posições registradas; listas podem continuar. Referências iniciam em página própria(PDF72),sem pré-textuais no sumário.",
+        "evidencia": "organizacao_recomendacoes_lote150.json"
+      }
+    },
+    {
+      "id": "G10",
+      "pagina_guia": "11–12 e 50",
+      "requisito": "Seções primárias em nova página",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Seis aberturas de capítulos confirmadas no PDF.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Seções primárias em nova página no PDF do Word",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Seções primárias em nova página no PDF do Word",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G11",
+      "pagina_guia": "12",
+      "requisito": "Evitar órfãs/viúvas e título sem ao menos duas linhas seguintes",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Controle do Word e inspeção visual das quebras.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Títulos acompanhados do texto seguinte",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Controle de linhas órfãs e viúvas no corpo",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no exemplar eletrônico",
+        "decisao": "Títulos com keep_with_next,controle de órfãs/viúvas do corpo aprovado137 e inspeção das renderizações/checkpoints. Não identificado título isolado ou linha órfã nas páginas revistas; recomendação avaliada no exemplar eletrônico.",
+        "evidencia": "organizacao_recomendacoes_lote150.json"
+      }
+    },
+    {
+      "id": "G12",
+      "pagina_guia": "12 e 50",
+      "requisito": "Hierarquia e realce dos títulos",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Primário em maiúsculas/negrito; secundário em maiúsculas; terciário em negrito.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Hierarquia: TITULO TCC",
+          "ok": true,
+          "detalhe": 6
+        },
+        {
+          "requisito": "Hierarquia: SEÇÃO TCC",
+          "ok": true,
+          "detalhe": 30
+        },
+        {
+          "requisito": "Hierarquia: SUBÇÃO 2",
+          "ok": true,
+          "detalhe": 4
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Hierarquia: TITULO TCC",
+            "ok": true,
+            "detalhe": 6
+          },
+          {
+            "requisito": "Hierarquia: SEÇÃO TCC",
+            "ok": true,
+            "detalhe": 30
+          },
+          {
+            "requisito": "Hierarquia: SUBÇÃO 2",
+            "ok": true,
+            "detalhe": 4
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G13",
+      "pagina_guia": "12",
+      "requisito": "Numeração arábica, até cinco níveis",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Documento utiliza três níveis; os níveis quarto/quinto não são usados.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no alcance especificado",
+        "decisao": "Até três níveis de indicativo numérico; atende ao limite de cinco.",
+        "evidencia": "sumario_hierarquia_lote128.json",
+        "sha256_evidencia": "b93e86e2bddd2cdeb6672b3df7cf4c34d716fede6c8d26b39d6de70c4311db03"
+      }
+    },
+    {
+      "id": "G14",
+      "pagina_guia": "12 e 50",
+      "requisito": "Títulos justificados e separados do texto",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Estilos e espaçamentos; listas e referências centralizadas por exceção.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no exemplar eletrônico",
+        "decisao": "40títulos numerados justificados,com espaçamento antes/depois explícito ou herdado; valores registrados.",
+        "evidencia": "organizacao_recomendacoes_lote150.json"
+      }
+    },
+    {
+      "id": "G15",
+      "pagina_guia": "12",
+      "requisito": "Títulos sem indicativo numérico, centralizados em negrito 12",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Pré-textuais e referências.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido com complemento específico",
+        "decisao": "Títulos sem indicativo: pré-textuais pelo controle137 e REFERÊNCIAS por verificação efetiva complementar; centralização,negrito12.",
+        "evidencia": "complementos_formais_lote138.json"
+      }
+    },
+    {
+      "id": "G16",
+      "pagina_guia": "13–14 e 25",
+      "requisito": "Introdução contínua, sem subseções",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Introdução em duas páginas; H1–H5 mantidas como parágrafos.",
+      "registros_atuais_relacionados": [
+        "checkpoint_lote63.json"
+      ],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Introdução contínua sem subseções",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Introdução contínua sem subseções",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G17",
+      "pagina_guia": "13–14",
+      "requisito": "Introdução sem citações, equações, tabelas, figuras e resultados",
+      "natureza": "orientação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Leitura da introdução e teste de ausência de citações autor–ano.",
+      "registros_atuais_relacionados": [
+        "riscos_guia_lote56.json"
+      ],
+      "estado_atual": "evidencias_atuais_localizadas_revisar_alcance",
+      "registro_complementar": "decisoes_introducao_lote87.json",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no texto atual",
+        "decisao": "Introdução sem chamadas autor–ano,objetos de equação,desenhos,tabelas ou resultados empíricos. Números55bits e identificadoresH1–H5 descrevem método/hipóteses; não resultados antecipados.",
+        "evidencia": "introducao_estrutura_lote142.json"
+      }
+    },
+    {
+      "id": "G18",
+      "pagina_guia": "13–14",
+      "requisito": "Contexto, problema, justificativa, objetivos, hipóteses, contribuição e roteiro",
+      "natureza": "orientação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Componentes identificados na introdução; não se atribuiu resultado antecipado.",
+      "registros_atuais_relacionados": [
+        "edicao_lote57.json"
+      ],
+      "estado_atual": "evidencias_atuais_localizadas_revisar_alcance",
+      "registro_complementar": "decisoes_introducao_lote87.json",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no texto atual",
+        "decisao": "Contexto/objeto165; abordagem166; limites167; problema e justificativa168; objetivo geral169; específicos e contribuição de desenvolvimento170; avaliação171; hipóteses172–177; roteiro178.",
+        "evidencia": "introducao_estrutura_lote142.json"
+      }
+    },
+    {
+      "id": "G19",
+      "pagina_guia": "13–14",
+      "requisito": "Introdução com duas a três páginas",
+      "natureza": "recomendação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Duas páginas no PDF do Word.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Introdução com 2–3 páginas",
+          "ok": true,
+          "detalhe": 2
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Introdução com 2–3 páginas",
+            "ok": true,
+            "detalhe": 2
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G20",
+      "pagina_guia": "14",
+      "requisito": "Preferência por três níveis de seção",
+      "natureza": "recomendação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Três níveis utilizados.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no alcance especificado",
+        "decisao": "Recomendação de preferência por três níveis atendida.",
+        "evidencia": "sumario_hierarquia_lote128.json",
+        "sha256_evidencia": "b93e86e2bddd2cdeb6672b3df7cf4c34d716fede6c8d26b39d6de70c4311db03"
+      }
+    },
+    {
+      "id": "G21",
+      "pagina_guia": "14",
+      "requisito": "Parágrafos de quatro a sete linhas",
+      "natureza": "recomendação",
+      "estado_historico": "com ressalva",
+      "evidencia_historica": "Parágrafos longos divididos entre frases; hipóteses, enumerações e passagens curtas não foram artificialmente alongadas. Não é uma regra universal satisfeita por todos os parágrafos.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "extensao_capitulos_lote83.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\extensao_capitulos_lote83.json",
+          "sha256": "91ff302b5cf5f2364bc1842c2983bdf4f3f7743e03f133ea8d97e761682fff71"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "avaliado com ressalva editorial",
+        "decisao": "Recomendação4–7linhas não é universalmente atendida. Hipóteses,transições e parágrafos funcionais curtos preservados; não alongar texto artificialmente. Ressalva editorial explícita,sem inferir reprovação automática.",
+        "evidencia": "organizacao_recomendacoes_lote150.json"
+      }
+    },
+    {
+      "id": "G22",
+      "pagina_guia": "18–19",
+      "requisito": "Estrutura da monografia concluída",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Elementos pré-textuais, introdução, revisão, métodos, resultados/discussão, conclusão e referências presentes.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no texto atual",
+        "decisao": "Estrutura de manuscrito concluído inclui introdução,revisão,material e métodos,resultados,discussão,conclusão e referências,conforme mapa134 e sumário128; etapas institucionais posteriores preservadas.",
+        "evidencia": "introducao_estrutura_lote142.json"
+      }
+    },
+    {
+      "id": "G23",
+      "pagina_guia": "18–19",
+      "requisito": "Ordem dos elementos pré-textuais",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Figuras, quadros, tabelas, siglas e símbolos antes do sumário.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Ordem dos elementos pré-textuais",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Ordem dos elementos pré-textuais",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G24",
+      "pagina_guia": "19, 26–28",
+      "requisito": "Revisão, estado da arte e trabalhos relacionados",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Capítulo 2; manutenção do portfólio e da distinção de fontes conceituais.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "aguarda conclusão individual",
+        "decisao": "Evidências históricas/controles já vinculados; avaliar cobertura do requisito, não apenas presença do relatório."
+      }
+    },
+    {
+      "id": "G25",
+      "pagina_guia": "19, 29–32",
+      "requisito": "Metodologia efetiva, dados, classificação, procedimentos e análise",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Capítulo 3, incluindo critérios de seleção e protocolos distintos.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido com limites experimentais explícitos",
+        "decisao": "Metodologia descreve classificação,dados,partições,ajustes recebidos,arquitetura,codificação,busca,comparadores,teste DM e limites de reprodução. As decisões90–92 foram conciliadas ao texto; atribuições revistas117/119 não alteram protocolo.",
+        "evidencia": "conciliacao_capitulos_lote143.json"
+      }
+    },
+    {
+      "id": "G26",
+      "pagina_guia": "20 e 37",
+      "requisito": "Capa: instituição/curso, autor, título, local e ano",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Fonte 12, negrito, maiúsculas e centralização conforme modelo.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "pretextuais_visual_lote81.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\pretextuais_visual_lote81.json",
+          "sha256": "7eff699c7d9b66e59d95f076363c9b0a9fe12eca4371174b77b84e62b3109903"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "conferido com limites institucionais registrados",
+        "decisao": "Instituição,faculdade,autor,título,local e ano presentes na capa; página idêntica à inspeção81.",
+        "evidencia": "capa_rosto_aprovacao_lote141.json"
+      }
+    },
+    {
+      "id": "G27",
+      "pagina_guia": "37",
+      "requisito": "Espaços da capa",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "7 e 10 linhas simples representadas por 84 e 120 pt; local/ano na parte inferior.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "pretextuais_visual_lote81.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\pretextuais_visual_lote81.json",
+          "sha256": "7eff699c7d9b66e59d95f076363c9b0a9fe12eca4371174b77b84e62b3109903"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "conferido com limites institucionais registrados",
+        "decisao": "Modelo da capa:84pt e120pt representam7e10linhas simples; local/ano na parte inferior, imagem idêntica à previamente inspecionada.",
+        "evidencia": "capa_rosto_aprovacao_lote141.json"
+      }
+    },
+    {
+      "id": "G28",
+      "pagina_guia": "20 e 38",
+      "requisito": "Folha de rosto: identificação, natureza, objetivo, instituição, área e orientador",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Área de concentração acrescentada; demais dados preservados.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "pretextuais_visual_lote81.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\pretextuais_visual_lote81.json",
+          "sha256": "7eff699c7d9b66e59d95f076363c9b0a9fe12eca4371174b77b84e62b3109903"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "conferido com limites institucionais registrados",
+        "decisao": "Folha de rosto contém identificação,natureza,curso,instituição,grau,área e orientador; mesma página visual da inspeção81.",
+        "evidencia": "capa_rosto_aprovacao_lote141.json"
+      }
+    },
+    {
+      "id": "G29",
+      "pagina_guia": "38",
+      "requisito": "Natureza em 11, espaço simples, bloco com recuo de 8 cm",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Parágrafo de apresentação e orientador; título em 12 e 1,5.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "pretextuais_visual_lote81.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\pretextuais_visual_lote81.json",
+          "sha256": "7eff699c7d9b66e59d95f076363c9b0a9fe12eca4371174b77b84e62b3109903"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "conferido com limites institucionais registrados",
+        "decisao": "Apresentação e orientador em11pt,espaço simples,recuo8,001cm; identidade visual preservada.",
+        "evidencia": "capa_rosto_aprovacao_lote141.json"
+      }
+    },
+    {
+      "id": "G30",
+      "pagina_guia": "21 e 39",
+      "requisito": "Ficha catalográfica após a folha de rosto",
+      "natureza": "obrigação",
+      "estado_historico": "etapa posterior autorizada",
+      "evidencia_historica": "Espaço vazio preservado por decisão expressa do autor; emissão pela instituição.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\guia_condicionais_lote82.json",
+          "sha256": "65672f303e499d5b725997319244f16e3377112312b912f990634c2411696af7"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "ficha vazia autorizada nesta etapa",
+        "decisao": "Local reservado à ficha mantido após folha de rosto. Conteúdo institucional será fornecido posteriormente; decisão explícita do autor prevalece sobre inferência de preenchimento imediato.",
+        "evidencia": "guia_condicionais_atual_lote127.json",
+        "sha256_evidencia": "ad57237bef736508bc659e901641a73da1848692ef80b91695e9edcef079cfa0"
+      }
+    },
+    {
+      "id": "G31",
+      "pagina_guia": "39",
+      "requisito": "Caixa da ficha 12,5 × 7,5 cm; cabeçalhos 11",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Medidas OOXML e renderização; nenhum conteúdo catalográfico inventado.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Ficha: caixa de 12,5 × 7,5 cm",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Ficha: caixa de 12,5 × 7,5 cm",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G32",
+      "pagina_guia": "21 e 40",
+      "requisito": "Folha de aprovação: identificação, natureza, área e banca",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Nomes e títulos fornecidos na origem preservados; disposição conferida.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "pretextuais_visual_lote81.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\pretextuais_visual_lote81.json",
+          "sha256": "7eff699c7d9b66e59d95f076363c9b0a9fe12eca4371174b77b84e62b3109903"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "conferido com limites institucionais registrados",
+        "decisao": "Folha de aprovação conserva autor,título,natureza,área e banca da origem. Composição definitiva/assinaturas não confirmadas institucionalmente, etapa posterior.",
+        "evidencia": "capa_rosto_aprovacao_lote141.json"
+      }
+    },
+    {
+      "id": "G33",
+      "pagina_guia": "40",
+      "requisito": "Espaçamentos e fontes da aprovação",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Autor/título/BANCA em 12; assinaturas, nomes e instituições em 11; afastamentos do modelo.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "pretextuais_visual_lote81.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\pretextuais_visual_lote81.json",
+          "sha256": "7eff699c7d9b66e59d95f076363c9b0a9fe12eca4371174b77b84e62b3109903"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "conferido com limites institucionais registrados",
+        "decisao": "Autor,título e BANCA centralizados em negrito; nomes/assinaturas em11pt e afastamentos do modelo preservados na página idêntica à inspeção81.",
+        "evidencia": "capa_rosto_aprovacao_lote141.json"
+      }
+    },
+    {
+      "id": "G34",
+      "pagina_guia": "21",
+      "requisito": "Data e assinaturas após aprovação",
+      "natureza": "condicional",
+      "estado_historico": "etapa acadêmica posterior",
+      "evidencia_historica": "Campos sem preenchimento; não afirmar aprovação institucional.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "guia_condicionais_lote82.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\guia_condicionais_lote82.json",
+          "sha256": "65672f303e499d5b725997319244f16e3377112312b912f990634c2411696af7"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "etapa institucional posterior",
+        "decisao": "Datas/assinaturas de aprovação não devem ser inventadas; campos pendentes conforme etapa acadêmica e decisão registrada do autor.",
+        "evidencia": "guia_condicionais_atual_lote127.json",
+        "sha256_evidencia": "ad57237bef736508bc659e901641a73da1848692ef80b91695e9edcef079cfa0"
+      }
+    },
+    {
+      "id": "G35",
+      "pagina_guia": "21 e 41",
+      "requisito": "Dedicatória sem título, na metade direita inferior",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Recuo esquerdo de 8 cm, 12, simples e justificado.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido por propriedades efetivas e inspeção visual",
+        "decisao": "Dedicatória sem título, na metade direita inferior; recuo direto7,999cm e posicionamento inferior conferidos.",
+        "evidencia": "pretextuais_concluidos_lote140.json"
+      }
+    },
+    {
+      "id": "G36",
+      "pagina_guia": "21 e 42",
+      "requisito": "Agradecimentos: título e corpo",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Título centralizado/negrito 12; texto 12, 1,5 e primeira linha 1,25 cm.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido por propriedades efetivas e inspeção visual",
+        "decisao": "Agradecimentos com título centralizado e corpo em parágrafos; conteúdo pessoal do elemento pré-textual preservado.",
+        "evidencia": "pretextuais_concluidos_lote140.json"
+      }
+    },
+    {
+      "id": "G37",
+      "pagina_guia": "21 e 43",
+      "requisito": "Epígrafe: sem título, 12 em itálico, recuo 8 cm; autor 11 à direita",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Disposição visual conferida.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido por propriedades efetivas e inspeção visual",
+        "decisao": "Epígrafe sem título, na metade direita inferior; recuo7,999cm, citação em itálico e autoria à direita. Localizador e referência constam do documento.",
+        "evidencia": "pretextuais_concluidos_lote140.json"
+      }
+    },
+    {
+      "id": "G38",
+      "pagina_guia": "21 e 35",
+      "requisito": "Identificação da fonte da epígrafe",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Alternativa de Gleick adotada após resposta do autor; passagem conferida no primeiro parágrafo de publicação primária assinada, com referência eletrônica e localizador. A frase antiga não foi validada nem conservada.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Epígrafe corresponde à passagem primária verificada e tem referência e localizador",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido por propriedades efetivas e inspeção visual",
+        "decisao": "Fonte da epígrafe é Gleick1987,par.1; referência eletrônica própria e conferência primária registradas no controle137 e lote53.",
+        "evidencia": "pretextuais_concluidos_lote140.json"
+      }
+    },
+    {
+      "id": "G39",
+      "pagina_guia": "22–23 e 44",
+      "requisito": "Resumo de 150–500 palavras em um parágrafo",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Contagem registrada nos testes; objetivo, método, resultados e conclusão presentes.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "RESUMO: 150–500 palavras",
+          "ok": true,
+          "detalhe": 331
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "RESUMO: 150–500 palavras",
+            "ok": true,
+            "detalhe": 331
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G40",
+      "pagina_guia": "44",
+      "requisito": "Resumo 12, simples, justificado, sem recuo",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Parágrafo e renderização.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "RESUMO: sem recuo e espaço simples",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido com complemento específico",
+        "decisao": "Resumo justificado,f12,simples,sem recuo confirmado por herança dos estilos. Abstract examinado também.",
+        "evidencia": "complementos_formais_lote138.json"
+      }
+    },
+    {
+      "id": "G41",
+      "pagina_guia": "22–23",
+      "requisito": "Resumo autossuficiente, sem siglas indispensáveis não explicadas",
+      "natureza": "orientação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Explicadas as medidas e arquiteturas; menção isolada a CHC retirada do resumo, permanecendo no corpo.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "resumo_abstract_lote78.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\resumo_abstract_lote78.json",
+          "sha256": "5141e6959ca97d93f74b346601f5597a7ffc468d1404d3e7cd9a78ad28d10d93"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "conferido no texto atual",
+        "decisao": "Resumo autossuficiente apresenta objeto,dados,procedência,método,principais resultados,custos e conclusão limitada ao protocolo. Siglas indispensáveis explicadas; nomes próprios não tratados como abreviações sem extenso.",
+        "evidencia": "resumo_abstract_atual_lote144.json"
+      }
+    },
+    {
+      "id": "G42",
+      "pagina_guia": "22–23 e 44–45",
+      "requisito": "Três a cinco palavras-chave, ponto e vírgula e ponto final",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Cinco termos, inicial minúscula salvo PETR4; equivalência entre os idiomas.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "RESUMO: de 3 a 5 palavras-chave",
+          "ok": true,
+          "detalhe": [
+            "redes neurais de estados de eco",
+            " algoritmos genéticos",
+            " computação de reservatório",
+            " séries temporais financeiras",
+            " PETR4"
+          ]
+        },
+        {
+          "requisito": "RESUMO: palavras-chave separadas por ponto e vírgula e encerradas por ponto",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "ABSTRACT: de 3 a 5 palavras-chave",
+          "ok": true,
+          "detalhe": [
+            "echo state networks",
+            " genetic algorithms",
+            " reservoir computing",
+            " financial time series",
+            " PETR4"
+          ]
+        },
+        {
+          "requisito": "ABSTRACT: palavras-chave separadas por ponto e vírgula e encerradas por ponto",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "RESUMO: de 3 a 5 palavras-chave",
+            "ok": true,
+            "detalhe": [
+              "redes neurais de estados de eco",
+              " algoritmos genéticos",
+              " computação de reservatório",
+              " séries temporais financeiras",
+              " PETR4"
+            ]
+          },
+          {
+            "requisito": "RESUMO: palavras-chave separadas por ponto e vírgula e encerradas por ponto",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "ABSTRACT: de 3 a 5 palavras-chave",
+            "ok": true,
+            "detalhe": [
+              "echo state networks",
+              " genetic algorithms",
+              " reservoir computing",
+              " financial time series",
+              " PETR4"
+            ]
+          },
+          {
+            "requisito": "ABSTRACT: palavras-chave separadas por ponto e vírgula e encerradas por ponto",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G43",
+      "pagina_guia": "23 e 45",
+      "requisito": "Abstract como tradução fiel e com as mesmas características",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Dados, ressalvas, método, resultados e palavras-chave conferidos; texto inglês em redondo.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "resumo_abstract_lote78.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\resumo_abstract_lote78.json",
+          "sha256": "5141e6959ca97d93f74b346601f5597a7ffc468d1404d3e7cd9a78ad28d10d93"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "conferido no texto atual",
+        "decisao": "Oito unidades de sentido correspondem nos dois idiomas; valores/datas/horizonte,atribuições,comparações,custos e conclusão coerentes. Formatação de ambos complementada no lote138.",
+        "evidencia": "resumo_abstract_atual_lote144.json"
+      }
+    },
+    {
+      "id": "G44",
+      "pagina_guia": "23 e 46–47",
+      "requisito": "Listas próprias para cada tipo de elemento",
+      "natureza": "recomendação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Seis figuras, cinco quadros e sete tabelas em listas separadas.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "retificacao": "Contagem histórica menciona cinco quadros; cópia atual tem Quadro 6 de contribuições. Conferir listas atuais, sem reutilizar a contagem antiga.",
+      "controles_atuais": [
+        {
+          "requisito": "Figura: numeração consecutiva",
+          "ok": true,
+          "detalhe": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "requisito": "Quadro: numeração consecutiva",
+          "ok": true,
+          "detalhe": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "requisito": "Tabela: numeração consecutiva",
+          "ok": true,
+          "detalhe": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no alcance especificado",
+        "decisao": "Listas separadas por tipo, com6figuras,6quadros e7tabelas.",
+        "evidencia": "elementos_conciliados_lote135.json",
+        "sha256_evidencia": "18ebbd8d08d1326f9e14fd3bc1b89f474f6e8abc09d20268d2b8bede8879b361"
+      }
+    },
+    {
+      "id": "G45",
+      "pagina_guia": "23 e 46–47",
+      "requisito": "Títulos, ordem, páginas e pontilhado das listas",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Reconstruídas das legendas e conferidas no mapa nativo do Word.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Todas as listas e o sumário conferidos no mapa do Word",
+          "ok": true,
+          "detalhe": [
+            {
+              "titulo": "Figura 1 – Documentação localizada nas cinco dimensões analíticas",
+              "pagina_lista": 35,
+              "pagina_corpo": 35
+            },
+            {
+              "titulo": "Figura 2 – Frequência das palavras-chave declaradas pelos autores",
+              "pagina_lista": 36,
+              "pagina_corpo": 36
+            },
+            {
+              "titulo": "Figura 3 – Rede de coocorrência de palavras-chave",
+              "pagina_lista": 37,
+              "pagina_corpo": 37
+            },
+            {
+              "titulo": "Figura 4 – Expressões recorrentes nos títulos dos estudos",
+              "pagina_lista": 38,
+              "pagina_corpo": 38
+            },
+            {
+              "titulo": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações",
+              "pagina_lista": 54,
+              "pagina_corpo": 54
+            },
+            {
+              "titulo": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada",
+              "pagina_lista": 55,
+              "pagina_corpo": 55
+            },
+            {
+              "titulo": "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica",
+              "pagina_lista": 33,
+              "pagina_corpo": 33
+            },
+            {
+              "titulo": "Quadro 2 – Organização das cinco ondas experimentais",
+              "pagina_lista": 42,
+              "pagina_corpo": 42
+            },
+            {
+              "titulo": "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético",
+              "pagina_lista": 43,
+              "pagina_corpo": 43
+            },
+            {
+              "titulo": "Quadro 4 – Síntese do desenho experimental executado",
+              "pagina_lista": 46,
+              "pagina_corpo": 46
+            },
+            {
+              "titulo": "Quadro 5 – Síntese da avaliação das hipóteses",
+              "pagina_lista": 61,
+              "pagina_corpo": 61
+            },
+            {
+              "titulo": "Quadro 6 – Delimitação das contribuições e da procedência",
+              "pagina_lista": 70,
+              "pagina_corpo": 70
+            },
+            {
+              "titulo": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico",
+              "pagina_lista": 33,
+              "pagina_corpo": 33
+            },
+            {
+              "titulo": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+              "pagina_lista": 41,
+              "pagina_corpo": 41
+            },
+            {
+              "titulo": "Tabela 3 – Comparação dos principais resultados no conjunto de teste",
+              "pagina_lista": 53,
+              "pagina_corpo": 53
+            },
+            {
+              "titulo": "Tabela 4 – Configurações selecionadas das cinco ondas experimentais",
+              "pagina_lista": 56,
+              "pagina_corpo": 56
+            },
+            {
+              "titulo": "Tabela 5 – Decomposição do custo computacional documentado",
+              "pagina_lista": 58,
+              "pagina_corpo": 58
+            },
+            {
+              "titulo": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+              "pagina_lista": 60,
+              "pagina_corpo": 60
+            },
+            {
+              "titulo": "Tabela 7 – Comparação descritiva com Lampugnani (2026)",
+              "pagina_lista": 62,
+              "pagina_corpo": 62
+            },
+            {
+              "titulo": "INTRODUÇÃO",
+              "pagina_lista": 17,
+              "pagina_corpo": 17
+            },
+            {
+              "titulo": "REVISÃO DA LITERATURA",
+              "pagina_lista": 19,
+              "pagina_corpo": 19
+            },
+            {
+              "titulo": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+              "pagina_lista": 19,
+              "pagina_corpo": 19
+            },
+            {
+              "titulo": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+              "pagina_lista": 20,
+              "pagina_corpo": 20
+            },
+            {
+              "titulo": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+              "pagina_lista": 22,
+              "pagina_corpo": 22
+            },
+            {
+              "titulo": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+              "pagina_lista": 24,
+              "pagina_corpo": 24
+            },
+            {
+              "titulo": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+              "pagina_lista": 26,
+              "pagina_corpo": 26
+            },
+            {
+              "titulo": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+              "pagina_lista": 28,
+              "pagina_corpo": 28
+            },
+            {
+              "titulo": "TRABALHOS RELACIONADOS",
+              "pagina_lista": 28,
+              "pagina_corpo": 28
+            },
+            {
+              "titulo": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+              "pagina_lista": 31,
+              "pagina_corpo": 31
+            },
+            {
+              "titulo": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+              "pagina_lista": 32,
+              "pagina_corpo": 32
+            },
+            {
+              "titulo": "MATERIAL E MÉTODOS",
+              "pagina_lista": 39,
+              "pagina_corpo": 39
+            },
+            {
+              "titulo": "CLASSIFICAÇÃO DA PESQUISA",
+              "pagina_lista": 39,
+              "pagina_corpo": 39
+            },
+            {
+              "titulo": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+              "pagina_lista": 40,
+              "pagina_corpo": 40
+            },
+            {
+              "titulo": "IMPLEMENTAÇÃO DAS ESNS EM R",
+              "pagina_lista": 42,
+              "pagina_corpo": 42
+            },
+            {
+              "titulo": "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+              "pagina_lista": 44,
+              "pagina_corpo": 44
+            },
+            {
+              "titulo": "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+              "pagina_lista": 45,
+              "pagina_corpo": 45
+            },
+            {
+              "titulo": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+              "pagina_lista": 45,
+              "pagina_corpo": 45
+            },
+            {
+              "titulo": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+              "pagina_lista": 47,
+              "pagina_corpo": 47
+            },
+            {
+              "titulo": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+              "pagina_lista": 48,
+              "pagina_corpo": 48
+            },
+            {
+              "titulo": "Ambiente computacional",
+              "pagina_lista": 48,
+              "pagina_corpo": 48
+            },
+            {
+              "titulo": "Estrutura do repositório",
+              "pagina_lista": 48,
+              "pagina_corpo": 48
+            },
+            {
+              "titulo": "Procedimento de revisão bibliográfica",
+              "pagina_lista": 49,
+              "pagina_corpo": 49
+            },
+            {
+              "titulo": "Procedimento de re-execução dos experimentos",
+              "pagina_lista": 51,
+              "pagina_corpo": 51
+            },
+            {
+              "titulo": "RESULTADOS E DISCUSSÃO",
+              "pagina_lista": 52,
+              "pagina_corpo": 52
+            },
+            {
+              "titulo": "VISÃO GERAL DOS EXPERIMENTOS",
+              "pagina_lista": 52,
+              "pagina_corpo": 52
+            },
+            {
+              "titulo": "DESEMPENHO PREDITIVO GLOBAL",
+              "pagina_lista": 53,
+              "pagina_corpo": 53
+            },
+            {
+              "titulo": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+              "pagina_lista": 56,
+              "pagina_corpo": 56
+            },
+            {
+              "titulo": "DISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO",
+              "pagina_lista": 57,
+              "pagina_corpo": 57
+            },
+            {
+              "titulo": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+              "pagina_lista": 57,
+              "pagina_corpo": 57
+            },
+            {
+              "titulo": "CUSTO COMPUTACIONAL",
+              "pagina_lista": 58,
+              "pagina_corpo": 58
+            },
+            {
+              "titulo": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+              "pagina_lista": 59,
+              "pagina_corpo": 59
+            },
+            {
+              "titulo": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+              "pagina_lista": 60,
+              "pagina_corpo": 60
+            },
+            {
+              "titulo": "AVALIAÇÃO DAS HIPÓTESES",
+              "pagina_lista": 61,
+              "pagina_corpo": 61
+            },
+            {
+              "titulo": "CONTRIBUIÇÕES DO ESNAUTO",
+              "pagina_lista": 63,
+              "pagina_corpo": 63
+            },
+            {
+              "titulo": "DISCUSSÃO",
+              "pagina_lista": 65,
+              "pagina_corpo": 65
+            },
+            {
+              "titulo": "VALIDADE INTERNA E ESTATÍSTICA",
+              "pagina_lista": 65,
+              "pagina_corpo": 65
+            },
+            {
+              "titulo": "VALIDADE EXTERNA",
+              "pagina_lista": 66,
+              "pagina_corpo": 66
+            },
+            {
+              "titulo": "TRABALHOS FUTUROS",
+              "pagina_lista": 67,
+              "pagina_corpo": 67
+            },
+            {
+              "titulo": "CONCLUSÃO",
+              "pagina_lista": 68,
+              "pagina_corpo": 68
+            },
+            {
+              "titulo": "REFERÊNCIAS",
+              "pagina_lista": 71,
+              "pagina_corpo": 71
+            }
+          ]
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\listas_elementos_lote77.json",
+          "sha256": "39ae459a6a9eefdd06ae20c5bd9c22e78839f20b33aa3c3172b1f587b9980bed"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "conferido no alcance especificado",
+        "decisao": "19títulos e páginas conciliados ao mapa134 e PDF; listas inspecionadas nos lotes129/134.",
+        "evidencia": "elementos_conciliados_lote135.json",
+        "sha256_evidencia": "18ebbd8d08d1326f9e14fd3bc1b89f474f6e8abc09d20268d2b8bede8879b361"
+      }
+    },
+    {
+      "id": "G46",
+      "pagina_guia": "24 e 48",
+      "requisito": "Lista de siglas alfabética quando houver mais de dez itens",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Lista ampliada e ordenada, em fonte 12 e espaço 1,5.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Lista de siglas alfabética",
+          "ok": true,
+          "detalhe": 49
+        },
+        {
+          "requisito": "Lista de siglas justificada em fonte 12 e espaço 1,5",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Lista de siglas alfabética",
+            "ok": true,
+            "detalhe": 48
+          },
+          {
+            "requisito": "Lista de siglas justificada em fonte 12 e espaço 1,5",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G47",
+      "pagina_guia": "24 e 49",
+      "requisito": "Sumário somente com partes textuais e pós-textuais",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Nenhum elemento pré-textual incluído.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no alcance especificado",
+        "decisao": "Sumário inclui apenas introdução,capítulos textuais e referências; sem pré-textuais.",
+        "evidencia": "sumario_hierarquia_lote128.json",
+        "sha256_evidencia": "b93e86e2bddd2cdeb6672b3df7cf4c34d716fede6c8d26b39d6de70c4311db03"
+      }
+    },
+    {
+      "id": "G48",
+      "pagina_guia": "24 e 49",
+      "requisito": "Sumário corresponde a títulos, níveis, realces e páginas",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Conferência no mapa do Word e visual, incluindo conclusão e referências após a repaginação.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Todas as listas e o sumário conferidos no mapa do Word",
+          "ok": true,
+          "detalhe": [
+            {
+              "titulo": "Figura 1 – Documentação localizada nas cinco dimensões analíticas",
+              "pagina_lista": 35,
+              "pagina_corpo": 35
+            },
+            {
+              "titulo": "Figura 2 – Frequência das palavras-chave declaradas pelos autores",
+              "pagina_lista": 36,
+              "pagina_corpo": 36
+            },
+            {
+              "titulo": "Figura 3 – Rede de coocorrência de palavras-chave",
+              "pagina_lista": 37,
+              "pagina_corpo": 37
+            },
+            {
+              "titulo": "Figura 4 – Expressões recorrentes nos títulos dos estudos",
+              "pagina_lista": 38,
+              "pagina_corpo": 38
+            },
+            {
+              "titulo": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações",
+              "pagina_lista": 54,
+              "pagina_corpo": 54
+            },
+            {
+              "titulo": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada",
+              "pagina_lista": 55,
+              "pagina_corpo": 55
+            },
+            {
+              "titulo": "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica",
+              "pagina_lista": 33,
+              "pagina_corpo": 33
+            },
+            {
+              "titulo": "Quadro 2 – Organização das cinco ondas experimentais",
+              "pagina_lista": 42,
+              "pagina_corpo": 42
+            },
+            {
+              "titulo": "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético",
+              "pagina_lista": 43,
+              "pagina_corpo": 43
+            },
+            {
+              "titulo": "Quadro 4 – Síntese do desenho experimental executado",
+              "pagina_lista": 46,
+              "pagina_corpo": 46
+            },
+            {
+              "titulo": "Quadro 5 – Síntese da avaliação das hipóteses",
+              "pagina_lista": 61,
+              "pagina_corpo": 61
+            },
+            {
+              "titulo": "Quadro 6 – Delimitação das contribuições e da procedência",
+              "pagina_lista": 70,
+              "pagina_corpo": 70
+            },
+            {
+              "titulo": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico",
+              "pagina_lista": 33,
+              "pagina_corpo": 33
+            },
+            {
+              "titulo": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+              "pagina_lista": 41,
+              "pagina_corpo": 41
+            },
+            {
+              "titulo": "Tabela 3 – Comparação dos principais resultados no conjunto de teste",
+              "pagina_lista": 53,
+              "pagina_corpo": 53
+            },
+            {
+              "titulo": "Tabela 4 – Configurações selecionadas das cinco ondas experimentais",
+              "pagina_lista": 56,
+              "pagina_corpo": 56
+            },
+            {
+              "titulo": "Tabela 5 – Decomposição do custo computacional documentado",
+              "pagina_lista": 58,
+              "pagina_corpo": 58
+            },
+            {
+              "titulo": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+              "pagina_lista": 60,
+              "pagina_corpo": 60
+            },
+            {
+              "titulo": "Tabela 7 – Comparação descritiva com Lampugnani (2026)",
+              "pagina_lista": 62,
+              "pagina_corpo": 62
+            },
+            {
+              "titulo": "INTRODUÇÃO",
+              "pagina_lista": 17,
+              "pagina_corpo": 17
+            },
+            {
+              "titulo": "REVISÃO DA LITERATURA",
+              "pagina_lista": 19,
+              "pagina_corpo": 19
+            },
+            {
+              "titulo": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+              "pagina_lista": 19,
+              "pagina_corpo": 19
+            },
+            {
+              "titulo": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+              "pagina_lista": 20,
+              "pagina_corpo": 20
+            },
+            {
+              "titulo": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+              "pagina_lista": 22,
+              "pagina_corpo": 22
+            },
+            {
+              "titulo": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+              "pagina_lista": 24,
+              "pagina_corpo": 24
+            },
+            {
+              "titulo": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+              "pagina_lista": 26,
+              "pagina_corpo": 26
+            },
+            {
+              "titulo": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+              "pagina_lista": 28,
+              "pagina_corpo": 28
+            },
+            {
+              "titulo": "TRABALHOS RELACIONADOS",
+              "pagina_lista": 28,
+              "pagina_corpo": 28
+            },
+            {
+              "titulo": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+              "pagina_lista": 31,
+              "pagina_corpo": 31
+            },
+            {
+              "titulo": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+              "pagina_lista": 32,
+              "pagina_corpo": 32
+            },
+            {
+              "titulo": "MATERIAL E MÉTODOS",
+              "pagina_lista": 39,
+              "pagina_corpo": 39
+            },
+            {
+              "titulo": "CLASSIFICAÇÃO DA PESQUISA",
+              "pagina_lista": 39,
+              "pagina_corpo": 39
+            },
+            {
+              "titulo": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+              "pagina_lista": 40,
+              "pagina_corpo": 40
+            },
+            {
+              "titulo": "IMPLEMENTAÇÃO DAS ESNS EM R",
+              "pagina_lista": 42,
+              "pagina_corpo": 42
+            },
+            {
+              "titulo": "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+              "pagina_lista": 44,
+              "pagina_corpo": 44
+            },
+            {
+              "titulo": "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+              "pagina_lista": 45,
+              "pagina_corpo": 45
+            },
+            {
+              "titulo": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+              "pagina_lista": 45,
+              "pagina_corpo": 45
+            },
+            {
+              "titulo": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+              "pagina_lista": 47,
+              "pagina_corpo": 47
+            },
+            {
+              "titulo": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+              "pagina_lista": 48,
+              "pagina_corpo": 48
+            },
+            {
+              "titulo": "Ambiente computacional",
+              "pagina_lista": 48,
+              "pagina_corpo": 48
+            },
+            {
+              "titulo": "Estrutura do repositório",
+              "pagina_lista": 48,
+              "pagina_corpo": 48
+            },
+            {
+              "titulo": "Procedimento de revisão bibliográfica",
+              "pagina_lista": 49,
+              "pagina_corpo": 49
+            },
+            {
+              "titulo": "Procedimento de re-execução dos experimentos",
+              "pagina_lista": 51,
+              "pagina_corpo": 51
+            },
+            {
+              "titulo": "RESULTADOS E DISCUSSÃO",
+              "pagina_lista": 52,
+              "pagina_corpo": 52
+            },
+            {
+              "titulo": "VISÃO GERAL DOS EXPERIMENTOS",
+              "pagina_lista": 52,
+              "pagina_corpo": 52
+            },
+            {
+              "titulo": "DESEMPENHO PREDITIVO GLOBAL",
+              "pagina_lista": 53,
+              "pagina_corpo": 53
+            },
+            {
+              "titulo": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+              "pagina_lista": 56,
+              "pagina_corpo": 56
+            },
+            {
+              "titulo": "DISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO",
+              "pagina_lista": 57,
+              "pagina_corpo": 57
+            },
+            {
+              "titulo": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+              "pagina_lista": 57,
+              "pagina_corpo": 57
+            },
+            {
+              "titulo": "CUSTO COMPUTACIONAL",
+              "pagina_lista": 58,
+              "pagina_corpo": 58
+            },
+            {
+              "titulo": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+              "pagina_lista": 59,
+              "pagina_corpo": 59
+            },
+            {
+              "titulo": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+              "pagina_lista": 60,
+              "pagina_corpo": 60
+            },
+            {
+              "titulo": "AVALIAÇÃO DAS HIPÓTESES",
+              "pagina_lista": 61,
+              "pagina_corpo": 61
+            },
+            {
+              "titulo": "CONTRIBUIÇÕES DO ESNAUTO",
+              "pagina_lista": 63,
+              "pagina_corpo": 63
+            },
+            {
+              "titulo": "DISCUSSÃO",
+              "pagina_lista": 65,
+              "pagina_corpo": 65
+            },
+            {
+              "titulo": "VALIDADE INTERNA E ESTATÍSTICA",
+              "pagina_lista": 65,
+              "pagina_corpo": 65
+            },
+            {
+              "titulo": "VALIDADE EXTERNA",
+              "pagina_lista": 66,
+              "pagina_corpo": 66
+            },
+            {
+              "titulo": "TRABALHOS FUTUROS",
+              "pagina_lista": 67,
+              "pagina_corpo": 67
+            },
+            {
+              "titulo": "CONCLUSÃO",
+              "pagina_lista": 68,
+              "pagina_corpo": 68
+            },
+            {
+              "titulo": "REFERÊNCIAS",
+              "pagina_lista": 71,
+              "pagina_corpo": 71
+            }
+          ]
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no alcance especificado",
+        "decisao": "Títulos e páginas correspondem ao mapa atual; pontilhados e realces visíveis conferidos nas duas páginas.",
+        "evidencia": "sumario_hierarquia_lote128.json",
+        "sha256_evidencia": "b93e86e2bddd2cdeb6672b3df7cf4c34d716fede6c8d26b39d6de70c4311db03"
+      }
+    },
+    {
+      "id": "G49",
+      "pagina_guia": "29",
+      "requisito": "Cronograma e orçamento opcionais na monografia",
+      "natureza": "condicional",
+      "estado_historico": "não se aplica",
+      "evidencia_historica": "Não constam; não foram acrescentados modelos próprios de projeto de pesquisa.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "guia_condicionais_lote82.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\guia_condicionais_lote82.json",
+          "sha256": "65672f303e499d5b725997319244f16e3377112312b912f990634c2411696af7"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "condição não acionada no documento atual",
+        "decisao": "Seções opcionais de cronograma/orçamento não incluídas.",
+        "evidencia": "guia_condicionais_atual_lote127.json",
+        "sha256_evidencia": "ad57237bef736508bc659e901641a73da1848692ef80b91695e9edcef079cfa0"
+      }
+    },
+    {
+      "id": "G50",
+      "pagina_guia": "32",
+      "requisito": "Exigências para pesquisa envolvendo participantes humanos",
+      "natureza": "condicional",
+      "estado_historico": "não se aplica",
+      "evidencia_historica": "Estudo computacional de cotações, sem recrutamento de participantes.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "guia_condicionais_lote82.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\guia_condicionais_lote82.json",
+          "sha256": "65672f303e499d5b725997319244f16e3377112312b912f990634c2411696af7"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "não acionado pelo desenho descrito",
+        "decisao": "Metodologia é experimental computacional em série PETR4, sem recrutamento de participantes. A revisão não substitui decisão de comitê ou instituição.",
+        "evidencia": "guia_condicionais_atual_lote127.json",
+        "sha256_evidencia": "ad57237bef736508bc659e901641a73da1848692ef80b91695e9edcef079cfa0"
+      }
+    },
+    {
+      "id": "G51",
+      "pagina_guia": "32–34",
+      "requisito": "Resultados e discussão retomam procedimentos e interpretam achados",
+      "natureza": "orientação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Capítulos 4 e 5; sem repetir experimentos para revisar a apresentação.",
+      "registros_atuais_relacionados": [
+        "conferencia_hipoteses_lote64.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado_atual": "evidencias_atuais_localizadas_revisar_alcance",
+      "registro_complementar": "decisoes_resultados_finais_lote97.json",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido com limites experimentais explícitos",
+        "decisao": "Resultados e discussão retomam métricas,custos,distribuições,hipóteses e limites de atribuição. Decisões89/96/97 conciliadas por texto; chamadas134 são adições de navegação. Protocolos histórico,controlado e ilustrativo permanecem separados.",
+        "evidencia": "conciliacao_capitulos_lote143.json"
+      }
+    },
+    {
+      "id": "G52",
+      "pagina_guia": "32–33",
+      "requisito": "Tabela quantitativa versus quadro descritivo",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Mapa categórico e avaliação das hipóteses reclassificados; chamadas e listas renumeradas.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no alcance especificado",
+        "decisao": "Classificação pela finalidade quantitativa/descritiva;13elementos editáveis examinados.",
+        "evidencia": "classificacao_elementos_lote130.json",
+        "sha256_evidencia": "464d9274930ed76894a28c8f347a0bd7c8b75f4a91061d6945d4a8197ead0364"
+      }
+    },
+    {
+      "id": "G53",
+      "pagina_guia": "32–33",
+      "requisito": "Numeração consecutiva e chamada no texto",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Todos os 18 elementos têm chamada e sequência própria por tipo.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Figura: numeração consecutiva",
+          "ok": true,
+          "detalhe": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "requisito": "Figura: chamada de todos os elementos no texto",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Quadro: numeração consecutiva",
+          "ok": true,
+          "detalhe": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "requisito": "Quadro: chamada de todos os elementos no texto",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela: numeração consecutiva",
+          "ok": true,
+          "detalhe": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "requisito": "Tabela: chamada de todos os elementos no texto",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no alcance especificado",
+        "decisao": "19elementos possuem chamada narrativa singular; chamadas faltantes Tabela4/Quadro5 corrigidas no lote134.",
+        "evidencia": "elementos_conciliados_lote135.json",
+        "sha256_evidencia": "18ebbd8d08d1326f9e14fd3bc1b89f474f6e8abc09d20268d2b8bede8879b361"
+      }
+    },
+    {
+      "id": "G54",
+      "pagina_guia": "32–33 e 53–55",
+      "requisito": "Título acima, sem ponto final, fonte 10 simples",
+      "natureza": "obrigação/modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Todas as legendas, inclusive uma antes guardada como Normal.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Títulos das ilustrações em fonte 10",
+          "ok": true,
+          "detalhe": 19
+        },
+        {
+          "requisito": "Títulos sem ponto final",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido por propriedades e contexto",
+        "decisao": "19títulos acima dos elementos nas páginas inspecionadas133/146; fonte10 pelo controle137; espaço simples e justificação efetivos conferidos; sem ponto final.",
+        "evidencia": "legendas_alineas_lote148.json"
+      }
+    },
+    {
+      "id": "G55",
+      "pagina_guia": "32–33",
+      "requisito": "Natureza e abrangência dos dados nos títulos",
+      "natureza": "orientação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Período nos dados da série e contexto nos títulos/trechos próximos; não inserir datas ou abrangências não pertinentes aos gráficos bibliográficos.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no alcance especificado",
+        "decisao": "19títulos avaliados individualmente por objeto,abrangência e ausência de abreviações desnecessárias; sem nova reescrita exigida.",
+        "evidencia": "titulos_elementos_lote132.json",
+        "sha256_evidencia": "46f9bc578caf09bba4aa440e8dd396bdc43aa41982fa389d6d5a7ef39b7c1e8b"
+      }
+    },
+    {
+      "id": "G56",
+      "pagina_guia": "32–33",
+      "requisito": "Fonte e ano, inclusive para produção própria",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "18 fontes abaixo dos elementos, com indicação e ano.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Fontes abaixo dos elementos: indicação e ano",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\alineas_e_fontes_lote84.json",
+          "sha256": "6a0181243296481c4e8b97100bc822e7430f864c6d1166ffd02dd243956ca984"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "conferido nos controles específicos",
+        "decisao": "Requisito avaliado no alcance dos controles citados e do exemplar eletrônico.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Fontes abaixo dos elementos: indicação e ano",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G57",
+      "pagina_guia": "33",
+      "requisito": "Usar adaptado de quando alterar dados/imagem de terceiros",
+      "natureza": "condicional",
+      "estado_historico": "não se aplica à cópia de imagem",
+      "evidencia_historica": "Gráficos próprios, com dados e referências de apresentação identificados; nenhuma imagem de terceiros foi copiada/alterada nesta revisão.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "corrigido e conferido",
+        "decisao": "Fonte da Tabela7 identifica adaptação de Lampugnani e inclusão de resultados próprios; página63 inspecionada, tabela preservada.",
+        "evidencia": "checkpoint_lote131.json",
+        "sha256_evidencia": "f81d93327e9e31402e2d621bd78cb80c83ea3ee7f6ff75ffe613ff949521a900"
+      }
+    },
+    {
+      "id": "G58",
+      "pagina_guia": "32–33",
+      "requisito": "Cabeçalho e corpo com ao menos três linhas e duas colunas",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Elementos tabulares do texto; caixa vazia da ficha não é tabela de resultados.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido com interpretação explícita",
+        "decisao": "Mínimo3linhas e2colunas atendido contando cabeçalho; Tabela7 tem2linhas de dados. Guia não esclarece essa contagem; não inventar linha.",
+        "evidencia": "classificacao_elementos_lote130.json",
+        "sha256_evidencia": "464d9274930ed76894a28c8f347a0bd7c8b75f4a91061d6945d4a8197ead0364"
+      }
+    },
+    {
+      "id": "G59",
+      "pagina_guia": "53",
+      "requisito": "Tabelas: 11, cabeçalho em negrito, simples, sem laterais/grade interna",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Estrutura OOXML e inspeção visual.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Tabela 1: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 1: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 2: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 2: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 3: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 3: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 4: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 4: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 5: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 5: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 6: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 6: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 7: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 7: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 8: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 8: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 9: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 9: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 10: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 10: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 11: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 11: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 12: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 12: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 13: fonte 11",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Tabela 13: cabeçalho negrito",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "corrigido e conferido estrutural e visualmente",
+        "decisao": "Sete tabelas quantitativas: corpo11simples,cabeçalho11negrito com divisórias internas; sem grade no corpo e sem laterais, conforme inspeção146.",
+        "evidencia": "tabelas_formato_concluido_lote147.json"
+      }
+    },
+    {
+      "id": "G60",
+      "pagina_guia": "54",
+      "requisito": "Quadros: 11, cabeçalho negrito, simples, laterais e 16 cm",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Larguras preferenciais, grade e células sincronizadas; inspeção visual.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Tabelas e quadros com largura efetiva de 16 cm",
+          "ok": true,
+          "detalhe": [
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0
+          ]
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "corrigido e conferido estrutural e visualmente",
+        "decisao": "Seis quadros descritivos: corpo11simples,cabeçalho11negrito com divisórias internas,largura16cm e laterais fechadas; conferência visual146.",
+        "evidencia": "tabelas_formato_concluido_lote147.json"
+      }
+    },
+    {
+      "id": "G61",
+      "pagina_guia": "53–55",
+      "requisito": "Legendas sem abreviações desnecessárias",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Títulos usam nomes descritivos; não contêm ESN, MAE ou RMSE.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no alcance especificado",
+        "decisao": "19títulos avaliados individualmente por objeto,abrangência e ausência de abreviações desnecessárias; sem nova reescrita exigida.",
+        "evidencia": "titulos_elementos_lote132.json",
+        "sha256_evidencia": "46f9bc578caf09bba4aa440e8dd396bdc43aa41982fa389d6d5a7ef39b7c1e8b"
+      }
+    },
+    {
+      "id": "G62",
+      "pagina_guia": "32–33 e 55",
+      "requisito": "Elementos próximos ao trecho correspondente e legíveis",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Seis gráficos preservados, sem deformação; quadro curto do protocolo mantido inteiro.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no alcance especificado",
+        "decisao": "Páginas dos19elementos e continuidade do Quadro1 inspecionadas no lote133; páginas alteradas134 reinspecionadas. Sem corte/sobreposição; colocação acompanha a seção e discussão pertinente.",
+        "evidencia": "elementos_conciliados_lote135.json",
+        "sha256_evidencia": "18ebbd8d08d1326f9e14fd3bc1b89f474f6e8abc09d20268d2b8bede8879b361"
+      }
+    },
+    {
+      "id": "G63",
+      "pagina_guia": "34–35",
+      "requisito": "Conclusão responde aos objetivos/hipóteses e admite continuidade",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Capítulo 6, com distinção de evidências e remissão à seção 5.3; sem novos resultados.",
+      "registros_atuais_relacionados": [
+        "conferencia_hipoteses_lote64.json"
+      ],
+      "estado_atual": "evidencias_atuais_localizadas_revisar_alcance",
+      "registro_complementar": "decisoes_conclusao_lote88.json",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido com limites experimentais explícitos",
+        "decisao": "Conclusão responde ao objetivo e às cinco hipóteses: H1descritivo/inferencial,H2ajuste,H3pontual,H4não demonstrada,H5descritiva. Declara contribuição de adaptação/interface,limites e continuidade. Textos88 mantidos no atual.",
+        "evidencia": "conciliacao_capitulos_lote143.json"
+      }
+    },
+    {
+      "id": "G64",
+      "pagina_guia": "35 e 60–61",
+      "requisito": "Referências alfabéticas, identificáveis, fonte 12 e espaço simples",
+      "natureza": "obrigação/modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "49 obras anteriores preservadas e referência primária da epígrafe acrescentada: 50 referências. Metadados reconciliados; cruzamento autor–ano separado.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Referências em ordem alfabética pelo autor de entrada",
+          "ok": true,
+          "detalhe": null
+        },
+        {
+          "requisito": "Referências em fonte 12 e espaço simples",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "parcial: conciliar metadados",
+        "decisao": "Ordem/fonte/espaço conferidos; identificabilidade bibliográfica depende da auditoria de metadados, não apenas deste controle.",
+        "evidencia": "guia_lote137/auditoria_estrutural.json",
+        "controles": [
+          {
+            "requisito": "Referências em ordem alfabética pelo autor de entrada",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "Referências em fonte 12 e espaço simples",
+            "ok": true,
+            "detalhe": null
+          },
+          {
+            "requisito": "Referências em ordem alfabética pelo autor de entrada",
+            "ok": true,
+            "detalhe": null
+          }
+        ],
+        "sha256_evidencia": "b8ad4ebc5cc89f35291a4effabbee318f352de601975b03f0e35bc7f65de858d"
+      }
+    },
+    {
+      "id": "G65",
+      "pagina_guia": "35",
+      "requisito": "Toda citação deve corresponder a uma referência",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Cruzamento autor–ano atualizado sem ausência e epígrafe conferida na fonte primária. O cruzamento bibliográfico não comprova a sustentação científica de cada afirmação.",
+      "registros_atuais_relacionados": [
+        "cobertura_citacoes_lote53.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado_atual": "evidencias_atuais_localizadas_revisar_alcance",
+      "registro_complementar": "indice_citacoes_atuais_lote106.json",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "aguarda conclusão individual",
+        "decisao": "Evidências históricas/controles já vinculados; avaliar cobertura do requisito, não apenas presença do relatório."
+      }
+    },
+    {
+      "id": "G66",
+      "pagina_guia": "35 e 62",
+      "requisito": "Glossário opcional, alfabético quando incluído",
+      "natureza": "condicional",
+      "estado_historico": "não se aplica",
+      "evidencia_historica": "Não há glossário.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "guia_condicionais_lote82.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\guia_condicionais_lote82.json",
+          "sha256": "65672f303e499d5b725997319244f16e3377112312b912f990634c2411696af7"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "condição não acionada no documento atual",
+        "decisao": "Glossário opcional não incluído.",
+        "evidencia": "guia_condicionais_atual_lote127.json",
+        "sha256_evidencia": "ad57237bef736508bc659e901641a73da1848692ef80b91695e9edcef079cfa0"
+      }
+    },
+    {
+      "id": "G67",
+      "pagina_guia": "35 e 63–66",
+      "requisito": "Apêndices e anexos, se incluídos, em folhas próprias e identificados",
+      "natureza": "condicional",
+      "estado_historico": "não se aplica",
+      "evidencia_historica": "Não há esses elementos no manuscrito.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "guia_condicionais_lote82.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\guia_condicionais_lote82.json",
+          "sha256": "65672f303e499d5b725997319244f16e3377112312b912f990634c2411696af7"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "condição não acionada no documento atual",
+        "decisao": "Apêndices/anexos não incluídos.",
+        "evidencia": "guia_condicionais_atual_lote127.json",
+        "sha256_evidencia": "ad57237bef736508bc659e901641a73da1848692ef80b91695e9edcef079cfa0"
+      }
+    },
+    {
+      "id": "G68",
+      "pagina_guia": "51–52",
+      "requisito": "Alíneas: introdução por dois-pontos, letras, ponto e vírgula, ponto final e recuo",
+      "natureza": "modelo",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Fluxo enumerativo de governança convertido em seis alíneas com recuo próprio.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "alineas_e_fontes_lote84.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\alineas_e_fontes_lote84.json",
+          "sha256": "6a0181243296481c4e8b97100bc822e7430f864c6d1166ffd02dd243956ca984"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "conferido por propriedades e contexto",
+        "decisao": "Enumeração a–f precedida por dois-pontos,alíneas intermediárias com ponto e vírgula e última com ponto. Recuos registrados; aspecto visual conferido nas páginas60–61 no lote134.",
+        "evidencia": "legendas_alineas_lote148.json"
+      }
+    },
+    {
+      "id": "G69",
+      "pagina_guia": "51–52",
+      "requisito": "Notas de rodapé e citações longas",
+      "natureza": "condicional",
+      "estado_historico": "não se aplica",
+      "evidencia_historica": "Não há notas de rodapé autorais nem bloco de citação longa no corpo; epígrafe tratada separadamente.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Sem notas de rodapé a formatar",
+          "ok": true,
+          "detalhe": null
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "registro_complementar": "guia_condicionais_lote82.json",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "condição não acionada no documento atual",
+        "decisao": "Partes de notas sem texto autoral. Esta decisão cobre notas, não toda forma de citação longa.",
+        "evidencia": "guia_condicionais_atual_lote127.json",
+        "sha256_evidencia": "ad57237bef736508bc659e901641a73da1848692ef80b91695e9edcef079cfa0"
+      }
+    },
+    {
+      "id": "G70",
+      "pagina_guia": "69–70",
+      "requisito": "Linguagem formal, clara e impessoal; tempos coerentes com a função",
+      "natureza": "orientação",
+      "estado_historico": "verificado editorialmente",
+      "evidencia_historica": "Corpo impessoal; hipóteses e propostas futuras distinguem-se das ações realizadas; agradecimentos pessoais preservados.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "aguarda conclusão individual",
+        "decisao": "Evidências históricas/controles já vinculados; avaliar cobertura do requisito, não apenas presença do relatório."
+      }
+    },
+    {
+      "id": "G71",
+      "pagina_guia": "69",
+      "requisito": "Termos técnicos contextualizados",
+      "natureza": "orientação",
+      "estado_historico": "verificado editorialmente",
+      "evidencia_historica": "Definições ampliadas para BPTT, HAR, PCO, medidas e critérios; não inventar equivalências para códigos de conjuntos/modelos.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "aguarda conclusão individual",
+        "decisao": "Evidências históricas/controles já vinculados; avaliar cobertura do requisito, não apenas presença do relatório."
+      }
+    },
+    {
+      "id": "G72",
+      "pagina_guia": "71",
+      "requisito": "Estrangeirismos em itálico, observadas as exceções indicadas pelo guia",
+      "natureza": "obrigação",
+      "estado_historico": "verificado editorialmente",
+      "evidencia_historica": "Revisão contextual; nomes de publicações seguem o realce bibliográfico, sem aplicar termos técnicos isolados aos títulos de artigos.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\decisoes_italicos_lote113.json",
+          "sha256": "7c77e82574d765d18f1a3a14ff68576882adac10bb73036af280ae2ca360f7d5"
+        },
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\incorporacao_lote114.json",
+          "sha256": "3afebf49abdfa17ae8075ebeb76df14eb7260544ab7f5d926a22b5df2dcd3f01"
+        },
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\achados_tipograficos_lote123.json",
+          "sha256": "cb4e3559f4d7772e1a060fd7fa369aab61a74ccafc85dabf2196d55e7e9266e5"
+        },
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\checkpoint_lote124.json",
+          "sha256": "49e13eecbc63c624d876fe75903412d774dbfdad0f991cb2aea39903a05bbb51"
+        }
+      ],
+      "decisao_atualizacao": "Achados registrados corrigidos e renderização conferida nos checkpoints citados. Não equiparar a correção desses achados à comprovação automática de cobertura global.",
+      "decisao_consolidada": {
+        "estado": "aguarda conclusão individual",
+        "decisao": "Evidências históricas/controles já vinculados; avaliar cobertura do requisito, não apenas presença do relatório."
+      }
+    },
+    {
+      "id": "G73",
+      "pagina_guia": "71",
+      "requisito": "Expressões latinas especificadas pelo guia em itálico",
+      "natureza": "obrigação",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Todas as ocorrências de et al. testadas, inclusive as parentéticas antes não cobertas.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Todas as ocorrências de et al. em itálico",
+          "ok": true,
+          "detalhe": 57
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido com complemento específico",
+        "decisao": "et al. em itálico; apud,ibid.,ibidem e opus citatum não ocorrem nos parágrafos/células.",
+        "evidencia": "complementos_formais_lote138.json"
+      }
+    },
+    {
+      "id": "G74",
+      "pagina_guia": "72",
+      "requisito": "Primeira apresentação por extenso e sigla entre parênteses",
+      "natureza": "obrigação",
+      "estado_historico": "verificado com interpretação registrada",
+      "evidencia_historica": "Siglas técnicas revisadas; códigos de ativos, nomes/identificadores de índices e conjuntos, nomes de pacotes, fórmulas e operadores de consulta mantidos como identificadores convencionais, sem inventar expansões.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\siglas_primeiras_ocorrencias_lote108.json",
+          "sha256": "3a5ab365cc51b23759ec65c0461676ca1a243f51380d3725e5a8b98104d57916"
+        },
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\achados_siglas_complemento_lote110.json",
+          "sha256": "e6c4fb3ba69e63786b6b0cbe6159ed213915fcd674fb5b0907741d066c14733e"
+        },
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\incorporacao_lote111.json",
+          "sha256": "ba11198f945c2bf95474ac9b4d27fa6a7a5df829c5d832df953632fd0fd416c1"
+        },
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\checkpoint_lote111.json",
+          "sha256": "a043684a8e1f11942290133cada853dc6b3f9c25e60946671e27bdc068130bab"
+        }
+      ],
+      "decisao_atualizacao": "Achados registrados corrigidos e renderização conferida nos checkpoints citados. Não equiparar a correção desses achados à comprovação automática de cobertura global.",
+      "decisao_consolidada": {
+        "estado": "aguarda conclusão individual",
+        "decisao": "Evidências históricas/controles já vinculados; avaliar cobertura do requisito, não apenas presença do relatório."
+      }
+    },
+    {
+      "id": "G75",
+      "pagina_guia": "72",
+      "requisito": "Grafia das siglas conforme uso convencionado",
+      "natureza": "obrigação",
+      "estado_historico": "verificado editorialmente",
+      "evidencia_historica": "ESN, LSTM, GRU e demais formas técnicas convencionadas preservadas; plurais considerados na leitura.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\siglas_primeiras_ocorrencias_lote108.json",
+          "sha256": "3a5ab365cc51b23759ec65c0461676ca1a243f51380d3725e5a8b98104d57916"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "aguarda conclusão individual",
+        "decisao": "Evidências históricas/controles já vinculados; avaliar cobertura do requisito, não apenas presença do relatório."
+      }
+    },
+    {
+      "id": "G76",
+      "pagina_guia": "Orientador",
+      "requisito": "Win e Wout em itálico e notação uniforme",
+      "natureza": "pedido do orientador",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Itálico testado; índices inferiores e distinção de W mantidos.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "controles_especificos_aprovados_alcance_parcial",
+      "controles_atuais": [
+        {
+          "requisito": "Símbolos Win e Wout em itálico",
+          "ok": true,
+          "detalhe": 55
+        }
+      ],
+      "limite_controles": "Controles cobrem apenas aspectos explicitados nos nomes; não presumir atendimento aos demais aspectos da regra.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "aguarda conclusão individual",
+        "decisao": "Evidências históricas/controles já vinculados; avaliar cobertura do requisito, não apenas presença do relatório."
+      }
+    },
+    {
+      "id": "G77",
+      "pagina_guia": "14 e 29",
+      "requisito": "Balanceamento dos capítulos e concisão",
+      "natureza": "recomendação",
+      "estado_historico": "com ressalva",
+      "evidencia_historica": "Conteúdo e protocolos preservados; não foram igualados números de páginas artificialmente nem suprimida a revisão dos estudos.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "extensao_capitulos_lote83.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\extensao_capitulos_lote83.json",
+          "sha256": "91ff302b5cf5f2364bc1842c2983bdf4f3f7743e03f133ea8d97e761682fff71"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "avaliado com ressalva editorial",
+        "decisao": "Extensões diferentes justificadas por funções: revisão20p,método13p,resultados13p,discussão3p,conclusão3p. Não igualar capítulos artificialmente; recomendação de concisão/balanceamento mantida como ressalva editorial.",
+        "evidencia": "organizacao_recomendacoes_lote150.json"
+      }
+    },
+    {
+      "id": "G78",
+      "pagina_guia": "10–11",
+      "requisito": "Papel branco/gramatura e impressão com ficha no verso",
+      "natureza": "condicional",
+      "estado_historico": "fora da entrega eletrônica",
+      "evidencia_historica": "Não foram certificados suporte físico, encadernação nem imposição de impressão; PDF é a prova de layout digital.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "guia_condicionais_lote82.json",
+      "evidencias_consolidadas_lote125": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\guia_condicionais_lote82.json",
+          "sha256": "65672f303e499d5b725997319244f16e3377112312b912f990634c2411696af7"
+        }
+      ],
+      "decisao_consolidada": {
+        "estado": "fora do escopo do exemplar eletrônico",
+        "decisao": "Não é possível inspecionar papel/gramatura/encadernação em arquivo digital. Não impedir correção de português por ausência de exemplar impresso.",
+        "evidencia": "guia_condicionais_atual_lote127.json",
+        "sha256_evidencia": "ad57237bef736508bc659e901641a73da1848692ef80b91695e9edcef079cfa0"
+      }
+    },
+    {
+      "id": "G79",
+      "pagina_guia": "12 e 50",
+      "requisito": "Divergência interna do guia para quarto nível",
+      "natureza": "condicional",
+      "estado_historico": "não se aplica",
+      "evidencia_historica": "O documento usa no máximo três níveis.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "guia_condicionais_lote82.json",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido no alcance especificado",
+        "decisao": "Não há quarto nível; ambiguidade interna do guia não é acionada.",
+        "evidencia": "sumario_hierarquia_lote128.json",
+        "sha256_evidencia": "b93e86e2bddd2cdeb6672b3df7cf4c34d716fede6c8d26b39d6de70c4311db03"
+      }
+    },
+    {
+      "id": "G80",
+      "pagina_guia": "40",
+      "requisito": "Ambiguidade de caixa/negrito no balão da natureza da aprovação",
+      "natureza": "interpretação",
+      "estado_historico": "decisão registrada",
+      "evidencia_historica": "Adotada a frase de apresentação em caixa normal, conforme o próprio exemplo e a descrição da p. 21; autor/título/BANCA em negrito.",
+      "registros_atuais_relacionados": [],
+      "estado_atual": "exige_conciliacao_com_controles_atuais_ou_decisao_condicional",
+      "registro_complementar": "pretextuais_visual_lote81.json",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "conferido com limites institucionais registrados",
+        "decisao": "Mantida natureza da aprovação em caixa normal segundo decisão explícita da matriz histórica; interpretação da ambiguidade do guia, não norma inventada.",
+        "evidencia": "capa_rosto_aprovacao_lote141.json"
+      }
+    },
+    {
+      "id": "G81",
+      "pagina_guia": "Preservação",
+      "requisito": "Originais, gráficos, valores e separação de protocolos",
+      "natureza": "limite da revisão",
+      "estado_historico": "verificado",
+      "evidencia_historica": "Cópia anterior intacta; seis imagens e tabelas experimentais preservadas. Nenhum treinamento, busca genética ou DM executado.",
+      "registros_atuais_relacionados": [
+        "checkpoint_lote63.json",
+        "edicao_lote63.json"
+      ],
+      "estado_atual": "evidencias_atuais_localizadas_revisar_alcance",
+      "retificacao": "Matriz, Figura 1 e redação da síntese de H3 foram alteradas deliberadamente; preservar valores experimentais não significa preservar todos os textos e mídias idênticos à base.",
+      "evidencias_consolidadas_lote125": [],
+      "decisao_consolidada": {
+        "estado": "aguarda conclusão individual",
+        "decisao": "Evidências históricas/controles já vinculados; avaliar cobertura do requisito, não apenas presença do relatório."
+      }
+    }
+  ],
+  "limites": "Estados históricos não promovidos automaticamente. Controles do lote66 e verificação do lote63 têm alcance específico e devem ser ligados a cada regra antes de conclusão integral.",
+  "controles_fonte": "guia_lote107/auditoria_estrutural.json",
+  "limite_atualizacao": "Registros anteriores reutilizados somente no alcance dos trechos/estruturas preservados; não aprova globalmente cada regra. Mudanças textuais atuais estão nos checkpoints99/102.",
+  "base_matriz_anterior": "matriz_guia_atual_lote107.json",
+  "regra_conclusao": "Vinculação de relatório não encerra requisito. Antes de promover versão, avaliar alcance, equivalência textual/tipográfica e atualidade de cada evidência; controles107 possuem hash anterior e precisam conciliação com124.",
+  "proxima_acao_concreta": "Revalidar controles estruturais do guia na cópia124 e classificar os81requisitos com justificativas individuais, distinguindo obrigação,recomendação,condição e impressão.",
+  "resumo_decisoes": {
+    "conferidos_ou_condicionais": 38,
+    "parciais": 4,
+    "aguardam": 39
+  },
+  "nota": "Não é percentual de conformidade. Decisões condicionais e verificações com ressalva mantêm seus limites; G69 cobre apenas notas."
+}

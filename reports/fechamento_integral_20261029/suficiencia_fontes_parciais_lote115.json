@@ -1,0 +1,33 @@
+{
+  "sha256_docx": "6799c23f04bd9f902cd2db2884e7c882b504690ed0342fdf5d9a304619e2c56a",
+  "criterio": "Suficiência examinada por afirmação; consulta parcial não exige leitura integral quando o conteúdo efetivamente atribuído está integralmente no resumo original. Não transformar título/catalogação em confirmação de detalhes.",
+  "registros": [
+    {
+      "fonte": "Pagani, Kovaleski e Resende (2015)",
+      "indice_atual": 359,
+      "texto": "O Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015) foi considerado na organização inicial do levantamento. A planilha contém fórmulas com alfa igual a 5 e ano de referência 2026, mas seus indicadores e decisões não documentam uma aplicação concluída do método à coleção final. Assim, as pontuações não são usadas para justificar a inclusão ou estabelecer a relevância relativa dos 34 documentos. Os registros originais são preservados como documentação intermediária do processo.",
+      "sha256_texto": "7df24a8a7c1ea1c0ccfdcd93b9070976d61bcf028c54811982a6adc97d56f258",
+      "decisao": "afirmacao_bibliografica_sustentada_no_resumo_original",
+      "fundamento": "Resumo da editora identifica proposta e autores de Methodi Ordinatio; parágrafo atual apenas identifica o método e relata uso local parcial. Alfa5,ano2026 e decisões incompletas são fatos da planilha local conferida no lote48, não resultados atribuídos ao artigo. Não há atribuição de fórmula ou de validação metodológica ao artigo além do resumo.",
+      "url": "https://link.springer.com/article/10.1007/s11192-015-1744-x"
+    },
+    {
+      "fonte": "Holland (1975)",
+      "indice_atual": 324,
+      "texto": "Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1975). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979).",
+      "sha256_texto": "6c18b8d83b81d0a77f48a99256d6207768cf421be816d1e655b913bc6aee53d2",
+      "decisao": "pendente_conferencia_texto_original",
+      "fundamento": "A descrição editorial de reedição e catálogo de1975 não confirmam diretamente os princípios atribuídos à edição citada. Evitar chamar isso de validação integral.",
+      "url": "https://doi.org/10.7551/mitpress/1090.001.0001"
+    },
+    {
+      "fonte": "Eshelman (1991)",
+      "indice_atual": 325,
+      "texto": "O motor de busca disponibilizado incorpora um mecanismo de mutação cataclísmica inspirado no CHC (Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation), de Eshelman (1991). Após estagnação, o mecanismo aumenta a mutação para ampliar a exploração. Essa finalidade de implementação não demonstra manutenção de diversidade: não foram produzidas medidas populacionais específicas nem uma ablação que isolasse o efeito do LHS e do operador. O mecanismo não corresponde ao CHC completo.",
+      "sha256_texto": "cb67b9487b00bcd2fcddadacdc8b99f7900b564821dad6ace78904d0f4126c28",
+      "decisao": "pendente_capitulo_original",
+      "fundamento": "Capítulo não recuperado nesta tentativa(403). Patente posterior do inventor apoia o conceito, mas não substitui confronto da atribuição com a edição citada. A implementação local possui sua própria prova no código.",
+      "url": "https://www.sciencedirect.com/science/chapter/bookseries/pii/B9780080506845500203"
+    }
+  ]
+}

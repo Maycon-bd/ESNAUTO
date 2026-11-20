@@ -1,0 +1,5 @@
+{
+  "motivo": "Construtor gravou a tentativa antes do teste de igualdade; teste falhou na serialização de w:t vazio, não em conteúdo. Tentativa preservada. Construtor corrigido para comparar C14N e validar em memória antes de gravar. Esta é recuperação de escrita própria, sem mudar registro de versões.",
+  "hash_trabalho_anterior": "58bf8171b162fa8d1de48e6d5bdffb2f604fef39547b6cc818d12fe4bc77ca08",
+  "hash_tentativa_propria": "274f1bb31782336988eb3fc407c199dcbffb4cf40b24949093e73ac98f6c23a9"
+}

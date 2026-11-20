@@ -1,0 +1,42 @@
+{
+  "id": "v010",
+  "anterior": "v009",
+  "arquivo": "reports/monografia/versoes/v010/MayconGarciaSilva_monografia_v010.docx",
+  "sha256": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+  "registrada_em_utc": "2026-11-02T00:33:25.580947+00:00",
+  "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\busca_lacunas_20261101.docx",
+  "responsavel": "Codex, revisão documental para Maycon Garcia Silva",
+  "resumo": "Incorpora três respostas documentadas: Jaeger P1/P3 e Millea P4. Atualiza Quadro 1, Tabela 1, Figura 1 e prosa dependente; inclui fonte original de Evolino e suplemento de Jaeger com limites de versão explícitos. Reduz 41 insuficiências para 38. Pesquisa restante em andamento; resultados experimentais preservados.",
+  "estado_editorial": "em_revisao",
+  "validacao_declarada": "78 páginas renderizadas; 45 páginas alteradas inspecionadas e 33 com corpo pixel a pixel idêntico à base. Matriz de 170 células conciliada; 41 títulos, 19 legendas e 60 entradas de listas/sumário conferidos (48 páginas atualizadas). 50 referências anteriores preservadas, 51 no total. Apenas document.xml e imagem da Figura 1 alterados. Introdução e capítulos 3–6 preservados em XML. Sem novos experimentos ou validação científica integral; 38 lacunas permanecem.",
+  "evidencias": [
+    {
+      "arquivo": "reports/busca_lacunas_20261101/relatorio_incorporacao.md",
+      "sha256": "77c6dcd641e5b9738a9a74e9b49b577cf303bf2e42cc4d93db9c9baa357b1614"
+    },
+    {
+      "arquivo": "reports/busca_lacunas_20261101/verificacao_estrutural.json",
+      "sha256": "c762ea93f049afea2846494922eae415a5e586cd1c31f9b3bb075c06d4507f49"
+    },
+    {
+      "arquivo": "reports/busca_lacunas_20261101/inspecao_visual.json",
+      "sha256": "4949de963135ca44360d0754384546908946f795f0117301c72f5833a8d64daa"
+    },
+    {
+      "arquivo": "reports/busca_lacunas_20261101/decisoes_41_em_consolidacao.json",
+      "sha256": "4839e0733fdce727bdca045c0d938aec990633a6f70b36e318d89152a2bfcd7a"
+    },
+    {
+      "arquivo": "reports/busca_lacunas_20261101/conciliacao_proposta.json",
+      "sha256": "e0bec98d517c250195a4c028526e0ff4867f4a2dfc39d8e01c99a8a8d8a075c5"
+    }
+  ],
+  "pendencias": [
+    "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+    "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+    "Limitação bibliográfica preservada: buscas complementares e registros de seleção parciais. Três células resolvidas com evidência; restam 38 marcações de informação insuficiente, com pesquisa em andamento. Sem alegação de revisão sistemática integral.",
+    "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+    "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills."
+  ],
+  "caminho_absoluto": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\versoes\\v010\\MayconGarciaSilva_monografia_v010.docx"
+}

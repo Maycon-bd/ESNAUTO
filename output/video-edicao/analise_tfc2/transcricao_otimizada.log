@@ -1,0 +1,466 @@
+Carregando modelo base INT8 na CPU...
+�udio: 1559.0s; idioma: pt
+    6.1/1559.0s | L�, meu nome � Marcon Garcia Silva, do curso de Tangeride Software da Universidade de Ruiverde.
+   12.0/1559.0s | Neste trabalho orientado pelo meu professor, Dr. Fabian Corr�a Cardoso,
+   18.4/1559.0s | eu d� uma forma de prever o pre�o de fechamento ajustado na a��o da PETR4.
+   26.9/1559.0s | Para isso, eu usei uma rede neural chamada rede de status de Eco, EcoState Network, S&N.
+   30.6/1559.0s | Um algoritme gen�tico, por por corab�s, configura��es dessa rede,
+   35.2/1559.0s | e tamb�m trabalhei na adapta��o de uma interface do sistema ESNAUTO.
+   42.9/1559.0s | Vou mostrar como cheguei aos testes e como os resultados indicam e at� onde podemos chegar com essas conclus�es.
+   50.5/1559.0s | Fala agora sobre o problema da pesquisa, o que guiou o trabalho foi usando,
+   55.2/1559.0s | os pre�os anteriores da PETR4, como essa rede sai,
+   57.6/1559.0s | ao prever o pr�ximo fechamento.
+   65.2/1559.0s | Al�m de olhar o erro dessa previs�o, o que sabe quanto o computador leva para fazer esses ajustes desses modelos computacionais.
+   70.1/1559.0s | O gr�fico mostra como o pre�o mudou, ao longo dos anos,
+   74.0/1559.0s | a periodos de alta, a periodos de baixa, mudan�as mais fortes.
+   82.0/1559.0s | Ent�o, esse comportamento, a gente observar, tem mudan�as muito diferentes na crise de 2008,
+   85.5/1559.0s | na crise de 2014 e na pandemia de 2020.
+   92.9/1559.0s | Eu comparei a rede de Sadi� com outras duas redes usadas para fazer essas an�lise de a��es,
+   96.7/1559.0s | essa � a consequ�ncia de dados, que � a GRU e a LSTM.
+   98.5/1559.0s | O foco foi avaliar essas previs�es.
+  101.4/1559.0s | Ent�o, o testem um estrat�gia de compra e venda de a��es nenhuma.
+  106.6/1559.0s | Ent�o, falando um pouco sobre o objetivo das minhas hip�tias,
+  108.3/1559.0s | falando r�pido, mais ou menos,
+  110.9/1559.0s | a primeira � a pergunta de se a rede consegue,
+  115.7/1559.0s | a rede � assim, ela consegue competir com GRU, LSTM.
+  120.5/1559.0s | A segunda �, j� olha, por o tempo necess�rio para ajustar uma configura��o escolhida.
+  125.3/1559.0s | A terceira investiga se ao mudar a forma de gerar esses pesos iniciais,
+  126.7/1559.0s | pode trazer resultados melhores,
+  130.1/1559.0s | j� que o distribui��o normal usado como refer�ncia.
+  133.0/1559.0s | A gente quer tentar atingir melhores resultados que � normal.
+  138.0/1559.0s | E a quarta trata-se de recursos do algoritmo gen�tico
+  140.1/1559.0s | para que a gente pode explorar diferentes solu��es,
+  144.8/1559.0s | a quinta considera distribui��es ajustadas aos pr�prios dados de treino.
+  148.6/1559.0s | Mas a gente vai voltar em cada uma delas e explicar melhor sobre cada.
+  152.9/1559.0s | Fando agora sobre a avimenta��o e trabalhos relacionados,
+  155.3/1559.0s | o meu trabalho se apoie em tr�s assuntos,
+  158.5/1559.0s | que foram a rede de estados de eco,
+  161.8/1559.0s | a busca gen�tica e prepara��o de dados financeiros
+  168.4/1559.0s | e na proposta de tentar prever esse valor.
+  174.6/1559.0s | Ent�o, de Egger trouxe essa caracter�stica da rede de nerode sagieco,
+  180.7/1559.0s | � manter as conex�es internas fixas durante o ajuste de calcular os pesos de sa�da.
+  183.5/1559.0s | Vou explicar esse o seramento no pr�ximo conjunti slide.
+  189.6/1559.0s | Ent�o, os trabalhos de araujo e colaboradores ajudaram a fundamental
+  193.2/1559.0s | o estudo dessas distribui��es e da busca gen�tica,
+  196.5/1559.0s | o BoveDB do meu orientador,
+  200.5/1559.0s | da o contexto do ajuste dos pre�os,
+  202.8/1559.0s | por eventos corporativos, impl�teses,
+  205.5/1559.0s | expl�tes, pagamentos e dividendos,
+  208.6/1559.0s | tudo isso que d� uma mexida no presda��o.
+  212.2/1559.0s | Por exemplo, se eu fa�o um split ou divido,
+  214.9/1559.0s | o presda��o, se est� 40 ou divido,
+  216.2/1559.0s | ele � vida 2 a��es de 20,
+  218.8/1559.0s | se eu fa�o um split, quando � o oposto,
+  220.2/1559.0s | voc� est� com 2 a��es de 20,
+  223.3/1559.0s | se junta, vira 1 de 40,
+  226.5/1559.0s | pagamento de dividendos tamb�m mexo no presda��o.
+  233.7/1559.0s | Ent�o, o meu orientador trouxe j� que isso influencia no preso da a��o
+  235.9/1559.0s | e trouxe esse tratamento.
+  243.1/1559.0s | Ent�o, fiz uma revis�o com 34 documentos e busca complementares para ajudar.
+  246.6/1559.0s | Essa cole��o ajuda a orientar toda a minha pesquisa
+  250.0/1559.0s | com mais registros dispon�veis,
+  253.2/1559.0s | n�o permite trazer se ela cobe toda a literatura desse tema.
+  256.7/1559.0s | Ent�o, vamos falar apenas do que conseguimos achar aqui.
+  260.8/1559.0s | Fala uma gora sobre a divis�o e dados e divis�o temporal.
+  269.3/1559.0s | Foi de 5.198 observa��es de todo o in�cio de a 3,1,2 mil,
+  274.6/1559.0s | at� 30 de 2020, foram separadas,
+  283.6/1559.0s | 2.600 s� para a treino, 2.299 para a valida��o em 2.99 para testes.
+  287.1/1559.0s | Falando agora sobre a rede neural de sado de eco,
+  291.0/1559.0s | ela � uma estrutura que a partir de hoje vou chamar ela de SN,
+  293.5/1559.0s | porque a ingl�s � Equestate Network,
+  296.6/1559.0s | ent�o vou resumir para n�o ficar repetindo isso.
+  301.3/1559.0s | Podemos acompanhar o funcionamento da esquerda para a direita,
+  303.8/1559.0s | quando a gente tem o WIN, s�o os dados de entrada,
+  306.5/1559.0s | a gente tem o W, que � o reservat�rio W out.
+  312.1/1559.0s | O WIN e o W mant�m fixos no ajuste
+  317.9/1559.0s | e a gente faz uma estimativa apenas do c�lculo da sa�da,
+  321.7/1559.0s | que � o W out, que a gente faz em regress�o RID,
+  325.9/1559.0s | porque a adjusta essa controla do valor espeso.
+  328.4/1559.0s | Isso torna o ajuste final muito mais r�pido,
+  331.0/1559.0s | ent�o a gente nem fica retrainando,
+  334.9/1559.0s | como tudo j� � fixo, voc� s� d� uma passada l�,
+  339.4/1559.0s | ela faz todo os c�lculos que ela faz no reservat�rio
+  342.9/1559.0s | e a gente calcula apenas a sa�da.
+  346.6/1559.0s | Trasendo agora a busca gen�tica de preparamentos,
+  350.1/1559.0s | para procurar essa melhor configura��o,
+  353.0/1559.0s | a gente usa o algoritmo gen�tico,
+  355.1/1559.0s | que vai trabalhar com v�rias op��es.
+  358.0/1559.0s | Ent�o, ele vale o erro de cada um
+  362.3/1559.0s | e produz novas op��es a partir daquelas que foram selecionadas,
+  365.0/1559.0s | esse processo se repete ao longo da gera��o.
+  368.3/1559.0s | Ent�o, imagina um hyperplan, como outros, por exemplo,
+  372.3/1559.0s | essa folha de caderno aqui, que ela est� toda amale�vel,
+  376.2/1559.0s | esse � o hyperplano que o algoritmo gen�tico tenta percorrer.
+  379.4/1559.0s | Imagina que ela percorre um pontinho ap�s o outro
+  383.0/1559.0s | e em voltando e voltando, at� percorre todo o hyperplano.
+  387.7/1559.0s | S� que existe um problema, o ele n�o � exatamente plano,
+  391.5/1559.0s | ele tem umas deforma��es e essas deforma��es
+  394.9/1559.0s | que acaba atrapalhando nossa busca de preparamentos.
+  397.6/1559.0s | Por exemplo, se ela est� buscando por aqui
+  400.5/1559.0s | e aqui � um amontaninha melhor,
+  402.6/1559.0s | ela vai achar e vai parando o melhor local.
+  405.1/1559.0s | S� que o melhor local, nem sempre,
+  406.9/1559.0s | vai ser a melhor configura��o poss�vel dessa rede.
+  410.6/1559.0s | Ent�o, eu usei um mecanismo chamado
+  414.8/1559.0s | cataclismo, que ele d� um salto,
+  418.0/1559.0s | um pulo qu�ntico nesse hyperplano,
+  421.9/1559.0s | buscando o melhor local, o melhor global desse hyperplano.
+  424.9/1559.0s | Ent�o, tenta explicar da melhor forma.
+  429.4/1559.0s | E praticamente nos cromossomos que a gente est� usando,
+  432.3/1559.0s | a gente usa cinco tipos de cromossomos diferentes,
+  435.5/1559.0s | que � o vazamento, o raiz pekital,
+  440.6/1559.0s | o discard inicial, o de reservat�rio e o READ.
+  447.8/1559.0s | Ent�o, esse cromossomos guardam cinco escolhas apenas,
+  449.3/1559.0s | que tem que ser feito,
+  453.0/1559.0s | quanto do estado anterior, que a rede dever� manter,
+  456.5/1559.0s | a escala dessas conex�es internas,
+  459.4/1559.0s | quantos estados iniciais s�o descartados
+  463.2/1559.0s | e o tamanho do reservat�rio e a regoliza��o dessa sa�da.
+  466.6/1559.0s | Ent�o, a avalia��o da combina, o erro de treino,
+  469.6/1559.0s | com a devalida��o, dando mais peso a avalida��o.
+  473.1/1559.0s | O sistema tamb�m usa o percublatino,
+  477.8/1559.0s | que ele distribui essas op��es iniciais
+  479.9/1559.0s | e o mecanismo de cataclismo,
+  482.4/1559.0s | que eu disse anteriormente, que faz esses saltos
+  486.0/1559.0s | para renovar as solu��es, para n�o ficar estagnado.
+  490.2/1559.0s | Fala agora sobre as cinco ondas experimentais.
+  498.6/1559.0s | Essas cinco ondas eu separei distribui��es em ondas de execu��es,
+  500.5/1559.0s | porque acho que mais se pareci,
+  503.0/1559.0s | eu coloquei para as executadas mais juntas,
+  504.3/1559.0s | para fazer uma compara��o melhor.
+  507.2/1559.0s | Foram organizar desses cinco grupos,
+  511.1/1559.0s | que s�o as duas primeiras ondas,
+  513.4/1559.0s | esteve no devinove execu��es cada,
+  517.2/1559.0s | e expornam fam�lias distribui��es com comportamentos diferentes.
+  520.7/1559.0s | A terceira teve seis configura��es relacionadas
+  521.5/1559.0s | com as especialidades,
+  524.2/1559.0s | e isso � a presen�a de conex�es com peso zero.
+  528.4/1559.0s | A quarta teve seis controles de refer�ncia,
+  531.2/1559.0s | e a quinta reuniu 15 configura��es
+  534.7/1559.0s | com distribu��es ajustadas nos dados de trein.
+  538.9/1559.0s | Quando aparece uma combina��o como l� pl�ssico,
+  542.7/1559.0s | o primeiro nome indica que foram gerados com peso de entrada.
+  545.5/1559.0s | O segundo indica que os pesos do reservat�rio
+  547.9/1559.0s | e essa ordem que eu vou usar nos relatores.
+  550.4/1559.0s | Cada execu��o tamb�m envolve a configura��o
+  551.5/1559.0s | e um sorteio de pesos.
+  554.1/1559.0s | Por isso, � uma diferen�a no erro,
+  555.3/1559.0s | n�o pode ser t�o atribu�da,
+  557.3/1559.0s | somente ao nome dessa distribui��o.
+  560.6/1559.0s | Ent�o, n�o tem como falar porra.
+  564.3/1559.0s | Uma distribui��o � muito superior a outra.
+  567.7/1559.0s | E agora falando sobre os tr�s blocos de evid�ncia.
+  568.9/1559.0s | Antes dos resultados,
+  571.9/1559.0s | a importa a gente separar esses tr�s blocos de evid�ncia
+  572.8/1559.0s | que eu quero trazer.
+  579.0/1559.0s | O primeiro hist�rico das quarenta e cinco execu��es
+  581.4/1559.0s | que permite comparar os resultados das ondas.
+  584.0/1559.0s | O segundo � uma rodada complementar
+  587.2/1559.0s | para comparar os modelos nas mesmas datas
+  589.2/1559.0s | e aplicar um teste estat�stico.
+  592.8/1559.0s | Nelos pesos foram gerados novamente com uma semente fixa.
+  595.3/1559.0s | A semente � um n�mero que controla o sorteio
+  596.7/1559.0s | e permite repetir novamente.
+  600.2/1559.0s | O terceiro � um lote de 200 gera��es.
+  603.6/1559.0s | Os a das apenas para ilustrar o funcionamento e as previs�es.
+  605.9/1559.0s | Ele fica fora dessas quarenta e cinco execu��es.
+  609.8/1559.0s | Portanto, os n�meros do hist�rico, o teste estat�stico
+  612.0/1559.0s | e a figura exutativa v�m de conjuntos diferentes.
+  615.7/1559.0s | Vou manter essa separa��o para explicar cada resultado.
+  622.6/1559.0s | Agora falando do ESN alto, que eu vou mostrar ele aqui tamb�m,
+  625.4/1559.0s | que � sobre um software que eu desenvolvi
+  628.5/1559.0s | que ele faz todo um levantamento de tudo.
+  631.9/1559.0s | Todos os c�digos em R foram fornecidos pelo meu orientador.
+  636.5/1559.0s | E eu tinha aqui entrar num software chamado RStudio
+  641.5/1559.0s | que rodava esses scripts que tinham l� que o orientador me disponibilizou.
+  645.1/1559.0s | S� que sempre quando eu rodava, ele criava um arquivo.
+  647.9/1559.0s | Eu tinha que alterar o nome e salvar aquilo numa pasta diferente.
+  651.2/1559.0s | Ent�o, assim, acabou que fica muito custioso eu rodar.
+  653.7/1559.0s | Esse e dava muito trabalho para eu rodar esses scripts.
+  657.8/1559.0s | Ent�o, eu desenvolvi, n�, cria a� com as t�ticas de JavaScript
+  659.2/1559.0s | que eu aprendi a correr do curso.
+  664.9/1559.0s | Desenvolveu um aplicativo que ele faz ele roda todos esses scripts
+  670.0/1559.0s | de IR, tanto a cria��o da rede neural,
+  675.7/1559.0s | tanto a busca por configura��es melhores do algoritmo gen�tico.
+  680.1/1559.0s | Salva isso tudo, mant�m m�tricas hist�ricos, visualiza��o
+  683.7/1559.0s | e mant�m os registros mais organizados.
+  687.1/1559.0s | Ent�o, s� apertar um bot�o, ele vai fazer todo esse rodar
+  690.9/1559.0s | com as coisas que voc� especificar l�, ser roda,
+  693.9/1559.0s | e ele executa tudo, guarda tudo, � uma beleza.
+  699.0/1559.0s | Tivo andando de forma local aqui na minha m�quina,
+  700.7/1559.0s | na minha navegada do Google Chrome.
+  707.1/1559.0s | E aqui � o ESN al benchmark skin.
+  711.1/1559.0s | Ele traz, n�, eu estava fazendo algumas compara��es com a varia
+  712.9/1559.0s | depois que eu at� se tomo um pouco sobre a varia.
+  717.7/1559.0s | S� que ele faz, simplesmente j� tem, j� citei as separa��es
+  718.9/1559.0s | que eu tinha citado antes.
+  723.2/1559.0s | E caper das com o bot�o, a gente j� faz uma organiza��o geral
+  726.1/1559.0s | aqui do modelo de utiliza��o,
+  729.7/1559.0s | uma as configura��es e distribu��es do stoc�stico,
+  732.2/1559.0s | n�, que eu estou usando todos os quatro cen�rios
+  733.8/1559.0s | que eu tinha ditante anteriormente,
+  736.0/1559.0s | ent�o todas as ondas que eu trouxe aqui,
+  740.9/1559.0s | se eu ativo n�o, a chegna��o por cataclismo,
+  743.0/1559.0s | perfeita de treinamento do deep learning,
+  745.5/1559.0s | LSTM, DR, tudo aqui � feito,
+  747.0/1559.0s | pence click iniciar aqui,
+  750.1/1559.0s | ele vai rodar todo o que eu tinha explicado antes,
+  752.5/1559.0s | tudo com o clique de a trazer pra mim.
+  754.9/1559.0s | Tamb�m traga que o resumo da �ltima execu��o,
+  758.8/1559.0s | tudo bem organizado, a configura��o e distribui��o,
+  762.5/1559.0s | olha atr�s do ego, j� trai tudo aqui organizado
+  766.1/1559.0s | de forma que seja mais f�cil de analisar esses resultados.
+  769.4/1559.0s | Ent�o, essa � a minha contribui��o aqui
+  772.9/1559.0s | para a inden�de de software que tanto conhece
+  776.4/1559.0s | software que ficar� dispon�vel para qualquer pessoa quiser
+  778.1/1559.0s | baixar direto do GitHub,
+  780.5/1559.0s | executar os mesmos testes que eu.
+  783.9/1559.0s | Ent�o, agora, avan�ando aqui
+  785.9/1559.0s | por os crit�rios de avalia��o,
+  789.9/1559.0s | eu usei tr�s medidas para avaliar as previs�es,
+  793.7/1559.0s | que � o UI, que faz um mostro da manh�,
+  796.3/1559.0s | o m�dio do erro, tanto a previs�o ir� acima
+  798.4/1559.0s | quanto abaixo do pre�o observado,
+  801.3/1559.0s | quanto menor, melhor, por exemplo,
+  804.9/1559.0s | um UI de 30 centavo, significam desviar o m�dio
+  806.4/1559.0s | do valor dessa escala de pre�o,
+  809.5/1559.0s | ent�o ele pode ser tanto 30 centavo
+  812.0/1559.0s | para os acima do pre�o que vai ser realmente
+  813.5/1559.0s | 30 centavos abaixo,
+  815.8/1559.0s | ele faz uma m�dia desses erros em modo,
+  820.2/1559.0s | o RMS EA d� mais peso a erros grandes
+  822.4/1559.0s | e o erro quadrado discreve
+  826.2/1559.0s | quanto essas previs�es acompanhavam os previs�es observados,
+  828.5/1559.0s | mas eles existem cuidado, os precios pr�ximos
+  830.1/1559.0s | no tempo j� podem ser parecidos.
+  832.5/1559.0s | Tamb�m pediu medir o tempo de procurar
+  835.0/1559.0s | uma configura��o e o tempo de ajuste
+  836.2/1559.0s | de rede j� escolhida.
+  840.3/1559.0s | Restar os hist�ricos de previs�o,
+  842.2/1559.0s | o MI, que � o nosso importante,
+  843.8/1559.0s | quando melhor, melhor, melhor,
+  845.4/1559.0s | o erro poss�vel mais a pr�xima,
+  848.1/1559.0s | j� aceitava o pre�o de fechamento pr�ximo de dia.
+  852.1/1559.0s | A configura��o escolhida foi o SN,
+  853.3/1559.0s | l� pl�stico, normal,
+  860.5/1559.0s | que ele teve 0.32 centavos de erro.
+  863.8/1559.0s | O GR e o LSTEM foram errar um mais,
+  865.5/1559.0s | eles tiveram um erro MI,
+  868.9/1559.0s | foi o 0.35 do GRU, muito pr�ximo at� a DNASN,
+  871.2/1559.0s | e o LSTEM com 0.45.
+  877.6/1559.0s | Eles acabam que a SN traz,
+  882.0/1559.0s | que � realmente superior ao GRU e o LSTEM.
+  885.2/1559.0s | E os dados s�o muito favor�veis nos registros,
+  890.4/1559.0s | mas o LSTEM passa por essa busca de configura��es externa
+  894.6/1559.0s | do agorismo gen�tico e o GRU e o LSTEM n�o.
+  900.9/1559.0s | Agora, falando sobre a inicensa��o e ganhos observados.
+  905.1/1559.0s | A compara��o agora entre 2 configura��es da pr�pria SN,
+  907.6/1559.0s | a refer�ncia usada � a normal,
+  909.9/1559.0s | que � a distribui��o normal,
+  911.6/1559.0s | tanto na entrada e no reservat�rio,
+  914.7/1559.0s | e a outra � a place na entrada e no reservat�rio.
+  917.0/1559.0s | As barras s�o muito pr�ximas,
+  921.9/1559.0s | e os 2 erros m�dios ficam perto de 33 centavos,
+  924.1/1559.0s | usando o mesmo valores completos,
+  926.0/1559.0s | que est�o na tela.
+  930.7/1559.0s | A redu��o foi de 0,35%.
+  932.9/1559.0s | Ent�o, houve uma melhora registrada,
+  934.0/1559.0s | mas ela foi pequena.
+  936.4/1559.0s | Vale olhar a escala do gr�fico
+  939.5/1559.0s | para n�o entender essa diferen�a com o maior que ela tem.
+  942.4/1559.0s | Outra combina��o, l� pl�stico em CAUT,
+  944.6/1559.0s | apresentou um menor RMSC.
+  948.0/1559.0s | Isso mostra que a escolha da configura��o
+  949.9/1559.0s | tamb�m depende da medida que ela � usada.
+  953.1/1559.0s | Esses testes favorecem algumas configura��es,
+  957.5/1559.0s | mas n�o mostra que a distribui��o sempre ser� a melhor que as outras.
+  962.6/1559.0s | Falando agora sobre o exemplo visual preservado,
+  965.9/1559.0s | esse gr�fico que vaja dar a gente a visualizar uma previs�o,
+  969.7/1559.0s | uma curva, apresenta o pre�o observado
+  971.9/1559.0s | e a outra o pre�o previsto.
+  973.6/1559.0s | Ent�o, se a gente t� analisada,
+  978.8/1559.0s | a azulzinha � o mais grossa do que a preta,
+  984.1/1559.0s | porque a preta � apenas o observado.
+  986.6/1559.0s | Ent�o, ele � exatamente o ponto exato.
+  988.5/1559.0s | O previsto tem um erro m�dio,
+  990.9/1559.0s | ent�o, ele vai estar sempre no meio assim,
+  992.4/1559.0s | dizendo que ele pode estar t�o terrado,
+  994.3/1559.0s | por positivo, t�o terrado, para o negativo.
+  998.4/1559.0s | A figura mostrada abaixo,
+ 1001.8/1559.0s | detalhe tamb�m os �ltimos sempre g�es que foram avaliados.
+ 1004.4/1559.0s | Ent�o, assim, as curvas pr�ximas ajudam a gente
+ 1006.6/1559.0s | em enxergar um comportamento da rede,
+ 1008.3/1559.0s | mas essa apar�ncia n�o basta.
+ 1011.1/1559.0s | O pre�o de dias pr�ximos j� tende a ser parecidos,
+ 1013.9/1559.0s | por isso que considero gr�fico junto com as medidas
+ 1016.9/1559.0s | e eu sempre identificando teste da onde ele veio.
+ 1022.0/1559.0s | Falando agora sobre a roda controlada complementar,
+ 1024.5/1559.0s | porque para fazer essa compara��o estat�stica,
+ 1027.5/1559.0s | prepare uma roda complementar com os arquivos necess�rios
+ 1029.6/1559.0s | para conferir das previs�es de cada modelo.
+ 1033.0/1559.0s | A�, se ele usou uma configura��o de refer�ncia
+ 1036.9/1559.0s | l� pl�stico, � normal, com 22 neur�nios no reservador.
+ 1039.4/1559.0s | Mantiva a ser escolha e gerei novos pesos,
+ 1042.5/1559.0s | usando a semente de cada a� no slide,
+ 1044.9/1559.0s | de 26,096.
+ 1050.2/1559.0s | Essa roda n�o repetiu a busca gen�tica,
+ 1052.2/1559.0s | porque eu j� tinha achado uma busca boa,
+ 1055.4/1559.0s | ent�o a sa�da da rede foi ajustada apenas por dados de treino.
+ 1058.4/1559.0s | E o processamento seguiu a ordem dessas datas
+ 1059.9/1559.0s | pela valida��o do teste.
+ 1064.5/1559.0s | Cada modelo produziu 1299 previs�es
+ 1067.5/1559.0s | e depois de alinhar os arquivos pelas datas,
+ 1075.3/1559.0s | a compara��o usou 1298 das comuns entre setembro de 2015 e dezembro de 2020.
+ 1079.6/1559.0s | As senhos erros dos tr�s modelos foram comparados nos mesmos dias.
+ 1084.5/1559.0s | Falando agora sobre os erros na janela comum controlada,
+ 1088.6/1559.0s | aqui est�o os erros dessa roda complementar,
+ 1092.9/1559.0s | no gr�fico � esquerda, o MAIDSN ficou perto de 33 centavos,
+ 1094.9/1559.0s | da GRU ficou cerca de 42.
+ 1098.0/1559.0s | E LSTM 47 centavos.
+ 1100.3/1559.0s | No gr�fico da direita, mostra o RMSCE.
+ 1101.7/1559.0s | A ordem foi a mesma.
+ 1105.7/1559.0s | SN teve um menor erro, seguida de GRU e LSTM.
+ 1109.1/1559.0s | Esses n�meros j� s�o da nova execu��o com os novos pesos.
+ 1113.0/1559.0s | Eles n�o substituem os valores de hist�ricos apresentados antes.
+ 1116.6/1559.0s | O resultado que podemos confirmar � que nessa compara��o,
+ 1117.5/1559.0s | com as mesmas datas,
+ 1121.5/1559.0s | � CN selecionado teve menor erro nas duas medidas.
+ 1125.9/1559.0s | O pr�ximo passo foi examinar essa diferen�a com um teste estat�stico.
+ 1129.8/1559.0s | Na compara��o estat�stica de acur�cia dos modelos,
+ 1133.8/1559.0s | eu usei o teste de eboio de mariano para comparar os erros dos modelos.
+ 1137.3/1559.0s | A pergunta do teste � se ele tem a mesma cur�cia m�dia,
+ 1141.1/1559.0s | considerando a forma de medir o erro escolhido.
+ 1142.9/1559.0s | Fis quatro compara��es.
+ 1146.0/1559.0s | � CN com GRU e � CN com GRU.
+ 1146.8/1559.0s | LSTM.
+ 1151.8/1559.0s | Tanto com o erro absoluto, quanto com o erro quadr�tico, por isso que ficou quatro.
+ 1158.1/1559.0s | Em todas, o teste rejeitou a igualdade em n�vel individual em de 5%.
+ 1161.5/1559.0s | Como SN teve menor perca m�dia nas quatro observa��es,
+ 1165.1/1559.0s | o resultado foi favor�vel a ela a nessa rodada.
+ 1169.4/1559.0s | � tamb�m mostra valores de P obtidos no teste.
+ 1172.3/1559.0s | Mas h� limites tamb�m nessa an�lise,
+ 1175.5/1559.0s | porque foi usado apenas o �nico sorteio controlado
+ 1178.5/1559.0s | sem corre��o para as quatro compara��es.
+ 1181.4/1559.0s | E o c�lculo considerou defasagem zero.
+ 1183.8/1559.0s | A ficora��o tamb�m veio da busca hist�rica.
+ 1187.2/1559.0s | Ent�o o teste se apoia o resultado nesta rodada,
+ 1191.5/1559.0s | mas n�o demonstra superior em qualquer outra situa��o.
+ 1197.5/1559.0s | Falando agora sobre o custo de ajuste e custo de busca,
+ 1200.3/1559.0s | o resultado em tempo, em duas partes,
+ 1203.4/1559.0s | depois de escolher a configura��o e ajustar a SN,
+ 1207.1/1559.0s | ele levou cerca de cinco cent�simos de segundo.
+ 1210.6/1559.0s | O tempo registrado para a GRLSTEM
+ 1214.9/1559.0s | foi respectivamente cerca de 29,30 segundos.
+ 1216.6/1559.0s | 35 segundos.
+ 1220.6/1559.0s | Nesta etapa, a SN foi r�pida,
+ 1223.3/1559.0s | porque o ajuste consenta nos pesos de sa�da,
+ 1227.7/1559.0s | mas antes dela foi preciso encontrar todo uma boa configura��o.
+ 1231.9/1559.0s | Ent�o a busca gen�tica levou apenas 21%,
+ 1233.7/1559.0s | e em dois minutos por cen�rio.
+ 1238.9/1559.0s | Somando as 45 buscas, foram aproximadamente 38 horas
+ 1243.4/1559.0s | buscando todas essas buscas gen�ticas.
+ 1246.8/1559.0s | O meu famoso � as hip�teses.
+ 1249.4/1559.0s | A primeira recebeu a apoio.
+ 1254.5/1559.0s | A SN foi competitiva com a GRLSTEM nos resultados hist�ricos
+ 1257.1/1559.0s | e a rodada complementar tamb�m a apresentar
+ 1259.3/1559.0s | essas diferen�as favor�veis a ela.
+ 1261.7/1559.0s | A segunda recebeu a apoio tamb�m,
+ 1263.8/1559.0s | pelo a justi r�pido da rede,
+ 1268.3/1559.0s | depois da escolhida a nossa configura��o.
+ 1272.2/1559.0s | A terceira mostrou que algumas combina��es
+ 1276.2/1559.0s | tiveram erro menor que a refer�ncia normal com o normal,
+ 1279.6/1559.0s | e a melhora foi pequena, mas est� registrada,
+ 1282.7/1559.0s | e isso ajuda a gente ficar com figura��es
+ 1284.8/1559.0s | que merecem continuar sendo estudadas.
+ 1287.8/1559.0s | Na quarta, os recursos para explorar solu��es
+ 1289.5/1559.0s | forem corporados ao sistema,
+ 1292.8/1559.0s | mas sua contribui��o isolada ainda precisa ser medida.
+ 1297.9/1559.0s | Na quinta, observei erros pr�ximos entre configura��es
+ 1301.1/1559.0s | da �ltima onda, para afirmar a estabilidade
+ 1303.2/1559.0s | quanto o sorteio dos pesos muda.
+ 1305.2/1559.0s | Ser�o necess�rias repeti��es,
+ 1307.2/1559.0s | assim o trabalho responde �s hip�teses
+ 1311.1/1559.0s | com resultados concretos e identifica quais ficam
+ 1313.0/1559.0s | para os pr�ximos testes.
+ 1317.6/1559.0s | Vamos agora falar mais ou menos o que � que esse trabalho entrega,
+ 1321.3/1559.0s | que entrega uma avalia��o de 45 execu��es hist�ricas
+ 1326.2/1559.0s | da SNCON a A��O PETRA, organizada em 50 ondas diferentes.
+ 1329.7/1559.0s | Essa compara��o mostrou configura��es competitivas
+ 1333.3/1559.0s | e diferen�as de erro que ajudam a orientar novas escolhas.
+ 1335.5/1559.0s | Al�m disso, a rodada com o limit�rio
+ 1338.5/1559.0s | permitiu comparar os erros nas mesmas datas
+ 1340.3/1559.0s | e aplicar o teste estat�stico.
+ 1343.8/1559.0s | Na jaredi de software, com a minha contribui��o,
+ 1345.4/1559.0s | foi adaptar as rotinas em erros,
+ 1347.0/1559.0s | provenecidas pelo meu orientador
+ 1350.4/1559.0s | e desenvolver a interface do ESNI-AUTO.
+ 1352.3/1559.0s | Com isso, as configura��es,
+ 1355.3/1559.0s | acompanhamento das execu��es gr�ficos
+ 1357.1/1559.0s | e consulta ao hist�rico,
+ 1358.8/1559.0s | fica reunido tudo s� em um sistema.
+ 1361.0/1559.0s | Tamb�m foram preservados
+ 1363.1/1559.0s | dos arquivos da rodada complementar,
+ 1367.7/1559.0s | incluindo previs�es, modelo e informa��es dos execu��es.
+ 1370.2/1559.0s | Portanto, existe resultados registrados
+ 1371.7/1559.0s | em material para confer�ncia.
+ 1373.9/1559.0s | A preserva��o parcial
+ 1377.1/1559.0s | se refere a parte dos arquivos necess�rios
+ 1380.4/1559.0s | para repetir exatamente as execu��es antigas.
+ 1382.9/1559.0s | Elas n�o significam que os resultados do trabalho
+ 1384.2/1559.0s | foram perdidos.
+ 1390.1/1559.0s | Agora falando sobre o alcance dos resultados
+ 1392.1/1559.0s | de pr�ximos testes que esses resultados
+ 1395.2/1559.0s | aplicam a petra no per�odo
+ 1396.8/1559.0s | nas condi��es estudadas.
+ 1399.6/1559.0s | Para saber se o comportamento se mant�m outras situa��es,
+ 1402.5/1559.0s | precisamos testar outras cementes, outros per�ulos
+ 1404.0/1559.0s | e a��es tamb�m.
+ 1407.0/1559.0s | Com um esfor�o compar�vel a escolha dos modelos.
+ 1410.8/1559.0s | As execu��es antigas tinham resultados registrados,
+ 1414.2/1559.0s | mas parte das matrises dos vetores n�o foi preservada.
+ 1417.2/1559.0s | E a rodada complementar ficou com registros mais complexos
+ 1418.7/1559.0s | para a confer�ncia.
+ 1422.7/1559.0s | A revis�o do biogr�fico tamb�m tem registros parciais de sele��o.
+ 1426.8/1559.0s | Ainda precisamos separar a contribui��o de cada componente
+ 1429.2/1559.0s | e comparar com a revis�o simples
+ 1430.8/1559.0s | que repete o �ltimo pre�o.
+ 1433.9/1559.0s | Estrat�gio de investimento e retabilidade que existe
+ 1435.0/1559.0s | e outra avalia��o.
+ 1437.9/1559.0s | Aqui as conclus�es tratam do erro de previs�o,
+ 1441.0/1559.0s | do tempo de ajuste e da aplica��o desenvolvida.
+ 1445.3/1559.0s | O partido desses resultados, o pr�ximo passo
+ 1446.9/1559.0s | � verificar quanto ele se mant�m
+ 1449.9/1559.0s | quando mudamos a condi��o e, sem diga, mudamos as a��es,
+ 1453.6/1559.0s | mudamos o per�odo, mudamos a base de dados.
+ 1457.2/1559.0s | Isso inclui repetir com outras cementes
+ 1458.7/1559.0s | e tudo o que eu disse.
+ 1462.1/1559.0s | Tamb�m � importante comparar os modelos
+ 1464.8/1559.0s | com esfor�o semelhante de otimiza��o
+ 1467.5/1559.0s | e avaliar os componentes de busca separadamente,
+ 1469.8/1559.0s | mantendo outras condi��es iguais.
+ 1474.0/1559.0s | No software, a evolu��o prevista � a ultera de SNI Auto,
+ 1476.0/1559.0s | que foi o nome gen�rico que eu achei,
+ 1480.5/1559.0s | para Janus, que � um nome que eu achei mais adequado.
+ 1482.0/1559.0s | Como melhoria tanto na interface
+ 1484.2/1559.0s | e na organiza��o dos arquivos da execu��o.
+ 1487.9/1559.0s | A Vale 3 tamb�m parece como uma extens�o experimental.
+ 1491.2/1559.0s | Fora dos resultados, principais dessa apresenta��o,
+ 1494.3/1559.0s | essas fontes d�o continuidade o que foi constru�do
+ 1496.6/1559.0s | e precisam de testes pr�prios.
+ 1501.0/1559.0s | As conclus�es agora para a Petra 4.
+ 1505.2/1559.0s | O trabalho mostrou que SNI foi uma alternativa competitiva
+ 1509.4/1559.0s | para prever o fechamento da Petra em condi��es estudadas.
+ 1514.6/1559.0s | No hist�rico, 44 das 45 tiveram um maim menor
+ 1518.6/1559.0s | e valores documentados por GRM e LSTU.
+ 1522.5/1559.0s | Na ordada complementar, esse N teve um menor erro
+ 1525.2/1559.0s | com apoio de testes e satisco da execu��o.
+ 1529.4/1559.0s | Outro resultado foi o ajuste r�pido da rede selecionada,
+ 1533.5/1559.0s | com o custo da busca apresentando separadamente.
+ 1535.6/1559.0s | Minha contribui��o do ejarido software
+ 1540.1/1559.0s | foi adaptar essas rotinas e desenvolver a interface SNI Auto.
+ 1544.8/1559.0s | Reunindo configura��o, a acompanhamento e an�lise de testes.
+ 1548.6/1559.0s | O trabalho entrega resultado de previs�o, uma aplica��o
+ 1550.5/1559.0s | e registro para confer�ncia.
+ 1553.3/1559.0s | Essa base � constru�da para os pr�ximos estudos.
+ 1557.0/1559.0s | Agrade�a a aten��o da banca e muito obrigado.
+Conclu�do.

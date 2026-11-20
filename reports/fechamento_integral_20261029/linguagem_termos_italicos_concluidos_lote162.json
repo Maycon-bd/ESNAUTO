@@ -1,0 +1,68 @@
+{
+  "sha256_docx": "daad3895feb384d743bd4461f9a0ba228ed4634d2cdeaf30fb571ade82e10c19",
+  "escopo": "Revisão editorial contextual do corpo167–499 e células13elementos não vazios, conciliada às leituras anteriores e aos resumos. Índices de parágrafo python-docx na cópia161. Não é certificação de perfeição gramatical.",
+  "decisoes": {
+    "G70": "Conferência editorial concluída: introdução delimita problema,objetivos e hipóteses; método distingue atos realizados de características do código atual; resultados no passado e interpretação no presente; futuros e condicionais indicam propostas. Impessoalidade mantida no corpo; agradecimentos têm função pessoal. Sete esclarecimentos159 incorporados. A correção linguística da professora continua pertinente.",
+    "G71": "Contextualização conferida: modelos são apresentados antes das siglas, métricas têm definição e escala, parâmetros e símbolos têm papel no Quadro3 e nas equações. Seleção,crossover,mutação,fitness e comparadores estão no procedimento experimental; não se exige descrição didática de cada técnica citada. Termos operacionais lock,stemming,tokens,drawdown,speedup e rollback foram explicitados em português159. Nomes de pacotes,funções,arquivos e conjuntos permanecem identificáveis.",
+    "G72": "Revisão contextual de itálico concluída no escopo editorial: expansões inglesas e termos comuns examinados em167–499 e células; decisões113/123/124 conciliadas; MAE/RMSE e baseline corrigidos114,PowerFunction124,Min-Max160,QTCNN161. Trinta expansões conferidas161 e33ocorrências residuais162. off-line,software,script seguem exceções Senado já consultadas; nomes de programas,arquiteturas,funções e identificadores não recebem destaque automático. Abstract e referências têm função própria; variáveis matemáticas não são tratados como estrangeirismos comuns."
+  },
+  "observacoes": [
+    "A análise não prova ausência universal de erro ou plágio.",
+    "A conclusão destes três itens editoriais não comprova integralmente a fidelidade de todas as citações nem encerra a meta.",
+    "A cópia permanece derivada da v005 sem promoção; revalidar registro antes da entrega."
+  ],
+  "evidencias": [
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\conciliacao_capitulos_lote143.json",
+      "sha256": "76694d85c795e602d79d82452c6ab92e31147ad350d0e91643840f3fd78994ad"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\introducao_estrutura_lote142.json",
+      "sha256": "c0615b22adbff81a76bd6e492d6ba52e7e9b2dbec3b377641739e0f72a275f48"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\resumo_abstract_atual_lote144.json",
+      "sha256": "fd7e835b4982c3c846746d1852d426af6a9ac4317600d6f576298270e13635e7"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\siglas_simbolos_concluidos_lote157.json",
+      "sha256": "ab19c8e4d47bfbbdf8b7fb5410522568de5e24ae14ba4a3a3b38a2ede38ab700"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\decisoes_italicos_lote113.json",
+      "sha256": "7c77e82574d765d18f1a3a14ff68576882adac10bb73036af280ae2ca360f7d5"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\achados_tipograficos_lote123.json",
+      "sha256": "cb4e3559f4d7772e1a060fd7fa369aab61a74ccafc85dabf2196d55e7e9266e5"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\checkpoint_lote124.json",
+      "sha256": "49e13eecbc63c624d876fe75903412d774dbfdad0f991cb2aea39903a05bbb51"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\termos_contextualizacao_lote158.json",
+      "sha256": "d03e4fbe80683f64323f309ef5dbc1570a7de458380b9d4f98857a642a81f0de"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\checkpoint_lote159.json",
+      "sha256": "898c12aa95c9e9ed681f3d840e2b420c4cdf97cae4f10ae43bbea0cf14f40306"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\checkpoint_lote160.json",
+      "sha256": "7504bea8f9ffbf35f0219de9e63778ee5026b7f1507bc52910aa489b87b8c446"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\checkpoint_lote161.json",
+      "sha256": "85d0f59378d77ab62cad66d4da6d499ffe360237201b8caa1ec82192ac1abb73"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\expansoes_inglesas_lote161.json",
+      "sha256": "d16c79a61ab6838fbff212b78125ae312e25bfcea86c631f6f88654471a3def0"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\termos_residuais_lote162.json",
+      "sha256": "6826d1bd430469be0c00012dc468423c09b5bd1795e842b5281e61fafc1d8e9f"
+    }
+  ]
+}

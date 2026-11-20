@@ -1,0 +1,29 @@
+{
+  "sha256_docx": "3a6ac6ee012d5946cefcebaf5883818ff889b45b7de4ec7373a5446eabbbc5e6",
+  "escopo": "Corpo entre Introdução e Referências e tabelas nesse intervalo. Coincidência lexical normalizada, não percentual de plágio. Sem detecção semântica, tradução, OCR integral, internet ou fontes privadas. Não inclui o conteúdo de fontes eletrônicas adicionais ausentes no corpus39. A interpretação exige conferir contexto e atribuição. Índices são da cópia atual.",
+  "triagem": "reports\\correcao_parecer_integridade\\triagem_lote120\\triagem.json",
+  "fontes": 39,
+  "blocos": [
+    {
+      "id": "B001",
+      "alvo": "P_atual0192",
+      "sha256_texto_alvo": "ba743d58c3dd9432c5789b5981e4b36a16e405ab40af8b6744dca3eed7f0165c",
+      "decisao": "Não exige correção por reprodução textual desta sequência convencional.",
+      "fundamento": "Coincidência restrita à denominação técnica rede neural recorrente, sua tradução inglesa e sigla. Contexto atual atribui propostas a Hochreiter/Schmidhuber e Cho, sem reproduzir a exposição da ESN do ENMC."
+    },
+    {
+      "id": "B002",
+      "alvo": "P_atual0226",
+      "sha256_texto_alvo": "e3b3fd575034db87bec86ff03ff08dfdcd2efe8d9cc7d144e7fe9f4cf9295286",
+      "decisao": "Não exige correção por reprodução textual desta sequência convencional.",
+      "fundamento": "Coincidência restrita ao nome convencional do critério de Akaike, sua tradução e sigla; contexto atual descreve o estudo atribuído a Duttilo/Gattone, sem reprodução da exposição autoral da tese."
+    }
+  ],
+  "comparacao_lampugnani": {
+    "pares_examinados": 38958,
+    "limiar": 0.4,
+    "acima_limiar": 0
+  },
+  "limites_adicionais": "Corpus39 histórico não inclui todas as fontes metodológicas eletrônicas acrescentadas. Nelson não indexável. Resultado não detecta todas as paráfrases/traduções nem certifica ausência universal de plágio. Comparação dirigida Cardoso e revisão qualitativa devem ser conciliadas com o texto atual.",
+  "edicao_word": "Nenhuma motivada pelas duas coincidências."
+}

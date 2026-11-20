@@ -1,0 +1,333 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "registros": [
+    {
+      "paragrafo_atual": 343,
+      "texto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+      "decisao": "Título ou subtítulo da seção correspondente.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_numerica_entradas_e_rodada_controlada.json",
+        "conferencia_dm_lote25.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 344,
+      "texto": "O teste de Diebold-Mariano foi empregado para avaliar formalmente a igualdade de acurácia preditiva entre a ESN e os baselines GRU e LSTM, conforme a hipótese nula de diferença média de perda igual a zero proposta por Diebold e Mariano (1995).",
+      "decisao": "Protocolo controlado distinto dos resultados históricos; parâmetros, alvos e p-valores sustentados por conferências numéricas. Ressalva h=1/ACF e multiplicidade explícita.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_numerica_entradas_e_rodada_controlada.json",
+        "conferencia_dm_lote25.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 345,
+      "texto": "A aplicação retrospectiva do teste às execuções históricas não foi possível porque os vetores ponto a ponto de previsão e as matrizes da execução campeã GA_RUN_0030 não haviam sido integralmente preservados. Para evitar reconstrução artificial desses resultados, foi conduzida uma execução inferencial complementar, separada dos resultados históricos, com protocolo previamente congelado e semente fixa 20260926.",
+      "decisao": "Protocolo controlado distinto dos resultados históricos; parâmetros, alvos e p-valores sustentados por conferências numéricas. Ressalva h=1/ACF e multiplicidade explícita.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_numerica_entradas_e_rodada_controlada.json",
+        "conferencia_dm_lote25.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 346,
+      "texto": "Na execução controlada, a ESN utilizou a configuração de referência Laplace × Normal da GA_RUN_0030, com taxa de vazamento a = 0,111817, raio espectral sr = 0,215273, initLen = 57, reservatório com 22 neurônios e regularização Ridge de 5,716254 × 10⁻⁵. Os registros disponíveis preservavam a e sr com seis casas decimais, sem reconstrução de precisão adicional. Novas matrizes Win e W foram geradas, respectivamente, pelas distribuições Laplace e Normal, sob a semente congelada.",
+      "decisao": "Protocolo controlado distinto dos resultados históricos; parâmetros, alvos e p-valores sustentados por conferências numéricas. Ressalva h=1/ACF e multiplicidade explícita.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_numerica_entradas_e_rodada_controlada.json",
+        "conferencia_dm_lote25.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 347,
+      "texto": "A matriz Wout foi recalculada utilizando estritamente alvos pertencentes ao treino, em 2.542 pares com alvos 59–2600; durante a validação, o estado do reservatório foi propagado cronologicamente sem reestimar Wout. Os baselines GRU e LSTM mantiveram 50 unidades recorrentes, janela de 10 passos, dropout de 0,2, otimizador Adam, 80 épocas e normalização Min-Max calculada exclusivamente sobre o treino. Para os três modelos, o contexto temporal treino → validação → teste foi preservado.",
+      "decisao": "Protocolo controlado distinto dos resultados históricos; parâmetros, alvos e p-valores sustentados por conferências numéricas. Ressalva h=1/ACF e multiplicidade explícita.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_numerica_entradas_e_rodada_controlada.json",
+        "conferencia_dm_lote25.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 348,
+      "texto": "Os três modelos geraram 1.299 previsões datadas entre 29/09/2015 e 30/12/2020. A janela comparativa foi definida previamente como as 1.298 datas comuns entre 30/09/2015 e 30/12/2020. Para cada par de modelos, foram calculados os erros et = yt − ŷt e o diferencial dt = LESN,t − Lbaseline,t. Foram executadas quatro comparações bilaterais, com horizonte h = 1 e nível de significância α = 0,05: ESN × GRU e ESN × LSTM sob perda absoluta (|et|) e sob perda quadrática (et²).",
+      "decisao": "Protocolo controlado distinto dos resultados históricos; parâmetros, alvos e p-valores sustentados por conferências numéricas. Ressalva h=1/ACF e multiplicidade explícita.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_numerica_entradas_e_rodada_controlada.json",
+        "conferencia_dm_lote25.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 349,
+      "texto": "A variância de longo prazo foi estimada pelo método baseado na função de autocorrelação (Autocorrelation Function – ACF) da implementação dm.test do pacote forecast. Como as quatro comparações foram pré-especificadas, os resultados principais mantiveram α individual de 5%, sem correção por multiplicidade; essa escolha foi registrada como limitação metodológica. Com horizonte de um passo, esse cálculo considera apenas a autocovariância de defasagem zero; eventual dependência serial do diferencial de perda em outras defasagens não é incorporada à estimativa, o que limita a interpretação dos valores de p.",
+      "decisao": "Protocolo controlado distinto dos resultados históricos; parâmetros, alvos e p-valores sustentados por conferências numéricas. Ressalva h=1/ACF e multiplicidade explícita.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_numerica_entradas_e_rodada_controlada.json",
+        "conferencia_dm_lote25.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 350,
+      "texto": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+      "decisao": "Título ou subtítulo da seção correspondente.",
+      "evidencias": [
+        "conferencia_pacotes_lote35.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 351,
+      "texto": "A reprodutibilidade foi tratada como requisito metodológico desta pesquisa. O repositório documentou o código, os dados de entrada, o desenho experimental e parte dos artefatos de saída, permitindo reexecutar o protocolo e auditar decisões metodológicas. Entretanto, a replicação exata de uma execução histórica permaneceu dependente da disponibilidade das matrizes e dos vetores de previsão correspondentes; como esses artefatos não foram versionados para todas as execuções, esta seção distinguiu reexecução do protocolo de reprodução exata de cada resultado histórico.",
+      "decisao": "Reprodutibilidade limitada aos artefatos disponíveis; ambiente controlado não substitui lock histórico. Organização de código e pacotes documentada.",
+      "evidencias": [
+        "conferencia_pacotes_lote35.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 352,
+      "texto": "Ambiente computacional",
+      "decisao": "Título ou subtítulo da seção correspondente.",
+      "evidencias": [
+        "conferencia_pacotes_lote35.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 353,
+      "texto": "A implementação experimental utilizou R como linguagem principal e scripts auxiliares em Python para orquestração e pós-processamento. As execuções de ESN foram realizadas em unidade central de processamento (Central Processing Unit – CPU), sem dependência de aceleração por unidade de processamento gráfico (Graphics Processing Unit – GPU). O repositório documentou os pacotes e pré-requisitos necessários à aplicação, incluindo GA, pracma, fGarch, PearsonDS, StockDistFit, fitdistrplus, MASS, ggplot2, shiny e, para os baselines profundos, keras3/TensorFlow.",
+      "decisao": "Reprodutibilidade limitada aos artefatos disponíveis; ambiente controlado não substitui lock histórico. Organização de código e pacotes documentada.",
+      "evidencias": [
+        "conferencia_pacotes_lote35.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 354,
+      "texto": "Não foi afirmada reconstrução automática das versões históricas de todas as dependências, pois não havia arquivo de lock de ambiente versionado no conjunto auditado. Para a execução inferencial complementar, foi preparado um ambiente isolado e registrado com R 4.6.0, pacote forecast 9.0.2, TensorFlow 2.20.0 e Keras 3.12.0, executado em CPU com operações determinísticas e semente-base 20260926.",
+      "decisao": "Reprodutibilidade limitada aos artefatos disponíveis; ambiente controlado não substitui lock histórico. Organização de código e pacotes documentada.",
+      "evidencias": [
+        "conferencia_pacotes_lote35.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 355,
+      "texto": "Estrutura do repositório",
+      "decisao": "Título ou subtítulo da seção correspondente.",
+      "evidencias": [
+        "conferencia_pacotes_lote35.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 356,
+      "texto": "O código-fonte da pesquisa foi versionado em repositório Git e organizado em módulos para preparação de dados, ESN, otimização genética, métricas, histórico, baselines e comparação. A aplicação ESNAUTO utilizou R Shiny e compartilhou funções de cálculo com rotinas automatizadas em lote. O repositório reuniu os dados de entrada, documentação técnica, scripts de execução e resultados consolidados; diretórios de sessões extensas permaneceram fora do versionamento, razão pela qual nem todas as matrizes e saídas ponto a ponto das execuções históricas ficaram disponíveis na árvore Git.",
+      "decisao": "Reprodutibilidade limitada aos artefatos disponíveis; ambiente controlado não substitui lock histórico. Organização de código e pacotes documentada.",
+      "evidencias": [
+        "conferencia_pacotes_lote35.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 357,
+      "texto": "Procedimento de revisão bibliográfica",
+      "decisao": "Título ou subtítulo da seção correspondente.",
+      "evidencias": [
+        "conferencia_planilhas_lote48.json",
+        "fontes_parciais_lote59.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 358,
+      "texto": "A revisão de literatura reúne 34 documentos selecionados para fundamentar o trabalho. O levantamento inicial em Scopus e Springer Nature Link foi complementado por buscas externas à string inicial, conforme esclarecimento do autor, para incorporar fontes pertinentes ao desenvolvimento da pesquisa. A seleção final não decorreu exclusivamente daquela consulta nem de um ranking InOrdinatio integralmente aplicado. A coleção é apresentada como revisão de literatura com buscas complementares, sem alegação de cobertura exaustiva.",
+      "decisao": "Seleção reconstruída e planilhas incompletas descritas sem inventar decisões ou exportação Scopus original. Pagani 2015 permanece com leitura parcial.",
+      "evidencias": [
+        "conferencia_planilhas_lote48.json",
+        "fontes_parciais_lote59.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 359,
+      "texto": "A planilha methodi_ordinatio.xlsx preserva uma etapa inicial do levantamento, com busca declarada em 23 de março de 2026 e 59 candidatos, dos quais 7 estão marcados para inclusão, 4 para exclusão e 48 sem decisão. O autor esclareceu que esses registros não foram mantidos de modo a representar integralmente a seleção final e suas buscas complementares. Por isso, as contagens da planilha não são utilizadas como um fluxo completo de seleção dos 34 documentos, nem as decisões faltantes são preenchidas retrospectivamente por inferência.",
+      "decisao": "Seleção reconstruída e planilhas incompletas descritas sem inventar decisões ou exportação Scopus original. Pagani 2015 permanece com leitura parcial.",
+      "evidencias": [
+        "conferencia_planilhas_lote48.json",
+        "fontes_parciais_lote59.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 360,
+      "texto": "O Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015) foi considerado na organização inicial do levantamento. A planilha contém fórmulas com alfa igual a 5 e ano de referência 2026, mas seus indicadores e decisões não documentam uma aplicação concluída do método à coleção final. Assim, as pontuações não são usadas para justificar a inclusão ou estabelecer a relevância relativa dos 34 documentos. Os registros originais são preservados como documentação intermediária do processo.",
+      "decisao": "Seleção reconstruída e planilhas incompletas descritas sem inventar decisões ou exportação Scopus original. Pagani 2015 permanece com leitura parcial.",
+      "evidencias": [
+        "conferencia_planilhas_lote48.json",
+        "fontes_parciais_lote59.json"
+      ],
+      "estado": "fonte_parcial"
+    },
+    {
+      "paragrafo_atual": 361,
+      "texto": "A planilha extracao_completa.xlsx preserva 34 registros de extração, com respostas às perguntas P1–P5, status e datas de processamento. Os nomes correspondem aos 34 PDFs locais. Essas respostas constituem registros intermediários de leitura, cuja fidelidade depende da conferência nos trabalhos originais. Por isso, a síntese desta monografia utiliza a matriz recodificada do Quadro 1, com localizadores, distinção entre evidência direta e secundária e marcação de informação insuficiente, preservando separadamente a extração histórica.",
+      "decisao": "Seleção reconstruída e planilhas incompletas descritas sem inventar decisões ou exportação Scopus original. Pagani 2015 permanece com leitura parcial.",
+      "evidencias": [
+        "conferencia_planilhas_lote48.json",
+        "fontes_parciais_lote59.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 362,
+      "texto": "Referências anteriores a 2021 e trabalhos de outros domínios foram utilizados como apoio conceitual, metodológico ou histórico. A coleção descritiva de 34 documentos, apresentada na Tabela 1, no Quadro 1 e nas Figuras 1 a 4, reúne essas fontes com estudos financeiros recentes. Seu tamanho corresponde ao material recuperado para análise, sem representar a quantidade de estudos que teria atendido a todos os critérios da busca originalmente relatada.",
+      "decisao": "Seleção reconstruída e planilhas incompletas descritas sem inventar decisões ou exportação Scopus original. Pagani 2015 permanece com leitura parcial.",
+      "evidencias": [
+        "conferencia_planilhas_lote48.json",
+        "fontes_parciais_lote59.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 363,
+      "texto": "Para a análise bibliográfica complementar, os 34 registros foram reconstruídos a partir dos PDFs disponíveis e das referências da monografia, com conferência de metadados por identificador digital de objeto (Digital Object Identifier – DOI) ou título. Os registros foram identificados como uma coleção reconstruída, sem atribuir a ela a condição de exportação original do Scopus.",
+      "decisao": "Seleção reconstruída e planilhas incompletas descritas sem inventar decisões ou exportação Scopus original. Pagani 2015 permanece com leitura parcial.",
+      "evidencias": [
+        "conferencia_planilhas_lote48.json",
+        "fontes_parciais_lote59.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 364,
+      "texto": "Foram preservadas as informações das versões locais consultadas e as ressalvas sobre preprints ou outras versões. Contagens de citações recebidas e listas completas de referências citadas não foram reconstruídas; por esse motivo, não foram produzidos rankings de impacto ou redes de cocitação. No arquivo histórico processado, a tese de Duttilo consta com ano 2023, enquanto a referência foi atualizada para 2024 conforme a versão consultada. As Figuras 2 a 4 usam palavras-chave ou títulos e não dependem desse ano.",
+      "decisao": "Seleção reconstruída e planilhas incompletas descritas sem inventar decisões ou exportação Scopus original. Pagani 2015 permanece com leitura parcial.",
+      "evidencias": [
+        "conferencia_planilhas_lote48.json",
+        "fontes_parciais_lote59.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 365,
+      "texto": "O processamento utilizou bibliometrix 5.5.0 em R, pacote para análise bibliométrica e mapeamento científico descrito por Aria e Cuccurullo (2017). A coleção foi salva em formato compatível com Biblioshiny e validada com o carregador dessa interface, apresentada por Aria et al. (2026).",
+      "decisao": "Ferramentas, subconjuntos, contagens e tratamento de termos correspondem à conferência bibliométrica; carregamento não confundido com sessão gráfica.",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "afirmacoes_fontes_bibliometria_lote49.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 366,
+      "texto": "As matrizes foram calculadas em scripts de R, com a função biblioNetwork, e a apresentação das figuras utilizou ggplot2 e igraph. A validação de carregamento não corresponde a uma execução das análises pela interface gráfica do Biblioshiny. As revisões de Cardoso et al. (2022c, 2024) serviram como referências para a escolha dos formatos de visualização.",
+      "decisao": "Ferramentas, subconjuntos, contagens e tratamento de termos correspondem à conferência bibliométrica; carregamento não confundido com sessão gráfica.",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "afirmacoes_fontes_bibliometria_lote49.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 367,
+      "texto": "A frequência de palavras-chave considerou os 24 documentos em que foram localizadas listas declaradas pelos autores. Variantes equivalentes foram normalizadas com registro das correspondências, sem converter títulos ou classificações P1–P5 em palavras-chave. Cada termo contou uma vez por documento. A matriz de coocorrência foi conferida por uma contagem binária independente; o corte de frequência mínima de dois documentos resultou em 14 nós e 33 ligações. O posicionamento visual utilizou Fruchterman–Reingold, e as comunidades foram identificadas por Walktrap, com semente 20261012.",
+      "decisao": "Ferramentas, subconjuntos, contagens e tratamento de termos correspondem à conferência bibliométrica; carregamento não confundido com sessão gráfica.",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "afirmacoes_fontes_bibliometria_lote49.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 368,
+      "texto": "Para os títulos, foram extraídos pares de palavras adjacentes (bigrams) dos 34 registros. O texto foi convertido para minúsculas e tokenizado, sem conservar pontuação, algarismos ou hífens nos tokens. Os pares foram formados antes da exclusão de palavras de ligação, evitando unir palavras originalmente distantes. Não foram aplicados stemming, expansão de siglas nem agrupamento entre singular e plural.",
+      "decisao": "Ferramentas, subconjuntos, contagens e tratamento de termos correspondem à conferência bibliométrica; carregamento não confundido com sessão gráfica.",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "afirmacoes_fontes_bibliometria_lote49.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 369,
+      "texto": "Cada par contou uma vez por documento, com frequência mínima de dois títulos para exibição. Para Costa e Lunkes, utilizou-se o título inglês apresentado na página 2 do PDF. A matriz foi processada com biblioNetwork e conferida por contagem independente. Os títulos originais, regras de tratamento e identificadores foram preservados para rastreabilidade.",
+      "decisao": "Ferramentas, subconjuntos, contagens e tratamento de termos correspondem à conferência bibliométrica; carregamento não confundido com sessão gráfica.",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "afirmacoes_fontes_bibliometria_lote49.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 370,
+      "texto": "Procedimento de re-execução dos experimentos",
+      "decisao": "Título ou subtítulo da seção correspondente.",
+      "evidencias": [
+        "incorporacao_lote44.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 371,
+      "texto": "O procedimento para nova execução utiliza o núcleo matemático disponibilizado pelo ESNAUTO. A série PETR4 com Fator de Ajuste foi carregada e particionada cronologicamente em 2.600 observações de treino, 1.299 de validação e 1.299 de teste. O motor atual permite definir as distribuições de Win e W e executar o Algoritmo Genético binário com cromossomo de 55 bits, população inicial por LHS, seleção por torneio, crossover de um ponto com probabilidade 0,85, mutação padrão de 12% e operador antiestagnação com hipermutação de 40%.",
+      "decisao": "Reexecução é capacidade/procedimento do motor atual; não reconstrução comprovada das 45 rodadas. Lote ilustrativo separado e persistência histórica limitada.",
+      "evidencias": [
+        "incorporacao_lote44.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 372,
+      "texto": "Os relatórios consolidados associam as execuções oficiais ao motor com LHS e mecanismo antiestagnação. O projeto também contém uma interface Shiny e rotinas em lote; contudo, a correspondência do código preservado com cada execução histórica não pôde ser verificada individualmente. Segundo esses relatórios, o conjunto final compreendeu 45 execuções de produção, organizadas em cinco ondas, com limite de 10.000 gerações por rodada. O lote reduzido de 12 cenários e 200 gerações pertenceu à prototipação e não integra as 45 execuções de produção; seus registros preservados são utilizados somente nas ilustrações complementares das Figuras 5 e 6.",
+      "decisao": "Reexecução é capacidade/procedimento do motor atual; não reconstrução comprovada das 45 rodadas. Lote ilustrativo separado e persistência histórica limitada.",
+      "evidencias": [
+        "incorporacao_lote44.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 373,
+      "texto": "O ESNAUTO registrou cumulativamente hiperparâmetros e métricas e dispôs de mecanismo para preservar Win, W e Wout quando um recorde global era identificado, além de permitir reinjeção de matrizes preservadas. Esses recursos favoreceram a recuperação de configurações salvas sem repetir toda a busca genética.",
+      "decisao": "Reexecução é capacidade/procedimento do motor atual; não reconstrução comprovada das 45 rodadas. Lote ilustrativo separado e persistência histórica limitada.",
+      "evidencias": [
+        "incorporacao_lote44.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "estado": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 374,
+      "texto": "Contudo, a auditoria do repositório mostrou que essa persistência não foi aplicada de forma completa a todas as execuções oficiais; por isso, o procedimento para nova execução foi documentado, enquanto a reprodução exata de cada rodada histórica permaneceu condicionada aos artefatos efetivamente preservados. A execução complementar de Diebold-Mariano preservou semente, dependências, matrizes, modelos, previsões datadas, métricas, validações e hashes antes da análise inferencial.",
+      "decisao": "Reexecução é capacidade/procedimento do motor atual; não reconstrução comprovada das 45 rodadas. Lote ilustrativo separado e persistência histórica limitada.",
+      "evidencias": [
+        "incorporacao_lote44.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "estado": "manter_com_limites"
+    }
+  ],
+  "limite": "Conferência dirigida por contexto e registros; não declara recuperação de vetores históricos nem aplicação integral do Methodi Ordinatio."
+}

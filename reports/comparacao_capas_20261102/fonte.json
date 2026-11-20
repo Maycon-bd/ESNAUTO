@@ -1,0 +1,18 @@
+{
+  "arquivo": "C:\\Users\\User\\Downloads\\A.pdf",
+  "sha256": "951a6e5cf88c87fcc80091b0c483c4115600f9cdd978c31bb0a74352f06cd6cb",
+  "paginas": 2,
+  "texto": [
+    {
+      "pagina_pdf": 1,
+      "texto": ""
+    },
+    {
+      "pagina_pdf": 2,
+      "texto": ""
+    }
+  ],
+  "diagnostico_pdf": "Asduaspáginas reutilizam a mesmaimagemIm1, com matrizes detransformação deslocadas em762pontos. Asegundaexpõe apenasfaixa da mesmaimagem; não contémsegunda digitalização distinta.",
+  "imagem_unica_sha256": "7222faff741b9bf917d70b14790a39aae48b94680b4e581143c014f287ae7dd3",
+  "segunda_digitalizacao_v010_identificada": false
+}

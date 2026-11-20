@@ -1,0 +1,56 @@
+{
+  "sha256_rascunho": "27c480d8971b56f353db3dc9fc5eea70a30fda031e66da75d3be47969314dcc5",
+  "n_celulas": 170,
+  "contagens_globais": {
+    "-": 41,
+    "?": 40,
+    "D": 77,
+    "S": 12
+  },
+  "por_dimensao": [
+    {
+      "dimensao": "P1",
+      "contagens": {
+        "-": 16,
+        "?": 13,
+        "D": 5
+      }
+    },
+    {
+      "dimensao": "P2",
+      "contagens": {
+        "-": 15,
+        "D": 11,
+        "S": 5,
+        "?": 3
+      }
+    },
+    {
+      "dimensao": "P3",
+      "contagens": {
+        "?": 6,
+        "D": 26,
+        "S": 2
+      }
+    },
+    {
+      "dimensao": "P4",
+      "contagens": {
+        "-": 6,
+        "?": 16,
+        "D": 10,
+        "S": 2
+      }
+    },
+    {
+      "dimensao": "P5",
+      "contagens": {
+        "-": 4,
+        "D": 25,
+        "S": 3,
+        "?": 2
+      }
+    }
+  ],
+  "resultado": "Todas as colunas do Word conciliadas com a matriz derivada; uma recodificação."
+}

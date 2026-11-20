@@ -1,0 +1,2738 @@
+{
+  "paragrafos": [
+    {
+      "paragrafo": "P0003",
+      "antes_runs": [
+        {
+          "texto": "PREVISÃO DO PREÇO DE FECHAMENTO AJUSTADO DA PETR4",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "COM REDES NEURAIS DE ESTADOS DE ECO E OTIMIZAÇÃO GENÉTICA",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0007",
+      "antes_runs": [
+        {
+          "texto": "PREVISÃO",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "DO PREÇO DE FECHAMENTO AJUSTADO DA PETR4",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "COM REDES NEURAIS DE ESTADOS DE ECO E OTIMIZAÇÃO GENÉTICA",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0018",
+      "antes_runs": [
+        {
+          "texto": "PREVISÃO DO PREÇO DE FECHAMENTO AJUSTADO DA PETR4",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "COM REDES NEURAIS DE ESTADOS DE ECO E OTIMIZAÇÃO GENÉTICA",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0179",
+      "antes_runs": [
+        {
+          "texto": "A avaliação contempla o Erro Médio Absoluto (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Mean Absolute Error",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – MAE), a Raiz do Erro Quadrático Médio (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Root Mean Squared Error",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – RMSE) e o coeficiente de determinação (R²), a comparação com a ESN Normal × Normal e com LSTM e GRU e a separação entre custo de otimização e ajuste final. Inclui ainda o exame da dispersão entre configurações, a comparação inferencial complementar pelo teste de Diebold–Mariano (DM), a documentação do procedimento e a discussão de limitações e condições de replicação.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0243",
+      "antes_runs": [
+        {
+          "texto": "Cardoso ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2022b) propõem o BovDB como base de cotações e eventos de ações negociadas na B3. O esquema inclui fatores associados a eventos e um fator acumulado ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "por",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " registro de preço. Essa estrutura permite representar o tratamento de descontinuidades corporativas na base, mas não comprova, por si só, quais eventos foram aplicados aos arquivos locais desta pesquisa nem ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "iden",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "tif",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "ic",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "a a autoria de sua transformação.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0244",
+      "antes_runs": [
+        {
+          "texto": "Na def",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "i",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "niç",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "ão do BovDB, o fator isolado é a razão entre o fechamento do dia anterior e a abertura do dia do evento, e os fatores acumulados são calculados regressivamente. O campo EventPrice.applied distingue os registros considerados no ajuste. A interpretação de cada tipo de evento e a reprodução da transformação exigem esses registros; uma lista de descrições, isoladamente, não demonstra como o preço local foi corrigido (Cardoso et al., 2022b).",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0309",
+      "antes_runs": [
+        {
+          "texto": "A pesquisa utiliza arquivos locais da série PETR4, identificados como preços de fechamento com Fator de Ajuste e cuja procedência é atribuída ao BovDB (Cardoso ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ", 2022b). O ativo é a ação preferencial da Petróleo Brasileiro S.A. (PETROBRAS PN). A documentação do BovDB fundamenta o tratamento de eventos corporativos; a procedência da base e a autoria da transformação dos arquivos utilizados são questões distintas",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": ".",
+          "italico": "1",
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0310",
+      "antes_runs": [
+        {
+          "texto": "A variável-alvo foi o preço de fechamento disponibilizado como ajustado, de 3 de janeiro de 2000 a 30 de dezembro de 2020, totalizando 5.198 observações diárias. Os arquivos fornecidos aos modelos preservam os valores",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " e as datas dessa série. A coincidência de ativo ou intervalo entre estudos não demonstra equivalência dos respectivos tratamentos, partições e protocolos de previsão.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0311",
+      "antes_runs": [
+        {
+          "texto": "Os executores consultados importam os valores dos arquivos PETR4_close com factor_2000-2020.txt e PETR4_close com factor_2000-2020_com data.csv. Não foi recup",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "erado um registro completo que ligue as cotações e os eventos originais do BovDB à g",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "er",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "açã",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "o",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " desses dois arquivos, incluindo quem realizou a transformação. Por isso, o procedimento de modelagem é descrito a partir da série recebida como previament",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "e aju",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "stada, sem atribuir ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "a aplicação ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "original do fator ao autor",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ".",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0312",
+      "antes_runs": [
+        {
+          "texto": "A ausência dessa cadeia limita a auditoria retrospectiva do ajuste corporativo, ainda que os valores e as datas de entrada possam ser identificados por seus arquivos. A descrição das equações do BovDB oferece a referência metodológica, mas não substitui o registro dos eventos aplicados nem prova",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " que cada exceção descrita na literatura tenha sido implementada na série local.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0316",
+      "antes_runs": [
+        {
+          "texto": "A ESN recebeu os valores da série já disponibilizada como ajustada, sem normalização adicional para [−1, 1]. Na rodada ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "controlada,",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " LSTM e GRU usaram ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Min-Max",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " calculado exclusivamente sobre as 2.600 observações de treino e reutilizado na validação e no teste. Esse procedimento de escalonamento foi verificado no protocolo controlado; sua confirmação para cada execução histórica depende dos artefatos preservados. A ordem cronológica, isoladamente, não demonstra ausência de vazamento.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0325",
+      "antes_runs": [
+        {
+          "texto": "Na quinta onda, as distribuições ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Power Function",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ", Dagum de quatro parâmetros e Johnson SB foram parametrizadas a partir da partição de treino por meio do EasyFit. O ajuste à distribuição marginal dos preços foi tratado como hipótese experimental, e não como garantia de que a mesma lei probabilística fosse ideal para os pesos do reservatório. As diferenças entre distribuições poderiam ser modificadas pelo reescalamento espectral e pela função ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "tanh",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (tangente hiperbólica), razão pela qual foram considerados tanto desempenho quanto dispersão dos erros entre configurações.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0333",
+      "antes_runs": [
+        {
+          "texto": "O motor de busca disponibilizado incorpora um mecanismo de mutação cataclísmica inspirado no CHC (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "), de Eshelman (1991). Após estagnação, o mecanismo aumenta a mutação para ampliar a exploração. Essa finalidade de implementação não demonstra manutenção de diversidade: não foram produzidas medidas populacionais específicas nem uma ablação que isolasse o efeito do LHS e do operador. O mecanismo não corresponde ao CHC completo.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0348",
+      "antes_runs": [
+        {
+          "texto": "A análise das hipóteses distinguiu resultados e limites de avaliação. H1 comparou ESNs, GRU e LSTM; H2 separou ajuste e busca; H3 descreveu configurações não gaussianas frente a Normal × Normal. Para H4, verificou-se a integração do LHS e do operador cataclísmico, sem medida de diversidade ou ablação. H5 foi examinada pelos erros e pela dispersão entre configurações da Onda 5, sem estimar a variabilidade de repetidas sementes para uma mesma configuração.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0416",
+      "antes_runs": [
+        {
+          "texto": "DISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0419",
+      "antes_runs": [
+        {
+          "texto": "Nas métricas compiladas da Onda 5, as 15 configurações apresentaram MAE entre aproximadamente 0,328395 e 0,328398, amplitude de 0,000003, e amplitude de RMSE próxima de 0,000002. Essa concentração descreve diferenças entre as configurações avaliadas. Não estima a variabilidade de repetir cada configuração com novas sementes nem comprova robustez a outros períodos. As distribuições ajustadas não produziram o menor erro global.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0456",
+      "antes_runs": [
+        {
+          "texto": "Para H3, variantes não gaussianas produziram os menores erros observados, com ganhos inferiores a 1% frente a Normal × Normal. Para H4, a integração do LHS e do operador cataclísmico foi documentada, mas a diversidade não foi mensurada e seus efeitos não foram isolados p",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "or ablação. Para H5, observou-se baixa dispersão entre configurações da Onda 5, sem menor erro global; esse resultado não demonstra redução da variabilidade entre repetições de uma mesma configuração.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0458",
+      "antes_runs": [
+        {
+          "texto": "Esta pesquisa avaliou cinco ondas de distribuições e integrou LHS e um mecanismo antiestagnação inspirado no CHC ao processo experimental. Os modelos receberam a série identificada como previamente ajustada por eventos corporativos. Como os estudos diferem em mais de um componente metodológico e a cadeia original do ajuste local não foi recuperada, diferenças de erro não são interpretadas como efeito causal do fator nem como teste de superioridade entre protocolos equivalentes.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0478",
+      "antes_runs": [
+        {
+          "texto": "A análise das distribuições indicou que as variantes não gaussianas produziram os melhores resultados pontuais, porém com ganho incremental pequeno em relação à ESN Normal × Normal. A Onda 2 reuniu simultaneamente os melhores resultados e a principal falha de generalização, enquanto a Onda 5 apresentou baixa dispersão dos erros entre configurações sem alcançar o menor erro global. Esses achados reforçaram a necessidade de interpretar a distribuição de inicialização em conjunto com os demais hiperparâmetros e com a realização estocástica do reservatório.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0493",
+      "antes_runs": [
+        {
+          "texto": "Foram investigadas famílias probabilísticas em ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "in",
+          "italico": "1",
+          "posicao": "subscript"
+        },
+        {
+          "texto": " e ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ", selecionados hiperparâmetros por AG e comparados resultados com ESN Normal × Normal, LSTM e GRU. O ESNAUTO organizou o processo ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "e suas",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " saídas, e H1 recebeu uma análise inferencial complementar pelo teste de Diebold-Mariano. A modelagem utilizou arquivos identificados como previamente ajustados; a autoria e a cadeia da transformação original não foram recuperadas. As limitações de procedência, comparação e preservação dos artefatos integram o alcance dos resultados.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0494",
+      "antes_runs": [
+        {
+          "texto": "O emprego de preços disponibilizados como ajustados delimita a entrada do protocolo. Não houve uma comparação, sob condições idênticas, entre a série bruta e essa série ajustada. Assim, não se quantificou um ganho causal isolado do Fator de Ajuste. A coincidência da base declarada com a de outro estudo tampouco demonstra identidade de transformação, partição ou orçamento de otimização.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0497",
+      "antes_runs": [
+        {
+          "texto": "Em conjunto, os experimentos mostraram que distribuições não gaussianas podem produzir ganhos pontuais em relação à ESN Normal × Normal, mas esses ganhos foram pequenos e não se repetiram de forma uniforme entre as ondas. A Onda 2 reuniu os melhores resultados e também a principal falha de generalização, enquanto a Onda 5 apresentou baixa dispersão dos erros entre configurações sem alcançar o menor erro global. Assim, a distribuição de inicialização deve ser interpretada em conjunto com os demais hiperparâmetros e com a realização estocástica do reservatório, e não como fator isolado de desempenho.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0499",
+      "antes_runs": [
+        {
+          "texto": "H2 recebeu apoio para o custo de ajuste do modelo selecionado, sem estender essa conclusão ao custo total da busca; H3 teve apoio pontual nos melhores erros observados. H4 não foi demonstrada: a integração dos mecanismos não foi acompanhada de medida de diversidade nem de ablação. H5 teve apenas evidência descritiva de baixa dispersão entre configurações, sem demonstrar menor variabilidade entre repetições ou superioridade de erro. Esses limites separam funcionamento do software, observação de resultados e efeitos não testados.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0273",
+      "antes_runs": [
+        {
+          "texto": "Fonte: Elaborado pelo autor (2026), a partir da recodificação do portfólio. D: evidência direta; S: tratamento secundário/contextual; ?: informação insuficiente; —: não aplicável.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0263",
+      "antes_runs": [
+        {
+          "texto": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun (2021), Kumar (2025) e Hassaan et al. (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0267",
+      "antes_runs": [
+        {
+          "texto": "Araújo ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ".",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Naqueles estudos de caso, ARMA-EGARCH apresentou melhor desempenho, ressaltando a dependência entre método, dados e desfecho. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0268",
+      "antes_runs": [
+        {
+          "texto": "A pesquisa utiliza a série da PETR4 disponibilizada como ajustada por eventos corporativos, seleciona cinco hiperparâmetros por AG e compara configurações probabilísticas aplicadas a ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "in",
+          "italico": "1",
+          "posicao": "subscript"
+        },
+        {
+          "texto": " e ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ". O ESNAUTO integra inicialização populacional por LHS, operador antiestagnação inspirado no CHC e organização de 45 execuções em cinco ondas. Essa aplicação e sua documentação compõem a contribuição experimental e de software, sem atribuir ganho causal isolado ao Fator de Ajuste ou declarar a transformação dos arquivos como etapa executada nesta pesquisa.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0271",
+      "antes_runs": [
+        {
+          "texto": "Lampugnani (2026) é discutido separadamente e não integra os 34 documentos da matriz. As dimensões são: P1 lei probabilística ligada à geração de Win ou W; P2 procedimento de seleção de hiperparâmetros de ESN/RC; P3 preparação concreta de séries temporais, incluindo transformações e construção de atributos ou janelas; P4 comparação quantitativa de previsão com ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "LSTM, GRU ou ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Transformer",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "; e P5 mercado e ativo identificados. A codificação distingue aplicações próprias de tratamentos secundários e registra informação insuficiente, sem pressupor que todos os temas sejam aplicáveis a cada fonte.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0274",
+      "antes_runs": [
+        {
+          "texto": "O Quadro 1 apresenta a codificação por documento: D indica evidência direta localizada na aplicação da própria fonte; S indica tratamento secundário ou contextual; ? indica informação insuficiente no escopo consultado; e — indica dimensão não aplicável ao objeto estudado. A marca ? não demonstra que o assunto inexista na obra. A presença de uma informação também não representa reprodução independente, aprovação da qualidade do estudo ou equivalência entre ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "os protocolos comparados.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0276",
+      "antes_runs": [
+        {
+          "texto": "Fonte: Elaborado pelo autor (2026). D: evidência direta; S: tratamento secundário/contextual; ?: informação insuficiente; —: não aplicável.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0277",
+      "antes_runs": [
+        {
+          "texto": "A distinção entre D e S evita somar uma revisão e o experimento por ela descrito como duas execuções independentes. Os códigos ? e — também têm sentidos diferentes: o primeiro conserva uma incerteza de leitura ou de especificação; o segundo delimita o objeto da fonte. Assim, as frequências desta coleção descrevem a documentação localizada segundo os critérios adotados, sem estimar a prevalência de métodos em toda a literatura nem comprovar, isoladamente, uma lacuna científica",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": ".",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0278",
+      "antes_runs": [
+        {
+          "texto": "A caracterização da coleção é complementada pelas Figuras 1 a 4. A cobertura temática utiliza a codificação do Quadro 1, enquanto as demais representações utilizam metadados reconstruídos dos documentos. Esses materiais descrevem o acervo recuperado e não substituem exportações b",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "ibliográficas originais ou registros de seleção",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": ". O procedimento e seus limites de procedência são apresentados na Seção 3.8.3.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0279",
+      "antes_runs": [
+        {
+          "texto": "Figura 1 – Documentação localizada nas cinco dimensões analíticas",
+          "italico": "0",
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0282",
+      "antes_runs": [
+        {
+          "texto": "Nota: P1: distribuição de Win/W; P2: seleção de hiperparâmetros ESN/RC; P3: preparação das séries; P4: comparação com ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "LSTM/GRU/Transformer",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "; P5: mercado e ativo. Cada barra distribui os 34 documentos entre D, S, ? e não aplicável, conforme a legenda do Quadro 1. Informação insuficiente não é prova de ausência.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0283",
+      "antes_runs": [
+        {
+          "texto": "A Figura 1 registra evidência direta de preparação de séries em 25 documentos e de mercado/ativo em 25; comparações com ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "LSTM, GRU",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " ou Transformer e seleção de hiperparâmetros aparecem diretamente em dez documentos cada. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0214",
+      "antes_runs": [
+        {
+          "texto": "Ribeiro ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2021) combinaram o modelo autorregressivo heterogêneo (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Heterogeneous Autoregressive",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – HAR), PSO e ESN no HAR-PSO-ESN. O estudo previu volatilidades realizadas diárias de CAT, EBAY e MSFT, construídas a partir de retornos intradiários de cinco minutos. Foram avaliados horizontes de um, cinco e 21 dias, com ARIMA, HAR, MLP e variantes ESN como comparadores. Esses experimentos oferecem uma aplicação financeira da combinação, sem demonstrar vantagem universal nem transformar volatilidade observada",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " em ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "comprovação de caos.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0239",
+      "antes_runs": [
+        {
+          "texto": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan et al. (2025) especificam Uniforme(-1,1) para as entradas não nulas de Win, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0240",
+      "antes_runs": [
+        {
+          "texto": "Hassaan ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2025) estudaram sequências caóticas normalizadas para gerar W",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "i",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "n e Wres ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "e",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " adotaram controles He e Xavier. Nas Equações 9a e 9b, He usa amostras Gaussianas e Xavier usa amostras Uniformes ree",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "scaladas.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " A descr",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "ição de Xavier no texto da seção seguinte não coincide com essa fórmula, o que exige cautela na interpretação. Além disso, uma regra de geração por trajetória caótica não equivale, por si só, à identificação de uma família probabilística",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " ajustada",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " aos dados financeiros.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0241",
+      "antes_runs": [
+        {
+          "texto": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma (2025), por outro lado, apresenta Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": ".",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0248",
+      "antes_runs": [
+        {
+          "texto": "Esta seção discute trabalhos relacionados a ESNs, otimização, inicialização probabilística e aplicações financeiras, a partir dos documentos recuperados no acervo da pesquisa. A organização permite situar as escolhas metodológicas deste estudo, sem apresentar a coleção disponível como cobertura exaustiva da literatura. A procedência da seleção e os limites da reconstrução bibliográfica são descritos na Seção 3",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": ".8.3.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0364",
+      "antes_runs": [
+        {
+          "texto": "Procedimento de revisão bibliográfica",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0369",
+      "antes_runs": [
+        {
+          "texto": "Referências anteriores a 2021 e trabalhos de outros domínios foram utilizados como apoio conceitual, metodológico ou histórico. A coleção descritiva de 34 documentos, apresentada na Tabela 1, no Quadro 1 e nas Figuras 1 a 4, reúne essas fontes com estudos financeiros recentes. Seu tamanho corresponde ao material recuperado para análise, sem representar a quantidade de estudos que teria atendido a todos os critérios da busca originalmente relatada.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0227",
+      "antes_runs": [
+        {
+          "texto": "Soltani ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2022), na versão preliminar consultada, revisaram 74 estudos sobre otimização de ESNs. A Tabela 5 relaciona PSO a 16 trabalhos e AG a dez, além de outras técnicas bio-inspiradas e não bio-inspiradas. Essas frequências descrevem o emprego dos métodos na coleção dos autores; não constituem uma classificação de eficácia. A revisão discute custos, parâmetros e topologias, sem sustentar uma lacuna específica sobre distribuições de inicialização em aplicações financeiras.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0236",
+      "antes_runs": [
+        {
+          "texto": "Dewick (2022) discute a modelagem de distribuições financeiras e sua relação com séries temporais. Essa discussão pertence à representação estatística dos dados, enquanto Soltani ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2022) examinam estratégias de otimização de ESNs. As duas frentes oferecem contexto para esta pesquisa, mas não demonstram, em conjunto, que uma distribuição de pesos deva reproduzir a distribuição dos retornos. A comparação entre inicializações é uma escolha experimental do presente trabalho.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0265",
+      "antes_runs": [
+        {
+          "texto": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian (2024) e otimização Bayesiana em Sharma (2025). Soltani ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0266",
+      "antes_runs": [
+        {
+          "texto": "A questão desta pesquisa é examinar o desempenho de configurações de ESN que combinam distribuições de inicialização e hiperparâmetros na previsão da PETR4 ajustada. T",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "rabalhos próximos, como Araújo et al. (2025), já investigaram distribuições alternativas em séries financeiras. A motivação reside na aplicação e na avaliação documentada dessas configurações no protocolo adotado, sem pressupor que o tema esteja ausente da literatura ou que a comparação isole causalmente o efeito da distribuição",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": ".",
+          "italico": "1",
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0545",
+      "antes_runs": [
+        {
+          "texto": "SOLTANI, R.; BENMOHAMED, E.; LTIFI, H. Echo State Network Optimization: A Systematic Literature Review. ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Research Square, versão 1",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ", 4 ago. 2022. Preprint. DOI: 10.21203/rs.3.rs-1909702/v1.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0213",
+      "antes_runs": [
+        {
+          "texto": "Wang ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2021) avaliaram modelos de RC em sete índices internacionais e compararam suas previsões com RNRs, LSTM e modelos de outros estudos. O desempenho relativo variou conforme o índice e a métrica, sem domínio de uma arquitetura em todas as condições. Os autores exploraram topologias aleatórias, livres de escala e de pequeno mundo, juntamente com diferentes tamanhos de reservatório, janelas e taxas de aprendizado. Essa análise motiva examinar configurações de reservatório, sem isolar a topologia como causa preponderante do ganho preditivo.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0218",
+      "antes_runs": [
+        {
+          "texto": "Hariharan ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2025) propuseram ESNs com reservatórios divididos em grupos para séries multivariadas, incluindo dados do ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "NIFTYBEES",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ". Cada variável foi direcionada a um grupo, mantendo conexões entre grupos segundo a topologia examinada. Os erros ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "e a",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " sensibilidade à conectividade variaram entre as estruturas. O estudo apoia investigar a organização do reservatório, sem demonstrar que todo intercâmbio entre variáveis seja prejudicial ou que uma topologia domine em qualquer tarefa.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0224",
+      "antes_runs": [
+        {
+          "texto": "Tian (2024) empregou o ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Sparrow Search Algorithm",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e MAPE.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0225",
+      "antes_runs": [
+        {
+          "texto": "Deng ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2022) aplicaram AG à seleção do escalonamento de entrada, raio espectral e taxa de vazamento de ESNs empilhadas para prever degradação de células de combustível de membrana de troca de prótons (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Proton Exchange Membrane Fuel Cells",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – PEMFCs). A Tabela 6 compara os erros obtidos com valores de LSTM e outros métodos provenientes de um estudo anterior. Os resultados apoiam a estratégia nessa aplicação, sem estabelecer superioridade geral frente a LSTM nem identificar uma fragilidade principal de toda a literatura de ESNs.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0226",
+      "antes_runs": [
+        {
+          "texto": "Ecer (2020) comparou ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Perceptrons Multicamadas",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera (2023) revisou redes ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0230",
+      "antes_runs": [
+        {
+          "texto": "A inicialização dos pesos part",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "ici",
+          "italico": "1",
+          "posicao": "subscript"
+        },
+        {
+          "texto": "pa da construção da dinâmica de uma ESN e deve ser descrita de forma que permita examinar a configuração utilizada. Millea (2014) investigou matrizes aleatórias e ortonormais em problemas de osciladores sobrepostos. Esse trabalho oferece evidência sobre condições específicas de inicialização, sem quantificar a proporção de estudos financeiros que adotam cada distribuição. A frequência dessas escolhas no portfólio depende de critérios explícitos de extração.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0231",
+      "antes_runs": [
+        {
+          "texto": "A ocorrência de caudas pesadas em retornos financeiros motiva o exame de distribuições além da Normal (Nelson, 1991). Entretanto, a distribuição dos retornos observados e a lei usada para gerar pesos de uma ESN são objetos distintos. A adoção de distribuições alternativas nos pesos constitui uma hipótese de modelagem desta pesquisa; sua pertinência deve ser avaliada pelos resultados preditivos e não decorre automaticamente da semelhança entre suas caudas e as dos dados.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0232",
+      "antes_runs": [
+        {
+          "texto": "Nelson (1991) empregou a Distribuição Generalizada de Erro (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Generalized Error Distribution",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – GED) na modelagem de retornos com heterocedasticidade condicional, no contexto do modelo exponencial autorregressivo de heterocedasticidade condicional generalizada (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Exponential Generalized Autoregressive Conditional Heteroskedasticity",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – EGARCH). A família permite representar caudas mais pesadas ou mais leves que as da Normal. Essa aplicação fundamenta sua flexibilidade em finanças, sem estabelecer prioridade histórica absoluta nem validar sua transferência para os pesos de ESNs.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0234",
+      "antes_runs": [
+        {
+          "texto": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do DJIA entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Akaike Information Criterion",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – AIC), bayesiano (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Bayesian Information Criterion",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – BIC) e de Hannan–Quinn (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Hannan–Quinn Information Criterion",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0365",
+      "antes_runs": [
+        {
+          "texto": "A revisão bibliográfica utiliza uma coleção de 34 documentos disponíveis no acervo da pesquisa, reconstruída para permitir a conferência das fontes. A documentação anterior menciona buscas em Scopus e Springer Nature Link em 23 de março de 2026, co",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "m 41 e 59 registros, respectivamente. Sem as exportações e planilhas originais, esses números permanecem como relato do processo anterior, e não como contagens independentemente verificadas. A síntese apresentada tem caráter descritivo do material recuperado.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0366",
+      "antes_runs": [
+        {
+          "texto": "A documentação anterior descreve uma busca voltada a revisões de ESNs e Computação de Reservatório em finanças, com preferência por textos completos em inglês ou português publicados entre 2021 e 2026. O conjunto recuperado também inclui estudos anteriores, fundamentos teórico",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "s",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "e",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " aplicações de outros domínios. Portanto, esses critérios não caracterizam de modo uniforme os 34 documentos utilizados, e não se apresenta a coleção reconstruída como resultado integralmente reproduzível de uma revisão sistemática.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0367",
+      "antes_runs": [
+        {
+          "texto": "O Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015) foi indicado na documentação anterior como referência para organizar a seleção. Contudo, não foram recuperados os valores individuais dos indicadores, as datas de coleta de citações ou a planilha de pontuação que permitiriam recalcular a ordenação. Assim, a análise atual não utiliza uma pontuação InOrdinatio como evidência verificada de seleção ou relevância dos 34 documentos. A reconstrução bibliográfica preserva essa limitação de procedência.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0181",
+      "antes_runs": [
+        {
+          "texto": "H1 - desempenho: a ESN otimizada apresentará menor perda preditiva que os modelos LSTM e GRU definidos no protocolo. A comparação histórica será descritiva; na rodada controlada complementar, a avaliação considerará a diferença de acurácia pelo teste bilateral de Diebold-Mariano e a direção do diferencial médio de perda. A ausência de significância será interpretada como evidência insuficiente de diferença, sem demonstrar equivalência entre os modelos.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0193",
+      "antes_runs": [
+        {
+          "texto": "Modelos lineares, como o autorregressivo integrado de médias móveis (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Autoregressive Integrated Moving Average",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – ARIMA) e a regressão linear, podem apresentar limitações na representação de dependências não lineares e mudanças de regime. Isso não impede seu emprego como modelos de referência. A diferenciação em ARIMA permite tratar determinadas formas de não estacionariedade, e a adequação de cada abordagem deve ser avaliada para a série e a tarefa consideradas.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0194",
+      "antes_runs": [
+        {
+          "texto": "Timbó ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2016) aplicaram regressão linear à previsão do fechamento da PETR4 e selecionaram indicadores com apoio da correlação de Pearson. O estudo avaliou o acerto das previsões por uma tolerância absoluta de 0,50 em relação ao fechamento observado. Esse critério mede proximidade de preços e não deve ser interpretado como taxa de acerto da direção da variação do ativo.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0195",
+      "antes_runs": [
+        {
+          "texto": "Costa e Lunkes (2025) ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "combinaram indicadores técnicos e fundamentalistas em um modelo de classificação com máquina de vetores de suporte (Support Vector Machine – SVM). O modelo híbrido apresentou ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "F1-score",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " de aproximadamente 72,7% na amostra de ações brasileiras analisada, sem atribuição desse valor especificamente à PETR4. Os autores recomendaram investigar outros algoritmos, incluindo redes neurais e métodos de conjunto; a escolha de arquiteturas recorrentes constitui uma decisão da presente pesquisa.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0196",
+      "antes_runs": [
+        {
+          "texto": "Liu H. (2025) integrou indicadores técnicos, modelos temporais e análise de sentimentos com",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " modelos de linguagem de grande escala (Large Language Models – LLMs), incluindo FinBERT e GPT-2, em estratégias associadas ao índice Standard and Poor’s (S&P) 500. O FinBERT atingiu 75,56% de acurácia na classificação de sentimento das notícias da Benzinga. Esse resultado pertence à tarefa de Processamento de Linguagem Natural (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Natural Language Processing",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – NLP) e não representa acerto da direção do índice.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0211",
+      "antes_runs": [
+        {
+          "texto": "O reservatório transforma a sequência de entrada em estados dos quais a camada de saída extrai informação preditiva. O ajuste apenas dessa camada reduz o conjunto de pesos treináveis em comparação com o treinamento de toda a rede. Essa organização pode reduzir o custo de ajuste, mas não garante estabilidade numérica nem uma razão universal de tempos frente à retropropagação através do tempo. O condicionamento da regressão, a dinâmica do reservatório e a regularização continuam relevantes (Jaeger, 2007).",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0212",
+      "antes_runs": [
+        {
+          "texto": "Sun (2021) comparou uma ESN com uma LSTM simplificada na previsão do fechamento das ações da Kweichow Moutai e reportou menores erros nas configurações examinadas. A fonte lista fechamento e fechamento ajustado como campos distintos, mas descreve os experimentos com preços de fechamento. Por isso, esse estudo não é tomado aqui como comprovação inequívoca de uso do fechamento ajustado nem como demonstração de superioridade sobre qualquer configuração LSTM.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0216",
+      "antes_runs": [
+        {
+          "texto": "Liu (2022) investigou um sistema de Computação de Reservatório nanofotônico para índices de mercados chineses, norte-americano e britânico. Os autores observaram previsões conservadoras, mas também maiores erros nos pontos de flutuação intensa, discutidos como efeito de ancoragem nos dados históricos. Os resultados caracterizam as condições do sistema estudado e não demonstram imunidade a mudanças de regime nem superioridade geral sobre implementações de ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "software",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " em tempo real.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0219",
+      "antes_runs": [
+        {
+          "texto": "Hassaan ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2025) compararam ESN e GRU com inicializações caóticas ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "e controles Xavier e He em seis conjuntos financeiros. Seddik (2023), por sua vez, investigou uma ESN em trajetórias simuladas pelo sistema de Lorenz, ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "co",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "m condições iniciais associadas a valores de Bitcoin. As métricas desse segundo estudo avaliam as trajetórias geradas, não previsões fora da amostra de uma série observada de preços. Seus resultados não isolam o efeito da distribuição dos pesos iniciais da ESN.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0220",
+      "antes_runs": [
+        {
+          "texto": "Sharma (2025) avaliou ESNs para preços de ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Bitcoin",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ", com XGBoost e previsão pelo último valor como comparadores. A análise relacionou o erro preditivo ao grau de caos estimado por expoentes de Lyapunov. Os testes de Mann–Whitney discutidos no estudo compararam ESN e XGBoost em condições específicas de caos e tamanho de janela; esse resultado não demonstra superioridade estatística geral da ESN sobre",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " ARIMA ou sobre todos os períodos.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0223",
+      "antes_runs": [
+        {
+          "texto": "Millea (2014) investigou matrizes ortonormais e matrizes aleatórias reescaladas em ESNs aplicadas ao problema de múltiplos osciladores sobrepostos. Os experimentos mostraram que conectividade, tamanho da rede e inicialização alteram o espaço de soluções. A significância das diferenças dependeu do limiar de erro avaliado. Esses resultados motivam documentar a inicialização, sem demonstrar uma vantagem universal das matrizes ortonormais em séries financeiras.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0245",
+      "antes_runs": [
+        {
+          "texto": "O uso de séries ajustadas também aparece fora do mercado brasileiro. Cortesi ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2026) descrevem dados do ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Center for Research in Security Prices",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (CRSP) com fatores de ajuste para eventos corporativos na análise de ações do S&P 500. Essa procedência documentada permite discutir a preparação dos dados sem inferir o uso de fechamento ajustado apenas da existência dessa coluna em uma base.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0246",
+      "antes_runs": [
+        {
+          "texto": "Costa e Lunkes (2025) informam o uso de preços ajustados a desdobramentos e dividendos na construção de indicadores e da variável de classificação. O tratamento de eventos ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "corporativos é relevante quando suas descontinuidades afetam a variável e a tarefa investigadas. A necessidade e a forma do ajuste dependem do objeto da modelagem; seu emprego, isoladamente, não garante resultados confiáveis para qualquer modelo.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0260",
+      "antes_runs": [
+        {
+          "texto": "Sharma (2025) empregou",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " otimização Bayesiana via ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Tree Parzen Estimator",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (TPE) na seleção de hiperparâmetros da ESN. A Tabela 1 do estudo apresenta as distribuições de amostragem dos hiperparâmetros, que não equivalem à lei de geração dos elementos de Win ou W. A avaliação usou",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " janelas de treino de 15, 30 e 60 observações, teste de dez pontos e avanço de um ponto. Assim, esses tamanhos de treino não representam horizontes de previsão de 15, 30 e 60 dias.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0252",
+      "antes_runs": [
+        {
+          "texto": "Araújo ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ".",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2025) investigaram ESNs com Algoritmos Genéticos e diferentes distribuições probabilísticas em séries da B3. Essa combinação constitui uma referência metodológica próxima desta pesquisa. O ESNAUTO organiza a investigação da PETR4 ajustada em",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " cinco ondas e integra LHS e um operador antiestagnação inspirado no CHC. A infraestrutura dispõe de mecanismos de preservação de matrizes, mas o acervo histórico não contém as matrizes e previsões de todas as execuções, conforme a Seção 3.8. Foi consultada a prova de autor; os metadados da edição final foram conferidos no editor.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0264",
+      "antes_runs": [
+        {
+          "texto": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0314",
+      "antes_runs": [
+        {
+          "texto": "A série foi organizada em blocos cronológicos, sem embaralhar as datas entre treino, validação e teste. Essa organização é necessária à avaliação temporal, mas não demonstra, isoladamente, ausência de vazamento de informação. Na rodada controlada complementar, a fronteira dos alvos de treino e a propagação contínua dos estados foram verificadas explicitamente; nos resultados históricos, a identificação do comportamento de cada execução depende dos artefatos preservados",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": ".",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0315",
+      "antes_runs": [
+        {
+          "texto": "A divisão estática 50%/25%/25% reuniu 2.600 observações de treino, de 03/01/2000 a 01/07/2010; 1.299 de validação, de 02/07/2010 a 28/09/2015; e 1.299 de teste, de 29/09/2015 a 30/12/2020. A função de aptidão da busca combinou erros de treino e validação. Os recordes de erro de teste apresentados nos resultados constituem comparações descritivas posteriores e não equivalem a uma seleção prospectiva de configuração para uma nova amostra.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0330",
+      "antes_runs": [
+        {
+          "texto": "Em cada variante, ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "in",
+          "italico": "1",
+          "posicao": "subscript"
+        },
+        {
+          "texto": " e ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " foram geradas conforme a combinação probabilística da onda, e ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " foi reescalonada por ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "sr",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "/|",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "λ",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "max",
+          "italico": null,
+          "posicao": "subscript"
+        },
+        {
+          "texto": "(",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ")|, em que ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "λ",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "max",
+          "italico": "1",
+          "posicao": "subscript"
+        },
+        {
+          "texto": " representa o autovalor de maior módulo. Esse procedimento controla o raio espectral, sem constituir garantia geral da propriedade de estad",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "o de eco",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ". Durante o ajuste de cada ESN, ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "in",
+          "italico": "1",
+          "posicao": "subscript"
+        },
+        {
+          "texto": " e ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " permaneceram fixas, e ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "out",
+          "italico": "1",
+          "posicao": "subscript"
+        },
+        {
+          "texto": " foi estimada por regressão Ridge. As comparações avaliam configurações que combinam inicialização, hiperparâmetros e realização estocástica, sem isolar causalmente a distribuição.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0337",
+      "antes_runs": [
+        {
+          "texto": "A função de ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "apti",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "dão combinou erros de treino e validação: ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "fitness",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " = −(0,4 · ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "MAEtreino",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " + 0,6 · ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "MAEvalidação",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "). O sinal negativo converteu a minimização em maximização para o pacote GA. A ponderação atribuiu maior peso à validação e segue a combinação descrita por ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "A",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "raújo et al. (2025). O software dispõe de serialização dos pesos ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "e",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " hiperparâmetros associados a recordes; contudo, esse mecanismo não resultou na preservação integral de todas as saídas históricas.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0338",
+      "antes_runs": [
+        {
+          "texto": "As combinações de ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "in",
+          "italico": "1",
+          "posicao": "subscript"
+        },
+        {
+          "texto": " e ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " foram exploradas no mesmo espaço de hiperparâmetros. A reinjeção de uma configuração depende da disponibilidade de suas matrizes e parâmetros. Como não",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " foram recuperados todos os artefatos históricos, a reprodução exata de cada execução não é garantida. Os resultados representam realizações documentadas de reservatórios estocásticos",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": ", sem estimar uma distribuição completa de desempenho para cada configuração.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0368",
+      "antes_runs": [
+        {
+          "texto": "A documentação da pesquisa menciona as planilhas methodi_ordinatio.xlsx e extracao_completa.xlsx como registros intermediários de seleção e extração bibliográfica. Esses arquivos não foram localizados no acervo examinado, o que limita a auditoria retrospectiva do processo. A coleção reconstruída a partir dos documentos disponíveis apoia a síntese descritiva, mas não substitui os registros originais de busca, triagem e ordenação.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0197",
+      "antes_runs": [
+        {
+          "texto": "Xiao (2024) comparou LSTM, GRU e ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Transformer",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " na previsão de preços da Tesla, sem investigar arquiteturas de reservatório. O artigo descreve preparação dos dados, mas sua Tabela 2 registra ausência de valores faltantes; esse relato não comprova uma avaliação de imputação. A diversidade de propostas com ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "S",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "VM, Aprendizado Profundo (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Deep Learning",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – DL) e processamento de linguagem natural contextualiza a escolha das ESNs nesta pesquisa, cuja eficiência deve ser examinada no protocolo adotado.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0204",
+      "antes_runs": [
+        {
+          "texto": "Na comparação de Xiao (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "alguns",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informaçõ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "es",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " de mercado. Cortesi ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ".",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores idênticos de erro quadrático médio normalizado (Normalized ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Mean Squared Error",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0210",
+      "antes_runs": [
+        {
+          "texto": "As ESNs integram o paradigma da Computação de Reservatório (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Reservoir Computing",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – RC). Jaeger (2001) apresenta uma abordagem em que a rede recorrente fornece estados e o treinamento ajusta as conexões de saída por regressão. Na configuração usual descrita por Jaeger (2007), os pesos internos são inicializados aleatoriamente e permanecem fixos durante o ajuste da saída. Essa separação entre dinâmica recorrente e leitura fundamenta a arquitetura utilizada nesta pesquisa.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0215",
+      "antes_runs": [
+        {
+          "texto": "Wang et al. (2025) avaliaram um sistema óptico de Computação de Reservatório com ponderação de atributos em sete índices acionários, integrando dados de mercado e indicadores macroeconômicos e técnicos. O protocolo inclui modelos de aprendizado de máquina, entre eles LSTM, e seleciona o melhor comparador para cada índice. Os autores relatam ganhos nos horizontes de um, quatro e dez passos. A análise de atraso em trajetórias específicas não demonstra que a ponderação elimine atrasos em ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "qualquer re",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "g",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "ime de mercado.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0217",
+      "antes_runs": [
+        {
+          "texto": "Zhang et al. (2021) propuseram uma ESN com sensoriamento compressivo (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Compressed Sensing",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " Echo State Network – CS-ESN), aplicada à representação dos estados do reservatório. Foram examinadas uma sequência logística e séries acionárias, comparando a ESN original à variante com compressão. Os autores relatam menores erros nas",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " configurações estudadas. A redução da representação do reservatório não demonstra uma propriedade geral de preservação de picos ou da estrutura caótica de séries financeiras.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0254",
+      "antes_runs": [
+        {
+          "texto": "Ribeiro ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2021) propuseram o HAR-PSO-ESN",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " para prever volatilidade realizada de três ações da ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Nasdaq, combinando atributos do modelo HAR, ESN e seleção de hiperparâmetros por PSO",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ". Os pesos de entrada, recorrentes e de realimentação foram inicializados com distribuição Uniforme. O modelo apresentou melhores resultados na maioria dos casos estudados,",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " com comparações por Friedman e Nemenyi. Essa evidência se refere à combinação avaliada, sem estabelecer superioridade universal ou isolar o efeito de leis alternativas de inicialização.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0306",
+      "antes_runs": [
+        {
+          "texto": "Os executores de ESN preservados foram escritos em R, com atualização dos estados e cálculo da saída explicitados no código. Essa implementação utiliza fundamentos descritos por",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " Jaeger (2007); a existência dos arquivos não demonstra autoria integral das rotinas legadas. Foram empregados GA na busca genética; PerformanceAnalytics nas medidas descritivas; fGarch, PearsonDS e StockDistFit nas ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "distribuições; fitdistrplus e MASS no ajuste; pracma na medição de tempo; e ggplot2 na visualização. O Quadro 6 delimita as contribuições e lacunas de procedência.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0500",
+      "antes_runs": [
+        {
+          "texto": "A contribuição de Engenharia de ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Software",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " documentada no ESNAUTO reúne",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " preparação de dados, execução de ESN, otimização genética, ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "baselines",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " LSTM/GRU, métricas, histórico, visualização e mecanismos de preservação e reinjeção de configurações. O Quadro 6 distingue fundamentos anteriores, integração experimental e limites de procedência. Essa organização do protocolo não implica autoria original das técnicas combinadas nem comprova a origem de cada rotina legada.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0531",
+      "antes_runs": [
+        {
+          "texto": "JAEGER, H. ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "The “echo state” approach to analysing and training recurrent neural networks – with an Erratum note",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ". GMD Report 148. Sankt Augustin: GMD Forschungszentrum Informationstechnik, 2001. Versão com errata de 26 jan. 2010. DOI: 10.24406/publica-fhg-291111. Disponível em: https://www.ai.rug.nl/minds/uploads/EchoStatesTechRep.pdf. Acesso em: 28 out. 2026.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0457",
+      "antes_runs": [
+        {
+          "texto": "Os resultados foram contextualizados pela monografia d",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "e Lampugnani (2026), que investigo",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "u ESNs com Algoritmo Genético na PETR4 e apresentou erros de teste para diferentes combinações de distribuições. A Tabela ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "7 reú",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "n",
+          "italico": "1",
+          "posicao": "subscript"
+        },
+        {
+          "texto": "e",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " os menores erros documentados em cada trabalho. Trata-se de comparação entre estudos, sem execução de ambos sob um protocolo comum.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0459",
+      "antes_runs": [
+        {
+          "texto": "Tabela 7 – Comparação descritiva com Lampugnani (2026)",
+          "italico": "0",
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0460",
+      "antes_runs": [
+        {
+          "texto": "Fonte: Elaborado pelo autor (2026), com base nas tabelas de resultados d",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "e",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " Lampugnani (2026) e nos resultados desta pesquisa. Os mínimos de MAE e RMSE podem corresponder a configurações distintas.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0461",
+      "antes_runs": [
+        {
+          "texto": "O",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "s menores MAE e RMSE documentados nesta pesquisa são numericamente inferiores aos mínimos apresentados por Lampugnani (2026). Essa comparação descritiva não demonstra superioridade sob condições equivalentes: não foi executado um contraste conjunto com os mesmos dados de entrada, pesos, sementes e orçamento de otimização. As diferenças entre os estudos não identificam o efeito de um componente isolado.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0462",
+      "antes_runs": [
+        {
+          "texto": "Lampugnani (2026) declara não realizar tratamento adicional dos dados. Essa declaração não comprova que os valores recebidos fossem desprovidos de ajuste corporativo. Nesta pesquisa, os modelos também receberam arquivos identificados como previamente ajustados. Sem a cadeia de preparação de ambas as séries e uma comparação controlada, não se atribui a diferença de erro ao Fator de Ajuste, ao LHS ou ao mecanismo cataclísmico.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0477",
+      "antes_runs": [
+        {
+          "texto": "Entre as configurações avaliadas, Laplace × Normal apresentou o menor MAE, enquanto Laplace × Cauchy apresentou o menor RMSE e o maior R². Na maior parte das execuções documentadas, as ESNs obtiveram MAE menor que os ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "baselines",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " LSTM e GRU definidos no protocolo. A comparação documental com",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " Lampugnani (2026) contextualizou os erros, sem transformar protocolos distintos em um experimento comum.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0496",
+      "antes_runs": [
+        {
+          "texto": "Os quatro testes de Diebold-Mariano rejeitaram a hipótese de igualdade de acurácia preditiva a 5%, sempre com menor perda média para a ESN na rodada controlada. Essa inferência não se estende aos resultados históricos de outras sementes. A comparação com",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " Lampugnani (2026) permaneceu descritiva, sem tratar protocolos distintos como equivalentes.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0476",
+      "antes_runs": [
+        {
+          "texto": "O valor elevado de R² exige cautela porque o objeto previsto é o preço da ação em nível, com forte persistência temporal. MAE e RMSE descrevem os erros, mas não demonstram, por si sós, vantagem sobre a previsão que repete o último preço observado. Esse comparador não integra os quatro contrastes da rodada controlada com GRU e LSTM. Assim, a evidência apresentada não estabelece ganho sobre a persistência nem utilidade econômica; uma comparação futura com esse referencial deverá usar a mesma janela e escala.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0186",
+      "antes_runs": [
+        {
+          "texto": "O texto apresenta revisão da literatura, material e métodos, resultados, discussão das limitações e conclusão. A revisão fundamenta os modelos; a metodologia distingue os blocos experimentais; os capítulos finais avaliam os resultados e seu alcance. Os resultados principais se restringem à PETR4.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0490",
+      "antes_runs": [
+        {
+          "texto": "A extensão à VALE3 permanece como continuidade experimental, fora dos resultados desta monografia. Ela deverá avaliar preparação da série, distribuições, repetições e comparadores sob partições temporalmente auditáveis. Os parâmetros das distribuições deverão ser ajustados ao treino ou ter sua transferência entre ativos explicitada. As execuções exploratórias preservadas são material preliminar.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0305",
+      "antes_runs": [
+        {
+          "texto": "Quanto aos objetivos, a pesquisa foi exploratória e comparativa: examinou configurações de ESNs que combinam distribuições de inicialização e seleção de hiperparâmetros por AG, com a série recebida como ajustada. Essa classificação descreve o propósito do experimento e não pressupõe que a combinação seja inédita ou pouco estudada. Quanto aos procedimentos, foi experimental, com comparações computacionais sob o protocolo descrito. O alcance das inferências depende dos controles e dos artefatos efetivamente preservados.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0228",
+      "antes_runs": [
+        {
+          "texto": "Araújo ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ".",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2025) investigaram a combinação de AG, ESN e distribuições probabilísticas em séries da B3. Essa combinação é um antecedente metodológico próximo. Nesta pesquisa, o ESNAUTO organiza cinco ondas de configurações para ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": "in",
+          "italico": "1",
+          "posicao": "subscript"
+        },
+        {
+          "texto": " e ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "W",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ", integra LHS e um operador antiestagnação inspirado no CHC e recebe a série identificada como previamente ajustada. Essa integração não comprova novidade de cada componente nem isola o efeito causal da distribuição ou do ajuste.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0251",
+      "antes_runs": [
+        {
+          "texto": "O ajuste de eventos corporativos pode reduzir descontinuidades que afetam a interpretação dos preços históricos. A presente pesquisa utiliza arquivos cuja procedência é atribuída ao BovDB e que foram disponibilizados como previamente ajustados. Essa condição de entrada não demonstra que o autor tenha executado a transformação, nem permite avaliar seu efeito isolado sobre a previsão sem a cadeia de processamento e a comparação correspondentes.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0256",
+      "antes_runs": [
+        {
+          "texto": "Os resultados de Wang et al. (2021) mostram que modelos de RC podem ser competitivos com LSTM e RNR nas tarefas examinadas. A melhor topologia variou entre os índices. A análise constitui uma referência para comparar configurações de reservatório; ela não identifica uma distribuição de pesos universalmente adequada nem demonstra que a lei dos pesos deva coincidir com a distribuição dos retornos financeiros.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0257",
+      "antes_runs": [
+        {
+          "texto": "Tian ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "e Pei",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2024) avaliaram uma ESN otimizada por ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "SSA em dez ações dos Estados Unidos e dez da China. O estudo apresenta comparações com ESN, LSTM e redes BP e Elman. Os resultados de erro favorecem o modelo proposto nas condições examinadas, mas não estabelecem uma garantia geral de superioridade nem isolam o efeito de uma família probabilística dos pesos. A geração aleatória das matrizes não deve ser confundida com sua especific",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "ação estatística completa.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0258",
+      "antes_runs": [
+        {
+          "texto": "Hassaan ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2025) estudaram inicializações por sequências caóticas para ESN e GRU em seis conjuntos financeiros, incluindo índices acionários e pares cambiais. O protocolo compara sistemas como Lorenz, Chen, oscilador de Chen perturbado e Mackey–Glass, além dos controles He e Xavier. Os resultados pertencem às séries, arquiteturas e condições de avaliação adotadas pelos autores.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0259",
+      "antes_runs": [
+        {
+          "texto": "Os erros reportados por Hassaan et al. (2025) motivam investigar regras de inicialização. Contudo, diferenças numéricas de erro não constituem, por si sós, evidência de significância estatística ou de efeito independente dos demais componentes. A inicialização por",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": " uma trajetória caótica também difere da escolha de uma família probabilística dos pesos. A interpretação dos controles deve observar a divergência entre a fórmula e a descrição textual de Xavier, apresentada na Seção 2.5.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0261",
+      "antes_runs": [
+        {
+          "texto": "O conjunto examinado apresenta aplicações de ESNs, métodos de seleção de hiperparâmetros e regras de inicialização em diferentes tarefas. Ele fundamenta escolhas experimentais desta pesquisa, sem demonstrar cobertura exaustiva do campo. O estudo organiza uma avaliação de distribuições canônicas, de caudas pesadas, assimétricas, esparsas e ajustadas empiricamente para a PETR4. A coleção reconstruída não permite estimar a dimensão de uma lacuna na literatura nem reivindicar ineditismo dessa combinação.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0208",
+      "antes_runs": [
+        {
+          "texto": "Behera (2023) revisa redes neurais de ordem superior (Higher Order Neural Networks – HONNs) e otimização evolucionária em previsão financeira. O levantamento examina modelos, seleção de hiperparâmetros e métodos como AG e otimização por enxame de partículas (",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Particle Swarm Optimization",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " – PSO). Trata-se de síntese de estudos com tarefas e protocolos distintos; os ganhos relatados não constituem uma comparação experimental própria nem demonstram que a associação a uma metaheurística melhore qualquer rede ou série.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0255",
+      "antes_runs": [
+        {
+          "texto": "Wang ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2021) avaliaram RC, LSTM e RNR em sete índices acionários, com topologias aleatórias, de pequeno mundo e livres de escala. A distribuição Uniforme foi usada nos pesos de entrada, enquanto a matriz do reservatório foi definida pela conectividade da ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "rede gerada. A camada de saída foi ajustada por um otimizador iterativo, o que distingue esse protocolo da leitura Ridge empregada nesta pesquisa. O desempenho relativo variou entre índices e configurações; não se estabelece uma hierarquia geral das topologias",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ".",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0506",
+      "antes_runs": [
+        {
+          "texto": "ARAÚJO, H. V.; CARDOSO, F. C.; MATTOS, V. L. D.; BORGES, E. N.; LUCCA, G.; DALMAZO, B. L.; BERRI, R. A. Comparing MAE and RMSE as fitness of genetic algorithm for optimizing echo state network hyperparameters with different probabilistic distributions. In: JULIAN, V. ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (ed.). ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "Intelligent Data Engineering and Automated Learning – IDEAL 2024",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": ". Cham: Springer, 2025. p. 315-327. (LNCS, v. 15347). DOI: 10.1007/978-3-031-77738-7_26.",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    },
+    {
+      "paragrafo": "P0328",
+      "antes_runs": [
+        {
+          "texto": "Fonte: Autor (2026), com base em Cardoso ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2022a), Jaeger (2007) e Araújo ",
+          "italico": null,
+          "posicao": null
+        },
+        {
+          "texto": "et al.",
+          "italico": "1",
+          "posicao": null
+        },
+        {
+          "texto": " (2025).",
+          "italico": null,
+          "posicao": null
+        }
+      ],
+      "criterio": "Guia FASOFT PDF 71, estrangeirismos e et al.; nomes próprios/siglas em romano; índices matemáticos preservados por seu significado, não por posição antiga."
+    }
+  ],
+  "sha256_docx": "8e255830f86b9f1b466f10db8d486727a5a11ec9ce8640348443347688ba80d1",
+  "validacao_visual": "pendente na exportação posterior à correção tipográfica"
+}

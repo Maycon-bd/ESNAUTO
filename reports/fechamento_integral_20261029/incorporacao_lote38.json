@@ -1,0 +1,15 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_antes": "63ca3ec4031dafe5a78b6785f2a5d7581f5deacc461c9096c392dedc5963b62e",
+  "sha256_apos_edicao": "fa2682d8f5c2f3de4dae6d5175df8ba63db5118f00c7c777265be869d4609c03",
+  "paragrafo": "P_atual0208",
+  "antes": "Wang, Bu e Huang (2025) avaliaram um sistema óptico de Computação de Reservatório com ponderação de atributos em sete séries de mercado, integrando dados de mercado e indicadores macroeconômicos e técnicos. O protocolo inclui modelos de aprendizado de máquina, entre eles LSTM, e seleciona o melhor comparador para cada série. Os autores relatam ganhos nos horizontes de um, quatro e dez passos. A análise de atraso em trajetórias específicas não demonstra que a ponderação elimine atrasos em qualquer regime de mercado.",
+  "depois": "Wang, Bu e Huang (2025) avaliaram um sistema óptico de Computação de Reservatório com ponderação de atributos em sete séries de mercado, integrando dados de mercado e indicadores macroeconômicos e técnicos. O protocolo inclui modelos de aprendizado de máquina, entre eles LSTM, e apresenta o melhor comparador por horizonte de previsão. Os autores relatam ganhos nos horizontes de um, quatro e dez passos. A análise de atraso em trajetórias específicas não demonstra que a ponderação elimine atrasos em qualquer regime de mercado.",
+  "fonte": "Artigos citados\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+  "sha256_fonte": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+  "localizador": "PDF 8, seção 5",
+  "evidencia": "A fonte declara Lasso como melhor baseline para um passo e LSTM para quatro e dez passos; não afirma selecionar um modelo distinto para cada série.",
+  "estado": "corrigido_exportado_e_paginas_alteradas_inspecionadas",
+  "sha256_apos_exportacao": "3765c2ca1972edb428ba95dcb1f7e88b049bdd11d01ef7b2222e2774d180bd38"
+}

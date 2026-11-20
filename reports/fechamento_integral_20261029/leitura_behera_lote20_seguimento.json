@@ -1,0 +1,30 @@
+{
+  "fonte": "D03",
+  "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+  "base": "v005",
+  "sha256_rascunho": "fb23eed687293350b822e4d393ff7dae4205762cd100cc6c42378791b62f8311",
+  "leitura": {
+    "texto_principal": "PDF 1–42 conferido; PDF 13–18 foi lido nesta continuação, corrigindo o registro anterior que erroneamente considerou a chamada truncada como leitura concluída.",
+    "bibliografia": "PDF 42–48: parcialmente exibida, chamada truncada; sem afirmar leitura integral das referências.",
+    "inspecao_visual": [
+      1,
+      12,
+      16,
+      28,
+      33
+    ]
+  },
+  "decisoes_provisorias": {
+    "P1": "?; ESNs descritas sem identificar uma lei de Win/W no texto principal lido.",
+    "P2": "S; PDF 28 e Tabela 2 PDF 33 descrevem secundariamente ESN-PSO e DRESN-GA.",
+    "P3": "S; PDF 28 descreve enriquecimento de dados e pontos virtuais em estudos revisados, sem experimento próprio.",
+    "P4": "?; nas tabelas e descrições lidas não foi localizada comparação numérica envolvendo LSTM, GRU ou Transformer; referência 187 a LSTM-PSO não basta.",
+    "P5": "S; PDF 28 atribui a estudo anterior aplicação aos índices BSE, DJIA, NASDAQ, FTSE, TAIEX, S&P 500 e outros."
+  },
+  "citacoes": {
+    "U0200": "Conteúdo sustentado como revisão; a chamada deve incluir Nayak e Kumar.",
+    "U0218": "Trecho sobre Behera compatível como contextualização, não prova universal; incluir três autores.",
+    "U0304": "Identificar três autores na linha da obra."
+  },
+  "pendente": "Inspecionar referências restantes sem truncamento, confirmar referência da monografia e regra aplicável, aplicar as três correções preservando a formatação e verificar visualmente. Não contar como fonte integral finalizada até concluir e registrar validação."
+}

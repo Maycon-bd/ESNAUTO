@@ -1,0 +1,7 @@
+"""Distingue proveniência dos dados e referência conceitual ao BovDB."""
+import hashlib,json
+from pathlib import Path
+from docx import Document
+root=Path(__file__).resolve().parents[1];out=root/'reports/fechamento_integral_20261029';doc=root/'reports/monografia/trabalho/fechamento_integral_20261029.docx';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();before='4c9110f8995438f956f965db10ae5f26391c91f45757322758c1e4c83a6f2742';assert sha(doc)==before
+d=Document(doc);p=d.paragraphs[312];old=p.text;r=p.runs[0];a='Fonte: Elaborado pelo autor (2026) com base na série corrigida pelo Fator de Ajuste de Cardoso ';b='Fonte: Elaborado pelo autor (2026) a partir da série recebida já ajustada; contexto do fator em Cardoso ';assert r.text==a;r.text=b;d.save(doc)
+record={'base':'v005','sha256_base':'2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b','sha256_antes':before,'sha256_apos_edicao':sha(doc),'ancora':'P_atual0312','antes':old,'depois':p.text,'evidencia':'O autor declarou que recebeu a série já ajustada do orientador. BovDB descreve fatores de ajuste, mas os arquivos preservados não comprovam por si quais eventos e procedimento geraram a série recebida. Preserva-se a referência para contexto, sem atribuir causalmente a transformação ao artigo.','estado':'pendente_exportacao_e_inspecao'};(out/'incorporacao_lote50.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf8');print('Fonte da tabela precisada; exportação pendente.')

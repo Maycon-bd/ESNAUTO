@@ -1,0 +1,111 @@
+{
+  "base": "v010",
+  "sha256_word": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+  "arquivos": [
+    {
+      "arquivo": "06.05.2018.Forecasting_CyberEvents_Bayesian_model.Rmd",
+      "sha256": "7e47e2d62609bc6bc151f0293fa3a6071655bc9cc72f9b7ae0b89377d61d160b"
+    },
+    {
+      "arquivo": "baixar_fontes_osf.py",
+      "sha256": "e236279f3f0bb1ac6c92aad30b96617ebd7764eefb5561cd930f8c3a1e35f95a"
+    },
+    {
+      "arquivo": "conferencia_descritiva_cyber.json",
+      "sha256": "c331c4a9994c5cdc3bcc19c104e8ba83928480c840735c7d322f7d24c603006b"
+    },
+    {
+      "arquivo": "conferir_dados_cyber.py",
+      "sha256": "1822a682f4a6e627d6327cfbcdcc8f52366287f3069e89a87982568591a61553"
+    },
+    {
+      "arquivo": "cyber_event_binned_data.csv",
+      "sha256": "16b0ed9fdb4d9336eaa05f27332eae9cb1289754c7f899aa21f726c3490f1a0f"
+    },
+    {
+      "arquivo": "esclarecimentos_documentais.md",
+      "sha256": "e8c7c418a4886f5939fc077006727e49644c67fde7b7f00e149c3f0dff926521"
+    },
+    {
+      "arquivo": "evidencias.json",
+      "sha256": "b9d61cb1f96f2f0a46c704610c9a70364a05efed63a012b7a050ed8603f7cecb"
+    },
+    {
+      "arquivo": "Gjika_documento.html",
+      "sha256": "1a263069393841b636a55028763525ee5f4e051d4a0caac8db393197e44c7ccd"
+    },
+    {
+      "arquivo": "Gjika_documento_procedencia.json",
+      "sha256": "3fdb4e2fd463f3fdb5b18c61a3347f6416a82de09e607c718534f48aa6a5f307"
+    },
+    {
+      "arquivo": "Gjika_RPubs_pagina.html",
+      "sha256": "06d9ae4d37fc9f9662eb36dd5771a91bdd12c6a218cee46aaf882b45dcee2a34"
+    },
+    {
+      "arquivo": "Gjika_RPubs_procedencia.json",
+      "sha256": "c0961622f03ea6ba0d57c2fc2f795225a8395493ca9276683f1d23237c2c72ac"
+    },
+    {
+      "arquivo": "Gjika_texto.txt",
+      "sha256": "6a10827b65cbbd8b22039c6caed19ea3f6b9b07a230b483aec53b6a78398ae24"
+    },
+    {
+      "arquivo": "Gjika_texto_compacto.txt",
+      "sha256": "91364a77ad80e6428610df5ecc5f723cee9362a1df468ecdf25c9830cf448275"
+    },
+    {
+      "arquivo": "ler_documento_rpubs.py",
+      "sha256": "f77a3b66e7df3bbaf8c2793a3d5fd1dbf059a824d079755861526f5fab81fe1c"
+    },
+    {
+      "arquivo": "ler_osf_projeto.py",
+      "sha256": "79be88a1174f2a0d0f1b9347e72b4436891fd6cd5d12f9bbe49e232ba32ca952"
+    },
+    {
+      "arquivo": "ler_rpubs.py",
+      "sha256": "adf4fed1b4a0846f8218bfb067788753b8493dd80679c0363949bc07fdd23376"
+    },
+    {
+      "arquivo": "listar_osf.py",
+      "sha256": "b4a4f4dae017dc95e68d7ef5f025a976d0b51ae12abc6bbf17508511a106f565"
+    },
+    {
+      "arquivo": "Modified_01_mar_2017_malware_forecasting.Rmd",
+      "sha256": "97fe801a66e86775b2b189270bb1ebb9fb75baa652175d8654f540ad6705036f"
+    },
+    {
+      "arquivo": "OSF_aj7vr_arquivos.json",
+      "sha256": "232a9e7d866ad15e3aa358b6791ec43c4b2bcfc64e9c56396014f9c59874c0c6"
+    },
+    {
+      "arquivo": "OSF_aj7vr_procedencia.json",
+      "sha256": "17ce7ac40bf582a828340bf6bae6076ba405da8cf9d53690bbf6599d1caf8a13"
+    },
+    {
+      "arquivo": "OSF_downloads_procedencia.json",
+      "sha256": "af261966468fec0b1995043845c3be0df56e5aad6e3ef6286e32b3ebf0abbe29"
+    },
+    {
+      "arquivo": "OSF_rq82a_arquivos.json",
+      "sha256": "94b7df0545948655ffc918ec99132efd9b5641e17b993c487ce8d5dcc1715d49"
+    },
+    {
+      "arquivo": "OSF_rq82a_node.json",
+      "sha256": "c3cbbf982f81236e2679a9d223b2b3fb9f14454ba621c055d91eeea32003c656"
+    },
+    {
+      "arquivo": "OSF_rq82a_procedencia.json",
+      "sha256": "d2c17253417ef2600981b7a89278a6c48a7523a09b9418b547aea2b337903da4"
+    },
+    {
+      "arquivo": "relatorio.md",
+      "sha256": "3c5ad4160657843b45ca9860062481a33504d2426f5d7163ade6416ab062c31f"
+    },
+    {
+      "arquivo": "triagem_suplementos.json",
+      "sha256": "4e946a90585fc8e01c1654767b3047679bc993db45f6b9f8e870359f0b2f3994"
+    }
+  ],
+  "meta_integral_concluida": false
+}

@@ -1,0 +1,27 @@
+{
+  "base_id": "v008",
+  "base_sha256": "0daacd3ea1753bca97619df025923b92a44a047b5c1252a4677f802dfe870dad",
+  "slides": 23,
+  "tempo_planejado_segundos": 1500,
+  "palavras_fala": 2952,
+  "roteiro_paginas": 13,
+  "notas_conferidas": 23,
+  "inspecao_visual": "23 slides no renderizador oficial; 8 slides representativos também inspecionados em exportação nativa PowerPoint;13 páginas do roteiro renderizadas e inspecionadas",
+  "renderizacao_roteiro": "Word em leitura e render_docx.py",
+  "validadores_pptx": "Integridade,layout,fontes,gráficos editáveis e reimportação passaram",
+  "limitacao_temporal": "Duração de fala estimada, dependente de ensaio cronometrado",
+  "arquivos": [
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\apresentacao_banca_v008\\entrega\\Apresentacao_ESNAUTO_banca_v008.pptx",
+      "sha256": "9dad9cb6d89d3a433f1f8fc865d173297534fff991e57d2d4e4a97e7447bd2c7"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\apresentacao_banca_v008\\entrega\\Roteiro_video_ESNAUTO_25min_v008.docx",
+      "sha256": "5b0c9d4078ff413c594ec64ade4bb3e89bafb9fbd20d6ae49d4e3be09ef954ee"
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\apresentacao_banca_v008\\entrega\\Roteiro_video_ESNAUTO_25min_v008.md",
+      "sha256": "1c3b441747c62d8d6fcae605bfaeec21a3f708827f41499b1a34b3a7770ba752"
+    }
+  ]
+}

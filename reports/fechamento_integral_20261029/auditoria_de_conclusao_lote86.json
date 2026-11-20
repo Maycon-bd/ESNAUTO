@@ -1,0 +1,43 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "base_vigente": "v005",
+  "requisitos": [
+    {
+      "requisito": "Cobertura de conteúdo",
+      "estado": "incompleto",
+      "falta": "Converter os vínculos e registros existentes em decisões por unidade, distinguindo afirmações científicas, interpretação própria e elementos sem afirmação. Não basta a igualdade de texto em 939 unidades.",
+      "evidencia": "conciliacao_inventario_lote66.json"
+    },
+    {
+      "requisito": "Três referências de acesso parcial",
+      "estado": "limite_documentado",
+      "falta": "Definir disposição final de cada atribuição de Eshelman, Holland e Pagani a partir do alcance realmente consultado, sem declarar leitura integral.",
+      "evidencia": "fontes_parciais_lote59.json"
+    },
+    {
+      "requisito": "Guia institucional",
+      "estado": "incompleto",
+      "falta": "Concluir juízo por requisito; 31 possuem controles específicos parciais, outros têm inspeções e decisões condicionais ainda a consolidar.",
+      "evidencia": "matriz_guia_vinculos_lote80.json"
+    },
+    {
+      "requisito": "Similaridade e integridade",
+      "estado": "triagem_realizada_com_limites",
+      "falta": "Registrar conclusão de risco em conjunto com atribuições; comparação lexical não certifica ausência universal de plágio.",
+      "evidencia": "interpretacao_similaridade_lote55.json"
+    },
+    {
+      "requisito": "Resultados históricos",
+      "estado": "compilacoes_conferidas_limite_preservado",
+      "falta": "Conservar distinção entre conferência de tabelas compiladas e verificação de saídas individuais; não reexecutar experimentos nem presumir arquivos adicionais.",
+      "evidencia": "conferencia_tabelas_historicas_lote65.json"
+    },
+    {
+      "requisito": "Artefato final e versão vigente",
+      "estado": "pendente",
+      "falta": "Após encerrar conteúdo e Guia, registrar nova versão com base v005, revalidar hash vigente e entregar Word/PDF final inspecionado.",
+      "evidencia": "checkpoint_lote63.json"
+    }
+  ],
+  "conclusao": "Conclusão integral não demonstrada. Não há bloqueio externo que impeça avançar nas decisões de conteúdo e Guia; manter meta ativa."
+}

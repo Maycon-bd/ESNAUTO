@@ -1,0 +1,31 @@
+{
+  "decodificacao_integral": "sucesso",
+  "legendas_embutidas_iguais_ao_srt": true,
+  "legendas_conferidas": 311,
+  "maximo_linhas": 2,
+  "maximo_caracteres_por_linha": 42,
+  "limite_cps": 25,
+  "sobreposicoes_de_tempo": 0,
+  "audio_aprovado_comparacoes": [
+    {
+      "tempo_base_s": 660,
+      "tempo_final_s": 648.9333333333333,
+      "atraso_ms": 0.0,
+      "correlacao_com_audio_aprovado": 0.9999947340976912
+    },
+    {
+      "tempo_base_s": 700,
+      "tempo_final_s": 688.9333333333333,
+      "atraso_ms": 0.0,
+      "correlacao_com_audio_aprovado": 0.999994977551408
+    },
+    {
+      "tempo_base_s": 760,
+      "tempo_final_s": 748.9333333333333,
+      "atraso_ms": 0.0,
+      "correlacao_com_audio_aprovado": 0.999994373689743
+    }
+  ],
+  "orientacoes_para_inspecao_visual": 6,
+  "legendas_para_inspecao_visual": 4
+}

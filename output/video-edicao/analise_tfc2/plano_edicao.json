@@ -1,0 +1,137 @@
+{
+  "original": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\entrada\\Video final tfc2.mp4",
+  "sha256_original": "75b7f1c1f41422683e7915eda8a68d1ed5758e84e5a8bedd2242396ec9c222d8",
+  "duracao_original_s": 1559,
+  "fps": 30,
+  "cortes": [
+    {
+      "inicio_frame": 10952,
+      "fim_frame_exclusivo": 12754,
+      "inicio_s": 365.06666666666666,
+      "fim_s": 425.1333333333333,
+      "motivo": "Retirada da analogia longa com papel/hiperplano; explicação operacional mantida."
+    },
+    {
+      "inicio_frame": 14397,
+      "fim_frame_exclusivo": 14472,
+      "inicio_s": 479.9,
+      "fim_s": 482.4,
+      "motivo": "Retirada da referência à analogia anterior; mantém objetivo do cataclismo."
+    },
+    {
+      "inicio_frame": 20839,
+      "fim_frame_exclusivo": 20855,
+      "inicio_s": 694.6333333333333,
+      "fim_s": 695.1666666666666,
+      "motivo": "Encurtamento do centro de silêncio longo; margens preservadas."
+    },
+    {
+      "inicio_frame": 25098,
+      "fim_frame_exclusivo": 25154,
+      "inicio_s": 836.6,
+      "fim_s": 838.4666666666667,
+      "motivo": "Encurtamento do centro de silêncio longo; margens preservadas."
+    },
+    {
+      "inicio_frame": 39396,
+      "fim_frame_exclusivo": 39422,
+      "inicio_s": 1313.2,
+      "fim_s": 1314.0666666666666,
+      "motivo": "Encurtamento do centro de silêncio longo; margens preservadas."
+    },
+    {
+      "inicio_frame": 41541,
+      "fim_frame_exclusivo": 41573,
+      "inicio_s": 1384.7,
+      "fim_s": 1385.7666666666667,
+      "motivo": "Encurtamento do centro de silêncio longo; margens preservadas."
+    },
+    {
+      "inicio_frame": 44912,
+      "fim_frame_exclusivo": 44935,
+      "inicio_s": 1497.0666666666666,
+      "fim_s": 1497.8333333333333,
+      "motivo": "Encurtamento do centro de silêncio longo; margens preservadas."
+    },
+    {
+      "inicio_frame": 46725,
+      "fim_frame_exclusivo": 46758,
+      "inicio_s": 1557.5,
+      "fim_s": 1558.6,
+      "motivo": "Encurtamento do centro de silêncio longo; margens preservadas."
+    }
+  ],
+  "quadros_saida_esperados": 44707,
+  "duracao_saida_esperada_s": 1490.2333333333333,
+  "segundos_retirados": 68.76666666666667,
+  "audio_medido_original": {
+    "input_i": "-12.30",
+    "input_tp": "0.34",
+    "input_lra": "6.20",
+    "input_thresh": "-22.94",
+    "output_i": "-16.13",
+    "output_tp": "-2.42",
+    "output_lra": "5.50",
+    "output_thresh": "-26.68",
+    "normalization_type": "dynamic",
+    "target_offset": "0.13"
+  },
+  "audio_alvo": {
+    "LUFS": -16,
+    "true_peak_dBTP": -1.5,
+    "LRA": 11
+  },
+  "conteudo": "Edição discreta com redução da analogia repetida, ajuste de referência verbal e pausas. Slides, câmera, demonstração e resultados mantidos; sem aceleração.",
+  "limite_autor_s": 1500,
+  "comando": [
+    "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\bin\\ffmpeg-dist\\ffmpeg-9.0.2-essentials_build\\bin\\ffmpeg.exe",
+    "-hide_banner",
+    "-nostdin",
+    "-n",
+    "-threads",
+    "4",
+    "-i",
+    "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\entrada\\Video final tfc2.mp4",
+    "-map",
+    "0:v:0",
+    "-map",
+    "0:a:0",
+    "-vf",
+    "select='not(gte(n,10952)*lt(n,12754)+gte(n,14397)*lt(n,14472)+gte(n,20839)*lt(n,20855)+gte(n,25098)*lt(n,25154)+gte(n,39396)*lt(n,39422)+gte(n,41541)*lt(n,41573)+gte(n,44912)*lt(n,44935)+gte(n,46725)*lt(n,46758))',setpts=N/(30*TB)",
+    "-af",
+    "loudnorm=I=-16:TP=-1.5:LRA=11:linear=true:measured_I=-12.30:measured_TP=0.34:measured_LRA=6.20:measured_thresh=-22.94:offset=0:print_format=json,aresample=48000,asetnsamples=n=1600:p=0,aselect='not(gte(n,10952)*lt(n,12754)+gte(n,14397)*lt(n,14472)+gte(n,20839)*lt(n,20855)+gte(n,25098)*lt(n,25154)+gte(n,39396)*lt(n,39422)+gte(n,41541)*lt(n,41573)+gte(n,44912)*lt(n,44935)+gte(n,46725)*lt(n,46758))',asetpts=N/SR/TB",
+    "-c:v",
+    "h264_nvenc",
+    "-preset",
+    "p5",
+    "-tune",
+    "hq",
+    "-rc",
+    "vbr",
+    "-cq",
+    "18",
+    "-b:v",
+    "0",
+    "-profile:v",
+    "high",
+    "-pix_fmt",
+    "yuv420p",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "192k",
+    "-ar",
+    "48000",
+    "-movflags",
+    "+faststart",
+    "-map_metadata",
+    "-1",
+    "-metadata",
+    "title=ESNAUTO - Apresentação do TFC - edição v001",
+    "-progress",
+    "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\analise_tfc2\\render_progresso.log",
+    "-nostats",
+    "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\exportados\\ESNAUTO_apresentacao_25min_v001.mp4"
+  ],
+  "saida": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\exportados\\ESNAUTO_apresentacao_25min_v001.mp4"
+}

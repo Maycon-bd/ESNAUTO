@@ -1,0 +1,104 @@
+{
+  "base": "v009",
+  "sha256_base": "793910fae2daaa2d5dbdcfa0cd76177c6c6a38c353d98d94ecaaaecf118c7b03",
+  "estado": "pesquisa_em_andamento_sem_promocao_word",
+  "execucao_de_codigo_das_fontes": false,
+  "observacao_ids": "IDs históricos não equivalem sempre à ordem das linhas Word: Liu B. (2022), linha17, corresponde a D18; Liu, Lin e Rojas (2025), linha18, corresponde a D17. Inventário corrigido por identificação da obra, não por posição.",
+  "decisoes": [
+    {
+      "id": "D15", "dimensao": "P1", "antes": "?", "proposta": "D",
+      "estado": "evidencia_nova_localizada_requer_conciliacao_editorial",
+      "fonte": "Artigo Scholarpedia, PDF1, vínculo explícito ao exemplo; suplemento oficial freqGen.zip",
+      "url": "https://www.ai.rug.nl/minds/uploads/freqGen.zip",
+      "sha256_suplemento": "d51a42e37b3390135ffb9981176d83dc5386c2ca2ae6aa55aa74f08ac9da0ba9",
+      "localizador": "freqGen/generate_esn.m, inputWeights; freqGen/generate_internal_weights.m, geração e reescala; masterScriptScholarpediaExample.m, raio final",
+      "sintese": "Win é gerada por 2*rand-1, uniforme em [-1,1). W usa sprand com valores não nulos deslocados por -0.5, seguida de normalização espectral. O script do exemplo fixa raio final 0.25.",
+      "limite": "Evidência vem do suplemento explicitamente vinculado, não da prosa isolada. O pacote disponível contém revisões posteriores, inclusive de2014e nota2015; não atribuir sua identidade binária à versão original de2007. Distinguir lei antes da reescala e lei efetiva após transformação. Não houve reprodução do exemplo. A inclusão de suplemento deve ficar explícita no método da matriz."
+    },
+    {
+      "id": "D15", "dimensao": "P3", "antes": "?", "proposta": "D",
+      "estado": "evidencia_nova_localizada_requer_conciliacao_editorial",
+      "fonte": "Suplemento oficial do exemplo descrito no artigo Scholarpedia, PDF1–2",
+      "url": "https://www.ai.rug.nl/minds/uploads/freqGen.zip",
+      "sha256_suplemento": "d51a42e37b3390135ffb9981176d83dc5386c2ca2ae6aa55aa74f08ac9da0ba9",
+      "localizador": "generate_freqGen_sequence.m, composição de inputSequence; masterScriptScholarpediaExample.m, inputScaling/teacherScaling/teacherShift; compute_statematrix.m, aplicação da transformação",
+      "sintese": "O exemplo constrói entrada com canal constante de viés e canal -outPeriodSetting+1. O script aplica escalas [0.01;3] à entrada e transformação afim do sinal-alvo com escala1.4e deslocamento-0.7. compute_statematrix aplica as transformações às sequências de entrada e saída.",
+      "limite": "Preparação/construção de atributos para sequência sintética do gerador de frequência; não é limpeza de preços financeiros. A evidência é documental no código vinculado; não houve execução. A inclusão de suplemento deve ficar explícita."
+    },
+    {
+      "id": "D16", "dimensao": "P1", "antes": "?", "proposta": "?",
+      "estado": "suplemento_examinado_nao_fecha_criterio",
+      "fonte": "PDF19 indica repositório do autor; simulation.ipynb",
+      "url": "https://github.com/kaushalkumarsimmons/Forecasting-Crude-Oil-Prices-Using-Reservoir-Computing-Models/blob/main/simulation.ipynb",
+      "blob_sha": "98e0051d3d4414255f8aae4b99a146c5faca808a",
+      "localizador": "Célula11, id c6b55531, construção de W/Win e chamada Reservoir",
+      "sintese": "A célula cria W e Win por rng.random-0.5 e mascara conexões; porém não passa essas matrizes à chamada Reservoir. O objeto usa seus inicializadores próprios. Não há versão de ReservoirPy fixada no notebook.",
+      "limite": "Os arrays locais não usados não comprovam a distribuição dos pesos do modelo que gera a previsão. Não inferir silenciosamente o padrão de uma versão atual da biblioteca. Próxima alternativa: verificar histórico do repositório e versão de dependências, ou passagem metodológica original que individualize a lei."
+    },
+    {
+      "id": "D31", "dimensao": "P1", "antes": "?", "proposta": "?",
+      "estado": "artigo_e_repositorio_reexaminados_sem_evidencia_nova_qualificadora",
+      "localizador": "PDF3–4, equações1–2; PDF15, Data Availability; repositório Supplymentary, README e inventário de arquivos",
+      "url": "https://github.com/TingBu-forever/Supplymentary",
+      "sintese": "O artigo descreve Win aleatória e Wres como efeito acumulado do sistema óptico, sem lei probabilística individualizada. O repositório contém README, CITATION.cff e train_correlation.png; o README explica features/correlações, sem a lei de Win.",
+      "limite": "Geração óptica, modulação de fase e pesos de correlação não equivalem a distribuição probabilística especificada dos elementos de Win ou Wres."
+    },
+    {
+      "id": "D31", "dimensao": "P2", "antes": "?", "proposta": "?",
+      "estado": "artigo_e_repositorio_reexaminados_sem_evidencia_nova_qualificadora",
+      "localizador": "PDF3, definição de alpha/beta; PDF5, busca de modelos ML; suplemento README",
+      "sintese": "O artigo afirma que ganhos de entrada e feedback serão otimizados, mas não especifica como os escolhe. Grid search e validação temporal são descritas para os comparadores ML; não podem ser atribuídas ao reservatório óptico sem ligação explícita.",
+      "limite": "A declaração genérica de otimização não fornece procedimento de escolha. Repositório não contém código desse procedimento no inventário consultado."
+    },
+    {
+      "id": "D26", "dimensao": "P1", "antes": "?", "proposta": "?",
+      "estado": "passagens_locais_e_html_oficial_reexaminados",
+      "url": "https://www.techscience.com/csse/v36n3/41260/html",
+      "localizador": "PDF3–4 e HTML seção2",
+      "sintese": "Win, pesos recorrentes e feedback são descritos como aleatoriamente inicializados; não é individualizada a família probabilística.",
+      "limite": "Aleatoriedade e esparsidade não determinam uma lei."
+    },
+    {
+      "id": "D26", "dimensao": "P2", "antes": "?", "proposta": "?",
+      "estado": "passagens_locais_e_html_oficial_reexaminados",
+      "url": "https://www.techscience.com/csse/v36n3/41260/html",
+      "localizador": "PDF5–6; HTML seção3.2",
+      "sintese": "São informados500neurônios, raio0.999e esparsidade0.02, mas não o procedimento que selecionou os valores.",
+      "limite": "Valores fixos não comprovam busca ou seleção manual explicitada."
+    },
+    {
+      "id": "D26", "dimensao": "P3", "antes": "?", "proposta": "?",
+      "estado": "passagens_locais_e_html_oficial_reexaminados",
+      "url": "https://www.techscience.com/csse/v36n3/41260/html",
+      "localizador": "PDF4–7; HTML seções3.1–3.3",
+      "sintese": "O fluxograma menciona coleta e limpeza, mas a prosa identifica coleta no Yahoo Finance, escolha do fechamento e partições. Não especifica operação concreta de limpeza ou transformação.",
+      "limite": "Rótulo no fluxograma e divisão de amostra não demonstram tratamento efetivamente aplicado."
+    },
+    {
+      "id": "D21", "dimensao": "P3", "antes": "?", "proposta": "?",
+      "estado": "texto_integral_duas_paginas_reexaminado",
+      "localizador": "PDF1–2",
+      "sintese": "Comunicação conceitual sobre volatilidade, GARCH, limitações e aplicações. Não descreve preparação concreta aplicada a série identificada.",
+      "limite": "Não extrair um procedimento aplicado de uma discussão genérica."
+    },
+    {
+      "id": "D21", "dimensao": "P4", "antes": "?", "proposta": "?",
+      "estado": "texto_integral_duas_paginas_reexaminado",
+      "localizador": "PDF1–2",
+      "sintese": "O texto não apresenta comparação quantitativa de LSTM/GRU/Transformer na mesma tarefa; a bibliografia contém artigos sobre deep learning, que são fontes distintas.",
+      "limite": "Resultados de obras citadas não podem ser inventados como comparação apresentada nesta comunicação."
+    },
+    {
+      "id": "D21", "dimensao": "P5", "antes": "?", "proposta": "?",
+      "estado": "texto_integral_duas_paginas_reexaminado",
+      "localizador": "PDF1–2",
+      "sintese": "Discussão genérica de mercados, ativos, opções e carteiras, sem mercado e ativo identificados ligados à análise.",
+      "limite": "Não há experimento próprio a identificar no texto integral dessa comunicação."
+    }
+  ],
+  "proximas_acoes": [
+    "Continuar a busca das demais29celulas e as alternativas documentais das10semfechamento nesta rodada.",
+    "Examinar suplementos e versões oficiais, distinguindo revisões da mesma obra e novas fontes.",
+    "Somente após consolidação das41decisões, incorporar as mudanças justificadas ao Word, tabela de frequências, figura e prosa dependente; renderizar e registrar nova versão."
+  ]
+}

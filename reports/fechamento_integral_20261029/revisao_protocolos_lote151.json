@@ -1,0 +1,126 @@
+{
+  "sha256_docx": "f933c9281afbbab9b3f49a3fccec01278eb77085d6358c2007c2719ed14682ed",
+  "trechos_atuais": [
+    {
+      "indice": 240,
+      "texto": "Esta seção discute trabalhos relacionados a ESNs, otimização, inicialização probabilística e aplicações financeiras, a partir dos documentos recuperados no acervo da pesquisa. A organização permite situar as escolhas metodológicas deste estudo, sem apresentar a coleção disponível como cobertura exaustiva da literatura. A procedência da seleção e os limites da reconstrução bibliográfica são descritos na Seção 3.8.3.",
+      "sha256_texto": "66dcba049a71cb6af180453309693bd819b7f725e4928b58493ce6b3802a2299"
+    },
+    {
+      "indice": 241,
+      "texto": "Entre os artigos do portfólio formal, foi identificado um subconjunto diretamente relacionado a ESNs, otimização, inicialização probabilística e aplicações financeiras; adicionalmente, a monografia de Lampugnani (2026) é considerada separadamente como referência acadêmica correlata.",
+      "sha256_texto": "fab7fc6d21564b1d1b344e31b70bf976195839c518b1a0e25b770350053b6d0d"
+    },
+    {
+      "indice": 253,
+      "texto": "O conjunto examinado apresenta aplicações de ESNs, métodos de seleção de hiperparâmetros e regras de inicialização em diferentes tarefas. Ele fundamenta escolhas experimentais desta pesquisa, sem demonstrar cobertura exaustiva do campo. O estudo organiza uma avaliação de distribuições canônicas, de caudas pesadas, assimétricas, esparsas e ajustadas empiricamente para a PETR4. A coleção reconstruída não permite estimar a dimensão de uma lacuna na literatura nem reivindicar ineditismo dessa combinação.",
+      "sha256_texto": "c6aa65b0e5c42511969fcd72822aa234d236c3952130b3ea2ed32e1f5d3db1f4"
+    },
+    {
+      "indice": 254,
+      "texto": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+      "sha256_texto": "5ac114e91bcc48edc7537e2a5c5d8d58b979917d2664cad1a9a8f65bf4719fa1"
+    },
+    {
+      "indice": 255,
+      "texto": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo.",
+      "sha256_texto": "da78c9f7f0deaadd1489b8a9850c76834f3af14aa415312cb934019226947cf1"
+    },
+    {
+      "indice": 256,
+      "texto": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas, Usha e Sangeetha (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros.",
+      "sha256_texto": "d7b43c9a6a10d9d9b99c81e138a13ecf3e5b7b91c86396bbaa82a5ccdfc6349e"
+    },
+    {
+      "indice": 257,
+      "texto": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+      "sha256_texto": "37e9d4d5f5755fa64cbbb6a69dfae7e832594ebb9afc543e9e90afd7c158e762"
+    },
+    {
+      "indice": 258,
+      "texto": "A questão desta pesquisa é examinar o desempenho de configurações de ESN que combinam distribuições de inicialização e hiperparâmetros na previsão da PETR4 ajustada. Trabalhos próximos, como Araújo et al. (2025), já investigaram distribuições alternativas em séries financeiras. A motivação reside na aplicação e na avaliação documentada dessas configurações no protocolo adotado, sem pressupor que o tema esteja ausente da literatura ou que a comparação isole causalmente o efeito da distribuição.",
+      "sha256_texto": "2abcae149a3950e57f7cbb1623def882eac43da9863160756e9cb508b29eae29"
+    },
+    {
+      "indice": 259,
+      "texto": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG.",
+      "sha256_texto": "09004e23351d3bf25d3e6b7a86a8788071265c709bda455b9a72d2c77faaa545"
+    },
+    {
+      "indice": 260,
+      "texto": "A pesquisa utiliza a série da PETR4 disponibilizada como ajustada por eventos corporativos, seleciona cinco hiperparâmetros por AG e compara configurações probabilísticas aplicadas a Win e W. O ESNAUTO integra inicialização populacional por LHS, operador antiestagnação inspirado no CHC e organização de 45 execuções em cinco ondas. Essa aplicação e sua documentação compõem a contribuição experimental e de software, sem atribuir ganho causal isolado ao Fator de Ajuste ou declarar a transformação dos arquivos como etapa executada nesta pesquisa.",
+      "sha256_texto": "ea02ad040f06875dc545ae8cb6323d567545e4dcfe5f4019ae25df5fc454ccf2"
+    },
+    {
+      "indice": 261,
+      "texto": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+      "sha256_texto": "af32199c72f2dab900d9a6d38714f48ec2e56d3285dd7d0fd9231d02182f030f"
+    },
+    {
+      "indice": 262,
+      "texto": "Como apoio à fundamentação teórica, foi conduzida uma extração estruturada de 34 estudos utilizados no trabalho. Essa coleção reúne estudos recentes considerados no processo de revisão e referências complementares de caráter conceitual, metodológico ou histórico, conforme a distinção descrita na Seção 3.8.3. Inclui artigos, trabalhos em eventos, preprints e trabalhos acadêmicos; por isso, seu quantitativo não deve ser interpretado como o número de artigos que satisfizeram todos os critérios de inclusão da busca recente.",
+      "sha256_texto": "f4c1bead6b12897c9a1a517ed4527c71bbe2c7037f5715c075dc760844ec6482"
+    },
+    {
+      "indice": 263,
+      "texto": "Lampugnani (2026) é discutido separadamente e não integra os 34 documentos da matriz. As dimensões são: P1 lei probabilística ligada à geração de Win ou W; P2 procedimento de seleção de hiperparâmetros de ESN/RC; P3 preparação concreta de séries temporais, incluindo transformações e construção de atributos ou janelas; P4 comparação quantitativa de previsão com LSTM, GRU ou Transformer; e P5 mercado e ativo identificados. A codificação distingue aplicações próprias de tratamentos secundários e registra informação insuficiente, sem pressupor que todos os temas sejam aplicáveis a cada fonte.",
+      "sha256_texto": "b0c348c28a9eeb29455f384ac91b8c60b68e4fdf11711734a9d22ef1ecb5fdde"
+    },
+    {
+      "indice": 338,
+      "texto": "O desempenho preditivo foi quantificado por MAE, RMSE e R² no conjunto de teste. O MAE representou o erro médio em módulo; o RMSE penalizou mais intensamente desvios elevados; e o R² descreveu a aderência global, sendo interpretado com cautela devido à persistência dos preços em nível. O tempo foi separado em custo de busca genética, custo de ajuste final e custo de treinamento dos baselines, evitando confundir baixo custo de ajuste da ESN com baixo custo de otimização.",
+      "sha256_texto": "1bca401d4a07c1c1a11b576411162cb3ae65b969b1f7b2f752775bbc56ccc935"
+    },
+    {
+      "indice": 339,
+      "texto": "As comparações entre as 45 execuções históricas de ESN e entre as diferentes distribuições foram tratadas como descritivas, pois não havia repetições independentes suficientes por configuração para sustentar inferência sobre superioridade entre distribuições. Para H1, contudo, a comparação entre ESN, GRU e LSTM foi complementada por uma análise inferencial específica com o teste de Diebold-Mariano. Intervalos de confiança e testes inferenciais entre as distribuições de Win e W não foram empregados.",
+      "sha256_texto": "2ee3e4f9b5b6b45c22a435db22f64bccae7880c35e6c6d212819ec736f79547e"
+    },
+    {
+      "indice": 340,
+      "texto": "A análise das hipóteses distinguiu resultados e limites de avaliação. H1 comparou ESNs, GRU e LSTM; H2 separou ajuste e busca; H3 descreveu configurações não gaussianas frente a Normal × Normal. Para H4, verificou-se a integração do LHS e do operador cataclísmico, sem medida de diversidade ou ablação. H5 foi examinada pelos erros e pela dispersão entre configurações da Onda 5, sem estimar a variabilidade de repetidas sementes para uma mesma configuração.",
+      "sha256_texto": "a524b0e92e18ee789157d23dfe80447b0a06f39c22f94cfe6bde23eda8d3775e"
+    },
+    {
+      "indice": 341,
+      "texto": "Como material visual complementar, utilizou-se também um lote legado de 12 cenários com 200 gerações, cujo histórico de fitness e matrizes foram preservados. A escolha para as Figuras 5 e 6 considerou exclusivamente o maior fitness de treino/validação desse lote. Esses registros não foram agregados às 45 execuções de produção, e a ilustração não replica o protocolo com LHS e cataclismo.",
+      "sha256_texto": "0badbf0b36ccea3ca2dc0d184a76a1162804f61f3e467d30991a6f0ebb1c3163"
+    },
+    {
+      "indice": 343,
+      "texto": "O teste de Diebold-Mariano foi empregado para avaliar formalmente a igualdade de acurácia preditiva entre a ESN e os baselines GRU e LSTM, conforme a hipótese nula de diferença média de perda igual a zero proposta por Diebold e Mariano (1995).",
+      "sha256_texto": "0e0f6d4766845c39f9296dca92e6dc9600663dbb28fa3d553a835996103b5bc1"
+    }
+  ],
+  "evidencias": [
+    {
+      "arquivo": "conciliacao_matriz_atual_lote70.json",
+      "sha256": "9ca6fd696e88f89b7ec73b259fcf700268c5fd229760b0a746f75360b96273e9"
+    },
+    {
+      "arquivo": "conferencia_tabelas_historicas_lote65.json",
+      "sha256": "1582cad667f3d6c00acd2790305ee9ca9128b24fd8a8ae1b1185dfc84099a5ee"
+    },
+    {
+      "arquivo": "conferencia_numerica_dm_lote46.json",
+      "sha256": "638bdd896ca1440c21b2cf3e11f80da630678dc6b251e1ecc6fd504b11f4964a"
+    },
+    {
+      "arquivo": "identidade_lote_ilustrativo_lote95.json",
+      "sha256": "55269cb535160339d649431f91befca8f11e92ad40b4c1e293d989610ac04fba"
+    },
+    {
+      "arquivo": "conciliacao_capitulos_lote143.json",
+      "sha256": "76694d85c795e602d79d82452c6ab92e31147ad350d0e91643840f3fd78994ad"
+    },
+    {
+      "arquivo": "checkpoint_lote146.json",
+      "sha256": "f637d77338522049ed019403288995bc0db2115bfe12d52cc07c1bb4b33f7201"
+    }
+  ],
+  "decisoes": {
+    "G24": "Revisão contém fundamentos,aplicações,otimização,distribuições,pré-processamento,trabalhos relacionados e estado da arte. O texto reconhece buscas complementares e antecedentes,delimita contribuição local e não reivindica coleção exaustiva ou ineditismo sem prova. Matriz34×5auditada com distinçõesD/S/?/não aplicável; ?não prova ausência universal.",
+    "G81": "Texto distingue45execuções históricas,rodada controladaDM e lote ilustrativo12cenários/200gerações;valores conferidos nos registros preservados nas auditorias65/46/95. Limites de preservação histórica permanecem explícitos. Última edição146 foi somente de bordas,com texto e valores preservados."
+  },
+  "limite": "G24não afirma cobertura de toda literatura;G81não afirma reprodução de todas as execuções históricas. As limitações documentais são resultados da auditoria,sem supor arquivos inexistentes ou repetir experimentos."
+}

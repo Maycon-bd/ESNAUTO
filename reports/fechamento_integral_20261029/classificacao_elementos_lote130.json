@@ -1,0 +1,135 @@
+{
+  "sha256_docx": "31ec505d2f39784a17b6d076f5a0893cc8753f25cdab6bb1a4095eeef363268f",
+  "requisitos_examinados": [
+    "G52",
+    "G57",
+    "G58"
+  ],
+  "classificacao": [
+    {
+      "indice_tabela_word": 1,
+      "elemento": "Tabela1 síntese bibliográfica",
+      "linhas_incluindo_cabecalho": 6,
+      "colunas": 3,
+      "classificacao": "tabela quantitativa",
+      "fundamento": "Síntese de contagens,estatísticas,erros,custos ou testes; notas descritivas explicam dados.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    },
+    {
+      "indice_tabela_word": 2,
+      "elemento": "Quadro1 matriz de cobertura",
+      "linhas_incluindo_cabecalho": 35,
+      "colunas": 6,
+      "classificacao": "quadro descritivo",
+      "fundamento": "Organiza categorias,procedimentos,parâmetros,interpretações ou atribuições; números acessórios não mudam a finalidade descritiva.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    },
+    {
+      "indice_tabela_word": 3,
+      "elemento": "Tabela2 estatísticas",
+      "linhas_incluindo_cabecalho": 7,
+      "colunas": 2,
+      "classificacao": "tabela quantitativa",
+      "fundamento": "Síntese de contagens,estatísticas,erros,custos ou testes; notas descritivas explicam dados.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    },
+    {
+      "indice_tabela_word": 4,
+      "elemento": "Quadro2 ondas",
+      "linhas_incluindo_cabecalho": 6,
+      "colunas": 4,
+      "classificacao": "quadro descritivo",
+      "fundamento": "Organiza categorias,procedimentos,parâmetros,interpretações ou atribuições; números acessórios não mudam a finalidade descritiva.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    },
+    {
+      "indice_tabela_word": 5,
+      "elemento": "Quadro3 hiperparâmetros",
+      "linhas_incluindo_cabecalho": 6,
+      "colunas": 5,
+      "classificacao": "quadro descritivo",
+      "fundamento": "Organiza categorias,procedimentos,parâmetros,interpretações ou atribuições; números acessórios não mudam a finalidade descritiva.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    },
+    {
+      "indice_tabela_word": 6,
+      "elemento": "Quadro4 desenho",
+      "linhas_incluindo_cabecalho": 5,
+      "colunas": 4,
+      "classificacao": "quadro descritivo",
+      "fundamento": "Organiza categorias,procedimentos,parâmetros,interpretações ou atribuições; números acessórios não mudam a finalidade descritiva.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    },
+    {
+      "indice_tabela_word": 7,
+      "elemento": "Tabela3 métricas",
+      "linhas_incluindo_cabecalho": 4,
+      "colunas": 5,
+      "classificacao": "tabela quantitativa",
+      "fundamento": "Síntese de contagens,estatísticas,erros,custos ou testes; notas descritivas explicam dados.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    },
+    {
+      "indice_tabela_word": 8,
+      "elemento": "Tabela4 configurações",
+      "linhas_incluindo_cabecalho": 11,
+      "colunas": 5,
+      "classificacao": "tabela quantitativa",
+      "fundamento": "Síntese de contagens,estatísticas,erros,custos ou testes; notas descritivas explicam dados.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    },
+    {
+      "indice_tabela_word": 9,
+      "elemento": "Tabela5 custos",
+      "linhas_incluindo_cabecalho": 6,
+      "colunas": 3,
+      "classificacao": "tabela quantitativa",
+      "fundamento": "Síntese de contagens,estatísticas,erros,custos ou testes; notas descritivas explicam dados.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    },
+    {
+      "indice_tabela_word": 10,
+      "elemento": "Tabela6 inferência",
+      "linhas_incluindo_cabecalho": 5,
+      "colunas": 5,
+      "classificacao": "tabela quantitativa",
+      "fundamento": "Síntese de contagens,estatísticas,erros,custos ou testes; notas descritivas explicam dados.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    },
+    {
+      "indice_tabela_word": 11,
+      "elemento": "Quadro5 hipóteses",
+      "linhas_incluindo_cabecalho": 6,
+      "colunas": 3,
+      "classificacao": "quadro descritivo",
+      "fundamento": "Organiza categorias,procedimentos,parâmetros,interpretações ou atribuições; números acessórios não mudam a finalidade descritiva.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    },
+    {
+      "indice_tabela_word": 12,
+      "elemento": "Tabela7 comparação Lampugnani",
+      "linhas_incluindo_cabecalho": 3,
+      "colunas": 4,
+      "classificacao": "tabela quantitativa",
+      "fundamento": "Síntese de contagens,estatísticas,erros,custos ou testes; notas descritivas explicam dados.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    },
+    {
+      "indice_tabela_word": 13,
+      "elemento": "Quadro6 contribuições",
+      "linhas_incluindo_cabecalho": 6,
+      "colunas": 3,
+      "classificacao": "quadro descritivo",
+      "fundamento": "Organiza categorias,procedimentos,parâmetros,interpretações ou atribuições; números acessórios não mudam a finalidade descritiva.",
+      "dimensoes": "Atende3linhas/2colunas contando cabeçalho."
+    }
+  ],
+  "ressalva_G58": "Tabela7 possui3linhas incluindo cabeçalho e2linhas de dados; guia não esclarece inclusão do cabeçalho na contagem. Manter sem inventar dados. Registrar interpretação explícita, não garantia de aceitação institucional.",
+  "achado_G57": {
+    "indice_paragrafo": 452,
+    "antes": "Fonte: Elaborado pelo autor (2026), com base nas tabelas de resultados de Lampugnani (2026) e nos resultados desta pesquisa. Os mínimos de MAE e RMSE podem corresponder a configurações distintas.",
+    "proposta": "Fonte: Adaptado de Lampugnani (2026), com inclusão dos resultados desta pesquisa (2026). Os mínimos de MAE e RMSE podem corresponder a configurações distintas.",
+    "motivo": "Tabela comparativa reorganiza resultados de terceiro e incorpora dados próprios; explicitar adaptação conforme regra do guia, preservando números e atribuição."
+  },
+  "pendente": "Aplicar nota de fonte da Tabela7; inspecionar página alterada. Demais classificações não exigem conversão."
+}

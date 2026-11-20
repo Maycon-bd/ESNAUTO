@@ -1,0 +1,33 @@
+{
+  "base": "v004",
+  "sha256_base": "110b1d19223e23f9e4b27e4c2b0ba74e92072ebcc3f1cd4ec4f0200bba059f5b",
+  "alteracoes": [
+    {
+      "elemento": "Tabela 1, P2, contagens",
+      "antes": "10 D; 4 S; 5 ?; 15 —",
+      "depois": "11 D; 5 S; 3 ?; 15 —"
+    },
+    {
+      "elemento": "Quadro 1, linha 14, P2",
+      "antes": "?",
+      "depois": "S"
+    },
+    {
+      "elemento": "Quadro 1, linha 17, P2",
+      "antes": "?",
+      "depois": "D"
+    },
+    {
+      "elemento": "Parágrafo explicativo da Figura 1",
+      "antes": "A Figura 1 registra evidência direta de preparação de séries em 25 documentos e de mercado/ativo em 25; comparações com LSTM, GRU ou Transformer e seleção de hiperparâmetros aparecem diretamente em dez documentos cada. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores.",
+      "depois": "A Figura 1 registra evidência direta de preparação de séries em 25 documentos e de mercado/ativo em 25; comparações com LSTM, GRU ou Transformer aparecem diretamente em dez documentos, e a seleção de hiperparâmetros, em onze. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores."
+    },
+    {
+      "elemento": "Figura 1",
+      "parte": "word/media/image1.png",
+      "antes_sha256": "ec328d388f581b9689e08afa279d309d66f697a33f5e98649e8297ece0c3e947",
+      "depois_sha256": "d948ef89a1be10b7637f375af4de3273a76bb4f4cb146a8f5ed5c0840e72b463"
+    }
+  ],
+  "sem_alteracao_de_resultados_experimentais": true
+}

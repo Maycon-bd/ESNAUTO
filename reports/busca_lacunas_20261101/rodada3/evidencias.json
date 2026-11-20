@@ -1,0 +1,412 @@
+{
+  "base": "v010",
+  "sha256_base": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+  "word_alterado": false,
+  "celulas_com_escopo_ampliado": 11,
+  "fontes_da_rodada": 6,
+  "insuficiencias_restantes": 38,
+  "busca_integral_concluida": false,
+  "leituras": [
+    {
+      "id": "D01",
+      "dimensoes": [
+        "P3"
+      ],
+      "paginas_textuais_nesta_rodada": [
+        9,
+        11,
+        13,
+        14
+      ],
+      "cobertura_anterior": "PDF integral já registrado no lote 14, com limitação da extração de fórmulas. Nesta rodada foram consultados também HTML oficial, Gjika/RPubs e arquivos originais do OSF.",
+      "conclusao": "A referência Cyber/heart failure está trocada entre as chamadas 44/45 do artigo. A página de Gjika explicitamente substitui zeros por 0.01 para ajuste da variável avg.report.length; não foi demonstrado que Abebe aplicou essa regra. O link OSF de Gjika aponta a uma figura, cujo projeto público contém o CSV original e dois Rmd. O CSV tem 366 semanas e três zeros. Retirar zeros e dividir por 100 produz 363 valores com Q1=3.985, mediana=5.1 e Q3=6.545, iguais à Tabela 5. A média calculada é 5.381322, contra 5.3810 publicado, e os momentos padronizados consultados não coincidem com os coeficientes da tabela. Essa concordância parcial não comprova uma receita histórica única. Rmd de terceiros foi apenas lido; nenhum modelo foi executado.",
+      "visual": [
+        "D01_p11.png"
+      ],
+      "decisao": "Manter P3 como ?. Há evidência nova concreta sobre a origem e hipóteses de preparação; falta atribuir com segurança o procedimento realmente usado na amostra de 363 valores. Não contar tratamento de Gjika/Bakdash como operação executada por Abebe."
+    },
+    {
+      "id": "D02",
+      "dimensoes": [
+        "P1",
+        "P4"
+      ],
+      "paginas_textuais_nesta_rodada": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "cobertura_anterior": "PDF 1–9 lido na rodada 2; leitura integral histórica documentada no lote 6, com o mesmo hash.",
+      "conclusao": "As tabelas 1–4 comparam cinco famílias e fitness MAE/RMSE da ESN. A prosa e o fluxograma não ligam individualmente uma lei à geração dos elementos de Win/W. Não há contraste numérico com LSTM/GRU/Transformer nas tabelas e discussão. A referência 6 sobre GA-LSTM não é uma experiência apresentada no capítulo.",
+      "visual": [
+        "D02_p9.png"
+      ],
+      "decisao": "Manter P1/P4 como ?. A leitura foi ampliada sem preencher informação que a prova local não explicita."
+    },
+    {
+      "id": "D28",
+      "dimensoes": [
+        "P4"
+      ],
+      "paginas_textuais_nesta_rodada": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "cobertura_anterior": "O lote 10 já documentava leitura integral deste mesmo PDF; esta rodada fez releitura sequencial.",
+      "conclusao": "O método usa regressão linear múltipla por mínimos quadrados. A função da Figura 2 é linear. A comparação da Figura 3 é previsão versus observado. A discussão compara ARIMA, fuzzy, AG e uma ANN não individualizada como arquitetura qualificadora; não apresenta comparação quantitativa com LSTM/GRU/Transformer. Não converter a sigla ANN em LSTM por hipótese.",
+      "visual": [
+        "D28_p7.png",
+        "D28_p9.png"
+      ],
+      "decisao": "Manter P4 como ?."
+    },
+    {
+      "id": "D34",
+      "dimensoes": [
+        "P1",
+        "P2",
+        "P4"
+      ],
+      "paginas_textuais_nesta_rodada": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "cobertura_anterior": "PDF 6–9 foi lido na rodada 2; o lote 13 já documentava as 15 páginas do mesmo PDF.",
+      "conclusao": "As Figuras 2 e 5 inicializam Win/W sem especificar família ou procedimento de seleção. O algoritmo OMP escolhe átomos para reconstrução; os experimentos fixam parâmetros e compressão de 50%, sem escolher esse valor por busca ou sensibilidade descrita. As tabelas 2/3 e os gráficos comparam ESN versus CS-ESN. Z-score/min-max são preparação dos dados; matriz gaussiana de medição e reescala de estados não são lei dos pesos.",
+      "visual": [
+        "D34_p4.png",
+        "D34_p5.png"
+      ],
+      "decisao": "Manter três ?. Nenhum código qualificador localizado nos canais consultados; a busca negativa não prova inexistência universal."
+    },
+    {
+      "id": "D30",
+      "dimensoes": [
+        "P1",
+        "P4"
+      ],
+      "paginas_textuais_nesta_rodada": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "cobertura_anterior": "Páginas 1 e 17 lidas integralmente na rodada 2; os blocos desta rodada completam o texto das 26 páginas. A Figura 1 e a Tabela 5 foram abertas visualmente.",
+      "conclusao": "As sugestões de pyESN/EsnTorch são possibilidades de implementação, sem vincular uma versão/código do estudo revisto à lei de Win/W. A taxonomia não contém resultados numéricos. Além dos 72%/90% já investigados, foi rastreada a afirmação de ganho de até 18% por HQNN (p.5,18,24) à referência 9. O resumo oficial indexado de Gandhudi descreve rede quântica híbrida com AG e conclui que a influência dos tweets é limitada; não confirma o ganho de 18% nem que se trate de um contraste quantitativo LSTM. Abertura direta da página retornou 403; esta conferência da fonte de apoio é parcial, sem leitura integral certificada.",
+      "visual": [
+        "D30_p9.png",
+        "D30_p18.png"
+      ],
+      "decisao": "Manter P1/P4 como ?. Não aproveitar o percentual não confirmado apenas para eliminar a célula."
+    },
+    {
+      "id": "D19",
+      "dimensoes": [
+        "P3",
+        "P5"
+      ],
+      "paginas_textuais_nesta_rodada": [
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "cobertura_anterior": "Registro histórico do lote 21 lista leitura do corpo PDF 1–83. Houve nova leitura dirigida de método/resultados nas rodadas anteriores; esta rodada lê a bibliografia restante sem truncamento.",
+      "conclusao": "A bibliografia inclui Maciel et al. sobre câmbio, mas não identifica um ativo/par de moedas analisado pela própria dissertação. O resumo menciona Forex, enquanto o corpo examinado trabalha com MSO, Mackey-Glass, Sunspots e Laser. O artigo de Sarsa-ESN no site do autor é outra obra. Sua identificação de EURUSD não pode ser atribuída automaticamente à dissertação. As transformações da matriz e o ruído de estado não individualizam preparação da série.",
+      "visual": [],
+      "decisao": "Manter P3/P5 como ?. Não trocar a dissertação por artigo distinto sem registrar mudança de corpus."
+    }
+  ],
+  "conciliacao_historico_por_hash": [
+    {
+      "id": "D01",
+      "autor": "Abebe e Goshu (2024)",
+      "pdf": "Artigos citados\\Abebe - Asymmetric generalized error distribution with its properties and applications.pdf",
+      "sha256_pdf_confirmado": "6c09320127ccbfa9c16dbbdcf716b021ab7e82e2c3ac86926db098920514f7d8",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_abebe_ribeiro_lote14_parcial.json",
+      "sha256_registro": "ed9a3663becb0910980268f04930435fff0ae0515eca193d2327e206ccb630dd",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D02",
+      "autor": "Araújo et al. (2025)",
+      "pdf": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_pdf_confirmado": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leitura_D02_araujo_lote6.json",
+      "sha256_registro": "31e7374ae70f579962db932984c0b41ad007602d72c1b6cbfe396a6230ce1d05",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D03",
+      "autor": "Behera, Nayak e Kumar (2023)",
+      "pdf": "Artigos citados\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_pdf_confirmado": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leitura_behera_concluida_lote20.json",
+      "sha256_registro": "e0e90ba0c3dc66bbaf210e98e42283a180afcdb57f66b8bd5501b205e040f362",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D07",
+      "autor": "Costa e Lunkes (2025)",
+      "pdf": "Artigos citados\\Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256_pdf_confirmado": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_costa_lunkes_lote15.json",
+      "sha256_registro": "c3c679014dce91d836fa53395b6c3199c3c7521806f80658899eb65599daeccb",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D08",
+      "autor": "Deng et al. (2022)",
+      "pdf": "Artigos citados\\Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_pdf_confirmado": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_tian_deng_lote9.json",
+      "sha256_registro": "5c886cd695e49a3e7e0e968119a0347a45d428c5084b556eca2c5e483a84befd",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D12",
+      "autor": "Ecer et al. (2020)",
+      "pdf": "Artigos citados\\Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256_pdf_confirmado": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_ecer_timbo_lote10.json",
+      "sha256_registro": "dde3c584485383de5baaad2d3a1d418372bafb7394d10c4603affdb6709b1012",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D13",
+      "autor": "Hariharan, Suresh e Chandrasekar (2025)",
+      "pdf": "Artigos citados\\Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256_pdf_confirmado": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+      "sha256_registro": "04aeb0afa8dc5d8445608c0670cbce0303894080245286eebc522150c53c3686",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D15",
+      "autor": "Jaeger (2007)",
+      "pdf": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_pdf_confirmado": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "registro_previo": "reports\\busca_lacunas_20261101\\rodada2\\evidencias.json",
+      "sha256_registro": "6a582e51dc3a5dd55813159a061eaf5af6e2f9cb80a4209b39ba15cfb9783a93",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D16",
+      "autor": "Kumar (2025)",
+      "pdf": "Artigos citados\\Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256_pdf_confirmado": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leitura_D16_kumar.json",
+      "sha256_registro": "3823289dc7619464e656c77b4d83c00185833fddd76a43abeef2b34ae4e6096c",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D17",
+      "autor": "Liu, Lin e Rojas (2025)",
+      "pdf": "Artigos citados\\Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+      "sha256_pdf_confirmado": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_liu_lin_rojas_lote19.json",
+      "sha256_registro": "1ffbffa0db0b3fb91ef48fc59bb8b32d6b34a951e65ab0c597ecf78600b65fae",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D19",
+      "autor": "Millea (2014)",
+      "pdf": "Artigos citados\\Millea - Explorations in Echo State Network.pdf",
+      "sha256_pdf_confirmado": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leitura_millea_lote21_parcial.json",
+      "sha256_registro": "8101d5308aab3c70be8b708f33ef39e2b3541232f8f45f43139994249385f06f",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D21",
+      "autor": "Ping (2023)",
+      "pdf": "Artigos citados\\Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+      "sha256_pdf_confirmado": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+      "registro_previo": "reports\\busca_lacunas_20261101\\rodada2\\evidencias.json",
+      "sha256_registro": "6a582e51dc3a5dd55813159a061eaf5af6e2f9cb80a4209b39ba15cfb9783a93",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D22",
+      "autor": "Seddik, Routaib e Elhaddadi (2023)",
+      "pdf": "Artigos citados\\Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_pdf_confirmado": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "registro_previo": "reports\\busca_lacunas_20261101\\rodada2\\evidencias.json",
+      "sha256_registro": "6a582e51dc3a5dd55813159a061eaf5af6e2f9cb80a4209b39ba15cfb9783a93",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D23",
+      "autor": "Sharma et al. (2025)",
+      "pdf": "Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_pdf_confirmado": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_sharma_duttilo_lote7.json",
+      "sha256_registro": "788ad0e0328008ec47434e2f17d716a4e10059fbebaf2fd64ae1888b7945bcd1",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D24",
+      "autor": "Soltani, Benmohamed e Ltifi (2022)",
+      "pdf": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf_confirmado": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+      "sha256_registro": "3f09b940fa86a2d2c70af51604617718eeabe9007e7aeb133bc3366a75a6f222",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D26",
+      "autor": "Sun et al. (2021)",
+      "pdf": "Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256_pdf_confirmado": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leitura_D26_sun.json",
+      "sha256_registro": "c475b1f2b41b984e869106816ee0c60d6d669a880d4b5a800435054f046b5eb5",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D27",
+      "autor": "Tian e Pei (2024)",
+      "pdf": "Artigos citados\\Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_pdf_confirmado": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_tian_deng_lote9.json",
+      "sha256_registro": "5c886cd695e49a3e7e0e968119a0347a45d428c5084b556eca2c5e483a84befd",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D28",
+      "autor": "Timbó et al. (2016)",
+      "pdf": "Artigos citados\\Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256_pdf_confirmado": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_ecer_timbo_lote10.json",
+      "sha256_registro": "dde3c584485383de5baaad2d3a1d418372bafb7394d10c4603affdb6709b1012",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D29",
+      "autor": "Ribeiro et al. (2021)",
+      "pdf": "Artigos citados\\Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256_pdf_confirmado": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+      "sha256_registro": "d51da6084366230b828452a9c30bf9efccf2092865b777e61b313e73565efa85",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D30",
+      "autor": "Vishwas, Usha e Sangeetha (2025)",
+      "pdf": "Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+      "sha256_pdf_confirmado": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+      "registro_previo": "reports\\fechamento_integral_20261029\\conferencia_matriz_vishwas_lote31.json",
+      "sha256_registro": "d0300fcd407bd88e9d7afaae3ce55dc8ad91538b7ac71062edaa7fa7b1b0efc0",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D31",
+      "autor": "Wang, Bu e Huang (2025)",
+      "pdf": "Artigos citados\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_pdf_confirmado": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_wang_bu_huang_lote16.json",
+      "sha256_registro": "ef727cc5c8990405756ac1ad7a30f16aa9f194b75b762ad8c3ec76fcba330ec6",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    },
+    {
+      "id": "D34",
+      "autor": "Zhang et al. (2021)",
+      "pdf": "Artigos citados\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf_confirmado": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "registro_previo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+      "sha256_registro": "d51da6084366230b828452a9c30bf9efccf2092865b777e61b313e73565efa85",
+      "limite": "Registro de leitura/escopo anterior do mesmo PDF. Não converter esta conferência de identidade em nova leitura ou aprovação integral."
+    }
+  ],
+  "fontes_externas": [
+    {
+      "fonte": "Abebe e Goshu (2024)",
+      "url": "https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2024.1398137/full",
+      "alcance": "Seção 8.2.1, Tabela 5 e referências 44/45 consultadas. A inconsistência das chamadas existe também no HTML oficial."
+    },
+    {
+      "fonte": "Gjika (2021)",
+      "url": "https://rpubs.com/Eraldagjika/715261",
+      "alcance": "Página e documento incorporado recuperados por HTTP público e arquivados por hash. Foram lidos início, importação, resumos, gráficos descritos e tratamento de zeros; feita busca dirigida no restante. Não se afirma leitura integral de todas as saídas de ajuste ou imagens. Nenhum R executado."
+    },
+    {
+      "fonte": "OSF — dados e análises originais",
+      "url": "https://osf.io/rq82a/",
+      "alcance": "Identidade do projeto recuperada pela API pública a partir do arquivo aj7vr. CSV e dois Rmd arquivados com procedência. Foram lidos o CSV por completo e os blocos de importação/preparação dos Rmd, sem executar os modelos. A aritmética descritiva de conferência foi registrada separadamente como reconstrução atual."
+    },
+    {
+      "fonte": "Zhang (2021)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1007570421001696",
+      "alcance": "Resultado oficial indexado consultado; abertura direta falhou. Conteúdo analisado provém do PDF local completo. Não foi recuperado suplemento qualificador na busca por título/DOI/código."
+    },
+    {
+      "fonte": "Araújo (2025)",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-77738-7_26",
+      "alcance": "Página oficial consultada; não substitui a leitura da versão publicada integral pela prova local. Resultados genéricos de repositórios com MAE no nome não foram atribuídos aos autores."
+    },
+    {
+      "fonte": "Timbó (2016)",
+      "url": "https://aircconline.com/ijaia/V7N1/7116ijaia03.pdf",
+      "alcance": "PDF oficial localizado na busca; não há conteúdo novo recuperado que substitua a cópia local."
+    },
+    {
+      "fonte": "Gandhudi et al. (2024)",
+      "doi": "10.1016/j.compeleceng.2024.109302",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0045790624002301",
+      "alcance": "Resumo e prévia indexados da página da editora consultados na busca. Abertura da variante /abs/ retornou 403. Não foi obtido texto integral; a suposta melhora de 18% não foi confirmada. Fonte de apoio, sem ampliar o portfólio de 34."
+    },
+    {
+      "fonte": "Millea — alternativa de versão",
+      "url": "https://m3t4n01a.github.io/rl_esn.pdf",
+      "alcance": "Busca por versão alternativa da dissertação em Groningen e pelo título/Forex retornou também artigo distinto. Não há prova de que seja capítulo faltante da dissertação; não transportar seus ativos ou operações."
+    }
+  ],
+  "sem_experimentos": true,
+  "classificacao_turno_anterior": "progresso",
+  "fundamento_progresso": "Novas fontes e leitura/inspeção ampliadas; confronto adicional do percentual de 18%; inventário histórico ligado aos 22 PDFs por hash, evitando releituras sem hipótese nova."
+}

@@ -1,0 +1,837 @@
+{
+  "base": "v009",
+  "sha256_base": "793910fae2daaa2d5dbdcfa0cd76177c6c6a38c353d98d94ecaaaecf118c7b03",
+  "total": 41,
+  "contagens": {
+    "P3": 6,
+    "P1": 13,
+    "P4": 16,
+    "P5": 3,
+    "P2": 3
+  },
+  "celulas": [
+    {
+      "id": "D01",
+      "linha_word": 1,
+      "autor": "Abebe e Goshu (2024)",
+      "dimensao": "P3",
+      "pdf": "Artigos citados\\Abebe - Asymmetric generalized error distribution with its properties and applications.pdf",
+      "sha256_pdf": "6c09320127ccbfa9c16dbbdcf716b021ab7e82e2c3ac86926db098920514f7d8",
+      "evidencia_anterior": {
+        "id": "D01",
+        "arquivo_pdf": "Abebe - Asymmetric generalized error distribution with its properties and applications.pdf",
+        "sha256_pdf": "6c09320127ccbfa9c16dbbdcf716b021ab7e82e2c3ac86926db098920514f7d8",
+        "tipo": "modelagem_distribuicoes",
+        "dimensao": "P3",
+        "codigo": "?",
+        "localizador": "PDF 9, aplicações",
+        "evidencia_e_limite": "Os dados reais são recebidos para ajuste marginal da AGED. Não foi localizada nesta aplicação uma operação concreta de preparação temporal; ajuste de uma distribuição não satisfaz P3.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D02",
+      "linha_word": 2,
+      "autor": "Araújo et al. (2025)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_pdf": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "evidencia_anterior": {
+        "id": "D02",
+        "arquivo_pdf": "Araújo - Comparing MAE and RMSE as Fitness.pdf",
+        "sha256_pdf": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+        "tipo": "aplicacao_ESN",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 4–9, contextualização e método",
+        "evidencia_e_limite": "As famílias de distribuições são associadas à ESN, mas as passagens não individualizam sua geração em Win ou W. Não inferir essa ligação apenas da comparação de famílias.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D02",
+      "linha_word": 2,
+      "autor": "Araújo et al. (2025)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_pdf": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "evidencia_anterior": {
+        "id": "D02",
+        "arquivo_pdf": "Araújo - Comparing MAE and RMSE as Fitness.pdf",
+        "sha256_pdf": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+        "tipo": "aplicacao_ESN",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 10–15, tabelas e conclusão",
+        "evidencia_e_limite": "As tabelas experimentais consultadas comparam configurações e distribuições de ESN. A referência bibliográfica a LSTM não documenta comparação quantitativa na mesma tarefa.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D03",
+      "linha_word": 3,
+      "autor": "Behera, Nayak e Kumar (2023)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "evidencia_anterior": {
+        "id": "D03",
+        "arquivo_pdf": "Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+        "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+        "tipo": "revisao",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 11–12, revisão de modelos",
+        "evidencia_e_limite": "O tratamento das ESNs descreve aplicações e otimização, sem identificar lei probabilística de Win/W nos trechos examinados. Leis dos algoritmos evolutivos não são leis dos pesos da ESN.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D03",
+      "linha_word": 3,
+      "autor": "Behera, Nayak e Kumar (2023)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "evidencia_anterior": {
+        "id": "D03",
+        "arquivo_pdf": "Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+        "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+        "tipo": "revisao",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 11–12 e triagem textual das tabelas de modelos",
+        "evidencia_e_limite": "Comparações entre HONNs, FLANNs, ESNs e outros modelos não identificam no escopo consultado uma comparação numérica qualificadora com LSTM/GRU/Transformer. Não se afirma ausência na obra inteira.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D07",
+      "linha_word": 7,
+      "autor": "Costa e Lunkes (2025)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256_pdf": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "evidencia_anterior": {
+        "id": "D07",
+        "arquivo_pdf": "Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+        "sha256_pdf": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+        "tipo": "aplicacao_SVM",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 14–17, resultados e conclusão",
+        "evidencia_e_limite": "Os modelos A/B/C diferem nos atributos empregados por SVM. As métricas desses modelos não constituem comparação com LSTM/GRU/Transformer.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D08",
+      "linha_word": 8,
+      "autor": "Deng et al. (2022)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_pdf": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "evidencia_anterior": {
+        "id": "D08",
+        "arquivo_pdf": "Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+        "sha256_pdf": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+        "tipo": "aplicacao_ESN_nao_financeira",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 8 e 13, equações 1–5 e seção 4.2",
+        "evidencia_e_limite": "Win, Wres e Wenc são descritas como aleatórias. A família probabilística de Win/Wres não é especificada nesses trechos; filtro gaussiano da série é outro objeto.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D12",
+      "linha_word": 12,
+      "autor": "Ecer et al. (2020)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256_pdf": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "evidencia_anterior": {
+        "id": "D12",
+        "arquivo_pdf": "Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+        "sha256_pdf": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+        "tipo": "aplicacao_MLP",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 8–11, tabelas 5–10",
+        "evidencia_e_limite": "O conjunto de treze configurações é de MLP, MLP-GA e MLP-PSO; funções de ativação e otimizadores não identificam LSTM/GRU/Transformer no comparativo examinado.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D13",
+      "linha_word": 13,
+      "autor": "Hariharan, Suresh e Chandrasekar (2025)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256_pdf": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "evidencia_anterior": {
+        "id": "D13",
+        "arquivo_pdf": "Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+        "sha256_pdf": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+        "tipo": "aplicacao_ESN",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 8 e 11, tabelas 4–5",
+        "evidencia_e_limite": "Os resultados de ações e geração solar consultados comparam variantes de ESN. Esses números não fecham o critério de comparação com LSTM/GRU/Transformer.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D15",
+      "linha_word": 15,
+      "autor": "Jaeger (2007)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_pdf": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "evidencia_anterior": {
+        "id": "D15",
+        "arquivo_pdf": "Jaeger - Echo state network.pdf",
+        "sha256_pdf": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+        "tipo": "artigo_teorico_com_demonstracao",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 1–3, definição e treinamento da ESN",
+        "evidencia_e_limite": "Conexões aleatórias são descritas sem lei probabilística individualizada para Win ou W. Não completar a fonte com configurações de outras publicações de Jaeger.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D15",
+      "linha_word": 15,
+      "autor": "Jaeger (2007)",
+      "dimensao": "P3",
+      "pdf": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_pdf": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "evidencia_anterior": {
+        "id": "D15",
+        "arquivo_pdf": "Jaeger - Echo state network.pdf",
+        "sha256_pdf": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+        "tipo": "artigo_teorico_com_demonstracao",
+        "dimensao": "P3",
+        "codigo": "?",
+        "localizador": "PDF 1–9, sobretudo 2–5",
+        "evidencia_e_limite": "Washout de estados, ruído de estados, regularização e escalas de controle não documentam, por si, uma operação concreta aplicada à série de entrada. Mantida a insuficiência para P3.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D15",
+      "linha_word": 15,
+      "autor": "Jaeger (2007)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_pdf": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "evidencia_anterior": {
+        "id": "D15",
+        "arquivo_pdf": "Jaeger - Echo state network.pdf",
+        "sha256_pdf": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+        "tipo": "artigo_teorico_com_demonstracao",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 1–9, sobretudo 2 e 5",
+        "evidencia_e_limite": "As vantagens e relações com outras redes são conceituais; não foi identificada comparação numérica qualificadora na mesma tarefa nas passagens lidas.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D16",
+      "linha_word": 16,
+      "autor": "Kumar (2025)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256_pdf": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "evidencia_anterior": {
+        "id": "D16",
+        "arquivo_pdf": "Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+        "sha256_pdf": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+        "tipo": "aplicacao_RC",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 13–14, definição da ESN e equações 16–17",
+        "evidencia_e_limite": "As matrizes são nomeadas, mas não recebem família probabilística de inicialização nessas passagens. A formulação genérica sobre matrizes aprendidas não autoriza reconstruir a lei de Win/Wres.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D17",
+      "linha_word": 18,
+      "autor": "Liu, Lin e Rojas (2025)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+      "sha256_pdf": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+      "evidencia_anterior": {
+        "id": "D17",
+        "arquivo_pdf": "Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+        "sha256_pdf": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+        "tipo": "sentimento_e_estrategias",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 21 e 23, tabelas 1–5 e discussão",
+        "evidencia_e_limite": "GPT-2/FinBERT são avaliados em classificação de sentimento; o comparativo temporal usa ARIMA, Prophet e ETS. Retornos de estratégias combinadas não isolam um Transformer como previsor temporal no mesmo benchmark exigido por P4.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D19",
+      "linha_word": 19,
+      "autor": "Millea (2014)",
+      "dimensao": "P3",
+      "pdf": "Artigos citados\\Millea - Explorations in Echo State Network.pdf",
+      "sha256_pdf": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+      "evidencia_anterior": {
+        "id": "D19",
+        "arquivo_pdf": "Millea - Explorations in Echo State Network.pdf",
+        "sha256_pdf": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+        "tipo": "tese_ESN_nao_financeira",
+        "dimensao": "P3",
+        "codigo": "?",
+        "localizador": "PDF 47–48, 63–68, benchmarks e dados",
+        "evidencia_e_limite": "Nas seções consultadas de Mackey-Glass, laser e manchas solares há geração/apresentação de séries, partições e washout. Transformações de pesos ou estados não estabelecem operação concreta de preparação da série bruta. Leitura dirigida, não integral das 90 páginas.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D19",
+      "linha_word": 19,
+      "autor": "Millea (2014)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Millea - Explorations in Echo State Network.pdf",
+      "sha256_pdf": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+      "evidencia_anterior": {
+        "id": "D19",
+        "arquivo_pdf": "Millea - Explorations in Echo State Network.pdf",
+        "sha256_pdf": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+        "tipo": "tese_ESN_nao_financeira",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 30, tabela 3.1 e discussão de Evolino",
+        "evidencia_e_limite": "Há números importados para Evolino, mas o trecho não identifica inequivocamente a arquitetura daquele resultado como LSTM. A observação de que Evolino também treina LSTM não basta para converter o comparativo em S.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D19",
+      "linha_word": 19,
+      "autor": "Millea (2014)",
+      "dimensao": "P5",
+      "pdf": "Artigos citados\\Millea - Explorations in Echo State Network.pdf",
+      "sha256_pdf": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+      "evidencia_anterior": {
+        "id": "D19",
+        "arquivo_pdf": "Millea - Explorations in Echo State Network.pdf",
+        "sha256_pdf": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+        "tipo": "tese_ESN_nao_financeira",
+        "dimensao": "P5",
+        "codigo": "?",
+        "localizador": "PDF 3, resumo; PDF 64–83, experimentos e Tabela 6.1",
+        "evidencia_e_limite": "Resumo declara aplicação a negociação FOREX; o corpo e a tabela de resultados examinados descrevem MSO, Mackey–Glass, laser e manchas solares, sem identificar par de moedas ou detalhar esse experimento financeiro. Não presumir ausência de tal aplicação nem preenchê-la sem evidência.",
+        "escopo_leitura": "Texto completo PDF 1–90 lido; PDF 3 e tabela 6.1 inspecionados visualmente.",
+        "codigo_anterior_neste_lote": "-"
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D21",
+      "linha_word": 21,
+      "autor": "Ping (2023)",
+      "dimensao": "P3",
+      "pdf": "Artigos citados\\Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+      "sha256_pdf": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+      "evidencia_anterior": {
+        "id": "D21",
+        "arquivo_pdf": "Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+        "sha256_pdf": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+        "tipo": "comunicacao_conceitual",
+        "dimensao": "P3",
+        "codigo": "?",
+        "localizador": "PDF 1–2, texto completo de duas páginas",
+        "evidencia_e_limite": "O tratamento é conceitual: volatilidade e desvio-padrão não são uma operação de preparação temporal documentada e aplicada a dados identificados.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D21",
+      "linha_word": 21,
+      "autor": "Ping (2023)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+      "sha256_pdf": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+      "evidencia_anterior": {
+        "id": "D21",
+        "arquivo_pdf": "Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+        "sha256_pdf": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+        "tipo": "comunicacao_conceitual",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 1–2, texto completo de duas páginas",
+        "evidencia_e_limite": "Não há, no texto examinado, tabela ou comparação numérica qualificadora entre previsores LSTM/GRU/Transformer na mesma tarefa.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D21",
+      "linha_word": 21,
+      "autor": "Ping (2023)",
+      "dimensao": "P5",
+      "pdf": "Artigos citados\\Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+      "sha256_pdf": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+      "evidencia_anterior": {
+        "id": "D21",
+        "arquivo_pdf": "Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+        "sha256_pdf": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+        "tipo": "comunicacao_conceitual",
+        "dimensao": "P5",
+        "codigo": "?",
+        "localizador": "PDF 1–2, texto completo de duas páginas",
+        "evidencia_e_limite": "O mercado é abordado genericamente; não há ativo/índice e mercado identificados e ligados a uma análise documentada.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D22",
+      "linha_word": 22,
+      "autor": "Seddik, Routaib e Elhaddadi (2023)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_pdf": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "evidencia_anterior": {
+        "id": "D22",
+        "arquivo_pdf": "Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+        "sha256_pdf": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+        "tipo": "ESN_sobre_trajetoria_simulada",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 2–5, definições e método",
+        "evidencia_e_limite": "Os pesos são aleatórios/fixos e há escala e ajuste espectral. Isso não identifica a família de geração dos elementos de Win/W. A leitura integral não localizou lei probabilística dos elementos; a palavra aleatório e os valores de raio/esparsidade não a identificam.",
+        "escopo_leitura": "Texto integral lido nesta meta e páginas de evidência inspecionadas visualmente; ver leituras_chaos_lote4.json.",
+        "codigo_anterior_neste_lote": "?"
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D22",
+      "linha_word": 22,
+      "autor": "Seddik, Routaib e Elhaddadi (2023)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_pdf": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "evidencia_anterior": {
+        "id": "D22",
+        "arquivo_pdf": "Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+        "sha256_pdf": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+        "tipo": "ESN_sobre_trajetoria_simulada",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 2–5 e 8, literatura e comparação experimental",
+        "evidencia_e_limite": "Menções gerais a LSTM e resultados entre variantes de ESN não estabelecem uma comparação numérica qualificadora com LSTM/GRU/Transformer na mesma tarefa.",
+        "escopo_leitura": "Texto integral lido nesta meta e páginas de evidência inspecionadas visualmente; ver leituras_chaos_lote4.json.",
+        "codigo_anterior_neste_lote": "?"
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D23",
+      "linha_word": 23,
+      "autor": "Sharma et al. (2025)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_pdf": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "evidencia_anterior": {
+        "id": "D23",
+        "arquivo_pdf": "Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+        "sha256_pdf": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+        "tipo": "aplicacao_ESN",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 5–7; conferência visual obrigatória da página 6",
+        "evidencia_e_limite": "Na página visível, a figura 3 é reproduzida de Li et al.; o ruído gaussiano é de estado, não lei de Win/W. A extração textual da página 6 contém parágrafos adicionais não visíveis sobre leis Uniformes e outro estudo: foram descartados como artefato da camada textual. Não inferir lei por padrão de biblioteca.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D23",
+      "linha_word": 23,
+      "autor": "Sharma et al. (2025)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_pdf": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "evidencia_anterior": {
+        "id": "D23",
+        "arquivo_pdf": "Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+        "sha256_pdf": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+        "tipo": "aplicacao_ESN",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 9–12, resultados",
+        "evidencia_e_limite": "Os comparativos consultados são com último valor e XGBoost. Não sustentam o critério específico de LSTM/GRU/Transformer. Texto não visível da camada de extração não foi usado como evidência.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D24",
+      "linha_word": 24,
+      "autor": "Soltani, Benmohamed e Ltifi (2022)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "evidencia_anterior": {
+        "id": "D24",
+        "arquivo_pdf": "Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+        "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+        "tipo": "revisao_ESN",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 2–3 e 10–11, definição e tabela 6",
+        "evidencia_e_limite": "Pesos aleatórios e matriz binária de conectividade não especificam a lei probabilística de Win/W; conectividade e distribuição de elementos são objetos distintos.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D24",
+      "linha_word": 24,
+      "autor": "Soltani, Benmohamed e Ltifi (2022)",
+      "dimensao": "P3",
+      "pdf": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "evidencia_anterior": {
+        "id": "D24",
+        "arquivo_pdf": "Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+        "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+        "tipo": "revisao_ESN",
+        "dimensao": "P3",
+        "codigo": "?",
+        "localizador": "PDF 11–12, tabela 6 e benchmarks",
+        "evidencia_e_limite": "Escalas/deslocamentos aparecem como parâmetros, e NARMA/Mackey-Glass/Lorenz como benchmarks. A descrição consultada não documenta transformação concreta da série de entrada que feche P3.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D24",
+      "linha_word": 24,
+      "autor": "Soltani, Benmohamed e Ltifi (2022)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "evidencia_anterior": {
+        "id": "D24",
+        "arquivo_pdf": "Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+        "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+        "tipo": "revisao_ESN",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 8–12, síntese e benchmarks",
+        "evidencia_e_limite": "Contagens de técnicas de otimização e desempenho relatado genericamente não constituem comparação quantitativa identificável com LSTM/GRU/Transformer na mesma tarefa.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D24",
+      "linha_word": 24,
+      "autor": "Soltani, Benmohamed e Ltifi (2022)",
+      "dimensao": "P5",
+      "pdf": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "evidencia_anterior": {
+        "id": "D24",
+        "arquivo_pdf": "Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+        "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+        "tipo": "revisao_ESN",
+        "dimensao": "P5",
+        "codigo": "?",
+        "localizador": "PDF 12, figura 6 e descrição de datasets; figura conferida visualmente",
+        "evidencia_e_limite": "A figura e o texto identificam benchmarks sintéticos e domínios físicos, incluindo NARMA, Mackey-Glass, Lorenz, laser e turbofan. Não identificam ativo financeiro e mercado vinculados à análise nesse escopo.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D26",
+      "linha_word": 26,
+      "autor": "Sun et al. (2021)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256_pdf": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "evidencia_anterior": {
+        "id": "D26",
+        "arquivo_pdf": "Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+        "sha256_pdf": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+        "tipo": "aplicacao_ESN",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 3, definição da ESN",
+        "evidencia_e_limite": "Win, Wr e Wback são inicializadas aleatoriamente, sem família probabilística individualizada no trecho. Não reconstruir pela implementação presumida.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D26",
+      "linha_word": 26,
+      "autor": "Sun et al. (2021)",
+      "dimensao": "P2",
+      "pdf": "Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256_pdf": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "evidencia_anterior": {
+        "id": "D26",
+        "arquivo_pdf": "Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+        "sha256_pdf": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+        "tipo": "aplicacao_ESN",
+        "dimensao": "P2",
+        "codigo": "?",
+        "localizador": "PDF 5–7, experimento e configuração",
+        "evidencia_e_limite": "Valores de tamanho do reservatório, raio espectral e esparsidade são fixados. Variação do tamanho do conjunto de treino/teste não identifica procedimento para selecionar hiperparâmetros da ESN.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D26",
+      "linha_word": 26,
+      "autor": "Sun et al. (2021)",
+      "dimensao": "P3",
+      "pdf": "Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256_pdf": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "evidencia_anterior": {
+        "id": "D26",
+        "arquivo_pdf": "Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+        "sha256_pdf": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+        "tipo": "aplicacao_ESN",
+        "dimensao": "P3",
+        "codigo": "?",
+        "localizador": "PDF 4–7, coleta e dataset",
+        "evidencia_e_limite": "A fonte menciona coleta/limpeza e apresenta dados de fechamento/ajustados, mas não explicita a operação de preparação temporal. Partições 120/240/300 de treino e 40/80/100 de teste não bastam para P3.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D27",
+      "linha_word": 27,
+      "autor": "Tian e Pei (2024)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_pdf": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "evidencia_anterior": {
+        "id": "D27",
+        "arquivo_pdf": "Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+        "sha256_pdf": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+        "tipo": "aplicacao_ESN",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 3–5, ESN e SSA",
+        "evidencia_e_limite": "Win/W são geradas aleatoriamente. Distribuições normais descritas na SSA pertencem às posições/perturbações dos agentes, não são explicitamente leis dos pesos da ESN.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D28",
+      "linha_word": 28,
+      "autor": "Timbó et al. (2016)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256_pdf": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "evidencia_anterior": {
+        "id": "D28",
+        "arquivo_pdf": "Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+        "sha256_pdf": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+        "tipo": "aplicacao_regressao_linear",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 5–7, seleção e regressão",
+        "evidencia_e_limite": "O experimento consultado usa seleção por correlação e regressão linear no WEKA. Lista conceitual de redes não equivale a comparação numérica com LSTM/GRU/Transformer.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D29",
+      "linha_word": 29,
+      "autor": "Ribeiro et al. (2021)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256_pdf": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "evidencia_anterior": {
+        "id": "D29",
+        "arquivo_pdf": "Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+        "sha256_pdf": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+        "tipo": "aplicacao_ESN",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 7–10, seção 4.5 e tabelas 3–6",
+        "evidencia_e_limite": "Os comparadores são GS-ARIMA, PSO-ESN, HAR-PSO-ESN, HAR e GS-MLP. Os resultados/rankings dessas arquiteturas não fecham P4.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D30",
+      "linha_word": 30,
+      "autor": "Vishwas, Usha e Sangeetha (2025)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+      "sha256_pdf": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+      "evidencia_anterior": {
+        "id": "D30",
+        "arquivo_pdf": "Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+        "sha256_pdf": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+        "tipo": "revisao_IA_financeira",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 8, discussão de SSA-ESN",
+        "evidencia_e_limite": "A revisão descreve ajuste de tamanho/raio espectral por SSA, sem informar lei probabilística individualizada de Win/W.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D30",
+      "linha_word": 30,
+      "autor": "Vishwas, Usha e Sangeetha (2025)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+      "sha256_pdf": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+      "evidencia_anterior": {
+        "id": "D30",
+        "arquivo_pdf": "Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+        "sha256_pdf": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+        "tipo": "revisao_IA_financeira",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 2, 8 e 17; páginas 2 e 17 conferidas visualmente",
+        "evidencia_e_limite": "Percentuais de LSTM e CNN na introdução vêm de estudos/tarefas distintos; as tabelas consultadas listam modelos e nomes de métricas sem pareamento numérico qualificável. A superioridade narrada de SSA-ESN sobre LSTM não vem acompanhada de números identificáveis nessa síntese.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D31",
+      "linha_word": 31,
+      "autor": "Wang, Bu e Huang (2025)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_pdf": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "evidencia_anterior": {
+        "id": "D31",
+        "arquivo_pdf": "Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+        "sha256_pdf": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+        "tipo": "RC_optico",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 3–4, equações 1–2 e montagem óptica",
+        "evidencia_e_limite": "Win é aleatória e Wres decorre do reservatório físico; a lei de geração dos elementos não é identificada nessas passagens.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D31",
+      "linha_word": 31,
+      "autor": "Wang, Bu e Huang (2025)",
+      "dimensao": "P2",
+      "pdf": "Artigos citados\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_pdf": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "evidencia_anterior": {
+        "id": "D31",
+        "arquivo_pdf": "Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+        "sha256_pdf": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+        "tipo": "RC_optico",
+        "dimensao": "P2",
+        "codigo": "?",
+        "localizador": "PDF 3–5 e triagem dirigida das seções de resultados",
+        "evidencia_e_limite": "Há intenção de otimizar ganhos alfa/beta, mas o procedimento explícito de validação cruzada e grid search refere-se aos comparadores ML/LSTM. A intenção de otimizar RC, sem procedimento identificado, não fecha P2.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D34",
+      "linha_word": 34,
+      "autor": "Zhang et al. (2021)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "evidencia_anterior": {
+        "id": "D34",
+        "arquivo_pdf": "Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+        "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+        "tipo": "aplicacao_CS_ESN",
+        "dimensao": "P1",
+        "codigo": "?",
+        "localizador": "PDF 2–5 e 7–9; fluxogramas das páginas 4–5 conferidos visualmente",
+        "evidencia_e_limite": "A matriz gaussiana descrita é a matriz Phi de sensoriamento comprimido. Não é identificada como lei de Win/W. Os fluxogramas inicializam os parâmetros sem família explícita.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D34",
+      "linha_word": 34,
+      "autor": "Zhang et al. (2021)",
+      "dimensao": "P2",
+      "pdf": "Artigos citados\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "evidencia_anterior": {
+        "id": "D34",
+        "arquivo_pdf": "Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+        "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+        "tipo": "aplicacao_CS_ESN",
+        "dimensao": "P2",
+        "codigo": "?",
+        "localizador": "PDF 7–9, OMP e configuração",
+        "evidencia_e_limite": "OMP estima coeficientes na representação comprimida; não é apresentado como busca de hiperparâmetros ESN. A configuração fixa não documenta seleção com critério.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    },
+    {
+      "id": "D34",
+      "linha_word": 34,
+      "autor": "Zhang et al. (2021)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "evidencia_anterior": {
+        "id": "D34",
+        "arquivo_pdf": "Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+        "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+        "tipo": "aplicacao_CS_ESN",
+        "dimensao": "P4",
+        "codigo": "?",
+        "localizador": "PDF 9–12, ESN versus CS-ESN; página 11 conferida visualmente",
+        "evidencia_e_limite": "Os comparativos experimentais consultados são de ESN e CS-ESN. Não há comparação numérica qualificadora com LSTM/GRU/Transformer nesse escopo.",
+        "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+      },
+      "estado": "a_reexaminar"
+    }
+  ]
+}

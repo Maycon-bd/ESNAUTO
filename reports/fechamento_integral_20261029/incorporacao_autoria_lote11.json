@@ -1,0 +1,260 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_antes": "4d8ad77d6266568f21d1593e1026c4f6a567c439749daafe44b4e6a6ed49efad",
+  "sha256_apos_edicao": "1cbc8e86d0ff4ea11bf7d13f44cbc5a64618876af41f9b0a6ad3f037bbfde899",
+  "alteracoes": [
+    {
+      "unidade": "U0182",
+      "antes": "Vishwas et al. (2025) revisam métodos de inteligência artificial aplicados à previsão de preços e tendências de ações. Os desafios discutidos incluem qualidade dos dados, não estacionariedade, sobreajuste, interpretabilidade e custo computacional. A revisão também aborda requisitos de infraestrutura e latência em aplicações de tempo real.",
+      "depois": "Vishwas, Usha e Sangeetha (2025) revisam métodos de inteligência artificial aplicados à previsão de preços e tendências de ações. Os desafios discutidos incluem qualidade dos dados, não estacionariedade, sobreajuste, interpretabilidade e custo computacional. A revisão também aborda requisitos de infraestrutura e latência em aplicações de tempo real.",
+      "fontes": [
+        "D30"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0195",
+      "antes": "Vishwas et al. (2025) discutem custo computacional e latência como desafios para aplicações financeiras em tempo real. Esse tratamento é qualitativo: não estabelece um limite universal de treinamento nem demonstra que a retropropagação, por si só, inviabilize LSTM ou GRU. Nesta pesquisa, a análise de eficiência depende dos tempos medidos e da distinção entre ajuste do modelo e busca de hiperparâmetros.",
+      "depois": "Vishwas, Usha e Sangeetha (2025) discutem custo computacional e latência como desafios para aplicações financeiras em tempo real. Esse tratamento é qualitativo: não estabelece um limite universal de treinamento nem demonstra que a retropropagação, por si só, inviabilize LSTM ou GRU. Nesta pesquisa, a análise de eficiência depende dos tempos medidos e da distinção entre ajuste do modelo e busca de hiperparâmetros.",
+      "fontes": [
+        "D30"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0204",
+      "antes": "Sun (2021) comparou uma ESN com uma LSTM simplificada na previsão do fechamento das ações da Kweichow Moutai e reportou menores erros nas configurações examinadas. A fonte lista fechamento e fechamento ajustado como campos distintos, mas descreve os experimentos com preços de fechamento. Por isso, esse estudo não é tomado aqui como comprovação inequívoca de uso do fechamento ajustado nem como demonstração de superioridade sobre qualquer configuração LSTM.",
+      "depois": "Sun et al. (2021) compararam uma ESN com uma LSTM simplificada na previsão do fechamento das ações da Kweichow Moutai e reportaram menores erros nas configurações examinadas. A fonte lista fechamento e fechamento ajustado como campos distintos, mas descreve os experimentos com preços de fechamento. Por isso, esse estudo não é tomado aqui como comprovação inequívoca de uso do fechamento ajustado nem como demonstração de superioridade sobre qualquer configuração LSTM.",
+      "fontes": [
+        "D26"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0211",
+      "antes": "Hassaan et al. (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik, Routaib e Elhaddadi (2023) investigaram uma ESN em trajetórias simuladas de Lorenz, com condições iniciais associadas ao Bitcoin. O texto menciona uma série decimada, sem detalhar o procedimento. As métricas avaliam trajetórias geradas, não previsões de preços observados, e não isolam o efeito da distribuição dos pesos iniciais.",
+      "depois": "Hassaan, Yacoub e Said (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik, Routaib e Elhaddadi (2023) investigaram uma ESN em trajetórias simuladas de Lorenz, com condições iniciais associadas ao Bitcoin. O texto menciona uma série decimada, sem detalhar o procedimento. As métricas avaliam trajetórias geradas, não previsões de preços observados, e não isolam o efeito da distribuição dos pesos iniciais.",
+      "fontes": [
+        "D14"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0212",
+      "antes": "Sharma (2025) avaliou ESNs para preços de Bitcoin, com XGBoost e previsão pelo último valor como comparadores. O estudo relacionou o erro ao caos estimado por expoentes de Lyapunov. O teste de Mann–Whitney comparou, entre grupos de menor e maior caos, a razão dos RMSEs da ESN e do XGBoost. Foi relatada diferença para janelas de treino de 30 e 60 dias, mas não de 15. Isso não demonstra superioridade estatística geral da ESN sobre ARIMA ou em todos os períodos.",
+      "depois": "Sharma et al. (2025) avaliaram ESNs para preços de Bitcoin, com XGBoost e previsão pelo último valor como comparadores. O estudo relacionou o erro ao caos estimado por expoentes de Lyapunov. O teste de Mann–Whitney comparou, entre grupos de menor e maior caos, a razão dos RMSEs da ESN e do XGBoost. Foi relatada diferença para janelas de treino de 30 e 60 dias, mas não de 15. Isso não demonstra superioridade estatística geral da ESN sobre ARIMA ou em todos os períodos.",
+      "fontes": [
+        "D23"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0216",
+      "antes": "Tian (2024) empregou o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e MAPE.",
+      "depois": "Tian e Pei (2024) empregaram o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e MAPE.",
+      "fontes": [
+        "D27"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0218",
+      "antes": "Ecer (2020) comparou Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera (2023) revisou redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+      "depois": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera (2023) revisou redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+      "fontes": [
+        "D12"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0219",
+      "antes": "Soltani et al. (2022), na versão preliminar consultada, revisaram 74 estudos sobre otimização de ESNs. A Tabela 5 relaciona PSO a 16 trabalhos e AG a dez, além de outras técnicas bio-inspiradas e não bio-inspiradas. Essas frequências descrevem o emprego dos métodos na coleção dos autores; não constituem uma classificação de eficácia. A revisão discute custos, parâmetros e topologias, sem sustentar uma lacuna específica sobre distribuições de inicialização em aplicações financeiras.",
+      "depois": "Soltani, Benmohamed e Ltifi (2022), na versão preliminar consultada, revisaram 74 estudos sobre otimização de ESNs. A Tabela 5 relaciona PSO a 16 trabalhos e AG a dez, além de outras técnicas bio-inspiradas e não bio-inspiradas. Essas frequências descrevem o emprego dos métodos na coleção dos autores; não constituem uma classificação de eficácia. A revisão discute custos, parâmetros e topologias, sem sustentar uma lacuna específica sobre distribuições de inicialização em aplicações financeiras.",
+      "fontes": [
+        "D24"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0228",
+      "antes": "Dewick (2022) discute a modelagem de distribuições financeiras e sua relação com séries temporais. Essa discussão pertence à representação estatística dos dados, enquanto Soltani et al. (2022) examinam estratégias de otimização de ESNs. As duas frentes oferecem contexto para esta pesquisa, mas não demonstram, em conjunto, que uma distribuição de pesos deva reproduzir a distribuição dos retornos. A comparação entre inicializações é uma escolha experimental do presente trabalho.",
+      "depois": "Dewick (2022) discute a modelagem de distribuições financeiras e sua relação com séries temporais. Essa discussão pertence à representação estatística dos dados, enquanto Soltani, Benmohamed e Ltifi (2022) examinam estratégias de otimização de ESNs. As duas frentes oferecem contexto para esta pesquisa, mas não demonstram, em conjunto, que uma distribuição de pesos deva reproduzir a distribuição dos retornos. A comparação entre inicializações é uma escolha experimental do presente trabalho.",
+      "fontes": [
+        "D24"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0232",
+      "antes": "Hassaan et al. (2025) estudaram sequências caóticas normalizadas para gerar Win e Wres e adotaram controles He e Xavier. Nas Equações 9a e 9b, He usa amostras Gaussianas e Xavier usa amostras Uniformes reescaladas. A descrição de Xavier no texto da seção seguinte não coincide com essa fórmula, o que exige cautela na interpretação. Além disso, uma regra de geração por trajetória caótica não equivale, por si só, à identificação de uma família probabilística ajustada aos dados financeiros.",
+      "depois": "Hassaan, Yacoub e Said (2025) estudaram sequências caóticas normalizadas para gerar Win e Wres e adotaram controles He e Xavier. Nas Equações 9a e 9b, He usa amostras Gaussianas e Xavier usa amostras Uniformes reescaladas. A descrição de Xavier no texto da seção seguinte não coincide com essa fórmula, o que exige cautela na interpretação. Além disso, uma regra de geração por trajetória caótica não equivale, por si só, à identificação de uma família probabilística ajustada aos dados financeiros.",
+      "fontes": [
+        "D14"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0233",
+      "antes": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma (2025), por outro lado, apresenta Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada.",
+      "depois": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada.",
+      "fontes": [
+        "D23"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0250",
+      "antes": "Hassaan et al. (2025) estudaram inicializações por sequências caóticas para ESN e GRU em seis conjuntos financeiros, incluindo índices acionários e pares cambiais. O protocolo compara sistemas como Lorenz, Chen, oscilador de Chen perturbado e Mackey–Glass, além dos controles He e Xavier. Os resultados pertencem às séries, arquiteturas e condições de avaliação adotadas pelos autores.",
+      "depois": "Hassaan, Yacoub e Said (2025) estudaram inicializações por sequências caóticas para ESN e GRU em seis conjuntos financeiros, incluindo índices acionários e pares cambiais. O protocolo compara sistemas como Lorenz, Chen, oscilador de Chen perturbado e Mackey–Glass, além dos controles He e Xavier. Os resultados pertencem às séries, arquiteturas e condições de avaliação adotadas pelos autores.",
+      "fontes": [
+        "D14"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0251",
+      "antes": "Os erros reportados por Hassaan et al. (2025) motivam investigar regras de inicialização. Contudo, diferenças numéricas de erro não constituem, por si sós, evidência de significância estatística ou de efeito independente dos demais componentes. A inicialização por uma trajetória caótica também difere da escolha de uma família probabilística dos pesos. A interpretação dos controles deve observar a divergência entre a fórmula e a descrição textual de Xavier, apresentada na Seção 2.5.",
+      "depois": "Os erros reportados por Hassaan, Yacoub e Said (2025) motivam investigar regras de inicialização. Contudo, diferenças numéricas de erro não constituem, por si sós, evidência de significância estatística ou de efeito independente dos demais componentes. A inicialização por uma trajetória caótica também difere da escolha de uma família probabilística dos pesos. A interpretação dos controles deve observar a divergência entre a fórmula e a descrição textual de Xavier, apresentada na Seção 2.5.",
+      "fontes": [
+        "D14"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0252",
+      "antes": "Sharma (2025) empregou otimização Bayesiana via Tree Parzen Estimator (TPE) na seleção de hiperparâmetros da ESN. A Tabela 1 do estudo apresenta as distribuições de amostragem dos hiperparâmetros, que não equivalem à lei de geração dos elementos de Win ou W. A avaliação usou janelas de treino de 15, 30 e 60 observações, teste de dez pontos e avanço de um ponto. Assim, esses tamanhos de treino não representam horizontes de previsão de 15, 30 e 60 dias.",
+      "depois": "Sharma et al. (2025) empregaram otimização Bayesiana via Tree Parzen Estimator (TPE) na seleção de hiperparâmetros da ESN. A Tabela 1 do estudo apresenta as distribuições de amostragem dos hiperparâmetros, que não equivalem à lei de geração dos elementos de Win ou W. A avaliação usou janelas de treino de 15, 30 e 60 observações, teste de dez pontos e avanço de um ponto. Assim, esses tamanhos de treino não representam horizontes de previsão de 15, 30 e 60 dias.",
+      "fontes": [
+        "D23"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0255",
+      "antes": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun (2021), Kumar (2025) e Hassaan et al. (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo.",
+      "depois": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo.",
+      "fontes": [
+        "D14",
+        "D26"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0256",
+      "antes": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas et al. (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros.",
+      "depois": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas, Usha e Sangeetha (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros.",
+      "fontes": [
+        "D30"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0257",
+      "antes": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian (2024) e otimização Bayesiana em Sharma (2025). Soltani et al. (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+      "depois": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+      "fontes": [
+        "D24",
+        "D27",
+        "D23"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0358",
+      "antes": "Ecer (2020)",
+      "depois": "Ecer et al. (2020)",
+      "fontes": [
+        "D12"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0370",
+      "antes": "Hassaan et al. (2025)",
+      "depois": "Hassaan, Yacoub e Said (2025)",
+      "fontes": [
+        "D14"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0424",
+      "antes": "Sharma (2025)",
+      "depois": "Sharma et al. (2025)",
+      "fontes": [
+        "D23"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0430",
+      "antes": "Soltani et al. (2022)",
+      "depois": "Soltani, Benmohamed e Ltifi (2022)",
+      "fontes": [
+        "D24"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0442",
+      "antes": "Sun (2021)",
+      "depois": "Sun et al. (2021)",
+      "fontes": [
+        "D26"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0448",
+      "antes": "Tian (2024)",
+      "depois": "Tian e Pei (2024)",
+      "fontes": [
+        "D27"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0466",
+      "antes": "Vishwas et al. (2025)",
+      "depois": "Vishwas, Usha e Sangeetha (2025)",
+      "fontes": [
+        "D30"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0580",
+      "antes": "O Quadro 3 apresenta a codificação de 55 bits utilizada no ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso et al. (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+      "depois": "O Quadro 3 apresenta a codificação de 55 bits utilizada no ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+      "fontes": [
+        "SUP_CARDOSO_RBRAS"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0612",
+      "antes": "Fonte: Autor (2026), com base em Cardoso et al. (2022a), Jaeger (2007) e Araújo et al. (2025).",
+      "depois": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025).",
+      "fontes": [
+        "SUP_CARDOSO_RBRAS"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    },
+    {
+      "unidade": "U0896",
+      "antes": "Cardoso et al. (2022a, p. 202–205) avaliaram a PETR4 com e sem fator de ajuste, com 5.197 observações e divisão de 75% para treino e 25% para teste. Com hiperparâmetros fixos, relataram RMSE de 11,1785 sem fator e de 0,4987 com fator. Esses valores contextualizam um estudo anterior, mas não constituem um teste de superioridade desta pesquisa: a partição, os hiperparâmetros e o procedimento de seleção diferem. O resultado com fator não deve ser atribuído à série sem ajuste.",
+      "depois": "Cardoso, Berri e Mattos (2022a, p. 202–205) avaliaram a PETR4 com e sem fator de ajuste, com 5.197 observações e divisão de 75% para treino e 25% para teste. Com hiperparâmetros fixos, relataram RMSE de 11,1785 sem fator e de 0,4987 com fator. Esses valores contextualizam um estudo anterior, mas não constituem um teste de superioridade desta pesquisa: a partição, os hiperparâmetros e o procedimento de seleção diferem. O resultado com fator não deve ser atribuído à série sem ajuste.",
+      "fontes": [
+        "SUP_CARDOSO_RBRAS"
+      ],
+      "motivo": "Autoria completa para duas/três pessoas, et al. para quatro ou mais; concordância do sujeito plural. Manual UniRV2025,p195–196; Guia FASOFT,p71."
+    }
+  ],
+  "regra_primaria": "fontes_suplementares/UniRV_2025_citacoes_p195_197.pdf",
+  "escopo": "Oito obras identificadas; não é aprovação global das chamadas ou dos metadados de cinquenta referências.",
+  "resultados_experimentais_preservados": true,
+  "estado": "incorporado_exportado_e_inspecionado",
+  "sha256_apos_exportacao_nativa": "338d6bd961e3957a0e99cc7d9f9f117579a8963714e5b57401bbf449d9cc7057",
+  "checkpoint": "checkpoint_lote11.json"
+}

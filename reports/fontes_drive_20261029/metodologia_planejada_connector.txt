@@ -1,0 +1,405 @@
+UNIVERSIDADE DE RIO VERDE
+FACULDADE DE ENGENHARIA DE SOFTWARE
+METODOLOGIA DE IMPLEMENTAÇÃO
+TFC — Aplicação de Rede Neural de Estados de Eco na Análise Preditiva de Preços na Bolsa de Valores
+Autor: Maycon Garcia Silva
+Orientador: Prof. Dr. Fabian Corrêa Cardoso
+Linguagem: R  |  Protocolo: Pesquisa Aplicada Experimental
+Rio Verde — GO  |  2026
+1. Visão Geral da Pesquisa
+Este documento descreve o processo metodológico de implementação do TFC, que constitui uma pesquisa aplicada experimental. O objetivo central é investigar se diferentes distribuições de probabilidade na inicialização dos pesos de entrada (Win) de Redes Neurais de Estados de Eco (ESN) afetam o desempenho preditivo sobre séries temporais financeiras da PETR4, quando combinadas com otimização de hiperparâmetros por Algoritmos Genéticos (AG) e pré-processamento via Fator de Ajuste.
+A implementação será realizada integralmente em linguagem R, aproveitando sua vocação para computação estatística, manipulação de séries temporais e visualização de dados.
+2. Fluxo Geral da Implementação
+A pesquisa está organizada em cinco etapas sequenciais, conforme o fluxo abaixo. Cada etapa depende da conclusão da anterior, garantindo rastreabilidade e reprodutibilidade dos experimentos.
+3. Etapa 1 — Coleta e Pré-processamento dos Dados
+3.1 Fonte dos dados
+A base de dados utilizada é a BOVDB (Cardoso et al., 2022), que contém séries históricas de preços de todas as empresas da B3 de 1995 a 2020. Para este trabalho, serão utilizados os dados da PETR4 (Petrobras ON), ativo de alta liquidez e amplamente estudado na literatura nacional (Timbó et al., 2016).
+As variáveis extraídas da base serão: preço de abertura, preço de fechamento, preço máximo, preço mínimo e volume negociado. A variável-alvo da predição é o preço de fechamento ajustado.
+3.2 Aplicação do Fator de Ajuste
+Eventos corporativos como desdobramentos de ações (splits), grupamentos (inplits) e distribuição de dividendos geram descontinuidades artificiais nas séries históricas de preços. Se não corrigidas, essas descontinuidades podem ser interpretadas pelo modelo como movimentos reais de mercado, introduzindo ruído sistemático no treinamento.
+Para eliminar essas distorções, será aplicado o Fator de Ajuste proposto por Cardoso et al. (2022), calculado pela relação entre o preço de fechamento do dia anterior ao evento e o preço de abertura no dia em que o evento entra em vigor:
+Fator = Preço_fechamento(t-1) / Preço_abertura(t)
+O fator é aplicado retroativamente sobre toda a série histórica anterior ao evento. Serão comparados os resultados com e sem a aplicação do Fator de Ajuste, testando diretamente a quarta hipótese do trabalho.
+3.3 Divisão temporal dos dados
+A divisão dos dados respeitará a ordem cronológica, sendo proibido o embaralhamento aleatório para evitar vazamento de informação do futuro para o passado (data leakage). A técnica adotada é a divisão estática proposta no anteprojeto:
+Importante: o conjunto de teste é utilizado exclusivamente na etapa de avaliação final. Qualquer decisão sobre hiperparâmetros ou arquitetura deve ser tomada com base apenas nos conjuntos de treino e validação.
+3.4 Pré-processamento adicional
+Normalização das séries para o intervalo [0, 1] ou [-1, 1] antes do treinamento, revertida após a previsão para obter os valores na escala original
+Verificação e tratamento de valores ausentes (dias sem negociação — feriados, circuit breakers)
+Análise exploratória: estatísticas descritivas, teste de estacionariedade (ADF), autocorrelação (ACF/PACF) para caracterizar a série
+4. Etapa 2 — Implementação das ESNs em R
+4.1 Arquitetura da ESN
+A Echo State Network (ESN) pertence ao paradigma da Computação de Reservatório (Reservoir Computing). Sua principal característica é que os pesos internos do reservatório são gerados aleatoriamente e permanecem fixos durante todo o treinamento. Apenas os pesos da camada de saída (Wout) são ajustados, por meio de regressão linear regularizada (Ridge Regression), o que torna o treinamento extremamente rápido e matematicamente estável em comparação com LSTM e GRU.
+* A inicialização de Win é a variável experimental central deste TFC. Quatro distribuições serão testadas.
+4.2 As quatro variantes experimentais
+A hipótese central do trabalho é que dados financeiros possuem distribuição leptocúrtica — com caudas mais pesadas que a distribuição Normal e eventos extremos mais frequentes. Portanto, inicializar Win com distribuições de caudas pesadas pode gerar reservatórios que capturam melhor esse comportamento. As quatro variantes implementadas são:
+A distribuição GED será parametrizada com o valor de ν que melhor se ajustar à distribuição empírica dos retornos da série de treino da PETR4, conforme metodologia de Araújo et al. (2024).
+4.3 Hiperparâmetros do reservatório
+Os seguintes hiperparâmetros controlam o comportamento dinâmico do reservatório e serão otimizados pelo AG (Etapa 3):
+4.4 Implementação em R
+O esqueleto de código para uma variante ESN em R será estruturado da seguinte forma:
+# Pacotes necessários
+library(reservoirnet)  # ou implementação manual
+library(Matrix)        # operações esparsas
+
+# Função de inicialização do reservatório
+criar_esn <- function(N, rho, sparsity, leak, dist = "normal", nu = NULL) {
+  # Gerar Win conforme distribuição escolhida
+  Win <- switch(dist,
+    "normal"  = matrix(rnorm(N * n_inputs), N, n_inputs),
+    "t"       = matrix(rt(N * n_inputs, df = 5), N, n_inputs),
+    "t_assym" = matrix(rst(N * n_inputs, xi=0, omega=1, alpha=1, nu=5), N, n_inputs),
+    "ged"     = matrix(rged(N * n_inputs, nu = nu), N, n_inputs)
+  )
+  # Gerar W (reservatório) e escalar pelo raio espectral
+  W <- Matrix(rnorm(N * N) * (runif(N*N) > sparsity), N, N, sparse=TRUE)
+  W <- W / max(abs(eigen(W)$values)) * rho
+  list(Win=Win, W=W, leak=leak, N=N)
+}
+
+# Função de treinamento (Ridge Regression)
+treinar_esn <- function(esn, X_treino, y_treino, lambda) {
+  estados <- coletar_estados(esn, X_treino)
+  Wout <- solve(t(estados) %*% estados + lambda * diag(ncol(estados)),
+                t(estados) %*% y_treino)
+  list(esn=esn, Wout=Wout)
+}
+5. Etapa 3 — Otimização por Algoritmos Genéticos
+5.1 Motivação
+A escolha manual de hiperparâmetros para uma ESN é inviável dado o tamanho do espaço de busca — cinco hiperparâmetros contínuos com intervalos amplos. Os Algoritmos Genéticos (AG) são métodos de busca bioinspirados que exploram o espaço de soluções de forma eficiente sem exigir que a função objetivo seja contínua ou derivável (Millea, 2014). Deng et al. (2022) e Araújo et al. (2024) demonstraram empiricamente que AGs são eficazes na otimização de ESNs em séries temporais.
+5.2 Configuração do AG
+5.3 Função de fitness
+A função de fitness avalia cada indivíduo (conjunto de hiperparâmetros) treinando uma ESN com esses parâmetros no conjunto de treino e avaliando o erro no conjunto de validação. Serão utilizadas duas funções de fitness separadas — MAE e RMSE — replicando a metodologia de Araújo et al. (2024), o que permitirá comparar qual métrica como fitness produz melhor generalização no teste.
+# Função de fitness para o AG
+fitness_esn <- function(hiperparams, dist, X_treino, y_treino, X_val, y_val) {
+  rho      <- hiperparams[1]  # raio espectral
+  sparsity <- hiperparams[2]  # esparsidade
+  leak     <- hiperparams[3]  # leak rate
+  N        <- round(hiperparams[4])  # tamanho reservatório
+  lambda   <- hiperparams[5]  # regularização
+
+  esn    <- criar_esn(N, rho, sparsity, leak, dist)
+  modelo <- treinar_esn(esn, X_treino, y_treino, lambda)
+  pred   <- prever_esn(modelo, X_val)
+
+  mae <- mean(abs(pred - y_val))  # ou RMSE
+  return(-mae)  # AG maximiza — negativo do erro
+}
+5.4 Implementação em R
+library(GA)
+
+resultado_ag <- ga(
+  type     = "real-valued",
+  fitness  = function(x) fitness_esn(x, dist="ged", ...),
+  lower    = c(0.1,  0.0,  0.01, 50,  1e-6),
+  upper    = c(1.5,  0.99, 1.0,  500, 1.0 ),
+  popSize  = 50,
+  maxiter  = 100,
+  pmutation= 0.1,
+  pcrossover=0.8,
+  elitism  = 3,
+  seed     = 42  # reprodutibilidade
+)
+
+melhores_params <- resultado_ag@solution
+6. Etapa 4 — Experimentos e Avaliação
+6.1 Matriz de experimentos
+O design experimental é um fatorial completo entre: 4 distribuições de Win × 2 funções de fitness do AG × 2 condições de dados (com e sem Fator de Ajuste). Isso totaliza 16 configurações de ESN. Além disso, LSTM e GRU são treinados nas mesmas condições como baselines.
+6.2 Métricas coletadas
+Para cada experimento, serão registradas as seguintes métricas no conjunto de teste:
+6.3 Reprodutibilidade
+Semente aleatória fixada (set.seed(42)) para todas as gerações do AG e inicializações do reservatório
+Todos os hiperparâmetros finais serão documentados na seção de resultados
+O código completo será versionado no GitHub com README de instruções de reprodução
+7. Etapa 5 — Análise dos Resultados
+7.1 Estrutura de análise
+A análise dos resultados será organizada em torno das quatro hipóteses do trabalho, respondendo objetivamente a cada uma com base nas métricas coletadas nos experimentos:
+7.2 Testes estatísticos
+Para garantir rigor metodológico, os resultados serão acompanhados de testes estatísticos:
+Teste de Diebold-Mariano (DM Test) — para comparação formal de acurácia preditiva entre dois modelos, testando se a diferença de desempenho é estatisticamente significativa
+Intervalo de confiança bootstrap para MAE e RMSE — estimativa da variabilidade dos resultados
+Análise de variância (se houver múltiplas execuções com diferentes sementes)
+7.3 Visualizações planejadas
+Gráfico de preços reais vs previstos para cada variante no período de teste
+Boxplot comparativo de MAE e RMSE entre todas as variantes
+Curva de convergência do AG (fitness por geração) para cada variante
+Tabela consolidada de resultados com ranking InOrdinatio das variantes
+Análise da distribuição dos resíduos (erros de previsão) por variante
+8. Boas Práticas de Engenharia de Software
+8.1 Versionamento de código
+Repositório Git com estrutura de branches: main (código estável), develop (experimentos em andamento), feature/* (novas funcionalidades)
+Commits semânticos: feat:, fix:, exp:, docs: para rastrear o histórico de desenvolvimento
+README com instruções de instalação, dependências e reprodução dos experimentos
+8.2 Estrutura de diretórios sugerida
+tfc-esn-petr4/
+├── data/
+│   ├── raw/          # BOVDB original sem modificação
+│   ├── processed/    # Dados com Fator de Ajuste aplicado
+│   └── splits/       # Conjuntos treino/validação/teste
+├── src/
+│   ├── preprocessing.R   # Fator de Ajuste, normalização
+│   ├── esn_model.R       # Implementação das 4 variantes ESN
+│   ├── genetic_algo.R    # Configuração e execução do AG
+│   ├── baselines.R       # LSTM e GRU
+│   └── evaluation.R      # MAE, RMSE, DM Test, gráficos
+├── results/
+│   ├── hyperparams/  # Hiperparâmetros ótimos por variante
+│   └── metrics/      # Tabelas de resultados
+├── notebooks/        # R Markdown com análises exploratórias
+└── README.md
+8.3 Pacotes R necessários
+9. Cronograma de Implementação
+O cronograma abaixo cobre o período de abril a dezembro de 2026, com entregas mensais para evitar acúmulo de tarefas.
+10. Referências
+ARAÚJO, H. V. et al. Comparing MAE and RMSE as fitness of genetic algorithm for optimizing echo state network hyperparameters with different probabilistic distributions. In: Intelligent Systems. Cham: Springer, 2024. p. 314–325.
+CARDOSO, F. C. et al. BovDB: a data set of stock prices of all companies in B3 from 1995 to 2020. Journal of Information and Data Management, v. 13, n. 2, p. 94–105, 2022.
+DENG, Z. et al. Degradation prediction of PEMFCs using stacked echo state network based on genetic algorithm optimization. IEEE Transactions on Transportation Electrification, v. 8, n. 1, p. 446–462, 2022.
+JAEGER, H. Echo state network. Scholarpedia, v. 2, n. 9, p. 2330, 2007.
+MILLEA, A. Explorations in Echo State Networks. 2014. Dissertação (Mestrado) — University of Groningen, 2014.
+NELSON, D. B. Conditional heteroskedasticity in asset returns: a new approach. Econometrica, v. 59, n. 2, p. 347–370, 1991.
+RIBEIRO, G. T. et al. Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility. Expert Systems with Applications, v. 179, p. 115490, 2021.
+SOLTANI, R. et al. Echo state network optimization: a systematic literature review. Neural Processing Letters, v. 55, n. 5, p. 6501–6529, 2023.
+TIMBÓ, N. et al. Approach based linear regression for stock exchange prediction: case study of PETR4 Petrobras Brazil. Int. Journal of Artificial Intelligence & Applications, v. 7, n. 5, 2016.
+WANG, W.-J. et al. Stock market index prediction based on reservoir computing models. Expert Systems with Applications, v. 178, p. 115022, 2021.
+Elemento
+Especificação
+Tipo de pesquisa
+Aplicada experimental — implementação e avaliação de modelos
+Linguagem
+R (pacotes: reservoirnet, GA, quantmod, PerformanceAnalytics)
+Ativo estudado
+PETR4 (Petrobras) — B3 (Brasil, Bolsa, Balcão)
+Base de dados
+BOVDB (Cardoso et al., 2022) — série histórica 1995–2020
+Métricas de avaliação
+MAE (Mean Absolute Error) e RMSE (Root Mean Squared Error)
+Baselines de comparação
+LSTM e GRU treinados nas mesmas condições experimentais
+Etapa
+Nome
+Descrição resumida
+1
+Coleta e pré-processamento
+Download da BOVDB, aplicação do Fator de Ajuste, tratamento de outliers e divisão temporal dos dados
+2
+Implementação das ESNs
+Codificação das 4 variantes de ESN em R com diferentes distribuições de Win
+3
+Otimização por Algoritmos Genéticos
+Busca automática dos hiperparâmetros do reservatório via AG
+4
+Experimentos e avaliação
+Execução dos experimentos, coleta de MAE/RMSE e tempo de treinamento para cada variante e baseline
+5
+Análise dos resultados
+Comparação estatística entre variantes, testes de hipóteses e formulação das conclusões
+Conjunto
+Proporção
+Finalidade
+Treino
+50%
+Ajuste dos pesos da camada de saída da ESN via regressão linear regularizada
+Validação
+25%
+Avaliação da função de fitness do AG durante a otimização de hiperparâmetros
+Teste
+25%
+Avaliação final e comparação entre variantes (dados nunca vistos durante o treinamento)
+Componente
+Descrição
+Treinável?
+Inicialização
+Win — pesos de entrada
+Conecta as entradas ao reservatório
+NÃO (fixo)
+VARIÁVEL*
+W — pesos internos
+Conexões recorrentes dentro do reservatório
+NÃO (fixo)
+Uniforme ou Normal
+Wout — pesos de saída
+Mapeia o estado do reservatório para a previsão
+SIM (Ridge)
+—
+Variante
+Distribuição de Win
+Justificativa
+ESN-N
+Normal (Gaussiana) — baseline
+Distribuição padrão da literatura. Usada como referência comparativa
+ESN-T
+t de Student
+Caudas mais pesadas que a Normal. Captura melhor eventos extremos — quedas e picos abruptos de preço
+ESN-TA
+t de Student Assimétrica
+Adiciona assimetria à t de Student. Retornos financeiros são conhecidamente assimétricos (perdas tendem a ser maiores que ganhos)
+ESN-GED
+GED — Generalized Error Distribution
+Família paramétrica flexível (Nelson, 1991). Controla espessura das caudas via parâmetro ν. Para ν<2 caudas mais pesadas que a Normal, permitindo ajuste fino à distribuição dos dados de treino
+Hiperparâmetro
+Símbolo
+Intervalo de busca
+Efeito no modelo
+Raio espectral
+ρ
+[0.1, 1.5]
+Controla a caoticidade e memória do reservatório. ρ < 1 garante Echo State Property
+Taxa de esparsidade
+s
+[0.0, 0.99]
+Fração de conexões zeradas em W. Reservatórios mais esparsos são mais computacionalmente eficientes
+Leak rate (taxa de vazamento)
+α
+[0.01, 1.0]
+Controla a velocidade de atualização do estado interno. Valores baixos aumentam a memória temporal
+Tamanho do reservatório
+N
+[50, 500]
+Número de neurônios recorrentes. Reservatórios maiores têm mais capacidade mas risco de overfitting
+Regularização Ridge
+λ
+[1e-6, 1.0]
+Penaliza pesos grandes em Wout, controlando generalização
+Parâmetro do AG
+Valor adotado
+Justificativa
+Tamanho da população
+50 indivíduos
+Equilíbrio entre exploração do espaço e custo computacional
+Número máximo de gerações
+100 gerações
+Critério de parada; monitorar convergência prematura
+Taxa de crossover
+0.8
+Padrão da literatura para AGs com codificação real
+Taxa de mutação
+0.1
+Baixa para manter estabilidade; evitar deriva genética
+Tipo de codificação
+Real (floating point)
+Hiperparâmetros são valores contínuos — codificação real é mais adequada
+Seleção
+Torneio (k=3)
+Pressão seletiva moderada; robusto a diferentes paisagens de fitness
+Elitismo
+5% da população
+Preserva os melhores indivíduos para a próxima geração
+Experimento
+Modelo
+Dist. Win
+Fitness AG
+Fator Ajuste?
+Baseline?
+E01–E04
+ESN (N / T / TA / GED)
+Cada dist.
+MAE
+SIM
+NÃO
+E05–E08
+ESN (N / T / TA / GED)
+Cada dist.
+RMSE
+SIM
+NÃO
+E09–E12
+ESN (N / T / TA / GED)
+Cada dist.
+MAE
+NÃO
+NÃO
+E13–E16
+ESN (N / T / TA / GED)
+Cada dist.
+RMSE
+NÃO
+NÃO
+E17
+LSTM
+—
+—
+SIM
+SIM
+E18
+GRU
+—
+—
+SIM
+SIM
+Métrica
+Fórmula
+Interpretação
+MAE
+(1/n) × Σ |ŷᵢ − yᵢ|
+Erro médio absoluto. Menos sensível a outliers
+RMSE
+√[ (1/n) × Σ (ŷᵢ − yᵢ)² ]
+Penaliza erros grandes. Mais sensível a picos de erro
+Tempo de treino (s)
+proc.time() em R
+Indicador de custo computacional — diferencial da ESN vs LSTM/GRU
+Hipótese
+Enunciado resumido
+Como será testada
+H1
+ESN otimizada por AG terá desempenho comparável ou superior ao LSTM/GRU
+Comparar MAE/RMSE da melhor ESN com LSTM e GRU (E01–E08 vs E17–E18)
+H2
+Distribuições de caudas pesadas (t de Student e t Assimétrica) produzirão melhores resultados
+Comparar ESN-T e ESN-TA contra ESN-N como baseline
+H3
+GED produzirá desempenho superior a Normal e Uniforme na inicialização de Win
+Comparar ESN-GED contra ESN-N; analisar sensibilidade ao parâmetro ν
+H4
+Fator de Ajuste reduzirá o erro de predição em relação a dados brutos
+Comparar E01–E08 (com FA) contra E09–E16 (sem FA) para cada variante
+Pacote
+Finalidade
+quantmod / BatchGetSymbols
+Download de dados históricos da B3 / Yahoo Finance como complemento
+GA
+Implementação de Algoritmos Genéticos (pacote principal)
+Matrix
+Operações com matrizes esparsas para o reservatório
+sn (sn package)
+Distribuição t de Student Assimétrica (rst)
+fGarch
+Distribuição GED (rged, dged)
+keras / torch
+Implementação dos baselines LSTM e GRU
+ggplot2
+Visualizações dos resultados
+forecast
+Testes de estacionariedade (ADF), ACF, PACF
+MCS / sandwich
+Teste de Diebold-Mariano para comparação de modelos
+Mês
+Etapa
+Atividades principais
+Abr/2026
+Preparação
+Leitura completa dos artigos aprovados na RSL; extração de dados na planilha; configuração do ambiente R
+Mai/2026
+Dados
+Download BOVDB, implementação do Fator de Ajuste, análise exploratória da PETR4, divisão treino/val/teste
+Jun/2026
+ESN baseline
+Implementação da ESN-N (baseline) em R; validação da arquitetura com hiperparâmetros manuais
+Jul/2026
+Distribuições
+Implementação das distribuições t de Student, t Assimétrica e GED; testes unitários de cada variante
+Ago/2026
+AG
+Implementação e calibração do AG; primeiros experimentos de otimização com ESN-N
+Set/2026
+Experimentos
+Execução completa dos 18 experimentos (4 ESNs × 2 fitness × 2 condições + 2 baselines)
+Out/2026
+Análise
+Análise estatística dos resultados; teste DM; gráficos; resposta às 4 hipóteses
+Nov/2026
+Escrita
+Redação do TFC: introdução, fundamentação teórica, metodologia, resultados e conclusão
+Dez/2026
+Entrega
+Revisão final, formatação ABNT, entrega do TFC e preparação para apresentação

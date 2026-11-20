@@ -1,0 +1,22 @@
+{
+  "data": "2026-10-27",
+  "word": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\MayconGarciaSilva_monografia_padronizada_FASOFT.docx",
+  "sha256_word": "a80d9f133d5f2334eca35bbac20350dcc63aaf28d1085e4b8255311284939b7e",
+  "pdf_qa": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\padronizacao_fasoft_20261027\\monografia.pdf",
+  "sha256_pdf": "8862d4055c6cd418a08d3359e8ac3538b8021930799f7b402cfd269620c3d2bd",
+  "paginas": 73,
+  "rasterizador": "render_docx.py da habilidade documents 26.1025.11240, PDF Microsoft Word",
+  "pngs": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\padronizacao_fasoft_20261027\\png_verificado",
+  "inspecao": "Todas as 73 páginas examinadas em resolução nativa, em pares; páginas sem alteração entre renders conferidas por igualdade dos pixels. Sem recortes, sobreposições ou páginas vazias.",
+  "verificacao_estrutural": "49/49 verificações aprovadas em auditoria_estrutural.json",
+  "pendencias": [],
+  "objetivo_integral_concluido": false,
+  "proxima_acao": "Versão formatada concluída para a etapa atual; incorporar documentos institucionais posteriormente quando disponibilizados.",
+  "orientacao_autor_20261028": "O espaço da ficha catalográfica deve permanecer em branco nesta versão e será preenchido posteriormente pela instituição, conforme esclarecimento explícito do autor.",
+  "etapas_institucionais_posteriores": [
+    "Preenchimento da ficha catalográfica pela biblioteca, mantendo o espaço reservado nesta versão.",
+    "Data e assinaturas da aprovação na etapa acadêmica correspondente."
+  ],
+  "declaracao_anterior_objetivo_integral_concluido": true,
+  "retificacao_20261028": "Declaração de conclusão retirada: 49 verificações não cobriam todo o guia. Conferência ampliada e cópia corrigida em reports/auditoria_integral_fasoft_20261028/estado_revisao.json. Arquivos Word/PDF desta versão histórica preservados."
+}

@@ -1,0 +1,73 @@
+{
+  "objetivo": "Usar todas as 5 skills novas buscando problemas, a meta é garantir que tudo está correto e os levantamentos das skills estão tudo Ok",
+  "estado": "concluido_no_escopo_auditavel_documentado",
+  "requisitos": [
+    {
+      "requisito": "Usar as cinco skills no documento vigente",
+      "resultado": "concluido",
+      "evidencia": [
+        "estado_final.json",
+        "pos_ajustes/identidade_e_cobertura.json",
+        "entrega.json"
+      ]
+    },
+    {
+      "requisito": "Reexaminar achados antigos em vez de assumir pendencia",
+      "resultado": "concluido",
+      "evidencia": [
+        "checks_quadros_tabelas.json",
+        "pos_ajustes/checks_quadros_tabelas.json",
+        "relatorio_final.md"
+      ]
+    },
+    {
+      "requisito": "Conferir conteudo e fontes com alcance compativel",
+      "resultado": "concluido_no_escopo_documentado",
+      "evidencia": [
+        "conciliacao_integral_v007.json",
+        "relatorio_final.md"
+      ]
+    },
+    {
+      "requisito": "Aplicar e rever ajustes identificados",
+      "resultado": "concluido",
+      "evidencia": [
+        "alteracoes_aplicadas.json",
+        "verificacao_visual.json",
+        "pos_ajustes/siglas.json"
+      ]
+    },
+    {
+      "requisito": "Preservar fontes, protocolos e versoes",
+      "resultado": "concluido",
+      "evidencia": [
+        "alteracoes_aplicadas.json",
+        "conciliacao_integral_v007.json",
+        "entrega.json"
+      ]
+    },
+    {
+      "requisito": "Entregar revisao registrada e esclarecer limitacoes reais",
+      "resultado": "concluido",
+      "evidencia": [
+        "entrega.json",
+        "relatorio_final.md"
+      ]
+    }
+  ],
+  "versao_entrega": "v008",
+  "sha256": "0daacd3ea1753bca97619df025923b92a44a047b5c1252a4677f802dfe870dad",
+  "ressalvas_cientificas_nao_equivalem_a_erro_nao_tratado": [
+    "Preservacao historica parcial",
+    "Cadeia original do ajuste nao reconstruida",
+    "41 casos classificados explicitamente como informacao insuficiente",
+    "Orcamentos distintos e uma semente DM",
+    "Sem ensaios de utilidade economica ou ablacoes causais"
+  ],
+  "correcao_conhecida_pendente": false,
+  "notas": [
+    "Nao afirma perfeicao universal, leitura integral nova de50obras, ausencia absoluta de plagio ou aprovacao institucional.",
+    "A passagem anterior forneceu evidencia util; classificada como progresso, nao como conclusao integral reutilizada sem conferencia.",
+    "estado_final.json e evidencia anterior ao registro e nao foi reescrito apos seu hash ter sido registrado; entrega.json comprova a promocao."
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "registros": [
+    {
+      "paragrafo_atual": 314,
+      "texto": "A ESN utilizada pertenceu ao paradigma da Computação de Reservatório (Reservoir Computing) e manteve fixos, durante o treinamento de cada modelo, os pesos do reservatório. A arquitetura foi composta por Win, matriz de pesos de entrada; W, matriz de conexões recorrentes internas; e Wout, componente treinável estimado por regressão linear regularizada. Nas combinações experimentais, as famílias probabilísticas empregadas na geração de Win e W variaram conforme a onda e, após a geração, W foi reescalonada pelo raio espectral codificado no cromossomo.",
+      "decisao": "Arquitetura e pesos fixos correspondem ao núcleo preservado; correspondência individual histórica limitada.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 315,
+      "texto": "As execuções foram organizadas em cinco ondas conceituais, diferenciadas pelas famílias probabilísticas empregadas em Win e W. Essa organização permitiu comparar distribuições canônicas, de cauda pesada, assimétricas, esparsas e ajustadas empiricamente, mantendo a mesma arquitetura de ESN e o mesmo procedimento de avaliação. O Quadro 2 sintetiza as ondas e o número de execuções documentadas.",
+      "decisao": "Organização e número de ondas correspondem às compilações, não a prova de uniformidade de versões.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 316,
+      "texto": "Quadro 2 – Organização das cinco ondas experimentais",
+      "decisao": "Título, legenda ou fonte do elemento; vínculo e apresentação conferidos nos registros de listas/fontes.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 317,
+      "texto": "Fonte: Elaborado pelo autor (2026).",
+      "decisao": "Título, legenda ou fonte do elemento; vínculo e apresentação conferidos nos registros de listas/fontes.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 318,
+      "texto": "Na quinta onda, as distribuições Power Function, Dagum de quatro parâmetros e Johnson SB foram parametrizadas a partir da partição de treino por meio do EasyFit. O ajuste à distribuição marginal dos preços foi tratado como hipótese experimental, e não como garantia de que a mesma lei probabilística fosse ideal para os pesos do reservatório. As diferenças entre distribuições poderiam ser modificadas pelo reescalamento espectral e pela função tanh (tangente hiperbólica), razão pela qual foram considerados tanto desempenho quanto dispersão dos erros entre configurações.",
+      "decisao": "Ajuste marginal não interpretado como lei ideal dos pesos; dispersão distinta de repetição.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 319,
+      "texto": "O Quadro 3 apresenta a codificação de 55 bits implementada no motor atual do ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+      "decisao": "55 bits atribuídos ao motor atual; antecedentes com valores fixos e limites de prova distinguidos.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 320,
+      "texto": "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético",
+      "decisao": "Título, legenda ou fonte do elemento; vínculo e apresentação conferidos nos registros de listas/fontes.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 321,
+      "texto": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025).",
+      "decisao": "Título, legenda ou fonte do elemento; vínculo e apresentação conferidos nos registros de listas/fontes.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 322,
+      "texto": "A camada de saída foi treinada por regressão linear regularizada (Ridge Regression), resolvendo o sistema Wout = Yt · Xᵀ · (X · Xᵀ + reg · I)⁻¹, em que X reuniu, a cada passo de tempo do treino, o vetor concatenado [1; u(t); x(t)], e Yt representou o vetor de saídas esperadas. A função de ativação aplicada aos neurônios do reservatório foi a tangente hiperbólica (tanh), conforme prática consolidada em ESNs (Jaeger, 2007). A atualização do estado interno seguiu o modelo de leaky integrator: x(t+1) = (1 − a) · x(t) + a · tanh(Win · [1; u(t+1)] + W · x(t)).",
+      "decisao": "Expressões Ridge e leaky conferidas no lote85.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 323,
+      "texto": "Em cada variante, Win e W foram geradas conforme a combinação probabilística da onda, e W foi reescalonada por sr/|λmax(W)|, em que λmax representa o autovalor de maior módulo. Esse procedimento controla o raio espectral, sem constituir garantia geral da propriedade de estado de eco. Durante o ajuste de cada ESN, Win e W permaneceram fixas, e Wout foi estimada por regressão Ridge. As comparações avaliam configurações que combinam inicialização, hiperparâmetros e realização estocástica, sem isolar causalmente a distribuição.",
+      "decisao": "Reescalonamento não alegado garantia geral de estado de eco; distribuição não isolada causalmente.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 324,
+      "texto": "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+      "decisao": "Título, legenda ou fonte do elemento; vínculo e apresentação conferidos nos registros de listas/fontes.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 325,
+      "texto": "Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1975). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979).",
+      "decisao": "Holland permanece com acesso indireto parcial; McKay sustenta técnica LHS. Atribuição não deve ser marcada integralmente validada.",
+      "estado": "limite_de_fonte_parcial"
+    },
+    {
+      "paragrafo_atual": 326,
+      "texto": "O motor de busca disponibilizado incorpora um mecanismo de mutação cataclísmica inspirado no CHC (Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation), de Eshelman (1991). Após estagnação, o mecanismo aumenta a mutação para ampliar a exploração. Essa finalidade de implementação não demonstra manutenção de diversidade: não foram produzidas medidas populacionais específicas nem uma ablação que isolasse o efeito do LHS e do operador. O mecanismo não corresponde ao CHC completo.",
+      "decisao": "Inspiração e ausência de efeito demonstrado explicitadas; capítulo original de Eshelman permanece parcialmente acessado.",
+      "estado": "limite_de_fonte_parcial"
+    },
+    {
+      "paragrafo_atual": 327,
+      "texto": "No motor atual, o cromossomo possui 55 bits: 17 para a taxa de vazamento, 17 para o raio espectral, 7 para o descarte inicial, 5 para o tamanho do reservatório e 9 para a regularização Ridge. A população é inicializada por LHS nas cinco dimensões e convertida para a codificação binária. O operador emprega seleção por torneio, crossover de um ponto com probabilidade 0,85, elitismo de aproximadamente 10% e mutação binária de 12% no regime normal. A correspondência desses parâmetros com cada execução histórica não foi estabelecida, conforme a Seção 3.8.",
+      "decisao": "Alocação soma 55; probabilidades são do motor atual, sem confirmação de cada rodada histórica.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 328,
+      "texto": "Quando habilitado o mecanismo antiestagnação, o motor atual eleva a taxa de mutação para 40% ao atingir o limite adaptativo e preserva o melhor indivíduo e as matrizes associadas ao recorde. Como o método não implementa Half Uniform Crossover (HUX), prevenção de incesto e reinicialização integral, é caracterizado como Algoritmo Genético com operador cataclísmico inspirado no CHC.",
+      "decisao": "Hipermutação descrita como motor atual, com diferença em relação ao CHC completo explícita.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 329,
+      "texto": "As execuções principais adotaram limite máximo de 10.000 gerações por cenário, com interrupção antecipada condicionada à estagnação. O orçamento elevado foi empregado para explorar combinações de distribuições e hiperparâmetros, mas seu custo foi contabilizado separadamente do ajuste final da ESN. As 45 execuções das cinco ondas totalizaram aproximadamente 37,9 horas de busca genética, enquanto o ajuste da camada de saída do modelo selecionado demandou cerca de 0,05 segundo.",
+      "decisao": "Limite e custos conferidos nas compilações, sem equiparar busca a ajuste.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 330,
+      "texto": "No motor atual, a função de aptidão combina erros de treino e validação: fitness = −(0,4 · MAEtreino + 0,6 · MAEvalidação). O sinal negativo converte a minimização em maximização para o pacote GA. A ponderação atribui maior peso à validação e segue a combinação descrita por Araújo et al. (2025). O software dispõe de serialização dos pesos e hiperparâmetros associados a recordes; contudo, esse mecanismo não resultou na preservação integral de todas as saídas históricas.",
+      "decisao": "Ponderação 0,4/0,6 e sinal negativo conferidos no código; preservação incompleta ressalvada.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 331,
+      "texto": "As combinações de Win e W foram exploradas no mesmo espaço de hiperparâmetros. A reinjeção de uma configuração depende da disponibilidade de suas matrizes e parâmetros. Como não foram recuperados todos os artefatos históricos, a reprodução exata de cada execução não é garantida. Os resultados representam realizações documentadas de reservatórios estocásticos, sem estimar uma distribuição completa de desempenho para cada configuração.",
+      "decisao": "Espaço comum é descrição do protocolo compilado; código individual por execução não estabelecido. Reinjeção depende de artefatos.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 332,
+      "texto": "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+      "decisao": "Título, legenda ou fonte do elemento; vínculo e apresentação conferidos nos registros de listas/fontes.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 333,
+      "texto": "Os baselines LSTM e GRU utilizaram janelas de 10 passos, normalização Min-Max calculada apenas sobre o treino, uma camada recorrente com 50 unidades, dropout de 0,2, saída densa escalar e otimizador Adam. Os valores oficiais documentados consideraram 80 épocas. A comparação empregou a mesma série e a mesma partição temporal, mas não constituiu equivalência completa de orçamento de otimização: a ESN foi submetida a busca genética extensa, enquanto os baselines profundos tiveram uma execução oficial por arquitetura. Essa assimetria foi considerada na discussão dos resultados.",
+      "decisao": "Arquiteturas e assimetria de orçamento correspondem ao protocolo documentado; normalização individual histórica tem limitação na seção de dados.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 334,
+      "texto": "O tempo total de treinamento foi registrado para todas as arquiteturas, permitindo quantificar o custo computacional documentado das ESNs em relação às redes recorrentes treinadas por retropropagação. Essa diferença constituiu um dos aspectos centrais discutidos no Capítulo 4, com separação explícita entre o custo da busca genética e o custo de ajuste da configuração selecionada.",
+      "decisao": "Custo é documentado, não medição estatística repetida; busca e ajuste distinguidos.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 335,
+      "texto": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+      "decisao": "Título, legenda ou fonte do elemento; vínculo e apresentação conferidos nos registros de listas/fontes.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 336,
+      "texto": "O desenho experimental foi organizado em cinco ondas: caudas pesadas; choques e assimetria; esparsidade e razão de variâncias; controles canônicos; e distribuições ajustadas empiricamente pelo EasyFit. Foram documentadas 45 execuções de ESN. A inicialização Normal × Normal foi utilizada como controle canônico, enquanto LSTM e GRU foram utilizadas como baselines externos. O desenho efetivamente executado foi sintetizado no Quadro 4.",
+      "decisao": "45 execuções históricas e comparadores correspondem às tabelas compiladas.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 337,
+      "texto": "Quadro 4 – Síntese do desenho experimental executado",
+      "decisao": "Título, legenda ou fonte do elemento; vínculo e apresentação conferidos nos registros de listas/fontes.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 338,
+      "texto": "Fonte: Elaborado pelo autor (2026).",
+      "decisao": "Título, legenda ou fonte do elemento; vínculo e apresentação conferidos nos registros de listas/fontes.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 339,
+      "texto": "O desempenho preditivo foi quantificado por MAE, RMSE e R² no conjunto de teste. O MAE representou o erro médio em módulo; o RMSE penalizou mais intensamente desvios elevados; e o R² descreveu a aderência global, sendo interpretado com cautela devido à persistência dos preços em nível. O tempo foi separado em custo de busca genética, custo de ajuste final e custo de treinamento dos baselines, evitando confundir baixo custo de ajuste da ESN com baixo custo de otimização.",
+      "decisao": "Definições e interpretação de métricas coerentes; R² e custo recebem ressalvas.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 340,
+      "texto": "As comparações entre as 45 execuções históricas de ESN e entre as diferentes distribuições foram tratadas como descritivas, pois não havia repetições independentes suficientes por configuração para sustentar inferência sobre superioridade entre distribuições. Para H1, contudo, a comparação entre ESN, GRU e LSTM foi complementada por uma análise inferencial específica com o teste de Diebold-Mariano. Intervalos de confiança e testes inferenciais entre as distribuições de Win e W não foram empregados.",
+      "decisao": "Inferência entre distribuições não alegada; H1 tem rodada separada.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 341,
+      "texto": "A análise das hipóteses distinguiu resultados e limites de avaliação. H1 comparou ESNs, GRU e LSTM; H2 separou ajuste e busca; H3 descreveu configurações não gaussianas frente a Normal × Normal. Para H4, verificou-se a integração do LHS e do operador cataclísmico, sem medida de diversidade ou ablação. H5 foi examinada pelos erros e pela dispersão entre configurações da Onda 5, sem estimar a variabilidade de repetidas sementes para uma mesma configuração.",
+      "decisao": "Avaliação das hipóteses coerente com Quadro5 e conclusão.",
+      "estado": "manter_com_limites_registrados"
+    },
+    {
+      "paragrafo_atual": 342,
+      "texto": "Como material visual complementar, utilizou-se também um lote legado de 12 cenários com 200 gerações, cujo histórico de fitness e matrizes foram preservados. A escolha para as Figuras 5 e 6 considerou exclusivamente o maior fitness de treino/validação desse lote. Esses registros não foram agregados às 45 execuções de produção, e a ilustração não replica o protocolo com LHS e cataclismo.",
+      "decisao": "Lote ilustrativo 200 gerações separado das 45 e sem alegação de replicar LHS/cataclismo.",
+      "estado": "manter_com_limites_registrados"
+    }
+  ],
+  "evidencias": [
+    "conferencia_motor_historico_lote27.json",
+    "fontes_parciais_lote59.json",
+    "expressoes_matematicas_lote85.json",
+    "conferencia_hipoteses_lote64.json",
+    "listas_elementos_lote77.json"
+  ],
+  "limite": "Não promove referências parcialmente acessadas a validação integral, nem prova a versão do código por rodada."
+}

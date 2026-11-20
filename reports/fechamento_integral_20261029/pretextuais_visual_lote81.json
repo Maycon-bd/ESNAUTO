@@ -1,0 +1,52 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "paginas_pdf_inspecionadas": [
+    1,
+    2,
+    4
+  ],
+  "imagens": [
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\comp63_depois-01.png",
+      "sha256": "b5b6bcd2be094563401de7e42e9e077ae8418837143bad3b728f91d37e31cd07"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\comp63_depois-02.png",
+      "sha256": "98ec4c5e212635ea473dc779dd6754afe9c5270a17e76f33097d97b06c4dbc6f"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\comp63_depois-04.png",
+      "sha256": "4882c2e785137fba0fe114028b3345fadd3a56d9d4f433c94860a75fc1958a7e"
+    }
+  ],
+  "achados": [
+    {
+      "guia": [
+        "G26",
+        "G27"
+      ],
+      "pagina": 1,
+      "parecer": "Instituição, faculdade, autor, título, Rio Verde/GO e 2026 presentes; centralização e distribuição visual preservadas, sem cortes."
+    },
+    {
+      "guia": [
+        "G28",
+        "G29"
+      ],
+      "pagina": 2,
+      "parecer": "Autor e título correspondem à capa; natureza, curso, instituição, grau, área e orientador presentes; bloco da natureza à direita, sem cortes. Medidas exatas dependem dos controles OOXML."
+    },
+    {
+      "guia": [
+        "G32",
+        "G33",
+        "G34",
+        "G80"
+      ],
+      "pagina": 4,
+      "parecer": "Título e natureza correspondentes; banca e instituições presentes; campos de data e assinaturas vazios conforme etapa acadêmica. Nomes não foram confirmados como composição institucional definitiva; mantidos da origem."
+    }
+  ],
+  "limite": "Inspeção visual das três páginas. Não certifica assinaturas, banca definitiva ou aprovação; não mede espaçamentos em pontos pela imagem.",
+  "acao": "Nenhuma edição Word necessária nesta leitura."
+}

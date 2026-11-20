@@ -1,0 +1,407 @@
+
+[PÁGINA PDF 1]
+Stock Price Forecasting: An Echo State Network Approach
+Guang Sun1, Jingjing Lin 1,*, Chen Y ang1, Xiangyang Yin 1, Ziyu Li 1, Peng Guo 1,2, Junqi Sun 3,
+Xiaoping Fan1 and Bin Pan 1
+1Hunan University of Finance and Economics, Changsha, China
+2University Malaysia Sabah, Kota Kinabalu, Malaysia
+3Yali High School International Department, Changsha, China
+/C3 Corresponding Author: Jingjing Lin. Email: 17573148817@163.com
+Received: 04 September 2020; Accepted: 21 November 2020
+Abstract: Forecasting stock prices using deep learning models suffers from pro-
+blems such as low accuracy, slow convergence, and complex network structures.
+This study developed an echo state network (ESN) model to mitigate such pro-
+blems. We compared our ESN with a long short-term memory (LSTM) network
+by forecasting the stock data of Kweichow Moutai, a leading enterprise in China ’s
+liquor industry. By analyzing data for 120, 240, and 300 days, we generated fore-
+cast data for the next 40, 80, and 100 days, respectively, using both ESN and
+LSTM. In terms of accuracy, ESN had the unique advantage of capturing non-
+linear data. Mean absolute error (MAE) was used to present the accuracy results.
+The MAEs of the data forecast by ESN were 0.024, 0.024, and 0.025, which were,
+respectively, 0.065, 0.007, and 0.009 less than those of LSTM. In terms of con-
+vergence, ESN has a reservoir state-space structure, which makes it perform faster
+than other models. Root-mean-square error (RMSE) was used to present the con-
+vergence time. In our experiment, the RMSEs of ESN were 0.22, 0.27, and 0.26,
+which were, respectively, 0.08, 0.01, and 0.12 less than those of LSTM. In terms
+of network structure, ESN consists only of input, reservoir, and output spaces,
+making it a much simpler model than the others. The proposed ESN was found
+to be an effective model that, compared to others, converges faster, forecasts more
+accurately, and builds time-series analyses more easily.
+Keywords: Stock data forecast; echo state network; deep learning
+1 Introduction
+In the era of big data, time-series data are present in domains such as stocks, traf ﬁc, electricity, and
+website traf ﬁc[ 1–3]. Research in this area, along with the mining of time-series data, has thus become
+valuable and challenging work [ 4,5]. Finance professionals devote a great deal of time and money to
+tapping the potential value of economic-, industry-, and enterprise-related data [ 6]. The forecasting and
+analysis of stock data have signi ﬁcant effects on countries, enterprises, and individuals. For countries,
+stock data forecasting can facilitate the macrocontrol of economic risks to promote ﬁnancial reforms and
+This work is licensed under a Creative Commons Attribution 4.0 International License, which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original
+work is properly cited.
+Computer Systems Science & Engineering
+DOI:10.32604/csse.2021.014189
+Article
+echT PressScience
+
+[PÁGINA PDF 2]
+stabilize economies [7,8]. Predictive data analysis can help enterprises raise funds. Further, using basic stock-
+trade data, investors can assess future market conditions to avoid risks and obtain higher returns [ 9].
+The ﬁnancial community has always focused on the dif ﬁcult task of accurate stock trend forecasting
+[10,11]. In the era of big data, stock markets are in ﬂuenced by the interactions of internal and external
+factors, including the effects of emergencies, and their complexity poses challenges for stock price
+research [ 12]. In the 1870s, most companies and resea rchers used traditio nal multiple linear
+statistical models to forecast stock trends, and with good results [ 13]. However, the amount of data
+has grown dramatically. Multiple lin ear models cannot capture big data —which have characteristics
+such as nonlinearity and spatiotemporal correlation —and have therefore fallen into disuse [ 14].
+Neural networks and arti ﬁcial intelligence subsequently appear ed. With rapid increases in computing
+power, forecasting methods have move d in more intelligent directions [ 15,16]. For example,
+recurrent neural networks ( RNN) have achieved high accuracy in stock forecasting [ 17,18]. However,
+neural networks have problems such as complex n etwork structures, slow convergence, and high
+computational power consumption.
+To deal with such challenges, this study used an echo state network (ESN) to forecast complex nonlinear
+stock data. Although ESN was introduced in 2001, its practical signi ﬁcance was not initially recognized, and
+it was only applied to pattern recognition. ESN ’s advantages over RNNs and other neural networks include a
+simple structure, fast convergence, and the ability to capture nonlinearity [ 19].
+The major contributions of this study can be summarized as follows:
+/C15 We used a lightweight ESN to solve problems in stock price forecasting related to complex network
+structures, slow convergence, and high computational costs.
+/C15 We conducted experiments using both ESN and long short-term memory (LSTM). We obtained error
+rates and convergence times and, analyzing the statistics, concluded that ESN performed better than
+traditional models.
+/C15 The experiments used in this study are universal and have great practical signi ﬁcance. The ESN
+structure is easily expanded and can be applied to other ﬁelds after modi ﬁcation.
+2 Echo State Network
+Proposed by Herbert in 2001 [ 20], ESN is a type of RNN that uses reservoir calculation [ 21]. Initially,
+the study of ESN was only theoretical, and it was not until 2004 that Herbert applied it to wireless
+communication–related ﬁelds. Since then, researchers have worked to improve the model. Previous RNNs
+were unstable, had high computational complexity, and had slow convergence. ESN is simpler to
+calculate, has a shorter cycle, and is faster. ESN has thus made signi ﬁcant contributions to time-series
+forecasting and is widely applied in
+ﬁelds such as dynamic mode classi ﬁcation, robot control, object
+tracking, moving-target detection, and incident monitoring [ 22,23]. Fig. 1 shows the standard ESN
+structure. Consisting of an input, reservoir state, and output spaces [ 24], it can be described as a structural
+model with K input units, N reservoir processing elements, and L output units. Solid lines in the ﬁgure
+represent necessary connections, and dotted lines show possible or unnecessary connections. Dotted lines
+can also connect units in the input and output layers [ 25].
+The input stock data vector u, output forecast value vector y, and reservoir state space x are expressed as
+vectors of size m, n, and p, respectively:
+utðÞ¼ u1 tðÞ ; ... ; uK tðÞðÞ ; (1)
+510 CSSE, 2021, vol.36, no.3
+
+[PÁGINA PDF 3]
+ytðÞ¼ y1 tðÞ ; ... ; yL tðÞðÞ ; (2)
+xtðÞ¼ x1 tðÞ ; ... ; xN tðÞðÞ : (3)
+The reservoir is a sparse matrix whose degree is generally 0.01 –0.1. The weight from the input layer to
+the reservoir, of order N /C2 K,i s
+win ¼
+w11 w12 /C1/C1/C1 w1k
+w21 w22 /C1/C1/C1 w2k
+/C1/C1/C1 /C1/C1/C1 /C1/C1/C1 /C1/C1/C1
+wn1 wn2 /C1/C1/C1 wnk
+2
+664
+3
+775: (4)
+The feedback weight from the output layer to the reservoir is an N /C2 L matrix:
+wback ¼
+w11 w12 /C1/C1/C1 w1l
+w21 w22 /C1/C1/C1 w2n
+/C1/C1/C1 /C1/C1/C1 /C1/C1/C1 /C1/C1/C1
+wn1 wn2 /C1/C1/C1 wnl
+2
+664
+3
+775: (5)
+The reservoir is connected to the processing elements by an N /C2 N matrix:
+wr ¼
+w11 w12 /C1/C1/C1 w1n
+w21 w22 /C1/C1/C1 w2n
+/C1/C1/C1 /C1/C1/C1 /C1/C1/C1 /C1/C1/C1
+wn1 wn2 /C1/C1/C1 wnn
+2
+664
+3
+775: (6)
+The reservoir is connected to the output layer units by an L /C2 K þ N þ LðÞ matrix:
+wout ¼ L /C2 K þ N þ LðÞ : (7)
+The connection between the output layer and the reservoir is unnecessary and is presented as a dotted
+line in Fig. 1 .
+The main difference between this model and that of a traditional neural network is that win, wr, and wback
+in ESN are initialized and set randomly when the network is established. Hence, little training is required,
+except the training of wout.
+Figure 1: ESN structure
+CSSE, 2021, vol.36, no.3 511
+
+[PÁGINA PDF 4]
+The reservoir will update its state when utðÞ is input at each moment. The state update equation is
+xt þ 1ðÞ ¼ fw in /C2 ut þ 1ðÞ þ wback /C2 xtðÞ
+/C0/C1
+; (8)
+and the state output equation is
+yt þ 1ðÞ ¼ fout /C2 wout /C2 ut þ 1ðÞ ; xt þ 1ðÞðÞðÞ ; (9)
+where x t þ 1ðÞ is the state of the reservoir at the current moment, x t ðÞ is the state at the previous
+moment,u t þ 1ðÞ is the input at the current moment, f is the activation function of the internal node of
+the reservoir, and fout is the activation function of the node of the output layer. The hyperbolic tangent
+function ( tanh) is usually used for both f and fout.
+3 Experiment
+The experiment had four steps: collect and clean data, set the experiment, forecast and analyze the data,
+and draw the experimental conclusion. Fig. 2 presents a ﬂowchart of the experiment.
+Figure 2: Flowchart of the experiment
+512 CSSE, 2021, vol.36, no.3
+
+[PÁGINA PDF 5]
+3.1 Data Collection and Cleaning
+We collected stock data for Kweichow Maotai (6000519. SH) on 360 trading days, from November 2,
+2009, to April 26, 2011. Kweichow Maotai is a leading enterprise in China ’s liquor industry, and no major
+equity changes occurred during the selected years. These stock data include volumes and opening, closing,
+highest, lowest, and adjusted closing prices. Data were sourced from Yahoo! Finance 1.
+3.1.1 Experimental Data
+Tab. 1 shows the closing prices in the 360-day transaction data for Kweichow Moutai (6000519. SH).
+Closing prices are the volume-weighted average prices of all trades (including the last trade) within the last
+minute of trading. Closing price could channel working funds in the next trading day while volumes, opening
+prices, highest prices, lowest prices, and adjusted prices cannot. Therefore, the closing price is very important
+for stock price forecasting and research.
+3.1.2 Evaluation Standard
+We tested the closing prices in the 360-day transaction data for Kweichow Moutai. We compared the
+accuracy of different forecasting models and evaluated the performance of ESN based on the ﬁtting
+degrees of forecast data and actual data, the mean absolute error (MAE) of forecast values and actual
+values, and the root-mean-square error (RMSE) of convergence time. MAE and RMSE are de ﬁned as
+MAE ¼
+1
+N
+XN
+t¼1 yt /C0 yp
+tjj ; (10)
+RMSE ¼
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ ﬃ
+1
+N
+XN
+t¼1 yt /C0 yp
+tjjðÞ 2
+r
+; (11)
+where yt and yp
+t are the actual and forecast values, respectively, at time t, and N is the total number of forecast
+values, which equals 360 in the experiment.
+3.2 Experimental Settings
+The proposed ESN has three key parameters: spectral radius, size of reservoirs, and sparsity of
+reservoirs. If the spectral radius of the weighting wr within the reservoir is less than 1, ESN will stay in
+an echo state. Reservoir size represents the number of neurons in the pool and is generally 300 –500. Size
+is related to the number of samples, and it has a certain effect on network performance. A larger
+size means a more accurate stock forecast, but there will be an over ﬁtting problem, while too small a size
+leads to under ﬁtting. The sparsity of a reservoir represents the connections between its neurons, and not
+all neurons have connections. The more connections, the stronger the nonlinear approximation ability.
+Table 1: Stock data for Kweichow Moutai
+Date Opening price Closing price Highest price Lowest price Adjusted
+closing price
+V olume
+11/2/2009 117.2050 120.2180 120.2850 116.8140 98.7907 4,261,898
+11/3/2009 120.2099 120.1204 121.2620 119.5039 98.7102 2,677,824
+11/4/2009 120.1129 122.1113 122.4726 119.4597 100.3463 4,473,808
+1
+https://ﬁnance.yahoo.com/quote/600519.SS?p=600519.SS&.tsrc=ﬁn-srch
+CSSE, 2021, vol.36, no.3 513
+
+[PÁGINA PDF 6]
+In this study, the reservoir was made up of 500 units. It scaled to a spectral radius of 0.999, and its
+sparsity was 0.02. The activation function for the reservoir processing elements was implemented as the
+tanh function, and the output function foutwas implemented as an identity function. We did not adopt the
+connection method denoted by the dotted line in Fig. 1.
+The operating environment was Python 3.7.3 and Jupyter Notebook on Windows 10 Pro (64 bit). We
+used the pandas library to read closing stock prices and conduct experiments.
+Conventional LSTM was modi ﬁed to simpli ﬁed LSTM by reducing training times. Simpli ﬁed rather
+than conventional LSTM was used because stock price forecasts are in real time, and conventional LSTM
+cannot make valid calculations in a limited real-time range. We set up three experimental groups of
+40-/80-/100-day data, which adopt ESN and simpli ﬁed LSTM and one control group to compare the
+forecast data of ESN and LSTM. The three experimental groups used 120-day data to forecast the next
+40 days ’ closing prices, 240-day data for the next 80 days ’ closing prices, and 300-day data for the next
+100 days’ closing prices.
+3.3 Experiment Results and Analyses
+3.3.1 Experiment 1
+Experiment 1 was used to ﬁt the forecast curves and practical curves. For both ESN and simpli ﬁed
+LSTM, we used stock data for 120, 240, and 300 days as the training sample and data for 40, 80, and
+100 days as the test sample.
+The forecasting results were output by the two models over the three time-series data sets. We compared
+the forecasting results with the practical results through ﬁtting graphs. Tab. 2 shows the results of the ﬁtting
+tests for ESN and simpli ﬁed LSTM. ESN ﬁt well, and the overall effect of the model was good.
+Figs. 3–5 show the ﬁtting of the practical and forecasting results as output by the two forecasting models
+over three data sets. We used 120, 240, and 300 days of data to forecast stock closing prices in the next 40, 80,
+and 100 days.
+The ﬁtting of the practical and forecasting results was better with ESN than with simpli ﬁed LSTM. The
+forecasting results output by ESN ﬁt the practical results well with lower curve amplitudes. These results
+indicate high forecasting accuracy. Meanwhile, because of poor data characteristics and parameter
+settings, the performance of simpli ﬁed LSTM varied signi ﬁcantly. In conclusion, the proposed ESN
+exhibited advantages over simpli ﬁed LSTM in time-series application.
+Table 2: Forecasting results
+Stock Training
+sample
+Test
+sample
+Day True date Forecast
+data of ESN
+Forecast data of
+simpliﬁed LSTM
+Kweichow
+Moutai
+120 40 11/2/2009 99.2712 99.3652 99.5633
+240 80 114.9606 114.9246 114.8312
+300 100 121.0512 120.9537 120.8535
+120 40 11/3/2009 100.8639 100.7527 101.0473
+240 80 112.3105 112.1773 112.1620
+300 100 118.0439 117.9011 117.8489
+514 CSSE, 2021, vol.36, no.3
+
+[PÁGINA PDF 7]
+Figure 3: Comparison of ESN and LSTM price forecasts over 120 and 40 days
+Figure 4: Comparison of ESN and LSTM price forecasts over 240 and 80 days
+CSSE, 2021, vol.36, no.3 515
+
+[PÁGINA PDF 8]
+3.3.2 Experiment 2
+We used the MAEs of the forecasting models on different data sets to evaluate forecasting accuracy.
+Tab. 3 shows the MAEs of different data sets output by the two forecasting models. A lower MAE
+indicates better performance. The MAE of data output by ESN was lower than that output by simpli ﬁed
+LSTM. Thus, the result indicated that ESN performed well for forecasting.
+In forecasting, the error value trend of ESN gradually stabilized. In the three experimental groups, its
+error value was stable at around 0.024. Simpli ﬁed LSTM ’s performance was unstable. Its forecasting
+error sometimes ﬂuctuated signi ﬁcantly while ESN showed relatively stable error values. ESN was
+consistent with actual stock ﬂuctuation trends and could thus provide a reference for stock forecasting.
+In summary, under the same conditions, the proposed ESN was more accurate than simpli ﬁed LSTM.
+Analyzing the data and errors of the three experimental groups, ESN had fewer errors than simpli ﬁed
+Figure 5: Comparison of ESN and LSTM price forecasts over 300 and 100 days
+Table 3: Comparison of MAEs
+Days Metric MAE
+40 ESN 0.024
+LSTM 0.089
+80 ESN 0.024
+LSTM 0.032
+100 ESN 0.025
+LSTM 0.034
+516 CSSE, 2021, vol.36, no.3
+
+[PÁGINA PDF 9]
+LSTM and was more consistent with the actual data. Therefore, ESN can forecast stock prices more quickly
+and accurately in the short term, re ﬂecting market ﬂuctuations.
+3.3.3 Experiment 3
+Experiment 3 compared the convergence times of ESN and simpli ﬁed LSTM with different data sets
+(Tab. 4). RMSE was used to present convergence time.
+Tab. 4 shows that ESN had relatively few convergence times on three data sets. Compared to simpli ﬁed
+LSTM, the convergence time advantage of ESN was not obvious for some data sets. However, the table also
+shows that, under the premise of ensuring high forecasting accuracy, ESN had relatively fewer convergence
+times than simpli ﬁed LSTM.
+3.3.4 Experiment 4
+Experiment 4 compared the closing price forecasts of simpli ﬁed and conventional LSTM using
+120 days’ data inputs.
+As shown in Fig. 6, when simpli ﬁed and conventional LSTM was used to forecast the closing price of
+the next 40 days, the more training time LSTM had, the more accurate the forecast. With an error value of
+0.0078, the forecast of conventional LSTM ﬁt the actual data well. However, in the experimental group, the
+error value between the forecast data of simpliﬁed LSTM and the actual data was 0.089. The gap between the
+error values of the different groups is obvious.
+LSTM forecast data became more accurate as training times increased. This was because conventional
+LSTM can use the temporal backward-transfer algorithm to modify the weight according to previous errors.
+However, conventional LSTM took a lot of time. For ESN, while the training times are ﬁxed, the updated
+state of the reservoir will not be as accurate as the error gradient of conventional LSTM.
+3.4 Experiment Conclusion
+ESN and LSTM were found to have advantages and disadvantages. ESN could quickly obtain
+forecasting results, which can help investors with short-term decision-making, but the error rate needs to
+be reduced. Conventional LSTM, meanwhile, re ﬂects the characteristics of important events, which have
+long processing intervals and long delays in mid- and long-term stock forecasts. However, the problems
+of large volumes of data and time requirements remain unresolved. Therefore, compared to conventional
+LSTM, ESN has higher forecasting accuracy with a shorter processing time.
+Table 4: Comparison of RMSEs
+Days Metrics RMSE
+40 ESN 0.22
+LSTM 0.30
+80 ESN 0.24
+LSTM 0.25
+100 ESN 0.26
+LSTM 0.38
+CSSE, 2021, vol.36, no.3 517
+
+[PÁGINA PDF 10]
+4 Conclusion
+Stock price forecasting has time-series features. A neural network is a machine learning algorithm. ESN
+is a newer type of RNN. To obtain forecasting results using ESN, simply set the initial weights of the nodes
+and then input the nodes into the reservoir for recursive operation. Whether the output layer needs further
+training depends on the accuracy of the forecasting results. ESN requires less calculation because it does
+not need to repeatedly carry out training by calculating the gradient. However, many studies have shown
+that a stock forecast is a special nonlinear unstable event that is affected by both macro- and micro-
+factors. Thus, for the computing power of any single ESN model, it is dif ﬁcult to include all of the
+complex in ﬂuencing factors in the calculation and then obtain high forecasting accuracy. Therefore, in
+future work, we intend to combine conventional LSTM and ESN to leverage their respective advantages.
+ESN can improve convergence speed and better capture nonlinearity while conventional LSTM can
+forecast stock prices with little error. We believe a combined ESN and conventional LSTM model can be
+optimized to incorporate more factors that affect stock prices.
+Funding Statement: This work was supported by the National Natural Science Foundation of China (No.
+72073041); Open Foundation for the University Innovation Platform in Hunan Province (No. 18K103);
+2011 Collaborative Innovation Center for Development and Utilization of Finance and Economics Big
+Data Property, Universities of Hunan Province, Open Project (Nos. 20181901CRP03, 20181901CRP04,
+20181901CRP05); 2020 Hunan Provincial Higher Education Teaching Reform Research Project
+(Nos. HNJG-2020-1130, HNJG-2020-1124); and 2020 General Project of Hunan Social Science Fund
+(No. 20B16).
+Conﬂicts of Interest: The authors declare that they have no con ﬂicts of interest to report regarding the
+present study.
+Figure 6: Comparison of simpli ﬁed and conventional LSTM in price forecasts over 120 and 80 days
+518 CSSE, 2021, vol.36, no.3
+
+[PÁGINA PDF 11]
+References
+[1] Y . Wu, Y . Liu, S. H. Ahmed, J. L. Peng and A. E. Ahmed, “Dominant data set selection algorithms for electricity
+consumption time-series data analysis based on af ﬁne transformation, ” IEEE Internet of Things Journal , vol. 7,
+no. 5, pp. 4347 –4360, 2020.
+[2] D. J. Bartholomew, “Time series analysis forecasting and control, ” Journal of the Operational Research Society ,
+vol. 22, no. 2, pp. 199 –201, 1971.
+[3] Z. Y . Du, “Personal data security and supervision in the age of large data, ” Intelligent Automation and Soft
+Computing, vol. 25, no. 4, pp. 847 –853, 2019.
+[4] Y . Peng, Y . H. Liu and R. F. Zhang, “Modeling and analysis of stock price forecast based on lstm, ” Computer
+Engineering and Applications , vol. 55, no. 11, pp. 209 –212, 2019.
+[5] E. N. Qi and M. Deng, “R&D investment enhance the ﬁnancial performance of company driven by big data
+computing and analysis, ” Computer Systems Science and Engineering , vol. 34, no. 4, pp. 237 –248, 2019.
+[6] F. M. Talarposhti, H. J. Sadaei, R. Enayatifar, F. G. Guimarães, M. Mahmud et al., “Stock market forecasting by
+using a hybrid model of exponential fuzzy time-series, ” International Journal of Approximate Reasoning, vol. 70,
+pp. 79 –98, 2016.
+[7] M. P . O ’Hare and F. J. Wen, “Research on hybrid model of garlic short-term price forecasting based on big data, ”
+Computers, Materials & Continua , vol. 57, no. 2, pp. 283 –296, 2018.
+[8] G. D. Zhao, Y . W. Zhang, Y . Q. Shi, H. Y . Lan and Q. Yang,“The application of BP neural networks to analysis the
+national vulnerability,” Computers, Materials & Continua , vol. 58, no. 2, pp. 421 –436, 2019.
+[9] F. Xu, X. F. Zhang, Z. H. Xin and A. L. Yang, “Investigation on the Chinese text sentiment analysis based
+on convolutional neural networks in deep learning, ” Computers, Materials & Continua , vol. 58, no. 3,
+pp. 697 –709, 2019.
+[10] C. H. Zhang, J. Q. Y u and Y . Liu,“Spatial-temporal graph attention networks: A deep learning approach for traf ﬁc
+forecasting,” IEEE Access , vol. 7, pp. 166246 –166256, 2019.
+[11] P . Gong and Y . Weng, “V alue-at-risk forecasts by a spatiotemporal model in Chinese stock market, ” Physica A:
+Statistical Mechanics and Its Applications , vol. 441, pp. 173 –191, 2016.
+[12] J. L. Elman, “Finding structure in time, ” Cognitive Science , vol. 14, no. 2, pp. 179 –211, 1990.
+[13] M. I. Jordan, “Serial order: A parallel distributed processing approach, ” Advances in Psychology , vol. 121,
+pp. 471 –495, 1997.
+[14] S. Hochreiter and J. Schmidhuber, “Long short-term memory, ” Neural Computation , vol. 9, no. 8, pp.
+1735–1780, 1997.
+[15] Y . You, J. Hseu, C. Ying, J. Demmel, K. Keutzeret al., “Large-batch training for LSTM and beyond,” Proceedings
+of the International Conference for High Performance Computing, Networking, Storage and Analysis , vol. 9,
+pp. 1 –16, 2019.
+[16] G. B. Zhang, J. J. Xiong, Y . M. Huang, Y . Lu and L. Wang, “Delay-dependent stability of recurrent neural
+networks with time-varying delay,” Intelligent Automation and Soft Computing , vol. 24, no. 3, pp. 41 –551, 2018.
+[17] A. G. Zhang, W. Zhu and J. Y . Li, “Spiking echo state convolutional neural network for robust time-series
+classiﬁcation,” IEEE Access , vol. 7, pp. 4927 –4935, 2018.
+[18] Q. L. Ma, E. H. Chen, Z. X. Lin, J. Y . Yan, Z. W. Y u et al., “Convolutional multitimescale echo state network, ”
+IEEE Transactions on Cybernetics , pp. 1 –13, 2019.
+[19] J. Dan, W. Guo, W. Shi, B. Fang and T. Zhang, “PSO based deterministic ESN models for stock price forecasting, ”
+Journal of Advanced Computational Intelligence and Intelligent Informatics , vol. 19, no. 2, pp. 312 –318, 2015.
+[20] J. Herbert and H. Harald, “Harnessing nonlinearity: Predicting chaotic systems and saving energy in wireless
+communications,” Science, vol. 304, no. 5667, pp. 78 –80, 2004.
+[21] J. Herbert, “The echo state approach to analyzing and training recurrent neural networks-with an erratum note, ” in
+German National Research Center for Information Technology , Bonn, Germany, pp. 148, 2001.
+[22] X. J. Wang, Y . C. Jin and K. R. Hao, “Evolving local plasticity rules for synergistic learning in echo state
+networks,” IEEE Transactions on Neural Networks and Learning Systems , vol. 31, no. 4, pp. 1 –12, 2019.
+CSSE, 2021, vol.36, no.3 519
+
+[PÁGINA PDF 12]
+[23] Y . Han, Y . W. Jing, K. Li and G. M. Dimirovski, “Network traf ﬁc prediction using variational mode
+decomposition and multi- reservoirs echo state network, ” IEEE Access , vol. 7, pp. 138364 –138377, 2019.
+[24] L. Wang, J. F. Qiao, C. L. Yang and X. X. Zhu, “Pruning algorithm for modular echo state network based on
+sensitivity analysis, ” Acta Automatica Sinica , vol. 45, no. 6, pp. 1136 –1145, 2019.
+[25] Y . Peng, M. Lei and J. Guo, “Clustered complex echo state networks for traf ﬁc forecasting with prior
+knowledge, ” in IEEE Int. Instrumentation and Measurement Technology Conf. , Binjiang, Hangzhou, China,
+vol. 78, pp. 1 –5, 2011.
+520 CSSE, 2021, vol.36, no.3

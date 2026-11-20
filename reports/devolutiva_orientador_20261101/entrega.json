@@ -1,0 +1,38 @@
+{
+  "id": "v009",
+  "anterior": "v008",
+  "arquivo": "reports/monografia/versoes/v009/MayconGarciaSilva_monografia_v009.docx",
+  "sha256": "793910fae2daaa2d5dbdcfa0cd76177c6c6a38c353d98d94ecaaaecf118c7b03",
+  "registrada_em_utc": "2026-11-01T22:36:31.223198+00:00",
+  "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\devolutiva_orientador_20261101.docx",
+  "responsavel": "Codex, conciliacao da devolutiva do orientador solicitada por Maycon Garcia Silva",
+  "resumo": "Concilia a introducao recebida do orientador, mantendo texto corrido conforme o Guia FASOFT e orientacao do autor; expande ESN na primeira ocorrencia; confere 41titulos e atualiza 59paginas no sumario e listas. Preserva tres ajustes da v008, resultados, tabelas, imagens e referencias.",
+  "estado_editorial": "conferida",
+  "validacao_declarada": "77paginas renderizadas e inspecionadas; introducao continua em3paginas;41titulos sequenciais;60entradas de sumario/listas conferidas;57paginas do corpo com texto e pixels identicos a base, exceto cabecalho.52interrogacoes textuais sao codigos documentados de informacao insuficiente. Somente document.xml mudou. Sem nova auditoria integral de fontes ou aprovacao academica.",
+  "evidencias": [
+    {
+      "arquivo": "reports/devolutiva_orientador_20261101/relatorio.md",
+      "sha256": "f97ad10be4f466e023d073e72d875fc909f3d5bbeea6eb6703fc93d653b1e935"
+    },
+    {
+      "arquivo": "reports/devolutiva_orientador_20261101/verificacao_final.json",
+      "sha256": "3e970b8927111b556a4ac86168fadf4bd7459e1f4f1b223b18af43bf70ce66ea"
+    },
+    {
+      "arquivo": "reports/devolutiva_orientador_20261101/inspecao_visual.json",
+      "sha256": "d9eae3ed29414be243440e1ee7646c993445e7368f16f1ce9820c39669904b9b"
+    },
+    {
+      "arquivo": "reports/devolutiva_orientador_20261101/paginas_listas_atualizadas.json",
+      "sha256": "afa76ba5014031d783b795b87190ae7a6882fcffb1cf5c1191d7d1f1e397838e"
+    }
+  ],
+  "pendencias": [
+    "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+    "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+    "Limitacao bibliografica preservada: buscas complementares, registros de selecao parciais e41marcacoes de informacao insuficiente; sem alegacao de revisao sistematica integral.",
+    "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+    "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills."
+  ],
+  "caminho_absoluto": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\versoes\\v009\\MayconGarciaSilva_monografia_v009.docx"
+}

@@ -1,0 +1,21 @@
+{
+  "base": "v001",
+  "sha256_base": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+  "rascunho": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revisao_parecer_integridade.docx",
+  "sha256_rascunho": "95f84d82dbc429754febee49d1b5ff3448dc5e1c303752fc5e5f5e2b22f2661d",
+  "pdf": "reports\\correcao_parecer_integridade\\revisao_integridade_limites.pdf",
+  "sha256_pdf": "69fe6241816f0fb0f1e4ab3c683fce6602c094985af18f25feedfa287a45150e",
+  "paginas_pdf": 78,
+  "paragrafos_corpo_alterados": 111,
+  "paragrafos_tabelas_alterados": 196,
+  "insercoes": "Quadro6+legenda/fonte/lista, conforme log cumulativo; preservação validada por remoção dos nós inseridos e comparação C14N.",
+  "mudancas_etapa": "R11 explicita ausência de contraste persistência na rodada controlada; correção de concordância do resumo, todos os números preservados.",
+  "triagem_textual": "integridade_rascunho_03:39fontes,6janelas,3blocos; contextos examinados sem apropriação demonstrada, não certificação universal. 38958pares Lampugnani, nenhum>=0,40.",
+  "cruzamento": "50referências,149ocorrências reconhecidas,0semcorrespondência,0referências semchamada. Heurística nominal, não comprovação científica.",
+  "metadados": "Deng2022 e Kumar2025 reconciliados contra PDFs locais; variantes online/accepted explicitadas no registro.",
+  "estrutura": "38checks estruturais parciais, todos aprovados; não inspeção integral ou garantia universal.",
+  "visual": "Físicas67/68/73 abertas na exportação atual: texto de R11 legível, fluxo seguinte sem colisão e Quadro6 inteiro; resumo8 rasterizado, abertura ainda pendente nesta aplicação.",
+  "pendencias": "Listas/sumário não atualizados: Quadro6 agora física73/impressa72, enquanto entrada da lista ainda71. Não entregar como final.",
+  "versao": "Não promovida; v001 continua registrada.",
+  "objetivo_completo": false
+}

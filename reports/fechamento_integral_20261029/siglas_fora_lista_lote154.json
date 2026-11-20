@@ -1,0 +1,390 @@
+{
+  "ESNAUTO": {
+    "local": "P_atual0170",
+    "contexto": "Como objetivos específicos, pretende-se consolidar a revisão da literatura; empregar a série histórica ajustada; desenvolver o ESNAUTO, integrando ESN, regressão Ridge e busca genética; e investigar distribuições canônicas, de cauda pesada, assimétricas, esparsas e empiricamente ajustadas. Também se busca otimizar conjuntamente a taxa de vazamento, o raio espectral, o descarte inicial, o tamanho do reservatório e a regularização Ridge. A implementação atual utiliza um cromossomo binário de 55 bits para esses parâmetros."
+  },
+  "H1": {
+    "local": "P_atual0173",
+    "contexto": "H1 - desempenho: a ESN otimizada apresentará menor perda preditiva que os modelos LSTM e GRU definidos no protocolo. A comparação histórica será descritiva; na rodada controlada complementar, a avaliação considerará a diferença de acurácia pelo teste bilateral de Diebold-Mariano e a direção do diferencial médio de perda. A ausência de significância será interpretada como evidência insuficiente de diferença, sem demonstrar equivalência entre os modelos."
+  },
+  "H2": {
+    "local": "P_atual0174",
+    "contexto": "H2 - eficiência: após a seleção da configuração, o ajuste analítico da camada de saída da ESN demandará menos tempo computacional que o treinamento iterativo de LSTM e GRU."
+  },
+  "H3": {
+    "local": "P_atual0175",
+    "contexto": "H3 - inicialização: ao menos uma distribuição não gaussiana em Win ou W produzirá erro fora da amostra menor que a inicialização Normal × Normal."
+  },
+  "H4": {
+    "local": "P_atual0176",
+    "contexto": "H4 - exploração evolucionária: a combinação de inicialização LHS e mutação cataclísmica manterá diversidade de busca e produzirá soluções competitivas sob o orçamento experimental definido."
+  },
+  "H5": {
+    "local": "P_atual0177",
+    "contexto": "H5 - ajuste empírico: distribuições ajustadas aos dados de treino pelo EasyFit produzirão melhor desempenho ou menor variabilidade que distribuições canônicas."
+  },
+  "DA": {
+    "local": "P_atual0179",
+    "contexto": "REVISÃO DA LITERATURA"
+  },
+  "LITERATURA": {
+    "local": "P_atual0179",
+    "contexto": "REVISÃO DA LITERATURA"
+  },
+  "MERCADO": {
+    "local": "P_atual0180",
+    "contexto": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS"
+  },
+  "DE": {
+    "local": "P_atual0180",
+    "contexto": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS"
+  },
+  "CAPITAIS": {
+    "local": "P_atual0180",
+    "contexto": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS"
+  },
+  "BRASILEIRO": {
+    "local": "P_atual0180",
+    "contexto": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS"
+  },
+  "TEMPORAIS": {
+    "local": "P_atual0180",
+    "contexto": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS"
+  },
+  "FINANCEIRAS": {
+    "local": "P_atual0180",
+    "contexto": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS"
+  },
+  "F1-": {
+    "local": "P_atual0187",
+    "contexto": "Costa e Lunkes (2025) combinaram indicadores técnicos e fundamentalistas em um modelo de classificação com máquina de vetores de suporte (Support Vector Machine – SVM). O modelo híbrido apresentou F1-score de aproximadamente 72,7% na amostra de ações brasileiras analisada, sem atribuição desse valor especificamente à PETR4. Os autores recomendaram investigar outros algoritmos, incluindo redes neurais e métodos de conjunto; a escolha de arquiteturas recorrentes constitui uma decisão da presente pesquisa."
+  },
+  "GPT-2": {
+    "local": "P_atual0188",
+    "contexto": "Liu, Lin e Rojas (2025) integraram indicadores técnicos, modelos temporais e análise de sentimentos com modelos de linguagem de grande escala (Large Language Models – LLMs), incluindo FinBERT e GPT-2, em estratégias associadas ao índice Standard and Poor’s (S&P) 500. O FinBERT atingiu 75,56% de acurácia na classificação de sentimento das notícias da Benzinga, em uma tarefa de processamento de linguagem natural (Natural Language Processing – NLP). O estudo também associou notícias a classes de retorno do índice; essa acurácia não comprova previsão fora da amostra da direção futura."
+  },
+  "REDES": {
+    "local": "P_atual0190",
+    "contexto": "REDES NEURAIS RECORRENTES: LSTM E GRU"
+  },
+  "NEURAIS": {
+    "local": "P_atual0190",
+    "contexto": "REDES NEURAIS RECORRENTES: LSTM E GRU"
+  },
+  "RECORRENTES": {
+    "local": "P_atual0190",
+    "contexto": "REDES NEURAIS RECORRENTES: LSTM E GRU"
+  },
+  "JPX": {
+    "local": "P_atual0198",
+    "contexto": "Em paralelo, novas arquiteturas estendem a discussão para além da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quânticas (Quantum Temporal Convolutional Neural Networks – QTCNN) e relatam Sharpe superior ao de LSTM, Transformer e TConv-MLP no conjunto JPX, em avaliação fora da amostra de 22 dias. Os resultados são restritos ao protocolo estudado."
+  },
+  "ESTADOS": {
+    "local": "P_atual0201",
+    "contexto": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO"
+  },
+  "ECO": {
+    "local": "P_atual0201",
+    "contexto": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO"
+  },
+  "HAR-PSO-ESN": {
+    "local": "P_atual0206",
+    "contexto": "Ribeiro et al. (2021) combinaram o modelo autorregressivo heterogêneo (Heterogeneous Autoregressive – HAR), PSO e ESN no HAR-PSO-ESN. O estudo previu volatilidades realizadas diárias de CAT, EBAY e MSFT, construídas a partir de retornos intradiários de cinco minutos. Foram avaliados horizontes de um, cinco e 21 dias, com ARIMA, HAR, MLP e variantes ESN como comparadores. Esses experimentos oferecem uma aplicação financeira da combinação, sem demonstrar vantagem universal nem transformar volatilidade observada em comprovação de caos."
+  },
+  "CAT": {
+    "local": "P_atual0206",
+    "contexto": "Ribeiro et al. (2021) combinaram o modelo autorregressivo heterogêneo (Heterogeneous Autoregressive – HAR), PSO e ESN no HAR-PSO-ESN. O estudo previu volatilidades realizadas diárias de CAT, EBAY e MSFT, construídas a partir de retornos intradiários de cinco minutos. Foram avaliados horizontes de um, cinco e 21 dias, com ARIMA, HAR, MLP e variantes ESN como comparadores. Esses experimentos oferecem uma aplicação financeira da combinação, sem demonstrar vantagem universal nem transformar volatilidade observada em comprovação de caos."
+  },
+  "EBAY": {
+    "local": "P_atual0206",
+    "contexto": "Ribeiro et al. (2021) combinaram o modelo autorregressivo heterogêneo (Heterogeneous Autoregressive – HAR), PSO e ESN no HAR-PSO-ESN. O estudo previu volatilidades realizadas diárias de CAT, EBAY e MSFT, construídas a partir de retornos intradiários de cinco minutos. Foram avaliados horizontes de um, cinco e 21 dias, com ARIMA, HAR, MLP e variantes ESN como comparadores. Esses experimentos oferecem uma aplicação financeira da combinação, sem demonstrar vantagem universal nem transformar volatilidade observada em comprovação de caos."
+  },
+  "MSFT": {
+    "local": "P_atual0206",
+    "contexto": "Ribeiro et al. (2021) combinaram o modelo autorregressivo heterogêneo (Heterogeneous Autoregressive – HAR), PSO e ESN no HAR-PSO-ESN. O estudo previu volatilidades realizadas diárias de CAT, EBAY e MSFT, construídas a partir de retornos intradiários de cinco minutos. Foram avaliados horizontes de um, cinco e 21 dias, com ARIMA, HAR, MLP e variantes ESN como comparadores. Esses experimentos oferecem uma aplicação financeira da combinação, sem demonstrar vantagem universal nem transformar volatilidade observada em comprovação de caos."
+  },
+  "NIFTYBEES": {
+    "local": "P_atual0210",
+    "contexto": "Hariharan, Suresh e Chandrasekar (2025) propuseram ESNs com reservatórios divididos em grupos para séries multivariadas, incluindo dados do NIFTYBEES. Cada variável foi direcionada a um grupo, mantendo conexões entre grupos segundo a topologia examinada. Os erros e a sensibilidade à conectividade variaram entre as estruturas. O estudo apoia investigar a organização do reservatório, sem demonstrar que todo intercâmbio entre variáveis seja prejudicial ou que uma topologia domine em qualquer tarefa."
+  },
+  "POR": {
+    "local": "P_atual0213",
+    "contexto": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS"
+  },
+  "ALGORITMOS": {
+    "local": "P_atual0213",
+    "contexto": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS"
+  },
+  "EVOLUTIVOS": {
+    "local": "P_atual0213",
+    "contexto": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS"
+  },
+  "SSA-ESN": {
+    "local": "P_atual0216",
+    "contexto": "Tian e Pei (2024) empregaram o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e erro percentual absoluto médio (Mean Absolute Percentage Error – MAPE)."
+  },
+  "BIST": {
+    "local": "P_atual0218",
+    "contexto": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO."
+  },
+  "PROBABILIDADE": {
+    "local": "P_atual0221",
+    "contexto": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO"
+  },
+  "NA": {
+    "local": "P_atual0221",
+    "contexto": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO"
+  },
+  "DOS": {
+    "local": "P_atual0221",
+    "contexto": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO"
+  },
+  "PESOS": {
+    "local": "P_atual0221",
+    "contexto": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO"
+  },
+  "DO": {
+    "local": "P_atual0221",
+    "contexto": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO"
+  },
+  "DJIA": {
+    "local": "P_atual0226",
+    "contexto": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do DJIA entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade."
+  },
+  "SB": {
+    "local": "P_atual0229",
+    "contexto": "A seleção das distribuições foi organizada em três eixos. O primeiro reúne controles canônicos, como Normal e Uniforme; o segundo contempla distribuições teoricamente relacionadas a caudas pesadas, assimetria, impulsividade e esparsidade, cuja motivação se apoia principalmente nas propriedades observadas nos log-retornos; e o terceiro utiliza Power Function (PF), Dagum 4P e Johnson SB ajustadas empiricamente aos preços da partição de treino pelo EasyFit."
+  },
+  "PROCESSAMENTO": {
+    "local": "P_atual0234",
+    "contexto": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3"
+  },
+  "FATOR": {
+    "local": "P_atual0234",
+    "contexto": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3"
+  },
+  "AJUSTE": {
+    "local": "P_atual0234",
+    "contexto": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3"
+  },
+  "PARA": {
+    "local": "P_atual0234",
+    "contexto": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3"
+  },
+  "DADOS": {
+    "local": "P_atual0234",
+    "contexto": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3"
+  },
+  "TRABALHOS": {
+    "local": "P_atual0239",
+    "contexto": "TRABALHOS RELACIONADOS"
+  },
+  "RELACIONADOS": {
+    "local": "P_atual0239",
+    "contexto": "TRABALHOS RELACIONADOS"
+  },
+  "ITSA4": {
+    "local": "P_atual0244",
+    "contexto": "Araújo et al. (2025) compararam MAE e RMSE como aptidão de um AG para ESNs com cinco distribuições. A prova consultada descreve retornos de fechamento da ITSA4 e variâncias diárias, com partição declarada de 60%/20%/20%. Esse protocolo difere da previsão do preço ajustado da PETR4 no ESNAUTO. A presente pesquisa adapta essa linha de trabalho, integra LHS e um operador antiestagnação inspirado no CHC. A preservação histórica parcial dos artefatos está descrita na Seção 3.8. Foi consultada a prova de autor; os metadados da edição final foram conferidos no editor."
+  },
+  "ESTADO": {
+    "local": "P_atual0254",
+    "contexto": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS"
+  },
+  "ARTE": {
+    "local": "P_atual0254",
+    "contexto": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS"
+  },
+  "LACUNAS": {
+    "local": "P_atual0254",
+    "contexto": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS"
+  },
+  "IDENTIFICADAS": {
+    "local": "P_atual0254",
+    "contexto": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS"
+  },
+  "ARIMA-ESN": {
+    "local": "P_atual0259",
+    "contexto": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG."
+  },
+  "ARMA-EGARCH": {
+    "local": "P_atual0259",
+    "contexto": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG."
+  },
+  "ESN-AG": {
+    "local": "P_atual0259",
+    "contexto": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG."
+  },
+  "P1": {
+    "local": "P_atual0263",
+    "contexto": "Lampugnani (2026) é discutido separadamente e não integra os 34 documentos da matriz. As dimensões são: P1 lei probabilística ligada à geração de Win ou W; P2 procedimento de seleção de hiperparâmetros de ESN/RC; P3 preparação concreta de séries temporais, incluindo transformações e construção de atributos ou janelas; P4 comparação quantitativa de previsão com LSTM, GRU ou Transformer; e P5 mercado e ativo identificados. A codificação distingue aplicações próprias de tratamentos secundários e registra informação insuficiente, sem pressupor que todos os temas sejam aplicáveis a cada fonte."
+  },
+  "P2": {
+    "local": "P_atual0263",
+    "contexto": "Lampugnani (2026) é discutido separadamente e não integra os 34 documentos da matriz. As dimensões são: P1 lei probabilística ligada à geração de Win ou W; P2 procedimento de seleção de hiperparâmetros de ESN/RC; P3 preparação concreta de séries temporais, incluindo transformações e construção de atributos ou janelas; P4 comparação quantitativa de previsão com LSTM, GRU ou Transformer; e P5 mercado e ativo identificados. A codificação distingue aplicações próprias de tratamentos secundários e registra informação insuficiente, sem pressupor que todos os temas sejam aplicáveis a cada fonte."
+  },
+  "P3": {
+    "local": "P_atual0263",
+    "contexto": "Lampugnani (2026) é discutido separadamente e não integra os 34 documentos da matriz. As dimensões são: P1 lei probabilística ligada à geração de Win ou W; P2 procedimento de seleção de hiperparâmetros de ESN/RC; P3 preparação concreta de séries temporais, incluindo transformações e construção de atributos ou janelas; P4 comparação quantitativa de previsão com LSTM, GRU ou Transformer; e P5 mercado e ativo identificados. A codificação distingue aplicações próprias de tratamentos secundários e registra informação insuficiente, sem pressupor que todos os temas sejam aplicáveis a cada fonte."
+  },
+  "P4": {
+    "local": "P_atual0263",
+    "contexto": "Lampugnani (2026) é discutido separadamente e não integra os 34 documentos da matriz. As dimensões são: P1 lei probabilística ligada à geração de Win ou W; P2 procedimento de seleção de hiperparâmetros de ESN/RC; P3 preparação concreta de séries temporais, incluindo transformações e construção de atributos ou janelas; P4 comparação quantitativa de previsão com LSTM, GRU ou Transformer; e P5 mercado e ativo identificados. A codificação distingue aplicações próprias de tratamentos secundários e registra informação insuficiente, sem pressupor que todos os temas sejam aplicáveis a cada fonte."
+  },
+  "P5": {
+    "local": "P_atual0263",
+    "contexto": "Lampugnani (2026) é discutido separadamente e não integra os 34 documentos da matriz. As dimensões são: P1 lei probabilística ligada à geração de Win ou W; P2 procedimento de seleção de hiperparâmetros de ESN/RC; P3 preparação concreta de séries temporais, incluindo transformações e construção de atributos ou janelas; P4 comparação quantitativa de previsão com LSTM, GRU ou Transformer; e P5 mercado e ativo identificados. A codificação distingue aplicações próprias de tratamentos secundários e registra informação insuficiente, sem pressupor que todos os temas sejam aplicáveis a cada fonte."
+  },
+  "MATERIAL": {
+    "local": "P_atual0292",
+    "contexto": "MATERIAL E MÉTODOS"
+  },
+  "PESQUISA": {
+    "local": "P_atual0295",
+    "contexto": "CLASSIFICAÇÃO DA PESQUISA"
+  },
+  "GA": {
+    "local": "P_atual0298",
+    "contexto": "A implementação partiu de códigos em R fornecidos pelo orientador, adaptados pelo autor ao contexto da pesquisa, com desenvolvimento da interface do ESNAUTO. Os fundamentos da ESN seguem Jaeger (2007). O código atual usa GA, fGarch e PearsonDS; mede tempo com proc.time e usa pracma como pseudoinversa alternativa. O script anterior carrega outras bibliotecas e contém exemplos de ajuste comentados. O Quadro 6 distingue a base recebida e a contribuição de adaptação e interface."
+  },
+  "CONJUNTO": {
+    "local": "P_atual0300",
+    "contexto": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO"
+  },
+  "PETROBRAS": {
+    "local": "P_atual0301",
+    "contexto": "A pesquisa utiliza arquivos locais da série PETR4 fornecidos pelo orientador, Prof. Dr. Fabian Corrêa Cardoso, já ajustados por eventos corporativos. A procedência da série é atribuída ao BovDB (Cardoso et al., 2022b). O ativo é a ação preferencial da Petróleo Brasileiro S.A. (PETROBRAS PN). A preparação original dos arquivos antecede seu uso nesta pesquisa; a modelagem partiu dos valores recebidos."
+  },
+  "PN": {
+    "local": "P_atual0301",
+    "contexto": "A pesquisa utiliza arquivos locais da série PETR4 fornecidos pelo orientador, Prof. Dr. Fabian Corrêa Cardoso, já ajustados por eventos corporativos. A procedência da série é atribuída ao BovDB (Cardoso et al., 2022b). O ativo é a ação preferencial da Petróleo Brasileiro S.A. (PETROBRAS PN). A preparação original dos arquivos antecede seu uso nesta pesquisa; a modelagem partiu dos valores recebidos."
+  },
+  "DAS": {
+    "local": "P_atual0312",
+    "contexto": "IMPLEMENTAÇÃO DAS ESNS EM R"
+  },
+  "ESNS": {
+    "local": "P_atual0312",
+    "contexto": "IMPLEMENTAÇÃO DAS ESNS EM R"
+  },
+  "EM": {
+    "local": "P_atual0312",
+    "contexto": "IMPLEMENTAÇÃO DAS ESNS EM R"
+  },
+  "MODELOS": {
+    "local": "P_atual0331",
+    "contexto": "MODELOS DE COMPARAÇÃO: LSTM E GRU"
+  },
+  "DESENHO": {
+    "local": "P_atual0334",
+    "contexto": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO"
+  },
+  "EXPERIMENTAL": {
+    "local": "P_atual0334",
+    "contexto": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO"
+  },
+  "INFERENCIAL": {
+    "local": "P_atual0342",
+    "contexto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO"
+  },
+  "TESTE": {
+    "local": "P_atual0342",
+    "contexto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO"
+  },
+  "DIEBOLD-": {
+    "local": "P_atual0342",
+    "contexto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO"
+  },
+  "MARIANO": {
+    "local": "P_atual0342",
+    "contexto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO"
+  },
+  "LESN": {
+    "local": "P_atual0347",
+    "contexto": "Os três modelos geraram 1.299 previsões datadas entre 29/09/2015 e 30/12/2020. A janela comparativa foi definida previamente como as 1.298 datas comuns entre 30/09/2015 e 30/12/2020. Para cada par de modelos, foram calculados os erros et = yt − ŷt e o diferencial dt = LESN,t − Lbaseline,t. Foram executadas quatro comparações bilaterais, com horizonte h = 1 e nível de significância α = 0,05: ESN × GRU e ESN × LSTM sob perda absoluta (|et|) e sob perda quadrática (et²)."
+  },
+  "EXPERIMENTOS": {
+    "local": "P_atual0349",
+    "contexto": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS"
+  },
+  "MASS": {
+    "local": "P_atual0352",
+    "contexto": "A implementação experimental utilizou R como linguagem principal e scripts auxiliares em Python para orquestração e pós-processamento. As execuções de ESN foram realizadas em unidade central de processamento (Central Processing Unit – CPU), sem dependência de aceleração por unidade de processamento gráfico (Graphics Processing Unit – GPU). O repositório documentou os pacotes e pré-requisitos necessários à aplicação, incluindo GA, pracma, fGarch, PearsonDS, StockDistFit, fitdistrplus, MASS, ggplot2, shiny e, para os baselines profundos, keras3/TensorFlow."
+  },
+  "RESULTADOS": {
+    "local": "P_atual0374",
+    "contexto": "RESULTADOS E DISCUSSÃO"
+  },
+  "GERAL": {
+    "local": "P_atual0375",
+    "contexto": "VISÃO GERAL DOS EXPERIMENTOS"
+  },
+  "DESEMPENHO": {
+    "local": "P_atual0381",
+    "contexto": "DESEMPENHO PREDITIVO GLOBAL"
+  },
+  "PREDITIVO": {
+    "local": "P_atual0381",
+    "contexto": "DESEMPENHO PREDITIVO GLOBAL"
+  },
+  "GLOBAL": {
+    "local": "P_atual0381",
+    "contexto": "DESEMPENHO PREDITIVO GLOBAL"
+  },
+  "EFEITO": {
+    "local": "P_atual0402",
+    "contexto": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS"
+  },
+  "ENTRE": {
+    "local": "P_atual0408",
+    "contexto": "DISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO"
+  },
+  "REGIMES": {
+    "local": "P_atual0413",
+    "contexto": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE"
+  },
+  "CUSTO": {
+    "local": "P_atual0417",
+    "contexto": "CUSTO COMPUTACIONAL"
+  },
+  "COMPUTACIONAL": {
+    "local": "P_atual0417",
+    "contexto": "CUSTO COMPUTACIONAL"
+  },
+  "GERENCIAL": {
+    "local": "P_atual0423",
+    "contexto": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO"
+  },
+  "RISCO": {
+    "local": "P_atual0423",
+    "contexto": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO"
+  },
+  "MODELO": {
+    "local": "P_atual0423",
+    "contexto": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO"
+  },
+  "VALIDADE": {
+    "local": "P_atual0464",
+    "contexto": "VALIDADE INTERNA E ESTATÍSTICA"
+  },
+  "INTERNA": {
+    "local": "P_atual0464",
+    "contexto": "VALIDADE INTERNA E ESTATÍSTICA"
+  },
+  "EXTERNA": {
+    "local": "P_atual0474",
+    "contexto": "VALIDADE EXTERNA"
+  },
+  "FUTUROS": {
+    "local": "P_atual0478",
+    "contexto": "TRABALHOS FUTUROS"
+  },
+  "JANUS": {
+    "local": "P_atual0479",
+    "contexto": "A continuidade do artefato prevê revisar a interface, reorganizar a navegação, melhorar a apresentação dos resultados e consolidar a identidade da aplicação, amadurecendo a experiência de uso. Nessa etapa futura, o software adotará o nome JANUS, com o mesmo núcleo experimental do ESNAUTO e possibilidades de uso mais amplas. Nesta monografia, a versão dos experimentos permanece identificada como ESNAUTO."
+  },
+  "VALE3": {
+    "local": "P_atual0482",
+    "contexto": "A extensão à VALE3 permanece como continuidade experimental, fora dos resultados desta monografia. Ela deverá avaliar preparação da série, distribuições, repetições e comparadores sob partições temporalmente auditáveis. Os parâmetros das distribuições deverão ser ajustados ao treino ou ter sua transferência entre ativos explicitada. As execuções exploratórias preservadas são material preliminar."
+  }
+}

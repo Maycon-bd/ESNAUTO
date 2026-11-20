@@ -1,0 +1,704 @@
+
+[PÁGINA PDF 1]
+Int J Comput Intell Syst         (2025) 18:180 
+RESEARCH ARTICLE
+Enhanced Multistep Prediction of Multivariate Market
+Indices Using Weighted Optical Reservoir Computing
+Fang Wang 1 · Ting Bu 2 · Yuping Huang 1,2
+Received: 14 February 2025 / Revised: 10 June 2025 / Accepted: 20 June 2025
+© The Author(s) 2025
+Abstract
+We propose and experimentally demonstrate an innovative weighted optical reservoir computing system for market
+index prediction. By integrating fundamental market data with macroeconomic indicators and technical metrics,
+we capture the broader dynamics of the stock market. Our system shows signiﬁcantly higher performance than
+the state-of-the-art methods such as linear regression, decision trees, and neural network architectures including
+long short-term memory. It effectively captures the market’s high volatility and nonlinear behaviors under limited
+data conditions, demonstrating strong potential for real-time, parallel, multi-dimensional data processing, and
+prediction.
+Keywords Optical reservoir computing · Parallel data processing · Multivariate forecasting · Multistep prediction
+1 Introduction
+Over the past few decades, machine learning (ML) has emerged as a transformative tool in ﬁnancial market
+prediction, particularly for forecasting market indices [ 1]. The core challenge in this ﬁeld lies in effectively
+integrating diverse information sources and building models capable of capturing the inherent complexity of
+ﬁnancial markets. A wide range of ML techniques-including regression, classiﬁcation, deep learning, and ensemble
+approaches-have been applied to forecast stock and market trends [ 2–9]. Among them, long-short-term memory
+(LSTM) networks, a specialized class of recurrent neural networks (RNNs), have gained prominence for their
+ability to capture temporal dependencies and nonlinear patterns in sequential data [ 10–16]. Leveraging historical
+prices, technical indicators [ 17], and macroeconomic variables, these ML models can generate nuanced forecasts
+and provide insights into market behavior.
+Despite their promise, existing ML methods for market prediction face several limitations. Most require large
+volumes of dense historical data for training, which can be resource-intensive and not always practical. Moreover,
+many models struggle to capture sudden market shifts or peaks, often leading to unreliable predictions under volatile
+conditions. These limitations hinder their effectiveness for real-time forecasting and ﬁnancial decision-making.
+RNNs have long served as foundational architectures for modeling temporal dynamics, but their training is often
+challenged by issues such as vanishing and exploding gradients. To address these issues, alternative frameworks
+have been developed. One such approach is Backpropagation-Decorrelation (BPDC), an efﬁcient online learning
+algorithm introduced by Steil [ 18], which reduces computational complexity to O(N) while enhancing training
+stability. Another inﬂuential direction is Reservoir Computing (RC), which simpliﬁes learning by keeping the
+recurrent component-known as the reservoir-ﬁxed and training only the output layer [ 19]. A prominent RC model
+is the Echo State Network (ESN), proposed by Jaeger [ 20], which employs a randomly initialized reservoir that
+Int J Comput Intell Syst         (2025) 18:180 https://doi.org/10.1007/s44196-025-00906-4
+0123456789().: V,-vol 123
+
+[PÁGINA PDF 2]
+  180 Page 2 of 17 https://doi.org/10.1007/s44196-025-00906-4  
+Fig. 1 Experimental setup for stock index prediction comparing spatial reservoir computing and popular machine learning
+models
+satisﬁes the echo state property to ensure stability. These architectures offer a compelling balance of expressiveness,
+computational efﬁciency, and ease of training for time-series modeling.
+Recent studies have demonstrated that RC architectures can perform competitively on time-series tasks, even
+with limited training data [ 21–23]. This makes them particularly attractive for ﬁnancial applications where low-
+latency, real-time, and data-efﬁcient prediction is critical. An RC system consists of a dynamic reservoir that
+projects input into a high-dimensional space, and a readout layer that extracts patterns from the resulting reservoir
+states [24]. As only the readout is trained-typically with simple linear regression-RC allows for fast training and
+efﬁcient computation [25]. Furthermore, the ﬁxed nature of the reservoir makes RC highly suitable for hardware
+implementation. In particular, optical reservoir computing has attracted attention for its ability to leverage photonic
+hardware for ultra-fast and parallel computation [ 23, 26–28]. Optical RC systems can be categorized into free-
+space optical RC, ﬁber-based temporal RC, and integrated photonic RC, with free-space conﬁgurations offering
+the highest ﬂexibility and parallelism.
+In this work, we propose and experimentally demonstrate an innovative free-space optical RC system for
+forecasting daily stock index prices. Using a spatial light modulator (SLM), temporal benchmark data is projected
+into high-dimensional optical signals across both spatial and temporal domains. This architecture enables high-
+quality prediction while supporting ﬂexible encoding of multi-dimensional input features. Thanks to the large
+number of modulator pixels and a novel feature-mapping method, the system is capable of processing multiple
+training samples in parallel-regardless of input feature size-without incurring additional time costs for signal
+interconnection or nonlinearity, as seen in traditional temporal RC systems [ 22].
+By translating temporal dependencies in time-series data into spatial coherence within a free-space optical
+platform, our system enables multi-step prediction with enhanced parallelism and speed. We evaluate performance
+on seven widely-used stock indices, each with 500 historical data points and seven macroeconomic and technical
+indicators. Feature correlation is incorporated as a weighting mechanism to further enhance prediction quality. Our
+comparative analysis shows that the proposed optical RC system consistently outperforms popular ML models for
+both one-step and multi-step prediction tasks. Unlike prior approaches that depend on large datasets, our system
+achieves real-time, low-latency, and accurate forecasting with limited historical data. Notably, the integration of
+feature-weighted mapping leads to immediate capture of signal peaks and improved robustness. These advantages
+position our feature-optimized optical RC system as a promising solution for edge-based conﬁdential forecasting
+and efﬁcient ﬁnancial modeling.
+2 Methods
+Experiment Diagram
+Figure 1 illustrates the experimental procedures described in this paper. Initially, we download historical trading
+datasets from stock benchmarks and perform basic data and feature engineering. Subsequently, we apply optical
+123 Int J Comput Intell Syst         (2025) 18:180 
+
+[PÁGINA PDF 3]
+https://doi.org/10.1007/s44196-025-00906-4  Page 3 of 17   180 
+Fig. 2 The schematic
+diagram of the
+conventional RC
+RC and various popular ML techniques to predict future stock index prices, respectively. We compare different
+machine learning models, utilizing cross-validation and hyperparameter tuning to select the ML model with the
+lowest error for each benchmark. Finally, we evaluate our models and compare the predictions from optical RC
+with the best-performing ML model for each benchmark.
+Optical RC
+Our spatial optical RC follows the basic working principle of conventional RC as visualized in Fig. 2, which can
+be described by
+x(t) = f [αx(t − 1)Wres + βu(t)Win ], (1)
+where x(t) represents the reservoir state at time t. f is the nonlinear function. α and β are the feedback gain and
+input gain, which will be optimized for the best performance.Wres is the random connection of the reservoir nodes.
+Win is the input weight to map the input to the system. In a conventional RC framework, the input vector x has a
+dimension of L × 1, where L denotes the length of the time series. At each time step t, there is a single data point.
+The input weight matrix Win is generated randomly with dimensions N × L,w h e r eN is the number of reservoir
+nodes. This setup enables the projection of the input data into a higher-dimensional space. Due to the updating
+rule of the reservoir states in Eq. 1, the current state x(t) inherently contains information from the preceding state
+x(t − 1). This endows reservoir computers with the crucial property of short-term memory, a feature for effective
+time-series data prediction. In the training stage, the input is injected sequentially into the reservoir, and the
+resulting reservoir states x for all time instances within the range [1, T] are recorded. Subsequently, the system’s
+output weights ( Wout ) can be determined by minimizing the error between the predicted results ( ˆy = Wout x).
+In our optical setup, a continuous-wave 775 nm laser diode serves as the light source, as illustrated in Fig. 3.
+The beam waist is adjusted to 1 mm after collimation. To match the effective area on the spatial light modulator
+(Santec SLM-210, which is 15.4× 9.6 mm), a 10× beam expander is used to enlarge the beam size. A power meter
+is implemented to capture the transmitted light passing through the polarizing beam splitter (PBS) for real-time
+monitoring of system stability during training and testing. While the laser power is not directly incorporated into
+the computational process, it is utilized as a diagnostic measure to mitigate the risk of erroneous results arising
+from abrupt ﬂuctuations in the laser source. Before the beam splitter (BS), we employ a half-wave plate to rotate
+the light’s polarization, thereby maximizing the modulation effect on the SLM. Following modulation, the light
+is focused, and a camera (model: Basler a2A 1920-160umPRO with a 1920 × 1200 resolution) is positioned in
+the time-Fourier domain [ 29] to align the sensor area with the beam size for subsequent information processing.
+The inset in Fig. 3 illustrates the data ﬂow diagram in our spatial RC. One key here is the combination of
+input values and the feedback state for spatial light modulation. Here, we use a similar mapping method as the
+"linear-combination mapping" in our previous paper [ 21]. The difference is with how the overall mapping area is
+split into several input portals. Instead of equally dividing the SLM into n sections for n input values, we repeat
+and stack the inputs until all the modulation areas on the SLM are ﬁlled. In the case where n = 4, as shown in
+Int J Comput Intell Syst         (2025) 18:180 123
+
+[PÁGINA PDF 4]
+  180 Page 4 of 17 https://doi.org/10.1007/s44196-025-00906-4  
+Fig. 3 The conﬁguration of the spatial reservoir computer.
+SLM: spatial light modulator, BS: beam splitter, HWP:
+half-wave plate, QWP: quarter-wave plate, PBS: polarizing
+beam splitter, PM: power meter
+Fig. 4 The mapping
+method to combine
+multi-feature inputs and the
+camera state for spatial
+light modulation
+Fig. 4, the 4 input values are repeated and stacked sequentially, each with a height and length of 20 SLM pixels.
+The mapped input is multiplied by an input scale ( β) and a random input weight( Win ), while the captured camera
+state is rescaled with a feedback gain (α). The combination is then linearly rescaled again to match with the 0− 2π
+phase modulation on SLM. The nonlinearity of the system is achieved through the camera intensity reading and
+the intensity saturation rate. Similar to Eq.( 1), our spatial RC can be simpliﬁed as
+x(t) = f {[αx(t − 1) + βWin ⊙ Wcor ⊙ u(t)]Wres }. (2)
+Here Wcor is a designed weight for the features of each stock index benchmark. x(t) is the reservoir state at time t
+from the camera, which is rescaled to match the gray level of the SLM. ⊙ is a point wise multiplication operator.
+f {} and Wres are the accumulated nonlinear effect and reservoir weight, respectively, through the whole system.
+Thanks to the large number of pixels on SLM (400× 400), it can easily function as a multi-input portal, allowing
+a large amount of information to be encoded into the system at once. In this way, the temporal correlation among
+the time-series data is translated into spatial coherence of the optical ﬁeld, whose dynamics implement a complex-
+number kernel function. Therefore, besides evaluating the 1-step prediction, where the result contains only the next
+step value, we also assess the system’s performance for multi-step ahead prediction using more inputs. In this case,
+u(t) is the vector containing all the feature information for different time steps. Speciﬁcally, we present examples
+of multi-step prediction with four-step and ten-step ahead predictions, labeled as 4-step and 10-step, respectively.
+Taking 4-step prediction as an example, the input vectoru(t) has 32 values, corresponding to one closing price and
+7 features per time step. Accordingly, the prediction horizon is 4 steps containing 4 days of closing prices beyond
+123 Int J Comput Intell Syst         (2025) 18:180 
+
+[PÁGINA PDF 5]
+https://doi.org/10.1007/s44196-025-00906-4  Page 5 of 17   180 
+Table 1 Stock indices statistics summary
+Stock index Start date End date Trading days Max price Min price Mean price Std Dev price
+^HSI 2021-03-22 2023-09-29 600 29468.00 14687.02 22068.88 3580.74
+^IXIC 2021-05-07 2023-09-29 600 16057.44 10213.29 13074.77 1547.05
+^N225 2021-03-16 2023-09-29 600 33753.33 24717.53 28589.14 1910.66
+^NY A 2021-05-07 2023-09-29 600 17353.76 13472.18 15848.07 836.49
+MME=F 2021-05-07 2023-09-29 600 1391.90 846.40 1091.06 144.08
+UKX.L 2021-04-20 2023-09-29 600 8012.53 6826.15 7379.49 270.15
+VTHR 2021-05-07 2023-09-29 600 216.93 160.90 191.04 13.50
+the most recent input. This encoding method exploits the spatial correlation of the free space optics that occurs
+naturally in our setup. To explore the impact of input size on multi-step forecasting, we conducted supplementary
+experiments on the Mackey-Glass benchmark using ﬁxed-length input vectors. As this analysis is peripheral to the
+main focus of the paper, we brieﬂy summarize the ﬁndings here for readers who may ﬁnd them informative: With
+the same size of input, the performance degraded notably at longer prediction horizons (e.g., NMSE increased
+from 0.0009 for 1-step prediction to 0.016 in the 4-step case), likely due to limited temporal context.
+Multiple ML and LSTM Models
+This paper uses various ML regression methods and neural networks to predict each benchmark [ 30, 31]. These
+include Lasso, ElasticNet, Random Forest Regressor, Linear Regression, Ridge, SGD Regressor, K-Nearest Neigh-
+bors Regressor, Decision Tree Regressor, Bayesian Ridge, and LSTM [32–34]. Speciﬁcally, the LSTM architecture
+includes an internal memory that acts like a local variable, storing information as it processes a sequence of inputs.
+It uniquely handles outputs by recycling the production from one time-step as the input for the subsequent time-
+step [35]. This recycling process enables the LSTM to make informed predictions by considering both the current
+input and the output from the immediate preceding timestep. While LSTM is well-suited for time series prediction
+due to its ability to capture temporal dependencies, it generally requires large datasets for effective training. To
+ensure a fair comparison, we also evaluate several traditional machine learning regression models. We employ
+cross-validation with time series splitting to rigorously evaluate and compare each model’s performance while
+preserving the temporal structure of the data. After that, we apply grid search for hyperparameter tuning to optimize
+the model’s conﬁguration, ensuring we identify the most effective parameters for the best-performing model. The
+best-performing model will be selected for comparison with the optical RC system.
+For multi-step prediction, the data preparation for the time-series sequence with features follows the same
+approach as in optical RC in the previous subsection. The regression methods remain consistent with the one-step
+prediction, while the model dimensions in the LSTM are adjusted to align with the prediction horizon.
+3 DatasetsandFeatureEngineering
+Market Indices
+Table 1 presents statistical data for seven major stock indices over periods ranging from early 2021 to late 2023,
+sourced from Y ahoo Finance. Each index’s performance is summarized by the number of trading days, maximum
+and minimum prices, mean price, and standard deviation of prices. Based on the statistical data, the closing prices
+of all the stock indices are inherently noisy, non-linear, and chaotic. Indices such as ^HSI and ^N225 exhibited
+higher volatility, while MME=F and VTHR demonstrated greater price stability. This table provides a comparative
+overview of the behavior of global equity indices during the examined period.
+Int J Comput Intell Syst         (2025) 18:180 123
+
+[PÁGINA PDF 6]
+  180 Page 6 of 17 https://doi.org/10.1007/s44196-025-00906-4  
+Table 2 Features used for
+stock prediction in this
+paper
+Fundamental data Source Abbreviation
+Closing price Y ahoo Finance Close
+Closing price(t-1) Y ahoo Finance Close(t-1)
+Macroeconomic data Source Abbreviation
+Cboe volatility index Y ahoo Finance VIX
+Effective Federal Funds Rate FRED EFFR
+Consumer sentiment index FRED UMSCENT
+US dollar index Y ahoo Finance DXYNYB
+Technical analysis data Source Abbreviation
+Moving average convergence divergence Calculated MACD
+Average true range Calculated A TR
+Relative strength index Calculated RSI
+In dynamic and highly non-stationary Financial environments especially like the stock market, concept drift
+is a persistent issue: the underlying data-generating processes evolve over time due to changing market regimes,
+investor behavior, and macroeconomic factors. As a result, models trained on large historical datasets often suffer
+from degraded predictive performance when applied to more recent data, since the patterns they learn may no longer
+be relevant [36]. The decision to train our models on relatively small datasets-speciﬁcally, 500 daily observations-
+was made with careful consideration of the unique challenges posed by ﬁnancial time series. By focusing on
+shorter, more recent time windows, we aim to mitigate the impact of outdated information and ensure that the
+model reﬂects the current market context. The importance of handling concept drift in streaming or time-evolving
+environments has been well documented in the literature [ 37], and is especially critical in ﬁnancial applications
+where drift can occur both abruptly and incrementally.
+Features and Correlation Weights
+Due to the complexity of the benchmarks, a prediction model based solely on the closing price cannot gather all the
+necessary information for accurate predictions. Consequently, feature selection is a crucial part of the prediction
+enhancement. However, it is challenging to extract features from ﬁnancial data. On the one hand, limiting the
+features can hinder the predictive model’s performance. On the other hand, including all available features from
+the ﬁnancial market can lead to a dimensionally complex and difﬁcult-to-interpret model. Additionally, collinearity
+among multiple variables can negatively impact the model’s performance. Some studies select the features rely
+solely on technical indicators [ 38, 39], while others incorporate historical data and macroeconomic indicators
+[40–44].
+Table 2 outlines the set of input features used for stock prediction in this study, categorized into fundamental,
+macroeconomic, and technical indicators. Fundamental data includes the current and lagged closing prices obtained
+from Y ahoo Finance. Macroeconomic indicators incorporate market sentiment and economic conditions, such as
+the Cboe V olatility Index (VIX), Effective Federal Funds Rate (EFFR), Consumer Sentiment Index (UMSCENT),
+and the U.S. Dollar Index (DXYNYB), sourced from Y ahoo Finance and FRED. Technical analysis features,
+including the Moving Average Convergence Divergence (MACD), Average True Range (A TR), and Relative
+Strength Index (RSI), are calculated directly based on historical price data. These diverse features are designed to
+capture both short-term dynamics and broader market conditions to enhance forecasting accuracy. The features are
+selected by calculating the Pearson correlation coefﬁcients, which reﬂect the strength and direction of the linear
+relationship between the features and the closing price of each stock index.
+All the input features discussed above contribute to stock price prediction. This relationship is illustrated by a
+correlation matrix, as shown in Fig. 5. The numerical values in the heatmap represent the pairwise correlations
+between the variables on the horizontal and vertical axes. As expected, the diagonal values of the matrix are all
+123 Int J Comput Intell Syst         (2025) 18:180 
+
+[PÁGINA PDF 7]
+https://doi.org/10.1007/s44196-025-00906-4  Page 7 of 17   180 
+Fig. 5 The correlation weights between the features and
+the closing price for stock index ˆNY A
+1, indicating perfect correlation of each variable with itself. Therefore, these diagonal values are not informative
+for our analysis. Instead, the off-diagonal entries are used in the feature selection process. The intensity of the
+color in Fig. 5 reﬂects the magnitude of these correlations, indicating the strength of the relationship between
+corresponding variables.
+In particular, for the subsequent RC prediction, we incorporate the bottom row of the correlation weight (CW)
+matrix as an additional set of input weights, denoted as Wcor,a ss h o w ni nE q .(2). These weights are integrated into
+the input data during the stage where random input weights are applied, serving as scaling factors that modulate
+the inﬂuence of each input indicator in the spatial RC system. This mechanism emphasizes features with stronger
+correlations (i.e., higher weights) while downweighting less informative ones. By doing so, the input information
+is selectively emphasized or de-emphasized according to its assigned weight, enabling the system to integrate data
+in a more discriminative manner, focus more effectively on relevant inputs and ultimately enhancing its predictive
+effectiveness. All inputs are standardized using z-score normalization prior to training to ensure consistency in
+scale. Further analysis and validation are presented in the Results and Discussion section.
+4 EvaluationMetrics
+Table 3 provides a comprehensive overview of the evaluation metrics used to assess the performance of the optical
+RC and ML models in this study. The selected metrics span several categories to ensure a holistic evaluation.
+Error-based metrics such as MAE, MSE, RMSE, NRMSE, and MAPE quantify the absolute and relative deviations
+between predicted and actual values. The coefﬁcient of determination ( R2) captures the proportion of variance
+explained by the model, while Directional Accuracy(%) measures the ability to predict the correct movement
+direction.
+To evaluate the performance of the proposed approach from a trading perspective, ﬁnancial performance
+metrics—including Cumulative Return, Annualized Return, and Maximum Drawdown—are incorporated. Risk-
+adjusted performance is evaluated using the Sharpe Ratio, Sortino Ratio, and Calmar Ratio, which account for
+volatility and downside risk. Additional measures such as the Information Ratio, Win Rate, Proﬁt Factor, and Trade
+Expectancy offer insight into proﬁtability, consistency, and expected outcomes of individual trades. Together, these
+metrics provide a multidimensional framework for comparing model accuracy, robustness, and practical relevance
+in ﬁnancial prediction tasks.
+Int J Comput Intell Syst         (2025) 18:180 123
+
+[PÁGINA PDF 8]
+  180 Page 8 of 17 https://doi.org/10.1007/s44196-025-00906-4  
+Fig. 6 1-step prediction for a ˆNY A and b ˆN225 indices using the optical RC system with correlation weights, without
+correlation weights and the best-performing ML model
+5 ResultsandDiscussion
+In our experiments, we used 500 days of data for training and 100 days for testing. Among the ML baseline models,
+Lasso performed best for 1-step prediction, while LSTM outperformed the other models for 4-step and 10-step
+predictions. This is because Lasso’s L1 regularization helps prevent overﬁtting under limited data conditions.
+In contrast, LSTM beneﬁts from its neural network architecture, which is well suited to capturing temporal
+dependencies-particularly after data resampling during the 4-step and 10-step modeling. In the results that follow,
+we compare only the best-performing ML models, labeled as Best ML, with the weighted optical RC system,
+labeled as optical RC.
+Figure 6 presents a subset of the experimental results, highlighting the signiﬁcant performance improvement
+achieved by incorporating correlation weights into the optical RC system. Figures present 1-step prediction results
+for the stock indices ˆNY A and ˆN225, respectively. For ˆNY A, the normalized root mean square errors (NRMSEs,
+the formula is listed in Table3) of the RC model with and without Wcor are 0.104 and 0.108, respectively, while the
+best ML model yields an NRMSE of 0.558-over ﬁve times higher than the RC result. Although the performance
+difference between the optical RC systems with and without correlation weights is relatively small for ˆNY A, the
+inclusion of Wcor still offers measurable improvement. In contrast, the effect of Wcor is much more signiﬁcant
+for ˆN225, as shown in Fig. 6(b). The RC model without correlation weights yields an NRMSE of 0.688, while
+the inclusion of Wcor reduces the error to 0.236-a substantial enhancement. This clearly demonstrates that the
+feature correlation weights substantially boost the predictive power of the optical RC system, especially in more
+complex market conditions. Furthermore, the optical RC system consistently outperforms the best ML model
+across both benchmarks. For ˆN225, the top ML model results in an NRMSE of 1.309, signiﬁcantly worse than
+both RC conﬁgurations. As visually evident in Fig. 6, the ML model predictions lag behind true price movements
+and diverge from actual values, whereas the optical RC predictions more accurately capture market volatility and
+nonlinear trends.
+This indicates that the inclusion of correlation weights signiﬁcantly enhances the prediction accuracy of the
+optical RC system by enabling it to better capture inter-feature relationships. The advantage of the weighted optical
+RC is especially pronounced in Fig. 6b, where the optical RC with CW not only follows the trend more accurately
+but also achieves better amplitude matching in the rising and falling phases of the ˆN225 index. In contrast, the best
+ML model exhibits noticeable lag and under-performance, particularly during periods of sharp market movement.
+123 Int J Comput Intell Syst         (2025) 18:180 
+
+[PÁGINA PDF 9]
+https://doi.org/10.1007/s44196-025-00906-4  Page 9 of 17   180 
+Table 3 Descriptions and formulas for the evaluation metrics used in model performance analysis
+Metric Description Formula
+MAE Mean Absolute Error 1
+n
+∑n
+i=1
+⏐⏐yi −ˆyi
+⏐⏐
+MSE Mean Squared Error 1
+n
+∑n
+i=1(yi −ˆyi )2
+RMSE Root Mean Squared Error
+√
+1
+n
+∑n
+i=1(yi −ˆyi )2
+NRMSE Normalized Root Mean Squared Error
+√ ∑n
+i=1(yi −ˆyi )2
+√ ∑n
+i=1(yi −¯y)2
+MAPE Mean Absolute Percentage Error 100
+n
+∑n
+i=1
+⏐⏐⏐ yi −ˆyi
+yi
+⏐⏐⏐
+R2 Proportion of variance in the dependent variable predictable from the independent variables 1 −
+∑n
+i=1(yi −ˆyi )2
+∑n
+i=1(yi −¯y)2
+Directional Accuracy % Percentage of correct directional predictions 1
+n
+∑n
+i=1 1
+[
+sign(ˆyi ) = sign(yi )
+]
+Cumulative Return Total return over time from a strategy ∏n
+t=1(1 + rt ) − 1
+Annualized Return Average compounded return per year (1 + R)
+252
+n − 1
+Maximum Drawdown Largest peak-to-trough decline in portfolio value max t
+(
+Peakt − Va lt
+Peakt
+)
+Calmar Ratio Annualized return divided by maximum drawdown Annual Return
+Max Drawdown
+Sharpe Ratio Risk-adjusted return E[R− R f ]
+σR ·
+√
+252
+Sortino Ratio Risk-adjusted return but penalizes only downside risk E[R− R f ]
+σdown ·
+√
+252
+Information Ratio Return relative to a benchmark divided by tracking error E[R− Rb]
+σR− Rb
+·
+√
+252
+Win Rate Percentage of trades that are proﬁtable Proﬁtable Trades
+Total Trades
+Proﬁt Factor Total gains divided by total losses
+∑ Proﬁts
+| ∑ Losses|
+Trade Expectancy Average expected return per trade (Win Rate · Avg Gain − (1 − Win Rate) · Avg Loss)
+Int J Comput Intell Syst         (2025) 18:180 123
+
+[PÁGINA PDF 10]
+  180 Page 10 of 17 https://doi.org/10.1007/s44196-025-00906-4  
+Fig. 7 Multi-step price prediction curves for stock indices ˆNY A and ˆN225
+The ﬁgures visually conﬁrm the effectiveness of incorporating correlation weights into the optical RC framework,
+setting the stage for the weighted optical RC to be the primary model used in all subsequent experiments.
+To gain insight into the prediction performances between the weighted optical RC and ML models for multistep
+predictions, we plot the prediction results. Figure 7 compares the true closing prices with predictions from the
+optical RC and the best-performing ML model, across 4-step, and 10-step horizons. Similar to the 1-step case, here
+we take ˆNY A and ˆN225 as demonstration as well. The ﬁgures in the ﬁrst row are for ^NY A and those in the second
+row are for ^N225. The ﬁgures illustrate that for 4-step predictions, the optical RC continues to preserve the overall
+trend with stable performance, while ML shows increasing deviation. ML has delayed reaction to all movements,
+while optical RC maintains closer alignment with the actual trajectory, showing better temporal generalization
+and adaptability. By the 10-step horizon, the performance gap becomes substantial. Optical RC retains the core
+trend structure with slightly dampened amplitude-an acceptable trade-off in long-horizon forecasting-whereas ML
+becomes highly erratic, exaggerating volatility.
+To have an all-round analysis on the prediction performance, we calculate the performance based on the statistical
+metrics as shown in Fig. 3 for both the optical RC model and the best-performing ML model across 1-step, 4-step,
+and 10-step forecasting horizons. Taking ^NY A index as an example, Table 4 lists all the comparison results. At
+123 Int J Comput Intell Syst         (2025) 18:180 
+
+[PÁGINA PDF 11]
+https://doi.org/10.1007/s44196-025-00906-4  Page 11 of 17   180 
+Table 4 NY A statistical analysis between the weighted optical RC and the best ML model across multiple prediction steps
+1-step Optical RC 1-step ML 4-step Optical RC 4-step ML 10-step Optical RC 10-step ML
+MAE 31.56 165.26 22.76 150 .58 47.03 257 .42
+MSE 1480.29 42944.01 931.30 33892 .23 3769.91 97051 .14
+RMSE 38.47 207.23 30.52 184 .10 61.40 311 .53
+NRMSE 0.10 0.56 0.08 0 .50 0.17 0 .84
+MAPE 0.20 1.06 0.14 0 .96 0.30 1 .63
+R2 0.99 0.69 0.99 0 .75 0.97 0 .30
+Directional Accuracy % 86.87 94.95 93.94 59 .60 79.80 54 .55
+Cumulative Return 0.02 0.02 0.07 − 0.01 0.07 0 .07
+Annualized Return 0.05 0.07 0.17 − 0.01 0.18 0 .18
+Maximum Drawdown 0.04 0.04 0.03 0 .04 0.04 0 .04
+Calmar Ratio 1.20 1.90 5.29 − 0.27 4.51 4 .41
+Sharpe Ratio 17.38 7.21 16.93 − 0.49 15.18 − 0.76
+Sortino Ratio 86.57 13.36 47.43 − 0.69 32.43 − 1.31
+Information Ratio 9.56 5.43 9.40 − 0.41 9.16 − 0.63
+Win Rate 0.87 0.66 0.88 0 .52 0.85 0 .43
+Proﬁt Factor 28.95 3.20 24.61 0 .93 14.86 0 .89
+Trade Expectancy % 0.49 0.27 0.48 − 0.02 0.45 − 0.03
+Int J Comput Intell Syst         (2025) 18:180 123
+
+[PÁGINA PDF 12]
+  180 Page 12 of 17 https://doi.org/10.1007/s44196-025-00906-4  
+the 1-step horizon, the optical RC achieves dramatically lower MAE (31.56 vs. 165.26), RMSE (38.47 vs. 207.23),
+NRMSE (0.10 vs. 0.56), and MAPE (0.20% vs. 1.06%) than ML, along with an R2 of 0.99, indicating near-perfect
+ﬁt. This performance persists even at longer horizons, where optical RC continues to outperform with lower
+forecast error, higher R2, and substantially better directional accuracy (93.94% vs. 59.60% at 4-step and 79.80%
+vs. 54.55% at 10-step). The RC model consistently provides higher cumulative and annualized returns with lower
+drawdowns and stronger risk-adjusted performance, particularly as evidenced by Sharpe, Sortino, and Calmar
+ratios. From a trading perspective, the optical RC model proves signiﬁcantly more proﬁtable and consistent. At
+the 10-step horizon, it achieves a Proﬁt Factor of 14.86 and a Trade Expectancy of 0.45%, compared to just 0.89
+and –0.03% for the ML model, respectively. The Win Rate remains above 85% across all horizons, while ML
+falls below 50% at the 10-step mark. Additionally, the RC model delivers high Information Ratios throughout,
+indicating strong alpha generation relative to residual risk. Under the condition of limited input data, the ML model
+fails to generalize beyond the 1-step horizon, with diminishing returns, negative Sharpe and Sortino ratios, and poor
+directional accuracy as forecast length increases. In general, the optical RC model demonstrates superiority across
+multiple statistical and trading performance metrics. These results highlight the optical RC model’s robustness
+and scalability, making it a compelling choice for ﬁnancial forecasting and algorithmic trading on broad market
+indices like ^NY A.
+To evaluate the predictive performance of the proposed optical RC model relative to the best baseline ML
+regressor across multiple ﬁnancial indices and forecasting horizons, we computed the Mean Absolute Scaled Error
+(MASE) and its relative reduction. We adopt the MASE to enable scale-invariant and interpretable comparisons
+across assets and forecast horizons. By normalizing against a naïve forecast, MASE offers a robust, unit-free
+evaluation that accounts for series-level variability, making it particularly well-suited for ﬁnancial time series
+characterized by nonstationary dynamics. For a predicted sequence ˆy
+t and true values yt , the MASE is computed
+as:
+MASE =
+1
+n
+∑n
+t=1 |yt −ˆyt|
+1
+n− 1
+∑n
+t=2 |yt − yt− 1|
+This formulation standardizes the forecast error by the average one-step naive forecast error (computed from the
+in-sample training data).
+For each index and forecasting step, we compared the optical RC model’s MASE against the best-performing
+baseline ML model. The relative MASE improvement is deﬁned as:
+/Delta1MASE = MASEML − MASERC
+MASEML
+To assess statistical signiﬁcance, we employed bootstrap resampling with 1,000 iterations. In each iteration,
+residuals were sampled with replacement to estimate the distribution of relative improvement. We then computed
+the 95% conﬁdence interval (CI) and a two-tailed p-value to determine whether the observed improvement was
+statistically signiﬁcant. Signiﬁcance levels were annotated using conventional symbols: ∗ for p < 0.05, ∗∗for
+p < 0.01, and ∗∗∗ for p < 0.001.
+The results were visualized using a heatmap in Fig. 8, where rows represent forecasting steps and columns
+represent ﬁnancial indices. Each cell displays the mean relative improvement in MASE from the optical RC model
+over the best-performing ML baseline regressor, along with bootstrap-derived statistical signiﬁcance markers.
+This bootstrapped simulation, using synthetic ﬁnancial data with controlled noise, serves to rigorously validate the
+statistical robustness of our method prior to real-market deployment. For each index-step pair, training and testing
+data were synthetically generated to mimic plausible return dynamics. Gaussian noise was added to generate
+predictions from both the optical RC model and baseline regressors, simulating controlled levels of error.
+Figure 8 illustrates that across the majority of indices and forecasting horizons, the optical RC model consistently
+outperforms the baseline ML regressors. Notable gains are observed on the ˆN225 index with a 29.40% MASE
+123 Int J Comput Intell Syst         (2025) 18:180 
+
+[PÁGINA PDF 13]
+https://doi.org/10.1007/s44196-025-00906-4  Page 13 of 17   180 
+Fig. 8 Heatmap showing
+the relative MASE
+improvement of the optical
+RC model over the ML
+baseline regressor
+reduction at the 1-step horizon ( p < 0.05) and on the ˆIXIC index with a 28.95% improvement at the 4-step
+horizon ( p < 0.05). The strongest gains tend to occur at the 4-step horizon, suggesting that the optical RC model
+is particularly effective at capturing intermediate-range temporal dependencies. This aligns with the expected
+advantage of optical RC systems in modeling nonlinear dynamics and memory effects over medium-term windows.
+Although a few negative values are reported-such as ˆNY A at the 1-step horizon (− 14.28%) and ˆHSI at the 4-step
+horizon (− 6.09%)-these instances are isolated and not statistically signiﬁcant, underscoring the robustness of the
+optical RC model across most experimental conditions.
+These ﬁndings collectively support the effectiveness of optical RC as a scalable and statistically reliable alter-
+native to conventional ML models in noisy, data-limited ﬁnancial forecasting tasks.
+Besides, we propose another way to quantify the performance difference by calculating the error reduction (ER)
+between the best ML model and optical RC predictions for seven stock indices. The ER is calculated using the
+formula
+ER = 1 − NRMSERC
+NRMSEML
+, (3)
+where NRMSERC and NRMSEML are the NRMSE of the RC and the best-performing ML methods, respectively.
+Figure 9 presents the relative error reduction achieved by the optical RC model in comparison to the best-
+performing ML model trained for each stock index. The results are shown for three forecast horizons: 1-step,
+4-step, and 10-step predictions. The values represent the percentage decrease in Normalized RMSE, with higher
+values indicating greater relative improvement by the optical RC model. Notably, for ^NY A, optical RC outperforms
+the best ML models by over 80% at the 10-step and 4-step horizon and maintains relatively high margins at 1-
+step levels. Comparable results are observed for VTHR, UKX.L, and MME=F, all of which show reductions
+exceeding 50% across nearly all horizons. For some indices like ^IXIC and ^N225, the improvements are more
+modest, particularly at longer horizons. For example, the 10-step error reduction on ^N225 is just 27.82%, 1-step
+error reduction is 17.13%, and dips to 13.62% at the 4-step level, which is due to the higher market volatility. It
+suggests that even the best-trained ML models perform competitively in these particular markets. Nonetheless,
+optical RC still offers meaningful gains even in these more challenging contexts. Interestingly, the trend across
+most indices shows increasing relative gains with prediction horizon. This is signiﬁcant given that multi-step
+forecasting typically suffers from error accumulation - yet optical RC maintains or even strengthens its advantage,
+demonstrating resilience and temporal consistency. This makes it a particularly attractive model for longer-term
+ﬁnancial forecasting, where robustness and stability are critical.
+To gain a deeper understanding of the accuracy spread and stability of our model, we plot the Absolute Percentage
+Error (APE) distributions in Fig.10 for the optical RC and ML models across 1-step, 4-step, and 10-step forecasting
+Int J Comput Intell Syst         (2025) 18:180 123
+
+[PÁGINA PDF 14]
+  180 Page 14 of 17 https://doi.org/10.1007/s44196-025-00906-4  
+Fig. 9 The error reduction
+of the weighted optical RC
+compared to the best ML
+model across multiple
+stock indices
+Fig. 10 Multi-step APE (%) distributions for stock indices ˆNY A and ˆN225
+horizons. The APE is calculated by
+APE % =
+⏐⏐⏐⏐
+yt −ˆyt
+yt
+⏐⏐⏐⏐ × 100%
+123 Int J Comput Intell Syst         (2025) 18:180 
+
+[PÁGINA PDF 15]
+https://doi.org/10.1007/s44196-025-00906-4  Page 15 of 17   180 
+where yt represents the actual value at time t, while ˆyt denotes the predicted value. The absolute percentage error
+(APE%) quantiﬁes the relative deviation between the predicted and actual values as a percentage.
+For the ^N225 index, the optical RC model consistently exhibits lower median errors and tighter distributions.
+At the 1-step horizon, optical RC errors are sharply concentrated around 0%, while the ML model demonstrates a
+wider, right-skewed distribution with a notably higher median. This trend persists as the forecast horizon extends:
+the optical RC model retains a compact error proﬁle even at the 10-step horizon, while the ML model’s errors
+become increasingly dispersed and skewed, indicating greater uncertainty and instability in its predictions.
+A similar but more pronounced pattern emerges for the ^NY A index. The optical RC model produces remarkably
+low and stable error distributions across all horizons, with a median APE consistently near zero. In contrast, the
+ML model shows broader and more variable error distributions, particularly at the 10-step horizon where error
+magnitudes and outliers increase signiﬁcantly. These results highlight the optical RC model’s robustness in multi-
+step forecasting, offering not only improved accuracy but also signiﬁcantly reduced variance, which is critical in
+ﬁnancial contexts where reliability and stability are paramount.
+6 Conclusion
+In conclusion, we have established a weighted optical reservoir computing system in free space that effectively
+captures broader market behavior and demonstrates superior performance in stock index prediction. Compared to
+the existing machine learning methods and long short-term memory neural networks, our system ofﬂoads intense
+computation to an optical system with low energy consumption, showing signiﬁcant advantages in handling high
+volatility and nonlinear market behaviors using limited data. This method promises a cost-effective approach
+to real-time, parallel, multi-dimensional data processing and predictions, with broad applications in ﬁnancial
+forecasting. The next steps include moving more data processing into the optical domain for high-speed, high-
+quality, and versatile applications in ﬁnancial analysis and alpha research. Future work could explore extending
+RC architectures through hierarchical or multi-scale reservoirs to better capture long-term dependencies and
+multi-scale temporal patterns in ﬁnancial time series analysis.
+Author Contributions Fang Wang, Ting Bu, and Y uping Huang contributed to the conceptualization of the study. Fang Wang
+and Ting Bu developed the methodology, conducted the formal analysis, and carried out the investigation. V alidation was
+performed by Fang Wang, Ting Bu, and Y uping Huang. The original draft was prepared by Fang Wang and Ting Bu, while
+all three authors participated in the review and editing process. All authors have read and approved the ﬁnal version of the
+manuscript.
+Funding This research did not receive any funding.
+Data Availability The data underlying the ﬁndings presented in this study are publicly available and can be accessed via the
+GitHub repository at: ( https://github.com/TingBu-forever/Supplymentary).
+Declarations
+Conﬂict of interest The authors declare that there is no conﬂict of interest.
+Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long
+as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and
+indicate if you modiﬁed the licensed material. Y ou do not have permission under this licence to share adapted material derived
+from this article or parts of it. The images or other third party material in this article are included in the article’s Creative
+Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative
+Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need
+to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/
+licenses/by-nc-nd/4.0/ .
+Int J Comput Intell Syst         (2025) 18:180 123
+
+[PÁGINA PDF 16]
+  180 Page 16 of 17 https://doi.org/10.1007/s44196-025-00906-4  
+References
+1. Lo, A.W.: What is an index? Available at SSRN 2672755 (2015)
+2. Shen, S., Jiang, H., Zhang, T.: Stock market forecasting using machine learning algorithms. Department of Electrical
+Engineering, Stanford University, Stanford, CA, 1–5 (2012)
+3. Leung, C.K.-S., MacKinnon, R.K., Wang, Y .: A machine learning approach for stock price prediction. In: Proceedings
+of the 18th International Database Engineering & Applications Symposium, pp. 274–277 (2014)
+4. Henrique, B.M., Sobreiro, V .A., Kimura, H.: Literature review: Machine learning techniques applied to ﬁnancial market
+prediction. Expert Syst. Appl. 124, 226–251 (2019)
+5. Jiang, W.: Applications of deep learning in stock market prediction: recent progress. Expert Syst. Appl. 184, 115537
+(2021)
+6. Vijh, M., Chandola, D., Tikkiwal, V .A., Kumar, A.: Stock closing price prediction using machine learning techniques.
+Procedia computer science 167, 599–606 (2020)
+7. Singh, R., Srivastava, S.: Stock prediction using deep learning. Multimedia Tools and Applications 76, 18569–18584
+(2017)
+8. Nikou, M., Mansourfar, G., Bagherzadeh, J.: Stock price prediction using deep learning algorithm and its comparison
+with machine learning algorithms. Intelligent Systems in Accounting, Finance and Management 26(4), 164–174 (2019)
+9. Kumbure, M.M., Lohrmann, C., Luukka, P ., Porras, J.: Machine learning techniques and data for stock market forecasting:
+A literature review. Expert Syst. Appl. 197, 116659 (2022)
+10. Nelson, D.M., Pereira, A.C., De Oliveira, R.A.: Stock market’s price movement prediction with lstm neural networks.
+In: 2017 International Joint Conference on Neural Networks (IJCNN), pp. 1419–1426 (2017). Ieee
+11. Moghar, A., Hamiche, M.: Stock market prediction using lstm recurrent neural network. Procedia computer science 170,
+1168–1173 (2020)
+12. Wang, Y ., Liu, Y ., Wang, M., Liu, R.: Lstm model optimization on stock price forecasting. In: 2018 17th International
+Symposium on Distributed Computing and Applications for Business Engineering and Science (dcabes), pp. 173–177
+(2018). IEEE
+13. Mehtab, S., Sen, J., Dutta, A.: Stock price prediction using machine learning and lstm-based deep learning models. In:
+Machine Learning and Metaheuristics Algorithms, and Applications: Second Symposium, SoMMA 2020, Chennai, India,
+October 14–17, 2020, Revised Selected Papers 2, pp. 88–106 (2021). Springer
+14. Ghosh, P ., Neufeld, A., Sahoo, J.K.: Forecasting directional movements of stock prices for intraday trading using lstm
+and random forests. Financ. Res. Lett. 46, 102280 (2022)
+15. Sunny, M.A.I., Maswood, M.M.S., Alharbi, A.G.: Deep learning-based stock price prediction using lstm and bi-directional
+lstm model. In: 2020 2nd Novel Intelligent and Leading Emerging Sciences Conference (NILES), pp. 87–92 (2020). IEEE
+16. Selvin, S., Vinayakumar, R., Gopalakrishnan, E., Menon, V .K., Soman, K.: Stock price prediction using lstm, rnn and cnn-
+sliding window model. In: 2017 International Conference on Advances in Computing, Communications and Informatics
+(icacci), pp. 1643–1647 (2017). IEEE
+17. Dash, R., Dash, P .K.: A hybrid stock trading framework integrating technical analysis with machine learning techniques.
+The Journal of Finance and Data Science 2(1), 42–57 (2016)
+18. Steil, J.J.: Backpropagation-decorrelation: online recurrent learning with o (n) complexity. In: 2004 IEEE International
+Joint Conference on Neural Networks (IEEE Cat. No. 04CH37541), vol. 2, pp. 843–848 (2004). IEEE
+19. Maass, W., Natschläger, T., Markram, H.: Real-time computing without stable states: A new framework for neural
+computation based on perturbations. Neural Comput. 14(11), 2531–2560 (2002)
+20. Jaeger, H.: The “echo state” approach to analysing and training recurrent neural networks-with an erratum note. Bonn,
+Germany: German national research center for information technology gmd technical report 148(34), 13 (2001)
+21. Bu, T., Zhang, H., Kumar, S., Jin, M., Kumar, P ., Huang, Y .: Efﬁcient optical reservoir computing for parallel data
+processing. Opt. Lett. 47(15), 3784–3787 (2022)
+22. Kumar, P ., Jin, M., Bu, T., Kumar, S., Huang, Y .-P .: Efﬁcient reservoir computing using ﬁeld programmable gate array
+and electro-optic modulation. OSA Continuum 4(3), 1086–1098 (2021)
+23. Rafayelyan, M., Dong, J., Tan, Y ., Krzakala, F., Gigan, S.: Large-scale optical reservoir computing for spatiotemporal
+chaotic systems prediction. Phys. Rev. X 10(4), 041037 (2020)
+24. Schrauwen, B., V erstraeten, D., V an Campenhout, J.: An overview of reservoir computing: theory, applications and
+implementations. In: Proceedings of the 15th European Symposium on Artiﬁcial Neural Networks. P . 471-482 2007, pp.
+471–482 (2007)
+25. Tanaka, G., Y amane, T., Héroux, J.B., Nakane, R., Kanazawa, N., Takeda, S., Numata, H., Nakano, D., Hirose, A.: Recent
+advances in physical reservoir computing: A review. Neural Netw. 115, 100–123 (2019)
+26. Duport, F., Schneider, B., Smerieri, A., Haelterman, M., Massar, S.: All-optical reservoir computing. Opt. Express 20(20),
+22783–22795 (2012)
+27. Sande, G., Brunner, D., Soriano, M.C.: Advances in photonic reservoir computing. Nanophotonics 6(3), 561–576 (2017)
+123 Int J Comput Intell Syst         (2025) 18:180 
+
+[PÁGINA PDF 17]
+https://doi.org/10.1007/s44196-025-00906-4  Page 17 of 17   180 
+28. Dong, J., Rafayelyan, M., Krzakala, F., Gigan, S.: Optical reservoir computing using multiple light scattering for chaotic
+systems prediction. IEEE J. Sel. Top. Quantum Electron. 26(1), 1–12 (2019)
+29. Kumar, S., Bu, T., Zhang, H., Huang, I., Huang, Y .: Robust and efﬁcient single-pixel image classiﬁcation with nonlinear
+optics. Opt. Lett. 46(8), 1848–1851 (2021)
+30. Bhandari, H.N., Rimal, B., Pokhrel, N.R., Rimal, R., Dahal, K.R., Khatri, R.K.: Predicting stock market index using lstm.
+Machine Learning with Applications 9, 100320 (2022)
+31. Sangiorgio, M., Dercole, F.: Robustness of lstm neural networks for multi-step forecasting of chaotic time series. Chaos,
+Solitons & Fractals 139, 110045 (2020)
+32. Li, J., Chen, W.: Forecasting macroeconomic time series: Lasso-based approaches and their forecast combinations with
+dynamic factor models. Int. J. Forecast. 30(4), 996–1015 (2014)
+33. Basak, S., Kar, S., Saha, S., Khaidem, L., Dey, S.R.: Predicting the direction of stock market prices using tree-based
+classiﬁers. The North American Journal of Economics and Finance 47, 552–567 (2019)
+34. Qian, B., Rasheed, K.: Stock market prediction with multiple classiﬁers. Appl. Intell. 26, 25–33 (2007)
+35. Hochreiter, S., Schmidhuber, J.: Long short-term memory. Neural Comput. 9(8), 1735–1780 (1997)
+36. Lu, J., Liu, A., Dong, F., Gu, F., Gama, J., Zhang, G.: Learning under concept drift: A review. IEEE Trans. Knowl. Data
+Eng. 31(12), 2346–2363 (2018)
+37. Gama, J., Žliobait˙e, I., Bifet, A., Pechenizkiy, M., Bouchachia, A.: A survey on concept drift adaptation. ACM computing
+surveys (CSUR) 46(4), 1–37 (2014)
+38. Park, C.-H., Irwin, S.H.: What do we know about the proﬁtability of technical analysis? Journal of Economic surveys
+21(4), 786–826 (2007)
+39. Lo, A.W., Mamaysky, H., Wang, J.: Foundations of technical analysis: Computational algorithms, statistical inference,
+and empirical implementation. J. Financ. 55(4), 1705–1765 (2000)
+40. Nti, I.K., Adekoya, A.F., Weyori, B.A.: A systematic review of fundamental and technical analysis of stock market
+predictions. Artif. Intell. Rev. 53(4), 3007–3057 (2020)
+41. Dow, J., Gorton, G.: Stock market efﬁciency and economic efﬁciency: Is there a connection? J. Financ. 52(3), 1087–1129
+(1997)
+42. Chen, N.-F., Roll, R., Ross, S.A.: Economic forces and the stock market. Journal of business, 383–403 (1986)
+43. Morck, R., Shleifer, A., Vishny, R.W., Shapiro, M., Poterba, J.M.: The stock market and investment: is the market a
+sideshow? Brook. Pap. Econ. Act. 1990(2), 157–215 (1990)
+44. Engle, R.F., Ghysels, E., Sohn, B.: Stock market volatility and macroeconomic fundamentals. Rev. Econ. Stat. 95(3),
+776–797 (2013)
+Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional
+afﬁliations.
+AuthorsandAﬃliations
+Fang Wang 1 · Ting Bu 2 · Yuping Huang 1,2
+B Y uping Huang
+yhuang5@stevens.edu
+Fang Wang
+fwang9@stevens.edu
+Ting Bu
+tbu@quantumcomputinginc.com
+1 Department of Physics, Stevens Institute of Technology, Hoboken, NJ 07030, USA
+2 Quantum Computing Inc., Hoboken, NJ 07030, USA
+Int J Comput Intell Syst         (2025) 18:180 123

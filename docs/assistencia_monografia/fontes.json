@@ -2,37 +2,276 @@
   "schema_version": 1,
   "data_contexto": "2026-10-23",
   "caminhos_relativos_a": "raiz_do_projeto",
-  "base_editorial_id": "monografia_vigente",
+  "base_editorial_id": "controle_versao_editorial",
   "fontes": [
-    {"id":"monografia_vigente","path":"reports/monografia/MayconGarciaSilva_monografia_PETR4_revisao_orientador.docx","tipo":"file","bloco":"EDITORIAL","papel":"Base editorial PETR4"},
-    {"id":"monografia_original","path":"reports/MayconGarciaSilva_monografia.docx","tipo":"file","bloco":"HISTORICO","papel":"Versão original; não usar como instrução vigente"},
-    {"id":"monografia_bibliometria","path":"reports/monografia/MayconGarciaSilva_monografia_bibliometria_VALE3.docx","tipo":"file","bloco":"HISTORICO","papel":"Versão anterior da revisão bibliográfica"},
-    {"id":"monografia_vale3","path":"reports/monografia/MayconGarciaSilva_monografia_resultados_VALE3.docx","tipo":"file","bloco":"VALE3-EXT","papel":"Versão anterior com segundo ativo"},
-    {"id":"ondas_1_4","path":"docs/08_comparativo_quatro_ondas_estocasticas.md","tipo":"file","bloco":"PETR4-HIST","papel":"Relatório das 30 execuções das Ondas 1 a 4"},
-    {"id":"onda_5","path":"docs/09_onda_5_ajustes_empiricos_easyfit.md","tipo":"file","bloco":"PETR4-HIST","papel":"Relatório das 15 execuções da Onda 5"},
-    {"id":"historico_ga","path":"Scripts/results/historico_otimizacoes_ga.csv","tipo":"file","bloco":"PETR4-HIST","papel":"Histórico agregado local; não substitui vetores ausentes"},
-    {"id":"dm_relatorio","path":"docs/10_diebold_mariano_tfc.md","tipo":"file","bloco":"PETR4-DM","papel":"Protocolo e interpretação da rodada complementar"},
-    {"id":"dm_manifesto","path":"Scripts/results/diebold_mariano/controlled_runs/seed_20260926/execution_manifest.json","tipo":"file","bloco":"PETR4-DM","papel":"Manifesto imutável anterior ao cálculo DM; interpretar com dm_execution.json"},
-    {"id":"dm_execucao","path":"Scripts/results/diebold_mariano/controlled_runs/seed_20260926/dm/dm_execution.json","tipo":"file","bloco":"PETR4-DM","papel":"Registro da execução posterior dos testes"},
-    {"id":"dm_previsoes","path":"Scripts/results/diebold_mariano/controlled_runs/seed_20260926/predictions/previsoes_dm.csv","tipo":"file","bloco":"PETR4-DM","papel":"Vetores datados congelados para os quatro testes"},
-    {"id":"dm_resultados","path":"Scripts/results/diebold_mariano/controlled_runs/seed_20260926/dm/resultados_dm.csv","tipo":"file","bloco":"PETR4-DM","papel":"Resultados dos quatro contrastes"},
-    {"id":"ilustracao_procedencia","path":"reports/revisao_orientador_petr4/procedencia.json","tipo":"file","bloco":"PETR4-ILUST","papel":"Origem das Figuras 5 e 6; lote legado"},
-    {"id":"ilustracao_metricas","path":"reports/revisao_orientador_petr4/metricas.csv","tipo":"file","bloco":"PETR4-ILUST","papel":"Métricas do lote ilustrativo"},
-    {"id":"ilustracao_previsoes","path":"reports/revisao_orientador_petr4/previsoes_teste.csv","tipo":"file","bloco":"PETR4-ILUST","papel":"Previsões da ilustração; não confundir com DM"},
-    {"id":"bibliografia","path":"reports/bibliometria_reconstrucao/artigos_reconstruidos.bib","tipo":"file","bloco":"LIT-34","papel":"Metadados reconstruídos; conferir versão antes de citar"},
-    {"id":"base_bibliografica","path":"reports/bibliometria_reconstrucao/base_reconstruida.json","tipo":"file","bloco":"LIT-34","papel":"Coleção e decisões de identificação"},
-    {"id":"bibliometria_validacao","path":"reports/bibliometria_reconstrucao/validacao_bibliometrix.json","tipo":"file","bloco":"LIT-34","papel":"Cobertura de 34 registros e 24 listas de palavras-chave"},
-    {"id":"bibliometria_texto","path":"reports/bibliometria_reconstrucao/Resultados_e_texto_para_monografia.md","tipo":"file","bloco":"LIT-34","papel":"Procedência, diferenças de versão e limites"},
-    {"id":"pdfs_citados","path":"Artigos citados","tipo":"directory","bloco":"LIT-34","papel":"Acervo PDF para leitura e verificação de afirmações"},
-    {"id":"vale3_discussao","path":"reports/vale3_comparacao/discussao_resultados.md","tipo":"file","bloco":"VALE3-EXT","papel":"12 execuções, persistência e limitações do segundo ativo"},
-    {"id":"motor_ga","path":"app/utils/ga_engine.R","tipo":"file","bloco":"CODIGO-ATUAL","papel":"GA atual; não presumir identidade com todas as execuções históricas"},
-    {"id":"motor_esn","path":"app/utils/esn_core.R","tipo":"file","bloco":"CODIGO-ATUAL","papel":"Lógica de validação e teste do motor atual"},
-    {"id":"preparacao_dados","path":"app/utils/data_prep.R","tipo":"file","bloco":"CODIGO-ATUAL","papel":"Dados, distribuições e montagem de partições"},
-    {"id":"esn_controlada","path":"Scripts/diebold_mariano/02_esn_controlled.R","tipo":"file","bloco":"PETR4-DM","papel":"Executor controlado com fronteira estrita de treino"}
+    {
+      "id": "controle_versao_editorial",
+      "path": "docs/assistencia_monografia/versao_vigente.json",
+      "tipo": "file",
+      "bloco": "CONTROLE-EDITORIAL",
+      "papel": "Fonte única da versão de trabalho vigente e do histórico numerado. Consultar a entrada indicada pelo campo vigente e conferir seu hash."
+    },
+    {
+      "id": "monografia_vigente",
+      "path": "reports/monografia/MayconGarciaSilva_monografia_PETR4_revisao_orientador.docx",
+      "tipo": "file",
+      "bloco": "EDITORIAL",
+      "papel": "Base PETR4 histórica adotada em 23/10/2026; não é o seletor editorial atual."
+    },
+    {
+      "id": "monografia_original",
+      "path": "reports/MayconGarciaSilva_monografia.docx",
+      "tipo": "file",
+      "bloco": "HISTORICO",
+      "papel": "Versão original; não usar como instrução vigente"
+    },
+    {
+      "id": "monografia_bibliometria",
+      "path": "reports/monografia/MayconGarciaSilva_monografia_bibliometria_VALE3.docx",
+      "tipo": "file",
+      "bloco": "HISTORICO",
+      "papel": "Versão anterior da revisão bibliográfica"
+    },
+    {
+      "id": "monografia_vale3",
+      "path": "reports/monografia/MayconGarciaSilva_monografia_resultados_VALE3.docx",
+      "tipo": "file",
+      "bloco": "VALE3-EXT",
+      "papel": "Versão anterior com segundo ativo"
+    },
+    {
+      "id": "ondas_1_4",
+      "path": "docs/08_comparativo_quatro_ondas_estocasticas.md",
+      "tipo": "file",
+      "bloco": "PETR4-HIST",
+      "papel": "Relatório das 30 execuções das Ondas 1 a 4"
+    },
+    {
+      "id": "onda_5",
+      "path": "docs/09_onda_5_ajustes_empiricos_easyfit.md",
+      "tipo": "file",
+      "bloco": "PETR4-HIST",
+      "papel": "Relatório das 15 execuções da Onda 5"
+    },
+    {
+      "id": "historico_ga",
+      "path": "Scripts/results/historico_otimizacoes_ga.csv",
+      "tipo": "file",
+      "bloco": "PETR4-HIST",
+      "papel": "Histórico agregado local; não substitui vetores ausentes"
+    },
+    {
+      "id": "dm_relatorio",
+      "path": "docs/10_diebold_mariano_tfc.md",
+      "tipo": "file",
+      "bloco": "PETR4-DM",
+      "papel": "Protocolo e interpretação da rodada complementar"
+    },
+    {
+      "id": "dm_manifesto",
+      "path": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/execution_manifest.json",
+      "tipo": "file",
+      "bloco": "PETR4-DM",
+      "papel": "Manifesto imutável anterior ao cálculo DM; interpretar com dm_execution.json"
+    },
+    {
+      "id": "dm_execucao",
+      "path": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/dm/dm_execution.json",
+      "tipo": "file",
+      "bloco": "PETR4-DM",
+      "papel": "Registro da execução posterior dos testes"
+    },
+    {
+      "id": "dm_previsoes",
+      "path": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/predictions/previsoes_dm.csv",
+      "tipo": "file",
+      "bloco": "PETR4-DM",
+      "papel": "Vetores datados congelados para os quatro testes"
+    },
+    {
+      "id": "dm_resultados",
+      "path": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/dm/resultados_dm.csv",
+      "tipo": "file",
+      "bloco": "PETR4-DM",
+      "papel": "Resultados dos quatro contrastes"
+    },
+    {
+      "id": "ilustracao_procedencia",
+      "path": "reports/revisao_orientador_petr4/procedencia.json",
+      "tipo": "file",
+      "bloco": "PETR4-ILUST",
+      "papel": "Origem das Figuras 5 e 6; lote legado"
+    },
+    {
+      "id": "ilustracao_metricas",
+      "path": "reports/revisao_orientador_petr4/metricas.csv",
+      "tipo": "file",
+      "bloco": "PETR4-ILUST",
+      "papel": "Métricas do lote ilustrativo"
+    },
+    {
+      "id": "ilustracao_previsoes",
+      "path": "reports/revisao_orientador_petr4/previsoes_teste.csv",
+      "tipo": "file",
+      "bloco": "PETR4-ILUST",
+      "papel": "Previsões da ilustração; não confundir com DM"
+    },
+    {
+      "id": "bibliografia",
+      "path": "reports/bibliometria_reconstrucao/artigos_reconstruidos.bib",
+      "tipo": "file",
+      "bloco": "LIT-34",
+      "papel": "Metadados reconstruídos; conferir versão antes de citar"
+    },
+    {
+      "id": "base_bibliografica",
+      "path": "reports/bibliometria_reconstrucao/base_reconstruida.json",
+      "tipo": "file",
+      "bloco": "LIT-34",
+      "papel": "Coleção e decisões de identificação"
+    },
+    {
+      "id": "bibliometria_validacao",
+      "path": "reports/bibliometria_reconstrucao/validacao_bibliometrix.json",
+      "tipo": "file",
+      "bloco": "LIT-34",
+      "papel": "Cobertura de 34 registros e 24 listas de palavras-chave"
+    },
+    {
+      "id": "bibliometria_texto",
+      "path": "reports/bibliometria_reconstrucao/Resultados_e_texto_para_monografia.md",
+      "tipo": "file",
+      "bloco": "LIT-34",
+      "papel": "Procedência, diferenças de versão e limites"
+    },
+    {
+      "id": "pdfs_citados",
+      "path": "Artigos citados",
+      "tipo": "directory",
+      "bloco": "LIT-34",
+      "papel": "Acervo PDF para leitura e verificação de afirmações"
+    },
+    {
+      "id": "vale3_discussao",
+      "path": "reports/vale3_comparacao/discussao_resultados.md",
+      "tipo": "file",
+      "bloco": "VALE3-EXT",
+      "papel": "12 execuções, persistência e limitações do segundo ativo"
+    },
+    {
+      "id": "motor_ga",
+      "path": "app/utils/ga_engine.R",
+      "tipo": "file",
+      "bloco": "CODIGO-ATUAL",
+      "papel": "GA atual; não presumir identidade com todas as execuções históricas"
+    },
+    {
+      "id": "motor_esn",
+      "path": "app/utils/esn_core.R",
+      "tipo": "file",
+      "bloco": "CODIGO-ATUAL",
+      "papel": "Lógica de validação e teste do motor atual"
+    },
+    {
+      "id": "preparacao_dados",
+      "path": "app/utils/data_prep.R",
+      "tipo": "file",
+      "bloco": "CODIGO-ATUAL",
+      "papel": "Dados, distribuições e montagem de partições"
+    },
+    {
+      "id": "esn_controlada",
+      "path": "Scripts/diebold_mariano/02_esn_controlled.R",
+      "tipo": "file",
+      "bloco": "PETR4-DM",
+      "papel": "Executor controlado com fronteira estrita de treino"
+    },
+    {
+      "id": "guia_fasoft_20261027",
+      "path": "C:/Users/User/Downloads/GUIA_Padronizacao_Monografia_FASOFT_UniRV (1).pdf",
+      "tipo": "file",
+      "bloco": "FORMATACAO",
+      "papel": "Guia fornecido pelo autor em 27/10/2026; primeira edição, versão 1.0.2; análise em reports/analise_guia_fasoft_20261027/analise_guia.md"
+    },
+    {
+      "id": "monografia_observacoes_atendidas",
+      "path": "reports/monografia/MayconGarciaSilva_monografia_observacoes_atendidas.docx",
+      "tipo": "file",
+      "bloco": "EDITORIAL",
+      "papel": "Cópia limpa das observações do orientador, 26/10/2026; origem da padronização solicitada em 27/10/2026"
+    },
+    {
+      "id": "monografia_padronizada_fasoft",
+      "path": "reports/monografia/MayconGarciaSilva_monografia_padronizada_FASOFT.docx",
+      "tipo": "file",
+      "bloco": "EDITORIAL",
+      "papel": "Revisão de formatação concluída para a etapa atual; autor confirmou em 28/10/2026 que a ficha deve permanecer em branco para preenchimento institucional posterior."
+    },
+    {
+      "id": "monografia_fasoft_conferencia_integral_20261028",
+      "path": "reports/monografia/MayconGarciaSilva_monografia_FASOFT_conferida.docx",
+      "tipo": "file",
+      "bloco": "EDITORIAL",
+      "papel": "Versão eletrônica com adequação ao guia concluída em 28/10/2026 após adoção autorizada de epígrafe verificável. 75 páginas, 86 verificações, 50 referências e matriz de 81 requisitos; ressalvas qualitativas e etapas institucionais posteriores registradas. Originais preservados.",
+      "sha256": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+      "auditoria": "reports/auditoria_integral_fasoft_20261028/estado_revisao.json"
+    },
+    {
+      "id": "planilha_methodi_original_drive",
+      "path": "reports/fontes_drive_20261029/methodi_ordinatio.xlsx",
+      "tipo": "file",
+      "bloco": "DOCUMENTACAO-RECUPERADA",
+      "papel": "Registro intermediário original recuperado do Drive29/10/2026;59candidatos,triagem incompleta; não é ranking final validado."
+    },
+    {
+      "id": "planilha_extracao_original_drive",
+      "path": "reports/fontes_drive_20261029/extracao_completa.xlsx",
+      "tipo": "file",
+      "bloco": "DOCUMENTACAO-RECUPERADA",
+      "papel": "Extração histórica original de34PDFs; não substitui a conferência primária e a matriz recodificada."
+    },
+    {
+      "id": "cardoso_rbras_2022a_original_drive",
+      "path": "reports/fontes_drive_20261029/Cardoso_RBras_2022_completo.pdf",
+      "tipo": "file",
+      "bloco": "DOCUMENTACAO-RECUPERADA",
+      "papel": "Original pp.197–206,dez páginas lidas visualmente;RMSE0,4987 com fator; protocolo75/25,distinto da monografia."
+    },
+    {
+      "id": "conferencia_fontes_drive_20261029",
+      "path": "reports/fontes_drive_20261029/relatorio.md",
+      "tipo": "file",
+      "bloco": "DOCUMENTACAO-RECUPERADA",
+      "papel": "Resultados e limites da recuperação de fontes das cinco pendências documentais."
+    },
+    {
+      "id": "esclarecimentos_autor_20261029",
+      "path": "reports/esclarecimentos_autor_20261029/declaracoes_autor.json",
+      "tipo": "file",
+      "bloco": "DECLARACOES-AUTOR",
+      "papel": "Quatro esclarecimentos diretos: seleção complementar; recebimento de série ajustada e códigos R do orientador; adaptação e interface pelo autor; expectativa de localização dos resultados das ondas. Aplicados em v004, com limites registrados no relatório."
+    },
+    {
+      "id": "reexame_43_celulas_20261029",
+      "path": "reports/revisao_43_celulas_20261029/relatorio.md",
+      "tipo": "file",
+      "bloco": "AUDITORIA-MATRIZ",
+      "papel": "Reexame dirigido de 43 células em 24 PDFs, aplicado na v005: D18/P2 passa a D e D14/P2 a S; 41 insuficiências justificadas mantidas. Matriz revisada de 170 células no mesmo diretório; substitui as contagens históricas anteriores para esta revisão, sem declarar leitura integral de todos os artigos."
+    }
   ],
   "materiais_nao_localizados": [
-    {"referencia":"methodi_ordinatio.xlsx","status":"nao_localizado_no_acervo_examinado"},
-    {"referencia":"extracao_completa.xlsx","status":"nao_localizado_no_acervo_examinado"},
-    {"referencia":"manual institucional vigente da UniRV","status":"nao_localizado_como_arquivo_separado"}
-  ]
+    {
+      "referencia": "methodi_ordinatio.xlsx",
+      "status": "localizado_no_drive_em_2026_10_29",
+      "path": "reports/fontes_drive_20261029/methodi_ordinatio.xlsx",
+      "observacao": "A lista preserva o diagnóstico histórico; a indisponibilidade foi superada pela recuperação do original."
+    },
+    {
+      "referencia": "extracao_completa.xlsx",
+      "status": "localizado_no_drive_em_2026_10_29",
+      "path": "reports/fontes_drive_20261029/extracao_completa.xlsx",
+      "observacao": "A lista preserva o diagnóstico histórico; a indisponibilidade foi superada pela recuperação do original."
+    }
+  ],
+  "regra_base_editorial": "Resolver versão e caminho exclusivamente em versao_vigente.json; conferir com Scripts/versao_monografia.py atual --json. Os demais registros editoriais são históricos."
 }

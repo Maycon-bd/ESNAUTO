@@ -1,0 +1,125 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_examinado": "8dfd5a933764a8607a4dbc08d9f08c3704f10a91e51e92e40451e807a3361f38",
+  "fonte": {
+    "id": "D05",
+    "arquivo": "Artigos citados\\Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.pdf",
+    "sha256": "703cec38e2b31cc6b2e3f38258db73ef814c238b13f70ffa0b58f23622476a80",
+    "paginas": 21,
+    "caracteres_extraidos": 81045,
+    "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+    "log_leitura": []
+  },
+  "paginas_textuais_lidas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "paginas_visuais_inspecionadas": [
+    1,
+    4,
+    5,
+    11,
+    13,
+    14,
+    18,
+    19
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D05",
+      "arquivo_pdf": "Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.pdf",
+      "sha256_pdf": "703cec38e2b31cc6b2e3f38258db73ef814c238b13f70ffa0b58f23622476a80",
+      "tipo": "aplicacao_quantica",
+      "dimensao": "P1",
+      "codigo": "-",
+      "localizador": "PDF 12, Tabela 4, arquiteturas",
+      "evidencia_e_limite": "Modelos QTCNN, QCNN, QLSTM e baselines clássicos; não inicialização de pesos ESN.",
+      "escopo_leitura": "PDF 3–5, 12–13: dataset, preparação, configurações, análise fora da amostra."
+    },
+    {
+      "id": "D05",
+      "arquivo_pdf": "Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.pdf",
+      "sha256_pdf": "703cec38e2b31cc6b2e3f38258db73ef814c238b13f70ffa0b58f23622476a80",
+      "tipo": "aplicacao_quantica",
+      "dimensao": "P2",
+      "codigo": "-",
+      "localizador": "PDF 12, Tabela 4",
+      "evidencia_e_limite": "Configurações/otimizadores de modelos quânticos e LSTM/Transformer não são seleção de hiperparâmetros ESN.",
+      "escopo_leitura": "PDF 3–5, 12–13: dataset, preparação, configurações, análise fora da amostra."
+    },
+    {
+      "id": "D05",
+      "arquivo_pdf": "Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.pdf",
+      "sha256_pdf": "703cec38e2b31cc6b2e3f38258db73ef814c238b13f70ffa0b58f23622476a80",
+      "tipo": "aplicacao_quantica",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 4–5, seção II",
+      "evidencia_e_limite": "Ajuste de features por eventos, engenharia de atributos, winsorização, z-score transversal e sequências. A fonte informa que o Target oficial não é reajustado: não extrapolar o ajuste dos atributos para o alvo.",
+      "escopo_leitura": "PDF 3–5, 12–13: dataset, preparação, configurações, análise fora da amostra."
+    },
+    {
+      "id": "D05",
+      "arquivo_pdf": "Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.pdf",
+      "sha256_pdf": "703cec38e2b31cc6b2e3f38258db73ef814c238b13f70ffa0b58f23622476a80",
+      "tipo": "aplicacao_quantica",
+      "dimensao": "P4",
+      "codigo": "D",
+      "localizador": "PDF 12–13, configurações e seção IV-B",
+      "evidencia_e_limite": "Compara LSTM e Transformer com modelos quânticos por Sharpe fora da amostra; teste de 22 dias limita a generalização.",
+      "escopo_leitura": "PDF 3–5, 12–13: dataset, preparação, configurações, análise fora da amostra."
+    },
+    {
+      "id": "D05",
+      "arquivo_pdf": "Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.pdf",
+      "sha256_pdf": "703cec38e2b31cc6b2e3f38258db73ef814c238b13f70ffa0b58f23622476a80",
+      "tipo": "aplicacao_quantica",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 3–4, seção II",
+      "evidencia_e_limite": "Conjunto JPX Tokyo Stock Exchange/Kaggle, ações japonesas e universo filtrado.",
+      "escopo_leitura": "PDF 3–5, 12–13: dataset, preparação, configurações, análise fora da amostra."
+    }
+  ],
+  "n_codigos_alterados": 0,
+  "fontes_externas": [
+    {
+      "url": "https://arxiv.org/abs/2512.06630",
+      "evidencia": "v2 em 13/02/2026; seis autores; identificador e DOI do arXiv. A página não confirma submissão a periódico."
+    }
+  ],
+  "afirmacoes": {
+    "U0198": "Tabela 6 e PDF 13–14: QTCNN 0,538, Transformer 0,313, LSTM 0,044 e TConv-MLP 0,412; Sharpe fora da amostra de 22 dias. Circuítos simulados; resultado não demonstra superioridade universal.",
+    "U0985": "Preprint v2 do arXiv, sem confirmação de submissão ao periódico no PDF ou registro arXiv; modelo gráfico do IEEE não basta."
+  },
+  "ressalvas": [
+    "Fonte diz ganho de 72% sobre melhor baseline clássico Transformer, mas TConv-MLP clássico tem 0,412 e supera Transformer. O texto da monografia não reproduz a porcentagem.",
+    "As figuras de ajuste corporativo referem-se a atributos; alvo oficial não é alterado.",
+    "O pré-print reconhece avaliação OOS limitada e não reivindica speedup quântico na simulação."
+  ],
+  "correcoes_pendentes": [],
+  "correcoes_incorporadas": [
+    "U0198",
+    "U0985"
+  ]
+}

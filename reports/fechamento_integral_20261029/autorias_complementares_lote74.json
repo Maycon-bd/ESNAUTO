@@ -1,0 +1,102 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "registros": [
+    {
+      "fonte": "D01",
+      "chamada": "Abebe e Goshu (2024)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D01_paginas.json",
+      "sha256": "8a7f2ff7b5b98eddf34b6f0b80a5a5a029e507363a690bdef7c764b29d348bb0",
+      "diagnostico": "Autoria da chamada compatível com identificação da primeira página lida."
+    },
+    {
+      "fonte": "D02",
+      "chamada": "Araújo et al. (2025)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D02_paginas.json",
+      "sha256": "087161cf7127e5c8e9f85c86c053ebb46028176758decfabab6d22c91dcf9194",
+      "diagnostico": "Araújo é primeiro autor e há coautores nos metadados da prova. Esta passagem não recontou todos os autores nas páginas seguintes."
+    },
+    {
+      "fonte": "D04",
+      "chamada": "Cardoso et al. (2022b)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D04_paginas.json",
+      "sha256": "87a478003b8318fa4c060c5483cf2c18061545a3b3575a52c9fabdeaee1f63ec",
+      "diagnostico": "Autoria da chamada compatível com identificação da primeira página lida."
+    },
+    {
+      "fonte": "D05",
+      "chamada": "Chen et al. (2026)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D05_paginas.json",
+      "sha256": "a91e4ddd05add00905e7b6bc5c93555d03700cfea7e8b2e9696db93961cb18a2",
+      "diagnostico": "Chen é primeiro autor e lista contém seis autores. Datas e DOI-placeholder da primeira página não identificam a publicação final; manter preprint conforme versão local."
+    },
+    {
+      "fonte": "D06",
+      "chamada": "Cortesi et al. (2026)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D06_paginas.json",
+      "sha256": "2862da16d682ac350fc36e3d79fb24e2bed0189988caa3bb6079da3ce7089e28",
+      "diagnostico": "Autoria da chamada compatível com identificação da primeira página lida."
+    },
+    {
+      "fonte": "D07",
+      "chamada": "Costa e Lunkes (2025)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D07_paginas.json",
+      "sha256": "622df498652d4529e3c27e812e195a0f773631e8d906c42032260350a7b29b5f",
+      "diagnostico": "Autoria da chamada compatível com identificação da primeira página lida."
+    },
+    {
+      "fonte": "D08",
+      "chamada": "Deng et al. (2022)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D08_paginas.json",
+      "sha256": "240e7462fc921a2243470c234215cd85fa5c73b41da9a1096fd7dd7b3423b86b",
+      "diagnostico": "Autoria da chamada compatível com identificação da primeira página lida."
+    },
+    {
+      "fonte": "D09",
+      "chamada": "Dewick (2022)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D09_paginas.json",
+      "sha256": "4ceab5aa03e17f9de71986a7d57197d562e207b966cd5d07f43895c7812d8030",
+      "diagnostico": "Autoria da chamada compatível com identificação da primeira página lida."
+    },
+    {
+      "fonte": "D10",
+      "chamada": "Duttilo e Gattone (2022)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D10_paginas.json",
+      "sha256": "aac485d0e15bfdd2e15b014fc3d022c6062c24bd6dbbab733c4ef75a5b44854b",
+      "diagnostico": "Autoria da chamada compatível com identificação da primeira página lida."
+    },
+    {
+      "fonte": "D11",
+      "chamada": "Duttilo (2024)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D11_paginas.json",
+      "sha256": "0510aff712894fc6200156eb71ea7fa26010c6e36697c5ebc6d6f8cf042f88b0",
+      "diagnostico": "Duttilo identificado como doutorando autor; coordenador e tutor não são coautores. Ano 2024 depende do registro de versão já conferido, pois capa informa anos acadêmicos 2020/23."
+    },
+    {
+      "fonte": "D12",
+      "chamada": "Ecer et al. (2020)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D12_paginas.json",
+      "sha256": "e00808153b89af2c21b198818dda5c0eb3929cb7dd900da34cd2e12637f08b88",
+      "diagnostico": "Autoria da chamada compatível com identificação da primeira página lida."
+    },
+    {
+      "fonte": "D15",
+      "chamada": "Jaeger (2007)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D15_paginas.json",
+      "sha256": "0c4dfde768389d368c5e3cea53b29a73c9b1edcbb14fc97e63a30f48a7b81298",
+      "diagnostico": "Autoria da chamada compatível com identificação da primeira página lida."
+    }
+  ],
+  "limite": "Identificação bibliográfica dirigida. Não é leitura integral nem nova validação das afirmações científicas."
+}

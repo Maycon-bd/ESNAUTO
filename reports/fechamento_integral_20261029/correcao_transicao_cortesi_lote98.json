@@ -1,0 +1,9 @@
+{
+  "sha256_docx": "1cdb4613c391611dfffab5e2f9902e38751bd14be9b5e18b96a740e6cb771d00",
+  "paragrafo_atual": 198,
+  "antes": "O resultado revela que a geometria da inicialização e do processo de otimização afeta os pesos da rede de modos que métricas agregadas não capturam, com implicação direta para esta pesquisa: avaliar arquiteturas exclusivamente pelo erro de predição pode ocultar diferenças relevantes de comportamento.",
+  "proposta": "O resultado de Cortesi et al. (2026) indica que escolhas do processo de otimização podem produzir funções de previsão distintas mesmo com métricas agregadas semelhantes. Para esta pesquisa, isso motiva interpretar o erro preditivo em conjunto com as condições de avaliação, sem transferir automaticamente esse achado para a inicialização dos pesos da ESN.",
+  "diagnostico": "A transição acrescenta geometria da inicialização ao resultado sustentado sobre otimizadores; restringir atribuição ao escopo da evidência.",
+  "evidencia": "afirmacoes_contexto_lote45.json e cobertura_citacoes_lote53.json, parágrafo197",
+  "estado": "pendente_incorporacao"
+}

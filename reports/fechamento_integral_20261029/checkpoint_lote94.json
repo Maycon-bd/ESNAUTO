@@ -1,0 +1,22 @@
+{
+  "sha256_docx": "1cdb4613c391611dfffab5e2f9902e38751bd14be9b5e18b96a740e6cb771d00",
+  "paginas": 76,
+  "verificacoes": 45,
+  "falhas": 0,
+  "paginas_inspecionadas": [
+    12,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65
+  ],
+  "outras_paginas": "66 idênticas ao lote63 por hash PNG",
+  "correcao": "Parágrafo407: remove atribuição causal não isolada a arquitetura/otimização.",
+  "pdf": "previa_lote94.pdf",
+  "mapa": "mapa_lote94.json"
+}

@@ -1,0 +1,438 @@
+{
+  "sha256_docx": "81ff4a1151f7c48dc2abe6c42f9e6759a6931448d789e18b7b36367f80b5014d",
+  "registros": [
+    {
+      "paragrafo_atual": 180,
+      "texto": "REVISÃO DA LITERATURA",
+      "decisao": "Título de seção ou elemento; sem afirmação científica autônoma.",
+      "estado": "manter",
+      "evidencias": []
+    },
+    {
+      "paragrafo_atual": 181,
+      "texto": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+      "decisao": "Título de seção ou elemento; sem afirmação científica autônoma.",
+      "estado": "manter",
+      "evidencias": []
+    },
+    {
+      "paragrafo_atual": 182,
+      "texto": "O mercado acionário ocupa posição central nas economias contemporâneas, e suas dinâmicas de preço são marcadas por oscilações frequentes e difíceis de antecipar. Essa dificuldade é em parte estatística, pois séries financeiras apresentam não linearidades, comportamento estocástico e eventos extremos com frequência incompatível com a hipótese gaussiana e em parte computacional, dada a velocidade com que os preços se reorganizam em resposta a novas informações.",
+      "decisao": "Generalização conceitual sem chamada própria: requer confronto com literatura de suporte no contexto; não encerrar pela plausibilidade.",
+      "estado": "conferencia_de_suporte_pendente",
+      "evidencias": []
+    },
+    {
+      "paragrafo_atual": 184,
+      "texto": "A revisão reúne estudos com SVMs, LSTMs, Transformers e modelos quântico-híbridos. Os desafios de custo e escalabilidade aparecem associados a arquiteturas, otimização e infraestrutura distintas. Essas observações sintetizam estudos anteriores e não equivalem a uma comparação experimental própria nem isolam a retropropagação como causa dos custos.",
+      "decisao": "Síntese ou delimitação do trabalho em contexto; sem reivindicar cobertura exaustiva, ineditismo ou efeito isolado.",
+      "estado": "manter",
+      "evidencias": [
+        "decisoes_metodo_dados_lote90.json",
+        "decisoes_metodo_motor_lote91.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 186,
+      "texto": "Modelos lineares, como o autorregressivo integrado de médias móveis (Autoregressive Integrated Moving Average – ARIMA) e a regressão linear, podem apresentar limitações na representação de dependências não lineares e mudanças de regime. Isso não impede seu emprego como modelos de referência. A diferenciação em ARIMA permite tratar determinadas formas de não estacionariedade, e a adequação de cada abordagem deve ser avaliada para a série e a tarefa consideradas.",
+      "decisao": "Generalização conceitual sem chamada própria: requer confronto com literatura de suporte no contexto; não encerrar pela plausibilidade.",
+      "estado": "conferencia_de_suporte_pendente",
+      "evidencias": []
+    },
+    {
+      "paragrafo_atual": 191,
+      "texto": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+      "decisao": "Título de seção ou elemento; sem afirmação científica autônoma.",
+      "estado": "manter",
+      "evidencias": []
+    },
+    {
+      "paragrafo_atual": 195,
+      "texto": "Na implementação do ESNAUTO, LSTM e GRU são treinadas iterativamente por retropropagação através do tempo (Backpropagation Through Time – BPTT), ajustando pesos internos e de saída. O custo desse processo depende da configuração da rede e do orçamento de treinamento. A comparação com a ESN deve distinguir esse treinamento do ajuste da camada de saída e da busca de hiperparâmetros, sem pressupor inviabilidade ou superioridade geral.",
+      "decisao": "Descrição de treinamento conferida no código; referência anterior U0194 usa inventário XML, diferente do índice atual195.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_codigo_unidades_lote69.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 198,
+      "texto": "O resultado de Cortesi et al. (2026) indica que escolhas do processo de otimização podem produzir funções de previsão distintas mesmo com métricas agregadas semelhantes. Para esta pesquisa, isso motiva interpretar o erro preditivo em conjunto com as condições de avaliação, sem transferir automaticamente esse achado para a inicialização dos pesos da ESN.",
+      "decisao": "Transição corrigida limita-se ao resultado sobre otimizadores; não transfere achado à inicialização ESN.",
+      "estado": "manter",
+      "evidencias": [
+        "incorporacao_lote99.json",
+        "checkpoint_lote99.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 202,
+      "texto": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+      "decisao": "Título de seção ou elemento; sem afirmação científica autônoma.",
+      "estado": "manter",
+      "evidencias": []
+    },
+    {
+      "paragrafo_atual": 214,
+      "texto": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+      "decisao": "Título de seção ou elemento; sem afirmação científica autônoma.",
+      "estado": "manter",
+      "evidencias": []
+    },
+    {
+      "paragrafo_atual": 215,
+      "texto": "O comportamento do reservatório depende da configuração de seus hiperparâmetros. O raio espectral é utilizado no reescalonamento da matriz recorrente; a esparsidade regula a conectividade, e a taxa de vazamento pondera a contribuição do estado anterior na atualização. A seleção desses parâmetros deve considerar a tarefa e o protocolo de avaliação.",
+      "decisao": "Papéis dos hiperparâmetros conferidos no código; correspondência anterior U0214 é ID de inventário.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_codigo_unidades_lote69.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 222,
+      "texto": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+      "decisao": "Título de seção ou elemento; sem afirmação científica autônoma.",
+      "estado": "manter",
+      "evidencias": []
+    },
+    {
+      "paragrafo_atual": 230,
+      "texto": "A seleção das distribuições foi organizada em três eixos. O primeiro reúne controles canônicos, como Normal e Uniforme; o segundo contempla distribuições teoricamente relacionadas a caudas pesadas, assimetria, impulsividade e esparsidade, cuja motivação se apoia principalmente nas propriedades observadas nos log-retornos; e o terceiro utiliza Power Function (PF), Dagum 4P e Johnson SB ajustadas empiricamente aos preços da partição de treino pelo EasyFit.",
+      "decisao": "Síntese ou delimitação do trabalho em contexto; sem reivindicar cobertura exaustiva, ineditismo ou efeito isolado.",
+      "estado": "manter",
+      "evidencias": [
+        "decisoes_metodo_dados_lote90.json",
+        "decisoes_metodo_motor_lote91.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 231,
+      "texto": "O terceiro eixo possui, portanto, natureza experimental distinta: testa se a aderência marginal à série de preços produz efeitos úteis na inicialização de Win e W, sem assumir equivalência entre a distribuição dos preços e a distribuição ótima dos pesos do reservatório.",
+      "decisao": "Síntese ou delimitação do trabalho em contexto; sem reivindicar cobertura exaustiva, ineditismo ou efeito isolado.",
+      "estado": "manter",
+      "evidencias": [
+        "decisoes_metodo_dados_lote90.json",
+        "decisoes_metodo_motor_lote91.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 235,
+      "texto": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+      "decisao": "Título de seção ou elemento; sem afirmação científica autônoma.",
+      "estado": "manter",
+      "evidencias": []
+    },
+    {
+      "paragrafo_atual": 240,
+      "texto": "TRABALHOS RELACIONADOS",
+      "decisao": "Título de seção ou elemento; sem afirmação científica autônoma.",
+      "estado": "manter",
+      "evidencias": []
+    },
+    {
+      "paragrafo_atual": 241,
+      "texto": "Esta seção discute trabalhos relacionados a ESNs, otimização, inicialização probabilística e aplicações financeiras, a partir dos documentos recuperados no acervo da pesquisa. A organização permite situar as escolhas metodológicas deste estudo, sem apresentar a coleção disponível como cobertura exaustiva da literatura. A procedência da seleção e os limites da reconstrução bibliográfica são descritos na Seção 3.8.3.",
+      "decisao": "Síntese ou delimitação do trabalho em contexto; sem reivindicar cobertura exaustiva, ineditismo ou efeito isolado.",
+      "estado": "manter",
+      "evidencias": [
+        "decisoes_metodo_dados_lote90.json",
+        "decisoes_metodo_motor_lote91.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 244,
+      "texto": "O ajuste de eventos corporativos pode reduzir descontinuidades nos preços históricos. Nesta pesquisa, a série atribuída ao BovDB foi fornecida pelo orientador já ajustada e utilizada como entrada dos modelos. O autor não reivindica a execução da transformação original. Como não houve comparação controlada entre séries bruta e ajustada neste protocolo, não se estima o efeito causal isolado desse tratamento sobre os erros de previsão.",
+      "decisao": "Síntese ou delimitação do trabalho em contexto; sem reivindicar cobertura exaustiva, ineditismo ou efeito isolado.",
+      "estado": "manter",
+      "evidencias": [
+        "decisoes_metodo_dados_lote90.json",
+        "decisoes_metodo_motor_lote91.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 254,
+      "texto": "O conjunto examinado apresenta aplicações de ESNs, métodos de seleção de hiperparâmetros e regras de inicialização em diferentes tarefas. Ele fundamenta escolhas experimentais desta pesquisa, sem demonstrar cobertura exaustiva do campo. O estudo organiza uma avaliação de distribuições canônicas, de caudas pesadas, assimétricas, esparsas e ajustadas empiricamente para a PETR4. A coleção reconstruída não permite estimar a dimensão de uma lacuna na literatura nem reivindicar ineditismo dessa combinação.",
+      "decisao": "Síntese ou delimitação do trabalho em contexto; sem reivindicar cobertura exaustiva, ineditismo ou efeito isolado.",
+      "estado": "manter",
+      "evidencias": [
+        "decisoes_metodo_dados_lote90.json",
+        "decisoes_metodo_motor_lote91.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 255,
+      "texto": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+      "decisao": "Título de seção ou elemento; sem afirmação científica autônoma.",
+      "estado": "manter",
+      "evidencias": []
+    },
+    {
+      "paragrafo_atual": 261,
+      "texto": "A pesquisa utiliza a série da PETR4 disponibilizada como ajustada por eventos corporativos, seleciona cinco hiperparâmetros por AG e compara configurações probabilísticas aplicadas a Win e W. O ESNAUTO integra inicialização populacional por LHS, operador antiestagnação inspirado no CHC e organização de 45 execuções em cinco ondas. Essa aplicação e sua documentação compõem a contribuição experimental e de software, sem atribuir ganho causal isolado ao Fator de Ajuste ou declarar a transformação dos arquivos como etapa executada nesta pesquisa.",
+      "decisao": "Síntese ou delimitação do trabalho em contexto; sem reivindicar cobertura exaustiva, ineditismo ou efeito isolado.",
+      "estado": "manter",
+      "evidencias": [
+        "decisoes_metodo_dados_lote90.json",
+        "decisoes_metodo_motor_lote91.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 262,
+      "texto": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+      "decisao": "Título de seção ou elemento; sem afirmação científica autônoma.",
+      "estado": "manter",
+      "evidencias": []
+    },
+    {
+      "paragrafo_atual": 263,
+      "texto": "Como apoio à fundamentação teórica, foi conduzida uma extração estruturada de 34 estudos utilizados no trabalho. Essa coleção reúne estudos recentes considerados no processo de revisão e referências complementares de caráter conceitual, metodológico ou histórico, conforme a distinção descrita na Seção 3.8.3. Inclui artigos, trabalhos em eventos, preprints e trabalhos acadêmicos; por isso, seu quantitativo não deve ser interpretado como o número de artigos que satisfizeram todos os critérios de inclusão da busca recente.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 265,
+      "texto": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 266,
+      "texto": "Fonte: Elaborado pelo autor (2026), a partir da recodificação do portfólio. D: evidência direta; S: tratamento secundário/contextual; ?: informação insuficiente; —: não aplicável.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 267,
+      "texto": "O Quadro 1 apresenta a codificação por documento: D indica evidência direta localizada na aplicação da própria fonte; S indica tratamento secundário ou contextual; ? indica informação insuficiente no escopo consultado; e — indica dimensão não aplicável ao objeto estudado. A marca ? não demonstra que o assunto inexista na obra. A presença de uma informação também não representa reprodução independente, aprovação da qualidade do estudo ou equivalência entre os protocolos comparados.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 268,
+      "texto": "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 269,
+      "texto": "Fonte: Elaborado pelo autor (2026). D: evidência direta; S: tratamento secundário/contextual; ?: informação insuficiente; —: não aplicável.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 270,
+      "texto": "A distinção entre D e S evita somar uma revisão e o experimento por ela descrito como duas execuções independentes. Os códigos ? e — também têm sentidos diferentes: o primeiro conserva uma incerteza de leitura ou de especificação; o segundo delimita o objeto da fonte. Assim, as frequências desta coleção descrevem a documentação localizada segundo os critérios adotados, sem estimar a prevalência de métodos em toda a literatura nem comprovar, isoladamente, uma lacuna científica.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 271,
+      "texto": "A caracterização da coleção é complementada pelas Figuras 1 a 4. A cobertura temática utiliza a codificação do Quadro 1, enquanto as demais representações utilizam metadados reconstruídos dos documentos. Esses materiais descrevem o acervo recuperado e não substituem exportações bibliográficas originais ou registros de seleção. O procedimento e seus limites de procedência são apresentados na Seção 3.8.3.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 272,
+      "texto": "Figura 1 – Documentação localizada nas cinco dimensões analíticas",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 274,
+      "texto": "Fonte: Elaborado pelo autor a partir do Quadro 1 (2026).",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 275,
+      "texto": "Nota: P1: distribuição de Win/W; P2: seleção de hiperparâmetros ESN/RC; P3: preparação das séries; P4: comparação com LSTM/GRU/Transformer; P5: mercado e ativo. Cada barra distribui os 34 documentos entre D, S, ? e não aplicável, conforme a legenda do Quadro 1. Informação insuficiente não é prova de ausência.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 276,
+      "texto": "A Figura 1 registra evidência direta de preparação de séries em 26 documentos e de mercado/ativo em 25; comparações com LSTM, GRU ou Transformer aparecem diretamente em dez documentos, e a seleção de hiperparâmetros, em onze. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 277,
+      "texto": "Figura 2 – Frequência das palavras-chave declaradas pelos autores",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 279,
+      "texto": "Fonte: Elaborado pelo autor a partir dos documentos citados, com processamento no bibliometrix 5.5.0 (2026).",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 280,
+      "texto": "Nota: Foram analisados 24 documentos com palavras-chave declaradas localizadas, correspondentes a 70,6% dos 34 registros. São exibidos termos presentes em pelo menos dois documentos, com uma contagem por termo e documento.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 281,
+      "texto": "Na Figura 2, echo state network foi identificado em nove documentos (37,5% dos 24), e reservoir computing, em cinco (20,8%). Deep learning, stock price forecasting e time series aparecem em três documentos cada (12,5%). Os resultados caracterizam os temas declarados pelos autores no subconjunto com esse campo disponível. A ausência de um termo entre as palavras-chave não implica ausência de discussão do conceito no texto do estudo.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 282,
+      "texto": "Figura 3 – Rede de coocorrência de palavras-chave",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 284,
+      "texto": "Fonte: Elaborado pelo autor com bibliometrix 5.5.0 a partir da base reconstruída (2026).",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 285,
+      "texto": "Nota: Os mesmos 24 documentos da Figura 2 originam a matriz. A frequência mínima de dois documentos resulta em 14 termos e 33 ligações. A área dos nós representa frequência documental; a espessura das ligações, documentos compartilhados; as cores, comunidades Walktrap. A rede não representa coautoria ou citações.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 286,
+      "texto": "A Figura 3 mostra relações entre echo state network, reservoir computing, deep learning e termos associados à previsão financeira. LSTM e GRU também integram a rede com optimization e machine learning. As ligações indicam declaração conjunta das palavras-chave nos documentos analisados. Essa caracterização temática complementa a leitura dos estudos; as afirmações específicas sobre inicialização de Win/W, otimização e pré-processamento continuam apoiadas na extração P1–P5.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 287,
+      "texto": "Figura 4 – Expressões recorrentes nos títulos dos estudos",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 289,
+      "texto": "Fonte: Elaborado pelo autor a partir dos 34 títulos da base reconstruída (2026).",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 290,
+      "texto": "Nota: Cada par de palavras adjacentes é contado uma vez por documento. São exibidas 19 expressões presentes em pelo menos dois títulos. Singular, plural e siglas são conservados separadamente. O título inglês de Costa e Lunkes foi transcrito do próprio arquivo em formato de documento portátil (Portable Document Format – PDF). As expressões podem compartilhar palavras e ocorrer no mesmo documento.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 291,
+      "texto": "A Figura 4 apresenta 19 expressões recorrentes nos títulos. Echo state ocorre em 11 títulos (32,4%), state network em sete (20,6%) e time series em seis (17,6%). Reservoir computing, stock market e stock price aparecem em quatro títulos cada (11,8%), enquanto genetic algorithm ocorre em dois (5,9%). Echo state e state network são partes da denominação Echo State Network; suas frequências não devem ser somadas para estimar a quantidade de estudos sobre ESN.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    },
+    {
+      "paragrafo_atual": 292,
+      "texto": "A análise dos títulos abrange 34 documentos, enquanto a análise de palavras-chave abrange 24. As diferenças entre suas frequências refletem também a cobertura dos campos, a redação dos títulos e as regras de normalização. Os gráficos descrevem a coleção utilizada no trabalho e não estimam a produção de toda a área nem demonstram, isoladamente, uma lacuna científica.",
+      "decisao": "Síntese, código de leitura, metadados ou elemento gráfico: coerente com coleção reconstruída e limites; contagens derivam dos registros próprios.",
+      "estado": "manter",
+      "evidencias": [
+        "conferencia_bibliometria_lote47.json",
+        "conciliacao_matriz_atual_lote70.json"
+      ]
+    }
+  ],
+  "limite": "Duas generalizações conceituais permanecem pendentes de suporte específico. Decisões de síntese não substituem os registros por citação."
+}

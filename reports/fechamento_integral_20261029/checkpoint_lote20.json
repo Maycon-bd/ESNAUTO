@@ -1,0 +1,16 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "8835571f743aab36f4d193d7e75c28a7fa6b78e0ed1f446973a1a05b02bc1042",
+  "pdf": "reports\\fechamento_integral_20261029\\previa_lote20.pdf",
+  "paginas": 76,
+  "verificacao": "reports\\fechamento_integral_20261029\\verificacao_lote20.json",
+  "paginas_inspecionadas": [
+    23,
+    24,
+    26,
+    34
+  ],
+  "paginas_inalteradas": 72,
+  "escopo": "Correção de autoria Behera; não equivale a validação integral da monografia."
+}

@@ -1,0 +1,23 @@
+{
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "3765c2ca1972edb428ba95dcb1f7e88b049bdd11d01ef7b2222e2774d180bd38",
+  "paginas": 76,
+  "verificacao": "45 verificacoes sem falhas",
+  "paginas_visuais_inspecionadas": [
+    16,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    43
+  ],
+  "paginas_inalteradas": 64,
+  "comparacao": "previa_lote35b",
+  "alteracao": "Precisada a escolha do melhor comparador por horizonte na descricao de Wang, Bu e Huang (2025)."
+}

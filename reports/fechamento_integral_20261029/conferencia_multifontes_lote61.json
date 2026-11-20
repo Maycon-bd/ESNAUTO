@@ -1,0 +1,846 @@
+{
+  "sha256_docx": "55316818b048fba182e12b842a87f4afa519524447481e6db2d1919923067521",
+  "metodo": "Confronto de identidade exata dos parágrafos com índice anterior, seguido de exame dos registros por chamada em parágrafos com duas ou mais ocorrências. Reaproveita leituras existentes e não substitui leitura de afirmações sem vínculo.",
+  "total_paragrafos": 19,
+  "registros": [
+    {
+      "paragrafo": 234,
+      "texto": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada.",
+      "obras": [
+        {
+          "id": "R02",
+          "chamada": "Araújo et al. (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_antecedentes_lote37.json",
+              "sha256_registro": "4a0b6d137edd9f28e2460bf93b2e69f3e2fbf99e5e18c9e43fd1b47adcc00ade",
+              "texto_examinado": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada.",
+              "evidencia": "São nomeadas Normal, Uniforme, Student t, GED e Student t assimétrica; a prova não individualiza por completo a lei por matriz, e o parágrafo registra essa limitação.",
+              "localizador": "PDF 5 e 10",
+              "diagnostico": "condizente na afirmação delimitada"
+            }
+          ]
+        },
+        {
+          "id": "R40",
+          "chamada": "Sharma et al. (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_antecedentes_lote37.json",
+              "sha256_registro": "4a0b6d137edd9f28e2460bf93b2e69f3e2fbf99e5e18c9e43fd1b47adcc00ade",
+              "texto_examinado": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada.",
+              "evidencia": "Uniforme discreta e log-uniforme descrevem amostragem dos hiperparâmetros, com função distinta da lei de geração de Win; a monografia preserva a distinção.",
+              "localizador": "PDF 7, Tabela 1",
+              "diagnostico": "condizente na afirmação delimitada"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 260,
+      "texto": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG.",
+      "obras": [
+        {
+          "id": "R02",
+          "chamada": "Araújo et al. (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_antecedentes_lote37.json",
+              "sha256_registro": "4a0b6d137edd9f28e2460bf93b2e69f3e2fbf99e5e18c9e43fd1b47adcc00ade",
+              "texto_examinado": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG.",
+              "evidencia": "ESN, distribuições e otimização aparecem no estudo anterior; não confundir o protocolo de ITSA4 com o da PETR4.",
+              "localizador": "PDF 4 e 7–10",
+              "diagnostico": "condizente na afirmação delimitada"
+            }
+          ]
+        },
+        {
+          "id": "R10",
+          "chamada": "Cardoso (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_cardoso_lote43.json",
+              "sha256_registro": "c226cd77b5730b25da6dfab4b259c6c13d655201ea27a98e694c1dcf11a0460f",
+              "texto_examinado": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG.",
+              "evidencia": "Tabela 16: ITSA4, RMSE ARMA-EGARCH 0,000036582 contra ESN 0,000040582. Tabela 32: PETR4, RMSE ARMA-EGARCH 0,000107948 contra ESN 0,000110424; MAE ARMA-EGARCH 0,000022638 e ESN 0,000016448. O objeto é variância dos retornos, distinto do preço nesta monografia.",
+              "localizador": "p. 84 e 101 impressas, Tabelas 16 e 32 (PDF 87 e 104)",
+              "diagnostico": "condizente na afirmação delimitada"
+            }
+          ]
+        },
+        {
+          "id": "R30",
+          "chamada": "Lampugnani (2026)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_lampugnani_lote42.json",
+              "sha256_registro": "866777ce5a0d0ca68dc9632e5393a3e50dc4f64dbcbe546b78fcef4bad7f6bdf",
+              "texto_examinado": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG.",
+              "evidencia": "Distribuições e AG aparecem na monografia anterior; demais atribuições a Araújo e Cardoso requerem suas próprias evidências.",
+              "localizador": "P 397, 435 e 459–460",
+              "diagnostico": "condizente no ponto delimitado"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 319,
+      "texto": "O Quadro 3 apresenta a codificação de 55 bits implementada no motor atual do ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+      "obras": [
+        {
+          "id": "R02",
+          "chamada": "Araújo et al. (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json",
+              "sha256_registro": "ad644e1d0c4355243913a91c66c81e7379bcbed8b2481c45f490a36a8938bb6c",
+              "texto_examinado": "O Quadro 3 apresenta a codificação de 55 bits implementada no motor atual do ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+              "evidencia": "55 bits e cinco hiperparâmetros; fonte não divide os bits. A redação atual identifica a alocação como pertencente ao motor atual.",
+              "localizador": "PDF 8–9, prova de autor",
+              "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+            }
+          ]
+        },
+        {
+          "id": "R06",
+          "chamada": "Cardoso, Berri e Mattos (2022a, p. 203)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json",
+              "sha256_registro": "ad644e1d0c4355243913a91c66c81e7379bcbed8b2481c45f490a36a8938bb6c",
+              "texto_examinado": "O Quadro 3 apresenta a codificação de 55 bits implementada no motor atual do ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+              "evidencia": "Raio espectral 1,25, vazamento 0,2 e regularização 10⁻⁸; texto foi alterado em outra frase, preservando a atribuição.",
+              "localizador": "p. 203 impressa, PDF 7",
+              "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 321,
+      "texto": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025).",
+      "obras": [
+        {
+          "id": "R02",
+          "chamada": "Araújo et al. (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json",
+              "sha256_registro": "ad644e1d0c4355243913a91c66c81e7379bcbed8b2481c45f490a36a8938bb6c",
+              "texto_examinado": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025).",
+              "evidencia": "Prova descreve cromossomo de 55 bits e cinco parâmetros; as faixas e os blocos do quadro foram conferidos no código, não imputados à prova.",
+              "localizador": "PDF 8–9 e quadro atual",
+              "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+            }
+          ]
+        },
+        {
+          "id": "R06",
+          "chamada": "Cardoso, Berri e Mattos (2022a)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json",
+              "sha256_registro": "ad644e1d0c4355243913a91c66c81e7379bcbed8b2481c45f490a36a8938bb6c",
+              "texto_examinado": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025).",
+              "evidencia": "Fonte descreve parâmetros fixos de ESN; a codificação e as faixas do quadro são do código atual.",
+              "localizador": "p. 203 impressa, PDF 7",
+              "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+            }
+          ]
+        },
+        {
+          "id": "R28",
+          "chamada": "Jaeger (2007)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json",
+              "sha256_registro": "ad644e1d0c4355243913a91c66c81e7379bcbed8b2481c45f490a36a8938bb6c",
+              "texto_examinado": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025).",
+              "evidencia": "Fonte descreve ESN, reservatório e treinamento; a alocação dos bits é informação do código atual, não afirmação de Jaeger.",
+              "localizador": "PDF 1–5, Scholarpedia",
+              "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 498,
+      "texto": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados.",
+      "obras": [
+        {
+          "id": "R02",
+          "chamada": "Araújo et al. (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json",
+              "sha256_registro": "ad644e1d0c4355243913a91c66c81e7379bcbed8b2481c45f490a36a8938bb6c",
+              "texto_examinado": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados.",
+              "evidencia": "ESN, AG, 55 bits e distribuições são antecedentes; não equivale a atribuição de autoria da integração atual.",
+              "localizador": "PDF 7–9, prova de autor; Quadro 6",
+              "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+            }
+          ]
+        },
+        {
+          "id": "R10",
+          "chamada": "Cardoso (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_cardoso_lote43.json",
+              "sha256_registro": "c226cd77b5730b25da6dfab4b259c6c13d655201ea27a98e694c1dcf11a0460f",
+              "texto_examinado": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados.",
+              "evidencia": "Tese trata de ESN, otimização genética, modelos ARIMA/ARMA e diferentes distribuições. A atribuição a outras referências do Quadro 6 exige registros próprios.",
+              "localizador": "ficha, resumo e corpo da tese; p. 84, 90 e 101 impressas",
+              "diagnostico": "condizente na afirmação delimitada"
+            }
+          ]
+        },
+        {
+          "id": "R27",
+          "chamada": "Jaeger (2001, 2007)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json",
+              "sha256_registro": "ad644e1d0c4355243913a91c66c81e7379bcbed8b2481c45f490a36a8938bb6c",
+              "texto_examinado": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados.",
+              "evidencia": "Reservatório recorrente e ajuste da saída fundamentam o quadro; a contribuição própria do projeto é avaliada em fontes separadas.",
+              "localizador": "relatório Jaeger 2001 com errata 2010, PDF 3 e seções de treinamento",
+              "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+            }
+          ]
+        },
+        {
+          "id": "R28",
+          "chamada": "Jaeger (2001, 2007)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json",
+              "sha256_registro": "ad644e1d0c4355243913a91c66c81e7379bcbed8b2481c45f490a36a8938bb6c",
+              "texto_examinado": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados.",
+              "evidencia": "Descrição de reservatório fixo e saída treinável sustenta a atribuição de fundamento ESN no quadro.",
+              "localizador": "PDF 1–5, Scholarpedia",
+              "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+            }
+          ]
+        },
+        {
+          "id": "R30",
+          "chamada": "Lampugnani (2026)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_lampugnani_lote42.json",
+              "sha256_registro": "866777ce5a0d0ca68dc9632e5393a3e50dc4f64dbcbe546b78fcef4bad7f6bdf",
+              "texto_examinado": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados.",
+              "evidencia": "A contribuição de ESN, AG e distribuições é antecedida pelo trabalho correlato; demais atribuições do quadro dependem de fontes próprias.",
+              "localizador": "P 397, 435 e 459–460; Quadro 6",
+              "diagnostico": "condizente no ponto delimitado"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 365,
+      "texto": "O processamento utilizou bibliometrix 5.5.0 em R, pacote para análise bibliométrica e mapeamento científico descrito por Aria e Cuccurullo (2017). A coleção foi salva em formato compatível com Biblioshiny e validada com o carregador dessa interface, apresentada por Aria et al. (2026).",
+      "obras": [
+        {
+          "id": "R03",
+          "chamada": "Aria e Cuccurullo (2017)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fontes_bibliometria_lote49.json",
+              "sha256_registro": "bbb407f2f1b4f371318d4b1dd848141de872a8c4da512ed22de2ae1e68efdfb6",
+              "texto_examinado": "O processamento utilizou bibliometrix 5.5.0 em R, pacote para análise bibliométrica e mapeamento científico descrito por Aria e Cuccurullo (2017). A coleção foi salva em formato compatível com Biblioshiny e validada com o carregador dessa interface, apresentada por Aria et al. (2026).",
+              "evidencia": "O artigo apresenta bibliometrix como pacote R para bibliometria e mapeamento científico; descreve biblioNetwork para redes e coocorrência. A versão usada no projeto é comprovada pelos arquivos locais, não pelo artigo de 2017.",
+              "localizador": "p. 959, 963 e 968–969",
+              "diagnostico": "condizente no ponto delimitado"
+            }
+          ]
+        },
+        {
+          "id": "R04",
+          "chamada": "Aria et al. (2026)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fontes_bibliometria_lote49.json",
+              "sha256_registro": "bbb407f2f1b4f371318d4b1dd848141de872a8c4da512ed22de2ae1e68efdfb6",
+              "texto_examinado": "O processamento utilizou bibliometrix 5.5.0 em R, pacote para análise bibliométrica e mapeamento científico descrito por Aria e Cuccurullo (2017). A coleção foi salva em formato compatível com Biblioshiny e validada com o carregador dessa interface, apresentada por Aria et al. (2026).",
+              "evidencia": "A publicação original identifica Biblioshiny como interface gráfica do pacote Bibliometrix em R; a validação local do carregador não demonstra sessão gráfica interativa.",
+              "localizador": "artigo publicado de 2026, resumo e descrição da interface",
+              "diagnostico": "condizente no ponto delimitado"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 219,
+      "texto": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+      "obras": [
+        {
+          "id": "R05",
+          "chamada": "Behera, Nayak e Kumar (2023)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+              "sha256_registro": "3eb054183942f35ed283b6e030b835edc5b0976abc192c90fe3babf7fbfa49b6",
+              "texto_examinado": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+              "evidencia": "Fonte resume trabalhos sobre redes de ordem superior e otimização evolucionária; o trecho atual não atribui a ela consenso universal.",
+              "localizador": "PDF 1 e seções de revisão",
+              "diagnostico": "condizente na afirmação delimitada"
+            }
+          ]
+        },
+        {
+          "id": "R20",
+          "chamada": "Ecer et al. (2020)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+              "sha256_registro": "3eb054183942f35ed283b6e030b835edc5b0976abc192c90fe3babf7fbfa49b6",
+              "texto_examinado": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+              "evidencia": "O estudo BIST 100 compara MLP, MLP-GA e MLP-PSO, com funções e populações diferentes; não é uma ESN nem prova estabilidade universal.",
+              "localizador": "PDF 5–11, seções 3.1–3.3",
+              "diagnostico": "condizente na afirmação delimitada"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 366,
+      "texto": "As matrizes foram calculadas em scripts de R, com a função biblioNetwork, e a apresentação das figuras utilizou ggplot2 e igraph. A validação de carregamento não corresponde a uma execução das análises pela interface gráfica do Biblioshiny. As revisões de Cardoso et al. (2022c, 2024) serviram como referências para a escolha dos formatos de visualização.",
+      "obras": [
+        {
+          "id": "R08",
+          "chamada": "Cardoso et al. (2022c, 2024)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fontes_bibliometria_lote49.json",
+              "sha256_registro": "bbb407f2f1b4f371318d4b1dd848141de872a8c4da512ed22de2ae1e68efdfb6",
+              "texto_examinado": "As matrizes foram calculadas em scripts de R, com a função biblioNetwork, e a apresentação das figuras utilizou ggplot2 e igraph. A validação de carregamento não corresponde a uma execução das análises pela interface gráfica do Biblioshiny. As revisões de Cardoso et al. (2022c, 2024) serviram como referências para a escolha dos formatos de visualização.",
+              "evidencia": "A revisão de 2022 apresenta frequência de palavras-chave e expressões nos títulos como formatos gráficos. Os valores e dados da revisão não são usados como resultados do projeto.",
+              "localizador": "PDF 6 e 8, Figuras 2 e 7",
+              "diagnostico": "condizente como referência de formato"
+            }
+          ]
+        },
+        {
+          "id": "R09",
+          "chamada": "Cardoso et al. (2022c, 2024)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fontes_bibliometria_lote49.json",
+              "sha256_registro": "bbb407f2f1b4f371318d4b1dd848141de872a8c4da512ed22de2ae1e68efdfb6",
+              "texto_examinado": "As matrizes foram calculadas em scripts de R, com a função biblioNetwork, e a apresentação das figuras utilizou ggplot2 e igraph. A validação de carregamento não corresponde a uma execução das análises pela interface gráfica do Biblioshiny. As revisões de Cardoso et al. (2022c, 2024) serviram como referências para a escolha dos formatos de visualização.",
+              "evidencia": "A revisão de 2024 apresenta gráficos de frequência de palavras-chave e de pares de palavras dos resumos como referências visuais gerais; os dados das figuras do projeto são os da coleção reconstruída.",
+              "localizador": "PDF 6 e 7, Figuras 1 e 2",
+              "diagnostico": "condizente como referência de formato"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 193,
+      "texto": "As redes Long Short-Term Memory (LSTM) foram introduzidas por Hochreiter e Schmidhuber (1997) para facilitar a aprendizagem de dependências longas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinicialização, hoje conhecida como Gated Recurrent Unit (GRU), no contexto de uma arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador. A simplificação estrutural dessa unidade não constitui, por si, uma garantia de menor erro em séries financeiras.",
+      "obras": [
+        {
+          "id": "R12",
+          "chamada": "Cho et al. (2014)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+              "sha256_registro": "90741e233b5096ee2c9f15fcc11eae3b21a8960498ff279f27ecbcc4bfeac2e5",
+              "texto_examinado": "As redes Long Short-Term Memory (LSTM) foram introduzidas por Hochreiter e Schmidhuber (1997) para facilitar a aprendizagem de dependências longas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinicialização, hoje conhecida como Gated Recurrent Unit (GRU), no contexto de uma arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador. A simplificação estrutural dessa unidade não constitui, por si, uma garantia de menor erro em séries financeiras.",
+              "evidencia": "O codificador–decodificador usa unidade com portas reset e update. A observação sobre ausência de garantia financeira é delimitação da monografia, não resultado atribuído à fonte.",
+              "localizador": "PDF 2–3, seções 2.2–2.3",
+              "diagnostico": "condizente no escopo identificado"
+            }
+          ]
+        },
+        {
+          "id": "R25",
+          "chamada": "Hochreiter e Schmidhuber (1997)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+              "sha256_registro": "90741e233b5096ee2c9f15fcc11eae3b21a8960498ff279f27ecbcc4bfeac2e5",
+              "texto_examinado": "As redes Long Short-Term Memory (LSTM) foram introduzidas por Hochreiter e Schmidhuber (1997) para facilitar a aprendizagem de dependências longas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinicialização, hoje conhecida como Gated Recurrent Unit (GRU), no contexto de uma arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador. A simplificação estrutural dessa unidade não constitui, por si, uma garantia de menor erro em séries financeiras.",
+              "evidencia": "A cópia do coautor apresenta o problema das dependências longas, fluxo constante de erro, células de memória e portas de entrada/saída; não se atribui porta de esquecimento à publicação original.",
+              "localizador": "PDF 1 e 6; resumo, introdução e seção 4",
+              "diagnostico": "condizente no escopo identificado"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 197,
+      "texto": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores semelhantes de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo.",
+      "obras": [
+        {
+          "id": "R13",
+          "chamada": "Cortesi et al. (2026)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_previsao_lote34.json",
+              "sha256_registro": "82d2d8d2a924242bc394a171e7e78287640741db84313a344a31f5e44bddc8a6",
+              "texto_examinado": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores semelhantes de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo.",
+              "evidencia": "A fonte relaciona escolhas de otimizador a funções distintas apesar de desempenho agregado semelhante, no contexto de previsão financeira. Não atribui esse resultado a Xiao.",
+              "localizador": "PDF 1–2 e Figuras 1–3",
+              "diagnostico": "condizente no escopo da afirmação examinada"
+            }
+          ]
+        },
+        {
+          "id": "R49",
+          "chamada": "Xiao, Deng e Bi (2024)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_previsao_lote34.json",
+              "sha256_registro": "82d2d8d2a924242bc394a171e7e78287640741db84313a344a31f5e44bddc8a6",
+              "texto_examinado": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores semelhantes de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo.",
+              "evidencia": "Para LSTM: MSE 260,8710984 e RMSE 26,0917386, cuja raiz quadrada não coincide; para Transformer também há divergência. O trecho delimita a inconsistência a alguns modelos.",
+              "localizador": "PDF 5, Tabela 3",
+              "diagnostico": "condizente no escopo da afirmação examinada"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 258,
+      "texto": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+      "obras": [
+        {
+          "id": "R15",
+          "chamada": "Deng et al. (2022)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+              "sha256_registro": "3eb054183942f35ed283b6e030b835edc5b0976abc192c90fe3babf7fbfa49b6",
+              "texto_examinado": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+              "evidencia": "AG otimiza parâmetros das ESNs empilhadas na tarefa de degradação; os efeitos são restritos ao protocolo estudado.",
+              "localizador": "PDF 10–13",
+              "diagnostico": "condizente na afirmação delimitada"
+            }
+          ]
+        },
+        {
+          "id": "R40",
+          "chamada": "Sharma et al. (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+              "sha256_registro": "3eb054183942f35ed283b6e030b835edc5b0976abc192c90fe3babf7fbfa49b6",
+              "texto_examinado": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+              "evidencia": "Otimização Bayesiana via TPE para hiperparâmetros, sem inferência de garantia de ótimo global.",
+              "localizador": "PDF 7–8",
+              "diagnostico": "condizente na afirmação delimitada"
+            }
+          ]
+        },
+        {
+          "id": "R41",
+          "chamada": "Soltani, Benmohamed e Ltifi (2022)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+              "sha256_registro": "3eb054183942f35ed283b6e030b835edc5b0976abc192c90fe3babf7fbfa49b6",
+              "texto_examinado": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+              "evidencia": "A revisão reúne técnicas distintas; diversidade de uso não demonstra consenso de superioridade.",
+              "localizador": "PDF 8–14",
+              "diagnostico": "condizente na afirmação delimitada"
+            }
+          ]
+        },
+        {
+          "id": "R44",
+          "chamada": "Tian e Pei (2024)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+              "sha256_registro": "3eb054183942f35ed283b6e030b835edc5b0976abc192c90fe3babf7fbfa49b6",
+              "texto_examinado": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+              "evidencia": "A seleção de hiperparâmetros por SSA está descrita; uso de heurística não comprova ótimo global.",
+              "localizador": "PDF 4–6",
+              "diagnostico": "condizente na afirmação delimitada"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 229,
+      "texto": "Dewick (2022) discute a modelagem de distribuições financeiras e sua relação com séries temporais. Essa discussão pertence à representação estatística dos dados, enquanto Soltani, Benmohamed e Ltifi (2022) examinam estratégias de otimização de ESNs. As duas frentes oferecem contexto para esta pesquisa, mas não demonstram, em conjunto, que uma distribuição de pesos deva reproduzir a distribuição dos retornos. A comparação entre inicializações é uma escolha experimental do presente trabalho.",
+      "obras": [
+        {
+          "id": "R16",
+          "chamada": "Dewick (2022)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_distribuicoes_lote33.json",
+              "sha256_registro": "16e130d46a549a5f85c516428771ad6babc2cbafad8db8565c2a13d9c756c23d",
+              "texto_examinado": "Dewick (2022) discute a modelagem de distribuições financeiras e sua relação com séries temporais. Essa discussão pertence à representação estatística dos dados, enquanto Soltani, Benmohamed e Ltifi (2022) examinam estratégias de otimização de ESNs. As duas frentes oferecem contexto para esta pesquisa, mas não demonstram, em conjunto, que uma distribuição de pesos deva reproduzir a distribuição dos retornos. A comparação entre inicializações é uma escolha experimental do presente trabalho.",
+              "evidencia": "O texto trata de distribuições financeiras e modelagem de séries; o parágrafo evita atribuir ao artigo uma justificativa automática de distribuição para pesos de ESN.",
+              "localizador": "PDF 2, 9–10 e 14, seções 2, 4 e conclusões",
+              "diagnostico": "condizente quanto à atribuição a Dewick; afirmação sobre Soltani depende de sua própria conferência"
+            }
+          ]
+        },
+        {
+          "id": "R41",
+          "chamada": "Soltani, Benmohamed e Ltifi (2022)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_distribuicoes_lote33.json",
+              "sha256_registro": "16e130d46a549a5f85c516428771ad6babc2cbafad8db8565c2a13d9c756c23d",
+              "texto_examinado": "Dewick (2022) discute a modelagem de distribuições financeiras e sua relação com séries temporais. Essa discussão pertence à representação estatística dos dados, enquanto Soltani, Benmohamed e Ltifi (2022) examinam estratégias de otimização de ESNs. As duas frentes oferecem contexto para esta pesquisa, mas não demonstram, em conjunto, que uma distribuição de pesos deva reproduzir a distribuição dos retornos. A comparação entre inicializações é uma escolha experimental do presente trabalho.",
+              "evidencia": "A versão consultada é preprint de 2022 e apresenta revisão de estratégias para otimização de parâmetros de ESN, incluindo métodos bioinspirados e não bioinspirados.",
+              "localizador": "PDF 2 e 4, resumo e estratégia de busca",
+              "diagnostico": "condizente para esta afirmação; sem endossar contagens inconsistentes da revisão."
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 39,
+      "texto": "(Gleick, 1987, par. 1)",
+      "obras": [
+        {
+          "id": "R22",
+          "chamada": "Gleick, 1987",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fontes_metodo_lote53.json",
+              "sha256_registro": "0dba8b83cd8f2ae8b2ea849d70b465714d7c929b509cce4648e4b6b1e30e381e",
+              "texto_examinado": "(Gleick, 1987, par. 1)",
+              "evidencia": "A passagem da epígrafe é encontrada na publicação de Gleick; usa-se a data exibida na página e localizador de parágrafo.",
+              "localizador": "Artigo assinado, primeiro parágrafo, data exibida 17/10/1987",
+              "diagnostico": "fonte_primaria_consultada"
+            }
+          ]
+        },
+        {
+          "id": "R22",
+          "chamada": "Gleick, 1987, par. 1",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fontes_metodo_lote53.json",
+              "sha256_registro": "0dba8b83cd8f2ae8b2ea849d70b465714d7c929b509cce4648e4b6b1e30e381e",
+              "texto_examinado": "(Gleick, 1987, par. 1)",
+              "evidencia": "A passagem da epígrafe é encontrada na publicação de Gleick; usa-se a data exibida na página e localizador de parágrafo.",
+              "localizador": "Artigo assinado, primeiro parágrafo, data exibida 17/10/1987",
+              "diagnostico": "fonte_primaria_consultada"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 232,
+      "texto": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan, Suresh e Chandrasekar (2025) geram as entradas não nulas de Win por amostragem Uniforme(-1,1), seguida de escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos.",
+      "obras": [
+        {
+          "id": "R23",
+          "chamada": "Hariharan, Suresh e Chandrasekar (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_previsao_lote34.json",
+              "sha256_registro": "82d2d8d2a924242bc394a171e7e78287640741db84313a344a31f5e44bddc8a6",
+              "texto_examinado": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan, Suresh e Chandrasekar (2025) geram as entradas não nulas de Win por amostragem Uniforme(-1,1), seguida de escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos.",
+              "evidencia": "As entradas não nulas de Win usam uniforme entre -1 e 1 com fator de escala; conexões ausentes recebem zero.",
+              "localizador": "PDF 4",
+              "diagnostico": "condizente no escopo da afirmação examinada"
+            }
+          ]
+        },
+        {
+          "id": "R38",
+          "chamada": "Ribeiro et al. (2021)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_previsao_lote34.json",
+              "sha256_registro": "82d2d8d2a924242bc394a171e7e78287640741db84313a344a31f5e44bddc8a6",
+              "texto_examinado": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan, Suresh e Chandrasekar (2025) geram as entradas não nulas de Win por amostragem Uniforme(-1,1), seguida de escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos.",
+              "evidencia": "Pesos de entrada, recorrentes e de realimentação são descritos como inicializados aleatoriamente por distribuição uniforme.",
+              "localizador": "PDF 4",
+              "diagnostico": "condizente no escopo da afirmação examinada"
+            }
+          ]
+        },
+        {
+          "id": "R48",
+          "chamada": "Wang et al. (2021)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_previsao_lote34.json",
+              "sha256_registro": "82d2d8d2a924242bc394a171e7e78287640741db84313a344a31f5e44bddc8a6",
+              "texto_examinado": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan, Suresh e Chandrasekar (2025) geram as entradas não nulas de Win por amostragem Uniforme(-1,1), seguida de escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos.",
+              "evidencia": "Pesos de entrada uniformes; matriz recorrente é matriz de adjacência gerada pela rede. Escalonamento ou conectividade não identificam por si só lei de pesos.",
+              "localizador": "PDF 7",
+              "diagnostico": "condizente no escopo da afirmação examinada"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 212,
+      "texto": "Hassaan, Yacoub e Said (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik, Routaib e Elhaddadi (2023) investigaram uma ESN em trajetórias simuladas de Lorenz, com condições iniciais associadas ao Bitcoin. O texto menciona uma série decimada, sem detalhar o procedimento. As métricas avaliam trajetórias geradas, não previsões de preços observados, e não isolam o efeito da distribuição dos pesos iniciais.",
+      "obras": [
+        {
+          "id": "R24",
+          "chamada": "Hassaan, Yacoub e Said (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+              "sha256_registro": "90741e233b5096ee2c9f15fcc11eae3b21a8960498ff279f27ecbcc4bfeac2e5",
+              "texto_examinado": "Hassaan, Yacoub e Said (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik, Routaib e Elhaddadi (2023) investigaram uma ESN em trajetórias simuladas de Lorenz, com condições iniciais associadas ao Bitcoin. O texto menciona uma série decimada, sem detalhar o procedimento. As métricas avaliam trajetórias geradas, não previsões de preços observados, e não isolam o efeito da distribuição dos pesos iniciais.",
+              "evidencia": "Seis conjuntos financeiros e comparação entre ESN/GRU com métodos caóticos e não caóticos; métricas não identificam efeito isolado de uma lei probabilística.",
+              "localizador": "PDF 4–5 e 12–13, Tabela 2",
+              "diagnostico": "condizente no escopo identificado"
+            }
+          ]
+        },
+        {
+          "id": "R39",
+          "chamada": "Seddik, Routaib e Elhaddadi (2023)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+              "sha256_registro": "90741e233b5096ee2c9f15fcc11eae3b21a8960498ff279f27ecbcc4bfeac2e5",
+              "texto_examinado": "Hassaan, Yacoub e Said (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik, Routaib e Elhaddadi (2023) investigaram uma ESN em trajetórias simuladas de Lorenz, com condições iniciais associadas ao Bitcoin. O texto menciona uma série decimada, sem detalhar o procedimento. As métricas avaliam trajetórias geradas, não previsões de preços observados, e não isolam o efeito da distribuição dos pesos iniciais.",
+              "evidencia": "Condições iniciais vinculadas a Bitcoin alimentam trajetórias de Lorenz; a página 7 menciona série decimada sem detalhar o procedimento. Não equivale a previsão direta do preço observado.",
+              "localizador": "PDF 4–7",
+              "diagnostico": "condizente no escopo identificado"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 256,
+      "texto": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo.",
+      "obras": [
+        {
+          "id": "R24",
+          "chamada": "Hassaan, Yacoub e Said (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+              "sha256_registro": "90741e233b5096ee2c9f15fcc11eae3b21a8960498ff279f27ecbcc4bfeac2e5",
+              "texto_examinado": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo.",
+              "evidencia": "A comparação ESN/GRU é própria do protocolo, sem autorização para concluir superioridade universal.",
+              "localizador": "PDF 12–13 e Tabela 2",
+              "diagnostico": "condizente no escopo identificado"
+            }
+          ]
+        },
+        {
+          "id": "R29",
+          "chamada": "Kumar (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+              "sha256_registro": "90741e233b5096ee2c9f15fcc11eae3b21a8960498ff279f27ecbcc4bfeac2e5",
+              "texto_examinado": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo.",
+              "evidencia": "RC, LSTM e GRU são comparados em petróleo; os tempos e métricas não são transferidos para o protocolo da monografia.",
+              "localizador": "PDF 16–18 e Tabela 3",
+              "diagnostico": "condizente no escopo identificado"
+            }
+          ]
+        },
+        {
+          "id": "R43",
+          "chamada": "Sun et al. (2021)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+              "sha256_registro": "90741e233b5096ee2c9f15fcc11eae3b21a8960498ff279f27ecbcc4bfeac2e5",
+              "texto_examinado": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo.",
+              "evidencia": "Comparação própria com LSTM simplificada, limitada à configuração e ao conjunto examinados.",
+              "localizador": "PDF 5–8 e Tabela 3",
+              "diagnostico": "condizente no escopo identificado"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 325,
+      "texto": "Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1975). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979).",
+      "obras": [
+        {
+          "id": "R26",
+          "chamada": "Holland (1975)",
+          "estado": "acesso_parcial_ao_original",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fontes_metodo_lote53.json",
+              "sha256_registro": "0dba8b83cd8f2ae8b2ea849d70b465714d7c929b509cce4648e4b6b1e30e381e",
+              "texto_examinado": "Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1975). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979).",
+              "evidencia": "Atribuição geral ao trabalho fundacional de Holland é compatível com a descrição editorial; a edição de 1975 não foi lida diretamente.",
+              "localizador": "Descrição do editor de reedição; identificação de 1975",
+              "diagnostico": "parcial_edicao_citada_nao_lida"
+            }
+          ]
+        },
+        {
+          "id": "R33",
+          "chamada": "McKay, Beckman e Conover (1979)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fontes_metodo_lote53.json",
+              "sha256_registro": "0dba8b83cd8f2ae8b2ea849d70b465714d7c929b509cce4648e4b6b1e30e381e",
+              "texto_examinado": "Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1975). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979).",
+              "evidencia": "O artigo original nomeia e descreve amostragem por hipercubo latino; sua aplicação na implementação atual é aferida no código, não na fonte externa.",
+              "localizador": "p. 239–240, introdução e seção 2",
+              "diagnostico": "fonte_primaria_consultada_em_trechos"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 203,
+      "texto": "As ESNs integram o paradigma da Computação de Reservatório (Reservoir Computing – RC). Jaeger (2001) apresenta uma abordagem em que a rede recorrente fornece estados e o treinamento ajusta as conexões de saída por regressão. Na configuração usual descrita por Jaeger (2007), os pesos internos são inicializados aleatoriamente e permanecem fixos durante o ajuste da saída. Essa separação entre dinâmica recorrente e leitura fundamenta a arquitetura utilizada nesta pesquisa.",
+      "obras": [
+        {
+          "id": "R27",
+          "chamada": "Jaeger (2001)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+              "sha256_registro": "90741e233b5096ee2c9f15fcc11eae3b21a8960498ff279f27ecbcc4bfeac2e5",
+              "texto_examinado": "As ESNs integram o paradigma da Computação de Reservatório (Reservoir Computing – RC). Jaeger (2001) apresenta uma abordagem em que a rede recorrente fornece estados e o treinamento ajusta as conexões de saída por regressão. Na configuração usual descrita por Jaeger (2007), os pesos internos são inicializados aleatoriamente e permanecem fixos durante o ajuste da saída. Essa separação entre dinâmica recorrente e leitura fundamenta a arquitetura utilizada nesta pesquisa.",
+              "evidencia": "O relatório, na cópia com errata de 2010, apresenta algoritmo que ajusta conexões de saída a partir dos estados da rede recorrente.",
+              "localizador": "PDF 3, resumo, e seções de aprendizagem por regressão",
+              "diagnostico": "condizente no escopo identificado"
+            }
+          ]
+        },
+        {
+          "id": "R28",
+          "chamada": "Jaeger (2007)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+              "sha256_registro": "90741e233b5096ee2c9f15fcc11eae3b21a8960498ff279f27ecbcc4bfeac2e5",
+              "texto_examinado": "As ESNs integram o paradigma da Computação de Reservatório (Reservoir Computing – RC). Jaeger (2001) apresenta uma abordagem em que a rede recorrente fornece estados e o treinamento ajusta as conexões de saída por regressão. Na configuração usual descrita por Jaeger (2007), os pesos internos são inicializados aleatoriamente e permanecem fixos durante o ajuste da saída. Essa separação entre dinâmica recorrente e leitura fundamenta a arquitetura utilizada nesta pesquisa.",
+              "evidencia": "Reservatório recorrente aleatório e fixo fornece respostas combinadas por saída treinável. A referência local é captura de revisão posterior do artigo Scholarpedia de 2007.",
+              "localizador": "PDF 1–2",
+              "diagnostico": "condizente no escopo identificado"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    },
+    {
+      "paragrafo": 257,
+      "texto": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas, Usha e Sangeetha (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros.",
+      "obras": [
+        {
+          "id": "R28",
+          "chamada": "Jaeger, 2007",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+              "sha256_registro": "90741e233b5096ee2c9f15fcc11eae3b21a8960498ff279f27ecbcc4bfeac2e5",
+              "texto_examinado": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas, Usha e Sangeetha (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros.",
+              "evidencia": "O contraste entre saída treinável e abordagens que ajustam outras conexões é consistente; o texto evita traduzir isso como tempo universal ou estabilidade garantida.",
+              "localizador": "PDF 1–2 e 5",
+              "diagnostico": "condizente no escopo identificado"
+            }
+          ]
+        },
+        {
+          "id": "R46",
+          "chamada": "Vishwas, Usha e Sangeetha (2025)",
+          "estado": "evidencia_dirigida_contexto_identico",
+          "evidencias": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\afirmacoes_contexto_lote45.json",
+              "sha256_registro": "395f174df307bedd3273226b37b054ae554790c390ac4ebf988eb8288afa1913",
+              "texto_examinado": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas, Usha e Sangeetha (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros.",
+              "evidencia": "Custo e infraestrutura aparecem na revisão como desafios; a distinção entre busca e ajuste é critério de análise próprio da monografia, não medição importada da revisão.",
+              "localizador": "PDF 4, 11–16",
+              "diagnostico": "condizente na afirmação delimitada"
+            }
+          ]
+        }
+      ],
+      "avaliacao": "Evidência associada a cada chamada; alcance de cada registro deve ser limitado às afirmações ali descritas. Frases sobre resultados próprios dependem de registros experimentais próprios."
+    }
+  ],
+  "observacao": "Epígrafe Gleick foi detectada duas vezes para a mesma chamada; Jaeger e Cardoso em chamadas de múltiplos anos representam referências distintas. Holland permanece com acesso parcial, conforme fontes_parciais_lote59.json. Legendas exigem conferência da tabela associada, não apenas da chamada."
+}

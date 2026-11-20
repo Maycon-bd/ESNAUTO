@@ -1,0 +1,389 @@
+{
+  "pages": 77,
+  "captions": [
+    {
+      "physicalPage": 35,
+      "title": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico",
+      "page": 34
+    },
+    {
+      "physicalPage": 35,
+      "title": "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica",
+      "page": 34
+    },
+    {
+      "physicalPage": 37,
+      "title": "Figura 1 – Documentação localizada nas cinco dimensões analíticas",
+      "page": 36
+    },
+    {
+      "physicalPage": 38,
+      "title": "Figura 2 – Frequência das palavras-chave declaradas pelos autores",
+      "page": 37
+    },
+    {
+      "physicalPage": 39,
+      "title": "Figura 3 – Rede de coocorrência de palavras-chave",
+      "page": 38
+    },
+    {
+      "physicalPage": 40,
+      "title": "Figura 4 – Expressões recorrentes nos títulos dos estudos",
+      "page": 39
+    },
+    {
+      "physicalPage": 43,
+      "title": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+      "page": 42
+    },
+    {
+      "physicalPage": 44,
+      "title": "Quadro 2 – Organização das cinco ondas experimentais",
+      "page": 43
+    },
+    {
+      "physicalPage": 45,
+      "title": "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético",
+      "page": 44
+    },
+    {
+      "physicalPage": 48,
+      "title": "Quadro 4 – Síntese do desenho experimental executado",
+      "page": 47
+    },
+    {
+      "physicalPage": 55,
+      "title": "Tabela 3 – Comparação dos principais resultados no conjunto de teste",
+      "page": 54
+    },
+    {
+      "physicalPage": 56,
+      "title": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações",
+      "page": 55
+    },
+    {
+      "physicalPage": 57,
+      "title": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada",
+      "page": 56
+    },
+    {
+      "physicalPage": 58,
+      "title": "Tabela 4 – Configurações selecionadas das cinco ondas experimentais",
+      "page": 57
+    },
+    {
+      "physicalPage": 60,
+      "title": "Tabela 5 – Decomposição do custo computacional documentado",
+      "page": 59
+    },
+    {
+      "physicalPage": 63,
+      "title": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+      "page": 62
+    },
+    {
+      "physicalPage": 63,
+      "title": "Quadro 5 – Síntese da avaliação das hipóteses",
+      "page": 62
+    },
+    {
+      "physicalPage": 64,
+      "title": "Tabela 7 – Comparação descritiva com Lampugnani (2026)",
+      "page": 63
+    },
+    {
+      "physicalPage": 72,
+      "title": "Quadro 6 – Delimitação das contribuições e da procedência",
+      "page": 71
+    }
+  ],
+  "titles": [
+    {
+      "physicalPage": 18,
+      "number": "1",
+      "style": "TITULO TCC",
+      "title": "INTRODUÇÃO",
+      "page": 17
+    },
+    {
+      "physicalPage": 21,
+      "number": "2",
+      "style": "TITULO TCC",
+      "title": "REVISÃO DA LITERATURA",
+      "page": 20
+    },
+    {
+      "physicalPage": 21,
+      "number": "2.1",
+      "style": "SEÇÃO TCC",
+      "title": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+      "page": 20
+    },
+    {
+      "physicalPage": 22,
+      "number": "2.2",
+      "style": "SEÇÃO TCC",
+      "title": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+      "page": 21
+    },
+    {
+      "physicalPage": 24,
+      "number": "2.3",
+      "style": "SEÇÃO TCC",
+      "title": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+      "page": 23
+    },
+    {
+      "physicalPage": 26,
+      "number": "2.4",
+      "style": "SEÇÃO TCC",
+      "title": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+      "page": 25
+    },
+    {
+      "physicalPage": 28,
+      "number": "2.5",
+      "style": "SEÇÃO TCC",
+      "title": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+      "page": 27
+    },
+    {
+      "physicalPage": 30,
+      "number": "2.6",
+      "style": "SEÇÃO TCC",
+      "title": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+      "page": 29
+    },
+    {
+      "physicalPage": 31,
+      "number": "2.7",
+      "style": "SEÇÃO TCC",
+      "title": "TRABALHOS RELACIONADOS",
+      "page": 30
+    },
+    {
+      "physicalPage": 33,
+      "number": "2.8",
+      "style": "SEÇÃO TCC",
+      "title": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+      "page": 32
+    },
+    {
+      "physicalPage": 34,
+      "number": "2.9",
+      "style": "SEÇÃO TCC",
+      "title": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+      "page": 33
+    },
+    {
+      "physicalPage": 41,
+      "number": "3",
+      "style": "TITULO TCC",
+      "title": "MATERIAL E MÉTODOS",
+      "page": 40
+    },
+    {
+      "physicalPage": 41,
+      "number": "3.1",
+      "style": "SEÇÃO TCC",
+      "title": "CLASSIFICAÇÃO DA PESQUISA",
+      "page": 40
+    },
+    {
+      "physicalPage": 42,
+      "number": "3.2",
+      "style": "SEÇÃO TCC",
+      "title": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+      "page": 41
+    },
+    {
+      "physicalPage": 44,
+      "number": "3.3",
+      "style": "SEÇÃO TCC",
+      "title": "IMPLEMENTAÇÃO DAS ESNS EM R",
+      "page": 43
+    },
+    {
+      "physicalPage": 46,
+      "number": "3.4",
+      "style": "SEÇÃO TCC",
+      "title": "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+      "page": 45
+    },
+    {
+      "physicalPage": 47,
+      "number": "3.5",
+      "style": "SEÇÃO TCC",
+      "title": "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+      "page": 46
+    },
+    {
+      "physicalPage": 47,
+      "number": "3.6",
+      "style": "SEÇÃO TCC",
+      "title": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+      "page": 46
+    },
+    {
+      "physicalPage": 49,
+      "number": "3.7",
+      "style": "SEÇÃO TCC",
+      "title": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+      "page": 48
+    },
+    {
+      "physicalPage": 50,
+      "number": "3.8",
+      "style": "SEÇÃO TCC",
+      "title": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+      "page": 49
+    },
+    {
+      "physicalPage": 50,
+      "number": "3.8.1",
+      "style": "SUBÇÃO 2",
+      "title": "Ambiente computacional",
+      "page": 49
+    },
+    {
+      "physicalPage": 50,
+      "number": "3.8.2",
+      "style": "SUBÇÃO 2",
+      "title": "Estrutura do repositório",
+      "page": 49
+    },
+    {
+      "physicalPage": 51,
+      "number": "3.8.3",
+      "style": "SUBÇÃO 2",
+      "title": "Procedimento de revisão bibliográfica",
+      "page": 50
+    },
+    {
+      "physicalPage": 53,
+      "number": "3.8.4",
+      "style": "SUBÇÃO 2",
+      "title": "Procedimento de reexecução dos experimentos",
+      "page": 52
+    },
+    {
+      "physicalPage": 54,
+      "number": "4",
+      "style": "TITULO TCC",
+      "title": "RESULTADOS E DISCUSSÃO",
+      "page": 53
+    },
+    {
+      "physicalPage": 54,
+      "number": "4.1",
+      "style": "SEÇÃO TCC",
+      "title": "VISÃO GERAL DOS EXPERIMENTOS",
+      "page": 53
+    },
+    {
+      "physicalPage": 55,
+      "number": "4.2",
+      "style": "SEÇÃO TCC",
+      "title": "DESEMPENHO PREDITIVO GLOBAL",
+      "page": 54
+    },
+    {
+      "physicalPage": 58,
+      "number": "4.3",
+      "style": "SEÇÃO TCC",
+      "title": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+      "page": 57
+    },
+    {
+      "physicalPage": 59,
+      "number": "4.4",
+      "style": "SEÇÃO TCC",
+      "title": "DISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO",
+      "page": 58
+    },
+    {
+      "physicalPage": 59,
+      "number": "4.5",
+      "style": "SEÇÃO TCC",
+      "title": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+      "page": 58
+    },
+    {
+      "physicalPage": 60,
+      "number": "4.6",
+      "style": "SEÇÃO TCC",
+      "title": "CUSTO COMPUTACIONAL",
+      "page": 59
+    },
+    {
+      "physicalPage": 61,
+      "number": "4.7",
+      "style": "SEÇÃO TCC",
+      "title": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+      "page": 60
+    },
+    {
+      "physicalPage": 62,
+      "number": "4.8",
+      "style": "SEÇÃO TCC",
+      "title": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+      "page": 61
+    },
+    {
+      "physicalPage": 63,
+      "number": "4.9",
+      "style": "SEÇÃO TCC",
+      "title": "AVALIAÇÃO DAS HIPÓTESES",
+      "page": 62
+    },
+    {
+      "physicalPage": 65,
+      "number": "4.10",
+      "style": "SEÇÃO TCC",
+      "title": "CONTRIBUIÇÕES DO ESNAUTO",
+      "page": 64
+    },
+    {
+      "physicalPage": 67,
+      "number": "5",
+      "style": "TITULO TCC",
+      "title": "DISCUSSÃO",
+      "page": 66
+    },
+    {
+      "physicalPage": 67,
+      "number": "5.1",
+      "style": "SEÇÃO TCC",
+      "title": "VALIDADE INTERNA E ESTATÍSTICA",
+      "page": 66
+    },
+    {
+      "physicalPage": 68,
+      "number": "5.2",
+      "style": "SEÇÃO TCC",
+      "title": "VALIDADE EXTERNA",
+      "page": 67
+    },
+    {
+      "physicalPage": 69,
+      "number": "5.3",
+      "style": "SEÇÃO TCC",
+      "title": "TRABALHOS FUTUROS",
+      "page": 68
+    },
+    {
+      "physicalPage": 70,
+      "number": "6",
+      "style": "TITULO TCC",
+      "title": "CONCLUSÃO",
+      "page": 69
+    },
+    {
+      "physicalPage": 73,
+      "number": "",
+      "style": "TITULO TCC",
+      "title": "REFERÊNCIAS",
+      "page": 72
+    }
+  ]
+}

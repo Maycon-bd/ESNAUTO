@@ -1,0 +1,572 @@
+---
+title: "Malware in the future? Forecasting analyst detection of cyber events"
+author: "Bakdash et al."
+date: "June 5, 2018"
+output: pdf_document
+keep_tex: yes
+---
+
+###Link to preprint: https://arxiv.org/pdf/1707.03243
+
+###Set up
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning = TRUE, message = TRUE}
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(yaml, knitr, rmarkdown, lattice, bursts, denstrip, rstan, tidyverse, 
+               rstanarm, bayesplot, bursts, forecast, lubridate, fUnitRoots, FitAR)
+
+#Need Rtools to compile Stan models: https://cran.r-project.org/bin/windows/Rtools/
+require(devtools)
+#Also need devtools to run 'install_version" to install version 1.10.2 of brms 
+  #1) bsts will be deprecated in brms 2.X in the near future
+  #2) WAIC stopped working for bsts in newer versions 
+  ###Note this version of brms works with R 3.5.0, see sessionInfo() below
+  ###It may **not** work with future versions of R
+install_version("brms", version = "1.10.2", repos = "http://cran.us.r-project.org")
+require(brms)
+
+#checkpoint("2018-06-04", use.knitr = TRUE)
+#Using checkpoint + knitr together, see: https://github.com/revodavid/weather-report
+
+rstan_options(auto_write = TRUE)
+options(mc.cores = parallel::detectCores())
+
+dir.create(file.path(getwd(),"/plots"), showWarnings = F)
+
+sessionInfo()
+```
+
+###Read data
+```{r}
+#csv needs to be in the same folder as the Rmd file
+#getwd()
+
+eventdata <- read.csv(file = 'cyber_event_binned_data.csv', 
+                      stringsAsFactors = F)
+
+binnedCount <- eventdata$event.count
+binnedLen <- eventdata$avg.report.length
+weekvar <- eventdata$week
+
+count.data <- cbind(weekvar, binnedCount, binnedLen)
+
+colnames(count.data) <- c("Time", "Counts", "Length")
+count.data  <- data.frame(count.data)
+t <- weekvar
+```
+
+###Index of dispersion (I) and histogram 
+####a) Index of dispersion (I)
+```{r, warning = TRUE, echo = TRUE}
+
+#Index of Dispertion (var/mean[rate])
+counts <- count.data$Counts
+
+#Variance
+var(counts)
+
+#Mean
+mean(counts)
+
+I <- var(counts)/mean(counts)
+I
+```
+
+####b) Histogram: Figure 2
+```{r, warning = TRUE, echo = TRUE}
+#Over-dispered, rate not equal to variance.    
+hist(count.data$Counts, ylab = "Frequency", xlab = "Cyber Events (Counts)", 
+     main = "", cex = 1.25, xlim = c(0, 140), ylim = c(0,100))
+rug(jitter(count.data$Counts, amount = 0.3))
+dev.copy2pdf(file="plots/Fig2_hist.pdf", width = 6, height = 6)
+dev.print(png, "plots/Fig2_hist.png", width = 6, height = 6, 
+          units = 'in', res = 600)
+dev.off()
+```
+
+###Bursts: Figure 3
+```{r, warning = TRUE, echo = TRUE}
+nweeks <- length(binnedCount)
+offsets <- numeric()
+
+for (i in 1:nweeks){
+    
+    tempweek <- i-1 #i want to start with 0
+    tempcount <- binnedCount[i]
+    
+    temparrivaltimes <- seq(from = tempweek, by = 1/tempcount, length.out = tempcount)
+    
+    offsets <- c(offsets, temparrivaltimes)
+    }
+
+bursts <- kleinberg(offsets)
+
+# make the x-axis show times instead of the time index variable
+timevar <- c(weekvar, tail(weekvar, 1) + 1:50)
+
+yr1 <- 16
+yrchange <- seq(from = yr1, to = tail(timevar, 1), by = 52)
+
+plot.burst.cyber <- function (x, ...)
+    {
+    max_level <- max(x$level)
+    plot(c(), type = "n", xlab = "", ylab = "Burst Intensity (Level)", bty = "n",
+         xlim = c(1, 400), ylim = c(1, max_level), axes = FALSE,
+         yaxt = "n", ...)
+    axis(side = 1, at = yrchange, labels = paste("Year", 1:8), tick = T)
+    axis(2, at = 1:max_level, las = 2)
+    arrows(x$start, x$level, x$end, x$level, code = 3, angle = 90,
+           length = 0.05)
+    }
+ 
+plot.burst.cyber(bursts)
+dev.copy2pdf(file="plots/Fig3_bursts.pdf", width = 9, height = 6)
+dev.print(png, "plots/Fig3_bursts.png",    width = 9, height = 6, 
+          units = 'in', res = 600)
+dev.off()
+```
+
+###Bayesian state space model using Stan with brms 
+```{r, warning = TRUE, echo = TRUE}
+head(count.data)
+
+set.seed(9999)
+fit1 <- brm(Counts ~ Time, data = count.data, autocor = cor_bsts(formula = ~1), 
+            family = negbinomial, iter = 12500, control = list(max_treedepth = 15)) 
+fit1
+plot(fit1, ask = FALSE)
+
+set.seed(9998)
+fit2 <- brm(Counts ~ Time + Length, data = count.data, autocor = cor_bsts(formula = ~1), 
+            family = negbinomial, iter = 12500, control = list(max_treedepth = 15))
+fit2
+plot(fit2, ask = FALSE)
+
+#Model Comparison: https://arxiv.org/pdf/1507.04544.pdf
+#Widely Applicable Information Criterion (WAIC) 
+summary(fit1, waic = TRUE)
+summary(fit2, waic = TRUE)
+```
+
+####Figure 4a: BSSM Year 3
+```{r, warning = TRUE, echo = TRUE}
+
+#Model forecast error only (essentially ARIMA style estimation of confidence intervals) 
+#brm.fit.btst <- data.frame(fitted(fit, probs = c(0.025, 0.975)))
+
+#Credible intervals 
+brm.fit.btstp <- data.frame(predict(fit1, probs = c(0.025, 0.975)))
+
+plot(binnedCount, 
+     type = "n", xlim  = c(0,52), 
+     ylim = c(0, 80), 
+     xaxt = "n", 
+     xlab = "Year 3: Weeks", 
+     ylab = "Number of Cyber Events", las = 1)
+
+#by = 1
+axis(side = 1, at = seq(0, 52, by = 13), tick = T, lwd = 1)
+rug(x = 0:51 + 1, ticksize = -0.01, side = 1, lwd = 0.75)
+
+est2 <-  brm.fit.btstp[120:171, 1]
+ucl2 <-  brm.fit.btstp[120:171, 4]
+lcl2 <-  brm.fit.btstp[120:171, 3]
+se2 <-  (est2 - lcl2)/qnorm(0.975)
+
+t2 <- c(1:52)
+nt2 <- length(t2)
+ y2 <- seq(0, 160, length = 100)
+ z2 <- matrix(nrow=nt2, ncol=length(y2))
+ for(i in 1:nt2) {
+                 z2[i,] <- dnorm(y2, est2[i], se2[i]) 
+                 }
+
+densregion(t2, y2, z2, pointwise = T, 
+           contour = F, scale = 0.75, 
+           nlevels = 200) #colmin = "transparent", 
+box(col = 'black')
+
+# lines(t, lcl, lty=2)
+# lines(t, ucl, lty=2)
+#plot actual values
+ 
+add.alpha <- function(col, alpha=1)
+   {
+  if(missing(col))
+    stop("Please provide a vector of colours.")
+  apply(sapply(col, col2rgb)/255, 2, 
+                     function(x) 
+                       rgb(x[1], x[2], x[3], alpha=alpha))  
+    }
+
+#plot fitted values
+#green.alpha <- add.alpha(col = "#EE353A", alpha = 0.9) 
+trend.color <- add.alpha(col = "magenta", alpha = 0.80) 
+lines(t2, binnedCount[120:171], col = trend.color, lwd = 3)
+
+fit.color <- add.alpha(col = "white", alpha = 0.85) 
+lines(t2, est2, col=fit.color, lwd = 3)
+
+dev.print(png, "plots/Fig4a_Year3_weeks.png", 
+          width = 2.86, height = 6.04, units = 'in', 
+          res = 600)
+dev.off()
+```
+
+####Figure 4b: BSSM all years
+```{r, warning = TRUE, echo = TRUE}
+plot(binnedCount, type = "n", xlim  = c(0,400), ylim = c(0, 160), 
+     xaxt = "n", xlab = "Time", 
+     ylab = "Number of Cyber Events", las = 1)
+     #,main = "Bayesian Structural Time Series")
+
+est <- brm.fit.btstp[,1]
+ucl <-  brm.fit.btstp[,4]
+lcl <-  brm.fit.btstp[,3]
+se <- (est - lcl)/qnorm(0.975)
+
+nt <- length(t)
+ y <- seq(0, 160, length = 100)
+ z <- matrix(nrow=nt, ncol=length(y))
+ for(i in 1:nt) {
+                 z[i,] <- dnorm(y, est[i], se[i]) 
+                 }
+
+densregion(t, y, z, pointwise = T,  contour = F, scale = 0.75, 
+           nlevels = 100) #colmin = "transparent", 
+ 
+add.alpha <- function(col, alpha = 1)
+   {
+  if(missing(col))
+    stop("Please provide a vector of colours.")
+  apply(sapply(col, col2rgb)/255, 2, 
+                     function(x) 
+                       rgb(x[1], x[2], x[3], alpha=alpha))  
+    }
+
+#plot fitted values
+#green.alpha <- add.alpha(col = "#EE353A", alpha = 0.9) 
+trend.color <- add.alpha(col = "magenta", alpha = 0.80) 
+lines(t, binnedCount, col = trend.color, lwd = 1.5)
+
+fit.color <- add.alpha(col = "white", alpha = 0.85) 
+lines(t[2:366], est[2:366], col=fit.color, lwd = 1.5)
+
+# make the x-axis show times instead of the time index variable
+timevar <- c(weekvar, tail(weekvar, 1) + 1:50)
+
+yr1 <- 16
+yrchange <- seq(from = yr1, to = tail(timevar, 1), by = 52)
+
+axis(side = 1, at = yrchange,
+     labels = paste("Year", 1:8), tick = T)
+
+dev.print(png, "plots/Fig4b_BSSM_all.png", width = 9, height = 6, 
+          units = 'in', res = 600)
+dev.off()
+```
+
+
+####Typical time-series model: AR1 and AR3
+```{r, warning = TRUE, echo = TRUE}
+#make a variable for the structural break
+sb <- c(rep(0, 83), rep(1, length(binnedCount) - 83))
+
+# seasons <- quarter(weekvar) #seasonality - this was not significant, leaving it out
+# seasons <- paste("q", seasons, sep = "")
+
+#residuals of this model are the detrended time series, use this going forward
+count.lm <- lm(binnedCount ~ t + sb)
+dt.count <- resid(count.lm)
+
+#may also want to try to use detrended report length as predictor:
+len.lm <- lm(binnedLen ~ t + sb)
+dt.len <- resid(len.lm)
+
+
+# first, look at acf and pacf of time series
+# if it's just AR or MA, you can kind of figure it out from that
+# if it's ARMA, it's a little harder
+
+acf(dt.count)
+pacf(dt.count)
+
+#visually, I would guess maybe an AR(3), since the acf has a slow decay, and
+#the pacf has spikes to lag 3
+
+ar3 <- arima(dt.count, order = c(3,0,0))
+print(ar3)
+
+#try auto.arima. this should give us the best ARIMA model. it does its own unit
+#root testing and looks for drift and seasonality, so it will also be a good 
+#check on our detrending and unit root testing above
+arima.mod <- auto.arima(dt.count)
+print(arima.mod)
+
+#try auto.arima. this should give us the best ARIMA model. it does its own unit
+#root testing and looks for drift and seasonality, so it will also be a good 
+#check on our detrending and unit root testing above
+
+arima.mod <- auto.arima(dt.count)
+print(arima.mod)
+
+# doesn't use an intercept - maybe because detrending by definition centers the
+# time series around 0? 
+# No "I" term - that's good, confirms what we already thought
+# This method says AR(1) and MA(1). Seems plausible. Need to test residuals to 
+# make sure this model accounts for all the serial correlation
+
+# NOTE: we can also add some external predictors to the model (IR length)
+# I did this, and it didn't add anything: arima(dt.count, order = c(1,0,1), xreg = dt.len)
+
+#Check residuals
+res <- arima.mod$residuals
+
+# need to see if there's still any serial correlation
+acf(res)
+pacf(res)
+
+#test residuals against whitenoise
+LjungBoxTest(res, k = 1)
+
+# no strong evidence of serial correlation remaining
+
+#test for normality
+shapiro.test(res)
+qqnorm(res)
+qqline(res)
+
+# seems pretty non-normal. this was true of all the models I tried. this is 
+# problematic, but not as concerning as residual serial correlation would be.
+# worth mentioning as limitation - possible that log transform of data would
+# address this 
+
+# We fit the model using detrended data, but we want to make a plot that
+# includes the trend and structural break, so that it's visually interpretable
+
+# # make a function to UNDETREND x-values
+# undetrend <- function(x, t, sb, lm.mod) {
+#     coefs <- lm.mod$coefficients
+#     preds <- coefs[1] + coefs[2] * t + coefs[3] * sb
+#     return(x + preds)
+# }
+# 
+# # initialize the plot
+# plot(binnedCount, type = "n", xlim  = c(0,400), xaxt = "n", xlab = "Time", 
+#      ylab = "Number of Cyber Events", las = 1,
+#      main = "Number of Cyber Events\nARMA (1,1)")
+# 
+# # get fitted values of arma model
+# armapreds <- fitted(arima.mod)
+# 
+# #plot CIs for arma fits, undetrended, use density shading
+# nt <- length(t)
+# est <- undetrend(armapreds, t, sb, count.lm)
+# se <- rep(sqrt(arima.mod$sigma2), nt)
+# y <- seq(0, 150, length=100)
+# z <- matrix(nrow=nt, ncol=length(y))
+# for(i in 1:nt) {
+#     z[i,] <- dnorm(y, est[i], se[i])
+# }
+# densregion(t, y, z)
+# #plot actual values
+# lines(t,est,col="white")
+# #plot fitted values
+# lines(t, binnedCount, col = "magenta")
+# 
+# # plot forecasted values, undetrended
+# steps.ahead = 50
+# trange <- (length(binnedCount)+1):(length(binnedCount)+steps.ahead)
+# forecast.vals <- forecast(arima.mod, h = steps.ahead)
+# est <- undetrend(forecast.vals$mean, trange, rep(1, steps.ahead), count.lm)
+# 
+# nt <- length(trange)
+# se <- (forecast.vals$upper[,2] - forecast.vals$mean) / 1.96
+# y <- seq(0, 150, length=100)
+# z <- matrix(nrow=nt, ncol=length(y))
+# for(i in 1:nt) {
+#     z[i,] <- dnorm(y, est[i], se[i])
+# }
+# 
+# densregion(trange, y, z)
+# lines(x = trange, y = est,  col = "white")
+# box()
+# 
+# # make the x-axis show times instead of the time index variable
+# timevar <- c(weekvar, tail(weekvar,1) + 1:50)
+# 
+# yr1 <- 16
+# yrchange <- seq(from = yr1, to = tail(timevar, 1), by = 52)
+# 
+# 
+# 
+# axis(side = 1, at = yrchange,
+#      labels = paste("Year", 1:8), tick = T)
+# abline(v = 366.5, lty = 2)
+# text(x = 368, y = 120, "Forecast", adj = 0)
+```
+
+####Measures of trend forecast accuracy: All data and bursts (L3 and L2)
+```{r, warning = TRUE, echo = TRUE}
+#AR1 (untrended) forecast trendline: est.ar1 = AR1
+
+#make a function to UNDETREND x-values
+ undetrend <- function(x, t, sb, lm.mod) 
+    {
+     coefs <- lm.mod$coefficients
+     preds <- coefs[1] + coefs[2] * t + coefs[3] * sb
+     return(x + preds)
+    }
+
+armapreds <- fitted(arima.mod)
+est.ar1   <- undetrend(armapreds, t, sb, count.lm)
+
+armapreds2 <- fitted(ar3)
+est.ar3   <- undetrend(armapreds2, t, sb, count.lm)
+
+#Drop the weeks with 0 observed events
+#Weeks 5, 62, 75 
+counts.no.zero   <- rbind(eventdata[1:4,], eventdata[6:61,],
+                     eventdata[63:74,], eventdata[76:366,])
+
+ar1.est.no.zeros <- c(est.ar1[1:4],   est.ar1[6:61], 
+                     est.ar1[63:74], est.ar1[76:366])
+
+
+ar3.est.no.zeros <- c(est.ar3[1:4],   est.ar3[6:61], 
+                      est.ar3[63:74], est.ar3[76:366])
+
+#BSSM 
+#est = forcase trend line for all weeks
+BSSM.est.no.zeros <- c(est[1:4],   est[6:61], 
+                       est[63:74], est[76:366])
+
+#Measures of Forecasting Accuracy: MAE, MAPE, and sMAPE
+#Forecast accuracy function
+forecast.accuracy <- function(fitted.values.zero, fitted.values)
+  {
+  MAE      <- sum(abs(counts-fitted.values))/length(counts)
+  
+  #Removed zeros MAPE (otherwise divide by zero)
+  MAPE     <- (1/length(counts.no.zero$event.count)) * 
+               sum(abs(counts.no.zero$event.count  - fitted.values.zero)/counts.no.zero$event.count)
+  
+  MAPE.acc <- (1 - MAPE)*100
+  
+  sMAPE    <- 1/length(counts) * sum(abs(counts- fitted.values)/(counts + fitted.values))
+  
+  SMAPE.acc<- (1 - sMAPE)*100
+  
+  RMSE     <- sqrt(sum((fitted.values-counts)^2)/length(counts))
+  
+  forecast.accuracy.values <- t(cbind(MAE, MAPE.acc, SMAPE.acc, RMSE, MAPE, sMAPE))
+  
+  return(forecast.accuracy.values)
+  }
+
+AR1.acc  <- forecast.accuracy(ar1.est.no.zeros, est.ar1)
+AR3.acc  <- forecast.accuracy(ar3.est.no.zeros, est.ar3)
+BSSM.acc <- forecast.accuracy(BSSM.est.no.zeros, est)
+model.comparison <- c("BSSM", "AR1", "AR3")
+model.acc <-  cbind(BSSM.acc, AR1.acc, AR3.acc)
+colnames(model.acc) <- model.comparison
+kable(model.acc, digits = 2)
+
+#Sanity check: accuracy() from the forecast package returns the same values
+  accuracy(est.ar1, counts)
+
+  #accuracy(ar1.est.no.zeros, counts.no.zero$event.count)
+
+  #MAPE alone
+  100-accuracy(ar1.est.no.zeros, counts.no.zero$event.count)[1,5]
+
+#Forecast accuracy for bursts
+#Bursts
+  L3.bursts <- subset(bursts, level == 3)
+  L2.bursts <- subset(bursts, level == 2)
+
+#Extract weeks for L3 and L2 bursts into single vector
+  L3.weeks <- c(L3.bursts$start, L3.bursts$end)
+  L2.weeks <- c(L2.bursts$start, L2.bursts$end)
+
+#Slice using the L3 and L2 weeks values:
+#For observed data
+  L3.obs <- as.matrix(data.frame(counts) %>% slice(L3.weeks))
+  L2.obs <- as.matrix(data.frame(counts) %>% slice(L2.weeks))
+  length(L3.obs)
+  length(L2.obs)
+
+#For fitted trendline data
+  L3.BSSM <- as.matrix(data.frame(est) %>% slice(L3.weeks))
+  L2.BSSM <- as.matrix(data.frame(est) %>% slice(L2.weeks))
+  
+  L3.ar1 <- as.matrix(data.frame(est.ar1) %>% slice(L3.weeks))
+  L2.ar1 <- as.matrix(data.frame(est.ar1) %>% slice(L2.weeks))
+  
+  L3.ar3 <- as.matrix(data.frame(est.ar3) %>% slice(L3.weeks))
+  L2.ar3 <- as.matrix(data.frame(est.ar3) %>% slice(L2.weeks))
+
+forecast.accuracy.bursts <- 
+  function(fitted.values, observed)
+  {
+  MAE      <- sum(abs(observed-fitted.values))/length(observed)
+  
+  MAPE     <- (1/length(observed)) * 
+               sum(abs(observed  - fitted.values)/observed)
+  
+  MAPE.acc <- (1 - MAPE)*100
+  
+  sMAPE    <- 1/length(observed) * sum(abs(observed- fitted.values)/(observed + fitted.values))
+  
+  SMAPE.acc<- (1 - sMAPE)*100
+  
+  RMSE     <- sqrt(sum((fitted.values-observed)^2)/length(observed))
+  
+  forecast.accuracy.bursts <- t(cbind(MAE, MAPE.acc, SMAPE.acc, RMSE, MAPE, sMAPE))
+  
+  return(forecast.accuracy.bursts)
+  }
+
+#L3 bursts
+  L3.AR1.acc  <- forecast.accuracy.bursts(L3.ar1, L3.obs)
+  L3.AR3.acc  <- forecast.accuracy.bursts(L3.ar3, L3.obs)
+  L3.BSSM.acc <- forecast.accuracy.bursts(L3.BSSM, L3.obs)
+  L3.acc.table <- cbind(L3.BSSM.acc, L3.AR1.acc, L3.AR3.acc)
+  colnames(L3.acc.table) <- model.comparison
+  kable(L3.acc.table, digits = 2)
+   
+#L2 bursts
+  L2.AR1.acc  <- forecast.accuracy.bursts(L2.ar1, L2.obs)
+  L2.AR3.acc  <- forecast.accuracy.bursts(L2.ar3, L2.obs)
+  L2.BSSM.acc <- forecast.accuracy.bursts(L2.BSSM, L2.obs)
+  L2.acc.table <- cbind(L2.BSSM.acc, L2.AR1.acc, L2.AR3.acc)
+  colnames(L2.acc.table) <- model.comparison
+  kable(L2.acc.table, digits = 2)
+```
+
+####BSSM diganostic plots 
+```{r, warning = TRUE, echo = TRUE}
+  #Doesn't appear to graph bsts model correctly
+  #pp_check(fit1, type = "overlaid")
+  #plot(marginal_effects(fit1), points = TRUE)
+  
+  #ditto
+  #pairs(fit1)
+
+#Interactive exploration of model fit  
+#launch_shinystan(fit1)
+  
+  stanplot(fit1)
+  stanplot(fit1, type = "hist")
+  
+  stanplot(fit1, type = "neff")
+  stanplot(fit1, type = "rhat")
+  
+  stanplot(fit1, type = "nuts_acceptance")
+  stanplot(fit1, type = "nuts_divergence")
+  
+  stanplot(fit1, type = "acf")
+```

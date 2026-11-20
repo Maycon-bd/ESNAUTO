@@ -1,0 +1,136 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_examinado": "24cb3fa4d96b9fed434173262037a597acb0ca5aad6671ae1b962d12df75d1ee",
+  "fonte": {
+    "id": "D06",
+    "arquivo": "Artigos citados\\Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.pdf",
+    "sha256": "8bb4b1967da28dc961a42231543f70cdf22fc798527b1724c7f1e7cd5714bde6",
+    "paginas": 39,
+    "caracteres_extraidos": 128142,
+    "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+    "log_leitura": []
+  },
+  "paginas_textuais_lidas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "paginas_visuais_inspecionadas": [
+    1,
+    2,
+    4,
+    7,
+    22,
+    23,
+    31
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D06",
+      "arquivo_pdf": "Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.pdf",
+      "sha256_pdf": "8bb4b1967da28dc961a42231543f70cdf22fc798527b1724c7f1e7cd5714bde6",
+      "tipo": "aplicacao_redes_profundas",
+      "dimensao": "P1",
+      "codigo": "-",
+      "localizador": "PDF 3, seção 2.2",
+      "evidencia_e_limite": "Arquiteturas MLP, CNN, LSTM e Transformer; não inicialização ESN.",
+      "escopo_leitura": "PDF 2–3: desenho, dados, arquiteturas e comparação; apêndices de dados 16–18 consultados anteriormente."
+    },
+    {
+      "id": "D06",
+      "arquivo_pdf": "Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.pdf",
+      "sha256_pdf": "8bb4b1967da28dc961a42231543f70cdf22fc798527b1724c7f1e7cd5714bde6",
+      "tipo": "aplicacao_redes_profundas",
+      "dimensao": "P2",
+      "codigo": "-",
+      "localizador": "PDF 3, seção 2.2",
+      "evidencia_e_limite": "Busca de taxa e decaimento para pares arquitetura/otimizador; não ESN.",
+      "escopo_leitura": "PDF 2–3: desenho, dados, arquiteturas e comparação; apêndices de dados 16–18 consultados anteriormente."
+    },
+    {
+      "id": "D06",
+      "arquivo_pdf": "Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.pdf",
+      "sha256_pdf": "8bb4b1967da28dc961a42231543f70cdf22fc798527b1724c7f1e7cd5714bde6",
+      "tipo": "aplicacao_redes_profundas",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 2, seção 2.1",
+      "evidencia_e_limite": "Calcula proxy Garman–Klass e log-variância a partir de OHLC; usa janelas de volatilidades. Dados CRSP e ajustes corporativos discutidos nos apêndices.",
+      "escopo_leitura": "PDF 2–3: desenho, dados, arquiteturas e comparação; apêndices de dados 16–18 consultados anteriormente."
+    },
+    {
+      "id": "D06",
+      "arquivo_pdf": "Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.pdf",
+      "sha256_pdf": "8bb4b1967da28dc961a42231543f70cdf22fc798527b1724c7f1e7cd5714bde6",
+      "tipo": "aplicacao_redes_profundas",
+      "dimensao": "P4",
+      "codigo": "D",
+      "localizador": "PDF 2–3, contribuições e seção 2.2",
+      "evidencia_e_limite": "Avalia 12 pares arquitetura/otimizador com LSTM e Transformer e 13 sementes; compara NMSE. Não transportar equivalência do estudo para PETR4.",
+      "escopo_leitura": "PDF 2–3: desenho, dados, arquiteturas e comparação; apêndices de dados 16–18 consultados anteriormente."
+    },
+    {
+      "id": "D06",
+      "arquivo_pdf": "Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.pdf",
+      "sha256_pdf": "8bb4b1967da28dc961a42231543f70cdf22fc798527b1724c7f1e7cd5714bde6",
+      "tipo": "aplicacao_redes_profundas",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 2, seção 2.1",
+      "evidencia_e_limite": "Constituintes históricos do S&P500/CRSP, 2000–2024.",
+      "escopo_leitura": "PDF 2–3: desenho, dados, arquiteturas e comparação; apêndices de dados 16–18 consultados anteriormente."
+    }
+  ],
+  "n_codigos_alterados": 0,
+  "afirmacoes": {
+    "U0196": "Tabela 1, PDF 4, apresenta médias NMSE próximas mas não idênticas; análises de resposta e otimização evidenciam funções diferentes. Interpretação restrita à previsão da volatilidade no estudo.",
+    "U0237": "PDF 18, 20–21: CRSP contém fator cfacpr, mas existência do fator não estabelece que valores OHLC tenham sido efetivamente ajustados."
+  },
+  "ressalvas": [
+    "PDF 2 e 22: alvo é log-variância derivada de Garman–Klass, não preço da ação.",
+    "PDF 7: autores não afirmam causalidade nem generalização além da tarefa para relação entre curvatura e forma funcional.",
+    "Tabela 1 mostra erros próximos, com diferenças e dispersão; não afirmar igualdade numérica literal.",
+    "Documento é preprint arXiv v1 de março de 2026."
+  ],
+  "correcoes_pendentes": [],
+  "correcoes_incorporadas": [
+    "U0196"
+  ]
+}

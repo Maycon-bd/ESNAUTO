@@ -1,0 +1,49 @@
+{
+  "n_csv": 5198,
+  "n_txt": 5198,
+  "datas_unicas": 5198,
+  "ordem_estritamente_crescente": true,
+  "primeira_data": "2000-01-03",
+  "ultima_data": "2020-12-30",
+  "maior_diferenca_csv_txt": 1.021405182655144e-14,
+  "media": 13.277474771828103,
+  "sd_amostral": 7.114989517316588,
+  "minimo": 2.47749056011047,
+  "maximo": 34.5479835551678,
+  "assimetria_momento": 0.21616267752713988,
+  "curtose_excesso_momento": -0.8201573623463401,
+  "blocos": {
+    "treino": {
+      "inicio_indice": 1,
+      "fim_indice": 2600,
+      "n": 2600,
+      "data_inicio": "2000-01-03",
+      "data_fim": "2010-07-01"
+    },
+    "validacao": {
+      "inicio_indice": 2601,
+      "fim_indice": 3899,
+      "n": 1299,
+      "data_inicio": "2010-07-02",
+      "data_fim": "2015-09-28"
+    },
+    "teste": {
+      "inicio_indice": 3900,
+      "fim_indice": 5198,
+      "n": 1299,
+      "data_inicio": "2015-09-29",
+      "data_fim": "2020-12-30"
+    }
+  },
+  "entradas": [
+    {
+      "arquivo": "Scripts\\data\\PETR4_close com factor_2000-2020_com data.csv",
+      "sha256": "0ce4b6d1f2382c318771322dba12994e7a011774e7de364731f398f195183916"
+    },
+    {
+      "arquivo": "Scripts\\data\\PETR4_close com factor_2000-2020.txt",
+      "sha256": "21dd7de17b388ff7431428ae4af0ac2b4e1471ef16b5fc151f1ccd3e7f26ed78"
+    }
+  ],
+  "limite": "Recalcula somente descrição dos arquivos de entrada; não executa modelos, busca genética ou testes DM, nem reconstrói o ajuste corporativo."
+}

@@ -1,0 +1,653 @@
+{
+  "arquivos": {
+    "origem": {
+      "caminho": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\fechamento_integral_20261029\\antes_exportacao_lote20.docx",
+      "sha256": "9b9fb9e9c27b20aa23612b3b95c0ba1321da208ff1f86b4c9d6014c7a9fcb847"
+    },
+    "candidata": {
+      "caminho": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\fechamento_integral_20261029.docx",
+      "sha256": "8835571f743aab36f4d193d7e75c28a7fa6b78e0ed1f446973a1a05b02bc1042"
+    },
+    "pdf": {
+      "caminho": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\fechamento_integral_20261029\\previa_lote20.pdf",
+      "sha256": "4299971ce5f5a4b5b4d516a523d5abf404773970cfd342f53e7df44857109d2b"
+    },
+    "mapa": {
+      "caminho": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\fechamento_integral_20261029\\mapa_lote20.json",
+      "sha256": "c751e285daf52f9704b5a066599ef3764273e65138c50489f1e60b4cd2315107"
+    }
+  },
+  "checks": [
+    {
+      "item": "Texto do corpo preservado; apenas páginas das listas mudam",
+      "ok": true,
+      "detalhe": 0
+    },
+    {
+      "item": "Texto das tabelas preservado",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "Mídias preservadas",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "A4/margens seção1",
+      "ok": true,
+      "detalhe": [
+        21.00086111111111,
+        29.70036111111111,
+        3.000375,
+        3.000375,
+        2.00025,
+        2.00025
+      ]
+    },
+    {
+      "item": "A4/margens seção2",
+      "ok": true,
+      "detalhe": [
+        21.00086111111111,
+        29.70036111111111,
+        3.000375,
+        3.000375,
+        2.00025,
+        2.00025
+      ]
+    },
+    {
+      "item": "A4/margens seção3",
+      "ok": true,
+      "detalhe": [
+        21.00086111111111,
+        29.70036111111111,
+        3.000375,
+        3.000375,
+        2.00025,
+        2.00025
+      ]
+    },
+    {
+      "item": "A4/margens seção4",
+      "ok": true,
+      "detalhe": [
+        21.00086111111111,
+        29.70036111111111,
+        3.000375,
+        3.000375,
+        2.00025,
+        2.00025
+      ]
+    },
+    {
+      "item": "A4/margens seção5",
+      "ok": true,
+      "detalhe": [
+        21.00086111111111,
+        29.70036111111111,
+        3.000375,
+        3.000375,
+        2.00025,
+        2.00025
+      ]
+    },
+    {
+      "item": "A4/margens seção6",
+      "ok": true,
+      "detalhe": [
+        21.00086111111111,
+        29.70036111111111,
+        3.000375,
+        3.000375,
+        2.00025,
+        2.00025
+      ]
+    },
+    {
+      "item": "RESUMO150–500palavras",
+      "ok": true,
+      "detalhe": 331
+    },
+    {
+      "item": "ABSTRACT150–500palavras",
+      "ok": true,
+      "detalhe": 273
+    },
+    {
+      "item": "TabelaXML1:11pt",
+      "ok": true,
+      "detalhe": 29
+    },
+    {
+      "item": "TabelaXML1:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML2:11pt",
+      "ok": true,
+      "detalhe": 239
+    },
+    {
+      "item": "TabelaXML2:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML3:11pt",
+      "ok": true,
+      "detalhe": 14
+    },
+    {
+      "item": "TabelaXML3:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML4:11pt",
+      "ok": true,
+      "detalhe": 25
+    },
+    {
+      "item": "TabelaXML4:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML5:11pt",
+      "ok": true,
+      "detalhe": 36
+    },
+    {
+      "item": "TabelaXML5:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML6:11pt",
+      "ok": true,
+      "detalhe": 21
+    },
+    {
+      "item": "TabelaXML6:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML7:11pt",
+      "ok": true,
+      "detalhe": 20
+    },
+    {
+      "item": "TabelaXML7:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML8:11pt",
+      "ok": true,
+      "detalhe": 56
+    },
+    {
+      "item": "TabelaXML8:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML9:11pt",
+      "ok": true,
+      "detalhe": 20
+    },
+    {
+      "item": "TabelaXML9:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML10:11pt",
+      "ok": true,
+      "detalhe": 25
+    },
+    {
+      "item": "TabelaXML10:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML11:11pt",
+      "ok": true,
+      "detalhe": 18
+    },
+    {
+      "item": "TabelaXML11:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML12:11pt",
+      "ok": true,
+      "detalhe": 16
+    },
+    {
+      "item": "TabelaXML12:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML13:11pt",
+      "ok": true,
+      "detalhe": 20
+    },
+    {
+      "item": "TabelaXML13:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "Legendas10pt",
+      "ok": true,
+      "detalhe": 19
+    },
+    {
+      "item": "Fontes10pt",
+      "ok": true,
+      "detalhe": 19
+    },
+    {
+      "item": "Legendas sem ponto final",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "Títulos quadros/tabelas sem siglas",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "60 entradas de listas/sumário correspondem ao mapa Word",
+      "ok": true,
+      "detalhe": [
+        {
+          "paragrafo": 47,
+          "titulo": "Figura 1 – Documentação localizada nas cinco dimensões analíticas",
+          "pagina_lista": 35,
+          "pagina_corpo": 35
+        },
+        {
+          "paragrafo": 48,
+          "titulo": "Figura 2 – Frequência das palavras-chave declaradas pelos autores",
+          "pagina_lista": 36,
+          "pagina_corpo": 36
+        },
+        {
+          "paragrafo": 49,
+          "titulo": "Figura 3 – Rede de coocorrência de palavras-chave",
+          "pagina_lista": 37,
+          "pagina_corpo": 37
+        },
+        {
+          "paragrafo": 50,
+          "titulo": "Figura 4 – Expressões recorrentes nos títulos dos estudos",
+          "pagina_lista": 38,
+          "pagina_corpo": 38
+        },
+        {
+          "paragrafo": 51,
+          "titulo": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações",
+          "pagina_lista": 54,
+          "pagina_corpo": 54
+        },
+        {
+          "paragrafo": 52,
+          "titulo": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada",
+          "pagina_lista": 55,
+          "pagina_corpo": 55
+        },
+        {
+          "paragrafo": 54,
+          "titulo": "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica",
+          "pagina_lista": 33,
+          "pagina_corpo": 33
+        },
+        {
+          "paragrafo": 55,
+          "titulo": "Quadro 2 – Organização das cinco ondas experimentais",
+          "pagina_lista": 42,
+          "pagina_corpo": 42
+        },
+        {
+          "paragrafo": 56,
+          "titulo": "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético",
+          "pagina_lista": 43,
+          "pagina_corpo": 43
+        },
+        {
+          "paragrafo": 57,
+          "titulo": "Quadro 4 – Síntese do desenho experimental executado",
+          "pagina_lista": 46,
+          "pagina_corpo": 46
+        },
+        {
+          "paragrafo": 58,
+          "titulo": "Quadro 5 – Síntese da avaliação das hipóteses",
+          "pagina_lista": 61,
+          "pagina_corpo": 61
+        },
+        {
+          "paragrafo": 59,
+          "titulo": "Quadro 6 – Delimitação das contribuições e da procedência",
+          "pagina_lista": 70,
+          "pagina_corpo": 70
+        },
+        {
+          "paragrafo": 61,
+          "titulo": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico",
+          "pagina_lista": 33,
+          "pagina_corpo": 33
+        },
+        {
+          "paragrafo": 62,
+          "titulo": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+          "pagina_lista": 41,
+          "pagina_corpo": 41
+        },
+        {
+          "paragrafo": 63,
+          "titulo": "Tabela 3 – Comparação dos principais resultados no conjunto de teste",
+          "pagina_lista": 53,
+          "pagina_corpo": 53
+        },
+        {
+          "paragrafo": 64,
+          "titulo": "Tabela 4 – Configurações selecionadas das cinco ondas experimentais",
+          "pagina_lista": 56,
+          "pagina_corpo": 56
+        },
+        {
+          "paragrafo": 65,
+          "titulo": "Tabela 5 – Decomposição do custo computacional documentado",
+          "pagina_lista": 58,
+          "pagina_corpo": 58
+        },
+        {
+          "paragrafo": 66,
+          "titulo": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+          "pagina_lista": 61,
+          "pagina_corpo": 61
+        },
+        {
+          "paragrafo": 67,
+          "titulo": "Tabela 7 – Comparação descritiva com Lampugnani (2026)",
+          "pagina_lista": 62,
+          "pagina_corpo": 62
+        },
+        {
+          "paragrafo": 123,
+          "titulo": "INTRODUÇÃO",
+          "pagina_lista": 17,
+          "pagina_corpo": 17
+        },
+        {
+          "paragrafo": 124,
+          "titulo": "REVISÃO DA LITERATURA",
+          "pagina_lista": 19,
+          "pagina_corpo": 19
+        },
+        {
+          "paragrafo": 125,
+          "titulo": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+          "pagina_lista": 19,
+          "pagina_corpo": 19
+        },
+        {
+          "paragrafo": 126,
+          "titulo": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+          "pagina_lista": 20,
+          "pagina_corpo": 20
+        },
+        {
+          "paragrafo": 127,
+          "titulo": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+          "pagina_lista": 22,
+          "pagina_corpo": 22
+        },
+        {
+          "paragrafo": 128,
+          "titulo": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+          "pagina_lista": 24,
+          "pagina_corpo": 24
+        },
+        {
+          "paragrafo": 129,
+          "titulo": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+          "pagina_lista": 25,
+          "pagina_corpo": 25
+        },
+        {
+          "paragrafo": 130,
+          "titulo": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+          "pagina_lista": 28,
+          "pagina_corpo": 28
+        },
+        {
+          "paragrafo": 131,
+          "titulo": "TRABALHOS RELACIONADOS",
+          "pagina_lista": 28,
+          "pagina_corpo": 28
+        },
+        {
+          "paragrafo": 132,
+          "titulo": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+          "pagina_lista": 31,
+          "pagina_corpo": 31
+        },
+        {
+          "paragrafo": 133,
+          "titulo": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+          "pagina_lista": 32,
+          "pagina_corpo": 32
+        },
+        {
+          "paragrafo": 134,
+          "titulo": "MATERIAL E MÉTODOS",
+          "pagina_lista": 39,
+          "pagina_corpo": 39
+        },
+        {
+          "paragrafo": 135,
+          "titulo": "CLASSIFICAÇÃO DA PESQUISA",
+          "pagina_lista": 39,
+          "pagina_corpo": 39
+        },
+        {
+          "paragrafo": 136,
+          "titulo": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+          "pagina_lista": 40,
+          "pagina_corpo": 40
+        },
+        {
+          "paragrafo": 137,
+          "titulo": "IMPLEMENTAÇÃO DAS ESNS EM R",
+          "pagina_lista": 42,
+          "pagina_corpo": 42
+        },
+        {
+          "paragrafo": 138,
+          "titulo": "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+          "pagina_lista": 44,
+          "pagina_corpo": 44
+        },
+        {
+          "paragrafo": 139,
+          "titulo": "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+          "pagina_lista": 45,
+          "pagina_corpo": 45
+        },
+        {
+          "paragrafo": 140,
+          "titulo": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+          "pagina_lista": 45,
+          "pagina_corpo": 45
+        },
+        {
+          "paragrafo": 141,
+          "titulo": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+          "pagina_lista": 47,
+          "pagina_corpo": 47
+        },
+        {
+          "paragrafo": 142,
+          "titulo": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+          "pagina_lista": 48,
+          "pagina_corpo": 48
+        },
+        {
+          "paragrafo": 143,
+          "titulo": "Ambiente computacional",
+          "pagina_lista": 48,
+          "pagina_corpo": 48
+        },
+        {
+          "paragrafo": 144,
+          "titulo": "Estrutura do repositório",
+          "pagina_lista": 48,
+          "pagina_corpo": 48
+        },
+        {
+          "paragrafo": 145,
+          "titulo": "Procedimento de revisão bibliográfica",
+          "pagina_lista": 49,
+          "pagina_corpo": 49
+        },
+        {
+          "paragrafo": 146,
+          "titulo": "Procedimento de re-execução dos experimentos",
+          "pagina_lista": 51,
+          "pagina_corpo": 51
+        },
+        {
+          "paragrafo": 147,
+          "titulo": "RESULTADOS E DISCUSSÃO",
+          "pagina_lista": 52,
+          "pagina_corpo": 52
+        },
+        {
+          "paragrafo": 148,
+          "titulo": "VISÃO GERAL DOS EXPERIMENTOS",
+          "pagina_lista": 52,
+          "pagina_corpo": 52
+        },
+        {
+          "paragrafo": 149,
+          "titulo": "DESEMPENHO PREDITIVO GLOBAL",
+          "pagina_lista": 53,
+          "pagina_corpo": 53
+        },
+        {
+          "paragrafo": 150,
+          "titulo": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+          "pagina_lista": 56,
+          "pagina_corpo": 56
+        },
+        {
+          "paragrafo": 151,
+          "titulo": "DISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO",
+          "pagina_lista": 57,
+          "pagina_corpo": 57
+        },
+        {
+          "paragrafo": 152,
+          "titulo": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+          "pagina_lista": 57,
+          "pagina_corpo": 57
+        },
+        {
+          "paragrafo": 153,
+          "titulo": "CUSTO COMPUTACIONAL",
+          "pagina_lista": 58,
+          "pagina_corpo": 58
+        },
+        {
+          "paragrafo": 154,
+          "titulo": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+          "pagina_lista": 59,
+          "pagina_corpo": 59
+        },
+        {
+          "paragrafo": 155,
+          "titulo": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+          "pagina_lista": 60,
+          "pagina_corpo": 60
+        },
+        {
+          "paragrafo": 156,
+          "titulo": "AVALIAÇÃO DAS HIPÓTESES",
+          "pagina_lista": 61,
+          "pagina_corpo": 61
+        },
+        {
+          "paragrafo": 157,
+          "titulo": "CONTRIBUIÇÕES DO ESNAUTO",
+          "pagina_lista": 63,
+          "pagina_corpo": 63
+        },
+        {
+          "paragrafo": 158,
+          "titulo": "DISCUSSÃO",
+          "pagina_lista": 65,
+          "pagina_corpo": 65
+        },
+        {
+          "paragrafo": 159,
+          "titulo": "VALIDADE INTERNA E ESTATÍSTICA",
+          "pagina_lista": 65,
+          "pagina_corpo": 65
+        },
+        {
+          "paragrafo": 160,
+          "titulo": "VALIDADE EXTERNA",
+          "pagina_lista": 66,
+          "pagina_corpo": 66
+        },
+        {
+          "paragrafo": 161,
+          "titulo": "TRABALHOS FUTUROS",
+          "pagina_lista": 67,
+          "pagina_corpo": 67
+        },
+        {
+          "paragrafo": 162,
+          "titulo": "CONCLUSÃO",
+          "pagina_lista": 68,
+          "pagina_corpo": 68
+        },
+        {
+          "paragrafo": 163,
+          "titulo": "REFERÊNCIAS",
+          "pagina_lista": 71,
+          "pagina_corpo": 71
+        }
+      ]
+    },
+    {
+      "item": "Nenhuma página vazia",
+      "ok": true,
+      "detalhe": 76
+    },
+    {
+      "item": "Paginação textual contínua",
+      "ok": true,
+      "detalhe": []
+    },
+    {
+      "item": "Texto dentro dos limites laterais/inferiores",
+      "ok": true,
+      "detalhe": []
+    }
+  ],
+  "alteracoes_textuais_nativas": [],
+  "paginas_pdf": 76,
+  "limites": "Verificações estruturais não comprovam fidelidade científica nem substituem inspeção visual de texto e imagens; coordenadas admitem tolerância de renderização. Ficha catalográfica e aprovação não foram fabricadas. Sem certificação integral."
+}

@@ -1,0 +1,5109 @@
+{
+  "sha256_docx": "b8f7675159483d79d0bb638ba914c2ef541220fa49161a406e869d7154ad249f",
+  "celulas": [
+    {
+      "tabela_indice": 1,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Dimensão",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "Registros",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 0,
+      "coluna": 2,
+      "texto": "Achados predominantes",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "P1 Distribuição de Win/W",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "5 D; 0 S; 13 ?; 16 —",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 1,
+      "coluna": 2,
+      "texto": "Identifica lei e matriz. Topologia, trajetória caótica e distribuição usada na busca são informações distintas.",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "P2 Seleção de hiperparâmetros",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "11 D; 5 S; 3 ?; 15 —",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 2,
+      "coluna": 2,
+      "texto": "AG, PSO, SSA, TPE e sensibilidade são distinguidos de treino de Wout, parâmetros fixos e otimização de MLP.",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 3,
+      "coluna": 0,
+      "texto": "P3 Preparação das séries",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 3,
+      "coluna": 1,
+      "texto": "26 D; 2 S; 6 ?; 0 —",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 3,
+      "coluna": 2,
+      "texto": "Retornos, normalização, imputação, filtragem, ajuste corporativo e atributos/janelas; inclui séries não financeiras.",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 4,
+      "coluna": 0,
+      "texto": "P4 Comparações com modelos",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 4,
+      "coluna": 1,
+      "texto": "10 D; 2 S; 16 ?; 6 —",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 4,
+      "coluna": 2,
+      "texto": "Separa comparações próprias com LSTM/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S.",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 5,
+      "coluna": 0,
+      "texto": "P5 Mercado e ativo",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 5,
+      "coluna": 1,
+      "texto": "25 D; 3 S; 3 ?; 3 —",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 1,
+      "linha": 5,
+      "coluna": 2,
+      "texto": "Separa o ativo/mercado da análise própria (D) do tratamento contextual ou secundário (S).",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Trabalho",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "P₁",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 0,
+      "coluna": 2,
+      "texto": "P₂",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 0,
+      "coluna": 3,
+      "texto": "P₃",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 0,
+      "coluna": 4,
+      "texto": "P₄",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 0,
+      "coluna": 5,
+      "texto": "P₅",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "Abebe e Goshu (2024)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 1,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 1,
+      "coluna": 3,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 1,
+      "coluna": 4,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 1,
+      "coluna": 5,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "Araújo et al. (2025)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 2,
+      "coluna": 2,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 2,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 2,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 2,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 3,
+      "coluna": 0,
+      "texto": "Behera, Nayak e Kumar (2023)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 3,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 3,
+      "coluna": 2,
+      "texto": "S",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 3,
+      "coluna": 3,
+      "texto": "S",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 3,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 3,
+      "coluna": 5,
+      "texto": "S",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 4,
+      "coluna": 0,
+      "texto": "Cardoso et al. (2022b)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 4,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 4,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 4,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 4,
+      "coluna": 4,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 4,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 5,
+      "coluna": 0,
+      "texto": "Chen et al. (2026)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 5,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 5,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 5,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 5,
+      "coluna": 4,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 5,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 6,
+      "coluna": 0,
+      "texto": "Cortesi et al. (2026)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 6,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 6,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 6,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 6,
+      "coluna": 4,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 6,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 7,
+      "coluna": 0,
+      "texto": "Costa e Lunkes (2025)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 7,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 7,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 7,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 7,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 7,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 8,
+      "coluna": 0,
+      "texto": "Deng et al. (2022)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 8,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 8,
+      "coluna": 2,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 8,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 8,
+      "coluna": 4,
+      "texto": "S",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 8,
+      "coluna": 5,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 9,
+      "coluna": 0,
+      "texto": "Dewick (2022)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 9,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 9,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 9,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 9,
+      "coluna": 4,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 9,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 10,
+      "coluna": 0,
+      "texto": "Duttilo (2024)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 10,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 10,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 10,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 10,
+      "coluna": 4,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 10,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 11,
+      "coluna": 0,
+      "texto": "Duttilo e Gattone (2022)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 11,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 11,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 11,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 11,
+      "coluna": 4,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 11,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 12,
+      "coluna": 0,
+      "texto": "Ecer et al. (2020)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 12,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 12,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 12,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 12,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 12,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 13,
+      "coluna": 0,
+      "texto": "Hariharan, Suresh e Chandrasekar (2025)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 13,
+      "coluna": 1,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 13,
+      "coluna": 2,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 13,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 13,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 13,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 14,
+      "coluna": 0,
+      "texto": "Hassaan, Yacoub e Said (2025)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 14,
+      "coluna": 1,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 14,
+      "coluna": 2,
+      "texto": "S",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 14,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 14,
+      "coluna": 4,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 14,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 15,
+      "coluna": 0,
+      "texto": "Jaeger (2007)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 15,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 15,
+      "coluna": 2,
+      "texto": "S",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 15,
+      "coluna": 3,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 15,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 15,
+      "coluna": 5,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 16,
+      "coluna": 0,
+      "texto": "Kumar (2025)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 16,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 16,
+      "coluna": 2,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 16,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 16,
+      "coluna": 4,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 16,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 17,
+      "coluna": 0,
+      "texto": "Liu B. et al. (2022)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 17,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 17,
+      "coluna": 2,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 17,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 17,
+      "coluna": 4,
+      "texto": "S",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 17,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 18,
+      "coluna": 0,
+      "texto": "Liu, Lin e Rojas (2025)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 18,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 18,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 18,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 18,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 18,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 19,
+      "coluna": 0,
+      "texto": "Millea (2014)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 19,
+      "coluna": 1,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 19,
+      "coluna": 2,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 19,
+      "coluna": 3,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 19,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 19,
+      "coluna": 5,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 20,
+      "coluna": 0,
+      "texto": "Nelson (1991)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 20,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 20,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 20,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 20,
+      "coluna": 4,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 20,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 21,
+      "coluna": 0,
+      "texto": "Ping (2023)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 21,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 21,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 21,
+      "coluna": 3,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 21,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 21,
+      "coluna": 5,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 22,
+      "coluna": 0,
+      "texto": "Seddik, Routaib e Elhaddadi (2023)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 22,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 22,
+      "coluna": 2,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 22,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 22,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 22,
+      "coluna": 5,
+      "texto": "S",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 23,
+      "coluna": 0,
+      "texto": "Sharma et al. (2025)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 23,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 23,
+      "coluna": 2,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 23,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 23,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 23,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 24,
+      "coluna": 0,
+      "texto": "Soltani, Benmohamed e Ltifi (2022)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 24,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 24,
+      "coluna": 2,
+      "texto": "S",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 24,
+      "coluna": 3,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 24,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 24,
+      "coluna": 5,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 25,
+      "coluna": 0,
+      "texto": "Sudiatmika e Putra (2024)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 25,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 25,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 25,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 25,
+      "coluna": 4,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 25,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 26,
+      "coluna": 0,
+      "texto": "Sun et al. (2021)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 26,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 26,
+      "coluna": 2,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 26,
+      "coluna": 3,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 26,
+      "coluna": 4,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 26,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 27,
+      "coluna": 0,
+      "texto": "Tian e Pei (2024)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 27,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 27,
+      "coluna": 2,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 27,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 27,
+      "coluna": 4,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 27,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 28,
+      "coluna": 0,
+      "texto": "Timbó et al. (2016)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 28,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 28,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 28,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 28,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 28,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 29,
+      "coluna": 0,
+      "texto": "Ribeiro et al. (2021)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 29,
+      "coluna": 1,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 29,
+      "coluna": 2,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 29,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 29,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 29,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 30,
+      "coluna": 0,
+      "texto": "Vishwas, Usha e Sangeetha (2025)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 30,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 30,
+      "coluna": 2,
+      "texto": "S",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 30,
+      "coluna": 3,
+      "texto": "S",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 30,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 30,
+      "coluna": 5,
+      "texto": "S",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 31,
+      "coluna": 0,
+      "texto": "Wang, Bu e Huang (2025)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 31,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 31,
+      "coluna": 2,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 31,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 31,
+      "coluna": 4,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 31,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 32,
+      "coluna": 0,
+      "texto": "Wang W. et al. (2021)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 32,
+      "coluna": 1,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 32,
+      "coluna": 2,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 32,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 32,
+      "coluna": 4,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 32,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 33,
+      "coluna": 0,
+      "texto": "Xiao, Deng e Bi (2024)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 33,
+      "coluna": 1,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 33,
+      "coluna": 2,
+      "texto": "—",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 33,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 33,
+      "coluna": 4,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 33,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 34,
+      "coluna": 0,
+      "texto": "Zhang et al. (2021)",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 34,
+      "coluna": 1,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 34,
+      "coluna": 2,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 34,
+      "coluna": 3,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 34,
+      "coluna": 4,
+      "texto": "?",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 2,
+      "linha": 34,
+      "coluna": 5,
+      "texto": "D",
+      "evidencias_do_elemento": [
+        "conciliacao_matriz_atual_lote70.json",
+        "chamadas_matriz_lote71.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Estatística",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "Preço (R$)",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "Média",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "13,28",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "Desvio-padrão",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "7,11",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 3,
+      "coluna": 0,
+      "texto": "Mínimo",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 3,
+      "coluna": 1,
+      "texto": "2,48",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 4,
+      "coluna": 0,
+      "texto": "Máximo",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 4,
+      "coluna": 1,
+      "texto": "34,55",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 5,
+      "coluna": 0,
+      "texto": "Assimetria",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 5,
+      "coluna": 1,
+      "texto": "0,22",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 6,
+      "coluna": 0,
+      "texto": "Curtose (Fisher)",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 3,
+      "linha": 6,
+      "coluna": 1,
+      "texto": "−0,82",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_entradas_e_rodada_controlada.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Onda",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "Hipótese",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 0,
+      "coluna": 2,
+      "texto": "Distribuições/estruturas principais",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 0,
+      "coluna": 3,
+      "texto": "Execuções",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "1 - Caudas pesadas",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "Enriquecer a resposta do reservatório",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 1,
+      "coluna": 2,
+      "texto": "Pearson V, t de Student e Laplace",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 1,
+      "coluna": 3,
+      "texto": "9",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "2 - Choques e assimetria",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "Representar rupturas e impulsos",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 2,
+      "coluna": 2,
+      "texto": "Cauchy, t de Student Assimétrica e Laplace",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 2,
+      "coluna": 3,
+      "texto": "9",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 3,
+      "coluna": 0,
+      "texto": "3 - Esparsidade",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 3,
+      "coluna": 1,
+      "texto": "Filtrar ruído e regimes",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 3,
+      "coluna": 2,
+      "texto": "Normal Esparsa, GED e F de Snedecor",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 3,
+      "coluna": 3,
+      "texto": "6",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 4,
+      "coluna": 0,
+      "texto": "4 - Controles",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 4,
+      "coluna": 1,
+      "texto": "Comparação com inicializações usuais",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 4,
+      "coluna": 2,
+      "texto": "Normal, Uniforme e Normal Esparsa",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 4,
+      "coluna": 3,
+      "texto": "6",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 5,
+      "coluna": 0,
+      "texto": "5 - Ajustes empíricos",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 5,
+      "coluna": 1,
+      "texto": "Avaliar aderência marginal ao treino",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 5,
+      "coluna": 2,
+      "texto": "Power Function, Dagum 4P e Johnson SB",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 4,
+      "linha": 5,
+      "coluna": 3,
+      "texto": "15",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json",
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Hiperparâmetro",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "Símbolo",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 0,
+      "coluna": 2,
+      "texto": "Faixa efetiva",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 0,
+      "coluna": 3,
+      "texto": "Bits",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 0,
+      "coluna": 4,
+      "texto": "Papel",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "Taxa de vazamento",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "a",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 1,
+      "coluna": 2,
+      "texto": "(0; 1]",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 1,
+      "coluna": 3,
+      "texto": "17",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 1,
+      "coluna": 4,
+      "texto": "Controla a inércia e a memória temporal.",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "Raio espectral",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "sr",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 2,
+      "coluna": 2,
+      "texto": "(0; 1]",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 2,
+      "coluna": 3,
+      "texto": "17",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 2,
+      "coluna": 4,
+      "texto": "Controla persistência e estabilidade dos estados.",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 3,
+      "coluna": 0,
+      "texto": "Descarte inicial",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 3,
+      "coluna": 1,
+      "texto": "initLen",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 3,
+      "coluna": 2,
+      "texto": "2 a 129",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 3,
+      "coluna": 3,
+      "texto": "7",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 3,
+      "coluna": 4,
+      "texto": "Descarta os estados iniciais na estimação de Wout.",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 4,
+      "coluna": 0,
+      "texto": "Tamanho do reservatório",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 4,
+      "coluna": 1,
+      "texto": "Nx",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 4,
+      "coluna": 2,
+      "texto": "2 a 33",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 4,
+      "coluna": 3,
+      "texto": "5",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 4,
+      "coluna": 4,
+      "texto": "Define o número de neurônios recorrentes.",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 5,
+      "coluna": 0,
+      "texto": "Regularização Ridge",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 5,
+      "coluna": 1,
+      "texto": "λ",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 5,
+      "coluna": 2,
+      "texto": "≈9,9×10⁻⁹ a 9,9×10⁻⁵",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 5,
+      "coluna": 3,
+      "texto": "9",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 5,
+      "linha": 5,
+      "coluna": 4,
+      "texto": "Estabiliza a estimação de Wout e penaliza pesos elevados.",
+      "evidencias_do_elemento": [
+        "conferencia_motor_historico_lote27.json",
+        "expressoes_matematicas_lote85.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Bloco",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "Objetivo",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 0,
+      "coluna": 2,
+      "texto": "Configurações",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 0,
+      "coluna": 3,
+      "texto": "Execuções",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "Ondas 1 a 4",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "Comparar famílias canônicas e não gaussianas",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 1,
+      "coluna": 2,
+      "texto": "Caudas pesadas, assimétricas, esparsas e controles",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 1,
+      "coluna": 3,
+      "texto": "30",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "Onda 5",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "Avaliar distribuições ajustadas pelo EasyFit",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 2,
+      "coluna": 2,
+      "texto": "Power Function, Dagum 4P e Johnson SB",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 2,
+      "coluna": 3,
+      "texto": "15",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 3,
+      "coluna": 0,
+      "texto": "Controle ESN",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 3,
+      "coluna": 1,
+      "texto": "Referência canônica",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 3,
+      "coluna": 2,
+      "texto": "Normal × Normal",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 3,
+      "coluna": 3,
+      "texto": "Incluída nas ondas",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 4,
+      "coluna": 0,
+      "texto": "Baselines",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 4,
+      "coluna": 1,
+      "texto": "Comparação externa",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 4,
+      "coluna": 2,
+      "texto": "LSTM e GRU",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 6,
+      "linha": 4,
+      "coluna": 3,
+      "texto": "1 resultado oficial por modelo",
+      "evidencias_do_elemento": [
+        "decisoes_metodo_motor_lote91.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Modelo",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "MAE teste",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 0,
+      "coluna": 2,
+      "texto": "RMSE teste",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 0,
+      "coluna": 3,
+      "texto": "R² teste",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 0,
+      "coluna": 4,
+      "texto": "Tempo documentado",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "ESN – Laplace × Normal",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "0,327224",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 1,
+      "coluna": 2,
+      "texto": "0,498527",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 1,
+      "coluna": 3,
+      "texto": "0,9940",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 1,
+      "coluna": 4,
+      "texto": "0,05 s",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "GRU",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "0,356600",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 2,
+      "coluna": 2,
+      "texto": "0,589800",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 2,
+      "coluna": 3,
+      "texto": "0,9912",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 2,
+      "coluna": 4,
+      "texto": "28,80 s",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 3,
+      "coluna": 0,
+      "texto": "LSTM",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 3,
+      "coluna": 1,
+      "texto": "0,452100",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 3,
+      "coluna": 2,
+      "texto": "0,816600",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 3,
+      "coluna": 3,
+      "texto": "0,9839",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 7,
+      "linha": 3,
+      "coluna": 4,
+      "texto": "35,40 s",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Onda",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "Configuração",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 0,
+      "coluna": 2,
+      "texto": "MAE teste",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 0,
+      "coluna": 3,
+      "texto": "R² teste",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 0,
+      "coluna": 4,
+      "texto": "Destaque",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "1",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "Pearson V × Uniforme",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 1,
+      "coluna": 2,
+      "texto": "0,327657",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 1,
+      "coluna": 3,
+      "texto": "0,9940",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 1,
+      "coluna": 4,
+      "texto": "Melhor MAE da Onda 1",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "1",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "t Student × t Student",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 2,
+      "coluna": 2,
+      "texto": "0,327706",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 2,
+      "coluna": 3,
+      "texto": "0,9940",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 2,
+      "coluna": 4,
+      "texto": "Resultado competitivo",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 3,
+      "coluna": 0,
+      "texto": "2",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 3,
+      "coluna": 1,
+      "texto": "Laplace × Normal",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 3,
+      "coluna": 2,
+      "texto": "0,327224",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 3,
+      "coluna": 3,
+      "texto": "0,9940",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 3,
+      "coluna": 4,
+      "texto": "Menor MAE global",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 4,
+      "coluna": 0,
+      "texto": "2",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 4,
+      "coluna": 1,
+      "texto": "Laplace × Cauchy",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 4,
+      "coluna": 2,
+      "texto": "0,328949",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 4,
+      "coluna": 3,
+      "texto": "0,9941",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 4,
+      "coluna": 4,
+      "texto": "Menor RMSE global",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 5,
+      "coluna": 0,
+      "texto": "3",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 5,
+      "coluna": 1,
+      "texto": "Normal Esparsa × GED",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 5,
+      "coluna": 2,
+      "texto": "0,329494",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 5,
+      "coluna": 3,
+      "texto": "0,9939",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 5,
+      "coluna": 4,
+      "texto": "Esparsidade sináptica",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 6,
+      "coluna": 0,
+      "texto": "3",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 6,
+      "coluna": 1,
+      "texto": "GED × F de Snedecor",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 6,
+      "coluna": 2,
+      "texto": "0,327963",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 6,
+      "coluna": 3,
+      "texto": "0,9940",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 6,
+      "coluna": 4,
+      "texto": "Resultado competitivo",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 7,
+      "coluna": 0,
+      "texto": "4",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 7,
+      "coluna": 1,
+      "texto": "Normal × Normal",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 7,
+      "coluna": 2,
+      "texto": "0,328365",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 7,
+      "coluna": 3,
+      "texto": "0,9940",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 7,
+      "coluna": 4,
+      "texto": "Controle canônico",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 8,
+      "coluna": 0,
+      "texto": "4",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 8,
+      "coluna": 1,
+      "texto": "Normal Esparsa × Normal",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 8,
+      "coluna": 2,
+      "texto": "0,327938",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 8,
+      "coluna": 3,
+      "texto": "0,9939",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 8,
+      "coluna": 4,
+      "texto": "Melhor que o controle em MAE",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 9,
+      "coluna": 0,
+      "texto": "5",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 9,
+      "coluna": 1,
+      "texto": "Power Function × Normal",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 9,
+      "coluna": 2,
+      "texto": "0,328395",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 9,
+      "coluna": 3,
+      "texto": "0,9940",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 9,
+      "coluna": 4,
+      "texto": "Baixa dispersão da Onda 5",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 10,
+      "coluna": 0,
+      "texto": "5",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 10,
+      "coluna": 1,
+      "texto": "Dagum 4P × Normal",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 10,
+      "coluna": 2,
+      "texto": "0,328396",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 10,
+      "coluna": 3,
+      "texto": "0,9940",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 8,
+      "linha": 10,
+      "coluna": 4,
+      "texto": "Baixa dispersão da Onda 5",
+      "evidencias_do_elemento": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Componente",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "Tempo aproximado",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 0,
+      "coluna": 2,
+      "texto": "Interpretação",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "Ajuste da ESN selecionada",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "0,05 s",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 1,
+      "coluna": 2,
+      "texto": "Regressão Ridge após definição da configuração",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "Treinamento GRU",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "28,80 s",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 2,
+      "coluna": 2,
+      "texto": "50 unidades, 80 épocas",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 3,
+      "coluna": 0,
+      "texto": "Treinamento LSTM",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 3,
+      "coluna": 1,
+      "texto": "35,40 s",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 3,
+      "coluna": 2,
+      "texto": "50 unidades, 80 épocas",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 4,
+      "coluna": 0,
+      "texto": "Busca GA por cenário ESN",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 4,
+      "coluna": 1,
+      "texto": "21–102 min",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 4,
+      "coluna": 2,
+      "texto": "Descoberta de hiperparâmetros",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 5,
+      "coluna": 0,
+      "texto": "Conjunto das 45 buscas",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 5,
+      "coluna": 1,
+      "texto": "37,9 h",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 9,
+      "linha": 5,
+      "coluna": 2,
+      "texto": "Custo offline experimental",
+      "evidencias_do_elemento": [
+        "decisoes_resultados_finais_lote97.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Comparação",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "Perda",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 0,
+      "coluna": 2,
+      "texto": "DM",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 0,
+      "coluna": 3,
+      "texto": "p-valor",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 0,
+      "coluna": 4,
+      "texto": "Resultado a 5%",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "ESN × GRU",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "Absoluta",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 1,
+      "coluna": 2,
+      "texto": "−11,870611",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 1,
+      "coluna": 3,
+      "texto": "6,296 × 10⁻³¹",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 1,
+      "coluna": 4,
+      "texto": "ESN; H₀ rejeitada",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "ESN × LSTM",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "Absoluta",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 2,
+      "coluna": 2,
+      "texto": "−15,496644",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 2,
+      "coluna": 3,
+      "texto": "8,008 × 10⁻⁵⁰",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 2,
+      "coluna": 4,
+      "texto": "ESN; H₀ rejeitada",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 3,
+      "coluna": 0,
+      "texto": "ESN × GRU",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 3,
+      "coluna": 1,
+      "texto": "Quadrática",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 3,
+      "coluna": 2,
+      "texto": "−9,846951",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 3,
+      "coluna": 3,
+      "texto": "4,117 × 10⁻²²",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 3,
+      "coluna": 4,
+      "texto": "ESN; H₀ rejeitada",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 4,
+      "coluna": 0,
+      "texto": "ESN × LSTM",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 4,
+      "coluna": 1,
+      "texto": "Quadrática",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 4,
+      "coluna": 2,
+      "texto": "−9,208792",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 4,
+      "coluna": 3,
+      "texto": "1,285 × 10⁻¹⁹",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 10,
+      "linha": 4,
+      "coluna": 4,
+      "texto": "ESN; H₀ rejeitada",
+      "evidencias_do_elemento": [
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Hipótese",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "Evidência observada",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 0,
+      "coluna": 2,
+      "texto": "Avaliação",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "H1 – desempenho",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "Resultados históricos: menor MAE/RMSE; execução controlada: 4/4 testes DM significativos, com menor perda da ESN",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 1,
+      "coluna": 2,
+      "texto": "Apoiada por evidência descritiva e inferencial complementar",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "H2 – eficiência",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "0,05 s para ajuste da ESN contra 28,80 s e 35,40 s",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 2,
+      "coluna": 2,
+      "texto": "Apoiada para o ajuste do modelo selecionado",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 3,
+      "coluna": 0,
+      "texto": "H3 – inicialização",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 3,
+      "coluna": 1,
+      "texto": "Laplace × Normal teve menor MAE e Laplace × Cauchy menor RMSE que Normal × Normal.",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 3,
+      "coluna": 2,
+      "texto": "Apoiada pontualmente",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 4,
+      "coluna": 0,
+      "texto": "H4 – exploração evolutiva",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 4,
+      "coluna": 1,
+      "texto": "LHS e operador cataclísmico integrados; diversidade não mensurada e ausência de ablação.",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 4,
+      "coluna": 2,
+      "texto": "Efeito não demonstrado.",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 5,
+      "coluna": 0,
+      "texto": "H5 – ajuste empírico",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 5,
+      "coluna": 1,
+      "texto": "Baixa dispersão entre as 15 configurações da Onda 5; sem avaliação de repetidas sementes por configuração.",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 11,
+      "linha": 5,
+      "coluna": 2,
+      "texto": "Evidência descritiva; estabilidade estocástica não demonstrada.",
+      "evidencias_do_elemento": [
+        "conferencia_hipoteses_lote64.json",
+        "edicao_lote63.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 12,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Trabalho",
+      "evidencias_do_elemento": [
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 12,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "Melhor MAE",
+      "evidencias_do_elemento": [
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 12,
+      "linha": 0,
+      "coluna": 2,
+      "texto": "Melhor RMSE",
+      "evidencias_do_elemento": [
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 12,
+      "linha": 0,
+      "coluna": 3,
+      "texto": "Observação",
+      "evidencias_do_elemento": [
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 12,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "Lampugnani (2026)",
+      "evidencias_do_elemento": [
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 12,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "0,378706\n(Cauchy × Normal)",
+      "evidencias_do_elemento": [
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 12,
+      "linha": 1,
+      "coluna": 2,
+      "texto": "0,568178\n(Cauchy × Uniforme)",
+      "evidencias_do_elemento": [
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 12,
+      "linha": 1,
+      "coluna": 3,
+      "texto": "ESN com Algoritmo Genético; distribuições alternativas; declaração de ausência de tratamento adicional dos dados.",
+      "evidencias_do_elemento": [
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 12,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "Este trabalho",
+      "evidencias_do_elemento": [
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 12,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "0,327224\n(Laplace × Normal)",
+      "evidencias_do_elemento": [
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 12,
+      "linha": 2,
+      "coluna": 2,
+      "texto": "0,495386\n(Laplace × Cauchy)",
+      "evidencias_do_elemento": [
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 12,
+      "linha": 2,
+      "coluna": 3,
+      "texto": "Série recebida como ajustada; Algoritmo Genético, LHS, cinco ondas e mecanismo antiestagnação inspirado no CHC.",
+      "evidencias_do_elemento": [
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 0,
+      "coluna": 0,
+      "texto": "Elemento",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 0,
+      "coluna": 1,
+      "texto": "Base ou atribuição",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 0,
+      "coluna": 2,
+      "texto": "Contribuição e limite",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "cabecalho_descritivo"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 1,
+      "coluna": 0,
+      "texto": "Fundamentos da ESN",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 1,
+      "coluna": 1,
+      "texto": "Jaeger (2001, 2007)",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 1,
+      "coluna": 2,
+      "texto": "Reservatório fixo e ajuste da saída são fundamentos anteriores, não algoritmos originais deste trabalho.",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 2,
+      "coluna": 0,
+      "texto": "ESN, AG e distribuições",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 2,
+      "coluna": 1,
+      "texto": "Araújo et al. (2025); Cardoso (2025); Lampugnani (2026)",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 2,
+      "coluna": 2,
+      "texto": "O protocolo combina elementos já investigados. A aplicação à PETR4 não demonstra novidade de cada técnica.",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 3,
+      "coluna": 0,
+      "texto": "LHS e antiestagnação",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 3,
+      "coluna": 1,
+      "texto": "Implementação do ESNAUTO; Seção 3.4",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 3,
+      "coluna": 2,
+      "texto": "Integração no motor genético, sem constituir CHC completo nem demonstrar ganho de diversidade por ablação.",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 4,
+      "coluna": 0,
+      "texto": "Organização e auditoria",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 4,
+      "coluna": 1,
+      "texto": "Artefatos do protocolo; Seção 3.8",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 4,
+      "coluna": 2,
+      "texto": "Infraestrutura experimental e preservação complementar documentadas; as 45 execuções históricas têm preservação incompleta.",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 5,
+      "coluna": 0,
+      "texto": "Dados e código legado",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 5,
+      "coluna": 1,
+      "texto": "Dados e códigos em R fornecidos pelo orientador",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    },
+    {
+      "tabela_indice": 13,
+      "linha": 5,
+      "coluna": 2,
+      "texto": "Série recebida já ajustada. O autor adaptou as rotinas à pesquisa e desenvolveu a interface; a transformação original dos preços não foi reconstruída nesta auditoria.",
+      "evidencias_do_elemento": [
+        "conferencia_quadro6_lote62.json"
+      ],
+      "estado": "vinculo_por_elemento_requer_preservar_alcance"
+    }
+  ],
+  "total_celulas": 482,
+  "limite": "Vínculo por quadro/tabela é mapa de rastreabilidade; não certifica que cada célula esteja integralmente validada. A tabela0 é caixa institucional vazia. Julgamentos de fontes, protocolos e preservação permanecem nos registros."
+}

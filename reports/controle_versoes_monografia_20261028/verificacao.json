@@ -1,0 +1,16 @@
+{
+  "data": "2026-10-28",
+  "tipo": "teste funcional isolado; sem promoção na cadeia real",
+  "verificacoes": [
+    "importação e hash",
+    "reinicialização recusada",
+    "cópia e base de origem",
+    "sobrescrita recusada",
+    "versão duplicada recusada",
+    "base antiga recusada",
+    "promoção, cadeia e herança de pendências",
+    "bloqueio de promoção concorrente",
+    "alteração externa detectada"
+  ],
+  "resultado": "aprovado"
+}

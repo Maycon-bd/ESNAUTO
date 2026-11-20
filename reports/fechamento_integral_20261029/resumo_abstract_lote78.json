@@ -1,0 +1,28 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "paragrafos": {
+    "resumo": 41,
+    "abstract": 44
+  },
+  "palavras_por_separacao_de_espacos": {
+    "resumo": 331,
+    "abstract": 273
+  },
+  "comparacao_semantica": [
+    "Objeto e horizonte de um passo; PETR4 ajustada",
+    "5.198 observações e período 2000–2020; partição cronológica",
+    "Dados ajustados e códigos fornecidos pelo orientador; adaptação e interface pelo autor",
+    "Integração ESN, Ridge, AG, LHS e antiestagnação",
+    "45 execuções, melhores MAE/RMSE em configurações diferentes e 44/45 abaixo dos baselines em MAE",
+    "Rodada controlada com semente fixa e 1.298 previsões comuns; quatro testes bilaterais",
+    "Custo de ajuste separado de busca genética",
+    "Conclusão restrita ao protocolo e contribuição de software"
+  ],
+  "parecer": "As oito unidades de sentido aparecem nos dois idiomas; números correspondem entre si e aos registros numéricos já examinados. Não identificada divergência material de tradução nesta leitura.",
+  "evidencias": [
+    "conferencia_tabelas_historicas_lote65.json",
+    "conferencia_numerica_dm_lote46.json",
+    "conferencia_numerica_entradas_e_rodada_controlada.json"
+  ],
+  "limites": "Resumo sintetiza resultados e não reproduz todas as limitações do corpo. Revisão de língua pela professora continua sendo etapa própria. Contagem de palavras usa espaços, não contador nativo do Word."
+}

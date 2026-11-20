@@ -1,0 +1,68 @@
+[
+  {
+    "pagina_pdf": 1,
+    "mediabox": [
+      0.0,
+      0.0,
+      595.2756,
+      841.8898
+    ],
+    "cropbox": [
+      0.0,
+      0.0,
+      595.2756,
+      841.8898
+    ],
+    "rotation": null,
+    "imagens": [
+      {
+        "nome": "Im1.png",
+        "tamanho": [
+          1536,
+          2230
+        ],
+        "modo": "RGB",
+        "extrema_corpo": [
+          84,
+          255
+        ],
+        "media_corpo": 251.8975598345245,
+        "arquivo": "original-p1-img1.png"
+      }
+    ],
+    "anotacoes": 0
+  },
+  {
+    "pagina_pdf": 2,
+    "mediabox": [
+      0.0,
+      0.0,
+      595.2756,
+      841.8898
+    ],
+    "cropbox": [
+      0.0,
+      0.0,
+      595.2756,
+      841.8898
+    ],
+    "rotation": null,
+    "imagens": [
+      {
+        "nome": "Im1.png",
+        "tamanho": [
+          1536,
+          2230
+        ],
+        "modo": "RGB",
+        "extrema_corpo": [
+          84,
+          255
+        ],
+        "media_corpo": 251.8975598345245,
+        "arquivo": "original-p2-img1.png"
+      }
+    ],
+    "anotacoes": 0
+  }
+]

@@ -1,0 +1,453 @@
+{
+  "sha256_docx": "b8f7675159483d79d0bb638ba914c2ef541220fa49161a406e869d7154ad249f",
+  "entradas": [
+    {
+      "sigla": "ACF",
+      "extenso_lista": "Autocorrelation Function (Função de Autocorrelação)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 349,
+        "contexto": "A variância de longo prazo foi estimada pelo método baseado na função de autocorrelação (Autocorrelation Function – ACF) da implementação dm.test do pacote forecast. Como as quatro comparações foram pré-especificadas, os resultados principais mantiveram α individual de 5%, sem correção por multiplicidade; essa escolha foi registrada como limitação metodológica. Com horizonte de um passo, esse cálculo considera apenas a autocovariância de defasagem zero; eventual dependência serial do diferencial de perda em outras defasagens não é incorporada à estimativa, o que limita a interpretação dos valores de p."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "AG",
+      "extenso_lista": "Algoritmo Genético",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 169,
+        "contexto": "O problema de pesquisa consiste em investigar em que medida distribuições não gaussianas para Win e W, combinadas a um Algoritmo Genético (AG), alteram a acurácia e o custo computacional de uma ESN na previsão fora da amostra da PETR4 em comparação com inicializações canônicas e com redes Long Short-Term Memory (LSTM) e Gated Recurrent Unit (GRU). A justificativa está na necessidade de documentar essas escolhas de inicialização, avaliá-las em conjunto com os hiperparâmetros e explicitar as condições em que as comparações são sustentadas pelos registros disponíveis."
+      },
+      "n_paragrafos": 13
+    },
+    {
+      "sigla": "AGED",
+      "extenso_lista": "Asymmetric Generalized Error Distribution (Distribuição Generalizada de Erro Assimétrica)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 228,
+        "contexto": "Abebe e Goshu (2024) avançam mais uma etapa ao propor a Distribuição Generalizada de Erro Assimétrica (AGED), derivando matematicamente uma família de distribuições capaz de lidar simultaneamente com assimetria e curtose excessiva, com valores menores de AIC e BIC que os da GED e da Normal nos três conjuntos de dados examinados."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "AIC",
+      "extenso_lista": "Akaike Information Criterion (Critério de Informação de Akaike)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 227,
+        "contexto": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do DJIA entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade."
+      },
+      "n_paragrafos": 2
+    },
+    {
+      "sigla": "ARIMA",
+      "extenso_lista": "Autoregressive Integrated Moving Average",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 186,
+        "contexto": "Vishwas, Usha e Sangeetha (2025) discutem limitações de modelos tradicionais, como o autorregressivo integrado de médias móveis (Autoregressive Integrated Moving Average – ARIMA), na representação de relações não lineares em dados financeiros. A revisão oferece contexto para investigar outras arquiteturas, mas não demonstra que modelos lineares sejam inadequados em toda série ou tarefa. A seleção e a comparação de modelos devem considerar o protocolo de avaliação."
+      },
+      "n_paragrafos": 5
+    },
+    {
+      "sigla": "B3",
+      "extenso_lista": "Brasil, Bolsa, Balcão",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 166,
+        "contexto": "A previsão de preços de ações reúne desafios de análise temporal, escolha de modelos e qualidade dos dados. No mercado brasileiro, esta pesquisa delimita esse problema à previsão de um passo à frente do preço de fechamento ajustado da ação preferencial da Petróleo Brasileiro S.A. (PETR4), negociada na Brasil, Bolsa, Balcão (B3). O interesse está em avaliar o desempenho preditivo e o custo computacional de configurações de redes neurais sob um protocolo experimental definido, sem interpretar a previsão de preços como demonstração de rentabilidade de uma estratégia de negociação."
+      },
+      "n_paragrafos": 7
+    },
+    {
+      "sigla": "BIC",
+      "extenso_lista": "Bayesian Information Criterion (Critério de Informação Bayesiano)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 227,
+        "contexto": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do DJIA entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade."
+      },
+      "n_paragrafos": 2
+    },
+    {
+      "sigla": "BP",
+      "extenso_lista": "Backpropagation (Retropropagação)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 217,
+        "contexto": "Tian e Pei (2024) empregaram o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e MAPE."
+      },
+      "n_paragrafos": 2
+    },
+    {
+      "sigla": "BPTT",
+      "extenso_lista": "Backpropagation Through Time",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 195,
+        "contexto": "Na implementação do ESNAUTO, LSTM e GRU são treinadas iterativamente por retropropagação através do tempo (Backpropagation Through Time – BPTT), ajustando pesos internos e de saída. O custo desse processo depende da configuração da rede e do orçamento de treinamento. A comparação com a ESN deve distinguir esse treinamento do ajuste da camada de saída e da busca de hiperparâmetros, sem pressupor inviabilidade ou superioridade geral."
+      },
+      "n_paragrafos": 2
+    },
+    {
+      "sigla": "CHC",
+      "extenso_lista": "Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 170,
+        "contexto": "O objetivo geral é investigar o desempenho de ESNs na predição de um passo à frente do preço ajustado da PETR4, com ênfase nas distribuições aplicadas a Win e W e na otimização conjunta dos hiperparâmetros por AG. A busca utiliza inicialização por Amostragem por Hipercubo Latino (Latin Hypercube Sampling – LHS) e mutação cataclísmica inspirada no algoritmo Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation (CHC). O mecanismo antiestagnação não corresponde à implementação do CHC completo."
+      },
+      "n_paragrafos": 7
+    },
+    {
+      "sigla": "CPU",
+      "extenso_lista": "Central Processing Unit (Unidade Central de Processamento)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 353,
+        "contexto": "A implementação experimental utilizou R como linguagem principal e scripts auxiliares em Python para orquestração e pós-processamento. As execuções de ESN foram realizadas em unidade central de processamento (Central Processing Unit – CPU), sem dependência de aceleração por unidade de processamento gráfico (Graphics Processing Unit – GPU). O repositório documentou os pacotes e pré-requisitos necessários à aplicação, incluindo GA, pracma, fGarch, PearsonDS, StockDistFit, fitdistrplus, MASS, ggplot2, shiny e, para os baselines profundos, keras3/TensorFlow."
+      },
+      "n_paragrafos": 2
+    },
+    {
+      "sigla": "CRSP",
+      "extenso_lista": "Center for Research in Security Prices",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 238,
+        "contexto": "O uso de séries ajustadas também aparece fora do mercado brasileiro. Cortesi et al. (2026) descrevem dados do Center for Research in Security Prices (CRSP) com fatores de ajuste para eventos corporativos na análise de ações do S&P 500. Essa procedência documentada permite discutir a preparação dos dados sem inferir o uso de fechamento ajustado apenas da existência dessa coluna em uma base."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "CS-ESN",
+      "extenso_lista": "Compressed Sensing Echo State Network (Rede de Estados de Eco com Sensoriamento Compressivo)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 210,
+        "contexto": "Zhang et al. (2021) propuseram uma ESN com sensoriamento compressivo (Compressed Sensing Echo State Network – CS-ESN), aplicada à representação dos estados do reservatório. Foram examinadas uma sequência logística e séries acionárias, comparando a ESN original à variante com compressão. Os autores relatam menores erros nas configurações estudadas. A redução da representação do reservatório não demonstra uma propriedade geral de preservação de picos ou da estrutura caótica de séries financeiras."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "DL",
+      "extenso_lista": "Deep Learning (Aprendizado Profundo)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 190,
+        "contexto": "Xiao, Deng e Bi (2024) compararam LSTM, GRU e Transformer na previsão de preços da Tesla, sem investigar arquiteturas de reservatório. O artigo descreve preparação dos dados, mas sua Tabela 2 registra ausência de valores faltantes; esse relato não comprova uma avaliação de imputação. A diversidade de propostas com SVM, Aprendizado Profundo (Deep Learning – DL) e processamento de linguagem natural contextualiza a escolha das ESNs nesta pesquisa, cuja eficiência deve ser examinada no protocolo adotado."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "DM",
+      "extenso_lista": "Diebold-Mariano",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 172,
+        "contexto": "A avaliação contempla o Erro Médio Absoluto (Mean Absolute Error – MAE), a Raiz do Erro Quadrático Médio (Root Mean Squared Error – RMSE) e o coeficiente de determinação (R²), a comparação com a ESN Normal × Normal e com LSTM e GRU e a separação entre custo de otimização e ajuste final. Inclui ainda o exame da dispersão entre configurações, a comparação inferencial complementar pelo teste de Diebold–Mariano (DM), a documentação do procedimento e a discussão de limitações e condições de replicação."
+      },
+      "n_paragrafos": 2
+    },
+    {
+      "sigla": "DOI",
+      "extenso_lista": "Digital Object Identifier (Identificador Digital de Objeto)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 363,
+        "contexto": "Para a análise bibliográfica complementar, os 34 registros foram reconstruídos a partir dos PDFs disponíveis e das referências da monografia, com conferência de metadados por identificador digital de objeto (Digital Object Identifier – DOI) ou título. Os registros foram identificados como uma coleção reconstruída, sem atribuir a ela a condição de exportação original do Scopus."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "EGARCH",
+      "extenso_lista": "Exponential Generalized Autoregressive Conditional Heteroskedasticity",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 225,
+        "contexto": "Nelson (1991) empregou a Distribuição Generalizada de Erro (Generalized Error Distribution – GED) na modelagem de retornos com heterocedasticidade condicional, no contexto do modelo exponencial autorregressivo de heterocedasticidade condicional generalizada (Exponential Generalized Autoregressive Conditional Heteroskedasticity – EGARCH). A família permite representar caudas mais pesadas ou mais leves que as da Normal. Essa aplicação fundamenta sua flexibilidade em finanças, sem estabelecer prioridade histórica absoluta nem validar sua transferência para os pesos de ESNs."
+      },
+      "n_paragrafos": 2
+    },
+    {
+      "sigla": "ESN",
+      "extenso_lista": "Echo State Network (Rede Neural de Estados de Eco)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 167,
+        "contexto": "A abordagem central emprega Redes Neurais de Estados de Eco (Echo State Networks – ESNs), pertencentes à Computação de Reservatório (Reservoir Computing – RC). Nessa arquitetura, as matrizes de entrada e do reservatório, designadas por Win e W, permanecem fixas durante o ajuste da camada de saída. Essa organização motiva o estudo de alternativas à otimização iterativa de todos os pesos. A escolha das distribuições de inicialização e dos hiperparâmetros, entretanto, integra o problema experimental e não permite pressupor superioridade de uma configuração antes de sua avaliação."
+      },
+      "n_paragrafos": 96
+    },
+    {
+      "sigla": "GED",
+      "extenso_lista": "Generalized Error Distribution",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 225,
+        "contexto": "Nelson (1991) empregou a Distribuição Generalizada de Erro (Generalized Error Distribution – GED) na modelagem de retornos com heterocedasticidade condicional, no contexto do modelo exponencial autorregressivo de heterocedasticidade condicional generalizada (Exponential Generalized Autoregressive Conditional Heteroskedasticity – EGARCH). A família permite representar caudas mais pesadas ou mais leves que as da Normal. Essa aplicação fundamenta sua flexibilidade em finanças, sem estabelecer prioridade histórica absoluta nem validar sua transferência para os pesos de ESNs."
+      },
+      "n_paragrafos": 7
+    },
+    {
+      "sigla": "GPU",
+      "extenso_lista": "Graphics Processing Unit (Unidade de Processamento Gráfico)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 353,
+        "contexto": "A implementação experimental utilizou R como linguagem principal e scripts auxiliares em Python para orquestração e pós-processamento. As execuções de ESN foram realizadas em unidade central de processamento (Central Processing Unit – CPU), sem dependência de aceleração por unidade de processamento gráfico (Graphics Processing Unit – GPU). O repositório documentou os pacotes e pré-requisitos necessários à aplicação, incluindo GA, pracma, fGarch, PearsonDS, StockDistFit, fitdistrplus, MASS, ggplot2, shiny e, para os baselines profundos, keras3/TensorFlow."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "GRU",
+      "extenso_lista": "Gated Recurrent Unit",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 169,
+        "contexto": "O problema de pesquisa consiste em investigar em que medida distribuições não gaussianas para Win e W, combinadas a um Algoritmo Genético (AG), alteram a acurácia e o custo computacional de uma ESN na previsão fora da amostra da PETR4 em comparação com inicializações canônicas e com redes Long Short-Term Memory (LSTM) e Gated Recurrent Unit (GRU). A justificativa está na necessidade de documentar essas escolhas de inicialização, avaliá-las em conjunto com os hiperparâmetros e explicitar as condições em que as comparações são sustentadas pelos registros disponíveis."
+      },
+      "n_paragrafos": 52
+    },
+    {
+      "sigla": "HAR",
+      "extenso_lista": "Heterogeneous Autoregressive (Autorregressivo Heterogêneo)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 207,
+        "contexto": "Ribeiro et al. (2021) combinaram o modelo autorregressivo heterogêneo (Heterogeneous Autoregressive – HAR), PSO e ESN no HAR-PSO-ESN. O estudo previu volatilidades realizadas diárias de CAT, EBAY e MSFT, construídas a partir de retornos intradiários de cinco minutos. Foram avaliados horizontes de um, cinco e 21 dias, com ARIMA, HAR, MLP e variantes ESN como comparadores. Esses experimentos oferecem uma aplicação financeira da combinação, sem demonstrar vantagem universal nem transformar volatilidade observada em comprovação de caos."
+      },
+      "n_paragrafos": 2
+    },
+    {
+      "sigla": "HONN",
+      "extenso_lista": "Higher-Order Neural Network (Rede Neural de Ordem Superior)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 201,
+        "contexto": "Behera, Nayak e Kumar (2023) revisam redes neurais de ordem superior (Higher Order Neural Networks – HONNs) e otimização evolucionária em previsão financeira. O levantamento examina modelos, seleção de hiperparâmetros e métodos como AG e otimização por enxame de partículas (Particle Swarm Optimization – PSO). Trata-se de síntese de estudos com tarefas e protocolos distintos; os ganhos relatados não constituem uma comparação experimental própria nem demonstram que a associação a uma metaheurística melhore qualquer rede ou série."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "HQIC",
+      "extenso_lista": "Hannan–Quinn Information Criterion (Critério de Informação de Hannan–Quinn)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 227,
+        "contexto": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do DJIA entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "HQNN",
+      "extenso_lista": "Hybrid Quantum Neural Network (Rede Neural Quântico-Híbrida)",
+      "primeira_ocorrencia_textual": null,
+      "n_paragrafos": 0
+    },
+    {
+      "sigla": "HUX",
+      "extenso_lista": "Half Uniform Crossover",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 328,
+        "contexto": "Quando habilitado o mecanismo antiestagnação, o motor atual eleva a taxa de mutação para 40% ao atingir o limite adaptativo e preserva o melhor indivíduo e as matrizes associadas ao recorde. Como o método não implementa Half Uniform Crossover (HUX), prevenção de incesto e reinicialização integral, é caracterizado como Algoritmo Genético com operador cataclísmico inspirado no CHC."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "LHS",
+      "extenso_lista": "Latin Hypercube Sampling (Amostragem por Hipercubo Latino)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 170,
+        "contexto": "O objetivo geral é investigar o desempenho de ESNs na predição de um passo à frente do preço ajustado da PETR4, com ênfase nas distribuições aplicadas a Win e W e na otimização conjunta dos hiperparâmetros por AG. A busca utiliza inicialização por Amostragem por Hipercubo Latino (Latin Hypercube Sampling – LHS) e mutação cataclísmica inspirada no algoritmo Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation (CHC). O mecanismo antiestagnação não corresponde à implementação do CHC completo."
+      },
+      "n_paragrafos": 17
+    },
+    {
+      "sigla": "LLM",
+      "extenso_lista": "Large Language Model (Modelo de Linguagem de Grande Escala)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 189,
+        "contexto": "Liu, Lin e Rojas (2025) integraram indicadores técnicos, modelos temporais e análise de sentimentos com modelos de linguagem de grande escala (Large Language Models – LLMs), incluindo FinBERT e GPT-2, em estratégias associadas ao índice Standard and Poor’s (S&P) 500. O FinBERT atingiu 75,56% de acurácia na classificação de sentimento das notícias da Benzinga, em uma tarefa de processamento de linguagem natural (Natural Language Processing – NLP). O estudo também associou notícias a classes de retorno do índice; essa acurácia não comprova previsão fora da amostra da direção futura."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "LSTM",
+      "extenso_lista": "Long Short-Term Memory",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 169,
+        "contexto": "O problema de pesquisa consiste em investigar em que medida distribuições não gaussianas para Win e W, combinadas a um Algoritmo Genético (AG), alteram a acurácia e o custo computacional de uma ESN na previsão fora da amostra da PETR4 em comparação com inicializações canônicas e com redes Long Short-Term Memory (LSTM) e Gated Recurrent Unit (GRU). A justificativa está na necessidade de documentar essas escolhas de inicialização, avaliá-las em conjunto com os hiperparâmetros e explicitar as condições em que as comparações são sustentadas pelos registros disponíveis."
+      },
+      "n_paragrafos": 59
+    },
+    {
+      "sigla": "MAE",
+      "extenso_lista": "Mean Absolute Error (Erro Médio Absoluto)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 172,
+        "contexto": "A avaliação contempla o Erro Médio Absoluto (Mean Absolute Error – MAE), a Raiz do Erro Quadrático Médio (Root Mean Squared Error – RMSE) e o coeficiente de determinação (R²), a comparação com a ESN Normal × Normal e com LSTM e GRU e a separação entre custo de otimização e ajuste final. Inclui ainda o exame da dispersão entre configurações, a comparação inferencial complementar pelo teste de Diebold–Mariano (DM), a documentação do procedimento e a discussão de limitações e condições de replicação."
+      },
+      "n_paragrafos": 30
+    },
+    {
+      "sigla": "MAPE",
+      "extenso_lista": "Mean Absolute Percentage Error (Erro Percentual Absoluto Médio)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 217,
+        "contexto": "Tian e Pei (2024) empregaram o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e MAPE."
+      },
+      "n_paragrafos": 7
+    },
+    {
+      "sigla": "MLP",
+      "extenso_lista": "Multilayer Perceptron (Perceptron Multicamadas)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 199,
+        "contexto": "Em paralelo, novas arquiteturas estendem a discussão para além da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quânticas (Quantum Temporal Convolutional Neural Networks – QTCNN) e relatam Sharpe superior ao de LSTM, Transformer e TConv-MLP no conjunto JPX, em avaliação fora da amostra de 22 dias. Os resultados são restritos ao protocolo estudado."
+      },
+      "n_paragrafos": 3
+    },
+    {
+      "sigla": "MSE",
+      "extenso_lista": "Mean Squared Error (Erro Quadrático Médio)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 197,
+        "contexto": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores semelhantes de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "NLP",
+      "extenso_lista": "Natural Language Processing (Processamento de Linguagem Natural)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 189,
+        "contexto": "Liu, Lin e Rojas (2025) integraram indicadores técnicos, modelos temporais e análise de sentimentos com modelos de linguagem de grande escala (Large Language Models – LLMs), incluindo FinBERT e GPT-2, em estratégias associadas ao índice Standard and Poor’s (S&P) 500. O FinBERT atingiu 75,56% de acurácia na classificação de sentimento das notícias da Benzinga, em uma tarefa de processamento de linguagem natural (Natural Language Processing – NLP). O estudo também associou notícias a classes de retorno do índice; essa acurácia não comprova previsão fora da amostra da direção futura."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "NMAE",
+      "extenso_lista": "Normalized Mean Absolute Error (Erro Médio Absoluto Normalizado)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 388,
+        "contexto": "Para traduzir o erro absoluto para uma escala de interpretação gerencial, foi calculado adicionalmente o erro relativo normalizado pela média do preço observado no conjunto de teste (NMAE), definido por NMAE = MAE / média(y) × 100. A média do preço ajustado da PETR4 nas 1.299 observações de teste foi de aproximadamente R$ 16,1738."
+      },
+      "n_paragrafos": 3
+    },
+    {
+      "sigla": "NMSE",
+      "extenso_lista": "Normalized Mean Squared Error (Erro Quadrático Médio Normalizado)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 197,
+        "contexto": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores semelhantes de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "PDF",
+      "extenso_lista": "Portable Document Format (Formato de Documento Portátil)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 290,
+        "contexto": "Nota: Cada par de palavras adjacentes é contado uma vez por documento. São exibidas 19 expressões presentes em pelo menos dois títulos. Singular, plural e siglas são conservados separadamente. O título inglês de Costa e Lunkes foi transcrito do próprio arquivo em formato de documento portátil (Portable Document Format – PDF). As expressões podem compartilhar palavras e ocorrer no mesmo documento."
+      },
+      "n_paragrafos": 4
+    },
+    {
+      "sigla": "PEMFC",
+      "extenso_lista": "Proton Exchange Membrane Fuel Cell (Célula de Combustível de Membrana de Troca de Prótons)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 218,
+        "contexto": "Deng et al. (2022) aplicaram AG à seleção do escalonamento de entrada, raio espectral e taxa de vazamento de ESNs empilhadas para prever degradação de células de combustível de membrana de troca de prótons (Proton Exchange Membrane Fuel Cells – PEMFCs). A Tabela 6 compara os erros obtidos com valores de LSTM e outros métodos provenientes de um estudo anterior. Os resultados apoiam a estratégia nessa aplicação, sem estabelecer superioridade geral frente a LSTM nem identificar uma fragilidade principal de toda a literatura de ESNs."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "PETR4",
+      "extenso_lista": "Ação preferencial da Petróleo Brasileiro S.A.",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 166,
+        "contexto": "A previsão de preços de ações reúne desafios de análise temporal, escolha de modelos e qualidade dos dados. No mercado brasileiro, esta pesquisa delimita esse problema à previsão de um passo à frente do preço de fechamento ajustado da ação preferencial da Petróleo Brasileiro S.A. (PETR4), negociada na Brasil, Bolsa, Balcão (B3). O interesse está em avaliar o desempenho preditivo e o custo computacional de configurações de redes neurais sob um protocolo experimental definido, sem interpretar a previsão de preços como demonstração de rentabilidade de uma estratégia de negociação."
+      },
+      "n_paragrafos": 26
+    },
+    {
+      "sigla": "PF",
+      "extenso_lista": "Power Function",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 230,
+        "contexto": "A seleção das distribuições foi organizada em três eixos. O primeiro reúne controles canônicos, como Normal e Uniforme; o segundo contempla distribuições teoricamente relacionadas a caudas pesadas, assimetria, impulsividade e esparsidade, cuja motivação se apoia principalmente nas propriedades observadas nos log-retornos; e o terceiro utiliza Power Function (PF), Dagum 4P e Johnson SB ajustadas empiricamente aos preços da partição de treino pelo EasyFit."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "PSO",
+      "extenso_lista": "Particle Swarm Optimization",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 201,
+        "contexto": "Behera, Nayak e Kumar (2023) revisam redes neurais de ordem superior (Higher Order Neural Networks – HONNs) e otimização evolucionária em previsão financeira. O levantamento examina modelos, seleção de hiperparâmetros e métodos como AG e otimização por enxame de partículas (Particle Swarm Optimization – PSO). Trata-se de síntese de estudos com tarefas e protocolos distintos; os ganhos relatados não constituem uma comparação experimental própria nem demonstram que a associação a uma metaheurística melhore qualquer rede ou série."
+      },
+      "n_paragrafos": 5
+    },
+    {
+      "sigla": "QTCNN",
+      "extenso_lista": "Quantum Temporal Convolutional Neural Network (Rede Convolucional Temporal Quântica)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 199,
+        "contexto": "Em paralelo, novas arquiteturas estendem a discussão para além da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quânticas (Quantum Temporal Convolutional Neural Networks – QTCNN) e relatam Sharpe superior ao de LSTM, Transformer e TConv-MLP no conjunto JPX, em avaliação fora da amostra de 22 dias. Os resultados são restritos ao protocolo estudado."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "RC",
+      "extenso_lista": "Reservoir Computing (Computação de Reservatório)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 167,
+        "contexto": "A abordagem central emprega Redes Neurais de Estados de Eco (Echo State Networks – ESNs), pertencentes à Computação de Reservatório (Reservoir Computing – RC). Nessa arquitetura, as matrizes de entrada e do reservatório, designadas por Win e W, permanecem fixas durante o ajuste da camada de saída. Essa organização motiva o estudo de alternativas à otimização iterativa de todos os pesos. A escolha das distribuições de inicialização e dos hiperparâmetros, entretanto, integra o problema experimental e não permite pressupor superioridade de uma configuração antes de sua avaliação."
+      },
+      "n_paragrafos": 7
+    },
+    {
+      "sigla": "RMSE",
+      "extenso_lista": "Root Mean Squared Error (Raiz do Erro Médio Quadrático)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 172,
+        "contexto": "A avaliação contempla o Erro Médio Absoluto (Mean Absolute Error – MAE), a Raiz do Erro Quadrático Médio (Root Mean Squared Error – RMSE) e o coeficiente de determinação (R²), a comparação com a ESN Normal × Normal e com LSTM e GRU e a separação entre custo de otimização e ajuste final. Inclui ainda o exame da dispersão entre configurações, a comparação inferencial complementar pelo teste de Diebold–Mariano (DM), a documentação do procedimento e a discussão de limitações e condições de replicação."
+      },
+      "n_paragrafos": 27
+    },
+    {
+      "sigla": "RNN",
+      "extenso_lista": "Recurrent Neural Network (Rede Neural Recorrente)",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 193,
+        "contexto": "As redes Long Short-Term Memory (LSTM) foram introduzidas por Hochreiter e Schmidhuber (1997) para facilitar a aprendizagem de dependências longas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinicialização, hoje conhecida como Gated Recurrent Unit (GRU), no contexto de uma arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador. A simplificação estrutural dessa unidade não constitui, por si, uma garantia de menor erro em séries financeiras."
+      },
+      "n_paragrafos": 1
+    },
+    {
+      "sigla": "RNR",
+      "extenso_lista": "Rede Neural Recorrente",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 192,
+        "contexto": "As Redes Neurais Recorrentes (RNRs) são uma classe de modelos para processar sequências. Sudiatmika e Putra (2024) descrevem um estado interno atualizado a cada passo a partir da entrada atual e do estado anterior. Em contraste com redes feedforward sem estado recorrente, essa organização permite incorporar o histórico da sequência ao cálculo das saídas. A aprendizagem de dependências longas, contudo, permanece condicionada à arquitetura e ao treinamento."
+      },
+      "n_paragrafos": 4
+    },
+    {
+      "sigla": "SSA",
+      "extenso_lista": "Sparrow Search Algorithm",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 217,
+        "contexto": "Tian e Pei (2024) empregaram o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e MAPE."
+      },
+      "n_paragrafos": 3
+    },
+    {
+      "sigla": "SVM",
+      "extenso_lista": "Support Vector Machine",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 184,
+        "contexto": "A revisão reúne estudos com SVMs, LSTMs, Transformers e modelos quântico-híbridos. Os desafios de custo e escalabilidade aparecem associados a arquiteturas, otimização e infraestrutura distintas. Essas observações sintetizam estudos anteriores e não equivalem a uma comparação experimental própria nem isolam a retropropagação como causa dos custos."
+      },
+      "n_paragrafos": 3
+    },
+    {
+      "sigla": "TPE",
+      "extenso_lista": "Tree Parzen Estimator",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 234,
+        "contexto": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada."
+      },
+      "n_paragrafos": 2
+    },
+    {
+      "sigla": "W",
+      "extenso_lista": "Matriz de pesos do reservatório da ESN",
+      "primeira_ocorrencia_textual": {
+        "paragrafo": 167,
+        "contexto": "A abordagem central emprega Redes Neurais de Estados de Eco (Echo State Networks – ESNs), pertencentes à Computação de Reservatório (Reservoir Computing – RC). Nessa arquitetura, as matrizes de entrada e do reservatório, designadas por Win e W, permanecem fixas durante o ajuste da camada de saída. Essa organização motiva o estudo de alternativas à otimização iterativa de todos os pesos. A escolha das distribuições de inicialização e dos hiperparâmetros, entretanto, integra o problema experimental e não permite pressupor superioridade de uma configuração antes de sua avaliação."
+      },
+      "n_paragrafos": 33
+    }
+  ],
+  "limite": "Triagem de entradas pré-textuais e primeira ocorrência em parágrafos do corpo; células precisam ser intercaladas na ordem de leitura. Não declara conformidade das expansões ou grafias."
+}

@@ -1,0 +1,65 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "3ca86f3df0dbe6d9c891beb2eb548bd6720ad7a998179d21f4f6f09bfc248f2f",
+  "fonte": {
+    "id": "D01",
+    "arquivo": "Artigos citados\\Abebe - Asymmetric generalized error distribution with its properties and applications.pdf",
+    "sha256": "6c09320127ccbfa9c16dbbdcf716b021ab7e82e2c3ac86926db098920514f7d8",
+    "paginas": 14,
+    "caracteres_extraidos": 53309,
+    "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+    "log_leitura": []
+  },
+  "paginas_textuais_lidas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "limite_leitura": "Equações extraídas com perda de símbolos; inspeção visual pendente antes de confirmar fórmulas.",
+  "evidencias": {
+    "pdf_1_2": "AGED assimétrica baseada na GED por método de Azzalini; dois autores.",
+    "pdf_8_9": "Estimação por máxima verossimilhança e dados de ataques cibernéticos, saúde e resistência de fibra de vidro; não é estudo de ESN.",
+    "pdf_11_12": "O artigo relata melhor ajuste em múltiplos critérios, mas valores KS nas tabelas 6 e 7 não concordam com a alegação textual de menor KS para AGED; checar visual antes de concluir erro gráfico.",
+    "pdf_13": "Conclusão restrita aos três conjuntos examinados."
+  },
+  "matriz_D01": {
+    "codigos": [
+      "—",
+      "—",
+      "?",
+      "—",
+      "—"
+    ],
+    "situacao": "Cinco códigos reexaminados; inalterados, com ressalva sobre extração das fórmulas."
+  },
+  "correcoes_pendentes": [],
+  "ribeiro_P4": {
+    "codigo": "?",
+    "evidencia": "Tabela 1 e introdução, PDF 2: MSE de LSTM-GARCH em estudo de Kim e Won, ao lado de outros estudos com ativos e métricas diferentes. Não há comparação quantitativa de previsão entre esse modelo e outra arquitetura no mesmo problema; listagem não satisfaz P4.",
+    "limite": "A evidência de LSTM e o número devem permanecer registrados; não afirmar que não são mencionados."
+  },
+  "paginas_visuais_inspecionadas": [
+    1,
+    2,
+    9,
+    12,
+    13
+  ],
+  "observacao_visual": "As tabelas 6 e 7 apresentam KS maior para AGED, em conflito com afirmação de menor KS para todos os conjuntos; AIC e BIC são menores nos três conjuntos.",
+  "correcoes_incorporadas": [
+    "U0227",
+    "U0292"
+  ]
+}

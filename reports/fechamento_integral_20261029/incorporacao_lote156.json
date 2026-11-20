@@ -1,0 +1,25 @@
+{
+  "sha_antes": "f933c9281afbbab9b3f49a3fccec01278eb77085d6358c2007c2719ed14682ed",
+  "alteracoes": [
+    {
+      "antes": "Em paralelo, novas arquiteturas estendem a discussão para além da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quânticas (Quantum Temporal Convolutional Neural Networks – QTCNN) e relatam Sharpe superior ao de LSTM, Transformer e TConv-MLP no conjunto JPX, em avaliação fora da amostra de 22 dias. Os resultados são restritos ao protocolo estudado.",
+      "depois": "Em paralelo, novas arquiteturas estendem a discussão para além da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quânticas (Quantum Temporal Convolutional Neural Networks – QTCNN) e relatam Sharpe superior ao de LSTM, Transformer e TConv-MLP no conjunto de dados da competição JPX Tokyo Stock Exchange Prediction, em avaliação fora da amostra de 22 dias. Os resultados são restritos ao protocolo estudado."
+    },
+    {
+      "antes": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+      "depois": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice da Borsa Istanbul (BIST) 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO."
+    },
+    {
+      "antes": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do DJIA entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade.",
+      "depois": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do índice Dow Jones Industrial Average (DJIA) entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade."
+    },
+    {
+      "entrada_adicionada": "BIST – Borsa Istanbul"
+    },
+    {
+      "entrada_adicionada": "DJIA – Dow Jones Industrial Average"
+    }
+  ],
+  "origem": "expansoes_mercados_lote155.json",
+  "nota_indices": "Duas entradas adicionadas à lista; usar textos/âncoras em vez de índices anteriores."
+}

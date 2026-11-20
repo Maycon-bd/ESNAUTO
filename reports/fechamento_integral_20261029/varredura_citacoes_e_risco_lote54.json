@@ -1,0 +1,196 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "61fac8da8ab082633bbaa113ed697fd32ccfd7d72c2142f003b18b5b10083e2a",
+  "fonte_serie": "Scripts\\data\\PETR4_close com factor_2000-2020_com data.csv",
+  "sha256_serie": "0ce4b6d1f2382c318771322dba12994e7a011774e7de364731f398f195183916",
+  "anos_sem_chamada_indexada": [
+    {
+      "local": "P_atual0005",
+      "texto": "2026",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0011",
+      "texto": "2026",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0020",
+      "texto": "Rio Verde, GO, _____ de _________________ de 2026.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0041",
+      "texto": "Este trabalho avaliou Redes Neurais de Estados de Eco (Echo State Networks - ESNs) na previsão de um passo à frente do preço de fechamento ajustado da ação preferencial da Petrobras (PETR4). A série reuniu 5.198 observações diárias entre 3 de janeiro de 2000 e 30 de dezembro de 2020, divididas cronologicamente em treino, validação e teste. Os dados foram fornecidos já ajustados por eventos corporativos pelo orientador; o efeito causal isolado do ajuste não foi estimado. A implementação do ESNAUTO adaptou códigos em R fornecidos pelo orientador e incluiu uma interface desenvolvida pelo autor, integrando ESN com regressão Ridge, Algoritmo Genético binário, inicialização por Amostragem por Hipercubo Latino (Latin Hypercube Sampling - LHS) e mecanismo antiestagnação por mutação cataclísmica. Foram documentadas 45 execuções em cinco ondas de distribuições aplicadas às matrizes de entrada e do reservatório. Laplace × Normal apresentou o menor erro médio absoluto (Mean Absolute Error – MAE) de teste (0,327224), enquanto Laplace × Cauchy obteve a menor raiz do erro quadrático médio (Root Mean Squared Error – RMSE) (0,495386) e o maior coeficiente de determinação (R²) (0,9941); 44 das 45 execuções apresentaram MAE inferior aos valores documentados para as unidades recorrentes com portas (Gated Recurrent Units – GRU) e as redes de memória de longo e curto prazo (Long Short-Term Memory – LSTM). Como análise inferencial complementar, uma execução controlada e reprodutível com semente fixa 20260926 preservou 1.298 previsões comuns. Quatro testes bilaterais de Diebold-Mariano indicaram diferença estatisticamente significativa entre a ESN e os baselines GRU e LSTM sob perdas absoluta e quadrática, sempre com menor perda média para a ESN. O ajuste analítico da configuração selecionada demandou cerca de 0,05 segundo, enquanto as buscas genéticas totalizaram aproximadamente 37,9 horas, distinguindo custo off-line de descoberta e baixo custo de ajuste posterior. Conclui-se que, sob o protocolo adotado, ESNs pequenas e otimizadas constituíram alternativa competitiva para a tarefa investigada, e o ESNAUTO contribuiu como artefato de Engenharia de Software para organizar, executar, auditar e comparar o processo experimental.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0044",
+      "texto": "This study evaluated Echo State Networks (ESNs) for one-step-ahead prediction of the adjusted closing price of Petrobras preferred stock (PETR4). The series comprised 5,198 daily observations from January 3, 2000, to December 30, 2020, chronologically divided into training, validation, and test sets. The supervisor provided the data already adjusted for corporate events; the isolated causal effect of the adjustment was not estimated. The ESNAUTO implementation adapted R code provided by the supervisor and included an interface developed by the author, integrating an ESN with Ridge regression, a binary Genetic Algorithm, Latin Hypercube Sampling (LHS) initialization, and a cataclysmic anti-stagnation mechanism. Forty-five runs were documented across five waves of distributions applied to the input and reservoir matrices. Laplace × Normal achieved the lowest test mean absolute error (MAE) (0.327224), whereas Laplace × Cauchy obtained the lowest root mean squared error (RMSE) (0.495386) and the highest coefficient of determination (R²) (0.9941); 44 of the 45 runs achieved lower MAE than the documented gated recurrent unit (GRU) and long short-term memory (LSTM) values. As a complementary inferential analysis, a controlled and reproducible run with fixed seed 20260926 preserved 1,298 common forecasts. Four two-sided Diebold-Mariano tests indicated statistically significant differences between the ESN and the GRU/LSTM baselines under absolute and squared loss, always with lower mean loss for the ESN. Analytical fitting of the selected configuration required about 0.05 s, while the genetic searches totaled approximately 37.9 h, distinguishing the offline discovery cost from the low subsequent fitting cost. Under the adopted protocol, small optimized ESNs were competitive for the investigated task, while ESNAUTO contributed a software-engineering artifact for organizing, executing, auditing, and comparing the experimental workflow.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0062",
+      "texto": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)\t41",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0266",
+      "texto": "Fonte: Elaborado pelo autor (2026), a partir da recodificação do portfólio. D: evidência direta; S: tratamento secundário/contextual; ?: informação insuficiente; —: não aplicável.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0269",
+      "texto": "Fonte: Elaborado pelo autor (2026). D: evidência direta; S: tratamento secundário/contextual; ?: informação insuficiente; —: não aplicável.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0274",
+      "texto": "Fonte: Elaborado pelo autor a partir do Quadro 1 (2026).",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0279",
+      "texto": "Fonte: Elaborado pelo autor a partir dos documentos citados, com processamento no bibliometrix 5.5.0 (2026).",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0284",
+      "texto": "Fonte: Elaborado pelo autor com bibliometrix 5.5.0 a partir da base reconstruída (2026).",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0289",
+      "texto": "Fonte: Elaborado pelo autor a partir dos 34 títulos da base reconstruída (2026).",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0303",
+      "texto": "A variável-alvo foi o preço de fechamento disponibilizado como ajustado, de 3 de janeiro de 2000 a 30 de dezembro de 2020, totalizando 5.198 observações diárias. Os arquivos fornecidos aos modelos preservam os valores e as datas dessa série. A coincidência de ativo ou intervalo entre estudos não demonstra equivalência dos respectivos tratamentos, partições e protocolos de previsão.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0304",
+      "texto": "Os executores importam os valores de PETR4_close com factor_2000-2020.txt e PETR4_close com factor_2000-2020_com data.csv. Esses arquivos foram recebidos já ajustados do orientador, conforme esclarecimento do autor. O escopo desta pesquisa compreende sua utilização nos modelos e a organização das partições temporais. A cadeia original que liga cotações e eventos do BovDB à geração desses arquivos não foi reconstruída nesta auditoria.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0308",
+      "texto": "A divisão estática 50%/25%/25% reuniu 2.600 observações de treino, de 03/01/2000 a 01/07/2010; 1.299 de validação, de 02/07/2010 a 28/09/2015; e 1.299 de teste, de 29/09/2015 a 30/12/2020. A função de aptidão da busca combinou erros de treino e validação. Os recordes de erro de teste apresentados nos resultados constituem comparações descritivas posteriores e não equivalem a uma seleção prospectiva de configuração para uma nova amostra.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0311",
+      "texto": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0317",
+      "texto": "Fonte: Elaborado pelo autor (2026).",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0338",
+      "texto": "Fonte: Elaborado pelo autor (2026).",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0348",
+      "texto": "Os três modelos geraram 1.299 previsões datadas entre 29/09/2015 e 30/12/2020. A janela comparativa foi definida previamente como as 1.298 datas comuns entre 30/09/2015 e 30/12/2020. Para cada par de modelos, foram calculados os erros et = yt − ŷt e o diferencial dt = LESN,t − Lbaseline,t. Foram executadas quatro comparações bilaterais, com horizonte h = 1 e nível de significância α = 0,05: ESN × GRU e ESN × LSTM sob perda absoluta (|et|) e sob perda quadrática (et²).",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0359",
+      "texto": "A planilha methodi_ordinatio.xlsx preserva uma etapa inicial do levantamento, com busca declarada em 23 de março de 2026 e 59 candidatos, dos quais 7 estão marcados para inclusão, 4 para exclusão e 48 sem decisão. O autor esclareceu que esses registros não foram mantidos de modo a representar integralmente a seleção final e suas buscas complementares. Por isso, as contagens da planilha não são utilizadas como um fluxo completo de seleção dos 34 documentos, nem as decisões faltantes são preenchidas retrospectivamente por inferência.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0362",
+      "texto": "Referências anteriores a 2021 e trabalhos de outros domínios foram utilizados como apoio conceitual, metodológico ou histórico. A coleção descritiva de 34 documentos, apresentada na Tabela 1, no Quadro 1 e nas Figuras 1 a 4, reúne essas fontes com estudos financeiros recentes. Seu tamanho corresponde ao material recuperado para análise, sem representar a quantidade de estudos que teria atendido a todos os critérios da busca originalmente relatada.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0364",
+      "texto": "Foram preservadas as informações das versões locais consultadas e as ressalvas sobre preprints ou outras versões. Contagens de citações recebidas e listas completas de referências citadas não foram reconstruídas; por esse motivo, não foram produzidos rankings de impacto ou redes de cocitação. No arquivo histórico processado, a tese de Duttilo consta com ano 2023, enquanto a referência foi atualizada para 2024 conforme a versão consultada. As Figuras 2 a 4 usam palavras-chave ou títulos e não dependem desse ano.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0386",
+      "texto": "Fonte: Elaborado pelo autor (2026).",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0393",
+      "texto": "A execução ilustrada pertence ao lote legado de 12 cenários com limite de 200 gerações, de 15 de agosto de 2026. Foi selecionada pelo maior fitness de treino/validação nesse lote: segunda rodada de GED em Win e Uniforme em W, com a = 0,424701, raio espectral = 0,513577, lavagem de 34 passos, 31 neurônios e regularização de aproximadamente 4,84 × 10⁻⁵. Trata-se de uma ilustração complementar do motor legado, distinta das 45 execuções de produção com LHS e cataclismo. Não constitui a reconstrução da trajetória do GA_RUN_0030 nem substitui os resultados da Tabela 3.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0405",
+      "texto": "Fonte: Elaborado pelo autor (2026).",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0415",
+      "texto": "Como complemento voltado à aplicabilidade gerencial e à gestão de risco, o conjunto de teste foi segmentado descritivamente em três subperíodos: 29/09/2015 a 29/12/2016 (311 observações), 02/01/2017 a 30/12/2019 (739 observações) e 02/01/2020 a 30/12/2020 (249 observações).",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0416",
+      "texto": "A volatilidade diária dos retornos simples foi, respectivamente, de aproximadamente 3,99%, 2,56% e 4,32%. Os drawdowns máximos observados nos mesmos intervalos foram de aproximadamente -52,27%, -46,55% e -63,36%. Esses valores mostraram que 2020 concentrou o regime de maior estresse entre os subperíodos do teste, enquanto 2017–2019 apresentou menor volatilidade relativa.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0420",
+      "texto": "Fonte: Elaborado pelo autor (2026).",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0438",
+      "texto": "Não se propõe uma frequência fixa de retreinamento, pois o protocolo deste trabalho não fornece evidência para definir um intervalo temporal universal. A recalibração deve ser condicionada a indicadores de degradação e às regras do contexto de implantação. A falha fora da amostra observada em t de Student Assimétrica × Cauchy e o maior estresse de mercado identificado no ano de 2020 reforçam que baixo erro em validação não elimina o risco de deterioração posterior, tornando monitoramento, versionamento e critérios de promoção componentes relevantes de um uso responsável do modelo.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0440",
+      "texto": "A execução controlada complementar produziu, na janela congelada de 1.298 observações entre 30/09/2015 e 30/12/2020, MAE de 0,328850 e RMSE de 0,498452 para a ESN; MAE de 0,418175 e RMSE de 0,592452 para a GRU; e MAE de 0,466612 e RMSE de 0,635287 para a LSTM. Esses valores pertencem exclusivamente à execução controlada com semente 20260926 e não substituem os resultados históricos apresentados na Tabela 3. A finalidade dessa rodada foi fornecer vetores de previsão íntegros, alinhados por data e reproduzíveis para a avaliação inferencial de H1.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0447",
+      "texto": "Fonte: Elaborado pelo autor (2026).",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    },
+    {
+      "local": "P_atual0476",
+      "texto": "A avaliação experimental considera um único ativo, a PETR4, negociado na B3, utilizando observações entre 2000 e 2020 e horizonte de previsão de um passo à frente. Mercados, períodos históricos, frequências e ativos distintos podem apresentar propriedades estatísticas diferentes e alterar o comportamento das distribuições e do reservatório. Assim, as conclusões sobre desempenho são restritas ao cenário experimental analisado.",
+      "classificacao": "data, período, ano da autoria própria ou elemento da lista; sem chamada externa autor–ano identificada na leitura"
+    }
+  ],
+  "celulas_com_ano_fora_indice": [],
+  "subperiodos": [
+    {
+      "inicio": "2015-09-29",
+      "fim": "2016-12-29",
+      "observacoes": 311,
+      "volatilidade_amostral_retornos_simples_pct": 3.9936577349543056,
+      "drawdown_por_maximo_acumulado_no_subperiodo_pct": -52.27272727272725
+    },
+    {
+      "inicio": "2017-01-02",
+      "fim": "2019-12-30",
+      "observacoes": 739,
+      "volatilidade_amostral_retornos_simples_pct": 2.5566275498159095,
+      "drawdown_por_maximo_acumulado_no_subperiodo_pct": -46.54886446964049
+    },
+    {
+      "inicio": "2020-01-02",
+      "fim": "2020-12-30",
+      "observacoes": 249,
+      "volatilidade_amostral_retornos_simples_pct": 4.315836126456511,
+      "drawdown_por_maximo_acumulado_no_subperiodo_pct": -63.35605322947071
+    }
+  ],
+  "metodo": "Desvio padrão amostral dos retornos simples internos ao subperíodo e menor razão preço/máximo acumulado menos um; comparação com arredondamentos do texto.",
+  "limites": "Busca por anos não detecta atribuições sem ano, citações em imagens ou erros de fonte; figuras e referências exigem revisão própria. Retornos entre períodos são excluídos nesta conferência; não se executou treinamento nem teste DM.",
+  "acao": "Nenhuma edição Word."
+}

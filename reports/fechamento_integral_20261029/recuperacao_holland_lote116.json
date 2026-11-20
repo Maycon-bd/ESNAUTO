@@ -1,0 +1,15 @@
+{
+  "obra": "Holland, exemplar identificado como reedição1992",
+  "url": "https://github.com/yyccR/papers/blob/master/genetic%20algorithm/%E3%80%8AAdaptation%20in%20Natural%20and%20Artificial%20Systems%E3%80%8BJohn%20Holland%201992.pdf",
+  "arquivo": "reports\\fechamento_integral_20261029\\Holland_reedicao_1992_consulta.pdf",
+  "sha256": "41f4c176cd8929f4b60de3bab2144f765a90dc1164c5ad8c5dd59032a3da2640",
+  "paginas": 215,
+  "trechos_lidos_pdf": [
+    19,
+    20,
+    21
+  ],
+  "evidencia": "Texto descreve seleção por desempenho e operadores que recombinam/modificam alelos para produzir gerações. Sustenta a atribuição geral a princípios evolutivos, sem provar parâmetros do motor ESNAUTO.",
+  "limites": "Arquivo apresenta prefácio1992 e extração com artefatos; não corresponde a identificação confirmada da edição1975. Necessária inspeção visual da identidade/editorial e dos trechos antes de alterar referência para a edição consultada. Não declarar livro integralmente lido.",
+  "proxima_acao": "Renderizar páginas19–21 e localizar folha editorial no exemplar; conferir referência1992 na editora e ajustar chamada/referência se identidade confirmada."
+}

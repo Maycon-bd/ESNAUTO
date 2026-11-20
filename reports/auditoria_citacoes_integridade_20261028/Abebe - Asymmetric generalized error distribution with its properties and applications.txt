@@ -1,0 +1,2219 @@
+
+[PÁGINA PDF 1]
+Frontiers in Applied Mathematics and Statistics 01 frontiersin.org
+Asymmetric generalized error 
+distribution with its properties 
+and applications
+Tayu Nigusie Abebe * and Ayele Taye Goshu 
+Department of Mathematics, Kotebe University of Education, Addis Ababa, Ethiopia
+The main finding of this study is the derivation of a new probability distribution 
+that reveals interesting properties, especially with various asymmetry and kurtosis 
+behavior. We call this distribution the asymmetric generalized error distribution 
+(AGED). AGED is a new contribution to the field of statistical theory, offering 
+more flexible probability density functions, cumulative distribution functions, 
+and hazard functions than the base distribution. The AGED also includes normal, 
+uniform, Laplace, asymmetric Laplace, and generalized error distribution (GED) 
+as special cases. The mathematical and statistical features of the distribution 
+are derived and discussed. Estimators of the parameters of the distribution are 
+obtained using the maximum likelihood approach. In a simulation study, random 
+samples are generated from the new probability distribution to illustrate what 
+ideal data looks like. Using real data from diverse applications such as health, 
+industry, and cybersecurity domains, the performance of the new distribution 
+is compared to that of other distributions. The new distribution is found to be a 
+better fit for the data, showing great adaptability in the context of real data 
+analysis. We expect the distribution to be applied to many more real data, and 
+the findings of the study can be used as a basis for future research in the field.
+KEYWORDS
+AR algorithms, asymmetric generalized error distribution, generalized error 
+distribution, maximum likelihood estimation, probability, statistics, symmetric 
+distribution
+1 Introduction
+There has been a growing interest in the construction of flexible parametric families of 
+distributions that exhibit asymmetry and peakedness differing from those of symmetric 
+distributions (1–3). Many of these methods center around overcoming the assumptions of 
+normality found in the empirical analysis of many parametric models.
+An empirical analysis in various studies suggests that the assumption of normality of real 
+data is often untenable ( 4, 5), and asymmetry is commonly observed ( 6, 7). It is highly 
+acknowledged that data with heavy-peaked distribution are encountered in the empirical 
+analysis (8), as is asymmetric distribution (9, 10). In all cases, it is important to adopt a flexible 
+distribution that can directly address asymmetry and peakedness (6, 9).
+There has been a different approach to develop asymmetric counterparts of symmetric 
+distributions. Many of these approaches centered on overcoming assumptions of normality 
+(11, 12). In many works of literature, asymmetry is achieved via the transformation of the 
+skewing function (9, 10), which lacks a wide range of skewness and kurtosis. Moreover, the 
+technique of creating asymmetric counterparts of symmetric distributions has a longer history 
+(13–15).
+OPEN ACCESS
+EDITED BY
+Han-Ying Liang,  
+Tongji University, China
+REVIEWED BY
+Zakariya Yahya Algamal,  
+University of Mosul, Iraq
+Diganta Mukherjee,  
+Indian Statistical Institute, India
+*CORRESPONDENCE
+Tayu Nigusie Abebe  
+ tayutata2@gmail.com
+RECEIVED 09 March 2024
+ACCEPTED 12 April 2024
+PUBLISHED 30 May 2024
+CITATION
+Abebe TN and Goshu AT (2024) Asymmetric 
+generalized error distribution with its 
+properties and applications.
+Front. Appl. Math. Stat. 10:1398137.
+doi: 10.3389/fams.2024.1398137
+COPYRIGHT
+© 2024 Abebe and Goshu. This is an open-
+access article distributed under the terms of 
+the Creative Commons Attribution License 
+(CC BY). The use, distribution or reproduction 
+in other forums is permitted, provided the 
+original author(s) and the copyright owner(s) 
+are credited and that the original publication 
+in this journal is cited, in accordance with 
+accepted academic practice. No use, 
+distribution or reproduction is permitted 
+which does not comply with these terms.
+TYPE Original Research
+PUBLISHED 30 May 2024
+DOI 10.3389/fams.2024.1398137
+
+[PÁGINA PDF 2]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 02 frontiersin.org
+The approach that is commonly considered for constructing 
+classes of asymmetric distributions from symmetric distribution 
+is authored by Azzalini ( 16, 17). The initial idea appeared in 
+O'hagan and Leonard ( 18) in the context of base distribution. 
+Azzalini ( 16, 17) introduced asymmetric distributions called 
+skew-normal (SN). The idea was further extended in Azzalini 
+(13) introduced multivariate asymmetry distributions. An ideal 
+class of distributions obtained from this methodology includes 
+symmetric distributions, mathematical tractability, and a wide 
+range of skewness and kurtosis. The theoretical and statistical 
+properties of the methodology have been studied by various 
+researchers ( 2, 3, 19, 20).
+As noted in (5, 12) the generalized error distribution (GED) has 
+short tails, making it unsuitable for modeling data with heavier tails. 
+One method to solve this problem, as suggested in Azzalini (16), is to 
+use an asymmetric pdf with flexible tails and excess kurtosis. Azzalini’s 
+methodology generates distributions with flexible tails and 
+excess kurtosis.
+In this study, we follow Azzalini’s methodology to introduce a 
+new distribution that is flexible enough for modeling data with 
+heavier tails and excess kurtosis. More data with heavier tails and 
+excess kurtosis are adequately modeled to the distribution and play 
+an important role in this context. This new distribution is called 
+asymmetric generalized error distribution (AGED) and is denoted by 
+AGED /g68/g68/g11/g12/g94/g96 :   , where α  represents the asymmetry parameter 
+so that AGED /g68/g32/g11/g120  corresponds to the generalized error 
+distribution. We outline some properties of the distribution, provide 
+a graphical representation of the distribution, and discuss 
+some inferences.
+2 Generalized error distribution
+The GED is a symmetric and unimodal member of the 
+exponential family of distribution introduced by Subbotin ( 22) 
+and has been used by different authors with different 
+parameterizations ( 23, 24). A random variable X  have a 
+generalized error distribution if its probability density function 
+(pdf) is expressed by ( 21):
+ 
+( ) ( )1 1/
+11; , , exp 22 1 1/
+xgx
+β
+β
+µµσβ σσβ+
+ −= −Γ+   
+(1)
+where /g80/g143 is the location parameter, /g86/g143/g14  is the scale 
+parameter, and /g69/g143/g14  is the shape parameter. Here, ( ).Γ  is the Euler 
+gamma function. We denote it by ( )~ ; , , X GED x µσβ .
+It is convenient to work with the alternative expression given in 
+Eq.  1 , which allows for mean zero and variance unity ( 25). The 
+variance of the GED is a function of β  ( 26, 27). T o rescale its 
+variance, a scaling parameter η is introduced, and a substitution is 
+made for /g86/g86/g75/g69/g1111/  in Eq.  1  to get the following equivalent 
+pdf (25):
+ 
+( ) ( )1 1/ 1/
+11; , , exp 22 1 1/
+xgx
+β
+ββ
+µµσβ ησση β+
+ −= −Γ+   
+(2)
+Or
+ 
+( ) ( )
+( ) ( )
+( )
+( )
+1
+2
+2 2
+3/ 1; , , 1/ 2 1 1/
+3/exp 1/
+gx
+x
+β
+βµσβ βσ β
+β µ
+βσ
+Γ= Γ Γ+
+
+ Γ − −  Γ    
+(3)
+3 The newly suggested asymmetric 
+generalized error distribution
+In this section, the method of generating an asymmetric 
+distribution from a symmetric distribution is presented to develop the 
+new asymmetric generalized error distribution (AGED). Here, the 
+method of constructing classes of asymmetric distributions suggested 
+by Azzalini (16, 17) is used. The authors introduced a methodology 
+that can be used to derive an asymmetric distribution from an existing 
+symmetric distribution. This is expressed in Proposition 1.
+3.1 Proposition 1
+Let /g73x/g11/g12 and ( )xΦ be pdf and cdf of the random variable X , 
+respectively, and characterizing symmetric distribution such that 
+/g73 /g73/g16/g11/g12/g32/g11/g12xx , ( ) ( )1xxΦΦ−= − , for all x ∈ . Then, the random 
+variable X  has an asymmetric probability density function expressed 
+in the form of:
+ ( ) ( ) ( );2fx x xαφ α= Φ  (4)
+where /g68/g143 is the asymmetry parameter and f x/g11/g12 is an 
+asymmetric version of a symmetric base pdf.
+In this study, we derived a new asymmetric distribution called the 
+AGED. The approach of Azzalini ( 16, 17) is used with the base 
+distribution of the generalized error distribution in Eq. 3 .
+3.2 Theorem 1
+For the generalized error distribution, GED, in Eq. 3 , the new 
+asymmetric generalized error distribution (AGED), has probability 
+density and cumulative distribution functions expressed as follows:
+f xg xG x;/g68/g68/g11/g12/g32 /g11/g12/g11/g122  
+/g32
+/g11/g12/g11/g12 /g11/g12
+/g11/g12
+/g167
+/g169
+/g168/g168
+/g183
+/g185
+/g184/g184 /g16/g11/g12
+/g11/g12
+/g16/g167
+/g169/g168
+/g183
+/g185/g1842 3
+1
+3
+1
+2 1
+2k x/g69
+/g69
+/g69
+/g69
+/g69
+/g69
+/g80
+/g86
+/g42
+/g42
+/g42
+/g42
+/
+/ exp /
+/
+22 2
+1
+2 3
+1
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176
+/g167
+/g169
+/g168
+/g168
+/g168/g168
+/g183
+/g185
+/g184
+/g184
+/g184/g184
+/g167
+/g169/g168
+/g183
+/g185/g184/g100
+/g11/g12/g11/g12
+/g11
+/g69
+/g69/g68/g80
+/g69 /g69
+/g69
+/g42
+/g42
+/g42
+, zx
+k
+,
+/
+/ /g12/g12
+/g167
+/g169
+/g168/g168
+/g183
+/g185
+/g184/g184 /g16/g11/g12
+/g11/g12
+/g16/g167
+/g169/g168
+/g183
+/g185/g184
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176
+/g167
+/g169
+/g168
+/g168
+/g168/g168
+/g1831
+2 2 23
+1exp /
+/
+/g42
+/g42
+/g69
+/g69
+/g80
+/g86
+/g69
+x
+/g185/g185
+/g184
+/g184
+/g184/g184
+/g16/g11/g12/g167
+/g169/g168
+/g183
+/g185/g184
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176
+/g33
+/g173
+/g174
+/g176
+/g176
+/g176
+/g176
+/g176
+/g176
+/g176/g176
+/g175
+/g176
+/g176
+/g176
+/g176
+/g176
+/g176
+/g176
+/g176
+1 1k zx/g69
+/g69/g69/g68/g80/g42 ,,
+ 
+(5)
+
+[PÁGINA PDF 3]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 03 frontiersin.org
+ 
+F xg tG td t
+x
+;/g68/g68/g11/g12/g32 /g11/g12/g11/g12
+/g16/g102
+/g1792
+ 
+/g32
+/g11/g12/g167
+/g169/g168
+/g183
+/g185/g184/g16
+/g16/g14/g11/g12/g11 /g12
+/g14
+/g100
+/g16/g11/g12
+/g179
+k ,
+x
+x
+dx x
+k
+/g69
+/g69/g42/g69/g83
+/g68
+/g80
+/g69
+/g69
+/g8711
+2
+12
+1
+1
+0
+22
+2/g68z
+exp/
+,
+/g42/g42/g69/g83
+/g68
+/g80
+/g8711
+2
+12
+10
+22
+2,
+x
+x
+dx x/g68z/g167
+/g169/g168
+/g183
+/g185/g184/g16
+/g16/g14/g11/g12/g11 /g12
+/g14
+/g33
+/g173
+/g174
+/g176
+/g176/g176
+/g175
+/g176
+/g176
+/g176 /g179
+exp/
+,
+ 
+(6)
+where k /g69 /g86/g69/g11/g12/g32 /g14/g11/g12
+1
+21 1/g42 / , 
+1
+2
+12
+10
+22
+2/g83
+/g68
+/g68
+/g87
+/g179
+/g16/g14/g11/g12/g11 /g12
+/g14
+/g32/g11/g12
+exp/ x
+x
+dx Tx ,  and T ./g11/g12 is Owen’ s T  
+function (28). Here, Γ ./g11/g12 is the Euler gamma function. The parameters 
+α  determine the degree of asymmetry, which can generate 
+distributions with flexible tail behavior and excess kurtosis. W e denote 
+it by X AGED~ /g80/g86/g69/g68,, ,/g11/g12 . See Ref. (29–31).
+3.3 Proof
+Suppose gx/g11/g12 is a pdf of GED defined in Eq. 3  and cdf, Gx/g68/g11/g12 
+obtained as:
+ 
+( ) ( ) ( ); , , 
+x
+G x P X x g x dx
+α
+α α µσβ
+−∞
+= ≤= ∫
+ 
+/g32 /g11/g12
+/g11/g12
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176 /g14/g11/g12
+/g16/g11/g12
+/g11/g12
+/g16/g102
+/g179
+/g68 /g69
+/g69/g86 /g69
+/g69
+/g69
+x
+x
+/g42
+/g42/g42
+/g42
+/g42
+3
+1
+1
+21 1
+3
+1
+1
+2/
+//
+exp /
+/
+/g16/g16/g167
+/g169/g168
+/g183
+/g185/g184
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176
+/g167
+/g169
+/g168
+/g168
+/g168/g168
+/g183
+/g185
+/g184
+/g184
+/g184/g184
+/g80
+/g86
+/g69
+2 2
+dx
+ 
+(7)
+We have two cases to consider.
+Case 1: for x /g100/g80
+Let,
+ 
+z x
+dx dz
+z
+/g32/g11/g12
+/g11/g12
+/g16/g167
+/g169/g168
+/g183
+/g185/g184
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176
+/g159
+/g32/g16
+/g117 /g11/g12/g16
+/g42
+/g42
+/g42
+/g42
+3
+1
+3
+2 2
+1 1
+/
+/
+/
+/g69
+/g69
+/g80
+/g86
+/g69 /g69
+/g69
+/g69
+11
+1
+3
+12
+/
+/
+/
+/
+/g69
+/g69
+/g69/g11/g12
+/g13/g11/g12
+/g11/g12
+/g167
+/g169
+/g168/g168
+/g183
+/g185
+/g184/g184
+/g42
+/g42
+ 
+Gx
+x
+/g68 /g69
+/g69/g86 /g69
+/g69
+/g68
+/g11/g12/g32 /g11/g12
+/g11/g12
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176 /g14/g11/g12
+/g16/g11/g12
+/g16/g102
+/g179
+/g42
+/g42/g42
+/g42
+/g42
+3
+1
+1
+21 1
+3
+1
+1
+2/
+//
+exp /
+// /g69
+/g80
+/g86
+/g69
+/g11/g12
+/g16/g167
+/g169/g168
+/g183
+/g185/g184
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176
+/g167
+/g169
+/g168
+/g168
+/g168/g168
+/g183
+/g185
+/g184
+/g184
+/g184/g184
+x dx
+2 2
+ 
+(8)
+    
+/g32
+/g11/g12
+/g11/g12
+/g167
+/g169
+/g168/g168
+/g183
+/g185
+/g184/g184
+/g11/g12
+/g11/g12
+/g13/g11/g12
+/g11/g12
+/g167
+/g169
+/g168/g168
+/g183
+/g185
+/g184/g184
+/g42
+/g42
+/g42
+/g42
+/g42
+/g42
+3
+1
+3
+1
+1
+3
+12
+1
+/
+/
+/
+/
+/
+/
+/
+/g69
+/g69
+/g69
+/g69
+/g69
+/g69
+//
+/
+exp2
+1 1
+21 1/g69/g86 /g69/g68
+/g69
+/g42/g14/g11/g12
+/g16/g11/g12
+/g102/g16
+/g179
+z
+zz dz
+ 
+/g32 /g14/g11/g12
+/g167
+/g169/g168
+/g183
+/g185/g184
+1
+21 1
+1
+/g69/g86 /g69/g69/g68/g42 /g42/ , z
+ 
+(9)
+Case 2: for x /g33/g80, similarly
+  
+Gx
+x
+/g68 /g69
+/g69/g86 /g69
+/g69
+/g68
+/g11/g12/g32 /g11/g12
+/g11/g12
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176 /g14/g11/g12
+/g16/g11/g12
+/g16/g102
+/g179
+/g42
+/g42/g42
+/g42
+/g42
+3
+1
+1
+21 1
+3
+1
+1
+2/
+//
+exp /
+// /g69
+/g80
+/g86
+/g69
+/g11/g12
+/g16/g167
+/g169/g168
+/g183
+/g185/g184
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176
+/g167
+/g169
+/g168
+/g168
+/g168/g168
+/g183
+/g185
+/g184
+/g184
+/g184/g184
+x dx
+2 2
+   
+/g32/g16
+/g11/g12
+/g11/g12
+/g167
+/g169
+/g168/g168
+/g183
+/g185
+/g184/g184
+/g11/g12
+/g11/g12
+/g13/g11/g12
+/g11/g12
+1
+3
+1
+3
+1
+1
+3 2
+12
+12
+/g42
+/g42
+/g42
+/g42
+/g42
+/g42 /g42
+/
+/
+/
+/
+/
+/
+/
+/
+/g69
+/g69
+/g69
+/g69
+/g69
+/g69 /g69/g86111
+1 1
+/g14/g11/g12
+/g16/g11/g12
+/g102/g16
+/g179
+/
+exp
+/g69/g68
+/g69
+z
+zz dz
+ 
+/g32/g16 /g14/g11/g12
+/g167
+/g169/g168
+/g183
+/g185/g1841 1
+21 1
+1
+/g69/g86 /g69/g69/g68/g42 /g42/ , z
+ 
+(10)
+3.4 Corollary 1
+A linear combination of the AGED is also asymmetric. In 
+particular, the inclusion of µ  and variance σ 2 is possible using the 
+transformation, YX/g32/g14/g80/g86, where X  have AGED with mean zero 
+and variance 1. Then, a random variable Y  is said to have an 
+asymmetric generalized error distribution, YA GED~ /g80/g86/g69/g68,, ,/g11/g12 , 
+and it has pdf expressed by:
+ 
+f yg y G y;/g68 /g80
+/g86 /g68 /g80
+/g86/g11/g12/g32 /g16/g167
+/g169/g168
+/g183
+/g185/g184
+/g16/g167
+/g169/g168
+/g183
+/g185/g1842
+ 
+(11)
+Where g ./g11/g12and G ./g11/g12 are the pdf and cdf of the symmetric base 
+distribution, respectively, α  is the asymmetry parameters, and f ./g11/g12 is 
+the asymmetric version made from the symmetric distribution.
+The theorem 2 shows a pdf of the AGED with shape parameter β  
+and asymmetry parameter α , which is generated using the 
+representation given in Eq. 12 .
+3.5 Theorem 2
+Let U  and V  be  symmetric random variables such that 
+U GED~ /g80/g86/g69,,/g11/g12 and VN~ /g80/g86,/g11/g12. Then, the representation of the 
+new asymmetric generalized error distribution is
+
+[PÁGINA PDF 4]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 04 frontiersin.org
+ X UV U/g32/g100/g62/g64/g68 (12)
+W e call the distribution of X  the asymmetric generalized error 
+distribution (AGED).
+3.6 Proof
+Let X UV U/g32/g100/g68. Then
+  P Xx PU VU x/g100/g11/g12/g32/g100 /g100/g11/g12/g68
+ 
+/g32 /g100/g100/g11/g12
+/g100/g11/g12
+PU xV U
+PV U
+, /g68
+/g68  
+(13)
+But, U  and V are symmetric random variables, and following  
+that:
+  
+P Ux Vu gu gv du dv
+ux
+/g100/g100/g11/g12 /g32 /g11/g12/g11/g12
+/g16/g102/g16/g102
+/g179/g179, /g68
+/g68
+ 
+/g32 /g11/g12/g11/g12
+/g16/g102
+/g179
+x
+gu Gu du/g68
+ 
+(14)
+Since U and V  have symmetric pdf, we have:
+ 
+P VU/g100/g11/g12 /g32/g68 1
+2  
+(15)
+  
+P Xx gu Gu du
+x
+/g100/g11/g12/g32 /g11/g12/g11/g12
+/g16/g102
+/g179 /g68
+ 
+/g32 /g11/g12/g11/g12
+/g16/g102
+/g179
+x
+gu Gu du2 /g68
+ 
+(16)
+Then, X  has a pdf of 2gG../g11/g12/g11/g12, which is defined in Eq. 5 .
+3.7 Corollary 2
+Let ( )~ , , , X AGED µσβα and XU VU/g32/g100/g68, where  
+UG ED~ /g80/g86/g69,,/g11/g12 and VN~ /g80/g86,/g11/g12. Then, for /g68/g1110, random 
+variable X  converges in distribution toU .
+3.8 Proof
+Since VN~ /g80/g86,/g11/g12and EV c/g16/g11/g12/g1112 0, that isVc
+P
+→ . Therefore, 
+by applying Slutsky’s lemma ( 32) to X UV U/g32/g100/g68 to  
+obtain:
+ X UG ED
+d
+/g111 /g11/g12 /g111~, /g80/g86/g69/g68,, 0
+That is, for decreasing value of α , X  converges in 
+distribution toGED /g80/g86/g69,,/g11/g12.
+Using the distribution, reliability measures can be  assessed. 
+Identification of a system’ s important components and estimation of the 
+effects of component failure are important in reliability measures (33). 
+Therefore, it is essential to derive the functions of the AGED reliability 
+measures, an important quantity characterizing life phenomena (34).
+For a random variable X with probability density function and 
+cumulative distribution function f x/g11/g12 and F x/g11/g12 defined in Eqs 5, 6 , 
+respectively, survival and hazard functions can be  defined as 
+Sx Fx/g11/g12/g32/g16/g11/g121  and hx fx Sx/g11/g12/g32/g11/g12/g11/g12/ , respectively (35).
+4 Plots of the asymmetric generalized 
+error distribution
+Graphs of probability density and cumulative distribution 
+function of AGED are illustrated in Figure  1 for some values of 
+parameters that give possible shapes of function. The asymmetry 
+parameter α  controls the magnitude of the asymmetry exhibited by 
+the probability density function. The AGED can take a number of 
+forms, including symmetric, near symmetric, and asymmetric. As 
+/g68/g111/g14/g102, the asymmetric generalized error distribution converges in 
+distribution to the half asymmetric generalized error distribution, and 
+for /g68/g1110, the distribution reduced to the generalized error 
+distribution. However, for /g68/g3205. , the generalized error distribution 
+converges to the asymmetric generalized error distribution (Figure 2 ).
+Extremely illustrated properties instantly follow from definition 1 
+and Figure 1  is as follows:
+If X AGED~ /g80/g86/g69/g68,, ,/g11/g12 , then the following properties are 
+concluded directly from theorem (1) and Figures 1 , 3, 4:
+ • If /g68/g320, then X GED~ /g80/g86/g69,,/g11/g12: The distribution reduced to the 
+generalized error distribution with location parameter µ, scale 
+parameter σ , and shape parameter β  (21).
+ • If /g68/g111/g102, then X HAGED~ /g80/g86/g69/g68,, ,/g11/g12 : The distribution 
+becomes a half asymmetric generalized error distribution with 
+location parameter µ, scale parameter σ , and shape parameter β .
+ • If /g68/g3205.  and /g69/g321, then X ALap~ /g80/g86/g69,,/g11/g12: The distribution is 
+asymmetric Laplace distribution with location parameter µ and 
+scale parameters σ  and β  (27).
+ • If /g68/g322, then X AST~ /g68/g11/g12: The AGED distribution goes to 
+asymmetric student t − distribution with location parameter µ, 
+scale parameter σ , and shape parameters α and β  (26).
+5 Moment and its measures
+Let X  be a random variable from AGED with pdf defined in Eq. 5 , 
+the ′rt h moments of the random variable X  is obtained as follows (36):
+  
+/g83 /g68r rrEX xg xG xd x/g32/g170/g172/g186/g188/g32 /g11/g12/g11/g12
+/g16/g102
+/g102
+/g1792
+
+[PÁGINA PDF 5]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 05 frontiersin.org
+  
+/g32 /g11/g12/g117/g11/g12
+/g11/g12
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176 /g14/g11/g12
+/g16/g11
+/g16/g102
+/g102
+/g1792 3
+1
+1
+21 1
+3
+1
+2
+xG xr /g68 /g69
+/g69/g86 /g69
+/g69
+/g42
+/g42/g42
+/g42
+/
+//
+exp / /g12/g12
+/g11/g12
+/g16/g167
+/g169/g168
+/g183
+/g185/g184
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176
+/g167
+/g169
+/g168
+/g168
+/g168/g168
+/g183
+/g185
+/g184
+/g184
+/g184/g184/g421
+2 2
+/ /g69
+/g80
+/g86
+/g69
+x dx
+ /g32 /g11/g12/g170/g172 /g186/g188EX GXgr g2 /g68  (17)
+where X GEDg ~ /g80/g86/g69,,/g11/g12. However, for a random variable 
+X AGED~ /g80/g86/g69/g68,, ,/g11/g12  with pdf given in Eq. 5 , it follows the form of 
+the binomial theorem:
+  /g83 /g80/g86r r rEX EZ/g32/g170/g172/g186/g188/g32/g14/g11/g12/g170
+/g172/g171
+/g186
+/g188/g187
+ 
+/g32 /g167
+/g169/g168
+/g183
+/g185/g184 /g170/g172/g186/g188/g32
+/g16
+/g166
+k
+r
+rk kkr
+k EZ
+0
+/g80/g86
+ 
+(18)
+Consider a random variable Z AGED~0 1,, ,/g69/g68/g11/g12  with pdf in 
+Eq. 5 , then
+EZ k zk zG/g170/g172/g186/g188
+/g11/g12
+/g11/g12
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176/g11/g12 /g11/g12/g32
+/g16/g102
+/g102
+/g179 /g14
+/g16
+/g42
+/g42/g42
+3
+1
+1
+2 2
+21 1
+/
+//
+exp
+/g69
+/g69/g69
+/g69 /g68zzd z
+zk zG z
+/g11/g12
+/g11/g12
+/g11/g12
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176/g11/g12 /g11/g12/g11/g32
+/g102
+/g179 /g14
+/g16
+0
+3
+1
+1
+2 2
+21 1
+/g42
+/g42/g42
+/
+//
+exp
+/g69
+/g69/g69
+/g69 /g68/g12/g12
+/g11/g12 /g11/g12
+/g11/g12
+/g173
+/g174/g176
+/g175/g176
+/g189
+/g190/g176
+/g191/g176/g11/g12 /g11/g12/g14/g16
+/g102
+/g179 /g14
+/g16
+dz
+k zk zG1
+0
+3
+1
+1
+2 2
+21 1
+/g42
+/g42/g42
+/
+//
+exp
+/g69
+/g69/g69
+/g69 /g16/g16
+/g32/g14
+/g11/g12/g68zd z
+EE12
+ 
+  (19)
+AB
+FIGURE 1
+Graph of probability density (A) and cumulative distribution function (B) of AGED.
+AB
+FIGURE 2
+Graph of survival function (B) and hazard function (A) of AGED.
+
+[PÁGINA PDF 6]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 06 frontiersin.org
+ 
+E zG zd z1
+0
+1
+23
+1
+2
+21 1/g32 /g11/g12
+/g11/g12
+/g167
+/g169
+/g168/g168
+/g183
+/g185
+/g184/g184 /g14/g11/g12
+/g16/g11/g12/g11/g12
+/g102
+/g179
+/g42
+/g42/g42
+/
+// exp/g69
+/g69/g69 /g68/g69
+  
+ 
+/g32 /g14/g11/g12/g170/g172 /g186/g188
+/g14/g11/g12 /g11/g12/g170
+/g172/g171 /g186
+/g188/g187
+21
+21 1
+1/g42
+/g42
+k EG W/
+/
+//g69
+/g69/g69 /g68 /g69
+ 
+(20)
+where Wz/g32/g69 and similarly,
+  
+E zz GzK k2
+0
+1
+2
+1 3
+1
+2
+21 1/g32/g16/g11/g12 /g11/g12
+/g11/g12
+/g167
+/g169
+/g168/g168
+/g183
+/g185
+/g184/g184 /g14/g11/g12
+/g16/g11/g12 /g16/g11
+/g102
+/g179
+/g42
+/g42/g42
+/
+// exp/g69
+/g69/g69 /g68/g69 /g12/g12dz
+ 
+/g32/g16/g11/g12 /g11/g12
+/g11/g12
+/g167
+/g169
+/g168/g168
+/g183
+/g185
+/g184/g184 /g14/g11/g12
+/g16/g11
+/g102
+/g16/g1791 3
+1
+2
+21 10
+11
+1
+2K kW
+w
+w
+/
+/
+/
+//
+exp
+/g69
+/g69/g69
+/g69
+/g69/g69
+/g42
+/g42/g42
+/g12/g12/g16/g11/g12GW dw/g68 /g691/
+ 
+/g32/g16/g11/g12
+/g14/g11/g12/g170/g172 /g186/g188
+/g14/g11/g12
+/g16/g11/g12/g170
+/g172/g171 /g186
+/g188/g1871 21
+21 1 1 1K k EG W/g42
+/g42
+/
+/
+//g69
+/g69/g69 /g68 /g69
+ 
+(21)
+and ′k th moment of Z  becomes:
+  
+E Z k EG WE GWk k/g170/g172/g186/g188/g32 /g14/g11/g12/g170/g172 /g186/g188
+/g14/g62/g64 /g11/g12 /g14/g16/g11/g12 /g16/g11/g12/g11 /g12/g170/g42
+/g42
+1
+11 1111/
+/
+///g69
+/g69/g69 /g68/g68/g69/g69
+/g172/g172/g171
+/g186
+/g188/g187/g94/g96
+FIGURE 3
+Graph of the density function of AGED with different values of parameters.
+FIGURE 4
+Graph of density functions of AGED for different values of parameters.
+
+[PÁGINA PDF 7]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 07 frontiersin.org
+ 
+/g32
+/g14/g11/g12/g170/g172 /g186/g188
+/g14/g62/g64
+/g14/g11/g12/g170/g172 /g186/g188
+/g14/g62/g64
+/g42
+/g42
+/g42
+/g42
+k if k even
+k EG W
+1
+11
+1
+11 2 1
+/
+/
+/
+/
+/
+/g69
+/g69/g69
+/g69
+/g69/g69 /g68 /g69
+/g11/g11/g12/g170
+/g172/g171 /g186
+/g188/g187/g16/g94/g96
+/g173
+/g174
+/g176
+/g176
+/g175
+/g176
+/g176 1 if k odd
+ 
+(22)
+Therefore, for a random variable X AGED~ /g80/g86/g69/g68,, ,/g11/g12 , the ′rt h 
+moment for a random variable X  can be defined as:
+ 
+EX r
+k
+k
+EG W
+rr
+k
+r k
+/g170/g172/g186/g188/g32 /g167
+/g169/g168
+/g183
+/g185/g184
+/g167
+/g169/g168
+/g183
+/g185/g184
+/g14/g11/g12/g170/g172 /g186/g188
+/g14/g62/g64/g32
+/g166/g80 /g86
+/g80
+/g69
+/g69/g69
+/g68
+0
+1
+1
+11
+/g42
+/g42
+/
+/
+////g69/g69 /g68/g11/g12/g170
+/g172/g171 /g186
+/g188/g187/g14/g16/g11/g12 /g16/g11/g12/g170
+/g172/g171 /g186
+/g188/g187/g94/g96 11 1k EG W
+ 
+(23)
+In particular, the first four moments of a random variableX are 
+defined as:
+  /g83 /g80/g861 /g32/g62/g64/g32/g14/g62/g64EX EZ
+  /g83 /g80/g80/g86/g862 22 222/g32/g170/g172/g186/g188/g32/g14 /g62/g64/g14 /g170/g172/g186/g188EX EZ EZ
+  /g83 /g80/g80/g86/g80 /g86/g863 33 22 23 333/g32/g170/g172/g186/g188/g32/g14 /g62/g64/g14 /g170/g172/g186/g188/g14 /g170/g172/g186/g188EX EZ EZ EZ
+  
+/g83/g80 /g80/g86 /g80/g86
+/g80/g86 /g86
+4 44 32 22
+33 44
+46
+4
+/g32/g170/g172/g186/g188/g32/g14 /g62/g64/g14 /g170/g172/g186/g188
+/g14 /g170/g172/g186/g188/g14 /g170/g172/g186/g188
+EX EZ EZ
+EZ EZ
+The skewness and kurtosis of the asymmetric generalized error 
+distribution are functions of /g80/g86/g69,, , and α . However, the actual 
+equations in terms of /g80/g86/g69,, , and α  are quite expansive. In compact 
+form, we can write the variance /g90/g11/g12, skewness /g743/g11/g12, and kurtosis /g744/g11/g12 
+of X  using the standardized moments of Z  and defined as:
+ 
+/g90/g86/g32 /g170/g172/g186/g188/g16 /g62/g64/g11/g12/g170
+/g172/g171
+/g186
+/g188/g187
+22 2EZ EZ
+ 
+/g74 /g86/g86
+/g86/g86
+3
+3
+2
+3
+2
+/g32 /g16/g11/g12/g170/g172 /g186/g188
+/g16/g11/g12/g170/g172 /g186/g188/g11/g12
+EZ EZ
+EZ EZ
+ 
+/g74 /g86/g86
+/g86/g86
+4
+4
+2 2/g32 /g16/g11/g12/g170/g172 /g186/g188
+/g16/g11/g12/g170/g172 /g186/g188/g11/g12
+EZ EZ
+EZ EZ
+We perform a brief comparison illustrating that the tails of the 
+AGED are heavier than those of the GED. Table  1 noted that the 
+AGED has much heavier tails than the GED, as Figure 1  depicts the 
+AGED for different values of parameters.
+Similarly, the degree of asymmetry and peakedness of the AGED 
+for different values of β  and α  are shown, and for small values of β, 
+the kurtosis coefficient increases in the AGED. The ranges of both 
+coefficients are smaller in GED. Thus, the AGED is more flexible for 
+modeling data with larger coefficients of asymmetry and  
+kurtosis.
+6 Estimation of the parameters
+In this section, we go over how to estimate the AGED parameters 
+using the maximum likelihood approach.
+6.1 Maximum likelihood estimation
+Let 12, ,, nXX X   be an independent and identically distributed 
+(i.i.d.) random variable and Xi having the density function 
+AGED /g80/g86/g69/g68,, ,/g11/g12  defined in Eq. 5 , then the likelihood function of 
+AGED is defined as (36):
+ 
+/g47n
+i
+n
+ifX/g84/g84/g11/g12/g32 /g11/g12
+/g32
+/g150
+1
+;
+ 
+(24)
+The maximum likelihood estimator is the value θ  that maximizes 
+the likelihood function (36). Rather than the likelihood function, the 
+log-likelihood function of AGED is given as:
+ 
+ni
+i
+n i
+i
+n ixn ln lng x lnG x/g84 /g80
+/g86 /g68 /g80
+/g86/g11/g12/g32 /g11/g12/g14 /g16/g167
+/g169/g168
+/g183
+/g185/g184/g14 /g16/g167
+/g169/g168
+/g183
+/g185/g184
+/g32/g32
+/g166/g1662
+11  
+(25)
+where ln./g11/g12 is the natural logarithm function, and /g84/g80/g86/g69/g68/g32/g11/g12,, , .
+By differentiating Eq. 25  with respect to the parameters /g80/g86/g69,, ,
+and α and equating them to 0, we obtain:
+ 
+/g119/g11/g12
+/g119/g32/g16 /g16/g167
+/g169/g168
+/g183
+/g185/g184/g16
+/g16/g167
+/g169/g168 /g183
+/g185/g184/g99
+/g32
+/g16
+/g32
+/g166/g166
+n
+i
+n i
+i
+n
+i
+x g x
+G x
+/g84
+/g80
+/g69
+/g86
+/g80
+/g86
+/g68
+/g86
+/g68 /g80
+/g86
+/g68
+/g69
+1
+1
+1
+1
+2 ii /g16/g167
+/g169/g168 /g183
+/g185/g184
+/g32/g80
+/g86
+0
+  
+(26)
+TABLE 1 The skewness /g743/g11/g12 and kurtosis coefficient /g744/g11/g12 of AGED for 
+selected values of parameters.
+β α γ3 γ4
+1 0.5 1.2979 3.2500
+1 1.3185 3.4955
+1.5 1.3849 3.6366
+2 1.4575 3.8407
+2 0.5 0.5543 1.7655
+1 0.6631 1.8953
+1.5 0.7419 2.0025
+2 0.8019 2.1033
+3 0.5 0.4309 1.6211
+1 0.5412 1.7291
+1.5 0.6097 1.8073
+2 0.6587 1.8692
+
+[PÁGINA PDF 8]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 08 frontiersin.org
+ 
+/g119/g11/g12
+/g119 /g32/g16/g16 /g16/g167
+/g169/g168
+/g183
+/g185/g184
+/g16/g167
+/g169/g168
+/g183
+/g185/g184
+/g16 /g16
+/g99
+/g32
+/g16
+/g32
+/g166
+/g166
+n
+i
+n ii
+i
+n i
+nx x
+x
+/g84
+/g86/g86 /g69 /g80
+/g86
+/g80
+/g86
+/g68
+/g691
+2 1
+2
+1
+1
+/g80/g80
+/g86
+/g68 /g80
+/g86
+/g68 /g80
+/g86
+2 0/g167
+/g169/g168
+/g183
+/g185/g184
+/g16/g167
+/g169/g168 /g183
+/g185/g184
+/g16/g167
+/g169/g168 /g183
+/g185/g184
+/g32
+g x
+G x
+i
+i
+ 
+(27)
+ 
+/g119/g11/g12
+/g119/g32/g16/g11/g12/g14 /g14/g11/g12
+/g14/g11/g12
+/g167
+/g169
+/g168/g168
+/g183
+/g185
+/g184/g184
+/g14 /g16
+/g99/g99
+/g32
+/g166
+n
+i
+n i
+n n
+x
+/g84
+/g69 /g69
+/g69
+/g69
+/g80
+ln /
+/
+21 1
+11
+1
+2
+2
+1
+/g42
+/g42
+/g86/g86
+/g80
+/g86
+/g69/g167
+/g169/g168
+/g183
+/g185/g184
+/g16/g167
+/g169/g168
+/g183
+/g185/g184/g32ln xi 0
+ 
+(28)
+ 
+/g119/g11/g12
+/g119 /g32 /g16/g167
+/g169/g168
+/g183
+/g185/g184
+/g16/g167
+/g169/g168 /g183
+/g185/g184
+/g16/g167
+/g169/g168 /g183
+/g185/g184
+/g32
+/g99
+/g32
+/g166
+n
+i
+n i
+i
+i
+x g x
+G x
+/g84
+/g68
+/g80
+/g86
+/g68 /g80
+/g86
+/g68 /g80
+/g86
+1
+0
+ 
+(29)
+Solving Eqs 26–29 , we get MLEs of /g80/g86/g69,, , and α . However, there 
+is no explicit form for the solutions to these equations; thus, we obtain 
+the MLEs numerically using the fitdistrplus package in R (37).
+Maximum likelihood estimators are consistent in the sense that p
+nθθ →  as n /g111/g102 and asymptotically normally distributed: such that 
+nN n
+d
+/g84/g84
+
+/g16/g111/g11/g124 0,/g54 , where Σ is the variance–covariance matrix 
+and can be obtained by inverting the Fisher information matrix I (38).
+W e now take the second partial derivatives of Eqs 26–29 , and the 
+observed hessian matrix of the AGED distribution can be obtained 
+and is given by:
+ 
+/g43
+
+/g32
+/g119
+/g119
+/g119
+/g119/g119
+/g119
+/g119/g119
+/g119
+/g119/g119
+/g119
+/g119/g119
+/g119
+/g119
+/g119
+2
+2
+22 2
+22
+2
+2
+ 
+ 
+nn nn
+nn n
+/g80 /g80/g86/g80/g69/g80/g68
+/g80/g86/g86
+,, ,
+,, /g119/g119/g119
+/g119
+/g119/g119
+/g119
+/g119/g119
+/g119
+/g119/g119
+/g119
+/g119
+/g119
+/g119/g119
+/g119
+/g119/g119
+/g119
+/g86/g69/g86/g68
+/g80/g69/g86/g69/g69 /g69/g68
+/g80/g68
+,
+,, ,
+,
+2
+22 2
+2
+2
+2
+
+ 
+
+n
+nn nn
+n 222 2
+2
+ nn n
+/g119/g119
+/g119
+/g119/g119
+/g119
+/g119
+/g167
+/g169
+/g168
+/g168
+/g168
+/g168
+/g168
+/g168
+/g168
+/g168
+/g168
+/g168
+/g168/g168
+/g183
+/g185
+/g184
+/g184
+/g184
+/g184
+/g184
+/g184
+/g184
+/g184
+/g184
+/g184
+/g184/g184/g86/g68/g69/g68/g68
+,,
+Based on the above, the observed Fisher information matrix 
+I = −Η , from which we can derive the estimated dispersion matrix as:
+ 
+11 12 13 14
+21 22 23 241
+31 32 33 34
+41 42 43 44
+,,,
+,,,
+,,,
+,,,
+I −
+ΣΣΣΣ
+
+ΣΣΣΣΣ= =
+ΣΣΣΣ
+ΣΣΣΣ
+
+ 
+
+  
+In addition, /g54/g54ij ji/g32 for ij/g122/g3212, ,3,4. The asymptotic normality 
+distribution of MLEs is guaranteed. More precisely, the random vector 
+of ,,,θ µσ βα= 
+
+    follows the multivariate normal 
+distribution 4 ,N θ Σ
+
+ .
+7 Simulations studies
+To establish the performance of an estimator, we  conduct a 
+simulation study. We choose parameter values that are consistent with 
+the graph depicted in Figure 1 . The effect of various shape parameter 
+values on the distribution is shown in Figure 1 .
+The simulations of the AGED are done based on the accept-reject 
+method. Three designs are presented and used to generate random 
+samples from AGED for a parameter considered. The designs for 
+parameters of the AGED considered are 01 2,, ,/g68/g11/g12 , 01 1,,, /g68/g11/g12, and 
+01 3,, ,/g68/g11 /g12 for designs 1, 2, and 3, respectively. We use three values of 
+the asymmetry parameter, /g68/g3205 12., ,,  to cover the cases where the 
+distribution is asymmetric. The realization plot, histogram, and 
+density plot are assessed.
+7.1 The acceptance-rejection method
+We use a very clever method known as the acceptance-rejection 
+method (39, 40). The acceptance-rejection (A-R) method is one of the 
+standard methods used for generating random samples from 
+distributions (41, 42). We generate a random sample of size hundred 
+thousand from the target density AGED, f x/g11/g12 defined in Eq. 5 , and 
+density, gx/g11/g12, which we choose to be the standard normal distribution.
+Numerically maximized, there exists a finite constant m, such that 
+mf xg x/g32 /g11/g12/g11/g12/g170/g172 /g186/g188sup/ , and record a maximum value as m. Then, 
+define hx fx mg x/g11/g12/g32 /g11/g12 /g11/g12/g170/g172 /g186/g188/ . The acceptance-rejection algorithm is:
+ 1.  Generate X  from the standard normal distribution, gx/g11/g12, 
+i.e., X N~0 1,/g11/g12.
+ 2.  Generate U  from uniform distribution U U~0 1,/g11/g12 and 
+independent of X .
+ 3.  If U hx/g100/g11/g12, accept X  as candidate samples; otherwise, 
+reject X , and go back to step (1).
+ 4. Repeat step (1) to (3), until X  is successfully generated.
+Figures  5 , 6 show the results of the A-R algorithm for the 
+parameter considered. The histograms associated with samples of size 
+hundred thousand generated from AGED and the fitted pdf of AGED 
+to the random samples are illustrated.
+The histogram and density of the AGED are plotted. All points 
+under the curve are an accepted random sample and have x −
+coordinated distributed AGED. The points above the curve are rejected.
+8 Parameter estimation using the MLE 
+method
+8.1 Applications—fitting to simulated data
+In this section, we study and evaluate the long-term performance 
+of the maximum likelihood estimators (MLEs) of AGED parameters 
+based on finite random samples. Several finite samples of sizes n = 100, 
+
+[PÁGINA PDF 9]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 09 frontiersin.org
+500, 1,000, and 100,000 are considered. Three different designs for 
+parameters /g80/g86/g69,, ,and α are considered. Thus, asymmetry and 
+kurtosis are constructed.
+For each sample size n/g11/g12 and the specified values of the parameters 
+defined in the simulation design, datasets are generated from the 
+AGED, as per Eq. 5 . From each dataset, the estimates of the parameters 
+/g80/g86/g69/g68,, ,/g11 /g12 are obtained by the maximum likelihood method. For 
+comparing the performance of the estimators, we use bias and mean 
+square error (MSE) (43).
+The average estimates of the parameters, bias, and MSE are 
+calculated using an optimization algorithm in R software. The 
+result verifies the consistency of MLEs. The consistency of MLE 
+can be  verified as bias, and the MSE of the estimators is 
+reasonable and diminished for increasing sample size, indicating 
+that estimated values of parameters tend to their true value 
+(Tables 2–4).
+8.2 Applications—fitting to real data
+In this section, we illustrate the modeling performance of the 
+asymmetric generalized error distribution (AGED) by modeling data 
+with asymmetry and excess kurtosis. Three practical datasets are used 
+to assess the performance of AGED compared to other distributions.
+8.2.1 Datasets
+Three practical datasets are considered. The first data are the cyber 
+attacks, which are measured as the average length time of cyber attacks 
+per week. It consists of an average time of attacks of 363 weeks and is 
+obtained from (44).
+The second dataset is heart failure data. This dataset comprises a 
+substantial number of individuals diagnosed with heart failure and its 
+associated factors, which consists of 304 patients following treatment 
+and was taken from ( 45). In this respect, we  model a number of 
+cholesterol levels in heart failure patients. Statistical measures and the 
+ML estimates of the AGED are obtained and compared with the 
+competing distributions.
+The third dataset is reported in ( 46), which includes 63 
+observations of the strengths of 1.5 cm of glass fiber, originally 
+obtained from workers at the National Physical Laboratory, 
+England, and used in the work ( 47). We have utilized these data 
+to present the modeling performance of the AGED compared to 
+other competing distributions. Table 5  reports the summary of 
+data, whereas the goodness of fit (GOF) statistics can be viewed 
+in Tables 6–8.
+Some descriptive statistics for the data, including skewness 
+and kurtosis coefficients, are displayed in Table 5 , where γ3 and 
+γ 4 denote skewness and kurtosis coefficients, respectively. In this 
+respect, we  highlight the peakedness and asymmetry of  
+the data.
+Second, different distributions are considered to model these 
+datasets. There are many distributions that have been proposed; 
+however, distributions having special cases for the suggested pdf 
+would be  used. The generalized error distribution, the Laplace 
+distribution, and the normal distribution are used to fit the data and 
+are compared with AGED.
+FIGURE 5
+Graphs of realized random samples of size 100,000 taken from AGED with the corresponding pdf (5): (A) design 1, (B) design 2, and (C) design 3.
+
+[PÁGINA PDF 10]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 10 frontiersin.org
+We examined the performance of the AGED. Using mostly the 
+prominent goodness-of-fit statistics, Kolmogorov–Smirnov statistics 
+(K-S), consistent Akaike’s information criteria (CAIC), Hannan–
+Quinn information criteria (HQIC), and Bayesian information 
+criterion (BIC) ( 48), we  compared the competing distribution 
+with AGED.
+When the estimates of parameters are computed, we examine via 
+GOF statistics which of the four pdfs is the best fit for the data. The 
+A
+B
+C
+A
+B
+C
+FIGURE 6
+Histograms (left) and density (right) of random samples of size 100,000 taken from AGED with corresponding pdf (5): for (A) design 1, (B) design 2, and 
+(C) design 3, respectively.
+TABLE 2 Bias and MSE of the maximum likelihood estimators of design 1.
+α About μ About σ About β About α
+MLE Bias MSE MLE Bias MSE MLE Bias MSE MLE Bias MSE
+0.5
+0.046 0.046 0.003 0.924 −0.075 0.007 1.982 −0.017 0.002 0.533 0.033 0.002
+0.068 0.068 0.054 0.762 −0.237 0.086 1.872 −0.127 0.065 0.728 0.228 0.092
+0.364 0.364 0.227 0.681 −0.318 0.228 1.589 −0.410 0.412 0.836 0.336 0.256
+0.764 0.764 0.814 0.269 −0.730 0.883 1.253 −0.904 2.472 1.067 0.567 0.806
+1
+0.017 0.016 0.005 1.136 0.136 0.003 1.927 −0.082 0.019 1.005 0.005 0.020
+0.057 0.057 0.038 1.242 0.242 0.021 1.702 −0.297 0.083 1.026 0.026 0.049
+0.289 0.089 0.341 1.291 0.291 0.482 1.698 −0.301 0.627 1.284 0.284 0.283
+0.693 0.693 1.012 1.488 0.488 0.884 1.429 −0.870 1.712 2.218 0.218 0.558
+2
+0.025 0.024 0.001 1.004 0.004 0.006 2.001 0.001 0.002 2.004 0.004 0.004
+0.062 0.062 0.082 1.040 0.040 0.135 2.068 0.068 0.061 2.016 0.016 0.031
+0.070 0.069 0.342 1.121 0.121 0.533 2.079 0.079 0.412 2.286 0.286 0.348
+0.284 0.284 0.928 1.464 0.464 0.892 2.489 0.489 0.684 3.402 1.402 2.500
+
+[PÁGINA PDF 11]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 11 frontiersin.org
+lower those values, the better the fit ( 48–50). The corresponding 
+maximum likelihood estimates and goodness-of-fit (GOF) statistics 
+are presented in Tables 6–8.
+It can be seen that the GOF statistic values of the AGED are lower 
+than those of competing distributions, indicating its superiority in 
+fitting all datasets compared to competing distributions. In light of 
+this, we can conclude that the AGED provides a better fit than a 
+competing distribution.
+Figures  7 –9 display the histogram of the three practical 
+datasets with the estimated pdf of the AGED along with the 
+competing distributions. The figures show that a closer fit to the 
+data was provided by the AGED for all datasets. In light of this, 
+TABLE 4 Bias and MSE of the maximum likelihood estimator of design 3.
+About μ About σ About β About α
+α MLE Bias MSE MLE Bias MSE MLE Bias MSE MLE Bias MSE
+0.5
+0.028 0.028 0.004 0.527 0.027 0.022 2.974 −0.025 0.006 0.502 0.002 0.034
+0.021 0.021 0.012 0.515 0.015 0.153 2.904 −0.095 0.018 0.527 0.027 0.093
+0.038 0.038 0.061 0.577 0.077 0.239 2.725 −0.274 0.087 1.003 0.503 0.379
+0.356 0.356 0.234 0.842 0.342 0.341 1.904 −1.095 1.305 1.713 1.213 1.694
+1
+0.018 0.018 0.012 1.023 0.023 0.004 3.001 0.004 0.004 1.006 0.006 0.001
+0.024 0.024 0.085 1.043 0.043 0.022 3.021 0.021 0.043 1.067 0.067 0.042
+0.178 0.178 0.118 1.284 0.284 0.076 3.325 0.325 0.123 1.064 0.064 0.233
+0.328 0.328 0.295 1.452 0.452 0.279 3.542 0.542 0.347 1.463 0.463 0.647
+2
+0.046 0.046 0.012 1.027 0.027 0.002 3.023 0.023 0.012 2.014 0.014 0.007
+0.051 0.051 0.035 1.084 0.084 0.019 3.042 0.042 0.018 2.039 0.039 0.023
+0.052 0.052 0.050 1.228 0.228 0.113 3.132 0.132 0.013 2.236 0.236 0.074
+0.392 0.392 0.281 1.409 0.409 0.222 3.204 0.204 0.146 3.471 0.471 0.450
+TABLE 3 Bias and MSE of the maximum likelihood estimator of design 2.
+About μ About σ About β About α
+α MLE Bias MSE MLE Bias MSE MLE Bias MSE MLE Bias MSE
+0.5
+0.035 0.035 0.003 0.937 −0.062 0.037 1.021 0.021 0.014 0.511 0.011 0.008
+0.099 0.099 0.010 0.928 −0.071 0.154 1.082 0.082 0.102 0.562 0.062 0.395
+0.272 0.272 0.092 0.601 −0.398 0.334 1.486 0.486 1.001 1.162 0.662 0.696
+0.331 0.331 0.288 0.576 −0.423 0.397 2.383 1.383 2.137 4.572 4.072 16.727
+1
+0.036 0.036 0.008 0.983 0.016 0.003 1.048 0.048 0.023 1.028 0.028 0.002
+0.039 0.039 0.039 0.874 0.125 0.014 1.218 0.218 0.018 1.092 0.092 0.046
+0.248 0.248 0.048 0.682 0.317 0.027 1.378 0.378 0.742 1.378 1.378 0.046
+0.402 0.402 1.135 0.371 0.628 0.574 2.288 1.288 2.244 2.076 1.076 1.305
+2
+0.018 0.018 0.010 0.857 −0.143 0.039 1.972 0.027 0.017 2.010 0.012 0.021
+0.112 0.112 0.039 0.728 −0.271 0.076 1.678 0.321 0.045 2.238 0.238 0.033
+0.238 0.238 0.076 0.338 −0.661 0.267 1.463 0.536 0.289 2.292 0.292 0.297
+0.761 0.761 1.001 0.215 −0.784 0.714 1.257 0.742 0.850 3.085 1.085 1.340
+TABLE 5 Summary statistics of datasets.
+Data Mean, X 1st Qu. Median, X 3rd Qu. 3γ 4γ
+1 5.3810 3.9850 5.1000 6.5450 0.7249 3.6930
+2 2.4630 2.1100 2.4000 2.7450 1.1377 7.4116
+3 1.5070 1.3750 1.5900 1.6850 −0.8,999 3.9,237
+
+[PÁGINA PDF 12]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 12 frontiersin.org
+we can draw the conclusion that the AGED is a better fit for all 
+datasets compared to competing distributions.
+For all datasets, Figures 7 –9 show that AGED fits better than the 
+competing distributions. In particular, the peakedness can be fitted. 
+The asymmetry illustrated in Table 5 has also been fitted, as unequally 
+TABLE 8 MLEs and GOF statistics results of the strengths of glass fibers 
+dataset.
+Parameters Laplace Normal GED AGED
+µ 1.4209 1.4449 1.6089 1.5451
+σ 0.6619 0.4142 0.4043 0.3712
+β – – 1.7276 1.6375
+α – – – 0.8572
+AIC 91.0946 48.1046 48.2540 40.4331
+CAIC 91.2946 48.3047 48.6608 41.1227
+BIC 95.3808 52.3909 54.6834 49.0056
+HQIC 92.7804 49.7904 50.7827 43.8047
+K-S 0.2569 0.2480 0.2096 0.1390
+P-value 0.1751 0.0008 0.0078 0.2569
+FIGURE 7
+Histogram and fitted probability density function of AGED, GED, 
+Normal, and Laplace distribution for cyber dataset.
+FIGURE 9
+Histogram and fitted probability density function of AGED, GED, 
+Normal, and Laplace distribution for strengths of glass fibers dataset.
+FIGURE 8
+Histogram and fitted probability density function of AGED, GED, 
+Normal, and Laplace distribution for heart failure dataset.
+TABLE 7 MLEs and GOF statistics results of the heart failure dataset.
+Parameters Laplace Normal GED AGED
+µ 2.4849 2.4504 2.4831 2.1207
+σ 0.4417 0.6613 0.5141 0.6998
+β – – 2.1768 1.8659
+α – – – 0.7784
+AIC 471.7472 495.9515 475.7462 385.9587
+CAIC 471.7872 496.0317 475.8264 386.093
+BIC 479.1747 503.339 486.8874 400.8137
+HQIC 474.7187 498.883 480.2034 391.9017
+K-S 0.0952 0.1070 0.0715 0.5996
+P-value 0.0256 0.0424 0.0173 0.6723
+TABLE 6 MLEs and GOF statistics results of the cyber dataset.
+Parameters Laplace Normal GED AGED
+µ 5.1688 5.4654 5.4975 5.3477
+σ 1.6202 1.0240 2.5607 1.8784
+β – – 2.1686 1.9225
+α – – – 1.6067
+AIC 1554.052 1535.163 1579.988 1510.969
+CAIC 1554.085 1535.196 1580.055 1511.081
+BIC 1561.841 1542.952 1591.671 1526.547
+HQIC 1557.148 1538.259 1584.632 1517.161
+KS 0.0635 0.0701 0.10003 0.3012
+P-value 0.1067 0.0562 0.0014 0.8959
+
+[PÁGINA PDF 13]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 13 frontiersin.org
+distributed histograms around the location in the figures can show 
+that there is an asymmetry in the datasets.
+9 Conclusion
+The main finding of this study is the derivation of a new probability 
+distribution that reveals interesting properties, especially with various 
+asymmetry and kurtosis behaviors; we call it the asymmetric generalized 
+error distribution (AGED). AGED is a new contribution to the field of 
+statistical theory and provides a more flexible pdf, cdf, and hazard 
+function than the base distribution. The mathematical and statistical 
+features of the distribution are derived and discussed. To estimate the 
+distribution parameters, maximum likelihood estimators are derived. A 
+simulation study is done using the acceptance-rejection algorithm. In the 
+applications, the datasets have high kurtosis and skewness. The criteria 
+indicate that the AGED provides better fits to the datasets. This implies 
+that the new distribution is a good alternative for modeling data with 
+asymmetric and excess kurtosis behavior. We expect that the distribution 
+can be applied to many more real datasets, and the findings of the study 
+can be used as the basis for future research in the field.
+Data availability statement
+The raw data supporting the conclusions of this article will 
+be made available by the authors, without undue reservation.
+Author contributions
+TA: Conceptualization, Investigation, Software, Data curation, 
+Formal analysis, Methodology, Visualization, Writing – original draft, 
+Writing – review & editing. AG: Conceptualization, Software, Data 
+curation, Formal analysis, Methodology, Visualization, Writing – 
+original draft, Writing – review & editing.
+Funding
+The author(s) declare that no financial support was received for 
+the research, authorship, and/or publication of this article.
+Acknowledgments
+We thank Kotebe University of Education for providing necessary 
+facilities. The authors also gratefully acknowledge the Editor and 
+referees for their insightful comments and constructive suggestions 
+that led to a marked improvement of the article.
+Conflict of interest
+The authors declare that the research was conducted in the 
+absence of any commercial or financial relationships that could 
+be construed as a potential conflict of interest.
+Publisher’s note
+All claims expressed in this article are solely those of the authors 
+and do not necessarily represent those of their affiliated organizations, 
+or those of the publisher, the editors and the reviewers. Any product 
+that may be evaluated in this article, or claim that may be made by its 
+manufacturer, is not guaranteed or endorsed by the publisher.
+References
+ 1. Cahoy DO (2015). Some skew-symmetric distributions which include the 
+bimodal ones. Commun Stat Theory Methods  44:554–63. doi: 10.1080/03610926.  
+2012.746986
+ 2. Arellano-Valle RB, Gómez HW , Quintana FA (2005). Statistical inference for a 
+general class of asymmetric distributions. J Stat Plan Infer 128:427–43. doi: 10.1016/j.
+jspi.2003.11.014
+ 3. Fernández C, Steel MF (1998). On Bayesian modelling of fat tails and skewness. J 
+Am Stat Assoc 93:359–71. doi: 10.1080/01621459.1998.10474117
+ 4. Abdulah E, Elsalloukh H (2013). Analyzing skewed data with the epsilon skew 
+gamma distribution. J Stat Appl Probab 2:195. doi: 10.12785/jsap/020302
+ 5. Theodossiou P (2015). Skewed generalized error distribution of financial assets and 
+option pricing. Multinatl Financ J 19:223–66. doi: 10.17578/19-4-1
+ 6. Fagiolo G, Napoletano M, Roventini A (2008). Are output growth-rate distributions 
+fat-tailed? Some evidence from OECD countries. J Appl Econ 23:639–69. doi: 10.1002/
+jae.1003
+ 7. Hampel FR, Ronchetti EM, Rousseeuw PJ, Stahel W A. (2011). Robust statistics: The 
+approach based on influence functions. New Y ork, USA: John Wiley & Sons.
+ 8. Arellano-Valle RB, Genton MG (2005). On fundamental skew distributions. J 
+Multivar Anal 96:93–116. doi: 10.1016/j.jmva.2004.10.002
+ 9. Weldensea M. (2019). Bayesian analysis of the epsilon skew exponential power 
+distribution. New Y ork, USA: University of Arkansas at Little Rock.
+ 10. Hutson AD (2019). An alternative skew exponential power distribution formulation. 
+Commun Stat Theory Methods 48:3005–24. doi: 10.1080/03610926.2018.1473600
+ 11. Jia P , Liao X, Peng Z (2015). Asymptotic expansions of the moments of extremes 
+from general error distribution. J Math Anal Appl  422:1131–45. doi: 10.1016/j.
+jmaa.2014.09.030
+ 12. Pewsey A (2000). Problems of inference for Azzalini's Skewnormal distribution. J 
+Appl Stat 27:859–70. doi: 10.1080/02664760050120542
+ 13. Azzalini A, Valle AD (1996). The multivariate skew-Normal distribution. 
+Biometrika 83:715–26. doi: 10.1093/biomet/83.4.715
+ 14. Mudholkar GS, Hutson AD (2000). The epsilon–skew–Normal distribution for 
+analyzing near-Normal data. J Stat Plan Infer  83:291–309. doi: 10.1016/
+S0378-3758(99)00096-8
+ 15. Olmos NM, Varela H, Gómez HW , Bolfarine H (2012). An extension of the half-
+Normal distribution. Stat Pap 53:875–86. doi: 10.1007/s00362-011-0391-4
+ 16. Azzalini A (1985). A class of distributions which includes the Normal ones. Scand 
+J Stat:171–8. doi: 10.6092/ISSN.1973-2201
+ 17. Azzalini A (1986). Further results on a class of distributions which includes the 
+Normal ones. Statistica 46:199–208. doi: 10.6092/issn.1973-2201/711
+ 18. Ohagan A, Leonard T (1976). Bayes estimation subject to uncertainty about 
+parameter constraints. Biometrika 63:201–3. doi: 10.1093/biomet/63.1.201
+ 19. Salinas HS, Arellano-Valle RB, Gómez HW (2007). The extended skew-exponential 
+power distribution and its derivation. Commun Stat Theory Methods 36:1673–89. doi: 
+10.1080/03610920601126118
+ 20. Diciccio TJ, Monti AC (2004). Inferential aspects of the skew exponential power 
+distribution. J Am Stat Assoc 99:439–50. doi: 10.1198/016214504000000359
+ 21. Evans M, Hastings N, Peacock B (2001). Statistical distributions. Meas Sci Technol 
+12:117–7. doi: 10.1088/0957-0233/12/1/702
+ 22. Subbotin MT (1923). On the law of frequency of error. Математический  
+Сборник 31:296–301.
+ 23. Tiao GC, Box GE (1973). Some comments on “Bayes” estimators. Am Stat   
+27:12–4.
+
+[PÁGINA PDF 14]
+Abebe and Goshu 10.3389/fams.2024.1398137
+Frontiers in Applied Mathematics and Statistics 14 frontiersin.org
+ 24. Bottazzi G, Secchi A (2011). A new class of asymmetric exponential power 
+densities with applications to economics and finance. Ind Corp Chang 20:991–1030. doi: 
+10.1093/icc/dtr036
+ 25. Giller G. L. (2005). A generalized error distribution. Giller Investments Research. 
+Available at: https://dx.doi.org/10.2139/ssrn.2265027.
+ 26. Davis C. (2015). The skewed generalized T distribution tree package vignette . 
+Chicago: R Foundation for Statistical Computing.
+ 27. Catherine F , Merran E, Nicholas H, Brian P . (2011). Statistical distributions. 
+Hoboken: John Wiley & Sons Inc (2011).
+ 28. Owen DB (1956). Tables for computing bivariate Normal probabilities. Ann Math 
+Stat 27:1075–90. doi: 10.1214/aoms/1177728074
+ 29. Y oung J, Minder CE (1974). Algorithm AS 76: an integral useful in calculating 
+non-central T and bivariate Normal probabilities. Appl Stat:455–7. doi: 10.2307/2347148
+ 30. Hill I (1978). A remark on algorithm AS 76: an integral useful in calculating non-
+central T and bivariate Normal probabilities. J R Stat Soc C Appl Stat  27:379–9. doi: 
+10.1111/j.1467-9876.1978.tb01084.x
+ 31. Boys RJ (1989). Algorithm AS R80: a remark on algorithm AS 76: an integral 
+useful in calculating noncentral T and bivariate Normal probabilities. J R Stat Soc C Appl 
+Stat 38:580–2. doi: 10.2307/2347894
+ 32. Lehmann EL. Elements of large-sample theory. (1999). New Y ork, USA: Springer.
+ 33. Altman DG. Practical statistics for medical research . (1990). New Y ork, USA: 
+CRC Press.
+ 34. Astorga JM, Reyes J, Santoro KI, Venegas O, Gómez HW (2020). A reliability 
+model based on the incomplete generalized Integro-exponential function. Mathematics 
+8:1537. doi: 10.3390/math8091537
+ 35. Fox J, Weisberg S, Adler D, Bates D, Baud-Bovy G, Ellison S, et al. (2012). Package 
+‘c a r ’.  Vienna: R Found. Statist. Comput. 16:333.
+ 36. Karr AF . Introduction to Probabiity. (1999). New Y ork, NY: Springer New Y ork.
+ 37. Team, RDC. (2010). R: a language and environment for statistical computing. R 
+Foundation for Statistical Computing.
+ 38. Arellano Valle R. B., Gómez Geraldo H., Salinas H. S. (2013). A note on the fisher 
+information matrix for the skew-generalized-Normal model. SORT-Statistics and 
+Operations Res. Trans. 37, 19–28.
+ 39. Lange K, Chambers J, Eddy W . (2010). Numerical analysis for statisticians, vol. 1 
+New Y ork: Springer.
+ 40. Nguyen N, Ökten G (2016). The acceptance-rejection method for low-discrepancy 
+sequences. Monte Carlo Methods Appl 22:133–48. doi: 10.1515/mcma-2016-0104
+ 41. Casella G, Berger RL. Statistical inference (Cengage Learning). Belmont, CA, USA. 
+47–218.
+ 42. Moskowitz B, Caflisch RE (1996). Smoothness and dimension reduction in quasi-
+Monte Carlo methods. Math Comput Model 23:37–54. doi: 10.1016/0895-7177(96) 
+00038-6
+ 43. Ahmed AA, Algamal ZY , Albalawi O (2024). Bias reduction of maximum 
+likelihood estimation in Exponentiated Teissier distribution. Front Appl Math Stat  
+10:1351651. doi: 10.3389/fams.2024.1351651
+ 44. Kaggle. (2023). Heart Failure Datasets. Available at: https://www.kaggle.com/
+Datasets/Vaibhavsuman/Heart-Failure-Dataset
+ 45. Gjika E. Fitting probability distribution in R. Dataset Cyber Data (2021). Available 
+at: https://rpubs.com/Eraldagjika/715261.
+ 46. Smith RL, Naylor J (1987). A comparison of maximum likelihood and Bayesian 
+estimators for the three-parameter Weibull distribution. J R Stat Soc C Appl Stat  
+36:358–69. doi: 10.2307/2347795
+ 47. Baharith LA, Aljuhani WH (2021). New method for generating new families of 
+distributions. Symmetry 13:726. doi: 10.3390/sym13040726
+ 48. Akaike H (1974). A new look at the statistical model identification. IEEE Trans 
+Autom Control 19:716–23. doi: 10.1109/TAC.1974.1100705
+ 49. Schwarz G (1978). Estimating the dimension of a model. Ann Stat. 6:461–4.
+ 50. Algamal ZY , Alobaidi NN, Hamad AA, Alanaz MM, Mustafa MY (2024). 
+Neutrosophic Beta-Lindley distribution: mathematical properties and modeling 
+bladder Cancer data. Int J Neutrosophic Sci  23:186–6. doi: 10.54216/IJNS.  
+230215

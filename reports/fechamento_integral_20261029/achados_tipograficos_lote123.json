@@ -1,0 +1,37 @@
+{
+  "sha256_docx": "3a6ac6ee012d5946cefcebaf5883818ff889b45b7de4ec7373a5446eabbbc5e6",
+  "escopo": "Complemento contextual ao lote112: trechos com destaque no corpo, nomes EasyFit/Shiny e Power Function, e termos candidatos nas células. Não equivale sozinho à conformidade integral do guia.",
+  "correcoes": [
+    {
+      "indice": 229,
+      "termo": "Power Function",
+      "atual": "Sem itálico no trecho inglês, embora a lista de siglas já o use.",
+      "proposta": "Aplicar itálico apenas à expressão."
+    },
+    {
+      "indice": 317,
+      "termo": "Power Function",
+      "atual": "Sem itálico no trecho inglês.",
+      "proposta": "Aplicar itálico apenas à expressão."
+    },
+    {
+      "indice": 229,
+      "termo": "EasyFit",
+      "atual": "Em itálico; demais menções usam redondo.",
+      "proposta": "Harmonizar nome do programa sem itálico."
+    },
+    {
+      "indice": 355,
+      "termo": "Shiny",
+      "atual": "Em itálico; demais menções usam redondo.",
+      "proposta": "Harmonizar nome do programa sem itálico."
+    }
+  ],
+  "decisoes_mantidas": [
+    "Ridge e Transformer como designações técnicas",
+    "Identificadores de funções/pacotes e variáveis preservados",
+    "Expressões inglesas de métricas corrigidas no lote114",
+    "Software e script sem destaque conforme lista Senado efetivamente consultada"
+  ],
+  "pendente": "Aplicar quatro ajustes e inspecionar renderização."
+}

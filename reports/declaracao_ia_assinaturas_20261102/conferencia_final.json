@@ -1,0 +1,48 @@
+{
+  "base": "v012",
+  "base_sha256": "37feaaa77a3257c9e0b2dbc414dfbbaef55db0a14f24e50d8532aa44d0a3a398",
+  "trabalho_sha256": "ff4f2978111152c4b1d2dea38b066f0b549b5fc34d13d49a674f559d0c59a47b",
+  "paginas": 81,
+  "paginas_identicas": 80,
+  "paginas_alteradas": [
+    81
+  ],
+  "partes_alteradas": [
+    "word/document.xml"
+  ],
+  "elementos_alterados": [
+    {
+      "indice": 575,
+      "antes": "Fase do TFC / ProcessoFerramenta UtilizadaFinalidade Específica e EscopoMétodo de Validação Humana RealizadoExtração bibliográficaScript próprio em Python; Gemini 2.5 Flash; temperatura 0Registro preliminar das respostas ao formulário de extração a partir dos PDFs, com trecho de apoio, localização e justificativa.O autor conferiu pessoalmente os artigos consultados.Revisão e leitura do textoClaude Opus 5.5 e Codex Sol 5.6Leitura assistida e sugestões de ajustes na linguagem e na organização de trechos da monografia.O autor confrontou o conteúdo com os artigos. O orientador apresentou correções no texto.Testes do projetoCodex Sol 5.6Assistência na preparação e execução de testes e na interpretação das saídas obtidas.O autor executou testes diretamente e também com apoio do Codex.Formatação e material de defesaCodex Sol 5.6Ajustes na apresentação do documento, verificações por scripts e elaboração de slides e roteiro.O autor avaliou as propostas e solicitou alterações; o orientador devolveu a monografia com correções.",
+      "depois": "Fase do TFC / ProcessoFerramenta UtilizadaFinalidade Específica e EscopoMétodo de Validação Humana RealizadoExtração bibliográficaScript próprio em Python; Gemini 2.5 Flash; temperatura 0Registro preliminar das respostas ao formulário de extração a partir dos PDFs, com trecho de apoio, localização e justificativa.O autor conferiu pessoalmente os artigos consultados.Revisão e leitura do textoClaude Opus 5.5 e Codex Sol 5.6Leitura assistida e sugestões de ajustes na linguagem e na organização de trechos da monografia.O autor confrontou o conteúdo com os artigos. O orientador apresentou correções no texto.Testes do projetoCodex Sol 5.6Assistência na preparação e execução de testes e na interpretação das saídas obtidas.O autor executou testes diretamente e também com apoio do Codex.Formatação da monografiaCodex Sol 5.6Ajustes de formatação da monografia e apoio a verificações documentais por scripts.O autor avaliou as propostas e solicitou alterações; o orientador devolveu a monografia com correções."
+    },
+    {
+      "indice": 576,
+      "antes": "Rio Verde/GO, ______ de ________________________ de 20____.",
+      "depois": "Rio Verde/GO, 2 de novembro de 2026."
+    },
+    {
+      "indice": 577,
+      "antes": "_____________________________________________",
+      "depois": "_____________________________________________"
+    },
+    {
+      "indice": 579,
+      "antes": "_____________________________________________",
+      "depois": "_____________________________________________"
+    }
+  ],
+  "tabelas_identicas": 14,
+  "celulas_declaracao_alteradas": [
+    [
+      "Formatação e material de defesa",
+      "Formatação da monografia"
+    ],
+    [
+      "Ajustes na apresentação do documento, verificações por scripts e elaboração de slides e roteiro.",
+      "Ajustes de formatação da monografia e apoio a verificações documentais por scripts."
+    ]
+  ],
+  "localizadores_preservados": 81,
+  "declaracao_sha256": "eca3852860f033703a823d668ee50687bcf31b5e58748b74d368c75a33690eec"
+}

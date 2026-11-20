@@ -1,0 +1,23 @@
+{
+  "skill_name": "tcc-writer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "No capítulo 2, seção de revisão de literatura (arquivo textual/2-revisao/1-revisao-literatura.tex), preciso adicionar um parágrafo introdutório que apresente o que será abordado na revisão. Não tenho PDFs ainda, escreva com base no contexto do TCC.",
+      "expected_output": "A skill deve: (1) ler o arquivo 1-revisao-literatura.tex, (2) apresentar via chat um preview do parágrafo em LaTeX e em português legível antes de editar, (3) aguardar autorização, (4) somente então editar. O texto deve estar em 3a pessoa, sem termos proibidos, sem traço como conector, com vocabulário técnico consistente.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Na introdução, arquivo textual/1-introducao/2-problema.tex, o texto está vago. Altere para deixar o problema de pesquisa mais preciso e fundamentado, deixando claro qual é a lacuna na literatura que este TCC aborda.",
+      "expected_output": "A skill deve: (1) ler 2-problema.tex, (2) identificar o que está vago, (3) apresentar preview com versão melhorada antes de editar, (4) pedir autorização, (5) editar. O texto final deve ser factual, sem adjetivos avaliativos, sem termos proibidos, e deve citar a lacuna de sistematização da literatura sobre ferramentas de IA para prototipação em processos ágeis.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "No arquivo textual/3-metodologia/1-classificacao-pesquisa.tex, escreva um parágrafo sobre a classificação da pesquisa quanto à natureza, abordagem, objetivos e procedimentos (RSL).",
+      "expected_output": "A skill deve: (1) ler 1-classificacao-pesquisa.tex, (2) escrever texto em LaTeX classificando a pesquisa conforme o contexto do TCC (RSL, Engenharia de Software, UniRV), (3) apresentar preview antes de editar, (4) aguardar autorização. O texto deve usar %% LACUNA: se não houver artigos/fontes disponíveis para sustentar alguma afirmação.",
+      "files": []
+    }
+  ]
+}

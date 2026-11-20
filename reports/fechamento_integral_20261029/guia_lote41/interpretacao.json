@@ -1,0 +1,68 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "4cf48044445c0760210b1206c185487b8406af3eaecb541de6db381cdbf735b0",
+  "guia": {
+    "arquivo": "C:/Users/User/Downloads/GUIA_Padronizacao_Monografia_FASOFT_UniRV (1).pdf",
+    "sha256": "cc109117539c87278a763d958ceb35ff20a6d452ba9d7ea2e4964d894c2c9e3f"
+  },
+  "auditoria_estrutural": "guia_lote41/auditoria_estrutural.json",
+  "testes_aprovados": 85,
+  "testes_falhos": [
+    "Imagens preservadas",
+    "Valores e textos das tabelas experimentais preservados",
+    "Identidade das 49 referências preservada; apenas referência de Gleick acrescentada"
+  ],
+  "interpretacao_falhas": [
+    {
+      "teste": "Imagens preservadas",
+      "evidencia": "Uma de seis mídias mudou: Figura 1, corrigida com a recodificação da matriz; dimensões e proporções passam no controle separado.",
+      "arquivos": [
+        "matriz_lote21/matriz_recodificada.json",
+        "proveniencia_170_celulas_lote31.json"
+      ]
+    },
+    {
+      "teste": "Valores e textos das tabelas experimentais preservados",
+      "evidencia": "Comparação por índice inclui o Quadro 3 de hiperparâmetros (tabela OOXML 5), cuja célula explicativa foi precisada. As demais tabelas OOXML 3–13 têm conteúdo idêntico à v005. As tabelas 1 e 2 também foram atualizadas para refletir a matriz e autorias."
+    },
+    {
+      "teste": "Identidade das 49 referências preservada; apenas referência de Gleick acrescentada",
+      "evidencia": "O teste foi concebido para comparar 49 referências anteriores mais Gleick; a v005 já tinha 50, inclusive Gleick. Continuam 50 entradas; seis tiveram metadados/autor corrigidos. A comparação antiga não serve como prova de perda de referência.",
+      "alteracoes_referencias": [
+        {
+          "posicao": 11,
+          "antes": "CHEN, C.; ZHANG, X.; KUO, E.; FU, R.; XIE, Q.; ZHANG, F. Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study. 2026. (Preprint arXiv:2512.06630v2). Submetido ao IEEE Transactions on Quantum Engineering.",
+          "depois": "CHEN, C.; ZHANG, X.; KUO, E.; FU, R.; XIE, Q.; ZHANG, F. Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study. 2026. (Preprint arXiv:2512.06630v2). Disponível em: https://doi.org/10.48550/arXiv.2512.06630."
+        },
+        {
+          "posicao": 18,
+          "antes": "DUTTILO, P. Modelling Financial Returns with Mixtures of Generalized Normal Distributions. 2023. Tese (Doutorado em Human Science — Economics and Statistics) — Università degli Studi “G. d’Annunzio” Chieti-Pescara, 2023. Tutor: Prof. Stefano Antonio Gattone; Coordenador: Prof. Marco Di Marzio.",
+          "depois": "DUTTILO, P. Modelling Financial Returns with Mixtures of Generalized Normal Distributions. 2024. Tese (Doutorado em Human Science — Economics and Statistics) — Università degli Studi “G. d’Annunzio” Chieti-Pescara, 2024. Tutor: Prof. Stefano Antonio Gattone; Coordenador: Prof. Marco Di Marzio."
+        },
+        {
+          "posicao": 19,
+          "antes": "DUTTILO, P.; GATTONE, S. A. Modelling Financial Returns with Finite Mixtures of GED. 51st Scientific Meeting of the Italian Statistical Society, p. 1364-1369, 2022. Università degli Studi “G. d’Annunzio” Chieti-Pescara.",
+          "depois": "DUTTILO, P.; GATTONE, S. A. Modelling Financial Returns with Finite Mixtures of GED. In: BALZANELLA, A.; BINI, M.; CAVICCHIA, C.; VERDE, R. (ed.). SIS 2022: 51st Scientific Meeting of the Italian Statistical Society: Book of the Short Papers. [S. l.]: Pearson, 2022. p. 1364-1369. ISBN 9788891932310."
+        },
+        {
+          "posicao": 39,
+          "antes": "SEDDIK, S; ROUTAIB, H.; ELHADDADI, A. Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System. International Journal of Computational Methods and Experimental Measurements, v. 11, n. 4, p. 193-203, 2023. DOI: 10.18280/ijcmem.110401.",
+          "depois": "SEDDIK, S.; ROUTAIB, H.; ELHADDADI, A. Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System. International Journal of Computational Methods and Experimental Measurements, v. 11, n. 4, p. 193-203, 2023. DOI: 10.18280/ijcmem.110401."
+        },
+        {
+          "posicao": 40,
+          "antes": "SHARMA, M.; SARTOR, E.; CAVAZZA, M.; PRENDINGER, H. Echo State Networks for Bitcoin Time Series Prediction. Neural Information Processing (ICONIP 2025). 2025. (Preprint arXiv:2508.05416).",
+          "depois": "SHARMA, M.; SARTOR, E.; CAVAZZA, M.; PRENDINGER, H. Echo State Networks for Bitcoin Time Series Prediction. arXiv, 2025. Preprint arXiv:2508.05416v1. DOI: 10.48550/arXiv.2508.05416."
+        },
+        {
+          "posicao": 46,
+          "antes": "VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, 2025. DOI: 10.21595/mme.2025.24861.",
+          "depois": "VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, n. 4, p. 204-229, 2025. DOI: 10.21595/mme.2025.24861."
+        }
+      ]
+    }
+  ],
+  "limites": "Os 85 controles aprovados verificam estruturas e padrões específicos, não 85 exigências independentes ou aprovação geral. Esta análise não encerra a revisão qualitativa do Guia, o confronto de citações ou a verificação de similaridade. Ficha e aprovação são etapas posteriores; impressão física não foi examinada.",
+  "acao": "Nenhuma edição necessária com base nesses três testes históricos; prosseguir revisão integral do Guia e das fontes."
+}

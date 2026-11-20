@@ -1,0 +1,296 @@
+[
+  {
+    "entrada": "\t\t1\tINTRODUÇÃO\t17",
+    "titulo": "INTRODUÇÃO",
+    "destino": "INTRODUÇÃO",
+    "bookmark": "ESNAUTO_Sumario_001",
+    "pagina": 17
+  },
+  {
+    "entrada": "\t\t2\tREVISÃO DA LITERATURA\t20",
+    "titulo": "REVISÃO DA LITERATURA",
+    "destino": "REVISÃO DA LITERATURA",
+    "bookmark": "ESNAUTO_Sumario_002",
+    "pagina": 20
+  },
+  {
+    "entrada": "\t\t2.1\tMERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS\t20",
+    "titulo": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+    "destino": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+    "bookmark": "ESNAUTO_Sumario_003",
+    "pagina": 20
+  },
+  {
+    "entrada": "\t\t2.2\tREDES NEURAIS RECORRENTES: LSTM E GRU\t21",
+    "titulo": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+    "destino": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+    "bookmark": "ESNAUTO_Sumario_004",
+    "pagina": 21
+  },
+  {
+    "entrada": "\t\t2.3\tREDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO\t23",
+    "titulo": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+    "destino": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+    "bookmark": "ESNAUTO_Sumario_005",
+    "pagina": 23
+  },
+  {
+    "entrada": "\t\t2.4\tOTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS\t25",
+    "titulo": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+    "destino": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+    "bookmark": "ESNAUTO_Sumario_006",
+    "pagina": 25
+  },
+  {
+    "entrada": "\t\t2.5\tDISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO\t27",
+    "titulo": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+    "destino": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+    "bookmark": "ESNAUTO_Sumario_007",
+    "pagina": 27
+  },
+  {
+    "entrada": "\t\t2.6\tPRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3\t29",
+    "titulo": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+    "destino": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+    "bookmark": "ESNAUTO_Sumario_008",
+    "pagina": 29
+  },
+  {
+    "entrada": "\t\t2.7\tTRABALHOS RELACIONADOS\t30",
+    "titulo": "TRABALHOS RELACIONADOS",
+    "destino": "TRABALHOS RELACIONADOS",
+    "bookmark": "ESNAUTO_Sumario_009",
+    "pagina": 30
+  },
+  {
+    "entrada": "\t\t2.8\tESTADO DA ARTE E LACUNAS IDENTIFICADAS\t32",
+    "titulo": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+    "destino": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+    "bookmark": "ESNAUTO_Sumario_010",
+    "pagina": 32
+  },
+  {
+    "entrada": "\t\t2.9\tSÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO\t33",
+    "titulo": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+    "destino": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+    "bookmark": "ESNAUTO_Sumario_011",
+    "pagina": 33
+  },
+  {
+    "entrada": "\t\t3\tMATERIAL E MÉTODOS\t41",
+    "titulo": "MATERIAL E MÉTODOS",
+    "destino": "MATERIAL E MÉTODOS",
+    "bookmark": "ESNAUTO_Sumario_012",
+    "pagina": 41
+  },
+  {
+    "entrada": "\t\t3.1\tCLASSIFICAÇÃO DA PESQUISA\t41",
+    "titulo": "CLASSIFICAÇÃO DA PESQUISA",
+    "destino": "CLASSIFICAÇÃO DA PESQUISA",
+    "bookmark": "ESNAUTO_Sumario_013",
+    "pagina": 41
+  },
+  {
+    "entrada": "\t\t3.2\tCONJUNTO DE DADOS E PRÉ-PROCESSAMENTO\t42",
+    "titulo": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+    "destino": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+    "bookmark": "ESNAUTO_Sumario_014",
+    "pagina": 42
+  },
+  {
+    "entrada": "\t\t3.3\tIMPLEMENTAÇÃO DAS ESNS EM R\t44",
+    "titulo": "IMPLEMENTAÇÃO DAS ESNS EM R",
+    "destino": "IMPLEMENTAÇÃO DAS ESNS EM R",
+    "bookmark": "ESNAUTO_Sumario_015",
+    "pagina": 44
+  },
+  {
+    "entrada": "\t\t3.4\tOTIMIZAÇÃO POR ALGORITMOS GENÉTICOS\t46",
+    "titulo": "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+    "destino": "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+    "bookmark": "ESNAUTO_Sumario_016",
+    "pagina": 46
+  },
+  {
+    "entrada": "\t\t3.5\tMODELOS DE COMPARAÇÃO: LSTM E GRU\t48",
+    "titulo": "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+    "destino": "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+    "bookmark": "ESNAUTO_Sumario_017",
+    "pagina": 48
+  },
+  {
+    "entrada": "\t\t3.6\tDESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO\t48",
+    "titulo": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+    "destino": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+    "bookmark": "ESNAUTO_Sumario_018",
+    "pagina": 48
+  },
+  {
+    "entrada": "\t\t3.7\tANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO\t49",
+    "titulo": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+    "destino": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+    "bookmark": "ESNAUTO_Sumario_019",
+    "pagina": 49
+  },
+  {
+    "entrada": "\t\t3.8\tREPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS\t50",
+    "titulo": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+    "destino": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+    "bookmark": "ESNAUTO_Sumario_020",
+    "pagina": 50
+  },
+  {
+    "entrada": "\t\t3.8.1\tAmbiente computacional\t51",
+    "titulo": "Ambiente computacional",
+    "destino": "Ambiente computacional",
+    "bookmark": "ESNAUTO_Sumario_021",
+    "pagina": 51
+  },
+  {
+    "entrada": "\t\t3.8.2\tEstrutura do repositório\t51",
+    "titulo": "Estrutura do repositório",
+    "destino": "Estrutura do repositório",
+    "bookmark": "ESNAUTO_Sumario_022",
+    "pagina": 51
+  },
+  {
+    "entrada": "\t\t3.8.3\tProcedimento de revisão bibliográfica\t51",
+    "titulo": "Procedimento de revisão bibliográfica",
+    "destino": "Procedimento de revisão bibliográfica",
+    "bookmark": "ESNAUTO_Sumario_023",
+    "pagina": 51
+  },
+  {
+    "entrada": "\t\t3.8.4\tProcedimento de reexecução dos experimentos\t53",
+    "titulo": "Procedimento de reexecução dos experimentos",
+    "destino": "Procedimento de reexecução dos experimentos",
+    "bookmark": "ESNAUTO_Sumario_024",
+    "pagina": 53
+  },
+  {
+    "entrada": "\t\t4\tRESULTADOS E DISCUSSÃO\t55",
+    "titulo": "RESULTADOS E DISCUSSÃO",
+    "destino": "RESULTADOS E DISCUSSÃO",
+    "bookmark": "ESNAUTO_Sumario_025",
+    "pagina": 55
+  },
+  {
+    "entrada": "\t\t4.1\tVISÃO GERAL DOS EXPERIMENTOS\t55",
+    "titulo": "VISÃO GERAL DOS EXPERIMENTOS",
+    "destino": "VISÃO GERAL DOS EXPERIMENTOS",
+    "bookmark": "ESNAUTO_Sumario_026",
+    "pagina": 55
+  },
+  {
+    "entrada": "\t\t4.2\tDESEMPENHO PREDITIVO GLOBAL\t56",
+    "titulo": "DESEMPENHO PREDITIVO GLOBAL",
+    "destino": "DESEMPENHO PREDITIVO GLOBAL",
+    "bookmark": "ESNAUTO_Sumario_027",
+    "pagina": 56
+  },
+  {
+    "entrada": "\t\t4.3\tEFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS\t59",
+    "titulo": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+    "destino": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+    "bookmark": "ESNAUTO_Sumario_028",
+    "pagina": 59
+  },
+  {
+    "entrada": "\t\t4.4\tDISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO\t60",
+    "titulo": "DISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO",
+    "destino": "DISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO",
+    "bookmark": "ESNAUTO_Sumario_029",
+    "pagina": 60
+  },
+  {
+    "entrada": "\t\t4.5\tCARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE\t60",
+    "titulo": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+    "destino": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+    "bookmark": "ESNAUTO_Sumario_030",
+    "pagina": 60
+  },
+  {
+    "entrada": "\t\t4.6\tCUSTO COMPUTACIONAL\t61",
+    "titulo": "CUSTO COMPUTACIONAL",
+    "destino": "CUSTO COMPUTACIONAL",
+    "bookmark": "ESNAUTO_Sumario_031",
+    "pagina": 61
+  },
+  {
+    "entrada": "\t\t4.7\tAPLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO\t62",
+    "titulo": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+    "destino": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+    "bookmark": "ESNAUTO_Sumario_032",
+    "pagina": 62
+  },
+  {
+    "entrada": "\t\t4.8\tANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO\t63",
+    "titulo": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+    "destino": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+    "bookmark": "ESNAUTO_Sumario_033",
+    "pagina": 63
+  },
+  {
+    "entrada": "\t\t4.9\tAVALIAÇÃO DAS HIPÓTESES\t64",
+    "titulo": "AVALIAÇÃO DAS HIPÓTESES",
+    "destino": "AVALIAÇÃO DAS HIPÓTESES",
+    "bookmark": "ESNAUTO_Sumario_034",
+    "pagina": 64
+  },
+  {
+    "entrada": "\t\t4.10\tCONTRIBUIÇÕES DO ESNAUTO\t66",
+    "titulo": "CONTRIBUIÇÕES DO ESNAUTO",
+    "destino": "CONTRIBUIÇÕES DO ESNAUTO",
+    "bookmark": "ESNAUTO_Sumario_035",
+    "pagina": 66
+  },
+  {
+    "entrada": "\t\t5\tDISCUSSÃO\t68",
+    "titulo": "DISCUSSÃO",
+    "destino": "DISCUSSÃO",
+    "bookmark": "ESNAUTO_Sumario_036",
+    "pagina": 68
+  },
+  {
+    "entrada": "\t\t5.1\tVALIDADE INTERNA E ESTATÍSTICA\t68",
+    "titulo": "VALIDADE INTERNA E ESTATÍSTICA",
+    "destino": "VALIDADE INTERNA E ESTATÍSTICA",
+    "bookmark": "ESNAUTO_Sumario_037",
+    "pagina": 68
+  },
+  {
+    "entrada": "\t\t5.2\tVALIDADE EXTERNA\t69",
+    "titulo": "VALIDADE EXTERNA",
+    "destino": "VALIDADE EXTERNA",
+    "bookmark": "ESNAUTO_Sumario_038",
+    "pagina": 69
+  },
+  {
+    "entrada": "\t\t5.3\tTRABALHOS FUTUROS\t70",
+    "titulo": "TRABALHOS FUTUROS",
+    "destino": "TRABALHOS FUTUROS",
+    "bookmark": "ESNAUTO_Sumario_039",
+    "pagina": 70
+  },
+  {
+    "entrada": "\t\t6\tCONCLUSÃO\t71",
+    "titulo": "CONCLUSÃO",
+    "destino": "CONCLUSÃO",
+    "bookmark": "ESNAUTO_Sumario_040",
+    "pagina": 71
+  },
+  {
+    "entrada": "\tREFERÊNCIAS\t74",
+    "titulo": "REFERÊNCIAS",
+    "destino": "REFERÊNCIAS",
+    "bookmark": "ESNAUTO_Sumario_041",
+    "pagina": 74
+  },
+  {
+    "entrada": "\tANEXOS\t79",
+    "titulo": "ANEXOS",
+    "destino": "ANEXO",
+    "bookmark": "ESNAUTO_Sumario_042",
+    "pagina": 79
+  }
+]

@@ -1,0 +1,130 @@
+Alarm01.wav: 0 correspondências
+Alarm02.wav: 0 correspondências
+Alarm03.wav: 0 correspondências
+Alarm04.wav: 0 correspondências
+Alarm05.wav: 0 correspondências
+Alarm06.wav: 0 correspondências
+Alarm07.wav: 0 correspondências
+Alarm08.wav: 0 correspondências
+Alarm09.wav: 0 correspondências
+Alarm10.wav: 0 correspondências
+chimes.wav: 0 correspondências
+chord.wav: 0 correspondências
+ding.wav: 0 correspondências
+notify.wav: 0 correspondências
+recycle.wav: 0 correspondências
+Ring01.wav: 0 correspondências
+Ring02.wav: 0 correspondências
+Ring03.wav: 0 correspondências
+Ring04.wav: 0 correspondências
+Ring05.wav: 0 correspondências
+Ring06.wav: 0 correspondências
+Ring07.wav: 0 correspondências
+Ring08.wav: 0 correspondências
+Ring09.wav: 0 correspondências
+Ring10.wav: 0 correspondências
+ringout.wav: 0 correspondências
+Speech Disambiguation.wav: 0 correspondências
+Speech Misrecognition.wav: 0 correspondências
+Speech Off.wav: 0 correspondências
+Speech On.wav: 0 correspondências
+Speech Sleep.wav: 0 correspondências
+tada.wav: 0 correspondências
+Windows Background.wav: 5 correspondências
+Windows Balloon.wav: 0 correspondências
+Windows Battery Critical.wav: 0 correspondências
+Windows Battery Low.wav: 0 correspondências
+Windows Critical Stop.wav: 0 correspondências
+Windows Default.wav: 0 correspondências
+Windows Ding.wav: 0 correspondências
+Windows Error.wav: 0 correspondências
+Windows Exclamation.wav: 0 correspondências
+Windows Feed Discovered.wav: 0 correspondências
+Windows Foreground.wav: 0 correspondências
+Windows Hardware Fail.wav: 0 correspondências
+Windows Hardware Insert.wav: 0 correspondências
+Windows Hardware Remove.wav: 0 correspondências
+Windows Information Bar.wav: 0 correspondências
+Windows Logoff Sound.wav: 0 correspondências
+Windows Logon.wav: 0 correspondências
+Windows Menu Command.wav: 0 correspondências
+Windows Message Nudge.wav: 0 correspondências
+Windows Minimize.wav: 0 correspondências
+Windows Navigation Start.wav: 0 correspondências
+Windows Notify Calendar.wav: 0 correspondências
+Windows Notify Email.wav: 0 correspondências
+Windows Notify Messaging.wav: 0 correspondências
+Windows Notify System Generic.wav: 0 correspondências
+Windows Notify.wav: 0 correspondências
+Windows Pop-up Blocked.wav: 0 correspondências
+Windows Print complete.wav: 0 correspondências
+Windows Proximity Connection.wav: 0 correspondências
+Windows Proximity Notification.wav: 0 correspondências
+Windows Recycle.wav: 0 correspondências
+Windows Restore.wav: 0 correspondências
+Windows Ringin.wav: 0 correspondências
+Windows Ringout.wav: 0 correspondências
+Windows Shutdown.wav: 0 correspondências
+Windows Startup.wav: 0 correspondências
+Windows Unlock.wav: 0 correspondências
+Windows User Account Control.wav: 0 correspondências
+{
+  "referencias": 70,
+  "correspondencias": [
+    {
+      "som": "Windows Background.wav",
+      "inicio_s": 0.0415,
+      "correlacao_prefixo": 0.9992853698398166,
+      "subcorrelacoes": [
+        0.9996550311986373,
+        0.9995033906224504,
+        0.9986967173666425,
+        0.1505389589751751
+      ]
+    },
+    {
+      "som": "Windows Background.wav",
+      "inicio_s": 374.245375,
+      "correlacao_prefixo": 0.9975420136340208,
+      "subcorrelacoes": [
+        0.9988880613405018,
+        0.9983760837042943,
+        0.9953932868553109,
+        0.16582089738226793
+      ]
+    },
+    {
+      "som": "Windows Background.wav",
+      "inicio_s": 706.887875,
+      "correlacao_prefixo": 0.947669753685117,
+      "subcorrelacoes": [
+        0.9337916857379501,
+        0.9564726870954678,
+        0.9557688712985701,
+        0.8958089199356316
+      ]
+    },
+    {
+      "som": "Windows Background.wav",
+      "inicio_s": 711.997625,
+      "correlacao_prefixo": 0.9513501749209886,
+      "subcorrelacoes": [
+        0.95465434681821,
+        0.9717222711615834,
+        0.932921457297498,
+        0.6913713973447797
+      ]
+    },
+    {
+      "som": "Windows Background.wav",
+      "inicio_s": 1165.396375,
+      "correlacao_prefixo": 0.9976804680633968,
+      "subcorrelacoes": [
+        0.9988046027705725,
+        0.9985907146338469,
+        0.9956454271110139,
+        0.9959532856368416
+      ]
+    }
+  ]
+}

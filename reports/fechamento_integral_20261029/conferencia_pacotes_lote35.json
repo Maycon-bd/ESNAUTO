@@ -1,0 +1,33 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_antes": "ee6e179ab0ba157fb9f1348a1ac75c38813be767c3a27367481727f59641af50",
+  "sha256_rascunho_apos_edicao": "d1a85f665bf59acc2d43afedd0cbe2a9074de66f401a836363514e447146d0a9",
+  "local": "Material e Métodos, parágrafo sobre implementação",
+  "texto_antes": "A implementação partiu de códigos em R fornecidos pelo orientador, adaptados pelo autor ao contexto da pesquisa, com desenvolvimento da interface do ESNAUTO. Os fundamentos da ESN seguem Jaeger (2007). Foram empregados GA na busca genética; PerformanceAnalytics nas medidas descritivas; fGarch, PearsonDS e StockDistFit nas distribuições; fitdistrplus e MASS no ajuste; pracma na medição de tempo; e ggplot2 na visualização. O Quadro 6 distingue a base recebida e a contribuição de adaptação e interface.",
+  "texto_depois": "A implementação partiu de códigos em R fornecidos pelo orientador, adaptados pelo autor ao contexto da pesquisa, com desenvolvimento da interface do ESNAUTO. Os fundamentos da ESN seguem Jaeger (2007). O código atual usa GA na busca e geradores de distribuições com fGarch e PearsonDS. O script anterior carrega também PerformanceAnalytics, StockDistFit, fitdistrplus, MASS, pracma e ggplot2; os exemplos de ajuste encontrados estão comentados. No motor atual, proc.time mede o tempo e pracma fornece uma pseudoinversa alternativa. O Quadro 6 distingue a base recebida e a contribuição de adaptação e interface.",
+  "evidencias": [
+    {
+      "arquivo": "Scripts/acoes_petr4_esn.R",
+      "sha256": "3532af9056a46d313a895645a186991e1e30ce781b2a1cc5e9b0104af800dca5"
+    },
+    {
+      "arquivo": "app/utils/esn_core.R",
+      "sha256": "7327fde095ada68dff1febf68f4aa6be0e06d64721437c50c451511552b29410"
+    },
+    {
+      "arquivo": "app/utils/ga_engine.R",
+      "sha256": "d107402af08415a0e9cc4913676cc0e3791725736b22145e945ccb5b5d31ecff"
+    },
+    {
+      "arquivo": "app/utils/data_prep.R",
+      "sha256": "44879675114f72a8341334ad25d806b0c29c818266196bf25f7bcb75dad01857"
+    }
+  ],
+  "diagnostico": "Script anterior, linhas 26–34 e 90–96: bibliotecas carregadas; fitdist, fitdistr e ged_fit comentados. Usa tic/toc do pracma nas linhas 360–365. Motor atual: esn_core.R linhas 19–41 e 67 usa proc.time e pracma::pinv na alternativa em caso de erro; ga_engine.R usa GA e proc.time; data_prep.R documenta geradores fGarch/PearsonDS. Código atual não prova todos os detalhes das execuções históricas.",
+  "limite": "Correção da descrição do código preservado, sem executar experimentos ou alterar dados; não infere ausência de outras rotinas de ajuste.",
+  "estado": "validado_em_rascunho_nao_promovido",
+  "sha256_rascunho_apos_exportacao": "63ca3ec4031dafe5a78b6785f2a5d7581f5deacc461c9096c392dedc5963b62e",
+  "texto_final": "A implementação partiu de códigos em R fornecidos pelo orientador, adaptados pelo autor ao contexto da pesquisa, com desenvolvimento da interface do ESNAUTO. Os fundamentos da ESN seguem Jaeger (2007). O código atual usa GA, fGarch e PearsonDS; mede tempo com proc.time e usa pracma como pseudoinversa alternativa. O script anterior carrega outras bibliotecas e contém exemplos de ajuste comentados. O Quadro 6 distingue a base recebida e a contribuição de adaptação e interface.",
+  "verificacao_visual": "Páginas PDF 40, 41 e 43 inspecionadas; 73 idênticas ao lote29. Tabela 2 na página 42 idêntica e integral. 76 páginas; 45 verificações sem falhas."
+}

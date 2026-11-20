@@ -1,0 +1,42 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "copia": "reports\\monografia\\trabalho\\fechamento_integral_20261029.docx",
+  "sha256_atual_apos_exportacao_nativa": "338d6bd961e3957a0e99cc7d9f9f117579a8963714e5b57401bbf449d9cc7057",
+  "unidades_textuais_alteradas_acumuladas": 44,
+  "figuras_alteradas_acumuladas": 1,
+  "nota_contagem": "27unidades neste lote,5já alteradas antes;22novas unidades,além das22anteriores. Duas linhas automáticas de listas diferem adicionalmente da base,sem serem contadas como revisão de prosa.",
+  "paginas_pdf": 76,
+  "validacao_estrutural": "45verificações sem falhas; não é validação semântica integral.",
+  "validacao_nominal": "50referências,152chamadas reconhecidas,sem órfãs; padrões parciais,não verificam toda chamada qualificada por página.",
+  "paginas_inspecionadas": [
+    20,
+    22,
+    23,
+    25,
+    26,
+    28,
+    31,
+    32,
+    35,
+    44,
+    63
+  ],
+  "resultado_visual": "Sem cortes, sobreposições ou chamadas defeituosas introduzidas; quadro com autores expandidos cabe, códigos preservados.65páginas idênticas ao checkpoint7.",
+  "tabelas_e_resultados": "Somente7células de autoria do Quadro1alteradas; demais células de todos os quadros/tabelas idênticas ao checkpoint7.170códigos conciliados,77D/12S/40?/41não aplicáveis. Mídias e resultados preservados.",
+  "fontes_com_leitura_integral": 23,
+  "fontes_corpus34_lidas_integralmente": 19,
+  "revalidacoes_de_celulas_estruturadas": 90,
+  "evidencias_conteudo": [
+    "leituras_ecer_timbo_lote10.json",
+    "incorporacao_autoria_lote11.json",
+    "preservacao_lote11.json",
+    "comparacao_visual_lote11.json",
+    "verificacao_lote11.json",
+    "../correcao_parecer_integridade/cruzamento_fechamento_integral_lote11.json",
+    "fontes_suplementares/UniRV_2025_citacoes_origem.json",
+    "fontes_suplementares/Ecer_2020_metadados_Crossref.json"
+  ],
+  "limites": "Correção formal dirigida a oito obras com autoria conferida. Complemento UniRV consultado somente nas páginas195–197,visualmente195–196; não foi lido todo o manual de220páginas. O Guia FASOFT permanece a referência institucional fornecida. Restantes fontes,afirmações,chamadas,similaridade e Guia ainda pendentes.",
+  "estado": "rascunho_nao_promovido_meta_ativa"
+}

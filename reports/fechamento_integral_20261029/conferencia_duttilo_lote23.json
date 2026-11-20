@@ -1,0 +1,76 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "7bcd83fdf866295be877135b8c33c413f21f2e492f7002b5a9278b43e25c7344",
+  "fonte": {
+    "id": "D11",
+    "arquivo": "Artigos citados\\Duttilo P - Modelling financial returns with mixtures of generalized normal distributions.pdf",
+    "sha256": "1cff61a7865858c443b72d28b3f76d0377f24bc387f4b4b7dbcbe644e552d54c",
+    "paginas": 166,
+    "caracteres_extraidos": 993585,
+    "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+    "log_leitura": []
+  },
+  "alcance": "Texto principal PDF 1–113 e algoritmos PDF 115–120 lidos. Apêndice de tabelas PDF 121–156 examinado por títulos e amostra visual 121,129,139,149; valores individuais não foram auditados integralmente. PDF 157 inspecionado visualmente. Bibliografia PDF 158–161 consultada; 162–166 ainda não lida. Extração automática apresenta códigos numéricos; evidências centrais confirmadas visualmente PDF 17,48,85,88.",
+  "celulas_revalidadas": [
+    {
+      "id": "D11",
+      "arquivo_pdf": "Duttilo P - Modelling financial returns with mixtures of generalized normal distributions.pdf",
+      "sha256_pdf": "1cff61a7865858c443b72d28b3f76d0377f24bc387f4b4b7dbcbe644e552d54c",
+      "tipo": "tese_modelagem_distribuicoes",
+      "dimensao": "P1",
+      "codigo": "-",
+      "localizador": "PDF 85/88, seções 4.5.3–4.5.4",
+      "evidencia_e_limite": "Objeto são misturas GND/CMGND de retornos, não pesos ESN.",
+      "escopo_leitura": "Seções 4.5.3–4.5.4, PDF 85/88; texto auxiliar normalizado dos códigos numéricos. Não declara leitura integral da tese."
+    },
+    {
+      "id": "D11",
+      "arquivo_pdf": "Duttilo P - Modelling financial returns with mixtures of generalized normal distributions.pdf",
+      "sha256_pdf": "1cff61a7865858c443b72d28b3f76d0377f24bc387f4b4b7dbcbe644e552d54c",
+      "tipo": "tese_modelagem_distribuicoes",
+      "dimensao": "P2",
+      "codigo": "-",
+      "localizador": "PDF 85/88",
+      "evidencia_e_limite": "Estimação e seleção de misturas estatísticas por LRTS/BIC, não hiperparâmetros ESN.",
+      "escopo_leitura": "Seções 4.5.3–4.5.4, PDF 85/88; texto auxiliar normalizado dos códigos numéricos. Não declara leitura integral da tese."
+    },
+    {
+      "id": "D11",
+      "arquivo_pdf": "Duttilo P - Modelling financial returns with mixtures of generalized normal distributions.pdf",
+      "sha256_pdf": "1cff61a7865858c443b72d28b3f76d0377f24bc387f4b4b7dbcbe644e552d54c",
+      "tipo": "tese_modelagem_distribuicoes",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 85, seção 4.5.3; PDF 88, Data",
+      "evidencia_e_limite": "Converte fechamentos em retornos por diferença de log natural; a fonte distingue estatística JB de critérios AIC/BIC.",
+      "escopo_leitura": "Seções 4.5.3–4.5.4, PDF 85/88; texto auxiliar normalizado dos códigos numéricos. Não declara leitura integral da tese."
+    },
+    {
+      "id": "D11",
+      "arquivo_pdf": "Duttilo P - Modelling financial returns with mixtures of generalized normal distributions.pdf",
+      "sha256_pdf": "1cff61a7865858c443b72d28b3f76d0377f24bc387f4b4b7dbcbe644e552d54c",
+      "tipo": "tese_modelagem_distribuicoes",
+      "dimensao": "P4",
+      "codigo": "-",
+      "localizador": "PDF 85/88, modelos e medidas",
+      "evidencia_e_limite": "Compara famílias de distribuições e modelos de mistura, não arquiteturas de previsão elegíveis.",
+      "escopo_leitura": "Seções 4.5.3–4.5.4, PDF 85/88; texto auxiliar normalizado dos códigos numéricos. Não declara leitura integral da tese."
+    },
+    {
+      "id": "D11",
+      "arquivo_pdf": "Duttilo P - Modelling financial returns with mixtures of generalized normal distributions.pdf",
+      "sha256_pdf": "1cff61a7865858c443b72d28b3f76d0377f24bc387f4b4b7dbcbe644e552d54c",
+      "tipo": "tese_modelagem_distribuicoes",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 85 e 88",
+      "evidencia_e_limite": "S&P500 e STOXX50E, 2007–2023; também 52 ações que compuseram STOXX50E, 2010–2023. Não substituir a conferência DJIA 2022 por esta aplicação.",
+      "escopo_leitura": "Seções 4.5.3–4.5.4, PDF 85/88; texto auxiliar normalizado dos códigos numéricos. Não declara leitura integral da tese."
+    }
+  ],
+  "resumo_P1_P5": "P1 — e P2 —: objeto mistura de distribuições e modelos de Markov, não ESN. P3 D: diferença log natural dos preços, PDF 17 e 85. P4 —: comparações entre modelos estatísticos, sem LSTM/GRU/Transformer no texto principal e tabelas amostradas. P5 D: S&P500 e STOXX50E, PDF85; 52 ações, PDF48/88/129.",
+  "limite": "Apêndice B tabelas PDF 121–156 consultado por títulos e amostragem visual, sem leitura ou auditoria individual de todos os valores. Não representa leitura integral de todas as células da tese.",
+  "ano": "Ano da cópia de 2024 corrigido e inspecionado no lote22; não estabelece data da defesa.",
+  "bibliografia_consultada": "PDF 158–165 lida; PDF 166 agradecimentos. Datas e metadados codificados na extração não foram corrigidos individualmente."
+}

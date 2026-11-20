@@ -1,0 +1,36 @@
+{
+  "data": "2026-10-28",
+  "fonte_primaria": {
+    "url": "https://www.washingtonpost.com/archive/opinions/1987/10/18/making-sense-of-natures-mess/09f82e1d-5e92-4abf-81ee-9a60f6de1f89/",
+    "autor": "James Gleick",
+    "titulo": "Making sense of nature’s mess",
+    "data_exibida": "1987-10-17",
+    "localizador": "Primeiro parágrafo",
+    "trecho_proposto": "Where chaos begins, classical science stops."
+  },
+  "estado": "alternativa_adotada",
+  "word_alterado": true,
+  "sha256_word_verificado": "2d4c16a51c2675bbff7df6bc36b16adec21608f7cb1097166c07e97982925f73",
+  "classificacao_turno": "progresso: fonte primária verificada e proposta concreta registrada",
+  "turnos_consecutivos_com_condicao": 0,
+  "classificacao_turno_anterior": "progresso: proposta concreta e fonte primária registradas, sem alteração no Word",
+  "classificacao_turno_atual": "no progress: revalidação confirmou os mesmos arquivos e a mesma decisão pessoal pendente; não há processo em execução sendo aguardado",
+  "decisao_do_autor": "Sim à proposta de alternativa verificada; anotação 1, mensagem de 28/10/2026; interpretação comunicada ao autor.",
+  "antiga_atribuicao_validada": false,
+  "texto_adotado": "“Where chaos begins, classical science stops.”",
+  "citacao": "(Gleick, 1987, par. 1)",
+  "referencia": "GLEICK, James. Making sense of nature’s mess. The Washington Post, 17 out. 1987. Disponível em: https://www.washingtonpost.com/archive/opinions/1987/10/18/making-sense-of-natures-mess/09f82e1d-5e92-4abf-81ee-9a60f6de1f89/. Acesso em: 28 out. 2026.",
+  "sha256_apos_edicao": "de0b12652b085357808b225df3a26fb65beb94e220d324e0113a6969d067ab1a",
+  "auditoria_bloqueio_historica": {
+    "limiar_atingido": true,
+    "word_pdf_identicos_a_entrega_auditada": true,
+    "pendencia_confirmada_no_word": true,
+    "matriz_81_requisitos_reconsultada": true,
+    "demais_correcoes_independentes_identificadas": false,
+    "resposta_do_autor_recebida": false,
+    "proxima_acao": "Após o autor escolher substituir, retirar ou fornecer a fonte, aplicar a decisão e verificar novamente a entrega."
+  },
+  "sha256_word_final": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+  "sha256_pdf_final": "124860ca51a1a2c19c1ad6f2de52b4cc42d4f8c6a11f07d6fd74f0b1e2c02147",
+  "verificacao_final": "Concluída: 75 páginas, 86 verificações, referência e citação conferidas, texto restante e tabelas preservados após exportação do Word."
+}

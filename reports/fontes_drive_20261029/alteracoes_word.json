@@ -1,0 +1,26 @@
+{
+  "base": "v002",
+  "sha256_base": "d41a33359e19f974dfd48eb322cb2a3877ba3cbbac20c9db941a19985076a093",
+  "sha256_trabalho": "05ed3d11f04f8f4e7a4ae023955395ae5644608910ba1525223b025ec9eb6ee5",
+  "alteracoes": [
+    {
+      "paragrafo_v002": 359,
+      "antes": "A documentação anterior descreve uma busca voltada a revisões de ESNs e Computação de Reservatório em finanças, com preferência por textos completos em inglês ou português publicados entre 2021 e 2026. O conjunto recuperado também inclui estudos anteriores, fundamentos teóricos e aplicações de outros domínios. Portanto, esses critérios não caracterizam de modo uniforme os 34 documentos utilizados, e não se apresenta a coleção reconstruída como resultado integralmente reproduzível de uma revisão sistemática.",
+      "depois": "Os registros bibliográficos originais foram recuperados no acervo do autor. A planilha methodi_ordinatio.xlsx declara busca em Scopus e Springer Nature Link em 23 de março de 2026, com critérios de idioma, período e tema. Seu portfólio contém 59 candidatos: 7 marcados para inclusão, 4 para exclusão e 48 sem decisão. A string de busca está vazia e as contagens de duplicatas e do fluxo precisam de conciliação. Esses registros documentam uma etapa intermediária, sem demonstrar uma seleção sistemática concluída dos 34 documentos analisados.",
+      "motivo": "F18/R01: planilhas originais recuperadas no Drive e conferidas; preservadas suas limitações."
+    },
+    {
+      "paragrafo_v002": 360,
+      "antes": "O Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015) foi indicado na documentação anterior como referência para organizar a seleção. Contudo, não foram recuperados os valores individuais dos indicadores, as datas de coleta de citações ou a planilha de pontuação que permitiriam recalcular a ordenação. Assim, a análise atual não utiliza uma pontuação InOrdinatio como evidência verificada de seleção ou relevância dos 34 documentos. A reconstrução bibliográfica preserva essa limitação de procedência.",
+      "depois": "O Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015) orientou a organização registrada na planilha original, com alfa igual a 5 e ano de referência 2026. A aba de 59 candidatos contém fórmulas de pontuação e ordenação, mas todos os campos de fator de impacto estão zerados. Outra aba reúne indicadores manuais, com um título duplicado e sem cálculo final preenchido. Esses registros não sustentam uma ordenação validada dos 34 documentos, nem permitem considerar os indicadores e suas datas de coleta integralmente conferidos.",
+      "motivo": "F18/R01: planilhas originais recuperadas no Drive e conferidas; preservadas suas limitações."
+    },
+    {
+      "paragrafo_v002": 361,
+      "antes": "A documentação da pesquisa menciona as planilhas methodi_ordinatio.xlsx e extracao_completa.xlsx como registros intermediários de seleção e extração bibliográfica. Esses arquivos não foram localizados no acervo examinado, o que limita a auditoria retrospectiva do processo. A coleção reconstruída a partir dos documentos disponíveis apoia a síntese descritiva, mas não substitui os registros originais de busca, triagem e ordenação.",
+      "depois": "A planilha extracao_completa.xlsx preserva 34 registros de extração, com respostas às perguntas P1–P5, status e datas de processamento. Os nomes correspondem aos 34 PDFs locais. Essas respostas constituem registros intermediários de leitura, cuja fidelidade depende da conferência nos trabalhos originais. Por isso, a síntese desta monografia utiliza a matriz recodificada do Quadro 1, com localizadores, distinção entre evidência direta e secundária e marcação de informação insuficiente, preservando separadamente a extração histórica.",
+      "motivo": "F18/R01: planilhas originais recuperadas no Drive e conferidas; preservadas suas limitações."
+    }
+  ],
+  "verificacao": "Somente três parágrafos do corpo alterados; demais nós e partes OOXML preservados."
+}

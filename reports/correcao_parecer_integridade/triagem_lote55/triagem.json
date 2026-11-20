@@ -1,0 +1,341 @@
+{
+  "alvo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\fechamento_integral_20261029.docx",
+  "sha256_alvo": "61fac8da8ab082633bbaa113ed697fd32ccfd7d72c2142f003b18b5b10083e2a",
+  "sha256_script": "7da13ac2783a2438339a58a2646e24c3da4f57f5c83e47436717bbd7b03fd864",
+  "manifesto_original": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\manifesto.json",
+  "sha256_manifesto_original": "bfe90c260057e51d88d1a0a38a5f2681bb0f5651b4d99b8a0be97e8f868060e1",
+  "n_fontes": 39,
+  "n_paragrafos_examinados": 816,
+  "janela_palavras": 8,
+  "janelas_coincidentes": 2,
+  "n_blocos_fonte_localizador": 2,
+  "limites": "Corpo entre Introdução e Referências e tabelas nesse intervalo. Coincidência lexical normalizada, não percentual de plágio. Sem detecção semântica, tradução, OCR integral, internet ou fontes privadas. Não inclui o conteúdo de fontes eletrônicas adicionais ausentes no corpus39. A interpretação exige conferir contexto e atribuição. Índices são da cópia atual.",
+  "fontes_sem_texto_indexavel": [
+    "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Nelson - Conditional Heteroskedasticity in Asset Returns.pdf"
+  ],
+  "fontes": [
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Abebe - Asymmetric generalized error distribution with its properties and applications.pdf",
+      "sha256": "6c09320127ccbfa9c16dbbdcf716b021ab7e82e2c3ac86926db098920514f7d8",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Abebe - Asymmetric generalized error distribution with its properties and applications.txt",
+      "sha256_texto_extraido": "4d405608fca4d986b56d420be1569202e648c340ba2fd8fe45e0069985e11804",
+      "tokens_sem_marcadores": 9862
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Araújo - Comparing MAE and RMSE as Fitness.txt",
+      "sha256_texto_extraido": "e55cd257c4ae60c53769e6a0e47db5776899a95edf6a6be38f398948e6f1ec26",
+      "tokens_sem_marcadores": 6563
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.txt",
+      "sha256_texto_extraido": "77200bba179844547f94ccc4340564d58ee0c3883b55627a785d02d0b7d5bf44",
+      "tokens_sem_marcadores": 30146
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Cardoso -  A data set of stock prices of all companies in B3from 1995 to 2020.pdf",
+      "sha256": "6409dc381b5eb4889c05cd84177f3ff5487c20cc5a997f87ff3fd9774681e586",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Cardoso -  A data set of stock prices of all companies in B3from 1995 to 2020.txt",
+      "sha256_texto_extraido": "1941faed7e5ee4eb715dd3a6d17704690a938181be660bf7278e74ca355081c3",
+      "tokens_sem_marcadores": 9187
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.pdf",
+      "sha256": "703cec38e2b31cc6b2e3f38258db73ef814c238b13f70ffa0b58f23622476a80",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.txt",
+      "sha256_texto_extraido": "83762983f23b9d1a1ebd0f60cff86811d8cd6d696e1cfaa7cdb716f01784f759",
+      "tokens_sem_marcadores": 11626
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.pdf",
+      "sha256": "8bb4b1967da28dc961a42231543f70cdf22fc798527b1724c7f1e7cd5714bde6",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.txt",
+      "sha256_texto_extraido": "2a09b0f2c52efeb833bc67e26702329e332868144e991758b14e242e5e8f94f4",
+      "tokens_sem_marcadores": 19419
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.txt",
+      "sha256_texto_extraido": "fcfa69900df9c2438d22c86793a2cd8a6c24e5b6e11b36520757ff5914cca731",
+      "tokens_sem_marcadores": 8943
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.txt",
+      "sha256_texto_extraido": "21712f27caec5035a04c41010499a40191acfc2528d9c77e11d81ba0b874510a",
+      "tokens_sem_marcadores": 12835
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+      "sha256": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Dewick - On financial distributions modelling methods Application on regression models for time series.txt",
+      "sha256_texto_extraido": "d858e8e06a0f20b91afe59d02651d8debeef93c21275b824987b002362926456",
+      "tokens_sem_marcadores": 6654
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+      "sha256": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.txt",
+      "sha256_texto_extraido": "4c1410f82a3afdb953ecbeb4fa1fa227b88f3f57c182bf987520067327574a88",
+      "tokens_sem_marcadores": 2091
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Duttilo P - Modelling financial returns with mixtures of generalized normal distributions.pdf",
+      "sha256": "1cff61a7865858c443b72d28b3f76d0377f24bc387f4b4b7dbcbe644e552d54c",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Duttilo P - Modelling financial returns with mixtures of generalized normal distributions.txt",
+      "sha256_texto_extraido": "7aaf998fe148594337d42c350cb08246918ff793ef97e9a342aa22e8ed5f856a",
+      "tokens_sem_marcadores": 180672
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.txt",
+      "sha256_texto_extraido": "f487f6c18f7da6332357c542b630da8d3b9e81f236d6540394bc4070296f6c29",
+      "tokens_sem_marcadores": 12274
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Hariharan S - Multivariate time series prediction using clustered echo state network.txt",
+      "sha256_texto_extraido": "0925e9b54565b980eef43df1f29568fcbc4ee8f86a2efe4860a45a34b19bd173",
+      "tokens_sem_marcadores": 10048
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.txt",
+      "sha256_texto_extraido": "42b4f1390c2f2c420805af97c51354e2ff442ad0dfb0197b271b84163868ea02",
+      "tokens_sem_marcadores": 8804
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Jaeger - Echo state network.txt",
+      "sha256_texto_extraido": "4fa8ec47c1eab92aceb0f8032a7dacc0704114d712c14b3e05cc3df1ac7673cf",
+      "tokens_sem_marcadores": 4640
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.txt",
+      "sha256_texto_extraido": "be0169449710009b273525c757c1eeaf4933f60793f0c4204e57e7e72ea3844b",
+      "tokens_sem_marcadores": 7499
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+      "sha256": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.txt",
+      "sha256_texto_extraido": "6f72d351fecfad5252252ef759acad4b5782019fbf3a59c1ebdfecdf1068cddd",
+      "tokens_sem_marcadores": 9664
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+      "sha256": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.txt",
+      "sha256_texto_extraido": "fb50d80e04c60035b3ef9bcd8931d2259c48ec132245e16873d70dbc3725c6b5",
+      "tokens_sem_marcadores": 11771
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Millea - Explorations in Echo State Network.pdf",
+      "sha256": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Millea - Explorations in Echo State Network.txt",
+      "sha256_texto_extraido": "35f5711e1dd3c8b41b861d6ea5d1516d979dae2e0d2f1c14a81ee1ab71051c7b",
+      "tokens_sem_marcadores": 33764
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+      "sha256": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Nelson - Conditional Heteroskedasticity in Asset Returns.txt",
+      "sha256_texto_extraido": "a4af41627870317239e3623f13b7ac93efb7b9fff15fcedf8a63f570ebb535aa",
+      "tokens_sem_marcadores": 0
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+      "sha256": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.txt",
+      "sha256_texto_extraido": "fe5624f58711639956bc9b91bf51956f03492c46325e2d8d6e33457a9751201e",
+      "tokens_sem_marcadores": 1021
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.txt",
+      "sha256_texto_extraido": "fae3121d2aae8bb71c4e82c3f1d3f4141678bd1325826f331d4cf0dd2ffe209e",
+      "tokens_sem_marcadores": 9448
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Sharma - Echo State Networks for Bitcoin Time Series.txt",
+      "sha256_texto_extraido": "d56f07613bf4d3894f438b1faab273ceb8d4b90730b78732e04a1040bf47aeed",
+      "tokens_sem_marcadores": 10594
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Soltani - Echo State Network Optimization A Systematic Literature.txt",
+      "sha256_texto_extraido": "3659213b3339ccd342ecebac01f9a54bb79c44c598eb27cdc84dfce9f2584f4e",
+      "tokens_sem_marcadores": 9277
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Sudiatmika - Comparison of LSTM and GRU Models Performance.pdf",
+      "sha256": "610bedfb14458d480dfd1adb4e89a8ff39487fe2e9b5a7eb3411e87e519af1fc",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Sudiatmika - Comparison of LSTM and GRU Models Performance.txt",
+      "sha256_texto_extraido": "5fc50ecb9f19cebb7359206e784030e67cbbb7ade3a3c58b503626562c5c444b",
+      "tokens_sem_marcadores": 3859
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Sun G - Stock Price Forecasting - An Echo State Network Approach.txt",
+      "sha256_texto_extraido": "88fc9e144ab1d01476ce0acf7a8f8881a822ca5cb3d962b7f3fbfc91766b50c3",
+      "tokens_sem_marcadores": 4342
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.txt",
+      "sha256_texto_extraido": "8371027e4098f986c77c94d44183676e60eb2497753fd79f79817439d38b8dce",
+      "tokens_sem_marcadores": 8603
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.txt",
+      "sha256_texto_extraido": "25b20a430ff293ea7cad215590b5bd596280622767afd40572ebb208aa763322",
+      "tokens_sem_marcadores": 4954
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.txt",
+      "sha256_texto_extraido": "4754eeb989a5b14e67411c2fcb905b81e25ddc33ed73d6636dea8ee17715b75d",
+      "tokens_sem_marcadores": 10486
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+      "sha256": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Vishwas - Artificial_intelligence-based_stock_market_price_p.txt",
+      "sha256_texto_extraido": "8227352fb15340af369ec4d668aff2ade3ef1e959364aa6230fb91c1ca35279f",
+      "tokens_sem_marcadores": 13237
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.txt",
+      "sha256_texto_extraido": "da7b0f0ddef6901ee82a7181c4d9facde390f803da9857c5637fdb6e186ca2ef",
+      "tokens_sem_marcadores": 8418
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Wang W - Stock market index prediction based on reservoir computing models.pdf",
+      "sha256": "7485fa096c0855232ab45109b346462e14790d945c6f491dfbab2b26db63d761",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Wang W - Stock market index prediction based on reservoir computing models.txt",
+      "sha256_texto_extraido": "255f076c3411b27e9de1ca2c017cfeca01587a6d2dc4a239d3e4157dee27de46",
+      "tokens_sem_marcadores": 9766
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+      "sha256": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.txt",
+      "sha256_texto_extraido": "9348c999d4918b8555dba397a91729e36f541a0e8daca4df0b659012907ebbdf",
+      "tokens_sem_marcadores": 4318
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\Artigos citados\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.txt",
+      "sha256_texto_extraido": "816d86e41648ea01aab6c59b5df24102c5033040b1e91c686ede35339dc151ba",
+      "tokens_sem_marcadores": 6546
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "extracao": "Extração em memória, mesma ordem do comparador original.",
+      "sha256_texto_extraido": "f6e9a5efa7b8be0461d09897a3122897c2c69488d7217c12ab530b3370797826",
+      "tokens_sem_marcadores": 10729
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Downloads\\GUIA_Padronizacao_Monografia_FASOFT_UniRV (1).pdf",
+      "sha256": "cc109117539c87278a763d958ceb35ff20a6d452ba9d7ea2e4964d894c2c9e3f",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\guia.txt",
+      "sha256_texto_extraido": "d0913356b58429713798cdac234bfdb185e68f21e91c67d02a303a3610bff205",
+      "tokens_sem_marcadores": 12822
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\tese_Fabian_Correa_Cardoso.pdf",
+      "sha256": "0713862798eb01327e7534ff86e694d76bb8bf9bc2113ba6407bef04f14b2e26",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_citacoes_integridade_20261028\\Cardoso_tese.txt",
+      "sha256_texto_extraido": "2383d4d8fae1c52bbc85e89cae21e0743a4fecbbfbedce8523c1da66f6621459",
+      "tokens_sem_marcadores": 58349
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\bibliometria_reconstrucao\\referencias_graficas\\ENMC_texto.txt",
+      "sha256": "4441b3137e58dca6b2b0c41fdf216ef1855250cae77974061cc4e7cfd88acfed",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\bibliometria_reconstrucao\\referencias_graficas\\ENMC_texto.txt",
+      "sha256_texto_extraido": "3184b7eac0f6940c5b10f9f1a05a848e9284f8e63c206328d5464793a6fc5c4c",
+      "tokens_sem_marcadores": 4648
+    },
+    {
+      "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\bibliometria_reconstrucao\\referencias_graficas\\KBS_texto.txt",
+      "sha256": "7653aca9334c668f17969ee942530b98f3e829f1a1578ae2aedff7f56c0969b7",
+      "extracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\bibliometria_reconstrucao\\referencias_graficas\\KBS_texto.txt",
+      "sha256_texto_extraido": "df9f605ec491537511461195b0ce1f01611d5348cfc3810f749a2973ecf66122",
+      "tokens_sem_marcadores": 11574
+    }
+  ],
+  "blocos": [
+    {
+      "id": "B001",
+      "alvo": "P_atual0193",
+      "secao": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+      "texto_alvo": "As redes Long Short-Term Memory (LSTM) foram introduzidas por Hochreiter e Schmidhuber (1997) para facilitar a aprendizagem de dependências longas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinicialização, hoje conhecida como Gated Recurrent Unit (GRU), no contexto de uma arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador. A simplificação estrutural dessa unidade não constitui, por si, uma garantia de menor erro em séries financeiras.",
+      "fonte": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\bibliometria_reconstrucao\\referencias_graficas\\ENMC_texto.txt",
+      "localizador_fonte": "PÁGINA PDF 2",
+      "inicio_token": 56,
+      "fim_token_exclusivo": 64,
+      "trecho_normalizado": "de rede neural recorrente recurrent neural network rnn",
+      "estado": "requer_interpretacao_humana"
+    },
+    {
+      "id": "B002",
+      "alvo": "P_atual0227",
+      "secao": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+      "texto_alvo": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do DJIA entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade.",
+      "fonte": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\tese_Fabian_Correa_Cardoso.pdf",
+      "localizador_fonte": "PÁGINA PDF 38",
+      "inicio_token": 40,
+      "fim_token_exclusivo": 48,
+      "trecho_normalizado": "de informacao de akaike akaike information criterion aic",
+      "estado": "requer_interpretacao_humana"
+    }
+  ],
+  "janelas": [
+    {
+      "alvo": "P_atual0193",
+      "inicio_token": 56,
+      "trecho_normalizado": "de rede neural recorrente recurrent neural network rnn",
+      "fontes": [
+        {
+          "fonte": 37,
+          "localizador": "PÁGINA PDF 2"
+        }
+      ]
+    },
+    {
+      "alvo": "P_atual0227",
+      "inicio_token": 40,
+      "trecho_normalizado": "de informacao de akaike akaike information criterion aic",
+      "fontes": [
+        {
+          "fonte": 36,
+          "localizador": "PÁGINA PDF 38"
+        }
+      ]
+    }
+  ]
+}

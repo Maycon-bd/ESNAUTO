@@ -1,0 +1,72 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "61fac8da8ab082633bbaa113ed697fd32ccfd7d72c2142f003b18b5b10083e2a",
+  "registros": [
+    {
+      "referencia": "R17",
+      "ancora": "P_atual0344",
+      "texto_atual": "O teste de Diebold-Mariano foi empregado para avaliar formalmente a igualdade de acurácia preditiva entre a ESN e os baselines GRU e LSTM, conforme a hipótese nula de diferença média de perda igual a zero proposta por Diebold e Mariano (1995).",
+      "fonte": "https://www.ntuzov.com/Nik_Site/Niks_files/Research/papers/mut_funds/Diebold_Mariano_1995.pdf",
+      "localizador": "Artigo original, p. 254, formulação de perda",
+      "evidencia": "Igualdade de acurácia é expressa como média zero do diferencial de perda; a execução real depende do CSV e script próprios.",
+      "diagnostico": "fonte_primaria_consultada_em_trechos"
+    },
+    {
+      "referencia": "R17",
+      "ancora": "P_atual0443",
+      "texto_atual": "Fonte: Elaborado pelo autor (2026), com base na execução controlada e em Diebold e Mariano (1995).",
+      "fonte": "https://doi.org/10.1080/07350015.1995.10524599",
+      "localizador": "Artigo original e CSV da rodada controlada",
+      "evidencia": "O teste é de Diebold e Mariano; valores da tabela foram confrontados com o CSV da rodada em conferencia_numerica_dm_lote46.json.",
+      "diagnostico": "fonte_primaria_e_registro_da_execucao"
+    },
+    {
+      "referencia": "R21",
+      "ancora": "P_atual0326",
+      "texto_atual": "O motor de busca disponibilizado incorpora um mecanismo de mutação cataclísmica inspirado no CHC (Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation), de Eshelman (1991). Após estagnação, o mecanismo aumenta a mutação para ampliar a exploração. Essa finalidade de implementação não demonstra manutenção de diversidade: não foram produzidas medidas populacionais específicas nem uma ablação que isolasse o efeito do LHS e do operador. O mecanismo não corresponde ao CHC completo.",
+      "fonte": "https://patents.google.com/patent/US5390283A/en",
+      "localizador": "Patente de Eshelman e Schaffer, descrição de CHC, e referência ao capítulo 1991",
+      "evidencia": "Fonte primária posterior descreve CHC e mutação cataclísmica; o capítulo citado de 1991 não foi diretamente lido. Código atual aumenta a mutação em estagnação; o texto limita a relação a inspiração.",
+      "diagnostico": "parcial_capitulo_original_nao_lido"
+    },
+    {
+      "referencia": "R22",
+      "ancora": "P_atual0039",
+      "texto_atual": "(Gleick, 1987, par. 1)",
+      "fonte": "https://www.washingtonpost.com/archive/opinions/1987/10/18/making-sense-of-natures-mess/09f82e1d-5e92-4abf-81ee-9a60f6de1f89/",
+      "localizador": "Artigo assinado, primeiro parágrafo, data exibida 17/10/1987",
+      "evidencia": "A passagem da epígrafe é encontrada na publicação de Gleick; usa-se a data exibida na página e localizador de parágrafo.",
+      "diagnostico": "fonte_primaria_consultada"
+    },
+    {
+      "referencia": "R26",
+      "ancora": "P_atual0325",
+      "texto_atual": "Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1975). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979).",
+      "fonte": "https://doi.org/10.7551/MITPRESS/1090.001.0001",
+      "localizador": "Descrição do editor de reedição; identificação de 1975",
+      "evidencia": "Atribuição geral ao trabalho fundacional de Holland é compatível com a descrição editorial; a edição de 1975 não foi lida diretamente.",
+      "diagnostico": "parcial_edicao_citada_nao_lida"
+    },
+    {
+      "referencia": "R33",
+      "ancora": "P_atual0325",
+      "texto_atual": "Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1975). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979).",
+      "fonte": "https://www.stat.cmu.edu/technometrics/70-79/VOL-21-02/v2102239.pdf",
+      "localizador": "p. 239–240, introdução e seção 2",
+      "evidencia": "O artigo original nomeia e descreve amostragem por hipercubo latino; sua aplicação na implementação atual é aferida no código, não na fonte externa.",
+      "diagnostico": "fonte_primaria_consultada_em_trechos"
+    },
+    {
+      "referencia": "R36",
+      "ancora": "P_atual0360",
+      "texto_atual": "O Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015) foi considerado na organização inicial do levantamento. A planilha contém fórmulas com alfa igual a 5 e ano de referência 2026, mas seus indicadores e decisões não documentam uma aplicação concluída do método à coleção final. Assim, as pontuações não são usadas para justificar a inclusão ou estabelecer a relevância relativa dos 34 documentos. Os registros originais são preservados como documentação intermediária do processo.",
+      "fonte": "https://link.springer.com/article/10.1007/s11192-015-1744-x",
+      "localizador": "Resumo do editor da obra de 2015",
+      "evidencia": "Fonte nomeia Methodi Ordinatio e InOrdinatio; o texto da monografia ressalva que a planilha não documenta aplicação concluída ao portfólio final. O artigo integral não foi consultado.",
+      "diagnostico": "resumo_original_consultado"
+    }
+  ],
+  "limites": "As ocorrências sobre Eshelman e Holland não estão integralmente validadas no texto das edições citadas; a de Pagani foi examinada pelo resumo do editor. A descrição de uso em ESNAUTO depende dos artefatos e não se prova pela fonte externa. O índice conta duas detecções na mesma chamada de Gleick.",
+  "acao": "Nenhuma edição com base nas evidências examinadas; continuar buscas e auditoria."
+}

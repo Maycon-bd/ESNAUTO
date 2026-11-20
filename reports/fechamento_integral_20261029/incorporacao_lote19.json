@@ -1,0 +1,17 @@
+{
+  "sha256_antes": "22fad6c5802e350bcfdcf3776f5531086f3fe7220380d8f0a9ede83b90a8a47b",
+  "sha256_apos_edicao": "8a41f14b375b76c5df650e14e3cd20c0eb75adb4a607630240b5f94d58571618",
+  "alteracoes": [
+    {
+      "unidade": "U0188",
+      "antes": "Liu H. (2025) integrou indicadores técnicos, modelos temporais e análise de sentimentos com modelos de linguagem de grande escala (Large Language Models – LLMs), incluindo FinBERT e GPT-2, em estratégias associadas ao índice Standard and Poor’s (S&P) 500. O FinBERT atingiu 75,56% de acurácia na classificação de sentimento das notícias da Benzinga. Esse resultado pertence à tarefa de Processamento de Linguagem Natural (Natural Language Processing – NLP) e não representa acerto da direção do índice.",
+      "depois": "Liu, Lin e Rojas (2025) integraram indicadores técnicos, modelos temporais e análise de sentimentos com modelos de linguagem de grande escala (Large Language Models – LLMs), incluindo FinBERT e GPT-2, em estratégias associadas ao índice Standard and Poor’s (S&P) 500. O FinBERT atingiu 75,56% de acurácia na classificação de sentimento das notícias da Benzinga. O estudo também associou notícias a classes de retorno do índice; essa acurácia não comprova previsão fora da amostra da direção futura."
+    },
+    {
+      "unidade": "U0394",
+      "antes": "Liu H. (2025)",
+      "depois": "Liu, Lin e Rojas (2025)"
+    }
+  ],
+  "estado": "pendente_exportacao_e_inspecao"
+}

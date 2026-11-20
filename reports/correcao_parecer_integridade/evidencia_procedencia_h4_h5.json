@@ -1,0 +1,35 @@
+{
+  "modo": "Leitura de arquivos e conferência de identidade; sem execução de treino, GA, DM ou transformação dos preços.",
+  "observacoes": 5198,
+  "primeira_data": "2000-01-03",
+  "ultima_data": "2020-12-30",
+  "datas_unicas_ordenadas": true,
+  "max_diferenca_entre_arquivos": "1E-14",
+  "limite": "Não comprova eventos aplicados, autoria ou cadeia da transformação original. Código atual não prova a versão usada em todas as execuções históricas.",
+  "arquivos": [
+    {
+      "arquivo": "Scripts\\data\\PETR4_close com factor_2000-2020.txt",
+      "sha256": "21dd7de17b388ff7431428ae4af0ac2b4e1471ef16b5fc151f1ccd3e7f26ed78"
+    },
+    {
+      "arquivo": "Scripts\\data\\PETR4_close com factor_2000-2020_com data.csv",
+      "sha256": "0ce4b6d1f2382c318771322dba12994e7a011774e7de364731f398f195183916"
+    },
+    {
+      "arquivo": "app\\utils\\ga_engine.R",
+      "sha256": "d107402af08415a0e9cc4913676cc0e3791725736b22145e945ccb5b5d31ecff"
+    },
+    {
+      "arquivo": "Scripts\\diebold_mariano\\01_prepare_data.R",
+      "sha256": "60d7ec2f810a2a261c96dc739be92d11b4a2a316982ee70b8318eae5354cc9ab"
+    },
+    {
+      "arquivo": "docs\\09_onda_5_ajustes_empiricos_easyfit.md",
+      "sha256": "6216f5788b3e14eabf405693c2d8e9f68bc36c6839c9a7baa1f0450ad388e7e6"
+    },
+    {
+      "arquivo": "Scripts\\results\\historico_otimizacoes_ga.csv",
+      "sha256": "4b19ffa3e9ffd672b6d53ccfccc5d7a5d1a3526ec08097433b707504c3feac27"
+    }
+  ]
+}

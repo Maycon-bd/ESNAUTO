@@ -1,0 +1,74 @@
+{
+  "id": "v005",
+  "anterior": "v004",
+  "arquivo": "reports/monografia/versoes/v005/MayconGarciaSilva_monografia_v005.docx",
+  "sha256": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "registrada_em_utc": "2026-10-29T16:00:17.780931+00:00",
+  "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revisao_43_celulas_20261029.docx",
+  "responsavel": "Codex, reexame bibliográfico dirigido solicitado por Maycon Garcia Silva",
+  "resumo": "Reexamina43células em24PDFs: Liu B./P2 passa de?para D e Hassaan/P2 de?para S; atualiza Quadro1, Tabela1, Figura1 e um parágrafo. Registra41insuficiências mantidas com justificativa e páginas, sem tratá-las automaticamente como leitura pendente. Considera declaração de acervo completo da Onda5.",
+  "estado_editorial": "em_revisao",
+  "validacao_declarada": "76páginas,45verificações estruturais sem falha;170células do Quadro1 conciliadas;50referências e151chamadas reconhecidas sem órfãs.73páginas idênticas àv004 e3inspecionadas. Apenas1parágrafo,3células e1figura mudaram. Resultados experimentais preservados. Não certifica fidelidade universal ou ausência de plágio.",
+  "evidencias": [
+    {
+      "arquivo": "reports/revisao_43_celulas_20261029/relatorio.md",
+      "sha256": "a9047fd5acb0756bf8309ef6cf35092bd52e70c361ed77e9786ee133916ae2d4"
+    },
+    {
+      "arquivo": "reports/revisao_43_celulas_20261029/auditoria_43_celulas.json",
+      "sha256": "f7a14815e78227184ea7dfcb0b074f47f7f3d45ba52b01a305a9710adbbd868a"
+    },
+    {
+      "arquivo": "reports/revisao_43_celulas_20261029/manifesto_fontes.json",
+      "sha256": "7a2bbc7069740fd0da357070e7531b0e3d4e8108b57cb1dcb273f6d1f971e5e7"
+    },
+    {
+      "arquivo": "reports/revisao_43_celulas_20261029/matriz_recodificada.json",
+      "sha256": "622eec6eab8edf432a330230c7d4f50173ca901f6725615fc2a22963a0f77c33"
+    },
+    {
+      "arquivo": "reports/revisao_43_celulas_20261029/contagens_recodificadas.csv",
+      "sha256": "1141677b4c541ca615494b87148f1ac61325e7eace39187e18c38ca7b18008bc"
+    },
+    {
+      "arquivo": "reports/revisao_43_celulas_20261029/alteracoes_editoriais.json",
+      "sha256": "792a3ce372ac5afc1024aff8e41d7f5099e53eeeac559682f0bde7205448d1e7"
+    },
+    {
+      "arquivo": "reports/revisao_43_celulas_20261029/preservacao_conteudo.json",
+      "sha256": "02b1a582a9a1934a6e4cea5418a6c5d8915d4ace444bad1a01b67dcb526441c0"
+    },
+    {
+      "arquivo": "reports/revisao_43_celulas_20261029/verificacao_final.json",
+      "sha256": "bd404390ea43b5bdcd82587ca484241f2b28eb808f03ae966f5529bde1893d5b"
+    },
+    {
+      "arquivo": "reports/revisao_43_celulas_20261029/comparacao_visual.json",
+      "sha256": "e8c16b0a589d22cfc48b33eb13236c8c51c4d442cf96f47f5c62e5da96387702"
+    },
+    {
+      "arquivo": "reports/revisao_43_celulas_20261029/inspecao_visual.json",
+      "sha256": "e7319c07d35c2619a374ce049896e59c18112cd874b48b4d292167845dd74284"
+    },
+    {
+      "arquivo": "reports/revisao_43_celulas_20261029/entrega_revisao.json",
+      "sha256": "41c3ecb77d27771936ba2b8b95dc41d3cbd6881811aeb5176b43d90807b99380"
+    },
+    {
+      "arquivo": "reports/revisao_43_celulas_20261029/revisao.pdf",
+      "sha256": "b313f955e398cc60d7766764094e4beaf9c818848d5a615f1bde554a1f1000c6"
+    },
+    {
+      "arquivo": "reports/correcao_parecer_integridade/cruzamento_revisao_43_celulas_20261029.json",
+      "sha256": "87edf49e8b796e8fd8a4f45784e061dd2871d87247e58bf81257189e146bf8d3"
+    }
+  ],
+  "pendencias": [
+    "R08: resultados compilados da Onda5 encontrados nas15linhas locais. Autor informa que o acervo produzido está no projeto e foi executado aqui. A correspondência por execução com vetores/matrizes não foi estabelecida; não presumir arquivos adicionais nem pedir reenvio dos resultados já localizados.",
+    "Manter literatura com buscas complementares e registros históricos parciais, conforme declaração do autor; não reivindicar ranking Methodi integral ou fluxo sistemático reproduzível.",
+    "Fornecedor dos dados ajustados e códigos R confirmado: orientador. Autor confirmou adaptação e interface. Procedimento original do ajuste anterior ao recebimento não foi reconstruído; não atribuir sua execução ao autor.",
+    "Reexame das43células concluído no escopo documentado:2códigos corrigidos e41mantidos como informação insuficiente. Esses41não são automaticamente leituras pendentes ou erros; conservar limites e não inferir ausência universal.",
+    "Ficha catalográfica e formalidades de aprovação são etapas institucionais posteriores; ficha vazia autorizada pelo autor, sem inventar dados."
+  ],
+  "caminho_absoluto": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\versoes\\v005\\MayconGarciaSilva_monografia_v005.docx"
+}

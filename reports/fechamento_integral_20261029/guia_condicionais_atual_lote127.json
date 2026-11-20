@@ -1,0 +1,100 @@
+{
+  "sha256_docx": "31ec505d2f39784a17b6d076f5a0893cc8753f25cdab6bb1a4095eeef363268f",
+  "titulos_inspecionados": [
+    "INTRODUÇÃO",
+    "REVISÃO DA LITERATURA",
+    "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+    "REDES NEURAIS RECORRENTES: LSTM E GRU",
+    "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+    "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+    "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+    "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+    "TRABALHOS RELACIONADOS",
+    "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+    "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+    "MATERIAL E MÉTODOS",
+    "CLASSIFICAÇÃO DA PESQUISA",
+    "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+    "IMPLEMENTAÇÃO DAS ESNS EM R",
+    "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+    "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+    "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+    "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+    "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+    "Ambiente computacional",
+    "Estrutura do repositório",
+    "Procedimento de revisão bibliográfica",
+    "Procedimento de re-execução dos experimentos",
+    "RESULTADOS E DISCUSSÃO",
+    "VISÃO GERAL DOS EXPERIMENTOS",
+    "DESEMPENHO PREDITIVO GLOBAL",
+    "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+    "DISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO",
+    "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+    "CUSTO COMPUTACIONAL",
+    "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+    "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+    "AVALIAÇÃO DAS HIPÓTESES",
+    "CONTRIBUIÇÕES DO ESNAUTO",
+    "DISCUSSÃO",
+    "VALIDADE INTERNA E ESTATÍSTICA",
+    "VALIDADE EXTERNA",
+    "TRABALHOS FUTUROS",
+    "CONCLUSÃO",
+    "REFERÊNCIAS"
+  ],
+  "textos_notas": [],
+  "decisoes": [
+    {
+      "id": "G49",
+      "estado": "condição não acionada no documento atual",
+      "evidencia": "Seções opcionais de cronograma/orçamento não incluídas."
+    },
+    {
+      "id": "G66",
+      "estado": "condição não acionada no documento atual",
+      "evidencia": "Glossário opcional não incluído."
+    },
+    {
+      "id": "G67",
+      "estado": "condição não acionada no documento atual",
+      "evidencia": "Apêndices/anexos não incluídos."
+    },
+    {
+      "id": "G69",
+      "estado": "condição não acionada no documento atual",
+      "evidencia": "Partes de notas sem texto autoral. Esta decisão cobre notas, não toda forma de citação longa."
+    },
+    {
+      "id": "G79",
+      "estado": "evidência complementar de até três níveis; conciliar sumário",
+      "evidencia": "Títulos usam os três estilos hierárquicos registrados; índices visíveis no sumário e inspeção anterior confirmam até terceiro nível. Regex sobre texto sem numeração de campo não é prova isolada; confrontar níveis OOXML e sumário na consolidação."
+    },
+    {
+      "id": "G50",
+      "estado": "não acionado pelo desenho descrito",
+      "evidencia": "Metodologia é experimental computacional em série PETR4, sem recrutamento de participantes. A revisão não substitui decisão de comitê ou instituição."
+    },
+    {
+      "id": "G78",
+      "estado": "fora do escopo do exemplar eletrônico",
+      "evidencia": "Não é possível inspecionar papel/gramatura/encadernação em arquivo digital. Não impedir correção de português por ausência de exemplar impresso."
+    },
+    {
+      "id": "G34",
+      "estado": "etapa institucional posterior",
+      "evidencia": "Datas/assinaturas de aprovação não devem ser inventadas; campos pendentes conforme etapa acadêmica e decisão registrada do autor."
+    },
+    {
+      "id": "G30",
+      "estado": "ficha vazia autorizada nesta etapa",
+      "evidencia": "Local reservado à ficha mantido após folha de rosto. Conteúdo institucional será fornecido posteriormente; decisão explícita do autor prevalece sobre inferência de preenchimento imediato."
+    }
+  ],
+  "limite": "Condições avaliadas separadamente das obrigações de forma e conteúdo; não conclusão global dos81requisitos.",
+  "niveis_titulos_ooxml": {
+    "TITULO TCC": [],
+    "SEÇÃO TCC": [],
+    "SUBÇÃO 2": []
+  }
+}

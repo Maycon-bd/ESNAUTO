@@ -1,0 +1,63 @@
+{
+  "estado": "proposto_nao_incorporado",
+  "versao_base": "v001",
+  "sha256_base": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+  "local": "Seção 2.1, P0194, início Ainda assim, abordagens estatísticas simples",
+  "antes": "Ainda assim, abordagens estatísticas simples ocupam espaço relevante no histórico da literatura aplicada à PETR4 (Petrobrás). Timbó et al. (2016) constituem uma das primeiras referências brasileiras a aplicar regressão linear ao papel, com base em correlação de Pearson e taxa de acerto direcional. O estudo evidencia que mesmo abordagens estatísticas simples podem fornecer indicações iniciais sobre as oscilações do ativo embora os próprios autores reconheçam que o método não é adaptativo e não captura dependências temporais de longo prazo.",
+  "depois": "Timbó et al. (2016) aplicaram regressão linear múltipla à previsão do fechamento da PETR4, selecionando variáveis com apoio da correlação de Pearson. O estudo avaliou o acerto por uma tolerância absoluta de 0,50 entre o valor previsto e o observado, e não pelo sinal da variação do preço. Esse critério deve ser distinguido de uma taxa de acerto direcional.",
+  "caracteres_com_espacos": 357,
+  "fonte": {
+    "arquivo": "Artigos citados\\Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+    "sha256": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+    "titulo": "Approach Based on Linear Regression for Stock Exchange Prediction – Case Study of Petr4 Petrobrás, Brazil",
+    "autores": "Nadson S. Timbó; Sofiane Labidi; Thiago P. do Nascimento; Milson L. Lima; Gilberto Nunes Neto; Rodrigo C. Matos",
+    "ano": 2016,
+    "doi": "10.5121/ijaia.2016.7103",
+    "paginas_pdf_lidas": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "leitura": "Conteúdo textual das 11 páginas; título e critério de acerto conferidos também em imagem. Extração do título na primeira página tem codificação defeituosa, resolvida por inspeção visual.",
+    "localizadores": [
+      {
+        "secao": "3 Methodology",
+        "pdf": 5,
+        "impressa": 25,
+        "apoio": "Seleção de variáveis com correlação de Pearson e coeficiente de determinação."
+      },
+      {
+        "secao": "3 Methodology",
+        "pdf": 6,
+        "impressa": 26,
+        "apoio": "Regressão linear múltipla e mínimos quadrados."
+      },
+      {
+        "secao": "4 Results",
+        "pdf": 8,
+        "impressa": 28,
+        "trecho_literal": "considered as success a maximum deviation of 0.50 cents",
+        "apoio": "Acerto definido por tolerância absoluta, não direção."
+      }
+    ]
+  },
+  "coerencia_verificada": [
+    "Introdução P0173–P0186: objeto e horizonte próprios preservados",
+    "Seção 2.1 P0189–P0197: remove primazia não demonstrada e reconhecimento de limitações sem passagem localizada",
+    "Seção 3.2 P0309: contexto de escolha de PETR4 continua requerendo apoio para alta liquidez; não foi corrigido por inferência",
+    "Discussão e conclusão P0473–P0503: não foram transferidas métricas do estudo de Timbó para ESNAUTO"
+  ],
+  "efeitos_preservados": [
+    "Sem mudar resultados, hipóteses, tabelas ou bibliografia",
+    "Sem introduzir citação de outra obra",
+    "Sem certificado de originalidade"
+  ]
+}

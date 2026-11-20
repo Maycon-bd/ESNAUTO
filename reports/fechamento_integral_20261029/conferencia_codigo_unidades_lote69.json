@@ -1,0 +1,35 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "fontes": [
+    {
+      "arquivo": "app/modules/mod_lstm.R",
+      "sha256": "0b389cbc1d7bdd4a26fcd6bca99c926dc8d29828068bafb7a4e6988f2c30caa9"
+    },
+    {
+      "arquivo": "app/modules/mod_gru.R",
+      "sha256": "70b14d67664cd38fbc75bc2280ac61fd507acab212b677cae66a9a92a9a9114a"
+    },
+    {
+      "arquivo": "app/utils/esn_core.R",
+      "sha256": "7327fde095ada68dff1febf68f4aa6be0e06d64721437c50c451511552b29410"
+    },
+    {
+      "arquivo": "app/utils/data_prep.R",
+      "sha256": "44879675114f72a8341334ad25d806b0c29c818266196bf25f7bcb75dad01857"
+    }
+  ],
+  "registros": [
+    {
+      "unidade": "U0194",
+      "evidencia": "mod_lstm.R e mod_gru.R: camadas recorrentes e camada dense, compile com otimizador e fit com épocas e lotes; não há congelamento trainable=FALSE nestes trechos.",
+      "diagnostico": "Treinamento iterativo condizente com código atual. BPTT é interpretação do treinamento recorrente delegado ao Keras; o backend não foi auditado nesta passagem. A comparação de custos exige registros de tempo, não apenas código."
+    },
+    {
+      "unidade": "U0214",
+      "evidencia": "esn_core.R linhas 21–31: W_scaled=sr*W/rhoW e atualização x=(1-a)*x+a*tanh(...). data_prep.R linhas 136–145: máscara binomial controla densidade da Normal Esparsa.",
+      "diagnostico": "Papéis de raio espectral, vazamento e esparsidade condizentes com a implementação preservada; isso não garante memória ou estabilidade para qualquer configuração."
+    }
+  ],
+  "acao": "Sem edição Word; limites de implementação histórica mantidos. Não foram executados modelos.",
+  "limite": "Conferência estática de código atual; não identifica a versão de todas as execuções históricas nem verifica internamente o Keras."
+}

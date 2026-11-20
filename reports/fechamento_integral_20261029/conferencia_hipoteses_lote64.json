@@ -1,0 +1,63 @@
+{
+  "sha256_rascunho": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "quadro": "Quadro 5, índice OOXML 11",
+  "registros": [
+    {
+      "hipotese": "H1",
+      "fundamento": "Comparação de métricas históricas compiladas e quatro diferenças da rodada controlada; resultados e p-valores controlados conferidos no CSV preservado.",
+      "evidencia": "conferencia_numerica_dm_lote46.json",
+      "limite": "Sem extensão retrospectiva dos testes ao resultado histórico; dependência serial e multiplicidade descritas no texto.",
+      "linha_quadro": [
+        "H1 – desempenho",
+        "Resultados históricos: menor MAE/RMSE; execução controlada: 4/4 testes DM significativos, com menor perda da ESN",
+        "Apoiada por evidência descritiva e inferencial complementar"
+      ]
+    },
+    {
+      "hipotese": "H2",
+      "fundamento": "Tempos no quadro correspondem à decomposição de custo documentada; ajuste final e busca são atividades diferentes.",
+      "evidencia": "docs/BASE_ARTIGO_ESNAUTO_RESULTADOS_E_REFERENCIAS.md",
+      "limite": "Não representa medição repetida nem igualdade de ambiente de execução.",
+      "linha_quadro": [
+        "H2 – eficiência",
+        "0,05 s para ajuste da ESN contra 28,80 s e 35,40 s",
+        "Apoiada para o ajuste do modelo selecionado"
+      ]
+    },
+    {
+      "hipotese": "H3",
+      "fundamento": "MAE 0,327224 < 0,328365 e RMSE 0,495386 < 0,499037. MAE de Laplace × Cauchy 0,328949 > 0,328365; redação foi corrigida no lote63.",
+      "evidencia": "edicao_lote63.json",
+      "limite": "Comparação pontual de resultados compilados, não efeito isolado de distribuição.",
+      "linha_quadro": [
+        "H3 – inicialização",
+        "Laplace × Normal teve menor MAE e Laplace × Cauchy menor RMSE que Normal × Normal.",
+        "Apoiada pontualmente"
+      ]
+    },
+    {
+      "hipotese": "H4",
+      "fundamento": "Mecanismos de exploração no motor foram documentados; nem medida de diversidade nem ablação foram localizadas.",
+      "evidencia": "conferencia_motor_historico_lote27.json",
+      "limite": "A implementação presente não prova código específico de todas as execuções.",
+      "linha_quadro": [
+        "H4 – exploração evolutiva",
+        "LHS e operador cataclísmico integrados; diversidade não mensurada e ausência de ablação.",
+        "Efeito não demonstrado."
+      ]
+    },
+    {
+      "hipotese": "H5",
+      "fundamento": "As 15 métricas compiladas têm MAE entre 0.328395 e 0.328398 e RMSE entre 0.498785 e 0.498787.",
+      "evidencia": "reports\\esclarecimentos_autor_20261029\\onda5_resultados_compilados_localizados.csv",
+      "limite": "Relatório compilado não é repetição independente de sementes por configuração; saídas primárias completas não foram ligadas a cada linha.",
+      "linha_quadro": [
+        "H5 – ajuste empírico",
+        "Baixa dispersão entre as 15 configurações da Onda 5; sem avaliação de repetidas sementes por configuração.",
+        "Evidência descritiva; estabilidade estocástica não demonstrada."
+      ]
+    }
+  ],
+  "sha256_onda5": "8d3c410b989611f83eedd70b0a96f574db0e094cc6cf7c2e728dfb0add5476b4",
+  "escopo": "Verificação da relação entre síntese e evidência preservada; não reexecuta testes ou algoritmos e não confirma individualmente artefatos históricos não disponíveis."
+}

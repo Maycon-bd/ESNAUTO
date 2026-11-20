@@ -1,0 +1,66 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_antes": "338d6bd961e3957a0e99cc7d9f9f117579a8963714e5b57401bbf449d9cc7057",
+  "sha256_apos_edicao": "d521d7381fb360e0f12ba5045ea8e05abb37771c37cd038454c36d048ef51679",
+  "alteracoes": [
+    {
+      "unidade": "U0189",
+      "antes": "Xiao (2024) comparou LSTM, GRU e Transformer na previsão de preços da Tesla, sem investigar arquiteturas de reservatório. O artigo descreve preparação dos dados, mas sua Tabela 2 registra ausência de valores faltantes; esse relato não comprova uma avaliação de imputação. A diversidade de propostas com SVM, Aprendizado Profundo (Deep Learning – DL) e processamento de linguagem natural contextualiza a escolha das ESNs nesta pesquisa, cuja eficiência deve ser examinada no protocolo adotado.",
+      "depois": "Xiao, Deng e Bi (2024) compararam LSTM, GRU e Transformer na previsão de preços da Tesla, sem investigar arquiteturas de reservatório. O artigo descreve preparação dos dados, mas sua Tabela 2 registra ausência de valores faltantes; esse relato não comprova uma avaliação de imputação. A diversidade de propostas com SVM, Aprendizado Profundo (Deep Learning – DL) e processamento de linguagem natural contextualiza a escolha das ESNs nesta pesquisa, cuja eficiência deve ser examinada no protocolo adotado.",
+      "motivo": "Indicar os três autores e concordância,segundo o complemento UniRV2025,p195–196."
+    },
+    {
+      "unidade": "U0196",
+      "antes": "Na comparação de Xiao (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores idênticos de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo.",
+      "depois": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores idênticos de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo.",
+      "motivo": "Autoria formal; a aprovação semântica permanece parcial quanto a Cortesi."
+    },
+    {
+      "unidade": "U0208",
+      "antes": "Liu (2022) investigou um sistema de Computação de Reservatório nanofotônico para índices de mercados chineses, norte-americano e britânico. Os autores observaram previsões conservadoras, mas também maiores erros nos pontos de flutuação intensa, discutidos como efeito de ancoragem nos dados históricos. Os resultados caracterizam as condições do sistema estudado e não demonstram imunidade a mudanças de regime nem superioridade geral sobre implementações de software em tempo real.",
+      "depois": "Liu et al. (2022) avaliaram, por simulação numérica, um sistema nanofotônico de Computação de Reservatório para índices de mercados chineses, norte-americano e britânico. Os autores observaram previsões conservadoras, mas também maiores erros nos pontos de flutuação intensa, discutidos como efeito de ancoragem nos dados históricos. Os resultados caracterizam as condições do sistema estudado e não demonstram imunidade a mudanças de regime nem superioridade geral sobre implementações de software em tempo real.",
+      "motivo": "Reconhecer os oito autores e explicitar a natureza numérica do método; não sugerir ensaio físico realizado."
+    },
+    {
+      "unidade": "U0210",
+      "antes": "Hariharan et al. (2025) propuseram ESNs com reservatórios divididos em grupos para séries multivariadas, incluindo dados do NIFTYBEES. Cada variável foi direcionada a um grupo, mantendo conexões entre grupos segundo a topologia examinada. Os erros e a sensibilidade à conectividade variaram entre as estruturas. O estudo apoia investigar a organização do reservatório, sem demonstrar que todo intercâmbio entre variáveis seja prejudicial ou que uma topologia domine em qualquer tarefa.",
+      "depois": "Hariharan, Suresh e Chandrasekar (2025) propuseram ESNs com reservatórios divididos em grupos para séries multivariadas, incluindo dados do NIFTYBEES. Cada variável foi direcionada a um grupo, mantendo conexões entre grupos segundo a topologia examinada. Os erros e a sensibilidade à conectividade variaram entre as estruturas. O estudo apoia investigar a organização do reservatório, sem demonstrar que todo intercâmbio entre variáveis seja prejudicial ou que uma topologia domine em qualquer tarefa.",
+      "motivo": "Indicar os três autores; conteúdo confirmado no texto integral."
+    },
+    {
+      "unidade": "U0231",
+      "antes": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan et al. (2025) especificam Uniforme(-1,1) para as entradas não nulas de Win, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos.",
+      "depois": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan, Suresh e Chandrasekar (2025) geram as entradas não nulas de Win por amostragem Uniforme(-1,1), seguida de escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos.",
+      "motivo": "Precisar amostragem e transformação deWin,sem atribuir essa família aWr; corrigir autoria. A unidade permanece parcial quanto aRibeiro/Wang."
+    },
+    {
+      "unidade": "U0279",
+      "antes": "Separa comparação própria de LSTM/GRU/Transformer e números importados, como em Deng e Liu B. (S).",
+      "depois": "Separa comparações próprias com LSTM/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S.",
+      "motivo": "Conferência conjunta concluída; explicitar as chamadas autor–ano dos dois exemplos."
+    },
+    {
+      "unidade": "U0364",
+      "antes": "Hariharan et al. (2025)",
+      "depois": "Hariharan, Suresh e Chandrasekar (2025)",
+      "motivo": "Identificação dos três autores na linha da matriz; códigos não mudam."
+    },
+    {
+      "unidade": "U0484",
+      "antes": "Xiao (2024)",
+      "depois": "Xiao, Deng e Bi (2024)",
+      "motivo": "Identificação dos três autores na linha da matriz; códigos não mudam."
+    },
+    {
+      "unidade": "U0436",
+      "antes": "Sudiatmika & Putra (2024)",
+      "depois": "Sudiatmika e Putra (2024)",
+      "motivo": "Dois autores confirmados naD25PDF1(reconsultada); usar e fora dos parênteses. D25já integralmente lido antes,não é nova fonte na contagem."
+    }
+  ],
+  "evidencia": "leituras_liu_hariharan_xiao_lote12.json",
+  "estado": "incorporado_exportado_e_inspecionado",
+  "sha256_apos_exportacao_nativa": "f7377019848a9ffc69278210a02051003fd7f7d347e0187a8e98b3f2d27b0235",
+  "checkpoint": "checkpoint_lote12.json"
+}

@@ -1,0 +1,106 @@
+{
+  "n": 8,
+  "limites": "Somente texto extraível e normalização de caixa, acentos e pontuação. Não é percentual de plágio. Sem OCR integral, corpus externo ou detecção de tradução.",
+  "coincidencias": [
+    {
+      "paragrafo": 200,
+      "trecho_normalizado": "por hochreiter e schmidhuber 1997 e as gated",
+      "fontes": [
+        {
+          "path": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\MatheusTeixeiraLampugnani_monografia (1).docx",
+          "localizador": "L0268"
+        }
+      ]
+    },
+    {
+      "paragrafo": 200,
+      "trecho_normalizado": "hochreiter e schmidhuber 1997 e as gated recurrent",
+      "fontes": [
+        {
+          "path": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\MatheusTeixeiraLampugnani_monografia (1).docx",
+          "localizador": "L0268"
+        }
+      ]
+    },
+    {
+      "paragrafo": 200,
+      "trecho_normalizado": "e schmidhuber 1997 e as gated recurrent units",
+      "fontes": [
+        {
+          "path": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\MatheusTeixeiraLampugnani_monografia (1).docx",
+          "localizador": "L0268"
+        }
+      ]
+    },
+    {
+      "paragrafo": 200,
+      "trecho_normalizado": "schmidhuber 1997 e as gated recurrent units gru",
+      "fontes": [
+        {
+          "path": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\MatheusTeixeiraLampugnani_monografia (1).docx",
+          "localizador": "L0268"
+        }
+      ]
+    },
+    {
+      "paragrafo": 200,
+      "trecho_normalizado": "de rede neural recorrente recurrent neural network rnn",
+      "fontes": [
+        {
+          "path": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\bibliometria_reconstrucao\\referencias_graficas\\ENMC_texto.txt",
+          "localizador": "PÁGINA PDF 2"
+        }
+      ]
+    },
+    {
+      "paragrafo": 234,
+      "trecho_normalizado": "de informacao de akaike akaike information criterion aic",
+      "fontes": [
+        {
+          "path": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\tese_Fabian_Correa_Cardoso.pdf",
+          "localizador": "PÁGINA PDF 38"
+        }
+      ]
+    },
+    {
+      "paragrafo": 254,
+      "trecho_normalizado": "ribeiro et al 2021 propoem um modelo hibrido",
+      "fontes": [
+        {
+          "path": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\tese_Fabian_Correa_Cardoso.pdf",
+          "localizador": "PÁGINA PDF 59"
+        }
+      ]
+    },
+    {
+      "paragrafo": 268,
+      "trecho_normalizado": "distribuicoes probabilisticas aplicadas as matrizes win e w",
+      "fontes": [
+        {
+          "path": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\MatheusTeixeiraLampugnani_monografia (1).docx",
+          "localizador": "L0543"
+        }
+      ]
+    },
+    {
+      "paragrafo": 365,
+      "trecho_normalizado": "survey or review or state of the art",
+      "fontes": [
+        {
+          "path": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\bibliometria_reconstrucao\\referencias_graficas\\KBS_texto.txt",
+          "localizador": "PÁGINA PDF 4"
+        }
+      ]
+    },
+    {
+      "paragrafo": 365,
+      "trecho_normalizado": "or review or state of the art and",
+      "fontes": [
+        {
+          "path": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\bibliometria_reconstrucao\\referencias_graficas\\KBS_texto.txt",
+          "localizador": "PÁGINA PDF 4"
+        }
+      ]
+    }
+  ]
+}

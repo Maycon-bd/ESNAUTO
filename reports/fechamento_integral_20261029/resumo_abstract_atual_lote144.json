@@ -1,0 +1,37 @@
+{
+  "sha256_docx": "a6c9512dd7503795b6b7921c0d33c6dd327c42c6ec14442ccfbd463846e54a35",
+  "textos": {
+    "resumo": "Este trabalho avaliou Redes Neurais de Estados de Eco (Echo State Networks - ESNs) na previsão de um passo à frente do preço de fechamento ajustado da ação preferencial da Petrobras (PETR4). A série reuniu 5.198 observações diárias entre 3 de janeiro de 2000 e 30 de dezembro de 2020, divididas cronologicamente em treino, validação e teste. Os dados foram fornecidos já ajustados por eventos corporativos pelo orientador; o efeito causal isolado do ajuste não foi estimado. A implementação do ESNAUTO adaptou códigos em R fornecidos pelo orientador e incluiu uma interface desenvolvida pelo autor, integrando ESN com regressão Ridge, Algoritmo Genético binário, inicialização por Amostragem por Hipercubo Latino (Latin Hypercube Sampling - LHS) e mecanismo antiestagnação por mutação cataclísmica. Foram documentadas 45 execuções em cinco ondas de distribuições aplicadas às matrizes de entrada e do reservatório. Laplace × Normal apresentou o menor erro médio absoluto (Mean Absolute Error – MAE) de teste (0,327224), enquanto Laplace × Cauchy obteve a menor raiz do erro quadrático médio (Root Mean Squared Error – RMSE) (0,495386) e o maior coeficiente de determinação (R²) (0,9941); 44 das 45 execuções apresentaram MAE inferior aos valores documentados para as unidades recorrentes com portas (Gated Recurrent Units – GRU) e as redes de memória de longo e curto prazo (Long Short-Term Memory – LSTM). Como análise inferencial complementar, uma execução controlada e reprodutível com semente fixa 20260926 preservou 1.298 previsões comuns. Quatro testes bilaterais de Diebold-Mariano indicaram diferença estatisticamente significativa entre a ESN e os baselines GRU e LSTM sob perdas absoluta e quadrática, sempre com menor perda média para a ESN. O ajuste analítico da configuração selecionada demandou cerca de 0,05 segundo, enquanto as buscas genéticas totalizaram aproximadamente 37,9 horas, distinguindo custo off-line de descoberta e baixo custo de ajuste posterior. Conclui-se que, sob o protocolo adotado, ESNs pequenas e otimizadas constituíram alternativa competitiva para a tarefa investigada, e o ESNAUTO contribuiu como artefato de Engenharia de Software para organizar, executar, auditar e comparar o processo experimental.",
+    "abstract": "This study evaluated Echo State Networks (ESNs) for one-step-ahead prediction of the adjusted closing price of Petrobras preferred stock (PETR4). The series comprised 5,198 daily observations from January 3, 2000, to December 30, 2020, chronologically divided into training, validation, and test sets. The supervisor provided the data already adjusted for corporate events; the isolated causal effect of the adjustment was not estimated. The ESNAUTO implementation adapted R code provided by the supervisor and included an interface developed by the author, integrating an ESN with Ridge regression, a binary Genetic Algorithm, Latin Hypercube Sampling (LHS) initialization, and a cataclysmic anti-stagnation mechanism. Forty-five runs were documented across five waves of distributions applied to the input and reservoir matrices. Laplace × Normal achieved the lowest test mean absolute error (MAE) (0.327224), whereas Laplace × Cauchy obtained the lowest root mean squared error (RMSE) (0.495386) and the highest coefficient of determination (R²) (0.9941); 44 of the 45 runs achieved lower MAE than the documented gated recurrent unit (GRU) and long short-term memory (LSTM) values. As a complementary inferential analysis, a controlled and reproducible run with fixed seed 20260926 preserved 1,298 common forecasts. Four two-sided Diebold-Mariano tests indicated statistically significant differences between the ESN and the GRU/LSTM baselines under absolute and squared loss, always with lower mean loss for the ESN. Analytical fitting of the selected configuration required about 0.05 s, while the genetic searches totaled approximately 37.9 h, distinguishing the offline discovery cost from the low subsequent fitting cost. Under the adopted protocol, small optimized ESNs were competitive for the investigated task, while ESNAUTO contributed a software-engineering artifact for organizing, executing, auditing, and comparing the experimental workflow."
+  },
+  "palavras_por_espacos": {
+    "resumo": 331,
+    "abstract": 273
+  },
+  "comparacao_semantica_reconfirmada": [
+    "Objeto e horizonte de um passo; PETR4 ajustada",
+    "5.198 observações e período 2000–2020; partição cronológica",
+    "Dados ajustados e códigos fornecidos pelo orientador; adaptação e interface pelo autor",
+    "Integração ESN, Ridge, AG, LHS e antiestagnação",
+    "45 execuções, melhores MAE/RMSE em configurações diferentes e 44/45 abaixo dos baselines em MAE",
+    "Rodada controlada com semente fixa e 1.298 previsões comuns; quatro testes bilaterais",
+    "Custo de ajuste separado de busca genética",
+    "Conclusão restrita ao protocolo e contribuição de software"
+  ],
+  "siglas_resumo": [
+    "ESNs: extenso português e inglês",
+    "PETR4: ação preferencial Petrobras identificada",
+    "LHS: Amostragem por Hipercubo Latino e inglês",
+    "MAE/RMSE: métricas por extenso",
+    "GRU/LSTM: traduções e nomes ingleses"
+  ],
+  "nomes_proprios": [
+    "ESNAUTO identifica artefato; não exige expansão inventada",
+    "R identifica linguagem; não criar extenso inexistente"
+  ],
+  "decisoes": {
+    "G41": "Resumo autossuficiente apresenta objeto,dados,procedência,método,principais resultados,custos e conclusão limitada ao protocolo. Siglas indispensáveis explicadas; nomes próprios não tratados como abreviações sem extenso.",
+    "G43": "Oito unidades de sentido correspondem nos dois idiomas; valores/datas/horizonte,atribuições,comparações,custos e conclusão coerentes. Formatação de ambos complementada no lote138."
+  },
+  "limite": "Conferência semântica não equivale a certificação profissional de tradução; fidelidade dos números depende dos relatórios numéricos já vinculados."
+}

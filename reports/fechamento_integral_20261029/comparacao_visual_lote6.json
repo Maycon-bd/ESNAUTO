@@ -1,0 +1,53 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_copia": "05333a74f190adc9cf7cc18387b502e9ff2073021147a71195863a1555be2ddc",
+  "paginas_diferentes_lote5": [
+    16,
+    30,
+    44,
+    45,
+    46
+  ],
+  "n_paginas_identicas": 71,
+  "tabelas_modificadas_desde_base": [
+    {
+      "indice": 1,
+      "inicio": "Dimensão / Registros / Achados predominantes / P1 Distribuição de Win/W / 5 D; 0 S; 13 ?; 16 —",
+      "diferencas": [
+        [
+          "25 D; 2 S; 7 ?; 0 —",
+          "26 D; 2 S; 6 ?; 0 —"
+        ]
+      ]
+    },
+    {
+      "indice": 2,
+      "inicio": "Trabalho / P₁ / P₂ / P₃ / P₄",
+      "diferencas": [
+        [
+          "Seddik (2023)",
+          "Seddik, Routaib e Elhaddadi (2023)"
+        ],
+        [
+          "?",
+          "D"
+        ]
+      ]
+    },
+    {
+      "indice": 5,
+      "inicio": "Hiperparâmetro / Símbolo / Faixa efetiva / Bits / Papel",
+      "diferencas": [
+        [
+          "Remove os transientes iniciais do reservatório.",
+          "Descarta os estados iniciais na estimação de Wout."
+        ]
+      ]
+    }
+  ],
+  "midias_modificadas_desde_base": [
+    "word/media/image1.png"
+  ],
+  "estado_visual": "Todas as cinco páginas diferentes abertas e inspecionadas; sem cortes, sobreposições, tabela partida ou título isolado. A continuação do parágrafo de aptidão tem duas linhas na página seguinte. Outras71páginas idênticas ao lote5."
+}

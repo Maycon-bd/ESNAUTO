@@ -1,0 +1,59 @@
+{
+  "sha256_docx": "f933c9281afbbab9b3f49a3fccec01278eb77085d6358c2007c2719ed14682ed",
+  "referencias": 50,
+  "textos_iguais_indice106": 48,
+  "referencias_substituidas": [
+    "ESHELMAN, L. J.; SCHAFFER, J. D. Method for optimizing the configuration of a pick and place machine. Depositante: North American Philips Corporation. US5390283A. Depósito: 23 out. 1992. Concessão: 14 fev. 1995. Disponível em: https://patents.google.com/patent/US5390283A/en. Acesso em: 30 out. 2026.",
+    "HOLLAND, J. H. Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence. Cambridge, MA: MIT Press, 1992."
+  ],
+  "chamadas_manualmente_relocalizadas": [
+    {
+      "referencia": "R06",
+      "chamada": "Cardoso, Berri e Mattos (2022a, p. 203)",
+      "indices_atuais": [
+        318
+      ]
+    },
+    {
+      "referencia": "R06",
+      "chamada": "Cardoso, Berri e Mattos (2022a, p. 202–205)",
+      "indices_atuais": [
+        450
+      ]
+    },
+    {
+      "referencia": "R10",
+      "chamada": "Cardoso (2025, p. 90)",
+      "indices_atuais": [
+        391
+      ]
+    },
+    {
+      "referencia": "R10",
+      "chamada": "Cardoso (2025, Figura 29)",
+      "indices_atuais": [
+        395
+      ]
+    },
+    {
+      "referencia": "R10",
+      "chamada": "Cardoso (2025, Figura 30)",
+      "indices_atuais": [
+        400
+      ]
+    },
+    {
+      "referencia": "R22",
+      "chamada": "Gleick, 1987, par. 1",
+      "indices_atuais": [
+        39
+      ]
+    }
+  ],
+  "cruzamento": "reports/correcao_parecer_integridade/cruzamento_lote152.json",
+  "decisoes": {
+    "G64": "50referências identificáveis por autor,título e dados de publicação.48textos idênticos ao índice106; Holland e Eshelman substituídos pelas edições/fontes consultadas117/119. Ordem,f12 e espaço simples conferidos137. Não confundir identificação bibliográfica com leitura integral de cada obra.",
+    "G65": "157ocorrências reconhecidas sem referência faltante,50referências com chamada; seis chamadas com localizadores verificadas manualmente no texto atual. Índice não substitui a análise de fidelidade de cada afirmação,tratada separadamente."
+  },
+  "limite": "Reconhecedor pode omitir formatos não previstos; conciliação manual complementa padrões. Não certificação universal baseada em contagem."
+}

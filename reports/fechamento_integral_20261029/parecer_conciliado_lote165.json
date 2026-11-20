@@ -1,0 +1,827 @@
+{
+  "sha256_docx": "daad3895feb384d743bd4461f9a0ba228ed4634d2cdeaf30fb571ade82e10c19",
+  "parecer_historico": "reports/auditoria_citacoes_integridade_20261028/parecer.md",
+  "sha256_parecer": "41cfa7390c2aaceedba8efbabdbb70a1dd6cc44346afc4ed4955a5c5ad9c2632",
+  "achados": 25,
+  "riscos": 13,
+  "registros": [
+    {
+      "id": "F01",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Métrica F1 atribuída à amostra de ações, sem atribuição individual à PETR4.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 189,
+          "texto": "Costa e Lunkes (2025) combinaram indicadores técnicos e fundamentalistas em um modelo de classificação com máquina de vetores de suporte (Support Vector Machine – SVM). O modelo híbrido apresentou F1-score de aproximadamente 72,7% na amostra de ações brasileiras analisada, sem atribuição desse valor especificamente à PETR4. Os autores recomendaram investigar outros algoritmos, incluindo redes neurais e métodos de conjunto; a escolha de arquiteturas recorrentes constitui uma decisão da presente pesquisa."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F02",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "75,56% identificado como classificação de sentimento FinBERT/Benzinga, sem transformar em direção futura.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 190,
+          "texto": "Liu, Lin e Rojas (2025) integraram indicadores técnicos, modelos temporais e análise de sentimentos com modelos de linguagem de grande escala (Large Language Models – LLMs), incluindo FinBERT e GPT-2, em estratégias associadas ao índice Standard and Poor’s (S&P) 500. O FinBERT atingiu 75,56% de acurácia na classificação de sentimento das notícias da Benzinga, em uma tarefa de processamento de linguagem natural (Natural Language Processing – NLP). O estudo também associou notícias a classes de retorno do índice; essa acurácia não comprova previsão fora da amostra da direção futura."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F03",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Janelas de treino15/30/60 distinguidas de horizonte; teste Mann–Whitney contextualizado.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 214,
+          "texto": "Sharma et al. (2025) avaliaram ESNs para preços de Bitcoin, com XGBoost e previsão pelo último valor como comparadores. O estudo relacionou o erro ao caos estimado por expoentes de Lyapunov. O teste de Mann–Whitney comparou, entre grupos de menor e maior caos, a razão dos RMSEs da ESN e do XGBoost. Foi relatada diferença para janelas de treino de 30 e 60 dias, mas não de 15. Isso não demonstra superioridade estatística geral da ESN sobre ARIMA ou em todos os períodos."
+        },
+        {
+          "paragrafo": 254,
+          "texto": "Sharma et al. (2025) empregaram otimização Bayesiana via Tree Parzen Estimator (TPE) na seleção de hiperparâmetros da ESN. A Tabela 1 do estudo apresenta as distribuições de amostragem dos hiperparâmetros, que não equivalem à lei de geração dos elementos de Win ou W. A avaliação usou janelas de treino de 15, 30 e 60 observações, teste de dez pontos e avanço de um ponto. Assim, esses tamanhos de treino não representam horizontes de previsão de 15, 30 e 60 dias."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F04",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Distribuição de pesos,matriz e amostragem de hiperparâmetros separadas.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 233,
+          "texto": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan, Suresh e Chandrasekar (2025) geram as entradas não nulas de Win por amostragem Uniforme(-1,1), seguida de escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos."
+        },
+        {
+          "paragrafo": 234,
+          "texto": "Hassaan, Yacoub e Said (2025) estudaram sequências caóticas normalizadas para gerar Win e Wres e adotaram controles He e Xavier. Nas Equações 9a e 9b, He usa amostras Gaussianas e Xavier usa amostras Uniformes reescaladas. A descrição de Xavier no texto da seção seguinte não coincide com essa fórmula, o que exige cautela na interpretação. Além disso, uma regra de geração por trajetória caótica não equivale, por si só, à identificação de uma família probabilística ajustada aos dados financeiros."
+        },
+        {
+          "paragrafo": 235,
+          "texto": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca Tree Parzen Estimator (TPE). Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada."
+        },
+        {
+          "paragrafo": 254,
+          "texto": "Sharma et al. (2025) empregaram otimização Bayesiana via Tree Parzen Estimator (TPE) na seleção de hiperparâmetros da ESN. A Tabela 1 do estudo apresenta as distribuições de amostragem dos hiperparâmetros, que não equivalem à lei de geração dos elementos de Win ou W. A avaliação usou janelas de treino de 15, 30 e 60 observações, teste de dez pontos e avanço de um ponto. Assim, esses tamanhos de treino não representam horizontes de previsão de 15, 30 e 60 dias."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F05",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Contagem descrita segundo critério explícito; ausência universal retirada;170células recodificadas.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 265,
+          "texto": "Lampugnani (2026) é discutido separadamente e não integra os 34 documentos da matriz. As dimensões são: P1 lei probabilística ligada à geração de Win ou W; P2 procedimento de seleção de hiperparâmetros de ESN/RC; P3 preparação concreta de séries temporais, incluindo transformações e construção de atributos ou janelas; P4 comparação quantitativa de previsão com LSTM, GRU ou Transformer; e P5 mercado e ativo identificados. A codificação distingue aplicações próprias de tratamentos secundários e registra informação insuficiente, sem pressupor que todos os temas sejam aplicáveis a cada fonte."
+        },
+        {
+          "paragrafo": 268,
+          "texto": "O Quadro 1 apresenta a codificação por documento: D indica evidência direta localizada na aplicação da própria fonte; S indica tratamento secundário ou contextual; ? indica informação insuficiente no escopo consultado; e — indica dimensão não aplicável ao objeto estudado. A marca ? não demonstra que o assunto inexista na obra. A presença de uma informação também não representa reprodução independente, aprovação da qualidade do estudo ou equivalência entre os protocolos comparados."
+        },
+        {
+          "paragrafo": 271,
+          "texto": "A distinção entre D e S evita somar uma revisão e o experimento por ela descrito como duas execuções independentes. Os códigos ? e — também têm sentidos diferentes: o primeiro conserva uma incerteza de leitura ou de especificação; o segundo delimita o objeto da fonte. Assim, as frequências desta coleção descrevem a documentação localizada segundo os critérios adotados, sem estimar a prevalência de métodos em toda a literatura nem comprovar, isoladamente, uma lacuna científica."
+        },
+        {
+          "paragrafo": 277,
+          "texto": "A Figura 1 registra evidência direta de preparação de séries em 26 documentos e de mercado/ativo em 25; comparações com LSTM, GRU ou Transformer aparecem diretamente em dez documentos, e a seleção de hiperparâmetros, em onze. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F06",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Timbó: tolerância absoluta0,50, sem confusão com acerto direcional.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 188,
+          "texto": "Timbó et al. (2016) aplicaram regressão linear à previsão do fechamento da PETR4 e selecionaram indicadores com apoio da correlação de Pearson. O estudo avaliou o acerto das previsões por uma tolerância absoluta de 0,50 em relação ao fechamento observado. Esse critério mede proximidade de preços e não deve ser interpretado como taxa de acerto da direção da variação do ativo."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F07",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Recomendação geral de outras redes; opção recorrente atribuída à pesquisa.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 189,
+          "texto": "Costa e Lunkes (2025) combinaram indicadores técnicos e fundamentalistas em um modelo de classificação com máquina de vetores de suporte (Support Vector Machine – SVM). O modelo híbrido apresentou F1-score de aproximadamente 72,7% na amostra de ações brasileiras analisada, sem atribuição desse valor especificamente à PETR4. Os autores recomendaram investigar outros algoritmos, incluindo redes neurais e métodos de conjunto; a escolha de arquiteturas recorrentes constitui uma decisão da presente pesquisa."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F08",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Sun tratado como fechamento e LSTM simplificada; coluna ajustada não prova utilização.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 206,
+          "texto": "Sun et al. (2021) compararam uma ESN com uma LSTM simplificada na previsão do fechamento das ações da Kweichow Moutai e reportaram menores erros nas configurações examinadas. A fonte lista fechamento e fechamento ajustado como campos distintos, mas descreve os experimentos com preços de fechamento. Por isso, esse estudo não é tomado aqui como comprovação inequívoca de uso do fechamento ajustado nem como demonstração de superioridade sobre qualquer configuração LSTM."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F09",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Seddik: Lorenz simulado com condições ligadas a Bitcoin, não previsão de preços observados.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 213,
+          "texto": "Hassaan, Yacoub e Said (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik, Routaib e Elhaddadi (2023) investigaram uma ESN em trajetórias simuladas de Lorenz, com condições iniciais associadas ao Bitcoin. O texto menciona uma série decimada, sem detalhar o procedimento. As métricas avaliam trajetórias geradas, não previsões de preços observados, e não isolam o efeito da distribuição dos pesos iniciais."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F10",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Liu: flutuações intensas e ancoragem; sem imunidade ou comparação geral com software.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 210,
+          "texto": "Liu et al. (2022) avaliaram, por simulação numérica, um sistema nanofotônico de Computação de Reservatório para índices de mercados chineses, norte-americano e britânico. Os autores observaram previsões conservadoras, mas também maiores erros nos pontos de flutuação intensa, discutidos como efeito de ancoragem nos dados históricos. Os resultados caracterizam as condições do sistema estudado e não demonstram imunidade a mudanças de regime nem superioridade geral sobre implementações de software em tempo real."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F11",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Millea restrito à inicialização; princípios evolutivos atribuídos a Holland1992 consultado.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 217,
+          "texto": "Millea (2014) investigou matrizes ortonormais e matrizes aleatórias reescaladas em ESNs aplicadas ao problema de múltiplos osciladores sobrepostos. Os experimentos mostraram que conectividade, tamanho da rede e inicialização alteram o espaço de soluções. A significância das diferenças dependeu do limiar de erro avaliado. Esses resultados motivam documentar a inicialização, sem demonstrar uma vantagem universal das matrizes ortonormais em séries financeiras."
+        },
+        {
+          "paragrafo": 326,
+          "texto": "Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1992). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979)."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F12",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Soltani versão preliminar2022; frequências de uso não viram eficácia ou lacuna universal.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 221,
+          "texto": "Soltani, Benmohamed e Ltifi (2022), na versão preliminar consultada, revisaram 74 estudos sobre otimização de ESNs. A Tabela 5 relaciona PSO a 16 trabalhos e AG a dez, além de outras técnicas bio-inspiradas e não bio-inspiradas. Essas frequências descrevem o emprego dos métodos na coleção dos autores; não constituem uma classificação de eficácia. A revisão discute custos, parâmetros e topologias, sem sustentar uma lacuna específica sobre distribuições de inicialização em aplicações financeiras."
+        },
+        {
+          "paragrafo": 259,
+          "texto": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F13",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Eficiência condicionada, sem garantia de estabilidade; ajuste0,05s separado de busca37,9h.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 205,
+          "texto": "O reservatório transforma a sequência de entrada em estados dos quais a camada de saída extrai informação preditiva. O ajuste apenas dessa camada reduz o conjunto de pesos treináveis em comparação com o treinamento de toda a rede. Essa organização pode reduzir o custo de ajuste, mas não garante estabilidade numérica nem uma razão universal de tempos frente à retropropagação através do tempo. O condicionamento da regressão, a dinâmica do reservatório e a regularização continuam relevantes (Jaeger, 2007)."
+        },
+        {
+          "paragrafo": 258,
+          "texto": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas, Usha e Sangeetha (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros."
+        },
+        {
+          "paragrafo": 422,
+          "texto": "O ajuste analítico de aproximadamente 0,05 segundo correspondeu ao cálculo da camada de saída após a configuração da ESN ter sido selecionada. Considerando apenas essa etapa, o tempo documentado correspondeu a uma razão de tempos de aproximadamente 576 vezes em relação à GRU e 708 vezes em relação à LSTM."
+        },
+        {
+          "paragrafo": 423,
+          "texto": "Essa diferença não corresponde ao custo integral de descoberta do modelo. As buscas por Algoritmo Genético consumiram de aproximadamente 21 a 102 minutos por cenário e totalizaram cerca de 37,9 horas nas 45 execuções. Assim, a ESN apresentou baixo custo de ajuste depois de configurada, enquanto a exploração extensa do espaço de hiperparâmetros representou um custo off-line significativo."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F14",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Comparações delimitadas a protocolos; sem mecanismos causais ou significância indevidamente atribuídos.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 207,
+          "texto": "Wang et al. (2021) avaliaram modelos de RC em sete índices internacionais e compararam suas previsões com RNRs, LSTM e modelos de outros estudos. O desempenho relativo variou conforme o índice e a métrica, sem domínio de uma arquitetura em todas as condições. Os autores exploraram topologias aleatórias, livres de escala e de pequeno mundo, juntamente com diferentes tamanhos de reservatório, janelas e taxas de aprendizado. Essa análise motiva examinar configurações de reservatório, sem isolar a topologia como causa preponderante do ganho preditivo."
+        },
+        {
+          "paragrafo": 209,
+          "texto": "Wang, Bu e Huang (2025) avaliaram um sistema óptico de Computação de Reservatório com ponderação de atributos em sete séries de mercado, integrando dados de mercado e indicadores macroeconômicos e técnicos. O protocolo inclui modelos de aprendizado de máquina, entre eles LSTM, e apresenta o melhor comparador por horizonte de previsão. Os autores relatam ganhos nos horizontes de um, quatro e dez passos. A análise de atraso em trajetórias específicas não demonstra que a ponderação elimine atrasos em qualquer regime de mercado."
+        },
+        {
+          "paragrafo": 212,
+          "texto": "Hariharan, Suresh e Chandrasekar (2025) propuseram ESNs com reservatórios divididos em grupos para séries multivariadas, incluindo dados do NIFTYBEES. Cada variável foi direcionada a um grupo, mantendo conexões entre grupos segundo a topologia examinada. Os erros e a sensibilidade à conectividade variaram entre as estruturas. O estudo apoia investigar a organização do reservatório, sem demonstrar que todo intercâmbio entre variáveis seja prejudicial ou que uma topologia domine em qualquer tarefa."
+        },
+        {
+          "paragrafo": 218,
+          "texto": "Tian e Pei (2024) empregaram o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e erro percentual absoluto médio (Mean Absolute Percentage Error – MAPE)."
+        },
+        {
+          "paragrafo": 219,
+          "texto": "Deng et al. (2022) aplicaram AG à seleção do escalonamento de entrada, raio espectral e taxa de vazamento de ESNs empilhadas para prever degradação de células de combustível de membrana de troca de prótons (Proton Exchange Membrane Fuel Cells – PEMFCs). A Tabela 6 compara os erros obtidos com valores de LSTM e outros métodos provenientes de um estudo anterior. Os resultados apoiam a estratégia nessa aplicação, sem estabelecer superioridade geral frente a LSTM nem identificar uma fragilidade principal de toda a literatura de ESNs."
+        },
+        {
+          "paragrafo": 220,
+          "texto": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice da Borsa Istanbul (BIST) 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F15",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Matriz170células reexaminada;D/S/?/não aplicável distinguidos com localizadores.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 265,
+          "texto": "Lampugnani (2026) é discutido separadamente e não integra os 34 documentos da matriz. As dimensões são: P1 lei probabilística ligada à geração de Win ou W; P2 procedimento de seleção de hiperparâmetros de ESN/RC; P3 preparação concreta de séries temporais, incluindo transformações e construção de atributos ou janelas; P4 comparação quantitativa de previsão com LSTM, GRU ou Transformer; e P5 mercado e ativo identificados. A codificação distingue aplicações próprias de tratamentos secundários e registra informação insuficiente, sem pressupor que todos os temas sejam aplicáveis a cada fonte."
+        },
+        {
+          "paragrafo": 268,
+          "texto": "O Quadro 1 apresenta a codificação por documento: D indica evidência direta localizada na aplicação da própria fonte; S indica tratamento secundário ou contextual; ? indica informação insuficiente no escopo consultado; e — indica dimensão não aplicável ao objeto estudado. A marca ? não demonstra que o assunto inexista na obra. A presença de uma informação também não representa reprodução independente, aprovação da qualidade do estudo ou equivalência entre os protocolos comparados."
+        },
+        {
+          "paragrafo": 271,
+          "texto": "A distinção entre D e S evita somar uma revisão e o experimento por ela descrito como duas execuções independentes. Os códigos ? e — também têm sentidos diferentes: o primeiro conserva uma incerteza de leitura ou de especificação; o segundo delimita o objeto da fonte. Assim, as frequências desta coleção descrevem a documentação localizada segundo os critérios adotados, sem estimar a prevalência de métodos em toda a literatura nem comprovar, isoladamente, uma lacuna científica."
+        },
+        {
+          "paragrafo": 277,
+          "texto": "A Figura 1 registra evidência direta de preparação de séries em 26 documentos e de mercado/ativo em 25; comparações com LSTM, GRU ou Transformer aparecem diretamente em dez documentos, e a seleção de hiperparâmetros, em onze. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F16",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Coleção descritiva; não infere consenso,prevalência ou lacuna científica universal.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 255,
+          "texto": "O conjunto examinado apresenta aplicações de ESNs, métodos de seleção de hiperparâmetros e regras de inicialização em diferentes tarefas. Ele fundamenta escolhas experimentais desta pesquisa, sem demonstrar cobertura exaustiva do campo. O estudo organiza uma avaliação de distribuições canônicas, de caudas pesadas, assimétricas, esparsas e ajustadas empiricamente para a PETR4. A coleção reconstruída não permite estimar a dimensão de uma lacuna na literatura nem reivindicar ineditismo dessa combinação."
+        },
+        {
+          "paragrafo": 257,
+          "texto": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo."
+        },
+        {
+          "paragrafo": 259,
+          "texto": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN."
+        },
+        {
+          "paragrafo": 260,
+          "texto": "A questão desta pesquisa é examinar o desempenho de configurações de ESN que combinam distribuições de inicialização e hiperparâmetros na previsão da PETR4 ajustada. Trabalhos próximos, como Araújo et al. (2025), já investigaram distribuições alternativas em séries financeiras. A motivação reside na aplicação e na avaliação documentada dessas configurações no protocolo adotado, sem pressupor que o tema esteja ausente da literatura ou que a comparação isole causalmente o efeito da distribuição."
+        },
+        {
+          "paragrafo": 271,
+          "texto": "A distinção entre D e S evita somar uma revisão e o experimento por ela descrito como duas execuções independentes. Os códigos ? e — também têm sentidos diferentes: o primeiro conserva uma incerteza de leitura ou de especificação; o segundo delimita o objeto da fonte. Assim, as frequências desta coleção descrevem a documentação localizada segundo os critérios adotados, sem estimar a prevalência de métodos em toda a literatura nem comprovar, isoladamente, uma lacuna científica."
+        },
+        {
+          "paragrafo": 277,
+          "texto": "A Figura 1 registra evidência direta de preparação de séries em 26 documentos e de mercado/ativo em 25; comparações com LSTM, GRU ou Transformer aparecem diretamente em dez documentos, e a seleção de hiperparâmetros, em onze. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F17",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Equações BovDB distinguidas de cadeia local; preparação atribuída ao orientador; exceções não presumidas.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 237,
+          "texto": "Cardoso et al. (2022b) propõem o BovDB como base de cotações e eventos de ações negociadas na B3. O esquema inclui fatores associados a eventos e um fator acumulado por registro de preço. Essa estrutura permite representar o tratamento de descontinuidades corporativas na base, mas não comprova, por si só, quais eventos foram aplicados aos arquivos locais desta pesquisa nem identifica a autoria de sua transformação."
+        },
+        {
+          "paragrafo": 238,
+          "texto": "Na definição do BovDB, o fator isolado é a razão entre o fechamento do dia anterior e a abertura do dia do evento, e os fatores acumulados são calculados regressivamente. O campo EventPrice.applied distingue os registros considerados no ajuste. A interpretação de cada tipo de evento e a reprodução da transformação exigem esses registros; uma lista de descrições, isoladamente, não demonstra como o preço local foi corrigido (Cardoso et al., 2022b)."
+        },
+        {
+          "paragrafo": 240,
+          "texto": "Costa e Lunkes (2025) informam o uso de preços ajustados a desdobramentos e dividendos na construção de indicadores e da variável de classificação. O tratamento de eventos corporativos é relevante quando suas descontinuidades afetam a variável e a tarefa investigadas. A necessidade e a forma do ajuste dependem do objeto da modelagem; seu emprego, isoladamente, não garante resultados confiáveis para qualquer modelo."
+        },
+        {
+          "paragrafo": 303,
+          "texto": "A pesquisa utiliza arquivos locais da série PETR4 fornecidos pelo orientador, Prof. Dr. Fabian Corrêa Cardoso, já ajustados por eventos corporativos. A procedência da série é atribuída ao BovDB (Cardoso et al., 2022b). O ativo é a ação preferencial da Petróleo Brasileiro S.A. (PETROBRAS PN). A preparação original dos arquivos antecede seu uso nesta pesquisa; a modelagem partiu dos valores recebidos."
+        },
+        {
+          "paragrafo": 305,
+          "texto": "Os executores importam os valores de PETR4_close com factor_2000-2020.txt e PETR4_close com factor_2000-2020_com data.csv. Esses arquivos foram recebidos já ajustados do orientador, conforme esclarecimento do autor. O escopo desta pesquisa compreende sua utilização nos modelos e a organização das partições temporais. A cadeia original que liga cotações e eventos do BovDB à geração desses arquivos não foi reconstruída nesta auditoria."
+        },
+        {
+          "paragrafo": 306,
+          "texto": "A ausência dessa cadeia limita a auditoria retrospectiva do ajuste corporativo, ainda que os valores e as datas de entrada possam ser identificados por seus arquivos. A descrição das equações do BovDB oferece a referência metodológica, mas não substitui o registro dos eventos aplicados nem prova que cada exceção descrita na literatura tenha sido implementada na série local."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F18",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Planilhas localizadas e uso parcial explicitado; não reivindica seleção sistemática ou ranking completo.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 359,
+          "texto": "A revisão de literatura reúne 34 documentos selecionados para fundamentar o trabalho. O levantamento inicial em Scopus e Springer Nature Link foi complementado por buscas externas à string inicial, conforme esclarecimento do autor, para incorporar fontes pertinentes ao desenvolvimento da pesquisa. A seleção final não decorreu exclusivamente daquela consulta nem de um ranking InOrdinatio integralmente aplicado. A coleção é apresentada como revisão de literatura com buscas complementares, sem alegação de cobertura exaustiva."
+        },
+        {
+          "paragrafo": 360,
+          "texto": "A planilha methodi_ordinatio.xlsx preserva uma etapa inicial do levantamento, com busca declarada em 23 de março de 2026 e 59 candidatos, dos quais 7 estão marcados para inclusão, 4 para exclusão e 48 sem decisão. O autor esclareceu que esses registros não foram mantidos de modo a representar integralmente a seleção final e suas buscas complementares. Por isso, as contagens da planilha não são utilizadas como um fluxo completo de seleção dos 34 documentos, nem as decisões faltantes são preenchidas retrospectivamente por inferência."
+        },
+        {
+          "paragrafo": 361,
+          "texto": "O Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015) foi considerado na organização inicial do levantamento. A planilha contém fórmulas com alfa igual a 5 e ano de referência 2026, mas seus indicadores e decisões não documentam uma aplicação concluída do método à coleção final. Assim, as pontuações não são usadas para justificar a inclusão ou estabelecer a relevância relativa dos 34 documentos. Os registros originais são preservados como documentação intermediária do processo."
+        },
+        {
+          "paragrafo": 362,
+          "texto": "A planilha extracao_completa.xlsx preserva 34 registros de extração, com respostas às perguntas P1–P5, status e datas de processamento. Os nomes correspondem aos 34 PDFs locais. Essas respostas constituem registros intermediários de leitura, cuja fidelidade depende da conferência nos trabalhos originais. Por isso, a síntese desta monografia utiliza a matriz recodificada do Quadro 1, com localizadores, distinção entre evidência direta e secundária e marcação de informação insuficiente, preservando separadamente a extração histórica."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F19",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Original RBras recuperado e conferido;5197observações,75/25 eRMSE com/sem fator delimitados.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 320,
+          "texto": "O Quadro 3 apresenta a codificação de 55 bits implementada no motor atual do ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa."
+        },
+        {
+          "paragrafo": 452,
+          "texto": "Cardoso, Berri e Mattos (2022a, p. 202–205) avaliaram a PETR4 com e sem fator de ajuste, com 5.197 observações e divisão de 75% para treino e 25% para teste. Com hiperparâmetros fixos, relataram RMSE de 11,1785 sem fator e de 0,4987 com fator. Esses valores contextualizam um estudo anterior, mas não constituem um teste de superioridade desta pesquisa: a partição, os hiperparâmetros e o procedimento de seleção diferem. O resultado com fator não deve ser atribuído à série sem ajuste."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F20",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Autoria e versões reconciliadas; provaAraújo distinguida da edição final; metadados50obras tratados individualmente.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 246,
+          "texto": "Araújo et al. (2025) compararam MAE e RMSE como aptidão de um AG para ESNs com cinco distribuições. A prova consultada descreve retornos de fechamento da ITSA4 e variâncias diárias, com partição declarada de 60%/20%/20%. Esse protocolo difere da previsão do preço ajustado da PETR4 no ESNAUTO. A presente pesquisa adapta essa linha de trabalho, integra LHS e um operador antiestagnação inspirado no CHC. A preservação histórica parcial dos artefatos está descrita na Seção 3.8. Foi consultada a prova de autor; os metadados da edição final foram conferidos no editor."
+        },
+        {
+          "paragrafo": 365,
+          "texto": "Foram preservadas as informações das versões locais consultadas e as ressalvas sobre preprints ou outras versões. Contagens de citações recebidas e listas completas de referências citadas não foram reconstruídas; por esse motivo, não foram produzidos rankings de impacto ou redes de cocitação. No arquivo histórico processado, a tese de Duttilo consta com ano 2023, enquanto a referência foi atualizada para 2024 conforme a versão consultada. As Figuras 2 a 4 usam palavras-chave ou títulos e não dependem desse ano."
+        },
+        {
+          "paragrafo": 501,
+          "texto": "ABEBE, T. N.; GOSHU, A. T. Asymmetric generalized error distribution with its properties and applications. Frontiers in Applied Mathematics and Statistics, v. 10, art. 1398137, 2024. DOI: 10.3389/fams.2024.1398137."
+        },
+        {
+          "paragrafo": 502,
+          "texto": "ARAÚJO, H. V.; CARDOSO, F. C.; MATTOS, V. L. D.; BORGES, E. N.; LUCCA, G.; DALMAZO, B. L.; BERRI, R. A. Comparing MAE and RMSE as fitness of genetic algorithm for optimizing echo state network hyperparameters with different probabilistic distributions. In: JULIAN, V. et al. (ed.). Intelligent Data Engineering and Automated Learning – IDEAL 2024. Cham: Springer, 2025. p. 315-327. (LNCS, v. 15347). DOI: 10.1007/978-3-031-77738-7_26."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F21",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Jaeger2001 e Cardoso2025 citados em fundamentos/apresentação efetivamente utilizados;0referências sem chamada no cruzamento163.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 204,
+          "texto": "As ESNs integram o paradigma da Computação de Reservatório (Reservoir Computing – RC). Jaeger (2001) apresenta uma abordagem em que a rede recorrente fornece estados e o treinamento ajusta as conexões de saída por regressão. Na configuração usual descrita por Jaeger (2007), os pesos internos são inicializados aleatoriamente e permanecem fixos durante o ajuste da saída. Essa separação entre dinâmica recorrente e leitura fundamenta a arquitetura utilizada nesta pesquisa."
+        },
+        {
+          "paragrafo": 393,
+          "texto": "Para complementar as tabelas, as Figuras 5 e 6 apresentam a evolução da busca genética e a comparação entre valores observados e previstos na mesma execução preservada. A escolha dessas visualizações tomou como referência as Figuras 29 e 30 de Cardoso (2025, p. 90), adaptando-as à previsão do preço ajustado, em vez dos retornos estudados naquela tese."
+        },
+        {
+          "paragrafo": 397,
+          "texto": "Fonte: Elaborado pelo autor com o histórico preservado do lote de 200 gerações (2026). Referência de apresentação: Cardoso (2025, Figura 29)."
+        },
+        {
+          "paragrafo": 402,
+          "texto": "Fonte: Elaborado pelo autor pela reinjeção das matrizes preservadas, GED × Uniforme, rodada 2 (2026). Referência de apresentação: Cardoso (2025, Figura 30)."
+        },
+        {
+          "paragrafo": 499,
+          "texto": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F22",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "GED/EGARCH e parametrização preservadas; distribuição de retornos não determina lei ótima de pesos.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 225,
+          "texto": "A ocorrência de caudas pesadas em retornos financeiros motiva o exame de distribuições além da Normal (Nelson, 1991). Entretanto, a distribuição dos retornos observados e a lei usada para gerar pesos de uma ESN são objetos distintos. A adoção de distribuições alternativas nos pesos constitui uma hipótese de modelagem desta pesquisa; sua pertinência deve ser avaliada pelos resultados preditivos e não decorre automaticamente da semelhança entre suas caudas e as dos dados."
+        },
+        {
+          "paragrafo": 226,
+          "texto": "Nelson (1991) empregou a Distribuição Generalizada de Erro (Generalized Error Distribution – GED) na modelagem de retornos com heterocedasticidade condicional, no contexto do modelo exponencial autorregressivo de heterocedasticidade condicional generalizada (Exponential Generalized Autoregressive Conditional Heteroskedasticity – EGARCH). A família permite representar caudas mais pesadas ou mais leves que as da Normal. Essa aplicação fundamenta sua flexibilidade em finanças, sem estabelecer prioridade histórica absoluta nem validar sua transferência para os pesos de ESNs."
+        },
+        {
+          "paragrafo": 227,
+          "texto": "A GED é parametrizada por um coeficiente de forma ν: para ν = 2, recupera-se a distribuição Normal; para ν = 1, a Laplace; para valores ν < 2, as caudas tornam-se mais pesadas que as da Normal, captando com maior flexibilidade eventos extremos típicos dos mercados financeiros. Lampugnani (2026), em versão de Trabalho Final de Curso disponibilizada ao autor, apresentou resultados competitivos com distribuições alternativas na predição de preços da PETR4. O trabalho foi utilizado como referência acadêmica correlata e como elemento complementar de comparação dos resultados."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F23",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Estudo DJIA2022 e critérios de informação identificados separadamente, sem transferir para tese ou normalidade.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 228,
+          "texto": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do índice Dow Jones Industrial Average (DJIA) entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F24",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Não rejeição não significa equivalência; hipótese,perdas,janela,implementação e limites de uma semente explicitados. Referência extraHLN era recomendação, não nova obrigação ou razão para repetir DM.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 175,
+          "texto": "H1 - desempenho: a ESN otimizada apresentará menor perda preditiva que os modelos LSTM e GRU definidos no protocolo. A comparação histórica será descritiva; na rodada controlada complementar, a avaliação considerará a diferença de acurácia pelo teste bilateral de Diebold-Mariano e a direção do diferencial médio de perda. A ausência de significância será interpretada como evidência insuficiente de diferença, sem demonstrar equivalência entre os modelos."
+        },
+        {
+          "paragrafo": 345,
+          "texto": "O teste de Diebold-Mariano foi empregado para avaliar formalmente a igualdade de acurácia preditiva entre a ESN e os baselines GRU e LSTM, conforme a hipótese nula de diferença média de perda igual a zero proposta por Diebold e Mariano (1995)."
+        },
+        {
+          "paragrafo": 349,
+          "texto": "Os três modelos geraram 1.299 previsões datadas entre 29/09/2015 e 30/12/2020. A janela comparativa foi definida previamente como as 1.298 datas comuns entre 30/09/2015 e 30/12/2020. Para cada par de modelos, foram calculados os erros et = yt − ŷt e o diferencial dt = LESN,t − Lbaseline,t. Foram executadas quatro comparações bilaterais, com horizonte h = 1 e nível de significância α = 0,05: ESN × GRU e ESN × LSTM sob perda absoluta (|et|) e sob perda quadrática (et²)."
+        },
+        {
+          "paragrafo": 350,
+          "texto": "A variância de longo prazo foi estimada pelo método baseado na função de autocorrelação (Autocorrelation Function – ACF) da implementação dm.test do pacote forecast. Como as quatro comparações foram pré-especificadas, os resultados principais mantiveram α individual de 5%, sem correção por multiplicidade; essa escolha foi registrada como limitação metodológica. Com horizonte de um passo, esse cálculo considera apenas a autocovariância de defasagem zero; eventual dependência serial do diferencial de perda em outras defasagens não é incorporada à estimativa, o que limita a interpretação dos valores de p."
+        },
+        {
+          "paragrafo": 445,
+          "texto": "Os resultados satisfizeram o critério inferencial de superioridade definido para H1 na execução controlada complementar: além de apresentar menores MAE e RMSE na mesma janela, a ESN apresentou menor perda média e diferença estatisticamente significativa frente à GRU e à LSTM sob as duas funções de perda. Essa evidência não deve ser interpretada como teste retrospectivo dos valores históricos da Tabela 3, pois a rodada inferencial utilizou novos pesos, fronteira de treino estrita e continuidade cronológica explicitamente corrigida."
+        },
+        {
+          "paragrafo": 475,
+          "texto": "Os quatro testes de Diebold-Mariano produziram valores de p muito inferiores a 0,05 e menor perda média para a ESN sob perdas absoluta e quadrática. Ainda assim, essa evidência decorreu de uma única semente previamente fixada e de uma execução controlada com novos pesos; portanto, não caracteriza a distribuição de desempenho entre diferentes inicializações. Além disso, não foi aplicada correção para múltiplas comparações, pois os quatro contrastes foram pré-especificados com α individual de 5%. Essas condições limitam a generalização da inferência, embora não alterem a conclusão dos quatro testes dentro da execução analisada."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "F25",
+      "estado": "corrigido_ou_delimitado_no_texto",
+      "decisao": "Discussão qualitativa de limitaçõesARIMA sem inviabilidade universal.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 187,
+          "texto": "Vishwas, Usha e Sangeetha (2025) discutem limitações de modelos tradicionais, como o autorregressivo integrado de médias móveis (Autoregressive Integrated Moving Average – ARIMA), na representação de relações não lineares em dados financeiros. A revisão oferece contexto para investigar outras arquiteturas, mas não demonstra que modelos lineares sejam inadequados em toda série ou tarefa. A seleção e a comparação de modelos devem considerar o protocolo de avaliação."
+        }
+      ],
+      "evidencia_conteudo": "validacao_citacoes_conciliada_lote164.json"
+    },
+    {
+      "id": "R01",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "Revisão com buscas complementares e registros incompletos; não sistemática integral.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 359,
+          "texto": "A revisão de literatura reúne 34 documentos selecionados para fundamentar o trabalho. O levantamento inicial em Scopus e Springer Nature Link foi complementado por buscas externas à string inicial, conforme esclarecimento do autor, para incorporar fontes pertinentes ao desenvolvimento da pesquisa. A seleção final não decorreu exclusivamente daquela consulta nem de um ranking InOrdinatio integralmente aplicado. A coleção é apresentada como revisão de literatura com buscas complementares, sem alegação de cobertura exaustiva."
+        },
+        {
+          "paragrafo": 360,
+          "texto": "A planilha methodi_ordinatio.xlsx preserva uma etapa inicial do levantamento, com busca declarada em 23 de março de 2026 e 59 candidatos, dos quais 7 estão marcados para inclusão, 4 para exclusão e 48 sem decisão. O autor esclareceu que esses registros não foram mantidos de modo a representar integralmente a seleção final e suas buscas complementares. Por isso, as contagens da planilha não são utilizadas como um fluxo completo de seleção dos 34 documentos, nem as decisões faltantes são preenchidas retrospectivamente por inferência."
+        },
+        {
+          "paragrafo": 361,
+          "texto": "O Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015) foi considerado na organização inicial do levantamento. A planilha contém fórmulas com alfa igual a 5 e ano de referência 2026, mas seus indicadores e decisões não documentam uma aplicação concluída do método à coleção final. Assim, as pontuações não são usadas para justificar a inclusão ou estabelecer a relevância relativa dos 34 documentos. Os registros originais são preservados como documentação intermediária do processo."
+        },
+        {
+          "paragrafo": 363,
+          "texto": "Referências anteriores a 2021 e trabalhos de outros domínios foram utilizados como apoio conceitual, metodológico ou histórico. A coleção descritiva de 34 documentos, apresentada na Tabela 1, no Quadro 1 e nas Figuras 1 a 4, reúne essas fontes com estudos financeiros recentes. Seu tamanho corresponde ao material recuperado para análise, sem representar a quantidade de estudos que teria atendido a todos os critérios da busca originalmente relatada."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    },
+    {
+      "id": "R02",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "Recodificação e definições explícitas; contagens não representam prevalência na literatura.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 265,
+          "texto": "Lampugnani (2026) é discutido separadamente e não integra os 34 documentos da matriz. As dimensões são: P1 lei probabilística ligada à geração de Win ou W; P2 procedimento de seleção de hiperparâmetros de ESN/RC; P3 preparação concreta de séries temporais, incluindo transformações e construção de atributos ou janelas; P4 comparação quantitativa de previsão com LSTM, GRU ou Transformer; e P5 mercado e ativo identificados. A codificação distingue aplicações próprias de tratamentos secundários e registra informação insuficiente, sem pressupor que todos os temas sejam aplicáveis a cada fonte."
+        },
+        {
+          "paragrafo": 268,
+          "texto": "O Quadro 1 apresenta a codificação por documento: D indica evidência direta localizada na aplicação da própria fonte; S indica tratamento secundário ou contextual; ? indica informação insuficiente no escopo consultado; e — indica dimensão não aplicável ao objeto estudado. A marca ? não demonstra que o assunto inexista na obra. A presença de uma informação também não representa reprodução independente, aprovação da qualidade do estudo ou equivalência entre os protocolos comparados."
+        },
+        {
+          "paragrafo": 271,
+          "texto": "A distinção entre D e S evita somar uma revisão e o experimento por ela descrito como duas execuções independentes. Os códigos ? e — também têm sentidos diferentes: o primeiro conserva uma incerteza de leitura ou de especificação; o segundo delimita o objeto da fonte. Assim, as frequências desta coleção descrevem a documentação localizada segundo os critérios adotados, sem estimar a prevalência de métodos em toda a literatura nem comprovar, isoladamente, uma lacuna científica."
+        },
+        {
+          "paragrafo": 277,
+          "texto": "A Figura 1 registra evidência direta de preparação de séries em 26 documentos e de mercado/ativo em 25; comparações com LSTM, GRU ou Transformer aparecem diretamente em dez documentos, e a seleção de hiperparâmetros, em onze. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    },
+    {
+      "id": "R03",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "Dados recebidos ajustados do orientador; transformação original não reconstruída.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 303,
+          "texto": "A pesquisa utiliza arquivos locais da série PETR4 fornecidos pelo orientador, Prof. Dr. Fabian Corrêa Cardoso, já ajustados por eventos corporativos. A procedência da série é atribuída ao BovDB (Cardoso et al., 2022b). O ativo é a ação preferencial da Petróleo Brasileiro S.A. (PETROBRAS PN). A preparação original dos arquivos antecede seu uso nesta pesquisa; a modelagem partiu dos valores recebidos."
+        },
+        {
+          "paragrafo": 305,
+          "texto": "Os executores importam os valores de PETR4_close com factor_2000-2020.txt e PETR4_close com factor_2000-2020_com data.csv. Esses arquivos foram recebidos já ajustados do orientador, conforme esclarecimento do autor. O escopo desta pesquisa compreende sua utilização nos modelos e a organização das partições temporais. A cadeia original que liga cotações e eventos do BovDB à geração desses arquivos não foi reconstruída nesta auditoria."
+        },
+        {
+          "paragrafo": 306,
+          "texto": "A ausência dessa cadeia limita a auditoria retrospectiva do ajuste corporativo, ainda que os valores e as datas de entrada possam ser identificados por seus arquivos. A descrição das equações do BovDB oferece a referência metodológica, mas não substitui o registro dos eventos aplicados nem prova que cada exceção descrita na literatura tenha sido implementada na série local."
+        },
+        {
+          "paragrafo": 487,
+          "texto": "Foram investigadas famílias probabilísticas em Win e W, selecionados hiperparâmetros por AG e comparados resultados com ESN Normal × Normal, LSTM e GRU. O ESNAUTO organizou o processo e suas saídas, e H1 recebeu análise inferencial complementar pelo teste de Diebold-Mariano. A série foi fornecida já ajustada pelo orientador. A contribuição do autor compreendeu a adaptação dos códigos em R recebidos e o desenvolvimento da interface. Permanecem os limites de comparação e de preservação dos artefatos históricos."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    },
+    {
+      "id": "R04",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "Cronologia não garante isoladamente ausência de vazamento; fronteiras confirmadas na rodada controlada.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 308,
+          "texto": "A série foi organizada em blocos cronológicos, sem embaralhar as datas entre treino, validação e teste. Essa organização é necessária à avaliação temporal, mas não demonstra, isoladamente, ausência de vazamento de informação. Na rodada controlada complementar, a fronteira dos alvos de treino e a propagação contínua dos estados foram verificadas explicitamente; nos resultados históricos, a identificação do comportamento de cada execução depende dos artefatos preservados."
+        },
+        {
+          "paragrafo": 310,
+          "texto": "A ESN recebeu os valores da série já disponibilizada como ajustada, sem normalização adicional para [−1, 1]. Na rodada controlada, LSTM e GRU usaram Min-Max calculado exclusivamente sobre as 2.600 observações de treino e reutilizado na validação e no teste. Esse procedimento de escalonamento foi verificado no protocolo controlado; sua confirmação para cada execução histórica depende dos artefatos preservados. A ordem cronológica, isoladamente, não demonstra ausência de vazamento."
+        },
+        {
+          "paragrafo": 348,
+          "texto": "A matriz Wout foi recalculada utilizando estritamente alvos pertencentes ao treino, em 2.542 pares com alvos 59–2600; durante a validação, o estado do reservatório foi propagado cronologicamente sem reestimar Wout. Os baselines GRU e LSTM mantiveram 50 unidades recorrentes, janela de 10 passos, dropout de 0,2, otimizador Adam, 80 épocas e normalização Min-Max calculada exclusivamente sobre o treino. Para os três modelos, o contexto temporal treino → validação → teste foi preservado."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    },
+    {
+      "id": "R05",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "Capacidade de salvar pesos separada de política histórica e preservação efetiva incompleta.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 332,
+          "texto": "As combinações de Win e W foram exploradas no mesmo espaço de hiperparâmetros. A reinjeção de uma configuração depende da disponibilidade de suas matrizes e parâmetros. Como não foram recuperados todos os artefatos históricos, a reprodução exata de cada execução não é garantida. Os resultados representam realizações documentadas de reservatórios estocásticos, sem estimar uma distribuição completa de desempenho para cada configuração."
+        },
+        {
+          "paragrafo": 352,
+          "texto": "A reprodutibilidade foi tratada como requisito metodológico desta pesquisa. O repositório documentou o código, os dados de entrada, o desenho experimental e parte dos artefatos de saída, permitindo reexecutar o protocolo e auditar decisões metodológicas. Entretanto, a replicação exata de uma execução histórica permaneceu dependente da disponibilidade das matrizes e dos vetores de previsão correspondentes; como esses artefatos não foram versionados para todas as execuções, esta seção distinguiu reexecução do protocolo de reprodução exata de cada resultado histórico."
+        },
+        {
+          "paragrafo": 374,
+          "texto": "O ESNAUTO registrou cumulativamente hiperparâmetros e métricas e dispôs de mecanismo para preservar Win, W e Wout quando um recorde global era identificado, além de permitir reinjeção de matrizes preservadas. Esses recursos favoreceram a recuperação de configurações salvas sem repetir toda a busca genética."
+        },
+        {
+          "paragrafo": 375,
+          "texto": "Contudo, a auditoria do repositório mostrou que essa persistência não foi aplicada de forma completa a todas as execuções oficiais; por isso, o procedimento para nova execução foi documentado, enquanto a reprodução exata de cada rodada histórica permaneceu condicionada aos artefatos efetivamente preservados. A execução complementar de Diebold-Mariano preservou semente, dependências, matrizes, modelos, previsões datadas, métricas, validações e hashes antes da análise inferencial."
+        },
+        {
+          "paragrafo": 461,
+          "texto": "A rastreabilidade constitui uma qualidade central, mas deve ser descrita de forma compatível com os artefatos efetivamente preservados. O software possui mecanismo para registrar hiperparâmetros e métricas e para salvar Win, W e Wout quando um recorde global é estabelecido, bem como rotina de reinjeção de configurações preservadas."
+        },
+        {
+          "paragrafo": 462,
+          "texto": "Entretanto, a auditoria realizada durante a consolidação desta monografia mostrou que os vetores ponto a ponto e as matrizes de todas as execuções oficiais não foram versionados. Assim, o ESNAUTO oferece mecanismos de rastreabilidade, mas a política de persistência aplicada às execuções históricas ainda não cobre integralmente todos os artefatos necessários para reconstrução retrospectiva de qualquer rodada."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    },
+    {
+      "id": "R06",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "Fitness usa treino/validação; recordes de teste são descrição posterior; ilustração escolhida dentro do lote legado.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 309,
+          "texto": "A divisão estática 50%/25%/25% reuniu 2.600 observações de treino, de 03/01/2000 a 01/07/2010; 1.299 de validação, de 02/07/2010 a 28/09/2015; e 1.299 de teste, de 29/09/2015 a 30/12/2020. A função de aptidão da busca combinou erros de treino e validação. Os recordes de erro de teste apresentados nos resultados constituem comparações descritivas posteriores e não equivalem a uma seleção prospectiva de configuração para uma nova amostra."
+        },
+        {
+          "paragrafo": 331,
+          "texto": "No motor atual, a função de aptidão combina erros de treino e validação: fitness = −(0,4 · MAEtreino + 0,6 · MAEvalidação). O sinal negativo converte a minimização em maximização para o pacote GA. A ponderação atribui maior peso à validação e segue a combinação descrita por Araújo et al. (2025). O software dispõe de serialização dos pesos e hiperparâmetros associados a recordes; contudo, esse mecanismo não resultou na preservação integral de todas as saídas históricas."
+        },
+        {
+          "paragrafo": 343,
+          "texto": "Como material visual complementar, utilizou-se também um lote legado de 12 cenários com 200 gerações, cujo histórico de fitness e matrizes foram preservados. A escolha para as Figuras 5 e 6 considerou exclusivamente o maior fitness de treino/validação desse lote. Esses registros não foram agregados às 45 execuções de produção, e a ilustração não replica o protocolo com LHS e cataclismo."
+        },
+        {
+          "paragrafo": 403,
+          "texto": "A proximidade visual entre as curvas deve ser interpretada em conjunto com os erros numéricos: o gráfico descreve a previsão de um passo à frente em preços em nível e não representa uma trajetória inteiramente recursiva de longo prazo. O teste não participou da escolha da execução ilustrada. Como os históricos completos de evolução do GA das execuções de produção não foram preservados, não se atribui a elas a curva de convergência deste lote legado."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    },
+    {
+      "id": "R07",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "IntegraçãoLHS/cataclismo não comprova diversidade ou efeito causal;H4não demonstrada.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 327,
+          "texto": "O motor de busca disponibilizado incorpora um mecanismo de mutação cataclísmica inspirado no CHC (Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation), conforme descrito por Eshelman e Schaffer (1995). Após estagnação, o mecanismo aumenta a mutação para ampliar a exploração. Essa finalidade de implementação não demonstra manutenção de diversidade: não foram produzidas medidas populacionais específicas nem uma ablação que isolasse o efeito do LHS e do operador. O mecanismo não corresponde ao CHC completo."
+        },
+        {
+          "paragrafo": 342,
+          "texto": "A análise das hipóteses distinguiu resultados e limites de avaliação. H1 comparou ESNs, GRU e LSTM; H2 separou ajuste e busca; H3 descreveu configurações não gaussianas frente a Normal × Normal. Para H4, verificou-se a integração do LHS e do operador cataclísmico, sem medida de diversidade ou ablação. H5 foi examinada pelos erros e pela dispersão entre configurações da Onda 5, sem estimar a variabilidade de repetidas sementes para uma mesma configuração."
+        },
+        {
+          "paragrafo": 450,
+          "texto": "Para H3, variantes não gaussianas produziram os menores erros observados, com ganhos inferiores a 1% frente a Normal × Normal. Para H4, a integração do LHS e do operador cataclísmico foi documentada, mas a diversidade não foi mensurada e seus efeitos não foram isolados por ablação. Para H5, observou-se baixa dispersão entre configurações da Onda 5, sem menor erro global; esse resultado não demonstra redução da variabilidade entre repetições de uma mesma configuração."
+        },
+        {
+          "paragrafo": 493,
+          "texto": "H2 recebeu apoio para o custo de ajuste do modelo selecionado, sem estender essa conclusão ao custo total da busca; H3 teve apoio pontual nos melhores erros observados. H4 não foi demonstrada: a integração dos mecanismos não foi acompanhada de medida de diversidade nem de ablação. H5 teve apenas evidência descritiva de baixa dispersão entre configurações, sem demonstrar menor variabilidade entre repetições ou superioridade de erro. Esses limites separam funcionamento do software, observação de resultados e efeitos não testados."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    },
+    {
+      "id": "R08",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "15configuraçõesOnda5 compiladas; baixa dispersão não é repetibilidade entre sementes; limitação histórica preservada.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 342,
+          "texto": "A análise das hipóteses distinguiu resultados e limites de avaliação. H1 comparou ESNs, GRU e LSTM; H2 separou ajuste e busca; H3 descreveu configurações não gaussianas frente a Normal × Normal. Para H4, verificou-se a integração do LHS e do operador cataclísmico, sem medida de diversidade ou ablação. H5 foi examinada pelos erros e pela dispersão entre configurações da Onda 5, sem estimar a variabilidade de repetidas sementes para uma mesma configuração."
+        },
+        {
+          "paragrafo": 413,
+          "texto": "Nas métricas compiladas da Onda 5, as 15 configurações apresentaram MAE entre aproximadamente 0,328395 e 0,328398, amplitude de 0,000003, e amplitude de RMSE próxima de 0,000002. Essa concentração descreve diferenças entre as configurações avaliadas. Não estima a variabilidade de repetir cada configuração com novas sementes nem comprova robustez a outros períodos. As distribuições ajustadas não produziram o menor erro global."
+        },
+        {
+          "paragrafo": 450,
+          "texto": "Para H3, variantes não gaussianas produziram os menores erros observados, com ganhos inferiores a 1% frente a Normal × Normal. Para H4, a integração do LHS e do operador cataclísmico foi documentada, mas a diversidade não foi mensurada e seus efeitos não foram isolados por ablação. Para H5, observou-se baixa dispersão entre configurações da Onda 5, sem menor erro global; esse resultado não demonstra redução da variabilidade entre repetições de uma mesma configuração."
+        },
+        {
+          "paragrafo": 493,
+          "texto": "H2 recebeu apoio para o custo de ajuste do modelo selecionado, sem estender essa conclusão ao custo total da busca; H3 teve apoio pontual nos melhores erros observados. H4 não foi demonstrada: a integração dos mecanismos não foi acompanhada de medida de diversidade nem de ablação. H5 teve apenas evidência descritiva de baixa dispersão entre configurações, sem demonstrar menor variabilidade entre repetições ou superioridade de erro. Esses limites separam funcionamento do software, observação de resultados e efeitos não testados."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    },
+    {
+      "id": "R09",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "Orçamento desigual e uma execução oficial por arquitetura explicitados;DMnão elimina assimetria.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 334,
+          "texto": "Os baselines LSTM e GRU utilizaram janelas de 10 passos, normalização Min-Max calculada apenas sobre o treino, uma camada recorrente com 50 unidades, dropout de 0,2, saída densa escalar e otimizador Adam. Os valores oficiais documentados consideraram 80 épocas. A comparação empregou a mesma série e a mesma partição temporal, mas não constituiu equivalência completa de orçamento de otimização: a ESN foi submetida a busca genética extensa, enquanto os baselines profundos tiveram uma execução oficial por arquitetura. Essa assimetria foi considerada na discussão dos resultados."
+        },
+        {
+          "paragrafo": 478,
+          "texto": "A comparação entre ESN, LSTM e GRU também utiliza orçamentos distintos de seleção de hiperparâmetros. A ESN recebeu uma busca evolutiva extensa, enquanto os baselines LSTM e GRU utilizaram arquiteturas definidas no protocolo, com 50 unidades recorrentes, janela de dez passos, dropout de 0,2, Adam e 80 épocas. A análise de Diebold-Mariano fortaleceu a evidência relativa a essas arquiteturas específicas na execução controlada, mas não elimina a assimetria de orçamento nem permite afirmar que toda possível configuração de LSTM ou GRU teria desempenho inferior."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    },
+    {
+      "id": "R10",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "RodadaDMcom novos pesos e uma semente separada das45históricas e12cenários ilustrativos.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 346,
+          "texto": "A aplicação retrospectiva do teste às execuções históricas não foi possível porque os vetores ponto a ponto de previsão e as matrizes da execução campeã GA_RUN_0030 não haviam sido integralmente preservados. Para evitar reconstrução artificial desses resultados, foi conduzida uma execução inferencial complementar, separada dos resultados históricos, com protocolo previamente congelado e semente fixa 20260926."
+        },
+        {
+          "paragrafo": 349,
+          "texto": "Os três modelos geraram 1.299 previsões datadas entre 29/09/2015 e 30/12/2020. A janela comparativa foi definida previamente como as 1.298 datas comuns entre 30/09/2015 e 30/12/2020. Para cada par de modelos, foram calculados os erros et = yt − ŷt e o diferencial dt = LESN,t − Lbaseline,t. Foram executadas quatro comparações bilaterais, com horizonte h = 1 e nível de significância α = 0,05: ESN × GRU e ESN × LSTM sob perda absoluta (|et|) e sob perda quadrática (et²)."
+        },
+        {
+          "paragrafo": 441,
+          "texto": "A execução controlada complementar produziu, na janela congelada de 1.298 observações entre 30/09/2015 e 30/12/2020, MAE de 0,328850 e RMSE de 0,498452 para a ESN; MAE de 0,418175 e RMSE de 0,592452 para a GRU; e MAE de 0,466612 e RMSE de 0,635287 para a LSTM. Esses valores pertencem exclusivamente à execução controlada com semente 20260926 e não substituem os resultados históricos apresentados na Tabela 3. A finalidade dessa rodada foi fornecer vetores de previsão íntegros, alinhados por data e reproduzíveis para a avaliação inferencial de H1."
+        },
+        {
+          "paragrafo": 445,
+          "texto": "Os resultados satisfizeram o critério inferencial de superioridade definido para H1 na execução controlada complementar: além de apresentar menores MAE e RMSE na mesma janela, a ESN apresentou menor perda média e diferença estatisticamente significativa frente à GRU e à LSTM sob as duas funções de perda. Essa evidência não deve ser interpretada como teste retrospectivo dos valores históricos da Tabela 3, pois a rodada inferencial utilizou novos pesos, fronteira de treino estrita e continuidade cronológica explicitamente corrigida."
+        },
+        {
+          "paragrafo": 475,
+          "texto": "Os quatro testes de Diebold-Mariano produziram valores de p muito inferiores a 0,05 e menor perda média para a ESN sob perdas absoluta e quadrática. Ainda assim, essa evidência decorreu de uma única semente previamente fixada e de uma execução controlada com novos pesos; portanto, não caracteriza a distribuição de desempenho entre diferentes inicializações. Além disso, não foi aplicada correção para múltiplas comparações, pois os quatro contrastes foram pré-especificados com α individual de 5%. Essas condições limitam a generalização da inferência, embora não alterem a conclusão dos quatro testes dentro da execução analisada."
+        },
+        {
+          "paragrafo": 490,
+          "texto": "Os quatro testes de Diebold-Mariano rejeitaram a hipótese de igualdade de acurácia preditiva a 5%, sempre com menor perda média para a ESN na rodada controlada. Essa inferência não se estende aos resultados históricos de outras sementes. A comparação com Lampugnani (2026) permaneceu descritiva, sem tratar protocolos distintos como equivalentes."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    },
+    {
+      "id": "R11",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "R²não demonstra utilidade financeira ou vantagem sobre persistência; essa comparação não foi executada.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 427,
+          "texto": "Quando normalizado pela média do preço observado no conjunto de teste, esse erro correspondeu a NMAE aproximado de 2,02%, frente a 2,20% para a GRU e 2,80% para a LSTM. Esses percentuais facilitam a interpretação relativa do erro, mas não representam rentabilidade, perda monetária de uma carteira ou desempenho de uma estratégia de negociação, pois tais dimensões não foram avaliadas neste trabalho."
+        },
+        {
+          "paragrafo": 428,
+          "texto": "Sob essa perspectiva, o ESNAUTO deve ser entendido como infraestrutura de experimentação e comparação de modelos, e não como sistema de negociação automática. Seu público de uso mais diretamente compatível com o escopo validado inclui pesquisadores de séries temporais, analistas quantitativos, profissionais de Ciência de Dados e equipes acadêmicas ou técnicas interessadas em configurar, executar e comparar ESNs e modelos recorrentes sobre séries temporais. A adoção em decisões de investimento exigiria validações adicionais específicas de estratégia, custos de transação, liquidez, risco e retorno."
+        },
+        {
+          "paragrafo": 470,
+          "texto": "O valor elevado de R² exige cautela porque o objeto previsto é o preço da ação em nível, com forte persistência temporal. MAE e RMSE descrevem os erros, mas não demonstram, por si sós, vantagem sobre a previsão que repete o último preço observado. Esse comparador não integra os quatro contrastes da rodada controlada com GRU e LSTM. Assim, a evidência apresentada não estabelece ganho sobre a persistência nem utilidade econômica; uma comparação futura com esse referencial deverá usar a mesma janela e escala."
+        },
+        {
+          "paragrafo": 479,
+          "texto": "A discussão de governança apresentada no Capítulo 4 constitui um enquadramento para eventual implantação e não uma validação operacional em produção. O trabalho não definiu limites organizacionais de risco, não avaliou estratégia de compra e venda, custos de transação, retorno financeiro ou indicadores de carteira e não testou processos de monitoramento, promoção e retorno à versão anterior em ambiente real. Consequentemente, esses mecanismos são tratados como requisitos de engenharia e gestão de modelo derivados das limitações observadas, e não como funcionalidades cuja eficácia financeira tenha sido demonstrada."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    },
+    {
+      "id": "R12",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "Título atual descreve preço ajustado,ESN e otimização; não atribui ganho causal isolado ao fator.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 3,
+          "texto": "PREVISÃO DO PREÇO DE FECHAMENTO AJUSTADO DA PETR4 COM REDES NEURAIS DE ESTADOS DE ECO E OTIMIZAÇÃO GENÉTICA"
+        },
+        {
+          "paragrafo": 169,
+          "texto": "A pesquisa utiliza preços ajustados para lidar com descontinuidades associadas a eventos corporativos, sem isolar o efeito do Fator de Ajuste por uma ablação. Também distingue o custo da busca por hiperparâmetros do ajuste da configuração selecionada, delimitando a interpretação da acurácia e da eficiência computacional."
+        },
+        {
+          "paragrafo": 245,
+          "texto": "O ajuste de eventos corporativos pode reduzir descontinuidades nos preços históricos. Nesta pesquisa, a série atribuída ao BovDB foi fornecida pelo orientador já ajustada e utilizada como entrada dos modelos. O autor não reivindica a execução da transformação original. Como não houve comparação controlada entre séries bruta e ajustada neste protocolo, não se estima o efeito causal isolado desse tratamento sobre os erros de previsão."
+        },
+        {
+          "paragrafo": 488,
+          "texto": "O emprego de preços disponibilizados como ajustados delimita a entrada do protocolo. Não houve uma comparação, sob condições idênticas, entre a série bruta e essa série ajustada. Assim, não se quantificou um ganho causal isolado do Fator de Ajuste. A coincidência da base declarada com a de outro estudo tampouco demonstra identidade de transformação, partição ou orçamento de otimização."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    },
+    {
+      "id": "R13",
+      "estado": "tratado_com_limites_explicitos",
+      "decisao": "CódigosRrecebidos do orientador; adaptação e interface do autor;Quadro6atribui fundamentos e antecedentes.",
+      "passagens_atuais": [
+        {
+          "paragrafo": 300,
+          "texto": "A implementação partiu de códigos em R fornecidos pelo orientador, adaptados pelo autor ao contexto da pesquisa, com desenvolvimento da interface do ESNAUTO. Os fundamentos da ESN seguem Jaeger (2007). O código atual usa GA, fGarch e PearsonDS; mede tempo com proc.time e usa pracma como pseudoinversa alternativa. O script anterior carrega outras bibliotecas e contém exemplos de ajuste comentados. O Quadro 6 distingue a base recebida e a contribuição de adaptação e interface."
+        },
+        {
+          "paragrafo": 458,
+          "texto": "O desenvolvimento do ESNAUTO partiu de códigos em R fornecidos pelo orientador. O autor adaptou essas rotinas ao contexto da pesquisa e construiu a interface para organizar a execução dos experimentos. A aplicação reúne seleção de configurações, acompanhamento de execuções, histórico e visualização dos resultados. Essa contribuição compreende adaptação e desenvolvimento da interface sobre uma base computacional recebida; não se apresenta toda a implementação matemática como criação original do autor."
+        },
+        {
+          "paragrafo": 487,
+          "texto": "Foram investigadas famílias probabilísticas em Win e W, selecionados hiperparâmetros por AG e comparados resultados com ESN Normal × Normal, LSTM e GRU. O ESNAUTO organizou o processo e suas saídas, e H1 recebeu análise inferencial complementar pelo teste de Diebold-Mariano. A série foi fornecida já ajustada pelo orientador. A contribuição do autor compreendeu a adaptação dos códigos em R recebidos e o desenvolvimento da interface. Permanecem os limites de comparação e de preservação dos artefatos históricos."
+        },
+        {
+          "paragrafo": 494,
+          "texto": "A contribuição de Engenharia de Software compreendeu a adaptação dos códigos em R fornecidos pelo orientador ao contexto da pesquisa e a construção da interface do ESNAUTO. A aplicação organiza preparação dos dados recebidos, execução dos modelos, configurações, métricas, histórico e visualizações. O Quadro 6 distingue fundamentos anteriores, base computacional recebida e desenvolvimento do autor. Essa atribuição reconhece a procedência das rotinas sem reivindicar criação original das técnicas combinadas."
+        },
+        {
+          "paragrafo": 499,
+          "texto": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados."
+        }
+      ],
+      "evidencia_conteudo": "Conferências dos protocolos e decisões contextuais; passagens e ressalvas reproduzidas."
+    }
+  ],
+  "limites": [
+    "O parecer é fotografia da v001, não diagnóstico automático da cópia atual.",
+    "Limitações de preservação e desenho não foram eliminadas por edição; foram explicitadas e as conclusões delimitadas.",
+    "Não garante nota,aprovação,ausência de questionamentos da banca ou ausência universal de plágio."
+  ],
+  "pendencias_substantivas_identificadas_nesta_conciliacao": []
+}

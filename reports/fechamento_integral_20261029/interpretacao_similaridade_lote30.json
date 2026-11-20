@@ -1,0 +1,23 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "ee6e179ab0ba157fb9f1348a1ac75c38813be767c3a27367481727f59641af50",
+  "fontes": "39 fontes históricas verificadas pelo manifesto, incluindo trabalhos em português e tese; corpus e extração identificados no arquivo de triagem.",
+  "triagem_lexical": "reports/correcao_parecer_integridade/triagem_lote30/triagem.json",
+  "blocos": [
+    {
+      "id": "B001",
+      "julgamento": "Denominação técnica rede neural recorrente e sua sigla, com atribuição apropriada às fontes de LSTM e GRU. Não indica cópia de expressão autoral."
+    },
+    {
+      "id": "B002",
+      "julgamento": "Nome consagrado do critério de informação e sigla, em contexto com atribuição a Duttilo e Gattone; não indica cópia de expressão autoral."
+    }
+  ],
+  "triagem_tese": "reports/fechamento_integral_20261029/semelhanca_cardoso_lote30.json",
+  "avaliacao_tese": "Sete pares: seis no objetivo/conclusão e termos ESN, incluindo duplicações e palavras-chave da tese; um de Ribeiro/P0207 trata da mesma fonte Ribeiro (2021), citada na monografia, com informações específicas conferidas em leitura anterior. Sem trecho autoral longo identificado entre os pares da triagem.",
+  "comparacao_lampugnani": "reports/correcao_parecer_integridade/pares_lote30/pares_lampugnani.json",
+  "avaliacao_lampugnani": "38.958 pares de parágrafos com pelo menos 15 palavras comparados, nenhum atingiu o limiar 0,4. O resultado depende do método e não prova originalidade.",
+  "limites": "Filtro lexical e comparação aproximada não identificam com segurança paráfrases, traduções, ideias, texto em imagens ou fontes não indexadas; títulos, resumo, referências e elementos fora do corpo principal não integram essa comparação. Nenhuma taxa de plágio ou garantia universal é produzida.",
+  "resultado": "Nenhuma correção adicional baseada nesses pares. Continuar leitura e conferência por afirmação e cobertura de fontes suplementares."
+}

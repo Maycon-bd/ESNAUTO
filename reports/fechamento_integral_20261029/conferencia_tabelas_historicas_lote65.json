@@ -1,0 +1,272 @@
+{
+  "sha256_rascunho": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "fonte": "docs\\08_comparativo_quatro_ondas_estocasticas.md",
+  "sha256_fonte": "037251565c8be1f2edddbcdbb2227bec1cba6793095c669ad335277191208511",
+  "linhas_tabela4_conferidas": [
+    {
+      "id": "GA_RUN_0022",
+      "linha_word": [
+        "1",
+        "Pearson V × Uniforme",
+        "0,327657",
+        "0,9940",
+        "Melhor MAE da Onda 1"
+      ],
+      "linha_relatorio": [
+        "GA_RUN_0022",
+        "Pearson V",
+        "Uniforme",
+        "0.855",
+        "0.716",
+        "52",
+        "4",
+        "$8.84 \\times 10^{-5}$",
+        "0.262957",
+        "0.353898",
+        "0.327657",
+        "0.498257",
+        "0.9940",
+        "21.1m"
+      ]
+    },
+    {
+      "id": "GA_RUN_0026",
+      "linha_word": [
+        "1",
+        "t Student × t Student",
+        "0,327706",
+        "0,9940",
+        "Resultado competitivo"
+      ],
+      "linha_relatorio": [
+        "GA_RUN_0026",
+        "t de Student",
+        "t de Student",
+        "0.181",
+        "0.637",
+        "3",
+        "3",
+        "$6.74 \\times 10^{-5}$",
+        "0.262601",
+        "0.353623",
+        "0.327706",
+        "0.498818",
+        "0.9940",
+        "50.6m"
+      ]
+    },
+    {
+      "id": "GA_RUN_0030",
+      "linha_word": [
+        "2",
+        "Laplace × Normal",
+        "0,327224",
+        "0,9940",
+        "Menor MAE global"
+      ],
+      "linha_relatorio": [
+        "GA_RUN_0030",
+        "Laplace",
+        "Normal",
+        "0.112",
+        "0.215",
+        "57",
+        "22",
+        "$5.72 \\times 10^{-5}$",
+        "0.262630",
+        "0.354092",
+        "0.327224",
+        "0.498527",
+        "0.9940",
+        "70.3m"
+      ]
+    },
+    {
+      "id": "GA_RUN_0033",
+      "linha_word": [
+        "2",
+        "Laplace × Cauchy",
+        "0,328949",
+        "0,9941",
+        "Menor RMSE global"
+      ],
+      "linha_relatorio": [
+        "GA_RUN_0033",
+        "Laplace",
+        "Cauchy",
+        "0.924",
+        "0.652",
+        "97",
+        "28",
+        "$2.98 \\times 10^{-5}$",
+        "0.262352",
+        "0.353158",
+        "0.328949",
+        "0.495386",
+        "0.9941",
+        "56.1m"
+      ]
+    },
+    {
+      "id": "GA_RUN_0041",
+      "linha_word": [
+        "3",
+        "Normal Esparsa × GED",
+        "0,329494",
+        "0,9939",
+        "Esparsidade sináptica"
+      ],
+      "linha_relatorio": [
+        "GA_RUN_0041",
+        "Normal Esparsa",
+        "GED",
+        "0.135",
+        "0.693",
+        "20",
+        "29",
+        "$8.51 \\times 10^{-5}$",
+        "0.262315",
+        "0.353174",
+        "0.329494",
+        "0.501163",
+        "0.9939",
+        "71.0m"
+      ]
+    },
+    {
+      "id": "GA_RUN_0040",
+      "linha_word": [
+        "3",
+        "GED × F de Snedecor",
+        "0,327963",
+        "0,9940",
+        "Resultado competitivo"
+      ],
+      "linha_relatorio": [
+        "GA_RUN_0040",
+        "GED",
+        "F de Snedecor",
+        "0.872",
+        "0.674",
+        "9",
+        "16",
+        "$2.15 \\times 10^{-5}$",
+        "0.262660",
+        "0.353430",
+        "0.327963",
+        "0.498615",
+        "0.9940",
+        "36.5m"
+      ]
+    },
+    {
+      "id": "GA_RUN_0046",
+      "linha_word": [
+        "4",
+        "Normal × Normal",
+        "0,328365",
+        "0,9940",
+        "Controle canônico"
+      ],
+      "linha_relatorio": [
+        "GA_RUN_0046",
+        "Normal",
+        "Normal",
+        "0.316",
+        "0.017",
+        "57",
+        "3",
+        "$2.97 \\times 10^{-5}$",
+        "0.262674",
+        "0.353434",
+        "0.328365",
+        "0.499037",
+        "0.9940",
+        "67.4m"
+      ]
+    },
+    {
+      "id": "GA_RUN_0048",
+      "linha_word": [
+        "4",
+        "Normal Esparsa × Normal",
+        "0,327938",
+        "0,9939",
+        "Melhor que o controle em MAE"
+      ],
+      "linha_relatorio": [
+        "GA_RUN_0048",
+        "Normal Esparsa",
+        "Normal",
+        "0.845",
+        "0.875",
+        "16",
+        "9",
+        "$8.23 \\times 10^{-5}$",
+        "0.263101",
+        "0.353991",
+        "0.327938",
+        "0.500285",
+        "0.9939",
+        "29.3m"
+      ]
+    },
+    {
+      "id": "`GA_RUN_0053`",
+      "linha_word": [
+        "5",
+        "Power Function × Normal",
+        "0,328395",
+        "0,9940",
+        "Baixa dispersão da Onda 5"
+      ],
+      "linha_relatorio": {
+        "ID": "`GA_RUN_0053`",
+        "Win": "**Power Function**",
+        "W": "**Normal**",
+        "a": "0.965",
+        "sr": "0.220",
+        "initLen": "5",
+        "Nx": "32",
+        "Ridge": "$9.90 \\times 10^{-9}$",
+        "MAE_validacao": "0.262773",
+        "RMSE_validacao": "0.353253",
+        "MAE_teste": "**0.328395**",
+        "RMSE_teste": "0.498785",
+        "R2_teste": "**0.9940**",
+        "tempo": "65.3m"
+      }
+    },
+    {
+      "id": "`GA_RUN_0054`",
+      "linha_word": [
+        "5",
+        "Dagum 4P × Normal",
+        "0,328396",
+        "0,9940",
+        "Baixa dispersão da Onda 5"
+      ],
+      "linha_relatorio": {
+        "ID": "`GA_RUN_0054`",
+        "Win": "**Dagum (4P)**",
+        "W": "**Normal**",
+        "a": "0.990",
+        "sr": "0.011",
+        "initLen": "2",
+        "Nx": "32",
+        "Ridge": "$9.90 \\times 10^{-9}$",
+        "MAE_validacao": "0.262773",
+        "RMSE_validacao": "0.353252",
+        "MAE_teste": "**0.328396**",
+        "RMSE_teste": "0.498786",
+        "R2_teste": "**0.9940**",
+        "tempo": "48.4m"
+      }
+    }
+  ],
+  "contagem_compilada": 45,
+  "mae_inferior_a_ambos_baselines": 44,
+  "horas_soma_tempos_arredondados": "37.925",
+  "limites": "Conferência contra os relatórios compilados, não contra vetores individuais ou novas execuções. As afirmações interpretativas exageradas do relatório histórico não são adotadas. Valores de GRU/LSTM da Tabela 3 coincidem com a seção 3 desse relatório; não comprovam de forma independente as execuções.",
+  "acao": "Sem alteração do Word nesta conferência."
+}

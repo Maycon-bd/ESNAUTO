@@ -1,0 +1,26 @@
+{
+  "sha256_docx": "b8f7675159483d79d0bb638ba914c2ef541220fa49161a406e869d7154ad249f",
+  "registros": [
+    {
+      "paragrafo_atual": 182,
+      "texto": "A previsão financeira exige atenção às propriedades da série e às condições de avaliação. Dewick (2022) discute distribuições financeiras que podem apresentar caudas pesadas, agrupamento de volatilidade e dependência não linear. Essas características motivam examinar diferentes modelos e distribuições, mas sua ocorrência e intensidade devem ser verificadas nos dados de cada aplicação. Nesta pesquisa, a tarefa é prever preços ajustados da PETR4; propriedades dos retornos não são automaticamente atribuídas aos preços em nível.",
+      "decisao": "Dewick PDF2–3 discute propriedades que distribuições financeiras podem apresentar; redação corrigida mantém possibilidade e distingue preços/retornos.",
+      "estado": "manter",
+      "evidencia": "correcoes_generalizacoes_lote101.json"
+    },
+    {
+      "paragrafo_atual": 186,
+      "texto": "Vishwas, Usha e Sangeetha (2025) discutem limitações de modelos tradicionais, como o autorregressivo integrado de médias móveis (Autoregressive Integrated Moving Average – ARIMA), na representação de relações não lineares em dados financeiros. A revisão oferece contexto para investigar outras arquiteturas, mas não demonstra que modelos lineares sejam inadequados em toda série ou tarefa. A seleção e a comparação de modelos devem considerar o protocolo de avaliação.",
+      "decisao": "Vishwas PDF1–2 sustenta discussão de limitações não lineares; redação evita universalidade e atribui a revisão.",
+      "estado": "manter",
+      "evidencia": "correcoes_generalizacoes_lote101.json"
+    },
+    {
+      "paragrafo_atual": 198,
+      "texto": "O resultado de Cortesi et al. (2026) indica que escolhas do processo de otimização podem produzir funções de previsão distintas mesmo com métricas agregadas semelhantes. Para esta pesquisa, isso motiva interpretar o erro preditivo em conjunto com as condições de avaliação, sem transferir automaticamente esse achado para a inicialização dos pesos da ESN.",
+      "decisao": "Transição atribuída a Cortesi limita resultado aos otimizadores e não estende a inicialização ESN.",
+      "estado": "manter",
+      "evidencia": "correcao_transicao_cortesi_lote98.json"
+    }
+  ]
+}

@@ -1,0 +1,706 @@
+{
+  "schema_version": 1,
+  "vigente": "v015",
+  "versoes": [
+    {
+      "id": "v001",
+      "anterior": null,
+      "arquivo": "reports/monografia/versoes/v001/MayconGarciaSilva_monografia_v001.docx",
+      "sha256": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+      "registrada_em_utc": "2026-10-29T01:16:23.098557+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\MayconGarciaSilva_monografia_FASOFT_conferida.docx",
+      "responsavel": "Codex nesta conversa, por solicitação de Maycon Garcia Silva",
+      "resumo": "Importação inicial da versão FASOFT conferida, sem alteração do Word. Versões anteriores permanecem históricas.",
+      "estado_editorial": "em_revisao",
+      "validacao_declarada": "Identidade conferida por SHA256. Há auditoria anterior de apresentação e parecer de citações com divergências; esta importação não certifica coerência integral ou ausência de plágio.",
+      "evidencias": [
+        {
+          "arquivo": "reports/auditoria_integral_fasoft_20261028/estado_revisao.json",
+          "sha256": "8459094e327cb83d2294c5c2ebb85a7e34b1f8920f67d825b9656f00043d9eee"
+        },
+        {
+          "arquivo": "reports/auditoria_citacoes_integridade_20261028/parecer.md",
+          "sha256": "651403ec4c7d1b383e202a559b25cdd6ba74919fbc7d4ce69dc889fc0b5e8329"
+        }
+      ],
+      "pendencias": [
+        "Tratar os 25 achados do parecer de citações e integridade; propostas ainda não incorporadas ao Word.",
+        "Fechar consultas primárias pendentes e recodificação uniforme da matriz P1–P5; não afirmar validação integral."
+      ]
+    },
+    {
+      "id": "v002",
+      "anterior": "v001",
+      "arquivo": "reports/monografia/versoes/v002/MayconGarciaSilva_monografia_v002.docx",
+      "sha256": "d41a33359e19f974dfd48eb322cb2a3877ba3cbbac20c9db941a19985076a093",
+      "registrada_em_utc": "2026-10-29T04:12:55.480456+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revisao_parecer_integridade_candidata06.docx",
+      "responsavel": "Codex, revisão autorizada por Maycon Garcia Silva",
+      "resumo": "Aplica correções F01–F25/R01–R13 no escopo documentado: fidelidade, matriz170, metadados, título, limites metodológicos, contribuição e apresentação. Preserva lacunas documentais explicitadas no relatório.",
+      "estado_editorial": "em_revisao",
+      "validacao_declarada": "45 verificações estruturais aprovadas;60 entradas de listas conferidas;76páginas com cobertura visual documentada;50referências/151ocorrências nominais sem órfãs;triagem local39fontes sem apropriação demonstrada nos3blocos examinados. Não certifica leitura integral de todas as obras, ausência universal de plágio, autoria de código ou aprovação institucional. Sem treino/GA/DM.",
+      "evidencias": [
+        {
+          "arquivo": "reports/correcao_parecer_integridade/relatorio_correcao_parecer.md",
+          "sha256": "55911c3a9342feb778f2929fb59da97f07eea99b7efd2897182dde63ca28c1fb"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/resolucao_achados.csv",
+          "sha256": "2055dcd4d079b7156c2cec5e0e4966743917ce2c51a22a4bed561a5636e85127"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/lote1_alteracoes.json",
+          "sha256": "12be5deabd050f02565e5e76e8db1d43394e219fa852c7f62ee741bbf339755f"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/verificacao_candidata06.json",
+          "sha256": "8157274a328b2d91c22d8c4e427cfd4768fd7f38d33f28b48f1d2661522a5051"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/inspecao_visual_candidata06.json",
+          "sha256": "78633f1f618a552109461af14c7bba93fd0c5ce5e1c11a1294dd5b92be63f8ed"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/cruzamento_referencias_candidata06.json",
+          "sha256": "3e960d4c383fd5c1dc0ab93c40c8322ba69e7fe13f5d64d53a38fd6f3a506ccf"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/integridade_candidata06/interpretacao.md",
+          "sha256": "e5dd3911d500e2ba3b817d9a1d7b4e975427a0187996c3a707505db59aaeeb28"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/integridade_candidata06/triagem.json",
+          "sha256": "b378295561a65001d1e41daefc40cba8706d5be61e5406edfe774ecc1b83ba4b"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/matriz_recodificada.json",
+          "sha256": "00e5f13d6effd8df2c01b34eb6370e79b521e80ee03e8bca8a1998518a6bd4e9"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/candidata06_listas_atualizadas.pdf",
+          "sha256": "46828aeec0502424c41320db72f54ad1941e76f1c3ca5a7bfc94a5a09d99fda4"
+        }
+      ],
+      "pendencias": [
+        "Fornecer cadeia original de ajuste da PETR4 e responsável pela transformação dos arquivos recebidos (R03).",
+        "Localizar registros primários da Onda5 GA_RUN_0053–0067; números compilados não puderam ser confirmados no CSV atual (R08).",
+        "Fornecer original RBras2022a para conferir atribuição histórica do Quadro3; comparação numérica sem original foi retirada (F19).",
+        "Fornecer exportações/strings/filtros e planilhas originais de busca/ranking, caso existam; coleção descrita como reconstruída (F18/R01).",
+        "Confirmar autoria, adaptações e licenças das rotinas legadas; contribuição delimitada sem reivindicação de autoria integral (R13).",
+        "43células da matriz têm informação insuficiente no escopo documentado; não interpretar como ausência nem validação integral das34obras.",
+        "Ficha catalográfica emitida e folha de aprovação datada/assinada dependem da etapa institucional; não foram inventadas."
+      ]
+    },
+    {
+      "id": "v003",
+      "anterior": "v002",
+      "arquivo": "reports/monografia/versoes/v003/MayconGarciaSilva_monografia_v003.docx",
+      "sha256": "eb31ed353550c8d13e388a7f51995917c1d20f52acdd946aa15a8908e0381785",
+      "registrada_em_utc": "2026-10-29T14:32:09.810202+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revisao_fontes_drive_20261029_final.docx",
+      "responsavel": "Codex, revisão autorizada por Maycon Garcia Silva",
+      "resumo": "Recupera no Drive as planilhas originais e o artigo RBras2022a; atualiza seis parágrafos, distingue triagem incompleta, faixas locais e comparação com ajuste; preserva protocolos e resultados.",
+      "estado_editorial": "em_revisao",
+      "validacao_declarada": "76 páginas;45 verificações estruturais aprovadas;60 entradas de listas;50 referências/151 ocorrências reconhecidas sem órfãs;comparação de pixels e inspeção visual documentadas;dez páginas do original RBras lidas visualmente. Não certifica ausência universal de plágio nem aprovação acadêmica. Sem treino/GA/DM.",
+      "evidencias": [
+        {
+          "arquivo": "reports/fontes_drive_20261029/relatorio.md",
+          "sha256": "ec9ed9c467932b3a61b98cae13bc7f9c6a7d04d4127bcca3b085b5d20ec3bf46"
+        },
+        {
+          "arquivo": "reports/fontes_drive_20261029/conferencia_planilhas_procedencia.json",
+          "sha256": "f1412cf8163a04ea616beca198e081fea35da41e5daa54f2ffda47bcd27028d5"
+        },
+        {
+          "arquivo": "reports/fontes_drive_20261029/manifesto_fontes_recuperadas.json",
+          "sha256": "36fb36df111846b153e4ca7ab70470bf3c01c3b55beabf463b674ad89b3370af"
+        },
+        {
+          "arquivo": "reports/fontes_drive_20261029/alteracoes_word_final.json",
+          "sha256": "f78dd9d208b47fe477dafbb61724e19e61b34197323f02274048d40a9b944e02"
+        },
+        {
+          "arquivo": "reports/fontes_drive_20261029/resolucao_achados_atualizada.csv",
+          "sha256": "6a6c3c60db40fe6d36e85d8acd41f7bd4aabc4f7b7c96ee3d91aee87896e32b0"
+        },
+        {
+          "arquivo": "reports/fontes_drive_20261029/verificacao_final.json",
+          "sha256": "b21eece0dcdd11d282a8630c2dedd4563463856ca619d88b9fbaa0dff284cc14"
+        },
+        {
+          "arquivo": "reports/fontes_drive_20261029/inspecao_visual_final.json",
+          "sha256": "7b11bc9e75898816975426bccd520c1a0d17d94f3cac2b1581f96bd58f8ae6a2"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/cruzamento_fontes_drive_final_20261029.json",
+          "sha256": "7d8e5ee6e766f1a5f84fd329d392843d57a887068bb6d99ec3e5d398e7d134cc"
+        },
+        {
+          "arquivo": "reports/fontes_drive_20261029/revisao_final.pdf",
+          "sha256": "a3b508bcbd0ade48dd23c7489cd237530b83c186bf5dcd60375fb2a11de78181"
+        }
+      ],
+      "pendencias": [
+        "R03: séries do Drive correspondem textualmente às locais; cadeia original de aplicação do fator e responsável pela transformação ainda não estabelecidos.",
+        "R08: registros primários GA_RUN_0053–0067 da Onda5 ainda não identificados; quatro cenários antigos do Drive não foram assimilados a essa onda.",
+        "F18/R01: planilhas originais recuperadas; permanecem string vazia,48candidatos sem decisão,contagens de fluxo a conciliar,indicadores e ranking sem validação completa; exportações diretas das plataformas não recuperadas nesta etapa.",
+        "R13: versão anterior do script recuperada e comparada; atribuição integral das rotinas legadas,adaptações e licenças ainda não estabelecida.",
+        "43 células da matriz permanecem com informação insuficiente no escopo documentado; não significam ausência universal ou erro comprovado.",
+        "Ficha catalográfica e formalidades de aprovação são etapas institucionais posteriores; ficha vazia autorizada pelo autor, sem inventar dados."
+      ]
+    },
+    {
+      "id": "v004",
+      "anterior": "v003",
+      "arquivo": "reports/monografia/versoes/v004/MayconGarciaSilva_monografia_v004.docx",
+      "sha256": "110b1d19223e23f9e4b27e4c2b0ba74e92072ebcc3f1cd4ec4f0200bba059f5b",
+      "registrada_em_utc": "2026-10-29T15:24:09.189895+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revisao_declaracoes_autor_20261029.docx",
+      "responsavel": "Codex, revisão com esclarecimentos diretos de Maycon Garcia Silva",
+      "resumo": "Incorpora declaração do autor: buscas complementares na revisão, dados já ajustados e códigos R fornecidos pelo orientador, adaptação e interface pelo autor. Atualiza12parágrafos e2células. Confirma localização dos relatórios das5ondas sem equipará-los a saídas primárias.",
+      "estado_editorial": "em_revisao",
+      "validacao_declarada": "76páginas;45verificações estruturais aprovadas;60entradas de listas;50referências e151ocorrências reconhecidas sem órfãs.62páginas idênticas àv003 e14reexaminadas visualmente. Resumos e números preservados. Sem treino,GA,DM ou transformação de preços. Não certifica ausência de plágio nem aprovação acadêmica.",
+      "evidencias": [
+        {
+          "arquivo": "reports/esclarecimentos_autor_20261029/relatorio.md",
+          "sha256": "3f732466ea5fcdb5b52661e19d4d11fdd4d88c243ceb83add0b89e13382d3518"
+        },
+        {
+          "arquivo": "reports/esclarecimentos_autor_20261029/declaracoes_autor.json",
+          "sha256": "32ccd4c78a06b9cc13ffb1cdff46f5c1f6f23601393f22de30117b52c0ebe5d1"
+        },
+        {
+          "arquivo": "reports/esclarecimentos_autor_20261029/alteracoes_editoriais.json",
+          "sha256": "bcfdde877d79344f9cb849e7c07219ae94ee5e094a61e8143d8974223258ced1"
+        },
+        {
+          "arquivo": "reports/esclarecimentos_autor_20261029/conferencia_onda5.json",
+          "sha256": "d304f6158176472d320921ea0ec1b0a286e998cd222f5bc3dd7b3b56bd12694a"
+        },
+        {
+          "arquivo": "reports/esclarecimentos_autor_20261029/localizacao_ondas_1_4.json",
+          "sha256": "c123c2c579a06b38c1c1b9fe8f334710cd230b2f5fd3f0f2261ef102835b03cd"
+        },
+        {
+          "arquivo": "reports/esclarecimentos_autor_20261029/resolucao_achados_atualizada.csv",
+          "sha256": "30d5fb4fe43bb2781456f5a3eebfb4552c61c2d53ccd4b14da8b24343fac942d"
+        },
+        {
+          "arquivo": "reports/esclarecimentos_autor_20261029/verificacao_final.json",
+          "sha256": "8550cc1b56cb81cd6a0cfb30ccb2e71d0d91d94a3171ef96bc0b2b27a73ff2bd"
+        },
+        {
+          "arquivo": "reports/esclarecimentos_autor_20261029/inspecao_visual.json",
+          "sha256": "7fcd4718817eff603c06e06851b12f987757344e4df20abf16f111ceeb6e185a"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/cruzamento_declaracoes_autor_20261029.json",
+          "sha256": "ca492c4f536a8691a47b3c353ce002a80a213ed9909147221237cd433983008c"
+        },
+        {
+          "arquivo": "reports/esclarecimentos_autor_20261029/revisao.pdf",
+          "sha256": "c1932dbc6071f2318a7e51b1408e34daf9d1ca5d3bb1a73d96e714d2137cd9be"
+        }
+      ],
+      "pendencias": [
+        "R08: relatórios locais das5ondas localizados; Onda5 tem15linhas compiladas, mas a ligação com saídas primárias GA_RUN_0053–0067 ainda não foi estabelecida.",
+        "Manter a revisão como literatura com buscas complementares e registros históricos parciais, conforme declaração do autor; não reivindicar aplicação integral de ranking Methodi ou fluxo sistemático reproduzível.",
+        "Fornecedor dos dados ajustados e códigos R confirmado:orientador. Autor confirmou adaptação e interface. A cadeia técnica do ajuste anterior ao recebimento não foi reconstruída; não atribuir ao autor sua execução original.",
+        "43células da matriz permanecem com informação insuficiente no escopo documentado; isso não demonstra ausência universal ou erro comprovado.",
+        "Ficha catalográfica e formalidades de aprovação são etapas institucionais posteriores; ficha vazia autorizada pelo autor, sem inventar dados."
+      ]
+    },
+    {
+      "id": "v005",
+      "anterior": "v004",
+      "arquivo": "reports/monografia/versoes/v005/MayconGarciaSilva_monografia_v005.docx",
+      "sha256": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+      "registrada_em_utc": "2026-10-29T16:00:17.780931+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revisao_43_celulas_20261029.docx",
+      "responsavel": "Codex, reexame bibliográfico dirigido solicitado por Maycon Garcia Silva",
+      "resumo": "Reexamina43células em24PDFs: Liu B./P2 passa de?para D e Hassaan/P2 de?para S; atualiza Quadro1, Tabela1, Figura1 e um parágrafo. Registra41insuficiências mantidas com justificativa e páginas, sem tratá-las automaticamente como leitura pendente. Considera declaração de acervo completo da Onda5.",
+      "estado_editorial": "em_revisao",
+      "validacao_declarada": "76páginas,45verificações estruturais sem falha;170células do Quadro1 conciliadas;50referências e151chamadas reconhecidas sem órfãs.73páginas idênticas àv004 e3inspecionadas. Apenas1parágrafo,3células e1figura mudaram. Resultados experimentais preservados. Não certifica fidelidade universal ou ausência de plágio.",
+      "evidencias": [
+        {
+          "arquivo": "reports/revisao_43_celulas_20261029/relatorio.md",
+          "sha256": "a9047fd5acb0756bf8309ef6cf35092bd52e70c361ed77e9786ee133916ae2d4"
+        },
+        {
+          "arquivo": "reports/revisao_43_celulas_20261029/auditoria_43_celulas.json",
+          "sha256": "f7a14815e78227184ea7dfcb0b074f47f7f3d45ba52b01a305a9710adbbd868a"
+        },
+        {
+          "arquivo": "reports/revisao_43_celulas_20261029/manifesto_fontes.json",
+          "sha256": "7a2bbc7069740fd0da357070e7531b0e3d4e8108b57cb1dcb273f6d1f971e5e7"
+        },
+        {
+          "arquivo": "reports/revisao_43_celulas_20261029/matriz_recodificada.json",
+          "sha256": "622eec6eab8edf432a330230c7d4f50173ca901f6725615fc2a22963a0f77c33"
+        },
+        {
+          "arquivo": "reports/revisao_43_celulas_20261029/contagens_recodificadas.csv",
+          "sha256": "1141677b4c541ca615494b87148f1ac61325e7eace39187e18c38ca7b18008bc"
+        },
+        {
+          "arquivo": "reports/revisao_43_celulas_20261029/alteracoes_editoriais.json",
+          "sha256": "792a3ce372ac5afc1024aff8e41d7f5099e53eeeac559682f0bde7205448d1e7"
+        },
+        {
+          "arquivo": "reports/revisao_43_celulas_20261029/preservacao_conteudo.json",
+          "sha256": "02b1a582a9a1934a6e4cea5418a6c5d8915d4ace444bad1a01b67dcb526441c0"
+        },
+        {
+          "arquivo": "reports/revisao_43_celulas_20261029/verificacao_final.json",
+          "sha256": "bd404390ea43b5bdcd82587ca484241f2b28eb808f03ae966f5529bde1893d5b"
+        },
+        {
+          "arquivo": "reports/revisao_43_celulas_20261029/comparacao_visual.json",
+          "sha256": "e8c16b0a589d22cfc48b33eb13236c8c51c4d442cf96f47f5c62e5da96387702"
+        },
+        {
+          "arquivo": "reports/revisao_43_celulas_20261029/inspecao_visual.json",
+          "sha256": "e7319c07d35c2619a374ce049896e59c18112cd874b48b4d292167845dd74284"
+        },
+        {
+          "arquivo": "reports/revisao_43_celulas_20261029/entrega_revisao.json",
+          "sha256": "41c3ecb77d27771936ba2b8b95dc41d3cbd6881811aeb5176b43d90807b99380"
+        },
+        {
+          "arquivo": "reports/revisao_43_celulas_20261029/revisao.pdf",
+          "sha256": "b313f955e398cc60d7766764094e4beaf9c818848d5a615f1bde554a1f1000c6"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/cruzamento_revisao_43_celulas_20261029.json",
+          "sha256": "87edf49e8b796e8fd8a4f45784e061dd2871d87247e58bf81257189e146bf8d3"
+        }
+      ],
+      "pendencias": [
+        "R08: resultados compilados da Onda5 encontrados nas15linhas locais. Autor informa que o acervo produzido está no projeto e foi executado aqui. A correspondência por execução com vetores/matrizes não foi estabelecida; não presumir arquivos adicionais nem pedir reenvio dos resultados já localizados.",
+        "Manter literatura com buscas complementares e registros históricos parciais, conforme declaração do autor; não reivindicar ranking Methodi integral ou fluxo sistemático reproduzível.",
+        "Fornecedor dos dados ajustados e códigos R confirmado: orientador. Autor confirmou adaptação e interface. Procedimento original do ajuste anterior ao recebimento não foi reconstruído; não atribuir sua execução ao autor.",
+        "Reexame das43células concluído no escopo documentado:2códigos corrigidos e41mantidos como informação insuficiente. Esses41não são automaticamente leituras pendentes ou erros; conservar limites e não inferir ausência universal.",
+        "Ficha catalográfica e formalidades de aprovação são etapas institucionais posteriores; ficha vazia autorizada pelo autor, sem inventar dados."
+      ]
+    },
+    {
+      "id": "v006",
+      "anterior": "v005",
+      "arquivo": "reports/monografia/versoes/v006/MayconGarciaSilva_monografia_v006.docx",
+      "sha256": "daad3895feb384d743bd4461f9a0ba228ed4634d2cdeaf30fb571ade82e10c19",
+      "registrada_em_utc": "2026-10-30T20:27:49.034646+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\fechamento_integral_20261029.docx",
+      "responsavel": "Codex, auditoria integral solicitada por Maycon Garcia Silva",
+      "resumo": "Conclui auditoria de fontes, afirmacoes, matriz, resultados documentados, similaridade e Guia; incorpora correcoes e delimita conclusoes. Concilia 50 referencias, 163 chamadas, 170 celulas, 25 achados e 13 riscos. Preparada para correcao de portugues, sem equivaler a aprovacao academica.",
+      "estado_editorial": "conferida",
+      "validacao_declarada": "76 paginas; 45 verificacoes de exportacao aprovadas; 81 requisitos com decisoes; 85/88 controles ampliados aprovados, com 3 divergencias deliberadas de identidade historica documentadas; cadeia de inspecao visual e hash da copia confirmados. Sem certificacao universal de ausencia de plagio.",
+      "evidencias": [
+        {
+          "arquivo": "reports/fechamento_integral_20261029/relatorio_final.md",
+          "sha256": "40a782ce4611b9fc6f5372b12165381ec1021e87e98b8c9f55f43c9cabf3f6c0"
+        },
+        {
+          "arquivo": "reports/fechamento_integral_20261029/auditoria_final_conteudo_lote169.json",
+          "sha256": "0cd3fc9e2d5c2eab7b56c570de9eb4e3475b3736e0713eded73b337159b85c9d"
+        },
+        {
+          "arquivo": "reports/fechamento_integral_20261029/validacao_citacoes_conciliada_lote164.json",
+          "sha256": "99583983d4a535423d2f42641ed27a72d0137b400a6f122aa9c15332ee2bbcb7"
+        },
+        {
+          "arquivo": "reports/fechamento_integral_20261029/parecer_conciliado_lote165.json",
+          "sha256": "48d5d3eb3b50a4395e8f60c6ae3410b2455ea52a9377c9bbfc674c1d518ff7cd"
+        },
+        {
+          "arquivo": "reports/fechamento_integral_20261029/similaridade_conciliada_lote167.json",
+          "sha256": "d669593f5f1e381ceeb3107a658e36d8b56a4a129aec254bf9522170930f4470"
+        },
+        {
+          "arquivo": "reports/fechamento_integral_20261029/matriz_guia_decisoes_lote162.json",
+          "sha256": "8e7a51d89342f3e202eca554543070f7782f4b85341c69e936f6053e32468b25"
+        },
+        {
+          "arquivo": "reports/fechamento_integral_20261029/checkpoint_lote161.json",
+          "sha256": "85d0f59378d77ab62cad66d4da6d499ffe360237201b8caa1ec82192ac1abb73"
+        },
+        {
+          "arquivo": "reports/fechamento_integral_20261029/previa_lote161.pdf",
+          "sha256": "790aa9d2403bae4ee2a8f6ba27a7e1ef3c159b40b817007a57bfc2e6c79b5a3a"
+        }
+      ],
+      "pendencias": [
+        "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+        "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+        "Limitacao bibliografica preservada: buscas complementares, registros de selecao parciais e41marcacoes de informacao insuficiente; sem alegacao de revisao sistematica integral.",
+        "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+        "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Correcao de portugues devera ser incorporada em nova versao."
+      ]
+    },
+    {
+      "id": "v007",
+      "anterior": "v006",
+      "arquivo": "reports/monografia/versoes/v007/MayconGarciaSilva_monografia_v007.docx",
+      "sha256": "983c46424ad039472bb12071540d392d73eb29cb08a07e0bc784e0ede008ff1c",
+      "registrada_em_utc": "2026-10-31T01:14:09.348897+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revisao_linguistica_v006.docx",
+      "responsavel": "Codex, revisao linguistica solicitada por Maycon Garcia Silva",
+      "resumo": "Conclui leitura de portugues e ingles e incorpora nove ajustes de concordancia, ortografia, comparacoes e pontuacao. Atualiza titulo no sumario. Preserva numeros, imagens, atribuicoes e limites da auditoria v006.",
+      "estado_editorial": "conferida",
+      "validacao_declarada": "76 paginas; 45 verificacoes finais aprovadas; nove paginas alteradas inspecionadas e 67 identicas a v006; numeros e imagens preservados; 50 referencias e157chamadas automaticas sem orfas. Ingles do abstract lido integralmente, sem erro gramatical inequivoco identificado.",
+      "evidencias": [
+        {
+          "arquivo": "reports/revisao_linguistica_v006/relatorio.md",
+          "sha256": "26a79b70f55a55950e95064216c0d73293760a0944eac6436e647530c1529127"
+        },
+        {
+          "arquivo": "reports/revisao_linguistica_v006/estado_revisao.json",
+          "sha256": "d9b4c2e6108b97c5ce946348f1a269cb964312834799852ec7dfc79e471885bb"
+        },
+        {
+          "arquivo": "reports/revisao_linguistica_v006/leitura_linguistica_parte1.json",
+          "sha256": "cafa7e2bdebcc2087d41b9dc16e09fbe36b8c8d26f4242f32fb30d9fd11e0271"
+        },
+        {
+          "arquivo": "reports/revisao_linguistica_v006/leitura_linguistica_parte2.json",
+          "sha256": "44712815671f75e8888ff3f6b42c61791546a9c9d9419698e707ac3127b18e32"
+        },
+        {
+          "arquivo": "reports/revisao_linguistica_v006/verificacao_final.json",
+          "sha256": "688030e9c85ffba0aa70c24137bcc85c7f5f01bb2f28b4b15f55f09dc8b46498"
+        },
+        {
+          "arquivo": "reports/revisao_linguistica_v006/revisao_final.pdf",
+          "sha256": "2ea9a334f061be016f94a32495f3192689aa9d970af09e21748231e114db7d1d"
+        },
+        {
+          "arquivo": "reports/correcao_parecer_integridade/cruzamento_revisao_linguistica_v006.json",
+          "sha256": "f1fd77664cb803d4e1785cfe5a3672cd43d5a69b969094114447f70266b5dbe7"
+        }
+      ],
+      "pendencias": [
+        "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+        "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+        "Limitacao bibliografica preservada: buscas complementares, registros de selecao parciais e41marcacoes de informacao insuficiente; sem alegacao de revisao sistematica integral.",
+        "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+        "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Correcao de portugues devera ser incorporada em nova versao."
+      ]
+    },
+    {
+      "id": "v008",
+      "anterior": "v007",
+      "arquivo": "reports/monografia/versoes/v008/MayconGarciaSilva_monografia_v008.docx",
+      "sha256": "0daacd3ea1753bca97619df025923b92a44a047b5c1252a4677f802dfe870dad",
+      "registrada_em_utc": "2026-10-31T14:11:35.244846+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revalidacao_cinco_skills_v007.docx",
+      "responsavel": "Codex, revalidacao das cinco skills solicitada por Maycon Garcia Silva",
+      "resumo": "Revalida as cinco skills sobre v007 e incorpora tres ajustes locais: sigla AG na Tabela5 e chamadas proximas das Tabelas5e6. Preserva conteudo cientifico, valores, imagens,50referencias e170celulas. Correcao linguistica ja incorporada na v007; removida apenas a anotacao obsoleta dessa pendencia.",
+      "estado_editorial": "conferida",
+      "validacao_declarada": "76paginas;13elementos tabulares,50siglas,56ocorrencias de et al. em italico;328paragrafos e163chamadas conciliados com evidencias;34PDFs da matriz com hashes conferidos. Somente document.xml mudou em3trechos;74paginas com pixels iguais e2alteradas inspecionadas. Sem certificado universal de originalidade ou aprovacao academica.",
+      "evidencias": [
+        {
+          "arquivo": "reports/revalidacao_cinco_skills_v007/relatorio_final.md",
+          "sha256": "acb45497e4c8ee003113fcfa8af59deb39fd87a5186f8539c5e055e4bc40d773"
+        },
+        {
+          "arquivo": "reports/revalidacao_cinco_skills_v007/estado_final.json",
+          "sha256": "c94a91d1258e3ab802712e87c9d9f446ef20a021074fa69e45e7d8e07cf3cebe"
+        },
+        {
+          "arquivo": "reports/revalidacao_cinco_skills_v007/alteracoes_aplicadas.json",
+          "sha256": "1eaf22c62ed4dd5566927fb252902ce0493d417411e0cd60ba329c688795f4b2"
+        },
+        {
+          "arquivo": "reports/revalidacao_cinco_skills_v007/conciliacao_integral_v007.json",
+          "sha256": "9c7beb56d3a44c55526ed1ca97d89695ec552e926a29deb6b70931b1ffebed90"
+        },
+        {
+          "arquivo": "reports/revalidacao_cinco_skills_v007/verificacao_visual.json",
+          "sha256": "3a28f2c2ddfdc6fab8108993357e41f428b9440b9c7ea57a3bd48d1d912e8fc5"
+        }
+      ],
+      "pendencias": [
+        "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+        "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+        "Limitacao bibliografica preservada: buscas complementares, registros de selecao parciais e41marcacoes de informacao insuficiente; sem alegacao de revisao sistematica integral.",
+        "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+        "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills."
+      ]
+    },
+    {
+      "id": "v009",
+      "anterior": "v008",
+      "arquivo": "reports/monografia/versoes/v009/MayconGarciaSilva_monografia_v009.docx",
+      "sha256": "793910fae2daaa2d5dbdcfa0cd76177c6c6a38c353d98d94ecaaaecf118c7b03",
+      "registrada_em_utc": "2026-11-01T22:36:31.223198+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\devolutiva_orientador_20261101.docx",
+      "responsavel": "Codex, conciliacao da devolutiva do orientador solicitada por Maycon Garcia Silva",
+      "resumo": "Concilia a introducao recebida do orientador, mantendo texto corrido conforme o Guia FASOFT e orientacao do autor; expande ESN na primeira ocorrencia; confere 41titulos e atualiza 59paginas no sumario e listas. Preserva tres ajustes da v008, resultados, tabelas, imagens e referencias.",
+      "estado_editorial": "conferida",
+      "validacao_declarada": "77paginas renderizadas e inspecionadas; introducao continua em3paginas;41titulos sequenciais;60entradas de sumario/listas conferidas;57paginas do corpo com texto e pixels identicos a base, exceto cabecalho.52interrogacoes textuais sao codigos documentados de informacao insuficiente. Somente document.xml mudou. Sem nova auditoria integral de fontes ou aprovacao academica.",
+      "evidencias": [
+        {
+          "arquivo": "reports/devolutiva_orientador_20261101/relatorio.md",
+          "sha256": "f97ad10be4f466e023d073e72d875fc909f3d5bbeea6eb6703fc93d653b1e935"
+        },
+        {
+          "arquivo": "reports/devolutiva_orientador_20261101/verificacao_final.json",
+          "sha256": "3e970b8927111b556a4ac86168fadf4bd7459e1f4f1b223b18af43bf70ce66ea"
+        },
+        {
+          "arquivo": "reports/devolutiva_orientador_20261101/inspecao_visual.json",
+          "sha256": "d9eae3ed29414be243440e1ee7646c993445e7368f16f1ce9820c39669904b9b"
+        },
+        {
+          "arquivo": "reports/devolutiva_orientador_20261101/paginas_listas_atualizadas.json",
+          "sha256": "afa76ba5014031d783b795b87190ae7a6882fcffb1cf5c1191d7d1f1e397838e"
+        }
+      ],
+      "pendencias": [
+        "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+        "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+        "Limitacao bibliografica preservada: buscas complementares, registros de selecao parciais e41marcacoes de informacao insuficiente; sem alegacao de revisao sistematica integral.",
+        "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+        "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills."
+      ]
+    },
+    {
+      "id": "v010",
+      "anterior": "v009",
+      "arquivo": "reports/monografia/versoes/v010/MayconGarciaSilva_monografia_v010.docx",
+      "sha256": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+      "registrada_em_utc": "2026-11-02T00:33:25.580947+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\busca_lacunas_20261101.docx",
+      "responsavel": "Codex, revisão documental para Maycon Garcia Silva",
+      "resumo": "Incorpora três respostas documentadas: Jaeger P1/P3 e Millea P4. Atualiza Quadro 1, Tabela 1, Figura 1 e prosa dependente; inclui fonte original de Evolino e suplemento de Jaeger com limites de versão explícitos. Reduz 41 insuficiências para 38. Pesquisa restante em andamento; resultados experimentais preservados.",
+      "estado_editorial": "em_revisao",
+      "validacao_declarada": "78 páginas renderizadas; 45 páginas alteradas inspecionadas e 33 com corpo pixel a pixel idêntico à base. Matriz de 170 células conciliada; 41 títulos, 19 legendas e 60 entradas de listas/sumário conferidos (48 páginas atualizadas). 50 referências anteriores preservadas, 51 no total. Apenas document.xml e imagem da Figura 1 alterados. Introdução e capítulos 3–6 preservados em XML. Sem novos experimentos ou validação científica integral; 38 lacunas permanecem.",
+      "evidencias": [
+        {
+          "arquivo": "reports/busca_lacunas_20261101/relatorio_incorporacao.md",
+          "sha256": "77c6dcd641e5b9738a9a74e9b49b577cf303bf2e42cc4d93db9c9baa357b1614"
+        },
+        {
+          "arquivo": "reports/busca_lacunas_20261101/verificacao_estrutural.json",
+          "sha256": "c762ea93f049afea2846494922eae415a5e586cd1c31f9b3bb075c06d4507f49"
+        },
+        {
+          "arquivo": "reports/busca_lacunas_20261101/inspecao_visual.json",
+          "sha256": "4949de963135ca44360d0754384546908946f795f0117301c72f5833a8d64daa"
+        },
+        {
+          "arquivo": "reports/busca_lacunas_20261101/decisoes_41_em_consolidacao.json",
+          "sha256": "4839e0733fdce727bdca045c0d938aec990633a6f70b36e318d89152a2bfcd7a"
+        },
+        {
+          "arquivo": "reports/busca_lacunas_20261101/conciliacao_proposta.json",
+          "sha256": "e0bec98d517c250195a4c028526e0ff4867f4a2dfc39d8e01c99a8a8d8a075c5"
+        }
+      ],
+      "pendencias": [
+        "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+        "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+        "Limitação bibliográfica preservada: buscas complementares e registros de seleção parciais. Três células resolvidas com evidência; restam 38 marcações de informação insuficiente, com pesquisa em andamento. Sem alegação de revisão sistemática integral.",
+        "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+        "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills."
+      ]
+    },
+    {
+      "id": "v011",
+      "anterior": "v010",
+      "arquivo": "reports/monografia/versoes/v011/MayconGarciaSilva_monografia_v011.docx",
+      "sha256": "6ce846aec1d02f0ab1c6e575f822f082920331f8d7b6c444914bb45d0563ce4a",
+      "registrada_em_utc": "2026-11-02T20:23:08.918499+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\declaracao_ia_20261102.docx",
+      "responsavel": "Codex para Maycon Garcia Silva",
+      "resumo": "Incorpora declaração de responsabilidade coletiva de IAG conforme relato do autor, com somente Codex nos testes; inclui indicação em 3.1, Anexo A e entrada no sumário. Atualiza paginação e mantém quatro tabelas curtas da metodologia inteiras, preservando os dados e resultados.",
+      "estado_editorial": "em_revisao",
+      "validacao_declarada": "81 páginas renderizadas; 20 páginas afetadas inspecionadas e 61 corpos idênticos à base. 61 entradas de listas/sumário conciliadas, 34 atualizadas. 554 parágrafos anteriores e dados das 14 tabelas preservados. Apenas document.xml alterado. Declaração separada de uma página renderizada e inspecionada. Sem novos experimentos, aprovação acadêmica ou assinatura dos declarantes.",
+      "evidencias": [
+        {
+          "arquivo": "reports/declaracao_ia_integracao_20261102/relatorio.md",
+          "sha256": "7c60e28d9e5dd8d81ec77d138c01b480ac92af538e9e2ab725e1101394d86c32"
+        },
+        {
+          "arquivo": "reports/declaracao_ia_integracao_20261102/conferencia_final.json",
+          "sha256": "31d6f351b9f412ab76e3a6567fe273a98860744abe580b9d830e1766f849e492"
+        },
+        {
+          "arquivo": "reports/declaracao_ia_integracao_20261102/inspecao_visual.json",
+          "sha256": "a9a7404fe85ce0ac3ae58d11890e1daf2fda7aae860a53c8be1200f7c23a49b2"
+        },
+        {
+          "arquivo": "reports/declaracao_ia_integracao_20261102/alteracoes.json",
+          "sha256": "1a72303d8f12528e3458ff6fc2a70e42a74978b63c4306ca5ebce12fbaee91d4"
+        },
+        {
+          "arquivo": "reports/declaracao_ia_integracao_20261102/complemento_testes.json",
+          "sha256": "8a09f55f77e200924955d56c59a53ddd0f611c435d41e0d697fcb306c341ebe9"
+        }
+      ],
+      "pendencias": [
+        "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+        "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+        "Limitação bibliográfica preservada: buscas complementares e registros de seleção parciais. Três células resolvidas com evidência; restam 38 marcações de informação insuficiente, com pesquisa em andamento. Sem alegação de revisão sistemática integral.",
+        "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+        "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills.",
+        "Declaração de uso de IAG preenchida conforme relato do autor; versões de Claude e Codex não informadas. Data e assinaturas do autor e orientador permanecem em branco para preenchimento pelos declarantes."
+      ]
+    },
+    {
+      "id": "v012",
+      "anterior": "v011",
+      "arquivo": "reports/monografia/versoes/v012/MayconGarciaSilva_monografia_v012.docx",
+      "sha256": "37feaaa77a3257c9e0b2dbc414dfbbaef55db0a14f24e50d8532aa44d0a3a398",
+      "registrada_em_utc": "2026-11-02T20:41:19.719063+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\declaracao_ia_reescrita_20261102.docx",
+      "responsavel": "Codex para Maycon Garcia Silva",
+      "resumo": "Reescreve declaração de responsabilidade coletiva e suas descrições conforme pedido do autor; informa Claude Opus 5.5 e Codex Sol 5.6, superando a pendência anterior de modelos desconhecidos. Atualiza indicação em 3.1. Preserva resultados, referências e paginação.",
+      "estado_editorial": "em_revisao",
+      "validacao_declarada": "81 páginas renderizadas; 79 imagens idênticas à v011 e duas páginas alteradas inspecionadas. Declaração separada de uma página renderizada e inspecionada. 81 localizadores com paginação preservada; 14 tabelas científicas e demais elementos fora de quatro alterações preservados em XML. Modelos conforme relato do autor; sem novos experimentos ou aprovação institucional.",
+      "evidencias": [
+        {
+          "arquivo": "reports/declaracao_ia_reescrita_20261102/relatorio.md",
+          "sha256": "dd666fcdf87a25840140b3762d2fc6d15bc381326789670a3a42e500abce446e"
+        },
+        {
+          "arquivo": "reports/declaracao_ia_reescrita_20261102/conferencia_final.json",
+          "sha256": "541b495736680e6174a5015f130d83106c138c38c11bd235bbdf2c16e0aa0e7e"
+        },
+        {
+          "arquivo": "reports/declaracao_ia_reescrita_20261102/inspecao_visual.json",
+          "sha256": "b473c1a73e1e6f4aed97ec9ea2c834128ea46bcdb9ae04f9ac018bc253b6d912"
+        },
+        {
+          "arquivo": "reports/declaracao_ia_reescrita_20261102/alteracoes.json",
+          "sha256": "bd316fde207bdfdcdeddca1a8c9e78479865bd0e79d7c646a26904be3956c1e2"
+        }
+      ],
+      "pendencias": [
+        "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+        "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+        "Limitação bibliográfica preservada: buscas complementares e registros de seleção parciais. Três células resolvidas com evidência; restam 38 marcações de informação insuficiente, com pesquisa em andamento. Sem alegação de revisão sistemática integral.",
+        "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+        "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills.",
+        "Declaração de IAG reescrita a pedido do autor, com Claude Opus 5.5 e Codex Sol 5.6 informados por ele; somente Codex nos testes. Data e assinaturas do autor e orientador permanecem em branco. Redação adaptada do modelo institucional, sem aprovação institucional nesta revisão."
+      ]
+    },
+    {
+      "id": "v013",
+      "anterior": "v012",
+      "arquivo": "reports/monografia/versoes/v013/MayconGarciaSilva_monografia_v013.docx",
+      "sha256": "ff4f2978111152c4b1d2dea38b066f0b549b5fc34d13d49a674f559d0c59a47b",
+      "registrada_em_utc": "2026-11-02T22:42:58.100051+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\declaracao_ia_assinaturas_20261102.docx",
+      "responsavel": "Codex para Maycon Garcia Silva",
+      "resumo": "Preenche a data da declaração de IAG em 2 de novembro de 2026 e amplia o espaço antes das duas assinaturas de 14 para 48 pontos, atendendo aos comentários do autor. Retira da declaração a elaboração de slides e roteiro. Conteúdo científico e paginação preservados.",
+      "estado_editorial": "em_revisao",
+      "validacao_declarada": "81 páginas renderizadas; 80 imagens idênticas à v012 e somente página 81 alterada, inspecionada. Declaração separada de uma página inspecionada. 81 localizadores com paginação preservada; 14 tabelas e demais elementos fora da data, duas linhas de assinatura e duas células da declaração idênticos em XML. Sem assinatura aplicada ou aprovação institucional.",
+      "evidencias": [
+        {
+          "arquivo": "reports/declaracao_ia_assinaturas_20261102/relatorio.md",
+          "sha256": "80158ac397e93fe8e7dbe549c19af0bd8c519a00c1d25bee3a7970253a1d3cff"
+        },
+        {
+          "arquivo": "reports/declaracao_ia_assinaturas_20261102/conferencia_final.json",
+          "sha256": "f2f5a04d7a589a16289eff26938e1acff6809748dda3d2ea96e43a1cd4236fa3"
+        },
+        {
+          "arquivo": "reports/declaracao_ia_assinaturas_20261102/alteracoes.json",
+          "sha256": "7b50034e13cec15a80411b057c306507a04da1ed731e52548f4671e1f05a7251"
+        }
+      ],
+      "pendencias": [
+        "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+        "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+        "Limitação bibliográfica preservada: buscas complementares e registros de seleção parciais. Três células resolvidas com evidência; restam 38 marcações de informação insuficiente, com pesquisa em andamento. Sem alegação de revisão sistemática integral.",
+        "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+        "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills.",
+        "Declaração de IAG reescrita a pedido do autor, com Claude Opus 5.5 e Codex Sol 5.6 informados por ele; somente Codex nos testes. Data preenchida em 2 de novembro de 2026; assinaturas do autor e orientador permanecem em branco, com espaço ampliado. Redação adaptada do modelo institucional, sem aprovação institucional nesta revisão."
+      ]
+    },
+    {
+      "id": "v014",
+      "anterior": "v013",
+      "arquivo": "reports/monografia/versoes/v014/MayconGarciaSilva_monografia_v014.docx",
+      "sha256": "b93979a24f68abb962e0ae36871990b791d7916bcf8229b001f6d20e09e0f539",
+      "registrada_em_utc": "2026-11-02T22:50:20.228820+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\sumario_links_20261102.docx",
+      "responsavel": "Codex para Maycon Garcia Silva",
+      "resumo": "Adiciona links internos às 42 entradas do sumário, inclusive referências e anexos. Corrige navegação antes inexistente; preserva conteúdo, aparência e paginação.",
+      "estado_editorial": "em_revisao",
+      "validacao_declarada": "42 hyperlinks seguidos no Word e conferidos por marcador e página de destino. 81 páginas renderizadas, todas pixel a pixel idênticas à v013; páginas do sumário inspecionadas. 81 localizadores, texto e 15 tabelas preservados. Só navegação interna adicionada em document.xml. Validação funcional no Word, sem certificação de outros visualizadores.",
+      "evidencias": [
+        {
+          "arquivo": "reports/sumario_links_20261102/relatorio.md",
+          "sha256": "1a4150a9eb6fa705251e425a343f62080558c91dc68bee64bc903befcd55437f"
+        },
+        {
+          "arquivo": "reports/sumario_links_20261102/conferencia_final.json",
+          "sha256": "2edee4c26f53c80b2c4981ad4d3823ad6877d90ee7254a2d21aec8ca6d6abc10"
+        },
+        {
+          "arquivo": "reports/sumario_links_20261102/estrutura.json",
+          "sha256": "39011762bc192682b220fd7d6ad42202f5cf75c7d90ec0526a9284b773ca3b58"
+        },
+        {
+          "arquivo": "reports/sumario_links_20261102/links.json",
+          "sha256": "5dd2be7f8bb02dcc4d15b8bc147528bd7e5f1182b76cd0ca0d2ae96d9f4ffdac"
+        },
+        {
+          "arquivo": "reports/sumario_links_20261102/teste_links_word.json",
+          "sha256": "8545b345251e4bc154dc865c59cfa6238486954eb142bf5c31e8c1c58ff8dc80"
+        }
+      ],
+      "pendencias": [
+        "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+        "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+        "Limitação bibliográfica preservada: buscas complementares e registros de seleção parciais. Três células resolvidas com evidência; restam 38 marcações de informação insuficiente, com pesquisa em andamento. Sem alegação de revisão sistemática integral.",
+        "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+        "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills.",
+        "Declaração de IAG reescrita a pedido do autor, com Claude Opus 5.5 e Codex Sol 5.6 informados por ele; somente Codex nos testes. Data preenchida em 2 de novembro de 2026; assinaturas do autor e orientador permanecem em branco, com espaço ampliado. Redação adaptada do modelo institucional, sem aprovação institucional nesta revisão."
+      ]
+    },
+    {
+      "id": "v015",
+      "anterior": "v014",
+      "arquivo": "reports/monografia/versoes/v015/MayconGarciaSilva_monografia_v015.docx",
+      "sha256": "0e6ed169859d1aca3538c291f870053444fec7fb4d5ec58098500de25b869256",
+      "registrada_em_utc": "2026-11-02T22:54:22.353544+00:00",
+      "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\listas_links_20261102.docx",
+      "responsavel": "Codex para Maycon Garcia Silva",
+      "resumo": "Adiciona 19 links internos às listas de figuras (6), quadros (6) e tabelas (7), preservando os 42 links do sumário. Conteúdo, aparência e paginação mantidos.",
+      "estado_editorial": "em_revisao",
+      "validacao_declarada": "61 hyperlinks seguidos no Word com marcador e página corretos, incluindo os 19 novos e os 42 do sumário. 81 páginas renderizadas, todas pixel a pixel idênticas à v014; páginas das listas inspecionadas. Texto, 15 tabelas e 81 localizadores preservados. Apenas navegação adicionada em document.xml. Validação funcional no Word, sem certificação de outros visualizadores.",
+      "evidencias": [
+        {
+          "arquivo": "reports/listas_links_20261102/relatorio.md",
+          "sha256": "9447b357ed159a10553531bd5875aa465609e976d5d077ad0c516d2c609c8a35"
+        },
+        {
+          "arquivo": "reports/listas_links_20261102/conferencia_final.json",
+          "sha256": "baa9fe4dfb9a8b14906896416a1d37533f61d4e3ba4eb4d5aaf6795664ed56ff"
+        },
+        {
+          "arquivo": "reports/listas_links_20261102/estrutura.json",
+          "sha256": "de23cc31dbacf40f36f0e7da3a7f7f78c24f173151b1e3a018441cdc796159bb"
+        },
+        {
+          "arquivo": "reports/listas_links_20261102/links.json",
+          "sha256": "75c371f1b8b52f7f5428752320bca2d19977d3791c71000886c1c569a49e5a82"
+        },
+        {
+          "arquivo": "reports/listas_links_20261102/teste_links_word.json",
+          "sha256": "9f3550c80e07cc79a21515550f475d4be6f587cb7aadd02a17e2b8eb63874d79"
+        }
+      ],
+      "pendencias": [
+        "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+        "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+        "Limitação bibliográfica preservada: buscas complementares e registros de seleção parciais. Três células resolvidas com evidência; restam 38 marcações de informação insuficiente, com pesquisa em andamento. Sem alegação de revisão sistemática integral.",
+        "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+        "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills.",
+        "Declaração de IAG reescrita a pedido do autor, com Claude Opus 5.5 e Codex Sol 5.6 informados por ele; somente Codex nos testes. Data preenchida em 2 de novembro de 2026; assinaturas do autor e orientador permanecem em branco, com espaço ampliado. Redação adaptada do modelo institucional, sem aprovação institucional nesta revisão."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "registros": [
+    {
+      "fonte": "D03",
+      "chamada": "Behera, Nayak e Kumar (2023)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D03_paginas.json",
+      "sha256_extracao": "12f1520ff424f9216be35844b7401c92146f050ca939095825a367b597d106a2",
+      "diagnostico": "Os três sobrenomes e sua ordem correspondem à identificação de autoria na primeira página consultada."
+    },
+    {
+      "fonte": "D13",
+      "chamada": "Hariharan, Suresh e Chandrasekar (2025)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D13_paginas.json",
+      "sha256_extracao": "aa40fa7d7b1c1dc7054aac20e75ca13bd055b282b9e049645832fcd7b952e14c",
+      "diagnostico": "Os três sobrenomes e sua ordem correspondem à identificação de autoria na primeira página consultada."
+    },
+    {
+      "fonte": "D14",
+      "chamada": "Hassaan, Yacoub e Said (2025)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D14_paginas.json",
+      "sha256_extracao": "9ea8f72dfc4055ed8e51d4a60a582f8fdcbe500c40bc552975c678715a30a3e0",
+      "diagnostico": "Os três sobrenomes e sua ordem correspondem à identificação de autoria na primeira página consultada."
+    },
+    {
+      "fonte": "D17",
+      "chamada": "Liu, Lin e Rojas (2025)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D17_paginas.json",
+      "sha256_extracao": "e4e40e085aa33e15fa3a4330ba4fcea764aacca4ebfce93e5afb4c13dea771ba",
+      "diagnostico": "Os três sobrenomes e sua ordem correspondem à identificação de autoria na primeira página consultada."
+    },
+    {
+      "fonte": "D22",
+      "chamada": "Seddik, Routaib e Elhaddadi (2023)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D22_paginas.json",
+      "sha256_extracao": "faaa4eaa886e7e7fc432cefd6f6090d7204625b7d9dfa100e27cd70294fc0e39",
+      "diagnostico": "Os três sobrenomes e sua ordem correspondem à identificação de autoria na primeira página consultada."
+    },
+    {
+      "fonte": "D30",
+      "chamada": "Vishwas, Usha e Sangeetha (2025)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D30_paginas.json",
+      "sha256_extracao": "dc820002a339861d8f4515716d45d281e27e29b7949d3acb0950860ce0c0a896",
+      "diagnostico": "Os três sobrenomes e sua ordem correspondem à identificação de autoria na primeira página consultada."
+    },
+    {
+      "fonte": "D31",
+      "chamada": "Wang, Bu e Huang (2025)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D31_paginas.json",
+      "sha256_extracao": "52fbfb04ada064ed7b50a7dbda1b40c79654750263df47ddd5b2185e99ecc11b",
+      "diagnostico": "Os três sobrenomes e sua ordem correspondem à identificação de autoria na primeira página consultada."
+    },
+    {
+      "fonte": "D33",
+      "chamada": "Xiao, Deng e Bi (2024)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D33_paginas.json",
+      "sha256_extracao": "c43e6cb067ad44185e88b0f71f0789c4ace17563e9a18999504920a8484b7256",
+      "diagnostico": "Os três sobrenomes e sua ordem correspondem à identificação de autoria na primeira página consultada."
+    },
+    {
+      "fonte": "D24",
+      "chamada": "Soltani, Benmohamed e Ltifi (2022)",
+      "pagina_pdf": 1,
+      "arquivo": "reports\\fechamento_integral_20261029\\fontes_extraidas\\D24_paginas.json",
+      "diagnostico": "Soltani e Benmohamed legíveis; terceiro sobrenome contém falha de extração (Lti + caractere nulo). Conferência visual específica de Ltifi permanece necessária; não aprovar automaticamente pela extração."
+    }
+  ],
+  "escopo": "Leitura das páginas de identificação extraídas de nove fontes; oito chamadas corroboradas, uma exige inspeção visual adicional."
+}

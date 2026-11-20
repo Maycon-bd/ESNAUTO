@@ -1,0 +1,31 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_antes": "4cf48044445c0760210b1206c185487b8406af3eaecb541de6db381cdbf735b0",
+  "sha256_apos_edicao": "79a427fce9d517c10cbce82085821c6edb6d0177787e35c1b8adf061bfae5c87",
+  "evidencia": "conferencia_motor_historico_lote27.json e app/utils/ga_engine.R: os valores caracterizam o motor atual; registros consolidados não demonstram sua versão exata em cada execução histórica. A partição temporal permanece amparada nos dados de entrada.",
+  "alteracoes": [
+    {
+      "paragrafo": 371,
+      "antes": "A reexecução documentada do protocolo partiu do mesmo núcleo matemático utilizado pelo ESNAUTO.",
+      "depois": "O procedimento para nova execução utiliza o núcleo matemático disponibilizado pelo ESNAUTO."
+    },
+    {
+      "paragrafo": 371,
+      "antes": "Em seguida, foram definidas as distribuições de ",
+      "depois": "O motor atual permite definir as distribuições de "
+    },
+    {
+      "paragrafo": 371,
+      "antes": " e executado o Algoritmo Genético binário com cromossomo de 55 bits, população inicial por LHS, seleção por torneio, ",
+      "depois": " e executar o Algoritmo Genético binário com cromossomo de 55 bits, população inicial por LHS, seleção por torneio, "
+    },
+    {
+      "paragrafo": 374,
+      "antes": "a reexecução do protocolo foi documentada",
+      "depois": "o procedimento para nova execução foi documentado"
+    }
+  ],
+  "estado": "corrigido_exportado_e_pagina_alterada_inspecionada",
+  "sha256_apos_exportacao": "4c9110f8995438f956f965db10ae5f26391c91f45757322758c1e4c83a6f2742"
+}

@@ -1,0 +1,459 @@
+{
+  "base": "v001",
+  "sha256_base": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+  "arquivo_trabalho": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revisao_parecer_integridade.docx",
+  "sha256_trabalho": "58bf8171b162fa8d1de48e6d5bdffb2f604fef39547b6cc818d12fe4bc77ca08",
+  "alteracoes": [
+    {
+      "paragrafo_origem": "P0214",
+      "achado": "F14",
+      "antes": "A literatura também explora hibridizações entre ESNs e outras arquiteturas ou otimizadores. Ribeiro et al. (2021) propõem o modelo autorregressivo heterogêneo (Heterogeneous Autoregressive – HAR), combinado com PSO e ESN (HAR-PSO-ESN) para previsão de volatilidade intradiária de ações da Nasdaq (CAT, EBAY, MSFT), em que a arquitetura ESN é combinada com otimização por PSO; o modelo supera MLPs e métodos estatísticos como ARIMA, validando a combinação entre reservatório e otimizador bio-inspirado em cenários financeiros caóticos.",
+      "depois": "Ribeiro et al. (2021) combinaram o modelo autorregressivo heterogêneo (Heterogeneous Autoregressive – HAR), PSO e ESN no HAR-PSO-ESN. O estudo previu volatilidades realizadas diárias de CAT, EBAY e MSFT, construídas a partir de retornos intradiários de cinco minutos. Foram avaliados horizontes de um, cinco e 21 dias, com ARIMA, HAR, MLP e variantes ESN como comparadores. Esses experimentos oferecem uma aplicação financeira da combinação, sem demonstrar vantagem universal nem transformar volatilidade observada em comprovação de caos.",
+      "evidencia": "Ribeiro PDF 6–8, seções 4.1–4.4 e Tabelas 3–5; a volatilidade prevista é diária, embora derivada de retornos intradiários.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0239",
+      "achado": "F04/F05/F16",
+      "antes": "A magnitude dessa lacuna fica evidente quando se examina, de forma estruturada, o portfólio bibliográfico do presente trabalho: dos dezesseis artigos analisados que abordam a inicialização dos pesos do reservatório, apenas cinco especificam claramente a distribuição estatística empregada.",
+      "depois": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan et al. (2025) especificam Uniforme(-1,1) para as entradas não nulas de Win, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos.",
+      "evidencia": "Ribeiro PDF 4, seção 3.2.4; Hariharan PDF 4; Wang W. PDF 7. Retira contagem de cinco não sustentada e separa matrizes.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0240",
+      "achado": "F04/F14",
+      "antes": "Hassaan et al. (2025) recorrem a sequências caóticas normalizadas dos sistemas de Lorenz, oscilador de Chen perturbado (Perturbed Chen Oscillator – PCO), Chen e Mackey-Glass; Hariharan et al. (2025) adotam distribuição uniforme esparsa para o reservatório; Sharma (2025) emprega distribuição Uniforme para o input scaling e Log Uniforme para o raio espectral; Ribeiro et al. (2021) recorrem à distribuição Uniforme padrão sem justificativa formal; e Wang et al. (2021) adotam a Uniforme U(−√L, √L).",
+      "depois": "Hassaan et al. (2025) estudaram sequências caóticas normalizadas para gerar Win e Wres e adotaram controles He e Xavier. Nas Equações 9a e 9b, He usa amostras Gaussianas e Xavier usa amostras Uniformes reescaladas. A descrição de Xavier no texto da seção seguinte não coincide com essa fórmula, o que exige cautela na interpretação. Além disso, uma regra de geração por trajetória caótica não equivale, por si só, à identificação de uma família probabilística ajustada aos dados financeiros.",
+      "evidencia": "Hassaan PDF 7, equações 9a–9b; PDF 8, seção 3.3, descreve Xavier como similar à Gaussiana; PDF 12, Algoritmo 1.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0241",
+      "achado": "F04/F05/F16",
+      "antes": "Os demais trabalhos se limitam a descrever os pesos como \"gerados aleatoriamente\", sem documentar a distribuição subjacente. No conjunto dos artigos que compõem o portfólio analisado, não foi identificado estudo que utilize ajuste empírico de distribuições aos dados de treino como fundamento para uma investigação estruturada da inicialização de Win.",
+      "depois": "Araújo et al. (2024) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma (2025), por outro lado, apresenta Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada.",
+      "evidencia": "Araújo PDF 7–11; Sharma PDF 7–8, Tabela 1 e Hyperparameter Selection. Informação pertinente não implica descrição inequívoca de cada matriz.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0509",
+      "achado": "F20",
+      "antes": "BEHERA, S.; NAYAK, S. C. N.; KUMAR, P. A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Time Series Forecasting. Archives of Computational Methods in Engineering, v. 30, p. 4401-4448, 2023. DOI: 10.1007/s11831-023-09942-9.",
+      "depois": "BEHERA, S.; NAYAK, S. C.; KUMAR, A. V. S. P. A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Time Series Forecasting. Archives of Computational Methods in Engineering, v. 30, p. 4401-4448, 2023. DOI: 10.1007/s11831-023-09942-9.",
+      "evidencia": "Behera PDF 1: Sudersan Behera; Sarat Chandra Nayak; A. V. S. Pavan Kumar.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0152",
+      "achado": "F18/R01",
+      "antes": "3.8.3Protocolo de revisão sistemática da literatura49",
+      "depois": "3.8.3Procedimento de revisão bibliográfica49",
+      "evidencia": "Harmonização do título do sumário com P0364; tabs e estilo preservados. Número de página ainda depende da atualização final.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0248",
+      "achado": "F18/R01",
+      "antes": "Esta seção apresenta os principais trabalhos diretamente relacionados à proposta desta pesquisa, organizados de modo a evidenciar tanto as contribuições já consolidadas quanto as lacunas que justificam o presente estudo. A seleção foi conduzida por meio de revisão sistemática orientada pelo método Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015), aplicada sobre publicações dos últimos cinco anos e refinada por busca manual complementar.",
+      "depois": "Esta seção discute trabalhos relacionados a ESNs, otimização, inicialização probabilística e aplicações financeiras, a partir dos documentos recuperados no acervo da pesquisa. A organização permite situar as escolhas metodológicas deste estudo, sem apresentar a coleção disponível como cobertura exaustiva da literatura. A procedência da seleção e os limites da reconstrução bibliográfica são descritos na Seção 3.8.3.",
+      "evidencia": "Parecer F18; limites dos registros de busca e seleção. Harmonização com P0365–P0369; remove afirmação não demonstrada de revisão sistemática reproduzível.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0364",
+      "achado": "F18/R01",
+      "antes": "Protocolo de revisão sistemática da literatura",
+      "depois": "Procedimento de revisão bibliográfica",
+      "evidencia": "Título harmonizado ao alcance verificável da revisão e da reconstrução; não muda numeração hierárquica.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0369",
+      "achado": "F18/R01",
+      "antes": "O recorte de 2021–2026 foi aplicado à seleção de estudos recentes. Referências anteriores a 2021 foram mantidas como fontes complementares quando necessárias à definição dos conceitos, à apresentação dos métodos originais ou à contextualização técnica e histórica. Sua utilização na fundamentação não significa que atenderam ao critério temporal da busca recente. A coleção descritiva de 34 estudos da Tabela 1 e do Quadro 1 e das Figuras 1 a 4 incorpora essas fontes complementares, distinguindo-se do conjunto estritamente elegível pelos critérios CI1–CI5.",
+      "depois": "Referências anteriores a 2021 e trabalhos de outros domínios foram utilizados como apoio conceitual, metodológico ou histórico. A coleção descritiva de 34 documentos, apresentada na Tabela 1, no Quadro 1 e nas Figuras 1 a 4, reúne essas fontes com estudos financeiros recentes. Seu tamanho corresponde ao material recuperado para análise, sem representar a quantidade de estudos que teria atendido a todos os critérios da busca originalmente relatada.",
+      "evidencia": "Conferência do escopo da coleção LIT-34; não há lista original que permita separar com segurança elegíveis e complementares para recuperar as etapas da seleção.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0227",
+      "achado": "F12",
+      "antes": "Soltani et al. (2023) oferecem o panorama mais sistemático sobre o tema, em revisão de 74 artigos sobre estratégias de otimização de ESNs. Os autores concluem que metaheurísticas bio-inspiradas, em particular AG e PSO, são as mais empregadas e bem-sucedidas no ajuste de raio espectral, conectividade e escalonamento de pesos. A mesma revisão confirma que a aplicação dessas técnicas a dados financeiros permanece pouco explorada, configurando uma das lacunas que esta pesquisa busca preencher.",
+      "depois": "Soltani et al. (2022), na versão preliminar consultada, revisaram 74 estudos sobre otimização de ESNs. A Tabela 5 relaciona PSO a 16 trabalhos e AG a dez, além de outras técnicas bio-inspiradas e não bio-inspiradas. Essas frequências descrevem o emprego dos métodos na coleção dos autores; não constituem uma classificação de eficácia. A revisão discute custos, parâmetros e topologias, sem sustentar uma lacuna específica sobre distribuições de inicialização em aplicações financeiras.",
+      "evidencia": "Soltani preprint v1, PDF 1, 6, 8 e 13, DOI 10.21203/rs.3.rs-1909702/v1; distingue versão local de publicação final não examinada.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0236",
+      "achado": "F12/F16",
+      "antes": "Dewick (2022) complementa esse referencial ao defender que a compreensão da distribuição subjacente dos dados de mercado, incluindo efeitos de alavancagem e de volatilidade, é condição importante para a modelagem de séries financeiras. Soltani et al. (2023) reforçam esse diagnóstico ao apontar a limitada investigação sistemática sobre o papel das distribuições na inicialização do reservatório. No contexto do portfólio bibliográfico analisado nesta pesquisa, essa lacuna respalda a relevância da abordagem proposta, sem implicar afirmação de originalidade absoluta fora do escopo da revisão realizada.",
+      "depois": "Dewick (2022) discute a modelagem de distribuições financeiras e sua relação com séries temporais. Essa discussão pertence à representação estatística dos dados, enquanto Soltani et al. (2022) examinam estratégias de otimização de ESNs. As duas frentes oferecem contexto para esta pesquisa, mas não demonstram, em conjunto, que uma distribuição de pesos deva reproduzir a distribuição dos retornos. A comparação entre inicializações é uma escolha experimental do presente trabalho.",
+      "evidencia": "Dewick PDF 1–3, escopo e distribuições financeiras; Soltani PDF 4 e 13, questões e discussão de otimização.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0265",
+      "achado": "F12/F16",
+      "antes": "A segunda conclusão diz respeito à otimização. Há consenso, na literatura revisada, de que metaheurísticas bio-inspiradas, sobretudo AG, PSO e SSA, são amplamente empregadas para encontrar configurações de hiperparâmetros que evitem mínimos locais e instabilidades de inicialização. A revisão sistemática de Soltani et al. (2023) consolida esse diagnóstico e identifica o AG como um dos métodos mais empregados e bem-sucedidos na otimização de ESNs.",
+      "depois": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian (2024) e otimização Bayesiana em Sharma (2025). Soltani et al. (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+      "evidencia": "Deng PDF 10; Tian PDF 4–6; Sharma PDF 7–8; Soltani PDF 8 e 13. Evitar confundir frequência de uso, eficácia e garantia de convergência.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0266",
+      "achado": "F12/F16",
+      "antes": "A terceira conclusão organiza as lacunas que motivam esta pesquisa. A primeira lacuna é a limitada investigação sistemática, no conjunto de estudos revisados, sobre o impacto das distribuições de probabilidade na inicialização dos pesos de entrada do reservatório em aplicações financeiras: a maioria dos trabalhos emprega distribuições Uniforme ou Gaussiana sem confrontar essa escolha com as propriedades estatísticas dos dados (Millea, 2014; Soltani et al., 2023).",
+      "depois": "A questão desta pesquisa é examinar o desempenho de configurações de ESN que combinam distribuições de inicialização e hiperparâmetros na previsão da PETR4 ajustada. Trabalhos próximos, como Araújo et al. (2024), já investigaram distribuições alternativas em séries financeiras. A motivação reside na aplicação e na avaliação documentada dessas configurações no protocolo adotado, sem pressupor que o tema esteja ausente da literatura ou que a comparação isole causalmente o efeito da distribuição.",
+      "evidencia": "Araújo PDF 3, 7–9; limites dos protocolos PETR4-HIST e PETR4-DM. Remove alegação de maioria/lacuna atribuída indevidamente a Millea e Soltani.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0545",
+      "achado": "F12",
+      "antes": "SOLTANI, R.; BENMOHAMED, E.; LTIFI, H. Echo State Network Optimization: A Systematic Literature Review. Neural Processing Letters, 2023.",
+      "depois": "SOLTANI, R.; BENMOHAMED, E.; LTIFI, H. Echo State Network Optimization: A Systematic Literature Review. Research Square, versão 1, 4 ago. 2022. Preprint. DOI: 10.21203/rs.3.rs-1909702/v1.",
+      "evidencia": "Folha de rosto do PDF local: Posted Date August 4th 2022 e DOI da versão 1; substitui referência final de 2023 não consultada.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0213",
+      "achado": "F14",
+      "antes": "Em escala global, Wang et al. (2021) confirmam essa capacidade ao aplicar modelos de RC à previsão de índices de sete bolsas mundiais (S&P 500, NASDAQ, FTSE, SSE, entre outras) e mostrar que a abordagem de reservatório supera RNRs padrão, LSTM e modelos híbridos de DL. Os autores identificam a topologia de inicialização das matrizes do reservatório testando configurações Erdős-Rényi (ER), Scale-Free (SF) e Small-World (SW) como o fator preponderante para o ganho preditivo, conclusão diretamente relevante para a proposta desta pesquisa.",
+      "depois": "Wang et al. (2021) avaliaram modelos de RC em sete índices internacionais e compararam suas previsões com RNRs, LSTM e modelos de outros estudos. O desempenho relativo variou conforme o índice e a métrica, sem domínio de uma arquitetura em todas as condições. Os autores exploraram topologias aleatórias, livres de escala e de pequeno mundo, juntamente com diferentes tamanhos de reservatório, janelas e taxas de aprendizado. Essa análise motiva examinar configurações de reservatório, sem isolar a topologia como causa preponderante do ganho preditivo.",
+      "evidencia": "Wang W. PDF 7 e 11, seções 4.3 e 5 e Tabela 8. Os totais de vitórias diferem entre essas seções; a redação não escolhe um total contraditório.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0218",
+      "achado": "F14",
+      "antes": "Há ainda investigações dedicadas especificamente à inicialização e à topologia do reservatório, ponto particularmente relevante para esta pesquisa. Hariharan et al. (2025) propõem ESNs agrupadas por clusters topológicos para o processamento de dados multivariados de ações (NIFTYBEES) e mostram que topologias agrupadas dos tipos Random e Scale-Free superam de forma significativa a ESN isolada, ao impedir que variáveis distintas se misturem em um único reservatório caótico global.",
+      "depois": "Hariharan et al. (2025) propuseram ESNs com reservatórios divididos em grupos para séries multivariadas, incluindo dados do NIFTYBEES. Cada variável foi direcionada a um grupo, mantendo conexões entre grupos segundo a topologia examinada. Os erros e a sensibilidade à conectividade variaram entre as estruturas. O estudo apoia investigar a organização do reservatório, sem demonstrar que todo intercâmbio entre variáveis seja prejudicial ou que uma topologia domine em qualquer tarefa.",
+      "evidencia": "Hariharan PDF 4, 6–7 e 11–12: Win por grupo, conexões intergrupos e sensibilidade com 50 realizações.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0224",
+      "achado": "F14",
+      "antes": "Várias propostas exploram metaheurísticas distintas para esse problema de busca. Tian (2024) emprega o Sparrow Search Algorithm (SSA) como otimizador de uma ESN aplicada a dez ações dos Estados Unidos e dez ações da China; o modelo SSA-ESN evita mínimos locais e supera de forma significativa a LSTM e redes neurais de retropropagação (BPNN) em RMSE e MAPE, validando empiricamente que ESNs sem otimização caem com facilidade em vales subótimos. Esse trabalho se aproxima conceitualmente da proposta deste Trabalho Final de Curso (TFC), dela diferindo essencialmente na escolha do algoritmo bio-inspirado.",
+      "depois": "Tian (2024) empregou o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes BP e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e MAPE.",
+      "evidencia": "Tian PDF 5–7, seções 3.3, 4 e 5, Tabelas 3–5; a fonte reporta comparação de erros, não prova universal de otimização.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0225",
+      "achado": "F14",
+      "antes": "Deng et al. (2022) demonstram o uso de AG para otimizar hiperparâmetros de uma ESN empilhada, com aplicação à previsão de degradação de células de combustível de membrana de troca de prótons (Proton Exchange Membrane Fuel Cells – PEMFCs); o modelo apresenta forte convergência e supera consistentemente redes LSTM. Os autores apontam a busca por valores adequados de raio espectral e taxa de vazamento como a principal fragilidade da literatura de ESNs e validam o AG como solução eficaz nesse espaço de busca.",
+      "depois": "Deng et al. (2022) aplicaram AG à seleção do escalonamento de entrada, raio espectral e taxa de vazamento de ESNs empilhadas para prever degradação de células de combustível de membrana de troca de prótons (Proton Exchange Membrane Fuel Cells – PEMFCs). A Tabela 6 compara os erros obtidos com valores de LSTM e outros métodos provenientes de um estudo anterior. Os resultados apoiam a estratégia nessa aplicação, sem estabelecer superioridade geral frente a LSTM nem identificar uma fragilidade principal de toda a literatura de ESNs.",
+      "evidencia": "Deng PDF 10, seção 3.2, e PDF 20, Tabela 6: comparadores LSTM, ARIMA e Fusion marcados [36].",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0226",
+      "achado": "F14",
+      "antes": "Em direção semelhante, Ecer (2020) documenta o uso de AG e PSO para otimização de pesos de Perceptrons Multicamadas (MLP) na estimação de direção de índices financeiros, e mostra que algoritmos evolucionários garantem estabilidade de aprendizado e superam inicializações aleatórias cegas em correlação, MAPE e RMSE. Behera (2023) corrobora teoricamente essas escolhas em sua revisão abrangente, ao identificar a combinação entre redes neurais e AG/PSO como o estado da arte para séries financeiras e ao reconhecer o ajuste de hiperparâmetros como gargalo ainda não resolvido.",
+      "depois": "Ecer (2020) comparou Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera (2023) revisou redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+      "evidencia": "Ecer PDF 1 e métodos/resultados; Behera PDF 3 e Tabela 2, PDF 30: domínio HONN e técnicas evolucionárias.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0230",
+      "achado": "F11/F16",
+      "antes": "A inicialização dos pesos de entrada (Win) é etapa decisiva na construção de uma ESN, mas a maioria dos trabalhos da área limita-se a empregar distribuições Uniforme ou Gaussiana, sem questionamento sistemático sobre sua adequação aos dados modelados (Millea, 2014). Esse padrão é particularmente problemático em aplicações financeiras.",
+      "depois": "A inicialização dos pesos participa da construção da dinâmica de uma ESN e deve ser descrita de forma que permita examinar a configuração utilizada. Millea (2014) investigou matrizes aleatórias e ortonormais em problemas de osciladores sobrepostos. Esse trabalho oferece evidência sobre condições específicas de inicialização, sem quantificar a proporção de estudos financeiros que adotam cada distribuição. A frequência dessas escolhas no portfólio depende de critérios explícitos de extração.",
+      "evidencia": "Millea seção 3.3, PDF 28–31; não extrapolar experimento não financeiro para frequência em toda a literatura.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0231",
+      "achado": "F22",
+      "antes": "Retornos de ativos são reconhecidamente leptocúrticos: apresentam caudas mais pesadas que a distribuição Normal, com eventos extremos mais frequentes do que o esperado sob hipótese gaussiana. Esse descompasso sugere que distribuições alternativas, ajustadas às propriedades dos dados, possam produzir reservatórios com maior fidelidade a essa estrutura estatística.",
+      "depois": "A ocorrência de caudas pesadas em retornos financeiros motiva o exame de distribuições além da Normal (Nelson, 1991). Entretanto, a distribuição dos retornos observados e a lei usada para gerar pesos de uma ESN são objetos distintos. A adoção de distribuições alternativas nos pesos constitui uma hipótese de modelagem desta pesquisa; sua pertinência deve ser avaliada pelos resultados preditivos e não decorre automaticamente da semelhança entre suas caudas e as dos dados.",
+      "evidencia": "Nelson PDF 7–8, páginas impressas 352–353; fonte trata inovações/modelo de volatilidade, não pesos ESN.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0232",
+      "achado": "F22",
+      "antes": "A justificativa formal mais antiga para o uso de distribuições alternativas em finanças vem de Nelson (1991), que introduz a Distribuição Generalizada de Erro (Generalized Error Distribution – GED) no contexto financeiro por meio do modelo exponencial autorregressivo de heterocedasticidade condicional generalizada (Exponential Generalized Autoregressive Conditional Heteroskedasticity – EGARCH). O autor demonstra que a GED acomoda caudas leptocúrticas e picos de retornos que a distribuição Normal representa de forma inadequada.",
+      "depois": "Nelson (1991) empregou a Distribuição Generalizada de Erro (Generalized Error Distribution – GED) na modelagem de retornos com heterocedasticidade condicional, no contexto do modelo exponencial autorregressivo de heterocedasticidade condicional generalizada (Exponential Generalized Autoregressive Conditional Heteroskedasticity – EGARCH). A família permite representar caudas mais pesadas ou mais leves que as da Normal. Essa aplicação fundamenta sua flexibilidade em finanças, sem estabelecer prioridade histórica absoluta nem validar sua transferência para os pesos de ESNs.",
+      "evidencia": "Nelson PDF 7–8, impressas 352–353; PDF 7 atribui a família também a Harvey (1981) e Box e Tiao (1973).",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0234",
+      "achado": "F23",
+      "antes": "Trabalhos posteriores ampliam e refinam esse referencial. Duttilo (2023) modela retornos do DJIA, do S&P 500 e de ações do índice STOXX50E com misturas finitas de distribuições GED, e mostra que tais misturas oferecem melhor adequação aos dados ao acomodar caudas mais pesadas que as da Normal. O autor recorre aos critérios de informação de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC) para evidenciar que a hipótese de normalidade falha em explicar a assimetria e a curtose observadas.",
+      "depois": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do DJIA entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade.",
+      "evidencia": "Duttilo e Gattone 2022, PDF 4–5, seção 3 e Tabela 1; não atribuir aplicação da conferência à tese de 2023.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0365",
+      "achado": "F18/R01",
+      "antes": "A seleção de estudos recentes para a revisão bibliográfica seguiu o método Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015). As buscas foram realizadas em 23 de março de 2026 nas bases Scopus e Springer Nature Link, utilizando a string: (Survey OR Review OR \"State of the art\") AND (ESN OR \"Echo State Network\") AND (Forecast OR Prediction) AND (\"Stock Market\" OR \"Exchange Market\"). Foram retornados 41 registros do Scopus e 59 do Springer Nature Link.",
+      "depois": "A revisão bibliográfica utiliza uma coleção de 34 documentos disponíveis no acervo da pesquisa, reconstruída para permitir a conferência das fontes. A documentação anterior menciona buscas em Scopus e Springer Nature Link em 23 de março de 2026, com 41 e 59 registros, respectivamente. Sem as exportações e planilhas originais, esses números permanecem como relato do processo anterior, e não como contagens independentemente verificadas. A síntese apresentada tem caráter descritivo do material recuperado.",
+      "evidencia": "Parecer F18; reports/bibliometria_reconstrucao/base_reconstruida.json; ausência dos registros originais não autoriza negar execução histórica.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0366",
+      "achado": "F18/R01",
+      "antes": "A triagem seguiu critérios objetivos previamente registrados. Os critérios de inclusão foram: CI1 artigos publicados entre 2021 e 2026; CI2 idioma inglês ou português; CI3 texto completo disponível; CI4 abordagem de Echo State Networks ou Reservoir Computing; CI5 aplicação a dados financeiros.",
+      "depois": "A documentação anterior descreve uma busca voltada a revisões de ESNs e Computação de Reservatório em finanças, com preferência por textos completos em inglês ou português publicados entre 2021 e 2026. O conjunto recuperado também inclui estudos anteriores, fundamentos teóricos e aplicações de outros domínios. Portanto, esses critérios não caracterizam de modo uniforme os 34 documentos utilizados, e não se apresenta a coleção reconstruída como resultado integralmente reproduzível de uma revisão sistemática.",
+      "evidencia": "Coleção LIT-34 contém Nelson 1991, Millea 2014, Timbó 2016, Ecer 2020 e Deng PEMFC; confronto com critérios originais P0366–P0367.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0367",
+      "achado": "F18/R01",
+      "antes": "Os critérios de exclusão foram: CE1 duplicatas entre as bases; CE2 trabalhos que utilizam ESN apenas como referência comparativa secundária; CE3 aplicações em domínios não financeiros; CE4 Conference Reviews; CE5 anteriores a 2021; e CE6 texto inacessível mesmo após tentativa institucional. A pontuação InOrdinatio foi calculada com α = 5 e ano-base 2026, segundo a fórmula InOrdinatio = (FI/1000) + α × [10 − (2026 − Ano)] + (Citações/100), em que FI corresponde ao indicador de impacto SCImago Journal Rank (SJR) da revista e Citações ao número de citações registradas no Scopus.",
+      "depois": "O Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015) foi indicado na documentação anterior como referência para organizar a seleção. Contudo, não foram recuperados os valores individuais dos indicadores, as datas de coleta de citações ou a planilha de pontuação que permitiriam recalcular a ordenação. Assim, a análise atual não utiliza uma pontuação InOrdinatio como evidência verificada de seleção ou relevância dos 34 documentos. A reconstrução bibliográfica preserva essa limitação de procedência.",
+      "evidencia": "Parecer F18 e fontes.json; a fórmula com citações/100 do original não foi validada e foi retirada, sem fabricar ranking substituto.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0505",
+      "achado": "F20",
+      "antes": "ABEBE, E.; GOSHU, A. Asymmetric generalized error distribution with its properties and applications. Frontiers in Applied Mathematics and Statistics, v. 10, art. 1398137, 2024. DOI: 10.3389/fams.2024.1398137.",
+      "depois": "ABEBE, T. N.; GOSHU, A. T. Asymmetric generalized error distribution with its properties and applications. Frontiers in Applied Mathematics and Statistics, v. 10, art. 1398137, 2024. DOI: 10.3389/fams.2024.1398137.",
+      "evidencia": "Abebe PDF 1: Tayu Nigusie Abebe e Ayele Taye Goshu.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0181",
+      "achado": "F24",
+      "antes": "H1 - desempenho: a ESN otimizada apresentará desempenho preditivo comparável ou superior ao de LSTM e GRU no protocolo adotado, considerando-se desempenho comparável a ausência de diferença estatisticamente significativa pelo teste de Diebold-Mariano e desempenho superior a redução de erro acompanhada de significância no mesmo teste.",
+      "depois": "H1 - desempenho: a ESN otimizada apresentará menor perda preditiva que os modelos LSTM e GRU definidos no protocolo. A comparação histórica será descritiva; na rodada controlada complementar, a avaliação considerará a diferença de acurácia pelo teste bilateral de Diebold-Mariano e a direção do diferencial médio de perda. A ausência de significância será interpretada como evidência insuficiente de diferença, sem demonstrar equivalência entre os modelos.",
+      "evidencia": "Esclarecimento editorial autorizado; documentação primária forecast::dm.test, hipótese nula e alternativa bilateral; não representa pré-registro retrospectivo.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0193",
+      "achado": "F25",
+      "antes": "A natureza não linear e estocástica das séries inviabiliza a aplicação direta de modelos como o autorregressivo integrado de médias móveis (Autoregressive Integrated Moving Average – ARIMA) e a regressão linear, ambos construídos sobre pressupostos de estacionariedade e linearidade que os retornos financeiros raramente satisfazem.",
+      "depois": "Modelos lineares, como o autorregressivo integrado de médias móveis (Autoregressive Integrated Moving Average – ARIMA) e a regressão linear, podem apresentar limitações na representação de dependências não lineares e mudanças de regime. Isso não impede seu emprego como modelos de referência. A diferenciação em ARIMA permite tratar determinadas formas de não estacionariedade, e a adequação de cada abordagem deve ser avaliada para a série e a tarefa consideradas.",
+      "evidencia": "Ribeiro PDF 3; Kumar PDF 4 e 9–10; Timbó métodos.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0194",
+      "achado": "F06",
+      "antes": "Ainda assim, abordagens estatísticas simples ocupam espaço relevante no histórico da literatura aplicada à PETR4 (Petrobrás). Timbó et al. (2016) constituem uma das primeiras referências brasileiras a aplicar regressão linear ao papel, com base em correlação de Pearson e taxa de acerto direcional. O estudo evidencia que mesmo abordagens estatísticas simples podem fornecer indicações iniciais sobre as oscilações do ativo embora os próprios autores reconheçam que o método não é adaptativo e não captura dependências temporais de longo prazo.",
+      "depois": "Timbó et al. (2016) aplicaram regressão linear à previsão do fechamento da PETR4 e selecionaram indicadores com apoio da correlação de Pearson. O estudo avaliou o acerto das previsões por uma tolerância absoluta de 0,50 em relação ao fechamento observado. Esse critério mede proximidade de preços e não deve ser interpretado como taxa de acerto da direção da variação do ativo.",
+      "evidencia": "Timbó PDF 5 e 7–8; leitura dos critérios e da discussão.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0195",
+      "achado": "F01/F07",
+      "antes": "Costa & Lunkes (2025) avançam nessa linha ao aplicar Support Vector Machine (SVM) à previsão de comportamento de ações da Petrobras, combinando indicadores técnicos e fundamentalistas, e obtêm F1-score de 72,7% para a PETR4. O resultado é superior ao das abordagens puramente estatísticas, mas o trabalho não incorpora componente temporal explícita e recomenda, em suas considerações finais, a avaliação de redes neurais recorrentes como continuidade natural recomendação que esta pesquisa atende.",
+      "depois": "Costa e Lunkes (2025) combinaram indicadores técnicos e fundamentalistas em um modelo de classificação com máquina de vetores de suporte (Support Vector Machine – SVM). O modelo híbrido apresentou F1-score de aproximadamente 72,7% na amostra de ações brasileiras analisada, sem atribuição desse valor especificamente à PETR4. Os autores recomendaram investigar outros algoritmos, incluindo redes neurais e métodos de conjunto; a escolha de arquiteturas recorrentes constitui uma decisão da presente pesquisa.",
+      "evidencia": "Costa/Lunkes PDF 12, 15, 17 e 19.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0196",
+      "achado": "F02",
+      "antes": "Outros caminhos vêm sendo trilhados na literatura recente. Liu H. (2025) combina dados técnicos com análise de sentimentos extraída por Large Language Models (LLMs), ou modelos de linguagem de grande escala, entre eles o FinBERT e o GPT-2, para prever a direção do índice Standard and Poor’s (S&P) 500, com acurácia preditiva de 75%. O resultado é expressivo, mas a abordagem depende fortemente do Processamento de Linguagem Natural (Natural Language Processing - NLP) e está sujeita a ruído e a vieses de leitura do mercado.",
+      "depois": "Liu H. (2025) integrou indicadores técnicos, modelos temporais e análise de sentimentos com modelos de linguagem de grande escala (Large Language Models – LLMs), incluindo FinBERT e GPT-2, em estratégias associadas ao índice Standard and Poor’s (S&P) 500. O FinBERT atingiu 75,56% de acurácia na classificação de sentimento das notícias da Benzinga. Esse resultado pertence à tarefa de Processamento de Linguagem Natural (Natural Language Processing – NLP) e não representa acerto da direção do índice.",
+      "evidencia": "Liu H. PDF 1, 21 e 28; Tabela 1 distinta da Tabela 2.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0211",
+      "achado": "F13",
+      "antes": "Esse núcleo projeta os dados de entrada em um espaço de alta dimensionalidade, e cabe à camada de saída, treinada por regressão linear regularizada, extrair desse espaço os padrões relevantes. Como apenas a camada de saída é ajustada, o processo é matematicamente estável e ordens de grandeza mais rápido do que o BPTT.",
+      "depois": "O reservatório transforma a sequência de entrada em estados dos quais a camada de saída extrai informação preditiva. O ajuste apenas dessa camada reduz o conjunto de pesos treináveis em comparação com o treinamento de toda a rede. Essa organização pode reduzir o custo de ajuste, mas não garante estabilidade numérica nem uma razão universal de tempos frente à retropropagação através do tempo. O condicionamento da regressão, a dinâmica do reservatório e a regularização continuam relevantes (Jaeger, 2007).",
+      "evidencia": "Jaeger PDF 1–5; readout, regularização e dinâmica.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0212",
+      "achado": "F08",
+      "antes": "A vantagem competitiva das ESNs em problemas financeiros vem sendo demonstrada em diferentes mercados. Sun (2021) aplica ESN e LSTM à previsão de preços das ações da Kweichow Moutai e relata convergência muito mais rápida da ESN, melhor retenção de não linearidades e menores valores de MAE e RMSE. O autor utiliza preço de fechamento ajustado como entrada e observa que arquiteturas de aprendizado profundo tradicional padecem de baixa precisão e lentidão em séries financeiras, posicionando a ESN como alternativa natural.",
+      "depois": "Sun (2021) comparou uma ESN com uma LSTM simplificada na previsão do fechamento das ações da Kweichow Moutai e reportou menores erros nas configurações examinadas. A fonte lista fechamento e fechamento ajustado como campos distintos, mas descreve os experimentos com preços de fechamento. Por isso, esse estudo não é tomado aqui como comprovação inequívoca de uso do fechamento ajustado nem como demonstração de superioridade sobre qualquer configuração LSTM.",
+      "evidencia": "Sun PDF 5–6 e 8–9; comparação e colunas da base.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0216",
+      "achado": "F10",
+      "antes": "Liu (2022) apresenta sistema de RC nanofotônico aplicado a bolsas chinesa e britânica e mostra que ESNs reagem de forma conservadora e ajustada mesmo durante grandes flutuações e mudanças de regime comportamento que sistemas de software lentos não conseguem reproduzir em tempo real.",
+      "depois": "Liu (2022) investigou um sistema de Computação de Reservatório nanofotônico para índices de mercados chineses, norte-americano e britânico. Os autores observaram previsões conservadoras, mas também maiores erros nos pontos de flutuação intensa, discutidos como efeito de ancoragem nos dados históricos. Os resultados caracterizam as condições do sistema estudado e não demonstram imunidade a mudanças de regime nem superioridade geral sobre implementações de software em tempo real.",
+      "evidencia": "Liu B. PDF 6–8, 10 e 14.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0219",
+      "achado": "F09/F14",
+      "antes": "Hassaan et al. (2025) investigam ESNs com inicialização caótica aplicadas ao S&P 500, ISEQ, ouro e FTSE 100, e mostram que essa estratégia reduz drasticamente o erro quadrático médio (Mean Squared Error – MSE) e supera a GRU, indicando que controlar as perturbações iniciais maximiza o desempenho em dados de distribuição não estacionária. Seddik (2023) aprofunda essa direção ao propor abordagem híbrida ESN-Lorenz, voltada a isolar o efeito borboleta nos pesos iniciais; aplicada a dados de Bitcoin, obtém RMSE inferior a 1 e confirma que instabilidades nas condições iniciais comprometem severamente o desempenho das ESNs.",
+      "depois": "Hassaan et al. (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik (2023), por sua vez, investigou uma ESN em trajetórias simuladas pelo sistema de Lorenz, com condições iniciais associadas a valores de Bitcoin. As métricas desse segundo estudo avaliam as trajetórias geradas, não previsões fora da amostra de uma série observada de preços. Seus resultados não isolam o efeito da distribuição dos pesos iniciais da ESN.",
+      "evidencia": "Hassaan PDF 1, 7–8 e 12–13; Seddik PDF 4–7.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0220",
+      "achado": "F03",
+      "antes": "Sharma (2025), por fim, realiza comparação rigorosa entre ESN, XGBoost, ARIMA e suavização exponencial em séries de Bitcoin, e conclui que, em janelas de comportamento puramente caótico, a ESN apresenta superioridade estatisticamente significativa frente ao XGBoost e ao ARIMA, o que reforça seu papel como modelo de referência para dados caóticos e não estacionários.",
+      "depois": "Sharma (2025) avaliou ESNs para preços de Bitcoin, com XGBoost e previsão pelo último valor como comparadores. A análise relacionou o erro preditivo ao grau de caos estimado por expoentes de Lyapunov. Os testes de Mann–Whitney discutidos no estudo compararam ESN e XGBoost em condições específicas de caos e tamanho de janela; esse resultado não demonstra superioridade estatística geral da ESN sobre ARIMA ou sobre todos os períodos.",
+      "evidencia": "Sharma PDF 8–12; contrastes e condições.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0223",
+      "achado": "F11",
+      "antes": "Millea (2014) demonstra que matrizes ortonormais oferecem resultados consideravelmente mais estáveis do que distribuições aleatórias escaladas convencionais, e chama atenção para um problema correlato: múltiplas inicializações aleatórias produzem grandes disparidades preditivas, configurando o que o autor denomina alta variabilidade de inicialização. O mesmo trabalho descreve os Algoritmos Genéticos (AGs) como métodos de busca inspirados nos princípios da evolução biológica, capazes de explorar combinações de parâmetros sem exigir que o espaço de busca seja contínuo ou diferenciável.",
+      "depois": "Millea (2014) investigou matrizes ortonormais e matrizes aleatórias reescaladas em ESNs aplicadas ao problema de múltiplos osciladores sobrepostos. Os experimentos mostraram que conectividade, tamanho da rede e inicialização alteram o espaço de soluções. A significância das diferenças dependeu do limiar de erro avaliado. Esses resultados motivam documentar a inicialização, sem demonstrar uma vantagem universal das matrizes ortonormais em séries financeiras.",
+      "evidencia": "Millea seção 3.3, PDF 28–31: localizadores corrigidos em relação ao parecer preliminar.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0245",
+      "achado": "F08",
+      "antes": "A relevância do ajuste de cotações não é exclusiva do mercado brasileiro. Sun (2021) adota preço de fechamento ajustado como entrada em sua aplicação de ESN às ações da Kweichow Moutai. Cortesi et al. (2026) utilizam fatores de ajuste corporativo da base Center for Research in Security Prices (CRSP) em suas análises do S&P 500.",
+      "depois": "O uso de séries ajustadas também aparece fora do mercado brasileiro. Cortesi et al. (2026) descrevem dados do Center for Research in Security Prices (CRSP) com fatores de ajuste para eventos corporativos na análise de ações do S&P 500. Essa procedência documentada permite discutir a preparação dos dados sem inferir o uso de fechamento ajustado apenas da existência dessa coluna em uma base.",
+      "evidencia": "Cortesi PDF 16–18; Sun PDF 5–6.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0246",
+      "achado": "F07/F17",
+      "antes": "Costa & Lunkes (2025) reportam o uso de preço de fechamento ajustado em sua aplicação de SVM à PETR4. Esses trabalhos, ainda que metodologicamente distintos, convergem para uma mesma conclusão: a etapa de ajuste das séries históricas é condição necessária para que qualquer modelo produza resultados confiáveis, e deixar de aplicá-la em dados da B3 representa uma fragilidade metodológica relevante.",
+      "depois": "Costa e Lunkes (2025) informam o uso de preços ajustados a desdobramentos e dividendos na construção de indicadores e da variável de classificação. O tratamento de eventos corporativos é relevante quando suas descontinuidades afetam a variável e a tarefa investigadas. A necessidade e a forma do ajuste dependem do objeto da modelagem; seu emprego, isoladamente, não garante resultados confiáveis para qualquer modelo.",
+      "evidencia": "Costa/Lunkes PDF 12; limites de inferência explicitados.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0260",
+      "achado": "F03/F04",
+      "antes": "Sharma (2025) aplica ESNs à previsão de preços de Bitcoin, com otimização Bayesiana via Tree Parzen Estimator (TPE) para seleção de hiperparâmetros, distribuição uniforme para o escalonamento de entrada e log-uniforme para o raio espectral. O autor compara a ESN com XGBoost e Last Value (naïve) e obtém superioridade consistente em janelas de previsão de 15, 30 e 60 dias. Embora aplicado a criptoativos e não a ações tradicionais, o estudo ilustra a flexibilidade do paradigma RC para diferentes classes de séries financeiras voláteis.",
+      "depois": "Sharma (2025) empregou otimização Bayesiana via Tree Parzen Estimator (TPE) na seleção de hiperparâmetros da ESN. A Tabela 1 do estudo apresenta as distribuições de amostragem dos hiperparâmetros, que não equivalem à lei de geração dos elementos de Win ou W. A avaliação usou janelas de treino de 15, 30 e 60 observações, teste de dez pontos e avanço de um ponto. Assim, esses tamanhos de treino não representam horizontes de previsão de 15, 30 e 60 dias.",
+      "evidencia": "Sharma PDF 7–8, Tabela 1 e seção 5.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0252",
+      "achado": "R05/R13",
+      "antes": "Araújo et al. (2024) representam o trabalho mais próximo da proposta apresentada, pois investigam a otimização de ESNs por Algoritmos Genéticos em séries da B3 e consideram diferentes distribuições probabilísticas na inicialização dos pesos. O ESNAUTO diferencia-se ao concentrar a análise na PETR4 ajustada, investigar distribuições em Win e W por cinco ondas conceituais, integrar LHS e mutação cataclísmica inspirada no CHC e preservar as matrizes associadas aos melhores resultados.",
+      "depois": "Araújo et al. (2024) investigaram ESNs com Algoritmos Genéticos e diferentes distribuições probabilísticas em séries da B3. Essa combinação constitui uma referência metodológica próxima desta pesquisa. O ESNAUTO organiza a investigação da PETR4 ajustada em cinco ondas e integra LHS e um operador antiestagnação inspirado no CHC. A infraestrutura dispõe de mecanismos de preservação de matrizes, mas o acervo histórico não contém as matrizes e previsões de todas as execuções, conforme a Seção 3.8.",
+      "evidencia": "Araújo PDF 4–9; docs/10_diebold_mariano_tfc.md, seção 2.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0264",
+      "achado": "F13",
+      "antes": "A vantagem competitiva central das ESNs decorre da ausência de treinamento por BPTT: sem ajuste iterativo dos pesos do reservatório, evitam-se as instabilidades numéricas típicas de séries longas e reduz-se drasticamente o tempo de treinamento, fator crítico em mercados que exigem retreinamentos frequentes (Vishwas et al., 2025).",
+      "depois": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas et al. (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros.",
+      "evidencia": "Jaeger PDF 3–5; Vishwas discussão de custo e escalabilidade.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0314",
+      "achado": "R04",
+      "antes": "A divisão dos dados respeitou rigorosamente a ordem cronológica, sem embaralhamento aleatório, para evitar vazamento de informação do futuro para o passado (data leakage).",
+      "depois": "A série foi organizada em blocos cronológicos, sem embaralhar as datas entre treino, validação e teste. Essa organização é necessária à avaliação temporal, mas não demonstra, isoladamente, ausência de vazamento de informação. Na rodada controlada complementar, a fronteira dos alvos de treino e a propagação contínua dos estados foram verificadas explicitamente; nos resultados históricos, a identificação do comportamento de cada execução depende dos artefatos preservados.",
+      "evidencia": "Scripts/diebold_mariano/02_esn_controlled.R, targets e frozen; docs/10_diebold_mariano_tfc.md.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0315",
+      "achado": "R06",
+      "antes": "Foi adotada a divisão estática 50%/25%/25%: as 2.600 primeiras observações, de 03/01/2000 a 01/07/2010, compuseram o conjunto de treino; as 1.299 observações seguintes, de 02/07/2010 a 28/09/2015, formaram o conjunto de validação; e as 1.299 observações finais, de 29/09/2015 a 30/12/2020, constituíram o conjunto de teste. As decisões de hiperparâmetros e arquitetura foram tomadas apenas com treino e validação, mantendo o teste fora do processo de seleção até a avaliação final.",
+      "depois": "A divisão estática 50%/25%/25% reuniu 2.600 observações de treino, de 03/01/2000 a 01/07/2010; 1.299 de validação, de 02/07/2010 a 28/09/2015; e 1.299 de teste, de 29/09/2015 a 30/12/2020. A função de aptidão da busca combinou erros de treino e validação. Os recordes de erro de teste apresentados nos resultados constituem comparações descritivas posteriores e não equivalem a uma seleção prospectiva de configuração para uma nova amostra.",
+      "evidencia": "Partições descritas no manifesto controlado; protocolo do fitness e distinção de recordes de teste do parecer.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0330",
+      "achado": "R04/F13",
+      "antes": "Em cada variante, as matrizes Win e W foram geradas segundo a combinação de distribuições definida para a respectiva onda experimental. Em seguida, W foi reescalonada por sr/|λmax(W)|, em que λmax representa o autovalor de maior módulo; esse procedimento controlou o raio espectral e favoreceu a estabilidade dinâmica associada à Echo State Property. Durante o treinamento de cada ESN, Win e W permaneceram fixas, e apenas Wout foi estimada por regressão Ridge, permitindo isolar o efeito conjunto da inicialização e dos hiperparâmetros sobre o desempenho preditivo.",
+      "depois": "Em cada variante, Win e W foram geradas conforme a combinação probabilística da onda, e W foi reescalonada por sr/|λmax(W)|, em que λmax representa o autovalor de maior módulo. Esse procedimento controla o raio espectral, sem constituir garantia geral da propriedade de estado de eco. Durante o ajuste de cada ESN, Win e W permaneceram fixas, e Wout foi estimada por regressão Ridge. As comparações avaliam configurações que combinam inicialização, hiperparâmetros e realização estocástica, sem isolar causalmente a distribuição.",
+      "evidencia": "Jaeger PDF 3–5; comparação das configurações e executor controlado.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0337",
+      "achado": "R05/R13",
+      "antes": "A função de fitness adotada combinou o desempenho do modelo nos conjuntos de treino e validação, segundo fitness = −(0,4 · MAEtreino + 0,6 · MAEvalidação). O sinal negativo converteu a minimização do erro em problema de maximização, conforme exigido pelo pacote GA. A ponderação 40%-60% atribuiu maior peso à validação. Sempre que uma avaliação melhorou o melhor fitness observado, foram serializados os pesos Win, W e Wout e os hiperparâmetros decodificados, permitindo recuperar a melhor configuração sem repetir toda a busca evolutiva.",
+      "depois": "A função de aptidão combinou erros de treino e validação: fitness = −(0,4 · MAEtreino + 0,6 · MAEvalidação). O sinal negativo converteu a minimização em maximização para o pacote GA. A ponderação atribuiu maior peso à validação e segue a combinação descrita por Araújo et al. (2024). O software dispõe de serialização dos pesos e hiperparâmetros associados a recordes; contudo, esse mecanismo não resultou na preservação integral de todas as saídas históricas.",
+      "evidencia": "Araújo PDF 7; docs/10_diebold_mariano_tfc.md seção 2; capacidade versus acervo efetivo.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0338",
+      "achado": "R05",
+      "antes": "Cada combinação de Win e W foi otimizada dentro do mesmo espaço de hiperparâmetros. As matrizes e os hiperparâmetros associados ao melhor fitness foram preservados para reinjeção e avaliação no conjunto de teste. Como a realização aleatória do reservatório influencia o desempenho, os resultados foram tratados como execuções documentadas sob o protocolo adotado, e não como estimativas de uma distribuição completa de desempenho para cada configuração.",
+      "depois": "As combinações de Win e W foram exploradas no mesmo espaço de hiperparâmetros. A reinjeção de uma configuração depende da disponibilidade de suas matrizes e parâmetros. Como não foram recuperados todos os artefatos históricos, a reprodução exata de cada execução não é garantida. Os resultados representam realizações documentadas de reservatórios estocásticos, sem estimar uma distribuição completa de desempenho para cada configuração.",
+      "evidencia": "Limites de preservação em docs/10_diebold_mariano_tfc.md; registros do parecer.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "P0368",
+      "achado": "F18/R01",
+      "antes": "Como apoio documental ao processo de revisão, foram mantidas no acervo da pesquisa as planilhas methodi_ordinatio.xlsx e extracao_completa.xlsx. Esses arquivos registram etapas intermediárias de seleção e extração bibliográfica e foram tratados como materiais auxiliares de rastreabilidade, não como fonte isolada de verdade para a redação final. A síntese apresentada no Capítulo 2 resultou da consolidação das leituras, das referências efetivamente utilizadas no texto e das decisões metodológicas tomadas ao longo da pesquisa.",
+      "depois": "A documentação da pesquisa menciona as planilhas methodi_ordinatio.xlsx e extracao_completa.xlsx como registros intermediários de seleção e extração bibliográfica. Esses arquivos não foram localizados no acervo examinado, o que limita a auditoria retrospectiva do processo. A coleção reconstruída a partir dos documentos disponíveis apoia a síntese descritiva, mas não substitui os registros originais de busca, triagem e ordenação.",
+      "evidencia": "Busca local por nomes de arquivos e fontes.json; indisponibilidade não implica inexistência histórica.",
+      "alcance": "Trechos pertinentes e contexto consultados; sem declaração de leitura integral de todas as obras.",
+      "estado": "incorporado_validacao_visual_pendente"
+    },
+    {
+      "paragrafo_origem": "TabelaXML2/linha24/celula0/paragrafo0",
+      "achado": "F12",
+      "antes": "Soltani et al. (2023)",
+      "depois": "Soltani et al. (2022)",
+      "evidencia": "Folha de rosto do preprint v1 local, PDF 1. A recodificação das cinco dimensões desta linha permanece pendente.",
+      "alcance": "Identidade da versão consultada; sem aprovação das células P1–P5.",
+      "estado": "incorporado_validacao_visual_pendente"
+    }
+  ],
+  "validacao": "49 parágrafos do corpo e 1 de tabelas alterados; demais parágrafos, células e partes OOXML preservados. Renderização/itálicos e conjunto dos achados ainda pendentes."
+}

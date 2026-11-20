@@ -1,0 +1,102 @@
+[
+  {
+    "membro": "ref.bib",
+    "trecho": "blisher={MDPI}\n}\n\n@article{nayak2024modelling,\n  title={Modelling monthly rainfall of India through transformer-based deep learning architecture},\n  author={Nayak, GH Harish and Alam, Wasi and Singh, KN and Avinash, G and Ray, Mrinmoy and Kumar, Rajeev Ranjan},\n  journal={Modeling Earth Systems and Environment},\n  pages={1--18},\n"
+  },
+  {
+    "membro": "ref.bib",
+    "trecho": "direct.com/science/article/pii/S0377221717310652},\n\tkeywords     = {Finance, Statistical arbitrage, LSTM, Machine learning, Deep learning},\n\tabstract     = {Long short-term memory (LSTM) networks are a state-of-the-art technique for sequence learning. They are less commonly applied to financial time series predictions, yet"
+  },
+  {
+    "membro": "ref.bib",
+    "trecho": "istical arbitrage, LSTM, Machine learning, Deep learning},\n\tabstract     = {Long short-term memory (LSTM) networks are a state-of-the-art technique for sequence learning. They are less commonly applied to financial time series predictions, yet inherently suitable for this domain. We deploy LSTM networks for predicting out-"
+  },
+  {
+    "membro": "ref.bib",
+    "trecho": "ly applied to financial time series predictions, yet inherently suitable for this domain. We deploy LSTM networks for predicting out-of-sample directional movements for the constituent stocks of the S&P 500 from 1992 until 2015. With daily returns of 0.46 percent and a Sharpe ratio of 5.8 prior to transaction costs, we fin"
+  },
+  {
+    "membro": "ref.bib",
+    "trecho": "5. With daily returns of 0.46 percent and a Sharpe ratio of 5.8 prior to transaction costs, we find LSTM networks to outperform memory-free classification methods, i.e., a random forest (RAF), a deep neural net (DNN), and a logistic regression classifier (LOG). The outperformance relative to the general market is very clea"
+  },
+  {
+    "membro": "ref.bib",
+    "trecho": "very clear from 1992 to 2009, but as of 2010, excess returns seem to have been arbitraged away with LSTM profitability fluctuating around zero after transaction costs. We further unveil sources of profitability, thereby shedding light into the black box of artificial neural networks. Specifically, we find one common patter"
+  },
+  {
+    "membro": "ref.bib",
+    "trecho": "ds 0.23 percent prior to transaction costs. Further regression analysis unveils low exposure of the LSTM returns to common sources of systematic risk – also compared to the three benchmark models.}\n}\n\n@article{bandara,\n  title={Forecasting across time series databases using recurrent neural networks on groups of similar se"
+  },
+  {
+    "membro": "ref.bib",
+    "trecho": " year={2021}\n}\n@article{zhao2019speech,\n  title={Speech emotion recognition using deep 1D \\& 2D CNN LSTM networks},\n  author={Zhao, Jianfeng and Mao, Xia and Chen, Lijiang},\n  journal={Biomedical signal processing and control},\n  volume={47},\n  pages={312--323},\n  year={2019},\n  publisher={Elsevier}\n}\n\n@article{alzubaidi20"
+  },
+  {
+    "membro": "ref.bib",
+    "trecho": "  year={2013},\n  organization={PMLR}\n}\n\n@article{su2025systematic,\n  title={A systematic review for transformer-based long-term series forecasting},\n  author={Su, Liyilei and Zuo, Xumin and Li, Rui and Wang, Xin and Zhao, Heng and Huang, Bingding},\n  journal={Artificial Intelligence Review},\n  volume={58},\n  number={3},\n  pages={"
+  },
+  {
+    "membro": "ref.bib",
+    "trecho": "e={58},\n  number={3},\n  pages={80},\n  year={2025},\n  publisher={Springer}\n}\n\n@inproceedings{zeng2023transformers,\n  title={Are transformers effective for time series forecasting?},\n  author={Zeng, Ailing and Chen, Muxi and Zhang, Lei and Xu, Qiang},\n  booktitle={Proceedings of the AAAI conference on artificial intelligence},\n  vo"
+  },
+  {
+    "membro": "ref.bib",
+    "trecho": "es={80},\n  year={2025},\n  publisher={Springer}\n}\n\n@inproceedings{zeng2023transformers,\n  title={Are transformers effective for time series forecasting?},\n  author={Zeng, Ailing and Chen, Muxi and Zhang, Lei and Xu, Qiang},\n  booktitle={Proceedings of the AAAI conference on artificial intelligence},\n  volume={37},\n  pages={11121--"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": "icularly with scarce or noisy data.\n\n\n% While recent advancements in DL, such as the development of Transformers \\cite{lim2021time, benidis2022deep} have enhanced their ability to capture long-term dependencies, their applicability to forecasting tasks with noisy and chaotic data remains limited \\cite{su2025systematic, zeng2023tr"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": "ty to forecasting tasks with noisy and chaotic data remains limited \\cite{su2025systematic, zeng2023transformers}. \n% Transformers, for instance, require large datasets, significant computational resources to perform optimally, making them less feasible for applications with limited data or strict resource constraints. Transforme"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": "tasks with noisy and chaotic data remains limited \\cite{su2025systematic, zeng2023transformers}. \n% Transformers, for instance, require large datasets, significant computational resources to perform optimally, making them less feasible for applications with limited data or strict resource constraints. Transformers \\cite{lim2021ti"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": "mally, making them less feasible for applications with limited data or strict resource constraints. Transformers \\cite{lim2021time, benidis2022deep} have enhanced their ability to capture long-term dependencies, their applicability to forecasting tasks with noisy and chaotic data remains limited \\cite{su2025systematic, zeng2023tr"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": "ty to forecasting tasks with noisy and chaotic data remains limited \\cite{su2025systematic, zeng2023transformers}. \n\nIn contrast, Echo State Networks (ESNs) offer a lightweight and computationally efficient alternative for time series (TS) forecasting \\cite{practicalesn,zhang,jaeger}. \n% Unlike Transformers or RNN-based models, E"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": " efficient alternative for time series (TS) forecasting \\cite{practicalesn,zhang,jaeger}. \n% Unlike Transformers or RNN-based models, ESNs simplify the learning process by requiring training only at the output layer, thus reducing computational demands while maintaining the ability to capture temporal patterns effectively \\cite{j"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": "mph{et al.} \\cite{alessandretti} compare two different XGBoost models and a Long Short Term Memory (LSTM) against a baseline model based on Simple Moving Averages to prove that it is possible to beat naïve methods. They evaluate the results on 1618 cryptocurrencies and show that LSTMs perform better for long-range predicti"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": "is possible to beat naïve methods. They evaluate the results on 1618 cryptocurrencies and show that LSTMs perform better for long-range predictions; whereas, for XGBoost, it is sufficient to consider a short window comprising the last values to make a good short-term prediction. Elsayed \\emph{et al.} \\cite{elsayed} demonst"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": "ts as features in our model. Regarding DL, Wood \\emph{et al.} \\cite{wood} employs a complex, custom transformer architecture integrated with change point detection to achieve accurate time series forecasts. While the model is notable for its innovative design, the extended training time required is a downside. The first applicati"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": " Kenny \\cite{kenny} is the only study on ESNs for cryptocurrency forecasting. It compares ESNs with LSTMs and other ML methods but does not consider ESN tuning deeply, which is a primary focus of our work. \n% The application of ESNs in forecasting is limited, with most studies focusing on other domains such as medical rese"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": "%%%%%%%%%%%%%%%%\nAlessandretti \\emph{et al.} \\cite{alessandretti} compare two XGBoost models and an LSTM to a baseline Simple Moving Averages model, showing that LSTMs excel in long-range predictions while XGBoost performs well for short-term predictions with a small window of recent data. Elsayed \\emph{et al.} \\cite{elsay"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": "ti} compare two XGBoost models and an LSTM to a baseline Simple Moving Averages model, showing that LSTMs excel in long-range predictions while XGBoost performs well for short-term predictions with a small window of recent data. Elsayed \\emph{et al.} \\cite{elsayed} enhance XGBoost predictions by adding previous data points"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": "s features, an approach we adapted for our model. Wood \\emph{et al.} \\cite{wood} developed a custom transformer model for time series forecasting, but its extended training time is a downside. Jaeger \\emph{et al.} \\cite{jaeger} first applied ESNs to stock prediction in 2009, using the Hurst exponent and PCA to improve performance"
+  },
+  {
+    "membro": "samplepaper.tex",
+    "trecho": "ically Tree Parzen Estimators (TPE), using the widely adopted $hyperopt$ \\footnote{https://hyperopt.github.io/hyperopt/} Python package, to search for the best hyperparameter combinations in their spaces. Table~\\ref{table:ESN} and Table~\\ref{table:XGB} describe the list of tuned parameters for ESN and XGB, respectively.\n\n% \\"
+  }
+]

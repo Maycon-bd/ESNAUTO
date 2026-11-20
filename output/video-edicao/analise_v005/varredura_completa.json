@@ -1,0 +1,542 @@
+{
+  "referencias_unicas": 70,
+  "banda_hz": [
+    70,
+    3400
+  ],
+  "correspondencias": [
+    {
+      "som": "Windows Background.wav",
+      "inicio_s": 0.0415,
+      "correlacao_prefixo": 0.9992853698398166,
+      "subcorrelacoes": [
+        0.9996550311986373,
+        0.9995033906224504,
+        0.9986967173666425,
+        0.1505389589751751
+      ]
+    },
+    {
+      "som": "Windows Background.wav",
+      "inicio_s": 374.245375,
+      "correlacao_prefixo": 0.9975420136340208,
+      "subcorrelacoes": [
+        0.9988880613405018,
+        0.9983760837042943,
+        0.9953932868553109,
+        0.16582089738226793
+      ]
+    },
+    {
+      "som": "Windows Background.wav",
+      "inicio_s": 706.887875,
+      "correlacao_prefixo": 0.947669753685117,
+      "subcorrelacoes": [
+        0.9337916857379501,
+        0.9564726870954678,
+        0.9557688712985701,
+        0.8958089199356316
+      ]
+    },
+    {
+      "som": "Windows Background.wav",
+      "inicio_s": 711.997625,
+      "correlacao_prefixo": 0.9513501749209886,
+      "subcorrelacoes": [
+        0.95465434681821,
+        0.9717222711615834,
+        0.932921457297498,
+        0.6913713973447797
+      ]
+    },
+    {
+      "som": "Windows Background.wav",
+      "inicio_s": 1165.396375,
+      "correlacao_prefixo": 0.9976804680633968,
+      "subcorrelacoes": [
+        0.9988046027705725,
+        0.9985907146338469,
+        0.9956454271110139,
+        0.9959532856368416
+      ]
+    }
+  ],
+  "por_referencia": [
+    {
+      "som": "Alarm01.wav",
+      "pico_correlacao": 0.14791929117167796,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Alarm02.wav",
+      "pico_correlacao": 0.1255654724335447,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Alarm03.wav",
+      "pico_correlacao": 0.2946927512217769,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Alarm04.wav",
+      "pico_correlacao": 0.11196369724340269,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Alarm05.wav",
+      "pico_correlacao": 0.08154978745474274,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Alarm06.wav",
+      "pico_correlacao": 0.16164554289495406,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Alarm07.wav",
+      "pico_correlacao": 0.0782453727908996,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Alarm08.wav",
+      "pico_correlacao": 0.08844682264171388,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Alarm09.wav",
+      "pico_correlacao": 0.11047399100517331,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Alarm10.wav",
+      "pico_correlacao": 0.17001153019724177,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "chimes.wav",
+      "pico_correlacao": 0.2909986357838235,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "chord.wav",
+      "pico_correlacao": 0.3835198374544221,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "ding.wav",
+      "pico_correlacao": 0.262149236835574,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "notify.wav",
+      "pico_correlacao": 0.2852049384414277,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "recycle.wav",
+      "pico_correlacao": 0.23742846549549004,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Ring01.wav",
+      "pico_correlacao": 0.12978771061678357,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Ring02.wav",
+      "pico_correlacao": 0.25063289796096666,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Ring03.wav",
+      "pico_correlacao": 0.07103416746418155,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Ring04.wav",
+      "pico_correlacao": 0.06897238489606126,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Ring05.wav",
+      "pico_correlacao": 0.04945888229244777,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Ring06.wav",
+      "pico_correlacao": 0.26916589454982226,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Ring07.wav",
+      "pico_correlacao": 0.07491921026298143,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Ring08.wav",
+      "pico_correlacao": 0.06416851403064988,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Ring09.wav",
+      "pico_correlacao": 0.09138135673861142,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Ring10.wav",
+      "pico_correlacao": 0.07053792283919347,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "ringout.wav",
+      "pico_correlacao": 0.27526197923182194,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Speech Disambiguation.wav",
+      "pico_correlacao": 0.36143775606225104,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Speech Misrecognition.wav",
+      "pico_correlacao": 0.8714636477419815,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Speech Off.wav",
+      "pico_correlacao": 0.6717369842496609,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Speech On.wav",
+      "pico_correlacao": 0.5184845896211293,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Speech Sleep.wav",
+      "pico_correlacao": 0.38976446469552506,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "tada.wav",
+      "pico_correlacao": 0.1927461110008119,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Background.wav",
+      "pico_correlacao": 0.9992853698398166,
+      "candidatos": 5,
+      "confirmados": [
+        {
+          "som": "Windows Background.wav",
+          "inicio_s": 0.0415,
+          "correlacao_prefixo": 0.9992853698398166,
+          "subcorrelacoes": [
+            0.9996550311986373,
+            0.9995033906224504,
+            0.9986967173666425,
+            0.1505389589751751
+          ]
+        },
+        {
+          "som": "Windows Background.wav",
+          "inicio_s": 374.245375,
+          "correlacao_prefixo": 0.9975420136340208,
+          "subcorrelacoes": [
+            0.9988880613405018,
+            0.9983760837042943,
+            0.9953932868553109,
+            0.16582089738226793
+          ]
+        },
+        {
+          "som": "Windows Background.wav",
+          "inicio_s": 706.887875,
+          "correlacao_prefixo": 0.947669753685117,
+          "subcorrelacoes": [
+            0.9337916857379501,
+            0.9564726870954678,
+            0.9557688712985701,
+            0.8958089199356316
+          ]
+        },
+        {
+          "som": "Windows Background.wav",
+          "inicio_s": 711.997625,
+          "correlacao_prefixo": 0.9513501749209886,
+          "subcorrelacoes": [
+            0.95465434681821,
+            0.9717222711615834,
+            0.932921457297498,
+            0.6913713973447797
+          ]
+        },
+        {
+          "som": "Windows Background.wav",
+          "inicio_s": 1165.396375,
+          "correlacao_prefixo": 0.9976804680633968,
+          "subcorrelacoes": [
+            0.9988046027705725,
+            0.9985907146338469,
+            0.9956454271110139,
+            0.9959532856368416
+          ]
+        }
+      ]
+    },
+    {
+      "som": "Windows Balloon.wav",
+      "pico_correlacao": 0.47439199193357523,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Battery Critical.wav",
+      "pico_correlacao": 0.3301506266780949,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Battery Low.wav",
+      "pico_correlacao": 0.5104343984147144,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Critical Stop.wav",
+      "pico_correlacao": 0.3947906895811453,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Default.wav",
+      "pico_correlacao": 0.7551668657111811,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Ding.wav",
+      "pico_correlacao": 0.4274683761910259,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Error.wav",
+      "pico_correlacao": 0.28659678242133496,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Exclamation.wav",
+      "pico_correlacao": 0.24311966626124257,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Feed Discovered.wav",
+      "pico_correlacao": 0.44838149986519577,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Foreground.wav",
+      "pico_correlacao": 0.45940768459994996,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Hardware Fail.wav",
+      "pico_correlacao": 0.6891196094917419,
+      "candidatos": 17,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Hardware Insert.wav",
+      "pico_correlacao": 0.5805450509080563,
+      "candidatos": 2,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Hardware Remove.wav",
+      "pico_correlacao": 0.6174193450136582,
+      "candidatos": 1,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Information Bar.wav",
+      "pico_correlacao": 0.8457716389558476,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Logoff Sound.wav",
+      "pico_correlacao": 0.3233128815847399,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Logon.wav",
+      "pico_correlacao": 0.3443956944952007,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Menu Command.wav",
+      "pico_correlacao": 0.49515796093659714,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Message Nudge.wav",
+      "pico_correlacao": 0.5158274388170587,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Minimize.wav",
+      "pico_correlacao": 0.30071869933094153,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Navigation Start.wav",
+      "pico_correlacao": 0.53286561981548,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Notify Calendar.wav",
+      "pico_correlacao": 0.37600584877769955,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Notify Email.wav",
+      "pico_correlacao": 0.4148228494727459,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Notify Messaging.wav",
+      "pico_correlacao": 0.4429702683435233,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Notify System Generic.wav",
+      "pico_correlacao": 0.43573557773779814,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Notify.wav",
+      "pico_correlacao": 0.18244825334072048,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Pop-up Blocked.wav",
+      "pico_correlacao": 0.7695301024664895,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Print complete.wav",
+      "pico_correlacao": 0.18554822094038906,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Proximity Connection.wav",
+      "pico_correlacao": 0.17756464160308263,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Proximity Notification.wav",
+      "pico_correlacao": 0.26928657885005175,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Recycle.wav",
+      "pico_correlacao": 0.26423083789921703,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Restore.wav",
+      "pico_correlacao": 0.27169573020765425,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Ringin.wav",
+      "pico_correlacao": 0.18535396357063816,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Ringout.wav",
+      "pico_correlacao": 0.38040014920421794,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Shutdown.wav",
+      "pico_correlacao": 0.22836648117356706,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Startup.wav",
+      "pico_correlacao": 0.4961992644296205,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows Unlock.wav",
+      "pico_correlacao": 0.4901606321260659,
+      "candidatos": 0,
+      "confirmados": []
+    },
+    {
+      "som": "Windows User Account Control.wav",
+      "pico_correlacao": 0.4594076843804998,
+      "candidatos": 0,
+      "confirmados": []
+    }
+  ]
+}

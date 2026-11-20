@@ -1,0 +1,15 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_antes": "f7377019848a9ffc69278210a02051003fd7f7d347e0187a8e98b3f2d27b0235",
+  "sha256_apos_edicao": "0dfd7ef97d6fbcc995c7cd56a4da11d3947fe1a2d6419855488901583203259b",
+  "alteracoes": [
+    {
+      "unidade": "U0246",
+      "antes": "Ribeiro et al. (2021) propuseram o HAR-PSO-ESN para prever volatilidade realizada de três ações da Nasdaq, combinando atributos do modelo HAR, ESN e seleção de hiperparâmetros por PSO. Os pesos de entrada, recorrentes e de realimentação foram inicializados com distribuição Uniforme. O modelo apresentou melhores resultados na maioria dos casos estudados, com comparações por Friedman e Nemenyi. Essa evidência se refere à combinação avaliada, sem estabelecer superioridade universal ou isolar o efeito de leis alternativas de inicialização.",
+      "depois": "Ribeiro et al. (2021) propuseram o HAR-PSO-ESN para prever volatilidade realizada de CAT, EBAY e MSFT, combinando atributos do modelo HAR, ESN e seleção de hiperparâmetros por PSO. Os pesos de entrada, recorrentes e de realimentação foram inicializados com distribuição Uniforme. O modelo apresentou melhores resultados na maioria dos casos estudados, com comparações por Friedman e Nemenyi. Essa evidência se refere à combinação avaliada, sem estabelecer superioridade universal ou isolar o efeito de leis alternativas de inicialização.",
+      "motivo": "A CAT era listada na NYSE; o próprio artigo usa classificação Nasdaq inadequada. Manter os ativos sem reproduzir essa classificação."
+    }
+  ],
+  "estado": "incorporado_pendente_exportacao_e_inspecao"
+}

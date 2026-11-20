@@ -1,0 +1,38 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "copia_trabalho": "reports\\monografia\\trabalho\\fechamento_integral_20261029.docx",
+  "sha256_atual_apos_exportacao_nativa": "a4db12e6c368fbf21fef8281464e850b330b8803f4539b5b9ee7718d14334ff3",
+  "estado": "rascunho_em_auditoria_nao_promovido",
+  "correcoes": {
+    "paragrafos": 6,
+    "referencias": 1,
+    "tabelas_ou_resultados_experimentais": 0
+  },
+  "verificacao_nativa": {
+    "paginas": 76,
+    "verificacoes_estruturais": 45,
+    "falhas": 0,
+    "arquivo": "verificacao_lotes12.json"
+  },
+  "correspondencia_nominal": {
+    "referencias": 50,
+    "ocorrencias_reconhecidas": 151,
+    "orfas": 0,
+    "limite": "Não comprova fidelidade de conteúdo."
+  },
+  "inspecao_visual": {
+    "comparacao": "comparacao_visual_lotes12.json",
+    "paginas_diferentes_abertas": [
+      20,
+      21,
+      22,
+      76
+    ],
+    "paginas_identicas": 72,
+    "resultado": "Texto e referência legíveis, itálico de et al. e feedforward conferido; sem sobreposição ou corte nos elementos alterados. Página21fecha com parágrafo inteiro e página22retoma o próximo.",
+    "limite": "Checkpoint dos lotes1/2, não fechamento da auditoria."
+  },
+  "continuidade": "Não reexecutar os incorporadores1/2: os hashes de entrada eram anteriores à exportação nativa. Próximos lotes devem conferir este SHA e partir da mesma cópia se a vigente continuar v005; se avançou, conciliar.",
+  "proximo_passo": "Conferir Hochreiter/Schmidhuber e restante de Jaeger2001 recuperado, prosseguir demais fontes e todas as unidades; fazer passe de similaridade e Guia e só então consolidar/registrar."
+}

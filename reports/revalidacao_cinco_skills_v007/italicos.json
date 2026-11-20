@@ -1,0 +1,968 @@
+[
+  {
+    "local": "P0001",
+    "regiao": "pretextual",
+    "termo": "SOFTWARE",
+    "italico_integral": false,
+    "contexto": "FACULDADE DE ENGENHARIA DE SOFTWARE"
+  },
+  {
+    "local": "P0008",
+    "regiao": "pretextual",
+    "termo": "Software",
+    "italico_integral": false,
+    "contexto": "grafia apresentada à Banca Examinadora do Curso de Engenharia de Software da Universidade de Rio Verde (UniRV) como exigência parcial para"
+  },
+  {
+    "local": "P0008",
+    "regiao": "pretextual",
+    "termo": "Software",
+    "italico_integral": false,
+    "contexto": "cia parcial para obtenção do título de Bacharel em Engenharia de Software. Área de concentração: Engenharia de Software."
+  },
+  {
+    "local": "P0008",
+    "regiao": "pretextual",
+    "termo": "Software",
+    "italico_integral": false,
+    "contexto": "l em Engenharia de Software. Área de concentração: Engenharia de Software."
+  },
+  {
+    "local": "P0019",
+    "regiao": "pretextual",
+    "termo": "Software",
+    "italico_integral": false,
+    "contexto": "grafia apresentada à Banca Examinadora do Curso de Engenharia de Software da Universidade de Rio Verde (UniRV) como exigência parcial para"
+  },
+  {
+    "local": "P0019",
+    "regiao": "pretextual",
+    "termo": "Software",
+    "italico_integral": false,
+    "contexto": "cia parcial para obtenção do título de Bacharel em Engenharia de Software. Área de concentração: Engenharia de Software."
+  },
+  {
+    "local": "P0019",
+    "regiao": "pretextual",
+    "termo": "Software",
+    "italico_integral": false,
+    "contexto": "l em Engenharia de Software. Área de concentração: Engenharia de Software."
+  },
+  {
+    "local": "P0041",
+    "regiao": "pretextual",
+    "termo": "Ridge",
+    "italico_integral": true,
+    "contexto": " interface desenvolvida pelo autor, integrando ESN com regressão Ridge, Algoritmo Genético binário, inicialização por Amostragem por Hi"
+  },
+  {
+    "local": "P0041",
+    "regiao": "pretextual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": "icaram diferença estatisticamente significativa entre a ESN e os baselines GRU e LSTM sob perdas absoluta e quadrática, sempre com menor pe"
+  },
+  {
+    "local": "P0041",
+    "regiao": "pretextual",
+    "termo": "Software",
+    "italico_integral": false,
+    "contexto": "vestigada, e o ESNAUTO contribuiu como artefato de Engenharia de Software para organizar, executar, auditar e comparar o processo experime"
+  },
+  {
+    "local": "P0044",
+    "regiao": "pretextual",
+    "termo": "Ridge",
+    "italico_integral": false,
+    "contexto": "ed an interface developed by the author, integrating an ESN with Ridge regression, a binary Genetic Algorithm, Latin Hypercube Sampling"
+  },
+  {
+    "local": "P0044",
+    "regiao": "pretextual",
+    "termo": "baselines",
+    "italico_integral": false,
+    "contexto": "tically significant differences between the ESN and the GRU/LSTM baselines under absolute and squared loss, always with lower mean loss for"
+  },
+  {
+    "local": "P0044",
+    "regiao": "pretextual",
+    "termo": "software",
+    "italico_integral": false,
+    "contexto": "mpetitive for the investigated task, while ESNAUTO contributed a software-engineering artifact for organizing, executing, auditing, and co"
+  },
+  {
+    "local": "P0077",
+    "regiao": "pretextual",
+    "termo": "Backpropagation",
+    "italico_integral": true,
+    "contexto": "BP – Backpropagation (Retropropagação)"
+  },
+  {
+    "local": "P0078",
+    "regiao": "pretextual",
+    "termo": "Backpropagation",
+    "italico_integral": true,
+    "contexto": "BPTT – Backpropagation Through Time"
+  },
+  {
+    "local": "P0109",
+    "regiao": "pretextual",
+    "termo": "Power Function",
+    "italico_integral": true,
+    "contexto": "PF – Power Function"
+  },
+  {
+    "local": "P0172",
+    "regiao": "textual",
+    "termo": "Ridge",
+    "italico_integral": false,
+    "contexto": "órica ajustada; desenvolver o ESNAUTO, integrando ESN, regressão Ridge e busca genética; e investigar distribuições canônicas, de cauda"
+  },
+  {
+    "local": "P0172",
+    "regiao": "textual",
+    "termo": "Ridge",
+    "italico_integral": false,
+    "contexto": " o descarte inicial, o tamanho do reservatório e a regularização Ridge. A implementação atual utiliza um cromossomo binário de 55 bits "
+  },
+  {
+    "local": "P0188",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Timbó et al. (2016) aplicaram regressão linear à previsão do fechamento da PE"
+  },
+  {
+    "local": "P0194",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "ngas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinic"
+  },
+  {
+    "local": "P0196",
+    "regiao": "textual",
+    "termo": "Backpropagation",
+    "italico_integral": true,
+    "contexto": "o treinadas iterativamente por retropropagação através do tempo (Backpropagation Through Time – BPTT), ajustando pesos internos e de saída. O cus"
+  },
+  {
+    "local": "P0198",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "a o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram"
+  },
+  {
+    "local": "P0199",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "O resultado de Cortesi et al. (2026) indica que escolhas do processo de otimização podem produ"
+  },
+  {
+    "local": "P0200",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "teturas estendem a discussão para além da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quânticas (Quantum"
+  },
+  {
+    "local": "P0206",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Sun et al. (2021) compararam uma ESN com uma LSTM simplificada na previsão "
+  },
+  {
+    "local": "P0207",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Wang et al. (2021) avaliaram modelos de RC em sete índices internacionais e "
+  },
+  {
+    "local": "P0208",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Ribeiro et al. (2021) combinaram o modelo autorregressivo heterogêneo (Heteroge"
+  },
+  {
+    "local": "P0210",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Liu et al. (2022) avaliaram, por simulação numérica, um sistema nanofotônic"
+  },
+  {
+    "local": "P0210",
+    "regiao": "textual",
+    "termo": "software",
+    "italico_integral": false,
+    "contexto": "danças de regime nem superioridade geral sobre implementações de software em tempo real."
+  },
+  {
+    "local": "P0211",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Zhang et al. (2021) propuseram uma ESN com sensoriamento compressivo (Compres"
+  },
+  {
+    "local": "P0214",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Sharma et al. (2025) avaliaram ESNs para preços de Bitcoin, com XGBoost e prev"
+  },
+  {
+    "local": "P0218",
+    "regiao": "textual",
+    "termo": "Backpropagation",
+    "italico_integral": true,
+    "contexto": "studo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto n"
+  },
+  {
+    "local": "P0219",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Deng et al. (2022) aplicaram AG à seleção do escalonamento de entrada, raio "
+  },
+  {
+    "local": "P0220",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por A"
+  },
+  {
+    "local": "P0222",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Araújo et al. (2025) investigaram a combinação de AG, ESN e distribuições prob"
+  },
+  {
+    "local": "P0231",
+    "regiao": "textual",
+    "termo": "Power Function",
+    "italico_integral": true,
+    "contexto": "s propriedades observadas nos log-retornos; e o terceiro utiliza Power Function (PF), Dagum 4P e Johnson SB ajustadas empiricamente aos preços d"
+  },
+  {
+    "local": "P0233",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "nsultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, rec"
+  },
+  {
+    "local": "P0233",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "ostragem Uniforme(-1,1), seguida de escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identifica"
+  },
+  {
+    "local": "P0235",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Unif"
+  },
+  {
+    "local": "P0235",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como "
+  },
+  {
+    "local": "P0237",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Cardoso et al. (2022b) propõem o BovDB como base de cotações e eventos de ações"
+  },
+  {
+    "local": "P0238",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "damente, não demonstra como o preço local foi corrigido (Cardoso et al., 2022b)."
+  },
+  {
+    "local": "P0239",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "ies ajustadas também aparece fora do mercado brasileiro. Cortesi et al. (2026) descrevem dados do Center for Research in Security Prices"
+  },
+  {
+    "local": "P0244",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Cardoso et al. (2022b) constituem a referência metodológica central deste traba"
+  },
+  {
+    "local": "P0246",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Araújo et al. (2025) compararam MAE e RMSE como aptidão de um AG para ESNs com"
+  },
+  {
+    "local": "P0248",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Ribeiro et al. (2021) propuseram o HAR-PSO-ESN para prever volatilidade realiza"
+  },
+  {
+    "local": "P0249",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Wang et al. (2021) avaliaram RC, LSTM e RNR em sete índices acionários, com "
+  },
+  {
+    "local": "P0249",
+    "regiao": "textual",
+    "termo": "Ridge",
+    "italico_integral": false,
+    "contexto": " otimizador iterativo, o que distingue esse protocolo da leitura Ridge empregada nesta pesquisa. O desempenho relativo variou entre índ"
+  },
+  {
+    "local": "P0250",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Os resultados de Wang et al. (2021) mostram que modelos de RC podem ser competitivos com LSTM"
+  },
+  {
+    "local": "P0254",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Sharma et al. (2025) empregaram otimização Bayesiana via Tree Parzen Estimator"
+  },
+  {
+    "local": "P0257",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resulta"
+  },
+  {
+    "local": "P0259",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharm"
+  },
+  {
+    "local": "P0259",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram dive"
+  },
+  {
+    "local": "P0260",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "s na previsão da PETR4 ajustada. Trabalhos próximos, como Araújo et al. (2025), já investigaram distribuições alternativas em séries fin"
+  },
+  {
+    "local": "P0261",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimi"
+  },
+  {
+    "local": "P0262",
+    "regiao": "textual",
+    "termo": "software",
+    "italico_integral": false,
+    "contexto": "ação e sua documentação compõem a contribuição experimental e de software, sem atribuir ganho causal isolado ao Fator de Ajuste ou declara"
+  },
+  {
+    "local": "T01 L5 C3 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "es próprias com LSTM/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S."
+  },
+  {
+    "local": "T01 L5 C3 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S."
+  },
+  {
+    "local": "T02 L3 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Araújo et al. (2025)"
+  },
+  {
+    "local": "T02 L5 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Cardoso et al. (2022b)"
+  },
+  {
+    "local": "T02 L6 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Chen et al. (2026)"
+  },
+  {
+    "local": "T02 L7 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Cortesi et al. (2026)"
+  },
+  {
+    "local": "T02 L9 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Deng et al. (2022)"
+  },
+  {
+    "local": "T02 L13 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Ecer et al. (2020)"
+  },
+  {
+    "local": "T02 L18 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Liu B. et al. (2022)"
+  },
+  {
+    "local": "T02 L24 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Sharma et al. (2025)"
+  },
+  {
+    "local": "T02 L27 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Sun et al. (2021)"
+  },
+  {
+    "local": "T02 L29 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Timbó et al. (2016)"
+  },
+  {
+    "local": "T02 L30 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Ribeiro et al. (2021)"
+  },
+  {
+    "local": "T02 L33 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Wang W. et al. (2021)"
+  },
+  {
+    "local": "T02 L35 C1 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Zhang et al. (2021)"
+  },
+  {
+    "local": "P0295",
+    "regiao": "textual",
+    "termo": "Ridge",
+    "italico_integral": false,
+    "contexto": "e um passo à frente da PETR4. A implementação combinou regressão Ridge para ajuste analítico da camada de saída, Algoritmo Genético bin"
+  },
+  {
+    "local": "P0300",
+    "regiao": "textual",
+    "termo": "script",
+    "italico_integral": false,
+    "contexto": "mpo com proc.time e usa pracma como pseudoinversa alternativa. O script anterior carrega outras bibliotecas e contém exemplos de ajuste "
+  },
+  {
+    "local": "P0301",
+    "regiao": "textual",
+    "termo": "software",
+    "italico_integral": false,
+    "contexto": "o em repositório Git e pela organização modular dos artefatos de software. A reprodução exata de cada execução histórica, entretanto, perm"
+  },
+  {
+    "local": "P0303",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "rporativos. A procedência da série é atribuída ao BovDB (Cardoso et al., 2022b). O ativo é a ação preferencial da Petróleo Brasileiro S."
+  },
+  {
+    "local": "P0313",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "rtir da série recebida já ajustada; contexto do fator em Cardoso et al. (2022b)."
+  },
+  {
+    "local": "T04 L6 C3 P1",
+    "regiao": "textual",
+    "termo": "Power Function",
+    "italico_integral": true,
+    "contexto": "Power Function, Dagum 4P e Johnson SB"
+  },
+  {
+    "local": "P0319",
+    "regiao": "textual",
+    "termo": "Power Function",
+    "italico_integral": true,
+    "contexto": "Na quinta onda, as distribuições Power Function, Dagum de quatro parâmetros e Johnson SB foram parametrizadas a "
+  },
+  {
+    "local": "P0320",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "l do ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiper"
+  },
+  {
+    "local": "T05 L6 C1 P1",
+    "regiao": "textual",
+    "termo": "Ridge",
+    "italico_integral": false,
+    "contexto": "Regularização Ridge"
+  },
+  {
+    "local": "P0322",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": " base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025)."
+  },
+  {
+    "local": "P0323",
+    "regiao": "textual",
+    "termo": "Ridge",
+    "italico_integral": true,
+    "contexto": " camada de saída foi treinada por regressão linear regularizada (Ridge Regression), resolvendo o sistema Wout = Yt · Xᵀ · (X · Xᵀ + reg"
+  },
+  {
+    "local": "P0324",
+    "regiao": "textual",
+    "termo": "Ridge",
+    "italico_integral": false,
+    "contexto": "N, Win e W permaneceram fixas, e Wout foi estimada por regressão Ridge. As comparações avaliam configurações que combinam inicialização"
+  },
+  {
+    "local": "P0328",
+    "regiao": "textual",
+    "termo": "Ridge",
+    "italico_integral": false,
+    "contexto": "icial, 5 para o tamanho do reservatório e 9 para a regularização Ridge. A população é inicializada por LHS nas cinco dimensões e conver"
+  },
+  {
+    "local": "P0331",
+    "regiao": "textual",
+    "termo": "fitness",
+    "italico_integral": true,
+    "contexto": " atual, a função de aptidão combina erros de treino e validação: fitness = −(0,4 · MAEtreino + 0,6 · MAEvalidação). O sinal negativo conv"
+  },
+  {
+    "local": "P0331",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": " maior peso à validação e segue a combinação descrita por Araújo et al. (2025). O software dispõe de serialização dos pesos e hiperparâm"
+  },
+  {
+    "local": "P0331",
+    "regiao": "textual",
+    "termo": "software",
+    "italico_integral": false,
+    "contexto": "idação e segue a combinação descrita por Araújo et al. (2025). O software dispõe de serialização dos pesos e hiperparâmetros associados a "
+  },
+  {
+    "local": "P0334",
+    "regiao": "textual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": "Os baselines LSTM e GRU utilizaram janelas de 10 passos, normalização Min-Max"
+  },
+  {
+    "local": "P0334",
+    "regiao": "textual",
+    "termo": "dropout",
+    "italico_integral": true,
+    "contexto": "da apenas sobre o treino, uma camada recorrente com 50 unidades, dropout de 0,2, saída densa escalar e otimizador Adam. Os valores oficia"
+  },
+  {
+    "local": "P0334",
+    "regiao": "textual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": "zação: a ESN foi submetida a busca genética extensa, enquanto os baselines profundos tiveram uma execução oficial por arquitetura. Essa ass"
+  },
+  {
+    "local": "P0337",
+    "regiao": "textual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": "omo controle canônico, enquanto LSTM e GRU foram utilizadas como baselines externos. O desenho efetivamente executado foi sintetizado no Qu"
+  },
+  {
+    "local": "T06 L3 C3 P1",
+    "regiao": "textual",
+    "termo": "Power Function",
+    "italico_integral": true,
+    "contexto": "Power Function, Dagum 4P e Johnson SB"
+  },
+  {
+    "local": "T06 L5 C1 P1",
+    "regiao": "textual",
+    "termo": "Baselines",
+    "italico_integral": true,
+    "contexto": "Baselines"
+  },
+  {
+    "local": "P0340",
+    "regiao": "textual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": "busca genética, custo de ajuste final e custo de treinamento dos baselines, evitando confundir baixo custo de ajuste da ESN com baixo custo"
+  },
+  {
+    "local": "P0343",
+    "regiao": "textual",
+    "termo": "fitness",
+    "italico_integral": true,
+    "contexto": "m lote legado de 12 cenários com 200 gerações, cujo histórico de fitness e matrizes foram preservados. A escolha para as Figuras 5 e 6 co"
+  },
+  {
+    "local": "P0343",
+    "regiao": "textual",
+    "termo": "fitness",
+    "italico_integral": true,
+    "contexto": " escolha para as Figuras 5 e 6 considerou exclusivamente o maior fitness de treino/validação desse lote. Esses registros não foram agrega"
+  },
+  {
+    "local": "P0345",
+    "regiao": "textual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": "r formalmente a igualdade de acurácia preditiva entre a ESN e os baselines GRU e LSTM, conforme a hipótese nula de diferença média de perda"
+  },
+  {
+    "local": "P0347",
+    "regiao": "textual",
+    "termo": "Ridge",
+    "italico_integral": true,
+    "contexto": "273, initLen = 57, reservatório com 22 neurônios e regularização Ridge de 5,716254 × 10⁻⁵. Os registros disponíveis preservavam a e sr "
+  },
+  {
+    "local": "P0348",
+    "regiao": "textual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": "servatório foi propagado cronologicamente sem reestimar Wout. Os baselines GRU e LSTM mantiveram 50 unidades recorrentes, janela de 10 pass"
+  },
+  {
+    "local": "P0348",
+    "regiao": "textual",
+    "termo": "dropout",
+    "italico_integral": true,
+    "contexto": " e LSTM mantiveram 50 unidades recorrentes, janela de 10 passos, dropout de 0,2, otimizador Adam, 80 épocas e normalização Min-Max calcul"
+  },
+  {
+    "local": "P0354",
+    "regiao": "textual",
+    "termo": "scripts",
+    "italico_integral": false,
+    "contexto": "implementação experimental utilizou R como linguagem principal e scripts auxiliares em Python para orquestração e pós-processamento. As e"
+  },
+  {
+    "local": "P0354",
+    "regiao": "textual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": "nDS, StockDistFit, fitdistrplus, MASS, ggplot2, shiny e, para os baselines profundos, keras3/TensorFlow."
+  },
+  {
+    "local": "P0357",
+    "regiao": "textual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": "paração de dados, ESN, otimização genética, métricas, histórico, baselines e comparação. A aplicação ESNAUTO utilizou R Shiny e compartilho"
+  },
+  {
+    "local": "P0357",
+    "regiao": "textual",
+    "termo": "scripts",
+    "italico_integral": false,
+    "contexto": " O repositório reuniu os dados de entrada, documentação técnica, scripts de execução e resultados consolidados; diretórios de sessões ext"
+  },
+  {
+    "local": "P0366",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": " validada com o carregador dessa interface, apresentada por Aria et al. (2026)."
+  },
+  {
+    "local": "P0367",
+    "regiao": "textual",
+    "termo": "scripts",
+    "italico_integral": false,
+    "contexto": "As matrizes foram calculadas em scripts de R, com a função biblioNetwork, e a apresentação das figuras u"
+  },
+  {
+    "local": "P0367",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "es pela interface gráfica do Biblioshiny. As revisões de Cardoso et al. (2022c, 2024) serviram como referências para a escolha dos forma"
+  },
+  {
+    "local": "P0378",
+    "regiao": "textual",
+    "termo": "software",
+    "italico_integral": false,
+    "contexto": "s também no desenvolvimento progressivo de uma infraestrutura de software destinada a apoiar a configuração, execução, acompanhamento e co"
+  },
+  {
+    "local": "P0379",
+    "regiao": "textual",
+    "termo": "scripts",
+    "italico_integral": false,
+    "contexto": "lução de apoio operacional para reduzir a manipulação manual dos scripts desenvolvidos em R. À medida que o número de distribuições, comb"
+  },
+  {
+    "local": "P0379",
+    "regiao": "textual",
+    "termo": "software",
+    "italico_integral": false,
+    "contexto": "rsistência e comparação, transformando-se em uma contribuição de software associada à pesquisa."
+  },
+  {
+    "local": "P0381",
+    "regiao": "textual",
+    "termo": "software",
+    "italico_integral": false,
+    "contexto": "O objetivo inicial do software era tornar mais prática a execução dos experimentos. Com a evolu"
+  },
+  {
+    "local": "P0381",
+    "regiao": "textual",
+    "termo": "scripts",
+    "italico_integral": false,
+    "contexto": "ma, o ESNAUTO deixou de constituir somente uma interface para os scripts deste trabalho e passou a representar uma infraestrutura experim"
+  },
+  {
+    "local": "P0394",
+    "regiao": "textual",
+    "termo": "fitness",
+    "italico_integral": true,
+    "contexto": "00 gerações, de 15 de agosto de 2026. Foi selecionada pelo maior fitness de treino/validação nesse lote: segunda rodada de GED em Win e U"
+  },
+  {
+    "local": "P0398",
+    "regiao": "textual",
+    "termo": "fitness",
+    "italico_integral": true,
+    "contexto": "Na Figura 5, valores maiores de fitness correspondem a menores erros ponderados de treino e validação. O"
+  },
+  {
+    "local": "P0398",
+    "regiao": "textual",
+    "termo": "fitness",
+    "italico_integral": true,
+    "contexto": "ondem a menores erros ponderados de treino e validação. O melhor fitness atingiu −0,237607 na geração 123 e permaneceu nesse nível até a "
+  },
+  {
+    "local": "T08 L10 C2 P1",
+    "regiao": "textual",
+    "termo": "Power Function",
+    "italico_integral": true,
+    "contexto": "Power Function × Normal"
+  },
+  {
+    "local": "P0412",
+    "regiao": "textual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": " de 0,6412. Essa foi a única das 45 execuções que não superou os baselines em MAE. A Onda 2 reuniu, portanto, os dois principais recordes e"
+  },
+  {
+    "local": "T09 L2 C3 P1",
+    "regiao": "textual",
+    "termo": "Ridge",
+    "italico_integral": false,
+    "contexto": "Regressão Ridge após definição da configuração"
+  },
+  {
+    "local": "P0449",
+    "regiao": "textual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": "e LSTM, e 44 das 45 execuções obtiveram MAE inferior ao dos dois baselines. Na execução controlada complementar, os quatro testes de Diebol"
+  },
+  {
+    "local": "P0459",
+    "regiao": "textual",
+    "termo": "scripts",
+    "italico_integral": false,
+    "contexto": "ados, métricas, histórico e motor do Algoritmo Genético, além de scripts auxiliares em Python e R para orquestração em lote, pós-processa"
+  },
+  {
+    "local": "P0460",
+    "regiao": "textual",
+    "termo": "Ridge",
+    "italico_integral": false,
+    "contexto": "ral, período de lavagem, tamanho do reservatório e regularização Ridge; a população inicial emprega LHS e o motor inclui seleção por to"
+  },
+  {
+    "local": "P0461",
+    "regiao": "textual",
+    "termo": "software",
+    "italico_integral": false,
+    "contexto": "de forma compatível com os artefatos efetivamente preservados. O software possui mecanismo para registrar hiperparâmetros e métricas e par"
+  },
+  {
+    "local": "P0463",
+    "regiao": "textual",
+    "termo": "Software",
+    "italico_integral": false,
+    "contexto": "A contribuição de Engenharia de Software pode, portanto, ser sintetizada em automação do processo experim"
+  },
+  {
+    "local": "P0471",
+    "regiao": "textual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": "as execuções documentadas, as ESNs obtiveram MAE menor que o dos baselines LSTM e GRU definidos no protocolo. A comparação documental com L"
+  },
+  {
+    "local": "P0478",
+    "regiao": "textual",
+    "termo": "baselines",
+    "italico_integral": true,
+    "contexto": "râmetros. A ESN recebeu uma busca evolutiva extensa, enquanto os baselines LSTM e GRU utilizaram arquiteturas definidas no protocolo, com 5"
+  },
+  {
+    "local": "P0478",
+    "regiao": "textual",
+    "termo": "dropout",
+    "italico_integral": true,
+    "contexto": "no protocolo, com 50 unidades recorrentes, janela de dez passos, dropout de 0,2, Adam e 80 épocas. A análise de Diebold-Mariano fortalece"
+  },
+  {
+    "local": "P0481",
+    "regiao": "textual",
+    "termo": "software",
+    "italico_integral": false,
+    "contexto": "icação, amadurecendo a experiência de uso. Nessa etapa futura, o software adotará o nome JANUS, com o mesmo núcleo experimental do ESNAUTO"
+  },
+  {
+    "local": "P0482",
+    "regiao": "textual",
+    "termo": "Software",
+    "italico_integral": false,
+    "contexto": "ão para JANUS também deverá fortalecer aspectos de Engenharia de Software identificados durante a consolidação do Trabalho Final de Curso:"
+  },
+  {
+    "local": "P0493",
+    "regiao": "textual",
+    "termo": "software",
+    "italico_integral": false,
+    "contexto": "ou superioridade de erro. Esses limites separam funcionamento do software, observação de resultados e efeitos não testados."
+  },
+  {
+    "local": "P0494",
+    "regiao": "textual",
+    "termo": "Software",
+    "italico_integral": false,
+    "contexto": "A contribuição de Engenharia de Software compreendeu a adaptação dos códigos em R fornecidos pelo orienta"
+  },
+  {
+    "local": "P0497",
+    "regiao": "textual",
+    "termo": "Software",
+    "italico_integral": false,
+    "contexto": "ão do trabalho foi experimental, metodológica e de Engenharia de Software. A continuidade do artefato está prevista em uma nova fase denom"
+  },
+  {
+    "local": "T13 L3 C2 P1",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "Araújo et al. (2025); Cardoso (2025); Lampugnani (2026)"
+  },
+  {
+    "local": "P0499",
+    "regiao": "textual",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "orado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examin"
+  },
+  {
+    "local": "P0502",
+    "regiao": "referencias",
+    "termo": "fitness",
+    "italico_integral": false,
+    "contexto": "UCCA, G.; DALMAZO, B. L.; BERRI, R. A. Comparing MAE and RMSE as fitness of genetic algorithm for optimizing echo state network hyperpara"
+  },
+  {
+    "local": "P0502",
+    "regiao": "referencias",
+    "termo": "et al.",
+    "italico_integral": true,
+    "contexto": "eters with different probabilistic distributions. In: JULIAN, V. et al. (ed.). Intelligent Data Engineering and Automated Learning – IDE"
+  },
+  {
+    "local": "P0504",
+    "regiao": "referencias",
+    "termo": "framework",
+    "italico_integral": false,
+    "contexto": ", L.; SPANO, M. Biblioshiny and the SAAS Workflow: an integrated framework for transparent and reproducible science mapping. A demonstratio"
+  },
+  {
+    "local": "P0511",
+    "regiao": "referencias",
+    "termo": "Benchmark",
+    "italico_integral": true,
+    "contexto": "orks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study. 2026. (Preprint arXiv:2512.06630v2). Disponível em: https"
+  },
+  {
+    "local": "P0530",
+    "regiao": "referencias",
+    "termo": "Software",
+    "italico_integral": false,
+    "contexto": "o preço de ações. 2026. Monografia (Bacharelado em Engenharia de Software) - Universidade de Rio Verde, Rio Verde, 2026."
+  }
+]

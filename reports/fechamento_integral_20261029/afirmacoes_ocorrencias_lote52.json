@@ -1,0 +1,262 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "61fac8da8ab082633bbaa113ed697fd32ccfd7d72c2142f003b18b5b10083e2a",
+  "registros": [
+    {
+      "referencia": "R02",
+      "ancora": "P_atual0319",
+      "texto_atual": "O Quadro 3 apresenta a codificação de 55 bits implementada no motor atual do ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+      "chamada": "Araújo et al. (2025)",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF 8–9, prova de autor",
+      "evidencia": "55 bits e cinco hiperparâmetros; fonte não divide os bits. A redação atual identifica a alocação como pertencente ao motor atual.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R06",
+      "ancora": "P_atual0319",
+      "texto_atual": "O Quadro 3 apresenta a codificação de 55 bits implementada no motor atual do ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+      "chamada": "Cardoso, Berri e Mattos (2022a, p. 203)",
+      "arquivo_fonte": "reports/fontes_drive_20261029/Cardoso_RBras_2022_completo.pdf",
+      "sha256_fonte": "286bc9f8f90a8ce41d68605462a4656a0290a9f1685859823ddeff1ea4eb1a07",
+      "localizador": "p. 203 impressa, PDF 7",
+      "evidencia": "Raio espectral 1,25, vazamento 0,2 e regularização 10⁻⁸; texto foi alterado em outra frase, preservando a atribuição.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R02",
+      "ancora": "P_atual0330",
+      "texto_atual": "No motor atual, a função de aptidão combina erros de treino e validação: fitness = −(0,4 · MAEtreino + 0,6 · MAEvalidação). O sinal negativo converte a minimização em maximização para o pacote GA. A ponderação atribui maior peso à validação e segue a combinação descrita por Araújo et al. (2025). O software dispõe de serialização dos pesos e hiperparâmetros associados a recordes; contudo, esse mecanismo não resultou na preservação integral de todas as saídas históricas.",
+      "chamada": "Araújo et al. (2025)",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF 7–8 e código atual ga_engine.R 293–296",
+      "evidencia": "Ponderação de 40% treino e 60% validação; texto agora atribui a função concreta ao motor atual, sem provar seu uso por todas as rodadas.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R47",
+      "ancora": "P_atual0208",
+      "texto_atual": "Wang, Bu e Huang (2025) avaliaram um sistema óptico de Computação de Reservatório com ponderação de atributos em sete séries de mercado, integrando dados de mercado e indicadores macroeconômicos e técnicos. O protocolo inclui modelos de aprendizado de máquina, entre eles LSTM, e apresenta o melhor comparador por horizonte de previsão. Os autores relatam ganhos nos horizontes de um, quatro e dez passos. A análise de atraso em trajetórias específicas não demonstra que a ponderação elimine atrasos em qualquer regime de mercado.",
+      "chamada": "Wang, Bu e Huang (2025)",
+      "arquivo_fonte": "Artigos citados\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_fonte": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "localizador": "PDF 5–8, Tabela 1 e Figuras 6–7",
+      "evidencia": "Após correção, melhor comparador é indicado por horizonte; artigo descreve Lasso em um passo e LSTM em quatro/dez.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R02",
+      "ancora": "P_atual0321",
+      "texto_atual": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025).",
+      "chamada": "Araújo et al. (2025)",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF 8–9 e quadro atual",
+      "evidencia": "Prova descreve cromossomo de 55 bits e cinco parâmetros; as faixas e os blocos do quadro foram conferidos no código, não imputados à prova.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R06",
+      "ancora": "P_atual0321",
+      "texto_atual": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025).",
+      "chamada": "Cardoso, Berri e Mattos (2022a)",
+      "arquivo_fonte": "reports/fontes_drive_20261029/Cardoso_RBras_2022_completo.pdf",
+      "sha256_fonte": "286bc9f8f90a8ce41d68605462a4656a0290a9f1685859823ddeff1ea4eb1a07",
+      "localizador": "p. 203 impressa, PDF 7",
+      "evidencia": "Fonte descreve parâmetros fixos de ESN; a codificação e as faixas do quadro são do código atual.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R28",
+      "ancora": "P_atual0321",
+      "texto_atual": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025).",
+      "chamada": "Jaeger (2007)",
+      "arquivo_fonte": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_fonte": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "localizador": "PDF 1–5, Scholarpedia",
+      "evidencia": "Fonte descreve ESN, reservatório e treinamento; a alocação dos bits é informação do código atual, não afirmação de Jaeger.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R28",
+      "ancora": "P_atual0299",
+      "texto_atual": "A implementação partiu de códigos em R fornecidos pelo orientador, adaptados pelo autor ao contexto da pesquisa, com desenvolvimento da interface do ESNAUTO. Os fundamentos da ESN seguem Jaeger (2007). O código atual usa GA, fGarch e PearsonDS; mede tempo com proc.time e usa pracma como pseudoinversa alternativa. O script anterior carrega outras bibliotecas e contém exemplos de ajuste comentados. O Quadro 6 distingue a base recebida e a contribuição de adaptação e interface.",
+      "chamada": "Jaeger (2007)",
+      "arquivo_fonte": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_fonte": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "localizador": "PDF 1–5, Scholarpedia; ga_engine.R e esn_core.R",
+      "evidencia": "Fundamentos ESN são coerentes. O código e a adaptação são sustentados pelos artefatos e pela declaração do autor.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R28",
+      "ancora": "P_atual0322",
+      "texto_atual": "A camada de saída foi treinada por regressão linear regularizada (Ridge Regression), resolvendo o sistema Wout = Yt · Xᵀ · (X · Xᵀ + reg · I)⁻¹, em que X reuniu, a cada passo de tempo do treino, o vetor concatenado [1; u(t); x(t)], e Yt representou o vetor de saídas esperadas. A função de ativação aplicada aos neurônios do reservatório foi a tangente hiperbólica (tanh), conforme prática consolidada em ESNs (Jaeger, 2007). A atualização do estado interno seguiu o modelo de leaky integrator: x(t+1) = (1 − a) · x(t) + a · tanh(Win · [1; u(t+1)] + W · x(t)).",
+      "chamada": "Jaeger, 2007",
+      "arquivo_fonte": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_fonte": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "localizador": "PDF 2–5, Scholarpedia; app/utils/esn_core.R 27–41",
+      "evidencia": "Fonte discute tanh, dinâmica de reservatório e treinamento da saída. Equação de implementação e regressão regularizada precisam também do código; ele inclui fallback por pseudoinversa.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R02",
+      "ancora": "P_atual0498",
+      "texto_atual": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados.",
+      "chamada": "Araújo et al. (2025)",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF 7–9, prova de autor; Quadro 6",
+      "evidencia": "ESN, AG, 55 bits e distribuições são antecedentes; não equivale a atribuição de autoria da integração atual.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R27",
+      "ancora": "P_atual0498",
+      "texto_atual": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados.",
+      "chamada": "Jaeger (2001, 2007)",
+      "arquivo_fonte": "reports/fechamento_integral_20261029/fontes_suplementares/Jaeger_2001_errata_2010.pdf",
+      "sha256_fonte": "0a0296f586f86a0e49e651e4581ce2aef3a926ca9cb3d57653c8963b7b83e625",
+      "localizador": "relatório Jaeger 2001 com errata 2010, PDF 3 e seções de treinamento",
+      "evidencia": "Reservatório recorrente e ajuste da saída fundamentam o quadro; a contribuição própria do projeto é avaliada em fontes separadas.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R28",
+      "ancora": "P_atual0498",
+      "texto_atual": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados.",
+      "chamada": "Jaeger (2001, 2007)",
+      "arquivo_fonte": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_fonte": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "localizador": "PDF 1–5, Scholarpedia",
+      "evidencia": "Descrição de reservatório fixo e saída treinável sustenta a atribuição de fundamento ESN no quadro.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R07",
+      "ancora": "P_atual0302",
+      "texto_atual": "A pesquisa utiliza arquivos locais da série PETR4 fornecidos pelo orientador, Prof. Dr. Fabian Corrêa Cardoso, já ajustados por eventos corporativos. A procedência da série é atribuída ao BovDB (Cardoso et al., 2022b). O ativo é a ação preferencial da Petróleo Brasileiro S.A. (PETROBRAS PN). A preparação original dos arquivos antecede seu uso nesta pesquisa; a modelagem partiu dos valores recebidos.",
+      "chamada": "Cardoso et al., 2022b",
+      "arquivo_fonte": "Artigos citados\\Cardoso -  A data set of stock prices of all companies in B3from 1995 to 2020.pdf",
+      "sha256_fonte": "6409dc381b5eb4889c05cd84177f3ff5487c20cc5a997f87ff3fd9774681e586",
+      "localizador": "BovDB PDF 5 e 7; declaração do autor e comparação dos arquivos locais",
+      "evidencia": "O artigo descreve base da B3 e fatores de eventos. O recebimento de série já ajustada é declaração do autor; a cadeia original do ajuste não é inferida do artigo.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R07",
+      "ancora": "P_atual0312",
+      "texto_atual": "Fonte: Elaborado pelo autor (2026) a partir da série recebida já ajustada; contexto do fator em Cardoso et al. (2022b).",
+      "chamada": "Cardoso et al. (2022b)",
+      "arquivo_fonte": "Artigos citados\\Cardoso -  A data set of stock prices of all companies in B3from 1995 to 2020.pdf",
+      "sha256_fonte": "6409dc381b5eb4889c05cd84177f3ff5487c20cc5a997f87ff3fd9774681e586",
+      "localizador": "BovDB PDF 5 e 7; declaração do autor",
+      "evidencia": "Fonte da tabela foi corrigida para identificar a série recebida e citar Cardoso como contexto, sem atribuir execução comprovada do ajuste ao artigo.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R10",
+      "ancora": "T_atual13/L2/C1/P0",
+      "texto_atual": "Araújo et al. (2025); Cardoso (2025); Lampugnani (2026)",
+      "chamada": "Cardoso (2025)",
+      "arquivo_fonte": "reports/tese_Fabian_Correa_Cardoso.pdf",
+      "sha256_fonte": "0713862798eb01327e7534ff86e694d76bb8bf9bc2113ba6407bef04f14b2e26",
+      "localizador": "tese Cardoso, resumo e capítulos metodológicos",
+      "evidencia": "A tese discute ESN, AG e distribuições. Os demais autores no mesmo quadro exigem evidências separadas.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R02",
+      "ancora": "T_atual13/L2/C1/P0",
+      "texto_atual": "Araújo et al. (2025); Cardoso (2025); Lampugnani (2026)",
+      "chamada": "Araújo et al. (2025)",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "prova Araújo PDF 7–10",
+      "evidencia": "ESN, AG e distribuições são abordadas na fonte; não significa que o antecedente é idêntico ao protocolo atual.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R27",
+      "ancora": "T_atual13/L1/C1/P0",
+      "texto_atual": "Jaeger (2001, 2007)",
+      "chamada": "Jaeger (2001, 2007)",
+      "arquivo_fonte": "reports/fechamento_integral_20261029/fontes_suplementares/Jaeger_2001_errata_2010.pdf",
+      "sha256_fonte": "0a0296f586f86a0e49e651e4581ce2aef3a926ca9cb3d57653c8963b7b83e625",
+      "localizador": "relatório Jaeger 2001/errata, resumo e treinamento",
+      "evidencia": "Reservatório recorrente e treinamento de saída são fundamentos anteriores.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R28",
+      "ancora": "T_atual13/L1/C1/P0",
+      "texto_atual": "Jaeger (2001, 2007)",
+      "chamada": "Jaeger (2001, 2007)",
+      "arquivo_fonte": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_fonte": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "localizador": "Scholarpedia PDF 1–5",
+      "evidencia": "Reservatório e treinamento da saída são fundamentos anteriores.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R30",
+      "ancora": "T_atual13/L2/C1/P0",
+      "texto_atual": "Araújo et al. (2025); Cardoso (2025); Lampugnani (2026)",
+      "chamada": "Lampugnani (2026)",
+      "arquivo_fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "monografia Lampugnani, parágrafos 397, 435 e tabelas 9–12",
+      "evidencia": "ESN, AG e distribuições em PETR4 são antecedentes; protocolos não são iguais.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R30",
+      "ancora": "T_atual12/L1/C0/P0",
+      "texto_atual": "Lampugnani (2026)",
+      "chamada": "Lampugnani (2026)",
+      "arquivo_fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "tabelas 9–12 da monografia Lampugnani",
+      "evidencia": "Linha identifica o estudo; mínimos por métrica e combinações foram recontados em afirmacoes_lampugnani_lote42.json.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R30",
+      "ancora": "P_atual0067",
+      "texto_atual": "Tabela 7 – Comparação descritiva com Lampugnani (2026)\t62",
+      "chamada": "Lampugnani (2026)",
+      "arquivo_fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "Tabela 7 e sua fonte",
+      "evidencia": "Entrada de lista corresponde à tabela de comparação descritiva, cujos valores foram conferidos no lote 42.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R15",
+      "ancora": "T_atual1/L4/C2/P0",
+      "texto_atual": "Separa comparações próprias com LSTM/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S.",
+      "chamada": "Deng et al. (2022)",
+      "arquivo_fonte": "Artigos citados\\Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_fonte": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "localizador": "Deng PDF 20, Tabela 6",
+      "evidencia": "O artigo atribui valores LSTM e outros comparadores à referência 36; o quadro classifica como comparação secundária.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    },
+    {
+      "referencia": "R31",
+      "ancora": "T_atual1/L4/C2/P0",
+      "texto_atual": "Separa comparações próprias com LSTM/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S.",
+      "chamada": "Liu et al. (2022)",
+      "arquivo_fonte": "Artigos citados\\Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+      "sha256_fonte": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac",
+      "localizador": "Liu B. PDF 15, Tabela 6",
+      "evidencia": "O artigo utiliza resultados comparadores provenientes de estudo anterior; o quadro distingue comparação secundária.",
+      "diagnostico": "condizente no escopo delimitado; procedência local apenas quando expressamente documentada"
+    }
+  ],
+  "limites": "Fontes, trechos e condições do alcance são descritos individualmente; não prova a totalidade de cada parágrafo. Quadro 3 e atribuições do código baseiam-se também nos arquivos e relato do autor; resultados históricos não foram reexecutados.",
+  "acao": "Nenhuma edição adicional."
+}

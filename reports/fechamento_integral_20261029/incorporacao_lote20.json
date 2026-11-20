@@ -1,0 +1,27 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_antes": "fb23eed687293350b822e4d393ff7dae4205762cd100cc6c42378791b62f8311",
+  "sha256_apos_edicao": "9b9fb9e9c27b20aa23612b3b95c0ba1321da208ff1f86b4c9d6014c7a9fcb847",
+  "alteracoes": [
+    {
+      "unidade": "U0200",
+      "antes": "Behera (2023) revisa redes neurais de ordem superior (Higher Order Neural Networks – HONNs) e otimização evolucionária em previsão financeira. O levantamento examina modelos, seleção de hiperparâmetros e métodos como AG e otimização por enxame de partículas (Particle Swarm Optimization – PSO). Trata-se de síntese de estudos com tarefas e protocolos distintos; os ganhos relatados não constituem uma comparação experimental própria nem demonstram que a associação a uma metaheurística melhore qualquer rede ou série.",
+      "depois": "Behera, Nayak e Kumar (2023) revisam redes neurais de ordem superior (Higher Order Neural Networks – HONNs) e otimização evolucionária em previsão financeira. O levantamento examina modelos, seleção de hiperparâmetros e métodos como AG e otimização por enxame de partículas (Particle Swarm Optimization – PSO). Trata-se de síntese de estudos com tarefas e protocolos distintos; os ganhos relatados não constituem uma comparação experimental própria nem demonstram que a associação a uma metaheurística melhore qualquer rede ou série.",
+      "motivo": "Três autores conforme PDF 1; complemento UniRV 2025 pp.195–196."
+    },
+    {
+      "unidade": "U0218",
+      "antes": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera (2023) revisou redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+      "depois": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+      "motivo": "Três autores conforme PDF 1; complemento UniRV 2025 pp.195–196."
+    },
+    {
+      "unidade": "U0304",
+      "antes": "Behera (2023)",
+      "depois": "Behera, Nayak e Kumar (2023)",
+      "motivo": "Três autores conforme PDF 1; complemento UniRV 2025 pp.195–196."
+    }
+  ],
+  "estado": "incorporado_pendente_exportacao_e_inspecao"
+}

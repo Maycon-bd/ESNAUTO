@@ -1,0 +1,21 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "7bcd83fdf866295be877135b8c33c413f21f2e492f7002b5a9278b43e25c7344",
+  "aviso": "O inventário de referências contém estados históricos não sincronizados com lotes recentes; nao interpretar cada nao_examinada como falta comprovada de leitura. Conciliar com os checkpoints e fonte real antes de concluir.",
+  "fontes_extras_a_conferir": [
+    "R03 Aria e Cuccurullo 2017",
+    "R04 Aria et al. 2026",
+    "R08 Cardoso et al. 2022c",
+    "R09 Cardoso et al. 2024",
+    "R10 tese Cardoso 2025 (há arquivo local)",
+    "R17 Diebold e Mariano 1995",
+    "R21 Eshelman 1991",
+    "R22 Gleick 1987",
+    "R26 Holland 1975",
+    "R30 Lampugnani 2026 (há DOCX local e análise anterior por comparação de resultados)",
+    "R33 McKay et al. 1979",
+    "R36 Pagani et al. 2015"
+  ],
+  "observacao": "É necessário cruzar cada ocorrência com fonte e evidências anteriores, bem como conteúdo não citado, autoria, similaridade e regras do Guia. Lista de triagem, não conclusão de pendências comprovadas."
+}

@@ -1,0 +1,148 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "propostas": [
+    {
+      "unidade": "U0184",
+      "fonte": "D21",
+      "localizador": "PDF 1–2, aplicações e conclusão",
+      "diagnostico": "parcialmente_condizente",
+      "afirmacoes": [
+        {
+          "afirmacao": "Previsão de volatilidade pode apoiar decisões e gestão de riscos.",
+          "diagnostico": "condizente",
+          "localizador": "PDF 1: importance/implications"
+        },
+        {
+          "afirmacao": "A discussão demonstra relevância operacional de prever o fechamento da PETR4 e dificuldade adicional da B3.",
+          "diagnostico": "nao_sustentada_pela_fonte",
+          "localizador": "Fonte conceitual não estuda B3, PETR4 ou rentabilidade de uma previsão de preços."
+        }
+      ],
+      "motivo": "Distinguir previsão de volatilidade de previsão de nível de preço; retirar a dificuldade adicional da B3 atribuída sem estudo comparativo.",
+      "proposta": "Ping (2023) discute a previsão de volatilidade como apoio à avaliação de riscos, à precificação de opções e à alocação de ativos. Essa discussão trata da incerteza das variações de preços e não comprova a rentabilidade de um modelo de previsão do fechamento. Nesta pesquisa, o objeto é a predição de um passo à frente da PETR4, sob as condições experimentais descritas.",
+      "texto_anterior": "Ping (2023) acrescenta a essa discussão a perspectiva do uso prático: variações abruptas de preço impactam decisões de investimento em escala global, o que confere à modelagem preditiva relevância tanto para o investidor individual quanto para o gestor de risco institucional. No contexto brasileiro, prever preços de ativos negociados na B3 traz uma camada adicional de dificuldade.",
+      "sha256_texto_base": "97c2f7794e0f797b5106d3bbbcb7de7d5c49e981733413f7f7d19ef696ad681a",
+      "estado": "incorporado_em_copia_de_trabalho_pendente_conferencia_nativa"
+    },
+    {
+      "unidade": "U0191",
+      "fonte": "D25",
+      "localizador": "PDF 2–3, seção 2.1; Cho 2014 PDF 2, equação 1",
+      "diagnostico": "condizente_com_ajuste_de_precisao",
+      "afirmacoes": [
+        {
+          "afirmacao": "RNRs mantêm estado atualizado pela entrada atual e pelo estado anterior.",
+          "diagnostico": "condizente",
+          "localizador": "Sudiatmika PDF2, RNNs; Cho PDF2, equação1"
+        },
+        {
+          "afirmacao": "A arquitetura, isoladamente, assegura captura de dependências distantes ou prevalência de uso.",
+          "diagnostico": "nao_demonstrada_por_esta_passagem",
+          "localizador": "Sudiatmika PDF2–3 reconhece desvanecimento em RNNs convencionais; não fornece levantamento de prevalência."
+        }
+      ],
+      "motivo": "Especificar comparação com redes feedforward e conservar memória temporal sem sugerir garantia de longo alcance ou prevalência quantificada.",
+      "proposta": "As Redes Neurais Recorrentes (RNRs) são uma classe de modelos para processar sequências. Sudiatmika e Putra (2024) descrevem um estado interno atualizado a cada passo a partir da entrada atual e do estado anterior. Em contraste com redes feedforward sem estado recorrente, essa organização permite incorporar o histórico da sequência ao cálculo das saídas. A aprendizagem de dependências longas, contudo, permanece condicionada à arquitetura e ao treinamento.",
+      "texto_anterior": "Para tratar dados com estrutura temporal, uma das classes de modelos mais utilizadas é a das Redes Neurais Recorrentes (RNRs). Sudiatmika e Putra (2024) explicam que, ao contrário das redes neurais convencionais, que processam cada entrada de forma independente, as RNRs mantêm um estado interno atualizado a cada novo dado recebido. Essa memória interna permite que cada saída dependa não apenas da entrada atual, mas também do histórico acumulado ao longo da sequência, o que torna possível capturar dependências entre observações distantes no tempo.",
+      "sha256_texto_base": "3a1f23c44121181a5dd95b4399744985b888be36a94b933e8d897cdee3c2ffba",
+      "estado": "incorporado_em_copia_de_trabalho_pendente_conferencia_nativa"
+    },
+    {
+      "unidade": "U0193",
+      "fonte": "D25",
+      "localizador": "PDF 3–4, seções 2.2–2.4; PDF 7–8, resultados; Cho 2014 PDF 3",
+      "diagnostico": "parcialmente_condizente",
+      "afirmacoes": [
+        {
+          "afirmacao": "GRU emprega estrutura de portas mais simples que LSTM.",
+          "diagnostico": "condizente",
+          "localizador": "Cho PDF3, seção2.3; Sudiatmika PDF3"
+        },
+        {
+          "afirmacao": "Maior eficiência em sequências curtas é resultado computacional medido no experimento de Sudiatmika e Putra.",
+          "diagnostico": "nao_demonstrada_como_resultado_proprio",
+          "localizador": "PDF4 é revisão de outros estudos; PDF7–8 contém MSE, MAE e R², sem comparação de tempos."
+        }
+      ],
+      "motivo": "Identificar como discussão secundária a eficiência associada a sequências curtas; não convertê-la em medição própria nem confundir número de observações da série com comprimento da sequência.",
+      "proposta": "As LSTMs utilizam portas para controlar a preservação, a atualização e o descarte de informação, enquanto as GRUs empregam uma estrutura simplificada de atualização e reinicialização do estado. Na revisão de Sudiatmika e Putra (2024), essa simplificação é associada a possíveis ganhos de eficiência e ao tratamento de sequências mais curtas. Trata-se de discussão de estudos anteriores; o experimento de previsão do ouro apresentado pelos autores compara erros, sem fornecer uma medição de tempo de treinamento.",
+      "texto_anterior": "As LSTMs utilizam portas para controlar preservação, atualização e descarte de informação, enquanto as GRUs adotam arquitetura mais enxuta e menor número de parâmetros treináveis. Sudiatmika e Putra (2024) observam que, em séries mais curtas, a GRU pode ser computacionalmente mais eficiente que a LSTM em razão dessa estrutura simplificada.",
+      "sha256_texto_base": "c5710abdb47a46302987c096d786fff6da5fda2758cb97ed6c51ec991e8ca507",
+      "estado": "incorporado_em_copia_de_trabalho_pendente_conferencia_nativa"
+    }
+  ],
+  "conferidas_sem_mudanca": [
+    {
+      "unidade": "U0203",
+      "referencia": "R28",
+      "diagnostico": "condizente",
+      "localizador": "Jaeger PDF1–5: estados, ajuste linear, regularização e limites da ESP",
+      "afirmacoes": [
+        {
+          "afirmacao": "Reservatório produz estados; saída é ajustada por regressão.",
+          "diagnostico": "condizente",
+          "localizador": "PDF1–3"
+        },
+        {
+          "afirmacao": "Treinar somente a saída não garante estabilidade numérica ou uma razão universal de tempos.",
+          "diagnostico": "condizente_como_delimitacao",
+          "localizador": "PDF3–5: condições da ESP, regularização e discussão histórica, sem razão universal de tempos."
+        }
+      ]
+    },
+    {
+      "unidade": "U0256",
+      "referencia": [
+        "R28",
+        "R46"
+      ],
+      "diagnostico": "condizente",
+      "localizador": "Jaeger PDF1–5; Vishwas PDF20–22",
+      "afirmacoes": [
+        {
+          "afirmacao": "ESN usual mantém reservatório fixo e ajusta saída, em contraste com treinamento integral por BPTT.",
+          "diagnostico": "condizente",
+          "localizador": "Jaeger PDF1–3 e5"
+        },
+        {
+          "afirmacao": "Diferença de treinamento pode motivar comparação de custos sem garantia universal.",
+          "diagnostico": "condizente_como_interpretacao_delimitada",
+          "localizador": "Jaeger PDF4–6 e Vishwas PDF20–22; a proposta de comparação é interpretação do presente trabalho."
+        }
+      ]
+    }
+  ],
+  "revalidacao_celulas": {
+    "D15": {
+      "P1": "? mantido: nenhum nome de lei ligado a Win/W no texto completo/figuras lidas.",
+      "P2": "S mantido: PDF4–5 descreve ajuste conjunto, regularização, validação e experimentação manual.",
+      "P3": "? mantido: washout/ruído de estado/controle de escala não são preparação de série bruta documentada.",
+      "P4": "? mantido: não há comparação numérica qualificadora com LSTM/GRU/Transformer.",
+      "P5": "— mantido: demonstração de gerador de frequência e discussão conceitual, não análise financeira identificada."
+    },
+    "D21": {
+      "P1": "— mantido: não estuda matrizes ESN.",
+      "P2": "— mantido: não seleciona hiperparâmetros ESN/RC.",
+      "P3": "? mantido: volatilidade histórica e variância não documentam operação aplicada a uma série identificada.",
+      "P4": "? mantido: não há comparação quantitativa de arquiteturas.",
+      "P5": "? mantido: mercado genérico sem ativo/índice vinculado à análise."
+    },
+    "D25": {
+      "P1": "— mantido: experimento de LSTM/GRU, não ESN/RC.",
+      "P2": "— mantido: grid search existe, mas ajusta LSTM/GRU e não satisfaz o objeto P2.",
+      "P3": "D mantido: MinMaxScaler e janelas de60dias, PDF4–5.",
+      "P4": "D mantido: comparação própria LSTM/GRU com MSE/MAE/R², PDF7–8.",
+      "P5": "D mantido: previsão financeira do ouro com dados Yahoo; não individualiza bolsa, ticker ou contrato, que não devem ser inventados."
+    }
+  },
+  "cho_2014": {
+    "arquivo": "fontes_suplementares/Cho_2014_EMNLP.pdf",
+    "url": "https://aclanthology.org/D14-1179/",
+    "leitura": "Texto completo das11páginas, incluindo referências, lido sequencialmente. Figuras e equações das páginas2–3 conferidas visualmente.",
+    "uso": "Confirma RNN com estado e proposta de unidade de duas portas em codificador-decodificador; não é evidência financeira.",
+    "metadados": "Título, sete autores, EMNLP2014, Doha, ACL, páginas1724–1734 e DOI conferidos na fonte primária.",
+    "nao_encerrado": "O parágrafo que também cita Hochreiter/Schmidhuber depende da leitura dessa outra fonte. Não aprovar automaticamente todas as suas afirmações."
+  },
+  "limites": "Aprovação de uma oração não aprova todos os itens de parágrafos com fontes/declarações adicionais. Código, números próprios, similaridade e versão final têm passes separados."
+}

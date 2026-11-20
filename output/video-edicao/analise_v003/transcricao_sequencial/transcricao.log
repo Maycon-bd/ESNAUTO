@@ -1,0 +1,43 @@
+Carregando modelo small INT8 na CPU...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+�udio: 1490.2s; idioma: pt
+    6.4/1490.2s | L�, meu nome � Maricon Garcia Silva, do curso de engenharia do software da Universidade de Rio Verde.
+   12.0/1490.2s | Nesse trabalho orientado pelo meu professor, doutor Fabian Corr�a Cardoso,
+   18.3/1490.2s | isso deu uma forma de prever o pre�o de fechamento ajustado na a��o da PETRA.
+   26.8/1490.2s | Para isso, eu usei uma rede neural chamada Rede de Est�tuos de Eco, EcoState Network, ESN,
+   30.7/1490.2s | um algoritmo gen�tico para procurar boas configura��es dessa rede,
+   35.2/1490.2s | e tamb�m trabalhei na adapta��o de uma interface do sistema ESNAUTO.
+   42.9/1490.2s | Vou mostrar como cheguei aos testes e como os resultados indicam e at� onde podemos chegar com essas conclus�es.
+   49.8/1490.2s | Falando agora sobre o problema da pesquisa que o que guiou foi o trabalho, foi assim,
+   57.5/1490.2s | � usando os pre�os anteriores da PETRA, como essa rede sai, ao prever o pr�ximo fechamento.
+   65.2/1490.2s | Al�m de olhar o erro dessa previs�o, eu quis saber quanto tempo o computador leva para fazer esses ajustes desses modelos computacionais.
+   74.0/1490.2s | O gr�fico mostra como o pre�o mudou ao longo dos anos, a per�odos de alta, a per�odos de baixa, mudan�as mais fortes.
+   82.0/1490.2s | Esse comportamento, a gente observar, tem mudan�as muito diferentes na crise de 2008,
+   85.5/1490.2s | na crise de 2014 e na pandemia de 2020.
+   92.9/1490.2s | Eu comparei a rede de SADGE com outras duas redes usadas para fazer essas an�lises de a��es,
+   98.5/1490.2s | a sequ�ncia de dados, que � a GRU e a LSTM. O foco foi avaliar essas previs�es.
+  101.5/1490.2s | Ent�o, testei uma estrat�gia de compra e venda de a��es nenhuma.
+  108.3/1490.2s | Ent�o, falando um pouco sobre o objetivo das minhas hip�teses, falando r�pido, mais ou menos,
+  115.6/1490.2s | a primeira pergunta se a rede consegue competir com GRU e LSTM.
+  120.4/1490.2s | A segunda, ela j� olha por o tempo necess�rio para ajustar uma configura��o escolhida.
+  126.7/1490.2s | A terceira investiga se, ao mudar a forma de gerar esses pesos iniciais, pode trazer resultados melhores,
+  133.0/1490.2s | j� que uma distribui��o normal usada como refer�ncia, a gente quer tentar atingir melhores resultados que � normal.
+  140.1/1490.2s | E a quarta, trata-se de recursos do algoritmo gen�tico para a gente poder explorar diferentes solu��es.
+  144.8/1490.2s | A quinta, considera distribui��es ajustadas aos pr�prios dados de treino.
+  148.7/1490.2s | Mas adiante de voltar em cada uma delas e explicar melhor sobre cada.
+  155.3/1490.2s | Falando agora sobre a avumenta��o e trabalhos relacionados, o meu trabalho se apoia em tr�s assuntos,
+  161.9/1490.2s | que foram a rede de estados de ECO, a busca gen�tica e prepara��o de dados financeiros
+  168.3/1490.2s | e na proposta de tentar prever esse valor.
+  174.6/1490.2s | Ent�o assim, Jagger trouxe essa caracter�stica da rede de neural de estado de ECO,
+  180.7/1490.2s | � manter as conex�es internas fixas durante o ajuste de calcular os pesos de sa�da.
+  183.5/1490.2s | Vou explicar esse funcionamento no pr�ximo conjunto de slide.
+  191.8/1490.2s | Ent�o assim, os trabalhos de Ara�jo e colaboradores ajudaram a fundamentar o estudo dessas distribui��es
+  200.5/1490.2s | e da busca gen�tica. O BOVDB, do meu orientador, d� o contexto do ajuste dos pre�os
+  205.3/1490.2s | por eventos corporativos, impl�tes e splits, pagamentos e dividendos.
+  208.5/1490.2s | Tudo isso que d� uma mexida no presta��o.
+  215.1/1490.2s | Como por exemplo, se eu fa�o um split, eu divido a... o presta��o, se ele est� 40, eu divido ele,
+  218.8/1490.2s | ele vira duas a��es de 20. Se eu fa�o um impl�te � quando � o oposto,
+  225.2/1490.2s | que voc� est� com duas a��es de 20, voc� junta, vira uma de 40, pagamento de dividendos,
+  233.0/1490.2s | tamb�m mexe no presta��o. Ent�o o meu orientador trouxe j� que isso influencia no pre�o
+  241.2/1490.2s | da a��o e trouxe esse tratamento. Ent�o assim, fiz uma revis�o com 34 documentos e
+  246.5/1490.2s | buscas complementares para ajudar. Essa cole��o ajudou a gente a orientar toda a minha pesquisa

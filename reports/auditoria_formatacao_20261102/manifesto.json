@@ -1,0 +1,152 @@
+{
+  "base": "v010",
+  "registrado_em_utc": "2026-11-02T10:08:52.859140+00:00",
+  "word_editado": false,
+  "arquivos": [
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\conferencia.json",
+      "sha256": "0bd63055ba5d90e0f3da9fb93f8cf1aa0883c7b1ebe064fa67651f3e2d0c9e39",
+      "bytes": 304051
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\conferencias_tipograficas.json",
+      "sha256": "1aa600812f9c7469d55ed54da419e50f5c657df97ded4b2ea6990182def59f5b",
+      "bytes": 8399
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\conferir.py",
+      "sha256": "9c56fa1d9e7725b3d1d148a69afdcb06ba97e77ad2d73e706db1c3dd1b0201d7",
+      "bytes": 9649
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\estrutura.json",
+      "sha256": "9e727f3fc58e286d3d9349a93946a4efeb8b9dd06910d50ac6eeffd70554c980",
+      "bytes": 3020433
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\exportar_word.ps1",
+      "sha256": "ededf5ff5f939e2c3a412e444e6cb15ecede33ec2b6b3cf35bcae5b322cc09f9",
+      "bytes": 1443
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\fechar_auditoria.py",
+      "sha256": "adec4e4565c0032fd0fad456fdfbe83ef3873c90aaae2c99b391bbe96114ec41",
+      "bytes": 13837
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-37.png",
+      "sha256": "228098d33e0b1b64427d8a26cb1512ccb96e60510957a95dde2f21966c544f3d",
+      "bytes": 88192
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-38.png",
+      "sha256": "ac8b05ac3d6dce4df2578f3108272699e7081f71051c6aecf8669de6a9e86bdd",
+      "bytes": 104666
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-39.png",
+      "sha256": "12f4ee0ccb201a42681fe07000a6102c1a9d3cb4df091744b4aa15195140829f",
+      "bytes": 43998
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-40.png",
+      "sha256": "5a880bd449fde5eeb659edb2bbed2f7200cd1d8a2734a6bfafcf8a92dfbfcd65",
+      "bytes": 156060
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-43.png",
+      "sha256": "6116ae9314d4b2470ac723ec150e752b773bb86d759589eb09ea9b949ba1f872",
+      "bytes": 51098
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-44.png",
+      "sha256": "eebf7e98b44ba8f929c4800de5c6d2df4d7eafa86af317e48ff20e3c3e238b05",
+      "bytes": 78172
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-45.png",
+      "sha256": "8f080c921a8a68ba1a90d35f4af41a63a3f87e7148cef62506f0c0363f305afa",
+      "bytes": 80002
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-48.png",
+      "sha256": "3c89cd3765aea44c59bb0135ac42d9a2a47b742a0f11ca42f54d74fbc40565aa",
+      "bytes": 89843
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-49.png",
+      "sha256": "0d5987af10dc07cad2c9dfcb72d75249f9bec19a7856d70cdc25d6cf68925d5f",
+      "bytes": 90235
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-50.png",
+      "sha256": "06473d71cb42837842373643775b42ac8a08a524efae3c186e4390fa57d176e6",
+      "bytes": 177701
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-53.png",
+      "sha256": "0845a97d19422c1715b555c0660a69b87d05c0cebd69d5e263d3cd6da1b6f7eb",
+      "bytes": 116254
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-54.png",
+      "sha256": "16bf883f22e10b43d907e06c49408873a67337e1b8857dfaba22af3b54e403fd",
+      "bytes": 163820
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-55.png",
+      "sha256": "91f4977eeb3dbe88a41959fc1f01772439e3f3f542c1f80a65da311df9b3d5e9",
+      "bytes": 411760
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia-60.png",
+      "sha256": "990696386dac76cc9aa25b0596f38b810cd5aff8e62d4b94715aa2e780975d53",
+      "bytes": 257781
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\guia_paginas.json",
+      "sha256": "514cb7cc01925a3d3896ff5cabc348f3f4936e0776ad57ca6ee5e5055a290139",
+      "bytes": 102635
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\inspecao_visual.json",
+      "sha256": "c581bb9205a368f6acbfbcab625ce313bbc3a271dd3557d7d139631a3288903b",
+      "bytes": 1484
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\inspecionar.py",
+      "sha256": "43b8d901abf40a995fd1c9c83c88b544527f1d8efca68c912d5c8a1e967d6d35",
+      "bytes": 4317
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\limites_pdf.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\matriz_guia81.json",
+      "sha256": "ba470bb7b3e904b96e4d81de86ad88f10191a7d2709b5c749ce60c5040187a3e",
+      "bytes": 29726
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\origem_render.json",
+      "sha256": "4240d4ac169a905df23679b1f9ad284f7a66ec943570c7163921d3ea22c524b7",
+      "bytes": 433
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\paragrafos_recomendacao.md",
+      "sha256": "4b6d54d5b529b1f7383e63dc386a03c76de7f46b4c34950bad370e97f0a46556",
+      "bytes": 2685
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\relatorio.md",
+      "sha256": "4ddcb3d6773ab2dbc49eab2dee5700b98bc83e7996ac6e3ee06b29f3b3cb1428",
+      "bytes": 10457
+    },
+    {
+      "arquivo": "reports\\auditoria_formatacao_20261102\\renderizar.py",
+      "sha256": "ecb01581385a03f4ffb89c4ae442b141fbaa91d5632f6c6498113d4b0d106e59",
+      "bytes": 1852
+    }
+  ]
+}

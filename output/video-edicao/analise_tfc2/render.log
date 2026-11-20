@@ -1,0 +1,46 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\User\Documents\PROJETOS SOFTWARE\ESNAUTO\output\video-edicao\entrada\Video final tfc2.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : https://clipchamp.com
+    comment         : Create videos with https://clipchamp.com/en/video-editor - free online video editor, video compressor, video converter.
+  Duration: 00:25:59.00, start: 0.000000, bitrate: 6965 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 6766 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Output #0, mp4, to 'C:\Users\User\Documents\PROJETOS SOFTWARE\ESNAUTO\output\video-edicao\exportados\ESNAUTO_apresentacao_25min_v001.mp4':
+  Metadata:
+    title           : ESNAUTO - Apresentação do TFC - edição v001
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc63.1.102 h264_nvenc
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+[Parsed_loudnorm_0 @ 0000027f0a5c50c0] 
+{
+	"input_i" : "-12.27",
+	"input_tp" : "0.23",
+	"input_lra" : "5.70",
+	"input_thresh" : "-22.90",
+	"output_i" : "-15.97",
+	"output_tp" : "-3.47",
+	"output_lra" : "5.70",
+	"output_thresh" : "-26.60",
+	"normalization_type" : "linear",
+	"target_offset" : "-0.03"
+}
+[mp4 @ 0000027f0c2a6040] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000027f09f360c0] video:528336KiB audio:35063KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.284919%
+frame=44707 fps=250 q=14.0 Lsize=  565005KiB time=00:24:50.22 bitrate=3105.9kbits/s speed=8.32x elapsed=0:02:59.13    
+[aac @ 0000027f0be987c0] Qavg: 4119.835

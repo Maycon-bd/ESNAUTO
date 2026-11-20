@@ -1,0 +1,211 @@
+[
+  {
+    "id": "2508.05416v1",
+    "arquivo": "reports\\busca_lacunas_20261101\\rodada4\\2508.05416v1_fonte.bin",
+    "sha256": "10138181eb4aff6ff8080c1af331b7d96095a3e35363e8c067d449e12360780a",
+    "membros": [
+      {
+        "nome": "00README.json",
+        "bytes": 470,
+        "arquivo": true
+      },
+      {
+        "nome": "llncs.cls",
+        "bytes": 43402,
+        "arquivo": true
+      },
+      {
+        "nome": "pics",
+        "bytes": 0,
+        "arquivo": false
+      },
+      {
+        "nome": "pics/win60.pdf",
+        "bytes": 115902,
+        "arquivo": true
+      },
+      {
+        "nome": "pics/Bitcoin_Differenced_Close_Prices.pdf",
+        "bytes": 30302,
+        "arquivo": true
+      },
+      {
+        "nome": "pics/ESN_draw.pdf",
+        "bytes": 1113456,
+        "arquivo": true
+      },
+      {
+        "nome": "pics/lyapunov_exponent.pdf",
+        "bytes": 56756,
+        "arquivo": true
+      },
+      {
+        "nome": "pics/win15.pdf",
+        "bytes": 126760,
+        "arquivo": true
+      },
+      {
+        "nome": "pics/Bitcoin_Close_Prices_with_standard_deviation_bands.pdf",
+        "bytes": 67413,
+        "arquivo": true
+      },
+      {
+        "nome": "pics/rollingorigin_cv.pdf",
+        "bytes": 137700,
+        "arquivo": true
+      },
+      {
+        "nome": "pics/win30.pdf",
+        "bytes": 120559,
+        "arquivo": true
+      },
+      {
+        "nome": "pics/Ly_stats.pdf",
+        "bytes": 211333,
+        "arquivo": true
+      },
+      {
+        "nome": "ref.bib",
+        "bytes": 55782,
+        "arquivo": true
+      },
+      {
+        "nome": "samplepaper.bbl",
+        "bytes": 5757,
+        "arquivo": true
+      },
+      {
+        "nome": "samplepaper.tex",
+        "bytes": 125635,
+        "arquivo": true
+      },
+      {
+        "nome": "splncs04.bst",
+        "bytes": 32146,
+        "arquivo": true
+      }
+    ]
+  },
+  {
+    "id": "2512.08963v1",
+    "arquivo": "reports\\busca_lacunas_20261101\\rodada4\\2512.08963v1_fonte.bin",
+    "sha256": "1b960d914c3ffda7def11b1fdc104a2f60fc97cb03de5cc23f277130ef86f666",
+    "membros": [
+      {
+        "nome": "00README.json",
+        "bytes": 302,
+        "arquivo": true
+      },
+      {
+        "nome": "corr_matrix.eps",
+        "bytes": 994355,
+        "arquivo": true
+      },
+      {
+        "nome": "n_rossler.eps",
+        "bytes": 222931,
+        "arquivo": true
+      },
+      {
+        "nome": "plots_st_line.eps",
+        "bytes": 594202,
+        "arquivo": true
+      },
+      {
+        "nome": "prediction_time_stock.eps",
+        "bytes": 1590009,
+        "arquivo": true
+      },
+      {
+        "nome": "prediction_time_sun.eps",
+        "bytes": 2311512,
+        "arquivo": true
+      },
+      {
+        "nome": "Reservoir_drawing.eps",
+        "bytes": 47992,
+        "arquivo": true
+      },
+      {
+        "nome": "Reservoir_drawing_readout_i.eps",
+        "bytes": 89831,
+        "arquivo": true
+      },
+      {
+        "nome": "revised_main_mod.bbl",
+        "bytes": 6754,
+        "arquivo": true
+      },
+      {
+        "nome": "revised_main_mod.tex",
+        "bytes": 71505,
+        "arquivo": true
+      },
+      {
+        "nome": "rossler_bl_plot.eps",
+        "bytes": 465178,
+        "arquivo": true
+      },
+      {
+        "nome": "rossler_time_less.eps",
+        "bytes": 276732,
+        "arquivo": true
+      },
+      {
+        "nome": "sensitivity_0.eps",
+        "bytes": 224022,
+        "arquivo": true
+      },
+      {
+        "nome": "state_change_plot.eps",
+        "bytes": 337480,
+        "arquivo": true
+      },
+      {
+        "nome": "Stock_bl_plot.eps",
+        "bytes": 524739,
+        "arquivo": true
+      },
+      {
+        "nome": "stock_ts.eps",
+        "bytes": 382486,
+        "arquivo": true
+      },
+      {
+        "nome": "st_plot.eps",
+        "bytes": 1018259,
+        "arquivo": true
+      },
+      {
+        "nome": "sun_bl_plot.eps",
+        "bytes": 506998,
+        "arquivo": true
+      },
+      {
+        "nome": "sun_error_washout.eps",
+        "bytes": 278081,
+        "arquivo": true
+      },
+      {
+        "nome": "sun_ts.eps",
+        "bytes": 293858,
+        "arquivo": true
+      },
+      {
+        "nome": "svepj.clo",
+        "bytes": 10602,
+        "arquivo": true
+      },
+      {
+        "nome": "svjour.cls",
+        "bytes": 42124,
+        "arquivo": true
+      },
+      {
+        "nome": "washout_stock_error.eps",
+        "bytes": 330288,
+        "arquivo": true
+      }
+    ]
+  }
+]

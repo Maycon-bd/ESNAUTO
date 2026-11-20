@@ -1,0 +1,243 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "fontes": [
+    {
+      "id": "D14",
+      "arquivo": "Artigos citados\\Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "paginas": 22,
+      "caracteres_extraidos": 52110,
+      "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+      "log_leitura": [],
+      "leitura_integral": "Texto completo, inclusive referências e declarações finais, lido sequencialmente. D14 em blocos1–11 e12–22; D22em blocos1–6 e7–11.",
+      "paginas_visuais_abertas": [
+        7,
+        8,
+        11,
+        12,
+        13,
+        19,
+        20
+      ],
+      "limites": "Leitura e conferência de coerência documental, sem replicação de experimentos ou comprovação independente dos resultados."
+    },
+    {
+      "id": "D22",
+      "arquivo": "Artigos citados\\Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "paginas": 11,
+      "caracteres_extraidos": 57995,
+      "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+      "log_leitura": [],
+      "leitura_integral": "Texto completo, inclusive referências e declarações finais, lido sequencialmente. D14 em blocos1–11 e12–22; D22em blocos1–6 e7–11.",
+      "paginas_visuais_abertas": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "limites": "Leitura e conferência de coerência documental, sem replicação de experimentos ou comprovação independente dos resultados."
+    }
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D14",
+      "arquivo_pdf": "Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256_pdf": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "tipo": "aplicacao_ESN_GRU",
+      "dimensao": "P1",
+      "codigo": "D",
+      "localizador": "PDF 7, equações 9a–9b; PDF 12, Algoritmo 1",
+      "evidencia_e_limite": "Win He usa randn e Xavier usa rand uniforme reescalado; inicializações caóticas seguem sequências normalizadas. A prosa PDF 8 descreve Xavier diferentemente da fórmula: manter a ressalva e não reclassificar sequência caótica como lei probabilística nomeada.",
+      "escopo_leitura": "Texto integral lido nesta meta e páginas de evidência inspecionadas visualmente; ver leituras_chaos_lote4.json.",
+      "codigo_anterior_neste_lote": "D"
+    },
+    {
+      "id": "D14",
+      "arquivo_pdf": "Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256_pdf": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "tipo": "aplicacao_ESN_GRU",
+      "dimensao": "P2",
+      "codigo": "S",
+      "localizador": "PDF 2, revisão de estudos; PDF 11, tabela 1",
+      "evidencia_e_limite": "A fonte relata o uso de algoritmo de otimização aritmética para hiperparâmetros de SCDESN no estudo citado como [1]. É discussão secundária específica de ESN. A tabela própria lista valores fixos e não prova busca própria; por isso S, não D.",
+      "escopo_leitura": "Texto integral lido nesta meta e páginas de evidência inspecionadas visualmente; ver leituras_chaos_lote4.json.",
+      "codigo_anterior_neste_lote": "S"
+    },
+    {
+      "id": "D14",
+      "arquivo_pdf": "Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256_pdf": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "tipo": "aplicacao_ESN_GRU",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 11, seção 5.1, equação 16",
+      "evidencia_e_limite": "Interpolação linear de ausentes e normalização min–max.",
+      "escopo_leitura": "Texto integral lido nesta meta e páginas de evidência inspecionadas visualmente; ver leituras_chaos_lote4.json.",
+      "codigo_anterior_neste_lote": "D"
+    },
+    {
+      "id": "D14",
+      "arquivo_pdf": "Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256_pdf": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "tipo": "aplicacao_ESN_GRU",
+      "dimensao": "P4",
+      "codigo": "D",
+      "localizador": "PDF 13, Tabela 2",
+      "evidencia_e_limite": "Resultados numéricos próprios ESN e GRU; outros comparadores são importados e não equivalem a novas execuções.",
+      "escopo_leitura": "Texto integral lido nesta meta e páginas de evidência inspecionadas visualmente; ver leituras_chaos_lote4.json.",
+      "codigo_anterior_neste_lote": "D"
+    },
+    {
+      "id": "D14",
+      "arquivo_pdf": "Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256_pdf": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "tipo": "aplicacao_ESN_GRU",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 13, Tabela 2",
+      "evidencia_e_limite": "S&P500, ISEQ, XAU/USD, USD/JPY, Pci-Suntek e FTSE100.",
+      "escopo_leitura": "Texto integral lido nesta meta e páginas de evidência inspecionadas visualmente; ver leituras_chaos_lote4.json.",
+      "codigo_anterior_neste_lote": "D"
+    },
+    {
+      "id": "D22",
+      "arquivo_pdf": "Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_pdf": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "tipo": "ESN_sobre_trajetoria_simulada",
+      "dimensao": "P1",
+      "codigo": "?",
+      "localizador": "PDF 2–5, definições e método",
+      "evidencia_e_limite": "Os pesos são aleatórios/fixos e há escala e ajuste espectral. Isso não identifica a família de geração dos elementos de Win/W. A leitura integral não localizou lei probabilística dos elementos; a palavra aleatório e os valores de raio/esparsidade não a identificam.",
+      "escopo_leitura": "Texto integral lido nesta meta e páginas de evidência inspecionadas visualmente; ver leituras_chaos_lote4.json.",
+      "codigo_anterior_neste_lote": "?"
+    },
+    {
+      "id": "D22",
+      "arquivo_pdf": "Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_pdf": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "tipo": "ESN_sobre_trajetoria_simulada",
+      "dimensao": "P2",
+      "codigo": "D",
+      "localizador": "PDF 6, Number of Neurons",
+      "evidencia_e_limite": "Declara validação cruzada entre tamanhos para escolher 300 neurônios. Demais detalhes/contradições do treinamento não são resolvidos por esta marca.",
+      "escopo_leitura": "Texto integral lido nesta meta e páginas de evidência inspecionadas visualmente; ver leituras_chaos_lote4.json.",
+      "codigo_anterior_neste_lote": "D"
+    },
+    {
+      "id": "D22",
+      "arquivo_pdf": "Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_pdf": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "tipo": "ESN_sobre_trajetoria_simulada",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF7, coluna esquerda, parágrafo sobre a série U2; conferido no PNG.",
+      "evidencia_e_limite": "Os autores chamam U2 de série decimada (decimated time series), nomeando uma operação de preparação aplicada à série simulada. P3 admite séries não financeiras. A menção é direta, mas não especifica fator de decimação, filtro ou procedimento reprodutível; não prova preparo de preços observados. D registra documentação localizada, não reprodução nem completude de parâmetros.",
+      "escopo_leitura": "Texto integral lido nesta meta e páginas de evidência inspecionadas visualmente; ver leituras_chaos_lote4.json.",
+      "codigo_anterior_neste_lote": "?"
+    },
+    {
+      "id": "D22",
+      "arquivo_pdf": "Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_pdf": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "tipo": "ESN_sobre_trajetoria_simulada",
+      "dimensao": "P4",
+      "codigo": "?",
+      "localizador": "PDF 2–5 e 8, literatura e comparação experimental",
+      "evidencia_e_limite": "Menções gerais a LSTM e resultados entre variantes de ESN não estabelecem uma comparação numérica qualificadora com LSTM/GRU/Transformer na mesma tarefa.",
+      "escopo_leitura": "Texto integral lido nesta meta e páginas de evidência inspecionadas visualmente; ver leituras_chaos_lote4.json.",
+      "codigo_anterior_neste_lote": "?"
+    },
+    {
+      "id": "D22",
+      "arquivo_pdf": "Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_pdf": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "tipo": "ESN_sobre_trajetoria_simulada",
+      "dimensao": "P5",
+      "codigo": "S",
+      "localizador": "PDF 4 e 6; condições iniciais no parecer",
+      "evidencia_e_limite": "Associa valores de Bitcoin às condições iniciais; resultados são de trajetórias simuladas, não previsão de uma série financeira observada. S indica vínculo contextual apenas.",
+      "escopo_leitura": "Texto integral lido nesta meta e páginas de evidência inspecionadas visualmente; ver leituras_chaos_lote4.json.",
+      "codigo_anterior_neste_lote": "S"
+    }
+  ],
+  "n_celulas_reexaminadas": 10,
+  "n_codigos_alterados": 1,
+  "decisao_P3": "Decimação é uma operação temporal nomeada, mesmo sem parâmetros de implementação. Esse limiar documental também é usado para normalização/validação cruzada declaradas sem detalhes completos; não se exige reprodução para marcar D. A natureza simulada é preservada e P5 continua S.",
+  "unidades_conferidas_sem_edicao": [
+    "U0232",
+    "U0250",
+    "U0251"
+  ],
+  "unidades_conferidas_parcialmente": [
+    {
+      "unidade": "U0255",
+      "escopo": "Apenas as afirmações sobre Hassaan e Sun; Kumar ainda exige leitura nesta meta."
+    }
+  ],
+  "achados_internos_fontes": {
+    "D14": [
+      "PDF7equação9b usa rand uniforme; PDF8prosa/figura4f descrevem distribuição semelhante à Gaussiana. A ressalva existente na monografia é mantida.",
+      "PDF13Tabela2: para GRU/S&P500caótico, MAE0,043727ao quadrado excede MSE0,000183; seriam incompatíveis se calculados sobre os mesmos erros. Nenhum desses números foi transferido à monografia.",
+      "PDF5apresenta TSCO.L/Tesco e simultaneamente chama o conjunto de FTSE100. Não acrescentar ao texto uma identificação mais precisa do que a fonte permite.",
+      "PDF19relata496ciclos,4,96microssegundos e83,5MHz;496/83,5MHz resulta cerca de5,94microssegundos. Não transportar a latência declarada como custo de treino do ESNAUTO. Aceleração tratada na seção6é de predição após treinamento em software."
+    ],
+    "D22": [
+      "PDF5diz perturbação10^-3, mas os valores39,102501e39,102501001diferem por10^-9. A monografia não transporta esse número.",
+      "PDF3–4e6divergem no significado de esparsidade0,95; descrevem regressão linear, Ridge e Levenberg–Marquardt sem conciliação operacional. Não usar essas passagens como garantia de implementação ou estabilidade.",
+      "PDF8prosa diz RMSE idênticos em todos os horizontes, mas Tabela3varia. PDF9Tabela5traz pares RMSE/MSE/MAE incoerentes em algumas linhas. A monografia não reproduz esses valores nem apresenta superioridade universal.",
+      "Não localizar família de geração dos pesos não permite aproveitar a distribuição de outro artigo para preencher P1."
+    ]
+  },
+  "estado": "incorporado_pendente_exportacao_nativa",
+  "sha256_copia_antes": "6fd3221ece48a61241f2f5aee3c8adba2820f72b393e1d0764ab8828e15f28f5",
+  "sha256_copia_apos": "bce3a43e39e272b523862d095660c96c055da9630d3b271b7016e4315ab2b505",
+  "alteracoes_textuais": [
+    {
+      "unidade": "U0211",
+      "antes": "Hassaan et al. (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik (2023), por sua vez, investigou uma ESN em trajetórias simuladas pelo sistema de Lorenz, com condições iniciais associadas a valores de Bitcoin. As métricas desse segundo estudo avaliam as trajetórias geradas, não previsões fora da amostra de uma série observada de preços. Seus resultados não isolam o efeito da distribuição dos pesos iniciais da ESN.",
+      "depois": "Hassaan et al. (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik, Routaib e Elhaddadi (2023) investigaram uma ESN em trajetórias simuladas de Lorenz, com condições iniciais associadas ao Bitcoin. O texto menciona uma série decimada, sem detalhar o procedimento. As métricas avaliam trajetórias geradas, não previsões de preços observados, e não isolam o efeito da distribuição dos pesos iniciais.",
+      "motivo": "Crédito aos três autores e delimitação da preparação relatada na série simulada."
+    },
+    {
+      "unidade": "U0418",
+      "antes": "Seddik (2023)",
+      "depois": "Seddik, Routaib e Elhaddadi (2023)",
+      "motivo": "Autoria da linha do Quadro1."
+    },
+    {
+      "unidade": "U0421",
+      "antes": "?",
+      "depois": "D",
+      "motivo": "P3: relato de série decimada, PDF7, com limites expressos no registro."
+    },
+    {
+      "unidade": "U0275",
+      "antes": "25 D; 2 S; 7 ?; 0 —",
+      "depois": "26 D; 2 S; 6 ?; 0 —",
+      "motivo": "Contagem P3derivada da única recodificação."
+    },
+    {
+      "unidade": "U0502",
+      "antes": "A Figura 1 registra evidência direta de preparação de séries em 25 documentos e de mercado/ativo em 25; comparações com LSTM, GRU ou Transformer aparecem diretamente em dez documentos, e a seleção de hiperparâmetros, em onze. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores.",
+      "depois": "A Figura 1 registra evidência direta de preparação de séries em 26 documentos e de mercado/ativo em 25; comparações com LSTM, GRU ou Transformer aparecem diretamente em dez documentos, e a seleção de hiperparâmetros, em onze. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores.",
+      "motivo": "Conciliar descrição da Figura1com contagens."
+    },
+    {
+      "unidade": "U1013",
+      "antes": "SEDDIK, S; ROUTAIB, H.; ELHADDADI, A. Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System. International Journal of Computational Methods and Experimental Measurements, v. 11, n. 4, p. 193-203, 2023. DOI: 10.18280/ijcmem.110401.",
+      "depois": "SEDDIK, S.; ROUTAIB, H.; ELHADDADI, A. Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System. International Journal of Computational Methods and Experimental Measurements, v. 11, n. 4, p. 193-203, 2023. DOI: 10.18280/ijcmem.110401.",
+      "motivo": "Pontuação da inicial bibliográfica, preservando os três autores e título."
+    }
+  ],
+  "figura_alterada": "word/media/image1.png",
+  "contagens_globais": {
+    "D": 77,
+    "S": 12,
+    "?": 40,
+    "-": 41
+  }
+}

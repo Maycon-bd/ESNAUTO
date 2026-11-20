@@ -1,0 +1,121 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "alineas": [
+    {
+      "paragrafo": 431,
+      "texto": "a) registrar a versão do modelo, o período de dados, os hiperparâmetros e as matrizes disponíveis;",
+      "recuo_esquerdo_cm": 1.2594166666666666,
+      "primeira_linha_cm": -0.6297083333333333
+    },
+    {
+      "paragrafo": 432,
+      "texto": "b) acompanhar MAE, RMSE e, quando os vetores ponto a ponto estiverem preservados, MAPE em janelas móveis;",
+      "recuo_esquerdo_cm": 1.2594166666666666,
+      "primeira_linha_cm": -0.6297083333333333
+    },
+    {
+      "paragrafo": 433,
+      "texto": "c) detectar degradação ou mudança relevante de regime;",
+      "recuo_esquerdo_cm": 1.2594166666666666,
+      "primeira_linha_cm": -0.6297083333333333
+    },
+    {
+      "paragrafo": 434,
+      "texto": "d) gerar uma configuração candidata;",
+      "recuo_esquerdo_cm": 1.2594166666666666,
+      "primeira_linha_cm": -0.6297083333333333
+    },
+    {
+      "paragrafo": 435,
+      "texto": "e) comparar o candidato com o modelo vigente sob critérios previamente definidos;",
+      "recuo_esquerdo_cm": 1.2594166666666666,
+      "primeira_linha_cm": -0.6297083333333333
+    },
+    {
+      "paragrafo": 436,
+      "texto": "f) promover a nova versão somente após aprovação.",
+      "recuo_esquerdo_cm": 1.2594166666666666,
+      "primeira_linha_cm": -0.6297083333333333
+    }
+  ],
+  "fontes_dos_elementos": [
+    {
+      "paragrafo": 266,
+      "texto": "Fonte: Elaborado pelo autor (2026), a partir da recodificação do portfólio. D: evidência direta; S: tratamento secundário/contextual; ?: informação insuficiente; —: não aplicável."
+    },
+    {
+      "paragrafo": 269,
+      "texto": "Fonte: Elaborado pelo autor (2026). D: evidência direta; S: tratamento secundário/contextual; ?: informação insuficiente; —: não aplicável."
+    },
+    {
+      "paragrafo": 274,
+      "texto": "Fonte: Elaborado pelo autor a partir do Quadro 1 (2026)."
+    },
+    {
+      "paragrafo": 279,
+      "texto": "Fonte: Elaborado pelo autor a partir dos documentos citados, com processamento no bibliometrix 5.5.0 (2026)."
+    },
+    {
+      "paragrafo": 284,
+      "texto": "Fonte: Elaborado pelo autor com bibliometrix 5.5.0 a partir da base reconstruída (2026)."
+    },
+    {
+      "paragrafo": 289,
+      "texto": "Fonte: Elaborado pelo autor a partir dos 34 títulos da base reconstruída (2026)."
+    },
+    {
+      "paragrafo": 312,
+      "texto": "Fonte: Elaborado pelo autor (2026) a partir da série recebida já ajustada; contexto do fator em Cardoso et al. (2022b)."
+    },
+    {
+      "paragrafo": 317,
+      "texto": "Fonte: Elaborado pelo autor (2026)."
+    },
+    {
+      "paragrafo": 321,
+      "texto": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025)."
+    },
+    {
+      "paragrafo": 338,
+      "texto": "Fonte: Elaborado pelo autor (2026)."
+    },
+    {
+      "paragrafo": 386,
+      "texto": "Fonte: Elaborado pelo autor (2026)."
+    },
+    {
+      "paragrafo": 396,
+      "texto": "Fonte: Elaborado pelo autor com o histórico preservado do lote de 200 gerações (2026). Referência de apresentação: Cardoso (2025, Figura 29)."
+    },
+    {
+      "paragrafo": 401,
+      "texto": "Fonte: Elaborado pelo autor pela reinjeção das matrizes preservadas, GED × Uniforme, rodada 2 (2026). Referência de apresentação: Cardoso (2025, Figura 30)."
+    },
+    {
+      "paragrafo": 405,
+      "texto": "Fonte: Elaborado pelo autor (2026)."
+    },
+    {
+      "paragrafo": 420,
+      "texto": "Fonte: Elaborado pelo autor (2026)."
+    },
+    {
+      "paragrafo": 443,
+      "texto": "Fonte: Elaborado pelo autor (2026), com base na execução controlada e em Diebold e Mariano (1995)."
+    },
+    {
+      "paragrafo": 447,
+      "texto": "Fonte: Elaborado pelo autor (2026)."
+    },
+    {
+      "paragrafo": 453,
+      "texto": "Fonte: Elaborado pelo autor (2026), com base nas tabelas de resultados de Lampugnani (2026) e nos resultados desta pesquisa. Os mínimos de MAE e RMSE podem corresponder a configurações distintas."
+    },
+    {
+      "paragrafo": 498,
+      "texto": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados."
+    }
+  ],
+  "parecer": "Alíneas a–f têm introdução por dois-pontos, separação por ponto e vírgula e encerramento por ponto. Os 19 elementos têm linha Fonte e ano.",
+  "limite": "Indicação formal da fonte não prova por si só autoria dos dados ou fidelidade à obra. Procedência e alcance das figuras e resultados são avaliados em registros específicos."
+}

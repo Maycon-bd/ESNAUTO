@@ -1,0 +1,755 @@
+{
+  "base": "v007",
+  "candidata_sha256": "0daacd3ea1753bca97619df025923b92a44a047b5c1252a4677f802dfe870dad",
+  "pdf_sha256": "710bffca605eba84a87a407478f42ac419c6802685c37c0c5b972101a59c4cf5",
+  "paginas": 76,
+  "paginas_identicas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    60,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76
+  ],
+  "paginas_alteradas": [
+    59,
+    61
+  ],
+  "comparacao_visual": [
+    {
+      "pagina": 1,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "575f2e67e5d092f4b4fd6aedb95bf9d4f2b090c36edb7153b55fbbe8794b57ae",
+      "sha256_pixels_depois": "575f2e67e5d092f4b4fd6aedb95bf9d4f2b090c36edb7153b55fbbe8794b57ae"
+    },
+    {
+      "pagina": 2,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "5228a6b1452b4b0e9c8c5ef4540ef1816bd9d19a684ef337ec3dc544511aeffc",
+      "sha256_pixels_depois": "5228a6b1452b4b0e9c8c5ef4540ef1816bd9d19a684ef337ec3dc544511aeffc"
+    },
+    {
+      "pagina": 3,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "e1242fc2a99b4ba594273068441ab84f5da9b47272198865d07020598d4e4335",
+      "sha256_pixels_depois": "e1242fc2a99b4ba594273068441ab84f5da9b47272198865d07020598d4e4335"
+    },
+    {
+      "pagina": 4,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "e9c29d2fa9178f4954c260353a17a105a4708d2511b2686431abe536d9822e23",
+      "sha256_pixels_depois": "e9c29d2fa9178f4954c260353a17a105a4708d2511b2686431abe536d9822e23"
+    },
+    {
+      "pagina": 5,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "d7ebe7a9b1d38200ab92b4d4463ad8b0400845986507275fb6535c89f50f70a0",
+      "sha256_pixels_depois": "d7ebe7a9b1d38200ab92b4d4463ad8b0400845986507275fb6535c89f50f70a0"
+    },
+    {
+      "pagina": 6,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "55339573fe86810f91f067bbf7c807fa5d143ea8d5f9af5a8948e74b5fe434d5",
+      "sha256_pixels_depois": "55339573fe86810f91f067bbf7c807fa5d143ea8d5f9af5a8948e74b5fe434d5"
+    },
+    {
+      "pagina": 7,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "3cd478609c2006de963b23d79226132bfc878ab62daa7158c441e5e4afbd6eb5",
+      "sha256_pixels_depois": "3cd478609c2006de963b23d79226132bfc878ab62daa7158c441e5e4afbd6eb5"
+    },
+    {
+      "pagina": 8,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "582cbef3228126428a396e2c4e6190b7803c8c7866dd605b7811d843709b90a7",
+      "sha256_pixels_depois": "582cbef3228126428a396e2c4e6190b7803c8c7866dd605b7811d843709b90a7"
+    },
+    {
+      "pagina": 9,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "e3f36f410d9422c92b0ba847cab02fcb04cda923104c5fcf8f4ea93338927901",
+      "sha256_pixels_depois": "e3f36f410d9422c92b0ba847cab02fcb04cda923104c5fcf8f4ea93338927901"
+    },
+    {
+      "pagina": 10,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "04f6bc7ac2f9d162786419dc0a4a239239e3a1ea873fc56718a8b8f816cdb8e5",
+      "sha256_pixels_depois": "04f6bc7ac2f9d162786419dc0a4a239239e3a1ea873fc56718a8b8f816cdb8e5"
+    },
+    {
+      "pagina": 11,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "08a978b54d42a322856f6dba8d154cd298228d501c4e90a0b659a0f2891784ef",
+      "sha256_pixels_depois": "08a978b54d42a322856f6dba8d154cd298228d501c4e90a0b659a0f2891784ef"
+    },
+    {
+      "pagina": 12,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "7fc8ec68dc74fb4b7b98f2fb09dc291c211793684071a833d27c10555d63e273",
+      "sha256_pixels_depois": "7fc8ec68dc74fb4b7b98f2fb09dc291c211793684071a833d27c10555d63e273"
+    },
+    {
+      "pagina": 13,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "4691cb16c6d490f53ad57c4eb9661a475142223f831275a5b9f9c9e172f2d71f",
+      "sha256_pixels_depois": "4691cb16c6d490f53ad57c4eb9661a475142223f831275a5b9f9c9e172f2d71f"
+    },
+    {
+      "pagina": 14,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "68cf643c2e1788e4833f8239e98b6f2a3f9f8ec1bb1668a300f055325d82c349",
+      "sha256_pixels_depois": "68cf643c2e1788e4833f8239e98b6f2a3f9f8ec1bb1668a300f055325d82c349"
+    },
+    {
+      "pagina": 15,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "c857ce1eaa5bd9297ba0ba8fd46a4283b14752731207c6f469f20d5819161b9e",
+      "sha256_pixels_depois": "c857ce1eaa5bd9297ba0ba8fd46a4283b14752731207c6f469f20d5819161b9e"
+    },
+    {
+      "pagina": 16,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "d512e460d2fa0cd1dc7ab9a5295d8cd9e8ba7947ddc346abd8bd2cb800a319d5",
+      "sha256_pixels_depois": "d512e460d2fa0cd1dc7ab9a5295d8cd9e8ba7947ddc346abd8bd2cb800a319d5"
+    },
+    {
+      "pagina": 17,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "0c528675d47875d39a2495d002fa58d1d8076608caf924992d6d6683a2fc8584",
+      "sha256_pixels_depois": "0c528675d47875d39a2495d002fa58d1d8076608caf924992d6d6683a2fc8584"
+    },
+    {
+      "pagina": 18,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "71c193ce497c23529884f0f1982c72fd077b143e2d33d0ebab6ea273fdf46d10",
+      "sha256_pixels_depois": "71c193ce497c23529884f0f1982c72fd077b143e2d33d0ebab6ea273fdf46d10"
+    },
+    {
+      "pagina": 19,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "8a5e377a35209727e657eaa37ec0b390c76f1985e1bc8005205bfa4438469f27",
+      "sha256_pixels_depois": "8a5e377a35209727e657eaa37ec0b390c76f1985e1bc8005205bfa4438469f27"
+    },
+    {
+      "pagina": 20,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "2443590e0ebb1c23a025134dbbda902fef897ab1a054b58c7cdfb73131184186",
+      "sha256_pixels_depois": "2443590e0ebb1c23a025134dbbda902fef897ab1a054b58c7cdfb73131184186"
+    },
+    {
+      "pagina": 21,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "1450edb5608a305835299171f8c866dcecc650a392b438891ef2a3f7620bc854",
+      "sha256_pixels_depois": "1450edb5608a305835299171f8c866dcecc650a392b438891ef2a3f7620bc854"
+    },
+    {
+      "pagina": 22,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "ddd5c99c2f6ae6299a0b7646c135482e81dbc3addfdceaff86d0e1cb3d7279b8",
+      "sha256_pixels_depois": "ddd5c99c2f6ae6299a0b7646c135482e81dbc3addfdceaff86d0e1cb3d7279b8"
+    },
+    {
+      "pagina": 23,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "682714d79bfe56ee4a8b13daa2a0c7d814e6250798fab2b9c777f81f224d33d2",
+      "sha256_pixels_depois": "682714d79bfe56ee4a8b13daa2a0c7d814e6250798fab2b9c777f81f224d33d2"
+    },
+    {
+      "pagina": 24,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "00e61bddacbd8abd5f432c3236f6cd72b77715a63d3919fd7ce51f6c967038a1",
+      "sha256_pixels_depois": "00e61bddacbd8abd5f432c3236f6cd72b77715a63d3919fd7ce51f6c967038a1"
+    },
+    {
+      "pagina": 25,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "cb50fd26592f07c0f162111a21b1abb00b6cb7278bcd4d217e7fec55ebc5f980",
+      "sha256_pixels_depois": "cb50fd26592f07c0f162111a21b1abb00b6cb7278bcd4d217e7fec55ebc5f980"
+    },
+    {
+      "pagina": 26,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "92c7e3080b9412fba3e37308661632c4f99bd11109cd1e4b1de366bde03110d7",
+      "sha256_pixels_depois": "92c7e3080b9412fba3e37308661632c4f99bd11109cd1e4b1de366bde03110d7"
+    },
+    {
+      "pagina": 27,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "846e3576306382c27dffda50ef963400205625bddff608e00af88471fe644aff",
+      "sha256_pixels_depois": "846e3576306382c27dffda50ef963400205625bddff608e00af88471fe644aff"
+    },
+    {
+      "pagina": 28,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "e38f862efccbda375a93e491a57f5ba488837f4037cb43c16f61a0bb808379df",
+      "sha256_pixels_depois": "e38f862efccbda375a93e491a57f5ba488837f4037cb43c16f61a0bb808379df"
+    },
+    {
+      "pagina": 29,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "852b1eca69083f47166ed74a26b56758174d6aae59ac8f42fdf8477fbb4b1277",
+      "sha256_pixels_depois": "852b1eca69083f47166ed74a26b56758174d6aae59ac8f42fdf8477fbb4b1277"
+    },
+    {
+      "pagina": 30,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "d4f39f9e4c1c55f807787ba76e9c3c3a0d781f0f3be00d964085cdf74470d492",
+      "sha256_pixels_depois": "d4f39f9e4c1c55f807787ba76e9c3c3a0d781f0f3be00d964085cdf74470d492"
+    },
+    {
+      "pagina": 31,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "b5ac5408ade6f15d933c3a966aff388840edf57563495c35113348dab65cf1b5",
+      "sha256_pixels_depois": "b5ac5408ade6f15d933c3a966aff388840edf57563495c35113348dab65cf1b5"
+    },
+    {
+      "pagina": 32,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "c9b3d6e81083aacb7e74f2eab168eda0c7170a6b48fcc2a694578814f29125c3",
+      "sha256_pixels_depois": "c9b3d6e81083aacb7e74f2eab168eda0c7170a6b48fcc2a694578814f29125c3"
+    },
+    {
+      "pagina": 33,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "f53eec6b6969a4a1d066daa275b4f8637711d056463a1f1250f5b585f9ec74f8",
+      "sha256_pixels_depois": "f53eec6b6969a4a1d066daa275b4f8637711d056463a1f1250f5b585f9ec74f8"
+    },
+    {
+      "pagina": 34,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "8729294edda475c82f99b5e6970ae01f25658ab4f2e8f1978793170346d55651",
+      "sha256_pixels_depois": "8729294edda475c82f99b5e6970ae01f25658ab4f2e8f1978793170346d55651"
+    },
+    {
+      "pagina": 35,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "88380f95123a08e080ac8c0d08338841f9cf7d3810046edbd6d5570cd282b17c",
+      "sha256_pixels_depois": "88380f95123a08e080ac8c0d08338841f9cf7d3810046edbd6d5570cd282b17c"
+    },
+    {
+      "pagina": 36,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "f33cfb3255ff937bba63fda7ab2ebf26433049a75faf2eb2c8fca553a6e5047f",
+      "sha256_pixels_depois": "f33cfb3255ff937bba63fda7ab2ebf26433049a75faf2eb2c8fca553a6e5047f"
+    },
+    {
+      "pagina": 37,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "58e0478ea443dcaf269109b0a68f1b87b5352795852662038264b592c6f17e22",
+      "sha256_pixels_depois": "58e0478ea443dcaf269109b0a68f1b87b5352795852662038264b592c6f17e22"
+    },
+    {
+      "pagina": 38,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "3478c581228c78848054cd61965a6c6b0d86333c78232ef3e4a05897d0a82c52",
+      "sha256_pixels_depois": "3478c581228c78848054cd61965a6c6b0d86333c78232ef3e4a05897d0a82c52"
+    },
+    {
+      "pagina": 39,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "880dfcc8334b450900080166ed9826d73c98b8895b2fd91863300deff3cbabe0",
+      "sha256_pixels_depois": "880dfcc8334b450900080166ed9826d73c98b8895b2fd91863300deff3cbabe0"
+    },
+    {
+      "pagina": 40,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "b7754fdbaca303bfe004b373ee5b7c14363c4eb39e7012198022a3aa10e9fbef",
+      "sha256_pixels_depois": "b7754fdbaca303bfe004b373ee5b7c14363c4eb39e7012198022a3aa10e9fbef"
+    },
+    {
+      "pagina": 41,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "d6d1be92b46b2d7260c501b4a125a06699edfb02b89291f1ccd79b46afc02022",
+      "sha256_pixels_depois": "d6d1be92b46b2d7260c501b4a125a06699edfb02b89291f1ccd79b46afc02022"
+    },
+    {
+      "pagina": 42,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "14249a348b328033bc9a2b3e2c294d4f43729ef6230322a73814451fdcf23cd6",
+      "sha256_pixels_depois": "14249a348b328033bc9a2b3e2c294d4f43729ef6230322a73814451fdcf23cd6"
+    },
+    {
+      "pagina": 43,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "311a38410b9648ee716f2549da44803ae787723830ecf4193295f8cd01ddcc3b",
+      "sha256_pixels_depois": "311a38410b9648ee716f2549da44803ae787723830ecf4193295f8cd01ddcc3b"
+    },
+    {
+      "pagina": 44,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "9700d20e0ad23f7da6769e9090752ae7f0641f46586a5474cde2fab6fdebb93a",
+      "sha256_pixels_depois": "9700d20e0ad23f7da6769e9090752ae7f0641f46586a5474cde2fab6fdebb93a"
+    },
+    {
+      "pagina": 45,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "b9d5d17633d00669d244509d9c7ffa0963327ef24c748d13f4b9a841c8988988",
+      "sha256_pixels_depois": "b9d5d17633d00669d244509d9c7ffa0963327ef24c748d13f4b9a841c8988988"
+    },
+    {
+      "pagina": 46,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "4af327538330588be5684aa73367bbc3d3a5f308cdb1b2050077b67f44463be2",
+      "sha256_pixels_depois": "4af327538330588be5684aa73367bbc3d3a5f308cdb1b2050077b67f44463be2"
+    },
+    {
+      "pagina": 47,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "ab610d967a39d4f4f9068e80b456563b3169e2a85f5ad54adcf7768266cf770b",
+      "sha256_pixels_depois": "ab610d967a39d4f4f9068e80b456563b3169e2a85f5ad54adcf7768266cf770b"
+    },
+    {
+      "pagina": 48,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "c09f5c30825cf3a4dcc55a8b5f705556d20be5c8373a2db45f160625ead016cb",
+      "sha256_pixels_depois": "c09f5c30825cf3a4dcc55a8b5f705556d20be5c8373a2db45f160625ead016cb"
+    },
+    {
+      "pagina": 49,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "60543e86b81c5eb111c7851ef49db2cc9ad267caca5f49fa7177f24ea34f2399",
+      "sha256_pixels_depois": "60543e86b81c5eb111c7851ef49db2cc9ad267caca5f49fa7177f24ea34f2399"
+    },
+    {
+      "pagina": 50,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "de10c6899a76e1285c90ba25b14903be6d2c8aedef65104c4c906eeb3a4bef29",
+      "sha256_pixels_depois": "de10c6899a76e1285c90ba25b14903be6d2c8aedef65104c4c906eeb3a4bef29"
+    },
+    {
+      "pagina": 51,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "c6b32245c7d4611963a1da2e97f2974625d4590ace24992d4365454561720116",
+      "sha256_pixels_depois": "c6b32245c7d4611963a1da2e97f2974625d4590ace24992d4365454561720116"
+    },
+    {
+      "pagina": 52,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "c125c89a98a42687fcd37f813176df3a3af5f772f50d02e0bfaf339dc8877025",
+      "sha256_pixels_depois": "c125c89a98a42687fcd37f813176df3a3af5f772f50d02e0bfaf339dc8877025"
+    },
+    {
+      "pagina": 53,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "336c1327f928dad0740da5810133566171f8263a00cd88373e8a42ce019565d1",
+      "sha256_pixels_depois": "336c1327f928dad0740da5810133566171f8263a00cd88373e8a42ce019565d1"
+    },
+    {
+      "pagina": 54,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "e683f9566c23346040d6481d3f01d010a77905d2f801f69a3f5dcea9ab55689d",
+      "sha256_pixels_depois": "e683f9566c23346040d6481d3f01d010a77905d2f801f69a3f5dcea9ab55689d"
+    },
+    {
+      "pagina": 55,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "2394e40ae54d7d2c2c6f00ef8561ec17035f2271aeb5f8d41b354425d3383d33",
+      "sha256_pixels_depois": "2394e40ae54d7d2c2c6f00ef8561ec17035f2271aeb5f8d41b354425d3383d33"
+    },
+    {
+      "pagina": 56,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "7152f4d57ef4cd2fb64351f04d3efc70f31887762df165bffc660fdbfbde98b7",
+      "sha256_pixels_depois": "7152f4d57ef4cd2fb64351f04d3efc70f31887762df165bffc660fdbfbde98b7"
+    },
+    {
+      "pagina": 57,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "4bd6c87cae47a3f7bc7fd4aa0585a296460dbd7253d5ba94b1ba276f43a144f5",
+      "sha256_pixels_depois": "4bd6c87cae47a3f7bc7fd4aa0585a296460dbd7253d5ba94b1ba276f43a144f5"
+    },
+    {
+      "pagina": 58,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "f99d4757506dfab9dabc0385ad97b1e4b2f5e0710e1993cefb259c16a639f7eb",
+      "sha256_pixels_depois": "f99d4757506dfab9dabc0385ad97b1e4b2f5e0710e1993cefb259c16a639f7eb"
+    },
+    {
+      "pagina": 59,
+      "pixels_iguais": false,
+      "sha256_pixels_antes": "0c289ef9e2c653294206df0fbacf4240d9c2167938271f338a6761ac368449fa",
+      "sha256_pixels_depois": "e8ac4c5bf63f75bd04e389ca7fb4643c74b39ae0ff81d792d6393292bbad9dcc"
+    },
+    {
+      "pagina": 60,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "191c59acfe6a24aee9024e20916dfaa60719c70401d82f3ddf69a24d13a6268a",
+      "sha256_pixels_depois": "191c59acfe6a24aee9024e20916dfaa60719c70401d82f3ddf69a24d13a6268a"
+    },
+    {
+      "pagina": 61,
+      "pixels_iguais": false,
+      "sha256_pixels_antes": "cb4b3a5442638ecd485e6882dc165a580ee269e874c9a5f27372beb4861176d8",
+      "sha256_pixels_depois": "325014e8938be7f5d38960efafb6e33f93f071df183248e864ccb210cac61842"
+    },
+    {
+      "pagina": 62,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "4c89ff5e7887560cac31bf92e54109dbd25d27f06ef775ab4ed4badcfc5411e2",
+      "sha256_pixels_depois": "4c89ff5e7887560cac31bf92e54109dbd25d27f06ef775ab4ed4badcfc5411e2"
+    },
+    {
+      "pagina": 63,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "fb47e1cad0b82ac0e5a9ea00607dd64b31d165bdc783a4e4b1de790663795457",
+      "sha256_pixels_depois": "fb47e1cad0b82ac0e5a9ea00607dd64b31d165bdc783a4e4b1de790663795457"
+    },
+    {
+      "pagina": 64,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "28d877152056ae4ad97ad924f2ffd28702490c202a9b3787eee3fbb7152cadff",
+      "sha256_pixels_depois": "28d877152056ae4ad97ad924f2ffd28702490c202a9b3787eee3fbb7152cadff"
+    },
+    {
+      "pagina": 65,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "bc9f7b1e9c4760c9db9e36600122845ecf4ebc7090ae30a752fa146057c6aeb2",
+      "sha256_pixels_depois": "bc9f7b1e9c4760c9db9e36600122845ecf4ebc7090ae30a752fa146057c6aeb2"
+    },
+    {
+      "pagina": 66,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "d979e7e672bbccf33694b8fe1d4ec3fd798128608754e2ad46b9301691432984",
+      "sha256_pixels_depois": "d979e7e672bbccf33694b8fe1d4ec3fd798128608754e2ad46b9301691432984"
+    },
+    {
+      "pagina": 67,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "297d659ec22839dc18359e79c211403ebe7860057fd9d79150b4c1a8f149d5b9",
+      "sha256_pixels_depois": "297d659ec22839dc18359e79c211403ebe7860057fd9d79150b4c1a8f149d5b9"
+    },
+    {
+      "pagina": 68,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "7a357ee70fc5cb043ba7aa5742d36f10eb565b1ececb2496758f4665ba24d08a",
+      "sha256_pixels_depois": "7a357ee70fc5cb043ba7aa5742d36f10eb565b1ececb2496758f4665ba24d08a"
+    },
+    {
+      "pagina": 69,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "a9cf1d8e7fb4819698e6e61cec433c56b364c701fee85feb492af8688ef69bac",
+      "sha256_pixels_depois": "a9cf1d8e7fb4819698e6e61cec433c56b364c701fee85feb492af8688ef69bac"
+    },
+    {
+      "pagina": 70,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "663ea0aca9e47f7a38b2387514e3f19a50fe6fc8db3c85a0d013d76e6acd8935",
+      "sha256_pixels_depois": "663ea0aca9e47f7a38b2387514e3f19a50fe6fc8db3c85a0d013d76e6acd8935"
+    },
+    {
+      "pagina": 71,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "5085e7f8d66f689c8ec32836d06991b84e20c4eb505f81e96fe9a344710883f4",
+      "sha256_pixels_depois": "5085e7f8d66f689c8ec32836d06991b84e20c4eb505f81e96fe9a344710883f4"
+    },
+    {
+      "pagina": 72,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "f342e815f0a0f15fcd956370de2929f1d035f1bc6e7e189fdf9da047e955572a",
+      "sha256_pixels_depois": "f342e815f0a0f15fcd956370de2929f1d035f1bc6e7e189fdf9da047e955572a"
+    },
+    {
+      "pagina": 73,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "bcd467b18740c4cbcb2eb95f9f86c9f4ef072a5c069efd49af25ba92364163dd",
+      "sha256_pixels_depois": "bcd467b18740c4cbcb2eb95f9f86c9f4ef072a5c069efd49af25ba92364163dd"
+    },
+    {
+      "pagina": 74,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "1b31e0dadc5c20f7ebf671cabbbb47bec78a8a0f9011840c84996fa450d8630d",
+      "sha256_pixels_depois": "1b31e0dadc5c20f7ebf671cabbbb47bec78a8a0f9011840c84996fa450d8630d"
+    },
+    {
+      "pagina": 75,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "e0582066f21777ed82347d52e24376ad62690595e358873832c3644ce3cd33b0",
+      "sha256_pixels_depois": "e0582066f21777ed82347d52e24376ad62690595e358873832c3644ce3cd33b0"
+    },
+    {
+      "pagina": 76,
+      "pixels_iguais": true,
+      "sha256_pixels_antes": "ab6348ea8256345f828544a27bd856f1b0c16b3af5f8c06e87fc54caf127f84e",
+      "sha256_pixels_depois": "ab6348ea8256345f828544a27bd856f1b0c16b3af5f8c06e87fc54caf127f84e"
+    }
+  ],
+  "legendas_paginas_preservadas": [
+    {
+      "titulo": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico",
+      "paginas_antes": [
+        12,
+        34
+      ],
+      "paginas_depois": [
+        12,
+        34
+      ]
+    },
+    {
+      "titulo": "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica",
+      "paginas_antes": [
+        11,
+        34
+      ],
+      "paginas_depois": [
+        11,
+        34
+      ]
+    },
+    {
+      "titulo": "Figura 1 – Documentação localizada nas cinco dimensões analíticas",
+      "paginas_antes": [
+        10,
+        36
+      ],
+      "paginas_depois": [
+        10,
+        36
+      ]
+    },
+    {
+      "titulo": "Figura 2 – Frequência das palavras-chave declaradas pelos autores",
+      "paginas_antes": [
+        10,
+        37
+      ],
+      "paginas_depois": [
+        10,
+        37
+      ]
+    },
+    {
+      "titulo": "Figura 3 – Rede de coocorrência de palavras-chave",
+      "paginas_antes": [
+        10,
+        38
+      ],
+      "paginas_depois": [
+        10,
+        38
+      ]
+    },
+    {
+      "titulo": "Figura 4 – Expressões recorrentes nos títulos dos estudos",
+      "paginas_antes": [
+        10,
+        39
+      ],
+      "paginas_depois": [
+        10,
+        39
+      ]
+    },
+    {
+      "titulo": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+      "paginas_antes": [
+        12
+      ],
+      "paginas_depois": [
+        12
+      ]
+    },
+    {
+      "titulo": "Quadro 2 – Organização das cinco ondas experimentais",
+      "paginas_antes": [
+        11,
+        43
+      ],
+      "paginas_depois": [
+        11,
+        43
+      ]
+    },
+    {
+      "titulo": "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético",
+      "paginas_antes": [
+        11,
+        44
+      ],
+      "paginas_depois": [
+        11,
+        44
+      ]
+    },
+    {
+      "titulo": "Quadro 4 – Síntese do desenho experimental executado",
+      "paginas_antes": [
+        11,
+        47
+      ],
+      "paginas_depois": [
+        11,
+        47
+      ]
+    },
+    {
+      "titulo": "Tabela 3 – Comparação dos principais resultados no conjunto de teste",
+      "paginas_antes": [
+        12,
+        54
+      ],
+      "paginas_depois": [
+        12,
+        54
+      ]
+    },
+    {
+      "titulo": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações",
+      "paginas_antes": [
+        10,
+        55
+      ],
+      "paginas_depois": [
+        10,
+        55
+      ]
+    },
+    {
+      "titulo": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada",
+      "paginas_antes": [
+        10,
+        56
+      ],
+      "paginas_depois": [
+        10,
+        56
+      ]
+    },
+    {
+      "titulo": "Tabela 4 – Configurações selecionadas das cinco ondas experimentais",
+      "paginas_antes": [
+        12,
+        57
+      ],
+      "paginas_depois": [
+        12,
+        57
+      ]
+    },
+    {
+      "titulo": "Tabela 5 – Decomposição do custo computacional documentado",
+      "paginas_antes": [
+        12,
+        59
+      ],
+      "paginas_depois": [
+        12,
+        59
+      ]
+    },
+    {
+      "titulo": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+      "paginas_antes": [
+        12,
+        62
+      ],
+      "paginas_depois": [
+        12,
+        62
+      ]
+    },
+    {
+      "titulo": "Quadro 5 – Síntese da avaliação das hipóteses",
+      "paginas_antes": [
+        11,
+        62
+      ],
+      "paginas_depois": [
+        11,
+        62
+      ]
+    },
+    {
+      "titulo": "Tabela 7 – Comparação descritiva com Lampugnani (2026)",
+      "paginas_antes": [
+        12,
+        63
+      ],
+      "paginas_depois": [
+        12,
+        63
+      ]
+    },
+    {
+      "titulo": "Quadro 6 – Delimitação das contribuições e da procedência",
+      "paginas_antes": [
+        11,
+        71
+      ],
+      "paginas_depois": [
+        11,
+        71
+      ]
+    }
+  ],
+  "origem_pdf": "Exportação nativa Word em leitura; rasterização com render_docx.py 26.1026.10807; comparação de pixels com pypdfium2.",
+  "inspecao_paginas_alteradas": "Páginas físicas 59 e 61 abertas e conferidas; sem recorte/sobreposição; páginas seguintes permanecem idênticas. Base v007 teve 76 páginas abertas em 38 pares nesta passagem."
+}

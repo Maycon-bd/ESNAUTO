@@ -1,0 +1,414 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_examinado": "338d6bd961e3957a0e99cc7d9f9f117579a8963714e5b57401bbf449d9cc7057",
+  "fontes_lidas_integralmente": [
+    {
+      "id": "D18",
+      "arquivo": "Artigos citados\\Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+      "sha256": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac",
+      "paginas": 23,
+      "caracteres_extraidos": 71707,
+      "estado_leitura": "leitura_integral_com_evidencias_visuais",
+      "log_leitura": [
+        {
+          "registro": "leituras_liu_hariharan_xiao_lote12.json",
+          "metodo": "Texto integral das 23 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+          "paginas_visuais_abertas": [
+            1,
+            4,
+            6,
+            8,
+            9,
+            12,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D13",
+      "arquivo": "Artigos citados\\Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "paginas": 18,
+      "caracteres_extraidos": 65179,
+      "estado_leitura": "leitura_integral_com_evidencias_visuais",
+      "log_leitura": [
+        {
+          "registro": "leituras_liu_hariharan_xiao_lote12.json",
+          "metodo": "Texto integral das 18 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+          "paginas_visuais_abertas": [
+            1,
+            4,
+            7,
+            10,
+            12,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D33",
+      "arquivo": "Artigos citados\\Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+      "sha256": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787",
+      "paginas": 7,
+      "caracteres_extraidos": 28260,
+      "estado_leitura": "leitura_integral_com_evidencias_visuais",
+      "log_leitura": [
+        {
+          "registro": "leituras_liu_hariharan_xiao_lote12.json",
+          "metodo": "Texto integral das 7 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+          "paginas_visuais_abertas": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ]
+    }
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D18",
+      "arquivo_pdf": "Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+      "sha256_pdf": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac",
+      "tipo": "RC_nanofotonico",
+      "dimensao": "P1",
+      "codigo": "-",
+      "localizador": "PDF 3, sistema e máscara",
+      "evidencia_e_limite": "Entrada modulada por máscara caótica e reservatório optomecânico; não se apresenta geração probabilística de uma matriz de pesos neuronais Win/W como objeto experimental.",
+      "escopo_leitura": "Texto integral das 23 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0389"
+    },
+    {
+      "id": "D18",
+      "arquivo_pdf": "Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+      "sha256_pdf": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac",
+      "tipo": "RC_nanofotonico",
+      "dimensao": "P2",
+      "codigo": "D",
+      "localizador": "PDF 7–8 e 10–13, seção 4.3 e figuras 4–5",
+      "evidencia_e_limite": "A própria pesquisa explora parâmetros físicos do RC e apresenta mapas de NMSE/RMSE/MAE/MAPE, discutindo regiões de menor erro e configurações por índice. Satisfaz análise de sensibilidade com critério de desempenho. Não implica AG, ótimo global ou seleção em validação separada.",
+      "escopo_leitura": "Texto integral das 23 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0390"
+    },
+    {
+      "id": "D18",
+      "arquivo_pdf": "Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+      "sha256_pdf": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac",
+      "tipo": "RC_nanofotonico",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 6, equação 7",
+      "evidencia_e_limite": "Normalização e denoising DWT com db3/três níveis; descarta primeiras cem observações no treinamento.",
+      "escopo_leitura": "Texto integral das 23 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0391"
+    },
+    {
+      "id": "D18",
+      "arquivo_pdf": "Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+      "sha256_pdf": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac",
+      "tipo": "RC_nanofotonico",
+      "dimensao": "P4",
+      "codigo": "S",
+      "localizador": "PDF14–15,especialmenteTabela6(PDF15),referência4naPDF21",
+      "evidencia_e_limite": "Valores de DS para LSTM e CEEMD-PCA-LSTM são explicitamente importados de Zhang,Yan eAasma2020; não são novos treinos dos comparadores. S,sem inferir igualdade de protocolos.",
+      "escopo_leitura": "Texto integral das 23 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0392"
+    },
+    {
+      "id": "D18",
+      "arquivo_pdf": "Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+      "sha256_pdf": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac",
+      "tipo": "RC_nanofotonico",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 6, seção 3.1 e Tabela 2",
+      "evidencia_e_limite": "SHSECI, SZSECI, Nasdaq Composite e FTSE100.",
+      "escopo_leitura": "Texto integral das 23 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0393"
+    },
+    {
+      "id": "D13",
+      "arquivo_pdf": "Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256_pdf": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P1",
+      "codigo": "D",
+      "localizador": "PDF 4, definição de Win",
+      "evidencia_e_limite": "Entradas não nulas de Win geradas por Uniforme(-1,1), escalonadas e mascaradas segundo o grupo. Não chamar essa lei de distribuição de W recorrente.",
+      "escopo_leitura": "Texto integral das 18 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0365"
+    },
+    {
+      "id": "D13",
+      "arquivo_pdf": "Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256_pdf": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P2",
+      "codigo": "D",
+      "localizador": "PDF 6–8, seção 3.1 e Figura 5",
+      "evidencia_e_limite": "Varia probabilidades de conectividade e grau médio; compara NRMSE em 50 realizações e identifica escolhas de conectividade. É análise de sensibilidade, não AG.",
+      "escopo_leitura": "Texto integral das 18 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0366"
+    },
+    {
+      "id": "D13",
+      "arquivo_pdf": "Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256_pdf": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF7,Eq15;PDF10,seção4.1",
+      "evidencia_e_limite": "Min–max[0,1] e filtro gaussiano unidimensional de desvio1para os sinais NIFTYBEES. Não é lei dos pesos nem prova de ajuste do escalonador somente no treino.",
+      "escopo_leitura": "Texto integral das 18 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0367"
+    },
+    {
+      "id": "D13",
+      "arquivo_pdf": "Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256_pdf": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P4",
+      "codigo": "?",
+      "localizador": "PDF8,11e15,Tabelas4–6",
+      "evidencia_e_limite": "Compara variantes ESN em NIFTYBEES,vento solar eRössler. DeepESN não é LSTM; não há passagem qualificadora de comparação quantitativa com LSTM/GRU/Transformer no texto integral lido.",
+      "escopo_leitura": "Texto integral das 18 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0368"
+    },
+    {
+      "id": "D13",
+      "arquivo_pdf": "Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256_pdf": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 8, Figura 6 e Tabela 4",
+      "evidencia_e_limite": "NIFTYBEES, NSE/Índia; também experimentos não financeiros, que não devem ser confundidos com o conjunto financeiro.",
+      "escopo_leitura": "Texto integral das 18 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0369"
+    },
+    {
+      "id": "D33",
+      "arquivo_pdf": "Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+      "sha256_pdf": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787",
+      "tipo": "aplicacao_LSTM_GRU_Transformer",
+      "dimensao": "P1",
+      "codigo": "-",
+      "localizador": "PDF 5, seção 3.2",
+      "evidencia_e_limite": "Arquiteturas LSTM/GRU/Transformer, não ESN.",
+      "escopo_leitura": "Texto integral das 7 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0485"
+    },
+    {
+      "id": "D33",
+      "arquivo_pdf": "Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+      "sha256_pdf": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787",
+      "tipo": "aplicacao_LSTM_GRU_Transformer",
+      "dimensao": "P2",
+      "codigo": "-",
+      "localizador": "PDF 5, seção 3.2",
+      "evidencia_e_limite": "Treinamento/tuning dessas arquiteturas não satisfaz seleção de hiperparâmetros ESN.",
+      "escopo_leitura": "Texto integral das 7 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0486"
+    },
+    {
+      "id": "D33",
+      "arquivo_pdf": "Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+      "sha256_pdf": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787",
+      "tipo": "aplicacao_LSTM_GRU_Transformer",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 4, seção 3.1 e Tabela 2",
+      "evidencia_e_limite": "Descreve limpeza e diferenciação/ADF; há inconsistência entre descrição de dados do site Tesla e tabela OHLC. A codificação de presença não endossa qualidade/procedência.",
+      "escopo_leitura": "Texto integral das 7 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0487"
+    },
+    {
+      "id": "D33",
+      "arquivo_pdf": "Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+      "sha256_pdf": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787",
+      "tipo": "aplicacao_LSTM_GRU_Transformer",
+      "dimensao": "P4",
+      "codigo": "D",
+      "localizador": "PDF 5, Tabela 3; PDF 6, resultados",
+      "evidencia_e_limite": "Compara métricas LSTM/GRU/Transformer. Há inconsistências internas entre RMSE e MSE e entre interpretação e tabela; não transportar os números como benchmark confiável.",
+      "escopo_leitura": "Texto integral das 7 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0488"
+    },
+    {
+      "id": "D33",
+      "arquivo_pdf": "Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+      "sha256_pdf": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787",
+      "tipo": "aplicacao_LSTM_GRU_Transformer",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 4, seção 3.1",
+      "evidencia_e_limite": "Tesla, observações OHLC 2015–2024; a fonte descreve o período contraditoriamente como nove/quase cinco anos. Apenas a identificação do ativo é contada.",
+      "escopo_leitura": "Texto integral das 7 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+      "unidade": "U0489"
+    }
+  ],
+  "n_celulas_reexaminadas": 15,
+  "n_codigos_alterados": 0,
+  "afirmacoes_conferidas": [
+    {
+      "unidade": "U0189",
+      "fontes": [
+        "D33"
+      ],
+      "diagnostico": "conteudo_condizente_autoria_a_corrigir",
+      "localizador": "PDF2–6;Tabela2naPDF4;Tabela3naPDF5",
+      "evidencia": "Compara LSTM,GRU,Transformer para ações Tesla. Preparação é descrita,mas aTabela2declara ausência de faltantes; não comprova uma avaliação de imputação. Não é estudo de ESN."
+    },
+    {
+      "unidade": "U0208",
+      "fontes": [
+        "D18"
+      ],
+      "diagnostico": "conteudo_condizente_com_precisao_de_simulacao_e_autoria",
+      "localizador": "PDF6(início),PDF8,PDF20–21",
+      "evidencia": "Equações optomecânicas resolvidas por Runge–Kutta em simulação numérica; quatro índices China/EUA/ReinoUnido. PDF8discute ancoragem e erros em flutuações intensas; não prova imunidade a regimes ou vantagem geral em tempo real."
+    },
+    {
+      "unidade": "U0210",
+      "fontes": [
+        "D13"
+      ],
+      "diagnostico": "conteudo_condizente_autoria_a_corrigir",
+      "localizador": "PDF2–4,8–12,16–17",
+      "evidencia": "CESNcom grupos correspondentes às variáveis; links entre grupos conforme topologia. NIFTYBEES(NSE/Índia),vento solar eRössler. Limitações explicitam dependência dos dados e da topologia; comunicação entre grupos não é universalmente prejudicial."
+    },
+    {
+      "unidade": "U0279",
+      "fontes": [
+        "D08",
+        "D18"
+      ],
+      "diagnostico": "conteudo_condizente_conferencia_conjunta_concluida",
+      "localizador": "D08PDF20,Tabela6;D18PDF15,Tabela6",
+      "evidencia": "Os dois exemplos de P4S são comparação secundária: Deng importa LSTM/ARIMA/Fusionde[36]; Liu importa LSTM/CEEMD-PCA-LSTMde[4]. A parte Deng foi lida e registrada nos lotes9anteriores."
+    }
+  ],
+  "afirmacoes_parcialmente_conferidas": [
+    {
+      "unidade": "U0196",
+      "conferido": "Somente Xiao: MSE eRMSE deLSTMeTransformer são internamente incompatíveis. O artigo não isola efeito de informação de mercado. Cortesi continua pendente de leitura integral.",
+      "localizador": "D33PDF5–6,Tabela3"
+    },
+    {
+      "unidade": "U0231",
+      "conferido": "Somente Hariharan: w~Uniforme(-1,1),escalonamento e máscara para entradas não nulas deWin. Não identifica lei recorrente deWr por analogia. Ribeiro eWang continuam pendentes de leitura integral.",
+      "localizador": "D13PDF4,seção3"
+    }
+  ],
+  "alteracoes_propostas": [
+    {
+      "unidade": "U0189",
+      "antes": "Xiao (2024) comparou LSTM, GRU e Transformer na previsão de preços da Tesla, sem investigar arquiteturas de reservatório. O artigo descreve preparação dos dados, mas sua Tabela 2 registra ausência de valores faltantes; esse relato não comprova uma avaliação de imputação. A diversidade de propostas com SVM, Aprendizado Profundo (Deep Learning – DL) e processamento de linguagem natural contextualiza a escolha das ESNs nesta pesquisa, cuja eficiência deve ser examinada no protocolo adotado.",
+      "depois": "Xiao, Deng e Bi (2024) compararam LSTM, GRU e Transformer na previsão de preços da Tesla, sem investigar arquiteturas de reservatório. O artigo descreve preparação dos dados, mas sua Tabela 2 registra ausência de valores faltantes; esse relato não comprova uma avaliação de imputação. A diversidade de propostas com SVM, Aprendizado Profundo (Deep Learning – DL) e processamento de linguagem natural contextualiza a escolha das ESNs nesta pesquisa, cuja eficiência deve ser examinada no protocolo adotado.",
+      "motivo": "Indicar os três autores e concordância,segundo o complemento UniRV2025,p195–196."
+    },
+    {
+      "unidade": "U0196",
+      "antes": "Na comparação de Xiao (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores idênticos de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo.",
+      "depois": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores idênticos de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo.",
+      "motivo": "Autoria formal; a aprovação semântica permanece parcial quanto a Cortesi."
+    },
+    {
+      "unidade": "U0208",
+      "antes": "Liu (2022) investigou um sistema de Computação de Reservatório nanofotônico para índices de mercados chineses, norte-americano e britânico. Os autores observaram previsões conservadoras, mas também maiores erros nos pontos de flutuação intensa, discutidos como efeito de ancoragem nos dados históricos. Os resultados caracterizam as condições do sistema estudado e não demonstram imunidade a mudanças de regime nem superioridade geral sobre implementações de software em tempo real.",
+      "depois": "Liu et al. (2022) avaliaram, por simulação numérica, um sistema nanofotônico de Computação de Reservatório para índices de mercados chineses, norte-americano e britânico. Os autores observaram previsões conservadoras, mas também maiores erros nos pontos de flutuação intensa, discutidos como efeito de ancoragem nos dados históricos. Os resultados caracterizam as condições do sistema estudado e não demonstram imunidade a mudanças de regime nem superioridade geral sobre implementações de software em tempo real.",
+      "motivo": "Reconhecer os oito autores e explicitar a natureza numérica do método; não sugerir ensaio físico realizado."
+    },
+    {
+      "unidade": "U0210",
+      "antes": "Hariharan et al. (2025) propuseram ESNs com reservatórios divididos em grupos para séries multivariadas, incluindo dados do NIFTYBEES. Cada variável foi direcionada a um grupo, mantendo conexões entre grupos segundo a topologia examinada. Os erros e a sensibilidade à conectividade variaram entre as estruturas. O estudo apoia investigar a organização do reservatório, sem demonstrar que todo intercâmbio entre variáveis seja prejudicial ou que uma topologia domine em qualquer tarefa.",
+      "depois": "Hariharan, Suresh e Chandrasekar (2025) propuseram ESNs com reservatórios divididos em grupos para séries multivariadas, incluindo dados do NIFTYBEES. Cada variável foi direcionada a um grupo, mantendo conexões entre grupos segundo a topologia examinada. Os erros e a sensibilidade à conectividade variaram entre as estruturas. O estudo apoia investigar a organização do reservatório, sem demonstrar que todo intercâmbio entre variáveis seja prejudicial ou que uma topologia domine em qualquer tarefa.",
+      "motivo": "Indicar os três autores; conteúdo confirmado no texto integral."
+    },
+    {
+      "unidade": "U0231",
+      "antes": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan et al. (2025) especificam Uniforme(-1,1) para as entradas não nulas de Win, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos.",
+      "depois": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan, Suresh e Chandrasekar (2025) geram as entradas não nulas de Win por amostragem Uniforme(-1,1), seguida de escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos.",
+      "motivo": "Precisar amostragem e transformação deWin,sem atribuir essa família aWr; corrigir autoria. A unidade permanece parcial quanto aRibeiro/Wang."
+    },
+    {
+      "unidade": "U0279",
+      "antes": "Separa comparação própria de LSTM/GRU/Transformer e números importados, como em Deng e Liu B. (S).",
+      "depois": "Separa comparações próprias com LSTM/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S.",
+      "motivo": "Conferência conjunta concluída; explicitar as chamadas autor–ano dos dois exemplos."
+    },
+    {
+      "unidade": "U0364",
+      "antes": "Hariharan et al. (2025)",
+      "depois": "Hariharan, Suresh e Chandrasekar (2025)",
+      "motivo": "Identificação dos três autores na linha da matriz; códigos não mudam."
+    },
+    {
+      "unidade": "U0484",
+      "antes": "Xiao (2024)",
+      "depois": "Xiao, Deng e Bi (2024)",
+      "motivo": "Identificação dos três autores na linha da matriz; códigos não mudam."
+    },
+    {
+      "unidade": "U0436",
+      "antes": "Sudiatmika & Putra (2024)",
+      "depois": "Sudiatmika e Putra (2024)",
+      "motivo": "Dois autores confirmados naD25PDF1(reconsultada); usar e fora dos parênteses. D25já integralmente lido antes,não é nova fonte na contagem."
+    }
+  ],
+  "conferencia_aritmetica_tabela3_xiao": [
+    {
+      "modelo": "LSTM",
+      "MSE_impresso": 260.8710984,
+      "RMSE_impresso": 26.0917386,
+      "raiz_MSE": 16.15150452434695,
+      "RMSE_ao_quadrado": 680.7788231707299
+    },
+    {
+      "modelo": "GRU",
+      "MSE_impresso": 339.9002233,
+      "RMSE_impresso": 18.43638314,
+      "raiz_MSE": 18.43638314041016,
+      "RMSE_ao_quadrado": 339.9002232848763
+    },
+    {
+      "modelo": "Transformer",
+      "MSE_impresso": 360.2837729,
+      "RMSE_impresso": 16.3973472,
+      "raiz_MSE": 18.98114256044667,
+      "RMSE_ao_quadrado": 268.8729951973478
+    }
+  ],
+  "metadados": [
+    {
+      "referencia": "R23",
+      "evidencia": "D13PDF1:três autores,2025,EuropeanPhysicalJournalPlus140:1133,DOI10.1140/epjp/s13360-025-07077-3; publicado26/11/2025,visível no rodapé."
+    },
+    {
+      "referencia": "R31",
+      "evidencia": "D18PDF1e23:oito autores,OpticsExpress30(13),23359–23381,2022,DOI10.1364/OE.454973;online13/06/2022,edição20/06/2022."
+    },
+    {
+      "referencia": "R49",
+      "evidencia": "D33PDF1–2,7:três autores,publicação17/12/2024,evento23–25/08/2024,ACM/DEBAI,103–108,DOI10.1145/3700058.3700075. Download2026não é ano de edição."
+    }
+  ],
+  "ressalvas_fontes": [
+    "Xiao: 94%de acurácia no resumo/conclusão não tem definição compatível inequívoca com R²0,9802378daTabela3. LSTM/Transformer violam RMSE=sqrt(MSE); GRU é coerente ao arredondamento. Não copiar cifras como benchmark confiável.",
+    "Xiao: 2015–2024é descrito como nove e quasecinco anos; origem daTeslaoficial com produtos/reviews diverge de tabelaOHLC. FaltantesNone não demonstra eficácia de imputação. ADFdiferenciado p0,142não comprova estacionariedade ao nível5%. O TCC não adota esses detalhes contraditórios.",
+    "Xiao: referências sobre saúde mental,fraude ebioplásticos aparecem associadas a outros temas no corpo. Isso limita o uso para fundamentos; não foi aproveitado para fundamentar portas deLSTMou resultados de fontes terciárias. Não se conclui fraude/plágio dos autores por esses indícios.",
+    "Liu: reserva optomecânica simulada numericamente,não Win/Waleatórias de ESN. GAnafonte significa generalizationability,não algoritmo genético. A seleção explora parâmetros físicos por desempenho,não ótimo global ou validação independente.",
+    "Liu: Tabela4mistura métricas de ordens de grandeza/escalas diferentes e protocolos externos; não é comparação controlada comum. Table6DSimporta resultados de[4]/[14],não confirma execuções próprias desses métodos. Não foi conferido o conteúdo integral das referências externas4/14.",
+    "Hariharan: P1vale pela geração deWin. Ruído gaussiano sintético ou filtro gaussiano de dados não são a lei deWr. P2é sensibilidade com critério,não algoritmo genético. Comparadores DeepESN/AEESN/BrESNnão atendem P4comoLSTM/GRU/Transformer.",
+    "Hariharan: prosa atribui ótimoPout0,01às topologias,mas Figura5não mostra isso para todas as curvas; a discussão posterior limita conclusões por dados/topologia. O TCC não transporta um ótimo universal.",
+    "Hariharan: descrição de densidade/Pinring,dimensões de estados/readout e garantia geral deESPporρ<1têm ressalvas; não foram copiadas para a metodologia local. Normalização/filtro são descritos sem prova de isolamento de ajuste só no treino. Tempos daTabela3são da tarefa sintética,não estimativa direta dePETR4."
+  ],
+  "estado": "leituras_registradas_correcoes_incorporadas_e_inspecionadas",
+  "sha256_rascunho_apos_correcao": "f7377019848a9ffc69278210a02051003fd7f7d347e0187a8e98b3f2d27b0235"
+}

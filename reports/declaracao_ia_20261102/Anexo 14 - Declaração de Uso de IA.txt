@@ -1,0 +1,153 @@
+
+[PAGINA 1]
+ 
+ 
+ANEXO I – DIRETRIZES PARA O USO E DECLARAÇÃO DE INTELIGÊNCIA 
+ARTIFICIAL GENERATIV A (IAG) 
+Este anexo regulamenta as condições de uso, os limites éticos e os procedimentos 
+obrigatórios para a declaração do uso de ferramentas de Inteligência Artificial Generativa (IAG) 
+nos Trabalhos Finais de Curso (TFC I e TFC II) do curso de Bacharelado em Enge nharia de 
+Software da Universidade de Rio Verde (UniRV) – Faculdade de Engenharia de Software (Fasoft). 
+Fundamentação Legal: Estas diretrizes alinham -se estritamente com os princípios éticos 
+estabelecidos pela Portaria CNPq nº 2.664, de 6 de março de 2026, que institui a Política de 
+Integridade na Atividade Científica do CNPq, com especial atenção às suas de terminações sobre 
+integridade na pesquisa, transparência acadêmica e responsabilidade dos proponentes de produtos 
+técnico-científicos. 
+1. PRINCÍPIOS GERAIS DA INTEGRIDADE CIENTÍFICA NO USO DE IAG 
+Honestidade Intelectual e Transparência:  O discente e o orientador têm o dever de 
+comunicar com precisão, clareza e verdade científica a utilização de qualquer ferramenta de IAG 
+em qualquer fase de elaboração do TFC (concepção, redação, engenharia de requisitos, 
+implementação de código ou geração de testes). 
+Inalienabilidade da Autoria Humana:  Sistemas ou modelos de IAG (como ChatGPT, 
+Claude, Gemini, GitHub Copilot, entre outros) não possuem personalidade jurídica ou acadêmica 
+e, sob nenhuma hipótese, poderão ser citados ou creditados como coautores do trabalho, do 
+software ou do jogo desenvolvido. 
+Responsabilidade Integral e Exclusiva:  Os autores do TFC (discentes) respondem civil, 
+administrativa e academicamente por todo o conteúdo final submetido. Isso inclui a validação de 
+todas as afirmações textuais, correção de erros, segurança lógica do código gerado por IA, e a 
+garantia de não v iolação de direitos autorais ou licenças proprietárias de terceiros (prevenindo 
+plágio ou plágio de código). 
+Salvaguarda de Revisão de Pares: É vedado a docentes e membros avaliadores de banca a  
+inserção de trabalhos ou relatórios de discentes em plataformas de IAG para fins de geração de 
+pareceres automatizados, devendo a avaliação ser estritamente humana e autoral. 
+ 
+
+[PAGINA 2]
+ 
+ 
+2. DIRETRIZES DE USO POR TIPO DE TRABALHO (MODALIDADE) 
+2.1 Modalidade: Monografia (Pesquisa Pura ou Aplicada) 
+Destina-se aos trabalhos focados em pesquisa de temas de áreas afins e que utilizam 
+metodologia puramente científica. A aplicação de IAG nesta modalidade limita -se a apoiar a  
+expressão do pesquisador, sendo expressamente proibida a substituição da autoria. 
+Usos Permitidos: Melhoria de estilo e fluidez da redação, correção ortográfica e gramatical 
+de textos de autoria própria; auxílio na tradução de referências e no refinamento técnico do abstract 
+(em complemento à revisão exigida no regulamento); suporte na estruturação das  etapas do 
+protocolo de pesquisa. 
+Usos Proibidos:  Redação completa de capítulos ou seções (especialmente a Revisão 
+Bibliográfica e Metodologia) por meio de prompts de geração direta; fabricação ou falsificação de 
+dados experimentais ou resultados de levantamentos bibliográficos; fragmentação redundante d e 
+resultados (Salami Science). 
+Declaração Obrigatória:  Os discentes deverão incluir na subseção de Metodologia 
+(Classificação e Protocolo de Pesquisa) uma declaração explícita contendo quais ferramentas de 
+suporte linguístico ou metodológico foram aplicadas. 
+2.2 Modalidade: Relatório DERS (Documento de Especificação de Requisitos de Software) 
+Destina-se aos projetos focados no desenvolvimento de aplicativos (Desktop, Mobile ou 
+Web). A IAG atua como co-piloto técnico no fluxo de desenvolvimento e testes de software. 
+Usos Permitidos:  Geração de código de infraestrutura (boilerplate code), refatoração de 
+funções para melhoria de desempenho, estruturação física e lógica de scripts SQL de banco de 
+dados; modelagem inicial de requisitos (diagramas de caso de uso, classes) em ferramentas 
+específicas; suporte na criação de scripts e massa de dados para automação de testes (como Jest, 
+Selenium, JUnit). 
+Usos Proibidos:  Copiar código gerado por IA que infrinja licenças proprietárias ou de 
+código aberto restritivas; apresentar cenários de testes gerados por IA sem a devida execução 
+prática em ambiente de homologação; omissão de vulnerabilidades lógicas sugeridas pelo modelo. 
+
+[PAGINA 3]
+ 
+ 
+Declaração Obrigatória:  Os discentes deverão detalhar a utilização nos capítulos de 
+Implementação (ferramentas e padrões de código) e Avaliação (onde se discutem os resultados 
+práticos dos testes obrigatórios de homologação). 
+2.3 Modalidade: Relatório GDD (Game Design Document) 
+Destina-se aos projetos dedicados ao desenvolvimento de jogos digitais com fins 
+estritamente educacionais. A IAG serve como assistente criativo e de programação no pipeline de 
+desenvolvimento de mídias interativas. 
+Usos Permitidos:  Auxílio na concepção da narrativa de jogo, brainstorming para 
+balanceamento de mecânicas e dinâmicas descritas no GDD; codificação de scripts de controle de 
+personagens e regras de jogo (ex: C# na Unity, C++ na Unreal); geração de referências visuais de 
+concept art para guiar o design autoral; geração de efeitos sonoros e músicas livres de direitos 
+autorais. 
+Usos Proibidos: Inserir no jogo final assets (gráficos, áudios ou códigos de terceiros) que 
+violem direitos intelectuais ou termos de uso das plataformas de IA generativa; terceirizar o 
+desenvolvimento completo do núcleo do jogo ou da lógica educacional proposta. 
+Declaração Obrigatória: Os discentes devem registrar o uso no documento de design de 
+jogo (GDD) e nos capítulos de implementação técnica e testes de experiência do jogador. 
+3. QUADRO DE TRANSPARÊNCIA E MODELO DE DECLARAÇÃO OBRIGATÓRIA 
+Todo discente que fizer uso de ferramentas de Inteligência Artificial Generativa deverá 
+obrigatoriamente incluir a declaração abaixo estruturada na seção metodológica/técnica cabível do 
+trabalho (Monografia, Relatório DERS ou Relatório GDD), além de preenc her e assinar este 
+documento de comprovação juntamente com o seu orientador. 
+ 
+ 
+
+[PAGINA 4]
+ 
+ 
+DECLARAÇÃO DE RESPONSABILIDADE COLETIVA 
+ 
+Em observância aos princípios de integridade científica regulamentados pela Portaria CNPq 
+nº 2.664/2026, declaramos que todas as ferramentas de IAG abaixo identificadas foram empregadas 
+estritamente em caráter de auxílio instrumental ao desenvolvimento do TFC.  
+Fica certificado que não houve delegação da autoria intelectual, e que os autores respondem 
+direta e integralmente pela fidedignidade teórica da redação científica, pela correção técnica das 
+arquiteturas de software/jogos geradas, bem como pelo respeito in condicional às normas de 
+integridade, propriedade industrial e direito autoral vigente. 
+ 
+Fase do TFC / Processo Ferramenta Utilizada Finalidade Específica e Escopo Método de Validação Humana 
+Realizado 
+Concepção de Ideias e 
+Documentação Técnica 
+Ex: ChatGPT / Claude  
+(Indicar versão 
+utilizada) 
+Suporte no refinamento do texto de 
+justificativa e modelagem conceitual 
+do escopo. 
+Revisão e reescrita de parágrafos 
+pelos autores, garantindo 
+concordância semântica e 
+correção técnica. 
+Programação e Escrita de 
+Código-Fonte 
+Ex: GitHub Copilot /  
+Cursor IDE 
+Geração automatizada de rotas de 
+API, mapeamento ORM de entidades 
+e interfaces web padrão. 
+Code review detalhado, 
+verificação de segurança das 
+entradas de dados e validação 
+funcional de código. 
+Planejamento e Execução de 
+Testes 
+Ex: Gemini Pro   
+Claude 3.5 Sonnet 
+Construção lógica de scripts 
+automatizados para testes de carga e 
+testes unitários. 
+Execução local dos scripts, 
+depuração de erros gerados e 
+garantia de cobertura mínima do 
+código-fonte. 
+ 
+Rio Verde/GO, ______ de ________________________ de 20____. 
+ 
+ 
+ 
+_____________________________________________________ 
+Assinatura do(a) Acadêmico(a) Autor(a) 
+ 
+ 
+_____________________________________________________ 
+Assinatura do(a) Professor(a) Orientador(a)’’ 

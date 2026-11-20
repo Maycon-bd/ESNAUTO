@@ -1,0 +1,30 @@
+{
+  "sha256_rascunho": "55316818b048fba182e12b842a87f4afa519524447481e6db2d1919923067521",
+  "escopo": "Conferência complementar de três referências com acesso anterior parcial. Consulta às páginas editoriais e busca de exemplares, não leitura integral.",
+  "fontes": [
+    {
+      "obra": "Eshelman 1991",
+      "url_editor": "https://www.sciencedirect.com/science/chapter/bookseries/pii/B9780080506845500203",
+      "localizador": "Resumo e metadados do editor",
+      "evidencia": "Editor identifica capítulo de 1991 nas páginas 265–283 e resume CHC como combinação de seleção conservadora e recombinação disruptiva. O resumo não descreve a reinicialização cataclísmica. A descrição do próprio Eshelman em patente posterior é evidência complementar; não equivale à leitura integral do capítulo.",
+      "url_complementar": "https://patents.justia.com/patent/5390283",
+      "diagnostico": "Atribuição geral e metadados corroborados; comparação detalhada com o capítulo original permanece parcial."
+    },
+    {
+      "obra": "Holland 1975",
+      "url_editor_reedicao": "https://doi.org/10.7551/mitpress/1090.001.0001",
+      "url_biblioteca": "https://www.si.edu/object/adaptation-natural-and-artificial-systems-introductory-analysis-applications-biology-control-and%3Asiris_sil_63236",
+      "localizador": "Descrição editorial de edição de 1992; catálogo da Smithsonian para edição de 1975",
+      "evidencia": "Editora descreve obra como fundacional para algoritmos genéticos. Catálogo confirma edição de 1975. A edição citada não foi lida diretamente.",
+      "diagnostico": "Atribuição geral compatível, com leitura parcial indireta."
+    },
+    {
+      "obra": "Pagani, Kovaleski e Resende 2015",
+      "url_editor": "https://doi.org/10.1007/s11192-015-1744-x",
+      "localizador": "Resumo do editor consultado anteriormente; ver afirmacoes_fontes_metodo_lote53.json",
+      "evidencia": "Resumo identifica a proposta de metodologia de seleção e classificação; planilha local fundamenta a declaração sobre uso parcial.",
+      "diagnostico": "Nome e autoria compatíveis com o resumo; artigo integral não consultado."
+    }
+  ],
+  "limites": "Busca pelo nome dos três autores nos arquivos locais não localizou PDF correspondente; busca externa mostrou descrições e catálogos, sem disponibilizar as edições integrais verificadas. Não inferir leitura integral ou ausência de qualquer exemplar no Drive. Não foram feitas alterações no Word."
+}

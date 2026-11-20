@@ -1,0 +1,72 @@
+[
+  {
+    "som": "Windows Background.wav",
+    "inicio_s": 0.0415,
+    "fim_s": 1.331,
+    "inicio_8k": 332,
+    "correlacao_prefixo": 0.9992853698398166,
+    "subcorrelacoes": [
+      0.9996550311986373,
+      0.9995033906224504,
+      0.9986967173666425,
+      0.1505389589751751
+    ],
+    "confirmado": true
+  },
+  {
+    "som": "Windows Background.wav",
+    "inicio_s": 374.245375,
+    "fim_s": 375.534875,
+    "inicio_8k": 2993963,
+    "correlacao_prefixo": 0.9975420136340208,
+    "subcorrelacoes": [
+      0.9988880613405018,
+      0.9983760837042943,
+      0.9953932868553109,
+      0.16582089738226793
+    ],
+    "confirmado": true
+  },
+  {
+    "som": "Windows Background.wav",
+    "inicio_s": 706.887875,
+    "fim_s": 708.177375,
+    "inicio_8k": 5655103,
+    "correlacao_prefixo": 0.947669753685117,
+    "subcorrelacoes": [
+      0.9337916857379501,
+      0.9564726870954678,
+      0.9557688712985701,
+      0.8958089199356316
+    ],
+    "confirmado": true
+  },
+  {
+    "som": "Windows Background.wav",
+    "inicio_s": 711.997625,
+    "fim_s": 713.287125,
+    "inicio_8k": 5695981,
+    "correlacao_prefixo": 0.9513501749209886,
+    "subcorrelacoes": [
+      0.95465434681821,
+      0.9717222711615834,
+      0.932921457297498,
+      0.6913713973447797
+    ],
+    "confirmado": true
+  },
+  {
+    "som": "Windows Background.wav",
+    "inicio_s": 1165.396375,
+    "fim_s": 1166.685875,
+    "inicio_8k": 9323171,
+    "correlacao_prefixo": 0.9976804680633968,
+    "subcorrelacoes": [
+      0.9988046027705725,
+      0.9985907146338469,
+      0.9956454271110139,
+      0.9959532856368416
+    ],
+    "confirmado": true
+  }
+]

@@ -1,0 +1,253 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "27c480d8971b56f353db3dc9fc5eea70a30fda031e66da75d3be47969314dcc5",
+  "entradas": [
+    {
+      "arquivo": "Scripts/data/PETR4_close com factor_2000-2020_com data.csv",
+      "sha256": "0ce4b6d1f2382c318771322dba12994e7a011774e7de364731f398f195183916",
+      "confere_manifesto": true
+    },
+    {
+      "arquivo": "Scripts/data/PETR4_close com factor_2000-2020.txt",
+      "sha256": "21dd7de17b388ff7431428ae4af0ac2b4e1471ef16b5fc151f1ccd3e7f26ed78",
+      "confere_manifesto": true
+    },
+    {
+      "arquivo": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/predictions/previsoes_dm.csv",
+      "sha256": "0dd4007600d58047913f2c10ba8ce4f3801e5ee37f4c0e759bc46d2bff070d5e",
+      "confere_manifesto": true
+    },
+    {
+      "arquivo": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/metrics/metricas_teste_completo.csv",
+      "sha256": "0287d72397c949a404f03a4879d6ade5e0b1300b8213be7864416d3a6b562a4c",
+      "confere_manifesto": true
+    },
+    {
+      "arquivo": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/metrics/metricas_janela_dm.csv",
+      "sha256": "c878a3c34c7a3e5af03d846e42252302d0aef0b075671ece4b096dc5d3812e4e",
+      "confere_manifesto": true
+    },
+    {
+      "arquivo": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/predictions/esn_test_full.csv",
+      "sha256": "fc23196da14a4b5b879a6de133b2aa850f60433b528e1a36f8ac1b33206b33af",
+      "confere_manifesto": true
+    },
+    {
+      "arquivo": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/predictions/gru_test_full.csv",
+      "sha256": "e2f85dffee1d8e67f2f6ff9600c812726ee492d67a5f0bf2c5beae61be19bfac",
+      "confere_manifesto": true
+    },
+    {
+      "arquivo": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/predictions/lstm_test_full.csv",
+      "sha256": "582b79f4cfa0582cf6ee6a8b900fc6676dd9d4eb0af1d3796021105cf8c2aff1",
+      "confere_manifesto": true
+    }
+  ],
+  "diferenca_maxima_csv_txt": 1.021405182655144e-14,
+  "estatisticas": {
+    "media": 13.277474771828103,
+    "desvio_padrao_amostral": 7.114989517316588,
+    "minimo": 2.47749056011047,
+    "maximo": 34.5479835551678,
+    "assimetria_momento": 0.21616267752713988,
+    "curtose_excesso_momento": -0.8201573623463401
+  },
+  "estatisticas_confere_tabela2": true,
+  "datas": {
+    "n": 5198,
+    "primeira": "2000-01-03",
+    "ultima": "2020-12-30",
+    "unicas": true,
+    "crescentes": true
+  },
+  "blocos": [
+    {
+      "nome": "treino",
+      "inicio_indice": 1,
+      "fim_indice": 2600,
+      "n": 2600,
+      "inicio": "2000-01-03",
+      "fim": "2010-07-01"
+    },
+    {
+      "nome": "validacao",
+      "inicio_indice": 2601,
+      "fim_indice": 3899,
+      "n": 1299,
+      "inicio": "2010-07-02",
+      "fim": "2015-09-28"
+    },
+    {
+      "nome": "teste",
+      "inicio_indice": 3900,
+      "fim_indice": 5198,
+      "n": 1299,
+      "inicio": "2015-09-29",
+      "fim": "2020-12-30"
+    }
+  ],
+  "manifest": {
+    "arquivo": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/execution_manifest.json",
+    "sha256": "97c3b31d44a5fc763e584f5913c13884b98fe2c1e6273ef34994cc258414452d",
+    "seed_registrada": 20260926
+  },
+  "metricas_recalculadas": [
+    {
+      "janela": "completa",
+      "modelo": "ESN",
+      "n": 1299,
+      "inicio": "2015-09-29",
+      "fim": "2020-12-30",
+      "calculado": {
+        "MAE": 0.3286539027526045,
+        "MSE": 0.24826767076042797,
+        "RMSE": 0.49826465935326775,
+        "MAPE_percent": 2.2668043066817374,
+        "R2": 0.9939961808626188
+      },
+      "diferenca_para_registro": {
+        "MAE": 4.996003610813204e-16,
+        "MSE": -2.7755575615628914e-17,
+        "RMSE": -2.7755575615628914e-16,
+        "MAPE_percent": 7.549516567451064e-15,
+        "R2": -2.220446049250313e-16
+      }
+    },
+    {
+      "janela": "completa",
+      "modelo": "GRU",
+      "n": 1299,
+      "inicio": "2015-09-29",
+      "fim": "2020-12-30",
+      "calculado": {
+        "MAE": 0.41788848870742706,
+        "MSE": 0.35073128798559117,
+        "RMSE": 0.5922257069611139,
+        "MAPE_percent": 2.750893258016527,
+        "R2": 0.991518318867549
+      },
+      "diferenca_para_registro": {
+        "MAE": 5.551115123125783e-17,
+        "MSE": -8.326672684688674e-16,
+        "RMSE": -1.1102230246251565e-15,
+        "MAPE_percent": -3.1086244689504383e-15,
+        "R2": 0.0
+      }
+    },
+    {
+      "janela": "completa",
+      "modelo": "LSTM",
+      "n": 1299,
+      "inicio": "2015-09-29",
+      "fim": "2020-12-30",
+      "calculado": {
+        "MAE": 0.4664037932158762,
+        "MSE": 0.4033086879002186,
+        "RMSE": 0.6350658925656602,
+        "MAPE_percent": 3.2234249903943164,
+        "R2": 0.9902468476412137
+      },
+      "diferenca_para_registro": {
+        "MAE": -7.771561172376096e-16,
+        "MSE": -3.885780586188048e-16,
+        "RMSE": 1.1102230246251565e-16,
+        "MAPE_percent": -3.552713678800501e-15,
+        "R2": -2.220446049250313e-16
+      }
+    },
+    {
+      "janela": "comum",
+      "modelo": "ESN",
+      "n": 1298,
+      "inicio": "2015-09-30",
+      "fim": "2020-12-30",
+      "calculado": {
+        "MAE": 0.3288500124552542,
+        "MSE": 0.2484547095437537,
+        "RMSE": 0.4984523142124567,
+        "MAPE_percent": 2.2675088597659223,
+        "R2": 0.9939834640204543
+      },
+      "diferenca_para_registro": {
+        "MAE": 1.6653345369377348e-16,
+        "MSE": -3.0531133177191805e-16,
+        "RMSE": -2.7755575615628914e-16,
+        "MAPE_percent": 2.220446049250313e-15,
+        "R2": 3.3306690738754696e-16
+      }
+    },
+    {
+      "janela": "comum",
+      "modelo": "GRU",
+      "n": 1298,
+      "inicio": "2015-09-30",
+      "fim": "2020-12-30",
+      "calculado": {
+        "MAE": 0.418175291762921,
+        "MSE": 0.3509998937443501,
+        "RMSE": 0.5924524400695385,
+        "MAPE_percent": 2.7523712401226748,
+        "R2": 0.9915002476974272
+      },
+      "diferenca_para_registro": {
+        "MAE": 0.0,
+        "MSE": -8.881784197001252e-16,
+        "RMSE": -5.551115123125783e-16,
+        "MAPE_percent": -5.329070518200751e-15,
+        "R2": 2.220446049250313e-16
+      }
+    },
+    {
+      "janela": "comum",
+      "modelo": "LSTM",
+      "n": 1298,
+      "inicio": "2015-09-30",
+      "fim": "2020-12-30",
+      "calculado": {
+        "MAE": 0.4666122610094461,
+        "MSE": 0.4035898636434334,
+        "RMSE": 0.6352872292462941,
+        "MAPE_percent": 3.22315541808769,
+        "R2": 0.9902267381445509
+      },
+      "diferenca_para_registro": {
+        "MAE": -9.43689570931383e-16,
+        "MSE": -6.106226635438361e-16,
+        "RMSE": 1.1102230246251565e-16,
+        "MAPE_percent": 0.0,
+        "R2": -1.1102230246251565e-16
+      }
+    }
+  ],
+  "copias_drive": [
+    {
+      "arquivo": "reports/fontes_drive_20261029/PETR4_drive.txt",
+      "sha256": "3d3137b98bf44957a151f4e83f078d673e8d9c6127515a3a997ba712f31586e3",
+      "identico_em_bytes": false,
+      "n": 5198,
+      "maior_diferenca_numerica": 0.0
+    },
+    {
+      "arquivo": "reports/fontes_drive_20261029/PETR4_drive_com_data.csv",
+      "sha256": "74bad63f83356cb5976ef4b29750586e425b96f6371417d681c2eddfa45df760",
+      "identico_em_bytes": false,
+      "n": 5198,
+      "maior_diferenca_numerica": 0.0
+    }
+  ],
+  "scripts_de_preparacao": [
+    {
+      "arquivo": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/scripts/01_prepare_data.R",
+      "sha256": "60d7ec2f810a2a261c96dc739be92d11b4a2a316982ee70b8318eae5354cc9ab",
+      "atual_identico_ao_arquivado": true
+    },
+    {
+      "arquivo": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/scripts/common_controlled.R",
+      "sha256": "5d4acaa645894dd9ce4723bc06dcc895834d83944dc7f86edb47cc19ab86eed9",
+      "atual_identico_ao_arquivado": true
+    }
+  ],
+  "metodo": "Leitura dos arquivos preservados e cálculo independente de estatísticas/erros com a biblioteca padrão Python. Nenhum modelo, GA, teste DM ou exportação original foi executado ou alterado.",
+  "limites": "Não reconstrói ajuste corporativo, não transfere números entre a rodada controlada e as45execuções históricas e não prova que a cópia atual de cada script produziu toda execução histórica. Os testes de significância DM não foram recalculados. O hash de uma cópia diferente não é declarado idêntico apenas porque os valores numéricos coincidem."
+}

@@ -1,0 +1,56 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_antes": "a5c3346495a63cd685209a9539258872cac941afef89660568d02c518922bc32",
+  "sha256_rascunho_apos_edicao": "efbeaaef151b099f07e92a54fbd0140a2ab9ef0c6b04035a40ec053fced46f5d",
+  "afirmacoes": [
+    {
+      "referencia": "Aria e Cuccurullo (2017)",
+      "localizacao": "3.8.3, descrição do bibliometrix",
+      "diagnostico": "Condizente com o resumo e a seção 4, p. 963, da publicação; biblioNetwork e coocorrências descritos nas p. 968–969. Conferência dirigida, não leitura integral.",
+      "fonte": "https://arquivos-producao.ufopa.edu.br/arquivos/202319207961ac761891c0c27aad4249/Aria__Cuccurullo_2017_Bibliometrix.pdf"
+    },
+    {
+      "referencia": "Aria et al. (2026)",
+      "localizacao": "3.8.3, Biblioshiny",
+      "diagnostico": "A descrição da interface é apoiada pelo resumo do artigo e pelo relato de um dos autores; exame focal, não leitura integral.",
+      "fonte": "https://lucadaniello.github.io/blog/biblioshiny-saas/"
+    },
+    {
+      "afirmacao": "Uso do bibliometrix 5.5.0, biblioNetwork e validação do carregador",
+      "diagnostico": "Convergência entre código de análise, DESCRIPTION local e relatório de validação; o carregador foi chamado como função em R, não há alegação de uso da interface gráfica."
+    },
+    {
+      "afirmacao": "Figuras 2 a 4 e metadados de Duttilo",
+      "diagnostico": "O JSON e a coleção RDS histórica identificam D11 com ano 2023 e sem palavras-chave; a referência atual usa 2024. Figuras 2 e 3 usam palavras-chave, figura 4 usa títulos; os scripts dessas análises não usam o ano como variável. A coleção antiga não foi modificada e o texto registra a diferença."
+    }
+  ],
+  "arquivos_locais": [
+    {
+      "caminho": "Scripts/analisar_bibliometria_reconstruida.R",
+      "sha256": "63f016ea7f71028004373943f5b637ca8b8bd6c516f8297cbddd3a01fe5e43aa"
+    },
+    {
+      "caminho": "reports/bibliometria_reconstrucao/base_reconstruida.json",
+      "sha256": "1415a3f6f582cd4899fa01de18bfe9a467f4c0bd0895f7828097dc4264fc2170"
+    },
+    {
+      "caminho": "reports/bibliometria_reconstrucao/colecao_bibliometrix.rds",
+      "sha256": "cd61bad8cdfbaf0e8e551ce5c359593b1a0c33974ff6cae4170b5f0c1eeaba65"
+    },
+    {
+      "caminho": "reports/bibliometria_reconstrucao/validacao_bibliometrix.json",
+      "sha256": "a9af161afc4e1e596a84ed83112b73a5dff97ddc6892e68dde19552438748bcd"
+    },
+    {
+      "caminho": "Scripts/results/bibliometria_ambiente/R-library/bibliometrix/DESCRIPTION",
+      "sha256": "5ba4ab05d24b2b0a2033a146dd45828817a33d71b161c5bc22b69ed6f8df730b"
+    }
+  ],
+  "texto_antes": "Foram preservadas as informações das versões locais consultadas e as ressalvas sobre preprints ou outras versões. Contagens de citações recebidas e listas completas de referências citadas não foram reconstruídas; por esse motivo, não foram produzidos rankings de impacto ou redes de cocitação.",
+  "texto_depois": "Foram preservadas as informações das versões locais consultadas e as ressalvas sobre preprints ou outras versões. Contagens de citações recebidas e listas completas de referências citadas não foram reconstruídas; por esse motivo, não foram produzidos rankings de impacto ou redes de cocitação. No arquivo histórico processado, a tese de Duttilo consta com ano 2023, enquanto a referência foi atualizada para 2024 conforme a versão consultada. As Figuras 2 a 4 usam palavras-chave ou títulos e não dependem desse ano.",
+  "limites": "Não foi refeita a análise bibliométrica, nem comprovada a identidade visual a partir do script neste lote. As citações do trecho foram examinadas no escopo descrito, sem selo de originalidade.",
+  "estado": "validado_em_rascunho_nao_promovido",
+  "sha256_rascunho_apos_exportacao": "bdb37cc278346de7b0da09ea09e349acec749b46d2614609b5afa5216b3efd88",
+  "verificacao_visual": "Páginas PDF 51 e 52 inspecionadas, 74 idênticas ao lote27; 76 páginas; 45 verificações sem falhas. Itálico de preprints restaurado."
+}

@@ -1,0 +1,3753 @@
+
+[PÁGINA PDF 1]
+Vol.:(0123456789)1 3
+Archives of Computational Methods in Engineering (2023) 30:4401–4448 
+https://doi.org/10.1007/s11831-023-09942-9
+SURVEY ARTICLE
+A Comprehensive Survey on Higher Order Neural Networks 
+and Evolutionary Optimization Learning Algorithms in Financial Time 
+Series Forecasting
+Sudersan Behera1 · Sarat Chandra Nayak2  · A. V. S. Pavan Kumar1
+Received: 27 February 2023 / Accepted: 5 May 2023 / Published online: 23 May 2023 
+© The Author(s) under exclusive licence to International Center for Numerical Methods in Engineering (CIMNE) 2023
+Abstract
+The financial market volatility has been a focus of study for experts over past decades. While stockbrokers and investors 
+expect reliable projections of future stock indices, it instead displays unpredictable, complicated, and nonlinear reactions 
+which paves path towards designing accurate prediction mechanisms for approximate stock market behaviour. Many com-
+putational intelligence methods have been used in the field of economic forecasting alongside more conventional methods. 
+Yet, a trustworthy forecasting depends heavily on the correct selection of an efficient model and optimum set of model 
+hyperparameters. In this regard, artificial neural networks (ANNs) specifically higher-order neural networks (HONNs) have 
+shown notable performance in modelling the chaotic behaviour of financial data and predicting future data. Improved preci-
+sion and nonlinear decision boundaries are two benefits of using HONN. They can store more data, map features beautifully 
+with weights that are configurable on a single layer, learn quickly, and even tackle complex real-world situations. Besides, 
+evolutionary optimization algorithms (EOA) are widely employed for adjusting HONN parameters thus, enhancing their 
+generalization capability. HONNs are trained with several flavours of evolutionary learning algorithms to discover optimal 
+solutions for various real-world complex engineering problems. The purpose of this article is to explore HONN and EOA 
+based financial forecasts from the last two decades and see how well these forecasts performed in terms of making accurate 
+and reliable financial predictions. We conducted a rigorous survey on state-of-the-art HONN and EOA based methods used 
+for financial forecasting collected from reliable and reputed sources, analysed their applicability and performability, identi-
+fied their strength and limitations, and suggested few constructive criticisms. Findings of this study may assist researchers 
+of this field in adopting such forecasting methods appropriately.
+1 Introduction
+Everything that can be banked, invested in the stock market, 
+or transformed into digital currency is considered part of the 
+financial market. Moreover, the stock market's traces have 
+come to represent many financial characteristics; therefore, 
+this development has had a profound effect on the economy. 
+The term “trading” refers to the practise of purchasing and 
+selling financial products such as stocks, equities, commod-
+ities, futures, etc. Due to the unpredictable nature of the 
+stock market, investors are exposed to a potentially disas-
+trous environment in which to put their money. If you're an 
+investor, you need to do your homework before making any 
+commitments. Researchers, brokers, investors, and financial 
+institutions are all interested in developing methodologies 
+for accurate stock market prediction because of the stock 
+market’s notoriously erratic and unpredictable nature. By 
+extrapolating the current stock price and anticipated stock 
+movement, analysts may estimate what the market will look 
+like in the future and the dangers that come with it. A stock 
+market trend is the general upward or downward price move-
+ment of a stock. It is quite challenging to mine the securi-
+ties market trend due to the market’s intensive nonlinearity, 
+high uncleanness, and non-stationary behaviour. As a result 
+ * Sarat Chandra Nayak 
+ saratnayak234@gmail.com; saratnayak234@yonsei.ac.kr
+ Sudersan Behera 
+ sudersan.behera@giet.edu
+ A. V. S. Pavan Kumar 
+ avspavankumar@giet.edu
+1 Department of Computer Science and Engineering, GIET 
+University, Gunupur, Odisha, India
+2 Department of Computer Science, Yonsei University, Seoul, 
+Republic of Korea
+
+[PÁGINA PDF 2]
+4402 S. Behera et al.
+1 3
+of the seemingly random nature of the securities market, it 
+has become an intriguing topic for stock analysts and sci-
+entists to investigate the underlying causes of this phenom-
+enon. Investor sentiment, political decisions, the state of the 
+economy, and the price of commodities all have a profound 
+impact on the behaviour of the securities market. As a result, 
+all investors and their dependents can benefit from a suf-
+ficient effort to uncover the underlying dynamics of stock 
+information for accurate prediction.
+As a result, conducting research in the field of financial 
+marketing is frequently a difficult task. Both qualitative and 
+quantitative data, such as company profiles, price indexes, 
+volume, etc., are included in the fundamental analysis. Arti-
+ficial intelligence, machine learning, data mining, opinion 
+mining, deep learning, and tweet analysis have all been 
+extensively used for stock market forecasting. Concerns 
+about feature selection and proper parameter tuning also 
+arise when making use of such a computational approach to 
+forecasting. Models of artificial neural networks (ANNs), 
+including multilayer perceptron (MLP), multiple linear 
+regression (MLR),support vector regression (SVR) [1 , 2], 
+recurrent neural network (RNN) [ 3, 4], convolution neural 
+network (CNN) [5], high dimensional neural networks [6 ], 
+and other deep learning (DL) [7] methods, arose because of 
+a need to automate the solution of practical problems, such 
+as stock prediction, using computational intelligence [8 ]. It 
+has been observed from a number of research viewpoints 
+that ANNs occupy a very excellent niche in a number of 
+cutting-edge research subfields, and the advent of HONNs 
+has led to a dramatic rise in the reliability of predictions 
+and the precision of classifications. Researchers lean toward 
+HONNs because of their unique properties, such as large 
+memory capacities, fast computation speeds, easy input–out-
+put mapping, and quick learning times. Meanwhile, evolu-
+tionary algorithms like genetic algorithm (GA) [9], particle 
+swarm optimization (PSO) [10], monarch butterfly optimi-
+zation (MBO) [11, 12], [13], teaching–learning based opti-
+mization (TLBO) [14, 15],follow the leader (FTL), cuckoo 
+search (CS) [16], harmony search (HS) [17, 18], honey bees 
+mating optimization (HBMO), artificial bees colony (ABC) 
+[19, 20], firefly algorithm (FFA) [21], fireworks algorithm 
+(FWA) [22], grey wolf optimization (GWO) [23, 24], gravi-
+tational search algorithm (GSA) [25], ant colony optimi-
+zation (ACO),chemical reaction optimization (CRO) [ 26], 
+black hole optimization (BHO) [27], immune algorithm 
+(IA), differential evolution (DE), plant grow optimization 
+(PGO), genetic network programming (GNP) [28], bat 
+algorithm (BA) and social spider optimization (SSO) [29], 
+covariance matrix adaptation evolutionary strategy (CMA-
+CS) [30], Accelerated gray Wolf Optimization (AGWO) [31] 
+and others are meant to automate the problem-solving skills 
+of nature. Recently, the concept of combining ANN with 
+an evolutionary algorithm has been expanding at a rapid 
+rate. Many other angles on the hybridization concept have 
+been investigated. These include weight training, parameter 
+tuning, architectural design, feature selection, learning rate 
+optimization, ANN structure optimization, etc.
+This examination has a dual purpose. An in-depth 
+examination of HONNs’ potential for economic forecast-
+ing is the first step. The second objective is to demonstrate 
+how efficient evolutionary algorithms are at hybridization, 
+with the best possible response being sought in the area 
+of economic prediction through the use of these algo-
+rithms. We test the predictive abilities of HONN and its 
+variants on a number of different financial time series. We 
+opted for HONNs because of their numerous advantages 
+over conventional ANNs when applied to predicting the 
+future values of financial time series. Some of the advan-
+tages of HONNs are: faster learning ability [32], stronger 
+approximation capability, larger storage, and higher fault 
+tolerance capability [33], lower computational complexity 
+[34], lower computation overhead, faster convergence [35], 
+improved prediction accuracy [36], nonlinear decision 
+boundaries, therefore offering a better classification capa-
+bility [37], equipped with one or no hidden layer, good 
+generalization ability, good non-linear mapping capabili-
+ties, and being highly adaptable in nature.
+EOAs, on the other hand, have the best characteristics 
+that overcome limitations of conventional learning strate-
+gies, such as slow convergence and being struck into local 
+minima, so we found they are better suited than traditional 
+learning methods for training ANNs to predict the finan-
+cial time series. Some of the well-known characteristics are 
+fast convergence, parallelism, being able to find the global 
+optima, necessitating a lesser number of adjustable param-
+eters [33], being more robust with fewer tunable parameters 
+and having good approximation capability [38], being intui-
+tive, having ease of implementation, and having the ability to 
+effectively solve highly nonlinear mixed integer optimization 
+problems that are typical of complex engineering systems 
+[39]. Some other advantages of EOAs are that they are capa-
+ble of solving both single and multi-objective optimization 
+problems, they do not strike in local minima, they are easy to 
+use, they are capable enough to perform global search, they 
+have greater exploration and exploitation capabilities, they 
+can capture the non-linearity in time series data, they have 
+a high ability to determine both optimal and hyper-optimal 
+parameters of the network model, etc.
+As a result, it would be wise to conduct a comprehensive 
+survey in order to fulfil the aforementioned prerequisites. 
+Two research-based questions are addressed in this survey 
+to achieve these aims (RBQs).
+Research based query1 (RBQ1): How accurate are 
+HONNs at predicting financial time series?
+
+[PÁGINA PDF 3]
+4403
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+Research based query2 (RBQ2): How good are evolution-
+ary algorithms when it comes to teaching ANNs to make 
+accurate financial time series predictions?
+With a specific application to financial market forecasting 
+in mind, this research provides a systematic framework for 
+investigating HONNs and various evolutionary optimiza -
+tion strategies. Figure  1 provides a schematic summary of 
+the whole study. In the portions of this survey devoted to 
+each subset, possible answers to the formulated RBQs are 
+discussed.
+1.1  Motivation
+One of the most promising areas of study in the scientific 
+world is artificial neural networks. Recently, a number of 
+studies have been conducted by researchers on the appli-
+cations of ANNs and DL techniques in various domains, 
+including cryptocurrency prediction [40], stock prediction 
+[28, 41, 42], exchange rate prediction [42, 43], crude oil 
+[42, 44], quaternionic domain [6 ], image processing [45], 
+inventory management [46], estimation of virtual power 
+plants [47], time series forecasting [48], spectrum sensing 
+[49–51], routing [49], airways disorder illness [52], and solar 
+energy forecasting [53]. While numerous studies have shown 
+success using ANNs like MLP for classification and predic-
+tion, the model has been shown to have drawbacks like local 
+minima, sluggish convergence, and excessive computation 
+time. Researchers have shown interest in HONNs [54] to 
+get around these shortcomings of MLP. HONN has been 
+employed in many prediction and classification issues due 
+to its many advantageous characteristics, such as its short 
+learning time, good representation of input space, and great 
+learning skills that require less memory in terms of loads 
+and nodes. HONN have a number of appealing character -
+istics, including quick learning, a large store capacity, fault 
+tolerance, and superior mapping. Because of the higher-
+order expressions with which it is associated, HONN is now 
+capable of providing superior nonlinear boundaries and high 
+classification accuracy compared to conventional linear neu-
+rons. Evolutionary optimization, on the other hand, is a more 
+complex strategy. Optimization entails looking for the best 
+possible way to achieve a desired goal. Changes to input sig-
+nals, fine-tuning of device or simulation model parameters, 
+and iterative mathematical exploration are only a few of the 
+numerous activities involved in the optimization process. 
+Metaheuristic algorithms, of which evolutionary algorithms 
+are a subset, may be further classified into two subsets: those 
+that use a population-based approach and those that use a 
+single population.
+Additionally, we may state that evolutionary algorithms 
+are metaheuristics that rely on a population. An abundance 
+of metaheuristic algorithms [55] draws ideas from natural 
+systems. Further, many optimization issues may be effec-
+tively resolved by using evolutionary algorithms. Here, we 
+undertake a comprehensive literature review of HONN-
+based financial time series forecasting. The primary reasons 
+we chose HONNs for this specific survey are their high qual-
+ity and reliability. Our selection of an evolutionary-based 
+optimization technique stems in large part from our inter -
+est in investigating the efficacy of various EOAs in training 
+HONNs across several dimensions. Various research studies 
+have proven financial prediction using evolutionary comput-
+ing. Advances in evolutionary computation and hybridiza-
+tion of evolutionary approaches with ANNs especially with 
+Fig. 1  Organisation of our 
+article
+
+
+[PÁGINA PDF 4]
+4404 S. Behera et al.
+1 3
+HONNs for financial market forecasting require complete 
+research. In this article, we give a broad overview with 
+HONNs as the main focus. We talk about the different ways 
+that evolutionary computation has been used to predict 
+index values, crude oil prices, gold prices, cryptocurren-
+cies, exchange rates, and stock trends, among other things.
+1.2  Search Criteria
+Our hope is that this overview will be comprehensive 
+enough to include HONN applications in economic fore-
+casting. We used an innovative search strategy to compile 
+a significant number of published publications that were 
+most related to our survey’s primary purpose, allowing 
+us to perform a credible study. Using search terms like 
+“financial market prediction + sigma-pi neural network 
+(SPNN)”, “stock market prediction + pi-sigma neural net-
+work (PSNN)”, “stock market prediction + functional link 
+artificial neural network(FLANN)”, “stock market predic-
+tion + recurrent neural network (RNN)”, “financial time 
+series forecasting + Jordan SPNN”, “stock market predic-
+tion + single layer neural network (SLNN)”, “financial 
+time series prediction + single layer feed forward network 
+(SLFN)” ‘evolutionary algorithm + stock market prediction”, 
+“EOA + financial time series prediction”, “financial time 
+series forecasting + HONN + EOA”, “Metaheuristic based 
+optimization + financial time series forecasting”, “finan-
+cial time series forecasting + second order neural network 
+(SONN)”, “financial time series forecasting + condensed 
+polynomial neural network (CPNN)”, financial time series 
+forecasting + echo state network (ESN) etc. we compiled 
+some of the articles from Google Scholar, where some of 
+the articles are downloaded. To make sure the most recent 
+developments could be categorised together, we gathered all 
+the articles published between 2007 and 2023 against our 
+search criteria and then we filtered them to find out the most 
+relevant articles which are suitable for our survey. Figure  2 
+presents a pie chart which displays the volume of articles 
+collected year wise which are most relevant as far as our 
+survey is concerned.
+After segregating all the collected articles year wise, we 
+thoroughly categorized them publisher wise and Fig.  3 con-
+tains a bar chart which presents publisher wise volume of 
+articles collected.
+1.3  Existing Survey
+According to a review of HONN conducted by [54], different 
+implementations of HONN are used for tasks as diverse as 
+prediction, classification, optimization, and function approx-
+imation. However, the financial prediction arena ignores 
+HONN’s most important uses. They also found that some 
+evolutionary algorithms are combined with few variants 
+of HONN to boost the hybrid model’s efficiency. A com -
+prehensive study of PSNN [56] was conducted, document-
+ing the network’s efficacy in a wide range of applications, 
+including function approximation, temperature forecasting, 
+categorization, and prediction. The results of their investi-
+gation reveal that PSNN and JPSNN, a variation of PSNN, 
+play key roles in a variety of contexts. Similarly, a compre-
+hensive survey only on PSNN for time series prediction was 
+conducted in [57]. The present survey focuses heavily on the 
+categorization aspect, and only a few HONN versions are 
+employed. There is still a need to learn how HONN might 
+help with financial forecasts. On the other hand, other schol-
+ars have undertaken surveys on EOAs, but they are focused 
+Fig. 2  Year wise most relevant 
+number of articles collected 
+as far as our search criteria 
+concerned
+
+
+[PÁGINA PDF 5]
+4405
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+on certain fields such as newly proposed EOAs [ 58, 59], 
+function optimisation [59], hyper-parameters optimization 
+[60], intelligent system development [61], phase equilibrium 
+thermodynamic calculations [62], bioinformatics [63], algo-
+rithmic trading [64], classification [65], prediction, and so 
+on. However, little emphasis has been placed on the useful-
+ness of EOAs in the prediction of financial time series. There 
+was also no survey that focused on the combined effect of 
+EOAs and HONNs on financial time series forecasting. In 
+this study, we mainly concentrated on the effective applica-
+tions of HONN, especially in financial time series forecast-
+ing. On the other hand, various evolutionary algorithms have 
+been investigated in order to accumulate the effective con-
+tributions of EOA in hybridization with ANNs, especially 
+HONNs for time series prediction.
+2  Higher Order Neural Network (HONN)
+Normally an HONN contains zero or one hidden layer and 
+one changeable weight. HONN variations and operation 
+methods vary. Some do summation and then multiplication, 
+while others do the opposite. HONN quickly learns non-
+linearity due to a single layer of teachable loads. Higher 
+words boost the HONN’s representational power in solving 
+complicated problems and information capacity. HONNs are 
+excellent for researchers due to their simple structure and 
+high computing ability.
+2.1  Variants of Higher Order Neural Network
+Considering the presence or absence of hidden layer, 
+order of operations, input signal expansions etc. HONN 
+got different variants. Some of the well known HONNs are 
+PSNN, SPNN, JSPNN, FLANN, RPNN, DRPNN, SONN, 
+SLFN, ELM, CPNN, ESN, SMNM, RBFN, FLN and name 
+a few. Due to simple structure, it is easy to get a variant 
+of any HONN for better results. Some of the frequent use 
+HONN models are briefly covered in this section.
+2.1.1  Pi‑Sigma Neural Network (PSNN)
+A PSNN has three layers. Between the input and middle 
+layers is a weight set. The intermediate layer is a concealed 
+unit that performs summing, although its load is unity 
+[54]. Calculation layer calculates model output. Weighted 
+inputs are connected to the hidden layer, which performs 
+summing, and the result passes to the output layer’s prod-
+uct unit. Only one adjustable hidden layer reduces this 
+network’s learning time. This network’s product unit gives 
+higher order capabilities and stronger nonlinear separa-
+bility through exploration without exponential growth of 
+weights. Figure  4 depicts the basic layout of a PSNN for 
+prediction.
+The product of the weighted input signal between the ith 
+input unit and the jth hidden unit is the output of the jth 
+summation unit, as shown in Eq.  1.
+(1)Yjh =
+N/uni2211.s1
+i=1
+wij × xi
+Fig. 3  Publisher wise number of 
+articles collected for our survey
+
+
+[PÁGINA PDF 6]
+4406 S. Behera et al.
+1 3
+By simplifying, we can write this as N = the sum of 
+all input signals, xi = the signal from ith input unit, and 
+wij = the weight between ith and jth hidden units. Here’s 
+how to get the network's output from the information pro-
+duced by the jth hidden unit:
+In Eq.  2, k represents the network degree and /u1D70E is an 
+activation function. The network degree is the number 
+of hidden nodes. The contribution of PSNN in financial 
+time series forecasting is discovered in the literature [14, 
+19, 21, 32, 33, 35, 37, 66–90] according to our survey. 
+Similarly, the application of different PSNN variants in 
+financial time series can be found in literature [91– 96].
+2.1.2  Sigma–Pi Neural Network (SPNN)
+A SPNN employs the sum of input signal components [67]. 
+In the initial step of computing, it multiplies weighted 
+input signals, and the results pass through a summation 
+unit and activation function. Figure  5 shows the SPNN 
+model architecture for prediction. The use of SPNN in 
+financial time series prediction may be found in the lit-
+erature [67, 97]. Similarly, the use of a modified version 
+of SPNN in financial time series can be observed in [98].
+Equation  3 is used to determine the output at the jth unit 
+of the hidden layer.
+(2)Opsnn = /u1D70E
+/parenleft.s4k/uni220F.s1
+j=1
+yjh
+/parenright.s4
+The output layer’s final value can be computed using the 
+following equation: Eq. 4.
+2.1.3  Jordan Pi–Sigma Neural Network (JPSNN)
+In a JPSNN, RNN capabilities are superimposed on a PSNN's 
+structure. It features a unique output-to-input feedback connec-
+tion [54]. Together, the time-series data and this setup regulate 
+the network's temporal dynamics and make for a more consist-
+ent and efficient flow of operations. The architecture of the 
+JSPNN model is depicted in Fig. 6. A significant application of 
+JPSNN in financial time series forecasting is found in literature 
+[67, 99–101].
+If at time T the signal at each of the kth external inputs is 
+zk , the load is wij , the hidden layer summing unit is hk(T + 1) , 
+and the output is Y(T + 1) at time T + 1 . After that, we can use 
+Eq.  5 to determine the JSPNN's final result:
+(3)Yjh =
+n/uni220F.s1
+i=1
+wij × xi
+(4)Ospnn = /u1D70E
+/parenleft.s4k/uni2211.s1
+j=1
+yjh
+/parenright.s4
+(5)Y(T)=
+⎧
+⎪
+⎨
+⎪⎩
+zk(T) if ,1 ≤ k ≤ N
+1 if , k = N + 1
+ok(T) if , k = N + 2
+⎫
+⎪
+⎬
+⎪⎭
+Fig. 4  Pi-sigma neural network 
+architecture for prediction
+
+
+[PÁGINA PDF 7]
+4407
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+2.1.4  Functional Link Artificial Neural Network (FLANN)
+FLANN does not have a hidden layer like other HONNs 
+[67]. Due to no hidden layers, it's straightforward and 
+delivers a decent approximation. The input signal is 
+extended through a functional expansion unit. This 
+approach creates a hyper plane with improved discrimi -
+nation. To map time series irregularities, extra functions 
+can be added to the function expansion unit, and in some 
+circumstances, specialised functions should be employed 
+to obtain the desired result. It's flat and computation-
+ally efficient [102]. Figure  7 shows the FLANN model 
+architecture for prediction. In our survey, contribution of 
+FLANN in financial time series forecasting is found in 
+literature [17, 34, 69, 70, 79, 80, 84, 103–114]. Similar 
+to FLANN, the following FLANN variations have been 
+applied to forecasting financial time series: HFLANN 
+[115–117], CFLANN [55, 118, 119], LFLANN [55, 118, 
+Fig. 5  Sigma-pi neural network 
+architecture for prediction
+Fig. 6  Jordon pi-sigma neural 
+network architecture for predic-
+tion
+
+
+[PÁGINA PDF 8]
+4408 S. Behera et al.
+1 3
+119], PFLANN [55], TFLANN [55, 118, 119], LeFLANN 
+[118, 119], TPFLANN [120], FFLANN [121], RCE-
+FLANN [122, 123], RFLANN [124], and FLN [125– 128].
+The expansion of input signal depends on the type 
+function used in the functional expansion unit and it var -
+ies function to function. If xi is the input signal and Leg-
+endre polynomial is used for the input expansion then the 
+input pattern expansion can be given as follows:
+In addition to this the higher order polynomial can be 
+calculated as follows:
+The output of the network can be written as follows:
+and the error can be calculated as follows:
+here y/uni2032.var is the predicted output, y is the actual output, /u1D70E is 
+an activation function ej is the error of the network, wj(0) 
+represents the bias at  jth iteration for the input X(t1).
+Z1(xi)=x ,Z 2(xi)= 3x2 − 1
+2 ,Z 3(xi)= 5x3 − 3x
+2 ,Z 4(xi)= 35x4 − 30x2 + 3
+8
+(6)Zn+1 (xi)= 1
+n + 1 ∗ ((2n+ 1)∗ xi ∗ ZN (xi)− nZn−1 (xi))
+(7)y�(t1)=/u1D70E
+/parenleft.s4t− 1/uni2211.s1
+k= t− p
+/parenleft.s4N/uni2211.s1
+m=1
+(zk(m)× wj
+k(m)
+/parenright.s4
++ wj(0)
+/parenright.s4
+(8)ej(t1)=y(t 1)−y �(t1)
+2.1.5  Radial Basis Function Network (RBFN)
+RBFN is an efficient tool for both pattern recognition and func-
+tion approximation [129]. It consists of two layers of network 
+nodes. The weighted sum of the hidden units is then sent to 
+the output unit, which calculates the output using the same 
+radial activation function as is used in the computation of the 
+hidden units [129]. It is a subclass of HONN in which the acti-
+vation of hidden neurons is determined by the offset between 
+the input and prototype vectors, denoted by ri and pi is the 
+input space patterns, or vectors, form clusters, and pi stands for 
+their centres. Between the middle layer (the hidden layer) and 
+the output layer, a weighted connection was set up. The model 
+architecture of the RBFN is shown in Fig. 8. Interested reader 
+may find the application of RBFN in financial time series pre-
+diction in literature [130–133]. Similarly, applications of some 
+modified RBFN in financial time series research can be found 
+in literature [134] and [135].
+The output of the RBFN is the linear combination of hidden 
+unit signal and given in Eq. (9) as follows:
+(9)yt = f (c,x)=
+N/uni2211.s1
+i=1
+cihi(x)
+Fig. 7  Functional link artificial neural network architecture for prediction
+
+[PÁGINA PDF 9]
+4409
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+where pi is the centre of a region and ri is the width of recep-
+tive field.
+2.1.6  Single Multiplicative Neuron (SMN)
+For function approximation and other purposes, the artificial 
+single multiplicative neuron model was first developed by 
+Yadav et al. [136]. Using Vapnik’s statistical learning theory, 
+they examine the model's capabilities, including its nonlinear 
+generalisation, input–output mapping, and noise tolerance. For 
+tasks that normally need a multi-layered neural network, the 
+single-neuron model should be adequate. The model and the 
+(10)hi(x)=exp (−
+m/uni2211.s1
+k=1
+(xk − pik)2∕r2
+ik
+learning algorithm are provided in the following sections. The 
+model architecture of SMN is shown in Fig. 9.
+For i ∈ n , the network's input, weight, and bias are denoted 
+by xi, wi and bi respectively. As seen in Eq. (11), the operator 
+performs a multiplicative action.
+The output function is the logsig function defined as 
+Eq. (12)
+The learning algorithm is used to minimize the error 
+between the output of the model and actual values. The 
+(11)Ω=
+n/uni220F.s1
+i
+(wixi + bi)
+(12)y = 1
+1 + e−Ω
+Fig. 8  Radial basis function net-
+work architecture for prediction
+Fig. 9  Single Multiplicative 
+Neuron model for prediction
+
+
+[PÁGINA PDF 10]
+4410 S. Behera et al.
+1 3
+application of SMN model in financial time series forecast-
+ing can be found in [137, 138].
+2.2  Applicability of HONNs for Financial Time Series 
+Forecasting
+Our study concentrates on the exceptional performance of 
+HONNs in financial market prediction, although they are 
+also used in many other financial applications. HONNs and 
+their variants are heavily used for financial time series pre-
+dictions because of their low complexity structure, faster 
+learning properties, and better generalization power, and 
+they are found to be more reliable and stable models than 
+other ANN models. To invest profits, traders may need a reli-
+able prediction strategy and clear laws. Building a reliable 
+prediction model is tough due to non-linearity and market 
+volatility. A reliable financial prediction model is error-toler-
+ant, capable of capturing market anomalies and uncertainty, 
+and produces high accuracy by minimizing or completely 
+eliminating mistakes. Another trait of a reliable prediction 
+model is its capacity to adapt to any training procedure in 
+order to get the best outcome.
+Nayak et al. [66] used a PSNN to forecast stock index 
+prices and found it outperformed other network models with 
+an APE of 0.853. Dash et al. [32] proposed a PSNN to fore-
+cast GOLD/INR and GOLD/AED exchange rates, which 
+outperforms in computing time, RMSE, MSE, and MAE. 
+For instance, Nayak [33] used a PSNN to make accurate 
+predictions about the future cost of crude oil. The experi-
+mental findings demonstrated the superiority of the model 
+created by Nayak et al. [35] to forecast the index of the HIS, 
+DJIA, BSE, and KOSPI stock markets using a PSNN. Dash 
+et al. [68] presented a PSNN and found it increased the 
+accuracy of their predictions for the USD/CHF and USD/
+JPY exchange rates. The PSNN model given by Nayak et al. 
+[21] was found to be a stable, reliable classifier with better 
+accuracy. Yilmaz et al. [37] used a pi-sigma artificial neural 
+network (PS-ANN) to predict the AUST and TEC time series 
+data, and their results were superior to those of other meth-
+ods. Patnaik et al. [74] used a PSNN to predict fuzzy time 
+series data and found that it was more accurate than others. 
+Nayak and Naik [75] proposed a PSNN classifier that was 
+stable, dependable, and accurate. Kanungo et al. [76] found 
+the PSNN to be a more accurate classifier. Dash [71] pre-
+sented a PSNN to anticipate USD/CAD/CHF/JPY exchange 
+rates. The proposed model outperformed and predicted well. 
+Using a PSNN, Patnaik et al. [72] were able to predict the 
+fuzzy time series. Sahoo et al. [73] used a PSNN to predict 
+BSE stock prices and found good performance for tiny out-
+liers. Nayak et al. [14] used a PSNN classifier and found it 
+converged faster and was accurate. Nayak et al. [94] used 
+AE-PSNN, an adaptive evolutionary higher-order network, 
+to anticipate stock market index fluctuations. The model 
+outperformed standard HONNs. Nayak et al. [78] found 
+that PSNN was a good way to classify real-time series data 
+from the UCI machine learning repository. Samir et al. [83] 
+proposed an improved pi-sigma neural network (IPSNN) 
+for non-linear system control, which enhanced outcomes. 
+Nayak et al. [77] suggested a statistically significant PSNN 
+classifier. Bas et al. [81] used a PSNN to get higher-order 
+fuzzy time series that could predict fuzzy relationships and 
+improve performance. Nayak et al. [86] suggested a PSNN 
+model and evaluated it with five benchmark datasets from 
+the UCI machine learning library. For all datasets, the new 
+model did better than the others and gave IRIS datasets the 
+most accurate results. Nie & Deng [87] improved function 
+optimization using a PSNN.
+Dash et al. [88] built a PSNN model and tested it on two 
+datasets, gold/INR and gold/AED, to predict future gold 
+prices. The model outperformed MSE, RMSE, and MAE. 
+Husaini et al. [82, 89] presented a PSNN higher-order neural 
+network to predict Batu Pahat suburban temperatures. PSNN 
+consistently beats MLP in all metrics. Sahu et al. [90] used a 
+PSNN to predict foreign exchange rates more accurately than 
+previous models. A. J. Hussain et al. [95] tested a recurrent 
+pi-sigma neural network (RPSN) on two physical time series 
+datasets. The suggested model outperforms the feed-forward 
+pi–sigma network by 1.85 dB. Akram et al. [96] used three 
+physical time series datasets to test an improved PSNN with 
+error feedback (PSNN-EF). They found that it could be used 
+instead of PSNN and JSPNN. Yilmaz et al. [85] tested a pi-
+sigma artificial neural network (PS-ANN) using AUST and 
+TEC time series. The suggested model outperformed exist-
+ing ANN models. Akdeniz et al. [92] showed an ARMA-
+type pi-sigma artificial neural network (ARMATPS-ANN) 
+for non-linear time series forecasting and got better RMSE 
+and MAPE values. Sahu et al. [55] suggested four FLANN 
+variants—PFLANN, CFLANN, LFLANN, and TFLANN—
+to estimate foreign exchange rates. PFLANN and LFLANN 
+performed better in most situations.
+Nayak [67] constructed hybrid models using four 
+HONNs—PSNN, SPNN, JPSNN, and FLANN to forecast 
+exchange rates. Das et al. [102] used FLANN to forecast 
+stock closing prices and found that accuracy increased with 
+reduced computational cost. Sahu et al. [ 34] used a FLANN 
+(FLN) to predict the time series of currency exchange rates 
+and found that it converged faster and did better. Das et al. 
+[118] used a poly-FLANN to predict the BSE, NASDAQ, 
+FTSE, TAIEX, and DJIA daily closing indices. After explor-
+ing and adding VDPs to the supplied data, they applied 
+functional expansion. The suggested model beats the MLP 
+and FLANN models. Husaini et al. [79, 80] developed two 
+HONNs, PSNN and FLANN, for physical time series fore-
+casting. Both models outperformed other models for all 
+datasets. Naik et al. [103] used a FLANN classifier to solve 
+the classification challenge, with successful results. Nayak 
+
+[PÁGINA PDF 11]
+4411
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+and Ansari [69] used PSNN and FLANN for stock forecast-
+ing with good results. Sahu et al. [91] used a PSNN as a base 
+model and constructed three evolving HONNs (EHONN) to 
+model and predict five exchange rate time series. The sug-
+gested model is a promising exchange rate forecasting tool. 
+Waheeb and Ghazali [ 120] made a genetically optimized 
+tensor product functional link neural network (TPFLNN) for 
+predicting daily exchange rates. It had a structure with less 
+complexity, learned faster, and was more accurate than other 
+FLNNs and traditional models. Soumya et al. [17] trained a 
+FLANN for stock market prediction and found that it outper-
+formed the other two models in execution time and RMSE.
+Anish and Majhi [ 121] created a feedback FLANN 
+(FFLANN) with recursive least squares (RLS) training for 
+stock market prediction. It was more accurate than previous 
+models. Rout et al. [122, 123] used a recurrent computation-
+ally efficient FLANN (RCE-FLANN) to forecast S&P 500 
+and NIKKEI 225 stock prices and got good results. Nayak 
+et al. [125] developed an artificial functional link network 
+(ACFLN) model to predict stock prices and tested it on the 
+DJIA, BSE, TAIEX, FTSE, and NASDAQ. Finally, the sug-
+gested model handled stock market risks better than FLANN 
+and standard models. The FLANN model was built for clas-
+sification purposes by B. Naik et al. [104–106] and evaluated 
+on many datasets retrieved from the UCI machine learning 
+library. They compared the suggested model to others and 
+found it to be superior. Nayak et al. [124] found that for pre-
+dicting financial time series, recurrent FLANN (RFLANN) 
+did better than other models. Yogi et al. [107] found FLANN 
+channel equalization acceptable for non-linear and non-fad-
+ing channels. Dehuri [108] used FLANN to classify prob-
+lems and found that it overcomes non-linearity better than 
+SVM, FLANN, and RBF. The FLANN model predicts the 
+Indian stock market better than other models, according 
+to Mahapatra et al. [109]. Nayak et al. [127] developed an 
+FLN for stock market forecasting that outperformed previ-
+ous models. Patra et al. [112] made a FLANN for predict-
+ing stock prices that was faster to compute than MLP. R. 
+Rodriguez [139] used a Multiscale Legendre neural network 
+(MLNN) with multi-scale stationary wavelet decomposition 
+to make better predictions about anchovies every month. 
+Nayak et al. [119] introduced four variations of FLANN for 
+stock index forecasting: TFLANN, LeFLANN, CFLANN, 
+and LFLANN. LeFLANN worked well on all data sets 
+because it was simple to use and had a flat structure.
+Nayak [126] used four polynomials for FLN input sig-
+nal expansion to predict bitcoin closing prices. TFLN and 
+LeFLN, which captured Bitcoin's hidden dynamics, had the 
+greatest forecast accuracy. Nanda et al. [110] employed two 
+robust single-layer ANNs, a FLANN and a Lagurre ANN 
+(LaNN), to anticipate the foreign exchange rate. FLANN 
+and LaNN outperformed ARIMA, although LaNN had supe-
+rior accuracy and convergence. Nanda and Tripathy [111] 
+presented a polynomial neural network (PNN), Legendre 
+neural network (LeNN), and FLANN to forecast opencast 
+mining equipment noise. FLANN outperformed. Luo et al. 
+[36] used a deep feed forward neural network (DFNN) to 
+estimate the amount of electricity used more accurately 
+and in less time. Dash [140] made DECPNN, a model that 
+uses both DE and Chebyshev polynomial neural networks 
+(CPNN) to predict stock prices. Dash and Dash [ 141] found 
+that Legendre neural networks (LENNs) forecast financial 
+time series with greater APE, accuracy, and computational 
+complexity without losing speed. Nayak & Misra [38] used 
+an Extreme Learning Machine with Chemical Reaction 
+Optimization (ELCRO) to forecast stock volatility. The 
+ELCRO is statistically significant, has better MAPE and 
+ARV values, and converges more quickly. DRPNN was 
+developed by Ghazali et al. [141– 145] to forecast stationary 
+and non-stationary financial time series. They showed that 
+DRPNN has faster convergence, less network complexity, 
+less prediction error, faster learning, and better performance 
+to catch the chaotic signal movement and make more profit.
+Wang et al. [146] created a general regression neural net-
+work (GRNN) and trained it using a form of PSO to fore-
+cast the TWD/USD and RMB exchange rates. With minimal 
+elapsed time, GRNN predicted better. Sudeepa et al. [147] 
+used an optimized extreme learning machine and a cluster-
+based modified crow search algorithm (CMCSA) to forecast 
+a random nonlinear stock market price (OELM). Intrinsic 
+Time-Scale Decomposition (ITD) was used to decompose 
+non-stationary stock price data into proper rotation com-
+ponents (PRCs) and a residual component. OLEM out-
+performed other competitive models. Zhang and Hu [148] 
+used an ultra-high-frequency sigmoid and cosine artificial 
+higher-order neural network (UGC-HONN) to predict the 
+USD/CAD and USD/AUD exchange rates. This network 
+was better than other HONNs by 2.8546 to 3.4185%. Egrio-
+glu et al. [149] tested a median pi-artificial neural network 
+(MdPNN) on the CIF-2016 dataset. MdPNN outperforms 
+MdANN, TrANN, and PSNN in predicting, according to 
+experiments. Nayak & Misra [150] introduced a condensed 
+polynomial neural network (CPNN) to anticipate stock clos-
+ing price indices. CPNN beats previous approaches and is a 
+promising forecasting model. Nayak et al. [151, 152] used 
+a second-order neural network (ASONN) as a HONN to 
+predict financial time series and found it outperformed other 
+state-of-the-art models. Husaini et al. [101] used a Jordan pi-
+sigma neural network (JPSNN) to find that JPSNN was bet-
+ter at predicting the temperature than both MLP and PSNN.
+For classification tasks, Nayak et al. [99, 100] suggested 
+a JPSNN and found that it improved accuracy. Kumar [131] 
+suggested three models for predicting intraday stock prices: 
+an RBFNN, a time-delayed NN (TDNN), and a BPNN. The 
+BPNN worked best, he found. When Prasetyo et al. [153] 
+used a HONN to predict how much oil would be produced 
+
+[PÁGINA PDF 12]
+4412 S. Behera et al.
+1 3
+in the future; they found that the suggested HONN gave 
+more accurate results. Dash [154] used a recurrent Leg-
+endre polynomial neural network (RLPNN) to predict the 
+FOREX market and found that it was more accurate than 
+other prediction models. After implementing two HONNs 
+models, including FLNN and PSNN, for chaotic time series 
+forecasting, Waheeb and Ghazali [84] found that both mod-
+els outperformed several other commonly used hybrids. 
+Wang et al. [ 155] have used an echo state network (ESN) 
+for time series prediction and found that the model has bet-
+ter accuracy for small sample sets than others because of 
+its powerful nonlinear capacity and effective and uncom-
+plicated training techniques. For optimization purposes, 
+Zapata [156] used an ESN and found a significant decrease 
+in computing expenses. Chouikhi et al. [157 ] employed an 
+ESN for forecasting time series and discovered that the gen-
+eralization has improved. Ghazali et al. [158] used a ridge 
+polynomial neural network (RPNN) for multi-step-ahead 
+financial time series prediction and found that RPNN yields 
+greater profit returns with faster convergence than FLANN, 
+PSNN, and MLP due to its rapid learning and strong map-
+ping capabilities.
+For financial time series forecasting, Waheeb et al. [159 ] 
+propose a dynamic RPNN (DRPNN) with a lyapunov func-
+tion, and they find that DRPNN performs well in terms 
+of RMSE and learning speed. Jumeily et al. [160] used a 
+DRPNN for predicting physical time series and said that 
+it performed better than MLP, FLANN, and PSNN. Much 
+focus has been placed on the network's output by Waheeb 
+et al. [161], who created a recurrent probabilistic neural 
+network (RPNN) with feedback (RPNN-EF) and analyzed 
+its efficacy on four univariate time series. In the end, they 
+discovered that, compared to RPNN, RMSE improved by an 
+average of 23.34% when using RPNN-EF and by an aver -
+age of 10.74% when using DRPNN-EF. Arsian and Yolcu 
+[97] used a hybrid SPNN (HSPNN) to predict intuitively 
+fuzzy time series, and it did a better job than other cutting-
+edge prediction methods. Akbilgic et al. [132] successfully 
+utilized a hybrid RBFNN for financial research. For chaotic 
+time series prediction. Aladag et al. [ 162] used a multipli -
+cative seasonal neural network (MSANN) with excellent 
+results. Dehuri and Cho [117] showed that HFLNN was a 
+better way to classify things than FLNN and RBFN. Decai 
+et al. [163] used a robust echo-state network (RESN) to pre-
+dict chaotic time series and found that it could handle outli-
+ers and give good results. The work of Zhong et al. [164], 
+who used a double-reservoir echo state network (DRESN) 
+for multi-regime time series prediction, shows that the sug-
+gested model works and does a better job than the standard 
+models.
+Egrioglu et al. [165] suggested a recurrent multiplica-
+tive neuron model ANN (RMNM-ANN) for non-linear time 
+series forecasting and showed that it outperformed other 
+models. By using a Legendre neural network (LeNN), Nanda 
+et al. [166] were able to improve upon previous regres-
+sion models for forecasting air quality. Xiong et al. [134] 
+made a fully complex-valued radial basis function neural 
+network (FCRBFNN) as a possible way to predict interval 
+time series. The forecasting performance has increased, as 
+noted by Bas [167], who suggested a multiplicative neuron 
+model artificial neural network (MNM-ANN) for financial 
+time series forecasting. Yolcu et al. [138] developed a sin-
+gle MNM-ANN with an autoregressive coefficient (AC-S-
+MNM) for time series modeling, and they found that this 
+model outperformed all others by a wide margin. Zhao and 
+Yang [137] created a single multiplicative neuron model 
+(SMNM) for financial forecasting. They later proved that 
+their SMNM worked and was reliable. Das et al. [168], who 
+claim that extreme learning machines (ELMs) are well-
+suited for a model predicting the next day’s stock closing 
+price, have proposed ELMs for financial prediction. Dehuri 
+and Cho [115] developed a hybrid FLANN for classification 
+tasks and discovered that the HFLANN outperformed the 
+RBFN and FLANN and readily handled the non-linearity 
+present in classification challenges. For fuzzy time series 
+forecasting, Egrioglu et al. [19] used a PS-ANN with suc-
+cessful outcomes. Mili and Hamdi [116] found that a hybrid 
+version of the FLANN (HFLANN) did a better job of clas-
+sification than the FLANN. To improve upon the perfor -
+mance of existing models for fuzzy time series forecasting, 
+Kocak et al. [93] suggested an ARMA-type pi-sigma ANN 
+(ARMATPS-ANN). When Rather et al. [169] integrated 
+RNN, ES, and ARMA to produce HPM for stock return pre-
+diction, they discovered excellent prediction performance 
+had been obtained and the proposed model outperformed 
+the RNN model.
+The use of a feed-forward neural network (FNN) 
+improved the accuracy of currency exchange rate forecasts 
+by Worasucheep et al. [170]. Majhi et al. [129] made a 
+multiobjective evolutionary algorithm based on RBFN and 
+found that it did a better job of predicting stock prices than 
+traditional RBF. Nayak and Misra [171] used a neuro-fuzzy 
+hybrid network (CRO-NFN) based on chemical reaction 
+optimization to predict stock prices at market close. Smith 
+and Jin [3 ] used an evolutionary multi-objective creation 
+of recurrent neural network ensembles to make predictions 
+about time series and found that RNN did better than other 
+models. To forecast the closing price and volatility of five 
+major stock indices, Dash et al. [130] used a hybrid learning 
+framework to train two single hidden layers feed forward 
+neural networks (SLFNs), i.e., RBFs, and a low complexity 
+functional link artificial neural network (CEFLANN). After 
+evaluating both models, they concluded that CEFLANN 
+was superior to RBF. When using the FLANN classifier 
+that Dash et al. [114] described, there have been reports of 
+improved accuracy for inconsistent datasets. Shrivastava and 
+
+[PÁGINA PDF 13]
+4413
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+Verma [135] made a cascaded SOM-RBF (CSR) to improve 
+the accuracy of their option price forecasts. To anticipate 
+software failure, Behera et al. [113] used fuzzy logic analy -
+sis and a neural network (FLANN), with positive results. In 
+order to capture the uncertainties in exchange rate data, Sahu 
+et al. [172] presented a multiplicative FLANN (MFLN) for 
+exchange rate forecasting. Chang et al. [173] made an evolv-
+ing partly connected neural network (EPCNN) to predict 
+stock price trends and found that it can accurately predict 
+the stock price index for most data. Tang et al. [174] used an 
+evolutionary pruning neural network (EPNN) model to study 
+financial bankruptcy. They found that it was more accurate 
+and faster to converge than MLP and PNN models. Yang & 
+Duan [175] developed an extreme learning machine (ELM) 
+for financial time series prediction. Nayak et al. [176] trained 
+an ANN and pushed it as a good way to predict the volatil-
+ity of the financial market. Nayak et al. [177] came up with 
+the idea of an ANN to improve the accuracy of financial 
+research.
+Chen et al. [178] said that an HNN could be used to pre-
+dict how a river would flow downstream, and their predic -
+tions were right. Cao [179] suggested a FNN model for pre-
+dicting chaotic time series, and the results were excellent. 
+Asadi et al. [180] developed a pre-processed evolutionary 
+Levenberg–Marquardt neural networks (PELMNN) model 
+for stock market prediction using genetic algorithms, feed 
+forward neural networks, data pre-processing, and post-pro-
+cessing concepts. The PELMNN model can handle stock 
+market fluctuations and has good prediction accuracy. Nayak 
+et al. [181] developed a chemical reaction optimization algo-
+rithm-based dendritic neuron model (DNM) for intelligent 
+financial forecasting and found it to be effective. Cascaded 
+adaptive nonlinear functional link networks (CCFLNN) were 
+used by Nayak et al. [182] to model and predict Crude Oil 
+Prices Time Series, and it was discovered that the suggested 
+model was well-suited for forecasting. Using deep reinforce-
+ment learning (DRL) to perform reliable spectrum sensing 
+in the face of SSDF attacks in cognitive radio networks, 
+Paul et al. [50] found improvements over both traditional 
+and SVM-based methods. To improve the robustness of 
+cooperative spectrum sensing against spectrum sensing and 
+data falsification attacks, Paul and Choi [51] proposed an 
+ensemble learning technique based on convolutional neural 
+network (CNN) and deep neural network (DNN) algorithms. 
+Table  1 shows how HONNs and its different versions have 
+been used to make predictions about financial time series.
+2.3  Analytical Discussion
+It is clear from the reviewed literature (from Table  1) that 
+HONN and its variants are widely used in financial pre-
+diction, such as stock index prediction, bitcoin price pre-
+diction, wind energy forecasting, function regularization, 
+classification, electricity consumption, and many more. 
+High accuracy, rapid convergence, and low error rates in 
+financial time series prediction are all hallmarks of HONN 
+and its derivatives. One may see how many HONN varia-
+tions are making useful contributions to financial time series 
+forecasting by looking at the literature. Figure  10 gives a 
+clear picture of the different kinds of HONNs that are used 
+to predict financial time series.
+In contrast to the HONNs, whose weights tend to grow 
+exponentially with network size, the PSNN structure 
+requires fewer weights while still being able to solve the pre-
+diction problem quickly and accurately. It is clear that PSNN 
+[14, 19, 21, 32, 33, 35, 37, 66–69, 71–90] has been used in 
+the vast majority of studies. PSNN has a straightforward 
+structure, a single trainable weight, and a short learning 
+curve, all of which contribute to its widespread popularity. 
+Our research shows that compared to other hybrid models, 
+PSNN performs better in several aspects, including accu-
+racy, training time, steadiness, reliability, capacity to map 
+non-linearity, and convergence. PSNN is also outperform-
+ing some classic predators, including MLP, MLR, and other 
+traditional models. Even PSNN’s offspring, such as JPSNN 
+[67, 98–101], AE-PSNN [94], RPSNN [95], PSNN-EF [96], 
+ARMATPS-ANN [92, 93], EPSNN [91] and MSPSNN [98] 
+are better than more traditional models. FLANN [17, 34, 67, 
+69, 79, 80, 84, 102–114] is a recent development of the pro-
+gress of a higher-order network that has investigated various 
+effective ways to forecast the major complex financial time 
+series. In light of the foregoing, it may be concluded that a 
+FLANN model performs better than its competitors. It yields 
+more reliable predictions, requires less computing time, 
+yields meaningful statistical data, converges more quickly, 
+and produces fewer errors. There was also a noticeable 
+improvement in performance metrics. The FLANN model 
+has also been compared to some of the more common fore-
+casting models, such as the MLP, ARIMA, BPNN, SVM, 
+SVR, BPRBF, and LSE, and found to be superior in terms 
+of error reduction, precision, and speed of convergence, 
+to name a few. Similarly, many variants of FLANN, i.e., 
+HFLANN [115–117], CFLANN [55, 118, 119], LFLANN 
+[55, 118, 119], PFLANN [55], TFLANN [55, 118, 119], 
+LeFLANN [118, 119], TPFLANN [120], FFLANN [121], 
+RCE-FLANN [122, 123], RFLANN [124], FLN [125–128], 
+and MFLN [172], outperformed both FLANN and other tra-
+ditional models in terms of flat network structure, low com-
+plexity, fast learning, nonlinear mapping, generalization, and 
+high accuracy. HONNs’ use of multivariate polynomials, 
+which leads to an explosion of weights, makes them difficult 
+to work with, while RPNN’s use of univariate polynomials 
+[158, 161], which makes it simple, makes it a good choice. 
+Despite RPNN’s ability to increase information, it aids in 
+solving more complex problems with quick learning. The 
+RPNN can incorporate dynamic systems by taking input and 
+
+[PÁGINA PDF 14]
+4414 S. Behera et al.
+1 3
+Table 1  Applicability of HONNs for efficient financial time series prediction
+Author and reference HONN model Application area Observations
+Nayak et al. [66] PSNN Prediction Best APE value achieved, PSNN found superior than oth-
+ers
+Dash et al. [32] PSNN Prediction Good results achieved with less computation time
+Nayak [33] PSNN Prediction Superior to other
+Nayak et al. [35] PSNN Prediction Superior to others
+Dash et al. [68] PSNN Prediction Improved accuracy
+Nayak at el. [21] PSNN Classification Fat, steady, reliable model and better accuracy
+Yılmaz et al. [37] PS-ANN (PSNN) Forecasting Performance is better than other models
+Patnaik et al. [74] PSNN Forecasting Better accuracy over other models
+Nayak and Naik [75] PSNN Classification Steady, reliable and better accuracy
+Kanungo et al. [76] PSNN Classification Better accuracy
+Dash [71] PSNN Prediction Outperformed and found as a promising predictor model
+Patnaik et al. [72] PSNN Forecasting Good results achieved
+Sahoo et al. [73] PSNN Prediction Performance is better in case of small outlier
+Nayak et al. [14] PSNN Classification Faster convergence and high accuracy
+Nayak et al. [94] AE-PSNN Prediction Found to be better than class HONN
+Nayak et al. [78] PSNN Classification Promising performance for classification
+Samir et al. [83] PSNN System control Better results found
+Nayak et al. [77] PSNN Classification Model is Statistically significant
+Chen et al. [178] HNN Forecasting Good results achieved
+Cao [179] FNN Prediction Performed well comparing to another model
+Shrivastava and Verma [135] Cascaded SOM-RBF (CSR) Prediction Better prediction accuracy achieved compare to the deep 
+neural network
+Bas et al. [81] PSNN Prediction Better performance achieved
+Feng et al. [98] MSPSNN Optimization Behaves better than traditional SPSNN
+Nayak et al. [86] PSNN Classification Best result of 96.76310% accuracy than the others
+Nie and Deng [87] PSNN Optimization Better convergence achieved
+Dash et al. [88] PSNN Prediction Better prediction achieved
+Husaini et al. [82] PSNN Forecasting PSNN forecast was fashionably outperformed the MLP in 
+all measuring criteria
+Sahu et al. [90] FLANN Prediction Efficient Prediction than other
+Husaini et al. [89] PSNN Prediction Reasonably better prediction achieved compared to the 
+MLP
+Hussain et al. [95] RPSNN Prediction An average improvement of SNR 1.85 dB found over the 
+FFPSNN
+Akram et al. [96] PSNN-EF Prediction Lower prediction error than other network models
+Yilmaz et al. [85] PS-ANN (PSNN) Forecasting PS-ANN outperformed many ANN models available in the 
+literature
+Arsian and Yolcu [97] Hybrid SPNN Prediction The proposed model outperformed to some other state-of-
+the-art prediction tools
+Akdeniz et al. [92] ARMATPS-ANN Prediction Better RMSE and MAPE values achieved
+Sahu et al. [55] FLANN Variants Prediction PFLANN and LFLANN perform better in most of the 
+cases
+S.C. Nayak [67] HONN Variants Prediction All variants outperformed to traditional models
+Das et al. [102] FLANN Prediction Improved accuracy and less computation time
+Naik et al. [103] FLANN Classification Superior performance than other
+Sahu et al. [34] FLANN prediction Faster convergence, Success over others
+Das et al. [118] Poly-FLANN Prediction Poly-FLANN forecasting model generates lowest MAPE 
+values for all datasets
+Nayak et al. [194] ANN Prediction Lowest MAPE & ARV values
+Worasucheep et al. [170] FNN Forecasting Better forecasting results achieved
+
+[PÁGINA PDF 15]
+4415
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+Table 1  (continued)
+Author and reference HONN model Application area Observations
+Waheeb and Ghazali [120] TPFLANN Prediction Low complexity structure, faster and good accuracy
+Nayak and Ansari [69] PSNN, FLANN Prediction Both the models are found to be significant and improved 
+accuracy
+Sahu et al. [91] EPSNN Prediction Can be a promising forecasting tools for exchange rate 
+forecasting
+Dash et al. [130] RBF, CEFLANN Prediction CEFLANN outperformed all other models
+Soumya et al. [17] FLANN Prediction RMSE value very lea and faster convergence
+Anish and Majhi [121] FFLANN Prediction Produces better accuracy than other models
+Rout et al. [122] RCE-FLANN Prediction Produces satisfactory prediction results
+Nayak et al. [125] ACFLN Prediction Outperformed to FLANN-GA, MLP-GA, MLP-CRO, 
+RBFNN, and others
+Naik et al. [104] FLANN Classification The proposed model is better and outperforms other 
+alternatives
+Naik et al. [105] FLANN Classification An average accuracy of 89.2211% achieved
+Nayak et al. [124] RFLANN Prediction Produces better accuracy than other models
+Rout et al. [123] RCE-FLANN Prediction Superior accuracy achieved
+Naik et al. [106] FLANN Classification The proposed Method performs relatively better than other 
+models
+Sahu et al. [172] MFLN Prediction Quite capable of capturing the uncertainties associated 
+with exchange rate data
+Dehuri et al. [108] FLANN Classification FLANN overcomes the non-linear problems comparing to 
+other models
+Mahapatra et al. [109] FLANN Prediction The proposed model found to be superior to other models
+Nayak et al. [127] FLN Forecasting The performance gain of the proposed model is superior 
+than other models
+Patra et al. [112] FLANN Prediction FLANN is computationally efficient than MLP
+Rodriguez [139] MLNN Forecasting Outperformed to MLP and LNN
+Nayak et al. [119] FLANN variants Prediction With less complex structure, LeFLANN achieved good 
+average performance
+Behera and Behera [196] RPNN Classification Better accuracy achieved
+Nayak et al. [176] ANN Forecasting Efficient model for forecasting the volatile data
+Nayak et al. [177] ANN Prediction Accuracy is improved
+Nayak, [126] FLN Variants Prediction Best forecast accuracies achieved by TFLN and LeFLN
+Nanda et al. [110] FLANN, LaNN Prediction LaNN has better accuracy and high convergence than 
+FLANN
+Nanda & Tripathy [111] FLANN, PNN, LeNN Prediction FLANN model gives better noise prediction than the PPN 
+and LeNN model
+Luo et al. [36] DFNN Prediction Better prediction accuracy with less computation time seen 
+by optimal DFNN
+Dash [140] CPNN Forecasting Excellent results in terms of MAPE and RMSE values
+Dash and Dash [141] LENN Prediction The computational complexity has reduced
+Nayak and Misra [38] SLFN Prediction Statistically Significant, Faster convergence, Superior 
+MAPE and ARV values
+Wang et al. [146] GRNN Prediction Better prediction achieved with low elapsed time
+Sudeepa et al. [147] OELM Prediction Found to be superior model and accuracy improved
+Zhang and Hu [148] UGC-HONN Forecasting UGC-HONN models are 2.8546% to 3.4185% better than 
+other HONNs
+Egrioglu et al. [149] MdPNN Prediction Outperformed to MdANN, TrANN and PSNN
+Nayak and Misra [150] CPNN Prediction Outperformed over other models
+Nayak et al. [152] ASONN Prediction Better forecasting accuracy over other state of the art 
+models
+Nayak et al. [151] ASONN Prediction Better forecasting accuracy over other state of the art 
+models
+
+[PÁGINA PDF 16]
+4416 S. Behera et al.
+1 3
+Table 1  (continued)
+Author and reference HONN model Application area Observations
+Husaini et al. [101] JPSNN Prediction Lower prediction error, JPSNN found to be superior to 
+MLP and PSNN
+Nayak et al. [99] JPSNN Classification Performance is better in case of small outlier
+Nayak et al. [100] JPSNN Classification Better accuracy achieved
+Kumar [131] RBF, TDNN, BPNN Forecasting BPNN achieved higher accuracy
+Nayak et al. [181] DNM Prediction Able to capture the underlying uncertainties coupled with 
+financial data
+Dash et al. [114] FLANN Classification Better accuracy has found for inconsistent datasets
+Lu et al. [128] ESN Prediction Better results found
+Paul et al. [50] DRL spectrum sensing Better results achieved than conventional and Support Vec-
+tor Machine-based approaches
+Prasetyo et al. [153] HONN Prediction Better prediction accuracy
+Husaini et al. [79] PSNN, FLANN Prediction Accuracy improved to 0.707% by PSNN and 0.670% by 
+FLANN
+Husaini et al. [80] PSNN, FLANN Prediction Outperformed in terms of lower error
+Dash [154] RLPNN Prediction Found effective prediction model than others
+Waheeb and Ghazali [84] FLNN, PSNN Forecasting FLNN and PSNN offer good performance than others
+Wang et al. [155] ESN Prediction Reliable prediction and enhance accuracy
+Ghazali et al. [158] RPNN Prediction Fast learning, powerful mapping, fast convergence and 
+higher profits seen
+Ghazali et al. [143] DRPNN Prediction Reduced network complexity, smaller prediction error and 
+faster learning
+Waheeb et al. [161] RPNN-EF Forecasting Outperformed to RPNN and DRPNN
+Waheeb et al. [159] DRPNN Forecasting An average 21.45% of improvement in RMSE and learning 
+speed
+Ghazali et al. [142] DRPNN Prediction Improvement in the profit return and rapid convergence 
+over others
+Ghazali et al. [144] DRPNN Prediction Improvement in the profit return, and rapid convergence 
+over MLP
+Jumeily et al. [160] DRPNN Prediction DRPNNs produced improved SNR, and superior to others
+Zapata [156] ESN Optimization Larger prediction horizons, computational costs were 
+greatly reduced
+Akbilgic et al. [132] Hybrid RBFNN Forecasting HRBF-NN model is a highly flexible
+Aladag et al. [162] MSAAN Forecasting High forecasting accuracy achieved
+Egrioglu et al. [165] (RMNM-ANN) Forecasting The proposed model produced the most accurate forecasts
+Dehuri and Cho [117] HFLNN Classification Performed well over FLNN & RBFN
+Chouikhi et al. [157] ESN Prediction Simple and powerful network, Generalization has improved
+Tang et al. [174] EPNN Prediction Superior to others in terms of accuracy, convergence speed, 
+etc
+Yang and Duan [175] ELM Prediction Superior performance and competitive computational 
+efficiency
+Behera et al. [113] FLANN Prediction Better results achieved
+Paul and Choi [51] CNN and DNN Joint spectrum sensing Proposed work outperformed the existing works found in 
+the literature
+Decai et al. [163] RESN Prediction RESN found to be robustness to outliers and provides 
+satisfactory prediction accuracy
+Zhong et al. [164] DRESN Prediction DRESN found to be effective in predicting multi-regime 
+time series
+Nanda et al. [166] LeNN Prediction LeNN has good prediction capacity as compared to regres-
+sion models
+Xiong et al. [134] FCRBFNN Forecasting FCRBFNN is a promising alternative model for interval 
+time series forecasting
+Bas [167] MNM-ANN Forecasting Forecasting performance improved
+
+[PÁGINA PDF 17]
+4417
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+output history into account, but this representation is not 
+conducive to a network with feedback loops. But on the con-
+trary, due to the recurrent feedback in a DRPNN [142–144, 
+159, 160], the network outputs are contingent not only on 
+current and past inputs but also on those from outside the 
+system. DRPNN’s memories are capable of overcoming the 
+aforementioned restriction and displaying excellent dynamic 
+performance. Other variants of HONN like EPNN [174], 
+RLPNN [154], MSANN [162], RESN [163], DRESN [164], 
+SMNM [136, 137], AC-S-MNM [138], MNM-ANN [167], 
+RMNM-ANN [165], RNN [3 , 4] and its variants [3 , 146, 
+169], EPCNN [181], ELM [168, 175, 183], OLEM [130, 
+147] and PELMNM [180] are also shown effective and bet-
+ter prediction results than conventional models. RBFN [80, 
+129–132], FCRBFNN [134], SOM-RBF [135] also shows 
+significant improvements in time series forecasting compar-
+ing to other traditional models. In comparison to standard 
+HONNs and ANNs, the error rate and accuracy of predic-
+tions made by other hybrid HONNs were significantly better. 
+The success of HONN and its variants in predicting finan-
+cial time series can be inferred from our discussion so far. 
+(RBQ1).
+We also looked at the popularity of HONNs from the 
+perspective of researchers. Figure  11 makes it clear how 
+frequently researchers use HONNs to forecast financial time 
+series.
+We also looked at how academics in other fields test their 
+own models for making predictions by using financial time 
+series datasets. We found several financial data sets that aca-
+demics have used to test the performance of the financial 
+prediction and classification. To simplify analysis and pres-
+entation, we classified those datasets. We carefully removed 
+duplicate datasets in each category. Each group’s datasets 
+are given below:
+Stock market data = [BSE, DJIA, NASDAQ, TAIEX, 
+FTSE, HIS, NIKKEI, BSE SENSEX, CNX NIFTY, NIK -
+KEI225, S&P 500, KOSPI, NSE, NIFTY, HIS, IXIC, N100, 
+NSEI, RUT, GDAXI, Russell2000, ICICI Prudential, Birla, 
+TAIFEX, and BIST100], Exchange rate = [GBP/USD, YEN/
+USD, INR/USD, EUR/USD, AUD/USD, GBP/USD, USD/
+AUD, USD/GBP, USD/INR, USD/EUR, USD/JPY, USD/
+CAD, USD/AUD, Gold/INR, Gold/AED, UK/EU, US/EU, 
+JP/EU, JP/UK, UK/EU, JP/UK, PKR/USD, BDT/USD, 
+CNY/USD, NPR/USD, LKR/USD, USD/CHF, and USD/
+Table 1  (continued)
+Author and reference HONN model Application area Observations
+Yolcu et al. [138] AC-S-MNM Forecasting AC-S-MNM exhibits significantly better performance than 
+other
+Zhao and Yang [137] SMNM Prediction The propose model is found to be efficient and robust
+Das et al. [168] ELM Prediction ELM model can be considered as a suitable tool to predict 
+next day closing price
+Dehuri and Cho [115] HFLANN Classification HFLANN overcomes the nonlinearity problems and out-
+performed to other
+Egrioglu et al. [19] PS-ANN Forecasting Best forecasts results obtained and suggested suitable for 
+multivariate time series
+Mili and Hamdi, [116] HFLANN Classification Faster convergence and better performance than FLANN-
+BP
+Kocak et al. [93] ARMATPS-ANN Forecasting Better forecasting performance achieved
+Rather et al. [169] HPM Prediction Outstanding prediction performance has been obtained
+Nayak et al. [182] CCFLNN Prediction The proposed model is found to be suitable for forecasting
+Asadi et al. [180] PELMNN Prediction Can be considered as a promising alternative for stock 
+market prediction
+Majhi et al. [129] RBFN Prediction Prediction performance superior to that of the conventional 
+RBF
+Nayak and Misra [171] NFN Prediction Significantly better performance than other models
+Ghazali et al. [145] DRPNN Forecasting DRPNN outperforms others due to its extremely nonlinear 
+dynamical nature
+Smith and Jin [3] RNN Prediction Better than other models
+Chang et al. [173] EPCNN Forecasting A promising tool in forecasting of the financial time series 
+data
+Yogi et al. [107] FLANN Channel Equalization The proposed equalizer is found suitable for non-linear and 
+non-fading channels
+Paul et al.[49] SVM Prediction Simulation results show the efficacy of the present work 
+over the conventional approach
+
+[PÁGINA PDF 18]
+4418 S. Behera et al.
+1 3
+Fig. 10  Types of higher-order networks used in financial time series prediction
+Fig. 11  Frequent uses of HONNs by researchers for financial time series prediction
+
+[PÁGINA PDF 19]
+4419
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+YEN], Crude Oil = [crude oil data sets], Stock and electric-
+ity = [S&P 500, NIKKEI 225, and PJM electricity statistics], 
+Stock, Exchange, and Crude Oil = [IBM, USD/EUR, Brent 
+crude oil, NASDAQ, EURO/USD, crude oil, BIT/USD], 
+CIF-2016 data, Traffic data = {Lozi, Tent, SR29-S-402863 
+dataset], AUST & TEC = [AUST & TEC time series 
+data],Stocks and other time series = [Lorenz attractor, AE 
+index, temperature, and sunspot data], Bitcoin = [Current 
+Bitcoin prices], UCI-ML repository = [UCI machine learn-
+ing repository],Physical Time Series = [Relative Humidity, 
+Santa Fe Laser, NO2, CO, SO2, and O3, Evaporation, Wind, 
+and Humidity, and Temperature Data Sets of the Malaysian 
+Meteorological Department (MMD)], Other Financial Time 
+Series = [Mackey–Glass, Henon, Lorenz, S&P 500, Mag-
+netic Levitation, Joint Angles, NARMA time series, Rossler 
+benchmark, Yellow River annual runoff; EEG data; Box-
+Jenkins], Mixed datasets = [UCI machine learning reposi-
+tory and exchange rate data, bankruptcy dataset and distress 
+dataset, Mackey–Glass, star brightness, sunspot data, EUR/
+USD, CB1, CB2, time series data datasets, Temp, Ozone, 
+Gold, Bitcoin, Pima Indians Diabetes Database, Sonar data, 
+Turbofan engine multi-regime time series, and machinery 
+noise data from Mahanadi Coalfields Limited (MCL), Tal-
+cher (Orissa)], Electricity = [Electricity consumption] and 
+FTS data = [Fuzzy time series].
+A variety of financial statistics fall into many categories, 
+as shown in Fig. 12. These datasets are then utilized to make 
+predictions about the future of the financial sector.
+3  Evolutionary Optimization Algorithm 
+(EOA)
+Due to their population-based design and inspiration from 
+natural selection and evolution, evolutionary algorithms are 
+classified as a type of metaheuristic. Researchers frequently 
+employ evolutionary techniques to fine-tune their models, 
+functions, and methodologies in search of the best possible 
+answer to a research question. Numerous researchers have 
+spent a lot of time probing the waters of numerous appli-
+cations of evolutionary optimization techniques, including 
+but not limited to forecasting, classification, optimization, 
+regularisation, training, prediction, etc. In every scenario, 
+evolutionary optimization methods outperform their more 
+conventional counterparts. Error minimization, nonlinearity 
+mapping, accuracy, and other areas have all been proven to 
+benefit from evolutionary approaches. Since they are based 
+on observations of nature, new evolutionary optimization 
+methods are bound to emerge over time. In this study, we 
+have gone over some of the many evolutionary optimiza-
+tion methods that have made useful contributions to the 
+field of monetary time series evaluation. We have reviewed 
+several of the most well-known evolutionary optimization 
+techniques, including GA, PSO, and DE, in this section. We 
+also provided a brief elaboration of a few newly proposed 
+evolutionary metaheuristics, including TLBO, CRO, BHO, 
+JAYA, GWO, and FWA. By reading the academic literature, 
+interested readers can learn more about the remaining EOAs.
+Fig. 12  Data sets used for finan-
+cial time series prediction
+
+
+[PÁGINA PDF 20]
+4420 S. Behera et al.
+1 3
+3.1  Genetic Algorithm (GA)
+Holland invented genetic algorithm in 1975 [9 ], inspired 
+by Darwin’s notion of natural evolution. This algorithm 
+mimics natural selection, where the best parents are cho-
+sen. This algorithm shuffles individual solutions. GA ran-
+domly selects current population members as parents for 
+each generation. Over succeeding generations, the popu-
+lation “evolves” toward an optimal solution. Prospective 
+readers can study articles in literature [36, 66, 70, 94, 100, 
+115, 117– 120, 126, 132, 150– 152, 164, 169, 173, 180, 
+184] to learn about the extensive application of GA in 
+financial time series prediction. Several improved versions 
+of GA, like multi-objective GA (MOGA) [73] and hybrid 
+GA (HGA) [87], have also been suggested and shown to 
+be good at predicting financial time series. GA comprises 
+four phases.
+1. Initial Population: A population of chromosomes starts 
+this process. Each chromosome solves a difficulty. Genes 
+define chromosomes.
+2. Selection: Based on their fitness levels, two sets of chro-
+mosomes (parents) are chosen. Fitter chromosomes are 
+more likely to be passed on to future generations.
+3. Crossover: In a GA algorithm, this operator is the most 
+crucial phase. A crossover point is chosen at random 
+from the genes for each mating pair. The creation of a 
+new organism depends on the transfer of DNA from one 
+set of parents to another. The crossover operator is used 
+to enhance algorithmic exploitation. This probe actually 
+probes the area around a chromosome.
+4. Mutation: Some of the genes in a newly produced off-
+spring can be mutated. Improve exploration with the 
+help of the mutation operator.
+One of the key steps in GA modelling is defining a 
+solution in the form of a chromosome. A chromosome, as 
+defined in GA, a single-point crossover operation, and GA’s 
+mutation procedure is shown below in Fig.  13.
+3.2  Particle Swarm Optimization (PSO)
+One of the most influential intelligent optimization tech-
+niques in swarm intelligence is the PSO algorithm. The 
+PSO technique was proposed and initially developed by 
+Russell C. Eberhart and James Kennedy in the year 1995 
+[10] in order to imitate animal social interactions (e.g., a 
+flock of birds searching for food). This algorithm mimics 
+how members communicate and exchange information. 
+Numerous optimisation problems have been solved using 
+particle swarm optimization, both alone and in conjunction 
+with other current techniques. Through agents, sometimes 
+known as particles, whose trajectories are modified by a 
+stochastic and a deterministic component, this technique 
+searches for the best possible solution. The group’s “best” 
+position and each particle “best” attained position impact 
+it, yet particles move haphazardly overall. For application 
+of PSO in financial time series prediction interested readers 
+Fig. 13  Crossover and mutation 
+operation of genetic algorithm
+
+
+[PÁGINA PDF 21]
+4421
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+may follow articles in literature [70, 78, 107, 131, 134, 138, 
+149, 157, 162, 165, 184–186]. To enhance the performance 
+of PSO, some modified versions of PSO like MPSO [81, 
+92, 93, 97], HMRPSO [141], RWPSO & WLDPSO [ 146], 
+CRPSO [137], and IPSO [76, 108, 187] are also proposed 
+by authors. Standard working principle of PSO is given in 
+the Fig.  14.
+3.3  Differential Evolution (DE)
+DE was proposed by Storn and Price in 1995 [188]. DE uses 
+straightforward formulas to combine current candidate solu-
+tions to create new candidate solutions, maintain a popula-
+tion of candidate solutions, and keep the candidate solution 
+with the highest score or fitness on the optimization task at 
+hand. In this method, the gradient is not required since the 
+optimization issue is viewed as a “black box” that only offers 
+a measure of quality given a candidate solution.
+Various applications of DE in financial time series predic-
+tion are given in the literature [37, 74, 85, 88, 91, 109, 123, 
+140, 167, 178]. The performance of a hybrid DE learning 
+method known as “shuffled DE” (SDE) can be seen in [68]. 
+Figure  15’s flowchart explains the DE algorithm’s funda-
+mental operating concept.
+3.4  Teaching–Learning Based Optimization (TLBO)
+Rao et al. [15] introduced a metaheuristics technique called 
+teaching–learning-based optimization (TLBO). The TLBO 
+algorithm is a population-based method to problem solv -
+ing that replicates the teaching and learning processes in a 
+classroom. TLBO is divided into two phases: the instructor 
+phase and the learner phase. The learner with the highest 
+grade in the population is chosen to be the teacher during 
+the teacher phase. The instructor is in charge of instructing 
+the students and raising the class’s average grade. During 
+the learner phase, each learner chooses a learner at random 
+to interact with. At this stage, the ultimate aim is to raise the 
+class’s mean grade. The above operations are iterated until 
+the halting condition is reached.
+The interested reader might read Zou et al., [189] for 
+a summary of the most current TLBO improvements. 
+Fig. 14  Flowchart of Particle swarm optimization
+Fig. 15  Flow chart of differential evolution
+
+[PÁGINA PDF 22]
+4422 S. Behera et al.
+1 3
+Literature [103] and [14] shows the contribution of TLBO 
+in financial time series prediction. The working principle of 
+TLBO is shown in the Fig.  16.
+3.5  Chemical Reaction Optimization (CRO)
+Alatas [ 26] in 2011 developed CRO algorithm which 
+is persuaded by the guidelines of compound responses. 
+Chemical reaction normally transforms substances from 
+an unsteady state to a steady state. It finds molecules in an 
+unstable state but excessive energy and starts with them. 
+In a chemical system, the total amount of energy is called 
+an enthalpy. All the way through a series of elementary 
+reactions, molecules interact with each other and produce 
+some intermediary chemical products. Finally, they are 
+improved to a state with the least amount of enthalpy to 
+support their existence. Numerous applications of CRO 
+and its variants in financial time series prediction are seen 
+in the literature [38, 70, 72, 77, 90, 113, 114, 124, 125, 
+127, 171, 177, 181, 190, 191], and the performance of a 
+hybrid learning system, i.e., CRO-LMS and CRO-FCM, 
+can be found in [55] and [192], respectively. The flowchart 
+of CRO given in Fig.  17 describes the steps involved in 
+its procedure. The optimization of CRO is given in Eq.  13 
+as follows:
+(13)MinimizeE(n)= 1
+2
+n/uni2211.s1
+k−1
+/parenleft.s1tk − yk
+/parenright.s12
+Fig. 16  The working principle 
+of Teaching Learning Based 
+Optimization
+
+
+[PÁGINA PDF 23]
+4423
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+here E(n) is the error function, ‘ tk’ is the actual output and 
+‘ yk’ is the estimated result.
+3.6  Black Hole Optimization (BHO)
+BHO was introduced by A. Hatamlou in 2013 [27]. It fol-
+lows the guideline of black hole opening peculiarity. A 
+black hole is an enormous star having huge size break -
+downs. As the size of the black hole is immense and it 
+has areas of strength for a power, so any little molecule 
+goes over the limit of the black hole will be swallow in 
+to the opening because of the great gravitational force of 
+the black hole. Black hole’s span is known as the Schwar -
+zschild sweep. The significant property of such range is 
+the speed of getting away from which is equivalent to the 
+speed of light. The Schwarzschild sweep can be composed 
+as follows: assessed by utilizing the condition given in 
+Eq.  14
+where  RBH is the Schwarzschild range, G shows for gravi-
+tational steady,  MBH is the mass of the dark opening; c 
+addresses the speed of light. In our literature, article [99] 
+addresses the application of BHO for efficient financial time 
+series predictions. The flow chart given in Fig. 18 represents 
+the working principle of BHO.
+3.7  JAYA Algorithm
+The JAYA algorithm, a contemporary metaheuristic-based 
+algorithm, combines the characteristics of evolutionary algo-
+rithms in terms of survivability for the fittest principle, as 
+well as Swarm Intelligence, in which the Swarm generally 
+follows the leader during the search for optimal solution. R. 
+Rao [193] presented the JAYA algorithm in 2016 and it has 
+piqued the interest of a wide range of research communities 
+(14)RBH = 2GMBH
+C2
+Fig. 17  Flowchart of chemical 
+reaction optimization
+
+
+[PÁGINA PDF 24]
+4424 S. Behera et al.
+1 3
+due to its amazing characteristics: Its ideas are basic, and 
+it is simple to use. The original search yielded no derived 
+information. It is a parameter less algorithm. It is versatile, 
+adaptable, and comprehensive.
+For each population size k ={ 1, 2, 3, ....,n} and for each 
+iteration i , if n indicate quantity of solutions and m rep -
+resents the quantity of design variables, where each chro-
+mosome is represented by each design variable, then the 
+modified chromosome value given in the Eq.  15 as follows:
+here, Cbest and Cworst are the best value and worst value 
+obtained by the candidate respectively. But q1
+j,i, q2
+j,i are the 
+arbitrary values from {0, 1} . Figure 19 describe the working 
+principle of JAYA algorithm. Implementation of JAYA algo-
+rithm for financial time series prediction is found in litera-
+ture [35].
+3.8  Grey Wolf Optimization (GWO)
+S. Mirjalili et al. first put up the idea for GWO in 2013 [24]. 
+This metaheuristic is a new optimization technology, this 
+algorithm is completely based on hunting practice of grey 
+(15)
+C1
+j,k,i = Cj,k,i + q1j,i(Cj,best,i − /uni007C.x/uni007C.x/uni007C.xCj,k,i
+/uni007C.x/uni007C.x/uni007C.x)−q2 j,i(Cj,worst,i − /uni007C.x/uni007C.x/uni007C.xCj,k,i
+/uni007C.x/uni007C.x/uni007C.x)
+wolves. Here x1 represents the fittest solution (best wolf), 
+the second best is x2 , and the third finest is x3 , whereas /u1D714 
+represents the solution for the rest of the candidates. The 
+flow chart of GWO algorithm is given in Fig.  20 as follows.
+The following are the main phases of grey wolf hunting: 
+1. Tracking, pursuing, and approaching the target.
+2. Pursuing, surrounding, and tormenting the prey until it 
+comes to a halt.
+3. Launch an attack on the prey.
+To create GWO, the social order and hunting behaviour of 
+grey wolves are statistically represented. 
+3.9  Fireworks Algorithm (FWA)
+The fireworks algorithm (FWA) proposed by Tan and Zhu, in 
+2010 [22] is a recently suggested swarm intelligence-based 
+evolutionary algorithm. First, as fireworks, a certain num-
+ber of places in the search space are picked. The fireworks 
+then produce a series of sparks as a result of the explosion 
+process. Following that, the superior solutions from the 
+entire fireworks and sparks are chosen as the fireworks for 
+the following generation to iteratively increase the quality 
+of the solution. It has piqued the curiosity of researchers 
+and showed good performance in many real-world issues 
+by leveraging FWA’s robust global search and information 
+utilisation capabilities. In local space, an explosion can be 
+visualised as a search process. If ki is a firework and the Mi 
+is the amplitude of an explosion, then the number of spacks 
+Ci can be given as follows:
+In Eq. (13), 
+¬
+M indicates the maximum amplitude of the 
+explosion, fmin , fmax are the minimum and maximum objec-
+tive functions respectively between p fireworks, m is the 
+controlling parameters of sparks generate by a firework and 
+/u1D700 is a constant which is used to avoid zero division. To over-
+come the devastating effects of marvellous fireworks, upper 
+and lower bounds are imposed on Ci as follows:
+(16)
+Mi =
+¬
+M . f (ki)−f min + /u1D700
+p∑
+j=1
+(f(kj)− fmin + /u1D700
+(17)
+Ci = m.fmax − f (ki)+/u1D700
+p∑
+j=1
+(f(kmax − f (ki)+ /u1D700
+(18)
+Ci = /braceleft.s1Cmin, if ci < cmin /C max, if ci < cmax∕ ci , otherwise
+Fig. 18  Flowchart of Black hole optimization
+
+[PÁGINA PDF 25]
+4425
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+The location of each spark ki generated by ki is intended 
+by setting z directions arbitrarily and for each dimension 
+‘ t  ’ setting the component kt
+j  . Where 1 <= j <= si and 
+1 <= t <= z.
+The setting of kt
+i  can be calculated in two ways as 
+follows.
+For most sparks, a displacement is added to kt
+i  as 
+follows:
+For keeping up with variety for few explicit sparkles, 
+a blast coefficient in view of Gaussian appropriation is 
+applied to kt
+i as follows:
+(19)Kt
+j = Kt
+i + Ai.rand(−1, 1)
+(20)Kt
+j = Kt
+i .Gaussian(1, 1)
+Another area is planned to the potential space when 
+drops out of the pursuit space as:
+The distance between a location  Ki and another loca-
+tion (L) can be calculated as the sum of Euclidean distance 
+between them as follows:
+An area  xi is chosen for the cutting edge in light of likeli-
+hood esteem as follows:
+(21)Kt
+j = Kt
+min + /uni007C.x/uni007C.x/uni007C.xKt
+j
+/uni007C.x/uni007C.x/uni007C.x%(Kt
+max − Kt
+min)
+(22)Distance (ki)=
+/uni2211.s1
+j∈L
+/uni2016.x/uni2016.x/uni2016.xki − kj
+/uni2016.x/uni2016.x/uni2016.x
+(23)Prob(ki)= Dis tan ce(ki)∑
+j∈L Dis tan ce(kj)
+Fig. 19  The working principle 
+of JAYA Algorithm
+
+
+[PÁGINA PDF 26]
+4426 S. Behera et al.
+1 3
+The working principle of Fireworks algorithm is 
+described by a flowchart given in Fig.  21. Significant FWA 
+applications and effective FWA/HONN hybridization for 
+time series prediction may be discovered in the literature 
+[33, 34].
+4  Hybridization of EOAs and HONNs 
+and Financial Time Series Forecasting
+To increase the prediction accuracy of ANNs, especially 
+HONNs, EOAs are heavily used to regulate their parameters. 
+It was discovered that they were superior to gradient descent 
+learning in several areas, including their capacity for global 
+minima, quick convergence, and flexibility.
+A genetic algorithm (GA) was used by Nayak et al. [66] 
+to find the best PSNN parameters for predicting stock index. 
+Dash et al. [32] used a crow search algorithm (CSA) to train 
+a PSNN to predict the gold/INR and gold/AED exchange 
+rates. When CSA was compared to the PSO and DE algo -
+rithms, CSA did a better job of training the model than the 
+other two. Nayak [33] used the Fireworks algorithm (FWA) 
+to optimize the PSNN’s parameters when trying to predict 
+the price of crude oil. He found that the FWA-based PSNN 
+got to global minima more quickly. Sahu et al. [55] found 
+that when training different kinds of FLANN to predict 
+foreign exchange rates, PFLANN and LFLANN trained by 
+CRO-LMS did better than LMS-FLANN and CRO-FLANN 
+in most cases. This is because the hybrid learning’s faster 
+convergence and search refinement features made the models 
+more accurate. Nayak [67] used GA and PSO, two evolu-
+tionary optimization techniques, to optimize the parameters 
+of four HONNs (PSNN, SPNN, JPSNN, and FLANN) in 
+order to create a number of hybrid models for predicting 
+currency exchange rates. He found that the PSO-HONN and 
+GA-HONN hybrid models did better than other traditional 
+models.
+Das et al. [ 102] made Rao algorithm–based FLANNs 
+(RAFLANNs) hybrid models to predict stock closing 
+prices accurately so they could study how well the algo-
+rithm works. Nayak et al. [35] used the JAYA algorithm 
+to find PSNN’s best parameters so that they could make a 
+hybrid model called JPSNN. This model was used to predict 
+stock indices. Dash et al. [68] used a hybrid learning method 
+Fig. 20  Flowchart of Grey Wolf 
+Optimization algorithm
+
+
+[PÁGINA PDF 27]
+4427
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+known as the Shuffled Differential Evolution algorithm to 
+develop a Pi-Sigma Neural Network-based Predictor Model 
+called PSNN-SDE, which they then applied to the problem 
+of predicting the USD/CHF and USD/JPY exchange rate 
+prices. Nayak et al. [21] made a hybrid classifier called FFA-
+PSNN that is based on the firefly PSNN. Ylmaz et al. [37] 
+used a differential evolution algorithm and a pi-sigma arti-
+ficial neural network to create a hybrid model that can pre-
+dict financial time series for AUST and TEC. To accurately 
+predict the fuzzy time series, Patnaik et al. [74] designed a 
+hybrid model called DE-PSNN, where DE is used to update 
+the optimum parameters of PSNN.
+Using honey bee mating optimization (HBMO) to deter-
+mine PSNN’s best settings, Nayak and Naik [75] created a 
+hybrid model they called HBMO-PSNN to use for classifi-
+cation. Kanungo et al. [76] suggested a better PSO-based 
+PSNN classifier (IPSO-PSNN) for financial data. R. Dash 
+[71] optimized PSNN parameters using the ISFL algorithm 
+to anticipate USD/CAD, USD/CHF, and USD/JPY exchange 
+rates. Patnaik et al. [72] predict fuzzy time series using 
+CRO-PSNN. Sahoo et al. [73] used a PSNN-MOGA hybrid 
+model to predict BSE stock prices. Nayak et al. [14] created 
+a time series data PSNN-TLBO classifier. Nayak et al. [94] 
+trained an adaptable evolutionary PSNN (AE-PSNN) using 
+PSO and GA and compared its performance to GD learn-
+ing. PSO and GA learning beat GD learning. Nayak et al. 
+[78] used PSO to train a PSNN for excellent classification 
+accuracy. Nayak et al. [77] suggested a CRO-based PSNN 
+(CRO-PSNN) as a hybrid classifier for nonlinear classifica-
+tion and compared its performance with GA-PSNN, PSO-
+PSNN, and PSNN. The proposed technique is quick, stable, 
+and dependable and delivers superior classification accuracy. 
+Chen et al. [178] used three algorithms—ACO, ABC, and 
+DE—to find the ideal hybrid neural network (HNN) param-
+eters for downstream river flow forecasting. They discovered 
+that the DE and ACO strategies are best for finding HONN 
+model parameters such as the recession coefficient and initial 
+storage.
+Cao [179] said that feed-forward neural networks (FNNs) 
+could be trained using interactive phase-based optimiza-
+tion (IPBO). Shrivastava and Verma [135] created a hybrid 
+swarm optimization to train a Cascaded SOM-RBF (CSR) 
+model for option price prediction using PGO and ACO. 
+Bas et al. [81] used a modified PSO to find the ideal PSNN 
+values for high-order fuzzy time series forecasting. Nayak 
+et al. [ 86] suggested using a hybrid PSO-GA-based Pi 
+Sigma Neural Network (PSNN) for classification. Nie and 
+Deng [87] trained a PSNN using a hybrid genetic algorithm 
+(HGA) for function optimization. The HGA outperformed 
+the conventional GA. Dash et al. [88] used PSO and DE 
+algorithms to create a PSNN-based gold price predictor. 
+Sahu et al. [90] suggested CRO-FLANN with LMS for for -
+eign currency forecasting. Yılmaz et al. [85] trained DEA-
+PS-ANNs for financial time series forecasting. Arsian and 
+Yolcu [97] used a modified PSO to train a hybrid sigma-pi 
+neural network (HSPNN) for integrated intuitiveistic fuzzy 
+time series prediction. Akdeniz et al. [92] developed an 
+ARMA-type pi–sigma artificial neural network (ARMATPS-
+ANN) for nonlinear time series forecasting using a modified 
+PSO (MPSO) learning method. Sudeepa et al. [147] used 
+cluster-based modified CSA optimized ELM and intrinsic 
+time-scale decomposition to predict stock market prices 
+(ITD-CMCSA-OELM).
+Mili and Hamdi [116] suggested a hybrid FLANN 
+(HFLANN) model for data mining and classification, 
+employing three population-based optimization methods: 
+GA, PSO, and DE. PSO performed well in optimizing the 
+model. Behera et al. [113] suggested a CRO-FLN to enhance 
+software reliability prediction. Akbilgic et al. [132] used a 
+GA to pick the best predictors for a new Hybrid RBF Neural 
+Networks (HRBF-NN) model that could predict the Istan-
+bul Stock Exchange National 100 Index (ISE100) and seven 
+other international stock market indices. Egrioglu et al. [19] 
+came up with the idea of using pi-sigma artificial neural 
+networks trained by artificial bee colonies (ABC) to make 
+intuitive high-order fuzzy time series forecasts. Zhang and 
+Hu [148] created ultra-high-frequency sigmoid and cosine 
+artificial higher-order neural networks (UGC-HONN) for 
+exchange rate forecasting. Das et al. [118] proposed finan-
+cial time series forecasting using a GA-based polynomial 
+Fig. 21  The working principle of Fireworks algorithms
+
+[PÁGINA PDF 28]
+4428 S. Behera et al.
+1 3
+FLANN with virtual data points. Nayak et al. [194, 195] used 
+Rao algorithm-based artificial neural networks (RA-ANN) 
+to predict bitcoin closing prices. Worasucheep et al. [170] 
+used a recent variation of an artificial bee colony, ABCDE, 
+to optimize the weights of a three-layer feedforward neu-
+ral network (FFNN) to anticipate USD/EUR and USD/Yen 
+exchange rates. Waheeb and Ghazali [120] estimate daily 
+exchange rates using a genetically optimized tensor product 
+functional link neural network (GA-TPFLANN). Nayak and 
+Ansari [69] suggested a cooperative optimization algorithm-
+based HONN (COA-HONN) for stock forecasting and com-
+pared it to GA-HONNs and CRO-HONNs. CRO-HONNs 
+excelled. Sahu et al. [91] developed three evolving higher 
+order neural networks (EHONN) and evaluated their per -
+formance on modeling and forecasting five exchange rate 
+time series using a pi-sigma neural network (PSNN) as a 
+base model. The optimal architectures of PSNN are evolved 
+on the fly with three evolutionary learning methods: genetic 
+algorithms (GA), differential evolution (DE), and particle 
+swarm optimization (PSO), forming three hybrid models.
+For the purpose of predicting financial time series, Dash 
+et al. [ 130] suggested a self-adaptive differential harmony 
+search-based optimized extreme learning machine (SADHS-
+OELM). In order to forecast the stock market, Soumya et al. 
+[17] used a FLANN-HS, which is an artificial neural net-
+work based on the principle of harmony search. Anish and 
+Majhi [121] came up with a nonlinear adaptive system that 
+uses feedback fuzzy linear array neural networks (FLANNs) 
+along with recursive least square (RLS) training and factor 
+analysis. An adaptive bioinspired Firefly algorithm (FFA) is 
+used to find the best weights for the proposed model, which 
+is based on the work of Rout et al. [122] on a computa -
+tionally efficient recurrent functional link neural network 
+(RCEFLANN) for time series forecasting. Nayak et al. [125] 
+proposed a functional link network based on CRO (artificial 
+chemical reaction optimization) and dubbed it ACFLN for 
+stock market prediction. For non-linear data categorization, 
+Naik et al. [104] created a self-adaptive harmony search-
+based functional link higher-order artificial neural network 
+(SAHS-FLANN). Naik et al. [105] suggested HBMO-GDL-
+FLANN for categorization. Zhao and Yang [ 137] used a 
+PSO-based single multiplicative neuron model for time 
+series prediction with cooperative random learning particle 
+swarm optimization (CRPSO) to increase PSO performance.
+Chouikhi et al. [157] made an ESN-PSO hybrid model for 
+forecasting time series by using particle swarm optimization 
+(PSO) to optimize echo state network (ESN) parameters in 
+an efficient way. Zhong et al. [164] made a genetic algo-
+rithm (GA)-optimized double-reservoir echo state network 
+(DRESN) for multi-regime time series prediction. Nayak 
+et al. [124] devised an artificial chemical reaction (ACRO) 
+of recurrent functional link networks (ACRRFLN) for 
+stock market prediction, which outperformed two previous 
+methods. GA and PSO also trained the model. CRO learning 
+outperformed the other two. S.C. Nayak [126] came up with 
+optimal functional link neural networks (FLNs) for predict-
+ing the closing price of Bitcoin and used a genetic algorithm 
+(GA) to update the weight and bias vector of FLNs and the 
+best number of polynomial functions for each category of 
+basis functions. Rout et al. [123] used a recurrent compu-
+tationally efficient functional link neural network (RCE-
+FLANN) for financial time series forecasting. They used 
+several evolutionary learning methods, including Particle 
+Swarm Optimization (PSO), HMRPSO, and Differential 
+Evolution (DE), to find the optimal weights of the proposed 
+model. DE outperformed the others. Naik et al. [106] sug-
+gested a unique FLANN for classification using hybrid PSO 
+and GA-based gradient descent learning.
+Naik et al. [103] presented opposition-based learning-
+TLBO (OLE-TLBO) to categorize nonlinear data. Sahu 
+et al. [34] designed a fireworks algorithm-based functional 
+link network (FWA-FLN) to forecast currency exchange 
+rate time series. They focused on training data enrichment. 
+Multi-verse optimal multiplicative functional link neural 
+networks were used by Sahu et al. [172] to estimate south 
+Asian currency rates multi-steps ahead (MVO-MFLN). In 
+order to facilitate categorization, Dehuri et al. [108] pro-
+posed a swarm-optimized functional link artificial neural 
+network (ISO-FLANN). Mahapatra et al. [109 ] came up 
+with a way to predict how the Indian stock market will do 
+based on a functional link artificial neural network (FLANN) 
+trained through differential evolution. The functional link 
+network with artificial chemical reaction optimization (FLN-
+ACRO) was used for stock market forecasting by Nayak et al. 
+[127]. Four low-complexity, single-layer forecasting models 
+were constructed by Nayak et al. [119], namely TFLANN, 
+CFLANN, LeFLANN, and LFLANN; the weight and bias 
+vectors and the number of functional expansions for each 
+model were optimized using a genetic algorithm. Behera and 
+Behera [196] used the firefly algorithm (FFA) to train the 
+dataset and discovered that FFA-RPNN outperformed FFA-
+MLP in all datasets. Nayak et al. [176] developed an elitist 
+artificial-electric-field-algorithm-based artificial neural net-
+work (eAEFA+ANN) for financial time series forecasting. 
+Nayak et al. [177] suggested ANNCRO to forecast the daily 
+closing prices of 10 fast-growing stock markets: the BSE, 
+DJIA, NASDAQ, FTSE, TAIEX, S&P 500, ASX, LSE, SSE, 
+and NIKKEI. Wang et al. [155] created a GWO ESN time 
+series prediction model. Luo et al. [36] came up with a deep 
+feed forward neural network (GA-DFNN) architecture that 
+uses a genetic algorithm to predict how much power a real 
+building will use. A multiobjective GA (NSGA-II)-based 
+RBF adaptive stock index prediction model was made by 
+Majhi et al. [129]. Dash [140] created a hybrid stock predic-
+tor utilizing Differential Evolution and Chebyshev Polyno-
+mial Neural Networks (DECPNN).
+
+[PÁGINA PDF 29]
+4429
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+Dash and Dash [141] used moderate random search parti-
+cle swarm optimization to estimate LENN model parameters 
+to forecast financial time series data (HMRPSO). Nayak and 
+Misra [38] developed extreme learning with chemical reac-
+tion optimization, a learning system that combines ELM 
+and CRO (ELCRO). A single-layer feed-forward neural 
+network’s weight, bias vector, and hidden neurons are opti-
+mized via ELCRO. Based on modified PSO and GRNN, 
+Wang et al. [146] built Taiwan dollar to US dollar and RMB 
+exchange rate prediction models (RWPSO-GRNN and 
+WLDPSO-GRNN). Dash [154] used a recurrent Legendre 
+polynomial neural network (RLPNN) and an improved shuf-
+fling frog leaping (ISFL) learning method to make a hybrid 
+FOREX prediction model (RLPNN-ISFL). Egrioglu et al. 
+[149] used data from the 2016 international time series fore-
+cast competition (CIF-2016) to test a particle swarm opti-
+mization (PSO)-trained Median-Pi artificial neural network 
+(MdPNN). Nayak and Misra [150] used a GA-weighted con-
+densed polynomial neural network (CPNN-GA) to calculate 
+stock closing indices. They tested how well it worked by 
+predicting the closing price of five fast-growing stock indi-
+ces for the next day: the BSE, DJIA, NASDAQ, FTSE, and 
+TAIEX. Nayak et al. [ 151, 152] made an adaptive second-
+order neural network with genetic algorithm-based training 
+(ASONN-GA) for predicting financial time series. Nayak 
+et al. [99] made a black hole optimization and higher order 
+Jordan Pi-sigma neural network (BHO-JPSNN) for tasks that 
+don't follow a straight line.
+Nayak et al. [100] used gradient descent learning to 
+show how a higher-order evolutionary Jordan pi-sigma neu-
+ral network (JPSNN) can be used to classify time series. 
+Kumar [131] developed nine new integrated models for 
+intraday stock price forecasting using three ANNs, i.e., 
+BPNN, RBFNN, and TDNN, plus nature-inspired algo-
+rithms like GA, PSO, and Artificial Bee Colony (ABC). 
+Models included PSO-BPNN, ABC-BPNN, GA-BPNN, 
+GA-RBFNN, PSO-RBFNN, ABC-TDNN, and GA-TDNN. 
+Nayak et al. [181] proposed intelligent financial forecasting 
+with an improved chemical reaction optimization algorithm 
+based on a dendritic neuron model (ICRO-DNM) and com-
+pared the performance of ICRO learning with CRO, PSO, 
+and GA. They found that the combination of ICRO's pow -
+erful global search and DNM’s better approximation gave 
+them better results. Dash et al. [114] suggested and tested 
+a CRO-FLANN classifier for a non-imputed and inconsist-
+ent dataset. Husaini et al. [79, 80] used a modified cuckoo 
+search-Markov chain Monte Carlo (MCS-MCMC) learning 
+technique for weight optimization in higher order neural net-
+works (HONN) models (FLNN-MCMC, PSNN-MCMC) for 
+predicting physical and financial time series. Aladag et al. 
+[162] made a model for real seasonal time series forecasting 
+that is based on particle swarm optimization (PSO) and a 
+multiplicative seasonal neural network (MSANN).
+Egrioglu et al. [165] used PSO to train a recurrent 
+multiplicative neuron model artificial neural network 
+(RMNM-ANN) for non-linear forecasting of time series. 
+Dehuri and Cho [117] made the HFLNN for classifying 
+by using a GA to combine features that have gotten better 
+over time with a functional link neural network. With the 
+help of a differential evolution algorithm, Bas [167] taught 
+a multiplicative neuron mode-based artificial neural net -
+work (MNM–ANN–DEA) to predict real-world time series 
+data. Smith and Jin [3 ] say that a hybrid multi-objective 
+evolutionary algorithm (HMOEA) is used to train and 
+improve recurrent neural networks (RNNs) used to pre -
+dict time series. Kocak et al. [93] created an ARMA-type 
+Pi-Sigma neural network (ARMATPS-ANN) and trained 
+it by PSO for fuzzy time series forecasting. Rather et al. 
+[169] used a genetic algorithm (GA) and a RNN to make 
+a hybrid prediction model (HPM) to predict stock returns. 
+Asadi et al. [180] suggested using genetic algorithms (GA) 
+and LM algorithms for learning feed-forward neural net-
+works to combine evolutionary Levenberg–Marquardt 
+neural networks (PELMNN) and data pre-processing to 
+predict the stock market.
+Chang et al. [173] suggested an evolving partly con-
+nected neural network (EPCNN) to predict stock price 
+trends and used a GA to update the model’s best param -
+eters. Yogi et al. [107] proposed a PSO-based FLANN 
+training method for equalizing digital communication 
+channels. Nayak and Misra [171] suggested a chemical-
+reaction-optimization-based neuro-fuzzy hybrid network 
+(CRO-NFN) for predicting the closing price of a stock. 
+Yolcu et al. [138] suggested a single multiplicative neu-
+ron model artificial neural network with an autoregressive 
+coefficient (AC-S-MNM) and trained it using a PSO for 
+time series modelling. Tang et al. [174] used an adaptive 
+differential evolution algorithm with an optional exter -
+nal archive (JADE) to train the EPNN model for finan-
+cial bankruptcy analysis. Das et al. [168] successfully 
+predicted stock market prices using an extreme learning 
+machine (ELM) optimized using the PSO-based group-
+oriented crow search (PGCSA) algorithm. Dehuri and Cho 
+[115] came up with a hybrid genetic-based functional link 
+artificial neural network (HFLANN) classifier. T. Xiong 
+[134] improved the model’s structure and parameters for 
+interval time series forecasting by using a fully complex-
+valued RBF neural network (FCRRBFNN) with DPSO and 
+PSO algorithms. H. Emam [197] created stock exchange 
+trading optimization (SETO) to address numerical and 
+technical issues. Yang and Duan [175] came up with an 
+effective co-evolutionary algorithm based on an artificial 
+bee colony and differential evolution (called “improved 
+ABC–DE”), and they taught an extreme learning machine 
+(ELM) to predict time series.
+
+[PÁGINA PDF 30]
+4430 S. Behera et al.
+1 3
+Table 2  Efficacy of EOA-based HONN used for financial time series forecasting
+Proposed EOA Hybridization of EOA and HONN Types of parameters optimized Observations
+GA [66] GA-PSNN Optimal parameters Superior to gradient descent algorithm 
+in optimizing the weights and biases
+CRO-LMS [55] CRO-FLANN Optimal parameters CRO provides faster convergence, LMS 
+provides the search refinement
+GA and PSO [67] GA-HONN, PSO-HONN Optimal parameters Variants of HONN are successfully 
+trained by GA and PSO
+RA [102] RAFLANN Optimal parameters Outperformed to MVO, BMO, GA, and 
+GD learning
+CSA [32] CSA-PSNN Optimal parameters Superior to PSO and DE learning
+OLE-TLBO [103] OLE-TLBO-FLANN Optimal parameters Outperformed to GA, PSO, TLBO, 
+E-TLBO, and OL-TLBO learning
+FWA [33] FWA-PSNN Optimal parameters Capability of faster convergence and 
+global optima achieved
+FWA [34] FWA-FLN Optimal parameters FWA learning provides better prediction 
+accuracy than DE, GA, and PSO
+ELCRO [38] SLFN Optimal & hyper parameters Faster convergence, better results than 
+GA, PSO and GD learning
+JAYA [35] JAYA-PSNN Optimal parameters Better learning achieved than GD, GA 
+and PSO
+SDE [68] PSNN-SDE Optimal parameters PSNN-SDE outperform DE, PSO and 
+SFL learning
+GA [118] FLANN Optimal parameters Better input–output mapping and high 
+accuracy achieved
+COA [69] COA-PSNN, COA-FLANN Optimal parameters Better optimization of optimal param-
+eters than GA and CRO and enhances 
+accuracy
+GA, DE and PSO [91] GA-PSNN, PSO-PSNN, DE-PSNN Optimal parameters PSO based model perform relatively 
+better than others
+CRO [125] ACFLN Optimal parameters Faster convergence and better accuracy
+DEA [37] DEA-PS-ANN Optimal parameters DE has less parameters, global optima 
+and better results achieved
+RWPSO and WLDPSO 
+[146]
+RWPSO-GRNN, WLDPSO-GRNN Optimal parameters RWPSO-GRNN is found superior to 
+WLDPSO-GRNN
+FFA [21] FFA-PSNN Optimal parameters Steady, reliable prediction and better 
+accuracy, outperformed GA, PSO and 
+PSO-GA learning
+GA [36] GA-DFNN Optimal and hyper parameters GA determines both the optimal and 
+hyper parameters of the network and 
+in result better prediction accuracy and 
+less computation complexity achieved
+DE [140] DECPNN Optimal parameters DE produces better APE with faster 
+convergence rate than both BP and 
+PSO learning
+HMRPSO [141] LENN Optimal parameters HMRPSO perform random search, 
+enhances the global search ability, and 
+achieved faster convergence. Outper-
+forms PSO and DE learning
+GA [120] GA–TPFLNN Optimal parameters GA helps the TPFLNN to find low 
+complexity network structure and/or 
+near-optimum parameters
+HS [17] FLANN-HS Optimal parameters Faster convergence, harmony search 
+outperforms DE and BP learning
+GA [180] PELMNN Optimal & hyper parameters Good prediction accuracy found and GA 
+is suitable for input–output mapping
+
+[PÁGINA PDF 31]
+4431
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+Table 2  (continued)
+Proposed EOA Hybridization of EOA and HONN Types of parameters optimized Observations
+ACO, ABC &DE [178] Hybrid- NN Optimal parameters DE found to be superior and provides 
+higher accuracy, ABC provides slow 
+convergence, and DE is more adaptive 
+and provides good optimization
+HMOEA [3] RNN Optimal & hyper parameters HMOEA uses a GA plus local search, 
+good structure optimization
+FFA [122] RCE-FLANN Optimal parameters FFA is found to be adaptive, and 
+increases the performance of the 
+network
+MPSO [92] ARMATPS-ANN Optimal parameters Better prediction results achieved faster 
+convergence
+GA [169] HPM Optimal parameters GA is used to find the optimal weights 
+of HPM and excellent prediction 
+results achieved
+PSO & GA [88] PSNN Optimal & hyper parameters Better results achieved by DE learning 
+than PSO learning
+ABCDE [170] FFN Optimal parameters ABCDE found superior to ABC, BP & 
+ODE in training the models optimal 
+parameters
+DPSO/ PSO [134] DPSO/ PSO -FCRBFNN Optimal & hyper parameters DPSO / PSO is used to jointly optimize 
+the structure and parameters of the 
+model and produce efficient results
+RLS [121] FFLANN Optimal parameters RLS reduces training time, requires less 
+iterations as compared to others
+ISFL [71] PSNN Optimal parameters ISFL found superior in training the net-
+work than other learning algorithms
+CMCSA [147] ITD-CMCSA-OELM Optimal parameters The hybrid ITD-CMCSA outperforms 
+CMCSA, CSA, DE and other learning
+MOGA [73] PSNN-MOGA Optimal parameters Global optima achieved with faster 
+convergence rate, MOGA outperforms 
+GA and DE
+PSO, HMRPSO & DE [123] RCE-FLANN Optimal parameters DE/current to best mutation provides 
+good result than PSO and HMRPSO
+PGCSA [168] PGCSA ELM Optimal parameters The effectiveness of conventional ELM 
+has improved by PGCSA
+UGC [148] UGC-HONN Optimal parameters HONNs trained by UGC learning are 
+2.8546% to 3.4185% better than others
+PSO [149] MdPNN Optimal parameters MdPNN performed well when trained 
+by PSO than BP learning
+SETO [197] – – Faster convergence, efficient exploita-
+tion, exploration, and local avoidance 
+ability of SETO found better than 
+others
+CRO [171] CRO-NFN Optimal parameters The optimal search space has explored 
+by CRO, which requires fewer tun-
+able parameters and possess faster 
+convergence
+GA [150] CPNN-GA Optimal parameters GA efficiently determined the param-
+eters of CPNN
+GA [126] FLN Variants Optimal & hyper parameters Better forecast accuracies achieved, but 
+use of GA may add computational cost 
+due to genetic operators
+GA [152] ASONN-GA Optimal parameters Due to global search and good parameter 
+tuning, higher accuracy found
+PSO & GA [94] AE-PSNN Optimal parameters Both PSO and GA are found superior to 
+GD learning
+
+[PÁGINA PDF 32]
+4432 S. Behera et al.
+1 3
+Table 2  (continued)
+Proposed EOA Hybridization of EOA and HONN Types of parameters optimized Observations
+PSO, GA and ACRO [124] ACRRFLN Optimal parameters ACRO has a smaller number of tuning 
+parameters, faster convergence and 
+found capable to capture the uncertain-
+ties very well than others
+BHO [99] BHO-JPSNN Optimal parameters BHO is superior to GA, PSO and IPSO 
+in training the network
+DE [74] DE-PSNN Optimal parameters DE is more effective due to less param-
+eter, DE outperformed to Jaya and 
+CRO
+HBMO [75] HBMO-PSNN Optimal parameters HBMO is reliable and provides better 
+accuracy and outperformed to PSO 
+& DE
+IPSO [76] IPSO-PSNN Optimal parameters IPSO outperformed to PSO & GA in 
+terms of accuracy
+SAHS [104] SASH-FLANN Optimal parameters SASH is significant in training the net-
+work than HS & IHS learning
+HBMO-GDL [105] HBMO-GDL-FLANN Optimal parameters HBMO free from mutation & crossover 
+and relatively better than GA and PSO
+TLBO [14] PSNN-TLBO Optimal parameters TLBO found superior to others
+GA [100] GA-JPSNN Optimal parameters Average classification accuracy, and bet-
+ter results found
+GA [151] ASONN-GA Optimal parameters (Global search ability of GA) + (general-
+ization ability of ASONN) = handling 
+the uncertainties and nonlinearities 
+associated with the financial time 
+series
+CRO [77] CRO-PSNN Optimal parameters Global minima achieved due to good 
+optimization of optimal parameters
+PSO–GA [106] PSO-GA-FLANN Optimal parameters Hybrid learning perform relatively better 
+than individual GA & PSO learning
+GA [119] FLANN variants Optimal & hyper parameters GA determined the functional expan-
+sion of input signals and other optimal 
+parameters very well
+NSGA-II [129] MORBF Optimal & hyper parameters NSGA-II found to be superior to other in 
+training algorithm
+SADHS-OELM [130] RBF, CEFLANN Optimal & hyper parameters The hybrid learning SADHS-OELM 
+outperforms other learning methods 
+and CEFLANN outperformed for both 
+stock index and volatility prediction
+PSO [78] PSNN Optimal parameters PSO found to be robust algorithm with 
+global search capabilities than GA
+GA [173] EPCNN Optimal parameters Weights are optimized by GA and 
+EPCNN is found to be convergent
+MCS-MCMC [79] FLNN-MCMC, PSNN-MCMC Optimal parameters The MCS-MCMC hybrid learning 
+helped in dealing with slow conver-
+gence and poor generalization
+MCS-MCMC [80] FLNN-MCMC, PSNN-MCMC Optimal parameters MCS modifies CS parameters to 
+increase convergence, while MCMC 
+simplifies objective function genera-
+tion
+JADE [174] EPNN Optimal & hyper parameters Global optimization convergence beats 
+MLP and PNN
+ISFL [154] RLPNN-ISFL Optimal & hyper parameters Good nonlinear mapping seen between 
+input–output; excellent outcomes were 
+obtained
+
+[PÁGINA PDF 33]
+4433
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+Table 2  (continued)
+Proposed EOA Hybridization of EOA and HONN Types of parameters optimized Observations
+MPSO [81] PSNN Optimal parameters The proposed learning method trained 
+the models parameters to improve 
+accuracy
+GA, ABC, and PSO [131] {GA, PSO, ABC}-BPNN, {GA, PSO, 
+ABC}-TDNN, {GA,PSO,ABC}-
+RBFN
+Optimal parameters The PSO-BPNN model yielded the 
+highest prediction accuracy
+Improved ABC-DE [175] Improved ABC-DE-ELM Optimal parameters Hybrid learning improves generalisation, 
+training time, parameter optimization, 
+and accuracy
+ACO &PGO [135] Cascaded SOM-RBF (CSR) Optimal parameters Hybrid learning reduces the variation of 
+attributes and produces efficient results
+GWO [155] GWO_ESN Optimal & hyper parameters In terms of accuracy, GWO_
+ESN > PSO_ESN > RSN 
+model > Elman model > BP model
+DE [85] DEA-PS-ANN Optimal parameters PSANN trained by DEA outperformed
+PSO-GA [86] PSO-GA-PSNN Optimal parameters The hybrid learning provides better 
+accuracy than PSO, GA and other
+GA [132] HRBF-NN Optimal & hyper parameters Indices which impact ISE100 index 
+were properly determined
+HGA [87] PSNN Optimal & hyper parameters Better convergence achieved
+GA [117] HFLNN Optimal parameters Optimal parameters of HFLNN 
+optimized by GA and better results 
+achieved
+CRO [90] CRO-FLANN with LMS Optimal parameters CRO based FLANN Model trained with 
+LMS performs better
+PSO [157] ESN-PSO Optimal & hyper parameters An improvement in generalization and 
+faster convergence achieved
+GA [164] DRESN Optimal & hyper parameters GA is effective in solving mixed-integer 
+problem
+PSO [107] FLANN Optimal parameters PSO algorithm performed far more 
+efficiently than other two
+ISO (IPSO) [108] ISO-FLANN Optimal parameters The performance of FLANN trained by 
+ISO for classification task is promising
+DE [109] FLANN Optimal parameters The DE optimized FLANN is proving 
+it’s superiority
+MPSO [97] HSPNN Optimal parameters MPSO determined optimal weights and 
+excellent results achieved
+PSO [162] MSAAN Optimal parameters The weights and biases of the network 
+fine tuned to obtained outstanding 
+results
+PSO [165] RMNM-ANN Optimal parameters PSO successfully trained the model in 
+order to achieve good results
+DE [167] MNM-ANN-DEA Optimal parameters The model has trained by DEA success-
+fully
+PSO [138] AC-S-MNM-PSO Optimal parameters PSO successfully determined the coef-
+ficients of autoregressive equations, 
+initial values of the weights and biases
+CRO [72] CRO-PSNN Optimal parameters CRO learning outperformed TLBO and 
+JAYA learning
+CRPSO [137] CRPSO-SMNM Optimal parameters The model is found to be efficient and 
+robust in case of CRPSO learning 
+rather than GA, PSO and BP learning
+GA [115] HFLANN Optimal parameters Weights and biases of HFLANN 
+optimized by GA and better results 
+achieved
+
+[PÁGINA PDF 34]
+4434 S. Behera et al.
+1 3
+Table 2  (continued)
+Proposed EOA Hybridization of EOA and HONN Types of parameters optimized Observations
+ABC [19] PS-ANN Optimal parameters ABC is a strong numerical optimiza-
+tion algorithm and hence employed 
+to determine the parameters of the 
+PS-ANN model
+GA, DE, and PSO [116] HFLANN Optimal parameters PSO is the best local optima and DE is 
+the best global optima
+MPSO [93] ARMATPS-ANN Optimal parameters MPSO determined the parameters of the 
+model efficiently
+CRO [177] ANNCRO Optimal parameters CRO has less parameter and provides 
+faster convergence as well as better 
+approximation
+ACRO [127] FLN-ACRO Optimal parameters ACRO based model produces better 
+forecasting results
+CRO [113] CRO-FLN Optimal parameters CRO performed global search and able 
+to overcome the well-known pitfalls of 
+the GD-based learning
+MVO [172] MV-MFLN Optimal parameters MVO outperformed to GA, DE, TLBO, 
+and GD learning
+ICRO [181] ICRO-DNM Optimal & hyper parameters The powerful global search ability of 
+ICRO synergies with better approxi-
+mation capability of DNM. ICRO 
+learning outperformed to CRO, PSO 
+and GA in terms of faster convergence 
+and accuracy
+CRO [114] CRO-FLANN Optimal parameters Faster convergence and better accuracy 
+achieved
+Elitism AEFA [176] eAEFA+ANN Optimal parameters The optimal neuron parameters of 
+eAEFA+ANN are decided by eAEFA, 
+better performance seen
+IPBO [179] FNN Optimal parameters IPBO has ability to balance local & 
+global search and outperforms other
+RA [194] RA-ANN Optimal parameters Faster convergence & better generaliza-
+tion ability of RA has been seen
+FFA [196] FFA-RPNN Optimal parameters FFA has shown better result in all differ-
+ent datasets
+Fig. 22  Contribution of evolu-
+tionary algorithms in financial 
+time series prediction
+
+
+[PÁGINA PDF 35]
+4435
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+In Table  2, you can see a full evaluation of how well 
+EOAs and ANNs (and, more specifically, HONNs) work 
+together to predict financial time series.
+4.1  Technical Discussion
+According to the findings of our study (which can be found 
+in Table  2), a variety of evolutionary optimization tech-
+niques, in particular those utilized in the process of pre-
+dicting financial time series, produce reliable results. A pie 
+chart illustrating the relative contribution of various different 
+evolutionary algorithms to the process of financial forecast-
+ing is presented for your perusal in Fig.  22. (as far as our 
+survey is concerned).
+The review of the relevant literature makes it abundantly 
+clear that the majority of the researchers used genetic algo-
+rithms (GA) [36, 66, 94, 100, 115, 117–120, 126, 132, 
+150–152, 164, 169, 173, 180] for accurate financial time 
+series forecasting. This is the case due to the fact that GA 
+provides optimal global search, subset selection, and near-
+optimal parameter search. The combination of HONN and 
+GA resulted in improved generalization, a more rapid con-
+vergence with global optima, reduced structural complex-
+ity in the network, and increased accuracy in predictions. 
+To take the performance of GA one step further, certain 
+upgraded versions of GA, such as multi-objective GA 
+(MOGA) [73] and hybrid GA (HGA) [87], have also been 
+presented and have demonstrated their effectiveness in finan-
+cial time series forecasting. PSO [78, 107, 131, 138, 149, 
+157, 162, 165] is a simple algorithm that may be effectively 
+employed to fine-tune the parameters of a wide variety of 
+HONNs due to its lack of complexity, simple parameters, 
+and constraints. Authors have created variations of PSO, 
+such as MPSO [81, 92, 93, 97], HMRPSO [141], RWPSO 
+and WLDPSO [146], and IPSO [76, 108] to address the slow 
+convergence that is sometimes seen.
+In order to get better results, a hybrid learning approach 
+called CRPSO was introduced in article [137]. In [134], the 
+network parameters are adjusted using a combination of PSO 
+and a discrete PSO (DPSO) to boost precision. Faster con-
+vergence, higher accuracy, fewer control parameters, and 
+efficient optimization of the many HONNs’ parameters are 
+all advantages of CRO [38, 72, 77, 90, 113, 114, 124, 125, 
+127, 171, 177, 181], whereas CRO-LMS [55] outperforms 
+both CRO and LMS learnings due to its hybrid nature. FWA 
+[33, 34] was found to have faster convergence, the ability 
+to find global minima, faster learning, and more accurate 
+predictions than GA, PSO, and GD learning. Improved 
+accuracy in prediction is one of the many benefits of the 
+random search capacity, adaptive stability, and dependable 
+predictability provided by FFA [21, 122, 196]. In contrast, 
+DE [37, 74, 85, 88, 91, 109, 123, 140, 167, 178] is superior 
+to BP, PSO, and HMRPSO when it comes to optimizing 
+the parameters of different HONN because of its ease of 
+use, small parameter set, rapid convergence, and flexibility. 
+Furthermore, a hybrid learning technique known as SDE 
+[68] is effective in locating the best possible solution at a 
+fast convergence rate. With the ABC and DE presented in 
+[178] and a hybrid learning approach ABC-DE presented in 
+[170], there is improved prediction accuracy, greater gener-
+alization, a shorter training period, a more balanced search 
+strategy, optimized weights and biases, and shorter training 
+periods.
+Additionally, there is a more balanced search strategy. 
+While ACO [178, 198] and a hybrid ACO called genetic 
+ant colony algorithm (GACA) [199] provides a forecast 
+that is both more accurate and ideal, A GWO [155], on 
+the other hand, was able to provide superior ideal out-
+comes [155]. CSA makes it possible to handle effectively 
+any and all critical parameters [32]. When compared to 
+CSA, hybrid learning strategies such as CMCSA [147] 
+and PGCSA [168] are more capable of determining the 
+parameters of the HONN like the ELM in order to con-
+struct hybrid models for financial time series forecasting. 
+It has been discovered that the Rao algorithm, also known 
+as RA, is very effective in searching for the optimal param-
+eters of FLANN [102] and ANN [194] in order to deliver 
+the ideal solution for financial time series forecasting. Bet-
+ter results were achieved by RA in terms of prediction 
+accuracy, computation time, statistical significance testing, 
+and the lowest values for loss functions such as MAPE 
+and ARV values. When compared to BP and DE learn-
+ing, the error function values obtained using an HS [ 17] 
+were superior. By doing away with the HS’s two constant 
+parameters (bandwidth and pitch adjustment rate), a new 
+variation of the HS known as self-adaptive harmony search 
+(SAHS) [104] has been created to boost the algorithm’s 
+performance. SADHS-OELM [ 130] is a hybrid learning 
+method that has been modified to improve upon the per -
+formance of DE, SADHS, and other similar methods by 
+optimizing both the optimum parameters and the network 
+structure (hyper parameters) of a two-hidden-layer feed-
+forward neural network (SLFN).
+On the other hand, ISFL [71, 154] offers advantages over 
+SFL, PSO, and DE in terms of learning speed, optimality 
+of solutions, and global and local exploration. TLBO [14] 
+is parameter less. TLBO improves accuracy. Opposition-
+based learning with Elitism TLBO (OLE-TLBO) [ 103] 
+outperformed GA, PSO, TLBO, E-TLBO, and OL-TLBO 
+in parameter optimization. HBMO [75] calculated PSNN 
+parameters better than GA, PSO, and DE. HBMO-GDL ver-
+sion [105] enhanced accuracy and was found superior to 
+GA, PSO, and HBMO. ABC successfully optimizes PSNN 
+parameters [19] for higher accuracy. An improved ABC-DE 
+[175] outperformed DE, PSO, and ABC to train the ELM 
+network. Similarly, other EOAs like COA [69], JAYA [35], 
+
+[PÁGINA PDF 36]
+4436 S. Behera et al.
+1 3
+JADE [174], BHO [99], SETO [197], UGC [148], MVO 
+[172], RLS [121], NSGA-II [129], IPBO [179], ACO & 
+PGO [135], PSO-GA [ 86, 106], ABCDE [ 170], HMOEA 
+[3], Elitism AEFA [176], and MCS-MCMC [79, 80] also 
+produced effective results when combined with different 
+HONNs for financial prediction.
+Financial forecasting involves a wide variety of tasks, 
+such as training the prediction model, optimizing the mod-
+el’s parameters, minimizing the loss function, and increasing 
+the predictor’s accuracy. After reading this, you should have 
+a firm grasp on the significance and effectiveness of evo -
+lutionary algorithms across these tasks. However, they are 
+well suited for comprehending the data’s nonlinearity and 
+require less time to train the neural network or the predic -
+tion model to rapidly converge. As a result, we may draw the 
+conclusion that evolutionary algorithms are superior to other 
+methods for training ANNs, in particular HONNs, to the 
+state-of-the-art level, enabling precise financial forecasting 
+(RBQ2). That’s why it makes sense to combine evolution-
+ary algorithms and HONNs to provide accurate forecasts of 
+financial time series.
+4.2  Performance Indicators for EOAs based HONNs
+Our review of the research shows that several research-
+ers have used different statistical tools and performance 
+measures to evaluate how well the proposed HONN model 
+and EOAs work. They are as follows: average percentage 
+error (APE) [66, 90, 111, 112, 119], root mean square 
+error (RMSE) [3 , 14, 17, 19, 21, 32, 36, 37, 68, 71–79, 81, 
+84–86, 88, 90, 92, 93, 99, 103, 104, 106, 109, 110, 112, 
+120, 122, 123, 130, 131, 135, 138, 140, 141, 149, 153, 
+154, 156, 157, 159, 161– 164, 164, 165, 167, 175, 178, 
+180, 200], nash–sutcliffe efficiency coefficient (NSEC) 
+[178], normalized Root Mean Square Error (NRMSE) 
+[163], mean squared error (MSE) [3 , 17, 32, 68, 71, 80, 
+82, 86–89, 96, 101, 109, 110, 116, 122, 129, 132, 137, 
+138, 146, 147, 155, 157, 165, 168– 170, 174, 179], Hit 
+rate [112, 115, 131], Error rate [131], mean absolute per -
+centage error (MAPE) [34, 36–38, 55, 67–69, 71, 81, 85, 
+92–94, 102, 109, 110, 118, 121–126, 128–130, 136–141, 
+146, 147, 150, 154, 162, 165, 167, 168, 170– 173, 176, 
+180, 181, 200], average relative variance (ARV) [38, 67, 
+94, 121, 124–126, 129, 134, 150, 171, 180], mean absolute 
+deviation (MAD) [110], median absolute error(MedAE) 
+[73], SDE [55], SSE [55], mean absolute error (MAE) 
+[19, 32, 36, 71, 73, 82, 88, 89, 96, 101, 135, 146, 147, 151, 
+152, 154, 161, 168, 169, 175, 200], MI [135], R-Squared 
+[36, 71, 110, 124, 125, 139, 153, 171], median absolute 
+percentage error (MdAPE) [162, 171], RTIC [146], mean 
+absolute relative error (MARE) [71, 175], average rela-
+tive error (ARE) [164], normalised mean squared error 
+(NMSE) [3 , 82, 84, 89, 96, 101, 126, 135, 142– 144, 
+157–161, 171, 201], Signal to noise ratio (SNR) [82, 89, 
+95, 96, 101, 107, 160, 161], UT [67, 68, 71, 121, 126, 
+129, 150, 180], correlations (CORR) [147], CE [146], 
+prediction of change in direction (POCID) [94, 125, 150, 
+180, 181], accuracy (ACC) [14, 21, 75, 77–79, 86, 98, 
+99, 104–106, 108, 129, 131, 174, 178], correlation coef-
+ficients (CC) [68, 156], avg.gain [35], rank [72, 79, 110, 
+115, 117, 172], symmetric mean absolute percentage error 
+(SMAPE) [72, 74], ANOVA [77, 78, 86, 100, 105, 106, 
+134], deibold-mariano test (DM Test) [33, 38, 124], annual 
+return percentage (AR%) [ 142–144], volume (VOL) [142], 
+correct directional change (CDC) [142], mean squared 
+forecast error (MSFE) [130], root mean square forecast 
+Fig. 23  Performance metrics 
+that are widely used to gauge 
+how effective EOAs-based 
+HONNs
+
+
+[PÁGINA PDF 37]
+4437
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+error (RMSFE) [130], and mean absolute forecast error 
+(MAFE) [130]. The appropriate formulas for some of 
+the well-known performance indicators are given in the 
+Appendix s ection. Figure  23 shows a bar chart with sev -
+eral performance metrics that are widely used to gauge 
+how effective EOAs-based HONNs are at predicting the 
+financial time series.
+4.3  Optimization of HONN Components
+Evolutionary techniques optimise HONN component 
+estimation (such as hyper-parameters, weights and biases, 
+hidden layer size, hidden layer neurons, learning rate, 
+activation function, epochs, population size, etc.). HONN 
+designs employ several evolutionary methods to optimise 
+components (according to the literature in Table  2). Fig-
+ure  24 shows a bar chart view of frequent optimizations 
+of different components of HONNs as far as our review 
+is concerned.
+On other hand, Fig.  25 represents the frequent participa-
+tion of evolutionary algorithms in optimizing the compo-
+nents of HONNs.
+4.4  Discussion and Statistical Results
+Table  1 shows how many HONNs are used for predicting 
+financial time series, and Table 2 shows how academics have 
+tackled HONN optimization utilizing a variety of EOAs in 
+the past and present to boost prediction accuracy. The opti-
+mization of all essential factors, however, requires more 
+Fig. 24  Components optimized
+Fig. 25  Contribution of EOAs in Optimization of HONNs components
+
+[PÁGINA PDF 38]
+4438 S. Behera et al.
+1 3
+research. Evolutionary approaches are frequently employed 
+to optimize HONN designs for performance. According 
+to the published works, the HONN was taught with both 
+well-known and recently suggested EOAs. Yet, the No Free 
+Lunch (NFL) hypothesis asserts that every situation is dif-
+ferent, and hence many methods must be used to effectively 
+anticipate financial time series. According to the NFL theo-
+rem, developing a single evolutionary algorithm that can 
+solve many different types of problems is nearly impossi-
+ble. Hence, it seems that an evolutionary algorithm might 
+not be the best choice for improving the HONN parameters. 
+The fact remains, nevertheless, that it works well for fixing 
+some problems. The only way to tell if the evolutionary algo-
+rithm has converged is through experimental assessments. 
+Due to the nature of evolutionary algorithms (which explore 
+all possible solutions to a problem via the operators they 
+utilize), knowing whether an evolutionary algorithm is the 
+best strategy can be challenging. It is for this reason that 
+non-trivial methods must be used in order to get optimal 
+values for the HONN parameters. Improvements to typical 
+implementations of EOAs and their combinations have been 
+identified in a large number of optimization studies to boost 
+their exploitation and exploration power.
+New evolutionary algorithms have been developed as 
+a result of recent research, and they have already shown 
+themselves to be superior to their forerunners in a number 
+of optimization scenarios. This presents a fresh challenge 
+for developing both new and existing evolutionary meth-
+ods to optimize the parameters of HONN for effective time 
+series forecasting, as shown in Table 2 of current works. The 
+vastness of the search space presents a significant obstacle 
+for large-scale optimization efforts. In addition, the algo-
+rithm’s convergence is rather insensitive to modifications 
+to its parameters. As a result, even if the researchers have 
+carefully computed the algorithm’s initial parameters, it will 
+not be able to effectively investigate and make use of a large 
+dataset of great complexity.
+To achieve global and local search coverage, we need 
+to use robust operators that enhance both exploration and 
+exploitation. This problem may be solved with evolutionary 
+algorithms by borrowing their advantages and operators to 
+solve new problems. Over the past decade, the academic 
+community has been using hybrid algorithms to improve 
+Table 3  Components of EOA in different criteria
+EOA Exploitation ability Exploration ability Convergence ability Global minima ability Parameter setting Gener-
+alization 
+ability
+GA Medium High Slow Low Medium Medium
+PSO Very high Low Fast Low Medium Easy
+DE High Medium Very fast High Easy Easy
+ABC High Medium Moderate Medium Easy Easy
+ACO High Medium Fast High Hard Easy
+FFA Medium Low Moderate Low Easy Easy
+GWO Very high High Very fast Very high Easy Medium
+FWA Very high High Very fast Very high Easy Easy
+ISFL High Medium Fast High Medium Easy
+TLBO High High Moderate Medium Medium Low
+HBMO Very high High Fast Very high Easy Low
+CSA High Very high Moderate Very high Easy Easy
+CRO Medium High Moderate High Easy Easy
+HS Medium High Fast High Easy Easy
+PGO High Medium Moderate Medium Easy Easy
+RA High Very high highhigh Fast Very high Easy Easy
+COA Very high Very high Very fast Very high Medium Easy
+IPBO Medium High Very fast Very high Medium Medium
+JADE Medium Medium Fast High Medium Medium
+JAYA Medium High Fast High – Easy
+MPSO Very high Medium Fast High Medium Easy
+SASH Very high High Fast Very high Medium Easy
+HMRPSO Very high High Very fast Very high Medium Medium
+NSGA-II High High Fast High Hard Medium
+
+[PÁGINA PDF 39]
+4439
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+optimization performance. One algorithm’s shortcomings 
+may be reduced by employing a different algorithm. The 
+optimum evolutionary performance may be attained by a 
+healthy equilibrium of exploration and exploitation capaci-
+ties. To avoid becoming stuck in local minimums and to 
+explore the search space more effectively, the exploration 
+operator can do a global search; however, this may result in 
+a slow convergence. It's true that the abuse operator results 
+in very high rates of convergence, but if it attempts to move 
+too quickly, it may get stuck. Existing evolutionary algo -
+rithms vary greatly in their ability to either avoid or take 
+advantage of local optimums and/or convergence trends. In 
+Table  3, you may compare how well different EOAs perform 
+in terms of their global optimum ability, convergence trend, 
+exploitation power, exploration power, parameter settings, 
+and generalization ability. For improved outcomes while 
+using the HONN, the operators of BHO, ISFL, DE, FWA, 
+FFA, CRO, CSA, RA, MPSO, HS, PGO, JAYA, JADE, and 
+GWO also performed well. This strategy has the potential 
+to aid researchers in developing superior hybrid algorithms 
+for the forward-looking prediction of financial time series.
+Data in Table  2 reveals that little research has focused on 
+optimizing HONN hyperparameters as opposed to the more 
+common practice of identifying optimal HONN parameters. 
+This will help researchers improve the network as a whole 
+in the long run.
+To plot EOA’s abilities, we translated categorical ratings 
+into numerical values: extremely high = “3”, high = “2” and 
+medium = “1” to plot EOA’s exploitation capabilities. Very 
+high signifies “4”, high means “3,” medium means “2,” and 
+low is “1” for EOA’s exploration capabilities. To plot EOA’s 
+convergence ability, we used “4” for very fast, “3” for fast, 
+“2” for moderate, and “1” for low. Figure 26 a–c shows the 
+Fig. 26  a Exploitation ability 
+of evolutionary optimization 
+algorithms b Exploitation abil-
+ity of evolutionary optimization 
+algorithms c Convergence abil-
+ity of evolutionary optimization 
+algorithms
+             (a): Exploitation ability of evolutionary optimization algorithms
+ (b): Exploitation ability of evolutionary optimization algorithms
+ (c): Convergence ability of evolutionary optimization algorithms
+
+[PÁGINA PDF 40]
+4440 S. Behera et al.
+1 3
+graphs for exploitation, exploration, and convergence for 
+both well-known EOAs and new ones.
+We translated categorical data like “very high” = 4, 
+“high” = 3, “medium” = 2, and “low” = 1 to plot EOA’s 
+global minima ability. We mapped category values like 
+“hard” = 3, “medium”  = 2, and “easy” = 1 for param-
+eter settings. For EOA’s generalization ability, “mid” = 3, 
+“easy” = 2, and “poor” = 1. EOA’s global minima, parameter 
+settings, and generalization ability are depicted in Figs.  27 
+a, b, c.
+5  Conclusion and Future Scope
+Even though it’s difficult to make accurate projections of 
+financial time series, HONN has made strides in this direc-
+tion. HONN and its variations perform exceptionally well 
+in economic forecasting because of their high-order terms 
+and relatively straightforward structure. HONN has been 
+shown to be a highly effective model for financial classifi-
+cation and prediction since it does not have gradient issues 
+and hence does not converge to a local minimum. Over-
+fitting and under-fitting are not likely to occur because 
+there is just one layer hiding beneath the surface. HONNs 
+are well suited to revealing the non-linearity and concealed 
+elements of financial data due to their exceptional map-
+ping power. With the addition of higher-order expressions, 
+HONNs have proven to be effective in tackling complex 
+real-world problems, especially in financial time series 
+forecasting. As we've shown in our studies, HONN and 
+its variants produce excellent results when used to fore -
+cast financial time series. It is demonstrated that HONN 
+excels in several ANN-related metrics, including accuracy, 
+loss function, convergence, learning rate, and adaptability. 
+Fig. 27  a Ability of global 
+minima of evolutionary optimi-
+zation algorithms b Parameters 
+setting of evolutionary optimi-
+zation algorithms c Generali-
+zation ability of evolutionary 
+optimization algorithms
+ (a): Ability of global minima of evolutionary optimization algorithms
+(b ): Parameters setting of evolutionary optimization algorithms
+ (c): Generalization ability of evolutionary optimization algorithms
+
+[PÁGINA PDF 41]
+4441
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+Some of the best reasons to use HONNs to predict future 
+values in financial time series are listed below:
+• Since they have fewer nodes, lower-order networks are 
+simpler.
+• They are highly adaptable and have good generalization 
+ability.
+• They’re lightweight since there’s only one hidden layer.
+• A tendency that can tolerate error.
+• HONNs are convenient to train because of their rapid 
+learning speed.
+• They have high capabilities for approximation and 
+very effective non-linear mapping capabilities.
+Nevertheless, hybrid models that mix EOAs and HONNs 
+have been shown to be the most successful for financial 
+time series forecasting. Many comparisons have been made 
+between EOAs-based and gradient-based HONNs, and 
+we found that researchers have employed a broad variety 
+of EOAs to establish values for the HONNs’ optimum and 
+hyperparameters. To cap it all off, HONNs trained with 
+EOAs show superior performance. Similarly, some research-
+ers have discovered that, when training HONNs for financial 
+time series forecasting, certain hybrid learning approaches 
+perform very well in comparison to conventional EOAs. 
+Also, it was discovered that some recently proposed EOAs 
+are superior to both GD learning and some classic EOAs. 
+Some of the best reasons to utilize EOAs to anticipate future 
+values in financial time series are stated below:
+• Because of their greater versatility in determining both 
+the optimum and hyperparameters of the network model,
+• EOAs are more suited to train ANNs since they have 
+greater exploration and exploitation capabilities.
+• They are capable of producing better convergence.
+• They are capable enough to perform global search.
+• They are not affected by the local minima problem.
+• They are powerful enough to detect nonlinearity in time 
+series datasets.
+In this thorough review, we found that HONNs are good 
+enough for accurately modeling the hidden dynamics of 
+financial time series, and EOAs are better than traditional 
+back propagation methods for adjusting the HONNs’ param-
+eters. We discovered the efficacy of EOA-based HONNs in 
+creating hybrid models with improved prediction perfor -
+mance in this study. So, we have been greatly encouraged 
+by the performance of HONNs in financial time series fore-
+casting as well as by the helpful contribution of EOAs when 
+hybridized with HONNs in the same forecasting domain. In 
+order to better anticipate financial time series, we want to 
+use a future hybrid model that combines the most effective 
+HONNs with a recently suggested EOA.
+In addition to finding a new EOA to train the optimum 
+parameters and hyperparameters of the HONNs to predict 
+the financial time series one step ahead of time, interested 
+researchers may also find ways to enhance the loss function 
+and deliver maximum accuracy in financial time series fore-
+casting. To optimize the HONNs for predicting financial time 
+series, a number of hybrid learning methods have been pre-
+sented and proven to be more effective than either EOA or 
+GD-based learning alone. However, the most effective hybrid 
+method of education has yet to be discovered. Interested 
+researchers could create novel hybrid learning by develop -
+ing and deploying some other EOA-based hybrid learning to 
+train HONNs for financial time series prediction. Readers and 
+researchers interested in expanding this work’s future poten-
+tial may find it useful to combine deep reinforcement learning 
+[50] with clustering [51] and EOAs to develop a novel hybrid 
+model for predicting the future value of financial time series.
+Appendix
+RMSE =
+/uni221A.t/uni221A.x/uni221A.x/uni221A.s4
+N/uni2211.s1
+i=1
+(̂YPr edicted − YObserved )2
+N
+MAE =
+N∑
+I=1
+���̂YPr edicted − YObserved
+���
+N
+MSE = 1
+N
+N/uni2211.s1
+I=1
+(YObserved − ̂YPr edicted)2
+RME = 1
+N
+N/uni2211.s1
+I=1
+/uni007C.x/uni007C.x/uni007C.xYObserved − ̂YPr edicted
+/uni007C.x/uni007C.x/uni007C.x
+/uni007C.x/uni007C.x/uni007C.x̂YPr edicted
+/uni007C.x/uni007C.x/uni007C.x
+× 100%
+R2 = 1 −
+∑
+i (YObserved − ̂YPr edicted)2
+∑
+i (YObserved − YPr edicted)2
+MAPE = 100%× 1
+N
+N/uni2211.s1
+i=1
+/uni007C.x/uni007C.x/uni007C.xYObserved − ̂YPr edicted
+/uni007C.x/uni007C.x/uni007C.x
+YObserved
+U of Theil =
+N∑
+i=1
+(YObserved − ̂YPr edicted)2
+N∑
+i=1
+(YObserved − YObserved+1 )2
+
+[PÁGINA PDF 42]
+4442 S. Behera et al.
+1 3
+In the above formulas, N represents total number of 
+observations, YObserved represents observed output, ̂Ypredicted 
+represents predicted output, and Ypredicted is the mean of the 
+predicted output.
+ARV =
+N∑
+i= 1
+(Ei−A i)2
+N∑
+i= 1
+(Ei−M )2
+ Here Ei is the estimated value, Ai is the 
+Actual value, M is the mean of datasets and N is the total 
+number of datasets.
+Funding This research did not receive any specific grant from funding 
+agencies in the public, commercial, or not-for-profit sectors.
+Declarations 
+Conflict of interest The authors declare that they have no conflict of 
+interest.
+MAD = 1
+N
+N/uni2211.s1
+i=1
+/uni007C.x/uni007C.xdi − mean(D)/uni007C.x/uni007C.x
+Coeﬃcient of Variation (CoV) =
+/parenleft.s2S
+M
+/parenright.s2
+× 100,
+S represents standard deviation and M stands for Mean
+Corelation (CORR) =
+Ntest∑
+i=1
+(Ai − mean(Ai))(Pi − mean(Pi))
+�
+Ntest∑
+i=1
+(Ai − mean(Ai))2
+Ntest∑
+i=1
+(Pi − mean(Pi))2
+MAAPE = 1
+Ntest
+Ntest/uni2211.s1
+i=1
+/parenleft.s1AAPEi
+/parenright.s1Where, AAPEi
+= arctan
+/parenleft.s4/uni007C.x/uni007C.x/uni007C.x/uni007C.x/uni007C.x
+Vactual − Vpredicted
+Vactual
+/uni007C.x/uni007C.x/uni007C.x/uni007C.x/uni007C.x
+/parenright.s4
+POCID = 100 ×
+⎛
+⎜
+⎜
+⎜
+⎜⎝
+N∑
+i=1
+Di
+N
+⎞
+⎟
+⎟
+⎟
+⎟⎠
+where Di
+=
+⎧
+⎪
+⎨
+⎪⎩
+1, if (Y Observed − YObserved−1)( ̂YPr edicted − ̂Ypredicted−1) > 0
+0, otherwise
+⎫
+⎪
+⎬
+⎪⎭
+SMAPE = 100%
+N
+N/uni2211.s1
+t=1
+/uni007C.x/uni007C.xForcastvaluet − Actualvaluet/uni007C.x/uni007C.x
+(/uni007C.x/uni007C.xActualvaluet + Forecastvaluet/uni007C.x/uni007C.x)∕2
+NRMSE =
+∑ (Simulatedvaluesi − Observedvaluesi)2
+∑ (Observedvalues)2
+References
+ 1. Zhu B, Han D, Wang P, Wu Z, Zhang T, Wei Y-M (2017) Fore-
+casting carbon price using empirical mode decomposition and 
+evolutionary least squares support vector regression. Appl Energ 
+Elsevier 191:521–530. https:// doi. org/ 10. 1016/j. apene rgy. 2017. 
+01. 076
+ 2. Ghanbari M, Arian H (2019) Forecasting stock market with 
+support vector regression and butterfly optimization algorithm. 
+Elsevier, Amsterdam
+ 3. Smith C, Jin Y (2014) Evolutionary multi-objective generation 
+of recurrent neural network ensembles for time series predic-
+tion. Neurocomputing Elsevier 143:302–311. https:// doi. org/ 10. 
+1016/j. neucom. 2014. 05. 062
+ 4. Li, C., Song, D., & Tao, D. (2019). Multi-task recurrent neu-
+ral networks and higher-order markov random fields for stock 
+price movement prediction, 25th ACM SIGKDD Conference on 
+Knowledge Discovery and Data Mining (KDD 2019), August 
+4–8, 2019. https:// doi. org/ 10. 1145/ 32925 00. 33309 83
+ 5. Kshatri SS, Singh D (2023) Convolutional neural network in 
+medical image analysis: a review. Arch Computat Methods Eng 
+30:2793–2810. https:// doi. org/ 10. 1007/ s11831- 023- 09898-w
+ 6. Kumar S, Rastogi U (2023) A comprehensive review on the 
+advancement of high-dimensional neural networks in quaterni-
+onic domain with relevant applications. Arch Computat Methods 
+Eng. https:// doi. org/ 10. 1007/ s11831- 023- 09925-w
+ 7. Perwej A, Yadav KP, Sood V, Perwej Y (2018) An evolutionary 
+approach to bombay stock exchange prediction with deep learn-
+ing technique. IOSR Journal of Business and Management 20:12
+ 8. Gourav K, Sanjeev J, Pratap SU (2021) Stock market forecasting 
+using computational intelligence: a Survey. Comput Methods in 
+Eng 28:3
+ 9. Holland JH (1975) Adaptation in natural and artificial systems. 
+University of Michigan Press
+ 10. Eberhart, R., & Kennedy, J. (October 4–6, 1995). A new opti-
+mizer using particle swarm theory. In Proceedings of the 6th 
+International Symposium on Micro Machine and Human Sci -
+ence (MHS); Nagoya, Japan (pp. 39–43). https:// doi. org/ 10. 1109/ 
+MHS. 1995. 494215
+ 11. Narayana BS, Nayak SC, Kar BP (2020) Design and performance 
+evaluation of monarch butterfly optimization-based artificial neu-
+ral networks for financial time series prediction, ICDECT, 2020. 
+Springer
+ 12. Soltani, P., & Hadavandi, E. (2018). A monarch butterfly optimi-
+zation-based neural network simulator for prediction of siro-spun 
+yarn tenacity. Soft Computing.
+ 13. Wang GG, Deb S, Cui Z (2019) Monarch butterfly optimization. 
+Neural Comput Appl 31(7):1995–2014. https:// doi. org/ 10. 1007/ 
+s00521- 015- 1923-y
+ 14. Nayak, J., Naik, B., & Behera, H. S. (2015). ‘Optimizing a 
+Higher Order Neural Network Through Teaching Learning 
+Based Optimization Algorithm’, computational intelligence in 
+data mining. Advances in Intelligent Systems and Computing 
+410, International conference on CIDM, 1.
+ 15. Rao RV, Savsani VJ, Vakharia DP (2011) Teaching–learning-
+based optimization: a novel method for constrained mechanical 
+design optimization problems. Comput Aided Des 43(3):303–
+315. https:// doi. org/ 10. 1016/j. cad. 2010. 12. 015
+ 16. Altan A, Karasu S, Bekiros S (2019) Digital currency forecast-
+ing with chaotic meta-heuristic bio-inspired signal processing 
+techniques. Chaos Solitons and Fractals Elsevier 126:325–336. 
+https:// doi. org/ 10. 1016/j. chaos. 2019. 07. 011
+ 17. Das S, Mishra S, Prasad S, Senapati MR (2015) A harmony 
+search-based artificial neural network for stock market prediction. 
+
+[PÁGINA PDF 43]
+4443
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+Int J Business Forecasting Marketing Intell. https:// doi. org/ 10. 
+1504/ IJBFMI. 2015. 075323
+ 18. Göçken M, Ozcalıcı M, Boru A, Dosdoğru AT (2016) Integrat-
+ing Metaheuristics and Artificial Neural Networks for improved 
+Stock Price Prediction. Expert Syst Appl 44:320–331. https://  
+doi. org/ 10. 1016/j. eswa. 2015. 09. 029
+ 19. Egrioglu E, Yolcu U, Bas E (2019) Intuitionistic high-order fuzzy 
+time series forecasting method based on Pi–Sigma artificial neu-
+ral networks trained by artificial bee colony. Granular Computing 
+4(4):639–654. https:// doi. org/ 10. 1007/ s41066- 018- 00143-5
+ 20. Karaboga D, Basturk B (2007) A powerful and efficient algo-
+rithm for numerical function optimization: Artificial bee colony 
+(ABC) algorithm. J Global Optim 39(3):459–471. https:// doi. org/ 
+10. 1007/ s10898- 007- 9149-x
+ 21. Nayak J, Naik B, Behera HS (2015) A novel nature inspired 
+firefly algorithm with higher order neural network: performance 
+analysis. Eng Sci Technol, An Int J 19:197–211
+ 22. Tan Y, Zhu Y (2010) Fireworks algorithm for optimization. In: 
+Tan Y, Shi Y, Tan KC (eds) Advances in swarm intelligence 
+lecture notes in computer science. Springer, Berlin, pp 355–364
+ 23. Doaei M, Mirzaei SA, Rafigh M (2021) Hybrid multilayer Per -
+ceptron neural network with grey wolf optimization for predict-
+ing stock market index. Adv Math Finance Appl 6(4):883–894
+ 24. Mirjalili S, Mirjalili SM, Lewis A (2014) Grey wolf optimizer. 
+Adv Eng Softw 69:46–61. https:// doi. org/ 10. 1016/j. adven gsoft. 
+2013. 12. 007
+ 25. Heydari A, Majidi Nezhad M, Pirshayan E, Astiaso Garcia D, 
+Keynia F, De Santoli L (2020) Short-term electricity price and 
+load forecasting in isolated power grids based on composite 
+neural network and gravitational search optimization algorithm. 
+Appl Energ. https:// doi. org/ 10. 1016/j. apene rgy. 2020. 115503
+ 26. Alatas B (2011) ACROA: artificial chemical reaction optimi-
+zation algorithm for global optimization. Expert Syst Appl 
+38(10):13170–13180. https:// doi. org/ 10. 1016/j. eswa. 2011. 04. 
+126
+ 27. Hatamlou A (2013) Black Hole: a new heuristic optimization 
+approach for data clustering. Inf Sci 222:175–184. https:// doi.  
+org/ 10. 1016/j. ins. 2012. 08. 023
+ 28. Ramezanian R, Peymanfar A, Ebrahimi SB (2019) An integrated 
+framework of genetic network programming and multi-layer Per-
+ceptron neural network for prediction of daily stock return: An 
+application in Tehran stock exchange market. Appl Soft Comput. 
+https:// doi. org/ 10. 1016/j. asoc. 2019. 105551
+ 29. Farahani MS, Hajiagha SHR (2021) Forecasting stock price using 
+integrated artificial neural network and metaheuristic algorithms 
+compared to time series models. Soft computing. Springer, 
+Singapore
+ 30. Mason K, Duggan J, Howley E (2018) Forecasting energy 
+demand, wind generation and carbon dioxide emissions in Ire-
+land using evolutionary neural networks. Energy 155:705–720. 
+https:// doi. org/ 10. 1016/j. energy. 2018. 04. 192
+ 31. Rajakumar R, Sekaran K, Hsu C-H, Kadry S (2021) Accelerated 
+grey wolf optimization for global optimization problems. Tech-
+nol Forecasting and Social Change. https:// doi. org/ 10. 1016/j.  
+techf ore. 2021. 120824
+ 32. Dash R, Routray A, Dash R, Rautray R (2021) Designing an 
+efficient predictor model using PSNN and crow search based 
+optimization technique for gold price prediction. Intell Deci-
+sion Technol IOS Press 15(2):281–289. https:// doi. org/ 10. 3233/ 
+IDT- 200093
+ 33. Nayak SC (2020) A fireworks algorithm based Pi-Sigma neural 
+network (FWA-PSNN) for modelling and forecasting chaotic 
+crude oil price time series. EAI Endorsed Trans Energy Web. 
+https:// doi. org/ 10. 4108/ eai. 13-7- 2018. 162803
+ 34. Sahu KK, Nayak SC, Behera HS (2020) Forecasting currency 
+exchange rate time series with fireworks algorithm-based higher 
+order neural network with special attention to training data 
+enrichment. Comp Sci. https:// doi. org/ 10. 7494/ csci. 2020. 21.4. 
+3474
+ 35. Nayak SC, Kumar KV, Satyanarayana B (2020) Towards 
+designing a computationally efficient neural network model for 
+improved financial time series forecasting. In Lecture notes in 
+Electrical engineering. Adv cybernetics, Cognition and Machine 
+learning for commun Technol. https:// doi. org/ 10. 1007/ 978- 981- 
+15- 3125-5_ 58
+ 36. Luo XJ, Oyedele LO, Ajayi AO, Akinade OO, Delgado JMD, 
+Owolabi HA, Ahmed A (2020) Genetic algorithm-determined 
+deep feedforward neural network architecture for predicting elec-
+tricity consumption in real buildings. Energy and AI Elsevier. 
+https:// doi. org/ 10. 1016/j. egyai. 2020. 100015
+ 37. Yılmaz O, Bas E, Egriogl E (2021) The training of pi-sigma 
+Artifcial neural networks with deferential evolution algorithm 
+for forecasting. Computational Economics 1:13
+ 38. Nayak SC, Misra BB (2020) Extreme learning with chemical 
+reaction optimization for stock volatility prediction. Financial 
+Innovation. https:// doi. org/ 10. 1186/ s40854- 020- 00177-2
+ 39. Hegazy, O., Soliman, O. S., & Salam, M. A. (2013). A machine 
+learning model for stock market prediction. International Jour -
+nal of Computer Science and Telecommunications [Volume 
+4(12, December).
+ 40. Jaquart P, Dann D, Weinhardt C (2021) Short-term bitcoin mar-
+ket prediction via machine learning. J Finance and Data Sci Sci-
+enceDirect 7:45–66. https:// doi. org/ 10. 1016/j. jfds. 2021. 03. 001
+ 41. Senapati MR, Das S, Mishra S (2018) A novel model for 
+stock price prediction using hybrid neural network. J Institu-
+tion of Eng (India). 99(6):555–563. https:// doi. org/ 10. 1007/  
+s40031- 018- 0343-7
+ 42. Reid D, Hussain AJ, Tawfik H (2014) Financial time series pre-
+diction using spiking neural networks. PLOS ONE 9(8):e103656. 
+https:// doi. org/ 10. 1371/ journ al. pone. 01036 56
+ 43. Radityo A, Munajat Q, Budi I (2017) Prediction of Bitcoin 
+exchange rate to American dollar using artificial neural network 
+methods. ICACSIS 2017:433–438. https:// doi. org/ 10. 1109/  
+ICACS IS. 2017. 83550 70
+ 44. Hu JW, Hu Y, Lin RR (2012) Applying neural networks to prices 
+prediction of crude oil futures. Math Problems in Eng. https://  
+doi. org/ 10. 1155/ 2012/ 959040
+ 45. Gupta LK, Koundal D, Mongia S (2023) Explainable methods for 
+image-based deep learning: a review. Arch Computat Methods 
+Eng 30:2651–2666. https:// doi. org/ 10. 1007/ s11831- 023- 09881-5
+ 46. Albayrak Ünal Ö, Erkayman B, Usanmaz B (2023) Applications 
+of artificial intelligence in inventory management: a systematic 
+review of the literature. Arch Computat Methods Eng 30:2605–
+2625. https:// doi. org/ 10. 1007/ s11831- 022- 09879-5
+ 47. Dogan A, Cidem Dogan D (2023) A review on machine learning 
+models in forecasting of virtual power plant uncertainties. Arch 
+Computat Methods Eng 30:2081–2103. https:// doi. org/ 10. 1007/ 
+s11831- 022- 09860-2
+ 48. Alsharef A, Aggarwal K, Sonia et al (2022) Review of ML 
+and AutoML solutions to forecast time-series data. Arch Com-
+putat Methods Eng. 29:5297–5311. https:// doi. org/ 10. 1007/  
+s11831- 022- 09765-0
+ 49. Paul A, Maity SP (2022) Machine learning for spectrum infor -
+mation and routing in multihop green cognitive radio networks. 
+IEEE Trans Green Commun Net 6(2):825–835. https:// doi. org/ 
+10. 1109/ TGCN. 2021. 31273 08
+ 50. Paul A, Mishra AK, Shreevastava S, Tiwari AK (2022) Deep 
+Reinforcement Learning based reliable spectrum sensing under 
+SSDF attacks in Cognitive Radio networks. J Netw Comput Appl 
+205:103454
+ 51. Paul A, Choi K (2023) Joint spectrum sensing and D2D com-
+munications in Cognitive Radio Networks using clustering and 
+
+[PÁGINA PDF 44]
+4444 S. Behera et al.
+1 3
+deep learning strategies under SSDF attacks. Ad Hoc Networks 
+143:103116
+ 52. Koul A, Bawa RK, Kumar Y (2023) Artificial intelligence 
+techniques to predict the airway disorders illness: a systematic 
+review. Arch Computat Methods Eng 30:831–864. https:// doi.  
+org/ 10. 1007/ s11831- 022- 09818-4
+ 53. Rajasundrapandiyanleebanon T, Kumaresan K, Murugan S et al 
+(2023) Solar energy forecasting using machine learning and deep 
+learning techniques. Arch Computat Methods Eng. https:// doi.  
+org/ 10. 1007/ s11831- 023- 09893-1
+ 54. Pattanayak, R. M., & Behera, H. S. (2018). Higher order neu-
+ral  network and its  applications: A comprehensive  sur -
+vey.  Advances in Intelligent Systems and Computing. Elsevier
+ 55. Sahu KK, Sahu SR, Nayak SC, Behera HS (2016) Forecast-
+ing foreign exchange rates using CRO based different variants 
+of FLANN and performance analysis. Int J Comput Syst Eng 
+2(4):190–208. https:// doi. org/ 10. 1504/ IJCSY SE. 2016. 081380
+ 56. Swapna Rekha, H., Nayak, J., & Behera, H. S. (2020). ‘Pi-Sigma 
+Neural Network: Survey of a Decade Progress’, computational 
+intelligence in pattern recognition, advances in intelligent sys-
+tems and computing, 1120. Springer
+ 57. Akram, U., Ghazali, R., & Mushtaq, M. F. (2017). A comprehen-
+sive survey on Pi-Sigma neural network for time series predic-
+tion, Journal of telecommunication. Electronic and Computer 
+Engineering.
+ 58. Sahoo RK, Ojha D, Dash S (2016) Nature inspired metaheuris-
+tic algorithms- comparative review. Int A J Dev Res 
+06(07):8427–8432
+ 59. Wang Z, Qin C, Wan B, Song WW (2021) A comparative study 
+of common nature-inspired algorithms for continuous function 
+optimization. Entropy 23(7):87. https:// doi. org/ 10. 3390/ e2307 
+0874
+ 60. Darwish A, Hassanien AE, Das S (2020) A survey of swarm 
+and evolutionary computing approaches for deep learning. 
+Artif Intell Rev 53(3):1767–1812. https:// doi. org/ 10. 1007/  
+s10462- 019- 09719-2
+ 61. Gupta N, Khosravy M, Patel N, Gupta S, Varshney G (2020) 
+Evolutionary artificial neural networks: comparative study on 
+state-of-the-art optimizers. In: Khosravy M (ed) Frontier appli-
+cations of nature inspired computation. Springer, Singapore, pp 
+302–318. https:// doi. org/ 10. 1007/ 978- 981- 15- 2133-1_ 14
+ 62. Fateen, S. E. K., & Petriciolet, A. B. (2014). ‘On the Effective-
+ness of Nature-Inspired Metaheuristic Algorithms for Perform-
+ing Phase Equilibrium Thermodynamic Calculations’, Hindawi 
+Publishing Corporation.  Scientific World Journal,  2014, article 
+ID 374510.
+ 63. Nayak J, Paparao Sura, Naik B, Seetayya N, Pradeep P, Behera 
+HS, Pelusi D (2019) Chemical reaction optimization: a survey 
+with application and challenges. In: Nayak J, Ajith Abraham B, 
+Murali Krishna GT, Sekhar C, Das AK (eds) Soft computing 
+in data analytics. Springer Singapore, Singapore, pp 507–524. 
+https:// doi. org/ 10. 1007/ 978- 981- 13- 0514-6_ 50
+ 64. Hu Y, Liu K, Zhang X, Su L, Ngai EWT, Liu M (2015) Appli-
+cation of evolutionary computation for rule discovery in stock 
+algorithmic trading: a literature review. Appl Soft Comput 
+36:534–551. https:// doi. org/ 10. 1016/j. asoc. 2015. 07. 008
+ 65. Hemeida AM, Hassan SA, Mohamed AAA, Alkhalaf S, 
+Mahmoud MM, Senjyu T, Din ABE (2020) Nature-inspired 
+algorithms for feed-forward neural network classifiers: a survey 
+of one decade of research. Ain Shams Eng J. https:// doi. org/ 10. 
+1016/j. asej. 2020. 01. 007
+ 66. Nayak SC, Misra BB, Behera HS (2015) A pi-sigma higher order 
+neural network for stock index forecasting. Computational Intel-
+ligence in Data Mining, 2. Springer, Berlin, pp 311–319
+ 67. Nayak SC (2017) Development and performance evaluation of 
+adaptive hybrid higher order neural networks for exchange rate 
+prediction. Int J Intell Syst Appl 9(8):71–85. https:// doi. org/ 10. 
+5815/ ijisa. 2017. 08. 08
+ 68. Rajashree D, Rasmita R, Rasmita D (2019) Utility of a shuffled 
+differential evolution algorithm in designing of a pi-sigma neural 
+network based predictor model. Appl Comput Inform 19:22–40
+ 69. Nayak SC, Ansari MD (2019) COA-HONN: cooperative opti-
+mization algorithm based higher order neural networks for stock 
+forecasting. Recent Adv Comput Sci Commun 12:1–00
+ 70. Nayak SC, Misra BB, Dehuri S (2022) Hybridization of the 
+higher order neural networks with the evolutionary optimization 
+algorithms—An application to financial time series forecast-
+ing. In: Dehuri S, Chen YW (eds) Advances in machine learn-
+ing for big data analysis. Intelligent systems reference library. 
+Springer, Singapore, pp 119–144. https:// doi. org/ 10. 1007/  
+978- 981- 16- 8930-7_5
+ 71. Dash R (2018) Performance analysis of a higher order neural net-
+work with an improved shuffled frog leaping algorithm for cur -
+rency exchange rate prediction. Appl Soft Comput 67:215–231. 
+https:// doi. org/ 10. 1016/j. asoc. 2018. 02. 043
+ 72. Pattanayak RM, Behera HS, Panigrahi S (2020) A multi-step-
+ahead fuzzy time series forecasting by using hybrid chemical 
+reaction optimization with Pi-Sigma higher-order Neural Net -
+work. In: Pelusi Danilo (ed) Computational intelligence in pat-
+tern recognition. Springer, pp 1029–1041. https:// doi. org/ 10.  
+1007/ 978- 981- 13- 9042-5_ 88
+ 73. Sahoo S, Mohanty SK, Pradhan SK (2019) Combining PI Sigma 
+neural network with multiple offspring genetic algorithm for 
+stock market price prediction. Int J Eng Adv Technol 9(1):6934–
+6939. https:// doi. org/ 10. 35940/ ijeat. A2103. 109119
+ 74. Pattanayak, R. M., Behera, H. S., & Panigrahi, S. (2018). ‘A 
+Novel Hybrid Differential Evolution-PSNN for Fuzzy Time 
+Series Forecasting’, advances in intelligent systems and comput-
+ing. In Proceedings of the International Conference on ICCIDM 
+2018.
+ 75. Nayak J, Naik B (2018) A novel Honey-Bees mating optimi-
+zation approach with higher order neural network for clas-
+sification. J Classif 35(3):511–548. https:// doi. org/ 10. 1007/  
+s00357- 018- 9270-1
+ 76. Kanungo DP, Nayak J, Naik B, Behera HS (2016) Non-linear 
+classification using higher order Pi-sigma neural network and 
+improved particle swarm optimization: An experimental analysis. 
+Adv Intell Syst Comp. https:// doi. org/ 10. 1007/ 978- 81- 322- 2731-
+1_ 48
+ 77. Nayak J, Naik B, Behera HS (2015) A novel Chemical Reaction 
+Optimization based Higher order Neural Network (CRO-HONN) 
+for nonlinear classification. Ain Shams Engineering Journal 
+6(3):1069–1091. https:// doi. org/ 10. 1016/j. asej. 2014. 12. 013
+ 78. Nayak, J., Naik, B., Behera, H. S., & Abraham, A. (2015). ‘Par-
+ticle Swarm Optimization Based Higher Order Neural Network 
+for Classification’, computational intelligence in data mining. 
+Smart Innovation, Systems and Technologies, 1.
+ 79. Husaini NA, Ghazali R, Arbaiy N, Abdul N, Hakim L (2020) 
+A modified weight optimization for artificial higher order neu-
+ral networks in physical time series. Int J Adv Comp Sci Appl. 
+https:// doi. org/ 10. 14569/ IJACSA. 2020. 01103 37
+ 80. Husaini NA, Ghazali R, Arbaiy N, Lasisi A (2020) MCS-MCMC 
+for optimising architectures and weights of higher order neural 
+networks. Int J Intell Syst Appl 12(5):52–72. https:// doi. org/ 10. 
+5815/ ijisa. 2020. 05. 05
+ 81. Bas E, Grosan C, Egrioglu E, Yolcu U (2018) High order fuzzy 
+time series method based on pi-sigma neural network. Eng Appl 
+Artificial Intell Elsevier 72:350–356. https:// doi. org/ 10. 1016/j. 
+engap pai. 2018. 04. 017
+ 82. Husaini, N. A., Ghazali, R., Nawi, N. M., & Ismail, L. H. (2012). 
+The effect of network parameters on pi-sigma neural network 
+for temperature forecasting. In. International Journal of Modern 
+
+[PÁGINA PDF 45]
+4445
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+Physics: Conference Series. World Scientific Publishing, 09. 
+https:// doi. org/ 10. 1142/ S2010 19451 20055 21
+ 83. Samir, L., Said, G., Nora, K., & Youcef, S. (2017). Improved Pi-
+Sigma Neural Network for nonlinear system identification, The 
+5th international Conference on Electrical Engineering—Boume-
+rdès (ICEE-B). https:// doi. org/ 10. 1109/ ICEE-B. 2017. 81921 44
+ 84. Waddah W, Rozaida G (2016) Chaotic time series forecasting 
+using higher order neural networks. Int J Adv Sci Eng Infor Tech-
+nol 6:5
+ 85. Yılmaz O, Bas E, Egrioglu E (2021) The training of Pi–Sigma 
+artificial neural networks with differential evolution algorithm 
+for forecasting. Comput Economics 1:13
+ 86. Nayak, J., Naik, B., & Behera, H. S. (2014). A hybrid PSO-GA 
+based Pi sigma neural network (PSNN) with standard back 
+propagation gradient descent learning for classification. In 
+International conference on control, instrumentation, commu -
+nication and computational technologies (ICCICCT), IEEE, 
+2014 (pp. 878–885). IEEE Publications. https://  doi.  org/ 10. 
+1109/ ICCIC CT. 2014. 69930 82
+ 87. Nie, Y., & Deng, W. (2008). A hybrid genetic learning algo-
+rithm for Pi–Sigma neural network and the analysis of its con-
+vergence. In Fourth international conference on natural com-
+putation, 3 (pp. 19–23). IEEE Publications. https:// doi. org/ 10.  
+1109/ ICNC. 2008. 896
+ 88. Dash R, Routray A, Rautray R, Dash R (2018) Gold price pre-
+diction using an evolutionary Pi–Sigma neural network. Int J 
+Eng and Technol 7(5):742–746. https:// doi. org/ 10. 14419/ ijet. 
+v7i4.5. 25073
+ 89. Husaini NA, Ghazali R, Nawi NM, Ismail LH, Deris MM, 
+Herawan T (2014) Pi-Sigma neural network for a one-step-
+ahead temperature forecasting. Int J Comput Intell Appl 
+13(4):1450023. https:// doi. org/ 10. 1142/ S1469 02681 45002 30
+ 90. Sahu KK, Biswal GR, Sahu PK, Behera HS (2015) A CRO 
+based FLANN for forecasting foreign exchange rates using 
+FLANN Smart Innovation, Systems and Technologies. In: Jain 
+LC et al (eds) Computational Intelligence in Data Mining, vol 
+1. Springer, p 31
+ 91. Sahu KK, Nayak SC, Behera HS (2020) Towards designing and 
+performance analyses of evolving higher order neural networks 
+for modeling and forecasting exchange rate time series data. In: 
+Kumar P (ed) Proceedings of the ICETIT 2019. Springer, Cham, 
+pp 258–268. https:// doi. org/ 10. 1007/ 978-3- 030- 30577-2_ 22
+ 92. Akdeniz E, Egrioglu E, Bas E, Yolcu U (2018) An Arma type pi-
+sigma artificial neural network for nonlinear time series forecast-
+ing. Journal of Artificial Intell Soft Comput Res 8(2):121–132. 
+https:// doi. org/ 10. 1515/ jaiscr- 2018- 0009
+ 93. Kocak C, Dalar AZ, Cagcag Yolcu O, Bas E, Egrioglu E 
+(2020) A new fuzzy time series method based on an ARMA-
+type recurrent Pi-Sigma artificial neural network. Soft Comput 
+24(11):8243–8252. https:// doi. org/ 10. 1007/ s00500- 019- 04506-1
+ 94. Nayak SC, Misra BB, Behera HS (2016) Fluctuation prediction 
+of stock market index by adaptive evolutionary higher order neu-
+ral networks. Int J Swarm Intell 2(2/3/4):229–253. https:// doi.  
+org/ 10. 1504/ IJSI. 2016. 081152
+ 95. Jaafar Hussain A, Liatsis P, Tawfik H, Nagar AK, Al-Jumeily D 
+(2008) Physical time series prediction using Recurrent Pi-Sigma 
+Neural Networks. Int J Artificial Intelligence and Soft Computing 
+1(1):130
+ 96. Akram U, Ghazali R, Ismail LH, Zulqarnain M, Husaini NA, 
+Mushtaq MF (2019) An improved Pi-Sigma neural network 
+with error feedback for physical time series prediction. Int J Adv 
+Trends in Computer Sci Eng 8:3–1. https:// doi. org/ 10. 30534/ ijatc 
+se/ 2019/ 5381. 32019
+ 97. Arslan SN, Cagcag Yolcu OC (2022) A hybrid sigma-pi neural 
+network for combined intuitionistic fuzzy time series prediction 
+model. Neural Comput Appl 34(15):12895–12917. https:// doi. 
+org/ 10. 1007/ s00521- 022- 07138-z
+ 98. Li F, Liu Y, Mohamed KS, Wu W (2018) A modified sigma-
+pi-sigma neural network with adaptive choice of multinomials. 
+Cornell University, New York
+ 99. Janmenjoy N, Naik Bighnaraj BHS (2016) Solving nonlinear 
+classification problems with black hole optimisation and higher 
+order Jordan Pi-sigma neural network: a novel approach. Int J 
+Comput Syst Eng 2:4
+ 100. Nayak J, Kanungo DP, Naik B, Behera HS (2014) A Higher 
+order evolutionary Jordan pi-sigma neural network with gradi-
+ent descent learning/or classification, International conference on 
+high performance computing and applications (ICHPCA). IEEE 
+Xplore. https:// doi. org/ 10. 1109/ ICHPCA. 2014. 70453 28
+ 101. Husaini, N. A., Ghazali, R., Nawi, N. M., Ismail, L. H., Jordan 
+Pi-Sigma Neural Network for Temperature Prediction, Kim, T.-h. 
+et al. (Eds.). (2011). UCMA 2011, Part II, CCIS, 151, 547–558.
+ 102. Subhranginee D, Nayak SC, Biswajit S (2021) “Towards Crafting 
+Optimal Functional Link Artificial Neural Networks with Rao 
+Algorithms for Stock Closing Prices Prediction” Computational 
+economics. Springer, Cham
+ 103. Naik B, Nayak J, Dash PB (2022) Higher order ANN parameter 
+optimization using hybrid opposition-elitism based metaheuris-
+tic. Evol Intel 15(3):2055–2075. https:// doi. org/ 10. 1007/  
+s12065- 021- 00610-0
+ 104. Naik B, Nayak J, Behera HS, Abraham A (2015) A self adaptive 
+harmony search based functional link higher order ANN for non-
+linear data classification, Nurocomputing. Elsevier, Amsterdam. 
+https:// doi. org/ 10. 1016/j. neucom. 2015. 11. 051
+ 105. Naik B, Nayak J, Behera HS (2015) ‘A honey bee mating opti-
+mization based gradient descent learning – FLANN (HBMO-
+GDL-FLANN) for classification’, emerging ICT for bridging the 
+future. Adv Intell Syst Comput 2:338
+ 106. Naik, B., Nayak, J., & Behera, H. S. (2015). A novel FLANN 
+with a hybrid PSO and GA based gradient descent learning for 
+classification. Proceedings of the of the 3rd Int. Conf. on Front. 
+of Intell. Comput. (FICTA). Advances in Intelligent Systems 
+and Computing. 1: 745–754. https:// doi. org/ 10. 1007/ 978-3- 319- 
+11933-5_ 84
+ 107. Yogi, S., Subhashini, K. R., & Satapathy, J. K. (2010). A PSO 
+based functional link artificial neural network training algo-
+rithm for equalization of digital communication channels. In 5th 
+International Conference on Industrial and Information Systems, 
+ICIIS (pp. 107–112). https:// doi. org/ 10. 1109/ ICIIN FS. 2010. 
+55787 26
+ 108. Dehuri S, Roy R, Cho SB, Ghosh A (2012) An improved swarm 
+optimized functional link artificial neural network (ISO-FLANN) 
+for classification. J Syst Softw 85(6):1333–1345. https:// doi. org/ 
+10. 1016/j. jss. 2012. 01. 025
+ 109. Mohapatra P, Raj A, Patra TK (2012) Indian stock market predic-
+tion using differential evolutionary neural network model. Int J 
+Electron Commun Comput Technol 2(4):159–166
+ 110. Nanda, S. K., Vyas, R., & Vamshidhar, H. K. (2018). Forecasting 
+foreign exchange rate using robust Lagueree neural network 3rd 
+International Conference and Workshops on Recent Advances 
+and Innovations in Engineering (ICRAIE), 2018. https:// doi. org/ 
+10. 1109/ ICRAIE. 2018. 87104 30
+ 111. Nanda SK, Tripathy DP (2011) Application of functional link 
+artificial neural network for prediction of machinery noise in 
+opencast mines. Adv Fuzzy Syst 2011:831261. https:// doi. org/  
+10. 1155/ 2011/ 831261
+ 112. Patra, J. C., Thanh, N. C., & Meher, P. K. (2009). Computation-
+ally efficient FLANN-based intelligent stock price prediction 
+system. In Proceedings of the International Joint Conference on 
+Neural Networks, 2431–2438. https:// doi. org/ 10. 1109/ IJCNN. 
+2009. 51785 94
+
+[PÁGINA PDF 46]
+4446 S. Behera et al.
+1 3
+ 113. Behera AK, Nayak SC, Dash CSK, Dehuri S, Panda M (2019) 
+Improving software reliability prediction accuracy using CRO-
+based FLANN. In: Saini H, Sayal R, Govardhan A, Buyya R 
+(eds) Innovations in computer science and engineering. Lecture 
+notes in networks and systems, vol 32. Springer, Singapore, pp 
+213–220. https:// doi. org/ 10. 1007/ 978- 981- 10- 8201-6_ 24
+ 114. Kumar Dash CSK, Behera AK, Nayak SC, Dehuri S, Sung-Bae 
+C (2019) An integrated CRO and FLANN based classifier for 
+a non-imputed and inconsistent dataset. Int J Artif Intell Tools 
+28(3):1950013. https:// doi. org/ 10. 1142/ S0218 21301 95001 31
+ 115. Dehuri S, Cho SB (2010) A hybrid genetic based functional link 
+artificial neural network with a statistical comparison of classi-
+fiers over multiple datasets. Neural Comput Appl 19(2):317–328. 
+https:// doi. org/ 10. 1007/ s00521- 009- 0310-y
+ 116. Mili F, Hamdi M (2012) A hybrid evolutionary functional link 
+artificial neural network for data mining and classification. Int J 
+Adv Comput Sci Appl 3(8):89–95
+ 117. Dehuri S, Cho SB (2010) Evolutionarily optimized features in 
+functional link neural network for classification. Expert Syst 
+Appl 37(6):4379–4391. https:// doi. org/ 10. 1016/j. eswa. 2009. 11. 
+090
+ 118. Subhranginee, D., Nayak, S. C., Nayak, S. K., & Biswajit, 
+S. (2019). A GA-based polynomial FLANN with exploration 
+and incorporation of virtual data points for financial time series 
+forecasting. International Journal of Recent Technology and 
+Engineering.
+ 119. Nayak, S. C., Misra, B. B., & Behera, H. S. (2015). ‘Comparison 
+of Performance of Different Functions in Functional Link Artifi-
+cial Neural Network: A Case Study on Stock Index Forecasting’, 
+computational intelligence in data mining. Smart Innovation, 
+Systems and Technologies, 1.
+ 120. Waheeb W, Ghazali R (2019) A new genetically optimized ten-
+sor product functional link neural network: an application to the 
+daily exchange rate forecasting. Evolutionary Intell Springer 
+12(4):593–608. https:// doi. org/ 10. 1007/ s12065- 019- 00261-2
+ 121. Anish CM, Majhi B (2016) Hybrid nonlinear adaptive scheme for 
+stock market prediction using feedback FLANN and factor analy-
+sis. J Korean Stat Soc 45(1):64–76. https:// doi. org/ 10. 1016/j. jkss. 
+2015. 07. 002
+ 122. Rout AK, Bisoi R, Dash PK (2015) A low complexity evolu-
+tionary computationally efficient recurrent functional link neural 
+network for time series forecasting. IEEE Publ Commun Infor -
+mation Technol Conference (PCITC). https:// doi. org/ 10. 1109/ 
+PCITC. 2015. 74382 30
+ 123. Rout AK, Dash PK, Dash R, Bisoi R (2017) Forecasting financial 
+time series using a low complexity recurrent neural network and 
+evolutionary learning approach. J King Saud University-Com-
+puter Information Sci 29(4):536–552. https:// doi. org/ 10. 1016/j. 
+jksuci. 2015. 06. 002
+ 124. Nayak, S. C., Kumar, K. V., & Jilla, K. (2018). ‘ACRRFLN: Arti-
+ficial Chemical Reaction of Recurrent Functional Link Networks 
+for Improved Stock Market Prediction’, advances in intelligent 
+systems and computing. In Proceedings of the International Con-
+ference on ICCIDM 2018. https:// doi. org/ 10. 1007/ 978- 981- 13- 
+8676-3_ 28
+ 125. Nayak SC, Misra BB, Behera HS (2018) ACFLN: artificial chem-
+ical functional link network for prediction of stock market index. 
+Evolutionary Systematics 1:26
+ 126. Nayak SC (2021) Bitcoin closing price movement prediction with 
+optimal functional link neural networks. Evolutionary Intelli-
+gence. Springer, Singapore
+ 127. Nayak SC, Misra BB, Behera HS (2017) Improving performance 
+of higher order neural network using artificial chemical reaction 
+optimization: a case study on stock market forecasting. In: Zhang 
+M (ed) Nature-inspired computing. IGI Global, Pennsylvania, pp 
+253–280. https:// doi. org/ 10. 4018/ 978-1- 5225- 0063-6. ch011
+ 128. Liu W-J, Bai Y-T, Jin X-B, Kong J-L, Su T-L (2022) A novel 
+broad echo state network for time series prediction: Cascade of 
+mapping nodes and optimization of enhancement layer. Appl Sci 
+12(13):6396. https:// doi. org/ 10. 3390/ app12 136396
+ 129. Majhi, B., Rout, M., & Baghel, V. (2013). On the development 
+and performance evaluation of a multiobjective GA-based RBF 
+adaptive model for the prediction of stock indices. Journal of 
+King Saud University-Computer Sciences and Informatics.
+ 130. Dash R, Dash PK, Bisoi R (2014) A self adaptive differential 
+harmony search based optimized extreme learning machine for 
+financial time series prediction. Swarm and Evolutionary Com-
+putation Elsevier 19:25–42. https:// doi. org/ 10. 1016/j. swevo.  
+2014. 07. 003
+ 131. Kumar Chandar, S. (2021). Hybrid models for intraday stock 
+price forecasting based on artificial neural networks and 
+metaheuristic algorithms. Pattern Recognition Letters.
+ 132. Akbilgic O, Bozdogan H, Balaban ME (2014) A novel Hybrid 
+RBF Neural Networks model as a forecaster. Stat Comput 
+24(3):365–375. https:// doi. org/ 10. 1007/ s11222- 013- 9375-7
+ 133. Wen L, Liang XM, Long ZQ, Qin HY (2012) RBF neural net-
+work time series forecasting based on hybrid evolutionary algo-
+rithm. Control Decis 27(8):1265–1268
+ 134. Xiong T, Bao Y, Hu Z, Chiong R (2015) Forecasting interval 
+time series using a fully complex-valued RBF neural network 
+with DPSO and PSO algorithms. Inf Sci 305:77–92. https:// doi. 
+org/ 10. 1016/j. ins. 2015. 01. 029
+ 135. Shrivastava P, Verma CK (2019) Optimization of the variance of 
+attribute by hybrid swarm intelligence and option price predica-
+tion by cascading neural network. Biosci Biotechnol Res Com-
+mun 12(2):324–332. https:// doi. org/ 10. 21786/ bbrc/ 12.2/ 15
+ 136. Yadav RN, Kalra PK, John J (2007) Time series prediction 
+with single multiplicative neuron model. Appl Soft Comput 
+7:1157–1163
+ 137. Zhao L, Yang Y (2009) PSO-based single multiplicative neuron 
+model for time series prediction. Expert Syst Appl 36(2):2805–
+2812. https:// doi. org/ 10. 1016/j. eswa. 2008. 01. 061
+ 138. Cagcag Yolcu O, Bas E, Egrioglu E, Yolcu U (2018) Single mul-
+tiplicative neuron model artificial neural network with autore-
+gressive coefficient for time series modelling. Neural Process Lett 
+47(3):1133–1147. https:// doi. org/ 10. 1007/ s11063- 017- 9686-3
+ 139. Rodríguez, N. (2009). Multiscale Legendre neural network for 
+monthly anchovy catches forecasting. In Third International 
+Symposium on Intelligent Information Technology Application 
+(pp. 598–601). https:// doi. org/ 10. 1109/ IITA. 2009. 466
+ 140. Das R (2016) DECPNN: a hybrid stock predictor model using 
+differential evolution and Chebyshev polynomial neural network. 
+Intell Decision Technol 12:93–104
+ 141. Dash R, Dash PK (2016) Prediction of financial time series data 
+using hybrid evolutionary Legendre neural network: evolutionary 
+LENN. Int J of Appl Evolut Comput 7(1):16–32. https:// doi. org/ 
+10. 4018/ IJAEC. 20160 10102
+ 142. Ghazali R, Jaafar Hussain A, Mohd Nawi N, Mohamad B (2009) 
+Non-stationary and stationary prediction of financial time series 
+using dynamic ridge polynomial neural network. Neurocomput-
+ing 72(10–12):2359–2367. https:// doi. org/ 10. 1016/j. neucom. 
+2008. 12. 005
+ 143. Ghazali R, Nawi NM, Salikon, Mohd MZ (2009) Forecasting 
+the UK/EU and JP/UK trading signals using Polynomial Neural 
+Networks. Int J Comput Information Syst and Industrial Manage-
+ment Appl (IJCISIM) 1:110–117
+ 144. Ghazali R, Nawi NM, Salleh MNM (2010) Dynamic ridge poly-
+nomial neural network with a real time recurrent learning algo-
+rithm: forecasting the S&P 500. Int J Biomed Soft Comput and 
+Human Sci 16(2):97–103
+ 145. Ghazali R, Hussain AJ, Liatsis P (2011) Dynamic ridge polyno-
+mial neural network: forecasting the univariate non-stationary 
+
+[PÁGINA PDF 47]
+4447
+A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning…
+1 3
+and stationary trading signals. Expert Syst Appl 38(4):3765–
+3776. https:// doi. org/ 10. 1016/j. eswa. 2010. 09. 037
+ 146. Wang K, Chang M, Wang W, Wang G, Pan W (2019) Pre-
+dictions models of Taiwan dollar to US dollar and RMB 
+exchange rate based on modified PSO and GRNN. Clust 
+Comput 22(S5):10993–11004. https:// doi. org/ 10. 1007/  
+s10586- 017- 1280-y
+ 147. Das S, Sahu TP, Janghel RR (2021) Stock market forecasting 
+using intrinsic time-scale decomposition in fusion with cluster 
+based modified CSA optimized ELM. J King Saud University-
+Comp Information Sci 34(10):8777–8793
+ 148. Zhang M, Hu C (2017) Ultra high frequency sigmoid and cosine 
+artificial higher order neural networks. Computing Conference. 
+https:// doi. org/ 10. 1109/ SAI. 2017. 82521 77
+ 149. Egrioglu E, Yolcu U, Bas E, Dalar AZ (2019) Median-Pi artificial 
+neural network for forecasting. Neural Comput Appl 31(1):307–
+316. https:// doi. org/ 10. 1007/ s00521- 017- 3002-z
+ 150. Nayak SC, Misra BB (2018) Estimating stock closing indices 
+using a GA-weighted condensed polynomial neural network. 
+Financial Innovation. https:// doi. org/ 10. 1186/ s40854- 018- 0104-2
+ 151. Nayak SC, Misra BB, Behera HS (2018) On developing and per-
+formance evaluation of adaptive second order neural network 
+with GA-based training (ASONN-GA) for financial time series 
+prediction. In: Dey N (ed) Advancements in applied metaheuris-
+tic computing. IGI Global, Pennsylvania, pp 231–263. https:// doi. 
+org/ 10. 4018/ 978-1- 5225- 4151-6. ch010
+ 152. Nayak SC, Misra BB, Behera HS (2016) An adaptive second 
+order neural network with genetic-algorithm-based training 
+(ASONN-GA) to forecast the closing prices of the stock market. 
+Int J Appl Metaheuristic Comput 7(2):39–57. https:// doi. org/ 10. 
+4018/ IJAMC. 20160 40103
+ 153. Prasetyo J, Setiawan NA, Adji TB (2020) ‘Improving normaliza-
+tion method of higher-order neural network in the forecasting of 
+oil production’, E3S Web of Conferences 200. ICST 02016:2020
+ 154. Dash R (2020) Performance analysis of an evolutionary recur -
+rent Legendre Polynomial Neural Network in application to 
+FOREX prediction. J King Saud University-Comp Inform Sci 
+32(9):1000–1011. https:// doi. org/ 10. 1016/j. jksuci. 2017. 12. 010
+ 155. Wang H, Bai Y, Li C, Guo Z, Zhang J (2019) Time series predic-
+tion model of grey wolf optimized echo state network. Data Sci 
+J 18(1):16. https:// doi. org/ 10. 5334/ dsj- 2019- 016
+ 156. González-Zapata AM, Tlelo-Cuautle E, Ovilla-Martinez B, Cruz-
+Vega I, De la Fraga LG (2022) Optimizing echo state networks 
+for enhancing large prediction horizons of chaotic time series. 
+Mathematics 10(20):3886. https:// doi. org/ 10. 3390/ math1 02038 
+86
+ 157. Chouikhi N, Ammar B, Rokbani N, Alimi AM (2017) PSO-
+based analysis of Echo State Network parameters for time series 
+forecasting. Appl Soft Comput 55:211–225. https:// doi. org/ 10. 
+1016/j. asoc. 2017. 01. 049
+ 158. Ghazali R, Hussain AJ, Liatsis P, Tawfik H (2008) The appli-
+cation of ridge polynomial neural network to multi-step ahead 
+financial time series prediction. Neural Comput Appl 17(3):311–
+323. https:// doi. org/ 10. 1007/ s00521- 007- 0132-8
+ 159. Waheeb W, Ghazali R, Hussain AJ (2018) Dynamic ridge poly-
+nomial neural network with Lyapunov function for time series 
+forecasting. Appl Intell 48(7):1721–1738. https:// doi. org/ 10.  
+1007/ s10489- 017- 1036-7
+ 160. Al-Jumeily D, Ghazali R, Hussain A (2014) Predicting physical 
+time series using dynamic ridge polynomial neural networks. 
+PLOS ONE 9(8):e105766. https:// doi. org/ 10. 1371/ journ al. pone. 
+01057 66
+ 161. Waheeb W, Ghazali R, Herawan T (2016) Ridge polynomial 
+neural network with error feedback for time series forecasting. 
+PLOS ONE 11(12):e0167248. https:// doi. org/ 10. 1371/ journ al. 
+pone. 01672 48
+ 162. Aladag CH, Yolcu U, Egrioglu E (2013) A new multiplicative 
+seasonal neural network model based on particle swarm optimi-
+zation. Neural Process Lett 37(3):251–262. https:// doi. org/ 10.  
+1007/ s11063- 012- 9244-y
+ 163. Li D, Han M, Wang J (2012) Chaotic time series prediction based 
+on a novel robust echo state network. IEEE Trans Neural Net-
+works and Learn Syst 23(5):787–799. https:// doi. org/ 10. 1109/ 
+TNNLS. 2012. 21884 14
+ 164. Zhong S, Xie X, Lin L, Wang F (2017) Genetic algorithm opti-
+mized double-reservoir echo state network for multi-regime time 
+series prediction. Neurocomputing 238:191–204. https:// doi. org/ 
+10. 1016/j. neucom. 2017. 01. 053
+ 165. Egrioglu E, Yolcu U, Aladag CH, Bas E (2015) Recurrent mul-
+tiplicative neuron model artificial neural network for non-linear 
+time series forecasting. Neural Process Lett 41(2):249–258. 
+https:// doi. org/ 10. 1007/ s11063- 014- 9342-0
+ 166. Nanda, Kumar, S., Tripathy, Prasad, D., & Mahapatra, S. S. 
+(2011). Application of legendre neural network for air quality 
+prediction. In The 5th PSU-UNS International Conference on 
+Engineering and Technology (ICET-2011) (pp. 267–272).
+ 167. Bas E (2016) The training of multiplicative neuron model based 
+artificial neural networks with differential evolution algorithm for 
+forecasting. Journal of Artificial Intelligence and Soft Computing 
+Research 6(1):5–11. https:// doi. org/ 10. 1515/ jaiscr- 2016- 0001
+ 168. Das S, Sahu TP, Janghel RR, Sahu BK (2021) Effective forecast-
+ing of stock market price by using extreme learning machine 
+optimized by PSO-based group oriented crow search algorithm. 
+Neural Comput Appl 34(1):555–591. https:// doi. org/ 10. 1007/ 
+s00521- 021- 06403-x
+ 169. Rather AM, Agarwal A, Sastry VN (2015) Recurrent neural net-
+work and a hybrid model for prediction of stock returns. Expert 
+Syst Appl 42(6):3234–3241. https:// doi. org/ 10. 1016/j. eswa. 2014. 
+12. 003
+ 170. Worasucheep C (2015) Forecasting currency exchange rates with 
+an artificial bee colony-optimized neural network. Congress on 
+evolutionary computation, IEEE Xplore. https:// doi. org/ 10. 1109/ 
+CEC. 2015. 72573 05
+ 171. Nayak SC, Misra BB (2019) A chemical-reaction-optimization-
+based neuro-fuzzy hybrid network (CRO-NFN) for stock closing 
+price prediction. Financial Innovation. https:// doi. org/ 10. 1186/ 
+s40854- 019- 0153-1
+ 172. Sahu KK, Nayak SC, Behera HS (2021) Multi-step-ahead 
+exchange rate forecasting for South Asian countries using multi-
+verse optimized multiplicative functional link neural networks. 
+Karbala Int J Modern Sci 7(1):7. https:// doi. org/ 10. 33640/ 2405- 
+609X. 2278
+ 173. Chang, P.-C. (2012), “A novel model by evolving partially con-
+nected neural network or stock price trend forecasting”. Di-di 
+Wang, Chang-le Zhou. Expert Systems with Applications. 
+Elsevier.
+ 174. Tang Y, Ji J, Zhu Y, Gao S, Tang Z, Todo Y (2019) A differential 
+evolution-oriented pruning neural network model for bankruptcy 
+prediction. Complexity. https:// doi. org/ 10. 1155/ 2019/ 86821 24
+ 175. Yang Y, Duan Z (2020) An effective co-evolutionary algorithm 
+based on artificial bee colony and differential evolution for time 
+series predicting optimization. Complex and Intelligent Systems 
+6(2):299–308. https:// doi. org/ 10. 1007/ s40747- 020- 00149-0
+ 176. Nayak SC, Dash SK, Behera C, Dehuri S (2022) An elitist arti-
+ficial-electric-field-algorithm-based artificial neural network for 
+financial time series forecasting. In: Dehuri S, Mishra P, Mal-
+lick PK, Cho SB (eds) Biologically inspired techniques in many 
+criteria decision making Smart innovation, systems and tech-
+nologies. Springer, Singapore, pp 29–38. https:// doi. org/ 10. 1007/ 
+978- 981- 16- 8739-6_3
+ 177. Nayak, S. C., Misra, B. B., & Behera, H. S. (2018) Escalation of 
+prediction accuracy with virtual data: A case study on financial 
+
+[PÁGINA PDF 48]
+4448 S. Behera et al.
+1 3
+time series. In: Sujata Dash, B.K. Tripathy, Atta ur Rahman (eds) 
+Handbook of research on modelling, analysis, and application 
+of nature inspired metaheuristic IGI Global engineering science 
+reference. Pennsylvania. pp. 433–461. https:// doi. org/ 10. 4018/ 
+978-1- 5225- 2857-9. ch022
+ 178. Chen XY, Chau KW, Busari AO (2015) A comparative study of 
+population-based optimization algorithms for downstream river 
+flow forecasting by a hybrid neural network model. Eng Appl of 
+Artificial Intell Elsevier 46:258–268. https:// doi. org/ 10. 1016/j. 
+engap pai. 2015. 09. 010
+ 179. Cao Z (2020) Evolutionary optimization of artificial neural net-
+work using an interactive phase-based optimization algorithm 
+for chaotic time series prediction. Soft Comput 24(22):17093–
+17109. https:// doi. org/ 10. 1007/ s00500- 020- 05002-7
+ 180. Asadi S, Hadavandi E, Mehmanpazir F, Nakhostin MM (2012) 
+Hybridization of Evolutionary Levenberg–Marquardt neural 
+networks and data pre-processing for stock market prediction, 
+(KBS) Knowledge-Based Systems. Elsevier
+ 181. Nayak SC, Dehuri S, Cho S-B (2022) Intelligent financial fore-
+casting with an improved chemical reaction optimization algo-
+rithm based dendritic neuron model. IEEE Access 10:130921–
+130943. https:// doi. org/ 10. 1109/ ACCESS. 2022. 32293 14
+ 182. Nayak SC, Kulukarni SV, Jilla K (2021) Cascaded adaptive non-
+linear functional link networks for modeling and predicting crude 
+oil prices time series data. In: Kumar A, Mozar S (eds) ICCCE 
+2020. Lecture notes in electrical engineering, vol 698. Springer, 
+Singapore, pp 1227–1240. https:// doi. org/ 10. 1007/ 978- 981- 15- 
+7961-5_ 113
+ 183. Liang Y, Qiu L, Zhu J, Pan J (2017) A digester temperature pre-
+diction model based on the Elman neural network. Appl Eng 
+Agri 33(2):142–148. https:// doi. org/ 10. 13031/ aea. 11157
+ 184. Ecer F, Ardabili S, Band SS, Mosavi A (2020) Training mul-
+tilayer Perceptron with genetic algorithms and particle swarm 
+optimization for modeling stock price index prediction. Entropy. 
+https:// doi. org/ 10. 3390/ e2211 1239
+ 185. Shamshirband S, Hadipoor M, Baghban A, Mosavi A, Bukor J, 
+Várkonyi-Kóczy AR (2019) Developing an ANFIS-PSO model 
+to predict mercury emissions in combustion flue gases. Math-
+ematics. https:// doi. org/ 10. 3390/ math7 100965
+ 186. Hsieh TJ, Hsiao HF, Yeh WC (2012) Mining financial distress 
+trend data using penalty guided support vector machines based 
+on hybrid of particle swarm optimization and artificial bee col-
+ony algorithm. Neurocomputing Elsevier 82:196–206. https://  
+doi. org/ 10. 1016/j. neucom. 2011. 11. 020
+ 187. Bilin, S., Li, M., Zhao, Y., & Bian, Genqing. (2019). Nickel 
+price forecast based on the LSTM neural network optimized by 
+the improved PSO algorithm, Hindawi. Mathematical Problems 
+in Engineering.
+ 188. Storn, R., & Price, K. V. (1995). Differential evolution – A sim-
+ple and efficient adaptive scheme for global optimization over 
+continuous spaces, Technical Report TR-95–012. International 
+Computer Science Institute.
+ 189. Zou F, Chen D, Xu Q (2019) A survey of teaching–learning-
+based optimization. Neurocomputing 335:366–383. https:// doi. 
+org/ 10. 1016/j. neucom. 2018. 06. 076
+ 190. Nayak, S. C., Misra, B. B., & Behera, H. S. (2015). Artificial 
+chemical reaction optimization of neural networks for efficient 
+prediction of stock market index‟. Ain Shams Engineering 
+Journal.
+ 191. Nayak SC, Misra BB, Behera HS (2015) Hybridzing chemi-
+cal reaction optimization and artificial neural network for stock 
+future index forecasting. ICETACS 2013:130–134. https:// doi. 
+org/ 10. 1109/ ICETA CS. 2013. 66914 09
+ 192. Nayak J, Naik B, Behera HS, Abraham A (2017) Hybrid chemi-
+cal reaction based metaheuristic with Fuzzy c-means algorithm 
+for optimal cluster analysis. Expert Syst Appl 79:282–295. 
+https:// doi. org/ 10. 1016/j. eswa. 2017. 02. 037
+ 193. Rao R (2016) Jaya: a simple and new optimization algorithm for 
+solving constrained and unconstrained optimization problems. 
+Int J Ind Eng Comput 7(1):19–34
+ 194. Nayak Sanjib Kumar, N. S. C., & Subhranginee, D. (2021). Mod-
+eling and forecasting cryptocurrency closing prices with Rao 
+algorithm-based artificial neural networks: A machine learning 
+approach, Fintech. MDPI.
+ 195. Nayak SC, Nayak SK (2022) A hybrid ANN with Rao algorithm 
+based optimization (RA + ANN) for short term forecasting of 
+crypto currencies. In: Sahoo JP, Tripathy AK, Mohanty M, Li 
+KC, Nayak AK (eds) Advances in distributed computing and 
+machine learning. Lecture notes in networks and systems, vol 
+302. Springer, Singapore, pp 362–373. https:// doi. org/ 10. 1007/ 
+978- 981- 16- 4807-6_ 35
+ 196. Behera, N. K. S., & Behera, H. S. (2014). Firefly based ridge 
+polynomial neural network for classification, IEEE International 
+Conference on Advanced Communications, Control and Comput-
+ing. Technologies, 1110–1113.
+ 197. Emami H (2022) Stock exchange trading optimization algo-
+rithm: a human-inspired method for global optimization. Journal 
+of Supercomputing 78(2):2125–2174. https:// doi. org/ 10. 1007/ 
+s11227- 021- 03943-w
+ 198. Kabir Ahmed M, Maksha Wajiga G, Vachaku Blamah N, Modi 
+B (2019) Stock market forecasting using ant colony optimization 
+based algorithm. American J Math Comp Modell 4(3):52–57. 
+https:// doi. org/ 10. 11648/j. ajmcm. 20190 403. 11
+ 199. Zhang, Y., Wang, Shuihua, & Ji, G. (2013). ‘A Rule-Based Model 
+for Bankruptcy Prediction Based on an Improved Genetic Ant 
+Colony Algorithm’, Hindawi publishing corporation. Mathemati-
+cal Problems in Engineering, 2013.
+ 200. Bisoi R, Dash PK, Parida AK (2019) Hybrid variational mode 
+decomposition and evolutionary robust kernel extreme learning 
+machine for stock price and movement prediction on daily basis. 
+Appl Soft Comput 74:652–678. https:// doi. org/ 10. 1016/j. asoc. 
+2018. 11. 008
+ 201. Bardhan A, Kardani N, Alzo’ubi, A.K. et al (2022) A compara-
+tive analysis of hybrid computational models constructed with 
+swarm intelligence algorithms for estimating soil compression 
+index. Arch Computat Methods Eng. 29:4735–4773. https:// doi. 
+org/ 10. 1007/ s11831- 022- 09748-1
+Publisher's Note Springer Nature remains neutral with regard to 
+jurisdictional claims in published maps and institutional affiliations.
+Springer Nature or its licensor (e.g. a society or other partner) holds 
+exclusive rights to this article under a publishing agreement with the 
+author(s) or other rightsholder(s); author self-archiving of the accepted 
+manuscript version of this article is solely governed by the terms of 
+such publishing agreement and applicable law.

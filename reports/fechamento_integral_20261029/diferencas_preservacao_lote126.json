@@ -1,0 +1,194 @@
+{
+  "tabelas": [
+    {
+      "tabela": 1,
+      "linha": 3,
+      "coluna": 1,
+      "antes": "25 D; 2 S; 7 ?; 0 —",
+      "depois": "26 D; 2 S; 6 ?; 0 —"
+    },
+    {
+      "tabela": 1,
+      "linha": 4,
+      "coluna": 2,
+      "antes": "Separa comparação própria de LSTM/GRU/Transformer e números importados, como em Deng e Liu B. (S).",
+      "depois": "Separa comparações próprias com LSTM/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S."
+    },
+    {
+      "tabela": 1,
+      "linha": 5,
+      "coluna": 1,
+      "antes": "25 D; 3 S; 2 ?; 4 —",
+      "depois": "25 D; 3 S; 3 ?; 3 —"
+    },
+    {
+      "tabela": 2,
+      "linha": 1,
+      "coluna": 0,
+      "antes": "Abebe & Goshu (2024)",
+      "depois": "Abebe e Goshu (2024)"
+    },
+    {
+      "tabela": 2,
+      "linha": 3,
+      "coluna": 0,
+      "antes": "Behera (2023)",
+      "depois": "Behera, Nayak e Kumar (2023)"
+    },
+    {
+      "tabela": 2,
+      "linha": 7,
+      "coluna": 0,
+      "antes": "Costa & Lunkes (2025)",
+      "depois": "Costa e Lunkes (2025)"
+    },
+    {
+      "tabela": 2,
+      "linha": 10,
+      "coluna": 0,
+      "antes": "Duttilo (2023)",
+      "depois": "Duttilo (2024)"
+    },
+    {
+      "tabela": 2,
+      "linha": 12,
+      "coluna": 0,
+      "antes": "Ecer (2020)",
+      "depois": "Ecer et al. (2020)"
+    },
+    {
+      "tabela": 2,
+      "linha": 13,
+      "coluna": 0,
+      "antes": "Hariharan et al. (2025)",
+      "depois": "Hariharan, Suresh e Chandrasekar (2025)"
+    },
+    {
+      "tabela": 2,
+      "linha": 14,
+      "coluna": 0,
+      "antes": "Hassaan et al. (2025)",
+      "depois": "Hassaan, Yacoub e Said (2025)"
+    },
+    {
+      "tabela": 2,
+      "linha": 18,
+      "coluna": 0,
+      "antes": "Liu H. (2025)",
+      "depois": "Liu, Lin e Rojas (2025)"
+    },
+    {
+      "tabela": 2,
+      "linha": 19,
+      "coluna": 5,
+      "antes": "—",
+      "depois": "?"
+    },
+    {
+      "tabela": 2,
+      "linha": 22,
+      "coluna": 0,
+      "antes": "Seddik (2023)",
+      "depois": "Seddik, Routaib e Elhaddadi (2023)"
+    },
+    {
+      "tabela": 2,
+      "linha": 22,
+      "coluna": 3,
+      "antes": "?",
+      "depois": "D"
+    },
+    {
+      "tabela": 2,
+      "linha": 23,
+      "coluna": 0,
+      "antes": "Sharma (2025)",
+      "depois": "Sharma et al. (2025)"
+    },
+    {
+      "tabela": 2,
+      "linha": 24,
+      "coluna": 0,
+      "antes": "Soltani et al. (2022)",
+      "depois": "Soltani, Benmohamed e Ltifi (2022)"
+    },
+    {
+      "tabela": 2,
+      "linha": 25,
+      "coluna": 0,
+      "antes": "Sudiatmika & Putra (2024)",
+      "depois": "Sudiatmika e Putra (2024)"
+    },
+    {
+      "tabela": 2,
+      "linha": 26,
+      "coluna": 0,
+      "antes": "Sun (2021)",
+      "depois": "Sun et al. (2021)"
+    },
+    {
+      "tabela": 2,
+      "linha": 27,
+      "coluna": 0,
+      "antes": "Tian (2024)",
+      "depois": "Tian e Pei (2024)"
+    },
+    {
+      "tabela": 2,
+      "linha": 30,
+      "coluna": 0,
+      "antes": "Vishwas et al. (2025)",
+      "depois": "Vishwas, Usha e Sangeetha (2025)"
+    },
+    {
+      "tabela": 2,
+      "linha": 31,
+      "coluna": 0,
+      "antes": "Wang F. et al. (2025)",
+      "depois": "Wang, Bu e Huang (2025)"
+    },
+    {
+      "tabela": 2,
+      "linha": 33,
+      "coluna": 0,
+      "antes": "Xiao (2024)",
+      "depois": "Xiao, Deng e Bi (2024)"
+    },
+    {
+      "tabela": 5,
+      "linha": 3,
+      "coluna": 4,
+      "antes": "Remove os transientes iniciais do reservatório.",
+      "depois": "Descarta os estados iniciais na estimação de Wout."
+    },
+    {
+      "tabela": 11,
+      "linha": 3,
+      "coluna": 1,
+      "antes": "Laplace × Normal e Laplace × Cauchy superaram Normal × Normal em MAE/RMSE",
+      "depois": "Laplace × Normal teve menor MAE e Laplace × Cauchy menor RMSE que Normal × Normal."
+    }
+  ],
+  "refs_antes": 50,
+  "refs_depois": 50,
+  "referencias_anteriores_alteradas": [
+    "CHEN, C.; ZHANG, X.; KUO, E.; FU, R.; XIE, Q.; ZHANG, F. Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study. 2026. (Preprint arXiv:2512.06630v2). Submetido ao IEEE Transactions on Quantum Engineering.",
+    "DUTTILO, P. Modelling Financial Returns with Mixtures of Generalized Normal Distributions. 2023. Tese (Doutorado em Human Science — Economics and Statistics) — Università degli Studi “G. d’Annunzio” Chieti-Pescara, 2023. Tutor: Prof. Stefano Antonio Gattone; Coordenador: Prof. Marco Di Marzio.",
+    "DUTTILO, P.; GATTONE, S. A. Modelling Financial Returns with Finite Mixtures of GED. 51st Scientific Meeting of the Italian Statistical Society, p. 1364-1369, 2022. Università degli Studi “G. d’Annunzio” Chieti-Pescara.",
+    "ESHELMAN, L. J. The CHC Adaptive Search Algorithm: How to Have Safe Search When Engaging in Nontraditional Genetic Recombination. In: RAWLINS, G. J. E. (ed.). Foundations of Genetic Algorithms 1. San Mateo: Morgan Kaufmann, 1991. p. 265-283. DOI: 10.1016/B978-0-08-050684-5.50020-3.",
+    "HOLLAND, J. H. Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence. Ann Arbor: University of Michigan Press, 1975.",
+    "SEDDIK, S; ROUTAIB, H.; ELHADDADI, A. Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System. International Journal of Computational Methods and Experimental Measurements, v. 11, n. 4, p. 193-203, 2023. DOI: 10.18280/ijcmem.110401.",
+    "SHARMA, M.; SARTOR, E.; CAVAZZA, M.; PRENDINGER, H. Echo State Networks for Bitcoin Time Series Prediction. Neural Information Processing (ICONIP 2025). 2025. (Preprint arXiv:2508.05416).",
+    "VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, 2025. DOI: 10.21595/mme.2025.24861."
+  ],
+  "referencias_atuais_alteradas": [
+    "CHEN, C.; ZHANG, X.; KUO, E.; FU, R.; XIE, Q.; ZHANG, F. Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study. 2026. (Preprint arXiv:2512.06630v2). Disponível em: https://doi.org/10.48550/arXiv.2512.06630.",
+    "DUTTILO, P. Modelling Financial Returns with Mixtures of Generalized Normal Distributions. 2024. Tese (Doutorado em Human Science — Economics and Statistics) — Università degli Studi “G. d’Annunzio” Chieti-Pescara, 2024. Tutor: Prof. Stefano Antonio Gattone; Coordenador: Prof. Marco Di Marzio.",
+    "DUTTILO, P.; GATTONE, S. A. Modelling Financial Returns with Finite Mixtures of GED. In: BALZANELLA, A.; BINI, M.; CAVICCHIA, C.; VERDE, R. (ed.). SIS 2022: 51st Scientific Meeting of the Italian Statistical Society: Book of the Short Papers. [S. l.]: Pearson, 2022. p. 1364-1369. ISBN 9788891932310.",
+    "ESHELMAN, L. J.; SCHAFFER, J. D. Method for optimizing the configuration of a pick and place machine. Depositante: North American Philips Corporation. US5390283A. Depósito: 23 out. 1992. Concessão: 14 fev. 1995. Disponível em: https://patents.google.com/patent/US5390283A/en. Acesso em: 30 out. 2026.",
+    "HOLLAND, J. H. Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence. Cambridge, MA: MIT Press, 1992.",
+    "SEDDIK, S.; ROUTAIB, H.; ELHADDADI, A. Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System. International Journal of Computational Methods and Experimental Measurements, v. 11, n. 4, p. 193-203, 2023. DOI: 10.18280/ijcmem.110401.",
+    "SHARMA, M.; SARTOR, E.; CAVAZZA, M.; PRENDINGER, H. Echo State Networks for Bitcoin Time Series Prediction. arXiv, 2025. Preprint arXiv:2508.05416v1. DOI: 10.48550/arXiv.2508.05416.",
+    "VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, n. 4, p. 204-229, 2025. DOI: 10.21595/mme.2025.24861."
+  ]
+}

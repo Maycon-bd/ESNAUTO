@@ -1,0 +1,306 @@
+{
+  "sha256_docx": "31ec505d2f39784a17b6d076f5a0893cc8753f25cdab6bb1a4095eeef363268f",
+  "sha256_pdf": "da8d8521bf2a9bb55cdbb715c7d3528e4e2294d346bcb963e99aab85cb2d2554",
+  "paginas_pdf_sumario_inspecionadas": [
+    16,
+    17
+  ],
+  "titulos_conferidos": [
+    {
+      "texto": "INTRODUÇÃO",
+      "pagina": 17,
+      "estilo": "TITULO TCC",
+      "numero": "1",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "REVISÃO DA LITERATURA",
+      "pagina": 19,
+      "estilo": "TITULO TCC",
+      "numero": "2",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+      "pagina": 19,
+      "estilo": "SEÇÃO TCC",
+      "numero": "2.1",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+      "pagina": 20,
+      "estilo": "SEÇÃO TCC",
+      "numero": "2.2",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+      "pagina": 22,
+      "estilo": "SEÇÃO TCC",
+      "numero": "2.3",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+      "pagina": 24,
+      "estilo": "SEÇÃO TCC",
+      "numero": "2.4",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+      "pagina": 26,
+      "estilo": "SEÇÃO TCC",
+      "numero": "2.5",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+      "pagina": 28,
+      "estilo": "SEÇÃO TCC",
+      "numero": "2.6",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "TRABALHOS RELACIONADOS",
+      "pagina": 29,
+      "estilo": "SEÇÃO TCC",
+      "numero": "2.7",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+      "pagina": 31,
+      "estilo": "SEÇÃO TCC",
+      "numero": "2.8",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+      "pagina": 32,
+      "estilo": "SEÇÃO TCC",
+      "numero": "2.9",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "MATERIAL E MÉTODOS",
+      "pagina": 39,
+      "estilo": "TITULO TCC",
+      "numero": "3",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "CLASSIFICAÇÃO DA PESQUISA",
+      "pagina": 39,
+      "estilo": "SEÇÃO TCC",
+      "numero": "3.1",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+      "pagina": 40,
+      "estilo": "SEÇÃO TCC",
+      "numero": "3.2",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "IMPLEMENTAÇÃO DAS ESNS EM R",
+      "pagina": 42,
+      "estilo": "SEÇÃO TCC",
+      "numero": "3.3",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+      "pagina": 44,
+      "estilo": "SEÇÃO TCC",
+      "numero": "3.4",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+      "pagina": 45,
+      "estilo": "SEÇÃO TCC",
+      "numero": "3.5",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+      "pagina": 45,
+      "estilo": "SEÇÃO TCC",
+      "numero": "3.6",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+      "pagina": 47,
+      "estilo": "SEÇÃO TCC",
+      "numero": "3.7",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+      "pagina": 48,
+      "estilo": "SEÇÃO TCC",
+      "numero": "3.8",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "Ambiente computacional",
+      "pagina": 48,
+      "estilo": "SUBÇÃO 2",
+      "numero": "3.8.1",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "Estrutura do repositório",
+      "pagina": 48,
+      "estilo": "SUBÇÃO 2",
+      "numero": "3.8.2",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "Procedimento de revisão bibliográfica",
+      "pagina": 49,
+      "estilo": "SUBÇÃO 2",
+      "numero": "3.8.3",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "Procedimento de re-execução dos experimentos",
+      "pagina": 51,
+      "estilo": "SUBÇÃO 2",
+      "numero": "3.8.4",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "RESULTADOS E DISCUSSÃO",
+      "pagina": 52,
+      "estilo": "TITULO TCC",
+      "numero": "4",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "VISÃO GERAL DOS EXPERIMENTOS",
+      "pagina": 52,
+      "estilo": "SEÇÃO TCC",
+      "numero": "4.1",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "DESEMPENHO PREDITIVO GLOBAL",
+      "pagina": 53,
+      "estilo": "SEÇÃO TCC",
+      "numero": "4.2",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+      "pagina": 56,
+      "estilo": "SEÇÃO TCC",
+      "numero": "4.3",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "DISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO",
+      "pagina": 57,
+      "estilo": "SEÇÃO TCC",
+      "numero": "4.4",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+      "pagina": 57,
+      "estilo": "SEÇÃO TCC",
+      "numero": "4.5",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "CUSTO COMPUTACIONAL",
+      "pagina": 58,
+      "estilo": "SEÇÃO TCC",
+      "numero": "4.6",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+      "pagina": 59,
+      "estilo": "SEÇÃO TCC",
+      "numero": "4.7",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+      "pagina": 60,
+      "estilo": "SEÇÃO TCC",
+      "numero": "4.8",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "AVALIAÇÃO DAS HIPÓTESES",
+      "pagina": 61,
+      "estilo": "SEÇÃO TCC",
+      "numero": "4.9",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "CONTRIBUIÇÕES DO ESNAUTO",
+      "pagina": 63,
+      "estilo": "SEÇÃO TCC",
+      "numero": "4.10",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "DISCUSSÃO",
+      "pagina": 65,
+      "estilo": "TITULO TCC",
+      "numero": "5",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "VALIDADE INTERNA E ESTATÍSTICA",
+      "pagina": 65,
+      "estilo": "SEÇÃO TCC",
+      "numero": "5.1",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "VALIDADE EXTERNA",
+      "pagina": 66,
+      "estilo": "SEÇÃO TCC",
+      "numero": "5.2",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "TRABALHOS FUTUROS",
+      "pagina": 67,
+      "estilo": "SEÇÃO TCC",
+      "numero": "5.3",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "CONCLUSÃO",
+      "pagina": 68,
+      "estilo": "TITULO TCC",
+      "numero": "6",
+      "corresponde_sumario": true
+    },
+    {
+      "texto": "REFERÊNCIAS",
+      "pagina": 71,
+      "estilo": "TITULO TCC",
+      "numero": "",
+      "corresponde_sumario": true
+    }
+  ],
+  "maximo_niveis": 3,
+  "decisoes": {
+    "G13": "Até três níveis de indicativo numérico; atende ao limite de cinco.",
+    "G20": "Recomendação de preferência por três níveis atendida.",
+    "G47": "Sumário inclui apenas introdução,capítulos textuais e referências; sem pré-textuais.",
+    "G48": "Títulos e páginas correspondem ao mapa atual; pontilhados e realces visíveis conferidos nas duas páginas.",
+    "G79": "Não há quarto nível; ambiguidade interna do guia não é acionada."
+  },
+  "nota": "Validação por mapa gerado no Word e numeração visível, corrigindo a fragilidade da consulta127 que pesquisava apenas texto sem números de campo."
+}

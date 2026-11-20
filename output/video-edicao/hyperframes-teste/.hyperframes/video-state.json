@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "historyId": "86c1147b-393d-484d-b5b5-e4d9b858bbd8",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\86c1147b-393d-484d-b5b5-e4d9b858bbd8\\blobs\\26\\26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4"
+    },
+    "CLAUDE.md": {
+      "hash": "26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\86c1147b-393d-484d-b5b5-e4d9b858bbd8\\blobs\\26\\26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4"
+    },
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\86c1147b-393d-484d-b5b5-e4d9b858bbd8\\blobs\\53\\53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "bb26a8f483c4b8ed34f95e1a3fd8bd97e06440351dcb1c24c71d2abdbb1a1d15",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\86c1147b-393d-484d-b5b5-e4d9b858bbd8\\blobs\\bb\\bb26a8f483c4b8ed34f95e1a3fd8bd97e06440351dcb1c24c71d2abdbb1a1d15"
+    },
+    "meta.json": {
+      "hash": "37f5b2e9837bdb5e698380c947ef15c12f739ac4a3c400a87dc746e4951c0314",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\86c1147b-393d-484d-b5b5-e4d9b858bbd8\\blobs\\37\\37f5b2e9837bdb5e698380c947ef15c12f739ac4a3c400a87dc746e4951c0314"
+    },
+    "package.json": {
+      "hash": "c5d974c483d998c4eb34ea1a6e95e17e629a31728edd58a948f5a5888db07c6d",
+      "content": "C:\\Users\\User\\.cache\\hyperframes\\history\\86c1147b-393d-484d-b5b5-e4d9b858bbd8\\blobs\\c5\\c5d974c483d998c4eb34ea1a6e95e17e629a31728edd58a948f5a5888db07c6d"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "3d8b24cc-f389-4f6e-b31d-fa9cc82065ed"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "3d8b24cc-f389-4f6e-b31d-fa9cc82065ed",
+        "scope": "project",
+        "report": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\hyperframes-teste\\.hyperframes\\artifacts\\checks\\3d8b24cc-f389-4f6e-b31d-fa9cc82065ed.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 10000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793638104275,
+        "contentHash": "b519d8eeb9db8cfc3469d26082451a075e109f3a5888c09590f2d38bcafcdcb4",
+        "revision": null,
+        "inputFingerprint": "eb5af3ca7baa848db345b4ab03eeffbb22de188c413443f4967a5b831921297c",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "a25a719f-c963-4a01-a75a-14eb11c59c36",
+      "completedAt": 1793637992680,
+      "output": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\exportados\\teste-hyperframes.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

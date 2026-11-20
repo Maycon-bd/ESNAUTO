@@ -1,0 +1,27 @@
+{
+  "sha256_docx": "f933c9281afbbab9b3f49a3fccec01278eb77085d6358c2007c2719ed14682ed",
+  "decisoes": [
+    {
+      "termo": "BIST",
+      "fonte": "fontes_extraidas/D12_paginas.json",
+      "pagina_pdf": 1,
+      "evidencia": "Resumo originalexplicaBorsa Istanbul(BIST)100.",
+      "proposta": "Primeira ocorrência: índice da Borsa Istanbul (BIST) 100; acrescentar BIST–Borsa Istanbul à lista."
+    },
+    {
+      "termo": "DJIA",
+      "fonte": "fontes_extraidas/D10_paginas.json",
+      "pagina_pdf": 1,
+      "evidencia": "Resumo originalexplicaDow Jones Industrial Average(DJIA).",
+      "proposta": "Primeira ocorrência: índice Dow Jones Industrial Average (DJIA); acrescentar entrada correspondente à lista."
+    },
+    {
+      "termo": "JPX",
+      "fonte": "fontes_extraidas/D05_paginas.json",
+      "pagina_pdf": 3,
+      "evidencia": "Fonte nomeia competição e conjuntoJPX Tokyo Stock Exchange Prediction.",
+      "proposta": "Substituir referência vaga ao conjuntoJPX pelo nome completo do conjunto de dados da competição JPX Tokyo Stock Exchange Prediction. Não inventar expansão corporativa que a passagem do artigo não fornece; nome do conjunto não exige nova sigla."
+    }
+  ],
+  "pendente": "Aplicar3apresentações no corpo e2entradas alfabéticas da lista, preservar formatos e renderizar. Inserções na lista deslocam índices; usar âncoras textuais para relocalizar evidências."
+}

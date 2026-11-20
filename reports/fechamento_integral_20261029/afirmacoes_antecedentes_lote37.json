@@ -1,0 +1,139 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "63ca3ec4031dafe5a78b6785f2a5d7581f5deacc461c9096c392dedc5963b62e",
+  "escopo": "13 relações de citação e afirmação. Documento de Araújo consultado é prova de autor; vínculos e conclusões não são transferidos automaticamente para outros trechos.",
+  "registros": [
+    {
+      "ancora": "P_atual0221",
+      "texto_atual": "Araújo et al. (2025) investigaram a combinação de AG, ESN e distribuições probabilísticas em séries da B3. Essa combinação é um antecedente metodológico próximo. Nesta pesquisa, o ESNAUTO organiza cinco ondas de configurações para Win e W, integra LHS e um operador antiestagnação inspirado no CHC e recebe a série identificada como previamente ajustada. Essa integração não comprova novidade de cada componente nem isola o efeito causal da distribuição ou do ajuste.",
+      "referencia": "R02",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF 4–5 e 7–10",
+      "evidencia": "Prova de autor descreve ESN, AG e distribuições com dados financeiros brasileiros; as frases seguintes descrevem o presente trabalho e não atribuem sua integração à fonte.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0234",
+      "texto_atual": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada.",
+      "referencia": "R02",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF 5 e 10",
+      "evidencia": "São nomeadas Normal, Uniforme, Student t, GED e Student t assimétrica; a prova não individualiza por completo a lei por matriz, e o parágrafo registra essa limitação.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0234",
+      "texto_atual": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada.",
+      "referencia": "R40",
+      "arquivo_fonte": "Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_fonte": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "localizador": "PDF 7, Tabela 1",
+      "evidencia": "Uniforme discreta e log-uniforme descrevem amostragem dos hiperparâmetros, com função distinta da lei de geração de Win; a monografia preserva a distinção.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0245",
+      "texto_atual": "Araújo et al. (2025) compararam MAE e RMSE como aptidão de um AG para ESNs com cinco distribuições. A prova consultada descreve retornos de fechamento da ITSA4 e variâncias diárias, com partição declarada de 60%/20%/20%. Esse protocolo difere da previsão do preço ajustado da PETR4 no ESNAUTO. A presente pesquisa adapta essa linha de trabalho, integra LHS e um operador antiestagnação inspirado no CHC. A preservação histórica parcial dos artefatos está descrita na Seção 3.8. Foi consultada a prova de autor; os metadados da edição final foram conferidos no editor.",
+      "referencia": "R02",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF 7–8 e 10",
+      "evidencia": "Prova compara MAE e RMSE como aptidão; descreve retornos de ITSA4, referência a variâncias diárias e divisão 60/20/20. A redação ressalva a prova e o protocolo distinto.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0259",
+      "texto_atual": "A questão desta pesquisa é examinar o desempenho de configurações de ESN que combinam distribuições de inicialização e hiperparâmetros na previsão da PETR4 ajustada. Trabalhos próximos, como Araújo et al. (2025), já investigaram distribuições alternativas em séries financeiras. A motivação reside na aplicação e na avaliação documentada dessas configurações no protocolo adotado, sem pressupor que o tema esteja ausente da literatura ou que a comparação isole causalmente o efeito da distribuição.",
+      "referencia": "R02",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF 4–5 e 10",
+      "evidencia": "O trabalho anterior combina distribuições e ESN em série financeira; o parágrafo apresenta a motivação e a escolha da pesquisa atual sem alegar ineditismo universal.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0260",
+      "texto_atual": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG.",
+      "referencia": "R02",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF 4 e 7–10",
+      "evidencia": "ESN, distribuições e otimização aparecem no estudo anterior; não confundir o protocolo de ITSA4 com o da PETR4.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0319",
+      "texto_atual": "O Quadro 3 apresenta a codificação de 55 bits utilizada no ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+      "referencia": "R02",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF 8–9",
+      "evidencia": "A prova registra cromossomo binário de 55 bits e lista cinco hiperparâmetros, sem repartir bits por parâmetro na passagem.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0319",
+      "texto_atual": "O Quadro 3 apresenta a codificação de 55 bits utilizada no ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+      "referencia": "R06",
+      "arquivo_fonte": "reports\\fontes_drive_20261029\\Cardoso_RBras_2022_completo.pdf",
+      "sha256_fonte": "286bc9f8f90a8ce41d68605462a4656a0290a9f1685859823ddeff1ea4eb1a07",
+      "localizador": "p. 203 impressa, PDF 7",
+      "evidencia": "A página indica raio espectral 1,25, vazamento 0,2 e regularização 10⁻⁸. Inspeção visual direta da página preservada.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0330",
+      "texto_atual": "A função de aptidão combinou erros de treino e validação: fitness = −(0,4 · MAEtreino + 0,6 · MAEvalidação). O sinal negativo converteu a minimização em maximização para o pacote GA. A ponderação atribuiu maior peso à validação e segue a combinação descrita por Araújo et al. (2025). O software dispõe de serialização dos pesos e hiperparâmetros associados a recordes; contudo, esse mecanismo não resultou na preservação integral de todas as saídas históricas.",
+      "referencia": "R02",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF 7–8; app/utils/ga_engine.R linhas 293–296",
+      "evidencia": "A prova descreve ponderação 40% treino e 60% validação tanto para MAE quanto RMSE; o código atual usa sinal negativo e MAE ponderado. Não se afirma que todas as saídas históricas preservam o código.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0236",
+      "texto_atual": "Cardoso et al. (2022b) propõem o BovDB como base de cotações e eventos de ações negociadas na B3. O esquema inclui fatores associados a eventos e um fator acumulado por registro de preço. Essa estrutura permite representar o tratamento de descontinuidades corporativas na base, mas não comprova, por si só, quais eventos foram aplicados aos arquivos locais desta pesquisa nem identifica a autoria de sua transformação.",
+      "referencia": "R07",
+      "arquivo_fonte": "Artigos citados\\Cardoso -  A data set of stock prices of all companies in B3from 1995 to 2020.pdf",
+      "sha256_fonte": "6409dc381b5eb4889c05cd84177f3ff5487c20cc5a997f87ff3fd9774681e586",
+      "localizador": "PDF 5, Figura 1; PDF 7",
+      "evidencia": "O esquema BovDB inclui Price.factor, EventPrice.factor e EventPrice.applied e a discussão descreve os fatores. O texto não atribui a transformação local ao autor.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0237",
+      "texto_atual": "Na definição do BovDB, o fator isolado é a razão entre o fechamento do dia anterior e a abertura do dia do evento, e os fatores acumulados são calculados regressivamente. O campo EventPrice.applied distingue os registros considerados no ajuste. A interpretação de cada tipo de evento e a reprodução da transformação exigem esses registros; uma lista de descrições, isoladamente, não demonstra como o preço local foi corrigido (Cardoso et al., 2022b).",
+      "referencia": "R07",
+      "arquivo_fonte": "Artigos citados\\Cardoso -  A data set of stock prices of all companies in B3from 1995 to 2020.pdf",
+      "sha256_fonte": "6409dc381b5eb4889c05cd84177f3ff5487c20cc5a997f87ff3fd9774681e586",
+      "localizador": "PDF 5 e 7, Figura 1 e equações 1–2",
+      "evidencia": "O fator isolado usa fechamento anterior sobre abertura no primeiro dia do evento, com fatores acumulados regressivos; applied distingue eventos considerados.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0243",
+      "texto_atual": "Cardoso et al. (2022b) constituem a referência metodológica central deste trabalho. Os autores propõem o conjunto de dados BovDB, que reúne preços históricos de ações negociadas na B3, e introduzem o Fator de Ajuste como mecanismo de correção retroativa para eventos corporativos.",
+      "referencia": "R07",
+      "arquivo_fonte": "Artigos citados\\Cardoso -  A data set of stock prices of all companies in B3from 1995 to 2020.pdf",
+      "sha256_fonte": "6409dc381b5eb4889c05cd84177f3ff5487c20cc5a997f87ff3fd9774681e586",
+      "localizador": "PDF 1, 5 e 7",
+      "evidencia": "O artigo apresenta BovDB para ações da B3 e descreve fator de ajuste. A relevância central ao trabalho é uma avaliação do autor da monografia.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0451",
+      "texto_atual": "Cardoso, Berri e Mattos (2022a, p. 202–205) avaliaram a PETR4 com e sem fator de ajuste, com 5.197 observações e divisão de 75% para treino e 25% para teste. Com hiperparâmetros fixos, relataram RMSE de 11,1785 sem fator e de 0,4987 com fator. Esses valores contextualizam um estudo anterior, mas não constituem um teste de superioridade desta pesquisa: a partição, os hiperparâmetros e o procedimento de seleção diferem. O resultado com fator não deve ser atribuído à série sem ajuste.",
+      "referencia": "R06",
+      "arquivo_fonte": "reports\\fontes_drive_20261029\\Cardoso_RBras_2022_completo.pdf",
+      "sha256_fonte": "286bc9f8f90a8ce41d68605462a4656a0290a9f1685859823ddeff1ea4eb1a07",
+      "localizador": "p. 202–205 impressas, PDF 6–9",
+      "evidencia": "O estudo informa 5.197 observações e partição 75/25; RMSE 11,1785 sem fator e 0,4987 com fator. A comparação não é tratada como teste de superioridade do ESNAUTO.",
+      "diagnostico": "condizente na afirmação delimitada"
+    }
+  ],
+  "acao": "Nenhuma edição adicional nos pontos examinados."
+}

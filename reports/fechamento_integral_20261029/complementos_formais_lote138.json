@@ -1,0 +1,28 @@
+{
+  "sha256_docx": "a6c9512dd7503795b6b7921c0d33c6dd327c42c6ec14442ccfbd463846e54a35",
+  "resumos": [
+    {
+      "titulo": "RESUMO",
+      "indice": 41,
+      "justificado_fonte12_simples_sem_recuo": true
+    },
+    {
+      "titulo": "ABSTRACT",
+      "indice": 44,
+      "justificado_fonte12_simples_sem_recuo": true
+    }
+  ],
+  "referencias_titulo_centralizado_negrito12": true,
+  "outras_expressoes_latinas": {
+    "apud": 0,
+    "ibid\\.": 0,
+    "ibidem": 0,
+    "opus citatum": 0
+  },
+  "et_al": "Itálico efetivo confirmado pelo controle137, texto/formatação dessas ocorrências não alterados pelas chamadas134.",
+  "decisoes": {
+    "G15": "Títulos sem indicativo: pré-textuais pelo controle137 e REFERÊNCIAS por verificação efetiva complementar; centralização,negrito12.",
+    "G40": "Resumo justificado,f12,simples,sem recuo confirmado por herança dos estilos. Abstract examinado também.",
+    "G73": "et al. em itálico; apud,ibid.,ibidem e opus citatum não ocorrem nos parágrafos/células."
+  }
+}

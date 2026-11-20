@@ -1,0 +1,25 @@
+{
+  "base_visual": "v004",
+  "base_sha256": "110b1d19223e23f9e4b27e4c2b0ba74e92072ebcc3f1cd4ec4f0200bba059f5b",
+  "paginas_totais": 76,
+  "paginas_identicas_preservadas": 73,
+  "paginas_diferentes_abertas": [
+    34,
+    35,
+    36
+  ],
+  "resultado": "Tabela 1, Quadro 1 e Figura 1 legíveis; cabeçalho repetido, bordas e fonte preservados; sem corte, sobreposição ou mudança de paginação. Os dois códigos, as contagens e o parágrafo concordam com a matriz revisada.",
+  "figuras_fontes_abertas": [
+    "D23_p06.png",
+    "D18_p12.png",
+    "D18_p13.png",
+    "D30_p02.png",
+    "D30_p17.png",
+    "D14_p11.png",
+    "D34_p04.png",
+    "D34_p05.png",
+    "D34_p11.png",
+    "D24_p12.png"
+  ],
+  "limite": "Não declara inspeção visual integral dos 24 artigos. Na monografia, cobertura por 73 páginas pixel a pixel idênticas à v004 já inspecionada, mais as três páginas diferentes inspecionadas nesta revisão."
+}

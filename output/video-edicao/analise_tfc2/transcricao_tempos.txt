@@ -1,0 +1,463 @@
+[    0.00 -     6.10] Lá, meu nome é Marcon Garcia Silva, do curso de Tangeride Software da Universidade de Ruiverde.
+[    6.48 -    12.04] Neste trabalho orientado pelo meu professor, Dr. Fabian Corrêa Cardoso,
+[   12.54 -    18.36] eu dê uma forma de prever o preço de fechamento ajustado na ação da PETR4.
+[   18.93 -    26.91] Para isso, eu usei uma rede neural chamada rede de status de Eco, EcoState Network, S&N.
+[   26.91 -    30.63] Um algoritme genético, por por corabôs, configurações dessa rede,
+[   30.97 -    35.25] e também trabalhei na adaptação de uma interface do sistema ESNAUTO.
+[   35.71 -    42.89] Vou mostrar como cheguei aos testes e como os resultados indicam e até onde podemos chegar com essas conclusões.
+[   45.50 -    50.46] Fala agora sobre o problema da pesquisa, o que guiou o trabalho foi usando,
+[   51.20 -    55.18] os preços anteriores da PETR4, como essa rede sai,
+[   55.18 -    57.58] ao prever o próximo fechamento.
+[   58.40 -    65.24] Além de olhar o erro dessa previsão, o que sabe quanto o computador leva para fazer esses ajustes desses modelos computacionais.
+[   66.21 -    70.11] O gráfico mostra como o preço mudou, ao longo dos anos,
+[   70.27 -    74.03] a periodos de alta, a periodos de baixa, mudanças mais fortes.
+[   74.37 -    81.97] Então, esse comportamento, a gente observar, tem mudanças muito diferentes na crise de 2008,
+[   81.97 -    85.51] na crise de 2014 e na pandemia de 2020.
+[   86.23 -    92.91] Eu comparei a rede de Sadié com outras duas redes usadas para fazer essas análise de ações,
+[   93.05 -    96.65] essa é a consequência de dados, que é a GRU e a LSTM.
+[   96.79 -    98.47] O foco foi avaliar essas previsões.
+[   98.63 -   101.41] Então, o testem um estratégia de compra e venda de ações nenhuma.
+[  103.11 -   106.57] Então, falando um pouco sobre o objetivo das minhas hipótias,
+[  107.03 -   108.27] falando rápido, mais ou menos,
+[  108.27 -   110.91] a primeira é a pergunta de se a rede consegue,
+[  111.19 -   115.65] a rede é assim, ela consegue competir com GRU, LSTM.
+[  116.13 -   120.45] A segunda é, já olha, por o tempo necessário para ajustar uma configuração escolhida.
+[  120.97 -   125.29] A terceira investiga se ao mudar a forma de gerar esses pesos iniciais,
+[  125.43 -   126.67] pode trazer resultados melhores,
+[  127.25 -   130.05] já que o distribuição normal usado como referência.
+[  130.61 -   133.03] A gente quer tentar atingir melhores resultados que é normal.
+[  133.03 -   137.97] E a quarta trata-se de recursos do algoritmo genético
+[  137.97 -   140.11] para que a gente pode explorar diferentes soluções,
+[  140.11 -   144.75] a quinta considera distribuições ajustadas aos próprios dados de treino.
+[  145.25 -   148.63] Mas a gente vai voltar em cada uma delas e explicar melhor sobre cada.
+[  150.47 -   152.95] Fando agora sobre a avimentação e trabalhos relacionados,
+[  153.41 -   155.33] o meu trabalho se apoie em três assuntos,
+[  155.37 -   158.53] que foram a rede de estados de eco,
+[  159.01 -   161.85] a busca genética e preparação de dados financeiros
+[  161.85 -   168.37] e na proposta de tentar prever esse valor.
+[  169.15 -   174.63] Então, de Egger trouxe essa característica da rede de nerode sagieco,
+[  174.97 -   180.67] é manter as conexões internas fixas durante o ajuste de calcular os pesos de saída.
+[  180.71 -   183.51] Vou explicar esse o seramento no próximo conjunti slide.
+[  184.05 -   189.59] Então, os trabalhos de araujo e colaboradores ajudaram a fundamental
+[  189.59 -   193.19] o estudo dessas distribuições e da busca genética,
+[  193.77 -   196.47] o BoveDB do meu orientador,
+[  196.91 -   200.49] da o contexto do ajuste dos preços,
+[  200.79 -   202.81] por eventos corporativos, implíteses,
+[  203.09 -   205.51] explítes, pagamentos e dividendos,
+[  205.59 -   208.61] tudo isso que dá uma mexida no presdação.
+[  208.99 -   212.23] Por exemplo, se eu faço um split ou divido,
+[  212.43 -   214.93] o presdação, se está 40 ou divido,
+[  214.95 -   216.21] ele é vida 2 ações de 20,
+[  216.21 -   218.81] se eu faço um split, quando é o oposto,
+[  218.95 -   220.15] você está com 2 ações de 20,
+[  220.37 -   223.29] se junta, vira 1 de 40,
+[  224.07 -   226.51] pagamento de dividendos também mexo no presdação.
+[  226.59 -   233.67] Então, o meu orientador trouxe já que isso influencia no preso da ação
+[  234.11 -   235.87] e trouxe esse tratamento.
+[  236.41 -   243.13] Então, fiz uma revisão com 34 documentos e busca complementares para ajudar.
+[  243.13 -   246.55] Essa coleção ajuda a orientar toda a minha pesquisa
+[  246.55 -   250.01] com mais registros disponíveis,
+[  250.01 -   253.25] não permite trazer se ela cobe toda a literatura desse tema.
+[  253.63 -   256.73] Então, vamos falar apenas do que conseguimos achar aqui.
+[  257.27 -   260.81] Fala uma gora sobre a divisão e dados e divisão temporal.
+[  261.49 -   269.29] Foi de 5.198 observações de todo o início de a 3,1,2 mil,
+[  269.29 -   274.65] até 30 de 2020, foram separadas,
+[  275.13 -   283.59] 2.600 só para a treino, 2.299 para a validação em 2.99 para testes.
+[  284.00 -   287.14] Falando agora sobre a rede neural de sado de eco,
+[  287.76 -   291.04] ela é uma estrutura que a partir de hoje vou chamar ela de SN,
+[  291.40 -   293.50] porque a inglês é Equestate Network,
+[  294.14 -   296.62] então vou resumir para não ficar repetindo isso.
+[  297.70 -   301.26] Podemos acompanhar o funcionamento da esquerda para a direita,
+[  301.38 -   303.82] quando a gente tem o WIN, são os dados de entrada,
+[  303.96 -   306.46] a gente tem o W, que é o reservatório W out.
+[  306.86 -   312.10] O WIN e o W mantém fixos no ajuste
+[  312.10 -   317.86] e a gente faz uma estimativa apenas do cálculo da saída,
+[  317.88 -   321.72] que é o W out, que a gente faz em regressão RID,
+[  322.02 -   325.94] porque a adjusta essa controla do valor espeso.
+[  325.94 -   328.38] Isso torna o ajuste final muito mais rápido,
+[  328.52 -   331.04] então a gente nem fica retrainando,
+[  331.04 -   334.88] como tudo já é fixo, você só dá uma passada lá,
+[  335.02 -   339.44] ela faz todo os cálculos que ela faz no reservatório
+[  339.44 -   342.94] e a gente calcula apenas a saída.
+[  343.68 -   346.62] Trasendo agora a busca genética de preparamentos,
+[  347.30 -   350.12] para procurar essa melhor configuração,
+[  350.22 -   353.00] a gente usa o algoritmo genético,
+[  353.34 -   355.08] que vai trabalhar com várias opções.
+[  355.08 -   358.04] Então, ele vale o erro de cada um
+[  358.04 -   362.28] e produz novas opções a partir daquelas que foram selecionadas,
+[  362.56 -   365.02] esse processo se repete ao longo da geração.
+[  365.12 -   368.32] Então, imagina um hyperplan, como outros, por exemplo,
+[  368.60 -   372.27] essa folha de caderno aqui, que ela está toda amaleável,
+[  372.72 -   376.18] esse é o hyperplano que o algoritmo genético tenta percorrer.
+[  376.60 -   379.38] Imagina que ela percorre um pontinho após o outro
+[  379.38 -   382.96] e em voltando e voltando, até percorre todo o hyperplano.
+[  382.96 -   387.74] Só que existe um problema, o ele não é exatamente plano,
+[  388.28 -   391.50] ele tem umas deformações e essas deformações
+[  391.50 -   394.94] que acaba atrapalhando nossa busca de preparamentos.
+[  395.40 -   397.56] Por exemplo, se ela está buscando por aqui
+[  397.56 -   400.54] e aqui é um amontaninha melhor,
+[  400.88 -   402.64] ela vai achar e vai parando o melhor local.
+[  403.30 -   405.08] Só que o melhor local, nem sempre,
+[  405.16 -   406.92] vai ser a melhor configuração possível dessa rede.
+[  407.50 -   410.60] Então, eu usei um mecanismo chamado
+[  412.76 -   414.78] cataclismo, que ele dá um salto,
+[  415.12 -   418.00] um pulo quântico nesse hyperplano,
+[  418.20 -   421.90] buscando o melhor local, o melhor global desse hyperplano.
+[  422.06 -   424.86] Então, tenta explicar da melhor forma.
+[  425.28 -   429.36] E praticamente nos cromossomos que a gente está usando,
+[  429.50 -   432.26] a gente usa cinco tipos de cromossomos diferentes,
+[  432.42 -   435.48] que é o vazamento, o raiz pekital,
+[  436.34 -   440.64] o discard inicial, o de reservatório e o READ.
+[  441.51 -   447.82] Então, esse cromossomos guardam cinco escolhas apenas,
+[  448.20 -   449.28] que tem que ser feito,
+[  449.42 -   452.98] quanto do estado anterior, que a rede deverá manter,
+[  453.50 -   456.52] a escala dessas conexões internas,
+[  456.92 -   459.38] quantos estados iniciais são descartados
+[  459.38 -   463.24] e o tamanho do reservatório e a regolização dessa saída.
+[  463.90 -   466.62] Então, a avaliação da combina, o erro de treino,
+[  466.78 -   469.64] com a devalidação, dando mais peso a avalidação.
+[  469.64 -   473.06] O sistema também usa o percublatino,
+[  473.18 -   477.82] que ele distribui essas opções iniciais
+[  477.82 -   479.86] e o mecanismo de cataclismo,
+[  479.92 -   482.42] que eu disse anteriormente, que faz esses saltos
+[  482.42 -   486.02] para renovar as soluções, para não ficar estagnado.
+[  487.73 -   490.23] Fala agora sobre as cinco ondas experimentais.
+[  491.11 -   498.58] Essas cinco ondas eu separei distribuições em ondas de execuções,
+[  498.58 -   500.50] porque acho que mais se pareci,
+[  500.60 -   503.00] eu coloquei para as executadas mais juntas,
+[  503.16 -   504.26] para fazer uma comparação melhor.
+[  505.24 -   507.24] Foram organizar desses cinco grupos,
+[  507.42 -   511.12] que são as duas primeiras ondas,
+[  511.22 -   513.42] esteve no devinove execuções cada,
+[  514.16 -   517.16] e expornam famílias distribuições com comportamentos diferentes.
+[  518.14 -   520.68] A terceira teve seis configurações relacionadas
+[  520.68 -   521.46] com as especialidades,
+[  521.82 -   524.22] e isso é a presença de conexões com peso zero.
+[  524.22 -   528.42] A quarta teve seis controles de referência,
+[  528.82 -   531.25] e a quinta reuniu 15 configurações
+[  531.78 -   534.66] com distribuções ajustadas nos dados de trein.
+[  535.06 -   538.90] Quando aparece uma combinação como lá plássico,
+[  539.08 -   542.70] o primeiro nome indica que foram gerados com peso de entrada.
+[  543.24 -   545.47] O segundo indica que os pesos do reservatório
+[  545.90 -   547.90] e essa ordem que eu vou usar nos relatores.
+[  548.22 -   550.38] Cada execução também envolve a configuração
+[  550.38 -   551.52] e um sorteio de pesos.
+[  551.52 -   554.06] Por isso, é uma diferença no erro,
+[  554.06 -   555.32] não pode ser tão atribuída,
+[  555.46 -   557.28] somente ao nome dessa distribuição.
+[  557.50 -   560.60] Então, não tem como falar porra.
+[  560.68 -   564.30] Uma distribuição é muito superior a outra.
+[  565.22 -   567.74] E agora falando sobre os três blocos de evidência.
+[  567.94 -   568.94] Antes dos resultados,
+[  569.08 -   571.92] a importa a gente separar esses três blocos de evidência
+[  571.92 -   572.76] que eu quero trazer.
+[  576.06 -   578.96] O primeiro histórico das quarenta e cinco execuções
+[  578.96 -   581.44] que permite comparar os resultados das ondas.
+[  581.78 -   584.00] O segundo é uma rodada complementar
+[  584.00 -   587.24] para comparar os modelos nas mesmas datas
+[  587.24 -   589.20] e aplicar um teste estatístico.
+[  589.52 -   592.78] Nelos pesos foram gerados novamente com uma semente fixa.
+[  593.12 -   595.26] A semente é um número que controla o sorteio
+[  595.26 -   596.74] e permite repetir novamente.
+[  598.00 -   600.16] O terceiro é um lote de 200 gerações.
+[  600.66 -   603.60] Os a das apenas para ilustrar o funcionamento e as previsões.
+[  603.68 -   605.90] Ele fica fora dessas quarenta e cinco execuções.
+[  605.90 -   609.82] Portanto, os números do histórico, o teste estatístico
+[  609.82 -   612.04] e a figura exutativa vêm de conjuntos diferentes.
+[  612.42 -   615.72] Vou manter essa separação para explicar cada resultado.
+[  618.26 -   622.60] Agora falando do ESN alto, que eu vou mostrar ele aqui também,
+[  623.06 -   625.36] que é sobre um software que eu desenvolvi
+[  625.36 -   628.46] que ele faz todo um levantamento de tudo.
+[  628.76 -   631.86] Todos os códigos em R foram fornecidos pelo meu orientador.
+[  632.54 -   636.50] E eu tinha aqui entrar num software chamado RStudio
+[  637.00 -   641.50] que rodava esses scripts que tinham lá que o orientador me disponibilizou.
+[  642.50 -   645.06] Só que sempre quando eu rodava, ele criava um arquivo.
+[  645.06 -   647.94] Eu tinha que alterar o nome e salvar aquilo numa pasta diferente.
+[  648.18 -   651.16] Então, assim, acabou que fica muito custioso eu rodar.
+[  651.32 -   653.70] Esse e dava muito trabalho para eu rodar esses scripts.
+[  653.96 -   657.80] Então, eu desenvolvi, né, cria aí com as táticas de JavaScript
+[  657.80 -   659.24] que eu aprendi a correr do curso.
+[  659.76 -   664.90] Desenvolveu um aplicativo que ele faz ele roda todos esses scripts
+[  664.90 -   670.00] de IR, tanto a criação da rede neural,
+[  670.76 -   675.68] tanto a busca por configurações melhores do algoritmo genético.
+[  676.14 -   680.08] Salva isso tudo, mantém métricas históricos, visualização
+[  680.92 -   683.68] e mantém os registros mais organizados.
+[  683.84 -   687.06] Então, só apertar um botão, ele vai fazer todo esse rodar
+[  687.06 -   690.90] com as coisas que você especificar lá, ser roda,
+[  691.14 -   693.94] e ele executa tudo, guarda tudo, é uma beleza.
+[  695.37 -   698.97] Tivo andando de forma local aqui na minha máquina,
+[  699.03 -   700.67] na minha navegada do Google Chrome.
+[  701.19 -   707.14] E aqui é o ESN al benchmark skin.
+[  707.52 -   711.06] Ele traz, né, eu estava fazendo algumas comparações com a varia
+[  711.06 -   712.88] depois que eu até se tomo um pouco sobre a varia.
+[  713.24 -   717.72] Só que ele faz, simplesmente já tem, já citei as separações
+[  717.72 -   718.86] que eu tinha citado antes.
+[  719.22 -   723.22] E caper das com o botão, a gente já faz uma organização geral
+[  723.22 -   726.08] aqui do modelo de utilização,
+[  726.28 -   729.70] uma as configurações e distribuções do stocástico,
+[  729.88 -   732.24] né, que eu estou usando todos os quatro cenários
+[  732.24 -   733.82] que eu tinha ditante anteriormente,
+[  733.98 -   736.00] então todas as ondas que eu trouxe aqui,
+[  736.66 -   740.90] se eu ativo não, a chegnação por cataclismo,
+[  741.48 -   743.04] perfeita de treinamento do deep learning,
+[  743.32 -   745.52] LSTM, DR, tudo aqui é feito,
+[  745.76 -   746.98] pence click iniciar aqui,
+[  747.48 -   750.12] ele vai rodar todo o que eu tinha explicado antes,
+[  750.28 -   752.46] tudo com o clique de a trazer pra mim.
+[  752.46 -   754.94] Também traga que o resumo da última execução,
+[  755.40 -   758.78] tudo bem organizado, a configuração e distribuição,
+[  759.16 -   762.48] olha atrás do ego, já trai tudo aqui organizado
+[  762.48 -   766.10] de forma que seja mais fácil de analisar esses resultados.
+[  766.82 -   769.36] Então, essa é a minha contribuição aqui
+[  769.36 -   772.92] para a indeníde de software que tanto conhece
+[  772.92 -   776.44] software que ficará disponível para qualquer pessoa quiser
+[  776.44 -   778.12] baixar direto do GitHub,
+[  778.74 -   780.46] executar os mesmos testes que eu.
+[  781.42 -   783.94] Então, agora, avançando aqui
+[  783.94 -   785.88] por os critérios de avaliação,
+[  786.32 -   789.92] eu usei três medidas para avaliar as previsões,
+[  790.06 -   793.74] que é o UI, que faz um mostro da manhã,
+[  793.88 -   796.34] o médio do erro, tanto a previsão irá acima
+[  796.34 -   798.38] quanto abaixo do preço observado,
+[  799.16 -   801.32] quanto menor, melhor, por exemplo,
+[  801.52 -   804.86] um UI de 30 centavo, significam desviar o médio
+[  804.86 -   806.40] do valor dessa escala de preço,
+[  806.66 -   809.54] então ele pode ser tanto 30 centavo
+[  809.54 -   812.04] para os acima do preço que vai ser realmente
+[  812.04 -   813.46] 30 centavos abaixo,
+[  813.74 -   815.84] ele faz uma média desses erros em modo,
+[  816.46 -   820.22] o RMS EA dá mais peso a erros grandes
+[  820.22 -   822.36] e o erro quadrado discreve
+[  822.36 -   826.16] quanto essas previsões acompanhavam os previsões observados,
+[  826.26 -   828.48] mas eles existem cuidado, os precios próximos
+[  828.48 -   830.14] no tempo já podem ser parecidos.
+[  830.72 -   832.46] Também pediu medir o tempo de procurar
+[  832.46 -   835.00] uma configuração e o tempo de ajuste
+[  835.00 -   836.20] de rede já escolhida.
+[  838.80 -   840.26] Restar os históricos de previsão,
+[  840.26 -   842.22] o MI, que é o nosso importante,
+[  842.24 -   843.82] quando melhor, melhor, melhor,
+[  844.10 -   845.40] o erro possível mais a próxima,
+[  845.48 -   848.14] já aceitava o preço de fechamento próximo de dia.
+[  849.20 -   852.06] A configuração escolhida foi o SN,
+[  852.28 -   853.26] lá plástico, normal,
+[  853.96 -   860.50] que ele teve 0.32 centavos de erro.
+[  860.96 -   863.82] O GR e o LSTEM foram errar um mais,
+[  864.16 -   865.54] eles tiveram um erro MI,
+[  865.82 -   868.90] foi o 0.35 do GRU, muito próximo até a DNASN,
+[  868.90 -   871.20] e o LSTEM com 0.45.
+[  873.54 -   877.60] Eles acabam que a SN traz,
+[  877.94 -   882.00] que é realmente superior ao GRU e o LSTEM.
+[  882.60 -   885.16] E os dados são muito favoráveis nos registros,
+[  885.22 -   890.43] mas o LSTEM passa por essa busca de configurações externa
+[  890.76 -   894.58] do agorismo genético e o GRU e o LSTEM não.
+[  896.42 -   900.90] Agora, falando sobre a inicensação e ganhos observados.
+[  901.42 -   905.08] A comparação agora entre 2 configurações da própria SN,
+[  905.74 -   907.56] a referência usada é a normal,
+[  908.00 -   909.90] que é a distribuição normal,
+[  910.22 -   911.56] tanto na entrada e no reservatório,
+[  911.90 -   914.66] e a outra é a place na entrada e no reservatório.
+[  915.04 -   916.96] As barras são muito próximas,
+[  917.36 -   921.88] e os 2 erros médios ficam perto de 33 centavos,
+[  922.32 -   924.14] usando o mesmo valores completos,
+[  925.05 -   925.95] que estão na tela.
+[  926.07 -   930.73] A redução foi de 0,35%.
+[  930.73 -   932.85] Então, houve uma melhora registrada,
+[  932.85 -   933.95] mas ela foi pequena.
+[  934.43 -   936.35] Vale olhar a escala do gráfico
+[  936.35 -   939.47] para não entender essa diferença com o maior que ela tem.
+[  940.19 -   942.39] Outra combinação, lá plástico em CAUT,
+[  942.55 -   944.63] apresentou um menor RMSC.
+[  944.95 -   947.99] Isso mostra que a escolha da configuração
+[  947.99 -   949.93] também depende da medida que ela é usada.
+[  950.11 -   953.07] Esses testes favorecem algumas configurações,
+[  953.07 -   957.49] mas não mostra que a distribuição sempre será a melhor que as outras.
+[  958.61 -   962.59] Falando agora sobre o exemplo visual preservado,
+[  962.91 -   965.87] esse gráfico que vaja dar a gente a visualizar uma previsão,
+[  966.07 -   969.73] uma curva, apresenta o preço observado
+[  969.73 -   971.91] e a outra o preço previsto.
+[  972.23 -   973.65] Então, se a gente tá analisada,
+[  974.35 -   978.75] a azulzinha é o mais grossa do que a preta,
+[  978.75 -   984.15] porque a preta é apenas o observado.
+[  984.31 -   986.63] Então, ele é exatamente o ponto exato.
+[  986.95 -   988.49] O previsto tem um erro médio,
+[  988.57 -   990.85] então, ele vai estar sempre no meio assim,
+[  991.05 -   992.41] dizendo que ele pode estar tão terrado,
+[  992.49 -   994.29] por positivo, tão terrado, para o negativo.
+[  995.39 -   998.35] A figura mostrada abaixo,
+[  998.61 -  1001.81] detalhe também os últimos sempre gões que foram avaliados.
+[ 1002.31 -  1004.43] Então, assim, as curvas próximas ajudam a gente
+[ 1004.43 -  1006.63] em enxergar um comportamento da rede,
+[ 1006.63 -  1008.31] mas essa aparência não basta.
+[ 1008.41 -  1011.15] O preço de dias próximos já tende a ser parecidos,
+[ 1011.39 -  1013.87] por isso que considero gráfico junto com as medidas
+[ 1013.87 -  1016.89] e eu sempre identificando teste da onde ele veio.
+[ 1018.10 -  1021.98] Falando agora sobre a roda controlada complementar,
+[ 1022.30 -  1024.50] porque para fazer essa comparação estatística,
+[ 1024.84 -  1027.46] prepare uma roda complementar com os arquivos necessários
+[ 1027.46 -  1029.58] para conferir das previsões de cada modelo.
+[ 1030.08 -  1033.02] Aí, se ele usou uma configuração de referência
+[ 1033.02 -  1036.90] lá plástico, é normal, com 22 neurônios no reservador.
+[ 1036.90 -  1039.40] Mantiva a ser escolha e gerei novos pesos,
+[ 1039.64 -  1042.52] usando a semente de cada aí no slide,
+[ 1042.90 -  1044.90] de 26,096.
+[ 1046.08 -  1050.20] Essa roda não repetiu a busca genética,
+[ 1050.20 -  1052.16] porque eu já tinha achado uma busca boa,
+[ 1052.30 -  1055.38] então a saída da rede foi ajustada apenas por dados de treino.
+[ 1055.78 -  1058.38] E o processamento seguiu a ordem dessas datas
+[ 1058.38 -  1059.90] pela validação do teste.
+[ 1060.28 -  1064.46] Cada modelo produziu 1299 previsões
+[ 1064.46 -  1067.54] e depois de alinhar os arquivos pelas datas,
+[ 1067.90 -  1075.34] a comparação usou 1298 das comuns entre setembro de 2015 e dezembro de 2020.
+[ 1075.74 -  1079.60] As senhos erros dos três modelos foram comparados nos mesmos dias.
+[ 1081.68 -  1084.46] Falando agora sobre os erros na janela comum controlada,
+[ 1085.14 -  1088.62] aqui estão os erros dessa roda complementar,
+[ 1088.80 -  1092.92] no gráfico à esquerda, o MAIDSN ficou perto de 33 centavos,
+[ 1093.30 -  1094.86] da GRU ficou cerca de 42.
+[ 1094.86 -  1098.00] E LSTM 47 centavos.
+[ 1098.34 -  1100.32] No gráfico da direita, mostra o RMSCE.
+[ 1100.84 -  1101.66] A ordem foi a mesma.
+[ 1101.96 -  1105.72] SN teve um menor erro, seguida de GRU e LSTM.
+[ 1106.16 -  1109.06] Esses números já são da nova execução com os novos pesos.
+[ 1109.26 -  1113.02] Eles não substituem os valores de históricos apresentados antes.
+[ 1113.36 -  1116.56] O resultado que podemos confirmar é que nessa comparação,
+[ 1116.56 -  1117.50] com as mesmas datas,
+[ 1118.04 -  1121.48] é CN selecionado teve menor erro nas duas medidas.
+[ 1121.48 -  1125.90] O próximo passo foi examinar essa diferença com um teste estatístico.
+[ 1126.84 -  1129.82] Na comparação estatística de acurácia dos modelos,
+[ 1129.96 -  1133.80] eu usei o teste de eboio de mariano para comparar os erros dos modelos.
+[ 1134.02 -  1137.34] A pergunta do teste é se ele tem a mesma curácia média,
+[ 1137.74 -  1141.10] considerando a forma de medir o erro escolhido.
+[ 1141.66 -  1142.94] Fis quatro comparações.
+[ 1143.36 -  1146.02] É CN com GRU e é CN com GRU.
+[ 1146.02 -  1146.80] LSTM.
+[ 1147.50 -  1151.84] Tanto com o erro absoluto, quanto com o erro quadrático, por isso que ficou quatro.
+[ 1152.76 -  1158.14] Em todas, o teste rejeitou a igualdade em nível individual em de 5%.
+[ 1158.14 -  1161.48] Como SN teve menor perca média nas quatro observações,
+[ 1161.58 -  1165.08] o resultado foi favorável a ela a nessa rodada.
+[ 1165.28 -  1169.42] É também mostra valores de P obtidos no teste.
+[ 1170.72 -  1172.32] Mas há limites também nessa análise,
+[ 1172.50 -  1175.48] porque foi usado apenas o único sorteio controlado
+[ 1175.48 -  1178.50] sem correção para as quatro comparações.
+[ 1179.02 -  1181.36] E o cálculo considerou defasagem zero.
+[ 1181.68 -  1183.78] A ficoração também veio da busca histórica.
+[ 1184.00 -  1187.22] Então o teste se apoia o resultado nesta rodada,
+[ 1187.50 -  1191.52] mas não demonstra superior em qualquer outra situação.
+[ 1193.60 -  1197.48] Falando agora sobre o custo de ajuste e custo de busca,
+[ 1198.06 -  1200.28] o resultado em tempo, em duas partes,
+[ 1200.84 -  1203.44] depois de escolher a configuração e ajustar a SN,
+[ 1203.44 -  1207.12] ele levou cerca de cinco centésimos de segundo.
+[ 1207.64 -  1210.59] O tempo registrado para a GRLSTEM
+[ 1211.02 -  1214.92] foi respectivamente cerca de 29,30 segundos.
+[ 1215.58 -  1216.56] 35 segundos.
+[ 1218.30 -  1220.60] Nesta etapa, a SN foi rápida,
+[ 1220.74 -  1223.34] porque o ajuste consenta nos pesos de saída,
+[ 1223.86 -  1227.68] mas antes dela foi preciso encontrar todo uma boa configuração.
+[ 1228.12 -  1231.92] Então a busca genética levou apenas 21%,
+[ 1231.92 -  1233.74] e em dois minutos por cenário.
+[ 1234.02 -  1238.88] Somando as 45 buscas, foram aproximadamente 38 horas
+[ 1238.88 -  1243.38] buscando todas essas buscas genéticas.
+[ 1245.10 -  1246.82] O meu famoso é as hipóteses.
+[ 1247.30 -  1249.44] A primeira recebeu a apoio.
+[ 1249.70 -  1254.50] A SN foi competitiva com a GRLSTEM nos resultados históricos
+[ 1254.50 -  1257.14] e a rodada complementar também a apresentar
+[ 1257.14 -  1259.28] essas diferenças favoráveis a ela.
+[ 1259.28 -  1261.72] A segunda recebeu a apoio também,
+[ 1262.10 -  1263.76] pelo a justi rápido da rede,
+[ 1264.00 -  1268.26] depois da escolhida a nossa configuração.
+[ 1269.07 -  1272.19] A terceira mostrou que algumas combinações
+[ 1272.19 -  1276.25] tiveram erro menor que a referência normal com o normal,
+[ 1276.89 -  1279.61] e a melhora foi pequena, mas está registrada,
+[ 1280.19 -  1282.65] e isso ajuda a gente ficar com figurações
+[ 1282.65 -  1284.79] que merecem continuar sendo estudadas.
+[ 1285.45 -  1287.77] Na quarta, os recursos para explorar soluções
+[ 1287.77 -  1289.47] forem corporados ao sistema,
+[ 1289.91 -  1292.83] mas sua contribuição isolada ainda precisa ser medida.
+[ 1293.55 -  1297.93] Na quinta, observei erros próximos entre configurações
+[ 1297.93 -  1301.13] da última onda, para afirmar a estabilidade
+[ 1301.13 -  1303.19] quanto o sorteio dos pesos muda.
+[ 1303.75 -  1305.23] Serão necessárias repetições,
+[ 1305.45 -  1307.21] assim o trabalho responde às hipóteses
+[ 1307.21 -  1311.13] com resultados concretos e identifica quais ficam
+[ 1311.13 -  1312.99] para os próximos testes.
+[ 1315.10 -  1317.56] Vamos agora falar mais ou menos o que é que esse trabalho entrega,
+[ 1317.56 -  1321.32] que entrega uma avaliação de 45 execuções históricas
+[ 1321.32 -  1326.24] da SNCON a AÇÃO PETRA, organizada em 50 ondas diferentes.
+[ 1326.78 -  1329.74] Essa comparação mostrou configurações competitivas
+[ 1329.74 -  1333.28] e diferenças de erro que ajudam a orientar novas escolhas.
+[ 1333.76 -  1335.46] Além disso, a rodada com o limitário
+[ 1335.46 -  1338.48] permitiu comparar os erros nas mesmas datas
+[ 1338.48 -  1340.32] e aplicar o teste estatístico.
+[ 1340.92 -  1343.84] Na jaredi de software, com a minha contribuição,
+[ 1344.02 -  1345.40] foi adaptar as rotinas em erros,
+[ 1345.40 -  1347.04] provenecidas pelo meu orientador
+[ 1347.04 -  1350.40] e desenvolver a interface do ESNI-AUTO.
+[ 1350.40 -  1352.26] Com isso, as configurações,
+[ 1353.08 -  1355.34] acompanhamento das execuções gráficos
+[ 1355.34 -  1357.12] e consulta ao histórico,
+[ 1357.30 -  1358.84] fica reunido tudo só em um sistema.
+[ 1359.70 -  1361.04] Também foram preservados
+[ 1361.04 -  1363.08] dos arquivos da rodada complementar,
+[ 1363.34 -  1367.72] incluindo previsões, modelo e informações dos execuções.
+[ 1368.22 -  1370.16] Portanto, existe resultados registrados
+[ 1370.16 -  1371.70] em material para conferência.
+[ 1372.38 -  1373.94] A preservação parcial
+[ 1373.94 -  1377.12] se refere a parte dos arquivos necessários
+[ 1377.12 -  1380.40] para repetir exatamente as execuções antigas.
+[ 1380.76 -  1382.88] Elas não significam que os resultados do trabalho
+[ 1382.88 -  1384.16] foram perdidos.
+[ 1386.83 -  1390.11] Agora falando sobre o alcance dos resultados
+[ 1390.11 -  1392.11] de próximos testes que esses resultados
+[ 1392.11 -  1395.23] aplicam a petra no período
+[ 1395.23 -  1396.83] nas condições estudadas.
+[ 1397.25 -  1399.59] Para saber se o comportamento se mantém outras situações,
+[ 1399.59 -  1402.53] precisamos testar outras cementes, outros períulos
+[ 1402.53 -  1403.99] e ações também.
+[ 1403.99 -  1406.99] Com um esforço comparável a escolha dos modelos.
+[ 1407.93 -  1410.77] As execuções antigas tinham resultados registrados,
+[ 1411.07 -  1414.17] mas parte das matrises dos vetores não foi preservada.
+[ 1414.65 -  1417.20] E a rodada complementar ficou com registros mais complexos
+[ 1417.53 -  1418.71] para a conferência.
+[ 1419.11 -  1422.67] A revisão do biográfico também tem registros parciais de seleção.
+[ 1423.29 -  1426.79] Ainda precisamos separar a contribuição de cada componente
+[ 1426.79 -  1429.25] e comparar com a revisão simples
+[ 1429.25 -  1430.79] que repete o último preço.
+[ 1430.79 -  1433.93] Estratégio de investimento e retabilidade que existe
+[ 1433.93 -  1434.99] e outra avaliação.
+[ 1435.37 -  1437.93] Aqui as conclusões tratam do erro de previsão,
+[ 1438.39 -  1440.99] do tempo de ajuste e da aplicação desenvolvida.
+[ 1443.02 -  1445.28] O partido desses resultados, o próximo passo
+[ 1445.28 -  1446.94] é verificar quanto ele se mantém
+[ 1446.94 -  1449.92] quando mudamos a condição e, sem diga, mudamos as ações,
+[ 1450.06 -  1453.58] mudamos o período, mudamos a base de dados.
+[ 1454.08 -  1457.18] Isso inclui repetir com outras cementes
+[ 1457.18 -  1458.70] e tudo o que eu disse.
+[ 1458.70 -  1462.12] Também é importante comparar os modelos
+[ 1462.12 -  1464.76] com esforço semelhante de otimização
+[ 1464.76 -  1467.52] e avaliar os componentes de busca separadamente,
+[ 1468.04 -  1469.76] mantendo outras condições iguais.
+[ 1470.32 -  1474.04] No software, a evolução prevista é a ultera de SNI Auto,
+[ 1474.20 -  1476.00] que foi o nome genérico que eu achei,
+[ 1476.50 -  1480.48] para Janus, que é um nome que eu achei mais adequado.
+[ 1480.72 -  1482.04] Como melhoria tanto na interface
+[ 1482.04 -  1484.18] e na organização dos arquivos da execução.
+[ 1484.72 -  1487.86] A Vale 3 também parece como uma extensão experimental.
+[ 1487.86 -  1491.22] Fora dos resultados, principais dessa apresentação,
+[ 1491.98 -  1494.26] essas fontes dão continuidade o que foi construído
+[ 1494.56 -  1496.58] e precisam de testes próprios.
+[ 1498.28 -  1500.96] As conclusões agora para a Petra 4.
+[ 1502.12 -  1505.22] O trabalho mostrou que SNI foi uma alternativa competitiva
+[ 1505.22 -  1509.40] para prever o fechamento da Petra em condições estudadas.
+[ 1509.96 -  1514.58] No histórico, 44 das 45 tiveram um maim menor
+[ 1514.58 -  1518.56] e valores documentados por GRM e LSTU.
+[ 1518.56 -  1522.48] Na ordada complementar, esse N teve um menor erro
+[ 1522.48 -  1525.16] com apoio de testes e satisco da execução.
+[ 1525.50 -  1529.42] Outro resultado foi o ajuste rápido da rede selecionada,
+[ 1529.78 -  1533.50] com o custo da busca apresentando separadamente.
+[ 1534.06 -  1535.60] Minha contribuição do ejarido software
+[ 1535.60 -  1540.10] foi adaptar essas rotinas e desenvolver a interface SNI Auto.
+[ 1540.74 -  1544.82] Reunindo configuração, a acompanhamento e análise de testes.
+[ 1544.82 -  1548.60] O trabalho entrega resultado de previsão, uma aplicação
+[ 1548.60 -  1550.50] e registro para conferência.
+[ 1550.94 -  1553.30] Essa base é construída para os próximos estudos.
+[ 1553.82 -  1556.96] Agradeça a atenção da banca e muito obrigado.

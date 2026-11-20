@@ -1,0 +1,17 @@
+{
+  "sha256_antes": "3548613bcaf11ce6377cce7e12511d0e146c4b407de261c4eec57ac7456387bc",
+  "sha256_apos_edicao": "6060246d5a4026b5088ebba4079c165e96702a8c7f8c2a9262bed2361243999a",
+  "alteracoes": [
+    {
+      "unidade": "U0207",
+      "antes": "Wang et al. (2025) avaliaram um sistema óptico de Computação de Reservatório com ponderação de atributos em sete índices acionários, integrando dados de mercado e indicadores macroeconômicos e técnicos. O protocolo inclui modelos de aprendizado de máquina, entre eles LSTM, e seleciona o melhor comparador para cada índice. Os autores relatam ganhos nos horizontes de um, quatro e dez passos. A análise de atraso em trajetórias específicas não demonstra que a ponderação elimine atrasos em qualquer regime de mercado.",
+      "depois": "Wang, Bu e Huang (2025) avaliaram um sistema óptico de Computação de Reservatório com ponderação de atributos em sete séries de mercado, integrando dados de mercado e indicadores macroeconômicos e técnicos. O protocolo inclui modelos de aprendizado de máquina, entre eles LSTM, e seleciona o melhor comparador para cada índice. Os autores relatam ganhos nos horizontes de um, quatro e dez passos. A análise de atraso em trajetórias específicas não demonstra que a ponderação elimine atrasos em qualquer regime de mercado."
+    },
+    {
+      "unidade": "U0472",
+      "antes": "Wang F. et al. (2025)",
+      "depois": "Wang, Bu e Huang (2025)"
+    }
+  ],
+  "estado": "pendente_exportacao_e_inspecao"
+}

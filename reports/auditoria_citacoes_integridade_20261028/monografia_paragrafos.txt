@@ -1,0 +1,1019 @@
+P0000 [Normal] UNIVERSIDADE DE RIO VERDE (UniRV)
+P0001 [Normal] FACULDADE DE ENGENHARIA DE SOFTWARE
+P0002 [Normal] MAYCON GARCIA SILVA
+P0003 [Normal] APLICAÇÃO DE FATOR DE CORREÇÃO PARA PREVISÃO DE PREÇOS DE AÇÕES NA BOLSA DE VALORES COM REDE NEURAL DE ESTADOS DE ECO
+P0004 [Normal] RIO VERDE/GO
+P0005 [Normal] 2026
+P0006 [Normal] MAYCON GARCIA SILVA
+P0007 [Normal] APLICAÇÃO DE FATOR DE CORREÇÃO PARA PREVISÃO DE PREÇOS DE AÇÕES NA BOLSA DE VALORES COM REDE NEURAL DE ESTADOS DE ECO
+P0008 [Normal] Monografia apresentada à Banca Examinadora do Curso de Engenharia de Software da Universidade de Rio Verde (UniRV) como exigência parcial para obtenção do título de Bacharel em Engenharia de Software. Área de concentração: Engenharia de Software.
+P0009 [Normal] Orientador: Prof. Dr. Fabian Corrêa Cardoso
+P0010 [Normal] RIO VERDE/GO
+P0011 [Normal] 2026
+P0013 [Normal] Universidade de Rio Verde 
+P0014 [Normal] Biblioteca Luiza Carlinda de Oliveira 
+P0015 [Normal] Dados Internacionais de Catalogação na Publicação – (CIP) 
+P0016 [Normal] Bibliotecário: Juatan Tiago da Silva – CRB 1/3158
+P0017 [Normal] MAYCON GARCIA SILVA
+P0018 [Normal] APLICAÇÃO DE FATOR DE CORREÇÃO PARA PREVISÃO DE PREÇOS DE AÇÕES NA BOLSA DE VALORES COM REDE NEURAL DE ESTADOS DE ECO
+P0019 [Normal] Monografia apresentada à Banca Examinadora do Curso de Engenharia de Software da Universidade de Rio Verde (UniRV) como exigência parcial para obtenção do título de Bacharel em Engenharia de Software. Área de concentração: Engenharia de Software.
+P0020 [Normal] Rio Verde, GO, _____ de _________________ de 2026.
+P0021 [Normal] BANCA EXAMINADORA
+P0022 [Normal] ..........................................................................................
+P0023 [Normal] Prof. Dr. Fabian Corrêa Cardoso (Orientador)
+P0024 [Normal] Universidade de Rio Verde (UniRV)
+P0025 [Normal] ..........................................................................................
+P0026 [Normal] Prof. Lorena Azevedo Lima (membra 1)
+P0027 [Normal] Universidade de Rio Verde (UniRV)
+P0028 [Normal] ..........................................................................................
+P0029 [Normal] Prof. Me. Ronaldo Camilo dos Santos (membro 2)
+P0030 [Normal] Universidade de Rio Verde (UniRV)
+P0031 [Normal] Dedico este trabalho à minha mãe Gizele Garcia Martins Silva e ao meu pai Cleidiomar Ferreira da Silva por todo o apoio prestado desde o começo da minha vida até os dias de hoje.
+P0032 [Normal] AGRADECIMENTOS
+P0033 [Normal] Agradeço primeiramente a Deus por ter me dado forças para persistir no curso.
+P0034 [Normal] Agradeço também aos meus colegas Danilo, Gilberto e Gabriel, que fizeram parte de maneira significativa desta jornada.
+P0035 [Normal] Agradeço ao meu orientador, Fabian Corrêa Cardoso, por todo o tempo dedicado a me orientar neste trabalho.
+P0036 [Normal] Agradeço também ao professor Adriano Ferraz da Costa pelos auxílios prestados.
+P0037 [Normal] Agradeço também a Matheus Teixeira Lampugnani pela disponibilização de seu trabalho, que contribuiu como referência acadêmica correlata para esta pesquisa.
+P0038 [Normal] “Where chaos begins, classical science stops.”
+P0039 [Normal] (Gleick, 1987, par. 1)
+P0040 [Normal] RESUMO
+P0041 [Normal] Este trabalho avaliou Redes Neurais de Estados de Eco (Echo State Networks - ESNs) na previsão de um passo à frente do preço de fechamento ajustado da ação preferencial da Petrobras (PETR4). A série reuniu 5.198 observações diárias entre 3 de janeiro de 2000 e 30 de dezembro de 2020, divididas cronologicamente em treino, validação e teste. O Fator de Ajuste foi aplicado como etapa fixa de pré-processamento para reduzir descontinuidades associadas a eventos corporativos, sem atribuição causal isolada de ganho de acurácia ao procedimento. Foi desenvolvido o ESNAUTO, infraestrutura experimental que integra ESN com regressão Ridge, Algoritmo Genético binário, inicialização por Amostragem por Hipercubo Latino (Latin Hypercube Sampling - LHS) e mecanismo antiestagnação por mutação cataclísmica. Foram documentadas 45 execuções em cinco ondas de distribuições aplicadas às matrizes de entrada e do reservatório. Laplace × Normal apresentou o menor erro médio absoluto (Mean Absolute Error – MAE) de teste (0,327224), enquanto Laplace × Cauchy obteve o menor raiz do erro quadrático médio (Root Mean Squared Error – RMSE) (0,495386) e o maior coeficiente de determinação (R²) (0,9941); 44 das 45 execuções apresentaram MAE inferior aos valores documentados para as unidades recorrentes com portas (Gated Recurrent Units – GRU) e as redes de memória de longo e curto prazo (Long Short-Term Memory – LSTM). Como análise inferencial complementar, uma execução controlada e reprodutível com semente fixa 20260926 preservou 1.298 previsões comuns. Quatro testes bilaterais de Diebold-Mariano indicaram diferença estatisticamente significativa entre a ESN e os baselines GRU e LSTM sob perdas absoluta e quadrática, sempre com menor perda média para a ESN. O ajuste analítico da configuração selecionada demandou cerca de 0,05 segundo, enquanto as buscas genéticas totalizaram aproximadamente 37,9 horas, distinguindo custo off-line de descoberta e baixo custo de ajuste posterior. Conclui-se que, sob o protocolo adotado, ESNs pequenas e otimizadas constituíram alternativa competitiva para a tarefa investigada, e o ESNAUTO contribuiu como artefato de Engenharia de Software para organizar, executar, auditar e comparar o processo experimental.
+P0042 [Normal] Palavras-chave: redes neurais de estados de eco; algoritmos genéticos; computação de reservatório; séries temporais financeiras; PETR4.
+P0043 [Normal] ABSTRACT
+P0044 [Normal] This study evaluated Echo State Networks (ESNs) for one-step-ahead prediction of the adjusted closing price of Petrobras preferred stock (PETR4). The series comprised 5,198 daily observations from January 3, 2000, to December 30, 2020, chronologically divided into training, validation, and test sets. The Adjustment Factor was applied as a fixed preprocessing step to reduce discontinuities associated with corporate events, without attributing an isolated causal accuracy gain to the procedure. ESNAUTO was developed as an experimental framework integrating an ESN with Ridge regression, a binary Genetic Algorithm, Latin Hypercube Sampling (LHS) initialization, and a cataclysmic anti-stagnation mechanism. Forty-five runs were documented across five waves of distributions applied to the input and reservoir matrices. Laplace × Normal achieved the lowest test mean absolute error (MAE) (0.327224), whereas Laplace × Cauchy obtained the lowest root mean squared error (RMSE) (0.495386) and the highest coefficient of determination (R²) (0.9941); 44 of the 45 runs achieved lower MAE than the documented gated recurrent unit (GRU) and long short-term memory (LSTM) values. As a complementary inferential analysis, a controlled and reproducible run with fixed seed 20260926 preserved 1,298 common forecasts. Four two-sided Diebold-Mariano tests indicated statistically significant differences between the ESN and the GRU/LSTM baselines under absolute and squared loss, always with lower mean loss for the ESN. Analytical fitting of the selected configuration required about 0.05 s, while the genetic searches totaled approximately 37.9 h, distinguishing the offline discovery cost from the low subsequent fitting cost. Under the adopted protocol, small optimized ESNs were competitive for the investigated task, while ESNAUTO contributed a software-engineering artifact for organizing, executing, auditing, and comparing the experimental workflow.
+P0045 [Normal] Keywords: echo state networks; genetic algorithms; reservoir computing; financial time series; PETR4.
+P0046 [Normal] LISTA DE FIGURAS
+P0047 [Normal] Figura 1 – Cobertura das cinco dimensões analíticas nos estudos	35
+P0048 [Normal] Figura 2 – Frequência das palavras-chave declaradas pelos autores	36
+P0049 [Normal] Figura 3 – Rede de coocorrência de palavras-chave	37
+P0050 [Normal] Figura 4 – Expressões recorrentes nos títulos dos estudos	38
+P0051 [Normal] Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações	54
+P0052 [Normal] Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada	55
+P0053 [Normal] LISTA DE QUADROS
+P0054 [Normal] Quadro 1 – Mapa de cobertura: estudo × dimensão analítica	33
+P0055 [Normal] Quadro 2 – Organização das cinco ondas experimentais	42
+P0056 [Normal] Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético	43
+P0057 [Normal] Quadro 4 – Síntese do desenho experimental executado	46
+P0058 [Normal] Quadro 5 – Síntese da avaliação das hipóteses	61
+P0059 [Normal] LISTA DE TABELAS
+P0060 [Normal] Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico	32
+P0061 [Normal] Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)	41
+P0062 [Normal] Tabela 3 – Comparação dos principais resultados no conjunto de teste	53
+P0063 [Normal] Tabela 4 – Configurações selecionadas das cinco ondas experimentais	56
+P0064 [Normal] Tabela 5 – Decomposição do custo computacional documentado	58
+P0065 [Normal] Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar	60
+P0066 [Normal] Tabela 7 – Comparação com trabalhos relacionados à ação preferencial da Petrobras	62
+P0067 [Normal] LISTA DE ABREVIATURAS E SIGLAS
+P0068 [Normal] ACF – Autocorrelation Function (Função de Autocorrelação)
+P0069 [Normal] AG – Algoritmo Genético
+P0070 [Normal] AGED – Asymmetric Generalized Error Distribution (Distribuição Generalizada de Erro Assimétrica)
+P0071 [Normal] AIC – Akaike Information Criterion (Critério de Informação de Akaike)
+P0072 [Normal] ARIMA – Autoregressive Integrated Moving Average
+P0073 [Normal] B3 – Brasil, Bolsa, Balcão
+P0074 [Normal] BIC – Bayesian Information Criterion (Critério de Informação Bayesiano)
+P0075 [Normal] BP – Backpropagation (Retropropagação)
+P0076 [Normal] BPNN – Backpropagation Neural Network (Rede Neural de Retropropagação)
+P0077 [Normal] BPTT – Backpropagation Through Time
+P0078 [Normal] CHC – Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation
+P0079 [Normal] CPU – Central Processing Unit (Unidade Central de Processamento)
+P0080 [Normal] CRSP – Center for Research in Security Prices
+P0081 [Normal] CS-ESN – Compressed Sensing Echo State Network (Rede de Estados de Eco com Sensoriamento Compressivo)
+P0082 [Normal] DL – Deep Learning (Aprendizado Profundo)
+P0083 [Normal] DM – Diebold-Mariano
+P0084 [Normal] DOI – Digital Object Identifier (Identificador Digital de Objeto)
+P0085 [Normal] EGARCH – Exponential Generalized Autoregressive Conditional Heteroskedasticity
+P0086 [Normal] ER – Erdős–Rényi
+P0087 [Normal] ESN – Echo State Network (Rede Neural de Estados de Eco)
+P0088 [Normal] GED – Generalized Error Distribution
+P0089 [Normal] GPU – Graphics Processing Unit (Unidade de Processamento Gráfico)
+P0090 [Normal] GRU – Gated Recurrent Unit
+P0091 [Normal] HAR – Heterogeneous Autoregressive (Autorregressivo Heterogêneo)
+P0092 [Normal] HONN – Higher-Order Neural Network (Rede Neural de Ordem Superior)
+P0093 [Normal] HQIC – Hannan–Quinn Information Criterion (Critério de Informação de Hannan–Quinn)
+P0094 [Normal] HQNN – Hybrid Quantum Neural Network (Rede Neural Quântico-Híbrida)
+P0095 [Normal] HUX – Half Uniform Crossover
+P0096 [Normal] LHS – Latin Hypercube Sampling (Amostragem por Hipercubo Latino)
+P0097 [Normal] LLM – Large Language Model (Modelo de Linguagem de Grande Escala)
+P0098 [Normal] LSTM – Long Short-Term Memory
+P0099 [Normal] MAE – Mean Absolute Error (Erro Médio Absoluto)
+P0100 [Normal] MAPE – Mean Absolute Percentage Error (Erro Percentual Absoluto Médio)
+P0101 [Normal] MLP – Multilayer Perceptron (Perceptron Multicamadas)
+P0102 [Normal] MSE – Mean Squared Error (Erro Quadrático Médio)
+P0103 [Normal] NLP – Natural Language Processing (Processamento de Linguagem Natural)
+P0104 [Normal] NMAE – Normalized Mean Absolute Error (Erro Médio Absoluto Normalizado)
+P0105 [Normal] NMSE – Normalized Mean Squared Error (Erro Quadrático Médio Normalizado)
+P0106 [Normal] NRMSE – Normalized Root Mean Squared Error (Raiz do Erro Quadrático Médio Normalizado)
+P0107 [Normal] PCO – Perturbed Chen Oscillator (Oscilador de Chen Perturbado)
+P0108 [Normal] PDF – Portable Document Format (Formato de Documento Portátil)
+P0109 [Normal] PEMFC – Proton Exchange Membrane Fuel Cell (Célula de Combustível de Membrana de Troca de Prótons)
+P0110 [Normal] PETR4 – Ação preferencial da Petróleo Brasileiro S.A.
+P0111 [Normal] PF – Power Function
+P0112 [Normal] PSO – Particle Swarm Optimization
+P0113 [Normal] QTCNN – Quantum Temporal Convolutional Neural Network (Rede Convolucional Temporal Quântica)
+P0114 [Normal] RC – Reservoir Computing (Computação de Reservatório)
+P0115 [Normal] RMSE – Root Mean Squared Error (Raiz do Erro Médio Quadrático)
+P0116 [Normal] RNN – Recurrent Neural Network (Rede Neural Recorrente)
+P0117 [Normal] RNR – Rede Neural Recorrente
+P0118 [Normal] SF – Scale-Free (Livre de Escala)
+P0119 [Normal] SJR – SCImago Journal Rank
+P0120 [Normal] SSA – Sparrow Search Algorithm
+P0121 [Normal] SVM – Support Vector Machine
+P0122 [Normal] SW – Small-World (Pequeno Mundo)
+P0123 [Normal] TFC – Trabalho Final de Curso
+P0124 [Normal] TPE – Tree Parzen Estimator
+P0125 [Normal] LISTA DE SÍMBOLOS
+P0126 [Normal] W – Matriz de pesos do reservatório da ESN
+P0127 [Normal] Win - Matriz de pesos de entrada do reservatório ESN
+P0128 [Normal] Wout - Matriz de pesos de saída do reservatório ESN
+P0129 [Normal] SUMÁRIO
+P0130 [toc 1] 1	INTRODUÇÃO	17
+P0131 [toc 1] 2	REVISÃO DA LITERATURA	19
+P0132 [toc 2] 2.1	MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS	19
+P0133 [toc 2] 2.2	REDES NEURAIS RECORRENTES: LSTM E GRU	20
+P0134 [toc 2] 2.3	REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO	22
+P0135 [toc 2] 2.4	OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS	24
+P0136 [toc 2] 2.5	DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO	25
+P0137 [toc 2] 2.6	PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3	27
+P0138 [toc 2] 2.7	TRABALHOS RELACIONADOS	28
+P0139 [toc 2] 2.8	ESTADO DA ARTE E LACUNAS IDENTIFICADAS	30
+P0140 [toc 2] 2.9	SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO	31
+P0141 [toc 1] 3	MATERIAL E MÉTODOS	39
+P0142 [toc 2] 3.1	CLASSIFICAÇÃO DA PESQUISA	39
+P0143 [toc 2] 3.2	CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO	40
+P0144 [toc 2] 3.3	IMPLEMENTAÇÃO DAS ESNS EM R	42
+P0145 [toc 2] 3.4	OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS	43
+P0146 [toc 2] 3.5	MODELOS DE COMPARAÇÃO: LSTM E GRU	45
+P0147 [toc 2] 3.6	DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO	45
+P0148 [toc 2] 3.7	ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO	47
+P0149 [toc 2] 3.8	REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS	48
+P0150 [toc 3] 3.8.1	Ambiente computacional	48
+P0151 [toc 3] 3.8.2	Estrutura do repositório	48
+P0152 [toc 3] 3.8.3	Protocolo de revisão sistemática da literatura	49
+P0153 [toc 3] 3.8.4	Procedimento de re-execução dos experimentos	51
+P0154 [toc 1] 4	RESULTADOS E DISCUSSÃO	52
+P0155 [toc 2] 4.1	VISÃO GERAL DOS EXPERIMENTOS	52
+P0156 [toc 2] 4.2	DESEMPENHO PREDITIVO GLOBAL	53
+P0157 [toc 2] 4.3	EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS	56
+P0158 [toc 2] 4.4	ESTABILIDADE, GENERALIZAÇÃO E ONDA 5	57
+P0159 [toc 2] 4.5	CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE	57
+P0160 [toc 2] 4.6	CUSTO COMPUTACIONAL	58
+P0161 [toc 2] 4.7	APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO	59
+P0162 [toc 2] 4.8	ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO	60
+P0163 [toc 2] 4.9	AVALIAÇÃO DAS HIPÓTESES	61
+P0164 [toc 2] 4.10	CONTRIBUIÇÕES DO ESNAUTO	63
+P0165 [toc 1] 5	DISCUSSÃO	65
+P0166 [toc 2] 5.1	VALIDADE INTERNA E ESTATÍSTICA	65
+P0167 [toc 2] 5.2	VALIDADE EXTERNA	66
+P0168 [toc 2] 5.3	TRABALHOS FUTUROS	67
+P0169 [toc 1] 6	CONCLUSÃO	68
+P0170 [toc 1] REFERÊNCIAS	70
+P0172 [TITULO TCC] INTRODUÇÃO
+P0173 [Normal] A previsão de preços de ações reúne desafios de análise temporal, escolha de modelos e qualidade dos dados. No mercado brasileiro, esta pesquisa delimita esse problema à previsão de um passo à frente do preço de fechamento ajustado da ação preferencial da Petróleo Brasileiro S.A. (PETR4), negociada na Brasil, Bolsa, Balcão (B3). O interesse está em avaliar o desempenho preditivo e o custo computacional de configurações de redes neurais sob um protocolo experimental definido, sem interpretar a previsão de preços como demonstração de rentabilidade de uma estratégia de negociação.
+P0174 [Normal] A abordagem central emprega Redes Neurais de Estados de Eco (Echo State Networks – ESNs), pertencentes à Computação de Reservatório (Reservoir Computing – RC). Nessa arquitetura, as matrizes de entrada e do reservatório, designadas por Win e W, permanecem fixas durante o ajuste da camada de saída. Essa organização motiva o estudo de alternativas à otimização iterativa de todos os pesos. A escolha das distribuições de inicialização e dos hiperparâmetros, entretanto, integra o problema experimental e não permite pressupor superioridade de uma configuração antes de sua avaliação.
+P0175 [Normal] A pesquisa utiliza preços ajustados para lidar com descontinuidades associadas a eventos corporativos, sem isolar o efeito do Fator de Ajuste por uma ablação. Também distingue o custo da busca por hiperparâmetros do ajuste da configuração selecionada, delimitando a interpretação da acurácia e da eficiência computacional.
+P0176 [Normal] O problema de pesquisa consiste em investigar em que medida distribuições não gaussianas para Win e W, combinadas a um Algoritmo Genético (AG), alteram a acurácia e o custo computacional de uma ESN na previsão fora da amostra da PETR4 em comparação com inicializações canônicas e com redes Long Short-Term Memory (LSTM) e Gated Recurrent Unit (GRU). A justificativa está na necessidade de documentar essas escolhas de inicialização, avaliá-las em conjunto com os hiperparâmetros e explicitar as condições em que as comparações são sustentadas pelos registros disponíveis.
+P0177 [Normal] O objetivo geral é investigar o desempenho de ESNs na predição de um passo à frente do preço ajustado da PETR4, com ênfase nas distribuições aplicadas a Win e W e na otimização conjunta dos hiperparâmetros por AG. A busca utiliza inicialização por Amostragem por Hipercubo Latino (Latin Hypercube Sampling – LHS) e mutação cataclísmica inspirada no algoritmo Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation (CHC). O mecanismo antiestagnação não corresponde à implementação do CHC completo.
+P0178 [Normal] Como objetivos específicos, pretende-se consolidar a revisão da literatura; empregar a série histórica ajustada; desenvolver o ESNAUTO, integrando ESN, regressão Ridge e busca genética; e investigar distribuições canônicas, de cauda pesada, assimétricas, esparsas e empiricamente ajustadas. Também se busca otimizar conjuntamente a taxa de vazamento, o raio espectral, o descarte inicial, o tamanho do reservatório e a regularização Ridge por meio de cromossomo binário de 55 bits.
+P0179 [Normal] A avaliação contempla o Erro Médio Absoluto (Mean Absolute Error – MAE), a Raiz do Erro Quadrático Médio (Root Mean Squared Error – RMSE) e o coeficiente de determinação (R²), a comparação com a ESN Normal × Normal e com LSTM e GRU e a separação entre custo de otimização e ajuste final. Inclui ainda o exame da estabilidade das execuções, a comparação inferencial complementar pelo teste de Diebold–Mariano (DM), a documentação do procedimento e a discussão de limitações e condições de replicação.
+P0180 [Normal] Cinco hipóteses orientam a pesquisa e são apresentadas a seguir. Sua avaliação deve distinguir resultados descritivos, evidência inferencial e limites de atribuição causal.
+P0181 [Normal] H1 - desempenho: a ESN otimizada apresentará desempenho preditivo comparável ou superior ao de LSTM e GRU no protocolo adotado, considerando-se desempenho comparável a ausência de diferença estatisticamente significativa pelo teste de Diebold-Mariano e desempenho superior a redução de erro acompanhada de significância no mesmo teste.
+P0182 [Normal] H2 - eficiência: após a seleção da configuração, o ajuste analítico da camada de saída da ESN demandará menos tempo computacional que o treinamento iterativo de LSTM e GRU.
+P0183 [Normal] H3 - inicialização: ao menos uma distribuição não gaussiana em Win ou W produzirá erro fora da amostra menor que a inicialização Normal × Normal.
+P0184 [Normal] H4 - exploração evolucionária: a combinação de inicialização LHS e mutação cataclísmica manterá diversidade de busca e produzirá soluções competitivas sob o orçamento experimental definido.
+P0185 [Normal] H5 - ajuste empírico: distribuições ajustadas aos dados de treino pelo EasyFit produzirão melhor desempenho ou menor variabilidade que distribuições canônicas.
+P0186 [Normal] O trabalho está organizado em revisão da literatura, material e métodos, resultados e discussão, discussão das limitações e conclusão. A revisão fundamenta os modelos e as escolhas de inicialização; a metodologia delimita os procedimentos e os blocos experimentais; os capítulos finais apresentam a avaliação e suas implicações. A extensão a outros ativos permanece como possibilidade de continuidade, preservando a PETR4 como objeto dos resultados principais desta monografia.
+P0187 [TITULO TCC] REVISÃO DA LITERATURA
+P0188 [SEÇÃO TCC] MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS
+P0189 [Normal] O mercado acionário ocupa posição central nas economias contemporâneas, e suas dinâmicas de preço são marcadas por oscilações frequentes e difíceis de antecipar. Essa dificuldade é em parte estatística, pois séries financeiras apresentam não linearidades, comportamento estocástico e eventos extremos com frequência incompatível com a hipótese gaussiana e em parte computacional, dada a velocidade com que os preços se reorganizam em resposta a novas informações.
+P0190 [Normal] Vishwas et al. (2025), em revisão sobre falhas, escalabilidade e uso de dados sintéticos em sistemas de inteligência artificial aplicados ao setor financeiro, observam que arquiteturas treinadas por backpropagation, em particular, as LSTMs, tendem a se mostrar lentas e custosas em cenários de alta frequência.
+P0191 [Normal] Os autores comparam máquinas de vetores de suporte (Support Vector Machines – SVMs), LSTMs, Transformers e redes quântico-híbridas (HQNN), e identificam o custo de retreinamento em ambientes dinâmicos como uma das principais barreiras à adoção em larga escala de redes profundas no mercado financeiro.
+P0192 [Normal] Ping (2023) acrescenta a essa discussão a perspectiva do uso prático: variações abruptas de preço impactam decisões de investimento em escala global, o que confere à modelagem preditiva relevância tanto para o investidor individual quanto para o gestor de risco institucional. No contexto brasileiro, prever preços de ativos negociados na B3 traz uma camada adicional de dificuldade.
+P0193 [Normal] A natureza não linear e estocástica das séries inviabiliza a aplicação direta de modelos como o autorregressivo integrado de médias móveis (Autoregressive Integrated Moving Average – ARIMA) e a regressão linear, ambos construídos sobre pressupostos de estacionariedade e linearidade que os retornos financeiros raramente satisfazem.
+P0194 [Normal] Ainda assim, abordagens estatísticas simples ocupam espaço relevante no histórico da literatura aplicada à PETR4 (Petrobrás). Timbó et al. (2016) constituem uma das primeiras referências brasileiras a aplicar regressão linear ao papel, com base em correlação de Pearson e taxa de acerto direcional. O estudo evidencia que mesmo abordagens estatísticas simples podem fornecer indicações iniciais sobre as oscilações do ativo embora os próprios autores reconheçam que o método não é adaptativo e não captura dependências temporais de longo prazo.
+P0195 [Normal] Costa & Lunkes (2025) avançam nessa linha ao aplicar Support Vector Machine (SVM) à previsão de comportamento de ações da Petrobras, combinando indicadores técnicos e fundamentalistas, e obtêm F1-score de 72,7% para a PETR4. O resultado é superior ao das abordagens puramente estatísticas, mas o trabalho não incorpora componente temporal explícita e recomenda, em suas considerações finais, a avaliação de redes neurais recorrentes como continuidade natural recomendação que esta pesquisa atende.
+P0196 [Normal] Outros caminhos vêm sendo trilhados na literatura recente. Liu H. (2025) combina dados técnicos com análise de sentimentos extraída por Large Language Models (LLMs), ou modelos de linguagem de grande escala, entre eles o FinBERT e o GPT-2, para prever a direção do índice Standard and Poor’s (S&P) 500, com acurácia preditiva de 75%. O resultado é expressivo, mas a abordagem depende fortemente do Processamento de Linguagem Natural (Natural Language Processing - NLP) e está sujeita a ruído e a vieses de leitura do mercado.
+P0197 [Normal] Xiao (2024) compara LSTM, GRU e Transformers na previsão de preços da Tesla, com tratamento de dados ausentes em séries multivariadas, mas não chega a investigar arquiteturas de reservatório. A diversidade de propostas baseadas em Support Vector Machine (SVM), Aprendizado Profundo (Deep Learning - DL) e NLP ilustra a riqueza da área, mas também reforça a relevância de investigar modelos computacionalmente mais eficientes, como as ESNs, justamente o caminho seguido por este trabalho.
+P0198 [SEÇÃO TCC] REDES NEURAIS RECORRENTES: LSTM E GRU
+P0199 [Normal] Para tratar dados com estrutura temporal, uma das classes de modelos mais utilizadas é a das Redes Neurais Recorrentes (RNRs). Sudiatmika e Putra (2024) explicam que, ao contrário das redes neurais convencionais, que processam cada entrada de forma independente, as RNRs mantêm um estado interno atualizado a cada novo dado recebido. Essa memória interna permite que cada saída dependa não apenas da entrada atual, mas também do histórico acumulado ao longo da sequência, o que torna possível capturar dependências entre observações distantes no tempo.
+P0200 [Normal] Entre as variantes mais empregadas estão as redes Long-Short Term Memory (LSTM), introduzidas por Hochreiter e Schmidhuber (1997), e as Gated Recurrent Units (GRU), propostas no contexto da arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador por Cho et al. (2014). Ambas surgem como resposta à dificuldade clássica do desvanecimento de gradiente.
+P0201 [Normal] As LSTMs utilizam portas para controlar preservação, atualização e descarte de informação, enquanto as GRUs adotam arquitetura mais enxuta e menor número de parâmetros treináveis. Sudiatmika e Putra (2024) observam que, em séries mais curtas, a GRU pode ser computacionalmente mais eficiente que a LSTM em razão dessa estrutura simplificada.
+P0202 [Normal] Mesmo após essa mitigação, contudo, ambas as arquiteturas convivem com uma limitação prática: o treinamento via retropropagação através do tempo (Backpropagation Through Time – BPTT) permanece iterativo, exige ajuste de pesos em todas as camadas internas e pode apresentar instabilidades numéricas residuais em séries muito longas.
+P0203 [Normal] Vishwas et al. (2025) corroboram esse quadro ao apontar que a dependência de redes baseadas em backpropagation gera tempos de treinamento elevados em cenários de alta frequência financeira. Em ambientes que exigem retreinamento frequente uma característica frequente nos mercados esse custo pode tornar inviável o uso prático dessas arquiteturas em larga escala.
+P0204 [Normal] Investigações recentes têm avançado em diferentes direções para contornar essas limitações. Xiao (2024) compara LSTM, GRU e Transformers e mostra que a análise centrada exclusivamente no ativo, sem incorporar o feedback do mercado, gera limitações preditivas relevantes. Cortesi et al. (2026) trazem uma observação metodológica importante: ao trabalhar com dados do S&P 500, os autores demonstram que diferentes otimizadores podem produzir erros preditivos escalares idênticos (Normalized Mean Squared Error – NMSE) e, ainda assim, gerar funções de previsão drasticamente distintas.
+P0205 [Normal] O resultado revela que a geometria da inicialização e do processo de otimização afeta os pesos da rede de modos que métricas agregadas não capturam, com implicação direta para esta pesquisa: avaliar arquiteturas exclusivamente pelo erro de predição pode ocultar diferenças relevantes de comportamento.
+P0206 [Normal] Em paralelo, novas arquiteturas estendem a discussão para além da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quânticas (Quantum Temporal Convolutional Neural Networks – QTCNN) e mostram superioridade frente a LSTM, Multilayer Perceptron (MLP) e Transformers no retorno ajustado ao risco para ações japonesas (dataset JPX).
+P0207 [Normal] Kumar (2025) realiza comparação empírica entre ARIMA, LSTM, GRU e modelos de Reservoir Computing aplicados à previsão de preços do petróleo, quantificando vantagens e desvantagens de cada abordagem frente a séries voláteis e sinalizando o paradigma de reservatório como alternativa competitiva.
+P0208 [Normal] Behera (2023), em revisão sobre redes neurais de ordem superior (HONNs) e otimização evolucionária em séries financeiras, conclui que a combinação de redes neurais com Algoritmos Genéticos (AG) e Particle Swarm Optimization (PSO) eleva substancialmente a precisão preditiva, e identifica a seleção de variáveis e o ajuste de hiperparâmetros como gargalos ainda não resolvidos, convergência relevante com a proposta deste trabalho.
+P0209 [SEÇÃO TCC] REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO
+P0210 [Normal] Uma alternativa computacionalmente mais leve às RNRs clássicas são as ESNs, inseridas no paradigma da Computação de Reservatório (Reservoir Computing - RC). Conforme Jaeger (2007), uma ESN é organizada em torno de um núcleo recorrente o reservatório, composto por neurônios cujos pesos internos são gerados aleatoriamente e mantidos fixos durante todo o treinamento.
+P0211 [Normal] Esse núcleo projeta os dados de entrada em um espaço de alta dimensionalidade, e cabe à camada de saída, treinada por regressão linear regularizada, extrair desse espaço os padrões relevantes. Como apenas a camada de saída é ajustada, o processo é matematicamente estável e ordens de grandeza mais rápido do que o BPTT.
+P0212 [Normal] A vantagem competitiva das ESNs em problemas financeiros vem sendo demonstrada em diferentes mercados. Sun (2021) aplica ESN e LSTM à previsão de preços das ações da Kweichow Moutai e relata convergência muito mais rápida da ESN, melhor retenção de não linearidades e menores valores de MAE e RMSE. O autor utiliza preço de fechamento ajustado como entrada e observa que arquiteturas de aprendizado profundo tradicional padecem de baixa precisão e lentidão em séries financeiras, posicionando a ESN como alternativa natural.
+P0213 [Normal] Em escala global, Wang et al. (2021) confirmam essa capacidade ao aplicar modelos de RC à previsão de índices de sete bolsas mundiais (S&P 500, NASDAQ, FTSE, SSE, entre outras) e mostrar que a abordagem de reservatório supera RNRs padrão, LSTM e modelos híbridos de DL. Os autores identificam a topologia de inicialização das matrizes do reservatório testando configurações Erdős-Rényi (ER), Scale-Free (SF) e Small-World (SW) como o fator preponderante para o ganho preditivo, conclusão diretamente relevante para a proposta desta pesquisa.
+P0214 [Normal] A literatura também explora hibridizações entre ESNs e outras arquiteturas ou otimizadores. Ribeiro et al. (2021) propõem o modelo autorregressivo heterogêneo (Heterogeneous Autoregressive – HAR), combinado com PSO e ESN (HAR-PSO-ESN) para previsão de volatilidade intradiária de ações da Nasdaq (CAT, EBAY, MSFT), em que a arquitetura ESN é combinada com otimização por PSO; o modelo supera MLPs e métodos estatísticos como ARIMA, validando a combinação entre reservatório e otimizador bio-inspirado em cenários financeiros caóticos.
+P0215 [Normal] A linha de hardware especializado para RC complementa esse panorama. Wang (2025) desenvolve uma arquitetura de RC óptica multivariada ponderada aplicada a sete mercados de ações mundiais, demonstrando que a previsão baseada em pesos correlacionais evita as discrepâncias de atraso que a LSTM clássica produz em dias caóticos, com vantagens em MAE, RMSE, Normalized Root Mean Squared Error (NRMSE), Mean Absolute Percentage Error (MAPE) e índice de Sharpe.
+P0216 [Normal] Liu (2022) apresenta sistema de RC nanofotônico aplicado a bolsas chinesa e britânica e mostra que ESNs reagem de forma conservadora e ajustada mesmo durante grandes flutuações e mudanças de regime comportamento que sistemas de software lentos não conseguem reproduzir em tempo real.
+P0217 [Normal] Zhang (2021) propõe a variante de ESN com sensoriamento compressivo (Compressed Sensing – CS-ESN), que adapta o conceito de compressão de sinais aos nós do reservoir pool, e mostra que a compressão reduz o custo de amostragem mantendo os picos representativos dos dados voláteis, embora taxas inadequadas de compressão acabem por descartar parte da estrutura caótica em frequências subamostradas.
+P0218 [Normal] Há ainda investigações dedicadas especificamente à inicialização e à topologia do reservatório, ponto particularmente relevante para esta pesquisa. Hariharan et al. (2025) propõem ESNs agrupadas por clusters topológicos para o processamento de dados multivariados de ações (NIFTYBEES) e mostram que topologias agrupadas dos tipos Random e Scale-Free superam de forma significativa a ESN isolada, ao impedir que variáveis distintas se misturem em um único reservatório caótico global.
+P0219 [Normal] Hassaan et al. (2025) investigam ESNs com inicialização caótica aplicadas ao S&P 500, ISEQ, ouro e FTSE 100, e mostram que essa estratégia reduz drasticamente o erro quadrático médio (Mean Squared Error – MSE) e supera a GRU, indicando que controlar as perturbações iniciais maximiza o desempenho em dados de distribuição não estacionária. Seddik (2023) aprofunda essa direção ao propor abordagem híbrida ESN-Lorenz, voltada a isolar o efeito borboleta nos pesos iniciais; aplicada a dados de Bitcoin, obtém RMSE inferior a 1 e confirma que instabilidades nas condições iniciais comprometem severamente o desempenho das ESNs.
+P0220 [Normal] Sharma (2025), por fim, realiza comparação rigorosa entre ESN, XGBoost, ARIMA e suavização exponencial em séries de Bitcoin, e conclui que, em janelas de comportamento puramente caótico, a ESN apresenta superioridade estatisticamente significativa frente ao XGBoost e ao ARIMA, o que reforça seu papel como modelo de referência para dados caóticos e não estacionários.
+P0221 [SEÇÃO TCC] OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS
+P0222 [Normal] A escolha dos hiperparâmetros que governam o comportamento do reservatório em particular o raio espectral (associado à caoticidade), a taxa de esparsidade e a taxa de vazamento (associada à memória) é um dos pontos mais sensíveis na aplicação de ESNs.
+P0223 [Normal] Millea (2014) demonstra que matrizes ortonormais oferecem resultados consideravelmente mais estáveis do que distribuições aleatórias escaladas convencionais, e chama atenção para um problema correlato: múltiplas inicializações aleatórias produzem grandes disparidades preditivas, configurando o que o autor denomina alta variabilidade de inicialização. O mesmo trabalho descreve os Algoritmos Genéticos (AGs) como métodos de busca inspirados nos princípios da evolução biológica, capazes de explorar combinações de parâmetros sem exigir que o espaço de busca seja contínuo ou diferenciável.
+P0224 [Normal] Várias propostas exploram metaheurísticas distintas para esse problema de busca. Tian (2024) emprega o Sparrow Search Algorithm (SSA) como otimizador de uma ESN aplicada a dez ações dos Estados Unidos e dez ações da China; o modelo SSA-ESN evita mínimos locais e supera de forma significativa a LSTM e redes neurais de retropropagação (BPNN) em RMSE e MAPE, validando empiricamente que ESNs sem otimização caem com facilidade em vales subótimos. Esse trabalho se aproxima conceitualmente da proposta deste Trabalho Final de Curso (TFC), dela diferindo essencialmente na escolha do algoritmo bio-inspirado.
+P0225 [Normal] Deng et al. (2022) demonstram o uso de AG para otimizar hiperparâmetros de uma ESN empilhada, com aplicação à previsão de degradação de células de combustível de membrana de troca de prótons (Proton Exchange Membrane Fuel Cells – PEMFCs); o modelo apresenta forte convergência e supera consistentemente redes LSTM. Os autores apontam a busca por valores adequados de raio espectral e taxa de vazamento como a principal fragilidade da literatura de ESNs e validam o AG como solução eficaz nesse espaço de busca.
+P0226 [Normal] Em direção semelhante, Ecer (2020) documenta o uso de AG e PSO para otimização de pesos de Perceptrons Multicamadas (MLP) na estimação de direção de índices financeiros, e mostra que algoritmos evolucionários garantem estabilidade de aprendizado e superam inicializações aleatórias cegas em correlação, MAPE e RMSE. Behera (2023) corrobora teoricamente essas escolhas em sua revisão abrangente, ao identificar a combinação entre redes neurais e AG/PSO como o estado da arte para séries financeiras e ao reconhecer o ajuste de hiperparâmetros como gargalo ainda não resolvido.
+P0227 [Normal] Soltani et al. (2023) oferecem o panorama mais sistemático sobre o tema, em revisão de 74 artigos sobre estratégias de otimização de ESNs. Os autores concluem que metaheurísticas bio-inspiradas, em particular AG e PSO, são as mais empregadas e bem-sucedidas no ajuste de raio espectral, conectividade e escalonamento de pesos. A mesma revisão confirma que a aplicação dessas técnicas a dados financeiros permanece pouco explorada, configurando uma das lacunas que esta pesquisa busca preencher.
+P0228 [Normal] Por fim, Araújo et al. (2024) aplicam diretamente a combinação de Algoritmo Genético, ESN e distribuições probabilísticas a séries temporais da B3, demonstrando que a inicialização influencia os resultados. Esse estudo constitui a referência metodológica mais próxima desta pesquisa. O ESNAUTO amplia o escopo ao organizar cinco ondas de distribuições para Win e W, incorporar o Fator de Ajuste, empregar inicialização LHS e adicionar um operador antiestagnação inspirado no CHC.
+P0229 [SEÇÃO TCC] DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO
+P0230 [Normal] A inicialização dos pesos de entrada (Win) é etapa decisiva na construção de uma ESN, mas a maioria dos trabalhos da área limita-se a empregar distribuições Uniforme ou Gaussiana, sem questionamento sistemático sobre sua adequação aos dados modelados (Millea, 2014). Esse padrão é particularmente problemático em aplicações financeiras.
+P0231 [Normal] Retornos de ativos são reconhecidamente leptocúrticos: apresentam caudas mais pesadas que a distribuição Normal, com eventos extremos mais frequentes do que o esperado sob hipótese gaussiana. Esse descompasso sugere que distribuições alternativas, ajustadas às propriedades dos dados, possam produzir reservatórios com maior fidelidade a essa estrutura estatística.
+P0232 [Normal] A justificativa formal mais antiga para o uso de distribuições alternativas em finanças vem de Nelson (1991), que introduz a Distribuição Generalizada de Erro (Generalized Error Distribution – GED) no contexto financeiro por meio do modelo exponencial autorregressivo de heterocedasticidade condicional generalizada (Exponential Generalized Autoregressive Conditional Heteroskedasticity – EGARCH). O autor demonstra que a GED acomoda caudas leptocúrticas e picos de retornos que a distribuição Normal representa de forma inadequada.
+P0233 [Normal] A GED é parametrizada por um coeficiente de forma ν: para ν = 2, recupera-se a distribuição Normal; para ν = 1, a Laplace; para valores ν < 2, as caudas tornam-se mais pesadas que as da Normal, captando com maior flexibilidade eventos extremos típicos dos mercados financeiros. Lampugnani (2026), em versão de Trabalho Final de Curso disponibilizada ao autor, apresentou resultados competitivos com distribuições alternativas na predição de preços da PETR4. O trabalho foi utilizado como referência acadêmica correlata e como elemento complementar de comparação dos resultados.
+P0234 [Normal] Trabalhos posteriores ampliam e refinam esse referencial. Duttilo (2023) modela retornos do DJIA, do S&P 500 e de ações do índice STOXX50E com misturas finitas de distribuições GED, e mostra que tais misturas oferecem melhor adequação aos dados ao acomodar caudas mais pesadas que as da Normal. O autor recorre aos critérios de informação de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC) para evidenciar que a hipótese de normalidade falha em explicar a assimetria e a curtose observadas.
+P0235 [Normal] Abebe & Goshu (2024) avançam mais uma etapa ao propor a Distribuição Generalizada de Erro Assimétrica (AGED), derivando matematicamente uma família de distribuições capaz de lidar simultaneamente com assimetria e curtose excessiva, com resultados superiores à GED e à Normal em múltiplos critérios de ajuste.
+P0236 [Normal] Dewick (2022) complementa esse referencial ao defender que a compreensão da distribuição subjacente dos dados de mercado, incluindo efeitos de alavancagem e de volatilidade, é condição importante para a modelagem de séries financeiras. Soltani et al. (2023) reforçam esse diagnóstico ao apontar a limitada investigação sistemática sobre o papel das distribuições na inicialização do reservatório. No contexto do portfólio bibliográfico analisado nesta pesquisa, essa lacuna respalda a relevância da abordagem proposta, sem implicar afirmação de originalidade absoluta fora do escopo da revisão realizada.
+P0237 [Normal] A seleção das distribuições foi organizada em três eixos. O primeiro reúne controles canônicos, como Normal e Uniforme; o segundo contempla distribuições teoricamente relacionadas a caudas pesadas, assimetria, impulsividade e esparsidade, cuja motivação se apoia principalmente nas propriedades observadas nos log-retornos; e o terceiro utiliza Power Function (PF), Dagum 4P e Johnson SB ajustadas empiricamente aos preços da partição de treino pelo EasyFit.
+P0238 [Normal] O terceiro eixo possui, portanto, natureza experimental distinta: testa se a aderência marginal à série de preços produz efeitos úteis na inicialização de Win e W, sem assumir equivalência entre a distribuição dos preços e a distribuição ótima dos pesos do reservatório.
+P0239 [Normal] A magnitude dessa lacuna fica evidente quando se examina, de forma estruturada, o portfólio bibliográfico do presente trabalho: dos dezesseis artigos analisados que abordam a inicialização dos pesos do reservatório, apenas cinco especificam claramente a distribuição estatística empregada.
+P0240 [Normal] Hassaan et al. (2025) recorrem a sequências caóticas normalizadas dos sistemas de Lorenz, oscilador de Chen perturbado (Perturbed Chen Oscillator – PCO), Chen e Mackey-Glass; Hariharan et al. (2025) adotam distribuição uniforme esparsa para o reservatório; Sharma (2025) emprega distribuição Uniforme para o input scaling e Log Uniforme para o raio espectral; Ribeiro et al. (2021) recorrem à distribuição Uniforme padrão sem justificativa formal; e Wang et al. (2021) adotam a Uniforme U(−√L, √L).
+P0241 [Normal] Os demais trabalhos se limitam a descrever os pesos como "gerados aleatoriamente", sem documentar a distribuição subjacente. No conjunto dos artigos que compõem o portfólio analisado, não foi identificado estudo que utilize ajuste empírico de distribuições aos dados de treino como fundamento para uma investigação estruturada da inicialização de Win.
+P0242 [SEÇÃO TCC] PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3
+P0243 [Normal] A qualidade de uma previsão depende, antes de qualquer escolha arquitetural, da integridade dos dados utilizados no treinamento. Cardoso et al. (2022b) propõem o BovDB e um Fator de Ajuste, denominado Factor pelos autores, para tratar descontinuidades associadas aos eventos corporativos registrados na base. Entre os eventos para os quais o ajuste é pertinente estão Ex-Dividend, Ex-Interest, Ex-Bonus, Ex-Stock Split, Ex-Stock Inplit, Ex-Subscription e Ex-Rights; o evento Ex-Split Up também pode demandar ajuste quando a reorganização societária remove ou redistribui parte do valor econômico associado à ação.
+P0244 [Normal] Em contraste, Full Rights, Units, BDR-DR3 e BDR-DRN não representam, isoladamente, eventos de preço e, portanto, não acionam automaticamente a mesma lógica. O procedimento utiliza a relação entre o fechamento do dia anterior ao evento e a abertura no dia em que o evento entra em vigor e aplica retroativamente o fator resultante à série histórica.
+P0245 [Normal] A relevância do ajuste de cotações não é exclusiva do mercado brasileiro. Sun (2021) adota preço de fechamento ajustado como entrada em sua aplicação de ESN às ações da Kweichow Moutai. Cortesi et al. (2026) utilizam fatores de ajuste corporativo da base Center for Research in Security Prices (CRSP) em suas análises do S&P 500.
+P0246 [Normal] Costa & Lunkes (2025) reportam o uso de preço de fechamento ajustado em sua aplicação de SVM à PETR4. Esses trabalhos, ainda que metodologicamente distintos, convergem para uma mesma conclusão: a etapa de ajuste das séries históricas é condição necessária para que qualquer modelo produza resultados confiáveis, e deixar de aplicá-la em dados da B3 representa uma fragilidade metodológica relevante.
+P0247 [SEÇÃO TCC] TRABALHOS RELACIONADOS
+P0248 [Normal] Esta seção apresenta os principais trabalhos diretamente relacionados à proposta desta pesquisa, organizados de modo a evidenciar tanto as contribuições já consolidadas quanto as lacunas que justificam o presente estudo. A seleção foi conduzida por meio de revisão sistemática orientada pelo método Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015), aplicada sobre publicações dos últimos cinco anos e refinada por busca manual complementar.
+P0249 [Normal] Entre os artigos do portfólio formal, foi identificado um subconjunto diretamente relacionado a ESNs, otimização, inicialização probabilística e aplicações financeiras; adicionalmente, a monografia de Lampugnani (2026) é considerada separadamente como referência acadêmica correlata.
+P0250 [Normal] Cardoso et al. (2022b) constituem a referência metodológica central deste trabalho. Os autores propõem o conjunto de dados BovDB, que reúne preços históricos de ações negociadas na B3, e introduzem o Fator de Ajuste como mecanismo de correção retroativa para eventos corporativos.
+P0251 [Normal] Esse procedimento resolve um problema metodológico recorrente em estudos de previsão financeira no Brasil: a presença de descontinuidades artificiais nas séries de preços, que podem distorcer o aprendizado dos modelos. A presente pesquisa adota o BovDB como fonte de dados primária e o Fator de Ajuste como etapa obrigatória de pré-processamento, transferindo seu uso para o contexto específico das ESNs.
+P0252 [Normal] Araújo et al. (2024) representam o trabalho mais próximo da proposta apresentada, pois investigam a otimização de ESNs por Algoritmos Genéticos em séries da B3 e consideram diferentes distribuições probabilísticas na inicialização dos pesos. O ESNAUTO diferencia-se ao concentrar a análise na PETR4 ajustada, investigar distribuições em Win e W por cinco ondas conceituais, integrar LHS e mutação cataclísmica inspirada no CHC e preservar as matrizes associadas aos melhores resultados.
+P0253 [Normal] Como referência acadêmica correlata, Lampugnani (2026) investigou diferentes distribuições probabilísticas aplicadas aos pesos de uma ESN na previsão da PETR4. Por se tratar de monografia e não de artigo do portfólio formal, o estudo foi considerado separadamente na revisão e utilizado também na comparação descritiva apresentada nos resultados.
+P0254 [Normal] Ribeiro et al. (2021) propõem um modelo híbrido baseado em ESN otimizado por Particle Swarm Optimization (PSO) para previsão de volatilidade realizada de ações da Nasdaq. Os autores empregam distribuição uniforme na inicialização dos pesos do reservatório, sem oferecer justificativa estatística para a escolha, e mostram que a ESN otimizada supera baselines tradicionais como ARIMA e MLP. O trabalho comprova a viabilidade de combinar ESN com metaheurísticas, mas deixa em aberto o efeito da distribuição de inicialização sobre o desempenho.
+P0255 [Normal] Wang et al. (2021) realizam uma das comparações mais abrangentes entre RC e arquiteturas de aprendizado profundo aplicadas à previsão de índices acionários, com cobertura de sete grandes mercados internacionais (S&P 500, NASDAQ, NYSE, FTSE, N225, SSE e DJI). Os autores adotam distribuição uniforme U(-√L, √L) para inicialização dos pesos de entrada e investigam o impacto de diferentes topologias de reservatório (Erdős-Rényi, Small-World e Scale-Free).
+P0256 [Normal] O estudo demonstra que modelos de RC superam ou igualam LSTM e RNR em vários cenários, o que reforça a viabilidade prática das ESNs em problemas financeiros ainda que a escolha da distribuição uniforme não seja problematizada à luz das propriedades estatísticas dos retornos.
+P0257 [Normal] Tian et al. (2024) apresentam uma ESN otimizada pelo algoritmo Sparrow Search Algorithm (SSA) para previsão de preços de ações nos mercados norte-americano e chinês, com avaliação sobre vinte ativos. Os pesos de entrada e do reservatório são gerados aleatoriamente, sem especificação da distribuição estatística adotada. O modelo SSA-ESN supera consistentemente baselines como redes de retropropagação (Backpropagation – BP), Elman e LSTM nas métricas MAE, MSE, MAPE e RMSE, o que evidencia o potencial das ESNs otimizadas, mas mantém em aberto a fundamentação estatística da inicialização.
+P0258 [Normal] Hassaan et al. (2025) exploram uma direção alternativa ao examinar a inicialização caótica dos pesos da ESN, utilizando sequências derivadas dos sistemas de Lorenz, Chen e Mackey-Glass para previsão de séries financeiras em múltiplos mercados (S&P 500, ISEQ, Forex e mercado chinês).
+P0259 [Normal] O trabalho compara essa inicialização com Xavier (Uniforme) e He (Normal), com ganhos significativos de precisão. A abordagem dos autores é ortogonal à proposta desta pesquisa, baseada em distribuições estatísticas clássicas e empiricamente ajustadas, mas converge com ela em uma conclusão importante: a escolha da inicialização tem impacto direto sobre o desempenho preditivo.
+P0260 [Normal] Sharma (2025) aplica ESNs à previsão de preços de Bitcoin, com otimização Bayesiana via Tree Parzen Estimator (TPE) para seleção de hiperparâmetros, distribuição uniforme para o escalonamento de entrada e log-uniforme para o raio espectral. O autor compara a ESN com XGBoost e Last Value (naïve) e obtém superioridade consistente em janelas de previsão de 15, 30 e 60 dias. Embora aplicado a criptoativos e não a ações tradicionais, o estudo ilustra a flexibilidade do paradigma RC para diferentes classes de séries financeiras voláteis.
+P0261 [Normal] Tomados em conjunto, esses trabalhos consolidam a viabilidade técnica das ESNs para séries financeiras, a utilidade de algoritmos evolutivos na otimização de hiperparâmetros, a influência da inicialização do reservatório e a importância da integridade dos dados históricos. A lacuna atendida por esta pesquisa está na articulação desses elementos com uma investigação estruturada de distribuições canônicas, pesadas, assimétricas, esparsas e ajustadas empiricamente para a PETR4.
+P0262 [SEÇÃO TCC] ESTADO DA ARTE E LACUNAS IDENTIFICADAS
+P0263 [Normal] A revisão da literatura sustenta três conclusões interligadas. A primeira é a viabilidade técnica das ESNs como alternativa às redes LSTM e GRU em problemas financeiros, com vantagens mais expressivas justamente nos cenários em que o custo de retreinamento das redes profundas é proibitivo.
+P0264 [Normal] A vantagem competitiva central das ESNs decorre da ausência de treinamento por BPTT: sem ajuste iterativo dos pesos do reservatório, evitam-se as instabilidades numéricas típicas de séries longas e reduz-se drasticamente o tempo de treinamento, fator crítico em mercados que exigem retreinamentos frequentes (Vishwas et al., 2025).
+P0265 [Normal] A segunda conclusão diz respeito à otimização. Há consenso, na literatura revisada, de que metaheurísticas bio-inspiradas, sobretudo AG, PSO e SSA, são amplamente empregadas para encontrar configurações de hiperparâmetros que evitem mínimos locais e instabilidades de inicialização. A revisão sistemática de Soltani et al. (2023) consolida esse diagnóstico e identifica o AG como um dos métodos mais empregados e bem-sucedidos na otimização de ESNs.
+P0266 [Normal] A terceira conclusão organiza as lacunas que motivam esta pesquisa. A primeira lacuna é a limitada investigação sistemática, no conjunto de estudos revisados, sobre o impacto das distribuições de probabilidade na inicialização dos pesos de entrada do reservatório em aplicações financeiras: a maioria dos trabalhos emprega distribuições Uniforme ou Gaussiana sem confrontar essa escolha com as propriedades estatísticas dos dados (Millea, 2014; Soltani et al., 2023).
+P0267 [Normal] A segunda lacuna é a escassez, no portfólio analisado, de estudos que combinem otimização de hiperparâmetros por AG com a investigação de distribuições de inicialização empiricamente ajustadas aos dados de treino em um mesmo experimento aplicado ao mercado brasileiro. Araújo et al. (2024) constitui a referência publicada mais próxima, enquanto Lampugnani (2026) é considerado separadamente como monografia correlata. A terceira lacuna refere-se à limitada explicitação, em parte dos trabalhos analisados, do pré-processamento necessário para tratar eventos corporativos em dados históricos da B3.
+P0268 [Normal] A presente pesquisa procura preencher essas lacunas por meio da correção da série histórica da PETR4 pelo Fator de Ajuste, da otimização conjunta de cinco hiperparâmetros por Algoritmo Genético e da comparação de distribuições probabilísticas aplicadas às matrizes Win e W. A infraestrutura ESNAUTO acrescenta inicialização populacional por LHS, operador antiestagnação inspirado no CHC e organização de 45 execuções em cinco ondas experimentais, compondo a contribuição central do trabalho.
+P0269 [SEÇÃO TCC] SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO
+P0270 [Normal] Como apoio à fundamentação teórica, foi conduzida uma extração estruturada de 34 estudos utilizados no trabalho. Essa coleção reúne estudos recentes considerados no processo de revisão e referências complementares de caráter conceitual, metodológico ou histórico, conforme a distinção descrita na Seção 3.8.3. Inclui artigos, trabalhos em eventos, preprints e trabalhos acadêmicos; por isso, seu quantitativo não deve ser interpretado como o número de artigos que satisfizeram todos os critérios de inclusão da busca recente.
+P0271 [Normal] Lampugnani (2026) é discutido separadamente e não integra os 34 registros desta matriz. Cada estudo foi avaliado segundo cinco perguntas analíticas: P1 distribuição de probabilidade adotada na inicialização dos pesos do reservatório; P2 método de otimização dos hiperparâmetros da ESN; P3 etapas de pré-processamento das séries temporais; P4 comparação experimental com modelos de Deep Learning recorrentes (LSTM, GRU, Transformer); e P5 mercado financeiro e ativo investigado. A Tabela 1 sintetiza a cobertura dessas dimensões e os principais achados temáticos.
+P0272 [Caption] Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico
+P0273 [Normal] Fonte: Elaborado pelo autor (2026) com base em extração estruturada do portfólio bibliográfico.
+P0274 [Normal] O Quadro 1 apresenta o mapeamento de cada estudo da coleção em relação às cinco dimensões analíticas. A marcação ● indica que o estudo fornece informação substantiva sobre a dimensão correspondente, enquanto ○ indica ausência ou tratamento meramente tangencial. Essa matriz orientou a distribuição das citações ao longo das subseções deste capítulo, garantindo que cada afirmação fosse ancorada nos trabalhos com extração efetivamente relevante para o tema discutido.
+P0275 [Caption] Quadro 1 – Mapa de cobertura: estudo × dimensão analítica
+P0276 [Normal] Fonte: Elaborado pelo autor (2026). ● dimensão coberta; ○ dimensão não coberta ou tangencial.
+P0277 [Normal] A análise do Quadro 1 revela três padrões relevantes. Primeiro, oito trabalhos cobrem todas as cinco dimensões e formam o núcleo de evidências para as decisões metodológicas. Segundo, a distribuição de inicialização permanece entre os aspectos menos documentados, apesar de sua influência potencial sobre a dinâmica do reservatório. Terceiro, 30 dos 34 estudos (88%) discutem mercado e ativo, mas apenas uma parcela reduzida investiga ativos brasileiros. Esse panorama reforça a pertinência de avaliar ESNs otimizadas sobre a PETR4 e de documentar explicitamente as distribuições utilizadas em Win e W.
+P0278 [Normal] A caracterização da coleção foi complementada pelas Figuras 1 a 4, elaboradas a partir da matriz de extração e de metadados reconstruídos dos documentos. Os formatos de frequência e a análise de termos dos títulos tomaram como referência as revisões de Cardoso et al. (2022c, 2024), utilizando os registros desta monografia. O processamento das matrizes foi realizado em R com bibliometrix, e a base foi validada para carregamento no Biblioshiny, sua interface gráfica (Aria; Cuccurullo, 2017; Aria et al., 2026). O procedimento é detalhado na Seção 3.8.3.
+P0279 [Caption] Figura 1 – Cobertura das cinco dimensões analíticas nos estudos
+P0281 [Normal] Fonte: Elaborado pelo autor a partir do Quadro 1 (2026).
+P0282 [Normal] Nota: P1: inicialização dos pesos; P2: otimização de hiperparâmetros; P3: pré-processamento; P4: comparação com Deep Learning; P5: mercado e ativo. Um estudo pode cobrir várias dimensões. O denominador dos percentuais é 34; os valores não somam 100%.
+P0283 [Normal] A Figura 1 sintetiza a cobertura das dimensões nos 34 estudos. O pré-processamento aparece em 31 estudos (91,2%), seguido de mercado e ativo, em 30 (88,2%). A comparação com Deep Learning é registrada em 21 estudos (61,8%), enquanto inicialização dos pesos e otimização dos hiperparâmetros são abordadas em 16 estudos cada (47,1%). Essas frequências permitem comparar a cobertura relativa das perguntas de extração. A identificação das distribuições efetivamente utilizadas e de sua fundamentação depende da leitura dos estudos e da matriz, além da contagem agregada.
+P0284 [Caption] Figura 2 – Frequência das palavras-chave declaradas pelos autores
+P0286 [Normal] Fonte: Elaborado pelo autor a partir dos documentos citados, com processamento no bibliometrix 5.5.0 (2026).
+P0287 [Normal] Nota: Foram analisados 24 documentos com palavras-chave declaradas localizadas, correspondentes a 70,6% dos 34 registros. São exibidos termos presentes em pelo menos dois documentos, com uma contagem por termo e documento.
+P0288 [Normal] Na Figura 2, echo state network foi identificado em nove documentos (37,5% dos 24), e reservoir computing, em cinco (20,8%). Deep learning, stock price forecasting e time series aparecem em três documentos cada (12,5%). Os resultados caracterizam os temas declarados pelos autores no subconjunto com esse campo disponível. A ausência de um termo entre as palavras-chave não implica ausência de discussão do conceito no texto do estudo.
+P0289 [Caption] Figura 3 – Rede de coocorrência de palavras-chave
+P0291 [Normal] Fonte: Elaborado pelo autor com bibliometrix 5.5.0 a partir da base reconstruída (2026).
+P0292 [Normal] Nota: Os mesmos 24 documentos da Figura 2 originam a matriz. A frequência mínima de dois documentos resulta em 14 termos e 33 ligações. A área dos nós representa frequência documental; a espessura das ligações, documentos compartilhados; as cores, comunidades Walktrap. A rede não representa coautoria ou citações.
+P0293 [Normal] A Figura 3 mostra relações entre echo state network, reservoir computing, deep learning e termos associados à previsão financeira. LSTM e GRU também integram a rede com optimization e machine learning. As ligações indicam declaração conjunta das palavras-chave nos documentos analisados. Essa caracterização temática complementa a leitura dos estudos; as afirmações específicas sobre inicialização de Win/W, otimização e pré-processamento continuam apoiadas na extração P1–P5.
+P0294 [Caption] Figura 4 – Expressões recorrentes nos títulos dos estudos
+P0296 [Normal] Fonte: Elaborado pelo autor a partir dos 34 títulos da base reconstruída (2026).
+P0297 [Normal] Nota: Cada par de palavras adjacentes é contado uma vez por documento. São exibidas 19 expressões presentes em pelo menos dois títulos. Singular, plural e siglas são conservados separadamente. O título inglês de Costa e Lunkes foi transcrito do próprio arquivo em formato de documento portátil (Portable Document Format – PDF). As expressões podem compartilhar palavras e ocorrer no mesmo documento.
+P0298 [Normal] A Figura 4 apresenta 19 expressões recorrentes nos títulos. Echo state ocorre em 11 títulos (32,4%), state network em sete (20,6%) e time series em seis (17,6%). Reservoir computing, stock market e stock price aparecem em quatro títulos cada (11,8%), enquanto genetic algorithm ocorre em dois (5,9%). Echo state e state network são partes da denominação Echo State Network; suas frequências não devem ser somadas para estimar a quantidade de estudos sobre ESN.
+P0299 [Normal] A análise dos títulos abrange 34 documentos, enquanto a análise de palavras-chave abrange 24. As diferenças entre suas frequências refletem também a cobertura dos campos, a redação dos títulos e as regras de normalização. Os gráficos descrevem a coleção utilizada no trabalho e não estimam a produção de toda a área nem demonstram, isoladamente, uma lacuna científica.
+P0300 [TITULO TCC] MATERIAL E MÉTODOS
+P0301 [Normal] Neste capítulo, foi descrita a metodologia experimental do ESNAUTO, desenvolvida para investigar o efeito de diferentes distribuições probabilísticas nas matrizes Win e W de uma ESN aplicada à previsão de um passo à frente da PETR4. A implementação combinou regressão Ridge para ajuste analítico da camada de saída, Algoritmo Genético binário para otimização de cinco hiperparâmetros, inicialização populacional por Amostragem por Hipercubo Latino (Latin Hypercube Sampling - LHS) e operador antiestagnação por mutação cataclísmica inspirado no CHC.
+P0302 [Normal] O protocolo contemplou cinco ondas experimentais, 45 execuções documentadas e comparação descritiva com ESN Normal × Normal, LSTM e GRU. A notação “A × B” foi utilizada para indicar, nessa ordem, a distribuição empregada na matriz de entrada Win e a distribuição empregada na matriz recorrente W. Assim, Normal × Normal significa que Win foi gerada com distribuição Normal e W também foi gerada com distribuição Normal; de modo análogo, Laplace × Normal significa Win gerada com distribuição Laplace e W gerada com distribuição Normal.
+P0303 [SEÇÃO TCC] CLASSIFICAÇÃO DA PESQUISA
+P0304 [Normal] Quanto à natureza, esta pesquisa foi classificada como aplicada, por buscar gerar conhecimento dirigido à solução de um problema específico: a previsão de preços do ativo PETR4 da B3. Quanto à abordagem, foi classificada como quantitativa, uma vez que os resultados foram avaliados por meio de métricas numéricas e análise descritiva e comparativa.
+P0305 [Normal] Quanto aos objetivos, configurou-se como exploratória e comparativa, pois investigou uma combinação metodológica ainda pouco estudada - ESNs, Algoritmos Genéticos, distribuições não gaussianas e Fator de Ajuste - e comparou o comportamento das diferentes configurações sob um protocolo experimental comum. Quanto aos procedimentos técnicos, foi classificada como experimental, baseando-se na execução controlada e documentada de experimentos computacionais.
+P0306 [Normal] Toda a implementação da ESN foi desenvolvida em linguagem R, sem recorrer a frameworks de alto nível para Reservoir Computing; a ESN foi codificada manualmente a partir das definições de Jaeger (2007), favorecendo transparência sobre cada etapa do cálculo. Foram empregados os pacotes GA, para o Algoritmo Genético; PerformanceAnalytics, para medidas descritivas; fGarch, para geração de números aleatórios segundo a GED; PearsonDS, para distribuições da família de Pearson; StockDistFit, fitdistrplus e MASS, para procedimentos de ajuste de distribuição; pracma, para medição do tempo de execução; e ggplot2, para visualização dos resultados.
+P0307 [Normal] A reexecução e a auditabilidade do protocolo foram favorecidas pelo versionamento do código em repositório Git e pela organização modular dos artefatos de software. A reprodução exata de cada execução histórica, entretanto, permaneceu condicionada à disponibilidade das matrizes, vetores de previsão e versões de dependências correspondentes, conforme detalhado na Seção 3.8.
+P0308 [SEÇÃO TCC] CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO
+P0309 [Normal] A fonte de dados primária utilizada foi o conjunto BovDB (Cardoso et al., 2022b), que disponibiliza preços diários e volumes de ações negociadas na B3. Foi extraído o subconjunto referente ao ativo PETR4, ação preferencial da Petróleo Brasileiro S.A. (PETROBRAS PN), escolhido por sua alta liquidez e por ser amplamente estudado na literatura nacional (Timbó et al., 2016).
+P0310 [Normal] A variável-alvo foi o preço de fechamento ajustado, no intervalo de 3 de janeiro de 2000 a 30 de dezembro de 2020, totalizando 5.198 observações diárias. Esse período também foi empregado por Cardoso et al. (2022a) e Lampugnani (2026), o que permitiu contextualizar descritivamente os resultados obtidos.
+P0311 [Normal] No protocolo deste trabalho, a série foi submetida ao Fator de Ajuste de Cardoso et al. (2022b) antes da modelagem. Foram considerados os registros do BovDB associados a dividendos (Ex-Dividend), juros sobre capital próprio (Ex-Interest), bonificações em ações (Ex-Bonus), desdobramentos (Ex-Stock Split), grupamentos ou inplits (Ex-Stock Inplit), direitos de subscrição (Ex-Subscription), demais destacamentos de direitos (Ex-Rights) e, quando aplicável à natureza da reorganização, Ex-Split Up.
+P0312 [Normal] O procedimento foi definido pela razão entre o preço de fechamento do dia anterior ao evento e o preço de abertura no dia em que o evento entrou em vigor, sendo aplicado retroativamente sobre a série anterior ao evento. Registros como Full Rights, Units, BDR-DR3 e BDR-DRN não foram tratados como eventos que, por si sós, exigissem correção mecânica do preço. Lampugnani (2026), embora tenha empregado o mesmo conjunto BovDB e um período temporal correlato, registrou em sua metodologia a opção por não realizar tratamento adicional dos dados.
+P0313 [Normal] Essa diferença permitiu contextualizar os resultados entre os estudos, mas não permitiu atribuir causalmente ao Fator de Ajuste a diferença de erro observada, pois também houve mudanças nas distribuições avaliadas, na estratégia de busca e nos demais componentes do protocolo. Como não foi realizada, neste trabalho, uma comparação experimental entre a série bruta e a série ajustada, o efeito isolado do Fator não foi quantificado.
+P0314 [Normal] A divisão dos dados respeitou rigorosamente a ordem cronológica, sem embaralhamento aleatório, para evitar vazamento de informação do futuro para o passado (data leakage).
+P0315 [Normal] Foi adotada a divisão estática 50%/25%/25%: as 2.600 primeiras observações, de 03/01/2000 a 01/07/2010, compuseram o conjunto de treino; as 1.299 observações seguintes, de 02/07/2010 a 28/09/2015, formaram o conjunto de validação; e as 1.299 observações finais, de 29/09/2015 a 30/12/2020, constituíram o conjunto de teste. As decisões de hiperparâmetros e arquitetura foram tomadas apenas com treino e validação, mantendo o teste fora do processo de seleção até a avaliação final.
+P0316 [Normal] A estratégia de escalonamento foi definida de acordo com a arquitetura avaliada. Na ESN, a série da PETR4 foi fornecida diretamente ao reservatório após a aplicação do Fator de Ajuste, sem normalização adicional para o intervalo [−1, 1]. Para os baselines LSTM e GRU, foi utilizada normalização Min-Max, com parâmetros calculados exclusivamente sobre o conjunto de treino e posteriormente reutilizados nos conjuntos de validação e teste, evitando vazamento de informação entre as partições. Também foram verificados os dias sem negociação, e a série final foi mantida em ordem cronológica de cotações diárias úteis.
+P0317 [Normal] A caracterização estatística foi utilizada como descrição da série de preços empregada nos experimentos. A Tabela 2 apresentou as medidas descritivas calculadas sobre as 5.198 observações da série ajustada.
+P0318 [Caption] Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)
+P0319 [Normal] Fonte: Elaborado pelo autor (2026) com base na série corrigida pelo Fator de Ajuste de Cardoso et al. (2022b).
+P0320 [SEÇÃO TCC] IMPLEMENTAÇÃO DAS ESNS EM R
+P0321 [Normal] A ESN utilizada pertenceu ao paradigma da Computação de Reservatório (Reservoir Computing) e manteve fixos, durante o treinamento de cada modelo, os pesos do reservatório. A arquitetura foi composta por Win, matriz de pesos de entrada; W, matriz de conexões recorrentes internas; e Wout, componente treinável estimado por regressão linear regularizada. Nas combinações experimentais, as famílias probabilísticas empregadas na geração de Win e W variaram conforme a onda e, após a geração, W foi reescalonada pelo raio espectral codificado no cromossomo.
+P0322 [Normal] As execuções foram organizadas em cinco ondas conceituais, diferenciadas pelas famílias probabilísticas empregadas em Win e W. Essa organização permitiu comparar distribuições canônicas, de cauda pesada, assimétricas, esparsas e ajustadas empiricamente, mantendo a mesma arquitetura de ESN e o mesmo procedimento de avaliação. O Quadro 2 sintetiza as ondas e o número de execuções documentadas.
+P0323 [Caption] Quadro 2 – Organização das cinco ondas experimentais
+P0324 [Normal] Fonte: Elaborado pelo autor (2026).
+P0325 [Normal] Na quinta onda, as distribuições Power Function, Dagum de quatro parâmetros e Johnson SB foram parametrizadas a partir da partição de treino por meio do EasyFit. O ajuste à distribuição marginal dos preços foi tratado como hipótese experimental, e não como garantia de que a mesma lei probabilística fosse ideal para os pesos do reservatório. As diferenças entre distribuições poderiam ser modificadas pelo reescalamento espectral e pela função tanh (tangente hiperbólica), razão pela qual foram considerados tanto desempenho quanto estabilidade.
+P0326 [Normal] Os hiperparâmetros que controlaram o comportamento dinâmico do reservatório e foram otimizados pelo AG foram apresentados no Quadro 3.
+P0327 [Caption] Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético
+P0328 [Normal] Fonte: Autor (2026), com base em Cardoso et al. (2022a), Jaeger (2007) e Araújo et al. (2024).
+P0329 [Normal] A camada de saída foi treinada por regressão linear regularizada (Ridge Regression), resolvendo o sistema Wout = Yt · Xᵀ · (X · Xᵀ + reg · I)⁻¹, em que X reuniu, a cada passo de tempo do treino, o vetor concatenado [1; u(t); x(t)], e Yt representou o vetor de saídas esperadas. A função de ativação aplicada aos neurônios do reservatório foi a tangente hiperbólica (tanh), conforme prática consolidada em ESNs (Jaeger, 2007). A atualização do estado interno seguiu o modelo de leaky integrator: x(t+1) = (1 − a) · x(t) + a · tanh(Win · [1; u(t+1)] + W · x(t)).
+P0330 [Normal] Em cada variante, as matrizes Win e W foram geradas segundo a combinação de distribuições definida para a respectiva onda experimental. Em seguida, W foi reescalonada por sr/|λmax(W)|, em que λmax representa o autovalor de maior módulo; esse procedimento controlou o raio espectral e favoreceu a estabilidade dinâmica associada à Echo State Property. Durante o treinamento de cada ESN, Win e W permaneceram fixas, e apenas Wout foi estimada por regressão Ridge, permitindo isolar o efeito conjunto da inicialização e dos hiperparâmetros sobre o desempenho preditivo.
+P0331 [SEÇÃO TCC] OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS
+P0332 [Normal] Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1975). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979).
+P0333 [Normal] O mecanismo antiestagnação aplicou mutação cataclísmica inspirada no algoritmo CHC (Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation), de Eshelman (1991). No escopo desta pesquisa, apenas a lógica cataclísmica foi incorporada como mecanismo de recuperação de diversidade após estagnação, sem caracterizar uma implementação integral do CHC.
+P0334 [Normal] O cromossomo utilizado possuía 55 bits: 17 para a taxa de vazamento, 17 para o raio espectral, 7 para o descarte inicial, 5 para o tamanho do reservatório e 9 para a regularização Ridge. A população foi inicializada por LHS nas cinco dimensões e convertida para a codificação binária. O operador empregou seleção por torneio, crossover de um ponto com probabilidade 0,85, elitismo de aproximadamente 10% e mutação binária de 12% no regime normal.
+P0335 [Normal] Quando o limite adaptativo de estagnação foi atingido, a taxa de mutação foi elevada para 40%, preservando-se o melhor indivíduo e as matrizes associadas ao recorde. Como o método não implementou Half Uniform Crossover (HUX), prevenção de incesto e reinicialização integral, foi caracterizado como Algoritmo Genético com operador cataclísmico inspirado no CHC.
+P0336 [Normal] As execuções principais adotaram limite máximo de 10.000 gerações por cenário, com interrupção antecipada condicionada à estagnação. O orçamento elevado foi empregado para explorar combinações de distribuições e hiperparâmetros, mas seu custo foi contabilizado separadamente do ajuste final da ESN. As 45 execuções das cinco ondas totalizaram aproximadamente 37,9 horas de busca genética, enquanto o ajuste da camada de saída do modelo selecionado demandou cerca de 0,05 segundo.
+P0337 [Normal] A função de fitness adotada combinou o desempenho do modelo nos conjuntos de treino e validação, segundo fitness = −(0,4 · MAEtreino + 0,6 · MAEvalidação). O sinal negativo converteu a minimização do erro em problema de maximização, conforme exigido pelo pacote GA. A ponderação 40%-60% atribuiu maior peso à validação. Sempre que uma avaliação melhorou o melhor fitness observado, foram serializados os pesos Win, W e Wout e os hiperparâmetros decodificados, permitindo recuperar a melhor configuração sem repetir toda a busca evolutiva.
+P0338 [Normal] Cada combinação de Win e W foi otimizada dentro do mesmo espaço de hiperparâmetros. As matrizes e os hiperparâmetros associados ao melhor fitness foram preservados para reinjeção e avaliação no conjunto de teste. Como a realização aleatória do reservatório influencia o desempenho, os resultados foram tratados como execuções documentadas sob o protocolo adotado, e não como estimativas de uma distribuição completa de desempenho para cada configuração.
+P0339 [SEÇÃO TCC] MODELOS DE COMPARAÇÃO: LSTM E GRU
+P0340 [Normal] Os baselines LSTM e GRU utilizaram janelas de 10 passos, normalização Min-Max calculada apenas sobre o treino, uma camada recorrente com 50 unidades, dropout de 0,2, saída densa escalar e otimizador Adam. Os valores oficiais documentados consideraram 80 épocas. A comparação empregou a mesma série e a mesma partição temporal, mas não constituiu equivalência completa de orçamento de otimização: a ESN foi submetida a busca genética extensa, enquanto os baselines profundos tiveram uma execução oficial por arquitetura. Essa assimetria foi considerada na discussão dos resultados.
+P0341 [Normal] O tempo total de treinamento foi registrado para todas as arquiteturas, permitindo quantificar o custo computacional documentado das ESNs em relação às redes recorrentes treinadas por retropropagação. Essa diferença constituiu um dos aspectos centrais discutidos no Capítulo 4, com separação explícita entre o custo da busca genética e o custo de ajuste da configuração selecionada.
+P0342 [SEÇÃO TCC] DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO
+P0343 [Normal] O desenho experimental foi organizado em cinco ondas: caudas pesadas; choques e assimetria; esparsidade e razão de variâncias; controles canônicos; e distribuições ajustadas empiricamente pelo EasyFit. Foram documentadas 45 execuções de ESN. A inicialização Normal × Normal foi utilizada como controle canônico, enquanto LSTM e GRU foram utilizadas como baselines externos. O desenho efetivamente executado foi sintetizado no Quadro 4.
+P0344 [Caption] Quadro 4 – Síntese do desenho experimental executado
+P0345 [Normal] Fonte: Elaborado pelo autor (2026).
+P0346 [Normal] O desempenho preditivo foi quantificado por MAE, RMSE e R² no conjunto de teste. O MAE representou o erro médio em módulo; o RMSE penalizou mais intensamente desvios elevados; e o R² descreveu a aderência global, sendo interpretado com cautela devido à persistência dos preços em nível. O tempo foi separado em custo de busca genética, custo de ajuste final e custo de treinamento dos baselines, evitando confundir baixo custo de ajuste da ESN com baixo custo de otimização.
+P0347 [Normal] As comparações entre as 45 execuções históricas de ESN e entre as diferentes distribuições foram tratadas como descritivas, pois não havia repetições independentes suficientes por configuração para sustentar inferência sobre superioridade entre distribuições. Para H1, contudo, a comparação entre ESN, GRU e LSTM foi complementada por uma análise inferencial específica com o teste de Diebold-Mariano. Intervalos de confiança e testes inferenciais entre as distribuições de Win e W não foram empregados.
+P0348 [Normal] A análise dos resultados foi organizada em torno das cinco hipóteses. H1 comparou ESNs, GRU e LSTM; H2 separou custo de ajuste e custo de otimização; H3 confrontou distribuições não gaussianas com Normal × Normal; H4 examinou a integração do LHS e do operador cataclísmico, sem inferência causal na ausência de ablação; e H5 avaliou desempenho e variabilidade das distribuições ajustadas pelo EasyFit.
+P0349 [Normal] Como material visual complementar, utilizou-se também um lote legado de 12 cenários com 200 gerações, cujo histórico de fitness e matrizes foram preservados. A escolha para as Figuras 5 e 6 considerou exclusivamente o maior fitness de treino/validação desse lote. Esses registros não foram agregados às 45 execuções de produção, e a ilustração não replica o protocolo com LHS e cataclismo.
+P0350 [SEÇÃO TCC] ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO
+P0351 [Normal] O teste de Diebold-Mariano foi empregado para avaliar formalmente a igualdade de acurácia preditiva entre a ESN e os baselines GRU e LSTM, conforme a hipótese nula de diferença média de perda igual a zero proposta por Diebold e Mariano (1995).
+P0352 [Normal] A aplicação retrospectiva do teste às execuções históricas não foi possível porque os vetores ponto a ponto de previsão e as matrizes da execução campeã GA_RUN_0030 não haviam sido integralmente preservados. Para evitar reconstrução artificial desses resultados, foi conduzida uma execução inferencial complementar, separada dos resultados históricos, com protocolo previamente congelado e semente fixa 20260926.
+P0353 [Normal] Na execução controlada, a ESN utilizou a configuração de referência Laplace × Normal da GA_RUN_0030, com taxa de vazamento a = 0,111817, raio espectral sr = 0,215273, initLen = 57, reservatório com 22 neurônios e regularização Ridge de 5,716254 × 10⁻⁵. Os registros disponíveis preservavam a e sr com seis casas decimais, sem reconstrução de precisão adicional. Novas matrizes Win e W foram geradas, respectivamente, pelas distribuições Laplace e Normal, sob a semente congelada.
+P0354 [Normal] A matriz Wout foi recalculada utilizando estritamente alvos pertencentes ao treino, em 2.542 pares com alvos 59–2600; durante a validação, o estado do reservatório foi propagado cronologicamente sem reestimar Wout. Os baselines GRU e LSTM mantiveram 50 unidades recorrentes, janela de 10 passos, dropout de 0,2, otimizador Adam, 80 épocas e normalização Min-Max calculada exclusivamente sobre o treino. Para os três modelos, o contexto temporal treino → validação → teste foi preservado.
+P0355 [Normal] Os três modelos geraram 1.299 previsões datadas entre 29/09/2015 e 30/12/2020. A janela comparativa foi definida previamente como as 1.298 datas comuns entre 30/09/2015 e 30/12/2020. Para cada par de modelos, foram calculados os erros et = yt − ŷt e o diferencial dt = LESN,t − Lbaseline,t. Foram executadas quatro comparações bilaterais, com horizonte h = 1 e nível de significância α = 0,05: ESN × GRU e ESN × LSTM sob perda absoluta (|et|) e sob perda quadrática (et²).
+P0356 [Normal] A variância de longo prazo foi estimada pelo método baseado na função de autocorrelação (Autocorrelation Function – ACF) da implementação dm.test do pacote forecast. Como as quatro comparações foram pré-especificadas, os resultados principais mantiveram α individual de 5%, sem correção por multiplicidade; essa escolha foi registrada como limitação metodológica.
+P0357 [SEÇÃO TCC] REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS
+P0358 [Normal] A reprodutibilidade foi tratada como requisito metodológico desta pesquisa. O repositório documentou o código, os dados de entrada, o desenho experimental e parte dos artefatos de saída, permitindo reexecutar o protocolo e auditar decisões metodológicas. Entretanto, a replicação exata de uma execução histórica permaneceu dependente da disponibilidade das matrizes e dos vetores de previsão correspondentes; como esses artefatos não foram versionados para todas as execuções, esta seção distinguiu reexecução do protocolo de reprodução exata de cada resultado histórico.
+P0359 [SUBÇÃO 2] Ambiente computacional
+P0360 [Normal] A implementação experimental utilizou R como linguagem principal e scripts auxiliares em Python para orquestração e pós-processamento. As execuções de ESN foram realizadas em unidade central de processamento (Central Processing Unit – CPU), sem dependência de aceleração por unidade de processamento gráfico (Graphics Processing Unit – GPU). O repositório documentou os pacotes e pré-requisitos necessários à aplicação, incluindo GA, pracma, fGarch, PearsonDS, StockDistFit, fitdistrplus, MASS, ggplot2, shiny e, para os baselines profundos, keras3/TensorFlow.
+P0361 [Normal] Não foi afirmada reconstrução automática das versões históricas de todas as dependências, pois não havia arquivo de lock de ambiente versionado no conjunto auditado. Para a execução inferencial complementar, foi preparado um ambiente isolado e registrado com R 4.6.0, pacote forecast 9.0.2, TensorFlow 2.20.0 e Keras 3.12.0, executado em CPU com operações determinísticas e semente-base 20260926.
+P0362 [SUBÇÃO 2] Estrutura do repositório
+P0363 [Normal] O código-fonte da pesquisa foi versionado em repositório Git e organizado em módulos para preparação de dados, ESN, otimização genética, métricas, histórico, baselines e comparação. A aplicação ESNAUTO utilizou R Shiny e compartilhou funções de cálculo com rotinas automatizadas em lote. O repositório reuniu os dados de entrada, documentação técnica, scripts de execução e resultados consolidados; diretórios de sessões extensas permaneceram fora do versionamento, razão pela qual nem todas as matrizes e saídas ponto a ponto das execuções históricas ficaram disponíveis na árvore Git.
+P0364 [SUBÇÃO 2] Protocolo de revisão sistemática da literatura
+P0365 [Normal] A seleção de estudos recentes para a revisão bibliográfica seguiu o método Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015). As buscas foram realizadas em 23 de março de 2026 nas bases Scopus e Springer Nature Link, utilizando a string: (Survey OR Review OR "State of the art") AND (ESN OR "Echo State Network") AND (Forecast OR Prediction) AND ("Stock Market" OR "Exchange Market"). Foram retornados 41 registros do Scopus e 59 do Springer Nature Link.
+P0366 [Normal] A triagem seguiu critérios objetivos previamente registrados. Os critérios de inclusão foram: CI1 artigos publicados entre 2021 e 2026; CI2 idioma inglês ou português; CI3 texto completo disponível; CI4 abordagem de Echo State Networks ou Reservoir Computing; CI5 aplicação a dados financeiros.
+P0367 [Normal] Os critérios de exclusão foram: CE1 duplicatas entre as bases; CE2 trabalhos que utilizam ESN apenas como referência comparativa secundária; CE3 aplicações em domínios não financeiros; CE4 Conference Reviews; CE5 anteriores a 2021; e CE6 texto inacessível mesmo após tentativa institucional. A pontuação InOrdinatio foi calculada com α = 5 e ano-base 2026, segundo a fórmula InOrdinatio = (FI/1000) + α × [10 − (2026 − Ano)] + (Citações/100), em que FI corresponde ao indicador de impacto SCImago Journal Rank (SJR) da revista e Citações ao número de citações registradas no Scopus.
+P0368 [Normal] Como apoio documental ao processo de revisão, foram mantidas no acervo da pesquisa as planilhas methodi_ordinatio.xlsx e extracao_completa.xlsx. Esses arquivos registram etapas intermediárias de seleção e extração bibliográfica e foram tratados como materiais auxiliares de rastreabilidade, não como fonte isolada de verdade para a redação final. A síntese apresentada no Capítulo 2 resultou da consolidação das leituras, das referências efetivamente utilizadas no texto e das decisões metodológicas tomadas ao longo da pesquisa.
+P0369 [Normal] O recorte de 2021–2026 foi aplicado à seleção de estudos recentes. Referências anteriores a 2021 foram mantidas como fontes complementares quando necessárias à definição dos conceitos, à apresentação dos métodos originais ou à contextualização técnica e histórica. Sua utilização na fundamentação não significa que atenderam ao critério temporal da busca recente. A coleção descritiva de 34 estudos da Tabela 1 e do Quadro 1 e das Figuras 1 a 4 incorpora essas fontes complementares, distinguindo-se do conjunto estritamente elegível pelos critérios CI1–CI5.
+P0370 [Normal] Para a análise bibliográfica complementar, os 34 registros foram reconstruídos a partir dos PDFs disponíveis e das referências da monografia, com conferência de metadados por identificador digital de objeto (Digital Object Identifier – DOI) ou título. Os registros foram identificados como uma coleção reconstruída, sem atribuir a ela a condição de exportação original do Scopus.
+P0371 [Normal] Foram preservadas as informações das versões locais consultadas e as ressalvas sobre preprints ou outras versões. Contagens de citações recebidas e listas completas de referências citadas não foram reconstruídas; por esse motivo, não foram produzidos rankings de impacto ou redes de cocitação.
+P0372 [Normal] O processamento utilizou bibliometrix 5.5.0 em R, pacote para análise bibliométrica e mapeamento científico descrito por Aria e Cuccurullo (2017). A coleção foi salva em formato compatível com Biblioshiny e validada com o carregador dessa interface, apresentada por Aria et al. (2026).
+P0373 [Normal] As matrizes foram calculadas em scripts de R, com a função biblioNetwork, e a apresentação das figuras utilizou ggplot2 e igraph. A validação de carregamento não corresponde a uma execução das análises pela interface gráfica do Biblioshiny. As revisões de Cardoso et al. (2022c, 2024) serviram como referências para a escolha dos formatos de visualização.
+P0374 [Normal] A frequência de palavras-chave considerou os 24 documentos em que foram localizadas listas declaradas pelos autores. Variantes equivalentes foram normalizadas com registro das correspondências, sem converter títulos ou classificações P1–P5 em palavras-chave. Cada termo contou uma vez por documento. A matriz de coocorrência foi conferida por uma contagem binária independente; o corte de frequência mínima de dois documentos resultou em 14 nós e 33 ligações. O posicionamento visual utilizou Fruchterman–Reingold, e as comunidades foram identificadas por Walktrap, com semente 20261012.
+P0375 [Normal] Para os títulos, foram extraídos pares de palavras adjacentes (bigrams) dos 34 registros. O texto foi convertido para minúsculas e tokenizado, sem conservar pontuação, algarismos ou hífens nos tokens. Os pares foram formados antes da exclusão de palavras de ligação, evitando unir palavras originalmente distantes. Não foram aplicados stemming, expansão de siglas nem agrupamento entre singular e plural.
+P0376 [Normal] Cada par contou uma vez por documento, com frequência mínima de dois títulos para exibição. Para Costa e Lunkes, utilizou-se o título inglês apresentado na página 2 do PDF. A matriz foi processada com biblioNetwork e conferida por contagem independente. Os títulos originais, regras de tratamento e identificadores foram preservados para rastreabilidade.
+P0377 [SUBÇÃO 2] Procedimento de re-execução dos experimentos
+P0378 [Normal] A reexecução documentada do protocolo partiu do mesmo núcleo matemático utilizado pelo ESNAUTO. A série PETR4 com Fator de Ajuste foi carregada e particionada cronologicamente em 2.600 observações de treino, 1.299 de validação e 1.299 de teste. Em seguida, foram definidas as distribuições de Win e W e executado o Algoritmo Genético binário com cromossomo de 55 bits, população inicial por LHS, seleção por torneio, crossover de um ponto com probabilidade 0,85, mutação padrão de 12% e operador antiestagnação com hipermutação de 40%.
+P0379 [Normal] As execuções oficiais foram realizadas em rotinas automatizadas em lote, utilizando o mesmo motor empregado pela interface Shiny. O conjunto final compreendeu 45 execuções de produção, organizadas em cinco ondas, com limite de 10.000 gerações por rodada. O lote reduzido de 12 cenários e 200 gerações pertenceu à prototipação e não integra as 45 execuções de produção; seus registros preservados são utilizados somente nas ilustrações complementares das Figuras 5 e 6.
+P0380 [Normal] O ESNAUTO registrou cumulativamente hiperparâmetros e métricas e dispôs de mecanismo para preservar Win, W e Wout quando um recorde global era identificado, além de permitir reinjeção de matrizes preservadas. Esses recursos favoreceram a recuperação de configurações salvas sem repetir toda a busca genética.
+P0381 [Normal] Contudo, a auditoria do repositório mostrou que essa persistência não foi aplicada de forma completa a todas as execuções oficiais; por isso, a reexecução do protocolo foi documentada, enquanto a reprodução exata de cada rodada histórica permaneceu condicionada aos artefatos efetivamente preservados. A execução complementar de Diebold-Mariano preservou semente, dependências, matrizes, modelos, previsões datadas, métricas, validações e hashes antes da análise inferencial.
+P0382 [TITULO TCC] RESULTADOS E DISCUSSÃO
+P0383 [SEÇÃO TCC] VISÃO GERAL DOS EXPERIMENTOS
+P0384 [Normal] A etapa experimental desta pesquisa resultou não apenas na execução dos modelos previstos no protocolo, mas também no desenvolvimento progressivo de uma infraestrutura de software destinada a apoiar a configuração, execução, acompanhamento e comparação dos experimentos.
+P0385 [Normal] Denominada ESNAUTO, essa infraestrutura surgiu inicialmente como uma solução de apoio operacional para reduzir a manipulação manual dos scripts desenvolvidos em R. À medida que o número de distribuições, combinações de matrizes, hiperparâmetros e execuções aumentou, a ferramenta passou a incorporar mecanismos de automação, persistência e comparação, transformando-se em uma contribuição de software associada à pesquisa.
+P0386 [Normal] Os cálculos centrais permaneceram implementados em R, incluindo a construção das Echo State Networks, a geração das matrizes probabilísticas, o cálculo da camada de saída e a execução do Algoritmo Genético. Sobre esse núcleo foi desenvolvida uma camada de operação em R Shiny que permitiu carregar dados, selecionar distribuições de Win e W, configurar modelos, acompanhar a otimização, preservar configurações campeãs, visualizar resultados e comparar ESN, LSTM e GRU.
+P0387 [Normal] O objetivo inicial do software era tornar mais prática a execução dos experimentos. Com a evolução da pesquisa, entretanto, a separação entre o núcleo matemático e a camada de operação permitiu utilizar a mesma infraestrutura com séries temporais customizadas, novas combinações probabilísticas e diferentes configurações dos modelos. Dessa forma, o ESNAUTO deixou de constituir somente uma interface para os scripts deste trabalho e passou a representar uma infraestrutura experimental reutilizável em tarefas de predição com Inteligência Artificial compatíveis com sua arquitetura.
+P0388 [Normal] A mensagem central dos resultados foi dupla. Primeiro, ESNs pequenas e otimizadas apresentaram erros inferiores aos valores documentados para LSTM e GRU na maior parte das execuções. Segundo, as distribuições não gaussianas produziram os melhores resultados pontuais, porém a melhoria sobre o controle Normal × Normal permaneceu inferior a 1%, devendo ser interpretada como ganho incremental observado no protocolo adotado.
+P0389 [SEÇÃO TCC] DESEMPENHO PREDITIVO GLOBAL
+P0390 [Normal] Na nomenclatura adotada, a primeira distribuição de cada combinação correspondeu à matriz de entrada Win e a segunda à matriz recorrente W. Assim, Laplace × Normal indicou Win gerada segundo a distribuição Laplace e W gerada segundo a distribuição Normal; Normal × Normal indicou distribuição Normal nas duas matrizes; e Laplace × Cauchy indicou Win Laplace e W Cauchy.
+P0391 [Normal] A configuração Laplace × Normal alcançou o menor MAE no conjunto de teste, igual a 0,327224. Laplace × Cauchy obteve o menor RMSE, de 0,495386, e o maior R², de 0,9941. As métricas, portanto, não selecionaram um vencedor único: Laplace × Normal minimizou o erro absoluto médio, enquanto Laplace × Cauchy apresentou maior controle sobre erros de maior magnitude.
+P0392 [Caption] Tabela 3 – Comparação dos principais resultados no conjunto de teste
+P0393 [Normal] Fonte: Elaborado pelo autor (2026).
+P0394 [Normal] Comparada à GRU, a configuração Laplace × Normal reduziu o MAE de teste em aproximadamente 8,24%. Em relação à LSTM, a redução foi de aproximadamente 27,62%. No RMSE, as reduções observadas foram de aproximadamente 15,48% e 38,95%, respectivamente.
+P0395 [Normal] Para traduzir o erro absoluto para uma escala de interpretação gerencial, foi calculado adicionalmente o erro relativo normalizado pela média do preço observado no conjunto de teste (NMAE), definido por NMAE = MAE / média(y) × 100. A média do preço ajustado da PETR4 nas 1.299 observações de teste foi de aproximadamente R$ 16,1738.
+P0396 [Normal] Sob essa normalização, a ESN Laplace × Normal apresentou erro relativo de aproximadamente 2,02%, frente a 2,20% da GRU e 2,80% da LSTM. Essa medida não deve ser confundida com o MAPE, que calcula o erro percentual observação a observação; o NMAE foi adotado porque as execuções oficiais preservaram as métricas agregadas, mas não os vetores completos de previsão no repositório versionado.
+P0397 [Normal] Das 45 execuções de ESN documentadas, 44 apresentaram MAE de teste inferior tanto ao valor obtido pela GRU quanto ao valor obtido pela LSTM, correspondendo a 97,78% das execuções. A única exceção ocorreu na combinação t de Student Assimétrica × Cauchy. Esse comportamento indicou que o desempenho observado não esteve limitado a uma única realização excepcional da ESN, embora a comparação permaneça restrita à série PETR4, ao horizonte de um passo e às arquiteturas definidas no protocolo.
+P0398 [Normal] Os resultados também mostraram que reservatórios reduzidos puderam ser competitivos. A ESN campeã por MAE utilizou 22 neurônios, Pearson V × Uniforme obteve MAE de 0,327657 com quatro neurônios e t de Student × t de Student obteve MAE de 0,327706 com três neurônios. Para a tarefa investigada, portanto, o aumento do número de unidades recorrentes não foi condição necessária para alcançar baixo erro.
+P0399 [Normal] Para complementar as tabelas, as Figuras 5 e 6 apresentam a evolução da busca genética e a comparação entre valores observados e previstos na mesma execução preservada. A escolha dessas visualizações tomou como referência as Figuras 29 e 30 de Cardoso (2025, p. 90), adaptando-as à previsão do preço ajustado, em vez dos retornos estudados naquela tese.
+P0400 [Normal] A execução ilustrada pertence ao lote legado de 12 cenários com limite de 200 gerações, de 15 de agosto de 2026. Foi selecionada pelo maior fitness de treino/validação nesse lote: segunda rodada de GED em Win e Uniforme em W, com a = 0,424701, raio espectral = 0,513577, lavagem de 34 passos, 31 neurônios e regularização de aproximadamente 4,84 × 10⁻⁵. Trata-se de uma ilustração complementar do motor legado, distinta das 45 execuções de produção com LHS e cataclismo. Não constitui a reconstrução da trajetória do GA_RUN_0030 nem substitui os resultados da Tabela 3.
+P0401 [Caption] Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações
+P0403 [Normal] Fonte: Elaborado pelo autor com o histórico preservado do lote de 200 gerações (2026). Referência de apresentação: Cardoso (2025, Figura 29).
+P0404 [Normal] Na Figura 5, valores maiores de fitness correspondem a menores erros ponderados de treino e validação. O melhor fitness atingiu −0,237607 na geração 123 e permaneceu nesse nível até a geração 200. As oscilações das curvas de média e mínimo descrevem a variação da população durante a busca; a estabilização do melhor valor não demonstra que tenha sido encontrado um ótimo global.
+P0405 [Normal] A Figura 6 foi produzida pela reinjeção das matrizes Win, W e Wout preservadas da mesma execução, sem gerar novos pesos aleatórios nem repetir o GA. As previsões foram alinhadas aos 1.298 alvos avaliados do conjunto de teste e as métricas foram conferidas contra o relatório arquivado: MAE de 0,327894 e RMSE de 0,498699. A apresentação inclui o período completo e um detalhe fixo dos últimos 100 pregões, permitindo observar desvios que ficam pouco visíveis na escala de toda a série.
+P0406 [Caption] Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada
+P0408 [Normal] Fonte: Elaborado pelo autor pela reinjeção das matrizes preservadas, GED × Uniforme, rodada 2 (2026). Referência de apresentação: Cardoso (2025, Figura 30).
+P0409 [Normal] A proximidade visual entre as curvas deve ser interpretada em conjunto com os erros numéricos: o gráfico descreve a previsão de um passo à frente em preços em nível e não representa uma trajetória inteiramente recursiva de longo prazo. O teste não participou da escolha da execução ilustrada. Como os históricos completos de evolução do GA das execuções de produção não foram preservados, não se atribui a elas a curva de convergência deste lote legado.
+P0410 [SEÇÃO TCC] EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS
+P0411 [Caption] Tabela 4 – Configurações selecionadas das cinco ondas experimentais
+P0412 [Normal] Fonte: Elaborado pelo autor (2026).
+P0413 [Normal] O controle Normal × Normal apresentou MAE de 0,328365. A configuração Laplace × Normal reduziu esse valor para 0,327224, correspondendo a uma melhoria relativa de aproximadamente 0,347%. No RMSE, o controle registrou 0,499037 e Laplace × Cauchy atingiu 0,495386, redução aproximada de 0,732%.
+P0414 [Normal] Essas diferenças são menores que aquelas observadas na comparação entre ESN, GRU e LSTM. Isso indicou que parte importante do desempenho decorreu da própria arquitetura ESN e do processo de otimização, não exclusivamente da substituição da distribuição gaussiana. Ainda assim, quatro das cinco primeiras posições por MAE utilizaram ao menos uma distribuição de cauda pesada ou impulsiva, indicando que a forma de inicialização pode conduzir o reservatório a regiões de desempenho distintas.
+P0415 [Normal] A relação entre a distribuição dos dados financeiros e a distribuição dos pesos, contudo, não é direta. As matrizes passam por reescalamento espectral e seus efeitos atravessam a função de ativação não linear. Assim, os resultados foram tratados como evidência experimental sobre a sensibilidade da dinâmica do reservatório à inicialização probabilística, e não como demonstração de equivalência entre a distribuição dos preços e a distribuição ideal dos pesos.
+P0416 [SEÇÃO TCC] ESTABILIDADE, GENERALIZAÇÃO E ONDA 5
+P0417 [Normal] t de Student Assimétrica × Normal apresentou o menor MAE de validação, de 0,262232, mas obteve MAE de teste de 0,331070, pior que diversas alternativas. Esse comportamento mostrou que o melhor resultado de validação não representou necessariamente o melhor comportamento em um período temporal posterior e reforçou a função do conjunto de teste preservado fora da otimização.
+P0418 [Normal] O caso mais extremo ocorreu com t de Student Assimétrica × Cauchy. Apesar de métricas de validação próximas às demais configurações, o teste apresentou MAE de 0,558151, RMSE de 3,849416 e R² de 0,6412. Essa foi a única das 45 execuções que não superou os baselines em MAE. A Onda 2 reuniu, portanto, os dois principais recordes e também a maior falha observada, caracterizando simultaneamente alto potencial e maior dispersão de comportamento.
+P0419 [Normal] A Onda 5 apresentou comportamento distinto. Suas 15 execuções produziram MAE entre aproximadamente 0,328395 e 0,328398, amplitude de apenas 0,000003, e RMSE com amplitude aproximada de 0,000002. As distribuições ajustadas empiricamente não produziram o menor erro global, mas apresentaram elevada estabilidade entre as configurações avaliadas.
+P0420 [Normal] Esse resultado sugere que o reescalamento espectral, a não linearidade da ESN ou a região de hiperparâmetros selecionada pelo Algoritmo Genético podem reduzir parte das diferenças existentes entre as distribuições marginais. Os dados disponíveis, entretanto, não permitem isolar qual desses mecanismos explica a invariância observada.
+P0421 [SEÇÃO TCC] CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE
+P0422 [Normal] Como complemento voltado à aplicabilidade gerencial e à gestão de risco, o conjunto de teste foi segmentado descritivamente em três subperíodos: 29/09/2015 a 29/12/2016 (311 observações), 02/01/2017 a 30/12/2019 (739 observações) e 02/01/2020 a 30/12/2020 (249 observações).
+P0423 [Normal] A volatilidade diária dos retornos simples foi, respectivamente, de aproximadamente 3,99%, 2,56% e 4,32%. Os drawdowns máximos observados nos mesmos intervalos foram de aproximadamente -52,27%, -46,55% e -63,36%. Esses valores mostraram que 2020 concentrou o regime de maior estresse entre os subperíodos do teste, enquanto 2017–2019 apresentou menor volatilidade relativa.
+P0424 [Normal] A decomposição do MAE, RMSE ou MAPE da ESN por esses subperíodos, entretanto, não pôde ser reconstruída com segurança a partir dos artefatos atualmente versionados. O histórico das execuções oficiais registrou métricas agregadas por rodada, mas não persistiu os vetores de valores previstos ponto a ponto; as matrizes e saídas de sessão permaneceram em diretórios locais excluídos do versionamento. Por esse motivo, esta monografia utilizou a segmentação acima apenas para caracterizar os regimes de mercado e não atribuiu desempenho preditivo por crise ou estabilidade sem evidência reproduzível.
+P0425 [SEÇÃO TCC] CUSTO COMPUTACIONAL
+P0426 [Caption] Tabela 5 – Decomposição do custo computacional documentado
+P0427 [Normal] Fonte: Elaborado pelo autor (2026).
+P0428 [Normal] O ajuste analítico de aproximadamente 0,05 segundo correspondeu ao cálculo da camada de saída após a configuração da ESN ter sido selecionada. Considerando apenas essa etapa, o tempo documentado representou speedup aproximado de 576 vezes em relação à GRU e 708 vezes em relação à LSTM.
+P0429 [Normal] Essa diferença não corresponde ao custo integral de descoberta do modelo. As buscas por Algoritmo Genético consumiram de aproximadamente 21 a 102 minutos por cenário e totalizaram cerca de 37,9 horas nas 45 execuções. Assim, a ESN apresentou baixo custo de ajuste depois de configurada, enquanto a exploração extensa do espaço de hiperparâmetros representou um custo off-line significativo.
+P0430 [Normal] O ESNAUTO contribuiu operacionalmente nesse ponto ao automatizar a geração dos cenários, manter histórico, preservar matrizes recordistas e organizar os artefatos de execuções prolongadas. A ferramenta não reduz matematicamente o custo do Algoritmo Genético, mas reduz a intervenção manual necessária para executar, acompanhar, registrar e recuperar os experimentos.
+P0431 [SEÇÃO TCC] APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO
+P0432 [Normal] A leitura gerencial dos resultados exigiu distinguir precisão preditiva de desempenho financeiro. O MAE de 0,327224 obtido pela configuração Laplace × Normal indicou desvio absoluto médio de aproximadamente R$ 0,33 na escala dos preços ajustados da série analisada.
+P0433 [Normal] Quando normalizado pela média do preço observado no conjunto de teste, esse erro correspondeu a NMAE aproximado de 2,02%, frente a 2,20% para a GRU e 2,80% para a LSTM. Esses percentuais facilitam a interpretação relativa do erro, mas não representam rentabilidade, perda monetária de uma carteira ou desempenho de uma estratégia de negociação, pois tais dimensões não foram avaliadas neste trabalho.
+P0434 [Normal] Sob essa perspectiva, o ESNAUTO deve ser entendido como infraestrutura de experimentação e comparação de modelos, e não como sistema de negociação automática. Seu público de uso mais diretamente compatível com o escopo validado inclui pesquisadores de séries temporais, analistas quantitativos, profissionais de Ciência de Dados e equipes acadêmicas ou técnicas interessadas em configurar, executar e comparar ESNs e modelos recorrentes sobre séries temporais. A adoção em decisões de investimento exigiria validações adicionais específicas de estratégia, custos de transação, liquidez, risco e retorno.
+P0435 [Normal] O custo computacional também assume significado distinto conforme a etapa do ciclo do modelo. As aproximadamente 37,9 horas consumidas pelas 45 buscas genéticas constituem custo off-line de descoberta e calibração de configurações. Após a seleção de uma configuração, o ajuste analítico documentado da camada de saída da ESN demanda aproximadamente 0,05 segundo.
+P0436 [Normal] Assim, a vantagem operacional da arquitetura aparece principalmente depois que o espaço de busca foi explorado e uma configuração candidata foi definida; não é metodologicamente adequado comparar o custo integral do Algoritmo Genético com um único treinamento de LSTM ou GRU como se fossem a mesma tarefa computacional.
+P0437 [Normal] Em eventual implantação, o risco de modelo deve ser tratado por governança explícita. Um fluxo compatível com os mecanismos do ESNAUTO inclui:
+P0438 [Normal] a) registrar a versão do modelo, o período de dados, os hiperparâmetros e as matrizes disponíveis;
+P0439 [Normal] b) acompanhar MAE, RMSE e, quando os vetores ponto a ponto estiverem preservados, MAPE em janelas móveis;
+P0440 [Normal] c) detectar degradação ou mudança relevante de regime;
+P0441 [Normal] d) gerar uma configuração candidata;
+P0442 [Normal] e) comparar o candidato com o modelo vigente sob critérios previamente definidos;
+P0443 [Normal] f) promover a nova versão somente após aprovação.
+P0444 [Normal] A manutenção do modelo anterior permite rollback caso o candidato apresente comportamento inadequado.
+P0445 [Normal] Não se propõe uma frequência fixa de retreinamento, pois o protocolo deste trabalho não fornece evidência para definir um intervalo temporal universal. A recalibração deve ser condicionada a indicadores de degradação e às regras do contexto de implantação. A falha fora da amostra observada em t de Student Assimétrica × Cauchy e o maior estresse de mercado identificado no ano de 2020 reforçam que baixo erro em validação não elimina o risco de deterioração posterior, tornando monitoramento, versionamento e critérios de promoção componentes relevantes de um uso responsável do modelo.
+P0446 [SEÇÃO TCC] ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO
+P0447 [Normal] A execução controlada complementar produziu, na janela congelada de 1.298 observações entre 30/09/2015 e 30/12/2020, MAE de 0,328850 e RMSE de 0,498452 para a ESN; MAE de 0,418175 e RMSE de 0,592452 para a GRU; e MAE de 0,466612 e RMSE de 0,635287 para a LSTM. Esses valores pertencem exclusivamente à execução controlada com semente 20260926 e não substituem os resultados históricos apresentados na Tabela 3. A finalidade dessa rodada foi fornecer vetores de previsão íntegros, alinhados por data e reproduzíveis para a avaliação inferencial de H1.
+P0448 [Normal] Nos quatro testes, a hipótese nula de igualdade de acurácia preditiva foi rejeitada ao nível de 5%. Sob perda absoluta, a comparação ESN × GRU resultou em estatística DM = −11,870611 e p = 6,296 × 10⁻³¹, enquanto ESN × LSTM resultou em DM = −15,496644 e p = 8,008 × 10⁻⁵⁰. Sob perda quadrática, ESN × GRU apresentou DM = −9,846951 e p = 4,117 × 10⁻²², e ESN × LSTM apresentou DM = −9,208792 e p = 1,285 × 10⁻¹⁹. Em todas as comparações, o diferencial médio de perda indicou menor perda para a ESN.
+P0449 [Caption] Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar
+P0450 [Normal] Fonte: Elaborado pelo autor (2026), com base na execução controlada e em Diebold e Mariano (1995).
+P0451 [Normal] Os resultados satisfizeram o critério inferencial de superioridade definido para H1 na execução controlada complementar: além de apresentar menores MAE e RMSE na mesma janela, a ESN apresentou menor perda média e diferença estatisticamente significativa frente à GRU e à LSTM sob as duas funções de perda. Essa evidência não deve ser interpretada como teste retrospectivo dos valores históricos da Tabela 3, pois a rodada inferencial utilizou novos pesos, fronteira de treino estrita e continuidade cronológica explicitamente corrigida.
+P0452 [SEÇÃO TCC] AVALIAÇÃO DAS HIPÓTESES
+P0453 [Caption] Quadro 5 – Síntese da avaliação das hipóteses
+P0454 [Normal] Fonte: Elaborado pelo autor (2026).
+P0455 [Normal] H1 recebeu apoio em duas camadas de evidência. Nos resultados históricos, a ESN campeã apresentou menor MAE e RMSE que os valores registrados para GRU e LSTM, e 44 das 45 execuções obtiveram MAE inferior aos dois baselines. Na execução controlada complementar, os quatro testes de Diebold-Mariano rejeitaram a hipótese nula a 5% sob perdas absoluta e quadrática, sempre com menor perda média para a ESN. H2 também recebeu apoio quando restrita ao custo de ajuste da configuração selecionada; o custo da busca genética é tratado separadamente.
+P0456 [Normal] Para H3, ao menos uma distribuição não gaussiana produziu menor MAE e menor RMSE que Normal × Normal, embora os ganhos tenham sido inferiores a 1%. H4 é apresentada como contribuição de integração e engenharia do otimizador: LHS e o operador antiestagnação foram efetivamente incorporados ao processo de busca, sem atribuição causal isolada de melhoria. H5 apresentou resultado parcial, pois as distribuições da Onda 5 não produziram o menor erro, mas mostraram variabilidade extremamente baixa.
+P0457 [Normal] Para contextualizar os resultados em relação a trabalhos diretamente relacionados à PETR4, foi realizada uma comparação descritiva com Cardoso et al. (2022a) e Lampugnani (2026). Cardoso et al. (2022a) aplicaram uma ESN à PETR4 sem Algoritmo Genético, utilizando hiperparâmetros definidos a partir da literatura. Lampugnani (2026) utilizou Algoritmo Genético e avaliou um conjunto mais restrito de distribuições em Win e W, mantendo os preços do BovDB sem tratamento adicional da série.
+P0458 [Normal] Este trabalho, por sua vez, aplicou o Fator de Ajuste, ampliou a investigação para cinco ondas de distribuições e empregou inicialização LHS e mecanismo antiestagnação inspirado no CHC. Como mais de um componente metodológico mudou simultaneamente entre os estudos, a Tabela 7 foi utilizada para contextualização dos resultados, e não como teste causal de superioridade entre os protocolos.
+P0459 [Caption] Tabela 7 – Comparação com trabalhos relacionados à ação preferencial da Petrobras
+P0460 [Normal] Fonte: Elaborado pelo autor (2026), com base em Cardoso et al. (2022a), Lampugnani (2026) e nos resultados desta pesquisa. “Não informado” indica métrica não localizada na fonte consultada.
+P0461 [Normal] A comparação mostrou que o menor RMSE deste trabalho ficou ligeiramente abaixo do valor documentado por Cardoso et al. (2022a). Em relação a Lampugnani (2026), os menores MAE e RMSE documentados nesta pesquisa também ficaram abaixo dos melhores valores apresentados na monografia correlata. Entretanto, essas diferenças não podem ser atribuídas a um único componente.
+P0462 [Normal] Em Cardoso et al. (2022a), a ESN não passou por busca genética; em Lampugnani (2026), houve otimização por Algoritmo Genético, mas a série não recebeu tratamento adicional e foi avaliado um conjunto mais restrito de distribuições; neste trabalho, além do Fator de Ajuste, foram incorporados LHS, mecanismo antiestagnação inspirado no CHC e cinco ondas experimentais. Por isso, a comparação indica evolução do protocolo e contextualiza os erros obtidos, mas não isola o efeito causal de cada alteração metodológica.
+P0463 [SEÇÃO TCC] CONTRIBUIÇÕES DO ESNAUTO
+P0464 [Normal] A contribuição de software desta pesquisa surgiu de uma necessidade operacional concreta. Os experimentos iniciais eram conduzidos diretamente por scripts em R; à medida que o protocolo passou a incorporar novas distribuições, múltiplas ondas experimentais, otimização genética, LHS, mecanismo antiestagnação, preservação de matrizes e baselines LSTM/GRU, a execução manual tornou-se mais suscetível a repetição de tarefas e perda de rastreabilidade. O ESNAUTO foi desenvolvido para organizar esse fluxo em uma infraestrutura única de experimentação.
+P0465 [Normal] Do ponto de vista arquitetural, o repositório separa responsabilidades entre a aplicação R Shiny, módulos específicos de ESN, LSTM, GRU e comparação, utilitários de preparação de dados, métricas, histórico e motor do Algoritmo Genético, além de scripts auxiliares em Python e R para orquestração em lote, pós-processamento e empacotamento dos resultados. Essa decomposição modular favorece manutenção, substituição de componentes e reutilização do mesmo núcleo de cálculo entre a interface interativa e as rotinas prolongadas de execução.
+P0466 [Normal] No fluxo experimental, o ESNAUTO centraliza seleção das distribuições de Win e W, configuração ou otimização dos hiperparâmetros, acompanhamento das execuções, cálculo de MAE, RMSE, MAPE e R², comparação com LSTM e GRU, registro de histórico e geração de visualizações. O cromossomo binário de 55 bits codifica taxa de vazamento, raio espectral, período de lavagem, tamanho do reservatório e regularização Ridge; a população inicial emprega LHS e o motor inclui seleção por torneio, crossover de um ponto, mutação e mecanismo cataclísmico antiestagnação.
+P0467 [Normal] A rastreabilidade constitui uma qualidade central, mas deve ser descrita de forma compatível com os artefatos efetivamente preservados. O software possui mecanismo para registrar hiperparâmetros e métricas e para salvar Win, W e Wout quando um recorde global é estabelecido, bem como rotina de reinjeção de configurações preservadas.
+P0468 [Normal] Entretanto, a auditoria realizada durante a consolidação desta monografia mostrou que os vetores ponto a ponto e as matrizes de todas as execuções oficiais não foram versionados. Assim, o ESNAUTO oferece mecanismos de rastreabilidade, mas a política de persistência aplicada às execuções históricas ainda não cobre integralmente todos os artefatos necessários para reconstrução retrospectiva de qualquer rodada.
+P0469 [Normal] A contribuição de Engenharia de Software pode, portanto, ser sintetizada em automação do processo experimental, modularização do código, comparação padronizada de modelos, persistência de resultados, mecanismos de recuperação e redução da intervenção manual em execuções prolongadas. Essas características não constituem um novo algoritmo de aprendizado isolado; representam a integração coordenada de técnicas existentes em um artefato reutilizável para o protocolo estudado.
+P0470 [Normal] Considerando o escopo validado, o ESNAUTO permanece uma plataforma experimental. A versão utilizada nesta monografia é identificada exclusivamente por esse nome e não é apresentada como produto de negociação financeira. Sua evolução visual e funcional é tratada como continuidade do artefato, descrita na Seção de Trabalhos Futuros, sem alterar a identidade da versão que produziu os resultados reportados.
+P0471 [TITULO TCC] DISCUSSÃO
+P0472 [SEÇÃO TCC] VALIDADE INTERNA E ESTATÍSTICA
+P0473 [Normal] Os resultados devem ser interpretados dentro das condições específicas do protocolo. As 45 execuções históricas exploram um conjunto amplo de combinações probabilísticas, mas representam realizações de reservatórios estocásticos e não uma distribuição estatística completa do desempenho de cada configuração.
+P0474 [Normal] Por essa razão, diferenças pequenas entre inicializações continuaram tratadas como resultados observados, e não como demonstração de superioridade estatística entre distribuições. A inferência realizada pelo teste de Diebold-Mariano foi restrita à H1 e à execução controlada complementar que comparou ESN, GRU e LSTM sobre os mesmos 1.298 alvos.
+P0475 [Normal] Essa restrição é especialmente importante na comparação entre Laplace × Normal e Normal × Normal, cuja diferença de MAE foi de aproximadamente 0,347%. O mesmo princípio se aplica aos recordes e às falhas: uma realização excepcional pode representar uma região favorável do espaço de busca, enquanto t de Student Assimétrica × Cauchy demonstra que combinações extremas também podem produzir comportamento instável fora da amostra.
+P0476 [Normal] O valor elevado de R² também exige cautela porque o objeto previsto é o preço da ação em nível, uma série com forte persistência temporal. Por esse motivo, MAE e RMSE são utilizados como medidas principais na interpretação do desempenho.
+P0477 [Normal] Entre as configurações avaliadas, Laplace × Normal apresentou o melhor resultado em MAE, enquanto Laplace × Cauchy apresentou os melhores resultados em RMSE e R². Na maior parte das execuções documentadas, as ESNs obtiveram erro absoluto menor que os baselines LSTM e GRU definidos no protocolo. A comparação com Cardoso et al. (2022a) e Lampugnani (2026) também contextualizou os resultados em relação a trabalhos diretamente relacionados à PETR4, sem tratar protocolos distintos como equivalentes.
+P0478 [Normal] A análise das distribuições indicou que as variantes não gaussianas produziram os melhores resultados pontuais, porém com ganho incremental pequeno em relação à ESN Normal × Normal. A Onda 2 reuniu simultaneamente os melhores resultados e a principal falha de generalização, enquanto a Onda 5 apresentou elevada estabilidade sem alcançar o menor erro global. Esses achados reforçaram a necessidade de interpretar a distribuição de inicialização em conjunto com os demais hiperparâmetros e com a realização estocástica do reservatório.
+P0479 [Normal] Há ainda uma limitação de rastreabilidade temporal dos resultados históricos. Embora o ESNAUTO registre MAE, RMSE e R² agregados e disponha de cálculo de MAPE durante a execução interativa, os vetores completos de previsão das execuções oficiais não foram incluídos no conjunto de artefatos versionados.
+P0480 [Normal] Consequentemente, o teste de Diebold-Mariano não pôde ser aplicado retrospectivamente aos mesmos vetores que originaram a Tabela 3. A execução controlada complementar superou essa limitação apenas para a análise inferencial de H1, preservando previsões datadas, modelos, matrizes, configuração, versões de dependências e hashes; ela não reconstrói os vetores históricos ausentes.
+P0481 [Normal] Os quatro testes de Diebold-Mariano produziram valores de p muito inferiores a 0,05 e menor perda média para a ESN sob perdas absoluta e quadrática. Ainda assim, essa evidência decorreu de uma única semente previamente fixada e de uma execução controlada com novos pesos; portanto, não caracteriza a distribuição de desempenho entre diferentes inicializações. Além disso, não foi aplicada correção para múltiplas comparações, pois os quatro contrastes foram pré-especificados com α individual de 5%. Essas condições limitam a generalização da inferência, embora não alterem a conclusão dos quatro testes dentro da execução analisada.
+P0482 [SEÇÃO TCC] VALIDADE EXTERNA
+P0483 [Normal] A avaliação experimental considera um único ativo, a PETR4, negociado na B3, utilizando observações entre 2000 e 2020 e horizonte de previsão de um passo à frente. Mercados, períodos históricos, frequências e ativos distintos podem apresentar propriedades estatísticas diferentes e alterar o comportamento das distribuições e do reservatório. Assim, as conclusões sobre desempenho são restritas ao cenário experimental analisado.
+P0484 [Normal] A comparação entre ESN, LSTM e GRU também utiliza orçamentos distintos de seleção de hiperparâmetros. A ESN recebeu uma busca evolutiva extensa, enquanto os baselines LSTM e GRU utilizaram arquiteturas definidas no protocolo, com 50 unidades recorrentes, janela de dez passos, dropout de 0,2, Adam e 80 épocas. A análise de Diebold-Mariano fortaleceu a evidência relativa a essas arquiteturas específicas na execução controlada, mas não elimina a assimetria de orçamento nem permite afirmar que toda possível configuração de LSTM ou GRU teria desempenho inferior.
+P0485 [Normal] A discussão de governança apresentada no Capítulo 4 constitui um enquadramento para eventual implantação e não uma validação operacional em produção. O trabalho não definiu limites organizacionais de risco, não avaliou estratégia de compra e venda, custos de transação, retorno financeiro ou indicadores de carteira e não testou processos de monitoramento, promoção e rollback em ambiente real. Consequentemente, esses mecanismos são tratados como requisitos de engenharia e gestão de modelo derivados das limitações observadas, e não como funcionalidades cuja eficácia financeira tenha sido demonstrada.
+P0486 [SEÇÃO TCC] TRABALHOS FUTUROS
+P0487 [Normal] A continuidade do artefato prevê revisar a interface, reorganizar a navegação, melhorar a apresentação dos resultados e consolidar a identidade da aplicação, amadurecendo a experiência de uso. Nessa etapa futura, o software adotará o nome JANUS, com o mesmo núcleo experimental do ESNAUTO e possibilidades de uso mais amplas. Nesta monografia, a versão dos experimentos permanece identificada como ESNAUTO.
+P0488 [Normal] A evolução para JANUS também deverá fortalecer aspectos de Engenharia de Software identificados durante a consolidação do Trabalho Final de Curso: persistência estruturada dos vetores de previsão, armazenamento das matrizes e metadados de cada execução considerada oficial, identificação inequívoca da versão do código e do conjunto de dados associado a cada resultado e painéis que facilitem acompanhar métricas ao longo do tempo. Essas melhorias procuram reduzir a distância entre a capacidade funcional já existente e uma política de rastreabilidade mais completa.
+P0489 [Normal] No plano operacional, a evolução poderá incorporar recursos de apoio à governança, como comparação entre modelo vigente e modelo candidato, visualização de degradação de MAE, RMSE e MAPE em janelas móveis, registro de promoções e possibilidade de retorno à configuração anterior. Esses recursos seriam instrumentos de acompanhamento e auditoria; não transformam, por si sós, o sistema em ferramenta de recomendação de investimento ou negociação automatizada.
+P0490 [Normal] Como continuidade experimental e possível desdobramento em artigo, propõe-se ampliar o estudo à ação VALE3, reproduzindo a caracterização da série, o pré-processamento, as combinações de distribuições, as repetições e a comparação com LSTM e GRU realizadas para PETR4. As execuções exploratórias já preservadas do segundo ativo constituem material preliminar e não integram os resultados desta monografia. Essa ampliação requer partições temporalmente auditáveis e parâmetros das distribuições ajustados apenas ao treino, ou identificação explícita de sua transferência entre ativos.
+P0491 [TITULO TCC] CONCLUSÃO
+P0492 [Normal] O objetivo geral de investigar o desempenho de Redes Neurais de Estados de Eco na previsão de um passo à frente do preço ajustado da PETR4 foi alcançado.
+P0493 [Normal] Os objetivos específicos também foram atendidos: a literatura foi consolidada; a série foi tratada com o Fator de Ajuste como etapa fixa de pré-processamento; o ESNAUTO foi desenvolvido; diferentes famílias probabilísticas foram investigadas em Win e W; os hiperparâmetros foram otimizados por Algoritmo Genético; os resultados foram comparados com uma ESN Normal × Normal, LSTM, GRU, Cardoso et al. (2022a) e Lampugnani (2026); H1 recebeu análise inferencial complementar pelo teste de Diebold-Mariano; e as limitações de validade, rastreabilidade e generalização foram documentadas.
+P0494 [Normal] Em contraste com Lampugnani (2026), que utilizou os preços do BovDB sem tratamento adicional, esta pesquisa incorporou o Fator de Ajuste; contudo, como os protocolos também diferiram em otimização e distribuições, não foi atribuído ao Fator um ganho causal isolado de acurácia.
+P0495 [Normal] Os resultados históricos concentraram os melhores desempenhos em duas configurações distintas: Laplace × Normal apresentou o menor MAE, enquanto Laplace × Cauchy apresentou o menor RMSE e o maior R². Na execução controlada complementar, a ESN manteve vantagem frente aos modelos de comparação, com MAE de 0,328850 e RMSE de 0,498452, contra 0,418175/0,592452 para a GRU e 0,466612/0,635287 para a LSTM.
+P0496 [Normal] Os quatro testes de Diebold-Mariano rejeitaram a hipótese de igualdade de acurácia preditiva a 5%, sempre com menor perda média para a ESN. A comparação com Cardoso et al. (2022a) e Lampugnani (2026) permaneceu descritiva, sem tratar protocolos distintos como equivalentes.
+P0497 [Normal] Em conjunto, os experimentos mostraram que distribuições não gaussianas podem produzir ganhos pontuais em relação à ESN Normal × Normal, mas esses ganhos foram pequenos e não se repetiram de forma uniforme entre as ondas. A Onda 2 reuniu os melhores resultados e também a principal falha de generalização, enquanto a Onda 5 apresentou elevada estabilidade sem alcançar o menor erro global. Assim, a distribuição de inicialização deve ser interpretada em conjunto com os demais hiperparâmetros e com a realização estocástica do reservatório, e não como fator isolado de desempenho.
+P0498 [Normal] Quanto às hipóteses, H1 recebeu apoio descritivo nos resultados históricos e apoio inferencial complementar: na execução controlada, a ESN apresentou menor perda média que GRU e LSTM e diferença estatisticamente significativa nos quatro testes de Diebold-Mariano, sob perdas absoluta e quadrática.
+P0499 [Normal] H2 recebeu apoio especificamente para o custo de ajuste do modelo selecionado, e não para o custo total de descoberta; H3 recebeu apoio pontual, uma vez que distribuições não gaussianas produziram os melhores erros observados; H4 não foi confirmada causalmente, pois LHS e o mecanismo cataclísmico foram integrados ao otimizador sem experimento de ablação; e H5 foi parcialmente apoiada quanto à estabilidade das distribuições ajustadas, mas não quanto à superioridade de erro. Assim, as hipóteses foram tratadas de acordo com a evidência efetivamente produzida.
+P0500 [Normal] A pesquisa também resultou em uma contribuição de Engenharia de Software. O ESNAUTO evoluiu de scripts isolados para uma infraestrutura modular que integrou preparação de dados, execução de ESN, otimização genética, baselines LSTM/GRU, métricas, histórico, visualização e mecanismos de preservação e reinjeção de configurações.
+P0501 [Normal] A auditoria dos artefatos mostrou que a política histórica de persistência não preservou todos os vetores de previsão e matrizes das execuções oficiais; a execução complementar do teste de Diebold-Mariano respondeu a essa limitação com persistência integral das previsões, modelos, matrizes, semente, ambiente e metadados necessários à auditoria.
+P0502 [Normal] Conclui-se que, para a PETR4 e sob o protocolo adotado, ESNs pequenas e otimizadas constituíram alternativa competitiva para a tarefa investigada, combinando baixo erro fora da amostra e baixo custo de ajuste após a seleção da configuração. A análise inferencial complementar reforçou essa conclusão para a comparação com as arquiteturas GRU e LSTM especificadas no trabalho, sem transformar uma única execução controlada em afirmação universal sobre todas as inicializações ou configurações possíveis.
+P0503 [Normal] A contribuição do trabalho foi experimental, metodológica e de Engenharia de Software. A continuidade do artefato está prevista em uma nova fase denominada JANUS, voltada ao amadurecimento da interface, da persistência e dos mecanismos de governança, sem alterar a identidade da versão ESNAUTO utilizada nesta pesquisa. As demais possibilidades de continuidade são discutidas na Seção 5.3.
+P0504 [TITULO TCC] REFERÊNCIAS
+P0505 [Referencias] ABEBE, E.; GOSHU, A. Asymmetric generalized error distribution with its properties and applications. Frontiers in Applied Mathematics and Statistics, v. 10, art. 1398137, 2024. DOI: 10.3389/fams.2024.1398137.
+P0506 [Referencias] ARAÚJO, H. V.; CARDOSO, F. C.; MATTOS, V. L. D.; BORGES, E. N.; LUCCA, G.; DALMAZO, B. L.; BERRI, R. A. Comparing MAE and RMSE as fitness of genetic algorithm for optimizing echo state network hyperparameters with different probabilistic distributions. In: JULIAN, V. et al. (ed.). IDEAL 2024. Cham: Springer, 2024. p. 314-325. (LNCS, v. 15347). DOI: 10.1007/978-3-031-77738-7_26.
+P0507 [Referencias] ARIA, M.; CUCCURULLO, C. bibliometrix: an R-tool for comprehensive science mapping analysis. Journal of Informetrics, v. 11, n. 4, p. 959-975, 2017. DOI: 10.1016/j.joi.2017.08.007.
+P0508 [Referencias] ARIA, M.; CUCCURULLO, C.; D’ANIELLO, L.; SPANO, M. Biblioshiny and the SAAS Workflow: an integrated framework for transparent and reproducible science mapping. A demonstration through the replication of a study. Journal of Informetrics, v. 20, n. 3, art. 101837, 2026. DOI: 10.1016/j.joi.2026.101837.
+P0509 [Referencias] BEHERA, S.; NAYAK, S. C. N.; KUMAR, P. A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Time Series Forecasting. Archives of Computational Methods in Engineering, v. 30, p. 4401-4448, 2023. DOI: 10.1007/s11831-023-09942-9.
+P0510 [Referencias] CARDOSO, F. C.; BERRI, R. A.; MATTOS, V. L. D. Echo state network e sua aplicação na ação PETR4 da B3 para predição do preço de fechamento. In: 66ª REUNIÃO ANUAL DA RBras, 2022, Florianópolis. Anais [...]. Florianópolis: Região Brasileira da Sociedade Internacional de Biometria, 2022a. p. 197-206.
+P0511 [Referencias] CARDOSO, F. C.; MALSKA, J. A. V.; RAMIRO, P. J.; LUCCA, G.; BORGES, E. N.; MATTOS, V. L. D.; BERRI, R. A. BovDB: a data set of stock prices of all companies in B3 from 1995 to 2020. Journal of Information and Data Management, v. 13, n. 1, p. 77-94, ago. 2022b.
+P0512 [Referencias] CARDOSO, F. C.; BERRI, R. A.; BORGES, E. N.; LUCCA, G.; MATTOS, V. L. D. Associação de redes de estado de eco com métodos estatísticos clássicos de previsão: uma revisão bibliométrica. In: XXV ENCONTRO NACIONAL DE MODELAGEM COMPUTACIONAL, 2022, evento virtual. Anais [...]. 2022c.
+P0513 [Referencias] CARDOSO, F. C.; BERRI, R. A.; BORGES, E. N.; DALMAZO, B. L.; LUCCA, G.; MATTOS, V. L. D. Echo state network and classical statistical techniques for time series forecasting: a review. Knowledge-Based Systems, v. 293, art. 111639, 2024. DOI: 10.1016/j.knosys.2024.111639.
+P0514 [Referencias] CARDOSO, F. C. Modelo híbrido para previsão de séries temporais financeiras: ARIMA-ESN com algoritmo genético. 2025. Tese (Doutorado em Modelagem Computacional) – Universidade Federal do Rio Grande, Rio Grande, 2025. Disponível em: https://ppgmc.furg.br/dissertacoes-e-teses/publicacoes-de-2025/14475tese-fabian-correa-cardoso. Acesso em: 23 out. 2026.
+P0515 [Referencias] CHEN, C.; ZHANG, X.; KUO, E.; FU, R.; XIE, Q.; ZHANG, F. Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study. 2026. (Preprint arXiv:2512.06630v2). Submetido ao IEEE Transactions on Quantum Engineering.
+P0516 [Referencias] CHO, K.; VAN MERRIËNBOER, B.; GULCEHRE, C.; BAHDANAU, D.; BOUGARES, F.; SCHWENK, H.; BENGIO, Y. Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation. In: PROCEEDINGS OF EMNLP 2014. Doha: ACL, 2014. p. 1724-1734. DOI: 10.3115/v1/D14-1179.
+P0517 [Referencias] CORTESI, F.; IANNONE, G.; CRIPPA, G.; POGGIO, T.; BENEVENTANO, P. Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series. (Preprint arXiv:2603.02620v1), 2026.
+P0518 [Referencias] COSTA, G. D.; LUNKES, R. J. Aplicação de algoritmo de aprendizado de máquina (AM) para previsão do comportamento das ações negociadas no mercado brasileiro. Contabilidad y Negocios, v. 20, n. esp., p. 48-70, 2025. DOI: 10.18800/contabilidad.2025ESP.002.
+P0519 [Referencias] DENG, Z.; CHEN, Q.; ZHANG, L.; ZHOU, K.; ZONG, Y.; LIU, H.; LI, J.; MA, L. Degradation prediction of PEMFCs using stacked echo state network based on genetic algorithm optimization. IEEE Transactions on Transportation Electrification, v. 8, n. 1, p. 1454-1466, 2022. DOI: 10.1109/TTE.2021.3111906.
+P0520 [Referencias] DEWICK, P. R. On Financial Distributions Modelling Methods: Application on Regression Models for Time Series. Journal of Risk and Financial Management, v. 15, n. 10, art. 461, 2022. DOI: 10.3390/jrfm15100461.
+P0521 [Referencias] DIEBOLD, F. X.; MARIANO, R. S. Comparing Predictive Accuracy. Journal of Business & Economic Statistics, v. 13, n. 3, p. 253-263, 1995. DOI: 10.1080/07350015.1995.10524599.
+P0522 [Referencias] DUTTILO, P. Modelling Financial Returns with Mixtures of Generalized Normal Distributions. 2023. Tese (Doutorado em Human Science — Economics and Statistics) — Università degli Studi “G. d’Annunzio” Chieti-Pescara, 2023. Tutor: Prof. Stefano Antonio Gattone; Coordenador: Prof. Marco Di Marzio.
+P0523 [Referencias] DUTTILO, P.; GATTONE, S. A. Modelling Financial Returns with Finite Mixtures of GED. 51st Scientific Meeting of the Italian Statistical Society, p. 1364-1369, 2022. Università degli Studi “G. d’Annunzio” Chieti-Pescara.
+P0524 [Referencias] ECER, F.; ARDABILI, S.; BAND, S. S.; MOSAVI, A. Training Multilayer Perceptron with Genetic Algorithms and Particle Swarm Optimization for Modeling Stock Price Index Prediction. Entropy, v. 22, n. 11, art. 1239, 2020. DOI: 10.3390/e22111239.
+P0525 [Referencias] ESHELMAN, L. J. The CHC Adaptive Search Algorithm: How to Have Safe Search When Engaging in Nontraditional Genetic Recombination. In: RAWLINS, G. J. E. (ed.). Foundations of Genetic Algorithms 1. San Mateo: Morgan Kaufmann, 1991. p. 265-283. DOI: 10.1016/B978-0-08-050684-5.50020-3.
+P0526 [Referencias] GLEICK, James. Making sense of nature’s mess. The Washington Post, 17 out. 1987. Disponível em: https://www.washingtonpost.com/archive/opinions/1987/10/18/making-sense-of-natures-mess/09f82e1d-5e92-4abf-81ee-9a60f6de1f89/. Acesso em: 28 out. 2026.
+P0527 [Referencias] HARIHARAN, S.; SURESH, R.; CHANDRASEKAR, V. K. Multivariate time series prediction using clustered echo state network. The European Physical Journal Plus, v. 140, art. 1133, 2025. DOI: 10.1140/epjp/s13360-025-07077-3.
+P0528 [Referencias] HASSAAN, Z. A.; YACOUB, M. H.; SAID, L. A. FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction. Machine Learning and Knowledge Extraction, v. 7, art. 160, 2025. DOI: 10.3390/make7040160.
+P0529 [Referencias] HOCHREITER, S.; SCHMIDHUBER, J. Long Short-Term Memory. Neural Computation, v. 9, n. 8, p. 1735-1780, 1997. DOI: 10.1162/neco.1997.9.8.1735.
+P0530 [Referencias] HOLLAND, J. H. Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence. Ann Arbor: University of Michigan Press, 1975.
+P0531 [Referencias] JAEGER, H. The Echo State Approach to Analysing and Training Recurrent Neural Networks. GMD Report 148. Sankt Augustin: GMD Forschungszentrum Informationstechnik, 2001. DOI: 10.24406/publica-fhg-291111.
+P0532 [Referencias] JAEGER, Herbert. Echo state network. Scholarpedia, v. 2, n. 9, p. 2330, 2007. DOI: 10.4249/scholarpedia.2330.
+P0533 [Referencias] KUMAR, K. Forecasting Crude Oil Prices Using Reservoir Computing Models. Computational Economics, v. 66, p. 2543-2563, 2025. DOI: 10.1007/s10614-024-10797-w.
+P0534 [Referencias] LAMPUGNANI, M. T. Alteração das distribuições de probabilidade dos pesos de entrada da Echo State Network para previsão do preço de ações. 2026. Monografia (Bacharelado em Engenharia de Software) - Universidade de Rio Verde, Rio Verde, 2026.
+P0535 [Referencias] LIU, B.; XIE, Y.; JIANG, X.; YE, Y.; SONG, T.; CHAI, J.; TANG, Q.; FENG, M. Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators. Optics Express, v. 30, n. 13, p. 23359-23381, 2022. DOI: 10.1364/OE.454973.
+P0536 [Referencias] LIU, H.; LIN, Z.; ROJAS, R. R. Enhancing Trading Performance Through Sentiment Analysis with Large Language Models: Evidence from the S&P 500. 2025. (Preprint arXiv:2507.09739).
+P0537 [Referencias] MCKAY, M. D.; BECKMAN, R. J.; CONOVER, W. J. A comparison of three methods for selecting values of input variables in the analysis of output from a computer code. Technometrics, v. 21, n. 2, p. 239-245, 1979. DOI: 10.1080/00401706.1979.10489755.
+P0538 [Referencias] MILLEA, A. Explorations in echo state networks. 2014. Dissertação (Mestrado em Ciência da Computação) – University of Groningen, Holanda, 2014.
+P0539 [Referencias] NELSON, D. B. Conditional Heteroskedasticity in Asset Returns: A New Approach. Econometrica, v. 59, n. 2, p. 347-370, mar. 1991.
+P0540 [Referencias] PAGANI, R. N.; KOVALESKI, J. L.; RESENDE, L. M. M. Methodi Ordinatio: a proposed methodology to select and rank relevant scientific papers encompassing the impact factor, number of citation, and year of publication. Scientometrics, v. 105, p. 2109-2135, 2015. DOI: 10.1007/s11192-015-1744-x.
+P0541 [Referencias] PING, Tongji. Forecasting Financial Market Volatility: Methodologies, Challenges, and Implications. Journal of Stock & Forex Trading, v. 10, n. 2, art. 239, 2023. DOI: 10.35248/2168-9458.23.10.239.
+P0542 [Referencias] RIBEIRO, G. T.; SANTOS, A. A. P.; MARIANI, V. C.; COELHO, L. S. Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility. Expert Systems with Applications, v. 184, art. 115490, 2021. DOI: 10.1016/j.eswa.2021.115490.
+P0543 [Referencias] SEDDIK, S; ROUTAIB, H.; ELHADDADI, A. Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System. International Journal of Computational Methods and Experimental Measurements, v. 11, n. 4, p. 193-203, 2023. DOI: 10.18280/ijcmem.110401.
+P0544 [Referencias] SHARMA, M.; SARTOR, E.; CAVAZZA, M.; PRENDINGER, H. Echo State Networks for Bitcoin Time Series Prediction. Neural Information Processing (ICONIP 2025). 2025. (Preprint arXiv:2508.05416).
+P0545 [Referencias] SOLTANI, R.; BENMOHAMED, E.; LTIFI, H. Echo State Network Optimization: A Systematic Literature Review. Neural Processing Letters, 2023.
+P0546 [Referencias] SUDIATMIKA, I. P. G. A.; PUTRA, I M. Agus Wirahadi. Comparison of LSTM and GRU Models Performance in Forecasting Gold Prices: A Case Study Using Historical Data from Yahoo Finance. ARRUS Journal of Engineering and Technology, v. 4, n. 1, p. 157-165, 2024. DOI: 10.35877/jetech2760.
+P0547 [Referencias] SUN, G.; LIN, J.; YANG, C.; YIN, X.; LI, Z.; GUO, P.; SUN, J.; FAN, X.; PAN, B. Stock Price Forecasting: An Echo State Network Approach. Computer Systems Science and Engineering, v. 36, n. 3, p. 509-520, 2021. DOI: 10.32604/csse.2021.014189.
+P0548 [Referencias] TIAN, Z.; PEI, L. Stocks price prediction based on optimized echo state network by sparrow search algorithm. International Journal of Dynamics and Control, v. 12, p. 2764-2777, 2024. DOI: 10.1007/s40435-024-01405-8.
+P0549 [Referencias] TIMBÓ, N. S.; LABIDI, S.; NASCIMENTO, T. P.; LIMA, M. L.; NUNES NETO, G.; MATOS, R. C. Approach Based on Linear Regression for Stock Exchange Prediction – Case Study of Petr4 Petrobrás, Brazil. International Journal of Artificial Intelligence & Applications (IJAIA), v. 7, n. 1, p. 21-31, jan. 2016. DOI: 10.5121/ijaia.2016.7103.
+P0550 [Referencias] VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, 2025. DOI: 10.21595/mme.2025.24861.
+P0551 [Referencias] WANG, F.; BU, T.; HUANG, Y. Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing. International Journal of Computational Intelligence Systems, v. 18, art. 180, 2025. DOI: 10.1007/s44196-025-00906-4.
+P0552 [Referencias] WANG, W.; TANG, Y.; XIONG, J.; ZHANG, Y. Stock market index prediction based on reservoir computing models. Expert Systems with Applications, v. 178, art. 115022, 2021. DOI: 10.1016/j.eswa.2021.115022.
+P0553 [Referencias] XIAO, J.; DENG, T.; BI, S. Comparative Analysis of LSTM, GRU, and Transformer Models for Stock Price Prediction. In: INTERNATIONAL CONFERENCE ON DIGITAL ECONOMY, BLOCKCHAIN AND ARTIFICIAL INTELLIGENCE (DEBAI 2024), 2024, Guangzhou. Proceedings [...]. New York: ACM, 2024. p. 103-108. DOI: 10.1145/3700058.3700075.
+P0554 [Referencias] ZHANG, H; ZHENG, M.; ZHANG, Y.; YU, X.; LI, W.; GAO, H. Application of ESN prediction model based on compressed sensing in stock market. Communications in Nonlinear Science and Numerical Simulation, v. 101, art. 105857, 2021. DOI: 10.1016/j.cnsns.2021.105857.
+P0557 [Normal] Dimensão
+P0558 [Normal] Cobertura
+P0559 [Normal] Achados predominantes
+P0560 [Normal] P1 Distribuição de Win
+P0561 [Normal] 16/34 (47%)
+P0562 [Normal] Apenas cinco trabalhos especificam claramente a distribuição empregada: Hassaan et al. (2025), sequências caóticas; Hariharan et al. (2025), uniforme esparsa; Sharma (2025), Uniforme e Log Uniforme; Ribeiro et al. (2021) e Wang W. et al. (2021), Uniforme. No conjunto dos artigos analisados, não foi identificado uso de ajuste empírico aos dados de treino como fundamento para uma investigação estruturada da inicialização de Win.
+P0563 [Normal] P2 Otimização de hiperparâmetros
+P0564 [Normal] 16/34 (47%)
+P0565 [Normal] Algoritmos Genéticos predominam (Araújo et al., 2024; Deng et al., 2022; Ecer, 2020), seguidos por grid search, Particle Swarm Optimization (Ribeiro et al., 2021; Behera, 2023), Sparrow Search Algorithm (Tian, 2024; Vishwas et al., 2025) e otimização Bayesiana (Sharma, 2025).
+P0566 [Normal] P3 Pré-processamento
+P0567 [Normal] 31/34 (91%)
+P0568 [Normal] É a dimensão mais documentada: predominam log-retornos (Araújo et al., 2024; Duttilo, 2023; Nelson, 1991), normalização Min-Max ou z-score (Liu B., 2022; Tian, 2024; Wang F., 2025), tratamento de valores ausentes e Fator de Ajuste para eventos corporativos (Cardoso et al., 2022b; Chen et al., 2026; Cortesi et al., 2026).
+P0569 [Normal] P4 Comparação com Deep Learning
+P0570 [Normal] 21/34 (62%)
+P0571 [Normal] A maioria adota LSTM como baseline (Sun, 2021; Tian, 2024; Wang F., 2025; Wang W., 2021); GRU aparece em Hassaan et al. (2025), Kumar (2025), Sudiatmika & Putra (2024) e Xiao (2024); Transformer comparece em Chen et al. (2026), Cortesi et al. (2026) e Xiao (2024).
+P0572 [Normal] P5 Mercado e ativo
+P0573 [Normal] 30/34 (88%)
+P0574 [Normal] Estudos cobrem múltiplos mercados: EUA (S&P 500, Nasdaq, NYSE), China (mercado A, Kweichow Moutai), Europa (STOXX50E, FTSE), criptoativos (Bitcoin) e commodities (petróleo, ouro). Trabalhos brasileiros focados em B3/PETR4 são raros: Araújo et al. (2024), Cardoso et al. (2022a), Costa & Lunkes (2025) e Timbó et al. (2016).
+P0575 [Normal] Trabalho
+P0576 [Normal] P₁
+P0577 [Normal] P₂
+P0578 [Normal] P₃
+P0579 [Normal] P₄
+P0580 [Normal] P₅
+P0581 [Normal] Abebe & Goshu (2024)
+P0582 [Normal] ○
+P0583 [Normal] ○
+P0584 [Normal] ●
+P0585 [Normal] ○
+P0586 [Normal] ○
+P0587 [Normal] Araújo et al. (2024)
+P0588 [Normal] ●
+P0589 [Normal] ●
+P0590 [Normal] ●
+P0591 [Normal] ○
+P0592 [Normal] ●
+P0593 [Normal] Behera (2023)
+P0594 [Normal] ●
+P0595 [Normal] ●
+P0596 [Normal] ●
+P0597 [Normal] ○
+P0598 [Normal] ●
+P0599 [Normal] Cardoso et al. (2022b)
+P0600 [Normal] ○
+P0601 [Normal] ○
+P0602 [Normal] ●
+P0603 [Normal] ○
+P0604 [Normal] ●
+P0605 [Normal] Chen et al. (2026)
+P0606 [Normal] ○
+P0607 [Normal] ○
+P0608 [Normal] ●
+P0609 [Normal] ●
+P0610 [Normal] ●
+P0611 [Normal] Cortesi et al. (2026)
+P0612 [Normal] ○
+P0613 [Normal] ○
+P0614 [Normal] ●
+P0615 [Normal] ●
+P0616 [Normal] ●
+P0617 [Normal] Costa & Lunkes (2025)
+P0618 [Normal] ○
+P0619 [Normal] ○
+P0620 [Normal] ●
+P0621 [Normal] ○
+P0622 [Normal] ●
+P0623 [Normal] Deng et al. (2022)
+P0624 [Normal] ●
+P0625 [Normal] ●
+P0626 [Normal] ●
+P0627 [Normal] ●
+P0628 [Normal] ○
+P0629 [Normal] Dewick (2022)
+P0630 [Normal] ○
+P0631 [Normal] ○
+P0632 [Normal] ●
+P0633 [Normal] ●
+P0634 [Normal] ●
+P0635 [Normal] Duttilo (2023)
+P0636 [Normal] ○
+P0637 [Normal] ○
+P0638 [Normal] ●
+P0639 [Normal] ○
+P0640 [Normal] ●
+P0641 [Normal] Duttilo e Gattone (2022)
+P0642 [Normal] ○
+P0643 [Normal] ○
+P0644 [Normal] ●
+P0645 [Normal] ○
+P0646 [Normal] ●
+P0647 [Normal] Ecer (2020)
+P0648 [Normal] ○
+P0649 [Normal] ○
+P0650 [Normal] ●
+P0651 [Normal] ○
+P0652 [Normal] ●
+P0653 [Normal] Hariharan et al. (2025)
+P0654 [Normal] ●
+P0655 [Normal] ●
+P0656 [Normal] ●
+P0657 [Normal] ●
+P0658 [Normal] ●
+P0659 [Normal] Hassaan et al. (2025)
+P0660 [Normal] ●
+P0661 [Normal] ○
+P0662 [Normal] ●
+P0663 [Normal] ●
+P0664 [Normal] ●
+P0665 [Normal] Jaeger (2007)
+P0666 [Normal] ●
+P0667 [Normal] ●
+P0668 [Normal] ○
+P0669 [Normal] ●
+P0670 [Normal] ○
+P0671 [Normal] Kumar (2025)
+P0672 [Normal] ○
+P0673 [Normal] ●
+P0674 [Normal] ●
+P0675 [Normal] ●
+P0676 [Normal] ●
+P0677 [Normal] Liu B. et al. (2022)
+P0678 [Normal] ●
+P0679 [Normal] ○
+P0680 [Normal] ●
+P0681 [Normal] ●
+P0682 [Normal] ●
+P0683 [Normal] Liu H. (2025)
+P0684 [Normal] ○
+P0685 [Normal] ○
+P0686 [Normal] ●
+P0687 [Normal] ○
+P0688 [Normal] ●
+P0689 [Normal] Millea (2014)
+P0690 [Normal] ●
+P0691 [Normal] ●
+P0692 [Normal] ●
+P0693 [Normal] ●
+P0694 [Normal] ●
+P0695 [Normal] Nelson (1991)
+P0696 [Normal] ○
+P0697 [Normal] ○
+P0698 [Normal] ●
+P0699 [Normal] ○
+P0700 [Normal] ●
+P0701 [Normal] Ping (2023)
+P0702 [Normal] ○
+P0703 [Normal] ○
+P0704 [Normal] ○
+P0705 [Normal] ○
+P0706 [Normal] ●
+P0707 [Normal] Seddik (2023)
+P0708 [Normal] ●
+P0709 [Normal] ●
+P0710 [Normal] ●
+P0711 [Normal] ●
+P0712 [Normal] ●
+P0713 [Normal] Sharma (2025)
+P0714 [Normal] ●
+P0715 [Normal] ●
+P0716 [Normal] ●
+P0717 [Normal] ○
+P0718 [Normal] ●
+P0719 [Normal] Soltani et al. (2023)
+P0720 [Normal] ●
+P0721 [Normal] ●
+P0722 [Normal] ○
+P0723 [Normal] ●
+P0724 [Normal] ○
+P0725 [Normal] Sudiatmika & Putra (2024)
+P0726 [Normal] ○
+P0727 [Normal] ○
+P0728 [Normal] ●
+P0729 [Normal] ●
+P0730 [Normal] ●
+P0731 [Normal] Sun (2021)
+P0732 [Normal] ●
+P0733 [Normal] ●
+P0734 [Normal] ●
+P0735 [Normal] ●
+P0736 [Normal] ●
+P0737 [Normal] Tian (2024)
+P0738 [Normal] ●
+P0739 [Normal] ●
+P0740 [Normal] ●
+P0741 [Normal] ●
+P0742 [Normal] ●
+P0743 [Normal] Timbó et al. (2016)
+P0744 [Normal] ○
+P0745 [Normal] ○
+P0746 [Normal] ●
+P0747 [Normal] ○
+P0748 [Normal] ●
+P0749 [Normal] Ribeiro et al. (2021)
+P0750 [Normal] ●
+P0751 [Normal] ●
+P0752 [Normal] ●
+P0753 [Normal] ●
+P0754 [Normal] ●
+P0755 [Normal] Vishwas et al. (2025)
+P0756 [Normal] ○
+P0757 [Normal] ●
+P0758 [Normal] ●
+P0759 [Normal] ●
+P0760 [Normal] ●
+P0761 [Normal] Wang F. et al. (2025)
+P0762 [Normal] ●
+P0763 [Normal] ●
+P0764 [Normal] ●
+P0765 [Normal] ●
+P0766 [Normal] ●
+P0767 [Normal] Wang W. et al. (2021)
+P0768 [Normal] ●
+P0769 [Normal] ●
+P0770 [Normal] ●
+P0771 [Normal] ●
+P0772 [Normal] ●
+P0773 [Normal] Xiao (2024)
+P0774 [Normal] ○
+P0775 [Normal] ○
+P0776 [Normal] ●
+P0777 [Normal] ●
+P0778 [Normal] ●
+P0779 [Normal] Zhang et al. (2021)
+P0780 [Normal] ○
+P0781 [Normal] ○
+P0782 [Normal] ●
+P0783 [Normal] ●
+P0784 [Normal] ●
+P0785 [Normal] Estatística
+P0786 [Normal] Preço (R$)
+P0787 [Normal] Média
+P0788 [Normal] 13,28
+P0789 [Normal] Desvio-padrão
+P0790 [Normal] 7,11
+P0791 [Normal] Mínimo
+P0792 [Normal] 2,48
+P0793 [Normal] Máximo
+P0794 [Normal] 34,55
+P0795 [Normal] Assimetria
+P0796 [Normal] 0,22
+P0797 [Normal] Curtose (Fisher)
+P0798 [Normal] −0,82
+P0799 [Normal] Onda
+P0800 [Normal] Hipótese
+P0801 [Normal] Distribuições/estruturas principais
+P0802 [Normal] Execuções
+P0803 [Normal] 1 - Caudas pesadas
+P0804 [Normal] Enriquecer a resposta do reservatório
+P0805 [Normal] Pearson V, t de Student e Laplace
+P0806 [Normal] 9
+P0807 [Normal] 2 - Choques e assimetria
+P0808 [Normal] Representar rupturas e impulsos
+P0809 [Normal] Cauchy, t de Student Assimétrica e Laplace
+P0810 [Normal] 9
+P0811 [Normal] 3 - Esparsidade
+P0812 [Normal] Filtrar ruído e regimes
+P0813 [Normal] Normal Esparsa, GED e F de Snedecor
+P0814 [Normal] 6
+P0815 [Normal] 4 - Controles
+P0816 [Normal] Comparação com inicializações usuais
+P0817 [Normal] Normal, Uniforme e Normal Esparsa
+P0818 [Normal] 6
+P0819 [Normal] 5 - Ajustes empíricos
+P0820 [Normal] Avaliar aderência marginal ao treino
+P0821 [Normal] Power Function, Dagum 4P e Johnson SB
+P0822 [Normal] 15
+P0823 [Normal] Hiperparâmetro
+P0824 [Normal] Símbolo
+P0825 [Normal] Faixa efetiva
+P0826 [Normal] Bits
+P0827 [Normal] Papel
+P0828 [Normal] Taxa de vazamento
+P0829 [Normal] a
+P0830 [Normal] (0; 1]
+P0831 [Normal] 17
+P0832 [Normal] Controla a inércia e a memória temporal.
+P0833 [Normal] Raio espectral
+P0834 [Normal] sr
+P0835 [Normal] (0; 1]
+P0836 [Normal] 17
+P0837 [Normal] Controla persistência e estabilidade dos estados.
+P0838 [Normal] Descarte inicial
+P0839 [Normal] initLen
+P0840 [Normal] 2 a 129
+P0841 [Normal] 7
+P0842 [Normal] Remove os transientes iniciais do reservatório.
+P0843 [Normal] Tamanho do reservatório
+P0844 [Normal] Nx
+P0845 [Normal] 2 a 33
+P0846 [Normal] 5
+P0847 [Normal] Define o número de neurônios recorrentes.
+P0848 [Normal] Regularização Ridge
+P0849 [Normal] λ
+P0850 [Normal] ≈9,9×10⁻⁹ a 9,9×10⁻⁵
+P0851 [Normal] 9
+P0852 [Normal] Estabiliza a estimação de Wout e penaliza pesos elevados.
+P0853 [Normal] Bloco
+P0854 [Normal] Objetivo
+P0855 [Normal] Configurações
+P0856 [Normal] Execuções
+P0857 [Normal] Ondas 1 a 4
+P0858 [Normal] Comparar famílias canônicas e não gaussianas
+P0859 [Normal] Caudas pesadas, assimétricas, esparsas e controles
+P0860 [Normal] 30
+P0861 [Normal] Onda 5
+P0862 [Normal] Avaliar distribuições ajustadas pelo EasyFit
+P0863 [Normal] Power Function, Dagum 4P e Johnson SB
+P0864 [Normal] 15
+P0865 [Normal] Controle ESN
+P0866 [Normal] Referência canônica
+P0867 [Normal] Normal × Normal
+P0868 [Normal] Incluída nas ondas
+P0869 [Normal] Baselines
+P0870 [Normal] Comparação externa
+P0871 [Normal] LSTM e GRU
+P0872 [Normal] 1 resultado oficial por modelo
+P0873 [Normal] Modelo
+P0874 [Normal] MAE teste
+P0875 [Normal] RMSE teste
+P0876 [Normal] R² teste
+P0877 [Normal] Tempo documentado
+P0878 [Normal] ESN – Laplace × Normal
+P0879 [Normal] 0,327224
+P0880 [Normal] 0,498527
+P0881 [Normal] 0,9940
+P0882 [Normal] 0,05 s
+P0883 [Normal] GRU
+P0884 [Normal] 0,356600
+P0885 [Normal] 0,589800
+P0886 [Normal] 0,9912
+P0887 [Normal] 28,80 s
+P0888 [Normal] LSTM
+P0889 [Normal] 0,452100
+P0890 [Normal] 0,816600
+P0891 [Normal] 0,9839
+P0892 [Normal] 35,40 s
+P0893 [Normal] Onda
+P0894 [Normal] Configuração
+P0895 [Normal] MAE teste
+P0896 [Normal] R² teste
+P0897 [Normal] Destaque
+P0898 [Normal] 1
+P0899 [Normal] Pearson V × Uniforme
+P0900 [Normal] 0,327657
+P0901 [Normal] 0,9940
+P0902 [Normal] Melhor MAE da Onda 1
+P0903 [Normal] 1
+P0904 [Normal] t Student × t Student
+P0905 [Normal] 0,327706
+P0906 [Normal] 0,9940
+P0907 [Normal] Resultado competitivo
+P0908 [Normal] 2
+P0909 [Normal] Laplace × Normal
+P0910 [Normal] 0,327224
+P0911 [Normal] 0,9940
+P0912 [Normal] Menor MAE global
+P0913 [Normal] 2
+P0914 [Normal] Laplace × Cauchy
+P0915 [Normal] 0,328949
+P0916 [Normal] 0,9941
+P0917 [Normal] Menor RMSE global
+P0918 [Normal] 3
+P0919 [Normal] Normal Esparsa × GED
+P0920 [Normal] 0,329494
+P0921 [Normal] 0,9939
+P0922 [Normal] Esparsidade sináptica
+P0923 [Normal] 3
+P0924 [Normal] GED × F de Snedecor
+P0925 [Normal] 0,327963
+P0926 [Normal] 0,9940
+P0927 [Normal] Resultado competitivo
+P0928 [Normal] 4
+P0929 [Normal] Normal × Normal
+P0930 [Normal] 0,328365
+P0931 [Normal] 0,9940
+P0932 [Normal] Controle canônico
+P0933 [Normal] 4
+P0934 [Normal] Normal Esparsa × Normal
+P0935 [Normal] 0,327938
+P0936 [Normal] 0,9939
+P0937 [Normal] Melhor que o controle em MAE
+P0938 [Normal] 5
+P0939 [Normal] Power Function × Normal
+P0940 [Normal] 0,328395
+P0941 [Normal] 0,9940
+P0942 [Normal] Alta estabilidade
+P0943 [Normal] 5
+P0944 [Normal] Dagum 4P × Normal
+P0945 [Normal] 0,328396
+P0946 [Normal] 0,9940
+P0947 [Normal] Alta estabilidade
+P0948 [Normal] Componente
+P0949 [Normal] Tempo aproximado
+P0950 [Normal] Interpretação
+P0951 [Normal] Ajuste da ESN selecionada
+P0952 [Normal] 0,05 s
+P0953 [Normal] Regressão Ridge após definição da configuração
+P0954 [Normal] Treinamento GRU
+P0955 [Normal] 28,80 s
+P0956 [Normal] 50 unidades, 80 épocas
+P0957 [Normal] Treinamento LSTM
+P0958 [Normal] 35,40 s
+P0959 [Normal] 50 unidades, 80 épocas
+P0960 [Normal] Busca GA por cenário ESN
+P0961 [Normal] 21–102 min
+P0962 [Normal] Descoberta de hiperparâmetros
+P0963 [Normal] Conjunto das 45 buscas
+P0964 [Normal] 37,9 h
+P0965 [Normal] Custo offline experimental
+P0966 [Normal] Comparação
+P0967 [Normal] Perda
+P0968 [Normal] DM
+P0969 [Normal] p-valor
+P0970 [Normal] Resultado a 5%
+P0971 [Normal] ESN × GRU
+P0972 [Normal] Absoluta
+P0973 [Normal] −11,870611
+P0974 [Normal] 6,296 × 10⁻³¹
+P0975 [Normal] ESN; H₀ rejeitada
+P0976 [Normal] ESN × LSTM
+P0977 [Normal] Absoluta
+P0978 [Normal] −15,496644
+P0979 [Normal] 8,008 × 10⁻⁵⁰
+P0980 [Normal] ESN; H₀ rejeitada
+P0981 [Normal] ESN × GRU
+P0982 [Normal] Quadrática
+P0983 [Normal] −9,846951
+P0984 [Normal] 4,117 × 10⁻²²
+P0985 [Normal] ESN; H₀ rejeitada
+P0986 [Normal] ESN × LSTM
+P0987 [Normal] Quadrática
+P0988 [Normal] −9,208792
+P0989 [Normal] 1,285 × 10⁻¹⁹
+P0990 [Normal] ESN; H₀ rejeitada
+P0991 [Normal] Hipótese
+P0992 [Normal] Evidência observada
+P0993 [Normal] Avaliação
+P0994 [Normal] H1 – desempenho
+P0995 [Normal] Resultados históricos: menor MAE/RMSE; execução controlada: 4/4 testes DM significativos, com menor perda da ESN
+P0996 [Normal] Apoiada por evidência descritiva e inferencial complementar
+P0997 [Normal] H2 – eficiência
+P0998 [Normal] 0,05 s para ajuste da ESN contra 28,80 s e 35,40 s
+P0999 [Normal] Apoiada para o ajuste do modelo selecionado
+P1000 [Normal] H3 – inicialização
+P1001 [Normal] Laplace × Normal e Laplace × Cauchy superaram Normal × Normal em MAE/RMSE
+P1002 [Normal] Apoiada pontualmente
+P1003 [Normal] H4 – exploração evolutiva
+P1004 [Normal] LHS e operador cataclísmico integrados; sem ablação.
+P1005 [Normal] Não testada causalmente.
+P1006 [Normal] H5 – ajuste empírico
+P1007 [Normal] Onda 5 apresentou baixa variabilidade, mas não menor erro global
+P1008 [Normal] Apoiada quanto à estabilidade, não quanto à superioridade
+P1009 [Normal] Trabalho
+P1010 [Normal] Melhor MAE
+P1011 [Normal] Melhor RMSE
+P1012 [Normal] Observação
+P1013 [Normal] Cardoso et al. (2022a)
+P1014 [Normal] Não informado
+P1015 [Normal] 0,4987
+P1016 [Normal] ESN aplicada à PETR4 sem Algoritmo Genético; hiperparâmetros definidos com base na literatura.
+P1017 [Normal] Lampugnani (2026)
+P1018 [Normal] 0,378706
+(Cauchy × Normal)
+P1019 [Normal] 0,568178
+(Cauchy × Uniforme)
+P1020 [Normal] ESN com Algoritmo Genético; conjunto mais restrito de distribuições; preços do BovDB sem tratamento adicional da série.
+P1021 [Normal] Este trabalho
+P1022 [Normal] 0,327224
+(Laplace × Normal)
+P1023 [Normal] 0,495386
+(Laplace × Cauchy)
+P1024 [Normal] Fator de Ajuste + Algoritmo Genético + LHS + cinco ondas de distribuições + mecanismo antiestagnação inspirado no CHC.

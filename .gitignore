@@ -26,3 +26,16 @@ Desktop.ini
 pacote_orientador_tfc/
 pacote_onda5_orientador/
 *.zip
+
+# Caches e arquivos temporarios locais
+/.chart-data-*/
+/tmp/
+~$*
+
+# Dados binarios intermediarios da edicao de video
+/output/video-edicao/analise*/*.wav
+/output/video-edicao/analise*/*.f32
+/output/video-edicao/analise*/*.bin
+/output/video-edicao/analise*/*.npy
+/output/video-edicao/analise*/*.npz
+/output/video-edicao/analise*/*.rgb

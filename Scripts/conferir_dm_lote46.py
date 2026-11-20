@@ -1,0 +1,17 @@
+"""Confere as quatro linhas da Tabela 6 contra o CSV científico preservado."""
+import csv,hashlib,json
+from decimal import Decimal,localcontext,ROUND_HALF_UP
+from pathlib import Path
+from docx import Document
+root=Path(__file__).resolve().parents[1];out=root/'reports/fechamento_integral_20261029';doc=root/'reports/monografia/trabalho/fechamento_integral_20261029.docx';csvpath=root/'Scripts/results/diebold_mariano/controlled_runs/seed_20260926/dm/resultados_dm.csv';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert sha(doc)=='4c9110f8995438f956f965db10ae5f26391c91f45757322758c1e4c83a6f2742'
+D=Document(doc);table=D.tables[10];rows=list(csv.DictReader(csvpath.open(encoding='utf-8-sig',newline='')));assert len(rows)==4
+sup=str.maketrans('⁰¹²³⁴⁵⁶⁷⁸⁹⁻','0123456789-')
+def number(s):return Decimal(s.strip().replace('−','-').replace(',','.'))
+def sci(s):
+ a,b=s.split('×');return number(a)*Decimal(10)**int(b.strip().removeprefix('10').translate(sup))
+results=[]
+for i,r in enumerate(rows,1):
+ c=[x.text for x in table.rows[i].cells]; assert c[0].replace('×','x')==r['comparison'] and c[1]==r['loss']; value=number(c[2]); p=sci(c[3]);recorded=Decimal(r['p_value']);assert value==Decimal(r['dm_statistic']).quantize(Decimal('.000001'),rounding=ROUND_HALF_UP);assert abs(p-recorded)/recorded<Decimal('.0005');assert r['lower_mean_loss_model']=='ESN' and r['reject_h0']=='TRUE' and Decimal(r['mean_loss_difference'])<0 and int(r['n'])==1298;results.append({'comparacao':r['comparison'],'perda':r['loss'],'estatistica_tabela':str(value),'p_tabela':str(p),'p_csv':str(recorded),'perda_media_esn':r['mean_loss_esn'],'perda_media_baseline':r['mean_loss_baseline'],'confirmado':True})
+text=D.paragraphs[441].text
+for i in range(1,5):assert table.cell(i,2).text in text and table.cell(i,3).text in text
+result={'base':'v005','sha256_base':'2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b','sha256_rascunho':sha(doc),'fonte_primaria_testes':str(csvpath.relative_to(root)),'sha256_csv':sha(csvpath),'metodo':'Comparação decimal da tabela e do texto com CSV armazenado, sem executar o teste novamente; expoentes Unicode são normalizados antes da leitura.','resultados':results,'correcao_interpretacao':'O primeiro valor do manuscrito é 6,296 × 10⁻³¹ e coincide, por arredondamento, com 6,2957059221758e-31. A leitura inicial do expoente como 39 foi um erro de interpretação da representação Unicode, corrigido antes de qualquer edição.','fonte_teorica':{'referencia':'Diebold e Mariano (1995)','url_editor':'https://doi.org/10.1080/07350015.1995.10524599','escopo':'Artigo formula teste de igualdade de acurácia sob função de perda. O método implementado usa forecast::dm.test; detalhes e ressalva de h=1 estão em conferencia_dm_lote25.json.'},'limites':'Conferência da transcrição e direção das perdas; não é nova execução do teste ou validação de pressupostos de dependência serial nem evidência sobre rodadas históricas.','acao':'Nenhuma alteração Word.'};f=out/'conferencia_numerica_dm_lote46.json';assert not f.exists();f.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8');statefile=out/'estado_meta.json';state=json.loads(statefile.read_text(encoding='utf8'));state['ultimo_registro_de_leitura']=str(f.relative_to(root));state['proxima_passagem']='Continuar confronto das demais referências e revalidar requisitos qualitativos do Guia.';statefile.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n',encoding='utf8');print('Quatro linhas do teste e a transcrição no texto conferidas.')

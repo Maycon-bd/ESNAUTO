@@ -1,0 +1,34 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_atual_apos_exportacao_nativa": "27c480d8971b56f353db3dc9fc5eea70a30fda031e66da75d3be47969314dcc5",
+  "copia": "reports\\monografia\\trabalho\\fechamento_integral_20261029.docx",
+  "fontes_com_texto_integral_lido_nesta_meta": [
+    "D30",
+    "D15",
+    "D21",
+    "D25",
+    "SUP_CHO2014",
+    "D26",
+    "SUP_JAEGER2001",
+    "SUP_HOCH1997",
+    "D14",
+    "D22"
+  ],
+  "unidades_textuais_alteradas_acumuladas": 15,
+  "figuras_alteradas": 1,
+  "matriz_do_rascunho": "reports/fechamento_integral_20261029/matriz_lote4/matriz_recodificada.json",
+  "verificacao_estrutural": "45verificações sem falhas;76páginas. Não é certificação de conteúdo.",
+  "referencias": "50referências e151chamadas reconhecidas;0sem correspondência nos padrões. Não comprova fidelidade.",
+  "inspecao_visual": "Seis páginas diferentes(24,25,34,35,36,75)abertas e conferidas;70idênticas ao lote3.",
+  "paginas_abertas": [
+    24,
+    25,
+    34,
+    35,
+    36,
+    75
+  ],
+  "tabelas_experimentais": "Conteúdo de todas as tabelas fora da síntese e matriz bibliográficas idêntico à v005; ver preservacao_tabelas_ate_lote4.json.",
+  "estado": "rascunho_em_auditoria_nao_promovido"
+}

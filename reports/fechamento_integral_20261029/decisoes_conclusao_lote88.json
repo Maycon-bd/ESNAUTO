@@ -1,0 +1,103 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "registros": [
+    {
+      "paragrafo_atual": 484,
+      "texto": "CONCLUSÃO",
+      "decisao": "Título, sem afirmação.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 485,
+      "texto": "O objetivo geral de investigar o desempenho de Redes Neurais de Estados de Eco na previsão de um passo à frente do preço ajustado da PETR4 foi alcançado.",
+      "decisao": "Cumprimento do objetivo de investigar não significa confirmação de todas as hipóteses; parágrafos seguintes delimitam resultados.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 486,
+      "texto": "Foram investigadas famílias probabilísticas em Win e W, selecionados hiperparâmetros por AG e comparados resultados com ESN Normal × Normal, LSTM e GRU. O ESNAUTO organizou o processo e suas saídas, e H1 recebeu análise inferencial complementar pelo teste de Diebold-Mariano. A série foi fornecida já ajustada pelo orientador. A contribuição do autor compreendeu a adaptação dos códigos em R recebidos e o desenvolvimento da interface. Permanecem os limites de comparação e de preservação dos artefatos históricos.",
+      "decisao": "Retoma método e contribuição com procedência dos dados/código e lacunas históricas, conforme declaração do autor e registros.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 487,
+      "texto": "O emprego de preços disponibilizados como ajustados delimita a entrada do protocolo. Não houve uma comparação, sob condições idênticas, entre a série bruta e essa série ajustada. Assim, não se quantificou um ganho causal isolado do Fator de Ajuste. A coincidência da base declarada com a de outro estudo tampouco demonstra identidade de transformação, partição ou orçamento de otimização.",
+      "decisao": "Mantém ausência de ablação de ajuste e impede atribuição causal ou equivalência automática com outro estudo.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 488,
+      "texto": "Os resultados históricos concentraram os melhores desempenhos em duas configurações distintas: Laplace × Normal apresentou o menor MAE, enquanto Laplace × Cauchy apresentou o menor RMSE e o maior R². Na execução controlada complementar, a ESN manteve vantagem frente aos modelos de comparação, com MAE de 0,328850 e RMSE de 0,498452, contra 0,418175/0,592452 para a GRU e 0,466612/0,635287 para a LSTM.",
+      "decisao": "Distingue os dois recordes históricos e valores da rodada controlada; números correspondem aos registros conferidos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 489,
+      "texto": "Os quatro testes de Diebold-Mariano rejeitaram a hipótese de igualdade de acurácia preditiva a 5%, sempre com menor perda média para a ESN na rodada controlada. Essa inferência não se estende aos resultados históricos de outras sementes. A comparação com Lampugnani (2026) permaneceu descritiva, sem tratar protocolos distintos como equivalentes.",
+      "decisao": "Conclusão inferencial restrita à rodada controlada; comparação documental com Lampugnani permanece descritiva.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 490,
+      "texto": "Em conjunto, os experimentos mostraram que distribuições não gaussianas podem produzir ganhos pontuais em relação à ESN Normal × Normal, mas esses ganhos foram pequenos e não se repetiram de forma uniforme entre as ondas. A Onda 2 reuniu os melhores resultados e também a principal falha de generalização, enquanto a Onda 5 apresentou baixa dispersão dos erros entre configurações sem alcançar o menor erro global. Assim, a distribuição de inicialização deve ser interpretada em conjunto com os demais hiperparâmetros e com a realização estocástica do reservatório, e não como fator isolado de desempenho.",
+      "decisao": "Ganhos de distribuição tratados como pontuais; Onda 5 não declarada superior nem variabilidade de sementes confundida com dispersão entre configurações.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 491,
+      "texto": "Quanto às hipóteses, H1 recebeu apoio descritivo nos resultados históricos e apoio inferencial complementar: na execução controlada, a ESN apresentou menor perda média que GRU e LSTM e diferença estatisticamente significativa nos quatro testes de Diebold-Mariano, sob perdas absoluta e quadrática.",
+      "decisao": "H1 responde ao objetivo nos comparadores definidos, com evidência histórica descritiva e controlada inferencial separadas.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 492,
+      "texto": "H2 recebeu apoio para o custo de ajuste do modelo selecionado, sem estender essa conclusão ao custo total da busca; H3 teve apoio pontual nos melhores erros observados. H4 não foi demonstrada: a integração dos mecanismos não foi acompanhada de medida de diversidade nem de ablação. H5 teve apenas evidência descritiva de baixa dispersão entre configurações, sem demonstrar menor variabilidade entre repetições ou superioridade de erro. Esses limites separam funcionamento do software, observação de resultados e efeitos não testados.",
+      "decisao": "H2 ajuste, H3 pontual, H4 não demonstrada e H5 descritiva correspondem à avaliação do Quadro 5.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 493,
+      "texto": "A contribuição de Engenharia de Software compreendeu a adaptação dos códigos em R fornecidos pelo orientador ao contexto da pesquisa e a construção da interface do ESNAUTO. A aplicação organiza preparação dos dados recebidos, execução dos modelos, configurações, métricas, histórico e visualizações. O Quadro 6 distingue fundamentos anteriores, base computacional recebida e desenvolvimento do autor. Essa atribuição reconhece a procedência das rotinas sem reivindicar criação original das técnicas combinadas.",
+      "decisao": "Procedência de códigos e contribuição de interface correspondem à declaração direta do autor e Quadro 6.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 494,
+      "texto": "A auditoria dos artefatos mostrou que a política histórica de persistência não preservou todos os vetores de previsão e matrizes das execuções oficiais; a execução complementar do teste de Diebold-Mariano respondeu a essa limitação com persistência integral das previsões, modelos, matrizes, semente, ambiente e metadados necessários à auditoria.",
+      "decisao": "Rodada controlada oferece artefatos preservados, sem reconstruir os vetores históricos; manutenção da limitação é necessária.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 495,
+      "texto": "Conclui-se que, para a PETR4 e sob o protocolo adotado, ESNs pequenas e otimizadas constituíram alternativa competitiva para a tarefa investigada, combinando baixo erro fora da amostra e baixo custo de ajuste após a seleção da configuração. A análise inferencial complementar reforçou essa conclusão para a comparação com as arquiteturas GRU e LSTM especificadas no trabalho, sem transformar uma única execução controlada em afirmação universal sobre todas as inicializações ou configurações possíveis.",
+      "decisao": "Competitividade restrita a PETR4/protocolo e arquiteturas examinadas; não afirma universalidade ou ganho financeiro.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 496,
+      "texto": "A contribuição do trabalho foi experimental, metodológica e de Engenharia de Software. A continuidade do artefato está prevista em uma nova fase denominada JANUS, voltada ao amadurecimento da interface, da persistência e dos mecanismos de governança, sem alterar a identidade da versão ESNAUTO utilizada nesta pesquisa. As demais possibilidades de continuidade são discutidas na Seção 5.3.",
+      "decisao": "JANUS é continuidade proposta, separada da identidade experimental ESNAUTO.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 497,
+      "texto": "Quadro 6 – Delimitação das contribuições e da procedência",
+      "decisao": "Legenda do Quadro 6, correspondente à lista e paginação atuais.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 498,
+      "texto": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados.",
+      "decisao": "Fonte do quadro confere fundamentos e antecedentes; as contribuições próprias são tratadas separadamente nas linhas do quadro.",
+      "acao": "manter"
+    }
+  ],
+  "evidencias": [
+    "conferencia_hipoteses_lote64.json",
+    "conferencia_quadro6_lote62.json",
+    "conferencia_tabelas_historicas_lote65.json",
+    "conferencia_numerica_dm_lote46.json",
+    "listas_elementos_lote77.json"
+  ],
+  "limite": "Decisões de coerência e alcance da conclusão, não comprovação de preservação histórica integral ou aprovação institucional."
+}

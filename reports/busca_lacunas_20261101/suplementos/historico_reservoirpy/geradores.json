@@ -1,0 +1,287 @@
+[
+  {
+    "tag": "v0.3.12",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.12",
+    "file": "mat_gen_v0_3_12.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n    degree: Union[int, None] = None,\n    direction: Literal[\"in\", \"out\"] = \"out\",\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"cs"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n    degree: Union[int, None] = None,\n    direction: Literal[\"in\", \"out\"] = \"out\",\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"d"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.11",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.11",
+    "file": "mat_gen_v0_3_11.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n    degree: Union[int, None] = None,\n    direction: Literal[\"in\", \"out\"] = \"out\",\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"cs"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n    degree: Union[int, None] = None,\n    direction: Literal[\"in\", \"out\"] = \"out\",\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"d"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.10",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.10",
+    "file": "mat_gen_v0_3_10.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is onl"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.9.post1",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.9.post1",
+    "file": "mat_gen_v0_3_9_post1.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is onl"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.9",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.9",
+    "file": "mat_gen_v0_3_9.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is onl"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.8",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.8",
+    "file": "mat_gen_v0_3_8.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is onl"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.7",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.7",
+    "file": "mat_gen_v0_3_7.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is onl"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.6",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.6",
+    "file": "mat_gen_v0_3_6.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is onl"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.5",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.5",
+    "file": "mat_gen_v0_3_5.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is onl"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.4",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.4",
+    "file": "mat_gen_v0_3_4.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is onl"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.3",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.3",
+    "file": "mat_gen_v0_3_3.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is onl"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.2.post1",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.2.post1",
+    "file": "mat_gen_v0_3_2_post1.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is onl"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.2",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.2",
+    "file": "mat_gen_v0_3_2.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape: int,\n    loc: float = 0.0,\n    scale: float = 1.0,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape: int,\n    p: float = 0.5,\n    connectivity: float = 1.0,\n    dtype: np.dtype = global_dtype,\n    sparsity_type: str = \"csr\",\n    seed: Union[int, np.random.Generator] = None,\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is onl"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.1.post1",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.1.post1",
+    "file": "mat_gen_v0_3_1_post1.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape,\n    loc=0.0,\n    scale=1.0,\n    connectivity=1.0,\n    dtype=global_dtype,\n    sparsity_type=\"csr\",\n    seed=None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is only 2-dimensional, then the\n        function will try to use one of the Sci"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape, p=0.5, connectivity=1.0, dtype=global_dtype, sparsity_type=\"csr\", seed=None\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is only 2-dimensional, then the\n        function will try to use one of the Scipy sparse matrix format ("
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.1",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.1",
+    "file": "mat_gen_v0_3_1.py",
+    "excerpts": [
+      {
+        "name": "_normal",
+        "excerpt": "def _normal(\n    *shape,\n    loc=0.0,\n    scale=1.0,\n    connectivity=1.0,\n    dtype=global_dtype,\n    sparsity_type=\"csr\",\n    seed=None,\n):\n    \"\"\"Create an array with values distributed following a Gaussian distribution.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    loc, scale : float, float, default to 0, 1\n        Mean and scale of the Gaussian distribution.\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is only 2-dimensional, then the\n        function will try to use one of the Sci"
+      },
+      {
+        "name": "_bernoulli",
+        "excerpt": "def _bernoulli(\n    *shape, p=0.5, connectivity=1.0, dtype=global_dtype, sparsity_type=\"csr\", seed=None\n):\n    \"\"\"Create an array with values equal to either 1 or -1. Probability of success\n    (to obtain 1) is equal to p.\n\n    Parameters\n    ----------\n    *shape : int, int, ..., optional\n        Shape (row, columns, ...) of the array.\n    p : float, default to 0.5\n        Probability of success (to obtain 1).\n    connectivity: float, default to 1.0\n        Also called density of the sparse matrix. By default, creates dense arrays.\n    sr : float, optional\n        If defined, then will rescale the spectral radius of the matrix to this value.\n    input_scaling: float or array, optional\n        If defined, then will rescale the matrix using this coefficient or array\n        of coefficients.\n    dtype : numpy.dtype, default to numpy.float64\n        A Numpy numerical type.\n    sparsity_type : {\"csr\", \"csc\", \"dense\"}, default to \"csr\"\n        If connectivity is inferior to 1 and shape is only 2-dimensional, then the\n        function will try to use one of the Scipy sparse matrix format ("
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.0",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.0",
+    "file": "mat_gen_v0_3_0.py",
+    "excerpts": [
+      {
+        "name": "generate_input_weights",
+        "excerpt": "def generate_input_weights(N: int,\n                           dim_input: int,\n                           input_scaling: float = 1.,\n                           proba: float = 0.1,\n                           input_bias: bool = False,\n                           dist: str = \"bimodal\",\n                           seed: Union[int, Generator] = None,\n                           typefloat=np.float64,\n                           **kwargs):\n    \"\"\"\n    Generate input or feedback weights for the reservoir.\n\n    Weights are drawn by default from a discrete ``'bimodal'``\n    distribution, i.e. are always equal to 1 or -1.\n    Then, they can be rescaled to a specific constant using\n    the `input_scaling` parameter.\n\n    Parameters\n    ----------\n        N: int\n            Number of units in the connected reservoir.\n        dim_input: int\n            Dimension of the inputs connected to the reservoir.\n        input_scaling: float, optional\n            Constant value used to rescale the weights.\n        input_bias: bool, optional\n            If True, will add a row to the matrix to take into\n         "
+      },
+      {
+        "name": "generate_internal_weights",
+        "excerpt": "def generate_internal_weights(N: int,\n                              sr: float = None,\n                              proba: float = 0.1,\n                              dist: str = \"norm\",\n                              sparsity_type: str = 'csr',\n                              seed: Union[int, Generator] = None,\n                              typefloat=np.float64,\n                              Wstd: float = None,\n                              **kwargs):\n    \"\"\"Generate the weights matrix that will be used\n    for the internal connections of the reservoir.\n\n    Weights will follow a normal distribution  by default,\n    of mean 0 and scale `Wstd` (by default 1), and can then be rescaled to\n    reach a specific spectral radius.\n\n    Parameters\n    ----------\n    N : int\n        Number of reservoir units, i.e. dimension of\n        the square weights matrix.\n    sr : float, optional\n        Spectral_radius, i.e. maximum desired eigenvalue of the\n        reservoir weights matrix, by default None\n    proba : float, optional\n        Probability of non-zero connection,\n        density of the weigh"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.0-b2",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.0-b2",
+    "file": "mat_gen_v0_3_0-b2.py",
+    "excerpts": [
+      {
+        "name": "generate_input_weights",
+        "excerpt": "def generate_input_weights(N: int,\n                           dim_input: int,\n                           input_scaling: float = 1.,\n                           proba: float = 0.1,\n                           input_bias: bool = False,\n                           dist: str = \"bimodal\",\n                           seed: Union[int, Generator] = None,\n                           typefloat=np.float64,\n                           **kwargs):\n    \"\"\"\n    Generate input or feedback weights for the reservoir.\n\n    Weights are drawn by default from a discrete ``'bimodal'``\n    distribution, i.e. are always equal to 1 or -1.\n    Then, they can be rescaled to a specific constant using\n    the `input_scaling` parameter.\n\n    Parameters\n    ----------\n        N: int\n            Number of units in the connected reservoir.\n        dim_input: int\n            Dimension of the inputs connected to the reservoir.\n        input_scaling: float, optional\n            Constant value used to rescale the weights.\n        input_bias: bool, optional\n            If True, will add a row to the matrix to take into\n         "
+      },
+      {
+        "name": "generate_internal_weights",
+        "excerpt": "def generate_internal_weights(N: int,\n                              sr: float = None,\n                              proba: float = 0.1,\n                              dist: str = \"norm\",\n                              sparsity_type: str = 'csr',\n                              seed: Union[int, Generator] = None,\n                              typefloat=np.float64,\n                              Wstd: float = None,\n                              **kwargs):\n    \"\"\"Method that generate the weight matrix that will be used\n    for the internal connections of the reservoir.\n\n    Weights will follow a normal distribution  by default,\n    of mean 0 and scale `Wstd` (by default 1), and can then be rescale to\n    reach a specific spectral radius.\n\n    Parameters\n    ----------\n    N : int\n        Number of reservoir units, i.e. dimension of\n        the square weights matrix.\n    sr : float, optional\n        Spectral_radius, i.e. maximum desired eigenvalue of the\n        reservoir weights matrix, by default None\n    proba : float, optional\n        Probability of non zero connection,\n        density of"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.0-b1",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.0-b1",
+    "file": "mat_gen_v0_3_0-b1.py",
+    "excerpts": [
+      {
+        "name": "generate_input_weights",
+        "excerpt": "def generate_input_weights(N: int,\n                           dim_input: int,\n                           input_scaling: float = 1.,\n                           proba: float = 0.1,\n                           input_bias: bool = False,\n                           dist: str = \"bimodal\",\n                           seed: Union[int, Generator] = None,\n                           typefloat=np.float64,\n                           **kwargs):\n    \"\"\"\n    Generate input or feedback weights for the reservoir.\n\n    Weights are drawn by default from a discrete ``'bimodal'``\n    distribution, i.e. are always equal to 1 or -1.\n    Then, they can be rescaled to a specific constant using\n    the `input_scaling` parameter.\n\n    Parameters\n    ----------\n        N: int\n            Number of units in the connected reservoir.\n        dim_input: int\n            Dimension of the inputs connected to the reservoir.\n        input_scaling: float, optional\n            Constant value used to rescale the weights.\n        input_bias: bool, optional\n            If True, will add a row to the matrix to take into\n         "
+      },
+      {
+        "name": "generate_internal_weights",
+        "excerpt": "def generate_internal_weights(N: int,\n                              sr: float = None,\n                              proba: float = 0.1,\n                              dist: str = \"norm\",\n                              sparsity_type: str = 'csr',\n                              seed: Union[int, Generator] = None,\n                              typefloat=np.float64,\n                              Wstd: float = None,\n                              **kwargs):\n    \"\"\"Method that generate the weight matrix that will be used\n    for the internal connections of the reservoir.\n\n    Weights will follow a normal distribution  by default,\n    of mean 0 and scale `Wstd` (by default 1), and can then be rescale to\n    reach a specific spectral radius.\n\n    Parameters\n    ----------\n    N : int\n        Number of reservoir units, i.e. dimension of\n        the square weights matrix.\n    sr : float, optional\n        Spectral_radius, i.e. maximum desired eigenvalue of the\n        reservoir weights matrix, by default None\n    proba : float, optional\n        Probability of non zero connection,\n        density of"
+      }
+    ]
+  },
+  {
+    "tag": "v0.3.0-b",
+    "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.0-b",
+    "file": "mat_gen_v0_3_0-b.py",
+    "excerpts": [
+      {
+        "name": "generate_input_weights",
+        "excerpt": "def generate_input_weights(N: int,\n                           dim_input: int,\n                           input_scaling: float = 1.,\n                           proba: float = 0.1,\n                           input_bias: bool = False,\n                           dist: str = \"bimodal\",\n                           seed: Union[int, Generator] = None,\n                           typefloat=np.float64,\n                           **kwargs):\n    \"\"\"\n    Generate input or feedback weights for the reservoir.\n\n    Weights are drawn by default from a discrete ``'bimodal'``\n    distribution, i.e. are always equal to 1 or -1.\n    Then, they can be rescaled to a specific constant using\n    the `input_scaling` parameter.\n\n    Parameters\n    ----------\n        N: int\n            Number of units in the connected reservoir.\n        dim_input: int\n            Dimension of the inputs connected to the reservoir.\n        input_scaling: float, optional\n            Constant value used to rescale the weights.\n        input_bias: bool, optional\n            If True, will add a row to the matrix to take into\n         "
+      },
+      {
+        "name": "generate_internal_weights",
+        "excerpt": "def generate_internal_weights(N: int,\n                              sr: float = None,\n                              proba: float = 0.1,\n                              dist: str = \"norm\",\n                              sparsity_type: str = 'csr',\n                              seed: Union[int, Generator] = None,\n                              typefloat=np.float64,\n                              Wstd: float = None,\n                              **kwargs):\n    \"\"\"Method that generate the weight matrix that will be used\n    for the internal connections of the reservoir.\n\n    Weights will follow a normal distribution  by default,\n    of mean 0 and scale `Wstd` (by default 1), and can then be rescale to\n    reach a specific spectral radius.\n\n    Parameters\n    ----------\n    N : int\n        Number of reservoir units, i.e. dimension of\n        the square weights matrix.\n    sr : float, optional\n        Spectral_radius, i.e. maximum desired eigenvalue of the\n        reservoir weights matrix, by default None\n    proba : float, optional\n        Probability of non zero connection,\n        density of"
+      }
+    ]
+  }
+]

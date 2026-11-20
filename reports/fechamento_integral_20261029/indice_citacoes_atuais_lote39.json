@@ -1,0 +1,3553 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "4cf48044445c0760210b1206c185487b8406af3eaecb541de6db381cdbf735b0",
+  "referencias": 50,
+  "ocorrencias_reconhecidas": 154,
+  "correspondencias_ausentes": 0,
+  "limites": "Reconhecedor autor–ano guiado pelos nomes na lista pode deixar de detectar chamadas sem referência ou formatos diferentes; contexto e identidade precisam ser conferidos. Ligar um arquivo fonte ou uma célula da matriz não prova que a fonte apoia cada afirmação do contexto. Os 34 vínculos são de localização da fonte, não aprovação científica.",
+  "registros": [
+    {
+      "id": "R01",
+      "referencia_atual": "ABEBE, T. N.; GOSHU, A. T. Asymmetric generalized error distribution with its properties and applications. Frontiers in Applied Mathematics and Statistics, v. 10, art. 1398137, 2024. DOI: 10.3389/fams.2024.1398137.",
+      "ano_citado": "2024",
+      "ocorrencias": [
+        {
+          "local": "P_atual0228",
+          "chamada": "Abebe e Goshu (2024)",
+          "contexto": "Abebe e Goshu (2024) avançam mais uma etapa ao propor a Distribuição Generalizada de Erro Assimétrica (AGED), derivando matematicamente uma família de distribuições capaz de lidar simultaneamente com assimetria e curtose excessiva, com valores menores de AIC e BIC que os da GED e da Normal nos três conjuntos de dados examinados."
+        },
+        {
+          "local": "T_atual2/L1/C0/P0",
+          "chamada": "Abebe e Goshu (2024)",
+          "contexto": "Abebe e Goshu (2024)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D01",
+      "arquivo_fonte": "Artigos citados\\Abebe - Asymmetric generalized error distribution with its properties and applications.pdf",
+      "sha256_fonte": "6c09320127ccbfa9c16dbbdcf716b021ab7e82e2c3ac86926db098920514f7d8",
+      "titulo_registro_historico": "Asymmetric generalized error distribution with its properties and applications",
+      "ano_registro_historico": 2024,
+      "evidencias_matriz": [
+        {
+          "fonte": "D01",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 8–9, seção 8",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_abebe_ribeiro_lote14_parcial.json",
+              "campo": "matriz_D01"
+            }
+          ]
+        },
+        {
+          "fonte": "D01",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 8–9, seção 8",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_abebe_ribeiro_lote14_parcial.json",
+              "campo": "matriz_D01"
+            }
+          ]
+        },
+        {
+          "fonte": "D01",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 9, aplicações",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_abebe_ribeiro_lote14_parcial.json",
+              "campo": "matriz_D01"
+            }
+          ]
+        },
+        {
+          "fonte": "D01",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 9 e 12, seção 8.2 e Tabela 8",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_abebe_ribeiro_lote14_parcial.json",
+              "campo": "matriz_D01"
+            }
+          ]
+        },
+        {
+          "fonte": "D01",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 9, seção 8.2.1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_abebe_ribeiro_lote14_parcial.json",
+              "campo": "matriz_D01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "referencia_atual": "ARAÚJO, H. V.; CARDOSO, F. C.; MATTOS, V. L. D.; BORGES, E. N.; LUCCA, G.; DALMAZO, B. L.; BERRI, R. A. Comparing MAE and RMSE as fitness of genetic algorithm for optimizing echo state network hyperparameters with different probabilistic distributions. In: JULIAN, V. et al. (ed.). Intelligent Data Engineering and Automated Learning – IDEAL 2024. Cham: Springer, 2025. p. 315-327. (LNCS, v. 15347). DOI: 10.1007/978-3-031-77738-7_26.",
+      "ano_citado": "2025",
+      "ocorrencias": [
+        {
+          "local": "P_atual0221",
+          "chamada": "Araújo et al. (2025)",
+          "contexto": "Araújo et al. (2025) investigaram a combinação de AG, ESN e distribuições probabilísticas em séries da B3. Essa combinação é um antecedente metodológico próximo. Nesta pesquisa, o ESNAUTO organiza cinco ondas de configurações para Win e W, integra LHS e um operador antiestagnação inspirado no CHC e recebe a série identificada como previamente ajustada. Essa integração não comprova novidade de cada componente nem isola o efeito causal da distribuição ou do ajuste."
+        },
+        {
+          "local": "P_atual0234",
+          "chamada": "Araújo et al. (2025)",
+          "contexto": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada."
+        },
+        {
+          "local": "P_atual0245",
+          "chamada": "Araújo et al. (2025)",
+          "contexto": "Araújo et al. (2025) compararam MAE e RMSE como aptidão de um AG para ESNs com cinco distribuições. A prova consultada descreve retornos de fechamento da ITSA4 e variâncias diárias, com partição declarada de 60%/20%/20%. Esse protocolo difere da previsão do preço ajustado da PETR4 no ESNAUTO. A presente pesquisa adapta essa linha de trabalho, integra LHS e um operador antiestagnação inspirado no CHC. A preservação histórica parcial dos artefatos está descrita na Seção 3.8. Foi consultada a prova de autor; os metadados da edição final foram conferidos no editor."
+        },
+        {
+          "local": "P_atual0259",
+          "chamada": "Araújo et al. (2025)",
+          "contexto": "A questão desta pesquisa é examinar o desempenho de configurações de ESN que combinam distribuições de inicialização e hiperparâmetros na previsão da PETR4 ajustada. Trabalhos próximos, como Araújo et al. (2025), já investigaram distribuições alternativas em séries financeiras. A motivação reside na aplicação e na avaliação documentada dessas configurações no protocolo adotado, sem pressupor que o tema esteja ausente da literatura ou que a comparação isole causalmente o efeito da distribuição."
+        },
+        {
+          "local": "P_atual0260",
+          "chamada": "Araújo et al. (2025)",
+          "contexto": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG."
+        },
+        {
+          "local": "P_atual0319",
+          "chamada": "Araújo et al. (2025)",
+          "contexto": "O Quadro 3 apresenta a codificação de 55 bits implementada no motor atual do ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa."
+        },
+        {
+          "local": "P_atual0321",
+          "chamada": "Araújo et al. (2025)",
+          "contexto": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025)."
+        },
+        {
+          "local": "P_atual0330",
+          "chamada": "Araújo et al. (2025)",
+          "contexto": "No motor atual, a função de aptidão combina erros de treino e validação: fitness = −(0,4 · MAEtreino + 0,6 · MAEvalidação). O sinal negativo converte a minimização em maximização para o pacote GA. A ponderação atribui maior peso à validação e segue a combinação descrita por Araújo et al. (2025). O software dispõe de serialização dos pesos e hiperparâmetros associados a recordes; contudo, esse mecanismo não resultou na preservação integral de todas as saídas históricas."
+        },
+        {
+          "local": "P_atual0498",
+          "chamada": "Araújo et al. (2025)",
+          "contexto": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados."
+        },
+        {
+          "local": "T_atual2/L2/C0/P0",
+          "chamada": "Araújo et al. (2025)",
+          "contexto": "Araújo et al. (2025)"
+        },
+        {
+          "local": "T_atual13/L2/C1/P0",
+          "chamada": "Araújo et al. (2025)",
+          "contexto": "Araújo et al. (2025); Cardoso (2025); Lampugnani (2026)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D02",
+      "arquivo_fonte": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_fonte": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "titulo_registro_historico": "Comparing MAE and RMSE as Fitness of Genetic Algorithm for Optimizing Echo State Network Hyperparameters with Different Probabilistic Distributions",
+      "ano_registro_historico": 2024,
+      "evidencias_matriz": [
+        {
+          "fonte": "D02",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 4–9, contextualização e método",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D02_araujo_lote6.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D02",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 7–9, seção 3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D02_araujo_lote6.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D02",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 8, seções 3.1–3.2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D02_araujo_lote6.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D02",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 10–15, tabelas e conclusão",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D02_araujo_lote6.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D02",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 10, seção 4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D02_araujo_lote6.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ],
+      "nota_ano": "Registro bibliométrico histórico difere da referência atual; conferir a edição/versão documentada, não substituir o ano automaticamente."
+    },
+    {
+      "id": "R03",
+      "referencia_atual": "ARIA, M.; CUCCURULLO, C. bibliometrix: an R-tool for comprehensive science mapping analysis. Journal of Informetrics, v. 11, n. 4, p. 959-975, 2017. DOI: 10.1016/j.joi.2017.08.007.",
+      "ano_citado": "2017",
+      "ocorrencias": [
+        {
+          "local": "P_atual0365",
+          "chamada": "Aria e Cuccurullo (2017)",
+          "contexto": "O processamento utilizou bibliometrix 5.5.0 em R, pacote para análise bibliométrica e mapeamento científico descrito por Aria e Cuccurullo (2017). A coleção foi salva em formato compatível com Biblioshiny e validada com o carregador dessa interface, apresentada por Aria et al. (2026)."
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R04",
+      "referencia_atual": "ARIA, M.; CUCCURULLO, C.; D’ANIELLO, L.; SPANO, M. Biblioshiny and the SAAS Workflow: an integrated framework for transparent and reproducible science mapping. A demonstration through the replication of a study. Journal of Informetrics, v. 20, n. 3, art. 101837, 2026. DOI: 10.1016/j.joi.2026.101837.",
+      "ano_citado": "2026",
+      "ocorrencias": [
+        {
+          "local": "P_atual0365",
+          "chamada": "Aria et al. (2026)",
+          "contexto": "O processamento utilizou bibliometrix 5.5.0 em R, pacote para análise bibliométrica e mapeamento científico descrito por Aria e Cuccurullo (2017). A coleção foi salva em formato compatível com Biblioshiny e validada com o carregador dessa interface, apresentada por Aria et al. (2026)."
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R05",
+      "referencia_atual": "BEHERA, S.; NAYAK, S. C.; KUMAR, A. V. S. P. A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Time Series Forecasting. Archives of Computational Methods in Engineering, v. 30, p. 4401-4448, 2023. DOI: 10.1007/s11831-023-09942-9.",
+      "ano_citado": "2023",
+      "ocorrencias": [
+        {
+          "local": "P_atual0201",
+          "chamada": "Behera, Nayak e Kumar (2023)",
+          "contexto": "Behera, Nayak e Kumar (2023) revisam redes neurais de ordem superior (Higher Order Neural Networks – HONNs) e otimização evolucionária em previsão financeira. O levantamento examina modelos, seleção de hiperparâmetros e métodos como AG e otimização por enxame de partículas (Particle Swarm Optimization – PSO). Trata-se de síntese de estudos com tarefas e protocolos distintos; os ganhos relatados não constituem uma comparação experimental própria nem demonstram que a associação a uma metaheurística melhore qualquer rede ou série."
+        },
+        {
+          "local": "P_atual0219",
+          "chamada": "Behera, Nayak e Kumar (2023)",
+          "contexto": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO."
+        },
+        {
+          "local": "T_atual2/L3/C0/P0",
+          "chamada": "Behera, Nayak e Kumar (2023)",
+          "contexto": "Behera, Nayak e Kumar (2023)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D03",
+      "arquivo_fonte": "Artigos citados\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_fonte": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "titulo_registro_historico": "A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Time Series Forecasting",
+      "ano_registro_historico": 2023,
+      "evidencias_matriz": [
+        {
+          "fonte": "D03",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 11–12, revisão de modelos",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_behera_concluida_lote20.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D03",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "S",
+          "localizador_matriz": "PDF 28",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_behera_concluida_lote20.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D03",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "S",
+          "localizador_matriz": "PDF 10–11 e 28",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_behera_concluida_lote20.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D03",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 11–12 e triagem textual das tabelas de modelos",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_behera_concluida_lote20.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D03",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "S",
+          "localizador_matriz": "PDF 17 e 19, agrupamento de datasets",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_behera_concluida_lote20.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "referencia_atual": "CARDOSO, F. C.; BERRI, R. A.; MATTOS, V. L. D. Echo state network e sua aplicação na ação PETR4 da B3 para predição do preço de fechamento. In: 66ª REUNIÃO ANUAL DA RBras, 2022, Florianópolis. Anais [...]. Florianópolis: Região Brasileira da Sociedade Internacional de Biometria, 2022a. p. 197-206.",
+      "ano_citado": "2022a",
+      "ocorrencias": [
+        {
+          "local": "P_atual0321",
+          "chamada": "Cardoso, Berri e Mattos (2022a)",
+          "contexto": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025)."
+        },
+        {
+          "local": "P_atual0319",
+          "chamada": "Cardoso, Berri e Mattos (2022a, p. 203)",
+          "contexto": "O Quadro 3 apresenta a codificação de 55 bits implementada no motor atual do ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+          "identificacao": "conferência manual de chamada com localizador"
+        },
+        {
+          "local": "P_atual0451",
+          "chamada": "Cardoso, Berri e Mattos (2022a, p. 202–205)",
+          "contexto": "Cardoso, Berri e Mattos (2022a, p. 202–205) avaliaram a PETR4 com e sem fator de ajuste, com 5.197 observações e divisão de 75% para treino e 25% para teste. Com hiperparâmetros fixos, relataram RMSE de 11,1785 sem fator e de 0,4987 com fator. Esses valores contextualizam um estudo anterior, mas não constituem um teste de superioridade desta pesquisa: a partição, os hiperparâmetros e o procedimento de seleção diferem. O resultado com fator não deve ser atribuído à série sem ajuste.",
+          "identificacao": "conferência manual de chamada com localizador"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R07",
+      "referencia_atual": "CARDOSO, F. C.; MALSKA, J. A. V.; RAMIRO, P. J.; LUCCA, G.; BORGES, E. N.; MATTOS, V. L. D.; BERRI, R. A. BovDB: a data set of stock prices of all companies in B3 from 1995 to 2020. Journal of Information and Data Management, v. 13, n. 1, p. 77-94, ago. 2022b.",
+      "ano_citado": "2022b",
+      "ocorrencias": [
+        {
+          "local": "P_atual0236",
+          "chamada": "Cardoso et al. (2022b)",
+          "contexto": "Cardoso et al. (2022b) propõem o BovDB como base de cotações e eventos de ações negociadas na B3. O esquema inclui fatores associados a eventos e um fator acumulado por registro de preço. Essa estrutura permite representar o tratamento de descontinuidades corporativas na base, mas não comprova, por si só, quais eventos foram aplicados aos arquivos locais desta pesquisa nem identifica a autoria de sua transformação."
+        },
+        {
+          "local": "P_atual0237",
+          "chamada": "Cardoso et al., 2022b",
+          "contexto": "Na definição do BovDB, o fator isolado é a razão entre o fechamento do dia anterior e a abertura do dia do evento, e os fatores acumulados são calculados regressivamente. O campo EventPrice.applied distingue os registros considerados no ajuste. A interpretação de cada tipo de evento e a reprodução da transformação exigem esses registros; uma lista de descrições, isoladamente, não demonstra como o preço local foi corrigido (Cardoso et al., 2022b)."
+        },
+        {
+          "local": "P_atual0243",
+          "chamada": "Cardoso et al. (2022b)",
+          "contexto": "Cardoso et al. (2022b) constituem a referência metodológica central deste trabalho. Os autores propõem o conjunto de dados BovDB, que reúne preços históricos de ações negociadas na B3, e introduzem o Fator de Ajuste como mecanismo de correção retroativa para eventos corporativos."
+        },
+        {
+          "local": "P_atual0302",
+          "chamada": "Cardoso et al., 2022b",
+          "contexto": "A pesquisa utiliza arquivos locais da série PETR4 fornecidos pelo orientador, Prof. Dr. Fabian Corrêa Cardoso, já ajustados por eventos corporativos. A procedência da série é atribuída ao BovDB (Cardoso et al., 2022b). O ativo é a ação preferencial da Petróleo Brasileiro S.A. (PETROBRAS PN). A preparação original dos arquivos antecede seu uso nesta pesquisa; a modelagem partiu dos valores recebidos."
+        },
+        {
+          "local": "P_atual0312",
+          "chamada": "Cardoso et al. (2022b)",
+          "contexto": "Fonte: Elaborado pelo autor (2026) com base na série corrigida pelo Fator de Ajuste de Cardoso et al. (2022b)."
+        },
+        {
+          "local": "T_atual2/L4/C0/P0",
+          "chamada": "Cardoso et al. (2022b)",
+          "contexto": "Cardoso et al. (2022b)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D04",
+      "arquivo_fonte": "Artigos citados\\Cardoso -  A data set of stock prices of all companies in B3from 1995 to 2020.pdf",
+      "sha256_fonte": "6409dc381b5eb4889c05cd84177f3ff5487c20cc5a997f87ff3fd9774681e586",
+      "titulo_registro_historico": "BovDB: a data set of stock prices of all companies in B3 from 1995 to 2020",
+      "ano_registro_historico": 2022,
+      "evidencias_matriz": [
+        {
+          "fonte": "D04",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 5–7, seções 3–4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_bovdb_rbras_dados_lote5.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D04",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 5–7, seções 3–4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_bovdb_rbras_dados_lote5.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D04",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 7, seção 4.1, equações 1–2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_bovdb_rbras_dados_lote5.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D04",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 6–7, seção 4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_bovdb_rbras_dados_lote5.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D04",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 6–7, seção 4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_bovdb_rbras_dados_lote5.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "referencia_atual": "CARDOSO, F. C.; BERRI, R. A.; BORGES, E. N.; LUCCA, G.; MATTOS, V. L. D. Associação de redes de estado de eco com métodos estatísticos clássicos de previsão: uma revisão bibliométrica. In: XXV ENCONTRO NACIONAL DE MODELAGEM COMPUTACIONAL, 2022, evento virtual. Anais [...]. 2022c.",
+      "ano_citado": "2022c",
+      "ocorrencias": [
+        {
+          "local": "P_atual0366",
+          "chamada": "Cardoso et al. (2022c, 2024)",
+          "contexto": "As matrizes foram calculadas em scripts de R, com a função biblioNetwork, e a apresentação das figuras utilizou ggplot2 e igraph. A validação de carregamento não corresponde a uma execução das análises pela interface gráfica do Biblioshiny. As revisões de Cardoso et al. (2022c, 2024) serviram como referências para a escolha dos formatos de visualização."
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R09",
+      "referencia_atual": "CARDOSO, F. C.; BERRI, R. A.; BORGES, E. N.; DALMAZO, B. L.; LUCCA, G.; MATTOS, V. L. D. Echo state network and classical statistical techniques for time series forecasting: a review. Knowledge-Based Systems, v. 293, art. 111639, 2024. DOI: 10.1016/j.knosys.2024.111639.",
+      "ano_citado": "2024",
+      "ocorrencias": [
+        {
+          "local": "P_atual0366",
+          "chamada": "Cardoso et al. (2022c, 2024)",
+          "contexto": "As matrizes foram calculadas em scripts de R, com a função biblioNetwork, e a apresentação das figuras utilizou ggplot2 e igraph. A validação de carregamento não corresponde a uma execução das análises pela interface gráfica do Biblioshiny. As revisões de Cardoso et al. (2022c, 2024) serviram como referências para a escolha dos formatos de visualização."
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R10",
+      "referencia_atual": "CARDOSO, F. C. Modelo híbrido para previsão de séries temporais financeiras: ARIMA-ESN com algoritmo genético. 2025. Tese (Doutorado em Modelagem Computacional) – Universidade Federal do Rio Grande, Rio Grande, 2025. Disponível em: https://ppgmc.furg.br/dissertacoes-e-teses/publicacoes-de-2025/14475tese-fabian-correa-cardoso. Acesso em: 23 out. 2026.",
+      "ano_citado": "2025",
+      "ocorrencias": [
+        {
+          "local": "P_atual0260",
+          "chamada": "Cardoso (2025)",
+          "contexto": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG."
+        },
+        {
+          "local": "P_atual0498",
+          "chamada": "Cardoso (2025)",
+          "contexto": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados."
+        },
+        {
+          "local": "T_atual13/L2/C1/P0",
+          "chamada": "Cardoso (2025)",
+          "contexto": "Araújo et al. (2025); Cardoso (2025); Lampugnani (2026)"
+        },
+        {
+          "local": "P_atual0392",
+          "chamada": "Cardoso (2025, p. 90)",
+          "contexto": "Para complementar as tabelas, as Figuras 5 e 6 apresentam a evolução da busca genética e a comparação entre valores observados e previstos na mesma execução preservada. A escolha dessas visualizações tomou como referência as Figuras 29 e 30 de Cardoso (2025, p. 90), adaptando-as à previsão do preço ajustado, em vez dos retornos estudados naquela tese.",
+          "identificacao": "conferência manual de chamada com localizador"
+        },
+        {
+          "local": "P_atual0396",
+          "chamada": "Cardoso (2025, Figura 29)",
+          "contexto": "Fonte: Elaborado pelo autor com o histórico preservado do lote de 200 gerações (2026). Referência de apresentação: Cardoso (2025, Figura 29).",
+          "identificacao": "conferência manual de chamada com localizador"
+        },
+        {
+          "local": "P_atual0401",
+          "chamada": "Cardoso (2025, Figura 30)",
+          "contexto": "Fonte: Elaborado pelo autor pela reinjeção das matrizes preservadas, GED × Uniforme, rodada 2 (2026). Referência de apresentação: Cardoso (2025, Figura 30).",
+          "identificacao": "conferência manual de chamada com localizador"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R11",
+      "referencia_atual": "CHEN, C.; ZHANG, X.; KUO, E.; FU, R.; XIE, Q.; ZHANG, F. Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study. 2026. (Preprint arXiv:2512.06630v2). Disponível em: https://doi.org/10.48550/arXiv.2512.06630.",
+      "ano_citado": "2026",
+      "ocorrencias": [
+        {
+          "local": "P_atual0199",
+          "chamada": "Chen et al. (2026)",
+          "contexto": "Em paralelo, novas arquiteturas estendem a discussão para além da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quânticas (Quantum Temporal Convolutional Neural Networks – QTCNN) e relatam Sharpe superior ao de LSTM, Transformer e TConv-MLP no conjunto JPX, em avaliação fora da amostra de 22 dias. Os resultados são restritos ao protocolo estudado."
+        },
+        {
+          "local": "T_atual2/L5/C0/P0",
+          "chamada": "Chen et al. (2026)",
+          "contexto": "Chen et al. (2026)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D05",
+      "arquivo_fonte": "Artigos citados\\Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.pdf",
+      "sha256_fonte": "703cec38e2b31cc6b2e3f38258db73ef814c238b13f70ffa0b58f23622476a80",
+      "titulo_registro_historico": "Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study",
+      "ano_registro_historico": 2026,
+      "evidencias_matriz": [
+        {
+          "fonte": "D05",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 12, Tabela 4, arquiteturas",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chen_lote17.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D05",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 12, Tabela 4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chen_lote17.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D05",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 4–5, seção II",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chen_lote17.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D05",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 12–13, configurações e seção IV-B",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chen_lote17.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D05",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 3–4, seção II",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chen_lote17.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R12",
+      "referencia_atual": "CHO, K.; VAN MERRIËNBOER, B.; GULCEHRE, C.; BAHDANAU, D.; BOUGARES, F.; SCHWENK, H.; BENGIO, Y. Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation. In: PROCEEDINGS OF EMNLP 2014. Doha: ACL, 2014. p. 1724-1734. DOI: 10.3115/v1/D14-1179.",
+      "ano_citado": "2014",
+      "ocorrencias": [
+        {
+          "local": "P_atual0193",
+          "chamada": "Cho et al. (2014)",
+          "contexto": "As redes Long Short-Term Memory (LSTM) foram introduzidas por Hochreiter e Schmidhuber (1997) para facilitar a aprendizagem de dependências longas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinicialização, hoje conhecida como Gated Recurrent Unit (GRU), no contexto de uma arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador. A simplificação estrutural dessa unidade não constitui, por si, uma garantia de menor erro em séries financeiras."
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R13",
+      "referencia_atual": "CORTESI, F.; IANNONE, G.; CRIPPA, G.; POGGIO, T.; BENEVENTANO, P. Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series. (Preprint arXiv:2603.02620v1), 2026.",
+      "ano_citado": "2026",
+      "ocorrencias": [
+        {
+          "local": "P_atual0197",
+          "chamada": "Cortesi et al. (2026)",
+          "contexto": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores semelhantes de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo."
+        },
+        {
+          "local": "P_atual0238",
+          "chamada": "Cortesi et al. (2026)",
+          "contexto": "O uso de séries ajustadas também aparece fora do mercado brasileiro. Cortesi et al. (2026) descrevem dados do Center for Research in Security Prices (CRSP) com fatores de ajuste para eventos corporativos na análise de ações do S&P 500. Essa procedência documentada permite discutir a preparação dos dados sem inferir o uso de fechamento ajustado apenas da existência dessa coluna em uma base."
+        },
+        {
+          "local": "T_atual2/L6/C0/P0",
+          "chamada": "Cortesi et al. (2026)",
+          "contexto": "Cortesi et al. (2026)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D06",
+      "arquivo_fonte": "Artigos citados\\Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.pdf",
+      "sha256_fonte": "8bb4b1967da28dc961a42231543f70cdf22fc798527b1724c7f1e7cd5714bde6",
+      "titulo_registro_historico": "Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series",
+      "ano_registro_historico": 2026,
+      "evidencias_matriz": [
+        {
+          "fonte": "D06",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 3, seção 2.2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_cortesi_lote18.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D06",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 3, seção 2.2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_cortesi_lote18.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D06",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 2, seção 2.1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_cortesi_lote18.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D06",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 2–3, contribuições e seção 2.2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_cortesi_lote18.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D06",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 2, seção 2.1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_cortesi_lote18.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R14",
+      "referencia_atual": "COSTA, G. D.; LUNKES, R. J. Aplicação de algoritmo de aprendizado de máquina (AM) para previsão do comportamento das ações negociadas no mercado brasileiro. Contabilidad y Negocios, v. 20, n. esp., p. 48-70, 2025. DOI: 10.18800/contabilidad.2025ESP.002.",
+      "ano_citado": "2025",
+      "ocorrencias": [
+        {
+          "local": "P_atual0188",
+          "chamada": "Costa e Lunkes (2025)",
+          "contexto": "Costa e Lunkes (2025) combinaram indicadores técnicos e fundamentalistas em um modelo de classificação com máquina de vetores de suporte (Support Vector Machine – SVM). O modelo híbrido apresentou F1-score de aproximadamente 72,7% na amostra de ações brasileiras analisada, sem atribuição desse valor especificamente à PETR4. Os autores recomendaram investigar outros algoritmos, incluindo redes neurais e métodos de conjunto; a escolha de arquiteturas recorrentes constitui uma decisão da presente pesquisa."
+        },
+        {
+          "local": "P_atual0239",
+          "chamada": "Costa e Lunkes (2025)",
+          "contexto": "Costa e Lunkes (2025) informam o uso de preços ajustados a desdobramentos e dividendos na construção de indicadores e da variável de classificação. O tratamento de eventos corporativos é relevante quando suas descontinuidades afetam a variável e a tarefa investigadas. A necessidade e a forma do ajuste dependem do objeto da modelagem; seu emprego, isoladamente, não garante resultados confiáveis para qualquer modelo."
+        },
+        {
+          "local": "T_atual2/L7/C0/P0",
+          "chamada": "Costa e Lunkes (2025)",
+          "contexto": "Costa e Lunkes (2025)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D07",
+      "arquivo_fonte": "Artigos citados\\Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256_fonte": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "titulo_registro_historico": "Aplicação de algoritmo de aprendizado de máquina (AM) para previsão do comportamento das ações negociadas no mercado brasileiro",
+      "ano_registro_historico": 2025,
+      "evidencias_matriz": [
+        {
+          "fonte": "D07",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 2–3, objeto do artigo",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_costa_lunkes_lote15.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D07",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 2–3 e seção de métodos",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_costa_lunkes_lote15.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D07",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 11–12, Tabelas 2–3 e variável dependente",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_costa_lunkes_lote15.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D07",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 14–17, resultados e conclusão",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_costa_lunkes_lote15.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D07",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 10, Tabela 1; PDF 11–12",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_costa_lunkes_lote15.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R15",
+      "referencia_atual": "DENG, Z.; CHEN, Q.; ZHANG, L.; ZHOU, K.; ZONG, Y.; LIU, H.; LI, J.; MA, L. Degradation prediction of PEMFCs using stacked echo state network based on genetic algorithm optimization. IEEE Transactions on Transportation Electrification, v. 8, n. 1, p. 1454-1466, 2022. DOI: 10.1109/TTE.2021.3111906.",
+      "ano_citado": "2022",
+      "ocorrencias": [
+        {
+          "local": "P_atual0218",
+          "chamada": "Deng et al. (2022)",
+          "contexto": "Deng et al. (2022) aplicaram AG à seleção do escalonamento de entrada, raio espectral e taxa de vazamento de ESNs empilhadas para prever degradação de células de combustível de membrana de troca de prótons (Proton Exchange Membrane Fuel Cells – PEMFCs). A Tabela 6 compara os erros obtidos com valores de LSTM e outros métodos provenientes de um estudo anterior. Os resultados apoiam a estratégia nessa aplicação, sem estabelecer superioridade geral frente a LSTM nem identificar uma fragilidade principal de toda a literatura de ESNs."
+        },
+        {
+          "local": "P_atual0258",
+          "chamada": "Deng et al. (2022)",
+          "contexto": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN."
+        },
+        {
+          "local": "T_atual1/L4/C2/P0",
+          "chamada": "Deng et al. (2022)",
+          "contexto": "Separa comparações próprias com LSTM/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S."
+        },
+        {
+          "local": "T_atual2/L8/C0/P0",
+          "chamada": "Deng et al. (2022)",
+          "contexto": "Deng et al. (2022)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D08",
+      "arquivo_fonte": "Artigos citados\\Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_fonte": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "titulo_registro_historico": "Degradation Prediction of PEMFCs Using Stacked Echo State Network Based on Genetic Algorithm Optimization",
+      "ano_registro_historico": 2022,
+      "evidencias_matriz": [
+        {
+          "fonte": "D08",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 8 e 13, equações 1–5 e seção 4.2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_tian_deng_lote9.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D08",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 10 e 13, seções 3.2 e 4.2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_tian_deng_lote9.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D08",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 12, seção 4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_tian_deng_lote9.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D08",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "S",
+          "localizador_matriz": "PDF 20, Tabela 6",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_tian_deng_lote9.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D08",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 6 e 12, problema e dados",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_tian_deng_lote9.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R16",
+      "referencia_atual": "DEWICK, P. R. On Financial Distributions Modelling Methods: Application on Regression Models for Time Series. Journal of Risk and Financial Management, v. 15, n. 10, art. 461, 2022. DOI: 10.3390/jrfm15100461.",
+      "ano_citado": "2022",
+      "ocorrencias": [
+        {
+          "local": "P_atual0229",
+          "chamada": "Dewick (2022)",
+          "contexto": "Dewick (2022) discute a modelagem de distribuições financeiras e sua relação com séries temporais. Essa discussão pertence à representação estatística dos dados, enquanto Soltani, Benmohamed e Ltifi (2022) examinam estratégias de otimização de ESNs. As duas frentes oferecem contexto para esta pesquisa, mas não demonstram, em conjunto, que uma distribuição de pesos deva reproduzir a distribuição dos retornos. A comparação entre inicializações é uma escolha experimental do presente trabalho."
+        },
+        {
+          "local": "T_atual2/L9/C0/P0",
+          "chamada": "Dewick (2022)",
+          "contexto": "Dewick (2022)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D09",
+      "arquivo_fonte": "Artigos citados\\Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+      "sha256_fonte": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48",
+      "titulo_registro_historico": "On Financial Distributions Modelling Methods: Application on Regression Models for Time Series",
+      "ano_registro_historico": 2022,
+      "evidencias_matriz": [
+        {
+          "fonte": "D09",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 9–10, seção 4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D09",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 9–10, seção 4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D09",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 9, seção 4.1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D09",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 10, Tabela 1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D09",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 9, seção 4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R17",
+      "referencia_atual": "DIEBOLD, F. X.; MARIANO, R. S. Comparing Predictive Accuracy. Journal of Business & Economic Statistics, v. 13, n. 3, p. 253-263, 1995. DOI: 10.1080/07350015.1995.10524599.",
+      "ano_citado": "1995",
+      "ocorrencias": [
+        {
+          "local": "P_atual0344",
+          "chamada": "Diebold e Mariano (1995)",
+          "contexto": "O teste de Diebold-Mariano foi empregado para avaliar formalmente a igualdade de acurácia preditiva entre a ESN e os baselines GRU e LSTM, conforme a hipótese nula de diferença média de perda igual a zero proposta por Diebold e Mariano (1995)."
+        },
+        {
+          "local": "P_atual0443",
+          "chamada": "Diebold e Mariano (1995)",
+          "contexto": "Fonte: Elaborado pelo autor (2026), com base na execução controlada e em Diebold e Mariano (1995)."
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R18",
+      "referencia_atual": "DUTTILO, P. Modelling Financial Returns with Mixtures of Generalized Normal Distributions. 2024. Tese (Doutorado em Human Science — Economics and Statistics) — Università degli Studi “G. d’Annunzio” Chieti-Pescara, 2024. Tutor: Prof. Stefano Antonio Gattone; Coordenador: Prof. Marco Di Marzio.",
+      "ano_citado": "2024",
+      "ocorrencias": [
+        {
+          "local": "T_atual2/L10/C0/P0",
+          "chamada": "Duttilo (2024)",
+          "contexto": "Duttilo (2024)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D11",
+      "arquivo_fonte": "Artigos citados\\Duttilo P - Modelling financial returns with mixtures of generalized normal distributions.pdf",
+      "sha256_fonte": "1cff61a7865858c443b72d28b3f76d0377f24bc387f4b4b7dbcbe644e552d54c",
+      "titulo_registro_historico": "Modelling Financial Returns with Mixtures of Generalized Normal Distributions",
+      "ano_registro_historico": 2023,
+      "evidencias_matriz": [
+        {
+          "fonte": "D11",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 85/88, seções 4.5.3–4.5.4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\conferencia_duttilo_lote23.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D11",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 85/88",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\conferencia_duttilo_lote23.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D11",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 85, seção 4.5.3; PDF 88, Data",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\conferencia_duttilo_lote23.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D11",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 85/88, modelos e medidas",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\conferencia_duttilo_lote23.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D11",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 85 e 88",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\conferencia_duttilo_lote23.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        }
+      ],
+      "nota_ano": "Registro bibliométrico histórico difere da referência atual; conferir a edição/versão documentada, não substituir o ano automaticamente."
+    },
+    {
+      "id": "R19",
+      "referencia_atual": "DUTTILO, P.; GATTONE, S. A. Modelling Financial Returns with Finite Mixtures of GED. In: BALZANELLA, A.; BINI, M.; CAVICCHIA, C.; VERDE, R. (ed.). SIS 2022: 51st Scientific Meeting of the Italian Statistical Society: Book of the Short Papers. [S. l.]: Pearson, 2022. p. 1364-1369. ISBN 9788891932310.",
+      "ano_citado": "2022",
+      "ocorrencias": [
+        {
+          "local": "P_atual0227",
+          "chamada": "Duttilo e Gattone (2022)",
+          "contexto": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do DJIA entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade."
+        },
+        {
+          "local": "T_atual2/L11/C0/P0",
+          "chamada": "Duttilo e Gattone (2022)",
+          "contexto": "Duttilo e Gattone (2022)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D10",
+      "arquivo_fonte": "Artigos citados\\Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+      "sha256_fonte": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7",
+      "titulo_registro_historico": "Modelling Financial Returns with Finite Mixtures of GED",
+      "ano_registro_historico": 2022,
+      "evidencias_matriz": [
+        {
+          "fonte": "D10",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 3–4, seção 2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_sharma_duttilo_lote7.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D10",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 3–4, seção 2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_sharma_duttilo_lote7.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D10",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 4, seção 3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_sharma_duttilo_lote7.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D10",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 4–5, seção 3 e Tabela 1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_sharma_duttilo_lote7.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D10",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 4, seção 3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_sharma_duttilo_lote7.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R20",
+      "referencia_atual": "ECER, F.; ARDABILI, S.; BAND, S. S.; MOSAVI, A. Training Multilayer Perceptron with Genetic Algorithms and Particle Swarm Optimization for Modeling Stock Price Index Prediction. Entropy, v. 22, n. 11, art. 1239, 2020. DOI: 10.3390/e22111239.",
+      "ano_citado": "2020",
+      "ocorrencias": [
+        {
+          "local": "P_atual0219",
+          "chamada": "Ecer et al. (2020)",
+          "contexto": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO."
+        },
+        {
+          "local": "T_atual2/L12/C0/P0",
+          "chamada": "Ecer et al. (2020)",
+          "contexto": "Ecer et al. (2020)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D12",
+      "arquivo_fonte": "Artigos citados\\Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256_fonte": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "titulo_registro_historico": "Training Multilayer Perceptron with Genetic Algorithms and Particle Swarm Optimization for Modeling Stock Price Index Prediction",
+      "ano_registro_historico": 2020,
+      "evidencias_matriz": [
+        {
+          "fonte": "D12",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 6, seção 3.2.1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ecer_timbo_lote10.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D12",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 7–8, seções 3.2.2–3.2.3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ecer_timbo_lote10.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D12",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 5, seção 3.1 e Tabela 4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ecer_timbo_lote10.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D12",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 8–11, tabelas 5–10",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ecer_timbo_lote10.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D12",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 5–6, seção 3.1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ecer_timbo_lote10.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R21",
+      "referencia_atual": "ESHELMAN, L. J. The CHC Adaptive Search Algorithm: How to Have Safe Search When Engaging in Nontraditional Genetic Recombination. In: RAWLINS, G. J. E. (ed.). Foundations of Genetic Algorithms 1. San Mateo: Morgan Kaufmann, 1991. p. 265-283. DOI: 10.1016/B978-0-08-050684-5.50020-3.",
+      "ano_citado": "1991",
+      "ocorrencias": [
+        {
+          "local": "P_atual0326",
+          "chamada": "Eshelman (1991)",
+          "contexto": "O motor de busca disponibilizado incorpora um mecanismo de mutação cataclísmica inspirado no CHC (Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation), de Eshelman (1991). Após estagnação, o mecanismo aumenta a mutação para ampliar a exploração. Essa finalidade de implementação não demonstra manutenção de diversidade: não foram produzidas medidas populacionais específicas nem uma ablação que isolasse o efeito do LHS e do operador. O mecanismo não corresponde ao CHC completo."
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R22",
+      "referencia_atual": "GLEICK, James. Making sense of nature’s mess. The Washington Post, 17 out. 1987. Disponível em: https://www.washingtonpost.com/archive/opinions/1987/10/18/making-sense-of-natures-mess/09f82e1d-5e92-4abf-81ee-9a60f6de1f89/. Acesso em: 28 out. 2026.",
+      "ano_citado": "1987",
+      "ocorrencias": [
+        {
+          "local": "P_atual0039",
+          "chamada": "Gleick, 1987",
+          "contexto": "(Gleick, 1987, par. 1)"
+        },
+        {
+          "local": "P_atual0039",
+          "chamada": "Gleick, 1987, par. 1",
+          "contexto": "(Gleick, 1987, par. 1)",
+          "identificacao": "conferência manual de chamada com localizador"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R23",
+      "referencia_atual": "HARIHARAN, S.; SURESH, R.; CHANDRASEKAR, V. K. Multivariate time series prediction using clustered echo state network. The European Physical Journal Plus, v. 140, art. 1133, 2025. DOI: 10.1140/epjp/s13360-025-07077-3.",
+      "ano_citado": "2025",
+      "ocorrencias": [
+        {
+          "local": "P_atual0211",
+          "chamada": "Hariharan, Suresh e Chandrasekar (2025)",
+          "contexto": "Hariharan, Suresh e Chandrasekar (2025) propuseram ESNs com reservatórios divididos em grupos para séries multivariadas, incluindo dados do NIFTYBEES. Cada variável foi direcionada a um grupo, mantendo conexões entre grupos segundo a topologia examinada. Os erros e a sensibilidade à conectividade variaram entre as estruturas. O estudo apoia investigar a organização do reservatório, sem demonstrar que todo intercâmbio entre variáveis seja prejudicial ou que uma topologia domine em qualquer tarefa."
+        },
+        {
+          "local": "P_atual0232",
+          "chamada": "Hariharan, Suresh e Chandrasekar (2025)",
+          "contexto": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan, Suresh e Chandrasekar (2025) geram as entradas não nulas de Win por amostragem Uniforme(-1,1), seguida de escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos."
+        },
+        {
+          "local": "T_atual2/L13/C0/P0",
+          "chamada": "Hariharan, Suresh e Chandrasekar (2025)",
+          "contexto": "Hariharan, Suresh e Chandrasekar (2025)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D13",
+      "arquivo_fonte": "Artigos citados\\Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256_fonte": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "titulo_registro_historico": "Multivariate time series prediction using clustered echo state network",
+      "ano_registro_historico": 2025,
+      "evidencias_matriz": [
+        {
+          "fonte": "D13",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 4, definição de Win",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D13",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 6–8, seção 3.1 e Figura 5",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D13",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 7, equação 15",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D13",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 8 e 11, tabelas 4–5",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D13",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 8, Figura 6 e Tabela 4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R24",
+      "referencia_atual": "HASSAAN, Z. A.; YACOUB, M. H.; SAID, L. A. FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction. Machine Learning and Knowledge Extraction, v. 7, art. 160, 2025. DOI: 10.3390/make7040160.",
+      "ano_citado": "2025",
+      "ocorrencias": [
+        {
+          "local": "P_atual0212",
+          "chamada": "Hassaan, Yacoub e Said (2025)",
+          "contexto": "Hassaan, Yacoub e Said (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik, Routaib e Elhaddadi (2023) investigaram uma ESN em trajetórias simuladas de Lorenz, com condições iniciais associadas ao Bitcoin. O texto menciona uma série decimada, sem detalhar o procedimento. As métricas avaliam trajetórias geradas, não previsões de preços observados, e não isolam o efeito da distribuição dos pesos iniciais."
+        },
+        {
+          "local": "P_atual0233",
+          "chamada": "Hassaan, Yacoub e Said (2025)",
+          "contexto": "Hassaan, Yacoub e Said (2025) estudaram sequências caóticas normalizadas para gerar Win e Wres e adotaram controles He e Xavier. Nas Equações 9a e 9b, He usa amostras Gaussianas e Xavier usa amostras Uniformes reescaladas. A descrição de Xavier no texto da seção seguinte não coincide com essa fórmula, o que exige cautela na interpretação. Além disso, uma regra de geração por trajetória caótica não equivale, por si só, à identificação de uma família probabilística ajustada aos dados financeiros."
+        },
+        {
+          "local": "P_atual0251",
+          "chamada": "Hassaan, Yacoub e Said (2025)",
+          "contexto": "Hassaan, Yacoub e Said (2025) estudaram inicializações por sequências caóticas para ESN e GRU em seis conjuntos financeiros, incluindo índices acionários e pares cambiais. O protocolo compara sistemas como Lorenz, Chen, oscilador de Chen perturbado e Mackey–Glass, além dos controles He e Xavier. Os resultados pertencem às séries, arquiteturas e condições de avaliação adotadas pelos autores."
+        },
+        {
+          "local": "P_atual0252",
+          "chamada": "Hassaan, Yacoub e Said (2025)",
+          "contexto": "Os erros reportados por Hassaan, Yacoub e Said (2025) motivam investigar regras de inicialização. Contudo, diferenças numéricas de erro não constituem, por si sós, evidência de significância estatística ou de efeito independente dos demais componentes. A inicialização por uma trajetória caótica também difere da escolha de uma família probabilística dos pesos. A interpretação dos controles deve observar a divergência entre a fórmula e a descrição textual de Xavier, apresentada na Seção 2.5."
+        },
+        {
+          "local": "P_atual0256",
+          "chamada": "Hassaan, Yacoub e Said (2025)",
+          "contexto": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo."
+        },
+        {
+          "local": "T_atual2/L14/C0/P0",
+          "chamada": "Hassaan, Yacoub e Said (2025)",
+          "contexto": "Hassaan, Yacoub e Said (2025)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D14",
+      "arquivo_fonte": "Artigos citados\\Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256_fonte": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "titulo_registro_historico": "FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction",
+      "ano_registro_historico": 2025,
+      "evidencias_matriz": [
+        {
+          "fonte": "D14",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 7, equações 9a–9b; PDF 12, Algoritmo 1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chaos_lote4.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D14",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "S",
+          "localizador_matriz": "PDF 2, revisão de estudos; PDF 11, tabela 1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chaos_lote4.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D14",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 11, seção 5.1, equação 16",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chaos_lote4.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D14",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 13, Tabela 2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chaos_lote4.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D14",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 13, Tabela 2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chaos_lote4.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R25",
+      "referencia_atual": "HOCHREITER, S.; SCHMIDHUBER, J. Long Short-Term Memory. Neural Computation, v. 9, n. 8, p. 1735-1780, 1997. DOI: 10.1162/neco.1997.9.8.1735.",
+      "ano_citado": "1997",
+      "ocorrencias": [
+        {
+          "local": "P_atual0193",
+          "chamada": "Hochreiter e Schmidhuber (1997)",
+          "contexto": "As redes Long Short-Term Memory (LSTM) foram introduzidas por Hochreiter e Schmidhuber (1997) para facilitar a aprendizagem de dependências longas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinicialização, hoje conhecida como Gated Recurrent Unit (GRU), no contexto de uma arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador. A simplificação estrutural dessa unidade não constitui, por si, uma garantia de menor erro em séries financeiras."
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R26",
+      "referencia_atual": "HOLLAND, J. H. Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence. Ann Arbor: University of Michigan Press, 1975.",
+      "ano_citado": "1975",
+      "ocorrencias": [
+        {
+          "local": "P_atual0325",
+          "chamada": "Holland (1975)",
+          "contexto": "Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1975). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979)."
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R27",
+      "referencia_atual": "JAEGER, H. The “echo state” approach to analysing and training recurrent neural networks – with an Erratum note. GMD Report 148. Sankt Augustin: GMD Forschungszentrum Informationstechnik, 2001. Versão com errata de 26 jan. 2010. DOI: 10.24406/publica-fhg-291111. Disponível em: https://www.ai.rug.nl/minds/uploads/EchoStatesTechRep.pdf. Acesso em: 28 out. 2026.",
+      "ano_citado": "2001",
+      "ocorrencias": [
+        {
+          "local": "P_atual0203",
+          "chamada": "Jaeger (2001)",
+          "contexto": "As ESNs integram o paradigma da Computação de Reservatório (Reservoir Computing – RC). Jaeger (2001) apresenta uma abordagem em que a rede recorrente fornece estados e o treinamento ajusta as conexões de saída por regressão. Na configuração usual descrita por Jaeger (2007), os pesos internos são inicializados aleatoriamente e permanecem fixos durante o ajuste da saída. Essa separação entre dinâmica recorrente e leitura fundamenta a arquitetura utilizada nesta pesquisa."
+        },
+        {
+          "local": "P_atual0498",
+          "chamada": "Jaeger (2001, 2007)",
+          "contexto": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados."
+        },
+        {
+          "local": "T_atual13/L1/C1/P0",
+          "chamada": "Jaeger (2001, 2007)",
+          "contexto": "Jaeger (2001, 2007)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R28",
+      "referencia_atual": "JAEGER, Herbert. Echo state network. Scholarpedia, v. 2, n. 9, p. 2330, 2007. DOI: 10.4249/scholarpedia.2330.",
+      "ano_citado": "2007",
+      "ocorrencias": [
+        {
+          "local": "P_atual0203",
+          "chamada": "Jaeger (2007)",
+          "contexto": "As ESNs integram o paradigma da Computação de Reservatório (Reservoir Computing – RC). Jaeger (2001) apresenta uma abordagem em que a rede recorrente fornece estados e o treinamento ajusta as conexões de saída por regressão. Na configuração usual descrita por Jaeger (2007), os pesos internos são inicializados aleatoriamente e permanecem fixos durante o ajuste da saída. Essa separação entre dinâmica recorrente e leitura fundamenta a arquitetura utilizada nesta pesquisa."
+        },
+        {
+          "local": "P_atual0204",
+          "chamada": "Jaeger, 2007",
+          "contexto": "O reservatório transforma a sequência de entrada em estados dos quais a camada de saída extrai informação preditiva. O ajuste apenas dessa camada reduz o conjunto de pesos treináveis em comparação com o treinamento de toda a rede. Essa organização pode reduzir o custo de ajuste, mas não garante estabilidade numérica nem uma razão universal de tempos frente à retropropagação através do tempo. O condicionamento da regressão, a dinâmica do reservatório e a regularização continuam relevantes (Jaeger, 2007)."
+        },
+        {
+          "local": "P_atual0257",
+          "chamada": "Jaeger, 2007",
+          "contexto": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas, Usha e Sangeetha (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros."
+        },
+        {
+          "local": "P_atual0299",
+          "chamada": "Jaeger (2007)",
+          "contexto": "A implementação partiu de códigos em R fornecidos pelo orientador, adaptados pelo autor ao contexto da pesquisa, com desenvolvimento da interface do ESNAUTO. Os fundamentos da ESN seguem Jaeger (2007). O código atual usa GA, fGarch e PearsonDS; mede tempo com proc.time e usa pracma como pseudoinversa alternativa. O script anterior carrega outras bibliotecas e contém exemplos de ajuste comentados. O Quadro 6 distingue a base recebida e a contribuição de adaptação e interface."
+        },
+        {
+          "local": "P_atual0321",
+          "chamada": "Jaeger (2007)",
+          "contexto": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025)."
+        },
+        {
+          "local": "P_atual0322",
+          "chamada": "Jaeger, 2007",
+          "contexto": "A camada de saída foi treinada por regressão linear regularizada (Ridge Regression), resolvendo o sistema Wout = Yt · Xᵀ · (X · Xᵀ + reg · I)⁻¹, em que X reuniu, a cada passo de tempo do treino, o vetor concatenado [1; u(t); x(t)], e Yt representou o vetor de saídas esperadas. A função de ativação aplicada aos neurônios do reservatório foi a tangente hiperbólica (tanh), conforme prática consolidada em ESNs (Jaeger, 2007). A atualização do estado interno seguiu o modelo de leaky integrator: x(t+1) = (1 − a) · x(t) + a · tanh(Win · [1; u(t+1)] + W · x(t))."
+        },
+        {
+          "local": "P_atual0498",
+          "chamada": "Jaeger (2001, 2007)",
+          "contexto": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados."
+        },
+        {
+          "local": "T_atual2/L15/C0/P0",
+          "chamada": "Jaeger (2007)",
+          "contexto": "Jaeger (2007)"
+        },
+        {
+          "local": "T_atual13/L1/C1/P0",
+          "chamada": "Jaeger (2001, 2007)",
+          "contexto": "Jaeger (2001, 2007)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D15",
+      "arquivo_fonte": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_fonte": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "titulo_registro_historico": "Echo state network",
+      "ano_registro_historico": 2007,
+      "evidencias_matriz": [
+        {
+          "fonte": "D15",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 1–3, definição e treinamento da ESN",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D15"
+            }
+          ]
+        },
+        {
+          "fonte": "D15",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "S",
+          "localizador_matriz": "PDF 4–5, Practical issues",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D15"
+            }
+          ]
+        },
+        {
+          "fonte": "D15",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 1–9, sobretudo 2–5",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D15"
+            }
+          ]
+        },
+        {
+          "fonte": "D15",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 1–9, sobretudo 2 e 5",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D15"
+            }
+          ]
+        },
+        {
+          "fonte": "D15",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 1–2, demonstração",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R29",
+      "referencia_atual": "KUMAR, K. Forecasting Crude Oil Prices Using Reservoir Computing Models. Computational Economics, v. 66, p. 2543-2563, 2025. DOI: 10.1007/s10614-024-10797-w.",
+      "ano_citado": "2025",
+      "ocorrencias": [
+        {
+          "local": "P_atual0200",
+          "chamada": "Kumar (2025)",
+          "contexto": "Kumar (2025) realiza comparação empírica entre ARIMA, LSTM, GRU e modelos de Reservoir Computing aplicados à previsão de preços do petróleo, quantificando vantagens e desvantagens de cada abordagem frente a séries voláteis e sinalizando o paradigma de reservatório como alternativa competitiva."
+        },
+        {
+          "local": "P_atual0256",
+          "chamada": "Kumar (2025)",
+          "contexto": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo."
+        },
+        {
+          "local": "T_atual2/L16/C0/P0",
+          "chamada": "Kumar (2025)",
+          "contexto": "Kumar (2025)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D16",
+      "arquivo_fonte": "Artigos citados\\Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256_fonte": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "titulo_registro_historico": "Forecasting Crude Oil Prices Using Reservoir Computing Models",
+      "ano_registro_historico": 2025,
+      "evidencias_matriz": [
+        {
+          "fonte": "D16",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 13–14, definição da ESN e equações 16–17",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D16_kumar.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D16",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 16, seção 4.1.4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D16_kumar.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D16",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 8, seção 3.2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D16_kumar.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D16",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 16–17, seção 4.2 e Tabela 3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D16_kumar.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D16",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 7–8 e 16–17",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D16_kumar.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R30",
+      "referencia_atual": "LAMPUGNANI, M. T. Alteração das distribuições de probabilidade dos pesos de entrada da Echo State Network para previsão do preço de ações. 2026. Monografia (Bacharelado em Engenharia de Software) - Universidade de Rio Verde, Rio Verde, 2026.",
+      "ano_citado": "2026",
+      "ocorrencias": [
+        {
+          "local": "P_atual0067",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Tabela 7 – Comparação descritiva com Lampugnani (2026)\t62"
+        },
+        {
+          "local": "P_atual0226",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "A GED é parametrizada por um coeficiente de forma ν: para ν = 2, recupera-se a distribuição Normal; para ν = 1, a Laplace; para valores ν < 2, as caudas tornam-se mais pesadas que as da Normal, captando com maior flexibilidade eventos extremos típicos dos mercados financeiros. Lampugnani (2026), em versão de Trabalho Final de Curso disponibilizada ao autor, apresentou resultados competitivos com distribuições alternativas na predição de preços da PETR4. O trabalho foi utilizado como referência acadêmica correlata e como elemento complementar de comparação dos resultados."
+        },
+        {
+          "local": "P_atual0242",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Entre os artigos do portfólio formal, foi identificado um subconjunto diretamente relacionado a ESNs, otimização, inicialização probabilística e aplicações financeiras; adicionalmente, a monografia de Lampugnani (2026) é considerada separadamente como referência acadêmica correlata."
+        },
+        {
+          "local": "P_atual0246",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Como referência acadêmica correlata, Lampugnani (2026) investigou diferentes distribuições probabilísticas aplicadas aos pesos de uma ESN na previsão da PETR4. Por se tratar de monografia e não de artigo do portfólio formal, o estudo foi considerado separadamente na revisão e utilizado também na comparação descritiva apresentada nos resultados."
+        },
+        {
+          "local": "P_atual0260",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG."
+        },
+        {
+          "local": "P_atual0264",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Lampugnani (2026) é discutido separadamente e não integra os 34 documentos da matriz. As dimensões são: P1 lei probabilística ligada à geração de Win ou W; P2 procedimento de seleção de hiperparâmetros de ESN/RC; P3 preparação concreta de séries temporais, incluindo transformações e construção de atributos ou janelas; P4 comparação quantitativa de previsão com LSTM, GRU ou Transformer; e P5 mercado e ativo identificados. A codificação distingue aplicações próprias de tratamentos secundários e registra informação insuficiente, sem pressupor que todos os temas sejam aplicáveis a cada fonte."
+        },
+        {
+          "local": "P_atual0450",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Os resultados foram contextualizados pela monografia de Lampugnani (2026), que investigou ESNs com Algoritmo Genético na PETR4 e apresentou erros de teste para diferentes combinações de distribuições. A Tabela 7 reúne os menores erros documentados em cada trabalho. Trata-se de comparação entre estudos, sem execução de ambos sob um protocolo comum."
+        },
+        {
+          "local": "P_atual0452",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Tabela 7 – Comparação descritiva com Lampugnani (2026)"
+        },
+        {
+          "local": "P_atual0453",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Fonte: Elaborado pelo autor (2026), com base nas tabelas de resultados de Lampugnani (2026) e nos resultados desta pesquisa. Os mínimos de MAE e RMSE podem corresponder a configurações distintas."
+        },
+        {
+          "local": "P_atual0454",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Os menores MAE e RMSE documentados nesta pesquisa são numericamente inferiores aos mínimos apresentados por Lampugnani (2026). Essa comparação descritiva não demonstra superioridade sob condições equivalentes: não foi executado um contraste conjunto com os mesmos dados de entrada, pesos, sementes e orçamento de otimização. As diferenças entre os estudos não identificam o efeito de um componente isolado."
+        },
+        {
+          "local": "P_atual0455",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Lampugnani (2026) declara não realizar tratamento adicional dos dados. Essa declaração não comprova que os valores recebidos fossem desprovidos de ajuste corporativo. Nesta pesquisa, os modelos também receberam arquivos identificados como previamente ajustados. Sem a cadeia de preparação de ambas as séries e uma comparação controlada, não se atribui a diferença de erro ao Fator de Ajuste, ao LHS ou ao mecanismo cataclísmico."
+        },
+        {
+          "local": "P_atual0470",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Entre as configurações avaliadas, Laplace × Normal apresentou o menor MAE, enquanto Laplace × Cauchy apresentou o menor RMSE e o maior R². Na maior parte das execuções documentadas, as ESNs obtiveram MAE menor que os baselines LSTM e GRU definidos no protocolo. A comparação documental com Lampugnani (2026) contextualizou os erros, sem transformar protocolos distintos em um experimento comum."
+        },
+        {
+          "local": "P_atual0489",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Os quatro testes de Diebold-Mariano rejeitaram a hipótese de igualdade de acurácia preditiva a 5%, sempre com menor perda média para a ESN na rodada controlada. Essa inferência não se estende aos resultados históricos de outras sementes. A comparação com Lampugnani (2026) permaneceu descritiva, sem tratar protocolos distintos como equivalentes."
+        },
+        {
+          "local": "P_atual0498",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados."
+        },
+        {
+          "local": "T_atual12/L1/C0/P0",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Lampugnani (2026)"
+        },
+        {
+          "local": "T_atual13/L2/C1/P0",
+          "chamada": "Lampugnani (2026)",
+          "contexto": "Araújo et al. (2025); Cardoso (2025); Lampugnani (2026)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R31",
+      "referencia_atual": "LIU, B.; XIE, Y.; JIANG, X.; YE, Y.; SONG, T.; CHAI, J.; TANG, Q.; FENG, M. Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators. Optics Express, v. 30, n. 13, p. 23359-23381, 2022. DOI: 10.1364/OE.454973.",
+      "ano_citado": "2022",
+      "ocorrencias": [
+        {
+          "local": "P_atual0209",
+          "chamada": "Liu et al. (2022)",
+          "contexto": "Liu et al. (2022) avaliaram, por simulação numérica, um sistema nanofotônico de Computação de Reservatório para índices de mercados chineses, norte-americano e britânico. Os autores observaram previsões conservadoras, mas também maiores erros nos pontos de flutuação intensa, discutidos como efeito de ancoragem nos dados históricos. Os resultados caracterizam as condições do sistema estudado e não demonstram imunidade a mudanças de regime nem superioridade geral sobre implementações de software em tempo real."
+        },
+        {
+          "local": "T_atual1/L4/C2/P0",
+          "chamada": "Liu et al. (2022)",
+          "contexto": "Separa comparações próprias com LSTM/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S."
+        },
+        {
+          "local": "T_atual2/L17/C0/P0",
+          "chamada": "Liu B. et al. (2022)",
+          "contexto": "Liu B. et al. (2022)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D18",
+      "arquivo_fonte": "Artigos citados\\Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+      "sha256_fonte": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac",
+      "titulo_registro_historico": "Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators",
+      "ano_registro_historico": 2022,
+      "evidencias_matriz": [
+        {
+          "fonte": "D18",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 3, sistema e máscara",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D18",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 7–8 e 10–13, seção 4.3 e figuras 4–5",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D18",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 6, equação 7",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D18",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "S",
+          "localizador_matriz": "PDF 14, discussão e Table 6 indicada",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D18",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 6, seção 3.1 e Tabela 2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R32",
+      "referencia_atual": "LIU, H.; LIN, Z.; ROJAS, R. R. Enhancing Trading Performance Through Sentiment Analysis with Large Language Models: Evidence from the S&P 500. 2025. (Preprint arXiv:2507.09739).",
+      "ano_citado": "2025",
+      "ocorrencias": [
+        {
+          "local": "P_atual0189",
+          "chamada": "Liu, Lin e Rojas (2025)",
+          "contexto": "Liu, Lin e Rojas (2025) integraram indicadores técnicos, modelos temporais e análise de sentimentos com modelos de linguagem de grande escala (Large Language Models – LLMs), incluindo FinBERT e GPT-2, em estratégias associadas ao índice Standard and Poor’s (S&P) 500. O FinBERT atingiu 75,56% de acurácia na classificação de sentimento das notícias da Benzinga, em uma tarefa de processamento de linguagem natural (Natural Language Processing – NLP). O estudo também associou notícias a classes de retorno do índice; essa acurácia não comprova previsão fora da amostra da direção futura."
+        },
+        {
+          "local": "T_atual2/L18/C0/P0",
+          "chamada": "Liu, Lin e Rojas (2025)",
+          "contexto": "Liu, Lin e Rojas (2025)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D17",
+      "arquivo_fonte": "Artigos citados\\Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+      "sha256_fonte": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+      "titulo_registro_historico": "Enhancing Trading Performance Through Sentiment Analysis with Large Language Models: Evidence from the S&P 500",
+      "ano_registro_historico": 2025,
+      "evidencias_matriz": [
+        {
+          "fonte": "D17",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 21/28, tipos de modelos e tabelas",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_lin_rojas_lote19.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D17",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 21/28",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_lin_rojas_lote19.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D17",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 8–9, seções 2.2–2.4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_lin_rojas_lote19.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D17",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 21 e 23, tabelas 1–5 e discussão",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_lin_rojas_lote19.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D17",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "Título; PDF 8–9 e 21",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_lin_rojas_lote19.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R33",
+      "referencia_atual": "MCKAY, M. D.; BECKMAN, R. J.; CONOVER, W. J. A comparison of three methods for selecting values of input variables in the analysis of output from a computer code. Technometrics, v. 21, n. 2, p. 239-245, 1979. DOI: 10.1080/00401706.1979.10489755.",
+      "ano_citado": "1979",
+      "ocorrencias": [
+        {
+          "local": "P_atual0325",
+          "chamada": "McKay, Beckman e Conover (1979)",
+          "contexto": "Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1975). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979)."
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R34",
+      "referencia_atual": "MILLEA, A. Explorations in echo state networks. 2014. Dissertação (Mestrado em Ciência da Computação) – University of Groningen, Holanda, 2014.",
+      "ano_citado": "2014",
+      "ocorrencias": [
+        {
+          "local": "P_atual0216",
+          "chamada": "Millea (2014)",
+          "contexto": "Millea (2014) investigou matrizes ortonormais e matrizes aleatórias reescaladas em ESNs aplicadas ao problema de múltiplos osciladores sobrepostos. Os experimentos mostraram que conectividade, tamanho da rede e inicialização alteram o espaço de soluções. A significância das diferenças dependeu do limiar de erro avaliado. Esses resultados motivam documentar a inicialização, sem demonstrar uma vantagem universal das matrizes ortonormais em séries financeiras."
+        },
+        {
+          "local": "P_atual0223",
+          "chamada": "Millea (2014)",
+          "contexto": "A inicialização dos pesos participa da construção da dinâmica de uma ESN e deve ser descrita de forma que permita examinar a configuração utilizada. Millea (2014) investigou matrizes aleatórias e ortonormais em problemas de osciladores sobrepostos. Esse trabalho oferece evidência sobre condições específicas de inicialização, sem quantificar a proporção de estudos financeiros que adotam cada distribuição. A frequência dessas escolhas no portfólio depende de critérios explícitos de extração."
+        },
+        {
+          "local": "T_atual2/L19/C0/P0",
+          "chamada": "Millea (2014)",
+          "contexto": "Millea (2014)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D19",
+      "arquivo_fonte": "Artigos citados\\Millea - Explorations in Echo State Network.pdf",
+      "sha256_fonte": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+      "titulo_registro_historico": "Explorations in echo state networks",
+      "ano_registro_historico": 2014,
+      "evidencias_matriz": [
+        {
+          "fonte": "D19",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 28 e 31, seção 3.3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\checkpoint_lote21.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D19",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 30–31, Tabela 3.2 e experimentos",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\checkpoint_lote21.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D19",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 47–48, 63–68, benchmarks e dados",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\checkpoint_lote21.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D19",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 30, tabela 3.1 e discussão de Evolino",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\checkpoint_lote21.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D19",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 3, resumo; PDF 64–83, experimentos e Tabela 6.1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\checkpoint_lote21.json",
+              "campo": "celulas_revalidadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R35",
+      "referencia_atual": "NELSON, D. B. Conditional Heteroskedasticity in Asset Returns: A New Approach. Econometrica, v. 59, n. 2, p. 347-370, mar. 1991.",
+      "ano_citado": "1991",
+      "ocorrencias": [
+        {
+          "local": "P_atual0224",
+          "chamada": "Nelson, 1991",
+          "contexto": "A ocorrência de caudas pesadas em retornos financeiros motiva o exame de distribuições além da Normal (Nelson, 1991). Entretanto, a distribuição dos retornos observados e a lei usada para gerar pesos de uma ESN são objetos distintos. A adoção de distribuições alternativas nos pesos constitui uma hipótese de modelagem desta pesquisa; sua pertinência deve ser avaliada pelos resultados preditivos e não decorre automaticamente da semelhança entre suas caudas e as dos dados."
+        },
+        {
+          "local": "P_atual0225",
+          "chamada": "Nelson (1991)",
+          "contexto": "Nelson (1991) empregou a Distribuição Generalizada de Erro (Generalized Error Distribution – GED) na modelagem de retornos com heterocedasticidade condicional, no contexto do modelo exponencial autorregressivo de heterocedasticidade condicional generalizada (Exponential Generalized Autoregressive Conditional Heteroskedasticity – EGARCH). A família permite representar caudas mais pesadas ou mais leves que as da Normal. Essa aplicação fundamenta sua flexibilidade em finanças, sem estabelecer prioridade histórica absoluta nem validar sua transferência para os pesos de ESNs."
+        },
+        {
+          "local": "T_atual2/L20/C0/P0",
+          "chamada": "Nelson (1991)",
+          "contexto": "Nelson (1991)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D20",
+      "arquivo_fonte": "Artigos citados\\Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+      "sha256_fonte": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+      "titulo_registro_historico": "Conditional Heteroskedasticity in Asset Returns: A New Approach",
+      "ano_registro_historico": 1991,
+      "evidencias_matriz": [
+        {
+          "fonte": "D20",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 7–8 e 11",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D20",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 11, impressa 356",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D20",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 11, impressa 356 e nota 12",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D20",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 11 e 13–15",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D20",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 11, impressa 356; PDF 15, Figura 3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R36",
+      "referencia_atual": "PAGANI, R. N.; KOVALESKI, J. L.; RESENDE, L. M. M. Methodi Ordinatio: a proposed methodology to select and rank relevant scientific papers encompassing the impact factor, number of citation, and year of publication. Scientometrics, v. 105, p. 2109-2135, 2015. DOI: 10.1007/s11192-015-1744-x.",
+      "ano_citado": "2015",
+      "ocorrencias": [
+        {
+          "local": "P_atual0360",
+          "chamada": "Pagani; Kovaleski; Resende, 2015",
+          "contexto": "O Methodi Ordinatio (Pagani; Kovaleski; Resende, 2015) foi considerado na organização inicial do levantamento. A planilha contém fórmulas com alfa igual a 5 e ano de referência 2026, mas seus indicadores e decisões não documentam uma aplicação concluída do método à coleção final. Assim, as pontuações não são usadas para justificar a inclusão ou estabelecer a relevância relativa dos 34 documentos. Os registros originais são preservados como documentação intermediária do processo."
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "suplementar",
+      "nota": "Consultar registros específicos de leitura; correspondência autor–ano não prova conteúdo nem acesso integral."
+    },
+    {
+      "id": "R37",
+      "referencia_atual": "PING, Tongji. Forecasting Financial Market Volatility: Methodologies, Challenges, and Implications. Journal of Stock & Forex Trading, v. 10, n. 2, art. 239, 2023. DOI: 10.35248/2168-9458.23.10.239.",
+      "ano_citado": "2023",
+      "ocorrencias": [
+        {
+          "local": "P_atual0185",
+          "chamada": "Ping (2023)",
+          "contexto": "Ping (2023) discute a previsão de volatilidade como apoio à avaliação de riscos, à precificação de opções e à alocação de ativos. Essa discussão trata da incerteza das variações de preços e não comprova a rentabilidade de um modelo de previsão do fechamento. Nesta pesquisa, o objeto é a predição de um passo à frente da PETR4, sob as condições experimentais descritas."
+        },
+        {
+          "local": "T_atual2/L21/C0/P0",
+          "chamada": "Ping (2023)",
+          "contexto": "Ping (2023)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D21",
+      "arquivo_fonte": "Artigos citados\\Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+      "sha256_fonte": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+      "titulo_registro_historico": "Forecasting Financial Market Volatility: Methodologies, Challenges, and Implications",
+      "ano_registro_historico": 2023,
+      "evidencias_matriz": [
+        {
+          "fonte": "D21",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 1–2",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D21"
+            }
+          ]
+        },
+        {
+          "fonte": "D21",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 1–2",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D21"
+            }
+          ]
+        },
+        {
+          "fonte": "D21",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 1–2, texto completo de duas páginas",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D21"
+            }
+          ]
+        },
+        {
+          "fonte": "D21",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 1–2, texto completo de duas páginas",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D21"
+            }
+          ]
+        },
+        {
+          "fonte": "D21",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 1–2, texto completo de duas páginas",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R38",
+      "referencia_atual": "RIBEIRO, G. T.; SANTOS, A. A. P.; MARIANI, V. C.; COELHO, L. S. Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility. Expert Systems with Applications, v. 184, art. 115490, 2021. DOI: 10.1016/j.eswa.2021.115490.",
+      "ano_citado": "2021",
+      "ocorrencias": [
+        {
+          "local": "P_atual0207",
+          "chamada": "Ribeiro et al. (2021)",
+          "contexto": "Ribeiro et al. (2021) combinaram o modelo autorregressivo heterogêneo (Heterogeneous Autoregressive – HAR), PSO e ESN no HAR-PSO-ESN. O estudo previu volatilidades realizadas diárias de CAT, EBAY e MSFT, construídas a partir de retornos intradiários de cinco minutos. Foram avaliados horizontes de um, cinco e 21 dias, com ARIMA, HAR, MLP e variantes ESN como comparadores. Esses experimentos oferecem uma aplicação financeira da combinação, sem demonstrar vantagem universal nem transformar volatilidade observada em comprovação de caos."
+        },
+        {
+          "local": "P_atual0232",
+          "chamada": "Ribeiro et al. (2021)",
+          "contexto": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan, Suresh e Chandrasekar (2025) geram as entradas não nulas de Win por amostragem Uniforme(-1,1), seguida de escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos."
+        },
+        {
+          "local": "P_atual0247",
+          "chamada": "Ribeiro et al. (2021)",
+          "contexto": "Ribeiro et al. (2021) propuseram o HAR-PSO-ESN para prever volatilidade realizada de CAT, EBAY e MSFT, combinando atributos do modelo HAR, ESN e seleção de hiperparâmetros por PSO. Os pesos de entrada, recorrentes e de realimentação foram inicializados com distribuição Uniforme. O modelo apresentou melhores resultados na maioria dos casos estudados, com comparações por Friedman e Nemenyi. Essa evidência se refere à combinação avaliada, sem estabelecer superioridade universal ou isolar o efeito de leis alternativas de inicialização."
+        },
+        {
+          "local": "T_atual2/L29/C0/P0",
+          "chamada": "Ribeiro et al. (2021)",
+          "contexto": "Ribeiro et al. (2021)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D29",
+      "arquivo_fonte": "Artigos citados\\Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256_fonte": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "titulo_registro_historico": "Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility",
+      "ano_registro_historico": 2021,
+      "evidencias_matriz": [
+        {
+          "fonte": "D29",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 4, seção 3.2.4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D29",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 8, seção 4.4",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D29",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 6–8, seções 4.1–4.3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D29",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 7–10, seção 4.5 e tabelas 3–6",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/leituras_abebe_ribeiro_lote14_parcial.json",
+              "campo": "ribeiro_P4"
+            }
+          ]
+        },
+        {
+          "fonte": "D29",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 6, seção 4.1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R39",
+      "referencia_atual": "SEDDIK, S.; ROUTAIB, H.; ELHADDADI, A. Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System. International Journal of Computational Methods and Experimental Measurements, v. 11, n. 4, p. 193-203, 2023. DOI: 10.18280/ijcmem.110401.",
+      "ano_citado": "2023",
+      "ocorrencias": [
+        {
+          "local": "P_atual0212",
+          "chamada": "Seddik, Routaib e Elhaddadi (2023)",
+          "contexto": "Hassaan, Yacoub e Said (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik, Routaib e Elhaddadi (2023) investigaram uma ESN em trajetórias simuladas de Lorenz, com condições iniciais associadas ao Bitcoin. O texto menciona uma série decimada, sem detalhar o procedimento. As métricas avaliam trajetórias geradas, não previsões de preços observados, e não isolam o efeito da distribuição dos pesos iniciais."
+        },
+        {
+          "local": "T_atual2/L22/C0/P0",
+          "chamada": "Seddik, Routaib e Elhaddadi (2023)",
+          "contexto": "Seddik, Routaib e Elhaddadi (2023)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D22",
+      "arquivo_fonte": "Artigos citados\\Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_fonte": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "titulo_registro_historico": "Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System",
+      "ano_registro_historico": 2023,
+      "evidencias_matriz": [
+        {
+          "fonte": "D22",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 2–5, definições e método",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chaos_lote4.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D22",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 6, Number of Neurons",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chaos_lote4.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D22",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF7, coluna esquerda, parágrafo sobre a série U2; conferido no PNG.",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chaos_lote4.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D22",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 2–5 e 8, literatura e comparação experimental",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chaos_lote4.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D22",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "S",
+          "localizador_matriz": "PDF 4 e 6; condições iniciais no parecer",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_chaos_lote4.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R40",
+      "referencia_atual": "SHARMA, M.; SARTOR, E.; CAVAZZA, M.; PRENDINGER, H. Echo State Networks for Bitcoin Time Series Prediction. arXiv, 2025. Preprint arXiv:2508.05416v1. DOI: 10.48550/arXiv.2508.05416.",
+      "ano_citado": "2025",
+      "ocorrencias": [
+        {
+          "local": "P_atual0213",
+          "chamada": "Sharma et al. (2025)",
+          "contexto": "Sharma et al. (2025) avaliaram ESNs para preços de Bitcoin, com XGBoost e previsão pelo último valor como comparadores. O estudo relacionou o erro ao caos estimado por expoentes de Lyapunov. O teste de Mann–Whitney comparou, entre grupos de menor e maior caos, a razão dos RMSEs da ESN e do XGBoost. Foi relatada diferença para janelas de treino de 30 e 60 dias, mas não de 15. Isso não demonstra superioridade estatística geral da ESN sobre ARIMA ou em todos os períodos."
+        },
+        {
+          "local": "P_atual0234",
+          "chamada": "Sharma et al. (2025)",
+          "contexto": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada."
+        },
+        {
+          "local": "P_atual0253",
+          "chamada": "Sharma et al. (2025)",
+          "contexto": "Sharma et al. (2025) empregaram otimização Bayesiana via Tree Parzen Estimator (TPE) na seleção de hiperparâmetros da ESN. A Tabela 1 do estudo apresenta as distribuições de amostragem dos hiperparâmetros, que não equivalem à lei de geração dos elementos de Win ou W. A avaliação usou janelas de treino de 15, 30 e 60 observações, teste de dez pontos e avanço de um ponto. Assim, esses tamanhos de treino não representam horizontes de previsão de 15, 30 e 60 dias."
+        },
+        {
+          "local": "P_atual0258",
+          "chamada": "Sharma et al. (2025)",
+          "contexto": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN."
+        },
+        {
+          "local": "T_atual2/L23/C0/P0",
+          "chamada": "Sharma et al. (2025)",
+          "contexto": "Sharma et al. (2025)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D23",
+      "arquivo_fonte": "Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_fonte": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "titulo_registro_historico": "Echo State Networks for Bitcoin Time Series Prediction",
+      "ano_registro_historico": 2025,
+      "evidencias_matriz": [
+        {
+          "fonte": "D23",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 5–7; conferência visual obrigatória da página 6",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_sharma_duttilo_lote7.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D23",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 8, seção 5, Hyperparameter Selection",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_sharma_duttilo_lote7.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D23",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 7–8, seção 4.3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_sharma_duttilo_lote7.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D23",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 9–12, resultados",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_sharma_duttilo_lote7.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D23",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 7–8, características e avaliação",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_sharma_duttilo_lote7.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R41",
+      "referencia_atual": "SOLTANI, R.; BENMOHAMED, E.; LTIFI, H. Echo State Network Optimization: A Systematic Literature Review. Research Square, versão 1, 4 ago. 2022. Preprint. DOI: 10.21203/rs.3.rs-1909702/v1.",
+      "ano_citado": "2022",
+      "ocorrencias": [
+        {
+          "local": "P_atual0220",
+          "chamada": "Soltani, Benmohamed e Ltifi (2022)",
+          "contexto": "Soltani, Benmohamed e Ltifi (2022), na versão preliminar consultada, revisaram 74 estudos sobre otimização de ESNs. A Tabela 5 relaciona PSO a 16 trabalhos e AG a dez, além de outras técnicas bio-inspiradas e não bio-inspiradas. Essas frequências descrevem o emprego dos métodos na coleção dos autores; não constituem uma classificação de eficácia. A revisão discute custos, parâmetros e topologias, sem sustentar uma lacuna específica sobre distribuições de inicialização em aplicações financeiras."
+        },
+        {
+          "local": "P_atual0229",
+          "chamada": "Soltani, Benmohamed e Ltifi (2022)",
+          "contexto": "Dewick (2022) discute a modelagem de distribuições financeiras e sua relação com séries temporais. Essa discussão pertence à representação estatística dos dados, enquanto Soltani, Benmohamed e Ltifi (2022) examinam estratégias de otimização de ESNs. As duas frentes oferecem contexto para esta pesquisa, mas não demonstram, em conjunto, que uma distribuição de pesos deva reproduzir a distribuição dos retornos. A comparação entre inicializações é uma escolha experimental do presente trabalho."
+        },
+        {
+          "local": "P_atual0258",
+          "chamada": "Soltani, Benmohamed e Ltifi (2022)",
+          "contexto": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN."
+        },
+        {
+          "local": "T_atual2/L24/C0/P0",
+          "chamada": "Soltani, Benmohamed e Ltifi (2022)",
+          "contexto": "Soltani, Benmohamed e Ltifi (2022)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D24",
+      "arquivo_fonte": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_fonte": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "titulo_registro_historico": "Echo State Network Optimization: A Systematic Literature Review",
+      "ano_registro_historico": 2022,
+      "evidencias_matriz": [
+        {
+          "fonte": "D24",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 2–3 e 10–11, definição e tabela 6",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D24",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "S",
+          "localizador_matriz": "PDF 8 e 11–13",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D24",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 11–12, tabela 6 e benchmarks",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D24",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 8–12, síntese e benchmarks",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D24",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 12, figura 6 e descrição de datasets; figura conferida visualmente",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_dewick_nelson_soltani_lote8.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R42",
+      "referencia_atual": "SUDIATMIKA, I. P. G. A.; PUTRA, I M. Agus Wirahadi. Comparison of LSTM and GRU Models Performance in Forecasting Gold Prices: A Case Study Using Historical Data from Yahoo Finance. ARRUS Journal of Engineering and Technology, v. 4, n. 1, p. 157-165, 2024. DOI: 10.35877/jetech2760.",
+      "ano_citado": "2024",
+      "ocorrencias": [
+        {
+          "local": "P_atual0192",
+          "chamada": "Sudiatmika e Putra (2024)",
+          "contexto": "As Redes Neurais Recorrentes (RNRs) são uma classe de modelos para processar sequências. Sudiatmika e Putra (2024) descrevem um estado interno atualizado a cada passo a partir da entrada atual e do estado anterior. Em contraste com redes feedforward sem estado recorrente, essa organização permite incorporar o histórico da sequência ao cálculo das saídas. A aprendizagem de dependências longas, contudo, permanece condicionada à arquitetura e ao treinamento."
+        },
+        {
+          "local": "P_atual0194",
+          "chamada": "Sudiatmika e Putra (2024)",
+          "contexto": "As LSTMs utilizam portas para controlar a preservação, a atualização e o descarte de informação, enquanto as GRUs empregam uma estrutura simplificada de atualização e reinicialização do estado. Na revisão de Sudiatmika e Putra (2024), essa simplificação é associada a possíveis ganhos de eficiência e ao tratamento de sequências mais curtas. Trata-se de discussão de estudos anteriores; o experimento de previsão do ouro apresentado pelos autores compara erros, sem fornecer uma medição de tempo de treinamento."
+        },
+        {
+          "local": "T_atual2/L25/C0/P0",
+          "chamada": "Sudiatmika e Putra (2024)",
+          "contexto": "Sudiatmika e Putra (2024)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D25",
+      "arquivo_fonte": "Artigos citados\\Sudiatmika - Comparison of LSTM and GRU Models Performance.pdf",
+      "sha256_fonte": "610bedfb14458d480dfd1adb4e89a8ff39487fe2e9b5a7eb3411e87e519af1fc",
+      "titulo_registro_historico": "Comparison of LSTM and GRU Models Performance in Forecasting Gold Prices: A Case Study Using Historical Data from Yahoo Finance",
+      "ano_registro_historico": 2024,
+      "evidencias_matriz": [
+        {
+          "fonte": "D25",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 5–6, seção 3.1.6",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D25"
+            }
+          ]
+        },
+        {
+          "fonte": "D25",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 6–7, seção 3.1.7",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D25"
+            }
+          ]
+        },
+        {
+          "fonte": "D25",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 5, seções 3.1.4–3.1.5",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D25"
+            }
+          ]
+        },
+        {
+          "fonte": "D25",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 7, seção 4",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D25"
+            }
+          ]
+        },
+        {
+          "fonte": "D25",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 4, seção 3.1.1",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/achados_leituras_lote2.json",
+              "campo": "revalidacao_celulas.D25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R43",
+      "referencia_atual": "SUN, G.; LIN, J.; YANG, C.; YIN, X.; LI, Z.; GUO, P.; SUN, J.; FAN, X.; PAN, B. Stock Price Forecasting: An Echo State Network Approach. Computer Systems Science and Engineering, v. 36, n. 3, p. 509-520, 2021. DOI: 10.32604/csse.2021.014189.",
+      "ano_citado": "2021",
+      "ocorrencias": [
+        {
+          "local": "P_atual0205",
+          "chamada": "Sun et al. (2021)",
+          "contexto": "Sun et al. (2021) compararam uma ESN com uma LSTM simplificada na previsão do fechamento das ações da Kweichow Moutai e reportaram menores erros nas configurações examinadas. A fonte lista fechamento e fechamento ajustado como campos distintos, mas descreve os experimentos com preços de fechamento. Por isso, esse estudo não é tomado aqui como comprovação inequívoca de uso do fechamento ajustado nem como demonstração de superioridade sobre qualquer configuração LSTM."
+        },
+        {
+          "local": "P_atual0256",
+          "chamada": "Sun et al. (2021)",
+          "contexto": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo."
+        },
+        {
+          "local": "T_atual2/L26/C0/P0",
+          "chamada": "Sun et al. (2021)",
+          "contexto": "Sun et al. (2021)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D26",
+      "arquivo_fonte": "Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256_fonte": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "titulo_registro_historico": "Stock Price Forecasting: An Echo State Network Approach",
+      "ano_registro_historico": 2021,
+      "evidencias_matriz": [
+        {
+          "fonte": "D26",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 3, definição da ESN",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D26_sun.json",
+              "campo": "celulas"
+            }
+          ]
+        },
+        {
+          "fonte": "D26",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 5–7, experimento e configuração",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D26_sun.json",
+              "campo": "celulas"
+            }
+          ]
+        },
+        {
+          "fonte": "D26",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 4–7, coleta e dataset",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D26_sun.json",
+              "campo": "celulas"
+            }
+          ]
+        },
+        {
+          "fonte": "D26",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 6 e 8, seção 3.3, Tabelas 2–3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D26_sun.json",
+              "campo": "celulas"
+            }
+          ]
+        },
+        {
+          "fonte": "D26",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 5, seção 3.1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leitura_D26_sun.json",
+              "campo": "celulas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R44",
+      "referencia_atual": "TIAN, Z.; PEI, L. Stocks price prediction based on optimized echo state network by sparrow search algorithm. International Journal of Dynamics and Control, v. 12, p. 2764-2777, 2024. DOI: 10.1007/s40435-024-01405-8.",
+      "ano_citado": "2024",
+      "ocorrencias": [
+        {
+          "local": "P_atual0217",
+          "chamada": "Tian e Pei (2024)",
+          "contexto": "Tian e Pei (2024) empregaram o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e MAPE."
+        },
+        {
+          "local": "P_atual0250",
+          "chamada": "Tian e Pei (2024)",
+          "contexto": "Tian e Pei (2024) avaliaram uma ESN otimizada por SSA em dez ações dos Estados Unidos e dez da China. O estudo apresenta comparações com ESN, LSTM e redes BP e Elman. Os resultados de erro favorecem o modelo proposto nas condições examinadas, mas não estabelecem uma garantia geral de superioridade nem isolam o efeito de uma família probabilística dos pesos. A geração aleatória das matrizes não deve ser confundida com sua especificação estatística completa."
+        },
+        {
+          "local": "P_atual0258",
+          "chamada": "Tian e Pei (2024)",
+          "contexto": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN."
+        },
+        {
+          "local": "T_atual2/L27/C0/P0",
+          "chamada": "Tian e Pei (2024)",
+          "contexto": "Tian e Pei (2024)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D27",
+      "arquivo_fonte": "Artigos citados\\Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_fonte": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "titulo_registro_historico": "Stocks price prediction based on optimized echo state network by sparrow search algorithm",
+      "ano_registro_historico": 2024,
+      "evidencias_matriz": [
+        {
+          "fonte": "D27",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 3–5, ESN e SSA",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_tian_deng_lote9.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D27",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 4, seção 2.3; PDF 6, Tabela 3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_tian_deng_lote9.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D27",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 4–5, seções 2.3 e 3.2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_tian_deng_lote9.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D27",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 5–6, seções 3.3 e 5",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_tian_deng_lote9.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D27",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 5, Tabelas 1–2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_tian_deng_lote9.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R45",
+      "referencia_atual": "TIMBÓ, N. S.; LABIDI, S.; NASCIMENTO, T. P.; LIMA, M. L.; NUNES NETO, G.; MATOS, R. C. Approach Based on Linear Regression for Stock Exchange Prediction – Case Study of Petr4 Petrobrás, Brazil. International Journal of Artificial Intelligence & Applications (IJAIA), v. 7, n. 1, p. 21-31, jan. 2016. DOI: 10.5121/ijaia.2016.7103.",
+      "ano_citado": "2016",
+      "ocorrencias": [
+        {
+          "local": "P_atual0187",
+          "chamada": "Timbó et al. (2016)",
+          "contexto": "Timbó et al. (2016) aplicaram regressão linear à previsão do fechamento da PETR4 e selecionaram indicadores com apoio da correlação de Pearson. O estudo avaliou o acerto das previsões por uma tolerância absoluta de 0,50 em relação ao fechamento observado. Esse critério mede proximidade de preços e não deve ser interpretado como taxa de acerto da direção da variação do ativo."
+        },
+        {
+          "local": "T_atual2/L28/C0/P0",
+          "chamada": "Timbó et al. (2016)",
+          "contexto": "Timbó et al. (2016)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D28",
+      "arquivo_fonte": "Artigos citados\\Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256_fonte": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "titulo_registro_historico": "Approach Based on Linear Regression for Stock Exchange Prediction – Case Study of Petr4 Petrobrás, Brazil",
+      "ano_registro_historico": 2016,
+      "evidencias_matriz": [
+        {
+          "fonte": "D28",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 6, método de mineração",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ecer_timbo_lote10.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D28",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 6, método de mineração",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ecer_timbo_lote10.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D28",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 4–5, processo KDD e Tabela 2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ecer_timbo_lote10.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D28",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 5–7, seleção e regressão",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ecer_timbo_lote10.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D28",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 4 e 6–7",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ecer_timbo_lote10.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R46",
+      "referencia_atual": "VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, n. 4, p. 204-229, 2025. DOI: 10.21595/mme.2025.24861.",
+      "ano_citado": "2025",
+      "ocorrencias": [
+        {
+          "local": "P_atual0183",
+          "chamada": "Vishwas, Usha e Sangeetha (2025)",
+          "contexto": "Vishwas, Usha e Sangeetha (2025) revisam métodos de inteligência artificial aplicados à previsão de preços e tendências de ações. Os desafios discutidos incluem qualidade dos dados, não estacionariedade, sobreajuste, interpretabilidade e custo computacional. A revisão também aborda requisitos de infraestrutura e latência em aplicações de tempo real."
+        },
+        {
+          "local": "P_atual0196",
+          "chamada": "Vishwas, Usha e Sangeetha (2025)",
+          "contexto": "Vishwas, Usha e Sangeetha (2025) discutem custo computacional e latência como desafios para aplicações financeiras em tempo real. Esse tratamento é qualitativo: não estabelece um limite universal de treinamento nem demonstra que a retropropagação, por si só, inviabilize LSTM ou GRU. Nesta pesquisa, a análise de eficiência depende dos tempos medidos e da distinção entre ajuste do modelo e busca de hiperparâmetros."
+        },
+        {
+          "local": "P_atual0257",
+          "chamada": "Vishwas, Usha e Sangeetha (2025)",
+          "contexto": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas, Usha e Sangeetha (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros."
+        },
+        {
+          "local": "T_atual2/L30/C0/P0",
+          "chamada": "Vishwas, Usha e Sangeetha (2025)",
+          "contexto": "Vishwas, Usha e Sangeetha (2025)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D30",
+      "arquivo_fonte": "Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+      "sha256_fonte": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+      "titulo_registro_historico": "Artificial intelligence-based stock market price prediction, a review",
+      "ano_registro_historico": 2025,
+      "evidencias_matriz": [
+        {
+          "fonte": "D30",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 8, discussão de SSA-ESN",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/conferencia_matriz_vishwas_lote31.json",
+              "campo": "P1"
+            }
+          ]
+        },
+        {
+          "fonte": "D30",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "S",
+          "localizador_matriz": "PDF 10 e 12",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/conferencia_matriz_vishwas_lote31.json",
+              "campo": "P2"
+            }
+          ]
+        },
+        {
+          "fonte": "D30",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "S",
+          "localizador_matriz": "PDF 8 e 15–16",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/conferencia_matriz_vishwas_lote31.json",
+              "campo": "P3"
+            }
+          ]
+        },
+        {
+          "fonte": "D30",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 2, 8 e 17; páginas 2 e 17 conferidas visualmente",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/conferencia_matriz_vishwas_lote31.json",
+              "campo": "P4"
+            }
+          ]
+        },
+        {
+          "fonte": "D30",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "S",
+          "localizador_matriz": "PDF 14, Tabela 1",
+          "registros": [
+            {
+              "arquivo": "reports/fechamento_integral_20261029/conferencia_matriz_vishwas_lote31.json",
+              "campo": "P5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R47",
+      "referencia_atual": "WANG, F.; BU, T.; HUANG, Y. Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing. International Journal of Computational Intelligence Systems, v. 18, art. 180, 2025. DOI: 10.1007/s44196-025-00906-4.",
+      "ano_citado": "2025",
+      "ocorrencias": [
+        {
+          "local": "P_atual0208",
+          "chamada": "Wang, Bu e Huang (2025)",
+          "contexto": "Wang, Bu e Huang (2025) avaliaram um sistema óptico de Computação de Reservatório com ponderação de atributos em sete séries de mercado, integrando dados de mercado e indicadores macroeconômicos e técnicos. O protocolo inclui modelos de aprendizado de máquina, entre eles LSTM, e apresenta o melhor comparador por horizonte de previsão. Os autores relatam ganhos nos horizontes de um, quatro e dez passos. A análise de atraso em trajetórias específicas não demonstra que a ponderação elimine atrasos em qualquer regime de mercado."
+        },
+        {
+          "local": "T_atual2/L31/C0/P0",
+          "chamada": "Wang, Bu e Huang (2025)",
+          "contexto": "Wang, Bu e Huang (2025)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D31",
+      "arquivo_fonte": "Artigos citados\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_fonte": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "titulo_registro_historico": "Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing",
+      "ano_registro_historico": 2025,
+      "evidencias_matriz": [
+        {
+          "fonte": "D31",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 3–4, equações 1–2 e montagem óptica",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_wang_bu_huang_lote16.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D31",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 3–5 e triagem dirigida das seções de resultados",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_wang_bu_huang_lote16.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D31",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 6–7, seção 3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_wang_bu_huang_lote16.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D31",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 5 e 8",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_wang_bu_huang_lote16.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D31",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 5, Tabela 1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_wang_bu_huang_lote16.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R48",
+      "referencia_atual": "WANG, W.; TANG, Y.; XIONG, J.; ZHANG, Y. Stock market index prediction based on reservoir computing models. Expert Systems with Applications, v. 178, art. 115022, 2021. DOI: 10.1016/j.eswa.2021.115022.",
+      "ano_citado": "2021",
+      "ocorrencias": [
+        {
+          "local": "P_atual0206",
+          "chamada": "Wang et al. (2021)",
+          "contexto": "Wang et al. (2021) avaliaram modelos de RC em sete índices internacionais e compararam suas previsões com RNRs, LSTM e modelos de outros estudos. O desempenho relativo variou conforme o índice e a métrica, sem domínio de uma arquitetura em todas as condições. Os autores exploraram topologias aleatórias, livres de escala e de pequeno mundo, juntamente com diferentes tamanhos de reservatório, janelas e taxas de aprendizado. Essa análise motiva examinar configurações de reservatório, sem isolar a topologia como causa preponderante do ganho preditivo."
+        },
+        {
+          "local": "P_atual0232",
+          "chamada": "Wang et al. (2021)",
+          "contexto": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan, Suresh e Chandrasekar (2025) geram as entradas não nulas de Win por amostragem Uniforme(-1,1), seguida de escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos."
+        },
+        {
+          "local": "P_atual0248",
+          "chamada": "Wang et al. (2021)",
+          "contexto": "Wang et al. (2021) avaliaram RC, LSTM e RNR em sete índices acionários, com topologias aleatórias, de pequeno mundo e livres de escala. A distribuição Uniforme foi usada nos pesos de entrada, enquanto a matriz do reservatório foi definida pela conectividade da rede gerada. A camada de saída foi ajustada por um otimizador iterativo, o que distingue esse protocolo da leitura Ridge empregada nesta pesquisa. O desempenho relativo variou entre índices e configurações; não se estabelece uma hierarquia geral das topologias."
+        },
+        {
+          "local": "P_atual0249",
+          "chamada": "Wang et al. (2021)",
+          "contexto": "Os resultados de Wang et al. (2021) mostram que modelos de RC podem ser competitivos com LSTM e RNR nas tarefas examinadas. A melhor topologia variou entre os índices. A análise constitui uma referência para comparar configurações de reservatório; ela não identifica uma distribuição de pesos universalmente adequada nem demonstra que a lei dos pesos deva coincidir com a distribuição dos retornos financeiros."
+        },
+        {
+          "local": "T_atual2/L32/C0/P0",
+          "chamada": "Wang W. et al. (2021)",
+          "contexto": "Wang W. et al. (2021)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D32",
+      "arquivo_fonte": "Artigos citados\\Wang W - Stock market index prediction based on reservoir computing models.pdf",
+      "sha256_fonte": "7485fa096c0855232ab45109b346462e14790d945c6f491dfbab2b26db63d761",
+      "titulo_registro_historico": "Stock market index prediction based on reservoir computing models",
+      "ano_registro_historico": 2021,
+      "evidencias_matriz": [
+        {
+          "fonte": "D32",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 7, seção 4.1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D32",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 7 e 11, configurações e Tabela 8",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D32",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 6, Figura 4; PDF 7, seção 4.1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D32",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 7, seção 4.3",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D32",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 11, conclusão e Tabela 8",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R49",
+      "referencia_atual": "XIAO, J.; DENG, T.; BI, S. Comparative Analysis of LSTM, GRU, and Transformer Models for Stock Price Prediction. In: INTERNATIONAL CONFERENCE ON DIGITAL ECONOMY, BLOCKCHAIN AND ARTIFICIAL INTELLIGENCE (DEBAI 2024), 2024, Guangzhou. Proceedings [...]. New York: ACM, 2024. p. 103-108. DOI: 10.1145/3700058.3700075.",
+      "ano_citado": "2024",
+      "ocorrencias": [
+        {
+          "local": "P_atual0190",
+          "chamada": "Xiao, Deng e Bi (2024)",
+          "contexto": "Xiao, Deng e Bi (2024) compararam LSTM, GRU e Transformer na previsão de preços da Tesla, sem investigar arquiteturas de reservatório. O artigo descreve preparação dos dados, mas sua Tabela 2 registra ausência de valores faltantes; esse relato não comprova uma avaliação de imputação. A diversidade de propostas com SVM, Aprendizado Profundo (Deep Learning – DL) e processamento de linguagem natural contextualiza a escolha das ESNs nesta pesquisa, cuja eficiência deve ser examinada no protocolo adotado."
+        },
+        {
+          "local": "P_atual0197",
+          "chamada": "Xiao, Deng e Bi (2024)",
+          "contexto": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores semelhantes de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo."
+        },
+        {
+          "local": "T_atual2/L33/C0/P0",
+          "chamada": "Xiao, Deng e Bi (2024)",
+          "contexto": "Xiao, Deng e Bi (2024)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D33",
+      "arquivo_fonte": "Artigos citados\\Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+      "sha256_fonte": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787",
+      "titulo_registro_historico": "Comparative Analysis of LSTM, GRU, and Transformer Models for Stock Price Prediction",
+      "ano_registro_historico": 2024,
+      "evidencias_matriz": [
+        {
+          "fonte": "D33",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 5, seção 3.2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D33",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "-",
+          "localizador_matriz": "PDF 5, seção 3.2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D33",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 4, seção 3.1 e Tabela 2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D33",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 5, Tabela 3; PDF 6, resultados",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D33",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 4, seção 3.1",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_liu_hariharan_xiao_lote12.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R50",
+      "referencia_atual": "ZHANG, H; ZHENG, M.; ZHANG, Y.; YU, X.; LI, W.; GAO, H. Application of ESN prediction model based on compressed sensing in stock market. Communications in Nonlinear Science and Numerical Simulation, v. 101, art. 105857, 2021. DOI: 10.1016/j.cnsns.2021.105857.",
+      "ano_citado": "2021",
+      "ocorrencias": [
+        {
+          "local": "P_atual0210",
+          "chamada": "Zhang et al. (2021)",
+          "contexto": "Zhang et al. (2021) propuseram uma ESN com sensoriamento compressivo (Compressed Sensing Echo State Network – CS-ESN), aplicada à representação dos estados do reservatório. Foram examinadas uma sequência logística e séries acionárias, comparando a ESN original à variante com compressão. Os autores relatam menores erros nas configurações estudadas. A redução da representação do reservatório não demonstra uma propriedade geral de preservação de picos ou da estrutura caótica de séries financeiras."
+        },
+        {
+          "local": "T_atual2/L34/C0/P0",
+          "chamada": "Zhang et al. (2021)",
+          "contexto": "Zhang et al. (2021)"
+        }
+      ],
+      "estado": "exige_confronto_do_contexto_nao_aprovado_automaticamente",
+      "fonte_id": "D34",
+      "arquivo_fonte": "Artigos citados\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_fonte": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "titulo_registro_historico": "Application of ESN prediction model based on compressed sensing in stock market",
+      "ano_registro_historico": 2021,
+      "evidencias_matriz": [
+        {
+          "fonte": "D34",
+          "dimensao": "P1",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 2–5 e 7–9; fluxogramas das páginas 4–5 conferidos visualmente",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D34",
+          "dimensao": "P2",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 7–9, OMP e configuração",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D34",
+          "dimensao": "P3",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 9 e 11, seções 4.1–4.2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D34",
+          "dimensao": "P4",
+          "codigo_matriz_atual": "?",
+          "localizador_matriz": "PDF 9–12, ESN versus CS-ESN; página 11 conferida visualmente",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        },
+        {
+          "fonte": "D34",
+          "dimensao": "P5",
+          "codigo_matriz_atual": "D",
+          "localizador_matriz": "PDF 11, seção 4.2",
+          "registros": [
+            {
+              "arquivo": "reports\\fechamento_integral_20261029\\leituras_ribeiro_wang_zhang_lote13.json",
+              "campo": "celulas_reexaminadas"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ocorrencias_adicionadas_manualmente": 6,
+  "conferencia_adicional": "Busca dirigida de ano seguido por p., par. ou Figura; correspondência manual das seis chamadas detectadas. Não exclui outros formatos não identificados.",
+  "conferencia_manual": {
+    "R22": "Epígrafe, parágrafo 1: expressão e data conferidas em https://www.washingtonpost.com/archive/opinions/1987/10/18/making-sense-of-natures-mess/09f82e1d-5e92-4abf-81ee-9a60f6de1f89/; data exibida 17 outubro 1987.",
+    "R06": "Página 203 do trabalho RBras conferida visualmente (PDF 7) para parâmetros; p. 202–205 confrontadas em leituras_bovdb_rbras_dados_lote5.json.",
+    "R10": "Referência às figuras e p. 90 da tese conferida em conferencia_cardoso_lote29.json."
+  },
+  "indice_antecessor": "indice_citacoes_atuais_lote38.json",
+  "contextos_alterados_desde_antecessor": [
+    [
+      "R02",
+      "P_atual0319"
+    ],
+    [
+      "R02",
+      "P_atual0330"
+    ],
+    [
+      "R06",
+      "P_atual0319"
+    ]
+  ],
+  "cruzamento_atual": "reports/correcao_parecer_integridade/cruzamento_lote36.json",
+  "nota_atualizacao": "Atualizacao dirigida dos contextos de paragrafos; nomes e estrutura das tabelas foram preservados pelo verificador da exportacao. As limitacoes originais do reconhecedor continuam vigentes."
+}

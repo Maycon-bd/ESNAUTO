@@ -1,0 +1,13 @@
+# Conferência de Araújo e codificação do ESNAUTO
+
+Base editorial: v005, SHA256 `2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b`. Cópia de trabalho após este lote: `05333a74f190adc9cf7cc18387b502e9ff2073021147a71195863a1555be2ddc`. O checkpoint é `checkpoint_lote6.json`; a cópia não é versão final liberada para português.
+
+A prova de autor de Araújo foi lida integralmente: 17 páginas, incluindo metadados e consultas editoriais. Foram abertas visualmente as páginas 1, 4, 7, 8 e 10–14. A identidade do PDF está em `leitura_D02_araujo_lote6.json`. Os metadados finais foram conferidos na [página oficial do editor](https://link.springer.com/chapter/10.1007/978-3-031-77738-7_26): a publicação online é de novembro de 2024, e a própria citação recomendada adota o ano da edição 2025. A leitura integral refere-se à prova local, sem presumir identidade com o texto final por assinatura.
+
+A prova descreve retornos de fechamento da ITSA4 e variâncias diárias. O rascunho agora distingue essa tarefa da previsão do preço ajustado da PETR4. Também reconhece expressamente que o antecedente empregou cromossomos de 55 bits. Os intervalos e os blocos de bits do Quadro 3 foram conferidos nos decodificadores locais; o artigo apresenta valores de execuções, que não devem ser tratados como limites de busca. A ponderação de 40% para treino e 60% para validação foi confirmada na prova e no fragmento de aptidão do código atual. Isso não demonstra identidade do código em todas as execuções históricas.
+
+As cinco células de Araújo foram revalidadas, sem recodificação: `? / D / D / ? / D`. Permanecem insuficientemente individualizadas as leis de Win/W, e não foi localizada na prova a comparação quantitativa qualificadora com LSTM, GRU ou Transformer. Essas duas perguntas já foram examinadas, e os sinais não são dois erros comprovados ou falta automática de leitura.
+
+Foram precisados dois parágrafos e uma célula do Quadro 3. O descarte inicial passou a ser descrito como exclusão de estados da estimação de Wout, sem prometer eliminação completa dos transientes. As tabelas de resultados experimentais foram preservadas. Nenhum modelo, busca genética ou teste DM foi executado.
+
+O PDF mantém 76 páginas. As cinco páginas diferentes foram abertas e inspecionadas; 71 são idênticas ao checkpoint anterior. As 45 verificações estruturais passaram. O cruzamento reconhece 50 referências e 152 chamadas sem órfãs nos padrões utilizados. Esses controles não substituem a conferência semântica. A meta continua ativa: demais fontes e afirmações, similaridade e requisitos do Guia ainda têm etapas de auditoria.

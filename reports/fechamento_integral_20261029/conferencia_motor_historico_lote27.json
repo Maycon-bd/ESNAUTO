@@ -1,0 +1,40 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_antes": "fb5e2653547af740b586a95aee3d93259745df36ebc4f7c61c7cd2047b3a1ce7",
+  "sha256_rascunho_apos_edicao": "bffe1d7e0559aa5790c34d6799a9e385f511ab61c9853ff8669b5c104a0e275f",
+  "ancora": "3.8.4 Procedimento de re-execução dos experimentos",
+  "antes": "As execuções oficiais foram realizadas em rotinas automatizadas em lote, utilizando o mesmo motor empregado pela interface Shiny. O conjunto final compreendeu 45 execuções de produção, organizadas em cinco ondas, com limite de 10.000 gerações por rodada. O lote reduzido de 12 cenários e 200 gerações pertenceu à prototipação e não integra as 45 execuções de produção; seus registros preservados são utilizados somente nas ilustrações complementares das Figuras 5 e 6.",
+  "depois": "Os relatórios consolidados associam as execuções oficiais ao motor com LHS e mecanismo antiestagnação. O projeto também contém uma interface Shiny e rotinas em lote; contudo, a correspondência do código preservado com cada execução histórica não pôde ser verificada individualmente. Segundo esses relatórios, o conjunto final compreendeu 45 execuções de produção, organizadas em cinco ondas, com limite de 10.000 gerações por rodada. O lote reduzido de 12 cenários e 200 gerações pertenceu à prototipação e não integra as 45 execuções de produção; seus registros preservados são utilizados somente nas ilustrações complementares das Figuras 5 e 6.",
+  "evidencia": [
+    {
+      "arquivo": "docs/08_comparativo_quatro_ondas_estocasticas.md",
+      "sha256": "037251565c8be1f2edddbcdbb2227bec1cba6793095c669ad335277191208511",
+      "achado": "Relatório consolidado declara 30 rodadas, LHS, cataclismo e teto de 10.000 gerações."
+    },
+    {
+      "arquivo": "docs/09_onda_5_ajustes_empiricos_easyfit.md",
+      "sha256": "6216f5788b3e14eabf405693c2d8e9f68bc36c6839c9a7baa1f0450ad388e7e6",
+      "achado": "Relatório consolidado declara 15 rodadas, LHS, cataclismo e teto de 10.000 gerações."
+    },
+    {
+      "arquivo": "Scripts/onda5_easyfit_simulations.R",
+      "sha256": "e7e304de52f0ea4eb492550518c7f531ad0f6d01e72c6aefd161bdb5fa04cd0e",
+      "achado": "Roteiro localizado define 12 cenários e 200 gerações; não identifica as 15 rodadas de produção e não demonstra sua execução."
+    },
+    {
+      "arquivo": "app/utils/ga_engine.R",
+      "sha256": "d107402af08415a0e9cc4913676cc0e3791725736b22145e945ccb5b5d31ecff",
+      "achado": "Código atual contém inicializador LHS e mecanismo antiestagnação; versão b30ef22b419aee844a7d35354c32848ab4369c74 já contém funções correspondentes. Isso não prova qual versão foi usada em cada execução."
+    },
+    {
+      "arquivo": "reports/esclarecimentos_autor_20261029/conferencia_onda5.json",
+      "sha256": "d304f6158176472d320921ea0ec1b0a286e998cd222f5bc3dd7b3b56bd12694a",
+      "achado": "Busca anterior registrou resultados compilados e alcance da tentativa de localizar saídas por execução."
+    }
+  ],
+  "interpretacao": "Limitação de rastreabilidade não prova que as rodadas ou mecanismos não existiram. Os resultados consolidados permanecem, sem atribuir ao roteiro de 200 gerações as 15 rodadas.",
+  "estado": "validado_em_rascunho_nao_promovido",
+  "sha256_rascunho_apos_exportacao": "a5c3346495a63cd685209a9539258872cac941afef89660568d02c518922bc32",
+  "verificacao_visual": "Páginas PDF 49 e 52 inspecionadas, demais 74 idênticas ao lote25; 76 páginas; 45 verificações sem falhas."
+}

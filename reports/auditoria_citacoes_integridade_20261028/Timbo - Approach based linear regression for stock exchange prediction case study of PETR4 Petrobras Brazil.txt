@@ -1,0 +1,564 @@
+
+[PÁGINA PDF 1]
+International Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 
+ 
+DOI : 10.5121/ijaia.2016.7103                                                                                                                       21 
+
+	
+
+
+
+		
+	
+
+
+	
+	
+
+
+	
+
+Nadson S. Timbó, Sofiane Labidi, Thiago P. do Nascimento, Milson L. Lima, 
+Gilberto Nunes Neto and Rodrigo C. Matos  
+ 
+Post-graduation Program in Electrical Engineering, Federal University of Maranhão, São 
+Luís, Brazil 65080–805                                                           
+ 
+ABSTRACT 
+ 
+The stock exchange is an important apparatus for ec onomic growth as it is an opportunity for investors  to 
+acquire equity and, at the same time, provide resou rces for organizations expansions. On the other han d, a 
+major concern regarding entering this market is rel ated with the dynamic in which deals are made since  
+the pricing of shares happens in a smart and oscill atory way. Due to this context, several researchers  are 
+studying techniques in order to predict the stock e xchange, maximize profits and reduce risks. Thus, t his 
+study proposes a linear regression model for stock exchange prediction which, combined with financial 
+indicators, provides support decision-making by investors. 
+ 
+KEYWORDS 
+ 
+Stock Exchange Prediction, Autoregressive Models & Linear Models  
+  
+1. INTRODUCTION 
+ 
+According to Nascimento [1], the necessity for economic growth is a consensus in any country. A 
+path for its achievement is through the capital mar kets, which directs the investments to 
+alternatives that provides the highest returns. This is defined as a system of transferable securities 
+distribution capable of providing liquidity to issu ance of securities that at the same time makes 
+the capitalization process viable. It occurs throug h negotiations between organizations and 
+investors, up buying and selling shares in the stoc k exchange. The Bovespa is the main stock 
+exchange in operation in Brazil. It is considered the largest stock market in Latin America and the 
+eighth worldwide. In recent years, this stock exchange was the target of huge investments, closing 
+in 2012, with over one trillion dollars. The main e xplanation for this is the increase of domestic 
+markets, the reduction of interest rates and, speci ally, the currency appreciation, which 
+encourages new companies and investors to seek, in this market, a new manner of growing 
+through raising capital and increasing equity [2][3]. 
+ 
+While it may be considered a very gainful way of in vestment, the stock exchange is also based 
+upon losses, especially when transactions are made without the proper data analysis to support it. 
+According to Rocha and Macêdo [4], once entered in the market, the goal is to always buy shares 
+when their prices are the lowest and, consequently, selling at the highest price. This explains why 
+predicting shifts in the market’s behavior means ma ximizing profits and reducing risks. Such 
+anticipation, also called prediction, increase the profitability of investments. 
+ 
+
+[PÁGINA PDF 2]
+International Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 
+22 
+Currently, there are several techniques used by financial experts that help with the stock market 
+analysis. Two of them stand out, the Technical Indicators and Fundamental Indicators, that 
+although are the most widespread, barely predict, with accuracy, the real market’s behaviour, as it 
+is a complex task and it relies on variables capable of expressing from the investor’s intuition to 
+natural disasters [1]. 
+ 
+This study proposes the application of the autoregr essive linear model of stock exchange 
+prediction using, as parameters, data collection an d technical indicators. In addition, in its 
+conclusion, it is presented a comparative study between this study and other related work. 
+ 
+2. PROBLEM DESCRIPTION AND STATE-OF-THE-ART 
+ 
+The global trend is focused on the economy, aiming that investments be directed towards 
+alternatives that generate higher profits. The Capi tal Markets allows such goals with superior 
+flexibility and reliability in transactions, through the stock exchange. 
+ 
+According to Benjamin Graham [5], investing in the stock exchange requires intelligence. The 
+investor desiring join the market, must obtain a sa fety margin on their investments. Obtain such 
+margin is not a simple task, as a result of market volatility. 
+ 
+There are traditional methods that assists investor s making the best decision about how much, 
+how and when invest. These methods are commonly kno wn as: Technical Analysis and 
+Fundamental Analysis. The objective of the Fundamen tal Analysis is to predict the future 
+behavior of a share, for instance, while taking int o account the marketing situation of the 
+company, that trades these shares or the sector in which this share belongs to [6]. The Technical 
+Analysis seeks anticipate the market’s comportment or a share, through statistics and probabilities 
+linked to the manners of the referred market or sha re. Is worth noting that, both the Fundamental 
+Analysis and Technical Analysis, even being widely used by financial experts, are sometimes 
+unable to predict the actual market state, owing to  the comportment of the financial environment, 
+which is dynamic and oscillatory. Pereira, Turrioni  and Pamplona [7] argue that traditional 
+methods of analysis (ROI, IRR, etc) have not evolve d with information technology and no longer 
+are as effective. If there is a demand for the tech nology, It is more present in the financial aspects  
+[8][9]. 
+ 
+Several studies discuss the predictive methods applied to financial markets. The field of Artificial 
+Intelligence, for example, triggered the developmen t of specialized computational tools for the 
+stock market. These tools aim to use market variabl es to obtain predicted values increasingly 
+closer to the actual values of these shares [10]. T he Regressive Models, the Artificial Neural 
+Networks, the Fuzzy Logic, Genetic Algorithms and H ybrid Models of prediction are 
+emphasized. 
+ 
+Marques [11], in his work, used the Genetic Algorith m technique, with the Fuzzy Logic, to find 
+optimal settings for the MACD indicator performing predictions about future trend of Bovespa 
+shares. As a result, the aforementioned author, rea ched a precision rate of 53.75% and 49.5% for 
+Petr4 and Vale5 shares, respectively. 
+ 
+In another research field, the work developed by Al meida [12] is available, entitled “A Market 
+Prediction Model Stock Based on Fuzzy Logic”. In th is study, the fuzzy control process was 
+applied to assist the investor making the decision of keeping, buying or selling shares. Such as the 
+model Almeida [12] used, as input data, was the quo tation of Petr4 and Vale5 from years 2007 to 
+2014. Almeida [12] reported that the results obtain ed can propose coherent decisions, however, a 
+
+[PÁGINA PDF 3]
+International Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 
+23 
+percentage of success/mistakes was not found, decre asing the credibility the decision-making 
+supporting. 
+ 
+Nascimento [1], in his work “A System Based on Gene tic Algorithms as a Decision Making 
+Support for the Purchase and Sale of Assets at Bove spa”, used evolutionary techniques known as 
+Genetic Algorithms to perform predictions on closin g prices in shares traded in Bovespa. 
+Therefore, he used, as parameters, stock market quo tations from 01/01/13 to 12/31/13, totalizing 
+258 samples for data comparison. In this study, 100  days of prior quotations were used to predict 
+the 101th day. As the best results of this approach, it obtained 55.8% of predictions closest to real 
+values. It is relevant noting that this study took into account the closest predictions which the 
+difference to the actual closing price was inferior to 0.50 cents. 
+ 
+Finally, the work of Fagner, entitled “Modeling via  artificial neural networks the Capital Market 
+to the share value forecast and improve steering ac curacy rate – Case Study Petr4 – Petrobras, 
+Brazil” [13], objected the prediction of future tre nds regarding share prices of Petr4. Among the 
+evaluated studies, this was the one that succeeded the best results, with a success rate of 91.48%. 
+Fagner used the Artificial Neural Networks in his r esearch, which consists of non-linear 
+prediction models and, therefore, considered compell ing methods of stock exchange predictions 
+[13]. 
+ 
+3. METHODOLOGY  
+ 
+Meaning prediction model of stock exchange assets, the opted methodology was the process of 
+Knowledge Discovery in Databases (KDD), which is a AI field that looks for the knowledge 
+extracting from larger amounts of data. To Fayyad [ 14] the KDD is a multistep process, non-
+trivial, interactive and iterative, for identificat ion of comprehensive, valid, new and potentially 
+useful standards from large data sets.  
+ 
+By identifying patterns, trends, and finally extrac ting the desired knowledge, the person 
+responsible for the process is able to make a more informed and strategic decision about the 
+transaction, then solving the problem caused by the “Information Age”. [14]. 
+ 
+And possessing domain over its application and prob lem, one can attain knowledge through 5 
+stages (eg, Figure 1): Data selection, pre-processi ng, transformation, mining and, finally, 
+Evaluation and Results Interpretation. These steps are described and exemplified by the proposed 
+study. 
+ 
+ 
+Figure 1. An Overview of the Steps That Compose the KDD Process [15] 
+
+[PÁGINA PDF 4]
+International Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 
+24 
+At the first stage, there is a possibility to find a certain complexity if the data is not in a single  
+repository or requires an expert to collect the dat a. It is worth mentioning the importance of this 
+step, as we consider the data as key components in the full scope of the problem [16]. 
+ 
+For data collection, Petr4 assets has been set as s cope, in the timeframe ranging from 01/02/14 to 
+06/19/15. Located on the Yahoo Finance platform [17 ], through a web requisition and a few 
+parameters, as depicted in the table (eg, Table 1). 
+ 
+Table 1.  Data type to Yahoo Finance. 
+ 
+Parameter Description 
+s Action Stock Exchange 
+a Initial Month 
+b Initial Day 
+c Initial Year 
+d Final Month 
+e Final Day 
+f Final Year 
+g Type of Grouping 
+ 
+Consequently, the quotation data was acquired: date, opening price, maximum, minimum, closing 
+price, volume and the average closing. 
+ 
+On the second step, the Pre-processing and data cle ansing process can take a larger amount of 
+time [18], aiming integration of heterogeneous data , eliminating incompleteness, verified 
+consistency of information, filling or eliminating null values, incomplete, duplicated or corrupted. 
+The data was then analysed and was stated that ther e are no inconsistent, redundant, null or 
+corrupted values. “Duplicated” values were found, h owever, was verified, and certified, that it 
+was not the case of duplicity, but rather of days i n which the closing price on the stock was the 
+same as the day before. 
+ 
+A study was applied to the data and it was defined as variables only the opening, closing, 
+minimum, maximum and volume values. Later, an explo ratory analysis of variables was made 
+and ranked them by measure levels, such as quantita tive variables, and by manipulative levels, 
+such as independent variables (i.e. their values affects others) and dependent (i.e. the measured or 
+registered variables, which are influenced). 
+ 
+The third step is dependent on data mining, targeti ng the transformation of data, to present the 
+ideal model for development and interpretation of the algorithm in the next step. 
+ 
+With the view to transform the data to meet the req uirements of the mining step, was noticed the 
+lack of variables making mining more based on the r eal stock exchange scenario. Then, the main 
+indicators utilized by financial experts were colle cted by determining the behavior of the shares 
+and, which to invest. Among those checked, it was found:  
+ 
+1. Relative Strength Index (RSI): it measures the weakening degree of a trend. 
+2. Williams: informs the position of an asset. 
+3. Stochastic: indicates overbought and oversold situations. 
+4. Money Flow Index (MFI): evaluates the intensity of cash flow. 
+5. Force Index (FI): indicates force of an asset involving the shift change in price. 
+6. Moving Average (MA): average quotation, softening its movement. 
+
+[PÁGINA PDF 5]
+International Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 
+25 
+7. Moving Average Convergence Divergence (MACD): shows the relation between moving 
+averages. 
+8. Direction Movement: it shows the strength of a positive and negative tendency. 
+9. Average Directional Index (ADX): it measures the st rength of a positive and negative 
+tendency. 
+10. On Balance Volume (OBV): it measures the volume flux. 
+11. Accumulation Distribution Line (ADL): determines th e relation between demand and 
+supply of an asset. 
+12. Closing Point and Closing Point Volume: position of the closing price within a range, and 
+its volume. 
+13. Average True Range (ATR): measures how much the pric e of a stock is subject to 
+variation. 
+ 
+After gathering this data, a new analysis of the va riables was realized and, subsequently, 
+performed a two-dimensional analysis of all quantit ative variables in relation to an independent 
+variable, in other words, the closing price of an a sset. This procedure had the requirement of 
+listing which variables would be best applied in th e mining algorithm. Thus, the Pearson 
+correlation coefficient and the Coefficient of Dete rmination were calculated, which determines if 
+there is a correlation between variables, its force and direction. In the picture below, the variables  
+are shown: opening price, maximum, minimum, moving average, MACD, OBV, ADL, pivot 
+close and ATR obtained better results exceeding it by 0.5, given the time series chosen. 
+Therefore, these were the ones chosen to be used in the next step. 
+ 
+Table 2.  Coefficient of Indicators. 
+ 
+Indicators Pearson Correlation 
+Coefficient 
+Coefficient of 
+Determination 
+Open 0,994487473 0,989005334 
+High 0,993211486 0,986469055 
+Low 0,9948341 0,989694887 
+Pivot Close 0,995855488 0,991728153 
+Moving Average 0,978291082 0,957053441 
+MACD 0,941127663 0,885721278 
+OBV 0,762275575 0,581064052 
+ATR 0,584487817 0,341626008 
+ADL 0,508326204 0,25839553 
+Directional Movement 0,452690778 0,204928941 
+FI 0,327514359 0,107265656 
+Volume Pivot Close 0,247212267 0,061113905 
+IFR 0,193201546 0,037326837 
+Stochastic 0,182864204 0,033439317 
+Williams 0,169468496 0,028719571 
+MFI 0,151817821 0,023048651 
+ADX -0,029023545 0,000842366 
+Volume -0,097613838 0,009528461 
+ 
+The mining stage is considered the center of the KD D, which is a technique to determine 
+behavioral patterns, in larger databases, assisting decision-making [19]. 
+ 
+Mining is composed by tasks and techniques (methods ). The task consists of the specification of 
+what do you want to search in the data, types of re gularities and patterns. The technique consists 
+of the specification of methods that show how to discover patterns. 
+
+[PÁGINA PDF 6]
+International Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 
+26 
+The mining tasks are sorted by the diversified abil ity to extract knowledge, and its success relies 
+exclusively on the application domain. The most com mon are: Classification, Association, 
+Estimation or Regression, Clustering and Summarizat ion [14]. The Regression is similar to the 
+Classification however, is used to define a numeric al value for an unknown continuous variable. 
+It can be used to estimate future data, such as fam ily income, lifetime-based in diagnosis, etc. 
+Estimation is learning a function that maps a given item for a variable of estimated real prediction 
+[14]. Given the main objective of this study the pr ediction of the closing price value of an asset, 
+meaning, predict a continuous and quantitative vari able, it can be asserted that this technique is 
+best suited for this case study. 
+ 
+The mining techniques (or methods) can be applied t o tasks, implemented by an algorithm 
+elaborated to solve a task. For Harrison [20] there  are different techniques are better suited to a 
+determined task, having advantages and disadvantages. 
+ 
+The methods are divided into Supervised Learning and Unsupervised Learning. In this case study, 
+the chosen was the former, also known as predictive, where there is a class for where each sample 
+is assigned in training. 
+ 
+The algorithms belonging to these methods perform i nferences in data, providing predictions, the 
+classification and regression tasks nevertheless, u se different methods, such as: neural networks, 
+genetic algorithms, inductive logic, decision trees , Bayes classifier, rule based classification, 
+SVM (Support Vector Machines), Fuzzy Set, linear re gression, nonlinear regression (logistic, 
+polynomial), etc. 
+ 
+It was verified that there are a wide range of works using neural networks, genetic algorithms and 
+even fuzzy logic, so it was proposed using regression techniques, since it allows to find a function 
+that estimates the manner based on a data set, through mathematical and statistics resources. 
+The next step was the analysis of all the possible variables of the problem scope with objective to 
+predict the closing price for the next day. Therefo re, proving the existence of a univariate, linear 
+and multiple model. As a result of only one depende nt variable or answer (closing price) was 
+found and, for all other variables that went throug h two-dimensional analysis only the ones with 
+strong correlation with the dependent variable (as seen in the picture above) were selected, 
+confirming linearity of the problem (for the select ed variables), and multiple for presenting more 
+than one predictor or independent variable. The model specification is about: 
+ 
+• Multiple regression (has more than one predictor variable); 
+• Univariate regression (has only one variable answer); 
+• Positive linear regression; 
+ 
+As a consequence, the selected method for applying data mining was the multiple linear 
+regression, using the Least Square Method. 
+ 
+For the fifth and last stage of the KDD is the Evaluation and Interpretation of Results which seeks 
+the knowledge, transforming it in a real model for decision-making. This step is intend to 
+facilitate the interpretation and evaluation of the  utility of the discovered knowledge, by the end 
+user.  
+ 
+4. RESULTS 
+ 
+Only the preferential asset from the company Petrob ras, or simply PETR4, was utilized in the 
+scope of this study due to its history in Bovespa s ince it is the focus of other works related with 
+the stock exchange of São Paulo, thereby, assisting in comparing results. 
+
+[PÁGINA PDF 7]
+International Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 
+27 
+Data collection was conducted between 01/02/14 and 12/30/15, in a total of 342 days analyzed, 
+willing to predict the next day. It was split 70% f or training and discovery of the pattern and 30% 
+for validation. Then it was set as predictor variab les: opening price, maximum, minimum, 5-day 
+moving average (MMS_5), 10-day moving average (MMS_ 10), 15-day moving average 
+(MMS_15), exponential 20-day moving average (MME_20 ), MACD, OBV, ADL, Closing Point 
+volume (Volume_PF), Closing Point (PF), ADX and ATR . Of the first data, 70% were applied to 
+training, subsequently generating a pattern, theref ore, a mathematical function, as shown in the 
+figure (eg, Figure 2). 
+ 
+ 
+ 
+Figure 2. Prediction Function  
+ 
+Through the exploratory and two-dimensional analysi s of the variables already mentioned it is 
+possible to fit into a linear model. Nonetheless, s ome variables did not present enough 
+representation to be considered into account in lin ear regression. Therefore, obtaining the 
+mathematical function coefficient equal to 0 (zero) . This is seen through the variables of 
+minimum value, OBV, ADL and Volume_PF, so, despite having 13 indicators, only 10 of those 
+were used to predict values. 
+ 
+We also obtained a Correlation Coefficient of 0.991 7, a Mean Absolute Error of 0.3699, a Root 
+Mean Squared Error (identifies deviation from the b est result) of 0.4716 and a Relative Absolute 
+Error (indicates the proximity of the prediction co mpared to the real value) of 6.1555%. 
+Therefore, claiming the current study proposes a po sitive impact and is an efficient model 
+assisting decision-making by financial experts. 
+ 
+The equation found was applied to the remaining 30%  of the data, so that is possible verify the 
+percentage of correct answers, represented in a total of 66 instances. Discovering the prediction of 
+the closing price and comparing it with the real cl osing price value, we obtained the following 
+results. 
+Table 3.  Case Study Results. 
+ 
+Indicators Pearson Correlation 
+Coefficient 
+Coefficient of 
+Determination 
+Hit 
+14,96 15,13929 0,179285 true 
+14,61 14,87246 0,262457 true 
+14,58 14,79304 0,213037 true 
+14,43 14,75516 0,325162 true 
+14,11 14,51267 0,402667 true 
+
+[PÁGINA PDF 8]
+International Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 
+28 
+14,2 14,11755 0,082447 true 
+14,16 14,14718 0,012817 true 
+14,15 14,26507 0,115068 true 
+14,5 14,1859 0,314104 true 
+14,18 14,49962 0,319625 true 
+13,68 14,29052 0,610521 false 
+14,04 13,9624 0,077603 true 
+13,59 14,25299 0,662988 false 
+13,29 13,88133 0,591326 false 
+13,43 13,6242 0,194204 true 
+ 
+It can be verified how close the equations results are similar to the actual real closing, and 
+considered as success a maximum deviation of 0.50 c ents, which according to Bovespa is 
+satisfactory. 
+ 
+Important to highlight that a $ 0.50 cents deviatio n represents 4.7169% of the value, which 
+generates a success rate of 60.87% the cases. Provi ng that the main goal of the study was 
+achieved by finding a regressive model to predict the value of an asset with a high success rate. 
+ 
+5. DISCUSSIONS AND COMPARISONS 
+ 
+The information systems possess applications in sev eral areas, in which the study of the financial 
+market was the focus in this paper. 
+ 
+Given the difficulty of time series predictions with  countless variables and the complexity of 
+specifying a consistent and efficient model, the us e of computational techniques of Artificial 
+Intelligence was selected to solve this problem. Co nsequently, the current study aimed to take 
+benefit from KDD to specify a multiple linear regressive model for predicting the closing price of 
+Petr4. 
+ 
+The application results prove the authenticity of the model, given the high accuracy rate, since the 
+acceptable movement in Bovespa is $ 0.50, making it  possible to accomplish an estimative of 
+success of a movement even lower. This proposal can  be applied to any asset, as long as it passes 
+through all the KDD stages, mentioned before, and s erving as a strong base for the financial 
+expert in regards to decision-making. Confirming th e proposed model as a contribution to the 
+financial market and a new, complete and, efficient  form of analysis. The comparative between 
+the closing price and the prediction can be better observed in the picture (eg, Figure 3). 
+ 
+
+[PÁGINA PDF 9]
+International Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 
+29 
+ 
+ 
+Figure 3. Comparison forecast  
+ 
+The necessity to insert several indicators as input  variables is ratified, rendering a more robust 
+model in a real situation of stock exchange manner, due to its complex environment and countless 
+variables that can affect an asset. 
+ 
+What differentiates this study is the closing price  prediction value, as most of others studies are 
+concerned with discovering trends, while few focus on value predictions. 
+ 
+By analyzing and interpreting the results, it has b een proven that trend indicators present better 
+results when the database is composed of more than 100 entries. When the database is lower than 
+that, it is recommended not to use these variables. 
+ 
+In literature, renowned models capable of predictio n time series behavior can be found, such as 
+the Box-Jenkins univariate method called ARIMA. How ever, applying this method using closing 
+prices for predictions, it did not result in succes s, even though 12 differentiations were applied a 
+stationary series that fulfilled the methodology wa s not found, leading towards believing in the 
+method applied by this study. 
+ 
+Almeida [12] says, the fuzzy logic was used to pred ict the trend, comparing it to three 
+consecutive days in the stock exchange. However, a percentage of success/mistakes was not 
+enough to validate the model. It was also considere d low the quantity of indicators used as 
+variables input, given the stock exchange complexity. Nonetheless, in the work of Marques [11] a 
+hybrid model was proposed for trend prediction, but its success rate was only considered average. 
+The results produced by the current study the succe ss rate was 60.87% and it can be considered 
+an improvement over the results of Marques [11], wh ich concludes that linear techniques can be 
+considered in value predictions and its results are  similar to other artificial intelligence 
+techniques. 
+ 
+Regarding the work of Fagner [13], which obtained g reat results, there was a difference while 
+choosing the data, as Fagner choose the end of the month as closing price values, while the 
+current study opted to analyze the whole time serie s of the asset, aiming to stay truthful to the 
+stock exchange complexity. 
+ 
+
+[PÁGINA PDF 10]
+International Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 
+30 
+About Nascimento [1], the best predictions made inv olved the Petrobrás share Petr3. In his 
+model, the author conducted estimations based on 258 of quotations. Among these, the number of 
+estimative that were closer to below 0.50 from the real values of shares were only  144, thus, 
+55.8% from the total sample. In a comparative study between the approach of Nascimento [1] and 
+the current study being presented, is noted that th e success rate of Nascimento [1] has been 
+surpassed. 
+ 
+R
+EFERENCES 
+ 
+[1] Nascimento, T. P. (2015) “A System Based on Gen etic Algorithms as a Decision Making Support for 
+the Purchase and Sale of Assets at Bovespa”, In: In ternational Biometrics & Smart Government 
+Summit, Sousse, International Biometrics & Smart Go vernment Summit.  
+[2] Costa, F. V. & Marcondes, R. (2012) “Recursos e stratégicos em corretoras de valores mobiliários 
+visando a busca de vantagem competitiva pela aborda gem rbv”, Seminários em Administração- 
+SEMEAD. 
+[3] Junior, M. M. O. L. (2013) “Proposta de um mode lo de predição da bolsa de valores usando uma 
+abordagem híbrida”, Dissertação de Mestrado (Progra ma de Pós-Graduação em Engenharia de 
+Eletricidade, Área de Concentração: Ciência da Comp utação) - Centro de Ciências Exatas e 
+Tecnologia - Universidade Federal do Maranhão, São Luís. 
+[4] Rocha, H. R. & Macedo, M. (2011) “Previsão do p reço de ações usando redes neurais”, Congresso 
+USP de Iniciação Científica em Contabilidade, 8 - São Paulo, São Paulo. 
+[5] Graham, B. G. (1973) The Intelligent Investor, New York: Harper Business. 
+[6] Pinheiro, J. L. (2007) Mercado de Capitais: Fun damentos e Técnicas. Atlas, São Paulo. 
+[7] Pereira, U. N. C. & Turrioni, J. B. & Pamplona,  E. O. (2005) “Avaliação de Investimentos em 
+Tecnologia da Informação – TI”, XXV Encontro Nacion al de Engenharia de Produção, Anais, Porto 
+Alegre - RS, 1CD. 
+[8] Weiss, S. (2002) Handheld Usability, England: J ohn Wiley & Sons Ltd. 
+[9] Graeml, A. R. (1998) O valor da tecnologia da i nformação. Anais do I Simpósio de Administração da 
+Produção, Logística e Operações Industriais. 
+[10] Koulouriotis, D. E. & Diakoulakis, I. E. & Emi ris, D. M. (2001) “A Fuzzy Cognitive Map based 
+Stock Market Model: Synthesis, Analysis and Experim ental Results”, IEEE International Fuzzy 
+Systems Conference, pp465-468. 
+[11] Marques, F. C. R. & Gomes, R. M. (2009) “Análi se de séries temporais aplicadas ao mercado 
+financeiro com o uso de algoritmos genéticos e lógi ca fuzzy”, Congresso da Sociedade Brasileira de 
+Computação, No 29, pp749–758.  
+[12] Almeida, A. J. S. (2015) “A Market Prediction Model Stock Based on Fuzzy Logic”, In: 12th 
+CONTECSI International Conference on Information Sy stems and Technology Management, 2015, 
+Sao Paulo, Proceedings of the 12th CONTECSI Interna tional Conference on Information Systems and 
+Technology Management, Vol. 12.  
+[13] Oliveira, F. A. (2013) “Modeling via artificia l neural networks the Capital Market to the share v alue 
+forecast and improve steering accuracy rate – Case Study Petr4 – Petrobras, Brazil”.  
+[14] Fayyad, U. M. & Piatetsky-Shapiro, G. & Smyth,  P. & and Uthurusamy, R. (1996) Advances in 
+Knowledge Discovery and Data Mining, Menlo Park, Ca lif.: AAAI Press.  
+[15] Fayyad, U & Piatetsky-Shapiro, G & Smyth, P.  (1996) “From Data Mining to Knowledge Discovery 
+in Databases”. American Association for Artificial Intelligente. 
+[16] Almeida, F. C. & Dumontier, P. (1996) “O Uso d e Redes Neurais em Avaliação de Riscos de 
+Inadimplência”, Revista de Administração FEA/USP, S ão Paulo. 
+[17] Yahoo Finance, http://finance.yahoo.com/, Acce ssed in 2015/06/15 at 8:00 am.  
+[18] Mannila, H. (1996) “Data Mining: Machine Learn ing, Statustucs and databases”, In Proceedings of 
+the eight IEEE International Conference, pp2-9.  
+[19] Han, J & Kamber, M. (2006) “Data Mining: Conce pts and Techniques”, Elsevier.  
+[20] Harrison, T. H. (1998) “Intranet Data Warehous e”, São Paulo: Editora Berkeley. 
+ 
+ 
+ 
+ 
+
+[PÁGINA PDF 11]
+International Journal of Artificial Intelligence & Applications (IJAIA), Vol. 7, No. 1, January 2016 
+31 
+AUTHORS 
+ 
+Nadson Silva Timbó 
+ 
+BS in Computer Science – Federal University of Mara nhao (2013). Has experience in 
+Computer Science Area. 
+ 
+Sofiane Labidi 
+ 
+BS in Computer Science - Institut Supérieur Scienti fique (1990), MSc. In Computer 
+Science - Université de Nice Sophia Antipolis Centr e National de Recherches 
+Scientifiques (1991) and Ph,D. In Computer Science - Institut National de Recherche 
+en Informatique et Automatique (1995). He is curren tly full professor at Universidade 
+Federal do Maranhão. Has experience in Computer Sci ence, acting on the following 
+areas: knowledge management, multi-agent systems, e ducational technologies, agents, 
+artificial intelligence and business process modelling. 
+ 
+Thiago Pinheiro do Nascimento 
+ 
+BS in Computer Science - Faculdade de Ciências Huma nas, Saúde, Exatas e Jurídicas 
+de Teresina (2012) and MSc. In Electric Engineering  - Universidade Federal do 
+Maranhão (2015). Has experience in Computer Science , acting on the following 
+subjects: frameworks, software engineering componen t-based, service-oriented 
+architecture, software reuse and web development. 
+Gilberto Nunes Neto 
+ 
+B.Ed in Computing – Piaui State University (2006). Has experience in Computer 
+Science. 
+ 
+Milson Louseiro Lima 
+ 
+Has Postgraduate Diploma in ANALYSIS AND SYSTEMS PR OJECT (UFMA, 
+2007), B.S in Economic Sciences - Federal Universit y of Maranhão (2006). Is ERP 
+developer and mobile devices, since 1998. He is cur rently a MSc candidate in 
+Electrical Engineering course for Computer Science (UFMA, 2014), working in the 
+Intelligent Systems Laboratory at the Federal Unive rsity of Maranhão (LSI / UFMA). 
+ 
+ 
+Rodrigo Costa Matos 
+ 
+Has experience in Computer Science. 
+ 

@@ -1,0 +1,29 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "copia": "reports\\monografia\\trabalho\\fechamento_integral_20261029.docx",
+  "sha256_atual_apos_exportacao_nativa": "da445d5b67022ad03c9ba66825e861264e828502834d1dbe28605304160fc5f2",
+  "unidades_textuais_alteradas_acumuladas": 16,
+  "figuras_alteradas_acumuladas": 1,
+  "paginas_pdf": 76,
+  "validacao_estrutural": "45verificações sem falhas; não é certificação de conteúdo.",
+  "validacao_nominal": "50referências e151chamadas reconhecidas,sem órfãs nos padrões; não é cobertura universal ou fidelidade semântica.",
+  "paginas_inspecionadas": [
+    16,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "resultado_visual": "Todas as oito páginas diferentes abertas e inspecionadas, sem cortes, sobreposições ou linha isolada nas transições. O sumário foi atualizado. Outras68páginas são pixel a pixel idênticas ao lote4.",
+  "tabelas_e_resultados": "Uma única unidade de prosa alterada no lote5; todas as tabelas e mídias foram preservadas. As tabelas experimentais continuam com os dados da base.",
+  "evidencias_conteudo": [
+    "leituras_bovdb_rbras_dados_lote5.json",
+    "conferencia_numerica_entradas_e_rodada_controlada.json"
+  ],
+  "limites": "Métricas foram recalculadas de vetores congelados; nenhum modelo, GA ou teste DM foi executado. Cadeia de ajuste corporativo não reconstruída. Demais fontes/afirmações/similaridade/Guia ainda em auditoria.",
+  "estado": "rascunho_em_auditoria_nao_promovido"
+}

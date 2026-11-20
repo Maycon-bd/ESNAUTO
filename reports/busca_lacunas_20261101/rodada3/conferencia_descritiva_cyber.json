@@ -1,0 +1,42 @@
+{
+  "metodo": "Aritmética descritiva sobre CSV público, sem ajuste de modelos. Quartis inclusivos equivalentes ao tipo 7 de R. Momentos padronizados populacionais; não presumir a mesma definição de gamma3/gamma4 da publicação.",
+  "limite": "Hipóteses de transformação não equivalem ao protocolo original de Abebe. Não atribuir exclusão de zeros ou divisão por 100 aos autores sem evidência adicional.",
+  "csv_sha256": "16b0ed9fdb4d9336eaa05f27332eae9cb1289754c7f899aa21f726c3490f1a0f",
+  "csv": {
+    "n": 366,
+    "mean": 533.7213114754098,
+    "Q1": 394.0,
+    "median": 509.0,
+    "Q3": 654.0,
+    "skew_moment": 1.0103283672799948,
+    "kurtosis_pearson": 6.138870345667908
+  },
+  "zeros": 3,
+  "positive_div100": {
+    "n": 363,
+    "mean": 5.381322314049587,
+    "Q1": 3.9850000000000003,
+    "median": 5.1,
+    "Q3": 6.545,
+    "skew_moment": 1.1709154572766323,
+    "kurtosis_pearson": 6.313392213333378
+  },
+  "rpubs_zero001": {
+    "n": 366,
+    "mean": 533.7213934426229,
+    "Q1": 394.0,
+    "median": 509.0,
+    "Q3": 654.0,
+    "skew_moment": 1.0103376444733532,
+    "kurtosis_pearson": 6.13886774108398
+  },
+  "tabela5_abebe": {
+    "n": 363,
+    "mean": 5.381,
+    "Q1": 3.985,
+    "median": 5.1,
+    "Q3": 6.545,
+    "skew": 0.7249,
+    "kurtosis": 3.693
+  }
+}

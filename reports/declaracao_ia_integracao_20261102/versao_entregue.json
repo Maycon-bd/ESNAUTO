@@ -1,0 +1,43 @@
+{
+  "id": "v011",
+  "anterior": "v010",
+  "arquivo": "reports/monografia/versoes/v011/MayconGarciaSilva_monografia_v011.docx",
+  "sha256": "6ce846aec1d02f0ab1c6e575f822f082920331f8d7b6c444914bb45d0563ce4a",
+  "registrada_em_utc": "2026-11-02T20:23:08.918499+00:00",
+  "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\declaracao_ia_20261102.docx",
+  "responsavel": "Codex para Maycon Garcia Silva",
+  "resumo": "Incorpora declaração de responsabilidade coletiva de IAG conforme relato do autor, com somente Codex nos testes; inclui indicação em 3.1, Anexo A e entrada no sumário. Atualiza paginação e mantém quatro tabelas curtas da metodologia inteiras, preservando os dados e resultados.",
+  "estado_editorial": "em_revisao",
+  "validacao_declarada": "81 páginas renderizadas; 20 páginas afetadas inspecionadas e 61 corpos idênticos à base. 61 entradas de listas/sumário conciliadas, 34 atualizadas. 554 parágrafos anteriores e dados das 14 tabelas preservados. Apenas document.xml alterado. Declaração separada de uma página renderizada e inspecionada. Sem novos experimentos, aprovação acadêmica ou assinatura dos declarantes.",
+  "evidencias": [
+    {
+      "arquivo": "reports/declaracao_ia_integracao_20261102/relatorio.md",
+      "sha256": "7c60e28d9e5dd8d81ec77d138c01b480ac92af538e9e2ab725e1101394d86c32"
+    },
+    {
+      "arquivo": "reports/declaracao_ia_integracao_20261102/conferencia_final.json",
+      "sha256": "31d6f351b9f412ab76e3a6567fe273a98860744abe580b9d830e1766f849e492"
+    },
+    {
+      "arquivo": "reports/declaracao_ia_integracao_20261102/inspecao_visual.json",
+      "sha256": "a9a7404fe85ce0ac3ae58d11890e1daf2fda7aae860a53c8be1200f7c23a49b2"
+    },
+    {
+      "arquivo": "reports/declaracao_ia_integracao_20261102/alteracoes.json",
+      "sha256": "1a72303d8f12528e3458ff6fc2a70e42a74978b63c4306ca5ebce12fbaee91d4"
+    },
+    {
+      "arquivo": "reports/declaracao_ia_integracao_20261102/complemento_testes.json",
+      "sha256": "8a09f55f77e200924955d56c59a53ddd0f611c435d41e0d697fcb306c341ebe9"
+    }
+  ],
+  "pendencias": [
+    "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+    "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+    "Limitação bibliográfica preservada: buscas complementares e registros de seleção parciais. Três células resolvidas com evidência; restam 38 marcações de informação insuficiente, com pesquisa em andamento. Sem alegação de revisão sistemática integral.",
+    "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+    "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills.",
+    "Declaração de uso de IAG preenchida conforme relato do autor; versões de Claude e Codex não informadas. Data e assinaturas do autor e orientador permanecem em branco para preenchimento pelos declarantes."
+  ],
+  "caminho_absoluto": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\versoes\\v011\\MayconGarciaSilva_monografia_v011.docx"
+}

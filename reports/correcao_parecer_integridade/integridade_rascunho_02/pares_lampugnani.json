@@ -1,0 +1,12 @@
+{
+  "alvo_sha256": "29a0f986dd25bf1d0bc73779955a7b45fd065bd54db0bab7eef93b5ed99da8c2",
+  "fonte": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\MatheusTeixeiraLampugnani_monografia (1).docx",
+  "fonte_sha256": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+  "n_paragrafos_alvo": 258,
+  "n_paragrafos_fonte": 151,
+  "n_pares_examinados": 38958,
+  "limiar": 0.4,
+  "metodo": "SequenceMatcher em tokens normalizados, autojunk=False; corpo entre Introdução e Referências, parágrafos15+ palavras. Os filtros quick_ratio são limites superiores.",
+  "limite": "Heurística de triagem, não escore de originalidade ou detector semântico.",
+  "pares": []
+}

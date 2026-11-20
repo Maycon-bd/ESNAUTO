@@ -1,0 +1,120 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_examinado": "4a8f9310c4826a020009b5d65bb38f5d4c5bd4c6e1b5e5720776b632adbefb1d",
+  "fonte": {
+    "id": "D07",
+    "arquivo": "Artigos citados\\Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+    "sha256": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+    "paginas": 23,
+    "caracteres_extraidos": 57262,
+    "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+    "log_leitura": []
+  },
+  "paginas_textuais_lidas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "paginas_visuais_inspecionadas": [
+    1,
+    10,
+    12,
+    13,
+    14,
+    15,
+    19
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D07",
+      "arquivo_pdf": "Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256_pdf": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "tipo": "aplicacao_SVM",
+      "dimensao": "P1",
+      "codigo": "-",
+      "localizador": "PDF 2–3, objeto do artigo",
+      "evidencia_e_limite": "Modelo SVM para classificação do comportamento de ações; não inicialização ESN.",
+      "escopo_leitura": "PDF 2–3, 10–12 e 15–19 consultados no parecer e na retomada; variáveis e resultados."
+    },
+    {
+      "id": "D07",
+      "arquivo_pdf": "Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256_pdf": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "tipo": "aplicacao_SVM",
+      "dimensao": "P2",
+      "codigo": "-",
+      "localizador": "PDF 2–3 e seção de métodos",
+      "evidencia_e_limite": "Seleção/treinamento de SVM, não hiperparâmetros de ESN. Não contar recomendação futura de redes como método executado.",
+      "escopo_leitura": "PDF 2–3, 10–12 e 15–19 consultados no parecer e na retomada; variáveis e resultados."
+    },
+    {
+      "id": "D07",
+      "arquivo_pdf": "Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256_pdf": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "tipo": "aplicacao_SVM",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 11–12, Tabelas 2–3 e variável dependente",
+      "evidencia_e_limite": "Constrói indicadores fundamentalistas e técnicos com preços ajustados a splits/dividendos e classes de comportamento.",
+      "escopo_leitura": "PDF 2–3, 10–12 e 15–19 consultados no parecer e na retomada; variáveis e resultados."
+    },
+    {
+      "id": "D07",
+      "arquivo_pdf": "Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256_pdf": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "tipo": "aplicacao_SVM",
+      "dimensao": "P4",
+      "codigo": "?",
+      "localizador": "PDF 14–17, resultados e conclusão",
+      "evidencia_e_limite": "Os modelos A/B/C diferem nos atributos empregados por SVM. As métricas desses modelos não constituem comparação com LSTM/GRU/Transformer.",
+      "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+    },
+    {
+      "id": "D07",
+      "arquivo_pdf": "Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256_pdf": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "tipo": "aplicacao_SVM",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 10, Tabela 1; PDF 11–12",
+      "evidencia_e_limite": "Amostra de empresas brasileiras da B3. F1 agregado não é resultado específico da PETR4.",
+      "escopo_leitura": "PDF 2–3, 10–12 e 15–19 consultados no parecer e na retomada; variáveis e resultados."
+    }
+  ],
+  "n_codigos_alterados": 0,
+  "afirmacoes_conferidas": {
+    "U0187": "PDF 13–15 e 19: SVM classificação, combinação de indicadores; F1=72,74% agregado e recomendação futura de redes e ensembles. Não desagregar valor por PETR4.",
+    "U0238": "PDF 12: preços ajustados a splits e dividendos nos indicadores e na classe; ajuste não demonstra desempenho para qualquer modelo.",
+    "U0513": "PDF 2: título inglês presente; contagens exigem conferência do conjunto bibliográfico, não resolvida por esta fonte.",
+    "U0680": "PDF 2: título inglês presente; processamento da rede exige evidência independente."
+  },
+  "ressalvas": [
+    "PDF 14 indica treino até junho de 2016 e teste desde junho de 1996, cronologia conflitante; PDF 15 usa 8.118 observações de teste enquanto PDF 14 informa 8.112. Não transportar esses dados para o estudo próprio.",
+    "Modelo classifica fechamento ajustado contra abertura; não equivale à previsão do preço futuro nem atribui F1 exclusivamente a PETR4."
+  ],
+  "correcoes_pendentes": [],
+  "correcoes_incorporadas": [
+    "U0328"
+  ]
+}

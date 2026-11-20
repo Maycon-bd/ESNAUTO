@@ -1,0 +1,132 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "registros": [
+    {
+      "paragrafo_atual": 464,
+      "texto": "DISCUSSÃO",
+      "decisao": "Título.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 465,
+      "texto": "VALIDADE INTERNA E ESTATÍSTICA",
+      "decisao": "Título de subseção.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 466,
+      "texto": "Os resultados devem ser interpretados dentro das condições específicas do protocolo. As 45 execuções históricas exploram um conjunto amplo de combinações probabilísticas, mas representam realizações de reservatórios estocásticos e não uma distribuição estatística completa do desempenho de cada configuração.",
+      "decisao": "Realizações históricas não confundidas com distribuição de desempenho por configuração.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 467,
+      "texto": "Por essa razão, diferenças pequenas entre inicializações continuaram tratadas como resultados observados, e não como demonstração de superioridade estatística entre distribuições. A inferência realizada pelo teste de Diebold-Mariano foi restrita à H1 e à execução controlada complementar que comparou ESN, GRU e LSTM sobre os mesmos 1.298 alvos.",
+      "decisao": "Inferência restrita à rodada controlada, quatro comparações e 1.298 alvos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 468,
+      "texto": "Essa restrição é especialmente importante na comparação entre Laplace × Normal e Normal × Normal, cuja diferença de MAE foi de aproximadamente 0,347%. O mesmo princípio se aplica aos recordes e às falhas: uma realização excepcional pode representar uma região favorável do espaço de busca, enquanto t de Student Assimétrica × Cauchy demonstra que combinações extremas também podem produzir comportamento instável fora da amostra.",
+      "decisao": "Ganho relativo de MAE conferido: (0,328365−0,327224)/0,328365 ×100 ≈0,347%; falha de t assimétrica × Cauchy é observação, sem generalização universal.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 469,
+      "texto": "O valor elevado de R² exige cautela porque o objeto previsto é o preço da ação em nível, com forte persistência temporal. MAE e RMSE descrevem os erros, mas não demonstram, por si sós, vantagem sobre a previsão que repete o último preço observado. Esse comparador não integra os quatro contrastes da rodada controlada com GRU e LSTM. Assim, a evidência apresentada não estabelece ganho sobre a persistência nem utilidade econômica; uma comparação futura com esse referencial deverá usar a mesma janela e escala.",
+      "decisao": "Limitação de persistência pertinente: comparadores controlados são GRU/LSTM; erro em preço não demonstra utilidade econômica. Não afirma teste de persistência já feito.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 470,
+      "texto": "Entre as configurações avaliadas, Laplace × Normal apresentou o menor MAE, enquanto Laplace × Cauchy apresentou o menor RMSE e o maior R². Na maior parte das execuções documentadas, as ESNs obtiveram MAE menor que os baselines LSTM e GRU definidos no protocolo. A comparação documental com Lampugnani (2026) contextualizou os erros, sem transformar protocolos distintos em um experimento comum.",
+      "decisao": "Recordes por métrica e comparação documental correspondem aos relatórios compilados, sem protocolo comum presumido.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 471,
+      "texto": "A análise das distribuições indicou que as variantes não gaussianas produziram os melhores resultados pontuais, porém com ganho incremental pequeno em relação à ESN Normal × Normal. A Onda 2 reuniu simultaneamente os melhores resultados e a principal falha de generalização, enquanto a Onda 5 apresentou baixa dispersão dos erros entre configurações sem alcançar o menor erro global. Esses achados reforçaram a necessidade de interpretar a distribuição de inicialização em conjunto com os demais hiperparâmetros e com a realização estocástica do reservatório.",
+      "decisao": "Onda 5 baixa dispersão e falta de isolamento causal coerentes com registros.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 472,
+      "texto": "Há ainda uma limitação de rastreabilidade temporal dos resultados históricos. Embora o ESNAUTO registre MAE, RMSE e R² agregados e disponha de cálculo de MAPE durante a execução interativa, os vetores completos de previsão das execuções oficiais não foram incluídos no conjunto de artefatos versionados.",
+      "decisao": "Lacuna de vetores históricos mantida; capacidade funcional não é prova de execução preservada.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 473,
+      "texto": "Consequentemente, o teste de Diebold-Mariano não pôde ser aplicado retrospectivamente aos mesmos vetores que originaram a Tabela 3. A execução controlada complementar superou essa limitação apenas para a análise inferencial de H1, preservando previsões datadas, modelos, matrizes, configuração, versões de dependências e hashes; ela não reconstrói os vetores históricos ausentes.",
+      "decisao": "DM complementar não reconstrói vetores históricos; distinção coerente com protocolo.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 474,
+      "texto": "Os quatro testes de Diebold-Mariano produziram valores de p muito inferiores a 0,05 e menor perda média para a ESN sob perdas absoluta e quadrática. Ainda assim, essa evidência decorreu de uma única semente previamente fixada e de uma execução controlada com novos pesos; portanto, não caracteriza a distribuição de desempenho entre diferentes inicializações. Além disso, não foi aplicada correção para múltiplas comparações, pois os quatro contrastes foram pré-especificados com α individual de 5%. Essas condições limitam a generalização da inferência, embora não alterem a conclusão dos quatro testes dentro da execução analisada.",
+      "decisao": "Valores p e direção correspondem ao CSV. Limites de semente única e multiplicidade mantidos; conclusão refere-se aos testes implementados, sem validar pressupostos de dependência serial.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 475,
+      "texto": "VALIDADE EXTERNA",
+      "decisao": "Título de subseção.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 476,
+      "texto": "A avaliação experimental considera um único ativo, a PETR4, negociado na B3, utilizando observações entre 2000 e 2020 e horizonte de previsão de um passo à frente. Mercados, períodos históricos, frequências e ativos distintos podem apresentar propriedades estatísticas diferentes e alterar o comportamento das distribuições e do reservatório. Assim, as conclusões sobre desempenho são restritas ao cenário experimental analisado.",
+      "decisao": "Escopo ativo/período/horizonte corresponde aos dados examinados e limita generalização.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 477,
+      "texto": "A comparação entre ESN, LSTM e GRU também utiliza orçamentos distintos de seleção de hiperparâmetros. A ESN recebeu uma busca evolutiva extensa, enquanto os baselines LSTM e GRU utilizaram arquiteturas definidas no protocolo, com 50 unidades recorrentes, janela de dez passos, dropout de 0,2, Adam e 80 épocas. A análise de Diebold-Mariano fortaleceu a evidência relativa a essas arquiteturas específicas na execução controlada, mas não elimina a assimetria de orçamento nem permite afirmar que toda possível configuração de LSTM ou GRU teria desempenho inferior.",
+      "decisao": "Orçamentos assimétricos e configuração de baselines explicitados; nenhum domínio universal alegado.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 478,
+      "texto": "A discussão de governança apresentada no Capítulo 4 constitui um enquadramento para eventual implantação e não uma validação operacional em produção. O trabalho não definiu limites organizacionais de risco, não avaliou estratégia de compra e venda, custos de transação, retorno financeiro ou indicadores de carteira e não testou processos de monitoramento, promoção e rollback em ambiente real. Consequentemente, esses mecanismos são tratados como requisitos de engenharia e gestão de modelo derivados das limitações observadas, e não como funcionalidades cuja eficácia financeira tenha sido demonstrada.",
+      "decisao": "Governança reconhecida como enquadramento proposto; não apresentada como validação financeira ou operacional.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 479,
+      "texto": "TRABALHOS FUTUROS",
+      "decisao": "Título de subseção.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 480,
+      "texto": "A continuidade do artefato prevê revisar a interface, reorganizar a navegação, melhorar a apresentação dos resultados e consolidar a identidade da aplicação, amadurecendo a experiência de uso. Nessa etapa futura, o software adotará o nome JANUS, com o mesmo núcleo experimental do ESNAUTO e possibilidades de uso mais amplas. Nesta monografia, a versão dos experimentos permanece identificada como ESNAUTO.",
+      "decisao": "JANUS é etapa futura, identidade ESNAUTO preservada nos experimentos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 481,
+      "texto": "A evolução para JANUS também deverá fortalecer aspectos de Engenharia de Software identificados durante a consolidação do Trabalho Final de Curso: persistência estruturada dos vetores de previsão, armazenamento das matrizes e metadados de cada execução considerada oficial, identificação inequívoca da versão do código e do conjunto de dados associado a cada resultado e painéis que facilitem acompanhar métricas ao longo do tempo. Essas melhorias procuram reduzir a distância entre a capacidade funcional já existente e uma política de rastreabilidade mais completa.",
+      "decisao": "Persistência e painéis são propostas de melhoria motivadas por lacunas, sem declarar implementação concluída.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 482,
+      "texto": "No plano operacional, a evolução poderá incorporar recursos de apoio à governança, como comparação entre modelo vigente e modelo candidato, visualização de degradação de MAE, RMSE e MAPE em janelas móveis, registro de promoções e possibilidade de retorno à configuração anterior. Esses recursos seriam instrumentos de acompanhamento e auditoria; não transformam, por si sós, o sistema em ferramenta de recomendação de investimento ou negociação automatizada.",
+      "decisao": "Recursos de governança propostos em modo condicional; sem utilidade financeira presumida.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 483,
+      "texto": "A extensão à VALE3 permanece como continuidade experimental, fora dos resultados desta monografia. Ela deverá avaliar preparação da série, distribuições, repetições e comparadores sob partições temporalmente auditáveis. Os parâmetros das distribuições deverão ser ajustados ao treino ou ter sua transferência entre ativos explicitada. As execuções exploratórias preservadas são material preliminar.",
+      "decisao": "VALE3 tratada como extensão futura e exploratória, sem inclusão nos resultados PETR4.",
+      "acao": "manter"
+    }
+  ],
+  "evidencias": [
+    "conferencia_hipoteses_lote64.json",
+    "conferencia_tabelas_historicas_lote65.json",
+    "conferencia_numerica_dm_lote46.json",
+    "conferencia_codigo_unidades_lote69.json"
+  ],
+  "limite": "Conferência de coerência e alcance, não nova execução de modelos ou avaliação de eficácia de propostas futuras."
+}

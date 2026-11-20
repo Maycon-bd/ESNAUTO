@@ -1,0 +1,17 @@
+{
+  "name": "esnauto-video-edicao",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio remotion/index.jsx",
+    "render:teste": "remotion render remotion/index.jsx Teste exportados/teste-remotion.mp4",
+    "hyperframes": "hyperframes"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.540",
+    "hyperframes": "0.9.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.540"
+  }
+}

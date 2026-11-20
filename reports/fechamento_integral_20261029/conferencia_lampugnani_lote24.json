@@ -1,0 +1,22 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "7bcd83fdf866295be877135b8c33c413f21f2e492f7002b5a9278b43e25c7344",
+  "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+  "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+  "alcance": "Confronto dirigido às afirmações, tabelas de resultados e declaração de tratamento; não equivale a leitura integral de todas as fontes citadas pela outra monografia.",
+  "evidencias": {
+    "tema_e_implementacao": "Parágrafos 397,402,435,459–460 descrevem PETR4, distribuições Win/W e otimização AG; não pressupor protocolos iguais.",
+    "tratamento": "Parágrafo 408 declara que não foi feito tratamento ou embaralhamento adicional; não prova ausência de ajuste prévio.",
+    "tabelas": "24 registros com RMSE/MAE de teste localizados diretamente nas tabelas do DOCX; mínimo MAE 0,378706 Cauchy/Normal; mínimo RMSE 0,568178 Cauchy/Uniforme. Índice 16 na enumeração global de tabelas OOXML; relatório histórico usa outra enumeração.",
+    "interpretacao": "U0911 e U0912 delimitam diferença numérica e impossibilidade de inferir causa ou equivalência de protocolo; Tabela 7 apresenta os mínimos em configurações distintas."
+  },
+  "unidades_conferidas": [
+    "U0225: trecho Lampugnani",
+    "U0245",
+    "U0911",
+    "U0912",
+    "Tabela 7: linha Lampugnani"
+  ],
+  "limites": "Menor erro de um estudo isolado não estabelece superioridade em experimento comum. Verificar demais fontes e afirmações compostas separadamente."
+}

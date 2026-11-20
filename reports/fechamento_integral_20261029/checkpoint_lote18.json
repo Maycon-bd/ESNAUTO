@@ -1,0 +1,13 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "22fad6c5802e350bcfdcf3776f5531086f3fe7220380d8f0a9ede83b90a8a47b",
+  "paginas": 76,
+  "verificacoes": 45,
+  "falhas": 0,
+  "paginas_alteradas_e_inspecionadas": [
+    22
+  ],
+  "paginas_iguais_ao_checkpoint_anterior": 75,
+  "estado": "rascunho_nao_promovido"
+}

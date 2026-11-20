@@ -1,0 +1,375 @@
+{
+  "base": "v009",
+  "sha256_base": "793910fae2daaa2d5dbdcfa0cd76177c6c6a38c353d98d94ecaaaecf118c7b03",
+  "status": "proposta_concreta_ainda_nao_incorporada_ao_word",
+  "alteracoes": [
+    {
+      "linha_word": 15,
+      "autor": "Jaeger (2007)",
+      "dimensao": "P1",
+      "antes": "?",
+      "depois": "D"
+    },
+    {
+      "linha_word": 15,
+      "autor": "Jaeger (2007)",
+      "dimensao": "P3",
+      "antes": "?",
+      "depois": "D"
+    },
+    {
+      "linha_word": 19,
+      "autor": "Millea (2014)",
+      "dimensao": "P4",
+      "antes": "?",
+      "depois": "S"
+    }
+  ],
+  "contagens_antes": {
+    "P1": {
+      "—": 16,
+      "?": 13,
+      "D": 5
+    },
+    "P2": {
+      "—": 15,
+      "D": 11,
+      "S": 5,
+      "?": 3
+    },
+    "P3": {
+      "?": 6,
+      "D": 26,
+      "S": 2
+    },
+    "P4": {
+      "—": 6,
+      "?": 16,
+      "D": 10,
+      "S": 2
+    },
+    "P5": {
+      "—": 3,
+      "D": 25,
+      "S": 3,
+      "?": 3
+    }
+  },
+  "contagens_depois": {
+    "P1": {
+      "—": 16,
+      "?": 12,
+      "D": 6
+    },
+    "P2": {
+      "—": 15,
+      "D": 11,
+      "S": 5,
+      "?": 3
+    },
+    "P3": {
+      "?": 5,
+      "D": 27,
+      "S": 2
+    },
+    "P4": {
+      "—": 6,
+      "?": 15,
+      "D": 10,
+      "S": 3
+    },
+    "P5": {
+      "—": 3,
+      "D": 25,
+      "S": 3,
+      "?": 3
+    }
+  },
+  "matriz_proposta": [
+    [
+      "Trabalho",
+      "P₁",
+      "P₂",
+      "P₃",
+      "P₄",
+      "P₅"
+    ],
+    [
+      "Abebe e Goshu (2024)",
+      "—",
+      "—",
+      "?",
+      "—",
+      "—"
+    ],
+    [
+      "Araújo et al. (2025)",
+      "?",
+      "D",
+      "D",
+      "?",
+      "D"
+    ],
+    [
+      "Behera, Nayak e Kumar (2023)",
+      "?",
+      "S",
+      "S",
+      "?",
+      "S"
+    ],
+    [
+      "Cardoso et al. (2022b)",
+      "—",
+      "—",
+      "D",
+      "—",
+      "D"
+    ],
+    [
+      "Chen et al. (2026)",
+      "—",
+      "—",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Cortesi et al. (2026)",
+      "—",
+      "—",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Costa e Lunkes (2025)",
+      "—",
+      "—",
+      "D",
+      "?",
+      "D"
+    ],
+    [
+      "Deng et al. (2022)",
+      "?",
+      "D",
+      "D",
+      "S",
+      "—"
+    ],
+    [
+      "Dewick (2022)",
+      "—",
+      "—",
+      "D",
+      "—",
+      "D"
+    ],
+    [
+      "Duttilo (2024)",
+      "—",
+      "—",
+      "D",
+      "—",
+      "D"
+    ],
+    [
+      "Duttilo e Gattone (2022)",
+      "—",
+      "—",
+      "D",
+      "—",
+      "D"
+    ],
+    [
+      "Ecer et al. (2020)",
+      "—",
+      "—",
+      "D",
+      "?",
+      "D"
+    ],
+    [
+      "Hariharan, Suresh e Chandrasekar (2025)",
+      "D",
+      "D",
+      "D",
+      "?",
+      "D"
+    ],
+    [
+      "Hassaan, Yacoub e Said (2025)",
+      "D",
+      "S",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Jaeger (2007)",
+      "D",
+      "S",
+      "D",
+      "?",
+      "—"
+    ],
+    [
+      "Kumar (2025)",
+      "?",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Liu B. et al. (2022)",
+      "—",
+      "D",
+      "D",
+      "S",
+      "D"
+    ],
+    [
+      "Liu, Lin e Rojas (2025)",
+      "—",
+      "—",
+      "D",
+      "?",
+      "D"
+    ],
+    [
+      "Millea (2014)",
+      "D",
+      "D",
+      "?",
+      "S",
+      "?"
+    ],
+    [
+      "Nelson (1991)",
+      "—",
+      "—",
+      "D",
+      "—",
+      "D"
+    ],
+    [
+      "Ping (2023)",
+      "—",
+      "—",
+      "?",
+      "?",
+      "?"
+    ],
+    [
+      "Seddik, Routaib e Elhaddadi (2023)",
+      "?",
+      "D",
+      "D",
+      "?",
+      "S"
+    ],
+    [
+      "Sharma et al. (2025)",
+      "?",
+      "D",
+      "D",
+      "?",
+      "D"
+    ],
+    [
+      "Soltani, Benmohamed e Ltifi (2022)",
+      "?",
+      "S",
+      "?",
+      "?",
+      "?"
+    ],
+    [
+      "Sudiatmika e Putra (2024)",
+      "—",
+      "—",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Sun et al. (2021)",
+      "?",
+      "?",
+      "?",
+      "D",
+      "D"
+    ],
+    [
+      "Tian e Pei (2024)",
+      "?",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Timbó et al. (2016)",
+      "—",
+      "—",
+      "D",
+      "?",
+      "D"
+    ],
+    [
+      "Ribeiro et al. (2021)",
+      "D",
+      "D",
+      "D",
+      "?",
+      "D"
+    ],
+    [
+      "Vishwas, Usha e Sangeetha (2025)",
+      "?",
+      "S",
+      "S",
+      "?",
+      "S"
+    ],
+    [
+      "Wang, Bu e Huang (2025)",
+      "?",
+      "?",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Wang W. et al. (2021)",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Xiao, Deng e Bi (2024)",
+      "—",
+      "—",
+      "D",
+      "D",
+      "D"
+    ],
+    [
+      "Zhang et al. (2021)",
+      "?",
+      "?",
+      "D",
+      "?",
+      "D"
+    ]
+  ],
+  "leitura_integral_de_todas_as_fontes": false,
+  "avisos": [
+    "Contagens derivadas da v009, não das tabelas históricas; os valores de D/S/NA mudaram em revisões anteriores.",
+    "Apenas três decisões têm evidência nova suficiente;38insuficiências não foram preenchidas por inferência."
+  ]
+}

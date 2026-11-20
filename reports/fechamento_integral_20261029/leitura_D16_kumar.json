@@ -1,0 +1,109 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "rascunho_conferido_sha256": "27c480d8971b56f353db3dc9fc5eea70a30fda031e66da75d3be47969314dcc5",
+  "fonte": {
+    "id": "D16",
+    "arquivo": "Artigos citados\\Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+    "sha256": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+    "paginas": 21,
+    "caracteres_extraidos": 48607,
+    "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+    "log_leitura": []
+  },
+  "leitura_integral": "Todos os textos das21páginas, inclusive agradecimentos, disponibilidade e referências, lidos em ordem nos três blocos registrados. Equações de extração com glifos especiais conferidas nas renderizações das páginas relevantes.",
+  "visuais_abertos": [
+    1,
+    7,
+    8,
+    14,
+    16,
+    17,
+    18
+  ],
+  "unidades_sem_edicao": [
+    {
+      "unidade": "U0199",
+      "diagnostico": "condizente_no_alcance_enunciado",
+      "evidencia": "PDF1–6,16–19: contraste ARIMA,LSTM,GRU,RC em petróleo; discussão qualitativa e métricas, sem afirmar na monografia superioridade em todos os critérios. A expressão genérica modelos de RC não é usada como contagem de arquiteturas executadas."
+    },
+    {
+      "unidade": "U0255",
+      "diagnostico": "condizente_com_limites_explicitos",
+      "evidencia": "D26/Sun PDF5–9; D14/Hassaan PDF11–13; D16/Kumar PDF16–19. As três fontes contêm comparações qualificadoras, em seus próprios protocolos. A monografia não infere eficiência universal nem proibição geral de redes profundas."
+    }
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D16",
+      "arquivo_pdf": "Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256_pdf": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "tipo": "aplicacao_RC",
+      "dimensao": "P1",
+      "codigo": "?",
+      "localizador": "PDF2,4,6,13–16",
+      "evidencia_e_limite": "Reservatório descrito como fixo e aleatório, sem família dos elementos de Win/Wres; PDF14afirma treinamento das três matrizes, em tensão com a descrição anterior. Não inferir lei pelos defaults de outra versão de pacote.",
+      "escopo_leitura": "Texto integral PDF1–21lido sequencialmente em blocos1–6,7–14,15–21; páginas1,7,8,14,16,17,18inspecionadas visualmente."
+    },
+    {
+      "id": "D16",
+      "arquivo_pdf": "Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256_pdf": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "tipo": "aplicacao_RC",
+      "dimensao": "P2",
+      "codigo": "D",
+      "localizador": "PDF16,seção4.1.4",
+      "evidencia_e_limite": "Hyperopt/TPE varia unidades, vazamento, conectividades e regularização e minimiza métrica na validação. Valores escolhidos são listados. Procedimento direto, mesmo sem todos os intervalos ou logs.",
+      "escopo_leitura": "Texto integral PDF1–21lido sequencialmente em blocos1–6,7–14,15–21; páginas1,7,8,14,16,17,18inspecionadas visualmente."
+    },
+    {
+      "id": "D16",
+      "arquivo_pdf": "Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256_pdf": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "tipo": "aplicacao_RC",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF8,seção3.2,equação1",
+      "evidencia_e_limite": "Normalização min–max explícita. Limpeza/outliers são mencionados sem detalhes; não inferir que min/max foram estimados apenas no treino.",
+      "escopo_leitura": "Texto integral PDF1–21lido sequencialmente em blocos1–6,7–14,15–21; páginas1,7,8,14,16,17,18inspecionadas visualmente."
+    },
+    {
+      "id": "D16",
+      "arquivo_pdf": "Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256_pdf": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "tipo": "aplicacao_RC",
+      "dimensao": "P4",
+      "codigo": "D",
+      "localizador": "PDF16–18,Tabela3eFigura6",
+      "evidencia_e_limite": "Resultados próprios numéricos ARIMA,LSTM,GRU,RC. A tabela não prova domínio do RC em todas as métricas e não permite transportar razões universais de tempo para outro protocolo.",
+      "escopo_leitura": "Texto integral PDF1–21lido sequencialmente em blocos1–6,7–14,15–21; páginas1,7,8,14,16,17,18inspecionadas visualmente."
+    },
+    {
+      "id": "D16",
+      "arquivo_pdf": "Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256_pdf": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "tipo": "aplicacao_RC",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF2–3,6–8",
+      "evidencia_e_limite": "Preços diários de petróleo obtidos via yfinance/YahooFinance,2010–2023. Não individualiza o ticker/mercado na passagem; não acrescentar bolsa ou afirmar preços spot/ajustados apenas pela coluna AdjClose.",
+      "escopo_leitura": "Texto integral PDF1–21lido sequencialmente em blocos1–6,7–14,15–21; páginas1,7,8,14,16,17,18inspecionadas visualmente."
+    }
+  ],
+  "codigos_alterados": 0,
+  "metadados": {
+    "referencia": "R29",
+    "localizador": "PDF1",
+    "diagnostico": "Título, autor KaushalKumar, periódico ComputationalEconomics66:2543–2563,DOI10.1007/s10614-024-10797-w conferidos. Citação2025corresponde ao cabeçalho da edição; publicação online28/11/2024também consta e não torna2025erro."
+  },
+  "limites_e_inconsistencias_da_fonte": [
+    "PDF1resumo dá MSE do RC0,00035; Tabela3PDF17mostra0,0004. MAPE do RC é1,450%na tabela e1,5705%na prosa. Não transportar os valores contraditórios.",
+    "Tabela3não sustenta vitória em todos os critérios: MSE da GRU0,00035é menor que0,0004do RC; NRMSE do RC0,0314é maior queARIMA0,0288eGRU0,0281. A monografia usa competitividade condicionada, não domínio total.",
+    "Definição textual de NRMSE menciona amplitude, mas Eq22divide pela média. Os diferentes NRMSE/RMSE da mesma série exigem cautela se tivessem denominador comum; não utilizar como fator universal.",
+    "A seção4.1.4declara Hyperopt/TPE, enquanto a tabela reporta runtime sem demonstrar que inclui toda a busca. Não confundir com o custo GA nem com treino do ESNAUTO.",
+    "PDF7prosa trata skewness de volume como negativa, mas tabela informa1,172312positivo. Não utilizar essa descrição como propriedade dos preços/retornos da PETR4.",
+    "A descrição fixa de reservatório e a frase sobre treinamento de Win,Wres,Wout não se conciliam no texto. O fundamento do treinamento apenas da saída permanece ancorado nas fontes Jaeger."
+  ],
+  "sem_edicao_word": true,
+  "limites": "Não houve acesso ao código externo, reprodução ou certificação da qualidade empírica da publicação. A decisão diz respeito ao apoio das afirmações na monografia e à documentação do PDF."
+}

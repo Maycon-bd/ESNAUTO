@@ -1,0 +1,138 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "registros": [
+    {
+      "paragrafo_atual": 293,
+      "texto": "MATERIAL E MÉTODOS",
+      "decisao": "Título.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 294,
+      "texto": "Neste capítulo, foi descrita a metodologia experimental do ESNAUTO, desenvolvida para investigar o efeito de diferentes distribuições probabilísticas nas matrizes Win e W de uma ESN aplicada à previsão de um passo à frente da PETR4. A implementação combinou regressão Ridge para ajuste analítico da camada de saída, Algoritmo Genético binário para otimização de cinco hiperparâmetros, inicialização populacional por Amostragem por Hipercubo Latino (Latin Hypercube Sampling - LHS) e operador antiestagnação por mutação cataclísmica inspirado no CHC.",
+      "decisao": "Descreve motor e finalidade experimental, sem afirmar efeito causal isolado; ressalva histórica mantida nas seções seguintes.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 295,
+      "texto": "O protocolo contemplou cinco ondas experimentais, 45 execuções documentadas e comparação descritiva com ESN Normal × Normal, LSTM e GRU. A notação “A × B” foi utilizada para indicar, nessa ordem, a distribuição empregada na matriz de entrada Win e a distribuição empregada na matriz recorrente W. Assim, Normal × Normal significa que Win foi gerada com distribuição Normal e W também foi gerada com distribuição Normal; de modo análogo, Laplace × Normal significa Win gerada com distribuição Laplace e W gerada com distribuição Normal.",
+      "decisao": "45 execuções documentadas e convenção Win × W correspondem aos relatórios compilados.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 296,
+      "texto": "CLASSIFICAÇÃO DA PESQUISA",
+      "decisao": "Título.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 297,
+      "texto": "Quanto à natureza, esta pesquisa foi classificada como aplicada, por buscar gerar conhecimento dirigido à solução de um problema específico: a previsão de preços do ativo PETR4 da B3. Quanto à abordagem, foi classificada como quantitativa, uma vez que os resultados foram avaliados por meio de métricas numéricas e análise descritiva e comparativa.",
+      "decisao": "Classificação aplicada/quantitativa é interpretação metodológica coerente com tarefa e medidas.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 298,
+      "texto": "Quanto aos objetivos, a pesquisa foi exploratória e comparativa: examinou configurações de ESNs que combinam distribuições de inicialização e seleção de hiperparâmetros por AG, com a série recebida como ajustada. Essa classificação descreve o propósito do experimento e não pressupõe que a combinação seja inédita ou pouco estudada. Quanto aos procedimentos, foi experimental, com comparações computacionais sob o protocolo descrito. O alcance das inferências depende dos controles e dos artefatos efetivamente preservados.",
+      "decisao": "Exploratória/comparativa e experimental descrevem finalidade; texto não reivindica ineditismo ou controles ausentes.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 299,
+      "texto": "A implementação partiu de códigos em R fornecidos pelo orientador, adaptados pelo autor ao contexto da pesquisa, com desenvolvimento da interface do ESNAUTO. Os fundamentos da ESN seguem Jaeger (2007). O código atual usa GA, fGarch e PearsonDS; mede tempo com proc.time e usa pracma como pseudoinversa alternativa. O script anterior carrega outras bibliotecas e contém exemplos de ajuste comentados. O Quadro 6 distingue a base recebida e a contribuição de adaptação e interface.",
+      "decisao": "Procedência de códigos e interface confirmada pelo autor; pacotes e alternativas conferidos no registro de pacotes.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 300,
+      "texto": "A reexecução e a auditabilidade do protocolo foram favorecidas pelo versionamento do código em repositório Git e pela organização modular dos artefatos de software. A reprodução exata de cada execução histórica, entretanto, permaneceu condicionada à disponibilidade das matrizes, vetores de previsão e versões de dependências correspondentes, conforme detalhado na Seção 3.8.",
+      "decisao": "Versionamento não equiparado a reprodução integral; dependência de artefatos preservados explícita.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 301,
+      "texto": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+      "decisao": "Título.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 302,
+      "texto": "A pesquisa utiliza arquivos locais da série PETR4 fornecidos pelo orientador, Prof. Dr. Fabian Corrêa Cardoso, já ajustados por eventos corporativos. A procedência da série é atribuída ao BovDB (Cardoso et al., 2022b). O ativo é a ação preferencial da Petróleo Brasileiro S.A. (PETROBRAS PN). A preparação original dos arquivos antecede seu uso nesta pesquisa; a modelagem partiu dos valores recebidos.",
+      "decisao": "Dados recebidos ajustados do orientador; referência BovDB contextualiza origem declarada, sem reconstruir transformação.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 303,
+      "texto": "A variável-alvo foi o preço de fechamento disponibilizado como ajustado, de 3 de janeiro de 2000 a 30 de dezembro de 2020, totalizando 5.198 observações diárias. Os arquivos fornecidos aos modelos preservam os valores e as datas dessa série. A coincidência de ativo ou intervalo entre estudos não demonstra equivalência dos respectivos tratamentos, partições e protocolos de previsão.",
+      "decisao": "Alvo, período e quantidade correspondem à conferência dos arquivos de entrada; não presume protocolos idênticos em estudos distintos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 304,
+      "texto": "Os executores importam os valores de PETR4_close com factor_2000-2020.txt e PETR4_close com factor_2000-2020_com data.csv. Esses arquivos foram recebidos já ajustados do orientador, conforme esclarecimento do autor. O escopo desta pesquisa compreende sua utilização nos modelos e a organização das partições temporais. A cadeia original que liga cotações e eventos do BovDB à geração desses arquivos não foi reconstruída nesta auditoria.",
+      "decisao": "Nomes dos arquivos e recebimento documentados; cadeia anterior não reconstruída declarada.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 305,
+      "texto": "A ausência dessa cadeia limita a auditoria retrospectiva do ajuste corporativo, ainda que os valores e as datas de entrada possam ser identificados por seus arquivos. A descrição das equações do BovDB oferece a referência metodológica, mas não substitui o registro dos eventos aplicados nem prova que cada exceção descrita na literatura tenha sido implementada na série local.",
+      "decisao": "Limite de auditoria do ajuste correto; equações de artigo não substituem dados de eventos locais.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 306,
+      "texto": "Essa diferença permitiu contextualizar os resultados entre os estudos, mas não permitiu atribuir causalmente ao Fator de Ajuste a diferença de erro observada, pois também houve mudanças nas distribuições avaliadas, na estratégia de busca e nos demais componentes do protocolo. Como não foi realizada, neste trabalho, uma comparação experimental entre a série bruta e a série ajustada, o efeito isolado do Fator não foi quantificado.",
+      "decisao": "Não atribui causalmente ganho ao fator; comparação bruto/ajustado não feita neste trabalho.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 307,
+      "texto": "A série foi organizada em blocos cronológicos, sem embaralhar as datas entre treino, validação e teste. Essa organização é necessária à avaliação temporal, mas não demonstra, isoladamente, ausência de vazamento de informação. Na rodada controlada complementar, a fronteira dos alvos de treino e a propagação contínua dos estados foram verificadas explicitamente; nos resultados históricos, a identificação do comportamento de cada execução depende dos artefatos preservados.",
+      "decisao": "Partição cronológica não tomada como prova de ausência de vazamento; rodada controlada distinguida.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 308,
+      "texto": "A divisão estática 50%/25%/25% reuniu 2.600 observações de treino, de 03/01/2000 a 01/07/2010; 1.299 de validação, de 02/07/2010 a 28/09/2015; e 1.299 de teste, de 29/09/2015 a 30/12/2020. A função de aptidão da busca combinou erros de treino e validação. Os recordes de erro de teste apresentados nos resultados constituem comparações descritivas posteriores e não equivalem a uma seleção prospectiva de configuração para uma nova amostra.",
+      "decisao": "Datas e contagens correspondem à conferência das entradas. Percentuais são rótulos aproximados (2600+1299+1299=5198); ranking de teste tratado como retrospectivo.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 309,
+      "texto": "A ESN recebeu os valores da série já disponibilizada como ajustada, sem normalização adicional para [−1, 1]. Na rodada controlada, LSTM e GRU usaram Min-Max calculado exclusivamente sobre as 2.600 observações de treino e reutilizado na validação e no teste. Esse procedimento de escalonamento foi verificado no protocolo controlado; sua confirmação para cada execução histórica depende dos artefatos preservados. A ordem cronológica, isoladamente, não demonstra ausência de vazamento.",
+      "decisao": "Escalonamento de treino nos baselines controlados e ausência de normalização adicional ESN correspondem ao protocolo; histórico individual ressalvado.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 310,
+      "texto": "A caracterização estatística foi utilizada como descrição da série de preços empregada nos experimentos. A Tabela 2 apresentou as medidas descritivas calculadas sobre as 5.198 observações da série ajustada.",
+      "decisao": "Estatística tratada como descritiva das 5.198 observações, sem inferência sobre retornos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 311,
+      "texto": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+      "decisao": "Legenda corresponde à tabela da série e período.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 312,
+      "texto": "Fonte: Elaborado pelo autor (2026) a partir da série recebida já ajustada; contexto do fator em Cardoso et al. (2022b).",
+      "decisao": "Fonte atribui dados recebidos e separa contexto bibliográfico; não atribui transformação ao autor.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 313,
+      "texto": "IMPLEMENTAÇÃO DAS ESNS EM R",
+      "decisao": "Título.",
+      "acao": "manter"
+    }
+  ],
+  "evidencias": [
+    "conferencia_numerica_entradas_e_rodada_controlada.json",
+    "conferencia_pacotes_lote35.json",
+    "conferencia_codigo_unidades_lote69.json",
+    "conferencia_tabelas_historicas_lote65.json"
+  ],
+  "limite": "Conferência de coerência com registros preservados; procedência anterior ao recebimento e correspondência de cada execução histórica continuam limitadas."
+}

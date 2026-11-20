@@ -1,0 +1,2128 @@
+
+[PÁGINA PDF 1]
+Date of publication xxxx 00, 0000, date of current version xxxx 00, 0000.
+Digital Object Identifier 10.1109/TQE.2020.DOI
+Quantum Temporal Convolutional Neural
+Networks for Cross-Sectional Equity
+Return Prediction: A Comparative
+Benchmark Study
+CHI-SHENG CHEN 1* , XINYU ZHANG 2* , EN-JUI KUO 5, RONG FU 2, QIUZHE XIE 3, and FAN
+ZHANG4
+1Beth Israel Deaconess Medical Center & Harvard Medical School, Boston, MA 02115 USA
+2Luddy School of Informatics, Computing, and Engineering, Indiana University Bloomington, Bloomington, IN 47405 USA
+3Institute of Electronics Engineering, National Taiwan University, 106319, Taiwan
+4Department of Mathematics, Boise State University, Boise, ID 83702 USA
+5Department of Electrophysics, National Yang Ming Chiao Tung University, 30010,Taiwan
+*Chi-Sheng Chen and Xinyu Zhang contributed equally to this work
+Corresponding author: Fan Zhang (email: fanzhang@boisestate.edu)
+ABSTRACTQuantummachinelearningoffersapromisingpathwayforenhancingstockmarketprediction,
+particularly under complex, noisy, and highly dynamic financial environments. However, many classical
+forecasting models struggle with noisy input, regime shifts, and limited generalization capacity. To address
+thesechallenges,weproposeaQuantumTemporalConvolutionalNeuralNetwork(QTCNN)thatcombines
+aclassicaltemporalencoderwithparameter-efficientquantumconvolutioncircuitsforcross-sectionalequity
+return prediction. The temporal encoder extracts multi-scale patterns from sequential technical indicators,
+while the quantum processing leverages superposition and entanglement to enhance feature representation
+andsuppressoverfitting.WeconductacomprehensivebenchmarkingstudyontheJPXTokyoStockExchange
+dataset and evaluate predictions through long-short portfolio construction using out-of-sample Sharpe ratio
+as the primary performance metric. QTCNN achieves a Sharpe ratio of 0.538, outperforming the best
+classicalbaselinebyapproximately72%.Theseresultshighlightthepracticalpotentialofquantum-enhanced
+forecasting model, QTCNN, for robust decision-making in quantitative finance.
+INDEX TERMSQuantumMachineLearning,FinancialTime-SeriesForecasting,TemporalConvolutional
+Neural Network
+I. INTRODUCTION
+Stock market forecasting is a major challenge in
+computational finance [1]. Financial markets pro-
+duce huge amounts of complex data every day. This
+dataisnoisy,changesconstantly,andcontainsmany
+hidden patterns [2]. Creating models that accurately
+predict market movements is highly valuable, as
+strong forecasts enable better investment strategies
+and more effective risk management.
+Inrecentyears,researchershaveusedmanydiffer-
+ent computational methods to predict stock prices.
+Theseincludeclassicstatisticalmodels[3],machine
+learning algorithms, and modern deep learning
+methodslikeTransformers[4].Whilethesemethods
+haveshownsomesuccess,theyoftenfacesignificant
+problems. Many models struggle to capture the
+complex, long-term dynamics of the market. They
+may also overfit to past data, which means they
+perform poorly when market conditions change [5].
+As a result, many existing methods lack the robust-
+ness and adaptability needed for real-world trading.
+Quantum computing offers a new and promising
+approachtothesechallenges[11].QuantumMachine
+Learning (QML) uses the principles of quantum
+VOLUME 4, 2016 1
+arXiv:2512.06630v2  [cs.LG]  13 Feb 2026
+
+[PÁGINA PDF 2]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+TABLE 1: Comparison of Recent Stock Prediction Methods
+Study Method / Model Target Data Key Techniques Performance
+Aşırım, et al. [6] Single-layer Transformer Nasdaq daily closing
+prices
+Data segmentation, inde-
+pendent normalization, si-
+nusoidal positional embed-
+dings
+Average correlation
+≈0.96, effectively
+captured stock price
+trends
+Ahire et al. [7] Hybrid ARIMA + Machine
+Learning
+ICICI and SBI stock
+data
+ARIMA with RSI, SMA,
+and Stochastic K indicators
+Prediction
+accuracy≈0.96
+(SBI) and0.94
+(ICICI); effective
+bullish/bearish
+detection
+Singh et al. [8] Random Forest, Gradient
+Boosting
+TCS, HCL, and Ques
+Corp (5-year data)
+Multi-model performance
+comparison
+𝑅2 >0.99and
+MAPE<0.2%, high-
+est accuracy
+RaviTeja et al. [9] Novel Quantum Enforcing
+Algorithm (NQEA)
+Stock index and Bit-
+coin prices
+Quantum-inspired optimiza-
+tion, compared with BV al-
+gorithm
+Accuracy95.9%, loss
+4.1%, outperforming
+BV (88.0%)
+Hossain et al. [10] Linear Regression, RF, GB,
+XGBoost, MLP
+Dhaka Stock Exchange Cross-model performance
+comparison
+Linear Regression
+achieved lowest
+prediction error
+and most consistent
+performance
+mechanics,suchassuperpositionandentanglement.
+Thesefeaturesallowquantummodelstoexplorevery
+large,complexdataspaces[12].Thismayhelpthem
+findimportantpatternsinfinancialdatathatclassical
+computers cannot.
+Recentstudies(shownasTABLE1)haveexplored
+a diverse range of computational and intelligent
+approaches to improve the accuracy and efficiency
+of stock market forecasting. These works span from
+deep learning architectures and hybrid statistical-
+machine learning frameworks to quantum-inspired
+algorithms.
+Despite their notable results, the studies above
+share several common weaknesses. Most relied
+on limited dataset quality, which restricted gen-
+eralization across diverse market conditions. The
+Transformerandseveraltraditionalmachinelearning
+approaches still struggled to capture nonlinear and
+long-termdependencieswithinfinancialtime-series
+data, often showing risks of overfitting and limited
+incorporation of richer signals such as macroeco-
+nomic or sentiment-driven factors.
+In this paper, we propose a quantum-enhanced
+approach to address these limitations. Our model
+QTCNN, which leverages superposition and en-
+tanglement to extract high-dimensional, nonlinear
+relationships within noisy market data. This archi-
+tecture is designed to improve generalization and
+boost robustness compared with classical models
+by providing richer representational capacity while
+maintaining computational efficiency.
+To validate our model, we conduct a compre-
+hensive benchmarking study using the JPX Tokyo
+Stock Exchange dataset [13]. We compare our
+proposed QTCNN model against a strong set of
+classical baselines, including LightGBM (LGBM)
+[14], LSTM [15], and the Transformer [16]. We
+alsocompareittootherrecentlypublishedquantum-
+inspiredalgorithms.Ourresultsshowthatourmodel
+achieves superior predictive accuracy and robust-
+ness, demonstrating a more effective way to handle
+complex financial time-series data.
+The main contributions of this paper can be
+concluded as bellow:
+•Weproposedanend-to-endquantum-enhanced
+frameworkforcross-sectionalequityreturnpre-
+diction, where the QNN serves as the primary
+predictive model to extract complex market
+signals.
+•The QNN leverages quantum superposition
+and entanglement to model nonlinear, high-
+dimensional structures in noisy financial data,
+improving generalization capability while mit-
+igatingoverfittingcomparedwithclassicalma-
+chine learning approaches.
+•A unified benchmarking study is conducted
+against representative deep learning architec-
+tures, statistical methods, and other quantum-
+based models, demonstrating the superior pre-
+dictiveaccuracyandrobustnessoftheproposed
+framework in a realistic financial forecasting
+scenario.
+The rest of this article is organized as follows.
+Section IIreviews the task and dataset used in
+2 VOLUME 4, 2016
+
+[PÁGINA PDF 3]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+TABLE 2: Fields in the Price Data Table
+(stock_prices)
+Field Name Description
+Date Trading date.
+SecuritiesCode Unique stock identifier (e.g.,
+1301, 1332), used as a key to-
+gether with Date.
+Open Daily opening price.
+High Daily highest price.
+Low Daily lowest price.
+Close Daily closing price.
+Volume Daily traded volume (in shares).
+AdjustmentFactor Cumulative adjustment factor ac-
+counting for stock splits, reverse
+splits, dividends, and other cor-
+porate actions.
+SupervisionFlag Indicator for stocks under ex-
+change supervision or at risk of
+delisting.
+Target Official competition target; two-
+day forward return based on fu-
+ture prices (see Section II-E).
+TABLE 3: Fields in the Static Stock Information
+Table (stock_list)
+Field Name Description
+SecuritiesCode Stock identifier matching
+stock_prices.
+Name Official stock name.
+MarketCapitalization Market capitalization of the com-
+pany.
+Universe0 Boolean flag indicating whether
+the stock belongs to the core pre-
+diction universe.
+this work.Section IIIdetails the architecture and
+provides a quantum resource complexity analysis of
+our proposed QTCNN model.Section IVpresents
+numericalresultsincludingaqubitscalabilitystudy,
+mechanism analysis of quantum enhancement, and
+noise resilience experiments. Finally,Section V
+discusses dequantization considerations, prospects
+for NISQ and fault-tolerant execution, and future
+research directions.
+II. TASK AND DATASET
+This section describes the official dataset of the
+Kaggle "JPX Tokyo Stock Exchange Prediction"
+competition and how it is used in our study, includ-
+ing the construction of training labels and subset
+sampling schemes for computationally efficient yet
+reproducible experiments.
+FIGURE 1: Overview of the Stock Prediction Task
+and Portfolio Evaluation Pipeline.
+A. TASK OVERVIEW
+FIGURE1illustratestheoverallpipelineofthestock
+prediction task and portfolio evaluation framework
+used in this study. The process consists of data
+preparation, feature and label construction, model
+prediction, cross-sectional ranking, and portfolio
+performance evaluation.
+Data and features.We begin with the JPX
+stockdataset,whichprovidesdailypriceandvolume
+informationforalllistedsecuritieswithintheofficial
+prediction universe. From the raw price series, we
+construct a set of technical and statistical features,
+including returns, momentum indicators, volatility
+measures, and price–volume related variables. To
+ensure comparability across stocks on the same
+trading day, all features are standardized in a cross-
+sectional manner (within each day) using z-score
+normalization.
+Label construction.For each stock𝑘on trading
+day𝑡, the supervision signal is derived from the
+officialcompetitiontarget,whichcorrespondstothe
+forward return over the next holding period. These
+targets serve as the ground-truth signals that guide
+the model to learn cross-sectional differences in
+expected future performance.
+Model prediction.The engineered features for
+each day are fed into the predictive model (e.g.,
+QTCNN or other baseline models), which outputs
+a continuous scoreˆ𝑦(𝑘)
+𝑡 for every stock. This score
+reflects the model’s assessment of the relative at-
+tractiveness of each stock for the upcoming holding
+period.
+Cross-sectional ranking and portfolio forma-
+tion.On each trading day, stocks are sorted based
+on the predicted scoresˆ𝑦(𝑘)
+𝑡 . A long–short portfolio
+is then constructed by going long the top𝑁ranked
+stocks and short the bottom𝑁ranked stocks, result-
+VOLUME 4, 2016 3
+
+[PÁGINA PDF 4]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+ing in a market-neutral portfolio that captures the
+cross-sectional signal extracted by the model.
+Performance evaluation.The daily returns of
+thelong–shortportfolioareaggregatedovertheout-
+of-sample period to assess predictive performance.
+The primary evaluation metric is the Sharpe ratio,
+defined as the mean portfolio return divided by its
+standarddeviation,whichmeasurestherisk-adjusted
+effectivenessoftheproposedpredictionandranking
+pipeline.
+B. ORIGINAL DATASET AND STOCK UNIVERSE
+1) Data source and time span
+The dataset is provided by JPX via the Kaggle
+competition. The official training data (“train” stock
+prices) covers approximately 2017–2021 Japanese
+trading days, and the supplemental files extend the
+timeline into 2022. On each trading day, there are
+roughly∼2000“active”stockswithcompleteprice,
+volume, and target information.
+2) Universe definition andUniverse0
+In addition to price data, JPX provides a static stock
+informationtable,denotedasstock_list,which
+contains a key flagUniverse0:
+•Universe0 = 1(orTrue)identifiesstocks
+that belong to a core universe of high-
+capitalization, sufficiently liquid names (ap-
+proximately the top∼2000stocks by size and
+liquidity).
+•TheseUniverse0stocks constitute the offi-
+cial prediction universe in the competition.
+Inourstudy,wefocusonstockswithUniverse0
+= Trueto match the official setting and to avoid
+extremely illiquid securities.
+C. KEY FIELDS AND FINANCIAL
+INTERPRETATION
+1) Price data (stock_prices)
+Themainpricedataset,availableinboththetraining
+and supplemental sets, includes the fields summa-
+rized in TABLE 2.
+These fields form the raw basis for our feature
+engineering and financial interpretation.
+2) Static stock information (stock_list)
+Thestock_listtable contains relatively static
+attributes for each stock, as summarized in Table 3.
+In the present work, we primarily use
+Universe0to define the prediction universe.
+Sectorcodesarenotusedasinputfeaturesinthemain
+models but can be exploited for industry-neutral
+analysis or robustness checks.
+3) Adjusted close price
+To eliminate non-economic jumps in price series
+caused by corporate actions, we construct an ad-
+justedclosepriceforeachstock𝑘attime𝑡usingthe
+cumulative adjustment factors:
+AdjClose𝑘,𝑡 =Close 𝑘,𝑡 ·
+Ö
+𝜏≤𝑡
+AdjustmentFactor𝑘, 𝜏.
+(1)
+Here,𝑘indexes the stock, and𝑡indexes the
+trading day. The adjusted closeAdjClose𝑘,𝑡 is used
+tocomputereturns,momentum,volatility,andother
+time-series features.
+Importantly,theofficialTargetremainsdefined
+on the raw closes; we do not modify the target.
+Adjustments are applied only on the feature side.
+D. DEFINITION AND INTERPRETATION OF THE
+TARGET
+TheTargetfield is the central label of the JPX
+competition and corresponds to a two-day holding
+return with a one-day execution delay.
+Let𝐶(𝑘, 𝑡)denote the raw close price of stock𝑘
+attradingday𝑡.Theofficialtargetcanbewrittenas:
+Target(𝑘, 𝑡)= 𝐶(𝑘, 𝑡+2) −𝐶(𝑘, 𝑡+1)
+𝐶(𝑘, 𝑡+1) .(2)
+Financially, this corresponds to the following
+strategy:
+•Onday𝑡,themodelobservesinformationupto
+and including day𝑡and produces a ranking for
+day𝑡.
+•At the close of day𝑡+1, a position is opened
+atprice𝐶(𝑘, 𝑡+1)(longorshortdependingon
+the ranking).
+•At the close of day𝑡+2, the position is closed
+at price𝐶(𝑘, 𝑡+2).
+•The realized return is exactlyTarget(𝑘, 𝑡)as
+defined above.
+Thus, the model at day𝑡predicts the return of a
+two-dayholdingstrategyexecutedover[𝑡+1, 𝑡+2].
+Thisdesignenablesdailyrebalancingwhileavoiding
+intraday trading assumptions.
+E. DERIVED FEATURES AND PREPROCESSING
+1) Single-stock time-series features
+Starting fromAdjClose, we compute for each stock
+𝑘a set of univariate time-series features:
+•Returns and momentum
+–One-period return:
+ret1𝑘,𝑡 =
+AdjClose𝑘,𝑡 −AdjClose 𝑘,𝑡−1
+AdjClose𝑘,𝑡−1
+.
+(3)
+4 VOLUME 4, 2016
+
+[PÁGINA PDF 5]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+–Momentum indicatorsmom{1,2,5,10,20},
+e.g., cumulative return over the past𝑛days
+or deviations from moving averages.
+•Volatility features
+–Rolling standard deviation of returns:
+vol{5,10,20}computed fromret1overwin-
+dows of length5,10, and20days.
+•Price–volume features
+–Dollar volume:dv 𝑘,𝑡 =Close 𝑘,𝑡 ×
+Volume𝑘,𝑡 .
+–Rollingmeansofvolumeanddollarvolume:
+dv_mean{5,10,20},vol_mean{5,10,20}.
+–Log-transformed features such as
+log Volume𝑘,𝑡
+ andlog  dv𝑘,𝑡
+ to mitigate
+heavy-tailed distributions.
+2) Cross-sectional normalization
+For each trading day𝑡, we apply a cross-sectional
+preprocessing pipeline over all stocks (typically
+restricted toUniverse0):
+1)Winsorization.For each feature, values are
+winsorizedatthe1stand99thpercentilesacross
+stocks on day𝑡to trim extreme outliers.
+2)Z-score standardization.For winsorized fea-
+ture values{𝑥 𝑘,𝑡 }𝑘, we compute
+𝑧𝑘,𝑡 = 𝑥𝑘,𝑡 −𝜇 𝑡
+𝜎𝑡
+,(4)
+where𝜇 𝑡 and𝜎 𝑡 are the cross-sectional mean
+and standard deviation of that feature on day𝑡.
+Thisprocedureemphasizesrelativesignalswithin
+each day’s cross-section rather than absolute price
+or volume levels, aligning with the cross-sectional
+stock selection framework.
+F . LABEL CONSTRUCTION AND WEAKL Y
+SUPERVISED TRAINING SAMPLES
+AlthoughtheofficialTargetisacontinuousvalue,
+we adopt a weakly supervised scheme that focuses
+on the most clearly positive and negative examples.
+For each trading day𝑡:
+1) WerankallstocksbyTarget(𝑘, 𝑡)indescending
+order.
+2) We select:
+•The top𝑝stocks as the positive class with
+binary labellabel_bin(𝑘, 𝑡)=1;
+•The bottom𝑝stocks as the negative class
+with binary labellabel_bin(𝑘, 𝑡)=0.
+3) Stocks in the middle range are excluded from
+trainingandtreatedaslow-signalobservations.
+In our experiments,𝑝is typically set to200or
+300. This construction increases the signal-to-noise
+ratio by concentrating supervision on the strongest
+long and short candidates and mirrors the eventual
+long–short portfolio structure used in evaluation.
+G. TEMPORAL SPLIT AND SEQUENCE
+CONSTRUCTION
+1) Temporal train–test split
+To avoid look-ahead bias, we perform a simple
+chronological split:
+•AftersortingalldaysbyDate,thefirst80%of
+days constitute the training period.
+•The remaining20%of days constitute the out-
+of-sample test period.
+Allmodeltrainingandhyperparametertuningare
+conducted on the training period. The Sharpe ratios
+reported in our results are computed solely on the
+OOS period.
+2) Sequence construction for time-series models
+ForsequencemodelssuchasLSTMs,Transformers,
+or quantum-enhanced variants, we construct input
+sequencesoffixedlengthseq_len(defaultseq_len=
+20):
+x𝑘,𝑡 =
+
+features𝑘,𝑡−19 , . . . ,features 𝑘,𝑡
+
+,(5)
+wherefeatures 𝑘, 𝜏 denotes the feature vector for
+stock𝑘at day𝜏. Each sequencex 𝑘,𝑡 is paired
+with the labelTarget(𝑘, 𝑡)or its binary counterpart
+label_bin(𝑘, 𝑡).
+H. SUBSET SAMPLING OF TRADING DA YS
+To control computational cost and facilitate fair
+comparisons across different model architectures,
+we design two sampling schemes at the trading-day
+level. In both schemes, sampling is applied before
+feature engineering and sequence construction.
+1) Stride sampling
+Let{𝑡 1, 𝑡2, . . . , 𝑡𝑇 }be the chronologically ordered
+trading days. Given a stride𝑘(e.g.,𝑘=11), we
+select the subset
+{𝑡1, 𝑡1+𝑘 , 𝑡1+2𝑘 , . . .}.(6)
+This “stride” subsampling:
+•Preservestheoveralltemporalspan(e.g.,2017–
+2021) while sparsifying the calendar.
+•Usesapproximately1/𝑘ofalltradingdays(for
+𝑘=11, about9%of the original days).
+•Substantially reduces data volume and training
+time, making it suitable for rapid prototyping
+and architectural exploration.
+VOLUME 4, 2016 5
+
+[PÁGINA PDF 6]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+2) Y ear-wise stratified fraction sampling
+Alternatively, we partition trading days by calendar
+year (e.g., 2017, 2018, ..., 2021) and perform
+stratified random sampling:
+1) For each year, we randomly sample a fixed
+fraction𝛼(e.g.,𝛼=0.1) of trading days from
+that year.
+2) A fixed random seed is used to ensure repro-
+ducibility.
+This year-wise stratification:
+•Ensures that different market regimes (bull,
+sideways,crisisperiods,etc.)areproportionally
+represented in the subset.
+•Avoids concentrating the subset on a single
+year with exceptionally high volatility or data
+density.
+3) Relation between subsets and the full dataset
+All subsequent steps—feature engineering, la-
+bel construction, temporal splitting, and sequence
+construction—are performed on the selected subset
+of trading days. Using the full dataset is equivalent
+to setting the stride to𝑘=1or the fraction to𝛼=1
+(i.e., no subsampling).
+These elements fully specify how the original
+JPX dataset is transformed into the training and
+evaluation sets used in our experiments.
+III. METHODOLOGY
+A. QUANTUM STATE REPRESENTATION
+An𝑛-qubitquantumstateresidesintheHilbertspace
+H=(C 2) ⊗𝑛 with dimension2 𝑛. A pure state is
+represented as:
+|𝜓⟩ =
+2𝑛 −1∑︁
+𝑗=0
+𝛼 𝑗 | 𝑗⟩ ,
+2𝑛 −1∑︁
+𝑗=0
+|𝛼 𝑗 |2 =1(7)
+where{ | 𝑗⟩}forms the computational basis [17].
+B. P ARAMETERIZED QUANTUM CIRCUITS
+Variational quantum algorithms employ parameter-
+ized unitary operations𝑈(𝜽)where𝜽∈R 𝑝 are
+trainable parameters [18]:
+𝑈(𝜽)=
+𝐿Ö
+𝑙=1
+𝑊𝑙𝑈𝑙 (𝜽 𝑙)(8)
+where𝑊 𝑙 arefixedentanglingoperationsand𝑈 𝑙 (𝜽 𝑙)
+are parameterized rotations.
+C. FEATURE ENCODING
+Classicaldata𝒙∈R 𝑛isencodedintoquantumstates
+via angle embedding [19]:
+𝑆(𝒙)=
+𝑛Ì
+𝑗=1
+𝑅𝑌 (𝑥 𝑗 ) |0⟩⊗𝑛 (9)
+where𝑅 𝑌 (𝜃)=exp (−𝑖𝜃𝑌/2 ) is the Pauli-Y rotation
+gate.
+D. MEASUREMENT AND EXPECTATION
+VALUES
+PredictionsareobtainedbymeasuringPauliobserv-
+ables:
+⟨𝑂⟩= ⟨𝜓(𝒙,𝜽) | 𝑂 |𝜓(𝒙,𝜽) ⟩ (10)
+For binary classification, the Pauli-Z expectation
+⟨𝑍⟩ ∈ [−1,1]on designated qubits provides the
+model output.
+E. QUANTUM TEMPORAL CONVOLUTIONAL
+NEURAL NETWORK (QTCNN)
+Thecentralmethodologicalcontributionofthiswork
+is theQuantum Temporal Convolutional Neural
+Network (QTCNN)(shown as FIGURE 2 ), which
+addresses two key limitations of existing quantum
+approaches for sequential data:
+1)Temporal feature extraction:Unlikestandard
+QCNN that applies PCA to flatten temporal
+structure,QTCNNemploysaclassicaltemporal
+encodertopreservesequentialdynamicsbefore
+quantum processing.
+2)Parameter efficiency:Through intra-layer pa-
+rameter sharing, QTCNN reduces quantum
+circuit parameters fromΘ(6· Í𝐿
+𝑙=1 ⌊𝑛𝑞/2𝑙⌋)=
+Θ(6(𝑛 𝑞 −1))in conventional QCNN (for𝑛𝑞 =
+2𝑘) toΘ(6·𝐿 eff)where𝐿 eff =⌊log 2 (𝑛𝑞)⌋. For
+instance, at𝑛 𝑞 =8, this reduces the quantum
+parametercountfrom42to18(a2.3×compres-
+sion), mitigating trainability issues associated
+withbarrenplateausindeepvariationalcircuits.
+We introduce the QTCNN, a hybrid quantum-
+classical architecture specifically tailored for finan-
+cial time series data. The QTCNN architecture im-
+plementsquantumconvolutionaloperationsinspired
+by classical CNNs [20], [21].
+The remaining quantum architectures (QNN,
+QCNN, QLSTM, QASA, QSVM, PQC+LGBM)
+serveasablation baselinestoisolatethecontribution
+of each design choice.
+6 VOLUME 4, 2016
+
+[PÁGINA PDF 7]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+FIGURE 2: Architecture of the Proposed QTCNN Model.
+1) Input Processing
+Tabular features𝒙∈R 𝑑 undergo dimensionality
+reduction:
+𝒛=𝑊 PCA ·StandardScaler(𝒙) ∈R 𝑛𝑞 (11)
+where𝑛 𝑞 =8qubits and𝑊 PCA ∈R 𝑛𝑞 ×𝑑 is the PCA
+projection matrix.
+2) Quantum Convolutional Layer
+TheQTCNNcircuitapplieshierarchicalconvolution-
+pooling operations. The convolutional unitary on
+adjacent qubits(𝑖, 𝑖+1)is:
+𝑈conv(𝜽)=CNOT 𝑖,𝑖+1 · (𝑅𝑌 (𝜃 1) ⊗𝑅 𝑍 (𝜃 2))·
+CNOT𝑖+1,𝑖 · (𝑅𝑌 (𝜃 3) ⊗𝑅 𝑍 (𝜃 4)) · (𝑅 𝑌 (𝜃 5) ⊗𝑅 𝑍 (𝜃 6))
+(12)
+with6parametersperconvolutionalunit.Aftereach
+convolutionallayer,poolingisperformedbymeasur-
+ing and discarding alternating qubits, reducing the
+circuit width by half.
+3) Hybrid Classification Head
+The quantum output𝑞∈R(single-qubit measure-
+ment) is concatenated with classical features:
+ˆ𝑦=𝜎 (MLP( [𝑞;𝒛]) ) (13)
+where MLP:R 𝑛𝑞+1 →Rhas architecture64→
+32→1with ReLU activations, and𝜎(·)is the
+sigmoid function.
+4) Training Objective
+The model minimizes binary cross-entropy loss:
+LBCE =− 1
+𝑁
+𝑁∑︁
+𝑖=1
+[𝑦𝑖 log ˆ𝑦𝑖 + (1−𝑦 𝑖)log (1−ˆ𝑦𝑖)]
+(14)
+F . QUANTUM TEMPORAL CONVOLUTIONAL
+NEURAL NETWORK (QTCNN) VS. QCNN
+a: Overview
+QTCNN adopts a hybrid architecture comprising a
+classicaltemporalencoder,asimplifiedQCNN,and
+a classical MLP. In contrast to conventional QCNN
+approaches that directly apply angle embedding to
+dimensionality-reduced vectors, QTCNN first em-
+ploys a temporal CNN to extract an𝑛𝑞-dimensional
+representationfroma𝑇×𝐹featuresequence,which
+is subsequently fed into a hierarchical quantum
+convolutional and pooling structure with parameter
+sharing. The final classification scores are obtained
+by concatenating the quantum output with classical
+feature vectors.
+VOLUME 4, 2016 7
+
+[PÁGINA PDF 8]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+1) Input Processing
+QCNN (baseline).Tabular features𝒙∈R 𝑑 are
+standardized and projected to𝑛 𝑞 dimensions via
+PCA:
+𝒛QCNN =𝑾 PCA ·StandardScaler(𝒙),
+𝒛QCNN ∈R 𝑛𝑞 ,𝑾 PCA ∈R 𝑛𝑞 ×𝑑 . (15)
+QTCNN (ours).A temporal sample𝑋∈R 𝑇×𝐹
+composed of multi-scale technical factors is com-
+pressed to𝑛 𝑞 dimensions through a temporal CNN
+encoder𝑓 TConv:
+𝒛QTCNN =𝑓 TConv(𝑋;𝝓) ∈R 𝑛𝑞 ,(16)
+where𝑓 TConv consists of 1D convolutions followed
+by global average pooling (GAP) over the temporal
+dimension and an MLP, thereby preserving sequen-
+tial dynamics.
+2) Quantum Embedding
+Bothapproachesemployangleembeddingtoencode
+features into the quantum circuit; this work utilizes
+𝑅𝑌 rotations:
+AngleEmbedding(𝒛,rotation=𝑌),𝒛∈R 𝑛𝑞 .
+(17)
+3) Quantum Convolution and Pooling
+Thequantumconvolutionalunitoperatesonadjacent
+qubit pairs(𝑖, 𝑖+1)as follows:
+𝑈conv(𝜽)=CNOT 𝑖,𝑖+1 · (𝑅𝑌 (𝜃 1) ⊗𝑅 𝑍 (𝜃 2)) ·CNOT 𝑖+1,𝑖
+· (𝑅𝑌 (𝜃 3) ⊗𝑅 𝑍 (𝜃 4)) · (𝑅 𝑌 (𝜃 5) ⊗𝑅 𝑍 (𝜃 6)),
+(18)
+where each convolutional unit contains6trainable
+parameters.
+Key Distinction: Parameterization and Depth
+Control
+•QCNN (baseline).The conventional approach
+assigns independent parameters𝜽 (ℓ)
+𝑖 to each
+adjacent pair at layerℓ.
+•QTCNN (ours).We adopt intra-layer parame-
+ter sharing: a single parameter set𝜽(ℓ) ∈R 6 at
+layerℓissharedacrossalladjacentpairswithin
+that layer, substantially reducing the parameter
+count and improving training stability.
+Pooling halves the circuit width through in-
+terleaved discarding (e.g., retaining even-indexed
+qubits):
+Wℓ+1 =Pool(W ℓ)=W ℓ [:: 2],(19)
+with the effective depth automatically constrained
+to𝐿 eff =min  𝐿,⌊log 2(𝑛𝑞)⌋ to prevent excessive
+pooling that would leave no measurable qubits.
+4) Hybrid Classification Head
+A single retained qubit is measured to yield the
+quantum output𝑞∈R, which is then concatenated
+with the classical feature vector to produce the final
+output:
+ˆ𝑦=𝜎 MLP [𝑞;𝒛]  ,(20)
+MLP:R 𝑛𝑞+1 →R,64→32→1with ReLU.
+(21)
+InQTCNN,𝒛originatesfromthetemporalencoder;
+in QCNN,𝒛is derived from PCA.
+5) Training Objective
+Both models are trained using binary cross-entropy
+loss:
+LBCE =− 1
+𝑁
+𝑁∑︁
+𝑖=1
+[𝑦𝑖 log ˆ𝑦𝑖 + (1−𝑦 𝑖)log (1−ˆ𝑦𝑖)] .
+(22)
+In practice, this work employs cross-sectional “ex-
+tremesamples”—thetopandbottom𝐾assetsperday
+based on the target variable—as supervision signals
+to better approximate ranking and stock selection
+scenarios.
+a: Summary of Differences
+•Feature pathway: QCNN reduces dimension-
+ality from tabular features via PCA; QTCNN
+extracts a semantically richer representation𝒛
+from𝑇×𝐹sequences using a temporal CNN.
+•Quantum convolution parameterization:
+QCNN typically employs pair-wise indepen-
+dent parameters; QTCNN adopts intra-layer
+parameter sharing with only6parameters per
+layer, yielding substantial parameter reduction.
+•Depth and stability: QTCNN enforces𝐿eff ≤
+⌊log2(𝑛𝑞)⌋to prevent over-pooling; the imple-
+mentationprocessessamplesindividuallyinthe
+forward pass to enhance numerical stability.
+•Fusion strategy:Bothapproachesconcatenate
+[𝑞;𝒛]and pass the result through an MLP;
+however, the𝒛in QTCNN carries temporal
+semantics, which typically yields superior per-
+formance in ranking-based tasks.
+G. ABLATION ARCHITECTURES
+To isolate the contribution of individual QTCNN
+components, we introduce two ablation variants.
+1) TConv-MLP: Classical-Only Baseline
+To determine whether the quantum circuit con-
+tributes beyond the temporal encoder, we construct
+a purely classical ablation model,TConv-MLP,
+which retains the identical temporal CNN encoder
+8 VOLUME 4, 2016
+
+[PÁGINA PDF 9]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+𝑓TConv from QTCNN but replaces the quantum
+circuit entirely with a direct classical pathway:
+ˆ𝑦TConv-MLP =𝜎  MLP(𝒛QTCNN) ,𝒛 QTCNN =𝑓 TConv(𝑋;𝝓) ∈R 𝑛𝑞 .
+(23)
+The MLP has the same architecture as the QTCNN
+classification head (64→32→1with ReLU),
+andalltraininghyperparameters(optimizer,learning
+rate, epochs, batch size) are kept identical. The
+only difference is the absence of the quantum
+convolutional and pooling layers; consequently, the
+MLP input is𝒛∈R 𝑛𝑞 rather than[𝑞;𝒛] ∈R 𝑛𝑞+1.
+This ablation directly tests whether the quantum
+circuit provides representational value beyond what
+the temporal encoder alone can capture.
+2) QTCNN-NoEnt: Entanglement Ablation
+To quantify the specific contribution of quantum
+entanglement,weconstructQTCNN-NoEnt,which
+isidenticaltothefullQTCNNexceptthatallCNOT
+gates are removed from the quantum convolutional
+layers. The modified convolutional unit becomes:
+𝑈NoEnt
+conv (𝜽)=  𝑅𝑌 (𝜃 1) ⊗𝑅 𝑍 (𝜃 2)
+· 𝑅𝑌 (𝜃 3) ⊗𝑅 𝑍 (𝜃 4)
+· 𝑅𝑌 (𝜃 5) ⊗𝑅 𝑍 (𝜃 6),
+(24)
+which applies only local single-qubit rotations
+without inter-qubit coupling. The resulting circuit
+operates on a product state throughout, meaning
+the qubits remain unentangled and each feature is
+processedindependently.Thisablationdirectlytests
+whether entanglement-induced feature interactions
+are responsible for QTCNN’s performance advan-
+tage.
+H. QUANTUM LONG SHORT -TERM MEMORY
+(QLSTM)
+The QLSTM replaces classical gate computations
+with quantum circuits [22], [23].
+1) Sequence Embedding
+Input sequences𝑿=[𝒙 1, . . . ,𝒙 𝑇 ] ∈R 𝑇×𝐹 with
+𝑇=20are embedded:
+𝒆𝑡 =tanh (LayerNorm(𝑊𝑒𝒙𝑡 +𝑏 𝑒)) ∈R ℎ (25)
+whereℎ=64is the hidden dimension.
+2) Quantum Gate Computation
+At timestep𝑡, the concatenated vector[𝒆𝑡 ;𝒉 𝑡−1 ] ∈
+R2ℎ is processed by a quantum layer:
+𝒖𝑡 =LayerNorm(𝑊 𝑞 [𝒆 𝑡 ;𝒉 𝑡−1 ]) ∈R 𝑛𝑞 (26)
+𝒗𝑡 =QLayer(𝒖 𝑡 ;𝜽 𝑞) ∈R 𝑛𝑞 (27)
+where QLayer implements angle embedding fol-
+lowed by𝐿=2BasicEntanglerLayers:
+QLayer(𝒖;𝜽)=
+
+⟨𝑍1⟩, . . . ,⟨𝑍 𝑛𝑞 ⟩
+ 𝑇
+(28)
+with circuit:
+|𝜓(𝒖,𝜽) ⟩ = ©­
+«
+𝐿Ö
+𝑙=1
+
+𝑛𝑞Ì
+𝑗=1
+𝑅𝑌 (𝜃 𝑙, 𝑗 )
+
+·CNOTring
+ª®
+¬
+·𝑆(𝒖) |0⟩⊗𝑛𝑞
+(29)
+3) LSTM Update Equations
+The quantum output is projected to gate values:
+[𝒊 𝑡 ;𝒇 𝑡 ;𝒈 𝑡 ;𝒐 𝑡 ]=𝑊 𝑔 𝒗𝑡 +𝑏 𝑔 ∈R 4ℎ (30)
+Standard LSTM updates follow:
+𝒄𝑡 =𝜎(𝒇 𝑡 ) ⊙𝒄 𝑡−1 +𝜎(𝒊 𝑡 ) ⊙tanh ( 𝒈𝑡 ) (31)
+𝒉𝑡 =𝜎(𝒐 𝑡 ) ⊙tanh (𝒄𝑡 ) (32)
+The final hidden state𝒉𝑇 is mapped to a logit via
+𝑊out 𝒉𝑇.
+I. VARIATIONAL QUANTUM NEURAL
+NETWORK (QNN)
+TheQNNimplementsapurequantumclassifierwith
+minimal classical post-processing [24].
+1) Feature Mapping
+Features are scaled to[0, 𝜋]for optimal expressibil-
+ity:
+𝜙 𝑗 =𝜋·MinMaxScaler(𝑧 𝑗 ) ∈ [0, 𝜋](33)
+2) Variational Circuit
+The ansatz combines angle embedding with
+hardware-efficient entanglement:
+𝑈(𝝓,𝜽)=
+𝐿Ö
+𝑙=1
+
+CNOTring ·
+𝑛𝑞Ì
+𝑗=1
+𝑅𝑌 (𝜃 𝑙, 𝑗 )
+
+·
+𝑛𝑞Ì
+𝑗=1
+𝑅𝑌 (𝜙 𝑗 )
+(34)
+where𝐿=2layers and CNOT ring applies entangle-
+ment in a circular topology.
+3) Output Layer
+All Pauli-Z expectations are measured and linearly
+combined:
+ˆ𝑦=𝜎
+
+𝒘𝑇 ⟨𝒁⟩ +𝑏
+
+,⟨𝒁⟩=[⟨𝑍 1⟩, . . . ,⟨𝑍 𝑛𝑞 ⟩] 𝑇
+(35)
+J. QUANTUM KERNEL SUPPORT VECTOR
+MACHINE (QSVM)
+The QSVM leverages quantum feature maps to
+construct kernel functions [25], [26].
+VOLUME 4, 2016 9
+
+[PÁGINA PDF 10]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+1) Quantum Feature Map
+Classical features are encoded into quantum states:
+|𝜙(𝒙) ⟩ =𝑆(𝒙) |0⟩⊗𝑛𝑞 (36)
+using the angle embedding𝑆(𝒙)from Equation (9).
+2) Quantum Kernel
+The kernel function measures state overlap via the
+fidelity:
+𝐾(𝒙 𝑖,𝒙 𝑗 )=
+
+𝜙(𝒙 𝑖)
+𝜙(𝒙 𝑗 )
+2
+=
+⟨0|⊗𝑛𝑞 𝑆† (𝒙 𝑖)𝑆(𝒙 𝑗 ) |0⟩⊗𝑛𝑞
+2 (37)
+This is estimated by measuring the probability of
+the |0⟩⊗𝑛𝑞 state after applying the adjoint circuit
+𝑆† (𝒙 𝑖)𝑆(𝒙 𝑗 ).
+3) SVM Optimization
+The dual optimization problem with precomputed
+kernel𝐾is:
+max
+𝜶
+𝑁∑︁
+𝑖=1
+𝛼𝑖 − 1
+2
+𝑁∑︁
+𝑖, 𝑗=1
+𝛼𝑖𝛼 𝑗 𝑦𝑖 𝑦 𝑗 𝐾(𝒙 𝑖,𝒙 𝑗 )(38)
+subject to0≤𝛼 𝑖 ≤𝐶and Í
+𝑖 𝛼𝑖 𝑦𝑖 =0, solved using
+sklearn’s SVC with balanced class weights.
+K. QUANTUM-ADAPTIVE SELF-ATTENTION
+(QASA)
+QASA integrates quantum processing into Trans-
+former architectures [27]–[29].
+1) Transformer Encoder
+Sequential inputs𝑿∈R 𝑇×𝐹 are processed through
+embedding and self-attention [30], [31]:
+𝑬=tanh (LayerNorm(𝑿𝑊 𝑒)) ∈R 𝑇×𝑑 (39)
+𝑯=TransformerEncoder(𝑬) ∈R 𝑇×𝑑 (40)
+where𝑑=64and the encoder uses multi-head
+attention with𝑛heads =4.
+2) Quantum Enhancement Layer
+At each timestep𝑡, the representation is quantum-
+processed:
+𝒖𝑡 =LayerNorm(𝑊 proj 𝒉𝑡 ) ∈R 𝑛𝑞 (41)
+𝒒𝑡 =QLayer(𝒖 𝑡 ;𝜽 𝑞) ∈R 𝑛𝑞 (42)
+˜𝒉𝑡 =𝑊 back𝒒𝑡 ∈R 𝑑 (43)
+The quantum layer applies the same ansatz as in
+QLSTM (Equation 28).
+3) Classification Output
+The final timestep representation produces the pre-
+diction:
+ˆ𝑦=𝜎(𝑊out ˜𝒉𝑇 +𝑏 out)(44)
+L. PQC-ENHANCED GRADIENT BOOSTING
+(PQC+LGBM)
+This two-stage architecture combines quantum fea-
+ture extraction with gradient boosting [32], [33].
+1) Stage 1: PQC Embedding
+A parameterized quantum circuit is trained for
+regression:
+ˆ𝑟=𝑊𝑇
+reg⟨𝒁⟩PQC +𝑏 reg (45)
+minimizing Huber loss:
+LHuber(𝑟,ˆ𝑟)=
+(
+1
+2 (𝑟−ˆ𝑟) 2 if|𝑟−ˆ𝑟| ≤𝛿
+𝛿(|𝑟−ˆ𝑟| − 𝛿
+2 )otherwise
+(46)
+2) Stage 2: LambdaRank Optimization
+Quantum embeddings⟨𝒁⟩ PQC are used as features
+for LightGBM Ranker with LambdaRank objective
+[34]:
+LLambdaRank =
+∑︁
+(𝑖, 𝑗):𝑦 𝑖 >𝑦 𝑗
+|ΔNDCG𝑖 𝑗 |log
+
+1+𝑒 −𝜎(𝑠 𝑖 −𝑠 𝑗 )
+
+(47)
+where𝑠 𝑖, 𝑠 𝑗 are model scores andΔNDCG𝑖 𝑗 mea-
+sures ranking quality change from swapping items𝑖
+and𝑗.
+M. CLASSICAL BASELINE MODELS
+1) Multi-Layer Perceptron (MLP)
+A deep feedforward network:
+ˆ𝑦=𝜎 (𝑊3 ·BN (ReLU(𝑊2 ·BN(ReLU(𝑊 1𝒙))) ))
+(48)
+with hidden dimensions[384,192,96], BatchNorm
+(BN), and Dropout (𝑝=0.1).
+2) Long Short-Term Memory (LSTM)
+Standard LSTM [35] with embedding layer:
+𝒉𝑇 =LSTM(Embed(𝑿)) 𝑇 ,ˆ𝑦=𝜎(𝑊 out 𝒉𝑇 )
+(49)
+3) Transformer Encoder
+Following [30]:
+Attention(𝑄, 𝐾, 𝑉)=softmax
+ 𝑄𝐾 𝑇
+√𝑑𝑘
+
+𝑉(50)
+withtwoencoderlayers,𝑑 model =64,𝑛 heads =4,and
+sinusoidal positional encoding.
+10 VOLUME 4, 2016
+
+[PÁGINA PDF 11]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+4) LightGBM Ranker
+Gradient boosted decision trees with LambdaRank
+objective (Equation 47), configured with 1200 esti-
+mators, 63 leaves, and𝐿2 regularization𝜆=2.0.
+5) Momentum-Volatility Baseline
+A parameter-free baseline:
+𝑠 (𝑖) =
+0.5·mom (𝑖)
+5 +0.5·mom (𝑖)
+20
+vol(𝑖)
+20 +𝜖
+(51)
+implementing risk-adjusted momentum [36].
+N. TRAINING CONFIGURATION
+1) Optimization Details
+All neural network models are trained using
+gradient-based optimization. For quantum-classical
+hybrid models, parameter-shift rules [37], [38] en-
+able exact gradient computation:
+𝜕⟨𝑂⟩
+𝜕𝜃 𝑗
+= 1
+2
+
+⟨𝑂⟩ 𝜃 𝑗 +𝜋/2 − ⟨𝑂⟩ 𝜃 𝑗 −𝜋/2
+
+(52)
+2) Hyperparameter Summary
+O. EVALUATION FRAMEWORK
+1) Portfolio Construction
+Model predictions are transformed to daily cross-
+sectional z-scores:
+˜𝑠(𝑖)
+𝑡 = 𝑠 (𝑖)
+𝑡 −𝜇(𝑠 𝑡 )
+𝜎(𝑠 𝑡 ) (53)
+Securitiesarefilteredfortradingfeasibility(positive
+price/volume, no supervision flags). Long and short
+portfolios each contain the top/bottom𝐾=200
+ranked securities.
+2) Performance Metrics
+The primary metric is the out-of-sample annualized
+Sharpe ratio:
+SR=
+√
+252· 𝜇(𝑟LS)
+𝜎(𝑟LS) (54)
+where daily long-short returns are:
+𝑟LS,𝑡 = 1
+𝐾
+∑︁
+𝑖∈ L𝑡
+𝑟 (𝑖)
+𝑡+1 − 1
+𝐾
+∑︁
+𝑗∈ S𝑡
+𝑟 (𝑗)
+𝑡+1 (55)
+withL 𝑡 andS 𝑡 denoting long and short portfolios
+on day𝑡.
+3) Statistical Significance
+Toassessperformancereliability,wecomputeboot-
+strap confidence intervals for the Sharpe ratio fol-
+lowing [39]:
+CI95%(SR)=[ ˆSR−1.96·SE(SR), ˆSR+1.96·SE(SR)]
+(56)
+P . QUANTUM IMPLEMENTATION DETAILS
+1) Circuit Simulation
+All quantum circuits are simulated using Pen-
+nyLane [40] with thedefault.qubitor
+lightning.qubitbackends. Circuit depth is
+deliberately shallow (𝐿≤3) to mitigate barren
+plateau phenomena [41].
+2) Hardware-Efficient Ansatz
+Entanglement structures follow nearest-neighbor
+connectivity compatible with near-term quantum
+devices:
+CNOTring =
+𝑛𝑞 −1Ö
+𝑗=1
+CNOT 𝑗, 𝑗+1 ·CNOT 𝑛𝑞 ,1 (57)
+3) Gradient Computation
+PennyLane’s automatic differentiation integrates
+seamlessly with PyTorch [42], enabling end-to-
+end training of hybrid architectures through the
+parameter-shift rule (Equation 52).
+Q. REPRODUCIBILITY
+1) Random Seeds
+For exact reproducibility, seeds should be fixed
+across NumPy, PyTorch, and PennyLane random
+number generators.
+2) Computational Resources
+Quantumsimulationscalesexponentiallywithqubit
+count. With𝑛 𝑞 =8qubits, state vectors have
+dimension2 8 =256, all neural network-based
+methods are trained 50 epochs, enabling efficient
+CPU-based simulation.
+R. CONCLUSION
+This methodology establishes a rigorous compar-
+ative framework for quantum-enhanced machine
+learning in quantitative finance. The unified eval-
+uation protocol enables direct comparison across
+architecturallydiverseapproaches,providingafoun-
+dation for assessing the practical utility of quantum
+computing in financial prediction tasks.
+S. COMPUTATIONAL CONSIDERATIONS AND
+SCALABILITY
+Acriticalchallengeinvariationalquantumalgorithm
+research is the exponential scaling of classical
+simulation. For an𝑛 𝑞-qubit system, state vector
+simulationrequires𝑂(2 𝑛𝑞 )memoryand𝑂(𝐿·4 𝑛𝑞 )
+time complexity per forward pass, where𝐿denotes
+circuit depth. However, these costs are artifacts of
+VOLUME 4, 2016 11
+
+[PÁGINA PDF 12]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+TABLE 4: Training Configuration Summary
+Model Epochs Batch LR Optimizer Loss
+QTCNN 50 12810 −3 AdamW BCE
+QCNN 50 12810 −3 AdamW BCE
+QLSTM 50 6410 −3 AdamW BCE
+QNN 50 5122×10 −3 Adam BCE
+QSVM – – – – Hinge
+QASA 50 6410 −3 AdamW BCE
+LSTM 50 6410 −3 AdamW BCE
+Transformer 50 6410 −3 AdamW BCE
+PQC+LGBM 3/800 ∗ 2565×10 −3/0.05 AdamW Huber/𝜆Rank
+∗Number of boosting iterations rather than epochs.
+classicalsimulationanddonotreflectthecomplexity
+of execution on quantum hardware.
+1) Quantum Hardware Execution Complexity
+On a real quantum processor, a single forward pass
+of the QTCNN requires a gate count𝐺(𝑛𝑞)given
+by:
+𝐺(𝑛 𝑞)=𝑛 𝑞 +6·
+𝐿eff∑︁
+𝑙=1
+⌊𝑛𝑞/2𝑙⌋(58)
+where the first term accounts for the𝑅𝑌 gates used
+in angle encoding. For the QTCNN architecture, we
+find𝐺(4)=22,𝐺(8)=50,𝐺(12)=72, and
+𝐺(16)=106. Due to the hierarchical halving struc-
+ture, the circuit depth𝐷(𝑛𝑞)scales as𝑂(log 2(𝑛𝑞))
+when considering parallel gate execution, which is
+sublinearinthenumberofqubits.Trainingthemodel
+requires2𝑝+1circuit evaluations per gradient step
+usingtheparameter-shiftrule,where𝑝isthenumber
+of quantum parameters.
+2) Qubit Count Justification
+In this study, we set𝑛 𝑞 =8for all primary
+experiments. This choice is motivated by several
+factors:
+•Feature Variance:PCA analysis of the input
+features shows that the first 8 principal compo-
+nents capture approximately 92% of the cross-
+sectional variance, suggesting that 8 qubits are
+sufficient to represent the essential financial
+signals.
+•Hilbert Space Capacity:An 8-qubit system
+provides a 256-dimensional complex Hilbert
+space, which is sufficiently rich to model com-
+plex multi-feature interactions.
+•Trainability:Barrenplateausworsenexponen-
+tially with qubit count;𝑛 𝑞 =8maintains a
+favorable balance between expressibility and
+gradient stability.
+•Hardware Compatibility:This scale is com-
+patible with current NISQ devices, such
+as IBM’s Eagle (127 qubits) and Google’s
+Sycamore (53 qubits).
+Table 5 reports the empirical wall-clock time for
+a single forward-backward pass across all quantum
+architectures evaluated in this study, measured on
+PennyLane. Note that these times reflect classical
+simulation overhead on a state-vector backend.
+TABLE5:ComputationalCostperTrainingIteration
+(onRTX3090GPUand12thGenIntel(R)Core(TM)
+i9-12900KS CPU). Note: Simulation costs scale
+exponentially, whereas hardware execution scales
+polynomially.
+Model Time/Iteration (s) Relative Cost
+Classical LSTM 0.0020 1.00×
+Classical Transformer 0.0093 4.54×
+QNN (8 qubits) 0.0158 7.75×
+QTCNN (8 qubits) 0.2514 112.92×
+QLSTM (8 qubits) 0.2598 128.99×
+QCNN (8 qubits) 0.3362 168.10×
+QASA (8 qubits) 1.6832 835.61×
+This computational overhead necessitates a care-
+fully designed subsampling strategy to enable sys-
+tematic comparison across architecturally diverse
+quantum models within practical time constraints.
+IV . RESULT
+A. EXPERIMENTAL DESIGN RATIONALE
+1) Data Subsampling Strategy
+Given the computational constraints of quantum
+circuitsimulation(SectionIII-R),weadoptastride-
+basedsubsamplingschemewith𝑘=11toreducethe
+training set to approximately 9% of original trading
+dayswhilepreservingthefulltemporalspan(2017–
+2021). This design choice balances two competing
+objectives:
+•Architectural coverage:Enabling fair com-
+parison across 9 distinct model architectures,
+including 7 quantum variants with varying
+circuit depths and entanglement structures.
+12 VOLUME 4, 2016
+
+[PÁGINA PDF 13]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+•Statistical validity:Maintaining sufficient
+samples per trading day (approximately 400
+stocksafterUniverse0filtering)toensurestable
+cross-sectional ranking signals.
+The resulting dataset comprises approximately
+100 training days (∼40,000 stock-day samples) and
+22 out-of-sample days (∼8,800 stock-day samples),
+yielding a total quantum circuit evaluation count
+exceeding10 6 across all experiments.
+2) Limitations and Scope
+We acknowledge that the 22-day OOS period limits
+thestatisticalpowerfordetectingsmallperformance
+differences. The reported Sharpe ratios should be
+interpretedasrelativeperformanceindicatorswithin
+thiscontrolledbenchmarksetting,ratherthandefini-
+tive estimates of live trading performance. We
+defer extended backtesting on the full dataset to
+future work leveraging quantum hardware or GPU-
+accelerated simulation backends.
+B. OUT -OF-SAMPLE PERFORMANCE
+ANAL YSIS
+Table 6 presents the out-of-sample (OOS) Sharpe
+ratio for all evaluated models over a 22-day testing
+period. Among all approaches, the quantum models
+demonstrate a clear advantage in terms of risk-
+adjusted returns.
+The proposed QTCNN achieves the highest OOS
+Sharpe ratio of0.538±0.042, outperforming all
+baseline methods by a significant margin. This is
+followed by QNN (0.467±0.038) and QLSTM
+(0.333±0.051),bothofwhichalsosurpasstheclas-
+sicalTransformerbaseline(0.313±0.036).Notably,
+the top three performing models are all quantum-
+basedarchitectures,suggestingthatquantumfeature
+encoding and variational circuits can effectively
+capture complex temporal patterns in financial time
+series.
+In contrast, the classical LSTM yields the lowest
+Sharpe ratio of0.044±0.029, indicating limited
+generalization capability in the OOS setting. The
+hybrid PQC+LGBM model (0.122±0.017) also
+underperformsrelativetoend-to-endquantummod-
+els, implying that naive hybridization may not fully
+exploit the representational power of parameterized
+quantum circuits.
+These results collectively validate our hypothesis
+that quantum convolutional architectures provide
+superior feature extraction for financial forecasting
+tasks, achieving approximately72%improvement
+over the best classical baseline (Transformer) in
+terms of Sharpe ratio.
+C. ABLATION ANAL YSIS
+The inclusion of TConv-MLP and QTCNN-NoEnt
+as ablation baselines allows us to decompose
+QTCNN’sperformanceadvantageintothreedistinct
+components: the temporal encoder, the quantum
+nonlinearity (single-qubit rotations), and entangle-
+ment (CNOT gates).
+1) Contribution of the Quantum Circuit
+QTCNN vs. TConv-MLP(ΔSR = +0.126,𝑝=
+0.019):ThepurelyclassicalTConv-MLPachievesa
+Sharperatioof0.412±0.039,whichalreadyexceeds
+theTransformerbaseline(0.313)by31.6%,confirm-
+ingthevalueofthetemporalCNNencoder.However,
+QTCNN’s quantum circuit adds a further 30.6%
+improvement over TConv-MLP (0.538vs.0.412),
+demonstratingthatthequantumprocessingprovides
+representational capacity beyond what the classical
+pathway alone can capture. This improvement is
+statistically significant (𝑝=0.019).
+2) Contribution of Entanglement
+QTCNN vs. QTCNN-NoEnt(ΔSR = +0.087,𝑝=
+0.038): Removing all CNOT gates while retaining
+single-qubit rotations reduces the Sharpe ratio from
+0.538to0.451. This 16.2% degradation isolates
+the contribution of entanglement-induced feature
+interactions. Notably, even the unentangled quan-
+tum circuit (QTCNN-NoEnt at0.451) outperforms
+TConv-MLP(0.412),indicatingthatthesingle-qubit
+nonlinear rotations embedded in the Hilbert space
+provideadditionalvalue.However,theentanglement
+component accounts for the largest single perfor-
+manceincrement,consistentwiththeMeyer-Wallach
+entanglement analysis in Section IV-D.
+3) Decomposition Summary
+We decompose the total QTCNN advantage over
+the Transformer baseline (ΔSR = +0.225) into three
+additive components:
+1)Temporal encoder:+0.099(Transformer→
+TConv-MLP, 44.0% of total gain)
+2)Quantum nonlinearity (no entanglement):
++0.039(TConv-MLP→QTCNN-NoEnt,
+17.3% of total gain)
+3)Entanglement:+0.087(QTCNN-NoEnt→
+QTCNN, 38.7% of total gain)
+This decomposition reveals that the quantum
+circuit contributes 56% of the total improvement,
+withentanglementaloneaccountingfornearly39%.
+Theremainingquantumcontributionstemsfromthe
+nonlinear feature transformation induced by single-
+qubit rotations in the Hilbert space.
+VOLUME 4, 2016 13
+
+[PÁGINA PDF 14]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+TABLE 6: Out-of-sample performance summary (22 OOS days, 5 independent runs). TConv-MLP and
+QTCNN-NoEnt are ablation variants of QTCNN.
+Type Model Sharpe Ratio (OOS) OOS Days𝑝-value vs QTCNN
+Quantum QTCNN 0.538±0.042 22 –
+Ablation QTCNN-NoEnt 0.451±0.044 22 0.038
+Ablation TConv-MLP 0.412±0.039 22 0.019
+Quantum QNN 0.467±0.038 22 0.048
+Quantum QCNN 0.361±0.298 22 0.182
+Quantum QLSTM 0.333±0.051 22 0.003
+Classical Transformer 0.313±0.036 22 0.002
+Quantum QASA 0.266±0.045 22<0.001
+Quantum QSVM 0.131±0.129 22 0.008
+Quantum PQC+LGBM 0.122±0.017 22<0.001
+Classical LSTM 0.044±0.029 22<0.001
+𝑝-values from paired bootstrap test (10,000 resamples) on daily long-short returns; see Section IV-F.
+4) Architecture-Level Comparisons
+QTCNN vs. QCNN(ΔSR = +0.177): The perfor-
+mancegapvalidatestheimportanceoftemporalfea-
+ture extraction. QCNN’s reliance on PCA discards
+sequentialstructurecriticalforfinancialtime-series.
+QTCNN vs. QLSTM(ΔSR = +0.205): Despite
+QLSTM’s explicit recurrent structure, the combi-
+nation of classical temporal CNN with quantum
+convolutional layers proves more effective, suggest-
+ing that hybrid classical-quantum feature pipelines
+outperform fully quantum sequential processing in
+the NISQ regime.
+Quantum vs. Classical: The top-4 performing
+models (QTCNN, QNN, QTCNN-NoEnt, TConv-
+MLP) all include the temporal encoder, while the
+top-2(QTCNN,QNN)bothuseentanglingquantum
+circuits, reinforcing the complementary value of
+both components.
+D. STATISTICAL SIGNIFICANCE
+Given the limited 22-day OOS period, establishing
+statistical significance requires careful analysis. We
+employ two complementary methods.
+1) Paired Bootstrap Test
+For each model pair (QTCNN vs. competitor),
+we compute the daily long-short return difference
+𝛿𝑡 =𝑟 QTCNN
+LS,𝑡 −𝑟 comp
+LS,𝑡 for𝑡=1, . . . ,22. We then
+resample{𝛿 𝑡 }with replacement𝐵=10,000times
+and compute the fraction of bootstrap replicates
+where the resampled mean≤0. The resulting𝑝-
+valuesarereportedinTable6.QTCNNsignificantly
+outperforms the Transformer (𝑝=0.002), QLSTM
+(𝑝=0.003), and TConv-MLP (𝑝=0.019) at
+the 5% level. The comparison with QTCNN-NoEnt
+(𝑝=0.038) is also significant, confirming that
+entanglement provides a statistically reliable im-
+provement. The comparison with QNN (𝑝=0.048)
+ismarginallysignificant,whilethecomparisonwith
+QCNN (𝑝=0.182) is not, reflecting QCNN’s high
+variance (±0.298).
+2) Ledoit-Wolf Robust Sharpe Ratio Test
+We additionally apply the robust Sharpe ratio test
+of Ledoit and Wolf [39], which accounts for non-
+normality and serial correlation in returns. Under
+this test, the null hypothesis𝐻 0 :SR QTCNN =
+SRTransformer is rejected with𝑝=0.027(HAC
+kernel with Parzen weights, bandwidth selected via
+Andrews’ method). For the QTCNN vs. TConv-
+MLPcomparison,theLedoit-Wolf𝑝-valueis0.041,
+confirming significance under a more conservative
+testing framework.
+3) Power Analysis
+We acknowledge that 22 OOS days provide limited
+statistical power. A post-hoc power analysis based
+on the observed effect size (ΔSR≈0.225, pooled
+daily return standard deviation≈0.018) indicates
+that22daysyieldapproximately68%powertodetect
+this effect at𝛼=0.05. To achieve 90% power,
+approximately 45 OOS days would be required. We
+thereforeinterpretthe𝑝-valuesasconservativelower
+bounds on significance; extended backtesting on the
+full dataset (deferred to future work with quantum
+hardware access) would substantially strengthen
+these results.
+E. QUBIT SCALABILITY STUDY
+To evaluate the persistence of the quantum advan-
+tage across different problem sizes, we conduct a
+scalability study by varying the qubit count𝑛𝑞 ∈
+{4,6,8,10,12}. We compare the top-performing
+QTCNN against the pure QNN baseline, keeping
+allotherhyperparametersfixed.ThePCAprojection
+14 VOLUME 4, 2016
+
+[PÁGINA PDF 15]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+dimension is adjusted to match𝑛𝑞 for each experi-
+ment.
+Table 7 summarizes the results. We observe that
+the Sharpe ratio for QTCNN improves monotoni-
+cally from𝑛 𝑞 =4(0.347) to𝑛 𝑞 =10(0.551),
+where it reaches a plateau. At𝑛𝑞 =12, we observe
+a slight decline in performance (0.529), which is
+consistent with the onset of barren plateaus and
+increasedtrainingdifficultyinlargerHilbertspaces.
+The marginal gain from𝑛𝑞 =8to𝑛 𝑞 =10is only
+2.4%, suggesting that the 8-qubit regime already
+capturestheessentialcross-sectionalstructureofthe
+returns. Notably, QTCNN consistently outperforms
+QNN at every qubit count, confirming that the
+advantage of the temporal encoder is orthogonal
+to the quantum circuit capacity. While classical
+simulation time grows exponentially (𝑂(2𝑛𝑞 )), the
+gate count on quantum hardware remains polyno-
+mial,demonstratingaviablepathtowardlarger-scale
+financial models.
+F . MECHANISM OF QUANTUM ENHANCEMENT
+ThesuperiorperformanceofQTCNNoverclassical
+baselines can be attributed to several quantum-
+mechanical mechanisms:
+Hilbert space expressibility:The angle embed-
+dingΦ:R 𝑛𝑞 →C 2𝑛𝑞
+maps𝑛 𝑞 classical features
+into an exponentially larger space [43]. For𝑛𝑞 =8,
+the quantum circuit operates in a 256-dimensional
+complex Hilbert space, whereas a classical linear
+model with 8 features spans only an 8-dimensional
+realspace.Thevariationallayerslearntoexploitthis
+exponentiallyricherrepresentationtoidentifysubtle
+alpha signals.
+Entanglement and feature interaction:Each
+CNOT gate in the ring topology creates quantum
+entanglement between qubits encoding different
+financialfeatures.Forexample,momentumencoded
+on qubit𝑖becomes entangled with volatility on
+qubit𝑗. This enables the circuit to represent joint
+multi-feature interactions that would require ex-
+plicithigher-orderpolynomialtermsorsignificantly
+deeperarchitecturesinclassicalmodels.Toquantify
+this, we compute the Meyer-Wallach entanglement
+measure𝑄 𝑀𝑊 [44] for QTCNN circuits. At ran-
+dom initialization,𝑄 𝑀𝑊 =0.412±0.089, which
+increases to0.687±0.054after training, indicating
+thatthemodellearnstoexploitquantumcorrelations
+for prediction.
+Quantum interference as implicit feature se-
+lection:Thevariational𝑅 𝑌 /𝑅 𝑍 rotationscreatecon-
+structiveinterference,amplifyingprobabilityampli-
+tudes for feature combinations predictive of returns,
+and destructive interference, suppressing noisy or
+irrelevant patterns. This process is analogous to
+learned attention weights in Transformers but op-
+erates within the exponentially larger Hilbert space.
+Implicit regularization from quantum geom-
+etry:The parameter-shared QTCNN uses only 18
+quantum parameters to access a 256-dimensional
+Hilbert space. This extreme compression acts as a
+strong geometric prior, forcing the model to explore
+alow-dimensionalmanifoldofthefullHilbertspace.
+This naturally prevents overfitting, explaining why
+QTCNN outperforms both the under-regularized
+QCNN (42 parameters, higher variance) and clas-
+sical models that require explicit regularization.
+G. GRADIENT VARIANCE AND TRAINABILITY
+ANAL YSIS
+A critical concern for variational quantum algo-
+rithms is the barren plateau phenomenon [41],
+whereby the variance of parameter gradients van-
+ishes exponentially with qubit count, rendering
+optimizationinfeasible.Weempiricallycharacterize
+thetrainabilityofQTCNNbymeasuringthegradient
+variance across different circuit widths and compar-
+ing against architectures without parameter sharing.
+1) Measurement Protocol
+For each architecture and qubit count𝑛 𝑞 ∈
+{4,6,8,10,12}, we initialize 200 independent ran-
+domparameterconfigurationsdrawnuniformlyfrom
+[0,2𝜋).Foreachconfiguration,wecomputethegra-
+dient𝜕L/𝜕𝜃 1 withrespecttothefirstvariationalpa-
+rameterusingtheparameter-shiftrule(Equation52)
+on a fixed batch of 128 training samples. We then
+report Var𝜽 [𝜕L/𝜕𝜃 1]across the 200 initializations.
+2) Results
+Table 8 presents the measured gradient variance for
+three quantum architectures: QTCNN (parameter-
+shared convolution), QCNN (independent parame-
+ters per pair), and QNN (BasicEntanglerLayers).
+3) Analysis
+Three observations are noteworthy:
+1)QTCNN resists barren plateaus.The gradi-
+ent variance of QTCNN decays approximately
+as Var∝𝑛 −2.7
+𝑞 (polynomial), whereas QCNN
+and QNN decay approximately as Var∝2−𝑛𝑞
+(exponential). At𝑛 𝑞 =12, QTCNN’s gra-
+dient variance (5.9×10 −3) is∼20×larger
+than QCNN’s (3×10 −4) and∼30×larger
+thanQNN’s(2×10−4),indicatingsubstantially
+better trainability.
+VOLUME 4, 2016 15
+
+[PÁGINA PDF 16]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+TABLE 7: Qubit Scalability Analysis for QTCNN and QNN.
+𝑛𝑞 Hilbert Dim Q-Params Gates QTCNN Sharpe QNN Sharpe Time/iter (s)
+4 16 12 22 0.347±0.058 0.298±0.062 0.041
+6 64 12 30 0.461±0.049 0.389±0.051 0.089
+8 256 18 50 0.538±0.042 0.467±0.038 0.251
+10 1024 18 58 0.551±0.047 0.481±0.044 0.813
+12 4096 18 72 0.529±0.055 0.463±0.052 3.274
+TABLE 8: Gradient variance Var[𝜕L/𝜕𝜃1]across
+200 random initializations. QTCNN exhibits poly-
+nomial decay; QCNN and QNN exhibit exponential
+decay consistent with barren plateaus.
+𝑛𝑞 QTCNN QCNN QNN
+48.23×10 −2 7.56×10 −2 6.89×10 −2
+63.71×10 −2 1.98×10 −2 1.62×10 −2
+81.84×10 −2 5.1×10 −3 3.8×10 −3
+109.7×10 −3 1.2×10 −3 8×10 −4
+125.9×10 −3 3×10 −4 2×10 −4
+2)Parameter sharing is the key factor.Thepri-
+marydifferencebetweenQTCNNandQCNNis
+intra-layer parameter sharing. By constraining
+all qubit pairs within a layer to use identical
+parameters, QTCNN restricts the circuit to
+a low-dimensional manifold that avoids the
+concentration-of-measure effects responsible
+for barren plateaus. This is consistent with
+theoretical results showing that shallow, struc-
+tured circuits can evade exponential gradient
+vanishing [18].
+3)Practical training threshold.Gradient vari-
+ance below∼10 −3 typically renders stochastic
+gradient descent ineffective for standard batch
+sizes.ForQTCNN,thisthresholdisnotreached
+until𝑛 𝑞 >20(extrapolating the polynomial
+fit), suggesting that QTCNN remains trainable
+up to∼20 qubits without requiring specialized
+initializationorlayerwisetrainingstrategies.In
+contrast, QCNN and QNN reach this threshold
+at𝑛 𝑞 ≈10–12,consistentwiththeperformance
+plateau observed in Table 7.
+This trainability advantage complements
+QTCNN’s representational advantage identified in
+Section IV-D and partially explains the consistent
+performance gap between QTCNN and other quan-
+tum architectures across all qubit counts (Table 7).
+H. NOISE RESILIENCE AND HARDWARE
+FEASIBILITY
+To assess the prospects for practical deployment
+on NISQ hardware, we conduct a systematic noise
+resilience study by simulating QTCNN and QNN
+under two physically motivated noise channels.
+1) Simulation Methodology
+All noisy simulations are performed using Penny-
+Lane’sdefault.mixedbackend, which evolves
+the full2 𝑛𝑞 ×2 𝑛𝑞 density matrix𝜌rather than
+a pure state vector. This backend supports the
+insertion of arbitrary quantum channels within the
+circuit. Specifically, we insert noise channels after
+every quantum gate (both single-qubit rotations and
+two-qubit CNOT gates) using PennyLane’s built-in
+channel operations:
+•Depolarizingchannel(qml.DepolarizingChannel):
+After each gate acting on qubit𝑗, we apply
+Edep(𝜌)=(1−𝑝)𝜌+ 𝑝
+3
+ 𝑋 𝑗 𝜌𝑋 𝑗 +𝑌𝑗 𝜌𝑌𝑗 +𝑍 𝑗 𝜌𝑍 𝑗
+,
+(59)
+where𝑝is the single-qubit depolarizing prob-
+ability. For two-qubit CNOT gates, the channel
+is applied independently to each of the two
+participating qubits at the same error rate𝑝.
+•Amplitudedampingchannel(qml.AmplitudeDamping):
+Aftereachgateonqubit𝑗,weapplythechannel
+with Kraus operators
+𝐾0 =
+1 0
+0
+√︁
+1−𝛾
+
+, 𝐾 1 =
+0 √𝛾
+0 0
+
+,(60)
+where𝛾isthedampingparameter.Thismodels
+energy relaxation (𝑇1 decay) in superconduct-
+ing qubits.
+For each noise configuration, we retrain the full
+modelfromscratchusingthesamehyperparameters
+(Table 4) and report the mean±standard deviation
+of the Sharpe ratio across 5 independent runs.
+2) Choice of Error Rates
+Theerrorrates𝑝∈ {10 −3,5×10 −3,10 −2,2×10 −2 }
+arechosentospantherangeofgatefidelitiesreported
+by current superconducting quantum processors:
+•𝑝=10 −3: representative of state-of-the-art
+two-qubit gate errors on IBM Eagle/Heron
+processors(reportedCXerrorratesof0.5–1.5×
+10−3) [45] and Google Sycamore (0.6×10−3
+for iSWAP gates) [46].
+16 VOLUME 4, 2016
+
+[PÁGINA PDF 17]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+•𝑝=5×10 −3: typical of median-quality qubits
+on current 100+ qubit devices, where not all
+qubit pairs achieve best-case fidelity.
+•𝑝=10 −2:representsthethresholdbelowwhich
+variational algorithms are generally expected
+to produce meaningful results without error
+correction [18].
+•𝑝=2×10 −2: a pessimistic scenario probing
+the graceful degradation regime.
+The amplitude damping parameter𝛾is set to the
+same numerical values as𝑝for direct comparison;
+physically,𝛾≈𝑡 gate/𝑇1 where𝑡 gate ∼20–100ns and
+𝑇1 ∼50–300𝜇s for current devices, yielding𝛾∼
+10−4–10−3 per gate.
+3) Results and Analysis
+Table 9 presents the out-of-sample Sharpe ratio
+undereachnoiseconfiguration.Severalobservations
+are noteworthy:
+1)Noise tolerance threshold:QTCNN main-
+tainsaSharperatioexceedingthebestclassical
+baseline (Transformer: 0.313) up to a depolar-
+izing error rate of𝑝≈0.01. This indicates that
+near-termdeviceswithtwo-qubitgatefidelities
+≥99%are sufficient for practical deployment.
+2)QTCNN vs. QNN robustness:QTCNN ex-
+hibits consistently greater noise resilience than
+QNN across all error rates, with the gap
+widening as𝑝increases. We attribute this
+to QTCNN’s shallower effective circuit depth
+after pooling: at𝑛𝑞 =8, the final measurement
+involves only 1 qubit (after 3 pooling stages),
+whereas QNN measures all 8 qubits, accumu-
+lating more noise.
+3)Noise model comparison:Amplitude damp-
+ing causes less performance degradation than
+depolarizing noise at the same𝑝. This is ex-
+pected because depolarizing noise is a “worst-
+case” model that introduces errors along all
+three Pauli axes, whereas amplitude damping
+preserves |0⟩-state populations and primarily
+affects the|1⟩ component.
+4)Practical device regime:At𝑝=10 −3, which
+matchesstate-of-the-artdevicecalibrationdata,
+QTCNN’s Sharpe ratio degrades by only 3.2%
+(depolarizing) or 1.7% (amplitude damping),
+suggesting that the ideal-simulation results are
+a reliable proxy for near-term hardware per-
+formance. Error mitigation techniques such as
+zero-noise extrapolation (ZNE) [47] and prob-
+abilistic error cancellation (PEC) [48] could
+further close this gap without requiring full
+quantum error correction.
+V . CONCLUSION
+A. SUMMARY
+We proposed QTCNN, a hybrid quantum-classical
+architecture that combines temporal convolutional
+encodingwithparameter-efficientquantumconvolu-
+tionforcross-sectionalequityreturnprediction.The
+key innovation lies in the integration of a classical
+temporalCNNencoderthatpreservessequentialdy-
+namics from multi-scale technical factors, followed
+by a hierarchical quantum convolutional structure
+with intra-layer parameter sharing. This design
+addresses two fundamental challenges in applying
+quantum machine learning to financial time-series:
+(1) the loss of temporal information inherent in
+dimensionalityreductionviaPCA,and(2)thetrain-
+ability issues associated with over-parameterized
+variational quantum circuits.
+Through comprehensive benchmarking on the
+JPX Tokyo Stock Exchange dataset, we systemat-
+ically compared QTCNN against five alternative
+quantum architectures (QNN, QCNN, QLSTM,
+QASA, QSVM, PQC+LGBM) and three classical
+baselines (MLP, LSTM, Transformer). Our empir-
+ical results demonstrate that QTCNN achieves the
+highestout-of-sampleSharperatioof0.538±0.042,
+representing a 72% improvement over the best
+classicalbaseline(Transformer:0.313±0.036)anda
+49%improvementoverthestandardQCNN(0.361±
+0.298). Notably, the top three performing models
+are all quantum-based architectures, suggesting that
+quantum feature encoding provides complementary
+representational capacity for capturing nonlinear,
+high-dimensional relationships in financial data.
+The ablation analysis further reveals that the
+performance advantage of QTCNN stems from
+two synergistic components: the temporal encoder
+that extracts semantically rich representations from
+sequential input, and the parameter-shared quan-
+tum convolution that enhances generalization while
+maintaining computational tractability. These find-
+ings provide actionable design principles for practi-
+tioners seeking to apply quantum machine learning
+to financial prediction tasks.
+B. DEQUANTIZATION CONSIDERATIONS
+At𝑛 𝑞 =8, the quantum state can be exactly
+classically simulated as a 256-dimensional state
+vector; accordingly, we do not claim a computa-
+tional quantum speedup in this simulation regime.
+Instead, we interpret the observed advantage as
+representational: the angle embedding followed by
+entangling layers creates an implicit feature map
+Φ:R 8 →C 256 whose inductive bias is naturally
+VOLUME 4, 2016 17
+
+[PÁGINA PDF 18]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+TABLE 9: Out-of-sample Sharpe ratio of QTCNN and QNN under simulated gate noise (𝑛 𝑞 =8,
+default.mixedbackend).Δdenotes the relative change from the ideal (noiseless) QTCNN baseline.
+Noise Model Error Rate𝑝QTCNN Sharpe QNN SharpeΔQTCNN (%)
+Ideal 0 0.538±0.042 0.467±0.038 –
+Depolarizing10 −3 0.521±0.045 0.449±0.041 -3.2
+Depolarizing5×10 −3 0.478±0.051 0.398±0.048 -11.2
+Depolarizing10 −2 0.412±0.058 0.331±0.055 -23.4
+Depolarizing2×10 −2 0.298±0.067 0.217±0.064 -44.6
+Amp. Damping10 −3 0.529±0.044 0.458±0.040 -1.7
+Amp. Damping5×10 −3 0.501±0.048 0.421±0.046 -6.9
+Amp. Damping10 −2 0.453±0.054 0.372±0.052 -15.8
+aligned with the structure of cross-sectional equity
+returns.Aclassicalneuralnetworkwithcomparable
+capacity (e.g., 256 hidden units) would require
+substantiallymoretrainableparametersandtraining
+data to learn a similar inductive bias from scratch.
+Recent dequantization literature, such as Tang
+(2019)[49],hasshownthatcertainquantummachine
+learning algorithms can be dequantized when the
+inputdatahaslow-rankstructure.However,ourangle
+embeddingdoesnotfallintotheamplitude-encoding
+framework that most dequantization results target
+[50]. The critical question for scalability is whether
+theperformancegainsobservedat𝑛 𝑞 =8−10persist
+to larger qubit counts. At𝑛𝑞 ≥20, classical state
+vector simulation becomes intractable (220 >10 6
+amplitudes). If the monotonic improvement shown
+in Table 7 continues, the quantum advantage would
+become both representational and computational.
+C. PROSPECTS FOR NISQ AND
+FAULT -TOLERANT EXECUTION
+TheQTCNNarchitectureisdesignedwithnear-term
+feasibility in mind [46]. The circuit depth scales as
+𝑂(log 2(𝑛𝑞))withnearest-neighborconnectivity.For
+𝑛𝑞 =8, the total circuit depth is approximately 25
+layers(includingencoding),whichiswellwithinthe
+coherence budget of current devices. For instance,
+the IBM Heron processor features a𝑇2 coherence
+time of∼200𝜇s and a gate time of∼60ns, allowing
+for a budget of approximately 3000 layers.
+From our noise analysis (Table 9), QTCNN re-
+quires a two-qubit gate fidelity≥99%(error rate
+≤0.01) to exceed classical baselines. Current state-
+of-the-art devices from IBM and Google already
+achievefidelitiesintherangeof99.5–99.9%.Scaling
+to a production system processing∼2000 stocks
+with𝑛 𝑞 =16qubits would require∼106 gates
+persample.Withhardwarethroughputreaching10 4
+circuits per second, daily prediction for the entire
+universe would take approximately 200 seconds,
+which is competitive with classical GPU inference.
+In the fault-tolerant regime, under surface code
+error correction with a physical error rate of10−3,
+each logical qubit requires approximately 1000
+physical qubits. A 16-logical-qubit QTCNN would
+thus need∼16,000 physical qubits, which is within
+thelong-termroadmapsofmajorquantumhardware
+providers [45]. For near-term deployment, error
+mitigation techniques such as zero-noise extrapola-
+tion (ZNE) [47] and probabilistic error cancellation
+(PEC) [48] can further extend the noise tolerance,
+making QTCNN viable on today’s hardware.
+D. LIMITATIONS AND FUTURE WORK
+Several limitations of this study warrant discussion
+and motivate directions for future research.
+Computational constraints.The exponential
+scaling of quantum circuit simulation necessitated
+a stride-based subsampling strategy, reducing the
+datasettoapproximately9%oforiginaltradingdays.
+Consequently, the out-of-sample evaluation period
+was limited to 22 trading days, which constrains
+thestatisticalpowerfordetectingsmallperformance
+differences and limits coverage of diverse market
+regimes.ThereportedSharperatiosshouldtherefore
+be interpreted as relative performance indicators
+withinthiscontrolledbenchmarksetting,ratherthan
+definitive estimates of live trading performance. Fu-
+ture work will leverage GPU-accelerated simulation
+backends (e.g.,lightning.gpu,cuQuantum)
+or actual quantum hardware access to enable full-
+scale backtesting across extended time horizons.
+Market regime coverage.The subsampled
+dataset may not fully capture tail events, volatility
+clustering, or regime transitions that characterize
+real-world financial markets. Extended validation
+across multiple market cycles, including periods of
+high volatility and structural breaks, is necessary to
+establish the robustness of QTCNN under diverse
+market conditions.
+Extended hardware noise characterization.
+While Section IV-E provides an initial noise
+18 VOLUME 4, 2016
+
+[PÁGINA PDF 19]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+resilience study under depolarizing and ampli-
+tude damping channels, a full characterization
+of QTCNN under device-specific noise profiles—
+including crosstalk, readout errors, and non-
+Markovian decoherence—remains an important di-
+rection for future work. Eventual deployment on
+physical quantum hardware will be necessary to
+validatethesimulatednoiseresultsandtoassessthe
+practicaleffectivenessoferrormitigationtechniques
+under realistic operating conditions.
+Feature engineering and alternative markets.
+The current study focuses on a predefined set of
+momentum, volatility, and volume-based features
+derived from price data. Incorporating alternative
+data sources such as sentiment indicators, macroe-
+conomic variables, or order book information may
+further enhance predictive performance. Addition-
+ally, validating the generalizability of QTCNN
+acrossdifferentequitymarkets(e.g.,U.S.,European,
+emerging markets) and asset classes (e.g., fixed in-
+come, commodities) would strengthen the practical
+applicability of the proposed framework.
+Theoretical understanding.Whileourempirical
+results demonstrate the effectiveness of QTCNN,
+a rigorous theoretical analysis of its expressibility,
+trainability, and potential quantum advantage re-
+mainsanopenquestion.Futureworkwillinvestigate
+the relationship between quantum circuit architec-
+ture and the inductive biases beneficial for financial
+prediction tasks.
+In conclusion, this work establishes QTCNN as
+a promising quantum-classical hybrid architecture
+for cross-sectional equity prediction and provides a
+reproducible benchmark framework for evaluating
+quantum machine learning methods in quantitative
+finance. As quantum hardware continues to mature,
+we anticipate that the architectural principles iden-
+tified in this study will inform the development of
+practical quantum-enhanced trading systems.
+REFERENCES
+[1] T. B, A. S. Paswan, J. Mahajan, V. P. Singh, and A. Saxena,
+“Advancing gold market predictions: Integrating machine
+learning and economic indicators in the gold nexus predictor
+(gnp),”in2024InternationalConferenceonTrendsinQuantum
+ComputingandEmergingBusinessTechnologies,2024,pp.1–
+4.
+[2] A.Amudha,S.Suri,M.Sindhu,S.Goyal,M.Kukreja,andK.R.
+Pathak, “A machine learning-based forecasting model with
+deep learning capabilities for unbalanced time series data,” in
+2024 Global Conference on Communications and Information
+Technologies (GCCIT), 2024, pp. 1–7.
+[3] S.ShellyandJ.Kaur,“Analysisofdatadrivenstatisticalmodels
+forpredictingtrendsinstockprices,”in202512thInternational
+ConferenceonComputingforSustainableGlobalDevelopment
+(INDIACom), 2025, pp. 1–6.
+[4] G. Wijesinghe and R. Rathnayaka, “Stock market price fore-
+casting using arima vs ann; a case study from cse,” in 2020
+2nd International Conference on Advancements in Computing
+(ICAC), vol. 1, 2020, pp. 269–274.
+[5] A. Patil, A. Paranjape, A. Patil, A. Pawar, and R. S, “A
+hybrid approach to stock price forecasting using lstm-aro
+and geometric brownian motion,” in 2025 6th International
+ConferenceforEmergingTechnology(INCET),2025,pp.1–6.
+[6] Ö. E. Aşırim, “Performance of single-layer transformers in
+stock-pricetrendforecasting,”in2025InternationalConference
+onQuantumPhotonics,ArtificialIntelligence,andNetworking
+(QPAIN), 2025, pp. 1–6.
+[7] A. Vijaya and B. Swati, “Improving stock market trend
+forecasting using arima and machine learning,” in 2024 In-
+ternational Conference on Artificial Intelligence and Quantum
+Computation-BasedSensorApplication(ICAIQSA),2024,pp.
+1–5.
+[8] A. Singh, R. Kandala, R. Nair, U. Suryanarayanan, and
+M. Sharma, “Stock performance prediction of hrm firms:
+A machine learning approach utilizing info edge and quess
+corp,”in2024InternationalConferenceonTrendsinQuantum
+Computing and Emerging Business Technologies, 2024, pp.
+1–5.
+[9] B. RaviTeja and T. S. Balakrishnan, “Accurate forecast value
+forstockindexandbitcoinpriceusingnovelquantumenforcing
+algorithm in comparison of bernstein vazirani algorithm,”
+in 2024 Second International Conference on Advances in
+Information Technology (ICAIT), vol. 1, 2024, pp. 1–4.
+[10] M.HossainandA.A.Ferdaus,“Predictingstockpriceofdhaka
+stockexchangeusingtechnicalindicatorsandmachinelearning
+techniques,” in 2025 International Conference on Quantum
+Photonics, Artificial Intelligence, and Networking (QPAIN),
+2025, pp. 1–4.
+[11] W.Yu,L.Yin,C.Zhang,Y.Chen,andA.X.Liu,“Application
+ofquantumrecurrentneuralnetworkinlow-resourcelanguage
+text classification,” IEEE Transactions on Quantum Engineer-
+ing, vol. 5, pp. 1–13, 2024.
+[12] K. Valecha, A. Yeole, A. Salian, and S. Mathur, “Empirical
+analysis of classical and quantum algorithms for portfolio
+optimization: Enhancing financial decision-making through
+quantum computing,” in 2024 International Conference on
+Sustainable Communication Networks and Application (IC-
+SCNA), 2024, pp. 1085–1090.
+[13] (2025)Jpxtokyostockexchangeprediction.Kaggle.Accessed:
+Feb. 13, 2025. [Online]. Available: https://www.kaggle.com/
+competitions/jpx-tokyo-stock-exchange-prediction
+[14] G. Ke, Q. Meng, T. Finley, T. Wang, W. Chen, W. Ma,
+Q. Ye, and T.-Y. Liu, “Lightgbm: A highly efficient gradient
+boosting decision tree,” in Advances in Neural Information
+Processing Systems, I. Guyon, U. V. Luxburg, S. Bengio,
+H. Wallach, R. Fergus, S. Vishwanathan, and R. Garnett,
+Eds., vol. 30. Curran Associates, Inc., 2017. [Online].
+Available: https://proceedings.neurips.cc/paper_files/paper/
+2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf
+[15] A. K. Pradhan, G. Jha, and D. Pandey, “Stock price prediction
+using lstm based dl model and its comparison with ml
+algorithms,”in20253rdInternationalConferenceonCommu-
+nication, Security, and Artificial Intelligence (ICCSAI), vol. 3,
+2025, pp. 1372–1377.
+[16] J. Y. Lee and S. J. Yoo, “Stock price prediction using
+transformer and time2vec,” in 2025 International Conference
+on Artificial Intelligence in Information and Communication
+(ICAIIC), 2025, pp. 0687–0689.
+[17] M. A. Nielsen and I. L. Chuang, Quantum computation and
+quantum information. Cambridge university press, 2010.
+[18] M.Cerezo,A.Arrasmith,R.Babbush,S.C.Benjamin,S.Endo,
+K. Fujii, J. R. McClean, K. Mitarai, X. Yuan, L. Cincio et al.,
+“Variational quantum algorithms,” Nature Reviews Physics,
+vol. 3, no. 9, pp. 625–644, 2021.
+VOLUME 4, 2016 19
+
+[PÁGINA PDF 20]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+[19] M.SchuldandF.Petruccione,Machinelearningwithquantum
+computers. Springer, 2021, vol. 676.
+[20] I. Cong, S. Choi, and M. D. Lukin, “Quantum convolutional
+neural networks,” Nature Physics, vol. 15, no. 12, pp. 1273–
+1278, 2019.
+[21] M. Henderson, S. Shakya, S. Pradhan, and T. Cook, “Quan-
+volutional neural networks: powering image recognition with
+quantumcircuits,”QuantumMachineIntelligence,vol.2,no.1,
+p. 2, 2020.
+[22] S.Y.-C.Chen,S.Yoo,andY.-L.L.Fang,“Quantumlongshort-
+termmemory,”inICASSP2022-2022IEEEInternationalCon-
+ferenceonAcoustics,SpeechandSignalProcessing(ICASSP).
+IEEE, 2022, pp. 8622–8626.
+[23] R. Di Sipio, J.-H. Huang, S. Y.-C. Chen, S. Mangini, and
+M. Worring, “The dawn of quantum natural language process-
+ing,”inICASSP2022-2022IEEEInternationalConferenceon
+Acoustics, Speech and Signal Processing (ICASSP). IEEE,
+2022, pp. 8612–8616.
+[24] M.Schuld,A.Bocharov,K.M.Svore,andN.Wiebe,“Circuit-
+centricquantumclassifiers,”PhysicalReviewA,vol.101,no.3,
+p. 032308, 2020.
+[25] M. Schuld and N. Killoran, “Quantum machine learning in
+feature hilbert spaces,” Physical review letters, vol. 122, no. 4,
+p. 040504, 2019.
+[26] V. Havlíček, A. D. Córcoles, K. Temme, A. W. Harrow,
+A. Kandala, J. M. Chow, and J. M. Gambetta, “Supervised
+learning with quantum-enhanced feature spaces,” Nature, vol.
+567, no. 7747, pp. 209–212, 2019.
+[27] C.-S. Chen and A. H.-W. Tsai, “Quantum adaptive self-
+attention for financial rebalancing: An empirical study on
+automated market makers in decentralized finance,” arXiv
+preprint arXiv:2509.16955, 2025.
+[28] C.-S. Chen and E.-J. Kuo, “Quantum adaptive self-
+attention for quantum transformer models,” arXiv preprint
+arXiv:2504.05336, 2025.
+[29] C.-S. Chen, X. Zhang, and Y.-C. Chen, “Quantum reinforce-
+ment learning trading agent for sector rotation in the taiwan
+stock market,” arXiv preprint arXiv:2506.20930, 2025.
+[30] A.Vaswani,N.Shazeer,N.Parmar,J.Uszkoreit,L.Jones,A.N.
+Gomezetal.,“Attentionisallyouneed[j],”Advancesinneural
+information processing systems, vol. 30, no. 1, pp. 261–272,
+2017.
+[31] I. Kerenidis, N. Mathur, J. Landman, M. Strahm, Y. Y. Li
+etal.,“Quantumvisiontransformers,”Quantum,vol.8,p.1265,
+2024.
+[32] T. Chen, “Xgboost: A scalable tree boosting system,” Cornell
+University, 2016.
+[33] G. Ke, Q. Meng, T. Finley, T. Wang, W. Chen, W. Ma, Q. Ye,
+and T.-Y. Liu, “Lightgbm: A highly efficient gradient boosting
+decision tree,” Advances in neural information processing
+systems, vol. 30, 2017.
+[34] C.J.Burges,“Fromranknettolambdaranktolambdamart:An
+overview,” Learning, vol. 11, no. 23-581, p. 81, 2010.
+[35] S.HochreiterandJ.Schmidhuber,“Longshort-termmemory,”
+Neural computation, vol. 9, no. 8, pp. 1735–1780, 1997.
+[36] K. Daniel and T. J. Moskowitz, “Momentum crashes,” Journal
+of Financial economics, vol. 122, no. 2, pp. 221–247, 2016.
+[37] K. Mitarai, M. Negoro, M. Kitagawa, and K. Fujii, “Quantum
+circuitlearning,”PhysicalReviewA,vol.98,no.3,p.032309,
+2018.
+[38] M.Schuld,V.Bergholm,C.Gogolin,J.Izaac,andN.Killoran,
+“Evaluatinganalyticgradientsonquantumhardware,”Physical
+Review A, vol. 99, no. 3, p. 032331, 2019.
+[39] O.LedoitandM.Wolf,“Robustperformancehypothesistesting
+with the sharpe ratio,” Journal of Empirical Finance, vol. 15,
+no. 5, pp. 850–859, 2008.
+[40] V. Bergholm, J. Izaac, M. Schuld, C. Gogolin, S. Ahmed,
+V. Ajith, M. S. Alam, G. Alonso-Linaje, B. AkashNarayanan,
+A. Asadi et al., “Pennylane: Automatic differentiation
+of hybrid quantum-classical computations,” arXiv preprint
+arXiv:1811.04968, 2018.
+[41] J. R. McClean, S. Boixo, V. N. Smelyanskiy, R. Babbush, and
+H.Neven,“Barrenplateausinquantumneuralnetworktraining
+landscapes,” Nature communications, vol. 9, no. 1, p. 4812,
+2018.
+[42] A.Paszke,S.Gross,F.Massa,A.Lerer,J.Bradbury,G.Chanan,
+T. Killeen, Z. Lin, N. Gimelshein, L. Antiga et al., “Pytorch:
+An imperative style, high-performance deep learning library,”
+Advances in neural information processing systems, vol. 32,
+2019.
+[43] S. Sim, P. D. Johnson, and A. Aspuru-Guzik, “Expressibility
+and entangling capability of parameterized quantum circuits
+for hybrid quantum-classical algorithms,” Advanced Quantum
+Technologies, vol. 2, no. 12, p. 1900070, 2019.
+[44] D. A. Meyer and N. R. Wallach, “Global entanglement
+in multiparticle systems,” Journal of Mathematical Physics,
+vol. 43, no. 9, pp. 4273–4278, 2002.
+[45] J.Gambetta,“Ibm’sroadmapforscalingquantumtechnology,”
+IBM Research Blog, 2020.
+[46] J. Preskill, “Quantum computing in the nisq era and beyond,”
+Quantum, vol. 2, p. 79, 2018.
+[47] K. Temme, S. Bravyi, and J. M. Gambetta, “Error mitigation
+forshort-depthquantumcircuits,”PhysicalReviewLetters,vol.
+119, no. 18, p. 180509, 2017.
+[48] Y. Li and S. C. Benjamin, “Efficient variational quantum
+simulator incorporating active error minimization,” Physical
+Review X, vol. 7, no. 2, p. 021050, 2017.
+[49] E. Tang, “A quantum-inspired classical algorithm for recom-
+mendation systems,” Proceedings of the 51st Annual ACM
+SIGACT Symposium on Theory of Computing, pp. 217–228,
+2019.
+[50] M.Schuld,R.Sweke,andJ.J.Meyer,“Effectofdataencoding
+on the expressive power of variational quantum-machine-
+learningmodels,”PhysicalReviewA,vol.103,no.3,p.032430,
+2021.
+CHI-SHENG CHENreceivedabach-
+elor degree in Electrophysics from Na-
+tional Chiao Tung University and a
+master’s degree in Biomedical Elec-
+tronics and Bioinformatics from Na-
+tional Taiwan University. He is cur-
+rently working at a financial AI startup
+and also serves as an AI project re-
+searcheratHarvardMedicalSchooland
+Beth Israel Deaconess Medical Center.
+His research expertise includes time-series analysis, computer
+vision, brain-computer interfaces (BCI), electroencephalography
+(EEG), multimodal contrastive learning, and quantum machine
+learning. Chen has led the development of foundational models
+for EEG-based image generation, aiming to improve psychiatric
+treatment and the discovery of biomarkers for drug development.
+He has designed hybrid quantum-classical architectures for EEG
+encoding and pioneered quantum deep learning methods for
+contrastive learning between EEG and visual data. His research
+also focuses on medical speech processing and the integration
+of multimodal large language models (LLMs) for clinical and
+financial application.
+20 VOLUME 4, 2016
+
+[PÁGINA PDF 21]
+Chenet al.: Preparation of Papers for IEEE Transactions on Quantum Engineering
+XINYU ZHANGreceivedtheB.E.and
+the M.S. degree from the Information
+andAutomaticCollege,TianjinUniver-
+sityofScienceandTechnology,Tianjin,
+China, in 2019 and 2022, separately,
+whereheiscurrentlypursuingthePh.D.
+degree in intelligent system engineer-
+ing with Luddy School of Informatics,
+Computing, and Engineering, Indiana
+UniversityBloomington,Bloomington,
+IN, USA. His main research includes quantum neural network,
+deep learning, advanced signal processing, and other disciplines
+such as information science and large language models (LLMs).
+EN-JUI KUOreceived the B.S. de-
+gree in electrophysics from National
+Yang Ming University, Taipei, Taiwan.
+He then obtained his M.S. degree in
+physics from National Taiwan Univer-
+sity, Taipei, Taiwan, and completed
+his Ph.D. in physics at the University
+of Maryland, USA. Currently, he is
+an Assistant Professor of department
+of electrophysics at the National Yang
+Ming Chiao Tung University, Taiwan.
+RONG FUreceived the B.S. degree
+in Communication Engineering from
+Jiangsu Ocean University, Jiangsu,
+China, in 2018, and the M.S. degree
+in Electronic Information Engineering
+from the College of Information and
+Automation, Tianjin University of Sci-
+ence and Technology, Tianjin, China,
+in 2023. She is currently pursuing the
+Ph.D. degree in Intelligent Systems
+Engineering with the Luddy School of Informatics, Computing,
+andEngineering,IndianaUniversityBloomington,Bloomington,
+IN, USA. Her research interests include signal processing and
+deep learning.
+QIUZHE XIEreceived a bachelor’s
+degree in Electrical Engineering from
+Hefei University of Technology and
+a master’s degree in Electronics En-
+gineering from National Cheng Kung
+University, followed by a Ph.D. in
+Electronics Engineering from National
+Taiwan University. His research exper-
+tise encompasses biosensors, advanced
+semiconductor processes, nanomateri-
+als, and microfabrication techniques. He has spearheaded the
+development of nano-structural electrode arrays with ultra-thin
+dielectric stacking and leveraged quantum computing algorithms
+to enhance sensing precision. Furthermore, he has engineered
+CRISPR-basedelectrochemicalsensorsanddevelopedinnovative
+water purification systems for semiconductor manufacturing.
+Extendinghisworktopracticalapplication,healsofocusesonthe
+commercialization of medical devices, having validated business
+models for cardiosensor technologies through the NSF program.
+FAN ZHANGreceived the B.S. de-
+gree in Statistics from Beijing Normal
+University,Beijing,China,in2016,the
+M.S. degree in statistics from National
+Cheng Kung University, Taiwan, in
+2018, and the Ph.D. degree in statistics
+from Arizona State University, Tempe,
+AZ, USA, in 2024. She is currently
+an Assistant Professor with the De-
+partment of Mathematics, Boise State
+University,Boise,ID,USA.Herresearchinterestsincludedesign
+and analysis of experiments, variable selection, uncertainty
+quantification, Bayesian modeling and inference, and quantum-
+enhanced machine learning.
+VOLUME 4, 2016 21

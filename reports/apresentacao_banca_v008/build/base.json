@@ -1,0 +1,41 @@
+{
+  "id": "v008",
+  "anterior": "v007",
+  "arquivo": "reports/monografia/versoes/v008/MayconGarciaSilva_monografia_v008.docx",
+  "sha256": "0daacd3ea1753bca97619df025923b92a44a047b5c1252a4677f802dfe870dad",
+  "registrada_em_utc": "2026-10-31T14:11:35.244846+00:00",
+  "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revalidacao_cinco_skills_v007.docx",
+  "responsavel": "Codex, revalidacao das cinco skills solicitada por Maycon Garcia Silva",
+  "resumo": "Revalida as cinco skills sobre v007 e incorpora tres ajustes locais: sigla AG na Tabela5 e chamadas proximas das Tabelas5e6. Preserva conteudo cientifico, valores, imagens,50referencias e170celulas. Correcao linguistica ja incorporada na v007; removida apenas a anotacao obsoleta dessa pendencia.",
+  "estado_editorial": "conferida",
+  "validacao_declarada": "76paginas;13elementos tabulares,50siglas,56ocorrencias de et al. em italico;328paragrafos e163chamadas conciliados com evidencias;34PDFs da matriz com hashes conferidos. Somente document.xml mudou em3trechos;74paginas com pixels iguais e2alteradas inspecionadas. Sem certificado universal de originalidade ou aprovacao academica.",
+  "evidencias": [
+    {
+      "arquivo": "reports/revalidacao_cinco_skills_v007/relatorio_final.md",
+      "sha256": "acb45497e4c8ee003113fcfa8af59deb39fd87a5186f8539c5e055e4bc40d773"
+    },
+    {
+      "arquivo": "reports/revalidacao_cinco_skills_v007/estado_final.json",
+      "sha256": "c94a91d1258e3ab802712e87c9d9f446ef20a021074fa69e45e7d8e07cf3cebe"
+    },
+    {
+      "arquivo": "reports/revalidacao_cinco_skills_v007/alteracoes_aplicadas.json",
+      "sha256": "1eaf22c62ed4dd5566927fb252902ce0493d417411e0cd60ba329c688795f4b2"
+    },
+    {
+      "arquivo": "reports/revalidacao_cinco_skills_v007/conciliacao_integral_v007.json",
+      "sha256": "9c7beb56d3a44c55526ed1ca97d89695ec552e926a29deb6b70931b1ffebed90"
+    },
+    {
+      "arquivo": "reports/revalidacao_cinco_skills_v007/verificacao_visual.json",
+      "sha256": "3a28f2c2ddfdc6fab8108993357e41f428b9440b9c7ea57a3bd48d1d912e8fc5"
+    }
+  ],
+  "pendencias": [
+    "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+    "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+    "Limitacao bibliografica preservada: buscas complementares, registros de selecao parciais e41marcacoes de informacao insuficiente; sem alegacao de revisao sistematica integral.",
+    "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+    "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills."
+  ]
+}

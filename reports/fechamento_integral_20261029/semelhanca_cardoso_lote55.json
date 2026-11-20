@@ -1,0 +1,84 @@
+{
+  "sha256_base_v005": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "61fac8da8ab082633bbaa113ed697fd32ccfd7d72c2142f003b18b5b10083e2a",
+  "sha256_tese": "0713862798eb01327e7534ff86e694d76bb8bf9bc2113ba6407bef04f14b2e26",
+  "sha256_extracao": "215228a5ec8422ed8695569f557770b6f52beeee8e9e8e7c1d950fa413a9d922",
+  "paragrafos_alvo": 258,
+  "segmentos_fonte": 2407,
+  "metodo": "Trechos de uma ou duas frases da extração da tese; candidatos compartilham quatro palavras normalizadas consecutivas, razão de SequenceMatcher >= 0,28. Triagem contextual, não taxa de plágio.",
+  "limites": "Não identifica paráfrases que escapem ao filtro, traduções, imagens, ou materiais externos à tese. A extração de PDF pode perder texto. Inclui referências da própria tese; comparar contexto antes de qualquer conclusão.",
+  "pares": [
+    {
+      "alvo": "P_atual0485",
+      "secao": "CONCLUSÃO",
+      "pagina_pdf": 7,
+      "razao": 0.3571,
+      "maior_sequencia_palavras": 6,
+      "texto_alvo": "O objetivo geral de investigar o desempenho de Redes Neurais de Estados de Eco na previsão de um passo à frente do preço ajustado da PETR4 foi alcançado.",
+      "trecho_fonte": "Entre elas, as Redes Neurais de Estados de Eco podem alcançar excelente desempenho na previsão de valores futuros, pois não necessitam de treinamento, um grande problema nas RNR."
+    },
+    {
+      "alvo": "P_atual0485",
+      "secao": "CONCLUSÃO",
+      "pagina_pdf": 7,
+      "razao": 0.3492,
+      "maior_sequencia_palavras": 6,
+      "texto_alvo": "O objetivo geral de investigar o desempenho de Redes Neurais de Estados de Eco na previsão de um passo à frente do preço ajustado da PETR4 foi alcançado.",
+      "trecho_fonte": "O objetivo deste trabalho é caracterizar o comportamento de séries temporais do preço de ações, otimizando a capacidade preditiva de modelos gerados por Redes Neurais de Estados de Eco, agregando técnica estatística à sua implementação."
+    },
+    {
+      "alvo": "P_atual0485",
+      "secao": "CONCLUSÃO",
+      "pagina_pdf": 5,
+      "razao": 0.3415,
+      "maior_sequencia_palavras": 6,
+      "texto_alvo": "O objetivo geral de investigar o desempenho de Redes Neurais de Estados de Eco na previsão de um passo à frente do preço ajustado da PETR4 foi alcançado.",
+      "trecho_fonte": "Redes Neurais de Estados de Eco 4. Ações de bolsa de valores 5."
+    },
+    {
+      "alvo": "P_atual0485",
+      "secao": "CONCLUSÃO",
+      "pagina_pdf": 7,
+      "razao": 0.3043,
+      "maior_sequencia_palavras": 6,
+      "texto_alvo": "O objetivo geral de investigar o desempenho de Redes Neurais de Estados de Eco na previsão de um passo à frente do preço ajustado da PETR4 foi alcançado.",
+      "trecho_fonte": "Palavras-chave: ARIMA-EGARCH; RNEE; Redes Neurais de Estados de Eco; Ações de bolsa de valores; V olatilidade. "
+    },
+    {
+      "alvo": "P_atual0485",
+      "secao": "CONCLUSÃO",
+      "pagina_pdf": 7,
+      "razao": 0.3043,
+      "maior_sequencia_palavras": 6,
+      "texto_alvo": "O objetivo geral de investigar o desempenho de Redes Neurais de Estados de Eco na previsão de um passo à frente do preço ajustado da PETR4 foi alcançado.",
+      "trecho_fonte": "Palavras-chave: ARIMA-EGARCH; RNEE; Redes Neurais de Estados de Eco; Ações de bolsa de valores; V olatilidade. "
+    },
+    {
+      "alvo": "P_atual0485",
+      "secao": "CONCLUSÃO",
+      "pagina_pdf": 7,
+      "razao": 0.3014,
+      "maior_sequencia_palavras": 6,
+      "texto_alvo": "O objetivo geral de investigar o desempenho de Redes Neurais de Estados de Eco na previsão de um passo à frente do preço ajustado da PETR4 foi alcançado.",
+      "trecho_fonte": "Dentre estas, destacam-se as Redes Neurais Recorrentes (RNR) que se utilizam de memória dos dados anteriores. Entre elas, as Redes Neurais de Estados de Eco podem alcançar excelente desempenho na previsão de valores futuros, pois não necessitam de treinamento, um grande problema nas RNR."
+    },
+    {
+      "alvo": "P_atual0312",
+      "secao": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+      "pagina_pdf": 60,
+      "razao": 0.3,
+      "maior_sequencia_palavras": 5,
+      "texto_alvo": "Fonte: Elaborado pelo autor (2026) a partir da série recebida já ajustada; contexto do fator em Cardoso et al. (2022b).",
+      "trecho_fonte": "Mais detalhes sobre a revisão de literatura podem ser encontrados em CARDOSO et al . (2022b) e CARDOSO et al. (2024)."
+    },
+    {
+      "alvo": "P_atual0207",
+      "secao": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+      "pagina_pdf": 59,
+      "razao": 0.2819,
+      "maior_sequencia_palavras": 4,
+      "texto_alvo": "Ribeiro et al. (2021) combinaram o modelo autorregressivo heterogêneo (Heterogeneous Autoregressive – HAR), PSO e ESN no HAR-PSO-ESN. O estudo previu volatilidades realizadas diárias de CAT, EBAY e MSFT, construídas a partir de retornos intradiários de cinco minutos. Foram avaliados horizontes de um, cinco e 21 dias, com ARIMA, HAR, MLP e variantes ESN como comparadores. Esses experimentos oferecem uma aplicação financeira da combinação, sem demonstrar vantagem universal nem transformar volatilidade observada em comprovação de caos.",
+      "trecho_fonte": "Sobre técnicas de “hibridização”: • Ribeiro et al . (2021): propõem um modelo híbrido que combina HAR (auto-regressivo heterogêneo) com ESN e a meta-heurística PSO (otimização por enxame de partículas) para previsão diária de volatilidades realizadas de três ações da Nasdaq, “considerando horizontes de previsão de 1 dia, 5 dias e 21 dias à frente”. Eles compararam “com especificações existentes, como média móvel integrada autoregressiva (ARIMA), HAR, perceptron multicamadas (MLP) e ESN”."
+    }
+  ]
+}

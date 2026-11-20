@@ -1,0 +1,61 @@
+{
+  "sha256_docx": "a6c9512dd7503795b6b7921c0d33c6dd327c42c6ec14442ccfbd463846e54a35",
+  "paginas_pdf_inspecionadas": [
+    5,
+    6,
+    7
+  ],
+  "decisoes": {
+    "G35": "Dedicatória sem título, na metade direita inferior; recuo direto7,999cm e posicionamento inferior conferidos.",
+    "G36": "Agradecimentos com título centralizado e corpo em parágrafos; conteúdo pessoal do elemento pré-textual preservado.",
+    "G37": "Epígrafe sem título, na metade direita inferior; recuo7,999cm, citação em itálico e autoria à direita. Localizador e referência constam do documento.",
+    "G38": "Fonte da epígrafe é Gleick1987,par.1; referência eletrônica própria e conferência primária registradas no controle137 e lote53."
+  },
+  "medidas": {
+    "31": {
+      "texto": "Dedico este trabalho à minha mãe Gizele Garcia Martins Silva e ao meu pai Cleidiomar Ferreira da Silva por todo o apoio prestado desde o começo da minha vida até os dias de hoje.",
+      "recuo_esquerdo_cm": 7.999236111111111,
+      "runs": [
+        {
+          "texto": "Dedico este trabalho à minha mãe Gizele Garcia Martins Silva e ao meu pai Cleidiomar Ferreira da Silva por todo o apoio prestado desde o começo da minha vida até os dias de hoje.",
+          "italico": null,
+          "fonte_pt": null
+        }
+      ]
+    },
+    "32": {
+      "texto": "AGRADECIMENTOS",
+      "recuo_esquerdo_cm": null,
+      "runs": [
+        {
+          "texto": "AGRADECIMENTOS",
+          "italico": null,
+          "fonte_pt": null
+        }
+      ]
+    },
+    "38": {
+      "texto": "“Where chaos begins, classical science stops.”",
+      "recuo_esquerdo_cm": 7.999236111111111,
+      "runs": [
+        {
+          "texto": "“Where chaos begins, classical science stops.”",
+          "italico": true,
+          "fonte_pt": null
+        }
+      ]
+    },
+    "39": {
+      "texto": "(Gleick, 1987, par. 1)",
+      "recuo_esquerdo_cm": 7.999236111111111,
+      "runs": [
+        {
+          "texto": "(Gleick, 1987, par. 1)",
+          "italico": null,
+          "fonte_pt": 11.0
+        }
+      ]
+    }
+  },
+  "limite": "G37 depende também das medidas de fonte e alinhamento registradas abaixo; propriedades herdadas precisam complemento se não expressas diretamente."
+}

@@ -1,0 +1,40 @@
+{
+  "base": "v010",
+  "base_sha256": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+  "paginas_roteiro": 13,
+  "paginas_alteradas_inspecionadas": [
+    1,
+    11,
+    12,
+    13
+  ],
+  "slides_alterados_inspecionados": [
+    19,
+    20,
+    21,
+    23
+  ],
+  "demais_paginas_e_slides_identicos_as_imagens_anteriores_inspecionadas": true,
+  "falas_sincronizadas": 23,
+  "palavras_fala": 2910,
+  "segundos_planejados": 1500,
+  "links_nativos": 82,
+  "transicoes_por_clique": 23,
+  "graficos_preservados": 10,
+  "partes_alteradas": [
+    "ppt/slides/slide19.xml",
+    "ppt/notesSlides/notesSlide19.xml",
+    "ppt/slides/slide20.xml",
+    "ppt/notesSlides/notesSlide20.xml",
+    "ppt/slides/slide21.xml",
+    "ppt/notesSlides/notesSlide21.xml",
+    "ppt/notesSlides/notesSlide22.xml",
+    "ppt/slides/slide23.xml",
+    "ppt/notesSlides/notesSlide23.xml"
+  ],
+  "arquivos": {
+    "Apresentacao_ESNAUTO_v010_resultados_claros.pptx": "0fcc57d258b43b5e71eaaa83a2cd3c95d4aa72a56c30238b44bdf48209804457",
+    "Roteiro_ESNAUTO_v010_resultados_claros.docx": "6feab68065ca2cc6e8caab8926c9fa1780764611835ba7ef243c6ccb3d8b0b3d",
+    "Roteiro_ESNAUTO_v010_resultados_claros.md": "c99419e50820cf7f2e85570d846933f76c21c651ca5f0d5e0c53173cf1da714e"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "paragrafo_atual": 407,
+  "antes": "Essas diferenças são menores que aquelas observadas na comparação entre ESN, GRU e LSTM. Isso indicou que parte importante do desempenho decorreu da própria arquitetura ESN e do processo de otimização, não exclusivamente da substituição da distribuição gaussiana. Ainda assim, quatro das cinco primeiras posições por MAE utilizaram ao menos uma distribuição de cauda pesada ou impulsiva, indicando que a forma de inicialização pode conduzir o reservatório a regiões de desempenho distintas.",
+  "proposta": "As diferenças entre as melhores configurações de ESN e o controle Normal × Normal foram menores que as diferenças observadas em relação à GRU e à LSTM. Essa comparação não separa os efeitos da arquitetura, da otimização e da inicialização. Quatro das cinco primeiras posições por MAE utilizaram ao menos uma distribuição de cauda pesada ou impulsiva; esse resultado descreve as configurações avaliadas, sem isolar causalmente a distribuição dos pesos.",
+  "diagnostico": "Atribuição de desempenho à arquitetura e à otimização excede evidência comparativa sem ablação. Contagem de posições é descritiva e não demonstra efeito causal.",
+  "estado": "incorporada_pendente_renderizacao",
+  "evidencias": [
+    "conferencia_tabelas_historicas_lote65.json",
+    "conferencia_hipoteses_lote64.json"
+  ],
+  "sha256_apos_edicao": "1ce091302a9d3e31d8dfd9b01c4091180de0d6f048cddf794625c41a6590fab7"
+}

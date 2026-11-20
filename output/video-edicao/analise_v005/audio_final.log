@@ -1,0 +1,48 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'exportados/ESNAUTO_apresentacao_v005.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    title           : ESNAUTO - Apresentação v005
+    encoder         : Lavf63.1.102
+  Duration: 00:24:36.00, start: 0.000000, bitrate: 3166 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 2905 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.102 h264_nvenc
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 251 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+  Stream #0:2[0x3](por): Subtitle: mov_text (tx3g / 0x67337874), 0 kb/s (default)
+    Metadata:
+      handler_name    : SubtitleHandler
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_f32le (native))
+Press [q] to stop, [?] for help
+Output #0, f32le, to 'analise_v005/audio_final_8k_stereo.f32':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    title           : ESNAUTO - Apresentação v005
+    encoder         : Lavf63.1.102
+  Stream #0:0(und): Audio: pcm_f32le, 8000 Hz, stereo, flt, 512 kb/s (default)
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_f32le
+      handler_name    : SoundHandler
+[Parsed_ebur128_0 @ 00000239d227a580] Summary:
+
+  Integrated loudness:
+    I:         -15.9 LUFS
+    Threshold: -26.3 LUFS
+
+  Loudness range:
+    LRA:         3.2 LU
+    Threshold: -36.3 LUFS
+    LRA low:   -17.9 LUFS
+    LRA high:  -14.8 LUFS
+
+  True peak:
+    Peak:       -1.5 dBFS
+[out#0/f32le @ 00000239d2292940] video:0KiB audio:92249KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+size=   92249KiB time=00:24:35.98 bitrate= 512.0kbits/s speed=74.1x elapsed=0:00:19.92    

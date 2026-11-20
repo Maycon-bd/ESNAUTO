@@ -1,0 +1,41 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "ee6e179ab0ba157fb9f1348a1ac75c38813be767c3a27367481727f59641af50",
+  "fonte": "Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+  "sha256_fonte": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+  "alcance": "Reexame dirigido das passagens em páginas 2, 8, 10, 12, 14–17 do PDF já objeto de leitura anterior; códigos confrontados com Quadro 1 atual. Não implica validação de todas as citações da monografia.",
+  "celulas_revalidadas": [
+    {
+      "dimensao": "P1",
+      "codigo_quadro": "?",
+      "evidencia": "A discussão de SSA-ESN no PDF 8 não especifica a distribuição que gera Win ou W; insuficiência no critério, não prova geral de ausência.",
+      "decisao": "manter"
+    },
+    {
+      "dimensao": "P2",
+      "codigo_quadro": "S",
+      "evidencia": "PDF 8, 10 e 12 apresentam SSA para ajuste de ESN de Tian e Pei, descrito como revisão de trabalho de terceiros.",
+      "decisao": "manter"
+    },
+    {
+      "dimensao": "P3",
+      "codigo_quadro": "S",
+      "evidencia": "PDF 8 e 15–16 descrevem normalização e outros procedimentos de estudos revisados; o artigo é revisão, não aplicação experimental própria.",
+      "decisao": "manter"
+    },
+    {
+      "dimensao": "P4",
+      "codigo_quadro": "?",
+      "evidencia": "PDF 2 apresenta percentuais de LSTM e CNN sem demonstrar comparação pareada no mesmo problema; PDF 17 enumera métricas de modelos diferentes sem valores quantitativos pareados. Menção de superioridade na discussão SSA-ESN não acompanha números verificáveis nessa síntese.",
+      "decisao": "manter"
+    },
+    {
+      "dimensao": "P5",
+      "codigo_quadro": "S",
+      "evidencia": "PDF 14, Tabela 1, nomeia S&P 500, NASDAQ e Dow Jones em uma caracterização de conjuntos históricos; trata-se de apresentação contextual, não experimento próprio.",
+      "decisao": "manter"
+    }
+  ],
+  "resultado": "Cinco códigos mantidos; nenhuma alteração do Word."
+}

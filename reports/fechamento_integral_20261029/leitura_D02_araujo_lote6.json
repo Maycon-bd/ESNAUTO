@@ -1,0 +1,228 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_examinado": "da445d5b67022ad03c9ba66825e861264e828502834d1dbe28605304160fc5f2",
+  "fonte_lida_integralmente": {
+    "id": "D02",
+    "arquivo": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+    "sha256": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+    "paginas": 17,
+    "caracteres_extraidos": 37580,
+    "estado_leitura": "leitura_integral_com_evidencias_visuais",
+    "log_leitura": [
+      {
+        "metodo": "PDF1–17lido integralmente em ordem, incluindo três páginas de metadados, treze do manuscrito e uma de consultas de autor.",
+        "paginas_visuais_abertas": [
+          1,
+          4,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      }
+    ],
+    "leitura": "PDF1–17lido integralmente em ordem, incluindo três páginas de metadados, treze do manuscrito e uma de consultas de autor.",
+    "paginas_visuais_abertas": [
+      1,
+      4,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "celulas_reexaminadas": [
+    {
+      "id": "D02",
+      "arquivo_pdf": "Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_pdf": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P1",
+      "codigo": "?",
+      "localizador": "PDF 4–9, contextualização e método",
+      "evidencia_e_limite": "Cinco famílias associadas à ESN, sem individualização suficiente de sua geração em Win ou W na prova integral consultada. Não preencher por analogia com código próprio ou outros artigos.",
+      "escopo_leitura": "Prova local completa, PDF1–17, lida sequencialmente em blocos1–9e10–17; páginas1,4,7,8,10–14abertas visualmente. Inclui metadados e consultas de autor, tratados como conteúdo documental."
+    },
+    {
+      "id": "D02",
+      "arquivo_pdf": "Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_pdf": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P2",
+      "codigo": "D",
+      "localizador": "PDF 7–9, seção 3",
+      "evidencia_e_limite": "AG binário, 55 bits, seleção por fitness 40% treino/60% validação; seleção de cinco hiperparâmetros ESN.",
+      "escopo_leitura": "Prova local completa, PDF1–17, lida sequencialmente em blocos1–9e10–17; páginas1,4,7,8,10–14abertas visualmente. Inclui metadados e consultas de autor, tratados como conteúdo documental."
+    },
+    {
+      "id": "D02",
+      "arquivo_pdf": "Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_pdf": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 8, seções 3.1–3.2",
+      "evidencia_e_limite": "Calcula retornos e variâncias a partir de preços diários/intradiários. O texto chama log-retornos, mas também mostra fórmula de retorno simples: evitar atribuir fórmula inequívoca sem ressalva.",
+      "escopo_leitura": "Prova local completa, PDF1–17, lida sequencialmente em blocos1–9e10–17; páginas1,4,7,8,10–14abertas visualmente. Inclui metadados e consultas de autor, tratados como conteúdo documental."
+    },
+    {
+      "id": "D02",
+      "arquivo_pdf": "Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_pdf": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P4",
+      "codigo": "?",
+      "localizador": "PDF 10–15, tabelas e conclusão",
+      "evidencia_e_limite": "Tabelas3–4comparam variantes ESN e métricas de aptidão. Referências a outros modelos não fornecem comparação quantitativa qualificadora com LSTM,GRUouTransformer nesta prova.",
+      "escopo_leitura": "Prova local completa, PDF1–17, lida sequencialmente em blocos1–9e10–17; páginas1,4,7,8,10–14abertas visualmente. Inclui metadados e consultas de autor, tratados como conteúdo documental."
+    },
+    {
+      "id": "D02",
+      "arquivo_pdf": "Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_pdf": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 10, seção 4",
+      "evidencia_e_limite": "ITSA4, B3, preços de janeiro/2001 a julho/2023. Não atribuir esses dados à PETR4.",
+      "escopo_leitura": "Prova local completa, PDF1–17, lida sequencialmente em blocos1–9e10–17; páginas1,4,7,8,10–14abertas visualmente. Inclui metadados e consultas de autor, tratados como conteúdo documental."
+    }
+  ],
+  "n_celulas_reexaminadas": 5,
+  "n_codigos_alterados": 0,
+  "unidades_conferidas_sem_edicao": [
+    {
+      "unidade": "U0258",
+      "diagnostico": "condizente_com_limites_explicitos",
+      "evidencia": "AraújoPDF4,7–11documenta antecedente financeiro com distribuições alternativas. O parágrafo formula questão/objetivo e não reivindica ineditismo ou isolamento causal."
+    }
+  ],
+  "unidades_com_conferencia_parcial": [
+    {
+      "unidade": "U0220",
+      "conferido": "Apenas antecedente AG+ESN+distribuições em séries da B3. Integrações próprias e cinco ondas exigem seus registros específicos."
+    },
+    {
+      "unidade": "U0233",
+      "conferido": "Cinco famílias e falta de individualização Win/W na prova Araújo. A atribuição a Sharma permanece com conferência própria."
+    },
+    {
+      "unidade": "U0259",
+      "conferido": "Somente oração sobre Araújo. Não conclui a leitura de Lampugnani ou da tese Cardoso."
+    },
+    {
+      "unidade": "U0621",
+      "conferido": "Ponderação40%/60%confirmada na provaPDF7–8; sinal e MAEs no código atual ga_engine.R227–315. Registro de parâmetros/erros em history_tracker.R88–184e matrizes de recordes em168–171. Não comprova identidade do código em cada execução histórica nem validade independente dos erros."
+    }
+  ],
+  "quadro3_conferencia": {
+    "unidades": [
+      "U0581",
+      "U0582",
+      "U0583",
+      "U0584",
+      "U0585",
+      "U0586",
+      "U0587",
+      "U0588",
+      "U0589",
+      "U0590",
+      "U0591",
+      "U0592",
+      "U0593",
+      "U0594",
+      "U0595",
+      "U0596",
+      "U0597",
+      "U0598",
+      "U0599",
+      "U0600",
+      "U0601",
+      "U0602",
+      "U0603",
+      "U0604",
+      "U0605",
+      "U0606",
+      "U0607",
+      "U0608",
+      "U0609",
+      "U0610",
+      "U0611",
+      "U0612"
+    ],
+    "alocacao_bits": [
+      17,
+      17,
+      7,
+      5,
+      9
+    ],
+    "soma_bits": 55,
+    "limites_numericos": {
+      "a_sr": "k/131071; k=0recebe7.62939453125e-6; positivos e<=1; grade discreta.",
+      "initLen": "k+2,kentre0e127,resulta2a129.",
+      "reservatorio": "k+2,kentre0e31,resulta2a33.",
+      "regularizacao": "(k/511+1e-4)*(1e-4-1e-6),kentre0e511:9.9e-9a9.90099e-5. Limites aproximados do Quadro3conferem."
+    },
+    "fontes_codigo": [
+      {
+        "arquivo": "app/utils/ga_engine.R",
+        "sha256": "d107402af08415a0e9cc4913676cc0e3791725736b22145e945ccb5b5d31ecff"
+      },
+      {
+        "arquivo": "Scripts/acoes_petr4_esn.R",
+        "sha256": "3532af9056a46d313a895645a186991e1e30ce781b2a1cc5e9b0104af800dca5"
+      },
+      {
+        "arquivo": "app/utils/history_tracker.R",
+        "sha256": "8ae50a269baf537103e59db809c39f00180e73f10de7bd1c8bce5c44d1218c6c"
+      }
+    ],
+    "trechos_lidos": "Decodificador atual227–238e legado212–237; atual248–265para descarte e Ridge; atual288–315para aptidão; atual480–543para chamada de persistência; history_tracker.R1–200. Não foi executado ou declarado lido o restante do software.",
+    "fontes_conceituais": "Jaeger2001/2007eRBras2022já conferidos; AraújoPDF7–11neste lote. A citação conjunta não atribui os intervalos a tabelas de resultados do artigo.",
+    "limite": "Compatibilidade estática dos códigos examinados; não prova que toda execução histórica usou esses bytes. Não houve treinamento, busca ou novo teste DM."
+  },
+  "metadados_R02": {
+    "url_editor": "https://link.springer.com/chapter/10.1007/978-3-031-77738-7_26",
+    "verificacao": "Página oficial aberta e lida: título, sete autores, livro IDEAL2024,editorJulian,volume15347,p315–327,SpringerCham,DOI conferem. Cite this paper e copyright indicam2025; First Online/Published indica14November2024. A monografia usa o ano da edição2025, mantido.",
+    "limite": "Manuscrito integral conferido na prova local; não se declara acesso ao texto integral final, disponível por assinatura. A página pública permite metadados/resumo, não comprova identidade byte a byte entre versões."
+  },
+  "ressalvas_fontes": [
+    "PDF8chama log-retornos, mas a fórmula mostrada é retorno simples. A monografia usa a designação genérica retornos nesta comparação.",
+    "PDF8declara60/20/20e contagens3335/1118/1118. A soma5571confere; os percentuais são nominais/aproximados. Não transferir contagens ou partições para PETR4.",
+    "O período declarado ITSA4estende-se a2023, embora o BovDB citado anuncie1995–2020. A monografia não usa essa atribuição para provar origem/atualização da sua série.",
+    "Abstract, prosa, Figura2e conclusão divergem sobre famílias destacadas. Não transportar ranking, causalidade ou significância sem teste para a monografia.",
+    "Tabelas1–2apresentam valores encontrados em execuções, não intervalos completos de busca ou a alocação dos55bits.",
+    "A proporção40/60é documentada; não constitui prova de que toda a metodologia ou código dos estudos seja idêntico."
+  ],
+  "alteracoes_word": [
+    {
+      "unidade": "U0244",
+      "antes": "Araújo et al. (2025) investigaram ESNs com Algoritmos Genéticos e diferentes distribuições probabilísticas em séries da B3. Essa combinação constitui uma referência metodológica próxima desta pesquisa. O ESNAUTO organiza a investigação da PETR4 ajustada em cinco ondas e integra LHS e um operador antiestagnação inspirado no CHC. A infraestrutura dispõe de mecanismos de preservação de matrizes, mas o acervo histórico não contém as matrizes e previsões de todas as execuções, conforme a Seção 3.8. Foi consultada a prova de autor; os metadados da edição final foram conferidos no editor.",
+      "depois": "Araújo et al. (2025) compararam MAE e RMSE como aptidão de um AG para ESNs com cinco distribuições. A prova consultada descreve retornos de fechamento da ITSA4 e variâncias diárias, com partição declarada de 60%/20%/20%. Esse protocolo difere da previsão do preço ajustado da PETR4 no ESNAUTO. A presente pesquisa adapta essa linha de trabalho, integra LHS e um operador antiestagnação inspirado no CHC. A preservação histórica parcial dos artefatos está descrita na Seção 3.8. Foi consultada a prova de autor; os metadados da edição final foram conferidos no editor.",
+      "motivo": "Individualizar tarefa, ativo e partição do antecedente; não equiparar retornos/variâncias da ITSA4 à previsão de preços ajustados da PETR4. Preserva o limite de acervo e a identificação da prova de autor."
+    },
+    {
+      "unidade": "U0580",
+      "antes": "Os hiperparâmetros otimizados pelo AG são apresentados no Quadro 3. As faixas e os 55 bits correspondem à codificação do ESNAUTO; as referências fundamentam os conceitos, sem fornecer esses intervalos específicos. Cardoso et al. (2022a, p. 203), por exemplo, utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização, em um protocolo distinto.",
+      "depois": "O Quadro 3 apresenta a codificação de 55 bits utilizada no ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso et al. (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+      "motivo": "Reconhecer expressamente o antecedente dos 55 bits. As tabelas de valores encontrados no artigo não são limites de busca nem partição dos bits; estes foram conferidos nos códigos locais."
+    },
+    {
+      "unidade": "U0601",
+      "antes": "Remove os transientes iniciais do reservatório.",
+      "depois": "Descarta os estados iniciais na estimação de Wout.",
+      "motivo": "Descrever o descarte efetivamente implementado, sem prometer que qualquer quantidade otimizada elimine todos os transientes dinâmicos."
+    }
+  ],
+  "sha256_copia_apos_edicao": "442e5f929f6c5609228594d678117e765464c2f2fb6a408abd89ac02813167b6",
+  "estado": "incorporado_renderizado_e_inspecionado_pendente_fechamento_integral",
+  "sha256_apos_exportacao_nativa": "05333a74f190adc9cf7cc18387b502e9ff2073021147a71195863a1555be2ddc"
+}

@@ -1,0 +1,39 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'output/video-edicao/entrada/Video final tfc2.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : https://clipchamp.com
+    comment         : Create videos with https://clipchamp.com/en/video-editor - free online video editor, video compressor, video converter.
+  Duration: 00:25:59.00, start: 0.000000, bitrate: 6965 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 6766 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, mp4, to 'output/video-edicao/analise_tfc2/teste_nvenc.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Create videos with https://clipchamp.com/en/video-editor - free online video editor, video compressor, video converter.
+    encoder         : Lavf63.1.102
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc63.1.102 h264_nvenc
+      handler_name    : VideoHandler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+      handler_name    : SoundHandler
+frame=   66 fps= 43 q=13.0 size=     256KiB time=00:00:02.75 bitrate= 762.2kbits/s speed=1.78x elapsed=0:00:01.55    
+[out#0/mp4 @ 0000024a81e35840] video:943KiB audio:118KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.650649%
+frame=  150 fps= 81 q=13.0 Lsize=    1068KiB time=00:00:05.00 bitrate=1749.4kbits/s speed=2.71x elapsed=0:00:01.84    
+[aac @ 0000024a81ea8d80] Qavg: 1398.046

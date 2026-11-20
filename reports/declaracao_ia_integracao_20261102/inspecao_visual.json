@@ -1,0 +1,31 @@
+{
+  "base": "v010",
+  "base_sha256": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+  "candidato_sha256": "6ce846aec1d02f0ab1c6e575f822f082920331f8d7b6c444914bb45d0563ce4a",
+  "paginas_renderizadas": 81,
+  "paginas_inspecionadas": [
+    10,
+    11,
+    12,
+    16,
+    17,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    80,
+    81
+  ],
+  "corpos_identicos_excluida_faixa_superior": 61,
+  "declaracao_separada": "Uma página renderizada e inspecionada; sem cortes ou sobreposições.",
+  "resultado": "Páginas afetadas inspecionadas; tabelas curtas inteiras, declaração e listas legíveis."
+}

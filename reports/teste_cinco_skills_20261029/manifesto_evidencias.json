@@ -1,0 +1,153 @@
+{
+  "versao": "v001",
+  "sha256_base": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+  "arquivos": [
+    {
+      "arquivo": "auditar_skills.py",
+      "sha256": "cd599d9eea02063522499370795075ffa520a581608bdcf053c8479f2f973099",
+      "bytes": 8691
+    },
+    {
+      "arquivo": "checks_quadros_tabelas.json",
+      "sha256": "38216e7191ed724cb852127d572751678f76f21f233d5f67af41cd26da9906a2",
+      "bytes": 7800
+    },
+    {
+      "arquivo": "consolidar_testes.py",
+      "sha256": "f371603ee2f450b7bc55131ec5bb33b685f1bce2b1cefe0311f0d0d64af0e45a",
+      "bytes": 9042
+    },
+    {
+      "arquivo": "cruzamento_citacoes.json",
+      "sha256": "d692d295e335e41f3b815930d5c40e18962878701b192a387c6a8067c45123ff",
+      "bytes": 72493
+    },
+    {
+      "arquivo": "estado_testes.json",
+      "sha256": "53721a5d96fb41357f699d5e10d60ec594ebb59db39eeed680ea45112cb41b69",
+      "bytes": 4477
+    },
+    {
+      "arquivo": "fonte_timbo.json",
+      "sha256": "10a09d51e3695e36d85b49571b5f3b6be480a2320cb624821ecf25ffa4e0cdc3",
+      "bytes": 1494
+    },
+    {
+      "arquivo": "identidade_e_cobertura.json",
+      "sha256": "77b921940ad2e64d2bcc11898dc319c421909f4b0cfc6d249f8df1a6a7b41960",
+      "bytes": 2817
+    },
+    {
+      "arquivo": "italicos.json",
+      "sha256": "73a30aa4c78b72d0e223c32872d7828151d137a5d1dfe4467a4d8f2203212e00",
+      "bytes": 47784
+    },
+    {
+      "arquivo": "mapa_visual.json",
+      "sha256": "1de2027758210df772a035b3a7d1469cba1d3c70fb0c48f0c279b7aade8a391b",
+      "bytes": 573
+    },
+    {
+      "arquivo": "paragrafos_e_formatacao.json",
+      "sha256": "0a10a36d33b77d3773288be46736bb695e86a1848a66721272aad21bffbebb42",
+      "bytes": 800175
+    },
+    {
+      "arquivo": "quadros_tabelas.json",
+      "sha256": "7ed182208be5251e8c4ed303e2b443ec9a5987b8432a80c9a704eaf3f0be8ee7",
+      "bytes": 383551
+    },
+    {
+      "arquivo": "RELATORIO.md",
+      "sha256": "655912d12e408b91ff1b99b198489fe4f2e5d5f8b4bb5f136a88c49439c2c50c",
+      "bytes": 20563
+    },
+    {
+      "arquivo": "render_auditoria.py",
+      "sha256": "b6a5c565613532fe34e4d3a81d9eac4f1cfcbc0d2eb3995b5a7233f5e5137af2",
+      "bytes": 1978
+    },
+    {
+      "arquivo": "siglas.json",
+      "sha256": "03eb347c9848f6bef9b226f6cc715430feb9dac9675b8e69498df93c6e74eebe",
+      "bytes": 274799
+    },
+    {
+      "arquivo": "siglas_detalhadas.md",
+      "sha256": "a063c09816e54cd01c07565b79469ab3b320366cbcbcd213b089f73dde2f646b",
+      "bytes": 4642
+    },
+    {
+      "arquivo": "teste_writer.json",
+      "sha256": "b955f17efb54af2e707a0ebbfb77dcff107d59d319fe6f298767cee3ec05e6b1",
+      "bytes": 3515
+    },
+    {
+      "arquivo": "texto_pdf.txt",
+      "sha256": "5ecd5c6ece3f0412359be9ffd58381917a52286c141467f0e36cf7197e54b5f5",
+      "bytes": 156799
+    },
+    {
+      "arquivo": "texto_v001.txt",
+      "sha256": "661b8cbe926bfaad89155e0fbe9e7df04e3b4f97f6d485361d738bc21032cc68",
+      "bytes": 148239
+    }
+  ],
+  "fontes_adicionais": [
+    {
+      "arquivo": "output/skills-docx/GUIA-FASOFT-UniRV.pdf",
+      "sha256": "cc109117539c87278a763d958ceb35ff20a6d452ba9d7ea2e4964d894c2c9e3f"
+    },
+    {
+      "arquivo": "Artigos citados\\Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "titulo": "Approach Based on Linear Regression for Stock Exchange Prediction – Case Study of Petr4 Petrobrás, Brazil",
+      "autores": "Nadson S. Timbó; Sofiane Labidi; Thiago P. do Nascimento; Milson L. Lima; Gilberto Nunes Neto; Rodrigo C. Matos",
+      "ano": 2016,
+      "doi": "10.5121/ijaia.2016.7103",
+      "paginas_pdf_lidas": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "leitura": "Conteúdo textual das 11 páginas; título e critério de acerto conferidos também em imagem. Extração do título na primeira página tem codificação defeituosa, resolvida por inspeção visual.",
+      "localizadores": [
+        {
+          "secao": "3 Methodology",
+          "pdf": 5,
+          "impressa": 25,
+          "apoio": "Seleção de variáveis com correlação de Pearson e coeficiente de determinação."
+        },
+        {
+          "secao": "3 Methodology",
+          "pdf": 6,
+          "impressa": 26,
+          "apoio": "Regressão linear múltipla e mínimos quadrados."
+        },
+        {
+          "secao": "4 Results",
+          "pdf": 8,
+          "impressa": 28,
+          "trecho_literal": "considered as success a maximum deviation of 0.50 cents",
+          "apoio": "Acerto definido por tolerância absoluta, não direção."
+        }
+      ]
+    }
+  ],
+  "verificacoes": [
+    "5 skills executadas no escopo declarado",
+    "12 elementos tabulares inventariados",
+    "57 entradas de siglas com uso localizado",
+    "184 ocorrências autor-ano reconhecidas e nenhuma referência ausente nesses padrões",
+    "Proposta writer de 357 caracteres, não incorporada",
+    "SHA256 da base inalterado no fechamento"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "sha256_docx": "3a6ac6ee012d5946cefcebaf5883818ff889b45b7de4ec7373a5446eabbbc5e6",
+  "fontes_adicionais": [
+    {
+      "arquivo": "reports\\fontes_drive_20261029\\Cardoso_RBras_2022_completo.pdf",
+      "sha256": "286bc9f8f90a8ce41d68605462a4656a0290a9f1685859823ddeff1ea4eb1a07",
+      "sha256_extracao": "79450c1cff5018711a9dd01384e27f13ec55527316998d214a7cd9a4864355f0"
+    },
+    {
+      "arquivo": "reports\\fechamento_integral_20261029\\Holland_reedicao_1992_consulta.pdf",
+      "sha256": "41f4c176cd8929f4b60de3bab2144f765a90dc1164c5ad8c5dd59032a3da2640",
+      "sha256_extracao": "6e8fe549700e827f358698800e958bd70b342067140495d9002f949555be9e09"
+    }
+  ],
+  "janelas_oito_palavras": [],
+  "escopo": "Complemento ao corpus39; compara corpo e tabelas com texto extraído RBras e Holland recuperados. Não inclui integralmente páginas eletrônicas de métodos e não detecta traduções ou paráfrases sem sequência idêntica."
+}

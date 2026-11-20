@@ -1,0 +1,73 @@
+{
+  "sha256_docx": "3a6ac6ee012d5946cefcebaf5883818ff889b45b7de4ec7373a5446eabbbc5e6",
+  "triagem": "reports\\fechamento_integral_20261029\\semelhanca_cardoso_lote121.json",
+  "sha256_tese": "0713862798eb01327e7534ff86e694d76bb8bf9bc2113ba6407bef04f14b2e26",
+  "pares_examinados_contextualmente": [
+    {
+      "par": 1,
+      "alvo": "P_atual0484",
+      "pagina_pdf_tese": 7,
+      "sha256_texto_alvo": "553ceca43e2897809ba1cefb2c2bb6314e9a0c4730ccafb859d26baa52c53859",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Objetivo/conclusão local e trecho da tese compartilham denominação convencional Redes Neurais de Estados de Eco e tema previsão. A afirmação local se refere ao objetivo próprio; não reproduz o argumento da tese sobre ausência de treinamento, que seria tecnicamente amplo demais."
+    },
+    {
+      "par": 2,
+      "alvo": "P_atual0484",
+      "pagina_pdf_tese": 7,
+      "sha256_texto_alvo": "553ceca43e2897809ba1cefb2c2bb6314e9a0c4730ccafb859d26baa52c53859",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Objetivo/conclusão local e trecho da tese compartilham denominação convencional Redes Neurais de Estados de Eco e tema previsão. A afirmação local se refere ao objetivo próprio; não reproduz o argumento da tese sobre ausência de treinamento, que seria tecnicamente amplo demais."
+    },
+    {
+      "par": 3,
+      "alvo": "P_atual0484",
+      "pagina_pdf_tese": 5,
+      "sha256_texto_alvo": "553ceca43e2897809ba1cefb2c2bb6314e9a0c4730ccafb859d26baa52c53859",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Objetivo/conclusão local e trecho da tese compartilham denominação convencional Redes Neurais de Estados de Eco e tema previsão. A afirmação local se refere ao objetivo próprio; não reproduz o argumento da tese sobre ausência de treinamento, que seria tecnicamente amplo demais."
+    },
+    {
+      "par": 4,
+      "alvo": "P_atual0484",
+      "pagina_pdf_tese": 7,
+      "sha256_texto_alvo": "553ceca43e2897809ba1cefb2c2bb6314e9a0c4730ccafb859d26baa52c53859",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Objetivo/conclusão local e trecho da tese compartilham denominação convencional Redes Neurais de Estados de Eco e tema previsão. A afirmação local se refere ao objetivo próprio; não reproduz o argumento da tese sobre ausência de treinamento, que seria tecnicamente amplo demais."
+    },
+    {
+      "par": 5,
+      "alvo": "P_atual0484",
+      "pagina_pdf_tese": 7,
+      "sha256_texto_alvo": "553ceca43e2897809ba1cefb2c2bb6314e9a0c4730ccafb859d26baa52c53859",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Objetivo/conclusão local e trecho da tese compartilham denominação convencional Redes Neurais de Estados de Eco e tema previsão. A afirmação local se refere ao objetivo próprio; não reproduz o argumento da tese sobre ausência de treinamento, que seria tecnicamente amplo demais."
+    },
+    {
+      "par": 6,
+      "alvo": "P_atual0484",
+      "pagina_pdf_tese": 7,
+      "sha256_texto_alvo": "553ceca43e2897809ba1cefb2c2bb6314e9a0c4730ccafb859d26baa52c53859",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Objetivo/conclusão local e trecho da tese compartilham denominação convencional Redes Neurais de Estados de Eco e tema previsão. A afirmação local se refere ao objetivo próprio; não reproduz o argumento da tese sobre ausência de treinamento, que seria tecnicamente amplo demais."
+    },
+    {
+      "par": 7,
+      "alvo": "P_atual0311",
+      "pagina_pdf_tese": 60,
+      "sha256_texto_alvo": "1b1a79689802f29bce5c079a032189a2ef995d35ebd2d3a48a3422ec29485b52",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Nota de procedência da tabela local compartilha a chamada Cardoso et al.(2022b). Não há passagem autoral extensa compartilhada; a nota identifica expressamente a série recebida já ajustada e delimita a fonte como contexto do fator."
+    },
+    {
+      "par": 8,
+      "alvo": "P_atual0206",
+      "pagina_pdf_tese": 59,
+      "sha256_texto_alvo": "10905b0a86b62c6ddaa69a03092cf6f0bd5bd46fc8b27ac9d190ebec854a59b9",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Ambos resumem Ribeiro2021, expressamente citado na monografia. Correspondência se concentra em nomes de métodos, horizontes e tarefa comuns à fonte original; a conferência de Ribeiro já realizada sustenta esses fatos. Não se atribuem à própria pesquisa resultados alheios."
+    }
+  ],
+  "limites": "Não identifica paráfrases que escapem ao filtro, traduções, imagens, ou materiais externos à tese. A extração de PDF pode perder texto. Inclui referências da própria tese; comparar contexto antes de qualquer conclusão.",
+  "resultado": "Os8pares sinalizados foram avaliados em contexto; não há nova correção textual motivada por estes pares. Não certificar originalidade universal ou cobertura semântica integral."
+}

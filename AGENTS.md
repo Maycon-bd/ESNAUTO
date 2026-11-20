@@ -7,10 +7,21 @@ Ao redigir, revisar ou conferir a monografia de Maycon Garcia Silva, leia a skil
 `docs/assistencia_monografia/contexto.md`. Não carregue esses materiais para tarefas
 de software sem relação com o texto acadêmico.
 
-A base editorial vigente é
-`reports/monografia/MayconGarciaSilva_monografia_PETR4_revisao_orientador.docx`.
-Confira sua identidade no registro de fontes; versões VALE3 e o Word original
-servem como histórico. Uma instrução posterior do usuário pode mudar essa escolha.
+A base editorial vigente deve ser resolvida exclusivamente pelo registro
+`docs/assistencia_monografia/versao_vigente.json`. Antes de qualquer trabalho
+acadêmico, execute `python Scripts/versao_monografia.py atual --json` e use o
+caminho retornado após conferência do SHA256. Não escolha por nome, data de
+modificação ou memória de outro chat. Esta regra prevalece sobre indicações
+históricas de base no contexto, catálogo e skill, salvo escolha explícita posterior
+do autor.
+
+Siga `docs/assistencia_monografia/controle_versoes.md`: preserve os snapshots,
+prepare uma cópia de trabalho, registre a nova revisão com a versão-base e confira
+a vigente antes de entregar. Se outro chat já avançou a base, concilie as mudanças;
+não sobrescreva a revisão posterior. Auditoria sem edição não cria versão Word.
+Relatórios devem identificar versão e hash examinados. Versões PETR4 anteriores,
+VALE3 e Word original servem como histórico. “Vigente” não significa aprovação
+acadêmica ou validação integral.
 
 Preserve a separação entre as 45 execuções históricas PETR4, a rodada controlada
 de Diebold–Mariano e o lote ilustrativo de 200 gerações. VALE3 permanece como

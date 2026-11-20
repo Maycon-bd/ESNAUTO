@@ -1,0 +1,31 @@
+{
+  "sha256_docx": "a6c9512dd7503795b6b7921c0d33c6dd327c42c6ec14442ccfbd463846e54a35",
+  "comparacao_visual": [
+    {
+      "pagina_pdf": 1,
+      "sha256_png": "b5b6bcd2be094563401de7e42e9e077ae8418837143bad3b728f91d37e31cd07",
+      "igual_a_inspecao81": true
+    },
+    {
+      "pagina_pdf": 2,
+      "sha256_png": "98ec4c5e212635ea473dc779dd6754afe9c5270a17e76f33097d97b06c4dbc6f",
+      "igual_a_inspecao81": true
+    },
+    {
+      "pagina_pdf": 4,
+      "sha256_png": "4882c2e785137fba0fe114028b3345fadd3a56d9d4f433c94860a75fc1958a7e",
+      "igual_a_inspecao81": true
+    }
+  ],
+  "decisoes": {
+    "G26": "Instituição,faculdade,autor,título,local e ano presentes na capa; página idêntica à inspeção81.",
+    "G27": "Modelo da capa:84pt e120pt representam7e10linhas simples; local/ano na parte inferior, imagem idêntica à previamente inspecionada.",
+    "G28": "Folha de rosto contém identificação,natureza,curso,instituição,grau,área e orientador; mesma página visual da inspeção81.",
+    "G29": "Apresentação e orientador em11pt,espaço simples,recuo8,001cm; identidade visual preservada.",
+    "G32": "Folha de aprovação conserva autor,título,natureza,área e banca da origem. Composição definitiva/assinaturas não confirmadas institucionalmente, etapa posterior.",
+    "G33": "Autor,título e BANCA centralizados em negrito; nomes/assinaturas em11pt e afastamentos do modelo preservados na página idêntica à inspeção81.",
+    "G80": "Mantida natureza da aprovação em caixa normal segundo decisão explícita da matriz histórica; interpretação da ambiguidade do guia, não norma inventada."
+  },
+  "referencia_regra": "conferencia_guia.md G26–G33/G80, páginas37/38/40 do guia; confronto com medidas locais e inspeção81.",
+  "limite": "Conclui apresentação no exemplar eletrônico, sem certificar banca definitiva,assinaturas ou aprovação."
+}

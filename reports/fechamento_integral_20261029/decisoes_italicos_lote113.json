@@ -1,0 +1,1008 @@
+{
+  "sha256_docx": "c152e5c6daec08abafd9a1034bf027dfd577075cc90da3d1f10202384ea37469",
+  "escopo": "Triagem dirigida de143 ocorrências em corpo e células; não equivale a inventário completo de estrangeirismos. Índices após exclusão HQNN.",
+  "fonte_excecoes": "Página oficial Senado retornou Internal Error em consulta web; não assumir lista verificada.",
+  "decisoes": [
+    {
+      "local": "p166",
+      "termo": "Echo State Network",
+      "italico": true,
+      "contexto": "es Neurais de Estados de Eco (Echo State Networks – ESNs), pertencentes à Computação de Reservatório (R",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p166",
+      "termo": "Reservoir Computing",
+      "italico": true,
+      "contexto": "à Computação de Reservatório (Reservoir Computing – RC). Nessa arquitetura, as matrizes de entrada e do ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p170",
+      "termo": "Ridge",
+      "italico": false,
+      "contexto": "TO, integrando ESN, regressão Ridge e busca genética; e investigar distribuições canônicas",
+      "decisao": "MANTER: nome próprio do método de regressão; não aplicar itálico automático por origem estrangeira."
+    },
+    {
+      "local": "p170",
+      "termo": "Ridge",
+      "italico": false,
+      "contexto": "eservatório e a regularização Ridge. A implementação atual utiliza um cromossomo binário d",
+      "decisao": "MANTER: nome próprio do método de regressão; não aplicar itálico automático por origem estrangeira."
+    },
+    {
+      "local": "p171",
+      "termo": "Mean Absolute",
+      "italico": false,
+      "contexto": "templa o Erro Médio Absoluto (Mean Absolute Error – MAE), a Raiz do Erro Quadrático Médio (Root Me",
+      "decisao": "CORRIGIR: expansão inglesa de métrica sem itálico; aplicar à expressão completa, preservando siglas e tradução."
+    },
+    {
+      "local": "p171",
+      "termo": "Root Mean",
+      "italico": false,
+      "contexto": "aiz do Erro Quadrático Médio (Root Mean Squared Error – RMSE) e o coeficiente de determinação ",
+      "decisao": "CORRIGIR: expansão inglesa de métrica sem itálico; aplicar à expressão completa, preservando siglas e tradução."
+    },
+    {
+      "local": "p183",
+      "termo": "Support Vector",
+      "italico": true,
+      "contexto": "quinas de vetores de suporte (Support Vector Machines – SVMs), LSTMs, Transformers e modelos quânti",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p183",
+      "termo": "Transformer",
+      "italico": false,
+      "contexto": "ctor Machines – SVMs), LSTMs, Transformers e modelos quântico-híbridos. Os desafios de custo e e",
+      "decisao": "ANALISAR: nome de arquitetura; distinguir designação técnica e uso comum antes de aplicar itálico."
+    },
+    {
+      "local": "p186",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Timbó et al. (2016) aplicaram regressão linear à previsão do fecham",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p187",
+      "termo": "Support Vector",
+      "italico": true,
+      "contexto": "áquina de vetores de suporte (Support Vector Machine – SVM). O modelo híbrido apresentou F1-score d",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p189",
+      "termo": "Transformer",
+      "italico": false,
+      "contexto": "(2024) compararam LSTM, GRU e Transformer na previsão de preços da Tesla, sem investigar arquite",
+      "decisao": "ANALISAR: nome de arquitetura; distinguir designação técnica e uso comum antes de aplicar itálico."
+    },
+    {
+      "local": "p192",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "ontrole do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualizaçã",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p194",
+      "termo": "Backpropagation",
+      "italico": true,
+      "contexto": "opropagação através do tempo (Backpropagation Through Time – BPTT), ajustando pesos internos e de sa",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p196",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "formações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 50",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p197",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "O resultado de Cortesi et al. (2026) indica que escolhas do processo de otimização p",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p198",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "lém da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quântica",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p198",
+      "termo": "Transformer",
+      "italico": false,
+      "contexto": "m Sharpe superior ao de LSTM, Transformer e TConv-MLP no conjunto JPX, em avaliação fora da amos",
+      "decisao": "ANALISAR: nome de arquitetura; distinguir designação técnica e uso comum antes de aplicar itálico."
+    },
+    {
+      "local": "p199",
+      "termo": "Reservoir Computing",
+      "italico": true,
+      "contexto": "ARIMA, LSTM, GRU e modelos de Reservoir Computing aplicados à previsão de preços do petróleo, quantifica",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p202",
+      "termo": "Reservoir Computing",
+      "italico": true,
+      "contexto": "a Computação de Reservatório (Reservoir Computing – RC). Jaeger (2001) apresenta uma abordagem em que a ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p204",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Sun et al. (2021) compararam uma ESN com uma LSTM simplificada na",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p205",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Wang et al. (2021) avaliaram modelos de RC em sete índices interna",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p206",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Ribeiro et al. (2021) combinaram o modelo autorregressivo heterogêneo",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p208",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Liu et al. (2022) avaliaram, por simulação numérica, um sistema n",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p208",
+      "termo": "software",
+      "italico": false,
+      "contexto": "geral sobre implementações de software em tempo real.",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p209",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Zhang et al. (2021) propuseram uma ESN com sensoriamento compressiv",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p209",
+      "termo": "Echo State Network",
+      "italico": true,
+      "contexto": "mpressivo (Compressed Sensing Echo State Network – CS-ESN), aplicada à representação dos estados do res",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p212",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Sharma et al. (2025) avaliaram ESNs para preços de Bitcoin, com XGBo",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p216",
+      "termo": "Backpropagation",
+      "italico": true,
+      "contexto": "M e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p216",
+      "termo": "Mean Absolute",
+      "italico": true,
+      "contexto": "ro percentual absoluto médio (Mean Absolute Percentage Error – MAPE).",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p217",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Deng et al. (2022) aplicaram AG à seleção do escalonamento de entr",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p218",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajust",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p220",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Araújo et al. (2025) investigaram a combinação de AG, ESN e distribu",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p231",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "tos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de en",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p231",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": " escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p233",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: No",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p233",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": " aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Unif",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p233",
+      "termo": "Tree Parzen",
+      "italico": true,
+      "contexto": "m de hiperparâmetros na busca Tree Parzen Estimator (TPE). Essas informações não devem ser reuni",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p235",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Cardoso et al. (2022b) propõem o BovDB como base de cotações e evento",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p236",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": " local foi corrigido (Cardoso et al., 2022b).",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p237",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "o mercado brasileiro. Cortesi et al. (2026) descrevem dados do Center for Research in Secur",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p242",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Cardoso et al. (2022b) constituem a referência metodológica central d",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p244",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Araújo et al. (2025) compararam MAE e RMSE como aptidão de um AG par",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p246",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Ribeiro et al. (2021) propuseram o HAR-PSO-ESN para prever volatilida",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p247",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Wang et al. (2021) avaliaram RC, LSTM e RNR em sete índices acioná",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p247",
+      "termo": "Ridge",
+      "italico": false,
+      "contexto": "gue esse protocolo da leitura Ridge empregada nesta pesquisa. O desempenho relativo variou",
+      "decisao": "MANTER: nome próprio do método de regressão; não aplicar itálico automático por origem estrangeira."
+    },
+    {
+      "local": "p248",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Os resultados de Wang et al. (2021) mostram que modelos de RC podem ser competitivo",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p252",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Sharma et al. (2025) empregaram otimização Bayesiana via Tree Parzen",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p252",
+      "termo": "Tree Parzen",
+      "italico": true,
+      "contexto": "aram otimização Bayesiana via Tree Parzen Estimator (TPE) na seleção de hiperparâmetros da ESN. ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p255",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": " com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p257",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "e hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesian",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p257",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "timização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também regi",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p258",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "abalhos próximos, como Araújo et al. (2025), já investigaram distribuições alternativas em ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p259",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuiçõ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p260",
+      "termo": "software",
+      "italico": false,
+      "contexto": "ontribuição experimental e de software, sem atribuir ganho causal isolado ao Fator de Ajuste ",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p262",
+      "termo": "preprint",
+      "italico": true,
+      "contexto": "rtigos, trabalhos em eventos, preprints e trabalhos acadêmicos; por isso, seu quantitativo nã",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p263",
+      "termo": "Transformer",
+      "italico": false,
+      "contexto": " de previsão com LSTM, GRU ou Transformer; e P5 mercado e ativo identificados. A codificação dis",
+      "decisao": "ANALISAR: nome de arquitetura; distinguir designação técnica e uso comum antes de aplicar itálico."
+    },
+    {
+      "local": "p274",
+      "termo": "Transformer",
+      "italico": false,
+      "contexto": "; P4: comparação com LSTM/GRU/Transformer; P5: mercado e ativo. Cada barra distribui os 34 docum",
+      "decisao": "ANALISAR: nome de arquitetura; distinguir designação técnica e uso comum antes de aplicar itálico."
+    },
+    {
+      "local": "p275",
+      "termo": "Transformer",
+      "italico": false,
+      "contexto": " comparações com LSTM, GRU ou Transformer aparecem diretamente em dez documentos, e a seleção de",
+      "decisao": "ANALISAR: nome de arquitetura; distinguir designação técnica e uso comum antes de aplicar itálico."
+    },
+    {
+      "local": "p280",
+      "termo": "echo state network",
+      "italico": true,
+      "contexto": "Na Figura 2, echo state network foi identificado em nove documentos (37,5% dos 24), e ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p280",
+      "termo": "reservoir computing",
+      "italico": true,
+      "contexto": " documentos (37,5% dos 24), e reservoir computing, em cinco (20,8%). Deep learning, stock price forecast",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p285",
+      "termo": "echo state network",
+      "italico": true,
+      "contexto": "igura 3 mostra relações entre echo state network, reservoir computing, deep learning e termos associado",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p285",
+      "termo": "reservoir computing",
+      "italico": true,
+      "contexto": "ões entre echo state network, reservoir computing, deep learning e termos associados à previsão financei",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p290",
+      "termo": "Reservoir computing",
+      "italico": true,
+      "contexto": " time series em seis (17,6%). Reservoir computing, stock market e stock price aparecem em quatro títulos",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p290",
+      "termo": "Echo State Network",
+      "italico": true,
+      "contexto": "ork são partes da denominação Echo State Network; suas frequências não devem ser somadas para estimar a",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p293",
+      "termo": "Ridge",
+      "italico": false,
+      "contexto": "lementação combinou regressão Ridge para ajuste analítico da camada de saída, Algoritmo Ge",
+      "decisao": "MANTER: nome próprio do método de regressão; não aplicar itálico automático por origem estrangeira."
+    },
+    {
+      "local": "p298",
+      "termo": "script",
+      "italico": false,
+      "contexto": " pseudoinversa alternativa. O script anterior carrega outras bibliotecas e contém exemplos ",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p299",
+      "termo": "software",
+      "italico": false,
+      "contexto": "ação modular dos artefatos de software. A reprodução exata de cada execução histórica, entret",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p301",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "é atribuída ao BovDB (Cardoso et al., 2022b). O ativo é a ação preferencial da Petróleo Bra",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p311",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": " contexto do fator em Cardoso et al. (2022b).",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p313",
+      "termo": "Reservoir Computing",
+      "italico": true,
+      "contexto": "a Computação de Reservatório (Reservoir Computing) e manteve fixos, durante o treinamento de cada modelo",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p318",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": " conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para c",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p320",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "022a), Jaeger (2007) e Araújo et al. (2025).",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p321",
+      "termo": "Ridge",
+      "italico": true,
+      "contexto": "egressão linear regularizada (Ridge Regression), resolvendo o sistema Wout = Yt · Xᵀ · (X ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p321",
+      "termo": "leaky",
+      "italico": true,
+      "contexto": "do interno seguiu o modelo de leaky integrator: x(t+1) = (1 − a) · x(t) + a · tanh(Win · [",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p322",
+      "termo": "Ridge",
+      "italico": false,
+      "contexto": "ut foi estimada por regressão Ridge. As comparações avaliam configurações que combinam ini",
+      "decisao": "MANTER: nome próprio do método de regressão; não aplicar itálico automático por origem estrangeira."
+    },
+    {
+      "local": "p326",
+      "termo": "Ridge",
+      "italico": false,
+      "contexto": "ório e 9 para a regularização Ridge. A população é inicializada por LHS nas cinco dimensõe",
+      "decisao": "MANTER: nome próprio do método de regressão; não aplicar itálico automático por origem estrangeira."
+    },
+    {
+      "local": "p329",
+      "termo": "fitness",
+      "italico": true,
+      "contexto": " erros de treino e validação: fitness = −(0,4 · MAEtreino + 0,6 · MAEvalidação). O sinal neg",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p329",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "ombinação descrita por Araújo et al. (2025). O software dispõe de serialização dos pesos e ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p329",
+      "termo": "software",
+      "italico": false,
+      "contexto": "a por Araújo et al. (2025). O software dispõe de serialização dos pesos e hiperparâmetros ass",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p332",
+      "termo": "baseline",
+      "italico": true,
+      "contexto": "Os baselines LSTM e GRU utilizaram janelas de 10 passos, normaliza",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p332",
+      "termo": "dropout",
+      "italico": true,
+      "contexto": "a recorrente com 50 unidades, dropout de 0,2, saída densa escalar e otimizador Adam. Os valo",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p332",
+      "termo": "baseline",
+      "italico": true,
+      "contexto": "genética extensa, enquanto os baselines profundos tiveram uma execução oficial por arquitetur",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p335",
+      "termo": "baseline",
+      "italico": true,
+      "contexto": "M e GRU foram utilizadas como baselines externos. O desenho efetivamente executado foi sintet",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p338",
+      "termo": "baseline",
+      "italico": true,
+      "contexto": "al e custo de treinamento dos baselines, evitando confundir baixo custo de ajuste da ESN com ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p341",
+      "termo": "fitness",
+      "italico": true,
+      "contexto": "0 gerações, cujo histórico de fitness e matrizes foram preservados. A escolha para as Figura",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p341",
+      "termo": "fitness",
+      "italico": true,
+      "contexto": "iderou exclusivamente o maior fitness de treino/validação desse lote. Esses registros não fo",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p343",
+      "termo": "baseline",
+      "italico": true,
+      "contexto": "ia preditiva entre a ESN e os baselines GRU e LSTM, conforme a hipótese nula de diferença méd",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p345",
+      "termo": "Ridge",
+      "italico": true,
+      "contexto": " 22 neurônios e regularização Ridge de 5,716254 × 10⁻⁵. Os registros disponíveis preservav",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p346",
+      "termo": "baseline",
+      "italico": true,
+      "contexto": "amente sem reestimar Wout. Os baselines GRU e LSTM mantiveram 50 unidades recorrentes, janela",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p346",
+      "termo": "dropout",
+      "italico": true,
+      "contexto": "rrentes, janela de 10 passos, dropout de 0,2, otimizador Adam, 80 épocas e normalização Min-",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p347",
+      "termo": "baseline",
+      "italico": false,
+      "contexto": " o diferencial dt = LESN,t − Lbaseline,t. Foram executadas quatro comparações bilaterais, com",
+      "decisao": "MANTER: componente de identificador matemático, examinar propriedade matemática separadamente."
+    },
+    {
+      "local": "p352",
+      "termo": "script",
+      "italico": false,
+      "contexto": " R como linguagem principal e scripts auxiliares em Python para orquestração e pós-processa",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p352",
+      "termo": "baseline",
+      "italico": true,
+      "contexto": "SS, ggplot2, shiny e, para os baselines profundos, keras3/TensorFlow.",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p355",
+      "termo": "baseline",
+      "italico": true,
+      "contexto": "enética, métricas, histórico, baselines e comparação. A aplicação ESNAUTO utilizou R Shiny e ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p355",
+      "termo": "script",
+      "italico": false,
+      "contexto": "ntrada, documentação técnica, scripts de execução e resultados consolidados; diretórios de ",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p363",
+      "termo": "preprint",
+      "italico": true,
+      "contexto": "sultadas e as ressalvas sobre preprints ou outras versões. Contagens de citações recebidas e ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p364",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "terface, apresentada por Aria et al. (2026).",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p365",
+      "termo": "script",
+      "italico": false,
+      "contexto": " matrizes foram calculadas em scripts de R, com a função biblioNetwork, e a apresentação da",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p365",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "shiny. As revisões de Cardoso et al. (2022c, 2024) serviram como referências para a escolha",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p376",
+      "termo": "software",
+      "italico": false,
+      "contexto": "sivo de uma infraestrutura de software destinada a apoiar a configuração, execução, acompanha",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p377",
+      "termo": "script",
+      "italico": false,
+      "contexto": "uzir a manipulação manual dos scripts desenvolvidos em R. À medida que o número de distribu",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p377",
+      "termo": "software",
+      "italico": false,
+      "contexto": "ndo-se em uma contribuição de software associada à pesquisa.",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p378",
+      "termo": "Echo State Network",
+      "italico": true,
+      "contexto": "R, incluindo a construção das Echo State Networks, a geração das matrizes probabilísticas, o cálculo da",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p379",
+      "termo": "software",
+      "italico": false,
+      "contexto": "O objetivo inicial do software era tornar mais prática a execução dos experimentos. C",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p379",
+      "termo": "script",
+      "italico": false,
+      "contexto": "somente uma interface para os scripts deste trabalho e passou a representar uma infraestrut",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p392",
+      "termo": "fitness",
+      "italico": true,
+      "contexto": "6. Foi selecionada pelo maior fitness de treino/validação nesse lote: segunda rodada de GED ",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p396",
+      "termo": "fitness",
+      "italico": true,
+      "contexto": " Figura 5, valores maiores de fitness correspondem a menores erros ponderados de treino e va",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p396",
+      "termo": "fitness",
+      "italico": true,
+      "contexto": " treino e validação. O melhor fitness atingiu −0,237607 na geração 123 e permaneceu nesse ní",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p410",
+      "termo": "baseline",
+      "italico": true,
+      "contexto": " execuções que não superou os baselines em MAE. A Onda 2 reuniu, portanto, os dois principais",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p447",
+      "termo": "baseline",
+      "italico": true,
+      "contexto": "tiveram MAE inferior aos dois baselines. Na execução controlada complementar, os quatro teste",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p457",
+      "termo": "script",
+      "italico": false,
+      "contexto": "o Algoritmo Genético, além de scripts auxiliares em Python e R para orquestração em lote, p",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p458",
+      "termo": "Ridge",
+      "italico": false,
+      "contexto": " reservatório e regularização Ridge; a população inicial emprega LHS e o motor inclui sele",
+      "decisao": "MANTER: nome próprio do método de regressão; não aplicar itálico automático por origem estrangeira."
+    },
+    {
+      "local": "p459",
+      "termo": "software",
+      "italico": false,
+      "contexto": "s efetivamente preservados. O software possui mecanismo para registrar hiperparâmetros e métr",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p461",
+      "termo": "Software",
+      "italico": false,
+      "contexto": "contribuição de Engenharia de Software pode, portanto, ser sintetizada em automação do proces",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p469",
+      "termo": "baseline",
+      "italico": false,
+      "contexto": "Ns obtiveram MAE menor que os baselines LSTM e GRU definidos no protocolo. A comparação docum",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p476",
+      "termo": "baseline",
+      "italico": true,
+      "contexto": "volutiva extensa, enquanto os baselines LSTM e GRU utilizaram arquiteturas definidas no proto",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p476",
+      "termo": "dropout",
+      "italico": true,
+      "contexto": "rentes, janela de dez passos, dropout de 0,2, Adam e 80 épocas. A análise de Diebold-Mariano",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "p479",
+      "termo": "software",
+      "italico": false,
+      "contexto": "de uso. Nessa etapa futura, o software adotará o nome JANUS, com o mesmo núcleo experimental ",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p480",
+      "termo": "Software",
+      "italico": false,
+      "contexto": "cer aspectos de Engenharia de Software identificados durante a consolidação do Trabalho Final",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p491",
+      "termo": "software",
+      "italico": false,
+      "contexto": "ites separam funcionamento do software, observação de resultados e efeitos não testados.",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p492",
+      "termo": "Software",
+      "italico": false,
+      "contexto": "contribuição de Engenharia de Software compreendeu a adaptação dos códigos em R fornecidos pe",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p495",
+      "termo": "Software",
+      "italico": false,
+      "contexto": "todológica e de Engenharia de Software. A continuidade do artefato está prevista em uma nova ",
+      "decisao": "PENDENTE DE FONTE: fonte oficial Senado indicada pelo guia não acessível nesta consulta; conferir exceção ou substituir termo comum em português preservando sentido."
+    },
+    {
+      "local": "p497",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "m Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefa",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t1r4c2p0",
+      "termo": "Transformer",
+      "italico": false,
+      "contexto": "arações próprias com LSTM/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al.",
+      "decisao": "ANALISAR: nome de arquitetura; distinguir designação técnica e uso comum antes de aplicar itálico."
+    },
+    {
+      "local": "t1r4c2p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "r de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S.",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t1r4c2p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "dos: Deng et al. (2022) e Liu et al. (2022), classificados como S.",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r2c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Araújo et al. (2025)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r4c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Cardoso et al. (2022b)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r5c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Chen et al. (2026)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r6c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Cortesi et al. (2026)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r8c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Deng et al. (2022)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r12c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Ecer et al. (2020)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r17c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Liu B. et al. (2022)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r23c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Sharma et al. (2025)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r26c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Sun et al. (2021)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r28c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Timbó et al. (2016)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r29c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Ribeiro et al. (2021)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r32c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Wang W. et al. (2021)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t2r34c0p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Zhang et al. (2021)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t5r5c0p0",
+      "termo": "Ridge",
+      "italico": false,
+      "contexto": "Regularização Ridge",
+      "decisao": "MANTER: nome próprio do método de regressão; não aplicar itálico automático por origem estrangeira."
+    },
+    {
+      "local": "t6r4c0p0",
+      "termo": "Baseline",
+      "italico": true,
+      "contexto": "Baselines",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    },
+    {
+      "local": "t9r1c2p0",
+      "termo": "Ridge",
+      "italico": false,
+      "contexto": "Regressão Ridge após definição da configuração",
+      "decisao": "MANTER: nome próprio do método de regressão; não aplicar itálico automático por origem estrangeira."
+    },
+    {
+      "local": "t13r2c1p0",
+      "termo": "et al.",
+      "italico": true,
+      "contexto": "Araújo et al. (2025); Cardoso (2025); Lampugnani (2026)",
+      "decisao": "Destaque efetivo confirmado no recorte pesquisado."
+    }
+  ]
+}

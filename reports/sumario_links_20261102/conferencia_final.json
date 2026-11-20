@@ -1,0 +1,14 @@
+{
+  "base": "v013",
+  "base_sha256": "ff4f2978111152c4b1d2dea38b066f0b549b5fc34d13d49a674f559d0c59a47b",
+  "trabalho_sha256": "b93979a24f68abb962e0ae36871990b791d7916bcf8229b001f6d20e09e0f539",
+  "partes_alteradas": [
+    "word/document.xml"
+  ],
+  "links_testados_por_follow_no_word": 42,
+  "paginas": 81,
+  "localizadores_preservados": 81,
+  "paginas_identicas": 81,
+  "paginas_diferentes": [],
+  "texto_e_tabelas_preservados": true
+}

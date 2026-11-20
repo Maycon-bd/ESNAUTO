@@ -1,0 +1,36 @@
+{
+  "ocorrencias_confirmadas_antes": 5,
+  "ocorrencias_confirmadas_depois": [],
+  "conferencia_dos_locais": [
+    {
+      "tempo_s": 0.0415,
+      "correlacao_antes": 0.9992853698398166,
+      "correlacao_maxima_depois": 0.0,
+      "rms_banda_depois_dbfs": -63.96389347950475
+    },
+    {
+      "tempo_s": 374.245375,
+      "correlacao_antes": 0.9975420136340208,
+      "correlacao_maxima_depois": 0.0,
+      "rms_banda_depois_dbfs": -63.287301481608125
+    },
+    {
+      "tempo_s": 706.887875,
+      "correlacao_antes": 0.947669753685117,
+      "correlacao_maxima_depois": 0.16814657009022244,
+      "rms_banda_depois_dbfs": -42.62524890282517
+    },
+    {
+      "tempo_s": 711.997625,
+      "correlacao_antes": 0.9513501749209886,
+      "correlacao_maxima_depois": 0.18464739194620253,
+      "rms_banda_depois_dbfs": -42.95572556053777
+    },
+    {
+      "tempo_s": 1165.396375,
+      "correlacao_antes": 0.9976804680633968,
+      "correlacao_maxima_depois": 0.0,
+      "rms_banda_depois_dbfs": -62.4280861206892
+    }
+  ]
+}

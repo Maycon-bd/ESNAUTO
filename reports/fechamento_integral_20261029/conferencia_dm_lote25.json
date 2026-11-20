@@ -1,0 +1,19 @@
+{
+  "base_registrada": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_antes": "7bcd83fdf866295be877135b8c33c413f21f2e492f7002b5a9278b43e25c7344",
+  "sha256_rascunho_apos_edicao": "b094ffa9a4a546763bc107afad882807a00c1d0b76878b43d9316ddc08efd9b8",
+  "paragrafo_antes": "A variância de longo prazo foi estimada pelo método baseado na função de autocorrelação (Autocorrelation Function – ACF) da implementação dm.test do pacote forecast. Como as quatro comparações foram pré-especificadas, os resultados principais mantiveram α individual de 5%, sem correção por multiplicidade; essa escolha foi registrada como limitação metodológica.",
+  "acrescimo": "Com horizonte de um passo, esse cálculo considera apenas a autocovariância de defasagem zero; eventual dependência serial do diferencial de perda em outras defasagens não é incorporada à estimativa, o que limita a interpretação dos valores de p.",
+  "evidencias": [
+    "Scripts/diebold_mariano/06_diebold_mariano.R",
+    "Scripts/results/diebold_mariano/ambiente/R-library/forecast/DESCRIPTION",
+    "Scripts/results/diebold_mariano/ambiente/R-library/forecast/R/forecast.rdb",
+    "https://raw.githubusercontent.com/robjhyndman/forecast/master/R/DM2.R"
+  ],
+  "verificacao": "Corpo de forecast::dm.test 9.0.2 extraído da biblioteca local por lazyLoad, sem executar o teste: lag.max=h-1, portanto zero para h=1.",
+  "limites": "A ressalva não demonstra que exista dependência serial nem invalida por si só os resultados; nenhuma execução ou teste foi repetido.",
+  "estado": "validado_em_rascunho_nao_promovido",
+  "sha256_rascunho_apos_exportacao": "fb5e2653547af740b586a95aee3d93259745df36ebc4f7c61c7cd2047b3a1ce7",
+  "verificacao_visual": "Páginas alteradas 49–52 inspecionadas; 76 páginas no total; 45 verificações estruturais sem falhas."
+}

@@ -1,0 +1,95 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "unidade": "U0204",
+  "texto_base": "Sun (2021) comparou uma ESN com uma LSTM simplificada na previsão do fechamento das ações da Kweichow Moutai e reportou menores erros nas configurações examinadas. A fonte lista fechamento e fechamento ajustado como campos distintos, mas descreve os experimentos com preços de fechamento. Por isso, esse estudo não é tomado aqui como comprovação inequívoca de uso do fechamento ajustado nem como demonstração de superioridade sobre qualquer configuração LSTM.",
+  "fonte": {
+    "id": "D26",
+    "arquivo": "Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+    "sha256": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+    "paginas": 12,
+    "caracteres_extraidos": 25364,
+    "estado_leitura": "texto_integral_lido_decisoes_em_andamento",
+    "log_leitura": [
+      {
+        "paginas_pdf": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "metodo": "Leitura sequencial do texto em blocos1–5 e6–12, sem truncamento; figuras, fluxograma, equações e tabelas das páginas3–10 abertos visualmente.",
+        "visuais_abertos_nesta_meta": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "limite": "Sem execução do modelo ou acesso ao código original do estudo; não supõe reprodução de seus resultados."
+      }
+    ]
+  },
+  "diagnostico": "condizente_com_delimitacao_ja_presente",
+  "afirmacoes": [
+    {
+      "afirmacao": "Sun compara ESN e LSTM simplificada na previsão de Kweichow Moutai e reporta menores erros para ESN nessas configurações.",
+      "diagnostico": "condizente_como_relato_condicionado",
+      "localizador": "PDF6–9, seção3.2, tabela3 e comparação adicional do experimento4.",
+      "limite": "Não equivale a superioridade sobre a LSTM convencional, cujos erros menores são discutidos no experimento4."
+    },
+    {
+      "afirmacao": "A fonte lista fechamento e ajustado como campos distintos, mas descreve os experimentos como fechamento.",
+      "diagnostico": "condizente",
+      "localizador": "PDF5, tabela1 e seção3.1; PDF6, tabela2.",
+      "limite": "Não permite reconstruir por si a transformação efetivamente aplicada, dado que os valores da tabela2 não coincidem com os campos exemplificados na tabela1."
+    },
+    {
+      "afirmacao": "A monografia não usa esse artigo para comprovar uso inequívoco de ajustado ou superioridade geral sobre LSTM.",
+      "diagnostico": "delimitacao_adequada",
+      "localizador": "Unidade atual e PDF5–10.",
+      "limite": "Não transportar a discussão equivocada de RMSE como tempo, presente no artigo, para o desfecho de eficiência da monografia."
+    }
+  ],
+  "alteracao_word_necessaria": false,
+  "celulas": {
+    "P1": {
+      "codigo": "?",
+      "evidencia": "PDF3: pesos aleatórios, sem família; figura1 conferida."
+    },
+    "P2": {
+      "codigo": "?",
+      "evidencia": "PDF5–6: parâmetros500/0,999/0,02 fixados; não descreve seleção. Variação de conjuntos não é busca de hiperparâmetros."
+    },
+    "P3": {
+      "codigo": "?",
+      "evidencia": "PDF4–6: fluxo menciona coleta/limpeza e partições, sem operação concreta de tratamento; figura2 conferida."
+    },
+    "P4": {
+      "codigo": "D",
+      "evidencia": "PDF8, tabela3: MAE ESN versus LSTM simplificada; confronto próprio sem garantia universal."
+    },
+    "P5": {
+      "codigo": "D",
+      "evidencia": "PDF5 identifica Kweichow Moutai e dados Yahoo do mercado chinês; o código na prosa tem erro tipográfico em relação à URL. Não copiar o ticker malformado."
+    }
+  },
+  "problemas_internos_da_fonte_nao_transportados": [
+    "PDF5 e9: RMSE é indevidamente tratado como medida de tempo de convergência, embora a fórmula seja de erro de previsão.",
+    "PDF5 declara360dias, enquanto a combinação300treino+100teste sugere400; a reconstrução não é demonstrada e não é assumida pela monografia.",
+    "PDF10, figura6: legenda menciona120/80, enquanto corpo e gráfico tratam120/40. Não reproduzir a legenda como horizonte demonstrado.",
+    "PDF9, experimento4, informa erro0,0078 para LSTM convencional, contra0,089 para simplificada; preservar o qualificador de qual LSTM foi comparada."
+  ],
+  "estado": "fidelidade_da_unidade_e_celulas_conferida; passe_global_de_similaridade_e_word_final_pendentes"
+}

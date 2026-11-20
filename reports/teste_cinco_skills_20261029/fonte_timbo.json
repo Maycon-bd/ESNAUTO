@@ -1,0 +1,43 @@
+{
+  "arquivo": "Artigos citados\\Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+  "sha256": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+  "titulo": "Approach Based on Linear Regression for Stock Exchange Prediction – Case Study of Petr4 Petrobrás, Brazil",
+  "autores": "Nadson S. Timbó; Sofiane Labidi; Thiago P. do Nascimento; Milson L. Lima; Gilberto Nunes Neto; Rodrigo C. Matos",
+  "ano": 2016,
+  "doi": "10.5121/ijaia.2016.7103",
+  "paginas_pdf_lidas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "leitura": "Conteúdo textual das 11 páginas; título e critério de acerto conferidos também em imagem. Extração do título na primeira página tem codificação defeituosa, resolvida por inspeção visual.",
+  "localizadores": [
+    {
+      "secao": "3 Methodology",
+      "pdf": 5,
+      "impressa": 25,
+      "apoio": "Seleção de variáveis com correlação de Pearson e coeficiente de determinação."
+    },
+    {
+      "secao": "3 Methodology",
+      "pdf": 6,
+      "impressa": 26,
+      "apoio": "Regressão linear múltipla e mínimos quadrados."
+    },
+    {
+      "secao": "4 Results",
+      "pdf": 8,
+      "impressa": 28,
+      "trecho_literal": "considered as success a maximum deviation of 0.50 cents",
+      "apoio": "Acerto definido por tolerância absoluta, não direção."
+    }
+  ]
+}

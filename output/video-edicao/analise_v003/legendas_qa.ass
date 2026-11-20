@@ -1,0 +1,322 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2,0,2,160,160,55,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:04.56,Default,,0,0,0,,Olá, meu nome é Maycon Garcia Silva, do\Ncurso de Engenharia de Software da
+Dialogue: 0,0:00:04.58,0:00:09.90,Default,,0,0,0,,Universidade de Rio Verde. Neste trabalho,\Norientado pelo meu professor,
+Dialogue: 0,0:00:10.08,0:00:15.08,Default,,0,0,0,,doutor Fabian Corrêa Cardoso, eu estudei\Numa forma de prever o preço de
+Dialogue: 0,0:00:15.11,0:00:18.38,Default,,0,0,0,,fechamento ajustado da ação PETR4.
+Dialogue: 0,0:00:18.73,0:00:23.86,Default,,0,0,0,,Para isso, eu usei uma rede neural chamada\Nrede de estados de eco,
+Dialogue: 0,0:00:24.16,0:00:29.38,Default,,0,0,0,,Echo State Network, ESN, um algoritmo\Ngenético para procurar boas
+Dialogue: 0,0:00:29.40,0:00:33.66,Default,,0,0,0,,configurações dessa rede e também\Ntrabalhei na adaptação de uma interface do
+Dialogue: 0,0:00:33.68,0:00:39.15,Default,,0,0,0,,sistema ESNAUTO. Vou mostrar como cheguei\Naos testes, o que os resultados
+Dialogue: 0,0:00:39.17,0:00:42.23,Default,,0,0,0,,indicam e até onde podemos chegar com\Nessas conclusões.
+Dialogue: 0,0:00:44.51,0:00:49.65,Default,,0,0,0,,Falando agora sobre o problema da\Npesquisa: o que guiou o trabalho foi usar
+Dialogue: 0,0:00:49.67,0:00:53.05,Default,,0,0,0,,os preços anteriores da PETR4.
+Dialogue: 0,0:00:53.07,0:00:56.93,Default,,0,0,0,,Como essa rede se sai ao prever o próximo\Nfechamento?
+Dialogue: 0,0:00:57.73,0:01:00.57,Default,,0,0,0,,Além de olhar o erro dessa previsão, eu\Nquis saber quanto tempo
+Dialogue: 0,0:01:00.59,0:01:04.61,Default,,0,0,0,,o computador leva para fazer os ajustes\Ndesses modelos computacionais.
+Dialogue: 0,0:01:05.55,0:01:09.49,Default,,0,0,0,,O gráfico mostra como o preço mudou ao\Nlongo dos anos.
+Dialogue: 0,0:01:09.53,0:01:13.53,Default,,0,0,0,,Há períodos de alta, períodos de baixa,\Nmudanças mais fortes.
+Dialogue: 0,0:01:14.05,0:01:19.81,Default,,0,0,0,,Esse comportamento, se a gente observar,\Ntem mudanças muito diferentes na
+Dialogue: 0,0:01:19.83,0:01:24.93,Default,,0,0,0,,crise de 2008, na crise de 2014 e na\Npandemia de 2020.
+Dialogue: 0,0:01:25.33,0:01:29.37,Default,,0,0,0,,Eu comparei a rede de estados de eco com\Noutras duas redes usadas para fazer
+Dialogue: 0,0:01:29.39,0:01:35.07,Default,,0,0,0,,essas análises de ações, nessa sequência\Nde dados, que são a GRU e a
+Dialogue: 0,0:01:35.09,0:01:37.79,Default,,0,0,0,,LSTM. O foco foi avaliar essas previsões.
+Dialogue: 0,0:01:37.81,0:01:40.49,Default,,0,0,0,,Não testei nenhuma estratégia de compra e\Nvenda de ações.
+Dialogue: 0,0:01:42.92,0:01:46.26,Default,,0,0,0,,Falando um pouco sobre o objetivo das\Nminhas hipóteses.
+Dialogue: 0,0:01:46.30,0:01:52.28,Default,,0,0,0,,A primeira pergunta se a rede ESN consegue\Ncompetir com GRU e
+Dialogue: 0,0:01:52.30,0:01:57.34,Default,,0,0,0,,LSTM. A segunda olha para o tempo\Nnecessário para ajustar uma configuração
+Dialogue: 0,0:01:57.36,0:02:02.06,Default,,0,0,0,,escolhida. A terceira investiga se, ao\Nmudar a forma de gerar os pesos
+Dialogue: 0,0:02:02.08,0:02:06.70,Default,,0,0,0,,iniciais, pode trazer resultados melhores\Ndo que a distribuição Normal usada
+Dialogue: 0,0:02:06.72,0:02:10.66,Default,,0,0,0,,como referência. A gente quer tentar\Natingir resultados melhores que a Normal.
+Dialogue: 0,0:02:11.68,0:02:16.94,Default,,0,0,0,,A quarta trata dos recursos do algoritmo\Ngenético para explorar diferentes
+Dialogue: 0,0:02:16.96,0:02:21.84,Default,,0,0,0,,soluções. A quinta considera distribuições\Najustadas aos próprios dados de
+Dialogue: 0,0:02:21.86,0:02:25.26,Default,,0,0,0,,treino. Mais adiante vou voltar em cada\Numa delas e explicar melhor.
+Dialogue: 0,0:02:27.75,0:02:31.53,Default,,0,0,0,,Falando agora sobre fundamentação e\Ntrabalhos relacionados: o meu trabalho se
+Dialogue: 0,0:02:31.55,0:02:36.87,Default,,0,0,0,,apoia em três assuntos, que foram a rede\Nde estados de eco, a busca
+Dialogue: 0,0:02:36.89,0:02:42.79,Default,,0,0,0,,genética e a preparação de dados\Nfinanceiros, na proposta
+Dialogue: 0,0:02:42.81,0:02:48.43,Default,,0,0,0,,de tentar prever esse valor. Jaeger
+Dialogue: 0,0:02:48.45,0:02:53.77,Default,,0,0,0,,trouxe essa característica da rede de\Nestados de eco: manter as conexões
+Dialogue: 0,0:02:53.79,0:02:58.23,Default,,0,0,0,,internas fixas durante o ajuste e calcular\Nos pesos de saída.
+Dialogue: 0,0:02:58.25,0:03:02.03,Default,,0,0,0,,Vou explicar esse funcionamento no próximo\Nconjunto de slides.
+Dialogue: 0,0:03:02.31,0:03:07.45,Default,,0,0,0,,Os trabalhos de Araújo e colaboradores\Najudaram a fundamentar o
+Dialogue: 0,0:03:07.47,0:03:10.87,Default,,0,0,0,,estudo dessas distribuições e da busca\Ngenética.
+Dialogue: 0,0:03:11.39,0:03:17.34,Default,,0,0,0,,O BovDB, do meu orientador, dá o contexto\Ndo ajuste
+Dialogue: 0,0:03:17.36,0:03:21.92,Default,,0,0,0,,dos preços por eventos corporativos:\Ninplits, splits e pagamentos de
+Dialogue: 0,0:03:21.94,0:03:26.22,Default,,0,0,0,,dividendos. Tudo isso mexe no preço da\Nação.
+Dialogue: 0,0:03:26.72,0:03:30.76,Default,,0,0,0,,Por exemplo, se eu faço um split, eu\Ndivido o preço da ação.
+Dialogue: 0,0:03:30.78,0:03:33.90,Default,,0,0,0,,Se ela está a 40, eu divido e ela vira\Nduas ações de 20.
+Dialogue: 0,0:03:34.12,0:03:39.08,Default,,0,0,0,,Se eu faço um inplit, é o oposto: você\Nestá com duas ações de 20, junta e vira
+Dialogue: 0,0:03:39.10,0:03:44.11,Default,,0,0,0,,uma de 40. O pagamento de dividendos\Ntambém mexe no preço da ação.
+Dialogue: 0,0:03:44.13,0:03:49.49,Default,,0,0,0,,Então, o meu orientador trouxe que isso\Ninfluencia no
+Dialogue: 0,0:03:49.51,0:03:53.61,Default,,0,0,0,,preço da ação e trouxe esse tratamento.
+Dialogue: 0,0:03:54.07,0:03:59.99,Default,,0,0,0,,Eu fiz uma revisão com 34 documentos e\Nbuscas complementares
+Dialogue: 0,0:04:00.01,0:04:05.89,Default,,0,0,0,,para ajudar. Essa coleção ajudou a\Norientar toda a minha pesquisa, mas
+Dialogue: 0,0:04:05.91,0:04:10.13,Default,,0,0,0,,os registros disponíveis não permitem\Ndizer se ela cobre toda a literatura
+Dialogue: 0,0:04:10.15,0:04:14.39,Default,,0,0,0,,desse tema. Vamos falar apenas do que\Nconseguimos achar aqui.
+Dialogue: 0,0:04:14.81,0:04:19.95,Default,,0,0,0,,Falando agora sobre os dados e a divisão\Ntemporal: foram
+Dialogue: 0,0:04:19.97,0:04:25.69,Default,,0,0,0,,5.198 observações, desde o dia
+Dialogue: 0,0:04:25.71,0:04:31.43,Default,,0,0,0,,3 de janeiro de 2000 até 30 de dezembro de\N2020.
+Dialogue: 0,0:04:31.51,0:04:37.31,Default,,0,0,0,,Foram separadas 2.600 para treino, 1.299\Npara
+Dialogue: 0,0:04:37.33,0:04:43.07,Default,,0,0,0,,validação e 1.299 para teste. Falando\Nagora sobre a
+Dialogue: 0,0:04:43.09,0:04:48.93,Default,,0,0,0,,rede neural de estados de eco: ela é uma\Nestrutura que vou chamar de ESN,
+Dialogue: 0,0:04:48.95,0:04:51.23,Default,,0,0,0,,porque em inglês é Echo State Network.
+Dialogue: 0,0:04:51.71,0:04:56.99,Default,,0,0,0,,Podemos acompanhar o funcionamento da\Nesquerda para a direita: temos Win, que
+Dialogue: 0,0:04:57.01,0:05:00.75,Default,,0,0,0,,são as conexões de entrada; W, que é o\Nreservatório; e Wout.
+Dialogue: 0,0:05:01.25,0:05:07.12,Default,,0,0,0,,Win e W se mantêm fixos no ajuste, e a\Ngente faz uma
+Dialogue: 0,0:05:07.14,0:05:13.04,Default,,0,0,0,,estimativa apenas do cálculo da saída, que\Né Wout.
+Dialogue: 0,0:05:13.36,0:05:19.22,Default,,0,0,0,,A gente faz isso em regressão Ridge, para\Ncontrolar o
+Dialogue: 0,0:05:19.24,0:05:22.67,Default,,0,0,0,,valor desses pesos. Isso torna o ajuste\Nfinal muito mais rápido.
+Dialogue: 0,0:05:22.69,0:05:24.13,Default,,0,0,0,,Ela não tem que ficar retreinando.
+Dialogue: 0,0:05:24.15,0:05:28.89,Default,,0,0,0,,Como tudo já é fixo, você só dá uma\Npassada, ela faz
+Dialogue: 0,0:05:29.98,0:05:34.61,Default,,0,0,0,,os cálculos no reservatório e a gente\Ncalcula apenas a
+Dialogue: 0,0:05:34.64,0:05:39.67,Default,,0,0,0,,saída. Trazendo agora a busca genética de\Nhiperparâmetros:
+Dialogue: 0,0:05:39.69,0:05:45.45,Default,,0,0,0,,para procurar essa melhor configuração, a\Ngente usa um algoritmo
+Dialogue: 0,0:05:45.48,0:05:48.27,Default,,0,0,0,,genético, que trabalha com várias opções.
+Dialogue: 0,0:05:49.06,0:05:54.33,Default,,0,0,0,,Ele avalia o erro de cada uma e produz\Nnovas opções a partir daquelas que
+Dialogue: 0,0:05:54.36,0:05:58.25,Default,,0,0,0,,foram selecionadas. Esse processo se\Nrepete ao longo das gerações.
+Dialogue: 0,0:06:00.86,0:06:04.18,Default,,0,0,0,,Nos cromossomos que a gente está usando, a\Ngente usa cinco tipos de
+Dialogue: 0,0:06:04.20,0:06:09.58,Default,,0,0,0,,cromossomos diferentes: o vazamento, o\Nraio espectral, o
+Dialogue: 0,0:06:09.60,0:06:14.98,Default,,0,0,0,,descarte inicial, o tamanho do\Nreservatório e o Ridge.
+Dialogue: 0,0:06:15.00,0:06:20.52,Default,,0,0,0,,Esses cromossomos guardam cinco escolhas:
+Dialogue: 0,0:06:22.70,0:06:28.64,Default,,0,0,0,,quanto do estado anterior a rede deverá\Nmanter, a escala das conexões
+Dialogue: 0,0:06:28.66,0:06:33.86,Default,,0,0,0,,internas, quantos estados iniciais são\Ndescartados, o tamanho do reservatório
+Dialogue: 0,0:06:33.88,0:06:39.78,Default,,0,0,0,,e a regularização da saída. A avaliação\Ncombina o erro de treino com
+Dialogue: 0,0:06:39.80,0:06:42.80,Default,,0,0,0,,o de validação, dando mais peso à\Nvalidação.
+Dialogue: 0,0:06:43.12,0:06:46.50,Default,,0,0,0,,O sistema também usa o hipercubo latino, o\NLHS, que
+Dialogue: 0,0:06:47.78,0:06:53.12,Default,,0,0,0,,distribui essas opções iniciais, e o\Nmecanismo de cataclismo para
+Dialogue: 0,0:06:53.14,0:06:56.64,Default,,0,0,0,,renovar as soluções e não ficar estagnado.
+Dialogue: 0,0:06:58.36,0:07:04.30,Default,,0,0,0,,Falando agora sobre as cinco ondas\Nexperimentais, eu separei
+Dialogue: 0,0:07:05.26,0:07:09.16,Default,,0,0,0,,distribuições em ondas de execuções.
+Dialogue: 0,0:07:09.54,0:07:13.86,Default,,0,0,0,,As que mais se pareciam, eu coloquei para\Nserem executadas juntas, para fazer
+Dialogue: 0,0:07:13.88,0:07:17.96,Default,,0,0,0,,uma comparação melhor. Foram organizados\Ncinco grupos.
+Dialogue: 0,0:07:18.86,0:07:24.66,Default,,0,0,0,,As duas primeiras ondas tiveram nove\Nexecuções cada e
+Dialogue: 0,0:07:24.68,0:07:27.88,Default,,0,0,0,,exploraram famílias de distribuições com\Ncomportamentos diferentes.
+Dialogue: 0,0:07:28.34,0:07:32.66,Default,,0,0,0,,A terceira teve seis configurações\Nrelacionadas à esparsidade, isto é, à
+Dialogue: 0,0:07:32.68,0:07:34.84,Default,,0,0,0,,presença de conexões com peso zero.
+Dialogue: 0,0:07:35.32,0:07:39.04,Default,,0,0,0,,A quarta teve seis controles de\Nreferência.
+Dialogue: 0,0:07:39.72,0:07:44.80,Default,,0,0,0,,A quinta reuniu 15 configurações com\Ndistribuições ajustadas aos dados de
+Dialogue: 0,0:07:44.82,0:07:50.62,Default,,0,0,0,,treino. Quando aparece uma combinação como\NLaplace com Normal, o primeiro
+Dialogue: 0,0:07:50.64,0:07:53.30,Default,,0,0,0,,nome indica como foram gerados os pesos de\Nentrada.
+Dialogue: 0,0:07:53.68,0:07:57.74,Default,,0,0,0,,O segundo indica os pesos do reservatório,\Ne essa é a ordem que eu vou usar
+Dialogue: 0,0:07:57.76,0:08:01.62,Default,,0,0,0,,nos relatórios. Cada execução também\Nenvolve uma configuração e um sorteio de
+Dialogue: 0,0:08:01.64,0:08:06.78,Default,,0,0,0,,pesos. Por isso, uma diferença no erro não\Npode ser atribuída somente ao nome
+Dialogue: 0,0:08:06.80,0:08:11.03,Default,,0,0,0,,dessa distribuição. Não tem como a gente\Nfalar: “uma
+Dialogue: 0,0:08:11.05,0:08:14.61,Default,,0,0,0,,distribuição é muito superior à outra”.
+Dialogue: 0,0:08:15.41,0:08:19.33,Default,,0,0,0,,Agora falando sobre os três blocos de\Nevidência: antes dos resultados, é
+Dialogue: 0,0:08:19.35,0:08:23.09,Default,,0,0,0,,importante separar esses três blocos que\Nquero trazer.
+Dialogue: 0,0:08:24.67,0:08:30.39,Default,,0,0,0,,O primeiro é o histórico das 45 execuções,\Nque permite comparar os
+Dialogue: 0,0:08:30.41,0:08:35.80,Default,,0,0,0,,resultados das ondas. O segundo é uma\Nrodada complementar para comparar os
+Dialogue: 0,0:08:35.82,0:08:39.52,Default,,0,0,0,,modelos nas mesmas datas e aplicar um\Nteste estatístico.
+Dialogue: 0,0:08:39.72,0:08:43.10,Default,,0,0,0,,Nela, os pesos foram gerados novamente com\Numa semente fixa.
+Dialogue: 0,0:08:43.24,0:08:47.06,Default,,0,0,0,,A semente é um número que controla o\Nsorteio e permite repeti-lo.
+Dialogue: 0,0:08:48.26,0:08:52.26,Default,,0,0,0,,O terceiro é um lote de 200 gerações,\Nusado apenas para ilustrar o
+Dialogue: 0,0:08:52.28,0:08:56.12,Default,,0,0,0,,funcionamento e as previsões. Ele fica\Nfora dessas 45 execuções.
+Dialogue: 0,0:08:56.54,0:09:00.89,Default,,0,0,0,,Portanto, os números do histórico, o teste\Nestatístico e a figura ilustrativa
+Dialogue: 0,0:09:00.91,0:09:05.45,Default,,0,0,0,,vêm de conjuntos diferentes. Vou manter\Nessa separação para explicar cada
+Dialogue: 0,0:09:05.47,0:09:10.76,Default,,0,0,0,,resultado. Falando agora do ESNAUTO,
+Dialogue: 0,0:09:11.78,0:09:15.68,Default,,0,0,0,,vou mostrar aqui também o software que\Ndesenvolvi.
+Dialogue: 0,0:09:16.16,0:09:18.22,Default,,0,0,0,,Ele faz todo esse levantamento.
+Dialogue: 0,0:09:18.94,0:09:22.18,Default,,0,0,0,,Todos os códigos em R foram fornecidos\Npelo meu orientador.
+Dialogue: 0,0:09:22.72,0:09:28.34,Default,,0,0,0,,Eu tinha que entrar num software chamado\NRStudio, que rodava
+Dialogue: 0,0:09:28.95,0:09:32.47,Default,,0,0,0,,esses scripts que o orientador me\Ndisponibilizou.
+Dialogue: 0,0:09:32.75,0:09:36.01,Default,,0,0,0,,Só que, sempre que eu rodava, ele criava\Num arquivo; eu tinha que alterar o
+Dialogue: 0,0:09:36.03,0:09:38.23,Default,,0,0,0,,nome e salvar numa pasta diferente.
+Dialogue: 0,0:09:38.26,0:09:40.23,Default,,0,0,0,,Dava muito trabalho para rodar esses\Nscripts.
+Dialogue: 0,0:09:40.28,0:09:44.71,Default,,0,0,0,,Então eu desenvolvi, com as técnicas de\NEngenharia de Software que aprendi ao
+Dialogue: 0,0:09:44.74,0:09:49.91,Default,,0,0,0,,decorrer do curso, um aplicativo que roda\Ntodos esses
+Dialogue: 0,0:09:49.94,0:09:55.85,Default,,0,0,0,,scripts em R. Tanto a criação da
+Dialogue: 0,0:09:55.88,0:10:01.41,Default,,0,0,0,,rede neural quanto a busca por\Nconfigurações melhores do algoritmo
+Dialogue: 0,0:10:01.44,0:10:06.87,Default,,0,0,0,,genético. Ele salva tudo isso, mantém\Nmétricas, histórico, visualização
+Dialogue: 0,0:10:06.90,0:10:10.13,Default,,0,0,0,,e os registros mais organizados.
+Dialogue: 0,0:10:10.16,0:10:16.17,Default,,0,0,0,,É só apertar um botão: ele vai rodar com\Nas coisas que você especificar,
+Dialogue: 0,0:10:17.66,0:10:20.41,Default,,0,0,0,,executa tudo e guarda tudo. É uma beleza.
+Dialogue: 0,0:10:21.10,0:10:25.99,Default,,0,0,0,,Estou rodando de forma local, aqui na\Nminha máquina, no navegador Google
+Dialogue: 0,0:10:26.02,0:10:31.27,Default,,0,0,0,,Chrome. Aqui é o ESNAUTO
+Dialogue: 0,0:10:32.11,0:10:37.10,Default,,0,0,0,,Benchmark Studio. Eu estava fazendo\Nalgumas comparações com a VALE3; depois
+Dialogue: 0,0:10:37.13,0:10:43.06,Default,,0,0,0,,cito um pouco sobre ela. Já configurei as
+Dialogue: 0,0:10:43.09,0:10:44.76,Default,,0,0,0,,separações que tinha citado antes.
+Dialogue: 0,0:10:45.51,0:10:50.94,Default,,0,0,0,,Com um botão, fazemos a organização geral\Ndo modelo de
+Dialogue: 0,0:10:50.97,0:10:55.32,Default,,0,0,0,,otimização, das configurações e\Ndistribuições estocásticas.
+Dialogue: 0,0:10:55.35,0:10:59.70,Default,,0,0,0,,Estou usando os quatro cenários que tinha\Ndito anteriormente.
+Dialogue: 0,0:11:00.05,0:11:02.26,Default,,0,0,0,,Todas as ondas que trouxe aqui.
+Dialogue: 0,0:11:02.59,0:11:08.24,Default,,0,0,0,,Se eu ativo ou não a regeneração por\Ncataclismo; o perfil de treinamento de
+Dialogue: 0,0:11:08.27,0:11:11.44,Default,,0,0,0,,deep learning, LSTM e GRU. Tudo aqui é\Nfeito.
+Dialogue: 0,0:11:11.59,0:11:17.12,Default,,0,0,0,,Quando clico em iniciar, ele vai rodar\Ntudo o que expliquei antes e
+Dialogue: 0,0:11:17.15,0:11:23.08,Default,,0,0,0,,trazer para mim. Também traz o resumo da\Núltima execução: tudo organizado, a
+Dialogue: 0,0:11:23.11,0:11:26.04,Default,,0,0,0,,configuração, a distribuição e o erro.
+Dialogue: 0,0:11:26.07,0:11:31.44,Default,,0,0,0,,Já traz tudo organizado de forma que seja\Nmais fácil analisar esses
+Dialogue: 0,0:11:31.47,0:11:37.44,Default,,0,0,0,,resultados. Essa é a minha contribuição\Npara a Engenharia
+Dialogue: 0,0:11:37.47,0:11:42.32,Default,,0,0,0,,de Software. Esse software ficará\Ndisponível para qualquer pessoa que quiser
+Dialogue: 0,0:11:42.35,0:11:46.40,Default,,0,0,0,,baixar direto do GitHub e executar os\Nmesmos testes que eu.
+Dialogue: 0,0:11:48.01,0:11:51.88,Default,,0,0,0,,Agora avançando para os critérios de\Navaliação.
+Dialogue: 0,0:11:52.25,0:11:55.84,Default,,0,0,0,,Eu usei três medidas para avaliar as\Nprevisões.
+Dialogue: 0,0:11:56.19,0:12:02.10,Default,,0,0,0,,O MAE mostra o tamanho médio do erro,\Ntanto das previsões acima
+Dialogue: 0,0:12:02.13,0:12:04.32,Default,,0,0,0,,quanto abaixo do preço observado.
+Dialogue: 0,0:12:04.53,0:12:10.22,Default,,0,0,0,,Quanto menor, melhor. Por exemplo, um MAE\Nde 30 centavos significa um desvio
+Dialogue: 0,0:12:10.25,0:12:15.58,Default,,0,0,0,,médio nessa escala de preço. Ele pode ser\Ntanto 30 centavos
+Dialogue: 0,0:12:15.61,0:12:19.38,Default,,0,0,0,,acima quanto 30 centavos abaixo do preço\Nque vai ser observado.
+Dialogue: 0,0:12:19.51,0:12:21.76,Default,,0,0,0,,Ele faz uma média desses erros em módulo.
+Dialogue: 0,0:12:22.27,0:12:28.12,Default,,0,0,0,,O RMSE dá mais peso a erros grandes, e o\NR² descreve
+Dialogue: 0,0:12:28.15,0:12:32.02,Default,,0,0,0,,quanto essas previsões acompanhavam os\Npreços observados.
+Dialogue: 0,0:12:32.05,0:12:36.08,Default,,0,0,0,,Mas exige cuidado: os preços próximos no\Ntempo já podem ser parecidos.
+Dialogue: 0,0:12:36.55,0:12:41.20,Default,,0,0,0,,Também medi o tempo para procurar uma\Nconfiguração e o tempo de ajuste da rede
+Dialogue: 0,0:12:41.23,0:12:44.36,Default,,0,0,0,,já escolhida. Resultados históricos de\Nprevisão.
+Dialogue: 0,0:12:44.51,0:12:46.14,Default,,0,0,0,,O MAE é o nosso mais importante.
+Dialogue: 0,0:12:46.17,0:12:51.58,Default,,0,0,0,,Quanto menor, melhor; mais próximo de\Nacertar o preço de fechamento do próximo
+Dialogue: 0,0:12:51.61,0:12:57.46,Default,,0,0,0,,dia. A configuração escolhida foi a ESN\NLaplace com Normal,
+Dialogue: 0,0:12:57.65,0:13:02.92,Default,,0,0,0,,que teve cerca de R$ 0,32 de erro.
+Dialogue: 0,0:13:05.03,0:13:10.62,Default,,0,0,0,,GRU e LSTM erraram mais. Tiveram um erro\Nmaior: R$ 0,35
+Dialogue: 0,0:13:10.64,0:13:14.24,Default,,0,0,0,,da GRU, muito próximo até da ESN, e R$\N0,45 da LSTM.
+Dialogue: 0,0:13:15.93,0:13:21.86,Default,,0,0,0,,A ESN traz um resultado superior ao da GRU
+Dialogue: 0,0:13:21.88,0:13:27.22,Default,,0,0,0,,e da LSTM. Os resultados são muito\Nfavoráveis nos registros, mas a
+Dialogue: 0,0:13:27.24,0:13:32.88,Default,,0,0,0,,ESN passa por essa busca externa de\Nconfigurações do algoritmo genético,
+Dialogue: 0,0:13:32.90,0:13:38.84,Default,,0,0,0,,e GRU e LSTM não. Agora falando sobre a
+Dialogue: 0,0:13:38.86,0:13:44.76,Default,,0,0,0,,inicialização e os ganhos observados: a\Ncomparação é entre duas configurações
+Dialogue: 0,0:13:44.78,0:13:50.72,Default,,0,0,0,,da própria ESN. A referência usada é a\NNormal, a distribuição Normal
+Dialogue: 0,0:13:50.74,0:13:52.46,Default,,0,0,0,,tanto na entrada quanto no reservatório.
+Dialogue: 0,0:13:52.74,0:13:55.64,Default,,0,0,0,,A outra é Laplace na entrada e Normal no\Nreservatório.
+Dialogue: 0,0:13:55.88,0:14:01.60,Default,,0,0,0,,As barras são muito próximas, e os dois\Nerros médios ficam perto de
+Dialogue: 0,0:14:01.62,0:14:07.34,Default,,0,0,0,,33 centavos. Usando os valores completos,\Na redução
+Dialogue: 0,0:14:07.36,0:14:13.04,Default,,0,0,0,,foi de 0,35%. Houve uma melhora
+Dialogue: 0,0:14:13.06,0:14:14.86,Default,,0,0,0,,registrada, mas ela foi pequena.
+Dialogue: 0,0:14:15.16,0:14:19.76,Default,,0,0,0,,Vale olhar a escala do gráfico para não\Nentender essa diferença como maior do
+Dialogue: 0,0:14:19.78,0:14:25.56,Default,,0,0,0,,que ela é. Outra combinação, Laplace com\NCauchy, apresentou o menor RMSE.
+Dialogue: 0,0:14:25.72,0:14:30.84,Default,,0,0,0,,Isso mostra que a escolha da configuração\Ntambém depende da medida usada.
+Dialogue: 0,0:14:30.86,0:14:35.06,Default,,0,0,0,,Esses testes favorecem algumas\Nconfigurações, mas não mostram que uma
+Dialogue: 0,0:14:35.08,0:14:38.36,Default,,0,0,0,,distribuição sempre será melhor que as\Noutras.
+Dialogue: 0,0:14:39.24,0:14:45.18,Default,,0,0,0,,Falando agora sobre o exemplo visual\Npreservado: esse gráfico ajuda a
+Dialogue: 0,0:14:45.20,0:14:51.00,Default,,0,0,0,,visualizar uma previsão. Uma curva\Napresenta o preço observado e a
+Dialogue: 0,0:14:51.02,0:14:56.08,Default,,0,0,0,,outra, o preço previsto. Se a gente\Nanalisar, a azul é
+Dialogue: 0,0:14:56.10,0:15:01.46,Default,,0,0,0,,mais grossa do que a preta, porque a
+Dialogue: 0,0:15:01.48,0:15:07.50,Default,,0,0,0,,preta é apenas o observado: é o ponto\Nexato.
+Dialogue: 0,0:15:07.56,0:15:13.34,Default,,0,0,0,,O previsto tem um erro médio; ele pode\Nestar errado para o
+Dialogue: 0,0:15:13.36,0:15:19.28,Default,,0,0,0,,positivo ou para o negativo. A figura\Nmostrada abaixo
+Dialogue: 0,0:15:19.96,0:15:22.74,Default,,0,0,0,,também detalha os últimos cem pregões\Navaliados.
+Dialogue: 0,0:15:23.70,0:15:28.10,Default,,0,0,0,,As curvas próximas ajudam a enxergar o\Ncomportamento da rede, mas essa
+Dialogue: 0,0:15:28.12,0:15:32.06,Default,,0,0,0,,aparência não basta. Os preços de dias\Npróximos já tendem a ser parecidos.
+Dialogue: 0,0:15:32.20,0:15:35.58,Default,,0,0,0,,Por isso considero o gráfico junto com as\Nmedidas de erro, sempre
+Dialogue: 0,0:15:35.60,0:15:37.76,Default,,0,0,0,,identificando o teste de onde ele veio.
+Dialogue: 0,0:15:38.67,0:15:42.91,Default,,0,0,0,,Falando agora sobre a rodada controlada\Ncomplementar.
+Dialogue: 0,0:15:43.33,0:15:47.25,Default,,0,0,0,,Para fazer essa comparação estatística,\Npreparei uma rodada complementar com
+Dialogue: 0,0:15:47.27,0:15:50.35,Default,,0,0,0,,os arquivos necessários para conferir as\Nprevisões de cada modelo.
+Dialogue: 0,0:15:50.37,0:15:56.35,Default,,0,0,0,,A ESN usou uma configuração de referência\NLaplace com Normal, com 22
+Dialogue: 0,0:15:56.37,0:16:01.91,Default,,0,0,0,,neurônios no reservatório. Mantive essa\Nescolha e gerei novos pesos usando a
+Dialogue: 0,0:16:01.93,0:16:05.49,Default,,0,0,0,,semente indicada no slide: 20260926.
+Dialogue: 0,0:16:06.86,0:16:12.68,Default,,0,0,0,,Essa rodada não repetiu a busca genética,\Nporque eu já tinha achado uma busca
+Dialogue: 0,0:16:12.70,0:16:16.66,Default,,0,0,0,,boa. A saída da rede foi ajustada apenas\Ncom dados de treino, e o
+Dialogue: 0,0:16:16.68,0:16:20.72,Default,,0,0,0,,processamento seguiu a ordem das datas\Npela validação e pelo teste.
+Dialogue: 0,0:16:21.06,0:16:25.30,Default,,0,0,0,,Cada modelo produziu 1.299 previsões.
+Dialogue: 0,0:16:26.14,0:16:31.18,Default,,0,0,0,,Depois de alinhar os arquivos pelas datas,\Na comparação usou 1.298 datas
+Dialogue: 0,0:16:31.20,0:16:36.34,Default,,0,0,0,,comuns, entre setembro de 2015 e dezembro\Nde 2020.
+Dialogue: 0,0:16:36.82,0:16:40.42,Default,,0,0,0,,Os erros dos três modelos foram comparados\Nnos mesmos dias.
+Dialogue: 0,0:16:42.12,0:16:47.84,Default,,0,0,0,,Falando agora sobre os erros na janela\Ncomum controlada: aqui estão os
+Dialogue: 0,0:16:47.86,0:16:49.56,Default,,0,0,0,,erros dessa rodada complementar.
+Dialogue: 0,0:16:49.66,0:16:54.66,Default,,0,0,0,,No gráfico à esquerda, o MAE da ESN ficou\Nperto de 33 centavos; o da GRU ficou
+Dialogue: 0,0:16:54.68,0:16:58.88,Default,,0,0,0,,cerca de 42; e o da LSTM, 47 centavos.
+Dialogue: 0,0:16:59.02,0:17:01.14,Default,,0,0,0,,No gráfico à direita está o RMSE.
+Dialogue: 0,0:17:01.44,0:17:06.62,Default,,0,0,0,,A ordem foi a mesma: ESN teve o menor\Nerro, seguida de GRU e LSTM.
+Dialogue: 0,0:17:06.78,0:17:10.02,Default,,0,0,0,,Esses números são da nova execução, com os\Nnovos pesos.
+Dialogue: 0,0:17:10.16,0:17:13.90,Default,,0,0,0,,Não substituem os valores históricos\Napresentados antes.
+Dialogue: 0,0:17:14.16,0:17:18.42,Default,,0,0,0,,O resultado que podemos confirmar é que,\Nnessa comparação com as mesmas datas,
+Dialogue: 0,0:17:18.78,0:17:22.46,Default,,0,0,0,,a ESN selecionada teve menor erro nas duas\Nmedidas.
+Dialogue: 0,0:17:22.98,0:17:26.80,Default,,0,0,0,,O próximo passo foi examinar essa\Ndiferença com um teste estatístico.
+Dialogue: 0,0:17:27.63,0:17:31.43,Default,,0,0,0,,Na comparação estatística de acurácia dos\Nmodelos, eu usei o teste de
+Dialogue: 0,0:17:31.45,0:17:34.01,Default,,0,0,0,,Diebold–Mariano para comparar os erros.
+Dialogue: 0,0:17:34.79,0:17:39.83,Default,,0,0,0,,A pergunta do teste é se eles têm a mesma\Nacurácia média, considerando a forma
+Dialogue: 0,0:17:39.85,0:17:45.81,Default,,0,0,0,,de medir o erro escolhida. Fiz quatro\Ncomparações: ESN com GRU e ESN
+Dialogue: 0,0:17:45.83,0:17:51.77,Default,,0,0,0,,com LSTM, tanto com erro absoluto quanto\Ncom erro quadrático.
+Dialogue: 0,0:17:51.79,0:17:56.48,Default,,0,0,0,,Por isso ficaram quatro. Em todas, o teste\Nrejeitou a igualdade no nível
+Dialogue: 0,0:17:56.50,0:18:02.38,Default,,0,0,0,,individual de 5%. Como a ESN teve menor\Nperda média nos quatro contrastes, o
+Dialogue: 0,0:18:02.40,0:18:06.00,Default,,0,0,0,,resultado foi favorável a ela nessa\Nrodada.
+Dialogue: 0,0:18:06.12,0:18:10.16,Default,,0,0,0,,Também mostro os valores de p obtidos no\Nteste.
+Dialogue: 0,0:18:11.24,0:18:16.22,Default,,0,0,0,,Mas há limites nessa análise: foi usado\Napenas um único sorteio controlado,
+Dialogue: 0,0:18:16.24,0:18:21.68,Default,,0,0,0,,sem correção para as quatro comparações, e\No cálculo considerou defasagem
+Dialogue: 0,0:18:21.70,0:18:24.72,Default,,0,0,0,,zero. A configuração também veio da busca\Nhistórica.
+Dialogue: 0,0:18:24.86,0:18:30.80,Default,,0,0,0,,O teste apoia o resultado nesta rodada,\Nmas não demonstra superioridade em
+Dialogue: 0,0:18:30.82,0:18:36.80,Default,,0,0,0,,qualquer outra situação. Falando agora\Nsobre o custo de ajuste
+Dialogue: 0,0:18:36.82,0:18:41.30,Default,,0,0,0,,e o custo da busca: o resultado de tempo\Ntem duas partes.
+Dialogue: 0,0:18:41.54,0:18:46.26,Default,,0,0,0,,Depois de escolher a configuração, ajustar\Na ESN levou cerca de cinco
+Dialogue: 0,0:18:46.28,0:18:52.16,Default,,0,0,0,,centésimos de segundo. Os tempos\Nregistrados para GRU e LSTM foram,
+Dialogue: 0,0:18:52.18,0:18:57.40,Default,,0,0,0,,respectivamente, cerca de 29 e 35\Nsegundos.
+Dialogue: 0,0:18:58.59,0:19:04.29,Default,,0,0,0,,Nessa etapa, a ESN foi rápida porque o\Najuste se concentra nos pesos de saída.
+Dialogue: 0,0:19:04.65,0:19:08.61,Default,,0,0,0,,Mas antes foi preciso encontrar uma boa\Nconfiguração.
+Dialogue: 0,0:19:08.95,0:19:14.67,Default,,0,0,0,,A busca genética levou de 21 a 102 minutos\Npor cenário.
+Dialogue: 0,0:19:14.79,0:19:19.61,Default,,0,0,0,,Somando as 45 buscas, foram\Naproximadamente 38 horas
+Dialogue: 0,0:19:19.63,0:19:24.23,Default,,0,0,0,,nessas buscas genéticas.
+Dialogue: 0,0:19:26.09,0:19:30.21,Default,,0,0,0,,Retomando as hipóteses: a primeira recebeu\Napoio.
+Dialogue: 0,0:19:30.23,0:19:36.01,Default,,0,0,0,,A ESN foi competitiva com GRU e LSTM nos\Nresultados históricos, e a
+Dialogue: 0,0:19:36.03,0:19:40.21,Default,,0,0,0,,rodada complementar também apresentou\Ndiferenças favoráveis a ela.
+Dialogue: 0,0:19:40.73,0:19:45.41,Default,,0,0,0,,A segunda recebeu apoio pelo ajuste rápido\Nda rede, depois de
+Dialogue: 0,0:19:45.43,0:19:51.31,Default,,0,0,0,,escolhida a configuração. A terceira\Nmostrou que algumas
+Dialogue: 0,0:19:51.33,0:19:57.11,Default,,0,0,0,,combinações tiveram erro menor que a\Nreferência Normal com Normal.
+Dialogue: 0,0:19:57.87,0:20:00.51,Default,,0,0,0,,A melhora foi pequena, mas está\Nregistrada.
+Dialogue: 0,0:20:01.09,0:20:05.69,Default,,0,0,0,,Isso ajuda a identificar configurações que\Nmerecem continuar sendo estudadas.
+Dialogue: 0,0:20:06.27,0:20:10.37,Default,,0,0,0,,Na quarta, os recursos para explorar\Nsoluções foram incorporados ao sistema,
+Dialogue: 0,0:20:10.77,0:20:13.79,Default,,0,0,0,,mas sua contribuição isolada ainda precisa\Nser medida.
+Dialogue: 0,0:20:14.04,0:20:19.68,Default,,0,0,0,,Na quinta, observei erros próximos entre\Nconfigurações da última onda.
+Dialogue: 0,0:20:20.06,0:20:25.36,Default,,0,0,0,,Para afirmar a estabilidade quando o\Nsorteio dos pesos muda, serão necessárias
+Dialogue: 0,0:20:25.38,0:20:29.88,Default,,0,0,0,,repetições. O trabalho responde às\Nhipóteses com resultados concretos e
+Dialogue: 0,0:20:29.90,0:20:33.32,Default,,0,0,0,,identifica o que fica para os próximos\Ntestes.
+Dialogue: 0,0:20:34.64,0:20:40.48,Default,,0,0,0,,Vamos falar sobre o que esse trabalho\Nentrega: uma avaliação de 45 execuções
+Dialogue: 0,0:20:40.50,0:20:45.86,Default,,0,0,0,,históricas da ESN com a ação PETR4,\Norganizadas em cinco ondas.
+Dialogue: 0,0:20:46.70,0:20:51.38,Default,,0,0,0,,Essa comparação mostrou configurações\Ncompetitivas e diferenças de erro que
+Dialogue: 0,0:20:51.40,0:20:53.26,Default,,0,0,0,,ajudam a orientar novas escolhas.
+Dialogue: 0,0:20:53.64,0:20:58.38,Default,,0,0,0,,Além disso, a rodada complementar permitiu\Ncomparar os erros nas mesmas datas
+Dialogue: 0,0:20:58.40,0:21:00.36,Default,,0,0,0,,e aplicar o teste estatístico.
+Dialogue: 0,0:21:00.58,0:21:05.51,Default,,0,0,0,,Na Engenharia de Software, minha\Ncontribuição foi adaptar as rotinas em R
+Dialogue: 0,0:21:05.53,0:21:10.22,Default,,0,0,0,,fornecidas pelo orientador e desenvolver a\Ninterface do ESNAUTO.
+Dialogue: 0,0:21:10.28,0:21:16.14,Default,,0,0,0,,Com isso, configurações, acompanhamento\Ndas execuções, gráficos e consulta
+Dialogue: 0,0:21:16.16,0:21:18.94,Default,,0,0,0,,ao histórico ficam reunidos num só\Nsistema.
+Dialogue: 0,0:21:19.62,0:21:23.78,Default,,0,0,0,,Também foram preservados os arquivos da\Nrodada complementar, incluindo
+Dialogue: 0,0:21:23.80,0:21:27.72,Default,,0,0,0,,previsões, modelos e informações das\Nexecuções.
+Dialogue: 0,0:21:28.05,0:21:31.75,Default,,0,0,0,,Portanto, existem resultados registrados e\Nmaterial para conferência.
+Dialogue: 0,0:21:32.33,0:21:37.83,Default,,0,0,0,,A preservação parcial se refere a parte\Ndos arquivos necessários para repetir
+Dialogue: 0,0:21:37.85,0:21:40.47,Default,,0,0,0,,exatamente as execuções antigas.
+Dialogue: 0,0:21:40.91,0:21:44.19,Default,,0,0,0,,Não significa que os resultados do\Ntrabalho foram perdidos.
+Dialogue: 0,0:21:45.39,0:21:50.43,Default,,0,0,0,,Falando agora sobre o alcance dos\Nresultados e os próximos testes: esses
+Dialogue: 0,0:21:50.45,0:21:55.77,Default,,0,0,0,,resultados se aplicam à PETR4, no período\Ne nas condições estudadas.
+Dialogue: 0,0:21:56.07,0:21:59.51,Default,,0,0,0,,Para saber se o comportamento se mantém em\Noutras situações, precisamos testar
+Dialogue: 0,0:21:59.53,0:22:05.19,Default,,0,0,0,,outras sementes, períodos e ações, com\Nesforço comparável na escolha dos
+Dialogue: 0,0:22:05.21,0:22:10.50,Default,,0,0,0,,modelos. As execuções antigas têm\Nresultados registrados, mas parte das
+Dialogue: 0,0:22:10.52,0:22:13.16,Default,,0,0,0,,matrizes e dos vetores não foi preservada.
+Dialogue: 0,0:22:13.48,0:22:17.74,Default,,0,0,0,,A rodada complementar ficou com registros\Nmais completos para conferência.
+Dialogue: 0,0:22:17.96,0:22:21.64,Default,,0,0,0,,A revisão bibliográfica também tem\Nregistros parciais de seleção.
+Dialogue: 0,0:22:21.94,0:22:27.20,Default,,0,0,0,,Ainda precisamos separar a contribuição de\Ncada componente e comparar com a
+Dialogue: 0,0:22:27.22,0:22:29.56,Default,,0,0,0,,previsão simples que repete o último\Npreço.
+Dialogue: 0,0:22:29.58,0:22:33.92,Default,,0,0,0,,Estratégias de investimento e\Nrentabilidade exigem outra avaliação.
+Dialogue: 0,0:22:34.38,0:22:38.60,Default,,0,0,0,,Aqui as conclusões tratam do erro de\Nprevisão, do tempo de ajuste e da
+Dialogue: 0,0:22:38.62,0:22:44.27,Default,,0,0,0,,aplicação desenvolvida. A partir desses\Nresultados, o próximo passo é
+Dialogue: 0,0:22:44.29,0:22:50.01,Default,,0,0,0,,verificar quanto eles se mantêm quando\Nmudamos as condições: as ações, o
+Dialogue: 0,0:22:50.03,0:22:55.25,Default,,0,0,0,,período e a base de dados. Isso inclui\Nrepetir com outras
+Dialogue: 0,0:22:55.27,0:22:57.65,Default,,0,0,0,,sementes e tudo o que eu disse.
+Dialogue: 0,0:22:57.95,0:23:03.89,Default,,0,0,0,,Também é importante comparar os modelos\Ncom esforço semelhante de otimização e
+Dialogue: 0,0:23:03.91,0:23:07.67,Default,,0,0,0,,avaliar os componentes da busca\Nseparadamente, mantendo as outras
+Dialogue: 0,0:23:07.69,0:23:12.93,Default,,0,0,0,,condições iguais. No software, a evolução\Nprevista é alterar o nome ESNAUTO,
+Dialogue: 0,0:23:12.95,0:23:18.63,Default,,0,0,0,,que foi um nome genérico que achei, para\NJANUS, que achei mais
+Dialogue: 0,0:23:18.65,0:23:22.51,Default,,0,0,0,,adequado, com melhorias na interface e na\Norganização dos arquivos de
+Dialogue: 0,0:23:22.53,0:23:28.03,Default,,0,0,0,,execução. A VALE3 também aparece como\Nextensão experimental, fora dos
+Dialogue: 0,0:23:28.05,0:23:30.55,Default,,0,0,0,,resultados principais desta apresentação.
+Dialogue: 0,0:23:30.67,0:23:34.79,Default,,0,0,0,,Essas frentes dão continuidade ao que foi\Nconstruído e precisam de testes
+Dialogue: 0,0:23:34.81,0:23:40.55,Default,,0,0,0,,próprios. As conclusões agora para a\NPETR4: o
+Dialogue: 0,0:23:40.57,0:23:43.85,Default,,0,0,0,,trabalho mostrou que a ESN foi uma\Nalternativa competitiva para prever o
+Dialogue: 0,0:23:43.87,0:23:47.63,Default,,0,0,0,,fechamento da PETR4 nas condições\Nestudadas.
+Dialogue: 0,0:23:48.01,0:23:53.49,Default,,0,0,0,,No histórico, 44 das 45 tiveram MAE menor\Nque os
+Dialogue: 0,0:23:53.51,0:23:56.83,Default,,0,0,0,,valores documentados para GRU e LSTM.
+Dialogue: 0,0:23:57.05,0:24:01.87,Default,,0,0,0,,Na rodada complementar, a ESN teve menor\Nerro, com apoio dos testes
+Dialogue: 0,0:24:01.89,0:24:03.35,Default,,0,0,0,,estatísticos daquela execução.
+Dialogue: 0,0:24:03.65,0:24:09.47,Default,,0,0,0,,Outro resultado foi o ajuste rápido da\Nrede selecionada, com o custo da busca
+Dialogue: 0,0:24:09.49,0:24:13.83,Default,,0,0,0,,apresentado separadamente. Minha\Ncontribuição de Engenharia de Software foi
+Dialogue: 0,0:24:13.85,0:24:19.21,Default,,0,0,0,,adaptar essas rotinas e desenvolver a\Ninterface ESNAUTO, reunindo
+Dialogue: 0,0:24:19.23,0:24:22.91,Default,,0,0,0,,configuração, acompanhamento e análise dos\Ntestes.
+Dialogue: 0,0:24:23.08,0:24:27.94,Default,,0,0,0,,O trabalho entrega resultados de previsão,\Numa aplicação e registros para
+Dialogue: 0,0:24:27.96,0:24:31.54,Default,,0,0,0,,conferência. Essa base foi construída para\Nos próximos estudos.
+Dialogue: 0,0:24:31.76,0:24:35.12,Default,,0,0,0,,Agradeço a atenção da banca. Muito\Nobrigado.

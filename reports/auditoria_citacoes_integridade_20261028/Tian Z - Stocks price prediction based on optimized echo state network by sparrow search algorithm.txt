@@ -1,0 +1,1026 @@
+
+[PÁGINA PDF 1]
+International Journal of Dynamics and Control (2023) 12:2764–2777
+https://doi.org/10.1007/s40435-024-01405-8
+Stocks price prediction based on optimized echo state network
+by sparrow search algorithm
+Zhengjie Tian 1 · Lijun Pei 1
+Received: 19 November 2023 / Revised: 7 February 2024 / Accepted: 8 February 2024 / Published online: 11 March 2024
+© The Author(s), under exclusive licence to Springer-Verlag GmbH Germany, part of Springer Nature 2024
+Abstract
+The stock market reﬂects the level of economic development of a country to a certain extent. Therefore, stock price forecasting
+has become a popular research issue. More and more attention has been paid to the establishment of stock price forecasting
+models. However, the stock market is a nonlinear system ﬁlled with high noise, and the traditional fundamental analysis,
+technical analysis and ARIMA model cannot achieve the ideal prediction result. Although traditional neural networks have
+good adaptability and nonlinear approximation capability, but they also have drawbacks, such as slow training speed and
+easiness to fall into local optimization. The echo state network–sparrow search algorithm (SSA–ESN) model employed in
+this paper uses the sparrow search algorithm to optimize the parameters of echo state network (ESN). It has not only better
+prediction result but also inheriting the excellent properties of ESN. The SSA–ESN model is used to predict several stocks
+price, and the results are compared with those of BP neural network, Elman neural network, LSTM and echo state network.
+And the prediction accuracy of SSA–ESN model is signiﬁcantly better than those of the other four prediction models.
+Keywords Stocks price · Sparrow search algorithm · Echo state network
+1 Introduction
+The stocks market serve as a barometer of a country’s
+economic development, to some extent. In recent years,
+numerous scholars have conducted diverse studies on the
+stocks market, proposing a range of analytical and fore-
+casting methods to address its unique characteristics. These
+methods include fundamental analysis, technical analysis
+and time series analysis. However, the stocks market is a
+dynamic, nonlinear system with high noise, which poses
+challenges for the application of traditional prediction meth-
+ods.
+Neural networks have gained popularity in stocks price
+prediction due to their exceptional adaptability and non-
+linear approximation capabilities. While traditional neural
+networks like BP neural networks exhibit impressive perfor-
+mance, they also display signiﬁcant limitations such as slow
+training speeds, tendency toward local optimization and vul-
+nerability to noise.
+B Lijun Pei
+peilijun@zzu.edu.cn
+1 School of Mathematics and Statistics, Zhengzhou University,
+Zhengzhou 450001, Henan, China
+Computational intelligence is a collective term for algo-
+rithms developed by scholars through computer implementa-
+tions of biological intelligence. This ﬁeld provides numerous
+optimization methods for time series prediction and has
+numerous successful applications in dealing with massive
+data simulations. However, individual intelligent algorithms
+often fall short in their applicability to a wide range of
+problems, exhibiting limitations in both theory and practice.
+Therefore, combining intelligent optimization algorithms
+with neural networks has become the mainstream approach
+for stocks price prediction among scholars today. This paper
+adheres to such an idea, based on a special neural network–e-
+cho state network, using the sparrow search algorithm to
+optimize its learning rate and regularization coefﬁcient, to
+improve the prediction accuracy of the echo state network
+on the basis of trying to maintain its original operational
+efﬁciency. SSA–ESN shows a greater advantage in predic-
+tion accuracy compared to BP neural networks, Elman neural
+networks, LSTM and echo state networks.
+In recent years, different methods have been proposed for
+stocks price forecasting. The ARIMA and GARCH mod-
+els had been widely used for ﬁnancial market forecasting
+[1]. However, due to the complexity and nonlinearity of the
+time series of stocks price, many traditional models cannot
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 2]
+Stocks price prediction based on optimized echo state network … 2765
+predict stocks price perfectly. So new models and strategies
+are emerging. The good nonlinear approximation ability of
+neural networks can better solve the high noise and non-
+linear problems existing in the stock market. Adebiyi et al.
+conducted a comparative test on stock data using ARIMA
+model and artiﬁcial neural networks [ 2]. Lu et al. intro-
+duced computational intelligence combined with BP Neural
+Network to improve the prediction performance of BP Neu-
+ral Network [ 3]. Xiao et al. proposed an integrated model
+that combines cumulative autoregressive moving average and
+least squares support vector machine (ARIMA-LS-SVM)
+to predict stocks price trends [ 4]. Rezaeia et al. combined
+LSTM, CNN and CEEMD or EMD algorithms to improve
+the accuracy of stocks price prediction [ 5]. Emam et al.
+propose a new machine learning technique that uses a con-
+ﬁdence rules-based expert system (BRBES) for technical
+analysis and combines the concept of Bollinger bands to
+predict stock prices for the next 5 days [ 6]. Shetty and
+Ismail combined nonsmooth trends, lagged variables and
+ERNN to capture linear and nonlinear structures and improve
+stock price forecasting accuracy [ 7]. Mehdi Khashei and
+Zahra Hajirahimi staged stocks price prediction by proposing
+two hybrid models for stocks price prediction: the ARIMA-
+MLP model and the MLP-ARIMA model [ 8]. Bose et al.
+emphasized the importance of dimensionality reduction and
+combined multivariate adaptive regression splines (MARS)
+and deep neural networks (DNN) to predict the closing price
+of stocks [ 9]. Wang et al. proposed an interval variational
+mode decomposition (FIVMD) method with feedback mech-
+anism to model interval trends and residuals, respectively,
+through optimization algorithms and deep learning models to
+improve prediction accuracy [10]. Du used arbitrage pricing
+model to establish the relationship between various system
+factors and adjusted stock prices [11]. Kumar et al. proposed
+a hybrid long short-term memory network model based on
+adaptive particle swarm optimization to predict three major
+stock indexes in the short and long term [ 12]. Teng et al.
+proposed a multi-scale local cue and attention-based LSTM
+model (MLCA–LSTM) to capture potential price trend pat-
+terns [ 13]. Wang et al. introduced time series technology
+to conduct comprehensive modeling of stock price data and
+established TSC model to detect the uncertainty of data
+changes [14]. Liu et al. proposed a new stock price prediction
+model VML, which uses MAML algorithm and long short-
+term memory (LSTM) network to predict subsequences [15].
+The literature review indicates that it has become a
+mainstream to combine multiple models or to employ com-
+putational intelligence to optimize the hyperparameters of
+neural networks to improve the accuracy of stocks price pre-
+diction. However, the most convenient network is prioritized
+when all networks are equally feasible. Echo state network is
+a new recursive neural network algorithm proposed by Jaeger
+in 2001. Jaeger used the ESN to forecast the time series and
+got better results. Jaeger compared it with forward type neu-
+ral network and traditional recursive neural network. In the
+meanwhile, Jaeger gave the algorithmic rules and training
+mode of ESN [ 16]. It is a special kind of neural network
+with good short-term memory, and its simple training pro-
+cess and unique way of constructing the reservoir pool make
+its training efﬁciency greatly improved, which is widely used
+in time series prediction. ESN has a good function approx-
+imation capability, which can effectively solve the serious
+nonlinearities of the stocks market. ESN has a great advan-
+tage over traditional neural networks in terms of stability,
+global optimality, local minimum problem and the complex-
+ity of the training process. Compared with traditional neural
+networks, ESN has great improvement.
+Skowronski and Harri applied ESNs to automatic lan-
+guage recognition classiﬁcation [ 17]. Lin argued that the
+random selection of the initial values of network weights
+made the network prediction results unstable and used the
+Hurst index to set the weights of ESN [ 18]. However, Ishu
+et al. argued that ESN does not need to rely on a large
+amount of experience as traditional neural networks do [ 19].
+Zhang proposed a generalized model for short-term stocks
+price prediction based on echo state network [ 20]. Zhang
+et al. used a synthetic model of phase space reconstruction,
+ESN, and moving average convergence/divergence (MACD)
+for stocks prediction and compared it with other models,
+such as backpropagation neural network (BPNN), support
+vector machine (SVM), hidden Markov model (HMM) and
+programmed neural network (PNN), to validate the high efﬁ-
+ciency of the composite model consisting of ESN for stocks
+price prediction [ 21].
+Sparrow search algorithm (SSA) is a novel intelligent
+optimization algorithm proposed by Xue et al. based on
+the predatory behavior of sparrow population [ 22]. Com-
+pared with traditional intelligent algorithms, it has a strong
+global search capability. Liu et al. introduced the sparrow
+search algorithm to optimize the hyperparameters of LSTM
+model to improve the accuracy of stocks trend prediction
+[23]. Sparrow search algorithm to optimize neural network
+for regression prediction is also applied in other ﬁelds. Liu
+et al. combined SVM model and SSA to predict the caloriﬁc
+value and nitrogen content based on feedstock properties and
+pyrolysis conditions [ 24]. Liao proposed a load forecasting
+model incorporating improved sparrow search algorithm and
+long and short-term memory neural network (LSTM) [ 25].
+Tan et al. optimized PSR and ESN by combining TVFEMD,
+IASSA and achieved more accurate wind power prediction
+[26]. Zheng et al. proposed BP neural network model opti-
+mized based on SSA. Compared with the traditional BP
+neural network, it has higher accuracy and better ﬁtting result
+in ship trajectory prediction [ 27].
+To summarize, although traditional neural networks such
+as BP neural networks reﬂect advantages in predicting stocks
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 3]
+2766 Z. Tian, L. Pei
+Fig. 1 Structure of echo state network (ESN) model
+price compared to traditional prediction methods, they are
+very sensitive to noise and are easy to fall into local optimal
+points. A great deal of previous studies by scholars have
+proved that ESN has obvious advantages in the stock price
+prediction problem, such as simple model construction and
+high prediction accuracy. The SSA–ESN model used in this
+paper solves the shortcomings of traditional neural networks
+such as BP in stocks price prediction to a certain extent. And
+it improves the prediction accuracy of ESN on the basis of
+maintaining the computing efﬁciency of echo state network.
+The rest of the paper is organized as follows. In Sect. 2,
+the basic concepts of ESN and SSA are brieﬂy introduced, as
+well as the modeling steps for optimizing ESNs using SSA.
+In Sect. 3, the basic assumptions of the paper, data prepro-
+cessing and the experimental conﬁguration are presented.
+In Sect. 4, the prediction results of using SSA to optimize
+ESN to predict ten stocks in China and the USA are shown,
+and the predictive effectiveness of the model is evaluated in
+terms of both the root mean square error (RMSE) and the
+mean absolute percentage error (MAPE). In Sect. 5, the pre-
+diction performance of the BP neural network, Elman neural
+network, LSTM, ESN and SSA–ESN are compared using
+the same dataset as in Sect. 4. In addition, the predictive per-
+formance of the SSA–ESN model is tested for robustness
+under different time frames and market conditions. Section 6
+contains the concluding remarks.
+2 SSA–ESN model construction
+2.1 Echo state network
+As shown in Fig. 1, the basic structure of ESN is an input
+layer, a reservoir pool and an output layer.
+The core structure of ESN is a randomly generated reser-
+voir pool, similar to the hidden layer of a general neural
+network. But its size is much larger than that of a traditional
+neural network hidden layer, usually around tens or hundreds.
+Its internal neurons are sparsely connected, and the sparsity
+SD is generally taken as 2%-5%.
+At moment n, the sequence of input cells is u(n) /equal1[u
+1
+(n), u2(n), ...uk(n)], the sequence of states of the reservoir
+pool is x(n) /equal1[x1(n), x2(n), ··· xN(n)] and the sequence
+of output cells is y(n) /equal1[y1(n), y2(n), ··· yL(n)].
+The update equation for the state of the reservoir pool is
+x(n +1 ) /equal1f (Win u(n +1 ) + Wx (n) + Wback y(n)),( 1 )
+where Wback is not required. In this paper, we let Wback /equal1
+0 to obtain the update equation for the state of the reservoir
+pool as
+x(n +1 ) /equal1f (Winu(n +1 ) + Wx (n)),( 2 )
+where Win refers to the feedback matrix from the input layer
+to the reservoir pool and W is the feedback matrix within
+the reservoir pool.
+The output of ESN is given by the following equation,
+y(n +1 ) /equal1F(W
+out(u(n +1 ), x(n), y(n))). (3)
+ESN operates efﬁciently since it only needs to learn and
+train Wout. Win and W remain constant once they are deter-
+mined. However, there is no strict determination criterion
+for the learning rate and regularization coefﬁcients, and the
+random selection of the learning rate and regularization coef-
+ﬁcients makes ESN output unstable. The SSA–ESN model
+constructed in this paper solves this problem effectively.
+ESN has the function of transiently memorizing the input
+signal u(n), i.e., the echo state. The condition for ESN to
+have an echo state is that the spectral radius of the internal
+weight matrix W of the reservoir pool is less than 1. That is, it
+is required that the maximum spectral radius of eigenvalues
+of W is satisﬁed
+|λ|
+max < 1. (4)
+For the randomly generated internal weight matrix of the
+reservoir pool, ﬁnd its maximum value of the updation of
+weight matrix is
+W
+new /equal11
+|λ|max
+W ,( 5 )
+where Wnew is the new internal weight matrix.
+2.2 Sparrow search algorithm (SSA)
+SSA algorithm is a swarm intelligence optimization algo-
+rithm based on sparrow foraging and predator avoidance
+behaviors. Sparrows are divided into discoverers and fol-
+lowers when foraging. The discoverers are responsible for
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 4]
+Stocks price prediction based on optimized echo state network … 2767
+ﬁnding food in the group, providing foraging areas and
+directions to the whole sparrow group. And the followers fol-
+low the discoverers to obtain food. In order to obtain food,
+sparrows can generally adopt two behavioral strategies for
+foraging: discoverer and follower. Individuals within the pop-
+ulation will monitor the behavior of other individuals within
+the population, and aggressors within the population will
+increase their predation rate by competing for food resources
+with their high-intake peers. In addition, sparrow populations
+will engage in antipredatory behavior when they recognize
+danger.
+In SSA, each individual (sparrow) has a position that rep-
+resents its location in the search space. In each iteration,
+the position of each individual is updated based on the ﬁt-
+ness value. Because the discoverer is responsible for ﬁnding
+food for the entire sparrow population and providing forag-
+ing directions to all followers, the discoverer can obtain a
+larger foraging search range than the followers.
+During each iteration, the location update of the discoverer
+is described as
+X
+t+1
+i, j /equal1
+{
+X t
+i, j exp
+(
+− i
+αitermax
+)
+, R2 < ST,
+X t
+i, j + QL , R2 ≥ ST.
+(6)
+In (6), t is the current iteration number; itermax is the max-
+imum iteration number; X t
+i, j is the position information of
+the ith sparrow in the jth dimension; α ∈ 0, 1is a random
+number; R2 and ST denote the warning value and the safety
+value, respectively, where R2 ∈ [0, 1 ],S T ∈ [0.5, 1 ]; Q is
+a random number obeying the normal distribution; L is the
+matrix of 1 × d, where each element of the matrix is all 1.
+For R2 < ST, it indicates that there are no predators around
+the foraging environment at this time, and the discoverer can
+perform extensive search operations; for R
+2 ≥ ST, it means
+that some sparrows in the population spot a predator and alert
+others in the population, and then all need to quickly ﬂy to
+other safe places to feed.
+The follower’s location updation is described as
+X
+t+1
+i, j /equal1
+⎧
+⎪⎨
+⎪⎩
+Q exp
+(
+X t
+worst− X t
+i, j
+i2
+)
+, i > n/2,
+X t+1
+p +
+⏐⏐
+⏐X
+t
+i, j − X t+1
+p
+⏐⏐
+⏐A
++ · L,e l s e ,
+(7)
+In (7), XP is the optimal position occupied by the current
+discoverer; Xworst denotes the current global worst position;
+A is a 1×d matrix, where each element is randomly assigned
+at a value of 1 or -1, and A+ /equal1AT(
+AA T)− 1, where A+ is the
+pseudo-inverse matrix. When i > n/2, it indicates that the
+ith follower with a lower ﬁtness value does not get food and
+is in a very hungry state, and then needs to ﬂy to other places
+to forage for food to get more energy.
+When aware of danger, sparrow populations engage in
+antipredatory behavior, the mathematical expression for
+which is
+X
+t+1
+i, j /equal1
+⎧
+⎪⎪
+⎨
+⎪⎪
+⎩
+X
+t
+best + β
+⏐⏐
+⏐X
+t
+i, j − X t
+best
+⏐⏐
+⏐, f
+i > fg
+X t
+i, j + K
+[ ⏐⏐
+⏐X
+t
+i, j − X t
+worst
+⏐⏐
+⏐
+( fi − fw)+ε
+]
+, fi /equal1fg
+(8)
+In (8), Xbest is the current global optimal position; β is a
+step control parameter, which is a normally distributed ran-
+dom number with mean 0 and variance 1; K is a random
+number indicating the direction of the sparrow’s movement
+as well as the step control parameter, and K ∈ [ − 1, 1 ]; f
+i
+is the current ﬁtness value of the individual sparrow; fg and
+fw are the current global optimal and worst ﬁtness values,
+respectively; and εis the smallest constant in order to avoid
+the denominator to be zero. For simplicity, for fi < fg,i t
+means that the sparrows are at the edge of the population and
+are extremely vulnerable to predators; for fi /equal1fg, it means
+that the sparrows in the population are aware of the danger
+and need to approach other sparrows to minimize their risk
+of predation.
+2.3 SSA–ESN model construction and algorithm
+steps
+Since the regularization coefﬁcients and learning rates of
+ESN are generally set empirically or randomly, the network
+structure has a certain degree of randomness. In this paper, the
+SSA algorithm is applied to the optimization of the regular-
+ization coefﬁcient and learning rate to improve the prediction
+accuracy of the ESN model. Figure 2 demonstrates the net-
+work structure of SSA–ESN.
+The steps of the SSA–ESN algorithm are as follows,
+Step 1 input samples, normalize the data to the [0,1] inter-
+val;
+Step 2 divide the training set and test set according to the
+ratio;
+Step 3 choose the reservoir pool size, reservoir pool spar-
+sity. Randomly generate W
+in and W , and use ESN to train
+Wout. Set the value range of regularization factor and learning
+rate;
+Step 4 optimize the regularization factor and learning rate
+using SSA to ﬁnd their optimal values;
+Step 5 return the optimal regularization coefﬁcients and
+learning rate to the echo State Network and utilize it for
+prediction.
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 5]
+2768 Z. Tian, L. Pei
+Fig. 2 Structural diagram of
+SSA–ESN
+3 Model assumptions, data preprocessing
+and experimental conﬁguration
+3.1 Model assumptions
+If the future has nothing to do with the past, and the patterns
+of the past will not repeat themselves in the future, then fore-
+casting is all but impossible, and stock price forecasting is
+out of the question.
+The model used in this paper is based on the following
+assumptions.
+1. Stocks price show certain patterns, and past patterns will
+repeat themselves in the present and future.
+2. Stocks price reﬂects the combined effects of national
+policies, stockholders’ psychology, and corporate deci-
+sions on the stock market.
+3.2 Data preprocessing
+The data we obtain are sound, real and anomalous, so the data
+are not cleaned in this paper. However, in order to unify the
+basic measurement unit of data, speed up the convergence
+of the network and improve the generalization ability of the
+model, we carry out the normalization of the data. In fact,
+normalization of data is a common way of processing data.
+It maps the input data to a suitable range, avoids the gradient
+too large or too small, and helps to improve the stability of
+training.
+3.3 Experimental configuration
+Stocks price is affected by many factors, we uses the last day’s
+opening price, highest price, lowest price, volume, turnover,
+closing price, the amplitude of the previous three days and
+its rise and fall of the price as indicators to predict present
+day’s closing price (Tables 1, 2, 3).
+Ten US stocks such as Intel (stock code: INTC) and Qual-
+comm (stock code: QCOM) and ten Chinese A-shares such
+as V anke A (Stock Code: 000002) and Poly Development
+Table 1 Ten selected representative US stocks
+Stock name Stock code Stock name Stock
+Code
+Advanced Micro
+Devices
+AMD Intel INTC
+BNY Mellon BK Reiner
+Architecture
+LEN
+Horton House DHI LGI Home Inc LGIH
+Bank of America BAC NVIDIA
+Corporation
+NVDA
+Qualcomm QCOM Wells Fargo&
+Company
+WFC
+Table 2 Ten selected representative Chinese stocks
+Stock name Stock
+Code
+Stock name Stock
+Code
+China Merchants
+Bank
+600036 V anke 000002
+Poly Development
+Holding Group
+600048 PingAn Bank 000001
+Hangzhou Silan
+Microelectronics
+600460 Allwinner
+Technology
+300458
+Bank of China 601988 Overseas Chinese
+Town
+000069
+Giga Device
+Semiconductor
+Inc
+603986 Tongfu
+Microelectronics
+002156(stock code: 600048) are selected as research objects in this
+paper.
+In order to verify the prediction accuracy of SSA–ESN
+model, this paper uses BP neural network, Elman neural net-
+work, LSTM and ESN to compare with it. Here, both ESN
+and SSA–ESN have a reservoir pool size of 100 and use the
+same weight matrix W
+in, W .
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 6]
+Stocks price prediction based on optimized echo state network … 2769
+Table 3 Model parameters of SSA–ESN and their values
+Model Parameters and their values
+Parameter V alue
+Echo state network Reservoir pool size 100
+Learning rate [0.001,2.0]
+Regularization coefﬁcient [0.0001,0.1]
+Example Initialize the
+reserve pool
+30
+Sparrow search
+algorithm
+Sparrow number 10
+Maximum iterations 250
+Number of discoverers 2
+Aware of the number of
+dangerous sparrows
+8
+Optimize the number of
+parameters
+2
+Prewarning value 0.8
+4 Results of using the SSA–ESN model
+to predict stock closing prices
+For ten US stocks, such as Intel (stock code: INTC) and
+Qualcomm (stock code: QCOM), and ten Chinese A-shares,
+such as V anke A (stock code: 000002) and Poly Development
+(stock code: 600,048), stock price prediction is ﬁrstly carried
+out by using the optimized echo state network of the sparrow
+search algorithm (Table 4).
+We use stock data from January 15, 2021 to July 11, 2023.
+The ﬁrst 400 days of data are used as the training set and the
+last 200 days are used as the test set. The test results are
+shown in Fig. 3 (Fig. 4).
+From the above charts, it can be seen that whether it is the
+US stock market or the Chinese A-shares market, the stock
+closing price prediction method by ESN optimized by SSA
+works well, and it can provide effective help and guidance to
+the majority of stockholders for stock investment (Table 5).
+5 Comparison of forecast results
+In this section, the errors of BP neural network, Elman neu-
+ral network, LSTM, ESN and SSA–ESN for multiple stocks
+prediction are compared to determine whether SSA–ESN is
+superior for solving the stock price prediction.
+In this paper, four evaluation metrics are selected to
+evaluate the advantages and disadvantages among different
+models, including mean absolute error (MAE), mean square
+error (MSE), mean absolute percentage error (MAPE) and
+root mean square error (RMSE). They are deﬁned as the fol-
+lowing,
+MAE /equal11
+N
+N∑
+i/equal11
+|ei|,( 9 )
+MSE /equal11
+N
+N∑
+i/equal11
+(ei)2,( 1 0 )
+MAPE /equal11
+N
+N∑
+i/equal11
+|ei|
+|yi| , (11)
+RMSE /equal1
+√ 1
+N
+N∑
+i/equal11
+(ei)2. (12)
+5.1 Ten US stock predictions results
+The BP neural network, Elman neural network, LSTM, echo
+state network and SSA–ESN models are used to predict the
+selected ten US stocks. The prediction results are displayed
+in Tables 6, 7, 8, 9 and 10 (Fig. 5).
+It follows from the above graphs, for each US stock,
+SSA–ESN has the highest prediction accuracy among the
+ﬁve models.
+5.2 Ten Chinese A-shares prediction results
+The BP neural network, Elman neural network, LSTM, ESN
+and SSA–ESN model are used to predict the selected ten
+Chinese A-shares, respectively, and the prediction results are
+presented in Tables 11, 12, 13, 14 and 15 (Fig. 6).
+It follows from the above graphs, for each Chinese A-
+share, SSA–ESN has the highest prediction accuracy among
+all the ﬁve models.
+5.3 Robustness checks
+In order to test the performance of the SSA–ESN model in
+different time frames and different market conditions, we
+select three typical Chinese stocks from the banking indus-
+try, real estate and semiconductor industry as research objects
+to observe the change of the prediction accuracy of the
+SSA–ESN model. The Chinese market is greatly affected
+by the novel coronavirus, so it will be a meaningful study to
+observe the prediction performance of the SSA–ESN model
+on December 9, 2022. We select two periods before and after
+China’s critical point of containment of novel coronavirus,
+December 9, 2022, to conduct research. The ratios in the
+table below represent the ratio of the training set to the test
+set.
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 7]
+2770 Z. Tian, L. Pei
+Table 4 Test set errors for ten US
+stocks Stoke code RMSE MAPE Stoke code RMSE MAPE
+AMD 2.883 0.027 INTC 0.768 0.021
+BK 0.807 0.014 LEN 1.895 0.016
+DHI 1.832 0.016 LGIH 2.899 0.022
+BAC 0.619 0.015 NVDA 8.955 0.031
+QCOM 3.026 0.020 WFC 0.849 0.015
+Fig. 3 Prediction of the test sets of ten US stocks
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 8]
+Stocks price prediction based on optimized echo state network … 2771
+Fig. 4 Prediction of the test sets of ten A-shares in China
+Table 5 Test set errors for ten
+A-shares in China Stoke code RMSE MAPE Stoke code RMSE MAPE
+600036 0.685 0.015 000002 0.369 0.016
+600048 0.358 0.016 000001 0.234 0.014
+600460 0.823 0.018 300458 1.044 0.026
+601988 0.055 0.009 000069 0.100 0.015
+603986 3.458 0.024 002156 0.670 0.024
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 9]
+2772 Z. Tian, L. Pei
+Table 6 Prediction results of AMD and BK by BPNN, Elman, LSTM, ESN and SSA–ESN
+AMD BK
+BPNN Elman LSTM ESN SSA–ESN BPNN Elman LSTM ESN SSA–ESN
+MSE 17.48 24.63 78.33 9.196 8.310 0.936 1.323 1.935 0.659 0.651
+MAE 3.229 3.861 6.661 2.277 2.128 0.713 0.912 1.031 0.631 0.627
+RMSE 4.181 4.963 8.851 3.033 2.883 0.967 1.150 1.391 0.812 0.807
+MAPE 0.038 0.054 0.071 0.029 0.027 0.016 0.021 0.022 0.014 0.014
+Table 7 Prediction results of DHI and BAC by BPNN, Elman, LSTM, ESN and SSA–ESN
+DHI BAC
+BPNN Elman LSTM ESN SSA–ESN BPNN Elman LSTM ESN SSA–ESN
+MSE 4.468 5.226 11.57 3.872 3.356 1.612 37.404 2.993 0.417 0.383
+MAE 1.637 1.727 2.625 1.532 1.399 0.873 5.601 1.374 0.489 0.466
+RMSE 2.114 2.286 3.401 1.968 1.832 1.270 6.116 1.73 0.646 0.619
+MAPE 0.018 0.019 0.030 0.017 0.016 0.025 0.181 3.943 0.015 0.015
+Table 8 Prediction results of QCOM and INTC by BPNN, Elman, LSTM, ESN and SSA–ESN
+QCOM INTC
+BPNN Elman LSTM ESN SSA–ESN BPNN Elman LSTM ESN SSA–ESN
+MSE 46.68 57.108 99.58 12.68 9.154 6.945 7.420 61.04 0.701 0.590
+MAE 5.809 6.143 8.221 2.943 2.386 2.289 2.461 7.574 0.668 0.597
+RMSE 6.832 7.557 9.98 3.560 3.026 2.635 2.724 7.813 0.837 0.768
+MAPE 0.047 0.053 0.065 0.025 0.020 0.077 0.088 0.257 0.023 0.021
+Table 9 Prediction results of LEN and LGIH by BPNN, Elman, LSTM, ESN and SSA–ESN
+LEN LGIH
+BPNN Elman LSTM ESN SSA–ESN BPNN Elman LSTM ESN SSA–ESN
+MSE 7.935 5.096 8.127 4.186 3.592 14.525 25.845 26.96 8.906 8.407
+MAE 2.183 1.752 2.235 1.571 1.428 3.067 3.841 4.126 2.284 2.231
+RMSE 2.817 2.258 2.851 2.046 1.895 3.811 5.084 5.192 2.984 2.899
+MAPE 0.023 0.019 0.024 0.017 0.016 0.029 0.040 0.038 0.023 0.022
+Table 10 Prediction results of NVDA and WFC by BPNN, Elman, LSTM, ESN and SSA–ESN
+NVDA WFC
+BPNN Elman LSTM ESN SSA–ESN BPNN Elman LSTM ESN SSA–ESN
+MSE 121.9 268.0 859.72 146.6 80.19 1.597 1.127 1.868 0.758 0.720
+MAE 7.538 11.48 22.33 8.879 6.085 0.883 0.795 1.083 0.646 0.628
+RMSE 11.04 16.37 29.32 12.11 8.955 1.264 1.062 1.367 0.871 0.849
+MAPE 0.034 0.058 0.082 0.044 0.031 0.020 0.019 2.455 0.015 0.015
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 10]
+Stocks price prediction based on optimized echo state network … 2773
+Fig. 5 MAPEs (%) of the test
+sets of ten US stocks predicted
+by each model
+Table 11 Prediction results of 600036 and 600048 by BPNN, Elman, LSTM, ESN and SSA–ESN
+600036 600048
+BPNN Elman LSTM ESN SSA–ESN BPNN Elman LSTM ESN SSA–ESN
+MSE 0.815 1.293 4.649 0.484 0.469 0.189 0.145 0.203 0.190 0.128
+MAE 0.679 0.809 1.5323 0.511 0.509 0.289 0.265 0.316 0.347 0.248
+RMSE 0.903 1.137 2.156 0.696 0.685 0.435 0.381 0.450 0.436 0.358
+MAPE 0.019 0.025 0.041 0.015 0.015 0.020 0.017 0.021 0.023 0.016
+Table 12 Prediction results of 600460 and 601988 by BPNN, Elman, LSTM, ESN and SSA–ESN
+600460 601988
+BPNN Elman LSTM ESN SSA–ESN BPNN Elman LSTM ESN SSA–ESN
+MSE 1.893 1.151 1.296 1.012 0.677 0.105 0.138 0.070 0.003 0.003
+MAE 0.938 0.817 0.831 0.812 0.619 0.181 0.210 0.152 0.031 0.031
+RMSE 1.376 1.073 1.138 1.006 0.823 0.324 0.371 0.265 0.056 0.055
+MAPE 0.028 0.024 0.025 0.024 0.018 0.061 0.054 0.051 0.009 0.009
+Table 13 Prediction results of 603986 and 000002 by BPNN, Elman, LSTM, ESN and SSA–ESN
+603986 000002
+BPNN Elman LSTM ESN SSA–ESN BPNN Elman LSTM ESN SSA–ESN
+MSE 73.37 58.68 255.57 15.19 11.957 0.233 7.399 1.596 0.170 0.136
+MAE 6.667 6.065 13.748 3.061 2.528 0.333 2.307 1.018 0.328 0.262
+RMSE 8.566 7.660 15.987 3.898 3.458 0.483 2.720 1.263 0.413 0.369
+MAPE 0.059 0.059 0.121 0.029 0.024 0.020 0.151 0.058 0.020 0.016
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 11]
+2774 Z. Tian, L. Pei
+Table 14 Prediction results of 000001 and 300458 by BPNN, Elman, LSTM, ESN and SSA–ESN
+000001 300458
+BPNN Elman LSTM ESN SSA–ESN BPNN Elman LSTM ESN SSA–ESN
+MSE 0.308 0.265 0.727 0.070 0.055 4.049 1.752 5.699 1.669 1.091
+MAE 0.477 0.365 0.637 0.197 0.178 1.366 0.986 1.841 0.980 0.684
+RMSE 0.555 0.514 0.853 0.264 0.234 2.012 1.324 2.387 1.292 1.044
+MAPE 0.038 0.030 0.047 0.015 0.014 0.057 0.039 0.074 0.038 0.026
+Table 15 Prediction results of 000069 and 002156 by BPNN, Elman, LSTM, ESN and SSA–ESN
+000069 002156
+BPNN Elman LSTM ESN SSA–ESN BPNN Elman LSTM ESN SSA–ESN
+MSE 0.052 0.105 0.344 0.025 0.010 0.843 0.565 0.952 0.550 0.449
+MAE 0.183 0.284 0.507 0.135 0.074 0.685 0.571 0.748 0.554 0.495
+RMSE 0.228 0.324 0.587 0.158 0.100 0.918 0.752 0.976 0.741 0.670
+MAPE 0.035 0.059 0.096 0.027 0.015 0.035 0.028 0.038 0.027 0.024
+Fig. 6 MAPEs (%) of the test set
+of ten Chinese A-shares
+predicted by each model
+Table 16 Forecast results of
+000001 under different time
+frames and market conditions
+January 15, 2021–December 8, 2022 December 9, 2022-July 11, 2023
+Train set Test set Train set Test set
+RMSE MAPE RMSE MAPE RMSE MAPE RMSE MAPE
+1:1 0.645 0.023 0.319 0.017 0.264 0.016 0.206 0.014
+2:1 0.591 0.022 0.291 0.015 0.271 0.016 0.173 0.011
+6:4 0.708 0.028 0.291 0.015 0.276 0.016 0.164 0.010
+8:2 0.765 0.034 0.213 0.013 0.273 0.016 0.142 0.009
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 12]
+Stocks price prediction based on optimized echo state network … 2775
+Table 17 Forecast results of
+000069 under different time
+frames and market conditions
+January 15, 2021–December 8, 2022 December 9, 2022–July 11, 2023
+Train set Test set Train set Test set
+RMSE MAPE RMSE MAPE RMSE MAPE RMSE MAPE
+1:1 0.200 0.020 0.176 0.021 0.118 0.018 0.085 0.014
+2:1 0.247 0.025 0.166 0.020 0.119 0.017 0.062 0.010
+6:4 0.236 0.024 0.168 0.020 0.131 0.019 0.069 0.011
+8:2 0.290 0.032 0.110 0.015 0.127 0.019 0.055 0.009
+Table 18 Forecast results of
+600,460 under different time
+frames and market conditions
+January 15, 2021–December 8, 2022 December 9, 2022–July 11, 2023
+Train set Test set Train set Test set
+RMSE MAPE RMSE MAPE RMSE MAPE RMSE MAPE
+1:1 1.990 0.034 1.345 0.022 0.945 0.021 0.075 0.016
+2:1 1.873 0.031 1.344 0.023 0.930 0.020 0.751 0.017
+6:4 1.880 0.032 1.362 0.023 0.906 0.020 0.779 0.017
+8:2 1.772 0.029 1.154 0.020 1.056 0.024 0.679 0.017
+Tables16, 17 and 18 describe that the MAPE of SSA–ESN
+model for different industries is about 0.02 or less, indicating
+that its prediction performance is robust under different time
+frames and market conditions. In addition, we can note that
+the prediction performance of the test set is better, because
+the echo state network can capture long-term dependencies
+in the data by introducing memory units, which helps to
+improve the generalization ability of the model. It means
+that the model can make better predictions on data that has
+never been seen before.
+6 Conclusion
+The prediction of stocks prices is a major concern for a
+wide range of ﬁnancial practitioners. The use of models with
+higher prediction accuracy facilitates more accurate ﬁnan-
+cial decisions. A large amount of the literatures indicate that
+neural networks have higher prediction accuracy compared
+to traditional stocks price prediction methods. However, tra-
+ditional neural network models have two major drawbacks
+for accurately predicting stocks price: one is that traditional
+neural networks are very sensitive to noise, and the other
+is that the initial parameters of traditional neural networks
+are often set empirically, and the randomness tends to have
+a great impact on the prediction accuracy. To address the
+ﬁrst drawback of traditional neural networks, in this paper
+we use ESN to adapt to the high noise and severe nonlinear-
+ity of the stocks price market. For the second disadvantage
+of traditional neural networks, in this paper we use compu-
+tational intelligence, combine the sparrow search algorithm
+with ESN, and optimizes its initial parameters, in order to
+avoid the decrease in prediction accuracy of traditional neu-
+ral networks due to the randomness of the initial parameters.
+In this paper, we investigate the prediction ability of the
+combined sparrow search algorithm and echo state network
+model in the stock market. BP neural network, Elman neu-
+ral network, LSTM, ESN and SSA–ESN are compared. The
+prediction results of 20 active stocks in China and the USA
+prove that ESN has more accurate prediction results in stocks
+price prediction, and the use of the sparrow search algorithm
+can effectively improve the prediction performance of ESN.
+The innovation of this paper is that the sparrow search
+algorithm and echo state network are successfully combined
+to deal with the stock price prediction with nonlinearity and
+high noise, and the prediction accuracy of echo state network
+is improved. At the same time, SSA–ESN model also inherits
+the advantages of echo state network, such as strong general-
+ization ability, good stability, short running time, simple and
+effective model.
+Financial practitioners can formulate investment strate-
+gies according to the forecast results of SSA–ESN, and can
+also use SSA–ESN model to evaluate the optimal strategy
+of the given investment strategy. In addition, the SSA–ESN
+model can also be combined with existing ﬁnancial analysis
+tools. Here, are a few ways of combination:
+1. Feature engineering: consider the feature variables used
+by existing ﬁnancial analysis tools and combine them
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 13]
+2776 Z. Tian, L. Pei
+with the feature variables used by the SSA–ESN. For
+example, existing ﬁnancial analysis tools may use techni-
+cal indicators (such as moving averages, relative strength
+indicators, etc.) as feature variables, which can be used
+as additional feature variables in the SSA–ESN.
+2. Model integration: the SSA–ESN can be integrated with
+other predictive models in existing ﬁnancial analysis
+tools. The prediction results of different models can
+be combined through voting, weighted average, etc., to
+improve the overall prediction accuracy.
+3. Risk management: use the risk management module pro-
+vided by existing ﬁnancial analysis tools to measure and
+manage the risk of forecast outcomes. By analyzing the
+error, conﬁdence interval and other risk indicators, the
+prediction results can be better evaluated and the corre-
+sponding risk management strategies can be adopted.
+However, there are some limitations to this study. It
+will be further discussion to optimize more parameters
+and explore its internal mechanism. The combination of
+advanced algorithms and data processing methods, such as
+modal decomposition, will also become a major trend in the
+ﬁeld of ﬁnancial forecasting.
+Acknowledgements The support of the National Natural Science Foun-
+dation of China (No. 11972327) is gratefully acknowledged.
+Author contributions ZT was responsible for data collection, data anal-
+ysis and the writing of the full text. LP provided the direction and method
+of the research, and provided some guiding suggestions for the paper.
+Funding This work was supported by the National Natural Science
+Foundation of China (No. 11972327).
+Availability of data and materials The data that support the ﬁndings of
+this study are available on request from the corresponding author upon
+reasonable request.
+Declarations
+Conﬂict of interest Authors have no conﬂict of interest to declare.
+References
+1. Sun A, Zhao T, Chen J, Chang J (2018) Comparative study: com-
+mon ANN and LS-SVM exchange rate performance prediction.
+Chin J Electron 27(3):561–564. https://doi.org/10.1049/cje.2018.
+01.003
+2. Adebiyi AA, Adewumi AO, Ayo CK (2014) Comparison of
+ARIMA and artiﬁcial neural networks models for stock price pre-
+diction. J Appl Math 2014:1–7. https://doi.org/10.1155/2014/61
+4342
+3. Lu H, Li D, Sun H (2015) Prediction for chaotic time series of
+optimized BP neural network based on PSO. Comput Eng Appl
+51(02):224–229+264
+4. Xiao C, Xia W, Jiang J (2020) Stock price forecast based on com-
+bined model of ARI–MA–LS–SVM. Neural Comput Appl. https://
+doi.org/10.1007/s00521-019-04698-5
+5. Rezaei H, Faaljou H, Mansourfar G (2021) Stock price predic-
+tion using deep learning and frequency decomposition. Expert Syst
+Appl 169:114332. https://doi.org/10.1016/j.eswa.2020.114332
+6. Emam H, Shahadat MH, Pär-Ola Z et al (2022) Machine learning
+with belief rule-based expert systems to predict stock price move-
+ments. Expert Syst Appl. https://doi.org/10.1016/J.ESW A.2022.11
+7706
+7. Shetty DK, Ismail B (2021) Forecasting stocks price using hybrid
+non-stationary time series model with ERNN. Commun Stat Simul
+Comput. https://doi.org/10.1080/03610918.2021.1872631
+8. Khashei M, Hajirahimi Z (2018) A comparative study of series
+arima/mlp hybrid models for stock price forecasting. Commun Stat
+Simul Comput. https://doi.org/10.1080/03610918.2018.1458138
+9. Bose A, Hsu C-H, Roy SS, Lee KC, Mohammadi-ivatloo B, Abi-
+mannan S (2021) Forecasting stock price by hybrid model of
+cascading multivariate adaptive regression splines and deep neural
+network. Comput Electr Eng 95:107405. https://doi.org/10.1016/j.
+compeleceng.2021.107405
+10. Jujie W, Jing L, Weiyi J (2024) An enhanced interval-valued
+decomposition integration model for stock price prediction based
+on comprehensive feature extraction and optimized deep learning.
+Expert Syst Appl. https://doi.org/10.1016/j.eswa.2023.122891
+11. Haocheng D (2022) Research on Amazon’s stock price forecasting
+based on arbitrage pricing model based on big data. Ain Shams
+Eng J. https://doi.org/10.1016/j.asej.2022.101793
+12. Gourav K, Pratap US, Sanjeev J (2022) An adaptive particle
+swarm optimization-based hybrid long short-term memory model
+for stock price time series forecasting. Soft Comput 26(22):21–21.
+https://doi.org/10.1007/s00500-022-07451-8
+13. Xiao T, Xiang Z, Zhigang L (2022) Multi-scale local cues and
+hierarchical attention-based LSTM for stock price trend prediction.
+Neurocomputing. https://doi.org/10.1016/j.neucom.2022.07.016
+14. Meng-xian W, Zhi X, Hong-gang P et al (2022) Stock price pre-
+diction for new energy vehicle enterprises: an integrated method
+based on time series and cloud models. Expert Syst Appl. https://
+doi.org/10.1016/J.ESW A.2022.118125
+15. Tengteng L, Xiang M, Shuo L et al (2022) A stock price prediction
+method based on meta-learning and variational mode decomposi-
+tion. Knowl Based Syst. https://doi.org/10.1016/J.KNOSYS.2022.
+109324
+16. Jaeger H (2004) Harnessing nonlinearity: predicting chaotic sys-
+tems and saving energy in wireless communication. Science
+304(5667):78–80. https://doi.org/10.1126/science.1091277
+17. Skowronski MD, Harris JG (2007) Automatic speech recogni-
+tion using a predictive echo state network classiﬁer. Neural Netw
+20(3):414–423. https://doi.org/10.1016/j.neunet.2007.04.006
+18. Lin X, Y ang Z, Song Y (2009) Short-term stock price prediction
+based on echo state networks. Expert Syst Appl 36(3):7313–7317.
+https://doi.org/10.1016/j.eswa.2008.09.049
+19. Ishu K, van der Zant T, Becanovic V , Ploger P (2004) Identiﬁcation
+of motion with echo state network. Oceans’04 MTS/IEEE Techno-
+Ocean’04 (IEEE Cat. No.04CH37600). https://doi.org/10.1109/oc
+eans.2004.1405751
+20. Zhang B (2017) Short-term stock price forecast model based on
+echo state network. Comput Appl Softw 34(05):268–272+333
+21. Zhang H, Liang J, Chai Z (2013) Stock prediction based on
+phase space reconstruction and echo state networks. J Algorithms
+Comput Technol 7(1):87–100. https://doi.org/10.1260/1748-3018.
+7.1.87
+22. Xue J, Shen B (2020) A novel swarm intelligence optimiza-
+tion approach: sparrow search algorithm. Syst Sci Control Eng
+8(1):22–34. https://doi.org/10.1080/21642583.2019.1708830
+23. Liu F, Qin P , Y ou J, Y anyan F (2022) “Sparrow search algorithm-
+optimized long short-term memory model for stock trend predic-
+tion” edited by A. M. Anter. Comput Intell Neurosci. https://doi.
+org/10.1155/2022/3680419
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 14]
+Stocks price prediction based on optimized echo state network … 2777
+24. Liu X, Y ang J, Y uan L (2023) Predicting the high heating value
+and nitrogen content of torreﬁed biomass using a support vec-
+tor machine optimized by a sparrow search algorithm. RSC Adv
+13(2):802–807. https://doi.org/10.1039/D2RA06869A
+25. Liao G-C (2022) Fusion of improved sparrow search algorithm and
+long short-term memory neural network application in load fore-
+casting. Energies 15:1–30. https://doi.org/10.3390/en15010130
+26. Tan C, Tan W, Shen Y , Y ang L (2023) Multistep wind power
+prediction using time-varying ﬁltered empirical modal decompo-
+sition and improved adaptive sparrow search algorithm-optimized
+phase space reconstruction-echo state network. Sustainability
+15(11):9107. https://doi.org/10.3390/su15119107
+27. Zheng Y , Li L, Qian L, Cheng B, Hou W, Zhuang Y (2023)
+Sine-SSA-BP ship trajectory prediction based on chaotic mapping
+improved sparrow search algorithm. Sensors 23:704. https://doi.
+org/10.3390/s23020704
+Springer Nature or its licensor (e.g. a society or other partner) holds
+exclusive rights to this article under a publishing agreement with the
+author(s) or other rightsholder(s); author self-archiving of the accepted
+manuscript version of this article is solely governed by the terms of such
+publishing agreement and applicable law.
+123
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+[PÁGINA PDF 15]
+1.
+2.
+3.
+4.
+5.
+6.
+Terms and Conditions 
+Springer Nature journal content, brought to you courtesy of Springer Nature Customer Service Center GmbH (“Springer Nature”). 
+Springer Nature supports a reasonable amount of sharing of  research papers by authors, subscribers and authorised users (“Users”), for small-
+scale personal, non-commercial use provided that all copyright, trade and service marks and other proprietary notices are maintained. By
+accessing, sharing, receiving or otherwise using the Springer Nature journal content you agree to these terms of use (“Terms”). For these
+purposes, Springer Nature considers academic use (by researchers and students) to be non-commercial. 
+These Terms are supplementary and will apply in addition to any applicable website terms and conditions, a relevant site licence or a personal
+subscription. These Terms will prevail over any conflict or ambiguity with regards to the relevant terms, a site licence or a personal subscription
+(to the extent of the conflict or ambiguity only). For Creative Commons-licensed articles, the terms of the Creative Commons license used will
+apply. 
+We collect and use personal data to provide access to the Springer Nature journal content. We may also use these personal data internally within
+ResearchGate and Springer Nature and as agreed share it, in an anonymised way, for purposes of tracking, analysis and reporting. We will not
+otherwise disclose your personal data outside the ResearchGate or the Springer Nature group of companies unless we have your permission as
+detailed in the Privacy Policy. 
+While Users may use the Springer Nature journal content for small scale, personal non-commercial use, it is important to note that Users may
+not:  
+use such content for the purpose of providing other users with access on a regular or large scale basis or as a means to circumvent access
+control;
+use such content where to do so would be considered a criminal or statutory offence in any jurisdiction, or gives rise to civil liability, or is
+otherwise unlawful;
+falsely or misleadingly imply or suggest endorsement, approval , sponsorship, or association unless explicitly agreed to by Springer Nature in
+writing;
+use bots or other automated methods to access the content or redirect messages
+override any security feature or exclusionary protocol; or
+share the content in order to create substitute for Springer Nature products or services or a systematic database of Springer Nature journal
+content. 
+In line with the restriction against commercial use, Springer Nature does not permit the creation of a product or service that creates revenue,
+royalties, rent or income from our content or its inclusion as part of a paid for service or for other commercial gain. Springer Nature journal
+content cannot be used for inter-library loans and librarians may not upload Springer Nature journal content on a large scale into their, or any
+other, institutional repository. 
+These terms of use are reviewed regularly and may be amended at any time. Springer Nature is not obligated to publish any information or
+content on this website and may remove it or features or functionality at our sole discretion, at any time with or without notice. Springer Nature
+may revoke this licence to you at any time and remove access to any copies of the Springer Nature journal content which have been saved. 
+To the fullest extent permitted by law, Springer Nature makes no warranties, representations or guarantees to Users, either express or implied
+with respect to the Springer nature journal content and all parties disclaim and waive any implied warranties or warranties imposed by law,
+including merchantability or fitness for any particular purpose. 
+Please note that these rights do not automatically extend to content, data or other material published by Springer Nature that may be licensed
+from third parties. 
+If you would like to use or distribute our Springer Nature journal content to a wider audience or on a regular basis or in any other manner not
+expressly permitted by these Terms, please contact Springer Nature at  
+onlineservice@springernature.com 

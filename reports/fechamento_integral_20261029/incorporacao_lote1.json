@@ -1,0 +1,34 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "copia_trabalho": "reports\\monografia\\trabalho\\fechamento_integral_20261029.docx",
+  "sha256_apos_lote": "175568500c1cf4668902cfc2adf0366fc290677d606ba29517b834f46d71891e",
+  "alteracoes": [
+    {
+      "unidade": "U0182",
+      "antes": "Vishwas et al. (2025), em revisão sobre falhas, escalabilidade e uso de dados sintéticos em sistemas de inteligência artificial aplicados ao setor financeiro, observam que arquiteturas treinadas por backpropagation, em particular, as LSTMs, tendem a se mostrar lentas e custosas em cenários de alta frequência.",
+      "depois": "Vishwas et al. (2025) revisam métodos de inteligência artificial aplicados à previsão de preços e tendências de ações. Os desafios discutidos incluem qualidade dos dados, não estacionariedade, sobreajuste, interpretabilidade e custo computacional. A revisão também aborda requisitos de infraestrutura e latência em aplicações de tempo real.",
+      "evidencia": "achados_D30_vishwas.json"
+    },
+    {
+      "unidade": "U0183",
+      "antes": "Os autores comparam máquinas de vetores de suporte (Support Vector Machines – SVMs), LSTMs, Transformers e redes quântico-híbridas (HQNN), e identificam o custo de retreinamento em ambientes dinâmicos como uma das principais barreiras à adoção em larga escala de redes profundas no mercado financeiro.",
+      "depois": "A revisão reúne estudos com SVMs, LSTMs, Transformers e modelos quântico-híbridos. Os desafios de custo e escalabilidade aparecem associados a arquiteturas, otimização e infraestrutura distintas. Essas observações sintetizam estudos anteriores e não equivalem a uma comparação experimental própria nem isolam a retropropagação como causa dos custos.",
+      "evidencia": "achados_D30_vishwas.json"
+    },
+    {
+      "unidade": "U0195",
+      "antes": "Vishwas et al. (2025) corroboram esse quadro ao apontar que a dependência de redes baseadas em backpropagation gera tempos de treinamento elevados em cenários de alta frequência financeira. Em ambientes que exigem retreinamento frequente uma característica frequente nos mercados esse custo pode tornar inviável o uso prático dessas arquiteturas em larga escala.",
+      "depois": "Vishwas et al. (2025) discutem custo computacional e latência como desafios para aplicações financeiras em tempo real. Esse tratamento é qualitativo: não estabelece um limite universal de treinamento nem demonstra que a retropropagação, por si só, inviabilize LSTM ou GRU. Nesta pesquisa, a análise de eficiência depende dos tempos medidos e da distinção entre ajuste do modelo e busca de hiperparâmetros.",
+      "evidencia": "achados_D30_vishwas.json"
+    },
+    {
+      "elemento": "R46, referência Vishwas",
+      "antes": "VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, 2025. DOI: 10.21595/mme.2025.24861.",
+      "depois": "VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, n. 4, p. 204-229, 2025. DOI: 10.21595/mme.2025.24861.",
+      "evidencia": "https://www.extrica.com/article/24861; metadados confirmados em achados_D30_vishwas.json"
+    }
+  ],
+  "estado": "incorporado_pendente_validacao_final_e_registro",
+  "sem_resultados_experimentais_alterados": true
+}

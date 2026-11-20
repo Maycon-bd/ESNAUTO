@@ -1,0 +1,13 @@
+# Conferência de Sharma e Duttilo/Gattone
+
+Base: v005, SHA256 `2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b`. Cópia após este lote: `4d8ad77d6266568f21d1593e1026c4f6a567c439749daafe44b4e6a6ed49efad`. Estado: rascunho, auditoria integral ainda ativa.
+
+Sharma foi lido visualmente nas 15 páginas. A extração adicional da página 6 não foi usada como evidência. A Tabela 1 apresenta leis de amostragem de hiperparâmetros; o ruído Gaussiano visível na página 6 não define a distribuição de Win/W. A descrição do teste de Mann–Whitney foi precisada: compara a razão dos RMSEs de ESN/XGBoost entre grupos de menor e maior caos, com diferenças relatadas nas janelas de treino de 30 e 60 dias, mas não de 15. Isso não é superioridade estatística geral sobre ARIMA ou redes profundas.
+
+A referência de Sharma foi normalizada para o preprint efetivamente consultado, com versão e DOI conferidos no [arXiv oficial](https://arxiv.org/abs/2508.05416). Não se presumiu leitura de uma edição final de anais. As atribuições de U0233, compartilhadas com Araújo, e de U0252 foram conferidas. O parágrafo misto U0257 continua parcial, pois envolve outras fontes.
+
+O artigo de Duttilo e Gattone foi lido integralmente em suas seis páginas. Sua descrição na monografia está coerente: misturas de duas GED sobre retornos do DJIA, comparadas com misturas Gaussianas e Gaussiana-Laplace. A referência foi completada com editores, título dos anais, Pearson, ano, páginas e ISBN, conferidos na [edição final pública do editor](https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Docenti/Universit%C3%A0/Sis-2022-4c-low.pdf). A cidade do evento não foi presumida como local de publicação; a universidade dos autores não foi mantida como editora. Foram guardadas somente páginas de identificação e sumário, sem alegação de leitura integral dos anais.
+
+O registro JSON documenta inconsistências das fontes que não foram transferidas à monografia: texto de Sharma sobre benefício multivariado divergente da Tabela 3; inversão de casos Normal/Laplace em uma frase de Duttilo, contrariada por sua fórmula e página seguinte; possível penalização incorreta nos valores AIC publicados. A monografia não transcreve esses números nem usa critérios de informação como testes de normalidade.
+
+As dez células da matriz foram confirmadas, sem recodificação. Foram alterados um parágrafo e duas referências, preservando todas as tabelas, mídias e resultados experimentais. O PDF mantém 76 páginas: três diferentes foram abertas, e 73 são idênticas ao lote anterior. As 45 verificações estruturais passaram; o cruzamento reconheceu 50 referências e 152 chamadas sem órfãs. Esses controles não encerram a auditoria de conteúdo, similaridade ou Guia.

@@ -1,0 +1,46 @@
+[
+  {
+    "nome": "Sharma_publicado",
+    "doi": "10.1007/978-981-95-4109-6_25",
+    "url": "https://api.openalex.org/works/doi:10.1007/978-981-95-4109-6_25",
+    "consultado_em_utc": "2026-11-02T09:01:45.500514+00:00",
+    "sha256": "b2cb969fdad61d027d33e677006c32e639906f0b9174260f297c0763ce15dbfe",
+    "titulo": "Echo State Networks for Bitcoin Time Series Prediction",
+    "acesso": {
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null,
+      "any_repository_has_fulltext": false
+    },
+    "locais": [
+      {
+        "landing_page_url": "https://doi.org/10.1007/978-981-95-4109-6_25",
+        "pdf_url": null,
+        "is_oa": false,
+        "version": "publishedVersion"
+      }
+    ]
+  },
+  {
+    "nome": "Gandhudi_apoio_D30",
+    "doi": "10.1016/j.compeleceng.2024.109302",
+    "url": "https://api.openalex.org/works/doi:10.1016/j.compeleceng.2024.109302",
+    "consultado_em_utc": "2026-11-02T09:01:45.501470+00:00",
+    "sha256": "77bdf4cece89959b22c9eb3ae79c1ee6d047e156b17900ae4713af73688c06bb",
+    "titulo": "Explainable hybrid quantum neural networks for analyzing the influence of tweets on stock price prediction",
+    "acesso": {
+      "is_oa": false,
+      "oa_status": "closed",
+      "oa_url": null,
+      "any_repository_has_fulltext": false
+    },
+    "locais": [
+      {
+        "landing_page_url": "https://doi.org/10.1016/j.compeleceng.2024.109302",
+        "pdf_url": null,
+        "is_oa": false,
+        "version": "publishedVersion"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2290 @@
+
+[PÁGINA PDF 1]
+ 
+   
+ 
+GUIA OFICIAL 
+de padronização 
+científica da 
+Faculdade de 
+Engenharia de 
+Software - UniRV  
+ 
+1a Edição  
+ 
+ 
+ 
+ 
+ 
+
+[PÁGINA PDF 2]
+ 
+   
+PREFÁCIO 
+ 
+ 
+Este guia foi desenvolvido sob medida para os estudantes e orientadores de 
+TRABALHOS FINAIS DE CURSO I (TFC I) e TRABALHO FINAL DE CURSO II (TFC 
+II) na FACULDADE DE ENGENHARIA DE SOFTWARE (FASOFT) - UniRV.. Trata-se 
+de uma adaptação direcionada e específica do MANUAL PARA PADRONIZAÇÃO DE 
+TRABALHOS DE GRADUÇÃO E PÓS -GRADUAÇÃO DA UNIRV  oficial da 
+UNIVERSIDADE DE RIO VERDE. 
+Acredita-se que a construção do conhecimento é um processo coletivo e contínuo. Por 
+isso: 
+• Feedback e Melhorias: Críticas construtivas, sugestões e ideias para o aprimoramento 
+deste material são sempre muito bem-vindas. 
+• Propriedade Intelectual: Prezamos pelo respeito absoluto aos direitos autorais. Se você 
+identificar qualquer trecho ou referência que não tenha sido devidamente creditada, por 
+favor, entre em contato conosco para que possamos fazer a retificação e dar os m éritos 
+imediatamente. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ORGANIZADOR DA PRIMEIRA EDIÇÃO 
+João Dionisio Paraiba 
+v.1.0.2 
+ 
+Nota de Atribuição: Registramos nosso reconhecimento ao uso de materiais baseados no 
+consagrado Modelo de Especificação de Requisitos Volere (copyright © 1995 – 2009, Atlantic 
+Systems Guild Limited), adaptado aqui para o contexto dos nossos acadêmicos.
+
+[PÁGINA PDF 3]
+ 
+ 
+APRESENTAÇÃO 
+ 
+Seja muito bem-vindo ao GUIA OFICIAL DE PADRONIZAÇÃO CIENTÍFICA DA 
+FACULDADE DE ENGENHARIA DE SOFTWARE DA UNIVERSIDADE DE RIO 
+VERDE (UNIRV). Este documento foi pensado como um braço direito para alunos, 
+professores e pesquisadores, traduzindo as complexas regras técnicas em um passo a passo 
+prático para a produção do conhecimento. 
+ 
+Nosso principal objetivo é garantir que os projetos acadêmicos, relatórios de 
+desenvolvimento, monografias e artigos produzidos aqui tenham o rigor e a qualidade técnica 
+reconhecidos por toda a comunidade científica nacional. 
+ 
+Como o Manual está organizado? 
+Para facilitar a sua consulta, dividimos este material em seis grandes blocos temáticos e 
+complementares: 
+• Parte 1 | Tipos Trabalhos Acadêmicos : Uma visão geral sobre as principais 
+modalidades de trabalhos exigidas no curso (como artigos. Monografias e relatórios de 
+desenvolvimento). 
+• Parte 2 | Estrutura do Trabalho e Identidade Visual e Formatação: O mapa do seu 
+TFC. Aqui você aprende a organizar tudo o que vem antes, durante e depois do texto 
+principal (pré -textuais, textuais e pós -textuais).O padrão gráfico do texto. Exemplos 
+práticos de margens, fontes, tabelas e ilustrações para não errar na estética do trabalho. 
+• Parte 3 | Monografia: O guia completo para a elaboração do trabalho acadêmico 
+tradicional. Abrange desde a definição do tema e dos objetivos até o desenvolvimento 
+da fundamentação teórica, metodologia e análise dos resultados. 
+• Parte 4 | Desenvolvimento DERS : Orientações detalhadas para o Documento de 
+Especificação de Requisitos de Software. Diretrizes práticas para mapear, documentar 
+e estruturar requisitos funcionais e não funcionais em projetos de tecnologia. 
+• Parte 5 | Desenvolvimento GDD: A estrutura essencial para o Game Design Document. 
+Instruções para documentar todas as mecânicas, ambientação, regras, narrativa e 
+arquitetura de um projeto de jogo. 
+
+[PÁGINA PDF 4]
+ 
+ 
+• Parte 6 | Estilo e Escrita Científica : Dicas essenciais de redação, como a escolha do 
+tempo verbal, o uso correto de termos estrangeiros, siglas e a pessoa do discurso ideal 
+para a ciência. 
+ 
+Fundamentação Técnica (ABNT) 
+Este manual foi totalmente atualizado e construído com base nas normas mais recentes 
+da Associação Brasileira de Normas Técnicas (ABNT), incluindo as diretrizes vigentes para: 
+ 
+Norma ABNT Escopo e Aplicação 
+NBR 6022 Estruturação de artigos científicos periódicos 
+NBR 6023 Regras atualizadas para elaboração de referências bibliográficas 
+NBR 6024 Organização e numeração progressiva de seções e capítulos 
+NBR 6027 Formatação de sumários 
+NBR 6028 Critérios para a redação de resumos 
+NBR 10520 Regras e formatos para citações textuais 
+NBR 14724 Diretrizes gerais para a apresentação de trabalhos acadêmicos 
+NBR 15287 Estrutura de projetos de pesquisa 
+ 
+
+[PÁGINA PDF 5]
+SUMÁRIO
+1. TIPOS DE TRABALHOS ACADÊMICOS
+.....................................................................
+8
+1.1. Projeto de pesquisa
+....................................................................................................................
+8
+1.2. Monografia
+................................................................................................................................
+8
+1.3. Desenvolvimento de software
+....................................................................................................
+8
+1.4. Desenvolvimento de jogos
+.........................................................................................................
+8
+1.5. Artigo científico
+.........................................................................................................................
+8
+2. APRESENTAÇÃO GRÁFICA
+.......................................................................................
+10
+2.1 Regra geral
+................................................................................................................................
+10
+2.2 Mais algumas dicas
+...................................................................................................................
+11
+2.3 Numeração progressiva das seções de um documento
+.............................................................
+12
+2.4 Introdução
+.................................................................................................................................
+13
+2.5 Desenvolvimento
+......................................................................................................................
+14
+2.6 Conclusão ou considerações finais
+...........................................................................................
+15
+4. ELEMENTOS QUE COMPÕEM A ESTRUTURA DE MONOGRAFIA
+................
+18
+4.1 Elementos da parte pré-textual
+.................................................................................................
+20
+4.1.1 Capa
+..................................................................................................................................
+20
+4.1.2 Folha de rosto
+...................................................................................................................
+20
+4.1.3 Ficha catalográfica
+............................................................................................................
+21
+4.1.4 Folha de aprovação
+...........................................................................................................
+21
+4.1.5 Dedicatória
+........................................................................................................................
+21
+4.1.6 Agradecimento
+..................................................................................................................
+21
+4.1.7 Epígrafe
+............................................................................................................................
+21
+4.1.8 Resumo na língua vernácula
+.............................................................................................
+22
+4.1.9 Resumo em língua estrangeira
+..........................................................................................
+23
+4.1.10 Lista de ilustrações
+.........................................................................................................
+23
+4.1.11 Lista de tabelas
+...............................................................................................................
+23
+4.1.12 Lista de siglas
+.................................................................................................................
+24
+4.1.13 Sumário
+...........................................................................................................................
+24
+4.2 Elementos da parte textual
+........................................................................................................
+24
+4.2.1 Introdução
+.........................................................................................................................
+25
+4.2.2 Revisão de literatura
+.........................................................................................................
+29
+4.2.3 Materiais e Métodos/Metodologia
+....................................................................................
+30
+4.2.4 Resultados e discussão
+......................................................................................................
+32
+4.2.5 Conclusão ou Considerações finais
+..................................................................................
+34
+4.3 Elementos da parte pós-textual
+.................................................................................................
+35
+4.3.1 Referências
+.......................................................................................................................
+35
+4.3.2 Glossário
+...........................................................................................................................
+35
+
+
+[PÁGINA PDF 6]
+4.3.3 Apêndice
+...........................................................................................................................
+35
+4.3.4 Anexo
+................................................................................................................................
+35
+4.4 Modelos e exemplos ilustrados dos elementos da Monografia
+................................................
+36
+7. NORMAS DE ESTILO E REDAÇÃO
+...........................................................................
+69
+7.1 Diretrizes para a redação acadêmica
+.........................................................................................
+69
+7.2 Emprego de palavras estrangeiras
+.............................................................................................
+71
+7.3 Outros aspectos da redação acadêmica
+.....................................................................................
+71
+7.4 Sigla e acrônimo
+.......................................................................................................................
+71
+REFERÊNCIAS
+...................................................................................................................
+74
+
+
+[PÁGINA PDF 7]
+ 
+ 
+P A R T E  I  
+ 
+ 
+TIPOS DE 
+TRABALHOS 
+ACADÊMICOS 
+ 
+  
+
+[PÁGINA PDF 8]
+ 
+ 
+1. TIPOS DE TRABALHOS ACADÊMICOS 
+Nesta seção, apresentam-se as principais modalidades de trabalhos científicos e técnicos 
+aceitos, fundamentados nas normas da ABNT e nas especificidades do curso. 
+ 
+1.1. PROJETO DE PESQUISA 
+É o documento que descreve o planejamento das etapas que compõem o processo de 
+investigação científica. Sua elaboração é de responsabilidade do pesquisador e sua aprovação 
+compete ao professor orientador. Nele, definem-se o problema, os objetivos e a metod ologia a 
+ser seguida para a realização do trabalho final. 
+ 
+1.2. MONOGRAFIA 
+Trabalho resultante do estudo científico de um tema único e delimitado, por meio do qual 
+o acadêmico sistematiza suas observações críticas fundamentadas em leituras e reflexões 
+pessoais. Deve seguir uma estrutura rigorosa composta por partes pré -textual, textual e pós -
+textual para a exposição coerente dos dados. 
+ 
+1.3. DESENVOLVIMENTO DE SOFTWARE 
+Trabalho técnico -científico voltado à criação de um produto de software. Sua 
+documentação principal é o Documento de Especificação de Requisitos de Software (DERS), 
+que detalha os interessados, requisitos funcionais e não funcionais, especificações técnicas e o 
+processo de implementação e avaliação do sistema. 
+ 
+1.4. DESENVOLVIMENTO DE JOGOS 
+Modalidade dedicada à criação de jogos digitais, estruturada em torno do Game Design 
+Document (GDD). O trabalho deve contemplar desde a concepção (história, mecânicas e 
+dinâmica) até a implementação técnica (interface, áudio e ferramentas), finalizando com a 
+avaliação da experiência do jogador. 
+ 
+1.5. ARTIGO CIENTÍFICO 
+Texto científico de dimensão reduzida que visa fomentar a produção de conhecimento em 
+diversas áreas. Sua estrutura permite ao leitor, por meio da descrição da metodologia e dos 
+resultados obtidos, repetir ou comparar a experiência realizada, sendo geralme nte destinado à 
+publicação em periódicos especializados. 
+ 
+
+[PÁGINA PDF 9]
+ 
+ 
+P A R T E  I I  
+ 
+ 
+APRESENTAÇÃO 
+GRÁFICA DOS 
+ELEMENTOS DAS 
+PARTES DO 
+TRABALHO 
+ACADÊMICO  
+ 
+ 
+
+[PÁGINA PDF 10]
+ 
+ 
+2 APRESENTAÇÃO GRÁFICA 
+A ABNT NBR 14724/2024 é a norma que apresenta os detalhes exigidos para a 
+apresentação de trabalhos acadêmicos, contemplando sua estrutura e os aspectos gráficos. 
+ 
+2.1 REGRA GERAL 
+Os textos devem ser exibidos na cor preta, sendo permitido o uso de outras cores apenas 
+para as ilustrações. As regras gerais precisam ser definidas assim que iniciar a digitação do 
+documento. 
+a) PAPEL (se impresso): 
+• A4 (21 cm x 29,7 cm); 
+• 75 g/m2; 
+• branco. 
+ 
+b) MARGENS: 
+• 3 cm, margens esquerda e superior; 
+• 2 cm, margens direita e inferior. 
+Dica: defina as margens assim que abrir o novo documento para iniciar a digitação. 
+ 
+c) TIPO DA LETRA: 
+• Arial ou Times New Roman. 
+ 
+d) PARA TODOS OS PARÁGRAFOS: 
+• fonte: tamanho 12; 
+Observação: a fonte no tamanho 12 deve ser utilizada em todo o texto, incluindo a capa, exceto 
+em situações específicas previstas pela ABNT e descritas neste Manual. 
+• recuo nos parágrafos: especial > primeira-linha > 1,25 cm; 
+• alinhamento: justificado; 
+• espaçamento entre linhas: 1,5. 
+ 
+e) PAGINAÇÃO: 
+• fonte 12; 
+• canto superior direito da página  
+à exceção da capa, da folha de rosto em diante, todas as páginas devem ser contadas 
+sequencialmente, mas a numeração somente ficará visível a partir da primeira página do texto 
+principal, após o Sumário. 
+
+[PÁGINA PDF 11]
+ 
+ 
+Dica: para não ficar visível o número nas páginas pré-textuais, clique na página na qual o texto 
+principal começa e selecione as opções “Layout” > “Quebras” > “Próxima Página”. 
+ 
+f) IMPRESSÃO 
+• parte pré-textual, impressa no ANVERSO da folha; 
+• ficha catalográfica, impressa no VERSO da folha de rosto; 
+• partes textual e pós -textual impressas no ANVERSO e VERSO das folhas, sendo 
+opcional a impressão no verso; 
+ 
+Observação: os números de cópias impressas em espiral ou em capa dura deverão ser 
+confirmados na secretaria do curso. 
+Dica: ANTES DE IMPRIMIR, transforme seu arquivo do editor de texto em Portable Document 
+Format (PDF). Assim, evita-se a desconfiguração das quebras de página e possíveis alterações 
+em virtude da troca de impressora. 
+ 
+2.2 MAIS ALGUMAS DICAS 
+Algumas dicas para facilitar a formatação do seu trabalho: 
+a) defina a formatação do parágrafo assim que iniciar a digitação, com isso todos 
+os demais parágrafos terão a mesma estética; 
+b) com o seu pseudo -sumário pronto, monte a estrutura com as seções/subseções 
+antes de começar a escrever, depois preencha com o conteúdo; 
+c) ao definir a estética do trabalho, leia atentamente as orientações nos modelos a 
+partir da próxima página, que aparecem em balões; 
+d) insira uma quebra de página antes de começar cada um dos elementos da parte 
+pré-textual, pois eles devem sempre começar em folha distinta (deve -se considerar o 
+tipo de trabalho acadêmico); 
+e) insira uma quebra de seção antes de começar as seções primárias da parte textual, 
+pois elas devem sempre começar em folha distinta (deve -se considerar o tipo de 
+trabalho acadêmico); 
+f) insira uma quebra de página antes de começar cada um dos elementos da parte 
+pós-textual, pois eles devem sempre começar em folha distinta (deve -se considerar o 
+tipo de trabalho acadêmico); 
+g) utilize alíneas quando quiser enumerar diversos itens que não comportam título; 
+h) a apresentação da alínea deve ser precedida de um texto terminado em dois -
+pontos; 
+
+[PÁGINA PDF 12]
+ 
+ 
+i) não deixe uma linha isolada no início (linha órfã) nem no final da página (linha 
+viúva), devendo haver no mínimo duas linhas de parágrafo; 
+j) não deixe o título de uma seção/subseção isolado no final da página, esta deve 
+ter no mínimo duas linhas de parágrafo. Após finalizar todo o trabalho, verifique com 
+atenção as quebras nas páginas. 
+ 
+2.3 NUMERAÇÃO PROGRESSIV A DAS SEÇÕES DE UM DOCUMENTO 
+Para evidenciar a sistematização do conteúdo do trabalho, deve -se adotar a numeração 
+progressiva para as seções do texto. As seções e subseções de uma dissertação ou tese são 
+numeradas com algarismos arábicos em uma sequência lógica. 
+Os títulos das seções primárias, por serem as principais divisões, iniciam -se em folha 
+distinta. Devem ser destacados tipograficamente, de forma hierárquica, da primária à quinária, 
+podendo ser utilizados os recursos gráficos de maiúscula, negrito, itálico  ou sublinhado. O 
+mesmo destaque utilizado no texto deverá ser repetido no Sumário. 
+O título das seções (primárias, secundárias, terciárias, quaternárias e quinárias) deve ser 
+colocado após o indicativo de seção, justificado, separado por um espaço. O texto deve iniciar 
+em outra linha e todas as seções devem conter um texto relacionado a elas. 
+Deve-se limitar a numeração progressiva até a seção quinária. Caso seja necessário, abra 
+outras seções utilizando alíneas. 
+1     SEÇÃO PRIMÁRIA    (maiúsculas, negrito)  
+1.1     SEÇÃO SECUNDÁRIA    (maiúsculas, sem negrito) 
+1.1.1    Seção terciária    (minúsculas com exceção da 1ª letra, negrito) 
+1.1.1.1    Seção quaternária    (minúscula com exceção da 1ª letra, sem negrito) 
+1.1.1.1.1   Seção quinária    (minúscula com exceção da 1ª letra, itálico) 
+2     SEÇÃO PRIMÁRIA    (maiúsculas, negrito)  
+2.2     SEÇÃO SECUNDÁRIA    (maiúsculas, sem negrito) 
+2.2.2    Seção terciária    (minúsculas com exceção da 1ª letra, negrito) 
+2.2.2.2  Seção quaternária    (minúscula com exceção da 1ª letra, sem negrito) 
+2.2.2.2.2  Seção quinária    (minúscula com exceção da 1ª letra, itálico) 
+ 
+Os títulos sem indicativo numérico – agradecimentos, lista de ilustrações, lista de 
+tabelas, lista de abreviaturas e siglas, lista de símbolos, resumos, sumário, referências, glossário, 
+apêndice(s), anexo(s) e índice(s) – devem estar centralizados no topo da página, com o mesmo 
+destaque tipográfico das seções primárias. 
+Observação: cada um desses elementos deve ser apresentado em folhas distintas 
+ 
+
+[PÁGINA PDF 13]
+ 
+ 
+2.4 INTRODUÇÃO 
+Nesta seção, apresenta -se a ideia geral do trabalho de forma sucinta (Henrique; 
+Medeiros, 2014; Feitosa, 1997). Nela, incluem-se justificativa, problema, hipótese e objetivos. 
+A parte introdutória deve fornecer ao leitor a informação necessária para entend er de qual 
+assunto trata o trabalho (Martins Junior, 2015). Desse modo, a introdução deve apresentar uma 
+visão do contexto do problema, ressaltando -lhe a utilidade, viabilidade, originalidade e 
+importância do trabalho (Triviños, 1987). Para Santos (2005, p. 134), a introdução deve conter: 
+a) apresentação do assunto como um todo; 
+b) elemento explicativo do autor ao leitor; 
+c) colocação ou estabelecimento claro do assunto; 
+d) definição objetiva e clara, sem deixar dúvidas sobre o campo abrangido; 
+e) indicação da finalidade e do objetivo do estudo, informando sob que ponto de vista é 
+tratado o assunto; 
+f) exposição sobre tópicos principais do texto, dando a ordem e o roteiro de exposição. 
+Portanto, a introdução identifica a questão ou a preocupação que gera a pesquisa ao 
+transmitir informações sobre um problema de pesquisa (Creswell, 2007). O autor alerta para o 
+cuidado ao redigi-la, por tratar-se da passagem inicial em um estudo ou em uma proposta. 
+Geralmente a introdução é redigida ao término do trabalho , quando já se conhecem 
+os passos de seu desenvolvimento (Pádua, 1989). Para escrevê -la, sugerem -se algumas 
+perguntas que, bem respondidas, serão o caminho para se obter a forma pretendida. 
+a) De que assunto trata o trabalho? 
+b) Por que é importante tratar desse assunto? 
+c) Como se tratou o assunto? 
+d) Qual é o objetivo que se pretende alcançar? 
+Nesta seção, mostra-se sucintamente ao leitor o que ele encontrará no trabalho. Por isso, 
+o autor deve: 
+• Apresentar/introduzir claramente o assunto tratado (campo abrangido pela 
+pesquisa). 
+• Apresentar possíveis limitações encontradas sobre o tema. 
+• Mostrar/justificar a importância e a natureza do problema a ser resolvido. 
+• Justificar e esclarecer sob que ponto de vista é tratado o assunto. 
+• Apresentar a finalidade do trabalho. 
+• Apresentar, ordenadamente e de forma sucinta, as seções principais do trabalho. 
+• Não devem existir equações, tabelas ou figuras. 
+
+[PÁGINA PDF 14]
+ 
+ 
+• Não devem ser apresentados resultados nem conclusões. 
+• Não se deve utilizar citações de autores, em específico nos casos de projeto de 
+pesquisa, artigo científico, monografia, dissertação e tese. 
+Observação: deve ter de duas a três páginas 
+ 
+2.5 DESENVOLVIMENTO 
+Esta é a parte em que se concentra o discurso que embasa o trabalho. Também chamado 
+corpo do assunto, o desenvolvimento corresponde à parte mais extensa da pesquisa (Cervo; 
+Bervian, 2002). É efetivamente a parte principal em que são apresentadas respostas ordenadas 
+e fundamentadas relativas ao tema escolhido. Nesse sentido, aqui estão algumas orientações 
+práticas: 
+• As seções e subseções devem ser definidas mostrando as partes progressivas das 
+divisões e subdivisões do documento, possibilitando -lhe expor, com clareza, a 
+sequência, a importância e o inter-relacionamento do assunto. 
+• As subsessões das seções primárias devem ser definidas, preferencialmente, até 
+o nível terciário.  
+• As subseções que representem enumerações de ideias/conceitos e que tenham 
+pouco conteúdo/texto devem ser substituídas por alíneas. 
+• Recomenda-se que os parágrafos sejam redigidos com no mínimo 4 linhas e no 
+máximo 7 linhas, sem erros de português, mantendo sempre a concatenação de 
+ideias e o raciocínio, sem ser prolixo e ambíguo. 
+• O posicionamento do(s) autor(es) em resposta às questões levantadas pela 
+pesquisa deve ser apresentado como paráfrases ou citação direta, acompanhado 
+de sua posição pessoal que deve estar apoiada em dados e provas, evitando ideias 
+preconcebidas. 
+Observação: as formas de citações estão apresentadas na seção Citações 
+ 
+• Os conceitos e termos devem ser explicitados. 
+• As tabelas, ilustrações, apêndices e anexos servem para apresentar os resultados 
+e enriquecer o trabalho e devem ser sempre referenciados no texto 
+correspondente. 
+• Toda referência citada no texto deve constar na lista de referências. 
+ 
+
+[PÁGINA PDF 15]
+ 
+ 
+Observação: os padrões para compor as referências estão apresentados na seção Referências 
+deste Manual. Dica: acrescente os dados do documento consultado à sua lista de Referências 
+assim que usá-los no texto 
+ 
+Dica: acrescente os dados do documento consultado à sua lista de Referências  assim que usá-
+los no texto. 
+ 
+Para Fernandes (2002), é no desenvolvimento que se argumentará contra ou a favor da 
+tese. Essa é a parte em que se discutirão todas as faces do fenômeno, apresentando -se os 
+argumentos que sustentarão ou derrubarão a tese. 
+ 
+2.6 CONCLUSÃO OU CONSIDERAÇÕES FINAIS 
+Esta é a parte em que são apresentadas conclusões do pesquisador correspondentes aos 
+objetivos ou às hipóteses da pesquisa. 
+A conclusão nem sempre significa uma resposta final e acabada a um problema. As boas 
+conclusões devem deixar “portas abertas” para novas propostas de pesquisa em torno do tema 
+estudado (Prodanov; Freitas, 2013). 
+Ela é a síntese direta e concisa das confirmações obtidas nos resultados ou na discussão, 
+em conformidade com a proposição e a metodologia (Estrela; Marcelo; Sabino, 2005). 
+Mais que um simples resumo final, essa fase é fundamentalmente a afirmação sintética 
+da ideia central do trabalho, podendo conter comentários e consequências próprias da pesquisa 
+(Barros; Lehfeld, 2007). 
+Em termos formais, trata -se de uma exposição factual sobre o que foi investigado, 
+analisado, interpretado; é uma síntese comentada das ideias essenciais e dos principais 
+resultados obtidos, explicitados com precisão e clareza (Oliveira Netto, 2008). 
+Para Prodanov e Freitas (2013), essa etapa, de estrutura própria, é o momento em que se 
+sintetizam os resultados obtidos com a pesquisa, retomando o problema inicial, lançado na 
+introdução, e revendo as principais contribuições que ele proporcionou à pesqu isa. É o 
+momento de respostas coerentes aos questionamentos que balizaram o estudo, como 
+apresentado na seção introdutória. 
+A conclusão contém a essência de um estudo e deve fundamentar-se em deduções lógicas 
+e corresponder aos objetivos do trabalho (Fachin, 2003). Para o autor, ela deve ser breve, clara, 
+objetiva, conter uma visão analítica do corpo do trabalho, inter relacion ando o e levando em 
+conta o problema inicial do estudo. 
+
+[PÁGINA PDF 16]
+ 
+ 
+Martins Junior (2015), de modo prático, sugere uma sequência para a escrita da 
+conclusão: se forem formuladas perguntas na delimitação do problema, deve -se iniciar pelas 
+respostas a elas. Na sequência, deve-se fazer uma síntese de cada capítulo, verificando se o seu 
+conteúdo contribuiu para que fossem alcançados os objetivos formulados na introdução do 
+trabalho. Em razão dessas sínteses realizadas, é necessário verificar um a um se os objetivos 
+específicos foram alcançados, assim como o objetivo geral. 
+Assim, essa é a seção em que, de maneira ordenada, repetem-se os pontos principais dos 
+resultados da pesquisa, ressaltando o alcance e as consequências de suas contribuições, bem 
+como seu possível valor. 
+
+[PÁGINA PDF 17]
+ 
+ 
+P A R T E  I V  
+ 
+ 
+ELEMENTOS 
+DAS PARTES 
+QUE COMPÕEM 
+MONOGRAFIA 
+  
+
+[PÁGINA PDF 18]
+ 
+ 
+4. ELEMENTOS QUE COMPÕEM A ESTRUTURA DE MONOGRAFIA 
+A estrutura dos trabalhos acadêmicos, estabelecida pela Associação Brasileira de 
+Normas Técnicas NBR 14724/2024, é constituída de três partes: PRÉ-TEXTUAL, TEXTUAL 
+e PÓS-TEXTUAL. Cada parte tem seus elementos correspondentes, levando em consideração 
+o tipo de trabalho. 
+1ª) PRÉ-TEXTUAL: Capa; Folha de rosto; Ficha catalográfica; Folha de aprovação; 
+Dedicatória; Agradecimento; Epígrafe; Resumo na língua vernácula; Resumo em língua 
+estrangeira; Listas de ilustrações, tabelas, siglas, abreviaturas, símbolos; Sumário. 
+2ª) TEXTUAL: Introdução; Revisão da literatura; Materiais e métodos ou Metodologia; 
+Resultados e discussões; e Conclusão. 
+3ª) PÓS-TEXTUAL: Referências; Glossário; Apêndice; Anexo; e Índice. 
+ 
+ESQUEMA 1-  MONOGRAFIA 
+PARTE EXTERNA CAPA (OBRIGATÓRIO) 
+PARTE INTERNA ELEMENTOS  
+PRÉ-TEXTUAIS 
+Folha de rosto (obrigatório) 
+Ficha catalográfica (obrigatório) 
+Errata (se necessário) 
+Folha de aprovação (obrigatório) 
+Dedicatória (opcional) 
+Agradecimentos (opcional) 
+Epígrafe (opcional) 
+Resumo na língua vernácula (obrigatório) 
+Resumo em língua estrangeira (obrigatório) 
+Lista de ilustrações (se necessário) 
+Lista de tabelas (se necessário) 
+Lista de abreviaturas ou siglas (se necessário) 
+Lista de símbolos (se necessário) 
+Sumário (obrigatório)  
+ELEMENTOS 
+TEXTUAIS 
+Introdução 
+Revisão de literatura (obrigatório) 
+Materiais e métodos ou Metodologia 
+Resultados e discussão (obrigatório) 
+Conclusão (obrigatório)  
+ ELEMENTOS PÓS-
+TEXTUAIS 
+Referências (obrigatório) 
+Glossário (opcional) 
+Apêndice (opcional) 
+Anexo (opcional) 
+
+[PÁGINA PDF 19]
+ 
+ 
+ 
+ESQUEMA 2-  MONOGRAFIA EXPANDIDO 
+ELEMENTOS 
+TEXTUAIS 
+INTRODUÇÃO Contexto de uso (obrigatório) 
+Identificação do problema (obrigatório) 
+Trabalhos relacionados (se necessário) 
+Objetivo geral (obrigatório) 
+Objetivos específicos (obrigatório) 
+Caracterização da contribuição (obrigatório) 
+Resultados esperados (obrigatório) 
+REVISÃO DA 
+LITERATURA 
+Revisão da literatura (obrigatório) 
+Estado da Arte (obrigatório) 
+Trabalhos Relacionados 
+ MATERIAS E 
+MÉTODOS OU 
+METODOLOGIA 
+Metodologia que foi utilizada na pesquisa 
+• Protocolo de pesquisa 
+Classificação da Pesquisa; 
+Critérios de avaliação 
+ RESULTADOS E 
+DISCUSSÕES 
+Tabulação e análise dos dados 
+ CONCLUSÃO Objetivos foram alcançados (obrigatório) 
+As hipóteses foram atingidas (obrigatório) 
+Trabalhos futuros (obrigatório) 
+ 
+  
+
+[PÁGINA PDF 20]
+ 
+ 
+4.1 ELEMENTOS DA PARTE PRÉ-TEXTUAL 
+A primeira parte é composta de elementos obrigatórios, opcionais e eventuais. Os 
+elementos a seguir compõem a estrutura do trabalho acadêmico, com suas finalidades e 
+conteúdos/itens, na ordem em que devem ser apresentados, considerando-se a estrutura de cada 
+tipo de trabalho. 
+ 
+4.1.1 Capa 
+A capa é um elemento obrigatório e as informações devem ser apresentadas na seguinte 
+ordem: 
+a) nome da instituição;  
+b) nome do autor do trabalho;  
+c) título do trabalho: deve ser claro e preciso, identificando o seu conteúdo e 
+possibilitando a indexação e recuperação da informação; se houver subtítulo, deve ser 
+precedido de dois-pontos, evidenciando a sua subordinação ao título; 
+d) local (cidade) da instituição onde deve ser apresentado o trabalho; 
+e) ano da entrega do trabalho. 
+ 
+4.1.2 Folha de rosto 
+Os elementos devem ser apresentados na seguinte ordem: 
+a) nome do autor; 
+b) título; 
+c) subtítulo, se houver; 
+d) número do volume – se houver mais de um, deve constar, em cada folha de rosto, 
+a especificação do respectivo volume; 
+e) natureza: tipo do trabalho (tese, dissertação, trabalho de conclusão de curso, 
+entre outros) e objetivo (aprovação em disciplina, grau pretendido, entre outros); nome 
+da instituição a que é submetido; área de concentração; 
+f) nome do orientador e, se houver, do coorientador; 
+g) local (cidade) da instituição onde deve ser apresentado o trabalho; 
+h) ano de depósito do trabalho (ou seja, da entrega). 
+ 
+
+[PÁGINA PDF 21]
+ 
+ 
+4.1.3 Ficha catalográfica 
+Item obrigatório, é a catalogação bibliográfica da obra. Deve ser elaborada pelo/a 
+bibliotecário/a da Universidade, conforme Código de Catalogação Anglo -Americano vigente, 
+e inserida imediatamente após a folha de rosto do trabalho, alinhada à parte inferior da margem. 
+ 
+4.1.4 Folha de aprovação 
+Elemento obrigatório, que deve conter as informações essenciais à aprovação do trabalho, 
+devendo ser assinado pelos integrantes da banca examinadora. 
+a) nome do autor do trabalho; 
+b) título do trabalho e subtítulo, se houver;  
+c) texto indicando a natureza acadêmica do trabalho (tese, dissertação, outros), 
+objetivo (aprovação em disciplina, grau pretendido, outros); instituição em que está 
+sendo apresentado e área de concentração;  
+a) data de avaliação ou aprovação; 
+b) nome, titulação e instituição dos componentes da banca examinadora. 
+Observação: a data de aprovação e as assinaturas dos membros componentes da banca 
+examinadora são acrescentadas após a aprovação do trabalho 
+ 
+4.1.5 Dedicatória 
+Elemento opcional, é um breve texto que homenageia e dedica o trabalho a pessoas especiais, 
+não necessariamente ligadas ao trabalho apresentado. 
+Observação: não entra título na dedicatória, apenas o texto 
+ 
+4.1.6 Agradecimento 
+Elemento opcional, no qual o autor agradece a pessoas (família, amigos, participantes) 
+e/ou instituições que contribuíram de maneira relevante para a elaboração e o desenvolvimento 
+do trabalho. 
+ 
+4.1.7 Epígrafe 
+É uma citação literal, em prosa ou verso, que sintetiza a ideia que você gostaria de 
+transmitir no seu trabalho, devendo sempre indicar a autoria. 
+Nota: alguns elementos entram sem título e sem indicativo numérico. Fazem parte desses 
+elementos a folha de aprovação, a dedicatória e a epígrafe. Recomenda-se que a dedicatória e a 
+epígrafe sejam digitadas com alinhamento do meio da mancha gráfica (área d e distribuição do 
+texto na folha) até a margem direita, na parte inferior da página. 
+
+[PÁGINA PDF 22]
+ 
+ 
+ 
+4.1.8 Resumo na língua vernácula 
+Elemento obrigatório, é a apresentação concisa e objetiva, em parágrafo único, dos pontos 
+relevantes do trabalho. 
+Esse conteúdo de cunho científico tem a finalidade específica de passar ao leitor uma 
+ideia completa do teor do documento, em que se apresentam todas as informações necessárias 
+para que o leitor/pesquisador possa fazer uma primeira avaliação do texto e de suas eventuais 
+contribuições, justificando a consulta do texto integral (Severino, 2002). 
+ITENS: 
+• Título; texto; palavras-chave. 
+ 
+4.1.8.1 Particularidades do resumo 
+De acordo com a ABNT NBR 6028/2021, o resumo é considerado a apresentação concisa 
+dos pontos relevantes de um documento. O resumo é um item fundamental para a elaboração 
+de trabalhos científicos. 
+Ele deve permitir uma visão precisa do trabalho, sendo descrito como Resumo 
+Informativo, pois apresenta ao leitor os objetivo(s), a metodologia, os resultados e as 
+considerações finais/conclusões do documento, de tal forma que o leitor possa, inclusive, 
+dispensar a consulta ao texto integral. 
+O resumo deve ser composto de uma sequência de frases concisas em parágrafo único, 
+sem enumeração de tópicos. A primeira frase deve ser significativa, explicando o tema principal 
+do documento. A seguir, deve-se indicar a categoria do tratamento (memória, e studo de caso, 
+análise da situação, entre outros). 
+• Em documento técnico ou científico, recomenda-se o resumo informativo. 
+• Convém usar o verbo na terceira pessoa. 
+• O resumo, quando não estiver contido no documento, deve ser precedido pela 
+referência. 
+• As palavras -chave devem figurar logo abaixo do resumo, antecedidas da expressão 
+Palavras-chave, seguida de dois -pontos, separadas entre si por ponto e vírgula e 
+finalizada por ponto-final. Devem ser grafadas com as iniciais em letra minúscula, com 
+exceção dos substantivos próprios e nomes científicos. 
+ 
+EXEMPLO  
+
+[PÁGINA PDF 23]
+ 
+ 
+Palavras-chave: gestação; cuidado pré-natal; Aedes aegypti; IBGE; Brasil.  
+Devem-se evitar: 
+• símbolos e contrações que não sejam de uso corrente; 
+• fórmulas, equações, diagramas, entre outros, que não sejam absolutamente necessários; 
+quando seu emprego for imprescindível, defini-los na primeira vez que aparecerem. 
+• Quanto à extensão, os resumos devem ter: 
+• de 150 a 500 palavras, em caso de trabalhos acadêmicos – trabalhos de conclusão de 
+curso, teses, dissertações e outros – e relatórios técnicos e/ou científicos ou de estágio; 
+• de 100 a 250 palavras em artigos de periódicos; 
+• de 50 a 100 palavras, nos destinados a indicações breves. 
+ 
+4.1.9 Resumo em língua estrangeira 
+Elemento obrigatório, elaborado com as mesmas características do resumo em língua 
+portuguesa. É a tradução fiel do resumo em língua portuguesa para um idioma de divulgação 
+internacional (ABSTRACT, em inglês). 
+ITENS: 
+• Título; texto traduzido; palavras-chave traduzidas. 
+ 
+4.1.10 Lista de ilustrações 
+É a relação dos títulos de cada tipo de ilustração (quadro, figura, gráfico, mapas…) na 
+ordem em que se apresentam no texto.2 
+Recomenda-se a elaboração de uma lista própria para cada tipo de ilustração  (por 
+exemplo, uma lista só para figuras/imagens e outra lista específica para quadros) 
+ 
+ITENS: 
+• Título; relação das ilustrações na ordem em que se apresentam no texto; número de página. 
+ 
+4.1.11 Lista de tabelas 
+É a relação dos títulos das tabelas na ordem em que se apresentam no texto.  
+ 
+2 Embora as listas de ilustrações, tabelas, abreviaturas e símbolos sejam elementos opcionais, conforme a ABNT, sua inclusão 
+pode contribuir significativamente para a organização e compreensão do trabalho acadêmico. Esses elementos auxiliam 
+o leitor a local izar rapidamente figuras e tabelas, além de facilitar a compreensão de termos técnicos e simbologias 
+específicas. Assim, mesmo não sendo obrigatórias, sugerimos o uso das listas por representarem um recurso valioso para 
+a apresentação clara e estruturada das informações. 
+
+[PÁGINA PDF 24]
+ 
+ 
+ITENS: 
+• título; relação das tabelas na ordem em que se apresentam no texto; número de página. 
+ 
+4.1.12 Lista de siglas 
+Lista alfabética das abreviaturas e siglas utilizadas no texto, seguidas das palavras ou 
+expressões correspondentes grafadas por extenso (em maiúsculo e minúsculo, quando for o 
+caso). Obrigatória com mais de dez itens. 
+Itens: título; relação alfabética das siglas e seus respectivos nomes por extenso (em 
+maiúsculo e minúsculo). 
+ 
+4.1.13 Sumário 
+Elemento obrigatório, é a apresentação das seções e subseções existentes no corpo do 
+trabalho na mesma ordem e realce em que aparecem na parte textual. 
+ITENS: 
+• título;  
+• indicativo e título da seção, na ordem e no realce em que se apresentam no texto;  
+• número de página. 
+Observação: devem constar somente as partes textuais e pós-textuais do trabalho. 
+ 
+4.2 ELEMENTOS DA PARTE TEXTUAL 
+A parte textual é composta de elementos obrigatórios, que poderão ter seus títulos 
+nominados conforme a necessidade do seu trabalho. Vejamos os elementos com sua 
+finalidade/conteúdo na ordem que devem ser apresentados, levando em consideração a 
+estrutura de cada tipo de trabalho. 
+Os elementos da parte textual deverão ter indicativo numérico de seção em algarismo 
+arábico. A numeração progressiva é utilizada para evidenciar a sistematização do conteúdo do 
+trabalho e deve ser elaborada conforme a NBR 6024/2012. 
+Dica 1:  Antes de começar o desenvolvimento do texto, faça um pseudo -sumário com as 
+prováveis seções, subseções e alíneas que irão compor seu trabalho. Nestas, devem estar 
+delineados os conteúdos e as referências que serão utilizadas. 
+Dica 2: Antes de começar efetivamente o desenvolvimento do texto, tenha em mãos os 
+documentos que serão consultados. 
+
+[PÁGINA PDF 25]
+ 
+ 
+ 
+4.2.1 Introdução 
+No âmbito da elaboração de uma monografia, o capítulo inicial da parte textual é a 
+Introdução, na qual o acadêmico deve apresentar a ideia geral do seu trabalho de forma sucinta 
+(Henrique; Medeiros, 2014; Feitosa, 1997). A função primordial da parte introdutória é fornecer 
+ao leitor e à banca examinadora as informações indispensáveis para compreender claramente 
+de qual assunto trata o estudo (Martins Junior, 2015), devendo apresentar uma visão 
+contextualizada e abrangente do problema, evidenciando sua utili dade, viabilidade, 
+originalidade e a importância geral do trabalho desenvolvido (Triviños, 1987).  
+Devem ser observadas restrições técnicas rígidas no formato institucional: não devem 
+existir equações, tabelas ou figuras , assim como não devem ser apresentados resultados 
+nem conclusões neste momento inicial. A introdução de monografias deve ter uma extensão 
+recomendada de duas a três páginas  no documento definitivo.  A redação deve ser realizada 
+obrigatoriamente em texto corrido, de maneira contínua, fluida e sem qualquer tipo de 
+subdivisão numerada ou subtópico , organizando os elementos em uma sequência lógica e 
+coesa, em total conformidade com as diretrizes de documentação científica da instituição.  
+De acordo com a perspectiva de Santos (2005, p. 134), este capítulo deve conter 
+obrigatoriamente a apresentação do assunto como um todo, um elemento explicativo do autor 
+direcionado ao leitor, o estabelecimento e colocação clara do assunto, uma definição objetiva e 
+clara sem deixar margem para dúvidas sobre o campo abrangido pela pesquisa, a indicação 
+precisa da finalidade e do objetivo do estudo — esclarecendo sob qual ponto de vista o assunto 
+é abordado — e a exposição dos tópicos principais do texto, def inindo a ordem e o roteiro de 
+exposição. Assim, a introdução desempenha o papel crucial de identificar a questão ou 
+preocupação central que motivou a investigação ao transmitir informações sobre um problema 
+de pesquisa (Creswell, 2007), exigindo-se extremo cuidado e rigor na redação deste texto, por 
+tratar-se da passagem inicial de todo o estudo científico. Geralmente, a introdução é redigida 
+ao término do trabalho, momento no qual o pesquisador já conhece com segurança todos os 
+passos e os resultados consolidados do desenvolvimento do seu projeto (Pádua, 1989).  
+Para guiar a escrita e obter a forma ideal pretendida, sugere -se que o acadêmico 
+responda mentalmente de forma integrada a quatro perguntas norteadoras fundamentais:  
+• de que assunto trata o trabalho;  
+• por que é importante tratar desse assunto;  
+• como o assunto foi tratado;  
+
+[PÁGINA PDF 26]
+ 
+ 
+• e qual é o objetivo que se pretende alcançar.  
+O autor deve introduzir e delimitar claramente o assunto, apontar eventuais limitações 
+encontradas na literatura sobre o tema, mostrar e justificar a importância e a natureza do 
+problema a ser resolvido, esclarecer sob qual ponto de vista o assunto é abordado, apresentar a 
+finalidade do trabalho e expor ordenadamente as seções principais que compõem o estudo.  
+Para que a investigação científica seja verdadeiramente objetiva e conduza a respostas 
+consistentes, o pesquisador deve focar o estudo em temas específicos (Martins, 1994), 
+realizando pesquisas paralelas apenas quando necessário, desde que cada uma delas a borde 
+recortes específicos e possíveis (Martins Junior, 2015).  
+Após a escolha do assunto geral, faz -se estritamente necessário delimitar o tema , 
+definindo com exatidão sua extensão e profundidade (Andrade, 1999; Nunes, 2002). Delimitar 
+consiste em selecionar um tópico específico do assunto para ser focalizado, podendo essa 
+delimitação ser feita no que diz respeito à extensão ou ao tipo de enfoque, seja ele psicológico, 
+sociológico, histórico, filosófico, estatístico ou técnico (Andrade, 1999, p. 124). O assunto de 
+estudo deve ser escolhido considerando -se sua relevância prática para as pessoas, grupos de 
+pessoas ou para a sociedade em geral, tendo o cuidado de não executar um projeto que não 
+apresente interesse para ninguém (Kauark; Manhães; Medeiros, 2010). Uma vez definido este 
+assunto amplo, estabelece-se o tema, que representa a especificação detalhada do que tratará o 
+estudo a ser desenvolvido,  determinando o contexto e a perspectiva sob a qual o assunto será 
+pesquisado (Prodanov; Freitas, 2013). Escolher o tema ideal vincula -se, fundamentalmente, a 
+gostar do assunto, de modo a garantir que o trabalho de pesquisa não se torne motivo de 
+sofrimento para o pesquisador durante a sua jornada acadêmica (Kauark; Manhães; Medeiros, 
+2010). 
+Escolhido o tema e delimitado o seu escopo operacional, a próxima fase consiste 
+obrigatoriamente na transformação do tema em problema de pesquisa (Cervo; Bervian, 2002). 
+Toda e qualquer investigação científica inicia -se essencialmente pela formulação de um 
+problema para o qual se objetiva encontrar uma solução (Fachin, 2003; Martins; Lintz, 2000). 
+O problema de pesquisa costuma ser estruturado e ap resentado formalmente na forma de uma 
+proposição interrogativa, expressando com clareza a dúvida técnica que o pesquisador pretende 
+responder sobre o assunto estudado (Ruiz, 1996). Para estabelecer o problema com precisão, é 
+indispensável que o aluno desen volva indagações e inquietações sobre determinado assunto, 
+fato, fenômeno ou questão social, adotando a pesquisa como o meio científico para buscar 
+respostas ou pistas que propiciem solucioná-lo (Carvalho et al., 2000). Assim, a formulação do 
+problema exterioriza a dificuldade técnica específica com que o pesquisador se defronta e 
+
+[PÁGINA PDF 27]
+ 
+ 
+pretende solucionar, atuando como a verdadeira mola propulsora de todo o trabalho de pesquisa 
+(LAKATOS; MARCONI, 2003; Kauark; Manhães; Medeiros, 2010). 
+O objetivo do estudo representa aquilo que se pretende atingir, conhecer, medir ou 
+provar com a execução da pesquisa (Creswell, 2007; Soares, 1995; Fachin, 2003). Divididos 
+em objetivo geral e específicos (Martins Junior, 2015), seu delineamento claro é o caminho 
+para o sucesso do projeto, facilitando o estabelecimento de um esquema de plano de trabalho a 
+ser seguido (Soares, 1995; Oliveira Netto, 2008). Para serem bem -sucedidos, os objetivos 
+devem ser pre viamente estudados e realistas, levando em conta a realidade restrita que se 
+pretende investigar (Fernandes, 2002). Em um trabalho científico, formula -se comumente 
+apenas um objetivo geral, expresso em uma única frase declarativa iniciada com verbo no 
+infinitivo que não permita dúvidas ou dupla significação (como demonstrar, apontar, avaliar, 
+definir ou compreender), indicando a meta global com a qual se pretende contribuir para o 
+avanço da ciência (Martins Junior, 2015). Como exemplos de objetivo geral na literatura, 
+Martins Junior (2015, p. 66) propõe “Diagnosticar a contribuição do ensino de idiomas na 
+integração cultural de populações minoritárias de países europeus”, enquanto Barros e Lehfeld 
+(2007, p. 154) apresentam “Aprofundar o conhecimento sobre a problemática da regulação do 
+sistema de telecomunicações e suas implicações nos cenários institucional, jurídico e 
+econômico, por meio de um estudo dos novos procedimentos de controle instituídos pelo órgão 
+competente”. Quanto aos objetivos específicos, o trabalho científico pode conter um ou mais, 
+referindo-se às metas e etapas práticas que serão dadas para desenvolver a pesquisa em relação 
+às variáveis estudadas (Martins Junior, 2015; Silva, 2003). Escritos na forma de frases iniciadas 
+com verbos no infinitivo (Oliveira, 2002), eles particularizam as direções a seguir e determinam 
+as ações do pesquisador (Fernandes, 2002). Sugere-se desenvolver parágrafos curtos iniciados 
+com verbos de ação específicos, tais como distinguir, identificar, verificar, avaliar , contrastar, 
+documentar, especificar, propor ou sintetizar. São exemplos de objetivos específicos na 
+literatura de trabalhos acadêmicos propor modelos de regulação ou estabelecer estudos 
+comparativos (Barros; Lehfeld, 2007), bem como demonstrar a importân cia do ensino de 
+idiomas ou comparar o nível cultural de alunos (Martins Junior, 2015). 
+Em resposta e íntima correlação com o problema formulado, surgem as hipóteses, as 
+quais representam as respostas antecipadas e provisórias à questão de pesquisa, as quais poderão 
+ou não ser validadas por meio dos resultados da investigação ao final do trabalho (Barros; 
+Lehfeld, 2007; Fernandes, 2002). A hipótese da pesquisa constit ui uma suposição objetiva e 
+testável, e não uma mera opinião subjetiva do autor, desempenhando uma relevante função 
+prática ao orientar e conduzir o pesquisador diretamente na direção da provável causa ou lei 
+
+[PÁGINA PDF 28]
+ 
+ 
+que se procura, além de uma função teórica ao coordenar e complementar os resultados já 
+obtidos, organizando fatos e fenômenos para facilitar compreender e estudar a questão (Cervo; 
+Bervian, 2002). Para tanto, é fundamental que a hipótese apresente bases s ólidas, assentadas e 
+garantidas por teorias consistentes e por matérias -primas da realidade observável (Oliveira, 
+2002). Estabelecer uma hipótese consiste em supor uma afirmação temporária como uma 
+tentativa de responder ao problema levantado, sendo que, com o desenvolvimento da pesquisa, 
+o acadêmico poderá confirmar ou negar a suposição levantada (Kauark; Manhães; Medeiros, 
+2010). Como apontado por Salomon (2014), as hipóteses constituem respostas supostas e 
+provisórias, classificando-se como hipótese bási ca aquela considerada a principal resposta ao 
+problema, a qual pode ainda ser complementada por hipóteses secundárias (Prodanov; Freitas, 
+2013). A hipótese, que surge logo após a formulação do problema, envolve uma verdade 
+possível e assinala caminhos e ru mos seguros ao investigador perante uma dificuldade diante 
+da qual se vislumbram prováveis soluções, intuídas com o apoio de uma teoria e sujeitas à 
+confirmação (Triviños, 1987). 
+A justificativa consiste na apresentação das razões de ordem prática e teórica para se 
+realizar a pesquisa, explicando detalhadamente como o estudo poderá contribuir para a área de 
+conhecimento e como ele poderá ser útil às pessoas (Andrade, 1999). Na justificativa devem 
+estar explícitas as raízes da preferência do pesquisador pela escolha do assunto e sua real 
+importância em relação a outros temas, destacando a relevância do tema frente ao estágio atual 
+da ciência, suas divergências conceituais ou a contribuição pretendid a ao se pesquisar o 
+problema (Fachin, 2003). Sendo a parte do projeto em que o autor defende de forma persuasiva 
+ser necessária a realização do trabalho (Appolinário, 2011), sua redação deve manter coerência 
+e coesão textual, possuindo um elo redacional di reto com os elementos anteriores do capítulo 
+(Rudio, 1986; Andrade, 1999). Para Cervo e Bervian (2002), ela deve conter o porquê da 
+escolha do tema e a delimitação realizada, demonstrando a legitimidade, a pertinência, o 
+interesse e a capacidade do aluno em lidar com o assunto escolhido, explicitando como o estudo 
+contribuirá para o estado da arte na sua área do conhecimento (Fachin, 2003). 
+Para finalizar a estrutura de planejamento de pesquisa, o cronograma é imprescindível 
+para organizar e calendarizar as atividades do estudo, devendo apresentar detalhadamente os 
+passos a serem seguidos, desde a coleta de material e leitura até a fase de redação final, 
+considerando a complexidade e a extensão do tema (Fernan des, 2002). Sua principal função é 
+definir o tempo necessário para realizar a pesquisa, dividindo o processo em etapas e indicando 
+o prazo para a conclusão de cada uma delas (Pádua, 1989; Martins Junior, 2015). Caracteriza -
+
+[PÁGINA PDF 29]
+ 
+ 
+se como uma representação gráfica ou em forma de tabela que descreve as atividades a serem 
+realizadas e o tempo que elas consumirão (Appolinário, 2011, p. 29).  
+Do mesmo modo, o orçamento é o item em que se demonstram todas as possíveis 
+despesas que o pesquisador terá durante a realização do estudo (Keila, 2002; Martins Junior, 
+2015), sendo definido como a relação dos custos implicados na pesquisa (Appolinário, 2011) 
+com o objetivo de prever os gastos, especificando materiais, quantidade, preço unitário e o valor 
+total com o resultado final em destaque (Chaves, 2007; Creswell, 2007).  
+Contudo, no âmbito das diretrizes curriculares estabelecidas pelo Conselho de Curso e 
+pelo Núcleo Docente Estruturante (NDE) da FASOFT para a modalidade de Monografia, tanto 
+a apresentação do cronograma de atividades planejadas quanto a estimativa de custos e o 
+orçamento tornaram -se elementos de caráter estritamente facultativo (opcionais).  Caso o 
+acadêmico opte por incluí-los no trabalho, ambos os itens não devem compor a introdução nem 
+constituir capítulos isolados, devendo ser obrigatoriamente integrados como subseções 
+normativas dentro do corpo do Capítulo 3 (Materiais e Métodos/Metodologia). 
+ 
+4.2.2 Revisão de literatura 
+Segundo Fachin (2003), a Revisão da Literatura, parte também caracterizada como 
+fundamentação teórica ou referencial teórico, é em geral a mais extensa do trabalho. 
+Nesse ponto, observando -se as várias ideias sobre o assunto, divide -se o trabalho em 
+capítulos, partes, seções e subseções, com suas respectivas numerações. Os capítulos ou as 
+partes devem obedecer à seguinte disposição: a ideia principal referencia o prim eiro capítulo 
+ou parte; a ideia secundária, o segundo; e assim, sucessivamente, o terceiro e demais capítulos. 
+Cada capítulo deve ter suas seções e subseções com numerações. 
+Na revisão da literatura, dispõe -se o conteúdo de sua pesquisa inicial relativa ao que já 
+foi escrito sobre o tema que você está pesquisando (Martins Junior, 2015). A busca de material 
+teórico tem o objetivo de responder aos problemas formulados na pesquis a (Cervo; Bervian, 
+2002). 
+O Levantamento de Literatura é o procedimento de localização e obtenção de documentos 
+para avaliar a disponibilidade de material que subsidiará o tema do trabalho de pesquisa 
+(Kauark; Manhães; Medeiros, 2010). Nesse sentido, definir os pressupostos teórico s e os 
+principais conceitos com os quais o acadêmico vai trabalhar é essencial, o que deve ser feito 
+preferencialmente em três seções primárias e suas subseções até o nível terciário (Carvalho et 
+al., 2000). 
+
+[PÁGINA PDF 30]
+ 
+ 
+De acordo com Fachin (2003), é necessário observar uma ordenação lógica das ideias 
+para então dividir o conteúdo em capítulos. Deve haver uma sequência das ideias a serem 
+apresentadas de forma clara e compreensível. Não é recomendável que um capítulo tenha  um 
+número de páginas muito diferente dos demais. Manter uma divisão equilibrada nesse sentido 
+é importante para uma ordenação adequada. 
+ 
+4.2.3 Materiais e Métodos/Metodologia 
+Quanto aos materiais e métodos, ou mesmo metodologias, este é o item na pesquisa que 
+deve conter todos os procedimentos que o pesquisador realizará, bem como os métodos 
+adotados e os mais adequados para sua realização. 
+Em relação a particularidades terminológicas, Estrela, Marcelo e Sabino (2005) 
+descrevem que o termo metodologia costuma ser substituído pela expressão Material ou 
+Método. Todavia, as denominações apresentam diferenças a serem esclarecidas, ou seja, a 
+expressão Material e Método é perfeitamente propícia a experimentos laboratoriais nos quais 
+se utilizam materiais específicos e métodos diferentes para se manusear cada um deles. Ao se 
+analisar um fenômeno social não sujeito à manipulação do pesquisador, a exp ressão perde o 
+sentido. Para os autores, ao se investigar, por exemplo, a percepção de pessoas sobre 
+determinado fenômeno, ou mesmo a distribuição de determinada doença ao longo de certo 
+período, a expressão mais adequada é Metodologia. 
+O método é a ordem que se deve impor aos “[…] diferentes processos necessários para 
+atingir certo fim ou um resultado desejado” (Cervo; Bervian, 2002, p. 23). As técnicas e os 
+métodos a serem empregados na pesquisa científica podem ser relacionados desde o  momento 
+em que se propõe o problema, formulam-se as hipóteses e delimita-se a amostra ou o universo 
+(Oliveira Netto, 2008). 
+Ao se utilizar o termo método ou métodos, sua abrangência não traduz simplesmente 
+singular ou plural. Para Santos (2005), o certo é usar o singular, que é mais abrangente, mais 
+elevado em termos de abstração sobre fenômenos da natureza e da sociedade. 
+Em relação à etimologia dessa palavra, Ruiz (1996) esclarece que ela é de origem grega 
+e significa o conjunto de etapas e processos a serem vencidos ordenadamente na investigação 
+dos fatos ou na procura da verdade. 
+A metodologia é uma preocupação instrumental. De acordo com Demo (2011), ela trata 
+das formas de se fazer ciência, como também cuida dos procedimentos, das ferramentas, dos 
+caminhos, visando atingir a finalidade da ciência de tratar da realidade de modo te órico e 
+prático. 
+
+[PÁGINA PDF 31]
+ 
+ 
+Santos (2005, p. 94) menciona alguns conceitos de método de diversas fontes literárias, 
+tais como: 
+René Descartes: É o caminho a seguir para chegar à verdade nas 
+ciências. Hegenberg: É o caminho pelo qual se chega a determinado 
+resultado. 
+Ackroff: Forma de relacionar técnicas e alternativas para a ação 
+científica. 
+Trujillo: É a forma de se proceder ao longo de um caminho. 
+Bunge: Conjunto de procedimentos que se propõe e se coloca em prova. 
+Jolivet: É a ordem que se deve impor aos diferentes processos para se 
+chegar a um fim. 
+Nérice: Conjunto coerente de procedimentos. 
+ 
+Tal como apontam Kauark, Manhães e Medeiros (2010), a metodologia diz respeito a 
+tudo aquilo que se utilizou no trabalho de pesquisa. É uma exposição rigorosa, exata da ação 
+realizada no caminho da pesquisa, com todas as particularidades que a envolvem, ta is como 
+tipo de pesquisa, do instrumental, questionário, entrevista, do tempo previsto, da equipe 
+envolvida, da divisão de trabalho, tabulação e tratamento dos dados. 
+Nesse sentido, Kauark, Manhães e Medeiros (2010) apontam que ela se compõe de partes 
+que descrevem o local, os sujeitos, o objeto de estudo, os métodos e as técnicas, que, muitas 
+vezes, estão descritos como procedimentos da pesquisa, além das limitações da  pesquisa e do 
+tratamento de dados. 
+Segundo Fachin (2003), o primeiro passo de um trabalho científico é a pesquisa 
+bibliográfica, realizada isoladamente ou concomitantemente a outras modalidades, como a 
+pesquisa de campo, de laboratório e documental. Em relação à pesquisa de campo, deve -se 
+descrever a população envolvida e a maneira de realizar a amostragem. Igualmente, deve -se 
+indicar o instrumento da pesquisa – questionário, formulário, entrevista – e sua aplicação na 
+coleta de dados, assim como o modo de registro das informações coletadas. 
+Martins Junior (2015) elenca alguns tópicos que devem conter no item material e método: 
+Caracterização da pesquisa; População; Amostra; Instrumentos de coleta de dados; 
+Procedimentos para a coleta de dados; Análise dos dados. 
+Ressaltamos que pesquisas que envolvam seres humanos devem ter um cuidado especial 
+e conter, no item Metodologia, descrições detalhadas e completas sobre o local da pesquisa, 
+aspectos éticos, participantes, critérios de inclusão e exclusão, recursos humano s e materiais, 
+instrumentos de avaliação, procedimentos, riscos e benefícios ao participante (Vieira; Hossne, 
+2002). 
+
+[PÁGINA PDF 32]
+ 
+ 
+Além disso, é importante observar que toda pesquisa que envolva seres humanos 
+necessita cumprir uma série de exigências éticas, normalizadas pela Resolução n.º 466, de 12 
+de dezembro de 2012, do Conselho Nacional de Saúde. 
+ 
+4.3.4 Resultados e discussão 
+Os resultados devem conter a exposição do que foi obtido na pesquisa (Martins Junior, 
+2015). Todos os elementos descritos no item Material e Métodos devem estar abordados nesse 
+item, apresentando -se os resultados dos testes ou das análises propostas. Caso tenha sido 
+proposto um caminho para se chegar a algum resultado, nesse item, deverá estar descrito o que 
+se obteve, ou seja, a apresentação dos resultados é simplesmente uma descrição do que se 
+obteve. 
+A exposição dos resultados é relativa às interpretações do que foi realizado e obtido e 
+deve ser feita de forma lógica, direta e autoexplicativa (Estrela; Marcelo; Sabin, 2005). 
+É preciso, então, escolher a melhor forma de apresentar esses resultados, tais como:  
+fotos, gráficos, tabelas e figuras, evitando-se repeti-los e apresentando-os sob diferentes formas 
+e cores. 
+Observação: 1ª) esses elementos devem ser apresentados próximo ao texto correspondente; 2ª) 
+devem ser sempre referenciados no texto correspondente 
+ 
+a) Tabela: é a organização tabular dos dados estatísticos, informando a quantificação 
+numérica de um fato específico observado, tendo como finalidade básica resumir 
+ou sintetizar os dados; a tabela deve ser citada no texto, inserida o mais próximo 
+possível do trecho a que se refere e padronizada conforme as Normas de 
+apresentação tabular do IBGE2. Deve -se indicar a fonte consultada (elemento 
+obrigatório, mesmo que seja produção do próprio autor), por recomendação da 
+própria ABNT. 
+ITENS: 
+• palavra designativa Tabela e numeração progressiva; 
+• título, sem ponto-final, indicando a natureza e abrangência temporal e geográfica dos dados; 
+• cabeçalho; 
+• corpo: linhas e colunas, com o mínimo de três linhas e duas colunas; 
+ 
+Observação: o ponto-final é opcional exceto em frases ou períodos completos. 
+• fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor) e ano da 
+• fonte consultada ou dos dados; 
+
+[PÁGINA PDF 33]
+ 
+ 
+ 
+Observação: caso haja alteração em dados/imagem retirados de fonte de terceiros, escrever 
+“adaptado de”. 
+legenda, notas e/ou outras informações necessárias à sua compreensão (se houver). 
+b) Ilustrações:  são  desenhos,  esquemas, fluxogramas, fotografias, 
+gráficos, mapas, quadros, entre outros, que servem para apresentação dos 
+resultados e enriquecimento do trabalho. 
+ 
+ITENS: 
+• palavra designativa (Mapa, Gráfico, Figura…) e numeração progressiva; 
+• título, sem ponto-final, indicando a natureza e abrangência temporal e geográfica dos dados; 
+• ilustração; 
+• fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor) e ano da 
+• fonte consultada ou dos dados; 
+Observação: caso haja alteração em dados/imagem retirados de fonte de terceiros, escrever 
+“adaptado de”. 
+legenda, notas e/ou outras informações necessárias à sua compreensão (se houver). 
+b) Quadro: é a organização descritiva de um fato específico observado, ou 
+a exposição sintética, que permite visão conjunta de um assunto ou tema. 
+ITENS: 
+• palavra designativa Quadro e numeração progressiva; 
+• título, sem ponto-final, indicando a natureza e abrangência temporal e geográfica dos dados; 
+• cabeçalho; 
+• corpo: linhas e colunas, com o mínimo de três linhas e duas colunas; 
+• fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor) e ano da 
+fonte consultada ou dos dados; 
+Observação: caso haja alteração em dados/imagem retirados de fonte de terceiros, escrever 
+“adaptado de”. 
+legenda, notas e/ou outras informações necessárias à sua compreensão (se houver). 
+Quanto à discussão, esta consiste em responder à pergunta: Como interpreto meus 
+resultados? (Martins Junior, 2015). O autor é escravo da verdade. Logo, a discussão dos 
+resultados apresentados é a parte mais importante do trabalho, pois exige análise minuciosa 
+para tirar o maior número de inferências, além de identificar a capacidade de raciocíni o do(s) 
+autor(es) (Vieira; Hossne, 2002). 
+Esta é uma etapa nobre do trabalho, responsável por explorar a ideia central da pesquisa, 
+com apoio nos resultados (Estrela; Marcelo; Sabino, 2005). 
+
+[PÁGINA PDF 34]
+ 
+ 
+Na discussão, o autor interpreta, explica e compara os resultados alcançados no trabalho 
+com as informações bibliográficas, verificando as hipóteses e se os objetivos foram cumpridos. 
+A discussão deve fornecer elementos para as conclusões que serão exposta s na finalização do 
+trabalho (Estrela; Marcelo; Sabino, 2005). 
+ 
+4.3.5 Conclusão ou Considerações finais 
+Esta é a parte em que são apresentadas conclusões do pesquisador correspondentes aos 
+objetivos ou às hipóteses da pesquisa. 
+A conclusão nem sempre significa uma resposta final e acabada a um problema. As boas 
+conclusões devem deixar “portas abertas” para novas propostas de pesquisa em torno do tema 
+estudado (Prodanov; Freitas, 2013). 
+Ela é a síntese direta e concisa das confirmações obtidas nos resultados ou na discussão, 
+em conformidade com a proposição e a metodologia (Estrela; Marcelo; Sabino, 2005). 
+Mais que um simples resumo final, essa fase é fundamentalmente a afirmação sintética 
+da ideia central do trabalho, podendo conter comentários e consequências próprias da pesquisa 
+(Barros; Lehfeld, 2007). 
+Em termos formais, trata -se de uma exposição factual sobre o que foi investigado, 
+analisado, interpretado; é uma síntese comentada das ideias essenciais e dos principais 
+resultados obtidos, explicitados com precisão e clareza (Oliveira Netto, 2008). 
+Para Prodanov e Freitas (2013), essa etapa, de estrutura própria, é o momento em que se 
+sintetizam os resultados obtidos com a pesquisa, retomando o problema inicial, lançado na 
+introdução, e revendo as principais contribuições que ele proporcionou à pesqu isa. É o 
+momento de respostas coerentes aos questionamentos que balizaram o estudo, como 
+apresentado na seção introdutória. 
+A conclusão contém a essência de um estudo e deve fundamentar-se em deduções lógicas 
+e corresponder aos objetivos do trabalho (Fachin, 2003). Para o autor, ela deve ser breve, clara, 
+objetiva, conter uma visão analítica do corpo do trabalho, inter relacion ando o e levando em 
+conta o problema inicial do estudo. 
+Martins Junior (2015), de modo prático, sugere uma sequência para a escrita da 
+conclusão: se forem formuladas perguntas na delimitação do problema, deve -se iniciar pelas 
+respostas a elas. Na sequência, deve-se fazer uma síntese de cada capítulo, verificando se o seu 
+conteúdo contribuiu para que fossem alcançados os objetivos formulados na introdução do 
+trabalho. Em razão dessas sínteses realizadas, é necessário verificar um a um se os objetivos 
+específicos foram alcançados, assim como o objetivo geral. 
+
+[PÁGINA PDF 35]
+ 
+ 
+Assim, essa é a seção em que, de maneira ordenada, repetem-se os pontos principais dos 
+resultados da pesquisa, ressaltando o alcance e as consequências de suas contribuições, bem 
+como seu possível valor. 
+ 
+4.3 ELEMENTOS DA PARTE PÓS-TEXTUAL 
+A terceira parte da estrutura do trabalho acadêmico é composta de elementos obrigatórios 
+e opcionais. Vejamos os elementos com suas finalidades na ordem em que devem ser 
+apresentados. 
+ 
+4.3.1 Referências 
+Elemento obrigatório, é a relação alfabética padronizada dos documentos/fontes 
+consultados. Toda referência citada deve estar, obrigatoriamente, na lista de referências.  
+Então, a seção Referências é um conjunto padronizado de elementos descritivos (essenciais 
+e/ou complementares), retirados de um documento consultado, que permite sua identificação 
+individual. 
+Observação: o padrão adotado para as referências está apresentado na seção Referências deste 
+Manual. 
+ 
+4.3.2 Glossário 
+Elemento opcional, o Glossário é a relação de palavras ou expressões técnicas de uso 
+restrito ou de sentido obscuro utilizadas no texto, com suas respectivas definições. Essa relação 
+deve ser elaborada em ordem alfabética. 
+ 
+4.3.3 Apêndice 
+Elemento opcional, é o material complementar produzido pelo pesquisador (questionário, 
+tabelas, ilustrações, textos, resultados não incluídos na parte textual). 
+ 
+4.3.4 Anexo 
+Elemento opcional, é o material complementar produzido por terceiros (questionário, 
+tabelas, ilustrações, textos, resultados não incluídos na parte textual, documentos jurídicos, 
+recortes de publicações). 
+Anexos são materiais que reforçam, complementam e sustentam o trabalho, mas não 
+podem ser alocados no corpo do texto para não interromper o raciocínio ou a sequência lógica 
+do trabalho ou, ainda, por estética (Oliveira Netto, 2008).  
+
+[PÁGINA PDF 36]
+ 
+ 
+ 
+ 
+ 
+APRESENTAÇÃO 
+GRÁFICA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Todos os elementos pré-textuais e pós-textuais devem 
+começar em folha distinta   
+
+[PÁGINA PDF 37]
+ 
+ 
+  
+UNIVERSIDADE DE RIO VERDE (UniRV) 
+NOME DO CURSO 
+NOME DO(A) AUTOR(A) DA MONOGRAFIA/DISSERTAÇÃO/TESE 
+TÍTULO DA MONOGRAFIA/DISSERTAÇÃO/TESE 
+CIDADE DO CAMPUS, ESTADO 
+ANO 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PÁGINA PDF 38]
+ 
+ 
+  
+NOME DO(A) AUTOR(A) DA MONOGRAFIA/DISSERTAÇÃO/TESE 
+TÍTULO DA MONOGRAFIA/DISSERTAÇÃO/TESE 
+Monografia apresentada à Banca Examinadora do 
+Curso de Engenharia de Software da Universidade 
+de Rio Verde (UniRV) como exigência parcial para 
+obtenção do título de Bacharel em Engenharia de 
+Software 
+ 
+Orientador(a): Prof(a). Dr(a). [preencher].  
+CIDADE DO CAMPUS, ESTADO 
+ANO 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PÁGINA PDF 39]
+ 
+ 
+  
+Ficha Catalográfica 
+Bibliotecário/a responsável: 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+[PÁGINA PDF 40]
+ 
+ 
+  
+NOME DO(A) AUTOR(A) DA MONOGRAFIA/DISSERTAÇÃO/TESE 
+TÍTULO DA MONOGRAFIA/DISSERTAÇÃO/TESE 
+Monografia / Dissertação / Tese apresentada à Banca Examinadora do Curso  
+de [preencher] da Universidade de Rio Verde (UniRV) como exigência parcial  
+para a obtenção do título de [preencher]. 
+Cidade, UF, ……. de ...............de 2025. 
+BANCA EXAMINADORA 
+Prof. Dr. Nome do/a professor/a (orientador/a) 
+  
+Universidade de Rio Verde (UniRV) 
+Prof. Dr. Nome do/a professor/a (membro/a 1)  
+  
+Universidade de Rio Verde (UniRV) 
+Prof. Dr. Nome do/a professor/a (membro/a 2)  
+  
+Universidade de Rio Verde (UniRV) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PÁGINA PDF 41]
+ 
+ 
+  
+Dedico […] 
+ 
+ 
+ 
+ 
+
+[PÁGINA PDF 42]
+ 
+ 
+  
+AGRADECIMENTOS 
+Início do parágrafo xxxx xxxxxxxxxxxx xxxxxxxxxxxxxxxx xxxxxxxxxxxxx 
+xx xxx xxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxx 
+xx xxx xxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxx 
+xx xxx xxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxx  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+
+[PÁGINA PDF 43]
+ 
+ 
+  
+ 
+Não são as respostas que movem  
+o mundo, são as perguntas.” 
+( 
+Albert Einstein 
+) 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PÁGINA PDF 44]
+ 
+ 
+  
+RESUMO 
+Sem recuo de parágrafo xxxx xxxxxxxxxxxx xxxxxxxxxxxxxxx xx xxx  
+xxxxxxxxxxxxxxxxxxx xxxx xxxxx xxxxxxxxxx xxxxxxxxxxxxxx xxxxxxx xx xxxx  
+xxxxxxxxxxxxxxxxxxx xxxx xxxxx xxxxxxxxxx xxxxxxxxxxxxxx xxxxxxx xx xxxx  
+xxxxxxxxxxxxxxxxxxx xxxx xxxxx xxxxxxxxxx xxxxxxxxxxxxxx xxxxxxx xx xxxx  
+xxxxxxxxxxxxxxxxxxx xxxx xxxxx xxxxxxxxxx xxxxxxxxxxxxxx xxxxxxx xx xxxx  
+xxxxxxxxxxxxxxxxxxx xxxx xxxxx xxxxxxxxxx xxxxxxxxxxxxxx  
+Palavras-chave: palavra-chave 1; palavra-chave 2; palavra-chave 3. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+
+[PÁGINA PDF 45]
+ 
+ 
+  
+ABSTRACT 
+Keywords: keyword 1; keyword 2; keyword 3; keyword 4; keyword 5. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+Sem recuo de parágrafo xxxx xxxxxxxxxxxx xxxxxxxxxxxxxxx xx xxx  
+xxxxxxxxxxxxxxxxxxx xxxx xxxxx xxxxxxxxxx xxxxxxxxxxxxxx xxxxxxx xx xxxx  
+xxxxxxxxxxxxxxxxxxx xxxx xxxxx xxxxxxxxxx xxxxxxxxxxxxxx xxxxxxx xx xxxx  
+xxxxxxxxxxxxxxxxxxx xxxx xxxxx xxxxxxxxxx xxxxxxxxxxxxxx xxxxxxx xx xxxx  
+xxxxxxxxxxxxxxxxxxx xxxx xxxxx xxxxxxxxxx xxxxxxxxxxxxxx xxxxxxx xx xxxx  
+xxxxxxxxxxxxxxxxxxx xxxx xxxxx xxxxxxxxxx xxxxxxxxxxxxxx  
+
+[PÁGINA PDF 46]
+ 
+ 
+  
+LISTA DE FIGURAS 
+FIGURA 1 – Nome da figura.............................................................................. 0 
+FIGURA 2 – Nome da figura.............................................................................. 0 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PÁGINA PDF 47]
+ 
+ 
+  
+LISTA DE TABELAS 
+TABELA 1 – Nome da tabela............................................................................ 0 
+TABELA 2 – Nome da tabela............................................................................ 0 
+TABELA 3 – Nome da tabela............................................................................ 0 
+TABELA 4 – Nome da tabela............................................................................ 0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PÁGINA PDF 48]
+ 
+ 
+  
+LISTA DE SIGLAS 
+ABNT  
+– Associação Brasileira de Normas Técnicas  
+Anac – Agência Nacional de Aviação Civil 
+CPI – 
+ Comissão Parlamentar de Inquérito 
+Decea  
+– Departamento de Controle do Espaço Aéreo  
+DJ  
+– Diário da Justiça 
+IBGE  
+– Instituto Brasileiro de Geografia e Estatística  
+MPF – Ministério Público Federal 
+Procon  
+– Fundação de Proteção e Defesa do Consumidor  
+SDE  
+– Secretaria de Direito Econômico 
+SNEA  
+– Sindicato Nacional das Empresas Aéreas  
+STJ  
+– Superior Tribunal de Justiça 
+ 
+ 
+ 
+ 
+ 
+
+[PÁGINA PDF 49]
+ 
+ 
+  
+SUMÁRIO 
+1 
+ SEÇÃO PRIMÁRIA......................................................................................  
+0 
+1.1 
+  
+SEÇÃO SECUNDÁRIA............................................................................. 0 
+0 
+2 
+ SEÇÃO PRIMÁRIA......................................................................................  
+0 
+ SEÇÃO SECUNDÁRIA..............................................................................  
+2.1 
+0 
+ Seção terciária........................................................................................  
+2.1.1 
+ Seção quaternária...............................................................................  
+2.1.1.1 
+ 0 
+3 
+ SEÇÃO PRIMÁRIA......................................................................................  
+0 
+4 
+ CONSIDERAÇÕES FINAIS.........................................................................  
+0 
+REFERÊNCIAS............................................................................................... 0 
+APÊNDICES.................................................................................................... 0 
+ANEXOS.......................................................................................................... 0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PÁGINA PDF 50]
+ 
+ 
+  
+  
+1 
+ TÍTULO DA SEÇÃO PRIMÁRIA 
+Oliveira (2011, p. 15) afirma o seguinte: “Sob essa área também estão 
+   
+os direitos sobre livros, os de ‘propriedade industrial’ e os conhecimentos e  
+expressões culturais tradicionais […]”, sendo fundamentais para assegurar  
+sua soberania e seu desenvolvimento. 
+  
+  
+1.1 
+ TÍTULO DA SEÇÃO SECUNDÁRIA 
+Oliveira (2011, p. 15) afirma que “Sob essa área também estão os direitos  
+sobre livros […]”,sendo fundamentais para assegurar sua soberania e seu  
+desenvolvimento. 
+1.1.1 
+  
+ Título da seção terciária 
+Oliveira (2011, p. 15) afirma: “Sob essa área tamb5 
+sobre livros e expressões culturais tradicionais […]”, sendo fundamentais para  
+assegurar sua soberania e seu desenvolvimento. 
+ 
+  
+Oliveira (2011, p. 15) afirma: “Sob essa área também estão os direitos  
+sobre livros e expressões culturais tradicionais […]”, sendo fundamentais para  
+assegurar sua soberania e seu desenvolvimento. 
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+[PÁGINA PDF 51]
+ 
+ 
+SEÇÕES SEM TÍTULO 
+SEÇÕES QUE NÃO TÊM  TÍTULO, mas que representam enumerações de 
+ideias/conceitos e contenham pouco conteúdo/texto, devem ser substituídas por ALÍNEAS: 
+h) o texto que antecede as alíneas deve terminar em dois-pontos; 
+i) as alíneas devem ser indicadas alfabeticamente, seguidas de parênteses;  
+j) quando se esgotarem as letras do alfabeto, devem ser utilizadas letras dobradas; 
+k) as letras indicativas das alíneas devem ter recuo na margem esquerda de 0,63 cm e 
+recuo especial > deslocamento de 0,63 cm; 
+l) o texto das alíneas deve começar por letra minúscula e terminar com ponto e vírgula, 
+exceto a última alínea, que termina com ponto-final; 
+m) faça uso das alíneas quando quiser enumerar diversos itens que não comportam título; 
+n) procure utilizar letras em vez de números. 
+ 
+NOTA EXPLICATIV A 
+Outro recurso auxiliar para maior clareza e compreensão do texto é a NOTA 
+EXPLICATIV A, que aparece em nota de rodapé, recebendo uma numeração única e 
+consecutiva, e possibilita: 
+̵ tirar do corpo do texto explicações longas ou citações diretas que podem prejudicar a 
+linha de pensamento; elas devem ser breves, claras e pontuais; 
+̵ apresentar dados da obra original no caso de citação de citação (apud); 
+̵ complementar informação de uma jurisprudência com elementos essenciais que melhor 
+a identifiquem; 
+̵ referenciar autor de informação verbal ou obra em fase de elaboração; 
+̵ remeter o leitor a partes da obra ou outras obras em que o assunto foi abordado; 
+̵ apresentar um conceito de um termo específico; 
+̵ apresentar o texto original traduzido ou o original em língua estrangeira. 
+ 
+EXEMPLO: NOTA EXPLICATIV A 
+No texto: 
+Oliveira (2011) afirma que sob essa área também estão os direitos sobre livros, os de 
+propriedade industrial e os conhecimentos e expressões culturais tradicionais.10 
+ 
+ 
+Na nota de rodapé: 
+
+[PÁGINA PDF 52]
+ 
+ 
+ 
+________________ 
+10 Expressões culturais tradicionais referem -se às manifestações artísticas, rituais, práticas, bem como aos 
+costumes e conhecimentos, transmitidos de geração em geração dentro de uma comunidade ou grupo social.  
+ 
+Atenção! A partir da segunda linha de nota, o texto deve ser alinhado abaixo da primeira letra 
+da primeira palavra da linha anterior, criando um recuo na margem esquerda 
+ 
+
+[PÁGINA PDF 53]
+ 
+ 
+  
+TABELA 1 – O título apresenta o conjunto de termos indicadores do conteúdo de uma tabela  
+Descrição 
+ Valor 1 (cm) 
+ Valor 3 (m) 
+ Valor 4 (n) 
+Item 1 
+ 00 
+, 
+1 
+ 01 
+14 
+, 
+ 50 
+Item 11 
+ 2 
+, 
+25 
+ 1.200,05 
+ 60 
+Item 22 
+ , 
+18 
+3 
+ 1 
+, 
+18 
+ 18 
+Item completo 
+ 4 
+40 
+, 
+ 18 
+28 
+, 
+ 4 
+Fonte: Autor da obra consultada (ano). 
+ 
+Fonte: Adaptado de Autor da obra consultada (ano). 
+ 
+Fonte: Nome do autor do trabalho, ano dos dados. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+
+[PÁGINA PDF 54]
+ 
+ 
+  
+QUADRO 1 - O título apresenta a indicação da natureza e as abrangências temporal e 
+geográfica dos dados 
+ 
+ 
+Período 
+ Descrição 
+2005-2010 
+São notórias, bem como históricas, as lutas pela  
+comunidade com o objetivo de conquista ao direito à  
+comunicação e visibilidade de sua comunidade. 
+2006-2012 
+Lutas pela comunidade, porém muito há de se fazer  
+ainda para a garantia da comunicação eficiente e do  
+atendimento humanitário. 
+2008-2015 
+ … 
+2010-2017 
+A aquisição de conhecimento de sinais próprios dessa  
+linguagem faz diminuir o distancia 
+ainda enraizado na sociedade brasileira. 
+Fonte: Autor da obra consultada (ano). 
+ 
+Fonte: Adaptado de Autor da obra consultada (ano). 
+ 
+Fonte: Nome do autor do trabalho, ano dos dados. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+
+[PÁGINA PDF 55]
+ 
+ 
+  
+FIGURA 1 - Título 
+Fonte: Autor da obra consultada (ano). 
+ 
+Fonte: Adaptado de Autor da obra consultada (ano). 
+ 
+Fonte: Nome do autor do trabalho, ano dos dados. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+
+[PÁGINA PDF 56]
+ 
+ 
+ 
+  
+FIGURA 1 - Título 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+CRONOGRAMA 
+Fonte: 
+
+[PÁGINA PDF 57]
+ 
+ 
+ 
+  
+
+
+[PÁGINA PDF 58]
+ 
+ 
+  
+
+
+[PÁGINA PDF 59]
+ 
+ 
+  
+
+
+[PÁGINA PDF 60]
+ 
+ 
+  
+REFERÊNCIAS 
+BRASIL. Ministério do Empreendedorismo, da Microempresa e da  
+Empresa de Pequeno Porte. Relatório anual de atividades estratégia Elas 
+: 
+Empreendem 2023/2024. Brasília, DF: MEMP, 2024. Disponível em: https:// 
+www.gov.br/empresas-e-negocios/pt-br/empreendedor/elas-empreendem/ 
+relatorio-anual-de-atividades/relatorio_anual_de_atividades-elas_ 
+empreendem.pdf. Acesso em: 28 fev. 2025. 
+CARVALHO, R. R. Classificação de documentos da administração pública  
+utilizando inteligência artificial . 2024. Dissertação (Mestrado em Ciência da  
+Computação) – Universidade Federal de Goiás, Goiânia, 2024. Disponível  
+em: https://files.cercomp.ufg.br/weby/up/1289/o/rogerio_mestrado_ 
+dissertacao_sei_20240502_versao_final.pdf. Acesso em: 20 jan. 2025. 
+COSTA, S. G. Lavagem de dinheiro: o tipo objetivo da lavagem de dinheiro.  
+: 
+In: BALTAZAR JÚNIOR, J. P.; MORO, S. F. (org.). Lavagem de dinheiro 
+: 
+  
+comentários à lei pelos juízes das varas especializadas em homenagem ao  
+Ministro Gilson Dipp. Porto Alegre: Livraria do Advogado, 2011. p. 29-54. 
+FERNANDES, M.; GOMIDE JÚNIOR, S. Revalidação do Instrumento de  
+Medida de Percepção de Saúde Organizacional. In: CONGRESSO NORTE  
+: 
+NORDESTE DE PSICOLOGIA, 5., 2007, Maceió. Anais […]. Maceió: UFAL/ 
+CRP15/FUNDEPES, 2007. Painel. 
+FURLAN, N. P; MÉA, C. P. D. Percepção de professores sobre um programa  
+de educação emocional: um estudo qualitativo. Revista Brasileira de  
+Educação , Rio de Janeiro, v. 29, e290001, p. 1-13, 2024. DOI: https://doi. 
+org/10.1590/S1413-24782024290001. Disponível em: https://www.scielo.br/j/ 
+rbedu/a/w6k4MxKVf9bcy86NQgR3hDg/?lang=pt. Acesso em: 28 fev. 2025. 
+GRELLET, F. Crocodilo-tatu pré-histórico viveu em SP. Folha de S. Paulo 
+,  
+São Paulo, ano 49, 8 jul. 2009. Caderno Ciência e Saúde, p. 14. 
+OS PERIGOS do uso de tóxicos. Produção de Jorge Ramos de Andrade.  
+São Paulo: CERAVI, 1983. 1 fita de vídeo (30 min), VHS, son., color. 
+ 
+ 
+ 
+0 
+
+[PÁGINA PDF 61]
+ 
+ 
+  
+PERRIM, V. Água fresca para as flores. Tradução: Carolina Selvatici. Rio de  
+Janeiro: Editora Intrínseca, 2022. 
+ 
+ 
+ 
+ 
+ 
+0 
+
+[PÁGINA PDF 62]
+ 
+ 
+  
+GLOSSÁRIO 
+Conceito A: 
+  
+Início do conceito xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx. 
+Conceito B:  
+Início do conceito xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxxxxxxxxxxxxxxxx xxxxxxxxxxx. 
+Conceito C:  
+Início do conceito xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+xxxxxxxxxxxxxxxxxxxx xxxxxxxxxxx. 
+ 
+ 
+ 
+ 
+ 
+0 
+
+[PÁGINA PDF 63]
+ 
+ 
+  
+APÊNDICE 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+
+[PÁGINA PDF 64]
+ 
+ 
+  
+APÊNDICE A – Título do apêndice 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+
+[PÁGINA PDF 65]
+ 
+ 
+  
+ANEXO 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+
+[PÁGINA PDF 66]
+ 
+ 
+  
+ANEXO A – Título do anexo 
+ 
+ 
+ 
+ 
+ 
+ 
+0 
+
+[PÁGINA PDF 67]
+ 
+ 
+
+
+[PÁGINA PDF 68]
+ 
+ 
+P A R T E V II  
+ 
+ 
+NORMAS DE 
+ESTILOS E 
+REDAÇÃO 
+ 
+ 
+ 
+ 
+  
+
+[PÁGINA PDF 69]
+ 
+ 
+7 NORMAS DE ESTILO E REDAÇÃO 
+Esta seção é um complemento às demais orientações e apresenta algumas normas de estilo 
+e redação para o trabalho acadêmico. Este guia de estilo foi desenvolvido com o objetivo de 
+apresentar as principais características textuais dos trabalhos científicos apresentados à UniRV 
+e as relações estruturais entre seus elementos, com as orientações necessárias para sua correta 
+aplicação. 
+ 
+7.1 DIRETRIZES PARA A REDAÇÃO ACADÊMICA 
+A redação acadêmica deve priorizar a objetividade, a precisão e a impessoalidade.  
+Assim, recomenda-se optar por construções mais neutras, como: 
+• voz passiva: 
+“Uma revisão bibliográfica é desenvolvida neste trabalho” ou “Desenvolve -se uma 
+revisão bibliográfica neste trabalho”.  
+• primeira pessoa do plural: 
+“Desenvolvemos uma revisão bibliográfica neste trabalho”). 
+No entanto, não se descarta a possibilidade de outros usos a depender dos objetivos 
+pretendidos, do tema estudado e de outros fatores. Atualmente, por exemplo, algumas áreas 
+aceitam o uso da primeira pessoa do singular: 
+Exemplo: “Neste trabalho, desenvolvo uma pesquisa bibliográfica”. 
+Contudo este uso deve ser verificado com o orientador e o curso ao qual o trabalho se 
+vincula (Gomes; Lose, 2007). 
+É fundamental que a linguagem seja formal e clara, evitando coloquialismos, gírias e 
+expressões subjetivas. Para o uso de termos técnicos, é relevante contextualizá -los, com a 
+explicação do termo sempre que possível. O principal objetivo é garantir que o t exto seja 
+compreensível, coeso e adequado ao público acadêmico. 
+Quanto à escolha do tempo verbal na escrita acadêmica, deve-se seguir a norma científica, 
+garantindo-se coerência e padronização ao longo do texto. De modo geral, os tempos verbais 
+mais utilizados são: 
+• Presente do indicativo: utilizado para apresentar fatos consolidados, definir 
+conceitos e expor ideias amplamente aceitas na literatura.  
+Exemplo: “A fotossíntese é um processo essencial para a manutenção da vida na Terra”. 
+• Pretérito perfeito: empregado para relatar experimentos ou ações concluídas. 
+Exemplo: “Os dados foram coletados ao longo de três meses”. 
+
+[PÁGINA PDF 70]
+ 
+ 
+• Futuro do presente: utilizado para descrever expectativas, hipóteses ou 
+resultados esperados.  
+Exemplo: “Os próximos experimentos indicarão a viabilidade da técnica”. 
+É essencial manter a uniformidade no tempo verbal dentro de cada seção do texto, 
+evitando-se alternâncias desnecessárias que possam comprometer a clareza da exposição. 
+A escolha do tempo verbal na escrita acadêmica deve considerar a natureza do documento 
+e a fase da pesquisa. É importante lembrar que cada etapa do trabalho pode exigir tempos 
+verbais distintos para garantir coerência e padronização. 
+• Projetos de pesquisa: costumam empregar o futuro do presente para indicar ações que 
+serão desenvolvidas.  
+Exemplo: “Esta pesquisa investigará a relação entre leitura e desenvolvimento 
+cognitivo”.  
+O presente do indicativo também pode ser utilizado para demonstrar a proposta em 
+andamento.  
+Exemplo: “Este estudo busca compreender os impactos da tecnologia na educação”. 
+• Artigos, trabalhos de conclusão de curso, dissertações e teses: geralmente utilizam o 
+pretérito perfeito ou o presente do indicativo (presente histórico) para descrever 
+procedimentos e resultados já consolidados.  
+Exemplo no passado: “Os dados foram coletados ao longo de três meses”.  
+Exemplo no presente: “Os resultados indicam uma correlação entre os fatores 
+analisados”.  
+Neste segundo exemplo, apesar de o verbo estar no presente, seu sentido remete a algo 
+ocorrido no passado. 
+O presente do indicativo pode ser uma escolha versátil, pois permite que o texto seja 
+compreendido independentemente do período de ocorrência da pesquisa. Ele pode indicar tanto 
+um evento futuro (em projetos) quanto um presente histórico (ao descrever desc obertas já 
+realizadas), tornando-se uma opção segura para diversos gêneros acadêmicos. Portanto, para 
+garantir a qualidade e a eficácia do texto, é fundamental: 
+• Priorizar a clareza, pois essa é a principal característica estilística de um bom 
+texto acadêmico; 
+• Apresentar as informações de maneira objetiva e concisa, utilizando frases curtas 
+para facilitar a compreensão. 
+ 
+ 
+
+[PÁGINA PDF 71]
+ 
+ 
+7.2 EMPREGO DE PALA VRAS ESTRANGEIRAS 
+De modo geral, os estrangeirismos devem ser grafados em itálico. No entanto, termos já 
+incorporados à língua portuguesa, ou seja, que foram aportuguesados, não devem receber esse 
+destaque. Para auxiliar na identificação desses casos, a UniRV adota a lista de estrangeirismos 
+disponibilizada no Manual de Comunicação da Secom (Brasil, [2025]). 
+Exemplos:  
+ download        on-line 
+ feedback        bullying 
+ marketing        campus 
+  
+Atenção: a exceção a essa regra refere-se às abreviaturas et al., apud, ibid., ibidem, opus 
+citatum, que permanecem sendo grafadas com itálico, conforme orientações da ABNT NBR 
+10520/2023. 
+ 
+7.3 OUTROS ASPECTOS DA REDAÇÃO ACADÊMICA 
+A produção de um texto acadêmico exige atenção a diversos aspectos que garantem sua 
+qualidade e adequação às normas científicas. Entre eles, destaca -se a leitura atenta das 
+referências, que pode ser facilitada por fichamentos e anotações organizadas. Esses  recursos 
+auxiliam na compreensão e na estruturação do conteúdo, permitindo a construção de uma 
+argumentação sólida e bem fundamentada. 
+Além disso, a revisão textual é uma etapa essencial e deve ser realizada ao final do 
+trabalho. Esse processo envolve a verificação da coerência, coesão, ortografia, gramática e 
+clareza do texto, contribuindo para uma comunicação eficaz das ideias. 
+Outro ponto fundamental é a atenção às diretrizes deste Manual. Seguir as normas 
+estabelecidas pela ABNT assegura a padronização e a conformidade do documento com os 
+critérios exigidos para publicações científicas. Dessa forma, a qualidade da escrita acadê mica 
+é reforçada, o que garante maior credibilidade e profissionalismo ao trabalho. 
+ 
+7.4 SIGLA E ACRÔNIMO 
+Sigla é o nome dado ao conjunto de letras iniciais dos vocábulos (normalmente os 
+principais) que compõem nomes de instituições, partidos, órgãos, departamentos, setores, entre 
+outros. A diferença entre sigla e acrônimo está na pronúncia: enquanto a sigla é  pronunciada 
+letra a letra, o acrônimo é lido silabicamente, como uma palavra comum. 
+Observação: deve-se citar apenas a sigla já existente ou consagrada, mantendo -se a grafia 
+originalmente criada. 
+Sobre siglas e acrônimos, observam-se os seguintes critérios de utilização: 
+
+[PÁGINA PDF 72]
+ 
+ 
+a) quando mencionados pela primeira vez no texto, deve-se escrever primeiramente a forma 
+por extenso, seguida da sigla/acrônimo entre parênteses: 
+• Empresa Brasileira de Correios e Telégrafos (ECT) (e não EBCT); 
+• Universidade de Rio Verde (UniRV); 
+• Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq). 
+b) siglas com até três letras são escritas com todas as letras maiúsculas: 
+• Organização das Nações Unidas (ONU); 
+• Recursos Humanos (RH). 
+c)  siglas com quatro letras ou mais podem ser escritas de duas formas  
+c.1) todas as letras maiúsculas, quando cada uma de suas letras ou parte delas é 
+pronunciada separadamente: 
+• Banco Nacional de Desenvolvimento Econômico (BNDE); 
+• Instituto Brasileiro de Geografia e Estatística (IBGE). 
+c.2) somente com a inicial maiúscula, quando formam uma palavra pronunciável como se 
+fossem sílabas (acrônimo): 
+• Empresa Brasileira de Pesquisa Agropecuária (Embrapa); 
+• Serviço Nacional de Aprendizagem Comercial (Senac). 
+d) utiliza-se a sigla de origem estrangeira, acompanhada de seu equivalente em português, 
+quando houver forma traduzida, ou a forma original da sigla, caso não exista 
+correspondente em português ou quando seu uso no idioma de origem estiver 
+convencionado: 
+• United Nations (UN)/Nações Unidas (NU); 
+• Acquired Immunological Deficiency Syndrome (Aids)/Síndrome de Imunodeficiência  
+Adquirida (Sida); 
+• Food and Agriculture Organization of the United Nations/Organização das Nações  
+Unidas para a Alimentação e Agricultura (FAO). 
+Dica: SIGLA, quando mencionada pela PRIMEIRA VEZ na parte textual do trabalho, 
+escreve-se primeiramente com seus termos por EXTENSO , seguidos da sigla ENTRE 
+PARÊNTESES. Após isso, usa-se somente as siglas ao longo do texto 
+
+
+[PÁGINA PDF 73]
+ 
+ 
+P A R T E  V I I I  
+ 
+ 
+REFERÊNCIAS 
+ 
+ 
+ 
+  
+
+[PÁGINA PDF 74]
+ 
+ 
+REFERÊNCIAS 
+ANDRADE, M. M. Introdução ao trabalho científico: elaboração de trabalhos na graduação. 
+4. ed. São Paulo: Atlas, 1999. 
+APPOLINÁRIO, F. Dicionário de metodologia científica : um guia para a produção do 
+conhecimento científico. 2. ed. São Paulo: Atlas, 2011. 
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 10520 : informação e 
+documentação: citações em documentos: apresentação. Rio de Janeiro: ABNT, 2023.  
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 14724 : informação e 
+documentação: trabalhos acadêmicos: apresentação. Rio de Janeiro: ABNT, 2024.  
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 15287: informação e 
+documentação: projeto de pesquisa: apresentação. Rio de Janeiro: ABNT, 2011.  
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6022: informação e 
+documentação: artigo em publicação periódica científica impressa: apresentação. Rio de 
+Janeiro: ABNT, 2018. 
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6023: informação e 
+documentação: referências: elaboração. Rio de Janeiro: ABNT, 2025. 
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6024 : informação e 
+documentação: numeração progressiva das seções de um documento: apresentação. Rio de 
+Janeiro: ABNT, 2012a.  
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6027 : informação e 
+documentação: sumário: apresentação. Rio de Janeiro: ABNT, 2012b.  
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6028: informação e  
+documentação: resumo: apresentação. Rio de Janeiro: ABNT, 2021.  
+BARROS, A. J. S.; LEHFELD, N. A. S. Fundamentos da metodologia científica.  3. ed. São 
+Paulo: Pearson Prentice Hall, 2007. 
+BRASIL. Estrangeirismos grafados sem itálico ou aspas. Brasília, DF: Senado Federal, 
+[2025]. Disponível em: 
+https://www12.senado.leg.br/manualdecomunicacao/verbetesacessorio/estrangeirismos-
+grafados-sem-italico-ou-aspas. Acesso em: 25 fev. 2025. 
+CARV ALHO, A. M. et al. Aprendendo metodologia científica: uma orientação para os alunos 
+de graduação. São Paulo: O Nome da Rosa, 2000. 
+CERVO, A. L.; BERVIAN, P. A. Metodologia científica. 5. ed. São Paulo: Prentice Hall, 2002. 
+CHA VES, M. A. Projeto de pesquisa : guia prático para monografias. 4. ed. Rio de Janeiro: 
+WAK, 2007. 
+
+[PÁGINA PDF 75]
+ 
+ 
+CRESWELL, J. W. Projeto de pesquisa : métodos qualitativos, quantitativos e misto. 2. ed. 
+Porto Alegre: Artmed, 2007. 
+DEMO, P. Introdução à metodologia da ciência. 2. ed. São Paulo: Atlas, 2011.  
+ESTRELA, C.; MARCELO, V . C.; SABINO, G. A. Trabalho científico. In: ESTRELA, C. 
+(org.). Metodologia científica: ciência, ensino e pesquisa. São Paulo: Artes Médicas, 2005. p. 
+153-183. 
+FACHIN, O. Fundamentos de metodologia. 4. ed. São Paulo: Saraiva, 2003. FEITOSA, V . C. 
+Redação de textos científicos. Campinas: Papirus, 1997. 
+FERNANDES, J. Técnicas de estudo e pesquisa. 5. ed. Goiânia: Kelps, 2002. 
+GOMES, H. F.; LOSE, A. D. Documentos científicos: orientações para elaboração de trabalhos 
+acadêmicos. Salvador: Edições São Bento, 2007. 
+HENRIQUE, A.; MEDEIROS, J. B. Como elaborar o trabalho de conclusão de curso (TCC).  
+8. ed. São Paulo: Atlas, 2014. 
+KAUARK, F.; MANHÃES, F. C.; MEDEIROS, C. H. Metodologia da pesquisa: guia prático. 
+Itabuna: Via Litterarum, 2010. 
+KEILA, M. A arte e a técnica da produção científica. Goiânia: Deescubra, 2002. 
+LAKATOS, E. M.; MARCONI, M. A. Fundamentos de metodologia científica . 5. ed. São 
+Paulo: Atlas, 2003. 
+MARTINS JUNIOR, J. Como escrever trabalhos de conclusão de curso : introduções para 
+planejar e montar, desenvolver, concluir, redigir e apresentar trabalhos monográficos e 
+artigos. 9. ed. Petrópolis: V ozes, 2015. 
+MARTINS, G. A. Manual para elaboração de monografias e dissertações. 2. ed. São Paulo: 
+Atlas, 1994. 
+MARTINS, G. A.; LINTZ, A. Guia para elaboração de monografias e trabalhos de 
+conclusão de curso. São Paulo: Atlas, 2000. 
+NUNES, L. A. R. Manual da monografia jurídica. 4. ed. São Paulo: Saraiva, 2002. 
+OLIVEIRA NETTO, A. A. Metodologia da pesquisa científica: guia prático para a apresentação 
+de trabalhos acadêmicos. 3. ed. Florianópolis: Visual Books, 2008. 
+OLIVEIRA, S. L. Tratado de metodologia científica : projetos de pesquisa, TGI, TCC, 
+monografias, dissertações e teses. São Paulo: Pioneira Thomson, Learning, 2002. 
+PÁDUA, E. M. M. O trabalho monográfico como iniciação à pesquisa científica. In:  
+CARV ALHO, M. C. M. (org.). Metodologia científica : fundamentos e técnicas. 2. ed. 
+Campinas: Papirus, 1989. p. 147-169. 
+PRODANOV , C. C.; FREITAS, E. C. Metodologia do trabalho científico: métodos e técnicas 
+da pesquisa e do trabalho acadêmico. 2. ed. Novo Hamburgo: Feevale, 2013. 
+
+[PÁGINA PDF 76]
+ 
+ 
+RUDIO, F. V . Introdução ao projeto de pesquisa científica. 31. ed. Petrópolis: V ozes, 1986. 
+RUIZ, J. Á. Metodologia científica: guia para eficiência nos estudos. 4. ed. São Paulo: Atlas, 
+1996. 
+SALOMON, D. V . Como fazer uma monografia . 13. ed. São Paulo: WMF Martins Fontes, 
+2014. 
+SANTOS, I. E. Manual de métodos e técnicas de pesquisa científica. 5. ed. Niterói: Impetus, 
+2005. 
+SEVERINO, A. J. Metodologia do trabalho científico. 22. ed. São Paulo: Cortez, 2002. 
+SILV A, A. C. R. Metodologia da pesquisa aplicada à Contabilidade : orientações de estudo, 
+projetos, artigos, relatórios, monografias, dissertações, teses. São Paulo: Atlas, 2003. 
+SOARES, M. C. S. Redação de trabalhos científicos. São Paulo: Cabral, 1995. 
+TRIVIÑOS, A. N. S. Introdução à pesquisa em ciências sociais : a pesquisa qualitativa em 
+educação. São Paulo: Atlas, 1987. 
+VIEIRA, S.; HOSSNE, W. S. Metodologia científica para a área de saúde . Rio de Janeiro: 
+Campus, 2002. 
+BRASIL. Conselho Nacional de Saúde. Resolução nº 466, de 12 de dezembro de 2012. Aprova 
+diretrizes e normas regulamentadoras de pesquisas envolvendo seres humanos. Diário Oficial 
+da União, Brasília, DF, 13 jun. 2013. Seção 1, p. 59. Disponível em: 
+https://bvsms.saude.gov.br/bvs/saudelegis/cns/2013/res0466_12_12_2012.html. Acesso em: 
+17 set. 2025.  
+BRASIL. Conselho Nacional de Saúde. Resolução nº 510, de 7 de abril de 2016. Dispõe sobre 
+as normas aplicáveis a pesquisas em Ciências Humanas e Sociais. Diário Oficial da União, 
+Brasília, DF, 24 maio 2016. Seção 1, p. 44 -46. Disponível em: 
+https://bvsms.saude.gov.br/bvs/saudelegis/cns/2016/res0510_07_04_2016.html. Acesso em: 
+17 set. 2025.  
+SALAZAR, Mario Gonzalez; MITRE, Hugo A.; OLALDE, Cuauhtémoc Lemus; SÁNCHEZ, 
+José Luis González. Proposal of Game Design Document from software engineering 
+requirements perspective . In: INTERNATIONAL CONFERENCE ON COMPUTER 
+GAMES (CGAMES), 17., 2012, Louisville. Louisville: IEEE, 2012. p. 81 -85. DOI: 
+10.1109/CGames.2012.6314556 
+  

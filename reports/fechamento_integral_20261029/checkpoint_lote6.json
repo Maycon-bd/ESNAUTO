@@ -1,0 +1,28 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "copia": "reports\\monografia\\trabalho\\fechamento_integral_20261029.docx",
+  "sha256_atual_apos_exportacao_nativa": "05333a74f190adc9cf7cc18387b502e9ff2073021147a71195863a1555be2ddc",
+  "unidades_textuais_alteradas_acumuladas": 19,
+  "figuras_alteradas_acumuladas": 1,
+  "paginas_pdf": 76,
+  "validacao_estrutural": "45verificações sem falha; cobre estrutura, não fidelidade integral.",
+  "validacao_nominal": "50referências,152chamadas reconhecidas,zero órfãs nos padrões usados. Não cobre todas as modalidades de chamada nem apoio semântico.",
+  "paginas_inspecionadas": [
+    16,
+    30,
+    44,
+    45,
+    46
+  ],
+  "resultado_visual": "Todas as cinco páginas diferentes abertas e inspecionadas; sem cortes, sobreposições, tabela partida ou título isolado. A continuação do parágrafo de aptidão tem duas linhas na página seguinte. Outras71páginas idênticas ao lote5.",
+  "tabelas_e_resultados": "Em relação àv005, somente quadros/tabelas bibliográficas1e2e uma célula de propósito no Quadro3,índice5. Todas as tabelas experimentais continuam idênticas; única mídia alterada é Figura1.",
+  "evidencias_conteudo": [
+    "leitura_D02_araujo_lote6.json",
+    "comparacao_visual_lote6.json",
+    "verificacao_lote6.json",
+    "../correcao_parecer_integridade/cruzamento_fechamento_integral_lote6.json"
+  ],
+  "limites": "Prova integral de Araújo e metadados finais oficiais; sem acesso ao conteúdo integral da edição final. Conferência de fragmentos de código, sem executá-lo ou pressupor identidade com todas as execuções. Leitura/fidelidade das demais fontes, similaridade e Guia continuam em andamento.",
+  "estado": "rascunho_nao_promovido_meta_ativa"
+}

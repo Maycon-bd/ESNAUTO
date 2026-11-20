@@ -1,0 +1,34 @@
+{
+  "base": "v007",
+  "sha256_base": "983c46424ad039472bb12071540d392d73eb29cb08a07e0bc784e0ede008ff1c",
+  "sha256_candidata": "0daacd3ea1753bca97619df025923b92a44a047b5c1252a4677f802dfe870dad",
+  "skills": {
+    "quadro-tabela-validator-docx": "executada_e_revalidada",
+    "ingles-italico-checker-docx": "executada_e_revalidada",
+    "siglas-checker-docx": "executada_e_revalidada",
+    "tcc-writer-docx": "executada_e_revalidada",
+    "tcc-citation-checker-docx": "executada_e_revalidada"
+  },
+  "controles": {
+    "quadros_tabelas": 13,
+    "siglas": 50,
+    "et_al_italico": 56,
+    "referencias_preservadas": 50,
+    "matriz_preservada_celulas": 170,
+    "chamadas_conciliadas": 163,
+    "corpo_conciliado": 328,
+    "paginas": 76,
+    "paginas_pixels_identicos": 74,
+    "paginas_alteradas_inspecionadas": [
+      59,
+      61
+    ]
+  },
+  "correcoes_conhecidas_pendentes": [],
+  "estado": "verificado_aguarda_registro",
+  "limites": [
+    "41 marcações de informação insuficiente mantidas com critérios e localizadores; não representam erro comprovado da fonte",
+    "Não é nova leitura integral das 50 obras; evidências dirigidas anteriores conciliadas por identidade/contexto",
+    "Limitações científicas da pesquisa preservadas; não há garantia universal ou aprovação acadêmica"
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "objetivo": "Validar citações, analisar integridade/Guia e revisar português/inglês",
+  "base": "v006",
+  "sha256_base": "daad3895feb384d743bd4461f9a0ba228ed4634d2cdeaf30fb571ade82e10c19",
+  "copia_trabalho": "reports/monografia/trabalho/revisao_linguistica_v006.docx",
+  "estado": "qa_concluida_aguarda_registro",
+  "metas1e2": "Evidências da auditoria v006 reutilizáveis por identidade integral do arquivo; não interpretar como garantia universal de100%coerência ou ausência de plágio. Reconciliar novamente se a edição linguística mudar sentido.",
+  "cobertura_linguistica_nesta_passagem": [
+    "Pré-textuais0–45",
+    "Listas e sumário46–165",
+    "Corpo166–499",
+    "Referências500–550",
+    "Todas as células das14tabelas, incluindo reserva catalográfica"
+  ],
+  "abstract": "Não identificado erro gramatical inequívoco nesta leitura integral; termos técnicos e números coerentes com resumo já conciliado144. Não alterar nomes ou títulos bibliográficos por preferência estilística.",
+  "achados": [
+    {
+      "id": "L01",
+      "paragrafo": 369,
+      "antes": "Não foram aplicadas redução de palavras a radicais, expansão de siglas nem agrupamento entre singular e plural.",
+      "depois": "Não se aplicaram a redução de palavras a radicais, a expansão de siglas nem o agrupamento entre singular e plural.",
+      "tipo": "concordância e paralelismo",
+      "justificativa": "Evita o particípio feminino plural diante da enumeração de núcleos de gêneros diferentes e explicita artigos paralelos. Nenhum procedimento de análise muda."
+    },
+    {
+      "id": "L02",
+      "paragrafo": 371,
+      "antes": "Procedimento de re-execução dos experimentos",
+      "depois": "Procedimento de reexecução dos experimentos",
+      "tipo": "ortografia",
+      "justificativa": "Forma aglutinada reexecução; harmoniza com a grafia já usada no corpo. Atualizar também o sumário pela rotina Word."
+    },
+    {
+      "id": "L03",
+      "paragrafo": 177,
+      "antes": "produzirá erro fora da amostra menor que a inicialização Normal × Normal.",
+      "depois": "produzirá erro fora da amostra menor que o obtido com a inicialização Normal × Normal.",
+      "tipo": "clareza da comparação",
+      "justificativa": "Compara erro com erro, explicitando o termo elíptico; hipótese e direção do efeito permanecem iguais."
+    },
+    {
+      "id": "L04",
+      "paragrafo": 221,
+      "antes": "técnicas bio-inspiradas e não bio-inspiradas",
+      "depois": "técnicas bioinspiradas e não bioinspiradas",
+      "tipo": "ortografia de prefixação",
+      "justificativa": "Prefixo bio terminado em o diante de i não recebe hífen; preservar distinção entre as duas classes."
+    },
+    {
+      "id": "L05",
+      "paragrafo": 411,
+      "antes": "pior que diversas alternativas.",
+      "depois": "pior que o de diversas alternativas.",
+      "tipo": "clareza da comparação",
+      "justificativa": "Explicita comparação entre erros; números e conclusões preservados."
+    },
+    {
+      "id": "L06",
+      "paragrafo": 449,
+      "antes": "MAE inferior aos dois",
+      "depois": "MAE inferior ao dos dois",
+      "tipo": "clareza da comparação",
+      "justificativa": "Explicita comparação entre erros; números e conclusões preservados."
+    },
+    {
+      "id": "L07",
+      "paragrafo": 471,
+      "antes": "MAE menor que os",
+      "depois": "MAE menor que o dos",
+      "tipo": "clareza da comparação",
+      "justificativa": "Explicita comparação entre erros; números e conclusões preservados."
+    },
+    {
+      "id": "L08",
+      "paragrafo": 550,
+      "antes": "ZHANG, H;",
+      "depois": "ZHANG, H.;",
+      "tipo": "pontuação de inicial bibliográfica",
+      "justificativa": "Acrescenta ponto à inicial H., sem alterar identidade do autor ou título."
+    },
+    {
+      "id": "L09",
+      "tabela": 8,
+      "linha": 2,
+      "coluna": 1,
+      "antes": "t Student × t Student",
+      "depois": "t de Student × t de Student",
+      "tipo": "preposição na denominação",
+      "justificativa": "Harmoniza com a denominação t de Student já usada no corpo; não muda configuração ou valor."
+    }
+  ],
+  "proximas_etapas": [
+    "Ler corpo301–499,células,lista de siglas e referências para revisão linguística; preservar títulos originais",
+    "Aplicar quatro correções registradas e eventuais achados confirmados; sem reformulação acadêmica desnecessária",
+    "Atualizar sumário,renderizar,inspecionar diferenças,conciliar com evidênciasv006 e registrar nova versão"
+  ],
+  "nenhuma_edicao_word_nesta_passagem": true,
+  "sha256_apos_edicao": "0a0ab451d547aafe99f39d9c60dbf748f7a3a7bcf9f5333f37964dd4f85d67e3",
+  "sumario": "Título147harmonizado com371: atualizador nativo mudava páginas, mas não o texto do título. Falha inicial explicada e corrigida.",
+  "sha256_final": "983c46424ad039472bb12071540d392d73eb29cb08a07e0bc784e0ede008ff1c",
+  "validacao": {
+    "paginas": 76,
+    "controles_exportacao": 45,
+    "falhas": 0,
+    "paginas_alteradas_e_inspecionadas": [
+      16,
+      19,
+      26,
+      52,
+      57,
+      58,
+      63,
+      66,
+      76
+    ],
+    "paginas_identicas_v006": 67,
+    "numeros_preservados": true,
+    "imagens_preservadas": true,
+    "mudancas_paragrafos": [
+      147,
+      177,
+      221,
+      369,
+      371,
+      411,
+      449,
+      471,
+      550
+    ],
+    "mudancas_celulas": [
+      [
+        8,
+        2,
+        1
+      ]
+    ],
+    "renderer": "render_docx.py chamado; indisponível por ausência deLibreOffice. Alternativa verificada: exportação nativa doWord e rasterizaçãoPoppler; páginas alteradas inspecionadas emPNG."
+  },
+  "conciliacao_metas1e2": "Evidênciasv006preservadas; somente9ajustes linguísticos e reflexo no sumário. ComparaçõesH3/MAEagora explicitam erro versus erro; alegações,citações,números,matriz e limites inalterados. PontoZHANGnão muda autoria. Nenhuma nova fonte ou afirmação introduzida."
+}

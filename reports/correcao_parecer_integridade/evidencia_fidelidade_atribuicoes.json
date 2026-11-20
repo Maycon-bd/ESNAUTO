@@ -1,0 +1,133 @@
+{
+  "achados": [
+    "F14",
+    "F21",
+    "R13"
+  ],
+  "fontes_locais": [
+    {
+      "extracao": "reports\\auditoria_citacoes_integridade_20261028\\Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.txt",
+      "sha256_extracao": "ea10c63d7173925f377f7e6cc89fe39205384f122caff43131ddb8173f4c07da",
+      "paragrafos_da_base_v001": [
+        "P0197",
+        "P0204"
+      ],
+      "localizador": "PDF4 §3.1/Tabela2; PDF5/Tabela3",
+      "decisao": "Não usar relato de limpeza como prova de experimento de imputação. Inconsistências entre MSE e RMSE para alguns modelos; sem ablação de feedback de mercado.",
+      "alcance": "Trechos relevantes e contexto; não leitura integral de todas as obras.",
+      "pdf": "Artigos citados\\Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+      "sha256_pdf_atual": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787",
+      "identico_ao_pdf_da_auditoria_inicial": true
+    },
+    {
+      "extracao": "reports\\auditoria_citacoes_integridade_20261028\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.txt",
+      "sha256_extracao": "b429487f67707fdfc88a66406bf6bd4091890f1de962ae91cc7c9e6753da7258",
+      "paragrafos_da_base_v001": [
+        "P0215"
+      ],
+      "localizador": "PDF2–3,5,8,12–13",
+      "decisao": "Melhor ML selecionado por índice, com LSTM entre os candidatos; não identificar toda discrepância como da LSTM nem garantir eliminação de atrasos.",
+      "alcance": "Trechos relevantes e contexto; não leitura integral de todas as obras.",
+      "pdf": "Artigos citados\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_pdf_atual": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "identico_ao_pdf_da_auditoria_inicial": true
+    },
+    {
+      "extracao": "reports\\auditoria_citacoes_integridade_20261028\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.txt",
+      "sha256_extracao": "9f2c93752520089cc50242648509b9f6f8acc5ff4208b160ebb2904f347face4",
+      "paragrafos_da_base_v001": [
+        "P0217"
+      ],
+      "localizador": "PDF2,6–7,13–14/Tabela3",
+      "decisao": "Compressão da representação dos estados; ganho nos casos examinados, sem propriedade geral de preservação de picos financeiros.",
+      "alcance": "Trechos relevantes e contexto; não leitura integral de todas as obras.",
+      "pdf": "Artigos citados\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf_atual": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "identico_ao_pdf_da_auditoria_inicial": true
+    },
+    {
+      "extracao": "reports\\auditoria_citacoes_integridade_20261028\\Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.txt",
+      "sha256_extracao": "c2f6eae29aa88793da6c7127e042b07a15e1bc59513d640f8b164a74d645851b",
+      "paragrafos_da_base_v001": [
+        "P0214",
+        "P0239",
+        "P0254"
+      ],
+      "localizador": "PDF1,4,11",
+      "decisao": "HAR-PSO-ESN, volatilidade realizada e maioria dos casos; Uniforme nas matrizes especificadas. Não universalizar ou equiparar à previsão de preço.",
+      "alcance": "Trechos relevantes e contexto; não leitura integral de todas as obras.",
+      "pdf": "Artigos citados\\Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256_pdf_atual": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "identico_ao_pdf_da_auditoria_inicial": true
+    },
+    {
+      "extracao": "reports\\auditoria_citacoes_integridade_20261028\\Wang W - Stock market index prediction based on reservoir computing models.txt",
+      "sha256_extracao": "ac4a430155474b440a7618fa45a75a7850f44653f7d805093f642e1b6c7b2e36",
+      "paragrafos_da_base_v001": [
+        "P0213",
+        "P0239",
+        "P0255"
+      ],
+      "localizador": "PDF7; PDF10/Tabela8",
+      "decisao": "Uniforme em Win, matriz de adjacência em W, RMSProp em Wout; melhor topologia depende do índice.",
+      "alcance": "Trechos relevantes e contexto; não leitura integral de todas as obras.",
+      "pdf": "Artigos citados\\Wang W - Stock market index prediction based on reservoir computing models.pdf",
+      "sha256_pdf_atual": "7485fa096c0855232ab45109b346462e14790d945c6f491dfbab2b26db63d761",
+      "identico_ao_pdf_da_auditoria_inicial": true
+    },
+    {
+      "extracao": "reports\\auditoria_citacoes_integridade_20261028\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.txt",
+      "sha256_extracao": "66c8bc88f2ed80c5e6dd7072f1e5232a44ae3c7f0e9e874f302442405946f85b",
+      "paragrafos_da_base_v001": [
+        "P0208",
+        "P0225"
+      ],
+      "localizador": "PDF1; PDF20 §3.2",
+      "decisao": "Síntese secundária, não experimento próprio ou prova de ganho geral ao combinar metaheurística e rede.",
+      "alcance": "Trechos relevantes e contexto; não leitura integral de todas as obras.",
+      "pdf": "Artigos citados\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_pdf_atual": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "identico_ao_pdf_da_auditoria_inicial": true
+    },
+    {
+      "extracao": "reports\\auditoria_citacoes_integridade_20261028\\Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.txt",
+      "sha256_extracao": "68e9c0f7f049186a85315d6104dcd3d336aebf348d480bdc03aeb6b9506f617c",
+      "paragrafos_da_base_v001": [
+        "P0204"
+      ],
+      "localizador": "PDF1/resumo; seções de NMSE e implicações funcionais",
+      "decisao": "Previsão de volatilidade S&P500; erros iguais podem encobrir funções diferentes entre pares modelo/pipeline.",
+      "alcance": "Trechos relevantes e contexto; não leitura integral de todas as obras.",
+      "pdf": "Artigos citados\\Cortesi - Same Error, Different Function The Optimizer as an Implicit Prior in Financial Time Series.pdf",
+      "sha256_pdf_atual": "8bb4b1967da28dc961a42231543f70cdf22fc798527b1724c7f1e7cd5714bde6",
+      "identico_ao_pdf_da_auditoria_inicial": true
+    },
+    {
+      "extracao": "reports\\auditoria_citacoes_integridade_20261028\\Cardoso_tese.txt",
+      "sha256_extracao": "c7d7cb84a0c4dfb465aeb66e16878fcc7e2297915913c1d39d3959726ab27f43",
+      "paragrafos_da_base_v001": [
+        "P0267"
+      ],
+      "localizador": "PDF6/resumo",
+      "decisao": "ARIMA-ESN, distribuições e ITSA4/PETR4; ARMA-EGARCH melhor nos estudos de caso, protocolo distinto. Uso para delimitação, sem transferir métricas.",
+      "alcance": "Trechos relevantes e contexto; não leitura integral de todas as obras.",
+      "pdf": "reports\\tese_Fabian_Correa_Cardoso.pdf",
+      "sha256_pdf_atual": "0713862798eb01327e7534ff86e694d76bb8bf9bc2113ba6407bef04f14b2e26",
+      "identico_ao_pdf_da_auditoria_inicial": true
+    }
+  ],
+  "jaeger2001": {
+    "url": "https://www.ai.rug.nl/minds/uploads/EchoStatesTechRep.pdf",
+    "indice_autor": "https://www.ai.rug.nl/minds/pubs/",
+    "versao": "Relatório2001 com errata26/01/2010;47páginas",
+    "consultado": "Introdução, preparação de rede e treino da saída: PDF4,12–13. Capa/nota da correção. Não leitura integral.",
+    "usos": [
+      "P0210",
+      "P0531",
+      "Quadro6"
+    ],
+    "limitacao": "Não usados como prova os teoremas originais atingidos pela errata. DOI Fraunhofer bloqueou consulta direta; versão pública vinculada pelo autor foi consultada."
+  },
+  "novos_localizadores": "Os P são índices da base v001; a lista e o Quadro6 inseridos deslocam os índices da cópia corrente. Usar texto e log, não transpor índices de listas Python atuais.",
+  "autoria_codigo": "O Quadro6 delimita contribuição e referências; não resolve autoria individual das rotinas legadas sem documentação adicional."
+}

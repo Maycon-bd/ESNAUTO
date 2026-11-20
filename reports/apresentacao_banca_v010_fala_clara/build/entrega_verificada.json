@@ -1,0 +1,21 @@
+{
+  "base": "v010",
+  "base_sha256": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+  "palavras_fala": 2938,
+  "segundos_planejados": 1500,
+  "paginas_word": 13,
+  "falas_sincronizadas": 23,
+  "graficos_preservados": 10,
+  "links_preservados": 82,
+  "slides_renderizados_identicos": 23,
+  "alteracao_pptx_somente_notas": true,
+  "paginas_modificadas_ultima_iteracao": [
+    1,
+    8
+  ],
+  "artefatos": {
+    "Apresentacao_ESNAUTO_v010_notas_fala_clara.pptx": "b0b2cdedebd712f1f33182ae533f98e2996f6aee456b4940520e4a0e6609a18b",
+    "Roteiro_ESNAUTO_v010_fala_clara.docx": "8e0e81f1a199b5467cb26274c51eba48a4919193d2a78058fc1d2223d6df68f6",
+    "Roteiro_ESNAUTO_v010_fala_clara.md": "7089956775d6e223e79a99765e5aafce318fedc48b43442c4fd75989d960a20a"
+  }
+}

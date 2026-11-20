@@ -1,0 +1,278 @@
+{
+  "sha256_docx": "1cdb4613c391611dfffab5e2f9902e38751bd14be9b5e18b96a740e6cb771d00",
+  "aritmetica": [
+    {
+      "comparacao": "MAE vs GRU",
+      "valor_calculado": "8.237801458216489063376332025",
+      "apresentado": "8.24"
+    },
+    {
+      "comparacao": "MAE vs LSTM",
+      "valor_calculado": "27.62132271621322716213227162",
+      "apresentado": "27.62"
+    },
+    {
+      "comparacao": "RMSE vs GRU",
+      "valor_calculado": "15.47524584604950830790098338",
+      "apresentado": "15.48"
+    },
+    {
+      "comparacao": "RMSE vs LSTM",
+      "valor_calculado": "38.95089395052657359784472202",
+      "apresentado": "38.95"
+    },
+    {
+      "comparacao": "MAE vs Normal",
+      "valor_calculado": "0.3474791771352001583603611834",
+      "apresentado": "0.347"
+    },
+    {
+      "comparacao": "RMSE vs Normal",
+      "valor_calculado": "0.7316090790863202528069061012",
+      "apresentado": "0.732"
+    }
+  ],
+  "registros": [
+    {
+      "paragrafo_atual": 375,
+      "texto": "RESULTADOS E DISCUSSÃO",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 376,
+      "texto": "VISÃO GERAL DOS EXPERIMENTOS",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 377,
+      "texto": "A etapa experimental desta pesquisa resultou não apenas na execução dos modelos previstos no protocolo, mas também no desenvolvimento progressivo de uma infraestrutura de software destinada a apoiar a configuração, execução, acompanhamento e comparação dos experimentos.",
+      "decisao": "Contribuição de infraestrutura coerente com código e declaração autoral.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 378,
+      "texto": "Denominada ESNAUTO, essa infraestrutura surgiu inicialmente como uma solução de apoio operacional para reduzir a manipulação manual dos scripts desenvolvidos em R. À medida que o número de distribuições, combinações de matrizes, hiperparâmetros e execuções aumentou, a ferramenta passou a incorporar mecanismos de automação, persistência e comparação, transformando-se em uma contribuição de software associada à pesquisa.",
+      "decisao": "Evolução da ferramenta é relato do trabalho; capacidades distinguidas de preservação histórica integral.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 379,
+      "texto": "Os cálculos centrais permaneceram implementados em R, incluindo a construção das Echo State Networks, a geração das matrizes probabilísticas, o cálculo da camada de saída e a execução do Algoritmo Genético. Sobre esse núcleo foi desenvolvida uma camada de operação em R Shiny que permitiu carregar dados, selecionar distribuições de Win e W, configurar modelos, acompanhar a otimização, preservar configurações campeãs, visualizar resultados e comparar ESN, LSTM e GRU.",
+      "decisao": "Núcleo R e interface Shiny correspondem à arquitetura preservada.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 380,
+      "texto": "O objetivo inicial do software era tornar mais prática a execução dos experimentos. Com a evolução da pesquisa, entretanto, a separação entre o núcleo matemático e a camada de operação permitiu utilizar a mesma infraestrutura com séries temporais customizadas, novas combinações probabilísticas e diferentes configurações dos modelos. Dessa forma, o ESNAUTO deixou de constituir somente uma interface para os scripts deste trabalho e passou a representar uma infraestrutura experimental reutilizável em tarefas de predição com Inteligência Artificial compatíveis com sua arquitetura.",
+      "decisao": "Reutilização é compatibilidade arquitetural, sem alegar teste universal de tarefas.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 381,
+      "texto": "A mensagem central dos resultados foi dupla. Primeiro, ESNs pequenas e otimizadas apresentaram erros inferiores aos valores documentados para LSTM e GRU na maior parte das execuções. Segundo, as distribuições não gaussianas produziram os melhores resultados pontuais, porém a melhoria sobre o controle Normal × Normal permaneceu inferior a 1%, devendo ser interpretada como ganho incremental observado no protocolo adotado.",
+      "decisao": "Comparação descritiva e ganhos inferiores a1% coerentes com cálculos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 382,
+      "texto": "DESEMPENHO PREDITIVO GLOBAL",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 383,
+      "texto": "Na nomenclatura adotada, a primeira distribuição de cada combinação correspondeu à matriz de entrada Win e a segunda à matriz recorrente W. Assim, Laplace × Normal indicou Win gerada segundo a distribuição Laplace e W gerada segundo a distribuição Normal; Normal × Normal indicou distribuição Normal nas duas matrizes; e Laplace × Cauchy indicou Win Laplace e W Cauchy.",
+      "decisao": "Convenção Win × W mantida.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 384,
+      "texto": "A configuração Laplace × Normal alcançou o menor MAE no conjunto de teste, igual a 0,327224. Laplace × Cauchy obteve o menor RMSE, de 0,495386, e o maior R², de 0,9941. As métricas, portanto, não selecionaram um vencedor único: Laplace × Normal minimizou o erro absoluto médio, enquanto Laplace × Cauchy apresentou maior controle sobre erros de maior magnitude.",
+      "decisao": "Recordes por métricas distintos correspondem às compilações.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 385,
+      "texto": "Tabela 3 – Comparação dos principais resultados no conjunto de teste",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 386,
+      "texto": "Fonte: Elaborado pelo autor (2026).",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 387,
+      "texto": "Comparada à GRU, a configuração Laplace × Normal reduziu o MAE de teste em aproximadamente 8,24%. Em relação à LSTM, a redução foi de aproximadamente 27,62%. No RMSE, as reduções observadas foram de aproximadamente 15,48% e 38,95%, respectivamente.",
+      "decisao": "Quatro reduções percentuais recalculadas e coincidentes por arredondamento.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 388,
+      "texto": "Para traduzir o erro absoluto para uma escala de interpretação gerencial, foi calculado adicionalmente o erro relativo normalizado pela média do preço observado no conjunto de teste (NMAE), definido por NMAE = MAE / média(y) × 100. A média do preço ajustado da PETR4 nas 1.299 observações de teste foi de aproximadamente R$ 16,1738.",
+      "decisao": "NMAE e média conferidos anteriormente; normalização descritiva.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 389,
+      "texto": "Sob essa normalização, a ESN Laplace × Normal apresentou erro relativo de aproximadamente 2,02%, frente a 2,20% da GRU e 2,80% da LSTM. Essa medida não deve ser confundida com o MAPE, que calcula o erro percentual observação a observação; o NMAE foi adotado porque as execuções oficiais preservaram as métricas agregadas, mas não os vetores completos de previsão no repositório versionado.",
+      "decisao": "NMAE não confundido com MAPE; percentuais coerentes.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 390,
+      "texto": "Das 45 execuções de ESN documentadas, 44 apresentaram MAE de teste inferior tanto ao valor obtido pela GRU quanto ao valor obtido pela LSTM, correspondendo a 97,78% das execuções. A única exceção ocorreu na combinação t de Student Assimétrica × Cauchy. Esse comportamento indicou que o desempenho observado não esteve limitado a uma única realização excepcional da ESN, embora a comparação permaneça restrita à série PETR4, ao horizonte de um passo e às arquiteturas definidas no protocolo.",
+      "decisao": "44/45=97,78%; exceção e restrição de protocolo mantidas.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 391,
+      "texto": "Os resultados também mostraram que reservatórios reduzidos puderam ser competitivos. A ESN campeã por MAE utilizou 22 neurônios, Pearson V × Uniforme obteve MAE de 0,327657 com quatro neurônios e t de Student × t de Student obteve MAE de 0,327706 com três neurônios. Para a tarefa investigada, portanto, o aumento do número de unidades recorrentes não foi condição necessária para alcançar baixo erro.",
+      "decisao": "Reservatórios pequenos registrados não implicam efeito causal isolado do tamanho.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 392,
+      "texto": "Para complementar as tabelas, as Figuras 5 e 6 apresentam a evolução da busca genética e a comparação entre valores observados e previstos na mesma execução preservada. A escolha dessas visualizações tomou como referência as Figuras 29 e 30 de Cardoso (2025, p. 90), adaptando-as à previsão do preço ajustado, em vez dos retornos estudados naquela tese.",
+      "decisao": "Referência visual de Cardoso distingue preço de retornos, conforme leitura da tese.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 393,
+      "texto": "A execução ilustrada pertence ao lote legado de 12 cenários com limite de 200 gerações, de 15 de agosto de 2026. Foi selecionada pelo maior fitness de treino/validação nesse lote: segunda rodada de GED em Win e Uniforme em W, com a = 0,424701, raio espectral = 0,513577, lavagem de 34 passos, 31 neurônios e regularização de aproximadamente 4,84 × 10⁻⁵. Trata-se de uma ilustração complementar do motor legado, distinta das 45 execuções de produção com LHS e cataclismo. Não constitui a reconstrução da trajetória do GA_RUN_0030 nem substitui os resultados da Tabela 3.",
+      "decisao": "Parâmetros e identidade do lote ilustrativo confirmados na procedência; não integra45.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 394,
+      "texto": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 395,
+      "texto": "",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 396,
+      "texto": "Fonte: Elaborado pelo autor com o histórico preservado do lote de 200 gerações (2026). Referência de apresentação: Cardoso (2025, Figura 29).",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 397,
+      "texto": "Na Figura 5, valores maiores de fitness correspondem a menores erros ponderados de treino e validação. O melhor fitness atingiu −0,237607 na geração 123 e permaneceu nesse nível até a geração 200. As oscilações das curvas de média e mínimo descrevem a variação da população durante a busca; a estabilização do melhor valor não demonstra que tenha sido encontrado um ótimo global.",
+      "decisao": "Fitness e geração123 correspondem à procedência; convergência não prova ótimo global.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 398,
+      "texto": "A Figura 6 foi produzida pela reinjeção das matrizes Win, W e Wout preservadas da mesma execução, sem gerar novos pesos aleatórios nem repetir o GA. As previsões foram alinhadas aos 1.298 alvos avaliados do conjunto de teste e as métricas foram conferidas contra o relatório arquivado: MAE de 0,327894 e RMSE de 0,498699. A apresentação inclui o período completo e um detalhe fixo dos últimos 100 pregões, permitindo observar desvios que ficam pouco visíveis na escala de toda a série.",
+      "decisao": "Reinjeção descrita como procedimento anterior documentado, sem nova execução na auditoria; valores não transferidos às45.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 399,
+      "texto": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 400,
+      "texto": "",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 401,
+      "texto": "Fonte: Elaborado pelo autor pela reinjeção das matrizes preservadas, GED × Uniforme, rodada 2 (2026). Referência de apresentação: Cardoso (2025, Figura 30).",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 402,
+      "texto": "A proximidade visual entre as curvas deve ser interpretada em conjunto com os erros numéricos: o gráfico descreve a previsão de um passo à frente em preços em nível e não representa uma trajetória inteiramente recursiva de longo prazo. O teste não participou da escolha da execução ilustrada. Como os históricos completos de evolução do GA das execuções de produção não foram preservados, não se atribui a elas a curva de convergência deste lote legado.",
+      "decisao": "Previsão de um passo e lote ilustrativo delimitados; curva não atribuída às rodadas históricas.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 403,
+      "texto": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 404,
+      "texto": "Tabela 4 – Configurações selecionadas das cinco ondas experimentais",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 405,
+      "texto": "Fonte: Elaborado pelo autor (2026).",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 406,
+      "texto": "O controle Normal × Normal apresentou MAE de 0,328365. A configuração Laplace × Normal reduziu esse valor para 0,327224, correspondendo a uma melhoria relativa de aproximadamente 0,347%. No RMSE, o controle registrou 0,499037 e Laplace × Cauchy atingiu 0,495386, redução aproximada de 0,732%.",
+      "decisao": "Melhorias relativas0,347% e0,732% recalculadas.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 407,
+      "texto": "As diferenças entre as melhores configurações de ESN e o controle Normal × Normal foram menores que as diferenças observadas em relação à GRU e à LSTM. Essa comparação não separa os efeitos da arquitetura, da otimização e da inicialização. Quatro das cinco primeiras posições por MAE utilizaram ao menos uma distribuição de cauda pesada ou impulsiva; esse resultado descreve as configurações avaliadas, sem isolar causalmente a distribuição dos pesos.",
+      "decisao": "Correção causal incorporada; texto limita inferência à comparação observada.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 408,
+      "texto": "A relação entre a distribuição dos dados financeiros e a distribuição dos pesos, contudo, não é direta. As matrizes passam por reescalamento espectral e seus efeitos atravessam a função de ativação não linear. Assim, os resultados foram tratados como evidência experimental sobre a sensibilidade da dinâmica do reservatório à inicialização probabilística, e não como demonstração de equivalência entre a distribuição dos preços e a distribuição ideal dos pesos.",
+      "decisao": "Não afirma equivalência entre distribuição de preços e lei ideal dos pesos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 409,
+      "texto": "DISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO",
+      "decisao": "Título, legenda, fonte ou parágrafo de imagem: identificação e apresentação tratadas nos registros de elementos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 410,
+      "texto": "t de Student Assimétrica × Normal apresentou o menor MAE de validação, de 0,262232, mas obteve MAE de teste de 0,331070, pior que diversas alternativas. Esse comportamento mostrou que o melhor resultado de validação não representou necessariamente o melhor comportamento em um período temporal posterior e reforçou a função do conjunto de teste preservado fora da otimização.",
+      "decisao": "Validação e teste contrastados descritivamente, sem seleção prospectiva presumida.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 411,
+      "texto": "O caso mais extremo ocorreu com t de Student Assimétrica × Cauchy. Apesar de métricas de validação próximas às demais configurações, o teste apresentou MAE de 0,558151, RMSE de 3,849416 e R² de 0,6412. Essa foi a única das 45 execuções que não superou os baselines em MAE. A Onda 2 reuniu, portanto, os dois principais recordes e também a maior falha observada, caracterizando simultaneamente alto potencial e maior dispersão de comportamento.",
+      "decisao": "Falha e métricas correspondem à compilação histórica.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 412,
+      "texto": "Nas métricas compiladas da Onda 5, as 15 configurações apresentaram MAE entre aproximadamente 0,328395 e 0,328398, amplitude de 0,000003, e amplitude de RMSE próxima de 0,000002. Essa concentração descreve diferenças entre as configurações avaliadas. Não estima a variabilidade de repetir cada configuração com novas sementes nem comprova robustez a outros períodos. As distribuições ajustadas não produziram o menor erro global.",
+      "decisao": "Amplitude de15 configurações conferida; não estima variabilidade de sementes.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 413,
+      "texto": "Esse resultado sugere que o reescalamento espectral, a não linearidade da ESN ou a região de hiperparâmetros selecionada pelo Algoritmo Genético podem reduzir parte das diferenças existentes entre as distribuições marginais. Os dados disponíveis, entretanto, não permitem isolar qual desses mecanismos explica a invariância observada.",
+      "decisao": "Mecanismos apresentados como hipóteses explicativas não isoladas.",
+      "acao": "manter"
+    }
+  ],
+  "evidencias": [
+    "conferencia_tabelas_historicas_lote65.json",
+    "identidade_lote_ilustrativo_lote95.json",
+    "expressoes_matematicas_lote85.json",
+    "incorporacao_lote94.json"
+  ],
+  "limite": "Compilações históricas não equivalem a vetores preservados por execução. Identidade de artefatos ilustrativos não substitui conferência independente de cada previsão."
+}

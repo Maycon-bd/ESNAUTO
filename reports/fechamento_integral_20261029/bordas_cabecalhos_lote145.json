@@ -1,0 +1,230 @@
+{
+  "sha256_docx": "a6c9512dd7503795b6b7921c0d33c6dd327c42c6ec14442ccfbd463846e54a35",
+  "regra": "Modelos do guia PDF53–54: anotação pede linhas internas no cabeçalho; tabela53mostra divisões verticais entre colunas. Corpo sem grade interna.",
+  "elementos": [
+    {
+      "indice_tabela_word": 1,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 1,
+          "borda_direita": "nil"
+        }
+      ]
+    },
+    {
+      "indice_tabela_word": 2,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 1,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 2,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 3,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 4,
+          "borda_direita": "nil"
+        }
+      ]
+    },
+    {
+      "indice_tabela_word": 3,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        }
+      ]
+    },
+    {
+      "indice_tabela_word": 4,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 1,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 2,
+          "borda_direita": "nil"
+        }
+      ]
+    },
+    {
+      "indice_tabela_word": 5,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 1,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 2,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 3,
+          "borda_direita": "nil"
+        }
+      ]
+    },
+    {
+      "indice_tabela_word": 6,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 1,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 2,
+          "borda_direita": "nil"
+        }
+      ]
+    },
+    {
+      "indice_tabela_word": 7,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 1,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 2,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 3,
+          "borda_direita": "nil"
+        }
+      ]
+    },
+    {
+      "indice_tabela_word": 8,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 1,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 2,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 3,
+          "borda_direita": "nil"
+        }
+      ]
+    },
+    {
+      "indice_tabela_word": 9,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 1,
+          "borda_direita": "nil"
+        }
+      ]
+    },
+    {
+      "indice_tabela_word": 10,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 1,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 2,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 3,
+          "borda_direita": "nil"
+        }
+      ]
+    },
+    {
+      "indice_tabela_word": 11,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 1,
+          "borda_direita": "nil"
+        }
+      ]
+    },
+    {
+      "indice_tabela_word": 12,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 1,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 2,
+          "borda_direita": "nil"
+        }
+      ]
+    },
+    {
+      "indice_tabela_word": 13,
+      "cabecalho_celulas_internas": [
+        {
+          "coluna": 0,
+          "borda_direita": "nil"
+        },
+        {
+          "coluna": 1,
+          "borda_direita": "nil"
+        }
+      ]
+    }
+  ],
+  "achado": "Cabeçalhos renderizados sem separadores verticais internos, apesar de fonte e negrito passarem. Controles estruturais anteriores não cobriam esse detalhe.",
+  "proposta": "Aplicar borda vertical interna somente nas células de cabeçalho dos13elementos, mantendo ausência de grade no corpo e fechamento lateral distinto entre tabela/quadro. Preservar valores,larguras e estilos.",
+  "pendente": "Implementar bordas de cabeçalho,exportar e inspecionar todas as páginas alteradas. Conferir reinício do cabeçalho do Quadro1."
+}

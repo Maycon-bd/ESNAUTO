@@ -1,0 +1,20 @@
+{
+  "sha256_docx": "81ff4a1151f7c48dc2abe6c42f9e6759a6931448d789e18b7b36367f80b5014d",
+  "registros": [
+    {
+      "paragrafo": 182,
+      "antes": "O mercado acionário ocupa posição central nas economias contemporâneas, e suas dinâmicas de preço são marcadas por oscilações frequentes e difíceis de antecipar. Essa dificuldade é em parte estatística, pois séries financeiras apresentam não linearidades, comportamento estocástico e eventos extremos com frequência incompatível com a hipótese gaussiana e em parte computacional, dada a velocidade com que os preços se reorganizam em resposta a novas informações.",
+      "proposta": "A previsão financeira exige atenção às propriedades da série e às condições de avaliação. Dewick (2022) discute distribuições financeiras que podem apresentar caudas pesadas, agrupamento de volatilidade e dependência não linear. Essas características motivam examinar diferentes modelos e distribuições, mas sua ocorrência e intensidade devem ser verificadas nos dados de cada aplicação. Nesta pesquisa, a tarefa é prever preços ajustados da PETR4; propriedades dos retornos não são automaticamente atribuídas aos preços em nível.",
+      "fonte": "D09, PDF2–3",
+      "diagnostico": "Fonte usa possibilidade e trata propriedades de distribuições; restringir generalização universal e distinguir preços de retornos."
+    },
+    {
+      "paragrafo": 186,
+      "antes": "Modelos lineares, como o autorregressivo integrado de médias móveis (Autoregressive Integrated Moving Average – ARIMA) e a regressão linear, podem apresentar limitações na representação de dependências não lineares e mudanças de regime. Isso não impede seu emprego como modelos de referência. A diferenciação em ARIMA permite tratar determinadas formas de não estacionariedade, e a adequação de cada abordagem deve ser avaliada para a série e a tarefa consideradas.",
+      "proposta": "Vishwas, Usha e Sangeetha (2025) discutem limitações de modelos tradicionais, como o autorregressivo integrado de médias móveis (Autoregressive Integrated Moving Average – ARIMA), na representação de relações não lineares em dados financeiros. A revisão oferece contexto para investigar outras arquiteturas, mas não demonstra que modelos lineares sejam inadequados em toda série ou tarefa. A seleção e a comparação de modelos devem considerar o protocolo de avaliação.",
+      "fonte": "D30, PDF1–2",
+      "diagnostico": "Atribuir discussão à revisão consultada, sem transportar afirmação universal ou regra sobre diferenciação não conferida nesta fonte."
+    }
+  ],
+  "estado": "incorporadas_pendente_qa"
+}

@@ -1,0 +1,36 @@
+{
+  "base": "v010",
+  "base_sha256": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+  "paragrafos_metodologia": [
+    "Na extração bibliográfica, utilizou-se Gemini 2.5 Flash, temperatura 0, por script próprio em Python. Claude e OpenAI Codex apoiaram a revisão e a leitura; Codex também apoiou os testes. O autor conferiu pessoalmente os artigos e executou testes. O escopo e a validação humana do uso de inteligência artificial generativa (IAG) constam da declaração no Anexo A."
+  ],
+  "rows": [
+    [
+      "Extração dos dados",
+      "Script próprio em Python; Gemini 2.5 Flash; temperatura 0",
+      "Preenchimento inicial do formulário a partir do PDF de cada publicação, com trecho, localização e justificativa de cada resposta.",
+      "Conferência pessoal dos artigos pelo autor."
+    ],
+    [
+      "Revisão e leitura do texto",
+      "Claude e OpenAI Codex; versões não informadas",
+      "Auxílio à revisão e reformulação de trechos, leitura assistida, correção linguística e conferência documental.",
+      "Leitura com auxílio de IA e conferência pessoal dos artigos pelo autor; devolutiva textual do orientador."
+    ],
+    [
+      "Execução de testes",
+      "OpenAI Codex; versão não informada",
+      "Apoio à preparação, execução e análise de testes.",
+      "Execução de testes pelo autor, tanto pessoalmente quanto com auxílio de IA."
+    ],
+    [
+      "Padronização e apresentação",
+      "OpenAI Codex; versão não informada",
+      "Apoio à formatação, a scripts de conferência documental e à preparação de slides e roteiro.",
+      "Análise e solicitação de ajustes pelo autor; correções textuais do orientador na monografia."
+    ]
+  ],
+  "declaracao": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\declaracao_ia_integracao_20261102\\entrega\\Declaracao_responsabilidade_coletiva_Maycon.docx",
+  "trabalho": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\declaracao_ia_20261102.docx",
+  "declaracao_autor": "Informações fornecidas pelo autor em resposta no chat; versões de Claude e Codex não informadas; data e assinaturas vazias."
+}

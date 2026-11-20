@@ -1,0 +1,38 @@
+[
+  {
+    "id": "D23",
+    "dimensao": "P1",
+    "codigo": "?",
+    "fonte_nova": "2508.05416v1/samplepaper.tex",
+    "localizadores": "linhas 217–246; 275–284 (comentários); 328–343; 564",
+    "evidencia": "O método identifica ReservoirPy sem versão. A distribuição da tabela governa hiperparâmetros; o Gaussiano é ruído. A menção a inicializadores padrão está em comentário TeX excluído do texto publicado e trata do estado inicial, sem individualizar lei efetiva de Win/W.",
+    "limite": "Não inferir pesos de padrões da biblioteca ou de comentários de rascunho. O capítulo Springer posterior foi localizado, mas o corpo não estava acessível na prévia."
+  },
+  {
+    "id": "D23",
+    "dimensao": "P4",
+    "codigo": "?",
+    "fonte_nova": "2508.05416v1/samplepaper.tex",
+    "localizadores": "linhas 139–155; 698–703; 774–784; 1000–1038",
+    "evidencia": "A revisão menciona LSTM e Transformer qualitativamente. Baselines e resultados próprios individualizam Last Value e XGBoost, sem comparação numérica qualificadora com LSTM/GRU/Transformer.",
+    "limite": "Não transportar resultados de Alessandretti ou Kenny só pela citação. Nenhum código de experimento consta do inventário de membros do pacote editorial consultado. Isso não prova inexistência de código externo."
+  },
+  {
+    "id": "D13",
+    "dimensao": "P4",
+    "codigo": "?",
+    "fonte_nova": "2512.08963v1/revised_main_mod.tex",
+    "localizadores": "linhas 392–410; 466–482; 591; inventário completo de membros",
+    "evidencia": "As duas tabelas confrontam Conventional ESN, AEESN, DeepESN, BrESN e três topologias CESN; DeepESN não equivale a LSTM. A declaração de dados remete ao artigo. O pacote inclui texto, bibliografia, classes e imagens, sem scripts de experimentos identificados no inventário.",
+    "limite": "Versão de autor identificada por título/autores/DOI, sem alegação de identidade byte a byte com a edição publicada local. Leitura dirigida do fonte, somada à leitura anterior do PDF; não nova leitura integral de 71 mil caracteres."
+  },
+  {
+    "id": "D08",
+    "dimensao": "P1",
+    "codigo": "?",
+    "fonte_nova": "DTU Orbit e conteúdo público do site do autor Zhihua Deng",
+    "localizadores": "DTU: Access to Document; assets/js/content.js: entrada DOI 10.1109/TTE.2021.3111906; PDF local método seção 3",
+    "evidencia": "DTU disponibiliza manuscrito aceito; a entrada exata no site do autor vincula o DOI, sem repositório ou suplemento na entrada. O método local diferencia as conexões aleatórias do reservatório dos pesos aleatórios do autoencoder, sem lei probabilística qualificadora recuperada.",
+    "limite": "Inspeção da entrada e dos URLs textuais do perfil; não execução do JavaScript. Buscas negativas são limitadas aos canais consultados, sem prova universal de ausência."
+  }
+]

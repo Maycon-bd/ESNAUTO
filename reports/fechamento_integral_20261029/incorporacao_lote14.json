@@ -1,0 +1,18 @@
+{
+  "base": "v005",
+  "sha256_antes": "3ca86f3df0dbe6d9c891beb2eb548bd6720ad7a998179d21f4f6f09bfc248f2f",
+  "sha256_apos_edicao": "3ff87cc2ab1fce2c29bd506c399a55a5d7d8ba77d5870b0194466ab94877942d",
+  "alteracoes": [
+    {
+      "unidade": "U0227",
+      "antes": "Abebe & Goshu (2024) avançam mais uma etapa ao propor a Distribuição Generalizada de Erro Assimétrica (AGED), derivando matematicamente uma família de distribuições capaz de lidar simultaneamente com assimetria e curtose excessiva, com resultados superiores à GED e à Normal em múltiplos critérios de ajuste.",
+      "depois": "Abebe e Goshu (2024) avançam mais uma etapa ao propor a Distribuição Generalizada de Erro Assimétrica (AGED), derivando matematicamente uma família de distribuições capaz de lidar simultaneamente com assimetria e curtose excessiva, com valores menores de AIC e BIC que os da GED e da Normal nos três conjuntos de dados examinados."
+    },
+    {
+      "unidade": "U0292",
+      "antes": "Abebe & Goshu (2024)",
+      "depois": "Abebe e Goshu (2024)"
+    }
+  ],
+  "estado": "pendente_exportacao_e_inspecao"
+}

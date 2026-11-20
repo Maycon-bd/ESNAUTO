@@ -1,0 +1,354 @@
+{
+  "sha256_docx": "daad3895feb384d743bd4461f9a0ba228ed4634d2cdeaf30fb571ade82e10c19",
+  "escopo": "Corpo167–499,gatilhos históricos maisSchaffer, limites de palavra e ano com sufixo a/b/c.",
+  "candidatos": [
+    {
+      "paragrafo": 172,
+      "texto": "Como objetivos específicos, pretende-se consolidar a revisão da literatura; empregar a série histórica ajustada; desenvolver o ESNAUTO, integrando ESN, regressão Ridge e busca genética; e investigar distribuições canônicas, de cauda pesada, assimétricas, esparsas e empiricamente ajustadas. Também se busca otimizar conjuntamente a taxa de vazamento, o raio espectral, o descarte inicial, o tamanho do reservatório e a regularização Ridge. A implementação atual utiliza um cromossomo binário de 55 bits para esses parâmetros.",
+      "gatilhos": [
+        "literatura"
+      ],
+      "decisao": "Objetivos ou roteiro do próprio texto; literatura é termo genérico, não citação externa omitida."
+    },
+    {
+      "paragrafo": 173,
+      "texto": "A avaliação contempla o Erro Médio Absoluto (Mean Absolute Error – MAE), a Raiz do Erro Quadrático Médio (Root Mean Squared Error – RMSE) e o coeficiente de determinação (R²), a comparação com a ESN Normal × Normal e com LSTM e GRU e a separação entre custo de otimização e ajuste final. Inclui ainda o exame da dispersão entre configurações, a comparação inferencial complementar pelo teste de Diebold–Mariano (DM), a documentação do procedimento e a discussão de limitações e condições de replicação.",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "Nome do teste no objetivo/hipótese; referência e procedimento na metodologia345–350, sem nova atribuição histórica."
+    },
+    {
+      "paragrafo": 175,
+      "texto": "H1 - desempenho: a ESN otimizada apresentará menor perda preditiva que os modelos LSTM e GRU definidos no protocolo. A comparação histórica será descritiva; na rodada controlada complementar, a avaliação considerará a diferença de acurácia pelo teste bilateral de Diebold-Mariano e a direção do diferencial médio de perda. A ausência de significância será interpretada como evidência insuficiente de diferença, sem demonstrar equivalência entre os modelos.",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "Nome do teste no objetivo/hipótese; referência e procedimento na metodologia345–350, sem nova atribuição histórica."
+    },
+    {
+      "paragrafo": 180,
+      "texto": "O texto apresenta revisão da literatura, material e métodos, resultados, discussão das limitações e conclusão. A revisão fundamenta os modelos; a metodologia distingue os blocos experimentais; os capítulos finais avaliam os resultados e seu alcance. Os resultados principais se restringem à PETR4.",
+      "gatilhos": [
+        "literatura"
+      ],
+      "decisao": "Objetivos ou roteiro do próprio texto; literatura é termo genérico, não citação externa omitida."
+    },
+    {
+      "paragrafo": 181,
+      "texto": "REVISÃO DA LITERATURA",
+      "gatilhos": [
+        "literatura"
+      ],
+      "decisao": "título ou legenda; não faz atribuição específica sem referência"
+    },
+    {
+      "paragrafo": 231,
+      "texto": "A seleção das distribuições foi organizada em três eixos. O primeiro reúne controles canônicos, como Normal e Uniforme; o segundo contempla distribuições teoricamente relacionadas a caudas pesadas, assimetria, impulsividade e esparsidade, cuja motivação se apoia principalmente nas propriedades observadas nos log-retornos; e o terceiro utiliza Power Function (PF), Dagum 4P e Johnson SB ajustadas empiricamente aos preços da partição de treino pelo EasyFit.",
+      "gatilhos": [
+        "segundo"
+      ],
+      "decisao": "síntese ou descrição da seleção e análise próprias; conferir números com matrizes e relatórios bibliométricos; sem autor externo individual omitido"
+    },
+    {
+      "paragrafo": 242,
+      "texto": "Esta seção discute trabalhos relacionados a ESNs, otimização, inicialização probabilística e aplicações financeiras, a partir dos documentos recuperados no acervo da pesquisa. A organização permite situar as escolhas metodológicas deste estudo, sem apresentar a coleção disponível como cobertura exaustiva da literatura. A procedência da seleção e os limites da reconstrução bibliográfica são descritos na Seção 3.8.3.",
+      "gatilhos": [
+        "literatura"
+      ],
+      "decisao": "síntese ou descrição da seleção e análise próprias; conferir números com matrizes e relatórios bibliométricos; sem autor externo individual omitido"
+    },
+    {
+      "paragrafo": 255,
+      "texto": "O conjunto examinado apresenta aplicações de ESNs, métodos de seleção de hiperparâmetros e regras de inicialização em diferentes tarefas. Ele fundamenta escolhas experimentais desta pesquisa, sem demonstrar cobertura exaustiva do campo. O estudo organiza uma avaliação de distribuições canônicas, de caudas pesadas, assimétricas, esparsas e ajustadas empiricamente para a PETR4. A coleção reconstruída não permite estimar a dimensão de uma lacuna na literatura nem reivindicar ineditismo dessa combinação.",
+      "gatilhos": [
+        "literatura"
+      ],
+      "decisao": "síntese ou descrição da seleção e análise próprias; conferir números com matrizes e relatórios bibliométricos; sem autor externo individual omitido"
+    },
+    {
+      "paragrafo": 264,
+      "texto": "Como apoio à fundamentação teórica, foi conduzida uma extração estruturada de 34 estudos utilizados no trabalho. Essa coleção reúne estudos recentes considerados no processo de revisão e referências complementares de caráter conceitual, metodológico ou histórico, conforme a distinção descrita na Seção 3.8.3. Inclui artigos, trabalhos em eventos, preprints e trabalhos acadêmicos; por isso, seu quantitativo não deve ser interpretado como o número de artigos que satisfizeram todos os critérios de inclusão da busca recente.",
+      "gatilhos": [
+        "conforme"
+      ],
+      "decisao": "síntese ou descrição da seleção e análise próprias; conferir números com matrizes e relatórios bibliométricos; sem autor externo individual omitido"
+    },
+    {
+      "paragrafo": 271,
+      "texto": "A distinção entre D e S evita somar uma revisão e o experimento por ela descrito como duas execuções independentes. Os códigos ? e — também têm sentidos diferentes: o primeiro conserva uma incerteza de leitura ou de especificação; o segundo delimita o objeto da fonte. Assim, as frequências desta coleção descrevem a documentação localizada segundo os critérios adotados, sem estimar a prevalência de métodos em toda a literatura nem comprovar, isoladamente, uma lacuna científica.",
+      "gatilhos": [
+        "segundo",
+        "literatura"
+      ],
+      "decisao": "síntese ou descrição da seleção e análise próprias; conferir números com matrizes e relatórios bibliométricos; sem autor externo individual omitido"
+    },
+    {
+      "paragrafo": 276,
+      "texto": "Nota: P1: distribuição de Win/W; P2: seleção de hiperparâmetros ESN/RC; P3: preparação das séries; P4: comparação com LSTM/GRU/Transformer; P5: mercado e ativo. Cada barra distribui os 34 documentos entre D, S, ? e não aplicável, conforme a legenda do Quadro 1. Informação insuficiente não é prova de ausência.",
+      "gatilhos": [
+        "conforme"
+      ],
+      "decisao": "síntese ou descrição da seleção e análise próprias; conferir números com matrizes e relatórios bibliométricos; sem autor externo individual omitido"
+    },
+    {
+      "paragrafo": 277,
+      "texto": "A Figura 1 registra evidência direta de preparação de séries em 26 documentos e de mercado/ativo em 25; comparações com LSTM, GRU ou Transformer aparecem diretamente em dez documentos, e a seleção de hiperparâmetros, em onze. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores.",
+      "gatilhos": [
+        "segundo"
+      ],
+      "decisao": "síntese ou descrição da seleção e análise próprias; conferir números com matrizes e relatórios bibliométricos; sem autor externo individual omitido"
+    },
+    {
+      "paragrafo": 278,
+      "texto": "Figura 2 – Frequência das palavras-chave declaradas pelos autores",
+      "gatilhos": [
+        "autores?"
+      ],
+      "decisao": "título ou legenda; não faz atribuição específica sem referência"
+    },
+    {
+      "paragrafo": 282,
+      "texto": "Na Figura 2, echo state network foi identificado em nove documentos (37,5% dos 24), e reservoir computing, em cinco (20,8%). Deep learning, stock price forecasting e time series aparecem em três documentos cada (12,5%). Os resultados caracterizam os temas declarados pelos autores no subconjunto com esse campo disponível. A ausência de um termo entre as palavras-chave não implica ausência de discussão do conceito no texto do estudo.",
+      "gatilhos": [
+        "autores?"
+      ],
+      "decisao": "síntese ou descrição da seleção e análise próprias; conferir números com matrizes e relatórios bibliométricos; sem autor externo individual omitido"
+    },
+    {
+      "paragrafo": 301,
+      "texto": "A reexecução e a auditabilidade do protocolo foram favorecidas pelo versionamento do código em repositório Git e pela organização modular dos artefatos de software. A reprodução exata de cada execução histórica, entretanto, permaneceu condicionada à disponibilidade das matrizes, vetores de previsão e versões de dependências correspondentes, conforme detalhado na Seção 3.8.",
+      "gatilhos": [
+        "conforme"
+      ],
+      "decisao": "descrição do protocolo, resultados ou dados próprios; não identifica autor externo sem ano; afirmações técnicas e históricas dependem dos registros de execução e código, com limites já documentados"
+    },
+    {
+      "paragrafo": 306,
+      "texto": "A ausência dessa cadeia limita a auditoria retrospectiva do ajuste corporativo, ainda que os valores e as datas de entrada possam ser identificados por seus arquivos. A descrição das equações do BovDB oferece a referência metodológica, mas não substitui o registro dos eventos aplicados nem prova que cada exceção descrita na literatura tenha sido implementada na série local.",
+      "gatilhos": [
+        "literatura"
+      ],
+      "decisao": "descrição do protocolo, resultados ou dados próprios; não identifica autor externo sem ano; afirmações técnicas e históricas dependem dos registros de execução e código, com limites já documentados"
+    },
+    {
+      "paragrafo": 315,
+      "texto": "A ESN utilizada pertenceu ao paradigma da Computação de Reservatório (Reservoir Computing) e manteve fixos, durante o treinamento de cada modelo, os pesos do reservatório. A arquitetura foi composta por Win, matriz de pesos de entrada; W, matriz de conexões recorrentes internas; e Wout, componente treinável estimado por regressão linear regularizada. Nas combinações experimentais, as famílias probabilísticas empregadas na geração de Win e W variaram conforme a onda e, após a geração, W foi reescalonada pelo raio espectral codificado no cromossomo.",
+      "gatilhos": [
+        "conforme"
+      ],
+      "decisao": "descrição do protocolo, resultados ou dados próprios; não identifica autor externo sem ano; afirmações técnicas e históricas dependem dos registros de execução e código, com limites já documentados"
+    },
+    {
+      "paragrafo": 324,
+      "texto": "Em cada variante, Win e W foram geradas conforme a combinação probabilística da onda, e W foi reescalonada por sr/|λmax(W)|, em que λmax representa o autovalor de maior módulo. Esse procedimento controla o raio espectral, sem constituir garantia geral da propriedade de estado de eco. Durante o ajuste de cada ESN, Win e W permaneceram fixas, e Wout foi estimada por regressão Ridge. As comparações avaliam configurações que combinam inicialização, hiperparâmetros e realização estocástica, sem isolar causalmente a distribuição.",
+      "gatilhos": [
+        "conforme"
+      ],
+      "decisao": "descrição do protocolo, resultados ou dados próprios; não identifica autor externo sem ano; afirmações técnicas e históricas dependem dos registros de execução e código, com limites já documentados"
+    },
+    {
+      "paragrafo": 328,
+      "texto": "No motor atual, o cromossomo possui 55 bits: 17 para a taxa de vazamento, 17 para o raio espectral, 7 para o descarte inicial, 5 para o tamanho do reservatório e 9 para a regularização Ridge. A população é inicializada por LHS nas cinco dimensões e convertida para a codificação binária. O operador emprega seleção por torneio, crossover de um ponto com probabilidade 0,85, elitismo de aproximadamente 10% e mutação binária de 12% no regime normal. A correspondência desses parâmetros com cada execução histórica não foi estabelecida, conforme a Seção 3.8.",
+      "gatilhos": [
+        "conforme"
+      ],
+      "decisao": "descrição do protocolo, resultados ou dados próprios; não identifica autor externo sem ano; afirmações técnicas e históricas dependem dos registros de execução e código, com limites já documentados"
+    },
+    {
+      "paragrafo": 330,
+      "texto": "As execuções principais adotaram limite máximo de 10.000 gerações por cenário, com interrupção antecipada condicionada à estagnação. O orçamento elevado foi empregado para explorar combinações de distribuições e hiperparâmetros, mas seu custo foi contabilizado separadamente do ajuste final da ESN. As 45 execuções das cinco ondas totalizaram aproximadamente 37,9 horas de busca genética, enquanto o ajuste da camada de saída do modelo selecionado demandou cerca de 0,05 segundo.",
+      "gatilhos": [
+        "segundo"
+      ],
+      "decisao": "descrição do protocolo, resultados ou dados próprios; não identifica autor externo sem ano; afirmações técnicas e históricas dependem dos registros de execução e código, com limites já documentados"
+    },
+    {
+      "paragrafo": 341,
+      "texto": "As comparações entre as 45 execuções históricas de ESN e entre as diferentes distribuições foram tratadas como descritivas, pois não havia repetições independentes suficientes por configuração para sustentar inferência sobre superioridade entre distribuições. Para H1, contudo, a comparação entre ESN, GRU e LSTM foi complementada por uma análise inferencial específica com o teste de Diebold-Mariano. Intervalos de confiança e testes inferenciais entre as distribuições de Win e W não foram empregados.",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "nome do teste Diebold–Mariano usado para descrever a análise própria; a referência metodológica aparece no parágrafo 344 e as comparações são da rodada controlada"
+    },
+    {
+      "paragrafo": 344,
+      "texto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "título ou legenda; não faz atribuição específica sem referência"
+    },
+    {
+      "paragrafo": 359,
+      "texto": "A revisão de literatura reúne 34 documentos selecionados para fundamentar o trabalho. O levantamento inicial em Scopus e Springer Nature Link foi complementado por buscas externas à string inicial, conforme esclarecimento do autor, para incorporar fontes pertinentes ao desenvolvimento da pesquisa. A seleção final não decorreu exclusivamente daquela consulta nem de um ranking InOrdinatio integralmente aplicado. A coleção é apresentada como revisão de literatura com buscas complementares, sem alegação de cobertura exaustiva.",
+      "gatilhos": [
+        "conforme",
+        "literatura"
+      ],
+      "decisao": "síntese ou descrição da seleção e análise próprias; conferir números com matrizes e relatórios bibliométricos; sem autor externo individual omitido"
+    },
+    {
+      "paragrafo": 368,
+      "texto": "A frequência de palavras-chave considerou os 24 documentos em que foram localizadas listas declaradas pelos autores. Variantes equivalentes foram normalizadas com registro das correspondências, sem converter títulos ou classificações P1–P5 em palavras-chave. Cada termo contou uma vez por documento. A matriz de coocorrência foi conferida por uma contagem binária independente; o corte de frequência mínima de dois documentos resultou em 14 nós e 33 ligações. O posicionamento visual utilizou Fruchterman–Reingold, e as comunidades foram identificadas por Walktrap, com semente 20261012.",
+      "gatilhos": [
+        "autores?"
+      ],
+      "decisao": "Descrição do processamento próprio:24documentos,14nós,33ligações,algoritmos de disposição e agrupamento; números conferidos47 e pacotes identificados366–367."
+    },
+    {
+      "paragrafo": 369,
+      "texto": "Para os títulos, foram extraídos pares de palavras adjacentes (bigrams) dos 34 registros. O texto foi convertido para minúsculas e tokenizado, sem conservar pontuação, algarismos ou hífens nas unidades textuais extraídas. Os pares foram formados antes da exclusão de palavras de ligação, evitando unir palavras originalmente distantes. Não foram aplicadas redução de palavras a radicais, expansão de siglas nem agrupamento entre singular e plural.",
+      "gatilhos": [
+        "originalmente"
+      ],
+      "decisao": "síntese ou descrição da seleção e análise próprias; conferir números com matrizes e relatórios bibliométricos; sem autor externo individual omitido"
+    },
+    {
+      "paragrafo": 373,
+      "texto": "Os relatórios consolidados associam as execuções oficiais ao motor com LHS e mecanismo antiestagnação. O projeto também contém uma interface Shiny e rotinas em lote; contudo, a correspondência do código preservado com cada execução histórica não pôde ser verificada individualmente. Segundo esses relatórios, o conjunto final compreendeu 45 execuções de produção, organizadas em cinco ondas, com limite de 10.000 gerações por rodada. O lote reduzido de 12 cenários e 200 gerações pertenceu à prototipação e não integra as 45 execuções de produção; seus registros preservados são utilizados somente nas ilustrações complementares das Figuras 5 e 6.",
+      "gatilhos": [
+        "segundo"
+      ],
+      "decisao": "descrição do protocolo, resultados ou dados próprios; não identifica autor externo sem ano; afirmações técnicas e históricas dependem dos registros de execução e código, com limites já documentados"
+    },
+    {
+      "paragrafo": 375,
+      "texto": "Contudo, a auditoria do repositório mostrou que essa persistência não foi aplicada de forma completa a todas as execuções oficiais; por isso, o procedimento para nova execução foi documentado, enquanto a reprodução exata de cada rodada histórica permaneceu condicionada aos artefatos efetivamente preservados. A execução complementar de Diebold-Mariano preservou semente, dependências, matrizes, modelos, previsões datadas, métricas, validações e hashes antes da análise inferencial.",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "nome do teste Diebold–Mariano usado para descrever a análise própria; a referência metodológica aparece no parágrafo 344 e as comparações são da rodada controlada"
+    },
+    {
+      "paragrafo": 382,
+      "texto": "A mensagem central dos resultados foi dupla. Primeiro, ESNs pequenas e otimizadas apresentaram erros inferiores aos valores documentados para LSTM e GRU na maior parte das execuções. Segundo, as distribuições não gaussianas produziram os melhores resultados pontuais, porém a melhoria sobre o controle Normal × Normal permaneceu inferior a 1%, devendo ser interpretada como ganho incremental observado no protocolo adotado.",
+      "gatilhos": [
+        "segundo"
+      ],
+      "decisao": "descrição do protocolo, resultados ou dados próprios; não identifica autor externo sem ano; afirmações técnicas e históricas dependem dos registros de execução e código, com limites já documentados"
+    },
+    {
+      "paragrafo": 384,
+      "texto": "Na nomenclatura adotada, a primeira distribuição de cada combinação correspondeu à matriz de entrada Win e a segunda à matriz recorrente W. Assim, Laplace × Normal indicou Win gerada segundo a distribuição Laplace e W gerada segundo a distribuição Normal; Normal × Normal indicou distribuição Normal nas duas matrizes; e Laplace × Cauchy indicou Win Laplace e W Cauchy.",
+      "gatilhos": [
+        "segundo"
+      ],
+      "decisao": "descrição do protocolo, resultados ou dados próprios; não identifica autor externo sem ano; afirmações técnicas e históricas dependem dos registros de execução e código, com limites já documentados"
+    },
+    {
+      "paragrafo": 422,
+      "texto": "O ajuste analítico de aproximadamente 0,05 segundo correspondeu ao cálculo da camada de saída após a configuração da ESN ter sido selecionada. Considerando apenas essa etapa, o tempo documentado correspondeu a uma razão de tempos de aproximadamente 576 vezes em relação à GRU e 708 vezes em relação à LSTM.",
+      "gatilhos": [
+        "segundo"
+      ],
+      "decisao": "descrição do protocolo, resultados ou dados próprios; não identifica autor externo sem ano; afirmações técnicas e históricas dependem dos registros de execução e código, com limites já documentados"
+    },
+    {
+      "paragrafo": 429,
+      "texto": "O custo computacional também assume significado distinto conforme a etapa do ciclo do modelo. As aproximadamente 37,9 horas consumidas pelas 45 buscas genéticas constituem custo off-line de descoberta e calibração de configurações. Após a seleção de uma configuração, o ajuste analítico documentado da camada de saída da ESN demanda aproximadamente 0,05 segundo.",
+      "gatilhos": [
+        "segundo",
+        "conforme"
+      ],
+      "decisao": "descrição do protocolo, resultados ou dados próprios; não identifica autor externo sem ano; afirmações técnicas e históricas dependem dos registros de execução e código, com limites já documentados"
+    },
+    {
+      "paragrafo": 440,
+      "texto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "título ou legenda; não faz atribuição específica sem referência"
+    },
+    {
+      "paragrafo": 443,
+      "texto": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "título ou legenda; não faz atribuição específica sem referência"
+    },
+    {
+      "paragrafo": 449,
+      "texto": "O Quadro 5 sintetiza as evidências e os limites da avaliação de H1 a H5. H1 recebeu apoio em duas camadas de evidência. Nos resultados históricos, a ESN campeã apresentou menor MAE e RMSE que os valores registrados para GRU e LSTM, e 44 das 45 execuções obtiveram MAE inferior aos dois baselines. Na execução controlada complementar, os quatro testes de Diebold-Mariano rejeitaram a hipótese nula a 5% sob perdas absoluta e quadrática, sempre com menor perda média para a ESN. H2 também recebeu apoio quando restrita ao custo de ajuste da configuração selecionada; o custo da busca genética é tratado separadamente.",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "nome do teste Diebold–Mariano usado para descrever a análise própria; a referência metodológica aparece no parágrafo 344 e as comparações são da rodada controlada"
+    },
+    {
+      "paragrafo": 468,
+      "texto": "Por essa razão, diferenças pequenas entre inicializações continuaram tratadas como resultados observados, e não como demonstração de superioridade estatística entre distribuições. A inferência realizada pelo teste de Diebold-Mariano foi restrita à H1 e à execução controlada complementar que comparou ESN, GRU e LSTM sobre os mesmos 1.298 alvos.",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "nome do teste Diebold–Mariano usado para descrever a análise própria; a referência metodológica aparece no parágrafo 344 e as comparações são da rodada controlada"
+    },
+    {
+      "paragrafo": 474,
+      "texto": "Consequentemente, o teste de Diebold-Mariano não pôde ser aplicado retrospectivamente aos mesmos vetores que originaram a Tabela 3. A execução controlada complementar superou essa limitação apenas para a análise inferencial de H1, preservando previsões datadas, modelos, matrizes, configuração, versões de dependências e hashes; ela não reconstrói os vetores históricos ausentes.",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "nome do teste Diebold–Mariano usado para descrever a análise própria; a referência metodológica aparece no parágrafo 344 e as comparações são da rodada controlada"
+    },
+    {
+      "paragrafo": 475,
+      "texto": "Os quatro testes de Diebold-Mariano produziram valores de p muito inferiores a 0,05 e menor perda média para a ESN sob perdas absoluta e quadrática. Ainda assim, essa evidência decorreu de uma única semente previamente fixada e de uma execução controlada com novos pesos; portanto, não caracteriza a distribuição de desempenho entre diferentes inicializações. Além disso, não foi aplicada correção para múltiplas comparações, pois os quatro contrastes foram pré-especificados com α individual de 5%. Essas condições limitam a generalização da inferência, embora não alterem a conclusão dos quatro testes dentro da execução analisada.",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "nome do teste Diebold–Mariano usado para descrever a análise própria; a referência metodológica aparece no parágrafo 344 e as comparações são da rodada controlada"
+    },
+    {
+      "paragrafo": 478,
+      "texto": "A comparação entre ESN, LSTM e GRU também utiliza orçamentos distintos de seleção de hiperparâmetros. A ESN recebeu uma busca evolutiva extensa, enquanto os baselines LSTM e GRU utilizaram arquiteturas definidas no protocolo, com 50 unidades recorrentes, janela de dez passos, dropout de 0,2, Adam e 80 épocas. A análise de Diebold-Mariano fortaleceu a evidência relativa a essas arquiteturas específicas na execução controlada, mas não elimina a assimetria de orçamento nem permite afirmar que toda possível configuração de LSTM ou GRU teria desempenho inferior.",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "nome do teste Diebold–Mariano usado para descrever a análise própria; a referência metodológica aparece no parágrafo 344 e as comparações são da rodada controlada"
+    },
+    {
+      "paragrafo": 487,
+      "texto": "Foram investigadas famílias probabilísticas em Win e W, selecionados hiperparâmetros por AG e comparados resultados com ESN Normal × Normal, LSTM e GRU. O ESNAUTO organizou o processo e suas saídas, e H1 recebeu análise inferencial complementar pelo teste de Diebold-Mariano. A série foi fornecida já ajustada pelo orientador. A contribuição do autor compreendeu a adaptação dos códigos em R recebidos e o desenvolvimento da interface. Permanecem os limites de comparação e de preservação dos artefatos históricos.",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "nome do teste Diebold–Mariano usado para descrever a análise própria; a referência metodológica aparece no parágrafo 344 e as comparações são da rodada controlada"
+    },
+    {
+      "paragrafo": 492,
+      "texto": "Quanto às hipóteses, H1 recebeu apoio descritivo nos resultados históricos e apoio inferencial complementar: na execução controlada, a ESN apresentou menor perda média que GRU e LSTM e diferença estatisticamente significativa nos quatro testes de Diebold-Mariano, sob perdas absoluta e quadrática.",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "nome do teste Diebold–Mariano usado para descrever a análise própria; a referência metodológica aparece no parágrafo 344 e as comparações são da rodada controlada"
+    },
+    {
+      "paragrafo": 495,
+      "texto": "A auditoria dos artefatos mostrou que a política histórica de persistência não preservou todos os vetores de previsão e matrizes das execuções oficiais; a execução complementar do teste de Diebold-Mariano respondeu a essa limitação com persistência integral das previsões, modelos, matrizes, semente, ambiente e metadados necessários à auditoria.",
+      "gatilhos": [
+        "Diebold",
+        "Mariano"
+      ],
+      "decisao": "nome do teste Diebold–Mariano usado para descrever a análise própria; a referência metodológica aparece no parágrafo 344 e as comparações são da rodada controlada"
+    }
+  ],
+  "resultado": "Nenhuma nova atribuição externa sem fonte foi identificada nos candidatos.",
+  "limite": "Filtro não detecta universalmente nomes ou atribuições desconhecidas; revisão contextual do corpo e referências integra as evidências separadas."
+}

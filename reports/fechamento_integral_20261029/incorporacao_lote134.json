@@ -1,0 +1,16 @@
+{
+  "sha_antes": "030ab811d6ef06b5cab2437c7c2a2f1870d87ab554adc8ac3c77bb983fd96f44",
+  "alteracoes": [
+    {
+      "indice": 405,
+      "antes": "O controle Normal × Normal apresentou MAE de 0,328365. A configuração Laplace × Normal reduziu esse valor para 0,327224, correspondendo a uma melhoria relativa de aproximadamente 0,347%. No RMSE, o controle registrou 0,499037 e Laplace × Cauchy atingiu 0,495386, redução aproximada de 0,732%.",
+      "depois": "A Tabela 4 reúne configurações selecionadas das cinco ondas experimentais. O controle Normal × Normal apresentou MAE de 0,328365. A configuração Laplace × Normal reduziu esse valor para 0,327224, correspondendo a uma melhoria relativa de aproximadamente 0,347%. No RMSE, o controle registrou 0,499037 e Laplace × Cauchy atingiu 0,495386, redução aproximada de 0,732%."
+    },
+    {
+      "indice": 447,
+      "antes": "H1 recebeu apoio em duas camadas de evidência. Nos resultados históricos, a ESN campeã apresentou menor MAE e RMSE que os valores registrados para GRU e LSTM, e 44 das 45 execuções obtiveram MAE inferior aos dois baselines. Na execução controlada complementar, os quatro testes de Diebold-Mariano rejeitaram a hipótese nula a 5% sob perdas absoluta e quadrática, sempre com menor perda média para a ESN. H2 também recebeu apoio quando restrita ao custo de ajuste da configuração selecionada; o custo da busca genética é tratado separadamente.",
+      "depois": "O Quadro 5 sintetiza as evidências e os limites da avaliação de H1 a H5. H1 recebeu apoio em duas camadas de evidência. Nos resultados históricos, a ESN campeã apresentou menor MAE e RMSE que os valores registrados para GRU e LSTM, e 44 das 45 execuções obtiveram MAE inferior aos dois baselines. Na execução controlada complementar, os quatro testes de Diebold-Mariano rejeitaram a hipótese nula a 5% sob perdas absoluta e quadrática, sempre com menor perda média para a ESN. H2 também recebeu apoio quando restrita ao custo de ajuste da configuração selecionada; o custo da busca genética é tratado separadamente."
+    }
+  ],
+  "motivo": "Chamadas narrativas G53/G62 ausentes, sem mudança nos dados."
+}

@@ -1,0 +1,174 @@
+{
+  "origem": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\MayconGarciaSilva_monografia_observacoes_atendidas.docx",
+  "sha256_origem": "5acd678857ed4e1535d0e6c437b861faff21d18319ccecebbc898e0add6fc8eb",
+  "saida": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\MayconGarciaSilva_monografia_padronizada_FASOFT.docx",
+  "alteracoes_textuais": [
+    {
+      "tipo": "texto",
+      "antes": "O mercado acionário ocupa posição central nas economias contemporâneas. De um lado, oferece às empresas um canal de captação de recursos para financiar suas operações e seus projetos de expansão; de outro, abre aos investidores a possibilidade de aplicar poupança em ativos com perfis de risco e retorno variados. No Brasil, esse papel é exercido pela Brasil, Bolsa, Balcão (B3), bolsa de valores que reúne ações de centenas de companhias listadas em diferentes setores da economia. Vishwas et al. (2025) observam que o volume de dados produzido nesse ambiente, somado à velocidade das negociações eletrônicas, tornou a identificação de padrões de comportamento de preços uma das tarefas mais desafiadoras na fronteira entre finanças e Ciência da Computação.",
+      "depois": "A previsão de preços de ações reúne desafios de análise temporal, escolha de modelos e qualidade dos dados. No mercado brasileiro, esta pesquisa delimita esse problema à previsão de um passo à frente do preço de fechamento ajustado da ação preferencial da Petróleo Brasileiro S.A. (PETR4), negociada na Brasil, Bolsa, Balcão (B3). O interesse está em avaliar o desempenho preditivo e o custo computacional de configurações de redes neurais sob um protocolo experimental definido, sem interpretar a previsão de preços como demonstração de rentabilidade de uma estratégia de negociação.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Prever preços de ativos negociados na B3 acrescenta dificuldades às que já marcam mercados internacionais. As séries temporais financeiras brasileiras exibem não linearidades acentuadas, comportamento estocástico e sensibilidade pronunciada a choques macroeconômicos e políticos, o que limita a aplicação direta de modelos estatísticos clássicos baseados em pressupostos de estacionariedade e linearidade. Além disso, eventos extremos ocorrem com frequência incompatível com a hipótese Gaussiana. Ping (2023) mostra que oscilações abruptas de preço impactam diretamente decisões de investimento em escala global, o que confere à modelagem preditiva relevância tanto para o investidor individual quanto para o gestor de risco institucional.",
+      "depois": "A abordagem central emprega Redes Neurais de Estados de Eco (Echo State Networks – ESNs), pertencentes à Computação de Reservatório (Reservoir Computing – RC). Nessa arquitetura, as matrizes de entrada e do reservatório, designadas por Win e W, permanecem fixas durante o ajuste da camada de saída. Essa organização motiva o estudo de alternativas à otimização iterativa de todos os pesos. A escolha das distribuições de inicialização e dos hiperparâmetros, entretanto, integra o problema experimental e não permite pressupor superioridade de uma configuração antes de sua avaliação.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Para tratar dados com estrutura sequencial e dependências temporais, uma das classes de modelos mais discutidas na literatura é a das Redes Neurais Recorrentes (RNRs; do inglês Recurrent Neural Networks - RNNs). Diferentemente das Redes Neurais Feedforward convencionais, que processam cada entrada de forma independente, as RNRs mantêm um estado interno atualizado a cada novo dado recebido, de acordo com Sudiatmika e Putra (2024). Essa memória interna permite que cada saída da rede dependa não apenas da entrada atual, mas também do histórico acumulado ao longo da sequência, o que torna possível capturar dependências entre observações distantes no tempo.",
+      "depois": "A pesquisa utiliza preços ajustados para lidar com descontinuidades associadas a eventos corporativos, sem isolar o efeito do Fator de Ajuste por uma ablação. Também distingue o custo da busca por hiperparâmetros do ajuste da configuração selecionada, delimitando a interpretação da acurácia e da eficiência computacional.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Entre as variantes de RNRs aplicadas à previsão de séries temporais financeiras, destacam-se as redes Long-Short Term Memory (LSTM) e Gated Recurrent Unit (GRU). Ambas foram concebidas precisamente para mitigar a dificuldade clássica das RNRs simples - o desvanecimento de gradiente em sequências longas por meio de mecanismos de controle de fluxo de informação chamados gates, que decidem quais informações devem ser preservadas, atualizadas ou descartadas ao longo da sequência. As GRUs adotam arquitetura mais enxuta que as LSTMs, com menor número de parâmetros treináveis segundo Sudiatmika e Putra (2024). Em contrapartida, ambas compartilham uma limitação de natureza prática: o treinamento por meio do algoritmo Backpropagation Through Time (BPTT) é iterativo, computacionalmente custoso e, em séries muito longas, pode ainda apresentar instabilidades numéricas residuais.",
+      "depois": "O problema de pesquisa consiste em investigar em que medida distribuições não gaussianas para Win e W, combinadas a um Algoritmo Genético (AG), alteram a acurácia e o custo computacional de uma ESN na previsão fora da amostra da PETR4 em comparação com inicializações canônicas e com redes Long Short-Term Memory (LSTM) e Gated Recurrent Unit (GRU). A justificativa está na necessidade de documentar essas escolhas de inicialização, avaliá-las em conjunto com os hiperparâmetros e explicitar as condições em que as comparações são sustentadas pelos registros disponíveis.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Uma alternativa menos convencional, com propriedades particularmente atrativas para previsão financeira, são as Redes Neurais de Estados de Eco (Echo State Networks - ESNs), inseridas no paradigma da Computação de Reservatório (Reservoir Computing - RC). Conforme Jaeger (2007), uma ESN é organizada em torno de um núcleo recorrente, o reservatório, cujos pesos internos são gerados aleatoriamente e mantidos fixos durante todo o processo de treinamento. Esse núcleo projeta os dados de entrada em um espaço de alta dimensionalidade, e cabe à camada de saída, treinada por regressão linear regularizada, extrair desse espaço os padrões úteis para a predição.",
+      "depois": "O objetivo geral é investigar o desempenho de ESNs na predição de um passo à frente do preço ajustado da PETR4, com ênfase nas distribuições aplicadas a Win e W e na otimização conjunta dos hiperparâmetros por AG. A busca utiliza inicialização por Amostragem por Hipercubo Latino (Latin Hypercube Sampling – LHS) e mutação cataclísmica inspirada no CHC, denominação de Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation. O mecanismo antiestagnação não corresponde à implementação do CHC completo.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "A diferença fundamental em relação a redes treinadas por gradiente, como LSTM e GRU, está justamente no processo de aprendizado. Nas redes recorrentes tradicionais, todos os pesos internos são ajustados iterativamente pelo BPTT, o que torna o treinamento lento e exigente em recursos computacionais. Nas ESNs, esse custo é evitado por construção: como os pesos do reservatório permanecem inalterados, o ajuste se restringe à camada de saída e pode ser feito por solução analítica fechada. O resultado prático é um treinamento ordens de grandeza mais rápido e numericamente mais estável, sem perda relevante de capacidade representacional. Wang et al. (2021) e Ribeiro et al. (2021) confirmam empiricamente essa propriedade ao aplicar modelos de RC à previsão de índices acionários e à modelagem de volatilidade de preços, com desempenho competitivo ou superior ao de arquiteturas profundas e fração do custo computacional.",
+      "depois": "Como objetivos específicos, pretende-se consolidar a revisão da literatura; empregar a série histórica ajustada; desenvolver o ESNAUTO, integrando ESN, regressão Ridge e busca genética; e investigar distribuições canônicas, de cauda pesada, assimétricas, esparsas e empiricamente ajustadas. Também se busca otimizar conjuntamente a taxa de vazamento, o raio espectral, o descarte inicial, o tamanho do reservatório e a regularização Ridge por meio de cromossomo binário de 55 bits.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "A qualidade das previsões, contudo, não depende apenas da arquitetura escolhida. Depende também, em medida frequentemente subestimada, da integridade dos dados históricos utilizados no treinamento. No mercado de ações, eventos corporativos podem provocar descontinuidades mecânicas na série de preços mesmo sem representar uma perda ou ganho econômico equivalente para o investidor. No BovDB, Cardoso et al. (2022b) registram eventos como Ex-Dividend (dividendos), Ex-Interest (juros sobre capital próprio), Ex-Bonus (bonificação em ações), Ex-Stock Split (desdobramento), Ex-Stock Inplit (grupamento), Ex-Subscription (destacamento de direito de subscrição), Ex-Rights (destacamento de direitos) e Ex-Split Up (cisão ou reorganização societária), este último dependente da natureza do evento. Para esses casos, quando há mudança mecânica entre o fechamento anterior e a abertura no ex-date, o Fator de Ajuste, denominado Factor pelos autores, é utilizado para compatibilizar retrospectivamente a série. Registros como Full Rights, Units, BDR-DR3 e BDR-DRN descrevem condição, estrutura ou categoria do instrumento e não implicam automaticamente uma descontinuidade a ser corrigida pelo Fator. Sem o ajuste dos eventos que efetivamente alteram mecanicamente a cotação, um modelo preditivo pode interpretar a variação artificial como movimento de mercado e incorporar ruído sistemático ao treinamento.",
+      "depois": "A avaliação contempla o Erro Médio Absoluto (Mean Absolute Error – MAE), a Raiz do Erro Quadrático Médio (Root Mean Squared Error – RMSE) e o coeficiente de determinação (R²), a comparação com a ESN Normal × Normal e com LSTM e GRU e a separação entre custo de otimização e ajuste final. Inclui ainda o exame da estabilidade das execuções, a comparação inferencial complementar pelo teste de Diebold–Mariano, a documentação do procedimento e a discussão de limitações e condições de replicação.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Outro ponto sensível na aplicação de ESNs é a definição dos hiperparâmetros que governam a dinâmica do reservatório, em particular o raio espectral, a taxa de esparsidade e a taxa de vazamento. Esses valores influenciam diretamente a capacidade de memória, a estabilidade dinâmica e o poder representacional da rede, e o espaço de busca formado pelas suas combinações é grande demais para uma busca manual sistemática. Uma resposta consolidada na literatura é recorrer a metaheurísticas de otimização. Os Algoritmos Genéticos (AGs), descritos por Millea (2014), são métodos de busca inspirados nos princípios da evolução biológica e exploram combinações de parâmetros sem exigir que o espaço de busca seja contínuo ou diferenciável. Deng et al. (2022) demonstram a viabilidade dessa abordagem ao otimizar uma ESN empilhada por AG, com ganhos expressivos de acurácia.",
+      "depois": "Cinco hipóteses orientam a pesquisa e são apresentadas a seguir. Sua avaliação deve distinguir resultados descritivos, evidência inferencial e limites de atribuição causal.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Soltani et al. (2023), em revisão sistemática sobre otimização de ESNs, indicam que a combinação dessas técnicas com séries financeiras permanece subexplorada. Diante desse quadro, identifica-se uma oportunidade de investigação: poucos trabalhos integram, em uma mesma proposta, a eficiência computacional das ESNs, a otimização automática de hiperparâmetros, a correção dos dados pelo Fator de Ajuste e uma investigação sistemática das distribuições empregadas nas matrizes de entrada e do reservatório. Neste trabalho, LHS designa a Amostragem por Hipercubo Latino (Latin Hypercube Sampling), enquanto CHC corresponde a Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation, denominação que resume seleção elitista entre gerações, recombinação heterogênea e mutação cataclísmica. O CHC completo não foi implementado; seu mecanismo cataclísmico foi utilizado como inspiração para o operador antiestagnação incorporado ao Algoritmo Genético. Essa lacuna conduz à seguinte questão de pesquisa: em que medida distribuições não gaussianas para Win e W, combinadas a um Algoritmo Genético com inicialização LHS e operador antiestagnação por mutação cataclísmica inspirado no CHC, alteram a acurácia e o custo computacional de uma ESN na previsão fora da amostra da PETR4 em comparação com inicializações canônicas, LSTM e GRU?",
+      "depois": "H1 - desempenho: a ESN otimizada apresentará desempenho preditivo comparável ou superior ao de LSTM e GRU no protocolo adotado, considerando-se desempenho comparável a ausência de diferença estatisticamente significativa pelo teste de Diebold-Mariano e desempenho superior a redução de erro acompanhada de significância no mesmo teste.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Investigar o desempenho de ESNs na predição de um passo à frente do preço ajustado da PETR4, com ênfase no efeito das distribuições probabilísticas aplicadas às matrizes Win e W e na otimização conjunta dos hiperparâmetros por um Algoritmo Genético com inicialização LHS e mutação cataclísmica inspirada no CHC, comparando os resultados com uma ESN Normal e com baselines LSTM e GRU.",
+      "depois": "H2 - eficiência: após a seleção da configuração, o ajuste analítico da camada de saída da ESN demandará menos tempo computacional que o treinamento iterativo de LSTM e GRU.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Para alcançar o objetivo geral, este trabalho se organiza em torno dos seguintes objetivos específicos:",
+      "depois": "H3 - inicialização: ao menos uma distribuição não gaussiana em Win ou W produzirá erro fora da amostra menor que a inicialização Normal × Normal.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "a) consolidar a revisão da literatura sobre ESNs, otimização evolucionária e inicialização probabilística de reservatórios aplicados a séries financeiras;",
+      "depois": "H4 - exploração evolucionária: a combinação de inicialização LHS e mutação cataclísmica manterá diversidade de busca e produzirá soluções competitivas sob o orçamento experimental definido.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "b) empregar a série histórica da PETR4 corrigida pelo Fator de Ajuste, reduzindo descontinuidades artificiais associadas a eventos corporativos;",
+      "depois": "H5 - ajuste empírico: distribuições ajustadas aos dados de treino pelo EasyFit produzirão melhor desempenho ou menor variabilidade que distribuições canônicas.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "c) desenvolver o ESNAUTO, integrando ESN com regressão Ridge, Algoritmo Genético binário, inicialização populacional por Latin Hypercube Sampling e operador antiestagnação por mutação cataclísmica inspirado no CHC;",
+      "depois": "O trabalho está organizado em revisão da literatura, material e métodos, resultados e discussão, discussão das limitações e conclusão. A revisão fundamenta os modelos e as escolhas de inicialização; a metodologia delimita os procedimentos e os blocos experimentais; os capítulos finais apresentam a avaliação e suas implicações. A extensão a outros ativos permanece como possibilidade de continuidade, preservando a PETR4 como objeto dos resultados principais desta monografia.",
+      "motivo": "Adequação da introdução ao guia, pp. 13–14 e 25; hipóteses preservadas."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Tabela 1 – Síntese das dimensões investigadas no portfólio bibliográfico (n=34)\t34",
+      "depois": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico\t34",
+      "motivo": "Título sem siglas, conforme modelos pp. 53–55."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Tabela 3 – Caracterização estatística dos preços ajustados da PETR4 (2000–2020)\t43",
+      "depois": "Tabela 3 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)\t43",
+      "motivo": "Título sem siglas, conforme modelos pp. 53–55."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Tabela 9 – Comparação com trabalhos relacionados à PETR4\t63",
+      "depois": "Tabela 9 – Comparação com trabalhos relacionados à ação preferencial da Petrobras\t63",
+      "motivo": "Título sem siglas, conforme modelos pp. 53–55."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Figura 1 – Cobertura das dimensões P1–P5 nos estudos\t37",
+      "depois": "Figura 1 – Cobertura das cinco dimensões analíticas nos estudos\t37",
+      "motivo": "Título sem siglas, conforme modelos pp. 53–55."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Figura 5 – Evolução do fitness na execução preservada da PETR4 com 200 gerações\t55",
+      "depois": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações\t55",
+      "motivo": "Título sem siglas, conforme modelos pp. 53–55."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Figura 6 – Preços observados e previstos da PETR4 na mesma execução preservada\t56",
+      "depois": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada\t56",
+      "motivo": "Título sem siglas, conforme modelos pp. 53–55."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Tabela 1 – Síntese das dimensões investigadas no portfólio bibliográfico (n=34)",
+      "depois": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico",
+      "motivo": "Título sem siglas, conforme modelos pp. 53–55."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Figura 1 – Cobertura das dimensões P1–P5 nos estudos",
+      "depois": "Figura 1 – Cobertura das cinco dimensões analíticas nos estudos",
+      "motivo": "Título sem siglas, conforme modelos pp. 53–55."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Tabela 3 – Caracterização estatística dos preços ajustados da PETR4 (2000–2020)",
+      "depois": "Tabela 3 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+      "motivo": "Título sem siglas, conforme modelos pp. 53–55."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Figura 5 – Evolução do fitness na execução preservada da PETR4 com 200 gerações",
+      "depois": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações",
+      "motivo": "Título sem siglas, conforme modelos pp. 53–55."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Figura 6 – Preços observados e previstos da PETR4 na mesma execução preservada",
+      "depois": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada",
+      "motivo": "Título sem siglas, conforme modelos pp. 53–55."
+    },
+    {
+      "tipo": "texto",
+      "antes": "Tabela 9 – Comparação com trabalhos relacionados à PETR4",
+      "depois": "Tabela 9 – Comparação com trabalhos relacionados à ação preferencial da Petrobras",
+      "motivo": "Título sem siglas, conforme modelos pp. 53–55."
+    }
+  ],
+  "decisoes": [
+    "Base posterior com observações do orientador, preservando a base histórica do catálogo.",
+    "Margens reais 3/3/2/2 em todas as seções.",
+    "Fonte 11 em todas as tabelas e 10 em títulos e fontes conforme pedido posterior de aplicar o guia.",
+    "Quarto nível: regra textual da p. 12 prevalece sobre exemplo da p. 50; não há quarto nível no documento.",
+    "Ficha catalográfica permanece vazia: conteúdo deve ser emitido pela biblioteca.",
+    "Folha de aprovação mantém campos de data sem inventar aprovação."
+  ],
+  "figuras_preservadas": 6,
+  "tabelas_preservadas": 13,
+  "experimentos_reexecutados": false
+}

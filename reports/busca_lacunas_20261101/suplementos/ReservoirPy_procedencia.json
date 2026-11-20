@@ -1,0 +1,177 @@
+{
+  "metodo": "Leitura de fontes oficiais por tag; nenhum código executado. Versão de Kumar não fixada.",
+  "arquivos": [
+    {
+      "file": "reservoir_v039.py",
+      "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/nodes/reservoirs/reservoir.py?ref=v0.3.9",
+      "length": 14033
+    },
+    {
+      "file": "reservoir_v0312.py",
+      "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/nodes/reservoirs/reservoir.py?ref=v0.3.12",
+      "length": 14046
+    },
+    {
+      "file": "mat_gen_v039.py",
+      "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/mat_gen.py?ref=v0.3.9",
+      "length": 32653
+    },
+    {
+      "file": "base_v039.py",
+      "url": "https://api.github.com/repos/reservoirpy/reservoirpy/contents/reservoirpy/nodes/reservoirs/base.py?ref=v0.3.9",
+      "length": 8535
+    }
+  ],
+  "releases": [
+    {
+      "tag": "v0.4.2",
+      "data": "2026-06-08T13:41:39Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.4.2"
+    },
+    {
+      "tag": "v0.3.16",
+      "data": "2026-06-05T14:00:13Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.16"
+    },
+    {
+      "tag": "v0.3.15",
+      "data": "2025-09-24T15:08:28Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.15"
+    },
+    {
+      "tag": "v0.4.1",
+      "data": "2025-09-19T20:24:33Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.4.1"
+    },
+    {
+      "tag": "v0.4.0",
+      "data": "2025-08-23T15:44:49Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.4.0"
+    },
+    {
+      "tag": "v0.3.14",
+      "data": "2025-08-01T13:27:36Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.14"
+    },
+    {
+      "tag": "v0.3.13post1",
+      "data": "2025-05-06T14:46:46Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.13post1"
+    },
+    {
+      "tag": "v0.3.13",
+      "data": "2025-04-03T13:44:24Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.13"
+    },
+    {
+      "tag": "v0.3.12",
+      "data": "2024-11-12T17:54:03Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.12"
+    },
+    {
+      "tag": "v0.3.11",
+      "data": "2024-02-03T17:48:04Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.11"
+    },
+    {
+      "tag": "v0.3.10",
+      "data": "2023-11-20T18:13:04Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.10"
+    },
+    {
+      "tag": "v0.3.9.post1",
+      "data": "2023-07-18T10:04:47Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.9.post1"
+    },
+    {
+      "tag": "v0.3.9",
+      "data": "2023-07-17T10:03:11Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.9"
+    },
+    {
+      "tag": "v0.3.8",
+      "data": "2023-05-31T15:20:42Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.8"
+    },
+    {
+      "tag": "v0.3.7",
+      "data": "2023-03-20T10:57:27Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.7"
+    },
+    {
+      "tag": "v0.3.6",
+      "data": "2023-02-05T14:17:51Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.6"
+    },
+    {
+      "tag": "v0.3.5",
+      "data": "2022-05-30T12:35:21Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.5"
+    },
+    {
+      "tag": "v0.3.4",
+      "data": "2022-05-17T12:18:44Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.4"
+    },
+    {
+      "tag": "v0.3.3",
+      "data": "2022-05-08T14:16:08Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.3"
+    },
+    {
+      "tag": "v0.3.2.post1",
+      "data": "2022-03-25T16:43:18Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.2.post1"
+    },
+    {
+      "tag": "v0.3.2",
+      "data": "2022-03-18T15:29:45Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.2"
+    },
+    {
+      "tag": "v0.3.1.post1",
+      "data": "2022-02-25T10:42:55Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.1.post1"
+    },
+    {
+      "tag": "v0.3.1",
+      "data": "2022-02-09T20:13:08Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.1"
+    },
+    {
+      "tag": "v0.3.0",
+      "data": "2022-01-16T19:04:30Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.0"
+    },
+    {
+      "tag": "v0.3.0-b2",
+      "data": "2021-12-01T18:28:29Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.0-b2"
+    },
+    {
+      "tag": "v0.3.0-b1",
+      "data": "2021-11-29T16:53:01Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.0-b1"
+    },
+    {
+      "tag": "v0.2.4-post1",
+      "data": "2021-11-29T16:47:28Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.2.4-post1"
+    },
+    {
+      "tag": "v0.3.0-b",
+      "data": "2021-11-19T19:02:03Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.3.0-b"
+    },
+    {
+      "tag": "v0.2.4",
+      "data": "2021-06-25T10:06:07Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.2.4"
+    },
+    {
+      "tag": "v0.2.3.post1",
+      "data": "2021-03-08T14:13:16Z",
+      "url": "https://github.com/reservoirpy/reservoirpy/releases/tag/v0.2.3.post1"
+    }
+  ]
+}

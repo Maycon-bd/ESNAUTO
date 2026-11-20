@@ -1,0 +1,27 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "copia": "reports\\monografia\\trabalho\\fechamento_integral_20261029.docx",
+  "sha256_atual_apos_exportacao_nativa": "4d8ad77d6266568f21d1593e1026c4f6a567c439749daafe44b4e6a6ed49efad",
+  "unidades_textuais_alteradas_acumuladas": 22,
+  "figuras_alteradas_acumuladas": 1,
+  "paginas_pdf": 76,
+  "validacao_estrutural": "45 verificações sem falhas; não é validação semântica integral.",
+  "validacao_nominal": "50 referências e 152 chamadas reconhecidas, sem órfãs nos padrões examinados. O parser não cobre todas as chamadas qualificadas por página.",
+  "paginas_inspecionadas": [
+    25,
+    73,
+    75
+  ],
+  "resultado_visual": "Três páginas diferentes abertas e inspecionadas, sem cortes, sobreposições, referência partida ou título isolado. Outras 73 páginas são idênticas ao lote 6.",
+  "tabelas_e_resultados": "Lote 7 alterou somente um parágrafo e duas referências. Todas as tabelas e mídias foram preservadas, e os resultados continuam com os dados da base.",
+  "evidencias_conteudo": [
+    "leituras_sharma_duttilo_lote7.json",
+    "comparacao_visual_lote7.json",
+    "verificacao_lote7.json",
+    "fontes_suplementares/SIS2022_Pearson_final_origem.json",
+    "../correcao_parecer_integridade/cruzamento_fechamento_integral_lote7.json"
+  ],
+  "limites": "D23 foi lido visualmente em todas as páginas; D10 é artigo de seis páginas, não leitura integral dos anais. Metadados consultados em arXiv e Pearson. Demais fontes/afirmações, similaridade e Guia seguem em andamento. Nenhum experimento foi executado.",
+  "estado": "rascunho_nao_promovido_meta_ativa"
+}

@@ -1,0 +1,40 @@
+[    0.00 -     6.40] Lá, meu nome é Maricon Garcia Silva, do curso de engenharia do software da Universidade de Rio Verde.
+[    6.54 -    12.02] Nesse trabalho orientado pelo meu professor, doutor Fabian Corrêa Cardoso,
+[   12.46 -    18.26] isso deu uma forma de prever o preço de fechamento ajustado na ação da PETRA.
+[   18.93 -    26.79] Para isso, eu usei uma rede neural chamada Rede de Estátuos de Eco, EcoState Network, ESN,
+[   26.79 -    30.69] um algoritmo genético para procurar boas configurações dessa rede,
+[   31.01 -    35.25] e também trabalhei na adaptação de uma interface do sistema ESNAUTO.
+[   35.87 -    42.89] Vou mostrar como cheguei aos testes e como os resultados indicam e até onde podemos chegar com essas conclusões.
+[   45.52 -    49.78] Falando agora sobre o problema da pesquisa que o que guiou foi o trabalho, foi assim,
+[   49.98 -    57.52] é usando os preços anteriores da PETRA, como essa rede sai, ao prever o próximo fechamento.
+[   58.16 -    65.22] Além de olhar o erro dessa previsão, eu quis saber quanto tempo o computador leva para fazer esses ajustes desses modelos computacionais.
+[   66.25 -    74.03] O gráfico mostra como o preço mudou ao longo dos anos, a períodos de alta, a períodos de baixa, mudanças mais fortes.
+[   74.39 -    81.99] Esse comportamento, a gente observar, tem mudanças muito diferentes na crise de 2008,
+[   82.33 -    85.53] na crise de 2014 e na pandemia de 2020.
+[   86.01 -    92.89] Eu comparei a rede de SADGE com outras duas redes usadas para fazer essas análises de ações,
+[   93.07 -    98.45] a sequência de dados, que é a GRU e a LSTM. O foco foi avaliar essas previsões.
+[   98.63 -   101.47] Então, testei uma estratégia de compra e venda de ações nenhuma.
+[  103.11 -   108.27] Então, falando um pouco sobre o objetivo das minhas hipóteses, falando rápido, mais ou menos,
+[  108.73 -   115.63] a primeira pergunta se a rede consegue competir com GRU e LSTM.
+[  115.63 -   120.41] A segunda, ela já olha por o tempo necessário para ajustar uma configuração escolhida.
+[  120.85 -   126.71] A terceira investiga se, ao mudar a forma de gerar esses pesos iniciais, pode trazer resultados melhores,
+[  127.23 -   132.97] já que uma distribuição normal usada como referência, a gente quer tentar atingir melhores resultados que é normal.
+[  133.93 -   140.07] E a quarta, trata-se de recursos do algoritmo genético para a gente poder explorar diferentes soluções.
+[  140.37 -   144.77] A quinta, considera distribuições ajustadas aos próprios dados de treino.
+[  144.77 -   148.67] Mas adiante de voltar em cada uma delas e explicar melhor sobre cada.
+[  150.41 -   155.31] Falando agora sobre a avumentação e trabalhos relacionados, o meu trabalho se apoia em três assuntos,
+[  155.73 -   161.87] que foram a rede de estados de ECO, a busca genética e preparação de dados financeiros
+[  161.87 -   168.33] e na proposta de tentar prever esse valor.
+[  168.90 -   174.61] Então assim, Jagger trouxe essa característica da rede de neural de estado de ECO,
+[  174.99 -   180.67] é manter as conexões internas fixas durante o ajuste de calcular os pesos de saída.
+[  180.81 -   183.49] Vou explicar esse funcionamento no próximo conjunto de slide.
+[  184.03 -   191.83] Então assim, os trabalhos de Araújo e colaboradores ajudaram a fundamentar o estudo dessas distribuições
+[  191.83 -   200.47] e da busca genética. O BOVDB, do meu orientador, dá o contexto do ajuste dos preços
+[  200.47 -   205.35] por eventos corporativos, implítes e splits, pagamentos e dividendos.
+[  205.71 -   208.51] Tudo isso que dá uma mexida no prestação.
+[  209.17 -   215.09] Como por exemplo, se eu faço um split, eu divido a... o prestação, se ele está 40, eu divido ele,
+[  215.19 -   218.79] ele vira duas ações de 20. Se eu faço um implíte é quando é o oposto,
+[  218.79 -   225.17] que você está com duas ações de 20, você junta, vira uma de 40, pagamento de dividendos,
+[  225.21 -   232.97] também mexe no prestação. Então o meu orientador trouxe já que isso influencia no preço
+[  232.97 -   241.19] da ação e trouxe esse tratamento. Então assim, fiz uma revisão com 34 documentos e
+[  241.19 -   246.53] buscas complementares para ajudar. Essa coleção ajudou a gente a orientar toda a minha pesquisa

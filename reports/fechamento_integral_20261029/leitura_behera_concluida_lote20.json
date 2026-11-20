@@ -1,0 +1,77 @@
+{
+  "fonte": {
+    "id": "D03",
+    "arquivo": "Artigos citados\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+    "sha256": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+    "paginas": 48,
+    "caracteres_extraidos": 189607,
+    "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+    "log_leitura": []
+  },
+  "sha256_rascunho": "8835571f743aab36f4d193d7e75c28a7fa6b78e0ed1f446973a1a05b02bc1042",
+  "leitura": "Texto principal PDF 1–42, referências PDF 42–48; referências 43–46 relidas sem truncamento. Inspeção visual PDF 1,12,16,28,33; fórmulas do apêndice não adotadas como prova de fórmulas da monografia.",
+  "celulas_revalidadas": [
+    {
+      "id": "D03",
+      "arquivo_pdf": "Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "tipo": "revisao",
+      "dimensao": "P1",
+      "codigo": "?",
+      "localizador": "PDF 11–12, revisão de modelos",
+      "evidencia_e_limite": "O tratamento das ESNs descreve aplicações e otimização, sem identificar lei probabilística de Win/W nos trechos examinados. Leis dos algoritmos evolutivos não são leis dos pesos da ESN.",
+      "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada).",
+      "estado_lote20": "confirmado; evidência e limites adicionais em leitura_behera_lote20_seguimento.json"
+    },
+    {
+      "id": "D03",
+      "arquivo_pdf": "Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "tipo": "revisao",
+      "dimensao": "P2",
+      "codigo": "S",
+      "localizador": "PDF 28",
+      "evidencia_e_limite": "Descreve estudos ESN-PSO, DRESN-GA e GWO-ESN. Evidência secundária de otimização ESN; não contar toda otimização HONN como ESN.",
+      "escopo_leitura": "PDF 1, 10–11, 17, 19 e 28: escopo, aplicações, bases e técnicas; não declara leitura integral.",
+      "estado_lote20": "confirmado; evidência e limites adicionais em leitura_behera_lote20_seguimento.json"
+    },
+    {
+      "id": "D03",
+      "arquivo_pdf": "Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "tipo": "revisao",
+      "dimensao": "P3",
+      "codigo": "S",
+      "localizador": "PDF 10–11 e 28",
+      "evidencia_e_limite": "Revisa expansões funcionais, dados virtuais e enriquecimento de treinamento em modelos para séries; evidência secundária, não nova preparação experimental própria.",
+      "escopo_leitura": "PDF 1, 10–11, 17, 19 e 28: escopo, aplicações, bases e técnicas; não declara leitura integral.",
+      "estado_lote20": "confirmado; evidência e limites adicionais em leitura_behera_lote20_seguimento.json"
+    },
+    {
+      "id": "D03",
+      "arquivo_pdf": "Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "tipo": "revisao",
+      "dimensao": "P4",
+      "codigo": "?",
+      "localizador": "PDF 11–12 e triagem textual das tabelas de modelos",
+      "evidencia_e_limite": "Comparações entre HONNs, FLANNs, ESNs e outros modelos não identificam no escopo consultado uma comparação numérica qualificadora com LSTM/GRU/Transformer. Não se afirma ausência na obra inteira.",
+      "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada).",
+      "estado_lote20": "confirmado; evidência e limites adicionais em leitura_behera_lote20_seguimento.json"
+    },
+    {
+      "id": "D03",
+      "arquivo_pdf": "Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "tipo": "revisao",
+      "dimensao": "P5",
+      "codigo": "S",
+      "localizador": "PDF 17 e 19, agrupamento de datasets",
+      "evidencia_e_limite": "Identifica BSE, DJIA, Nasdaq, TAIEX, FTSE, câmbio, Bitcoin e outros mercados como aplicações revisadas, não nova amostra própria.",
+      "escopo_leitura": "PDF 1, 10–11, 17, 19 e 28: escopo, aplicações, bases e técnicas; não declara leitura integral.",
+      "estado_lote20": "confirmado; evidência e limites adicionais em leitura_behera_lote20_seguimento.json"
+    }
+  ],
+  "correcao_autoria": "U0200, U0218, U0304 no lote20 com QA estrutural e visual; referência já contém os três autores.",
+  "ressalva": "Revisão com alegações abrangentes; texto da monografia as limita a estudos e protocolos, sem assegurar superioridade universal."
+}

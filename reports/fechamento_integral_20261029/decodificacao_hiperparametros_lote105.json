@@ -1,0 +1,88 @@
+{
+  "sha256_docx": "b8f7675159483d79d0bb638ba914c2ef541220fa49161a406e869d7154ad249f",
+  "codigo": "app\\utils\\ga_engine.R",
+  "sha256_codigo": "d107402af08415a0e9cc4913676cc0e3791725736b22145e945ccb5b5d31ecff",
+  "localizador": "gerar_populacao_lhs e fitness_func, linhas225–240",
+  "registros": [
+    {
+      "linha": 1,
+      "parametro": "a",
+      "bits": 17,
+      "faixa_exata": "valores positivos até1; código zero substituído por7,62939453125e-6",
+      "parecer": "(0;1] contém os valores possíveis, sem representar contínuo amostrável.",
+      "celulas_word": [
+        "Taxa de vazamento",
+        "a",
+        "(0; 1]",
+        "17",
+        "Controla a inércia e a memória temporal."
+      ]
+    },
+    {
+      "linha": 2,
+      "parametro": "sr",
+      "bits": 17,
+      "faixa_exata": "mesma decodificação de a",
+      "parecer": "(0;1] condizente como limite da faixa.",
+      "celulas_word": [
+        "Raio espectral",
+        "sr",
+        "(0; 1]",
+        "17",
+        "Controla persistência e estabilidade dos estados."
+      ]
+    },
+    {
+      "linha": 3,
+      "parametro": "initLen",
+      "bits": 7,
+      "faixa_exata": [
+        2,
+        129
+      ],
+      "parecer": "0–127 acrescido de2, conforme quadro.",
+      "celulas_word": [
+        "Descarte inicial",
+        "initLen",
+        "2 a 129",
+        "7",
+        "Descarta os estados iniciais na estimação de Wout."
+      ]
+    },
+    {
+      "linha": 4,
+      "parametro": "Nx",
+      "bits": 5,
+      "faixa_exata": [
+        2,
+        33
+      ],
+      "parecer": "0–31 acrescido de2, conforme quadro.",
+      "celulas_word": [
+        "Tamanho do reservatório",
+        "Nx",
+        "2 a 33",
+        "5",
+        "Define o número de neurônios recorrentes."
+      ]
+    },
+    {
+      "linha": 5,
+      "parametro": "Ridge",
+      "bits": 9,
+      "faixa_exata": [
+        "9.9E-9",
+        "0.0000990099"
+      ],
+      "parecer": "Extremos9,9e-9 e9,90099e-5 compatíveis com faixa aproximada do quadro.",
+      "celulas_word": [
+        "Regularização Ridge",
+        "λ",
+        "≈9,9×10⁻⁹ a 9,9×10⁻⁵",
+        "9",
+        "Estabiliza a estimação de Wout e penaliza pesos elevados."
+      ]
+    }
+  ],
+  "limite": "Conferência estática e aritmética do motor preservado; não prova utilização desses bytes em cada rodada histórica. Nenhum GA foi executado."
+}

@@ -1,0 +1,31 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "61fac8da8ab082633bbaa113ed697fd32ccfd7d72c2142f003b18b5b10083e2a",
+  "triagem_lexical": "reports\\correcao_parecer_integridade\\triagem_lote55\\triagem.json",
+  "blocos": [
+    {
+      "id": "B001",
+      "alvo": "P_atual0193",
+      "avaliacao": "Coincidência é a denominação de rede neural recorrente, seu nome inglês e a sigla, em parágrafo com atribuições a Hochreiter e Cho; não configura reprodução de passagem autoral extensa."
+    },
+    {
+      "id": "B002",
+      "alvo": "P_atual0227",
+      "avaliacao": "Coincidência é o nome convencional do critério de informação de Akaike em português e inglês com sua sigla; o contexto atribui o uso à fonte pertinente."
+    }
+  ],
+  "pares_lampugnani": {
+    "arquivo": "reports\\correcao_parecer_integridade\\triagem_lote55\\pares_lampugnani.json",
+    "pares_examinados": 38958,
+    "acima_limiar": 0,
+    "limiar": 0.4
+  },
+  "pares_cardoso": {
+    "arquivo": "reports\\fechamento_integral_20261029\\semelhanca_cardoso_lote55.json",
+    "candidatos": 8,
+    "avaliacao": "Seis candidatos relativos a objetivo/conclusão e termos ESN ou palavras-chave da tese; um resume Ribeiro com referência própria; o novo candidato é a nota de fonte da Tabela 2 que compartilha a chamada Cardoso et al. com o trecho da tese, sem passagem autoral extensa."
+  },
+  "limites": "Busca lexical de oito palavras sobre 39 fontes, e heurísticas aproximadas para Lampugnani e Cardoso, restritas ao corpo e tabelas conforme cada algoritmo. O PDF Nelson não tinha texto indexável. OCR integral, traduções, paráfrases sem sequência compartilhada, imagens, fontes externas ou privadas não foram cobertos. Não é porcentagem de plágio nem certificação de originalidade.",
+  "acao": "Nenhuma edição motivada por estas coincidências; prosseguir revisão qualitativa das fontes e Guia."
+}

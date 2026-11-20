@@ -1,0 +1,72 @@
+{
+  "base": {
+    "id": "v001",
+    "anterior": null,
+    "arquivo": "reports/monografia/versoes/v001/MayconGarciaSilva_monografia_v001.docx",
+    "sha256": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+    "registrada_em_utc": "2026-10-29T01:16:23.098557+00:00",
+    "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\MayconGarciaSilva_monografia_FASOFT_conferida.docx",
+    "responsavel": "Codex nesta conversa, por solicitação de Maycon Garcia Silva",
+    "resumo": "Importação inicial da versão FASOFT conferida, sem alteração do Word. Versões anteriores permanecem históricas.",
+    "estado_editorial": "em_revisao",
+    "validacao_declarada": "Identidade conferida por SHA256. Há auditoria anterior de apresentação e parecer de citações com divergências; esta importação não certifica coerência integral ou ausência de plágio.",
+    "evidencias": [
+      {
+        "arquivo": "reports/auditoria_integral_fasoft_20261028/estado_revisao.json",
+        "sha256": "8459094e327cb83d2294c5c2ebb85a7e34b1f8920f67d825b9656f00043d9eee"
+      },
+      {
+        "arquivo": "reports/auditoria_citacoes_integridade_20261028/parecer.md",
+        "sha256": "651403ec4c7d1b383e202a559b25cdd6ba74919fbc7d4ce69dc889fc0b5e8329"
+      }
+    ],
+    "pendencias": [
+      "Tratar os 25 achados do parecer de citações e integridade; propostas ainda não incorporadas ao Word.",
+      "Fechar consultas primárias pendentes e recodificação uniforme da matriz P1–P5; não afirmar validação integral."
+    ]
+  },
+  "sha256_conferido": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+  "paragrafos_corpo": 555,
+  "paragrafos_com_celulas": 1025,
+  "quadros_tabelas": 12,
+  "referencias": 50,
+  "siglas_listadas": 57,
+  "candidatos_italico": 192,
+  "partes_zip": [
+    "[Content_Types].xml",
+    "_rels/.rels",
+    "word/document.xml",
+    "word/_rels/document.xml.rels",
+    "word/footnotes.xml",
+    "word/endnotes.xml",
+    "word/header1.xml",
+    "word/header2.xml",
+    "word/header3.xml",
+    "word/header4.xml",
+    "word/header5.xml",
+    "word/header6.xml",
+    "word/header7.xml",
+    "word/header8.xml",
+    "word/header9.xml",
+    "word/header10.xml",
+    "word/header11.xml",
+    "word/media/image1.png",
+    "word/media/image2.png",
+    "word/media/image3.png",
+    "word/media/image4.png",
+    "word/media/image5.png",
+    "word/media/image6.png",
+    "word/theme/theme1.xml",
+    "word/settings.xml",
+    "word/numbering.xml",
+    "word/styles.xml",
+    "word/webSettings.xml",
+    "word/fontTable.xml",
+    "docProps/core.xml",
+    "docProps/app.xml"
+  ],
+  "notas_rodape": 0,
+  "notas_fim": 0,
+  "caixas_texto": 0,
+  "revisoes": 0
+}

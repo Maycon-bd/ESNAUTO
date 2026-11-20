@@ -1,0 +1,794 @@
+{
+  "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\MayconGarciaSilva_monografia_FASOFT_conferida.docx",
+  "sha256": "2d4c16a51c2675bbff7df6bc36b16adec21608f7cb1097166c07e97982925f73",
+  "paginas": 75,
+  "checks": [
+    {
+      "requisito": "Imagens preservadas",
+      "ok": true,
+      "detalhe": 6
+    },
+    {
+      "requisito": "Valores e textos das tabelas experimentais preservados",
+      "ok": true,
+      "detalhe": 10
+    },
+    {
+      "requisito": "Identidade das 49 referências preservada",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "A4 e margens da seção 1",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "A4 e margens da seção 2",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "A4 e margens da seção 3",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "A4 e margens da seção 4",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "A4 e margens da seção 5",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "A4 e margens da seção 6",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 1: fonte 11",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 1: cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 2: fonte 11",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 2: cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 3: fonte 11",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 3: cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 4: fonte 11",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 4: cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 5: fonte 11",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 5: cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 6: fonte 11",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 6: cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 7: fonte 11",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 7: cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 8: fonte 11",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 8: cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 9: fonte 11",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 9: cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 10: fonte 11",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 10: cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 11: fonte 11",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 11: cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 12: fonte 11",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela 12: cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Títulos das ilustrações em fonte 10",
+      "ok": true,
+      "detalhe": 18
+    },
+    {
+      "requisito": "Títulos sem ponto final",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Fontes em tamanho 10",
+      "ok": true,
+      "detalhe": 18
+    },
+    {
+      "requisito": "Referências em ordem alfabética pelo autor de entrada",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Introdução sem citações autor–ano",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Introdução contínua sem subseções",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Hipóteses originais preservadas",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "RESUMO: 150–500 palavras",
+      "ok": true,
+      "detalhe": 328
+    },
+    {
+      "requisito": "RESUMO: sem recuo e espaço simples",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "ABSTRACT: 150–500 palavras",
+      "ok": true,
+      "detalhe": 269
+    },
+    {
+      "requisito": "ABSTRACT: sem recuo e espaço simples",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Corpo justificado",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Corpo em entrelinhas 1,5",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Corpo com primeira linha de 1,25 cm",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Corpo sem recuo lateral adicional",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Corpo em Times New Roman 12",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Texto em preto ou automático",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Hierarquia: TITULO TCC",
+      "ok": true,
+      "detalhe": 6
+    },
+    {
+      "requisito": "Hierarquia: SEÇÃO TCC",
+      "ok": true,
+      "detalhe": 30
+    },
+    {
+      "requisito": "Hierarquia: SUBÇÃO 2",
+      "ok": true,
+      "detalhe": 4
+    },
+    {
+      "requisito": "Títulos acompanhados do texto seguinte",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Controle de linhas órfãs e viúvas no corpo",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Ordem dos elementos pré-textuais",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Títulos pré-textuais centralizados e em negrito 12",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Ficha: caixa de 12,5 × 7,5 cm",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Ficha vazia preservada por instrução do autor",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "RESUMO: de 3 a 5 palavras-chave",
+      "ok": true,
+      "detalhe": [
+        "redes neurais de estados de eco",
+        " algoritmos genéticos",
+        " computação de reservatório",
+        " séries temporais financeiras",
+        " PETR4"
+      ]
+    },
+    {
+      "requisito": "RESUMO: palavras-chave separadas por ponto e vírgula e encerradas por ponto",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "ABSTRACT: de 3 a 5 palavras-chave",
+      "ok": true,
+      "detalhe": [
+        "echo state networks",
+        " genetic algorithms",
+        " reservoir computing",
+        " financial time series",
+        " PETR4"
+      ]
+    },
+    {
+      "requisito": "ABSTRACT: palavras-chave separadas por ponto e vírgula e encerradas por ponto",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Lista de siglas alfabética",
+      "ok": true,
+      "detalhe": 57
+    },
+    {
+      "requisito": "Lista de siglas justificada em fonte 12 e espaço 1,5",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Figura: numeração consecutiva",
+      "ok": true,
+      "detalhe": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "requisito": "Figura: chamada de todos os elementos no texto",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Quadro: numeração consecutiva",
+      "ok": true,
+      "detalhe": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "requisito": "Quadro: chamada de todos os elementos no texto",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabela: numeração consecutiva",
+      "ok": true,
+      "detalhe": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "requisito": "Tabela: chamada de todos os elementos no texto",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Fontes abaixo dos elementos: indicação e ano",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Referências em fonte 12 e espaço simples",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Imagens sem alteração de proporção ou tamanho",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Sem notas de rodapé a formatar",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Sem comentários ou revisões pendentes",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Tabelas e quadros com largura efetiva de 16 cm",
+      "ok": true,
+      "detalhe": [
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0
+      ]
+    },
+    {
+      "requisito": "Todas as ocorrências de et al. em itálico",
+      "ok": true,
+      "detalhe": 84
+    },
+    {
+      "requisito": "Símbolos Win e Wout em itálico",
+      "ok": true,
+      "detalhe": 52
+    },
+    {
+      "requisito": "Seções primárias em nova página no PDF do Word",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "requisito": "Paginação textual contínua excluindo capa",
+      "ok": true,
+      "detalhe": 58
+    },
+    {
+      "requisito": "Introdução com 2–3 páginas",
+      "ok": true,
+      "detalhe": 2
+    },
+    {
+      "requisito": "Nenhuma página vazia",
+      "ok": true,
+      "detalhe": 75
+    },
+    {
+      "requisito": "Todas as listas e o sumário conferidos no mapa do Word",
+      "ok": true,
+      "detalhe": [
+        {
+          "titulo": "Figura 1 – Cobertura das cinco dimensões analíticas nos estudos",
+          "pagina_lista": 35,
+          "pagina_corpo": 35
+        },
+        {
+          "titulo": "Figura 2 – Frequência das palavras-chave declaradas pelos autores",
+          "pagina_lista": 36,
+          "pagina_corpo": 36
+        },
+        {
+          "titulo": "Figura 3 – Rede de coocorrência de palavras-chave",
+          "pagina_lista": 37,
+          "pagina_corpo": 37
+        },
+        {
+          "titulo": "Figura 4 – Expressões recorrentes nos títulos dos estudos",
+          "pagina_lista": 38,
+          "pagina_corpo": 38
+        },
+        {
+          "titulo": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações",
+          "pagina_lista": 54,
+          "pagina_corpo": 54
+        },
+        {
+          "titulo": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada",
+          "pagina_lista": 55,
+          "pagina_corpo": 55
+        },
+        {
+          "titulo": "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica",
+          "pagina_lista": 33,
+          "pagina_corpo": 33
+        },
+        {
+          "titulo": "Quadro 2 – Organização das cinco ondas experimentais",
+          "pagina_lista": 42,
+          "pagina_corpo": 42
+        },
+        {
+          "titulo": "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético",
+          "pagina_lista": 43,
+          "pagina_corpo": 43
+        },
+        {
+          "titulo": "Quadro 4 – Síntese do desenho experimental executado",
+          "pagina_lista": 46,
+          "pagina_corpo": 46
+        },
+        {
+          "titulo": "Quadro 5 – Síntese da avaliação das hipóteses",
+          "pagina_lista": 61,
+          "pagina_corpo": 61
+        },
+        {
+          "titulo": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico",
+          "pagina_lista": 32,
+          "pagina_corpo": 32
+        },
+        {
+          "titulo": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+          "pagina_lista": 41,
+          "pagina_corpo": 41
+        },
+        {
+          "titulo": "Tabela 3 – Comparação dos principais resultados no conjunto de teste",
+          "pagina_lista": 53,
+          "pagina_corpo": 53
+        },
+        {
+          "titulo": "Tabela 4 – Configurações selecionadas das cinco ondas experimentais",
+          "pagina_lista": 56,
+          "pagina_corpo": 56
+        },
+        {
+          "titulo": "Tabela 5 – Decomposição do custo computacional documentado",
+          "pagina_lista": 58,
+          "pagina_corpo": 58
+        },
+        {
+          "titulo": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+          "pagina_lista": 60,
+          "pagina_corpo": 60
+        },
+        {
+          "titulo": "Tabela 7 – Comparação com trabalhos relacionados à ação preferencial da Petrobras",
+          "pagina_lista": 62,
+          "pagina_corpo": 62
+        },
+        {
+          "titulo": "INTRODUÇÃO",
+          "pagina_lista": 17,
+          "pagina_corpo": 17
+        },
+        {
+          "titulo": "REVISÃO DA LITERATURA",
+          "pagina_lista": 19,
+          "pagina_corpo": 19
+        },
+        {
+          "titulo": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+          "pagina_lista": 19,
+          "pagina_corpo": 19
+        },
+        {
+          "titulo": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+          "pagina_lista": 20,
+          "pagina_corpo": 20
+        },
+        {
+          "titulo": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+          "pagina_lista": 22,
+          "pagina_corpo": 22
+        },
+        {
+          "titulo": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+          "pagina_lista": 24,
+          "pagina_corpo": 24
+        },
+        {
+          "titulo": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+          "pagina_lista": 25,
+          "pagina_corpo": 25
+        },
+        {
+          "titulo": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+          "pagina_lista": 27,
+          "pagina_corpo": 27
+        },
+        {
+          "titulo": "TRABALHOS RELACIONADOS",
+          "pagina_lista": 28,
+          "pagina_corpo": 28
+        },
+        {
+          "titulo": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+          "pagina_lista": 30,
+          "pagina_corpo": 30
+        },
+        {
+          "titulo": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+          "pagina_lista": 31,
+          "pagina_corpo": 31
+        },
+        {
+          "titulo": "MATERIAL E MÉTODOS",
+          "pagina_lista": 39,
+          "pagina_corpo": 39
+        },
+        {
+          "titulo": "CLASSIFICAÇÃO DA PESQUISA",
+          "pagina_lista": 39,
+          "pagina_corpo": 39
+        },
+        {
+          "titulo": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+          "pagina_lista": 40,
+          "pagina_corpo": 40
+        },
+        {
+          "titulo": "IMPLEMENTAÇÃO DAS ESNS EM R",
+          "pagina_lista": 42,
+          "pagina_corpo": 42
+        },
+        {
+          "titulo": "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+          "pagina_lista": 43,
+          "pagina_corpo": 43
+        },
+        {
+          "titulo": "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+          "pagina_lista": 45,
+          "pagina_corpo": 45
+        },
+        {
+          "titulo": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+          "pagina_lista": 45,
+          "pagina_corpo": 45
+        },
+        {
+          "titulo": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+          "pagina_lista": 47,
+          "pagina_corpo": 47
+        },
+        {
+          "titulo": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+          "pagina_lista": 48,
+          "pagina_corpo": 48
+        },
+        {
+          "titulo": "Ambiente computacional",
+          "pagina_lista": 48,
+          "pagina_corpo": 48
+        },
+        {
+          "titulo": "Estrutura do repositório",
+          "pagina_lista": 48,
+          "pagina_corpo": 48
+        },
+        {
+          "titulo": "Protocolo de revisão sistemática da literatura",
+          "pagina_lista": 49,
+          "pagina_corpo": 49
+        },
+        {
+          "titulo": "Procedimento de re-execução dos experimentos",
+          "pagina_lista": 51,
+          "pagina_corpo": 51
+        },
+        {
+          "titulo": "RESULTADOS E DISCUSSÃO",
+          "pagina_lista": 52,
+          "pagina_corpo": 52
+        },
+        {
+          "titulo": "VISÃO GERAL DOS EXPERIMENTOS",
+          "pagina_lista": 52,
+          "pagina_corpo": 52
+        },
+        {
+          "titulo": "DESEMPENHO PREDITIVO GLOBAL",
+          "pagina_lista": 53,
+          "pagina_corpo": 53
+        },
+        {
+          "titulo": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+          "pagina_lista": 56,
+          "pagina_corpo": 56
+        },
+        {
+          "titulo": "ESTABILIDADE, GENERALIZAÇÃO E ONDA 5",
+          "pagina_lista": 57,
+          "pagina_corpo": 57
+        },
+        {
+          "titulo": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+          "pagina_lista": 57,
+          "pagina_corpo": 57
+        },
+        {
+          "titulo": "CUSTO COMPUTACIONAL",
+          "pagina_lista": 58,
+          "pagina_corpo": 58
+        },
+        {
+          "titulo": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+          "pagina_lista": 59,
+          "pagina_corpo": 59
+        },
+        {
+          "titulo": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+          "pagina_lista": 60,
+          "pagina_corpo": 60
+        },
+        {
+          "titulo": "AVALIAÇÃO DAS HIPÓTESES",
+          "pagina_lista": 61,
+          "pagina_corpo": 61
+        },
+        {
+          "titulo": "CONTRIBUIÇÕES DO ESNAUTO",
+          "pagina_lista": 63,
+          "pagina_corpo": 63
+        },
+        {
+          "titulo": "DISCUSSÃO",
+          "pagina_lista": 65,
+          "pagina_corpo": 65
+        },
+        {
+          "titulo": "VALIDADE INTERNA E ESTATÍSTICA",
+          "pagina_lista": 65,
+          "pagina_corpo": 65
+        },
+        {
+          "titulo": "VALIDADE EXTERNA",
+          "pagina_lista": 66,
+          "pagina_corpo": 66
+        },
+        {
+          "titulo": "TRABALHOS FUTUROS",
+          "pagina_lista": 67,
+          "pagina_corpo": 67
+        },
+        {
+          "titulo": "CONCLUSÃO",
+          "pagina_lista": 68,
+          "pagina_corpo": 68
+        },
+        {
+          "titulo": "REFERÊNCIAS",
+          "pagina_lista": 70,
+          "pagina_corpo": 70
+        }
+      ]
+    },
+    {
+      "requisito": "Texto dentro das margens laterais e inferior",
+      "ok": true,
+      "detalhe": []
+    }
+  ],
+  "pendencias": [
+    {
+      "requisito": "Fonte e referência da epígrafe atribuída a James Gleick",
+      "situacao": "aguardando_fonte_ou_decisao_do_autor",
+      "evidencia": "Atribuição não confirmada em fonte primária; solicitada fonte ou preferência entre substituir e retirar."
+    }
+  ],
+  "conformidade_integral_atestada": false,
+  "etapas_institucionais_posteriores": [
+    {
+      "requisito": "Ficha catalográfica emitida pela biblioteca",
+      "situacao": "etapa_institucional_posterior_autorizada",
+      "evidencia": "Espaço reservado preservado por decisão expressa do autor, sem bloquear a formatação."
+    },
+    {
+      "requisito": "Folha de aprovação assinada e datada após aprovação",
+      "situacao": "dependente_da_etapa_academica",
+      "evidencia": "Campos de data e assinatura preservados, sem inventar aprovação."
+    }
+  ]
+}

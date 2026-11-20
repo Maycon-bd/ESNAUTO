@@ -1,0 +1,19 @@
+{
+  "sha_antes": "6799c23f04bd9f902cd2db2884e7c882b504690ed0342fdf5d9a304619e2c56a",
+  "alteracoes": [
+    {
+      "indice": 324,
+      "antes": "Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1975). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979).",
+      "depois": "Diante do espaço de busca misto, que combinou variáveis contínuas e discretas, foi utilizado um Algoritmo Genético binário fundamentado nos princípios evolutivos descritos por Holland (1992). A população inicial foi estratificada por Amostragem por Hipercubo Latino (LHS), técnica introduzida por McKay, Beckman e Conover (1979)."
+    },
+    {
+      "indice": 524,
+      "antes": "HOLLAND, J. H. Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence. Ann Arbor: University of Michigan Press, 1975.",
+      "depois": "HOLLAND, J. H. Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence. Cambridge, MA: MIT Press, 1992."
+    }
+  ],
+  "fundamento": "Edição efetivamente consultada1992: prefácio PDF3 visual e texto impresso14–16/PDF19–21 visualmente conferidos. MIT Press confirma autor,título,editora,ano1992. Exemplar de consulta não contém folha editorial; esta limitação é preservada no registro, e dados editoriais vêm da editora.",
+  "fonte_editorial": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+  "sha256_fonte_local": "41f4c176cd8929f4b60de3bab2144f765a90dc1164c5ad8c5dd59032a3da2640",
+  "decisao": "Atribuição geral sustentada nos trechos da edição1992; não livro integralmente lido nem edição1975 diretamente validada."
+}

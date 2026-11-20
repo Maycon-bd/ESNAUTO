@@ -1,0 +1,52 @@
+{
+  "base": "v007",
+  "sha256_base": "983c46424ad039472bb12071540d392d73eb29cb08a07e0bc784e0ede008ff1c",
+  "candidata": "reports\\monografia\\trabalho\\revalidacao_cinco_skills_v007.docx",
+  "sha256_candidata": "0daacd3ea1753bca97619df025923b92a44a047b5c1252a4677f802dfe870dad",
+  "alteracoes": [
+    {
+      "antes": "Busca GA por cenário ESN",
+      "depois": "Busca por AG por cenário ESN",
+      "motivo": "siglas-checker-docx: uniformizar sigla genérica; não alterar nome do pacote GA",
+      "caracteres_depois": 28,
+      "estado": "incorporado"
+    },
+    {
+      "antes": "O ajuste analítico de aproximadamente 0,05 segundo correspondeu ao cálculo da camada de saída após a configuração da ESN ter sido selecionada. Considerando apenas essa etapa, o tempo documentado correspondeu a uma razão de tempos de aproximadamente 576 vezes em relação à GRU e 708 vezes em relação à LSTM.",
+      "depois": "A Tabela 5 apresenta a decomposição do custo computacional. O ajuste analítico de aproximadamente 0,05 segundo correspondeu ao cálculo da camada de saída após a configuração da ESN ter sido selecionada. Considerando apenas essa etapa, o tempo documentado correspondeu a uma razão de tempos de aproximadamente 576 vezes em relação à GRU e 708 vezes em relação à LSTM.",
+      "motivo": "quadro-tabela-validator-docx e tcc-writer-docx: chamada local sem resultado novo",
+      "caracteres_depois": 366,
+      "estado": "incorporado"
+    },
+    {
+      "antes": "Nos quatro testes, a hipótese nula de igualdade de acurácia preditiva foi rejeitada ao nível de 5%. Sob perda absoluta, a comparação ESN × GRU resultou em estatística DM = −11,870611 e p = 6,296 × 10⁻³¹, enquanto ESN × LSTM resultou em DM = −15,496644 e p = 8,008 × 10⁻⁵⁰. Sob perda quadrática, ESN × GRU apresentou DM = −9,846951 e p = 4,117 × 10⁻²², e ESN × LSTM apresentou DM = −9,208792 e p = 1,285 × 10⁻¹⁹. Em todas as comparações, o diferencial médio de perda indicou menor perda para a ESN.",
+      "depois": "Nos quatro testes apresentados na Tabela 6, a hipótese nula de igualdade de acurácia preditiva foi rejeitada ao nível de 5%. Sob perda absoluta, a comparação ESN × GRU resultou em estatística DM = −11,870611 e p = 6,296 × 10⁻³¹, enquanto ESN × LSTM resultou em DM = −15,496644 e p = 8,008 × 10⁻⁵⁰. Sob perda quadrática, ESN × GRU apresentou DM = −9,846951 e p = 4,117 × 10⁻²², e ESN × LSTM apresentou DM = −9,208792 e p = 1,285 × 10⁻¹⁹. Em todas as comparações, o diferencial médio de perda indicou menor perda para a ESN.",
+      "motivo": "quadro-tabela-validator-docx e tcc-writer-docx: chamada local sem alterar inferência",
+      "caracteres_depois": 522,
+      "estado": "incorporado"
+    }
+  ],
+  "diferencas_localizadas": [
+    {
+      "local": "P0422",
+      "antes": "O ajuste analítico de aproximadamente 0,05 segundo correspondeu ao cálculo da camada de saída após a configuração da ESN ter sido selecionada. Considerando apenas essa etapa, o tempo documentado correspondeu a uma razão de tempos de aproximadamente 576 vezes em relação à GRU e 708 vezes em relação à LSTM.",
+      "depois": "A Tabela 5 apresenta a decomposição do custo computacional. O ajuste analítico de aproximadamente 0,05 segundo correspondeu ao cálculo da camada de saída após a configuração da ESN ter sido selecionada. Considerando apenas essa etapa, o tempo documentado correspondeu a uma razão de tempos de aproximadamente 576 vezes em relação à GRU e 708 vezes em relação à LSTM."
+    },
+    {
+      "local": "P0442",
+      "antes": "Nos quatro testes, a hipótese nula de igualdade de acurácia preditiva foi rejeitada ao nível de 5%. Sob perda absoluta, a comparação ESN × GRU resultou em estatística DM = −11,870611 e p = 6,296 × 10⁻³¹, enquanto ESN × LSTM resultou em DM = −15,496644 e p = 8,008 × 10⁻⁵⁰. Sob perda quadrática, ESN × GRU apresentou DM = −9,846951 e p = 4,117 × 10⁻²², e ESN × LSTM apresentou DM = −9,208792 e p = 1,285 × 10⁻¹⁹. Em todas as comparações, o diferencial médio de perda indicou menor perda para a ESN.",
+      "depois": "Nos quatro testes apresentados na Tabela 6, a hipótese nula de igualdade de acurácia preditiva foi rejeitada ao nível de 5%. Sob perda absoluta, a comparação ESN × GRU resultou em estatística DM = −11,870611 e p = 6,296 × 10⁻³¹, enquanto ESN × LSTM resultou em DM = −15,496644 e p = 8,008 × 10⁻⁵⁰. Sob perda quadrática, ESN × GRU apresentou DM = −9,846951 e p = 4,117 × 10⁻²², e ESN × LSTM apresentou DM = −9,208792 e p = 1,285 × 10⁻¹⁹. Em todas as comparações, o diferencial médio de perda indicou menor perda para a ESN."
+    },
+    {
+      "local": "T09 L5 C1",
+      "antes": "Busca GA por cenário ESN",
+      "depois": "Busca por AG por cenário ESN"
+    }
+  ],
+  "partes_modificadas": [
+    "word/document.xml"
+  ],
+  "outras_partes_identicas": true,
+  "referencias_preservadas": 50,
+  "limite": "Ajustes de navegação e sigla; sem mudança de informação científica, valores ou fontes. Preservada origem de trabalho."
+}

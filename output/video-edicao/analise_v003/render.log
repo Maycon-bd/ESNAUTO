@@ -1,0 +1,53 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\User\Documents\PROJETOS SOFTWARE\ESNAUTO\output\video-edicao\exportados\ESNAUTO_apresentacao_25min_v002_audio_corrigido.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    title           : ESNAUTO - Apresentação do TFC - áudio corrigido v002
+    encoder         : Lavf63.1.102
+  Duration: 00:24:50.23, start: 0.000000, bitrate: 3106 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 2904 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.102 h264_nvenc
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 193 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Input #1, srt, from 'C:\Users\User\Documents\PROJETOS SOFTWARE\ESNAUTO\output\video-edicao\exportados\ESNAUTO_apresentacao_v003.srt':
+  Duration: N/A, bitrate: N/A
+  Stream #1:0: Subtitle: subrip (srt)
+[Parsed_ass_2 @ 000001eaed2178c0] libass API version: 0x1705000
+[Parsed_ass_2 @ 000001eaed2178c0] libass source: commit: 0.17.5-8-gb2fe9d8770678a7b5271387d38c20657ebf3429a
+[Parsed_ass_2 @ 000001eaed2178c0] Shaper: FriBidi 1.0.16 (SIMPLE) HarfBuzz-ng 14.4.0 (COMPLEX)
+[Parsed_ass_2 @ 000001eaed2178c0] Using font provider directwrite (with GDI)
+[Parsed_ass_2 @ 000001eaed2178c0] Added subtitle file: 'analise_v003/orientacoes_final.ass' (2 styles, 30 events)
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (h264_nvenc))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+  Stream #1:0 -> #0:2 (subrip (srt) -> mov_text (native))
+[Parsed_ass_2 @ 000001eaed31fb00] libass API version: 0x1705000
+[Parsed_ass_2 @ 000001eaed31fb00] libass source: commit: 0.17.5-8-gb2fe9d8770678a7b5271387d38c20657ebf3429a
+[Parsed_ass_2 @ 000001eaed31fb00] Shaper: FriBidi 1.0.16 (SIMPLE) HarfBuzz-ng 14.4.0 (COMPLEX)
+[Parsed_ass_2 @ 000001eaed31fb00] Using font provider directwrite (with GDI)
+[Parsed_ass_2 @ 000001eaed31fb00] Added subtitle file: 'analise_v003/orientacoes_final.ass' (2 styles, 30 events)
+Output #0, mp4, to 'C:\Users\User\Documents\PROJETOS SOFTWARE\ESNAUTO\output\video-edicao\exportados\ESNAUTO_apresentacao_v003.mp4':
+  Metadata:
+    title           : ESNAUTO - Apresentação v003
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc63.1.102 h264_nvenc
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 256 kb/s (default)
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+  Stream #0:2(por): Subtitle: mov_text (tx3g / 0x67337874)
+    Metadata:
+      encoder         : Lavc63.1.102 mov_text
+      title           : Português - legendas revisadas
+[Parsed_ass_2 @ 000001eaed31fb00] fontselect: (Segoe UI, 700, 0) -> SegoeUI-Bold, 0, SegoeUI-Bold
+[mp4 @ 000001eaed75c880] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001eaeb574c40] video:506230KiB audio:45520KiB subtitle:19KiB other streams:0KiB global headers:0KiB muxing overhead: 0.289711%
+frame=44280 fps=223 q=11.0 Lsize=  553368KiB time=00:24:35.98 bitrate=3071.3kbits/s speed=7.45x elapsed=0:03:18.20    
+[aac @ 000001eaed21b640] Qavg: 21796.381

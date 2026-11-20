@@ -1,0 +1,24 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "3ca86f3df0dbe6d9c891beb2eb548bd6720ad7a998179d21f4f6f09bfc248f2f",
+  "paginas": 76,
+  "verificacoes": 45,
+  "falhas": 0,
+  "referencias": 50,
+  "chamadas_reconhecidas": 154,
+  "sem_correspondencia": 0,
+  "paginas_alteradas_e_inspecionadas": [
+    28,
+    30
+  ],
+  "paginas_iguais_ao_checkpoint_anterior": 74,
+  "unidades_textuais_alteradas": [
+    "U0246"
+  ],
+  "pendencias": [
+    "Conciliar P4 de Ribeiro",
+    "Concluir auditoria integral de conteúdo, similaridade e guia"
+  ],
+  "estado": "rascunho_nao_promovido"
+}

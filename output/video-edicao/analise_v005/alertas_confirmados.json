@@ -1,0 +1,68 @@
+[
+  {
+    "som": "Windows Background.wav",
+    "inicio_s": 706.888,
+    "fim_s": 708.123375,
+    "correlacao": 0.5534886919898188,
+    "amostra_inicio": 5655104,
+    "amostras_ref": 9883,
+    "referencia_npy": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\analise_v005\\referencias\\Windows Background.npy",
+    "subcorrelacoes": [
+      0.9897852376832676,
+      0.9940310086794323,
+      0.993411568302943,
+      0.7431014804081718
+    ],
+    "ganhos_subjanelas": [
+      1.1651008938669727,
+      1.2559225691591378,
+      1.3756848176235306,
+      1.608812485872549
+    ],
+    "aceito": true
+  },
+  {
+    "som": "Windows Background.wav",
+    "inicio_s": 711.99775,
+    "fim_s": 713.233125,
+    "correlacao": 0.4286516542166059,
+    "amostra_inicio": 5695982,
+    "amostras_ref": 9883,
+    "referencia_npy": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\analise_v005\\referencias\\Windows Background.npy",
+    "subcorrelacoes": [
+      0.9890854117308748,
+      0.9922463228855123,
+      0.9915194779522294,
+      0.4075363728563647
+    ],
+    "ganhos_subjanelas": [
+      1.1645098044939308,
+      1.2361888326139647,
+      1.35836375288671,
+      1.594091348254783
+    ],
+    "aceito": true
+  },
+  {
+    "som": "Windows Background.wav",
+    "inicio_s": 1165.396375,
+    "fim_s": 1166.63175,
+    "correlacao": 0.8180526190185572,
+    "amostra_inicio": 9323171,
+    "amostras_ref": 9883,
+    "referencia_npy": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\analise_v005\\referencias\\Windows Background.npy",
+    "subcorrelacoes": [
+      0.9918038531998489,
+      0.9913494810536266,
+      0.9914415943931065,
+      0.9900100953384804
+    ],
+    "ganhos_subjanelas": [
+      0.449695710510239,
+      0.45350639576225593,
+      0.45619159078407695,
+      0.45246756493871393
+    ],
+    "aceito": true
+  }
+]

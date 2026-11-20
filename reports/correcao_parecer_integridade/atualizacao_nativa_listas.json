@@ -1,0 +1,664 @@
+{
+  "origem": "reports\\monografia\\trabalho\\revisao_parecer_integridade.docx",
+  "sha256_origem": "95f84d82dbc429754febee49d1b5ff3448dc5e1c303752fc5e5f5e2b22f2661d",
+  "candidata": "reports\\monografia\\trabalho\\revisao_parecer_integridade_candidata.docx",
+  "sha256_candidata": "8836ea798aa969cda94c78690f9cca5e34ad44fb90a12f1d80a006419fdbafdc",
+  "alteracoes_textuais": [
+    {
+      "paragrafo_atual": 47,
+      "antes": "Figura 1 – Documentação localizada nas cinco dimensões analíticas\t35",
+      "depois": "Figura 1 – Documentação localizada nas cinco dimensões analíticas\t36"
+    },
+    {
+      "paragrafo_atual": 48,
+      "antes": "Figura 2 – Frequência das palavras-chave declaradas pelos autores\t36",
+      "depois": "Figura 2 – Frequência das palavras-chave declaradas pelos autores\t37"
+    },
+    {
+      "paragrafo_atual": 49,
+      "antes": "Figura 3 – Rede de coocorrência de palavras-chave\t37",
+      "depois": "Figura 3 – Rede de coocorrência de palavras-chave\t38"
+    },
+    {
+      "paragrafo_atual": 50,
+      "antes": "Figura 4 – Expressões recorrentes nos títulos dos estudos\t38",
+      "depois": "Figura 4 – Expressões recorrentes nos títulos dos estudos\t39"
+    },
+    {
+      "paragrafo_atual": 51,
+      "antes": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações\t54",
+      "depois": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações\t55"
+    },
+    {
+      "paragrafo_atual": 52,
+      "antes": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada\t55",
+      "depois": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada\t56"
+    },
+    {
+      "paragrafo_atual": 54,
+      "antes": "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica\t33",
+      "depois": "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica\t34"
+    },
+    {
+      "paragrafo_atual": 55,
+      "antes": "Quadro 2 – Organização das cinco ondas experimentais\t42",
+      "depois": "Quadro 2 – Organização das cinco ondas experimentais\t43"
+    },
+    {
+      "paragrafo_atual": 56,
+      "antes": "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético\t43",
+      "depois": "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético\t44"
+    },
+    {
+      "paragrafo_atual": 57,
+      "antes": "Quadro 4 – Síntese do desenho experimental executado\t46",
+      "depois": "Quadro 4 – Síntese do desenho experimental executado\t47"
+    },
+    {
+      "paragrafo_atual": 58,
+      "antes": "Quadro 5 – Síntese da avaliação das hipóteses\t61",
+      "depois": "Quadro 5 – Síntese da avaliação das hipóteses\t62"
+    },
+    {
+      "paragrafo_atual": 59,
+      "antes": "Quadro 6 – Delimitação das contribuições e da procedência\t71",
+      "depois": "Quadro 6 – Delimitação das contribuições e da procedência\t72"
+    },
+    {
+      "paragrafo_atual": 61,
+      "antes": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico\t32",
+      "depois": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico\t33"
+    },
+    {
+      "paragrafo_atual": 62,
+      "antes": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)\t41",
+      "depois": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)\t42"
+    },
+    {
+      "paragrafo_atual": 63,
+      "antes": "Tabela 3 – Comparação dos principais resultados no conjunto de teste\t53",
+      "depois": "Tabela 3 – Comparação dos principais resultados no conjunto de teste\t54"
+    },
+    {
+      "paragrafo_atual": 64,
+      "antes": "Tabela 4 – Configurações selecionadas das cinco ondas experimentais\t56",
+      "depois": "Tabela 4 – Configurações selecionadas das cinco ondas experimentais\t57"
+    },
+    {
+      "paragrafo_atual": 65,
+      "antes": "Tabela 5 – Decomposição do custo computacional documentado\t58",
+      "depois": "Tabela 5 – Decomposição do custo computacional documentado\t59"
+    },
+    {
+      "paragrafo_atual": 66,
+      "antes": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar\t60",
+      "depois": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar\t62"
+    },
+    {
+      "paragrafo_atual": 67,
+      "antes": "Tabela 7 – Comparação descritiva com Lampugnani (2026)\t62",
+      "depois": "Tabela 7 – Comparação descritiva com Lampugnani (2026)\t63"
+    },
+    {
+      "paragrafo_atual": 132,
+      "antes": "2\tREVISÃO DA LITERATURA\t19",
+      "depois": "2\tREVISÃO DA LITERATURA\t20"
+    },
+    {
+      "paragrafo_atual": 133,
+      "antes": "2.1\tMERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS\t19",
+      "depois": "2.1\tMERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS\t20"
+    },
+    {
+      "paragrafo_atual": 134,
+      "antes": "2.2\tREDES NEURAIS RECORRENTES: LSTM E GRU\t20",
+      "depois": "2.2\tREDES NEURAIS RECORRENTES: LSTM E GRU\t21"
+    },
+    {
+      "paragrafo_atual": 135,
+      "antes": "2.3\tREDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO\t22",
+      "depois": "2.3\tREDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO\t23"
+    },
+    {
+      "paragrafo_atual": 136,
+      "antes": "2.4\tOTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS\t24",
+      "depois": "2.4\tOTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS\t25"
+    },
+    {
+      "paragrafo_atual": 137,
+      "antes": "2.5\tDISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO\t25",
+      "depois": "2.5\tDISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO\t26"
+    },
+    {
+      "paragrafo_atual": 138,
+      "antes": "2.6\tPRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3\t27",
+      "depois": "2.6\tPRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3\t28"
+    },
+    {
+      "paragrafo_atual": 139,
+      "antes": "2.7\tTRABALHOS RELACIONADOS\t28",
+      "depois": "2.7\tTRABALHOS RELACIONADOS\t29"
+    },
+    {
+      "paragrafo_atual": 140,
+      "antes": "2.8\tESTADO DA ARTE E LACUNAS IDENTIFICADAS\t30",
+      "depois": "2.8\tESTADO DA ARTE E LACUNAS IDENTIFICADAS\t31"
+    },
+    {
+      "paragrafo_atual": 141,
+      "antes": "2.9\tSÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO\t31",
+      "depois": "2.9\tSÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO\t33"
+    },
+    {
+      "paragrafo_atual": 142,
+      "antes": "3\tMATERIAL E MÉTODOS\t39",
+      "depois": "3\tMATERIAL E MÉTODOS\t40"
+    },
+    {
+      "paragrafo_atual": 143,
+      "antes": "3.1\tCLASSIFICAÇÃO DA PESQUISA\t39",
+      "depois": "3.1\tCLASSIFICAÇÃO DA PESQUISA\t40"
+    },
+    {
+      "paragrafo_atual": 144,
+      "antes": "3.2\tCONJUNTO DE DADOS E PRÉ-PROCESSAMENTO\t40",
+      "depois": "3.2\tCONJUNTO DE DADOS E PRÉ-PROCESSAMENTO\t41"
+    },
+    {
+      "paragrafo_atual": 145,
+      "antes": "3.3\tIMPLEMENTAÇÃO DAS ESNS EM R\t42",
+      "depois": "3.3\tIMPLEMENTAÇÃO DAS ESNS EM R\t43"
+    },
+    {
+      "paragrafo_atual": 146,
+      "antes": "3.4\tOTIMIZAÇÃO POR ALGORITMOS GENÉTICOS\t43",
+      "depois": "3.4\tOTIMIZAÇÃO POR ALGORITMOS GENÉTICOS\t44"
+    },
+    {
+      "paragrafo_atual": 147,
+      "antes": "3.5\tMODELOS DE COMPARAÇÃO: LSTM E GRU\t45",
+      "depois": "3.5\tMODELOS DE COMPARAÇÃO: LSTM E GRU\t46"
+    },
+    {
+      "paragrafo_atual": 148,
+      "antes": "3.6\tDESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO\t45",
+      "depois": "3.6\tDESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO\t46"
+    },
+    {
+      "paragrafo_atual": 149,
+      "antes": "3.7\tANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO\t47",
+      "depois": "3.7\tANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO\t48"
+    },
+    {
+      "paragrafo_atual": 150,
+      "antes": "3.8\tREPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS\t48",
+      "depois": "3.8\tREPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS\t49"
+    },
+    {
+      "paragrafo_atual": 151,
+      "antes": "3.8.1\tAmbiente computacional\t48",
+      "depois": "3.8.1\tAmbiente computacional\t49"
+    },
+    {
+      "paragrafo_atual": 152,
+      "antes": "3.8.2\tEstrutura do repositório\t48",
+      "depois": "3.8.2\tEstrutura do repositório\t49"
+    },
+    {
+      "paragrafo_atual": 153,
+      "antes": "3.8.3\tProcedimento de revisão bibliográfica\t49",
+      "depois": "3.8.3\tProcedimento de revisão bibliográfica\t50"
+    },
+    {
+      "paragrafo_atual": 154,
+      "antes": "3.8.4\tProcedimento de re-execução dos experimentos\t51",
+      "depois": "3.8.4\tProcedimento de re-execução dos experimentos\t52"
+    },
+    {
+      "paragrafo_atual": 155,
+      "antes": "4\tRESULTADOS E DISCUSSÃO\t52",
+      "depois": "4\tRESULTADOS E DISCUSSÃO\t53"
+    },
+    {
+      "paragrafo_atual": 156,
+      "antes": "4.1\tVISÃO GERAL DOS EXPERIMENTOS\t52",
+      "depois": "4.1\tVISÃO GERAL DOS EXPERIMENTOS\t53"
+    },
+    {
+      "paragrafo_atual": 157,
+      "antes": "4.2\tDESEMPENHO PREDITIVO GLOBAL\t53",
+      "depois": "4.2\tDESEMPENHO PREDITIVO GLOBAL\t54"
+    },
+    {
+      "paragrafo_atual": 158,
+      "antes": "4.3\tEFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS\t56",
+      "depois": "4.3\tEFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS\t57"
+    },
+    {
+      "paragrafo_atual": 160,
+      "antes": "4.5\tCARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE\t57",
+      "depois": "4.5\tCARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE\t58"
+    },
+    {
+      "paragrafo_atual": 161,
+      "antes": "4.6\tCUSTO COMPUTACIONAL\t58",
+      "depois": "4.6\tCUSTO COMPUTACIONAL\t59"
+    },
+    {
+      "paragrafo_atual": 162,
+      "antes": "4.7\tAPLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO\t59",
+      "depois": "4.7\tAPLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO\t60"
+    },
+    {
+      "paragrafo_atual": 163,
+      "antes": "4.8\tANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO\t60",
+      "depois": "4.8\tANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO\t61"
+    },
+    {
+      "paragrafo_atual": 164,
+      "antes": "4.9\tAVALIAÇÃO DAS HIPÓTESES\t61",
+      "depois": "4.9\tAVALIAÇÃO DAS HIPÓTESES\t62"
+    },
+    {
+      "paragrafo_atual": 165,
+      "antes": "4.10\tCONTRIBUIÇÕES DO ESNAUTO\t63",
+      "depois": "4.10\tCONTRIBUIÇÕES DO ESNAUTO\t64"
+    },
+    {
+      "paragrafo_atual": 166,
+      "antes": "5\tDISCUSSÃO\t65",
+      "depois": "5\tDISCUSSÃO\t66"
+    },
+    {
+      "paragrafo_atual": 167,
+      "antes": "5.1\tVALIDADE INTERNA E ESTATÍSTICA\t65",
+      "depois": "5.1\tVALIDADE INTERNA E ESTATÍSTICA\t66"
+    },
+    {
+      "paragrafo_atual": 168,
+      "antes": "5.2\tVALIDADE EXTERNA\t66",
+      "depois": "5.2\tVALIDADE EXTERNA\t67"
+    },
+    {
+      "paragrafo_atual": 169,
+      "antes": "5.3\tTRABALHOS FUTUROS\t67",
+      "depois": "5.3\tTRABALHOS FUTUROS\t68"
+    },
+    {
+      "paragrafo_atual": 170,
+      "antes": "6\tCONCLUSÃO\t68",
+      "depois": "6\tCONCLUSÃO\t70"
+    },
+    {
+      "paragrafo_atual": 171,
+      "antes": "REFERÊNCIAS\t70",
+      "depois": "REFERÊNCIAS\t73"
+    }
+  ],
+  "tabelas_texto_preservado": true,
+  "midias_preservadas": true,
+  "listas": [
+    {
+      "paragrafo": 47,
+      "titulo": "Figura 1 – Documentação localizada nas cinco dimensões analíticas",
+      "pagina_lista": 36,
+      "pagina_corpo": 36
+    },
+    {
+      "paragrafo": 48,
+      "titulo": "Figura 2 – Frequência das palavras-chave declaradas pelos autores",
+      "pagina_lista": 37,
+      "pagina_corpo": 37
+    },
+    {
+      "paragrafo": 49,
+      "titulo": "Figura 3 – Rede de coocorrência de palavras-chave",
+      "pagina_lista": 38,
+      "pagina_corpo": 38
+    },
+    {
+      "paragrafo": 50,
+      "titulo": "Figura 4 – Expressões recorrentes nos títulos dos estudos",
+      "pagina_lista": 39,
+      "pagina_corpo": 39
+    },
+    {
+      "paragrafo": 51,
+      "titulo": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações",
+      "pagina_lista": 55,
+      "pagina_corpo": 55
+    },
+    {
+      "paragrafo": 52,
+      "titulo": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada",
+      "pagina_lista": 56,
+      "pagina_corpo": 56
+    },
+    {
+      "paragrafo": 54,
+      "titulo": "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica",
+      "pagina_lista": 34,
+      "pagina_corpo": 34
+    },
+    {
+      "paragrafo": 55,
+      "titulo": "Quadro 2 – Organização das cinco ondas experimentais",
+      "pagina_lista": 43,
+      "pagina_corpo": 43
+    },
+    {
+      "paragrafo": 56,
+      "titulo": "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético",
+      "pagina_lista": 44,
+      "pagina_corpo": 44
+    },
+    {
+      "paragrafo": 57,
+      "titulo": "Quadro 4 – Síntese do desenho experimental executado",
+      "pagina_lista": 47,
+      "pagina_corpo": 47
+    },
+    {
+      "paragrafo": 58,
+      "titulo": "Quadro 5 – Síntese da avaliação das hipóteses",
+      "pagina_lista": 62,
+      "pagina_corpo": 62
+    },
+    {
+      "paragrafo": 59,
+      "titulo": "Quadro 6 – Delimitação das contribuições e da procedência",
+      "pagina_lista": 72,
+      "pagina_corpo": 72
+    },
+    {
+      "paragrafo": 61,
+      "titulo": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico",
+      "pagina_lista": 33,
+      "pagina_corpo": 33
+    },
+    {
+      "paragrafo": 62,
+      "titulo": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+      "pagina_lista": 42,
+      "pagina_corpo": 42
+    },
+    {
+      "paragrafo": 63,
+      "titulo": "Tabela 3 – Comparação dos principais resultados no conjunto de teste",
+      "pagina_lista": 54,
+      "pagina_corpo": 54
+    },
+    {
+      "paragrafo": 64,
+      "titulo": "Tabela 4 – Configurações selecionadas das cinco ondas experimentais",
+      "pagina_lista": 57,
+      "pagina_corpo": 57
+    },
+    {
+      "paragrafo": 65,
+      "titulo": "Tabela 5 – Decomposição do custo computacional documentado",
+      "pagina_lista": 59,
+      "pagina_corpo": 59
+    },
+    {
+      "paragrafo": 66,
+      "titulo": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+      "pagina_lista": 62,
+      "pagina_corpo": 62
+    },
+    {
+      "paragrafo": 67,
+      "titulo": "Tabela 7 – Comparação descritiva com Lampugnani (2026)",
+      "pagina_lista": 63,
+      "pagina_corpo": 63
+    },
+    {
+      "paragrafo": 131,
+      "titulo": "INTRODUÇÃO",
+      "pagina_lista": 17,
+      "pagina_corpo": 17
+    },
+    {
+      "paragrafo": 132,
+      "titulo": "REVISÃO DA LITERATURA",
+      "pagina_lista": 20,
+      "pagina_corpo": 20
+    },
+    {
+      "paragrafo": 133,
+      "titulo": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+      "pagina_lista": 20,
+      "pagina_corpo": 20
+    },
+    {
+      "paragrafo": 134,
+      "titulo": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+      "pagina_lista": 21,
+      "pagina_corpo": 21
+    },
+    {
+      "paragrafo": 135,
+      "titulo": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+      "pagina_lista": 23,
+      "pagina_corpo": 23
+    },
+    {
+      "paragrafo": 136,
+      "titulo": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+      "pagina_lista": 25,
+      "pagina_corpo": 25
+    },
+    {
+      "paragrafo": 137,
+      "titulo": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+      "pagina_lista": 26,
+      "pagina_corpo": 26
+    },
+    {
+      "paragrafo": 138,
+      "titulo": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+      "pagina_lista": 28,
+      "pagina_corpo": 28
+    },
+    {
+      "paragrafo": 139,
+      "titulo": "TRABALHOS RELACIONADOS",
+      "pagina_lista": 29,
+      "pagina_corpo": 29
+    },
+    {
+      "paragrafo": 140,
+      "titulo": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+      "pagina_lista": 31,
+      "pagina_corpo": 31
+    },
+    {
+      "paragrafo": 141,
+      "titulo": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+      "pagina_lista": 33,
+      "pagina_corpo": 33
+    },
+    {
+      "paragrafo": 142,
+      "titulo": "MATERIAL E MÉTODOS",
+      "pagina_lista": 40,
+      "pagina_corpo": 40
+    },
+    {
+      "paragrafo": 143,
+      "titulo": "CLASSIFICAÇÃO DA PESQUISA",
+      "pagina_lista": 40,
+      "pagina_corpo": 40
+    },
+    {
+      "paragrafo": 144,
+      "titulo": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+      "pagina_lista": 41,
+      "pagina_corpo": 41
+    },
+    {
+      "paragrafo": 145,
+      "titulo": "IMPLEMENTAÇÃO DAS ESNS EM R",
+      "pagina_lista": 43,
+      "pagina_corpo": 43
+    },
+    {
+      "paragrafo": 146,
+      "titulo": "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+      "pagina_lista": 44,
+      "pagina_corpo": 44
+    },
+    {
+      "paragrafo": 147,
+      "titulo": "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+      "pagina_lista": 46,
+      "pagina_corpo": 46
+    },
+    {
+      "paragrafo": 148,
+      "titulo": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+      "pagina_lista": 46,
+      "pagina_corpo": 46
+    },
+    {
+      "paragrafo": 149,
+      "titulo": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+      "pagina_lista": 48,
+      "pagina_corpo": 48
+    },
+    {
+      "paragrafo": 150,
+      "titulo": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+      "pagina_lista": 49,
+      "pagina_corpo": 49
+    },
+    {
+      "paragrafo": 151,
+      "titulo": "Ambiente computacional",
+      "pagina_lista": 49,
+      "pagina_corpo": 49
+    },
+    {
+      "paragrafo": 152,
+      "titulo": "Estrutura do repositório",
+      "pagina_lista": 49,
+      "pagina_corpo": 49
+    },
+    {
+      "paragrafo": 153,
+      "titulo": "Procedimento de revisão bibliográfica",
+      "pagina_lista": 50,
+      "pagina_corpo": 50
+    },
+    {
+      "paragrafo": 154,
+      "titulo": "Procedimento de re-execução dos experimentos",
+      "pagina_lista": 52,
+      "pagina_corpo": 52
+    },
+    {
+      "paragrafo": 155,
+      "titulo": "RESULTADOS E DISCUSSÃO",
+      "pagina_lista": 53,
+      "pagina_corpo": 53
+    },
+    {
+      "paragrafo": 156,
+      "titulo": "VISÃO GERAL DOS EXPERIMENTOS",
+      "pagina_lista": 53,
+      "pagina_corpo": 53
+    },
+    {
+      "paragrafo": 157,
+      "titulo": "DESEMPENHO PREDITIVO GLOBAL",
+      "pagina_lista": 54,
+      "pagina_corpo": 54
+    },
+    {
+      "paragrafo": 158,
+      "titulo": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+      "pagina_lista": 57,
+      "pagina_corpo": 57
+    },
+    {
+      "paragrafo": 159,
+      "titulo": "ES E GENERALIZAÇÃO",
+      "pagina_lista": 57,
+      "pagina_corpo": null
+    },
+    {
+      "paragrafo": 160,
+      "titulo": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+      "pagina_lista": 58,
+      "pagina_corpo": 58
+    },
+    {
+      "paragrafo": 161,
+      "titulo": "CUSTO COMPUTACIONAL",
+      "pagina_lista": 59,
+      "pagina_corpo": 59
+    },
+    {
+      "paragrafo": 162,
+      "titulo": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+      "pagina_lista": 60,
+      "pagina_corpo": 60
+    },
+    {
+      "paragrafo": 163,
+      "titulo": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+      "pagina_lista": 61,
+      "pagina_corpo": 61
+    },
+    {
+      "paragrafo": 164,
+      "titulo": "AVALIAÇÃO DAS HIPÓTESES",
+      "pagina_lista": 62,
+      "pagina_corpo": 62
+    },
+    {
+      "paragrafo": 165,
+      "titulo": "CONTRIBUIÇÕES DO ESNAUTO",
+      "pagina_lista": 64,
+      "pagina_corpo": 64
+    },
+    {
+      "paragrafo": 166,
+      "titulo": "DISCUSSÃO",
+      "pagina_lista": 66,
+      "pagina_corpo": 66
+    },
+    {
+      "paragrafo": 167,
+      "titulo": "VALIDADE INTERNA E ESTATÍSTICA",
+      "pagina_lista": 66,
+      "pagina_corpo": 66
+    },
+    {
+      "paragrafo": 168,
+      "titulo": "VALIDADE EXTERNA",
+      "pagina_lista": 67,
+      "pagina_corpo": 67
+    },
+    {
+      "paragrafo": 169,
+      "titulo": "TRABALHOS FUTUROS",
+      "pagina_lista": 68,
+      "pagina_corpo": 68
+    },
+    {
+      "paragrafo": 170,
+      "titulo": "CONCLUSÃO",
+      "pagina_lista": 70,
+      "pagina_corpo": 70
+    },
+    {
+      "paragrafo": 171,
+      "titulo": "REFERÊNCIAS",
+      "pagina_lista": 73,
+      "pagina_corpo": 73
+    }
+  ],
+  "listas_corretas": false,
+  "limite": "Word também salvou alterações nativas de estilos e modelos de lista previstas no exportador; conferência textual e mídias preservados, conferência visual integral ainda necessária."
+}

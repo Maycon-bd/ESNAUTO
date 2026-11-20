@@ -1,0 +1,498 @@
+{
+  "transicoes": 23,
+  "tipo": "Fade por clique, sem avanço automático",
+  "links": [
+    {
+      "origem": 1,
+      "destino": 2,
+      "shape": "nav-2-5",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 1,
+      "destino": 5,
+      "shape": "nav-5-6",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 1,
+      "destino": 12,
+      "shape": "nav-12-7",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 1,
+      "destino": 23,
+      "shape": "nav-23-8",
+      "id": "rIdNav4"
+    },
+    {
+      "origem": 2,
+      "destino": 1,
+      "shape": "nav-1-5",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 2,
+      "destino": 1,
+      "shape": "nav-1-6",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 2,
+      "destino": 3,
+      "shape": "nav-3-7",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 3,
+      "destino": 16,
+      "shape": "nav-16-2",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 3,
+      "destino": 18,
+      "shape": "nav-18-4",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 3,
+      "destino": 13,
+      "shape": "nav-13-6",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 3,
+      "destino": 7,
+      "shape": "nav-7-8",
+      "id": "rIdNav4"
+    },
+    {
+      "origem": 3,
+      "destino": 8,
+      "shape": "nav-8-10",
+      "id": "rIdNav5"
+    },
+    {
+      "origem": 3,
+      "destino": 1,
+      "shape": "nav-1-13",
+      "id": "rIdNav6"
+    },
+    {
+      "origem": 3,
+      "destino": 2,
+      "shape": "nav-2-14",
+      "id": "rIdNav7"
+    },
+    {
+      "origem": 3,
+      "destino": 4,
+      "shape": "nav-4-15",
+      "id": "rIdNav8"
+    },
+    {
+      "origem": 4,
+      "destino": 1,
+      "shape": "nav-1-6",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 4,
+      "destino": 3,
+      "shape": "nav-3-7",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 4,
+      "destino": 5,
+      "shape": "nav-5-8",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 5,
+      "destino": 1,
+      "shape": "nav-1-11",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 5,
+      "destino": 4,
+      "shape": "nav-4-12",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 5,
+      "destino": 6,
+      "shape": "nav-6-13",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 6,
+      "destino": 1,
+      "shape": "nav-1-12",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 6,
+      "destino": 5,
+      "shape": "nav-5-13",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 6,
+      "destino": 7,
+      "shape": "nav-7-14",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 7,
+      "destino": 1,
+      "shape": "nav-1-4",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 7,
+      "destino": 6,
+      "shape": "nav-6-5",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 7,
+      "destino": 8,
+      "shape": "nav-8-6",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 8,
+      "destino": 1,
+      "shape": "nav-1-4",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 8,
+      "destino": 7,
+      "shape": "nav-7-5",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 8,
+      "destino": 9,
+      "shape": "nav-9-6",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 9,
+      "destino": 12,
+      "shape": "nav-12-2",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 9,
+      "destino": 15,
+      "shape": "nav-15-5",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 9,
+      "destino": 14,
+      "shape": "nav-14-8",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 9,
+      "destino": 1,
+      "shape": "nav-1-12",
+      "id": "rIdNav4"
+    },
+    {
+      "origem": 9,
+      "destino": 8,
+      "shape": "nav-8-13",
+      "id": "rIdNav5"
+    },
+    {
+      "origem": 9,
+      "destino": 10,
+      "shape": "nav-10-14",
+      "id": "rIdNav6"
+    },
+    {
+      "origem": 10,
+      "destino": 1,
+      "shape": "nav-1-6",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 10,
+      "destino": 9,
+      "shape": "nav-9-7",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 10,
+      "destino": 11,
+      "shape": "nav-11-8",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 11,
+      "destino": 1,
+      "shape": "nav-1-9",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 11,
+      "destino": 10,
+      "shape": "nav-10-10",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 11,
+      "destino": 12,
+      "shape": "nav-12-11",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 12,
+      "destino": 1,
+      "shape": "nav-1-5",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 12,
+      "destino": 11,
+      "shape": "nav-11-6",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 12,
+      "destino": 13,
+      "shape": "nav-13-7",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 13,
+      "destino": 1,
+      "shape": "nav-1-5",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 13,
+      "destino": 12,
+      "shape": "nav-12-6",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 13,
+      "destino": 14,
+      "shape": "nav-14-7",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 14,
+      "destino": 1,
+      "shape": "nav-1-3",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 14,
+      "destino": 13,
+      "shape": "nav-13-4",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 14,
+      "destino": 15,
+      "shape": "nav-15-5",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 15,
+      "destino": 1,
+      "shape": "nav-1-7",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 15,
+      "destino": 14,
+      "shape": "nav-14-8",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 15,
+      "destino": 16,
+      "shape": "nav-16-9",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 16,
+      "destino": 1,
+      "shape": "nav-1-5",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 16,
+      "destino": 15,
+      "shape": "nav-15-6",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 16,
+      "destino": 17,
+      "shape": "nav-17-7",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 17,
+      "destino": 1,
+      "shape": "nav-1-4",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 17,
+      "destino": 16,
+      "shape": "nav-16-5",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 17,
+      "destino": 18,
+      "shape": "nav-18-6",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 18,
+      "destino": 1,
+      "shape": "nav-1-7",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 18,
+      "destino": 17,
+      "shape": "nav-17-8",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 18,
+      "destino": 19,
+      "shape": "nav-19-9",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 19,
+      "destino": 16,
+      "shape": "nav-16-1",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 19,
+      "destino": 18,
+      "shape": "nav-18-3",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 19,
+      "destino": 13,
+      "shape": "nav-13-5",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 19,
+      "destino": 7,
+      "shape": "nav-7-7",
+      "id": "rIdNav4"
+    },
+    {
+      "origem": 19,
+      "destino": 8,
+      "shape": "nav-8-9",
+      "id": "rIdNav5"
+    },
+    {
+      "origem": 19,
+      "destino": 1,
+      "shape": "nav-1-12",
+      "id": "rIdNav6"
+    },
+    {
+      "origem": 19,
+      "destino": 18,
+      "shape": "nav-18-13",
+      "id": "rIdNav7"
+    },
+    {
+      "origem": 19,
+      "destino": 20,
+      "shape": "nav-20-14",
+      "id": "rIdNav8"
+    },
+    {
+      "origem": 20,
+      "destino": 1,
+      "shape": "nav-1-7",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 20,
+      "destino": 19,
+      "shape": "nav-19-8",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 20,
+      "destino": 21,
+      "shape": "nav-21-9",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 21,
+      "destino": 1,
+      "shape": "nav-1-12",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 21,
+      "destino": 20,
+      "shape": "nav-20-13",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 21,
+      "destino": 22,
+      "shape": "nav-22-14",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 22,
+      "destino": 1,
+      "shape": "nav-1-8",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 22,
+      "destino": 21,
+      "shape": "nav-21-9",
+      "id": "rIdNav2"
+    },
+    {
+      "origem": 22,
+      "destino": 23,
+      "shape": "nav-23-10",
+      "id": "rIdNav3"
+    },
+    {
+      "origem": 23,
+      "destino": 1,
+      "shape": "nav-1-10",
+      "id": "rIdNav1"
+    },
+    {
+      "origem": 23,
+      "destino": 22,
+      "shape": "nav-22-11",
+      "id": "rIdNav2"
+    }
+  ]
+}

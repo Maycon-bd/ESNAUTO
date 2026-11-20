@@ -1,0 +1,27 @@
+{
+  "base": "v005",
+  "sha256_antes_lote": "175568500c1cf4668902cfc2adf0366fc290677d606ba29517b834f46d71891e",
+  "sha256_apos_lote": "7398c86f6435c1ab3b0088118645cbcbf0493cad3e61bb8bdde3ca8bbaf210a5",
+  "alteracoes": [
+    {
+      "unidade": "U0184",
+      "antes": "Ping (2023) acrescenta a essa discussão a perspectiva do uso prático: variações abruptas de preço impactam decisões de investimento em escala global, o que confere à modelagem preditiva relevância tanto para o investidor individual quanto para o gestor de risco institucional. No contexto brasileiro, prever preços de ativos negociados na B3 traz uma camada adicional de dificuldade.",
+      "depois": "Ping (2023) discute a previsão de volatilidade como apoio à avaliação de riscos, à precificação de opções e à alocação de ativos. Essa discussão trata da incerteza das variações de preços e não comprova a rentabilidade de um modelo de previsão do fechamento. Nesta pesquisa, o objeto é a predição de um passo à frente da PETR4, sob as condições experimentais descritas.",
+      "evidencia": "achados_leituras_lote2.json"
+    },
+    {
+      "unidade": "U0191",
+      "antes": "Para tratar dados com estrutura temporal, uma das classes de modelos mais utilizadas é a das Redes Neurais Recorrentes (RNRs). Sudiatmika e Putra (2024) explicam que, ao contrário das redes neurais convencionais, que processam cada entrada de forma independente, as RNRs mantêm um estado interno atualizado a cada novo dado recebido. Essa memória interna permite que cada saída dependa não apenas da entrada atual, mas também do histórico acumulado ao longo da sequência, o que torna possível capturar dependências entre observações distantes no tempo.",
+      "depois": "As Redes Neurais Recorrentes (RNRs) são uma classe de modelos para processar sequências. Sudiatmika e Putra (2024) descrevem um estado interno atualizado a cada passo a partir da entrada atual e do estado anterior. Em contraste com redes feedforward sem estado recorrente, essa organização permite incorporar o histórico da sequência ao cálculo das saídas. A aprendizagem de dependências longas, contudo, permanece condicionada à arquitetura e ao treinamento.",
+      "evidencia": "achados_leituras_lote2.json"
+    },
+    {
+      "unidade": "U0193",
+      "antes": "As LSTMs utilizam portas para controlar preservação, atualização e descarte de informação, enquanto as GRUs adotam arquitetura mais enxuta e menor número de parâmetros treináveis. Sudiatmika e Putra (2024) observam que, em séries mais curtas, a GRU pode ser computacionalmente mais eficiente que a LSTM em razão dessa estrutura simplificada.",
+      "depois": "As LSTMs utilizam portas para controlar a preservação, a atualização e o descarte de informação, enquanto as GRUs empregam uma estrutura simplificada de atualização e reinicialização do estado. Na revisão de Sudiatmika e Putra (2024), essa simplificação é associada a possíveis ganhos de eficiência e ao tratamento de sequências mais curtas. Trata-se de discussão de estudos anteriores; o experimento de previsão do ouro apresentado pelos autores compara erros, sem fornecer uma medição de tempo de treinamento.",
+      "evidencia": "achados_leituras_lote2.json"
+    }
+  ],
+  "estado": "rascunho_nao_promovido",
+  "resultados_experimentais_alterados": false
+}

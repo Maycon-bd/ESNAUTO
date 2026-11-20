@@ -1,0 +1,36 @@
+{
+  "sha_antes": "c152e5c6daec08abafd9a1034bf027dfd577075cc90da3d1f10202384ea37469",
+  "sha_edicao": "cde3582ba23edba1ff19abbd7b82d8ce34f3ccd44687024c913ae3e00b203d2a",
+  "alteracoes": [
+    {
+      "paragrafo": 171,
+      "termos": [
+        "Mean Absolute Error",
+        "Root Mean Squared Error"
+      ],
+      "texto_preservado": true
+    },
+    {
+      "paragrafo": 469,
+      "termos": [
+        "baselines"
+      ],
+      "texto_preservado": true
+    }
+  ],
+  "excecoes_confirmadas": {
+    "fonte": "https://www12.senado.leg.br/manualdecomunicacao/verbetes-acessorio/estrangeirismos-grafados-sem-italico-ou-aspas",
+    "consulta": "2026-10-30",
+    "termos": [
+      "software",
+      "script",
+      "hardware"
+    ],
+    "decisao": "Manter sem itálico no uso comum. Guia específico prevalece para expressões latinas expressamente destacadas."
+  },
+  "outros": [
+    "Ridge mantido como designação do método",
+    "Transformer mantido como nome da arquitetura",
+    "baseline no identificador matemático preservado"
+  ]
+}

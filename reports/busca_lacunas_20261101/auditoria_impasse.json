@@ -1,0 +1,56 @@
+{
+  "base": "v010",
+  "sha256_base": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+  "objetivo": "Buscar todas as informações faltantes para preencher os sinais de interrogação",
+  "objetivo_concluido": false,
+  "turnos_consecutivos_com_impasse_revalidado": 3,
+  "classificacao_turno_anterior": "sem progresso; segunda ocorrência do mesmo impedimento documental",
+  "classificacao_deste_turno": "sem progresso; Word/hash,38células ePDFs conferidos. Nenhuma nova fonte/resposta ou processo vivo identificado que permita superar o impedimento.",
+  "condicao": "As evidências recuperadas não especificam as respostas restantes; não há material primário adicional identificado e acessível que permita preencher as38células. Novas especificações históricas ou acesso aos textos integrais adicionais dependem de material externo.",
+  "alcance_da_condicao": "Impasse prático nos canais identificados e consultados, sem alegação de inexistência universal de documentos ou informações.",
+  "prova_de_nao_conclusao": {
+    "celulas_originais": 41,
+    "resolvidas_e_incorporadas": 3,
+    "insuficientes_na_v010": 38,
+    "fontes_com_insuficiencias": 22,
+    "requisitos_por_celula": "rodada5/requisitos_documentais38.json",
+    "leituras_e_alternativas": [
+      "relatorio_incorporacao.md",
+      "rodada2/relatorio.md",
+      "rodada3/relatorio.md",
+      "rodada4/relatorio.md",
+      "rodada5/relatorio.md"
+    ]
+  },
+  "exemplos_de_dependencia_externa": [
+    "Kumar: ambiente e código efetivo da rodada publicada; matrizes locais uniformes não são passadas aoReservoir público e a versão da biblioteca não foi fixada.",
+    "Abebe: vetor efetivo de363observações e protocolo de preparação; a reconstrução a partir doCSV366semanas é só parcialmente concordante e não comprova autoria/procedimento.",
+    "Sharma: corpo da versão publicada DOI10.1007/978-981-95-4109-6_25; só a prévia foi acessada, semPDFaberto identificado nos canais consultados.",
+    "Vishwas: texto integral da fonte de apoioGandhudi DOI10.1016/j.compeleceng.2024.109302 e resultados que comprovem o percentual/contraste atribuído."
+  ],
+  "acoes_que_nao_resolvem": [
+    "Repetir buscas/leituras idênticas sem uma nova hipótese documental concreta.",
+    "Inferir configurações históricas de padrões genéricos de bibliotecas.",
+    "Transportar resultados de outra obra ou realizar novos experimentos.",
+    "Alterar critérios ou trocar?por outro rótulo apenas para reduzir a contagem."
+  ],
+  "processo_vivo_em_espera": false,
+  "contato_com_autores_realizado": false,
+  "estado_meta": "blocked; confirmado pela ferramenta de metas após terceira ocorrência consecutiva do mesmo impedimento documental",
+  "revalidacoes": [
+    {
+      "ocorrencia": 1,
+      "evidencia": "v010/hash e38requisitos/PD Fs conferidos; sem nova resposta"
+    },
+    {
+      "ocorrencia": 2,
+      "registrado_em_utc": "2026-11-02T09:06:12.732308+00:00",
+      "evidencia": "CLI vigente continua v010; hash idêntico. rg --files emDownloads eprojeto comSharma,Kumar,Abebe,Gandhudi,05416,4109retornou somente fontes/evidências já conhecidas no projeto; nenhuma cópia emDownloads nesses padrões. Busca por nomes não exclui arquivos com nomes diferentes."
+    },
+    {
+      "ocorrencia": 3,
+      "registrado_em_utc": "2026-11-02T09:06:46.463815+00:00",
+      "evidencia": "ContagemOOXML atual38; todos os38localizadores de linha/coluna e hashesPDF iguais às evidências. Falta resposta primária específica; repetir consultas já feitas não a produz."
+    }
+  ]
+}

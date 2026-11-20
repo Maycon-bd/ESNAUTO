@@ -1,0 +1,3 @@
+# Contrato da revisão documental
+
+Base v009, SHA256793910fae2daaa2d5dbdcfa0cd76177c6c6a38c353d98d94ecaaaecf118c7b03. Preservar introdução contínua, estilos, numeração, seções, resultados e todos os objetos fora do escopo. Incorporar apenas Jaeger/P1eP3eMillea/P4, com evidências em decisões_41_em_consolidacao.json. Atualizar Tabela1,Quadro1,Figura1e descrição numérica; explicitar uso de suplemento e cadeia original. Acrescentar referência original de Evolino e endereço do suplemento de Jaeger. Gráficos em Arial conforme devolutiva do orientador. Não adicionar outras obras ao portfólio de34: a fonte original de Evolino e o suplemento são verificação das fontes existentes. Não declarar os38?remanescentes resolvidos. Renderizar e verificar antes da promoção.

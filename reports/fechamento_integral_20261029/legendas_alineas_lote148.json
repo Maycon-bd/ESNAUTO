@@ -1,0 +1,68 @@
+{
+  "sha256_docx": "f933c9281afbbab9b3f49a3fccec01278eb77085d6358c2007c2719ed14682ed",
+  "estilo_legendas_python": "Caption; nome localizado no mapa Word é Legenda",
+  "legendas": [
+    "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico",
+    "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica",
+    "Figura 1 – Documentação localizada nas cinco dimensões analíticas",
+    "Figura 2 – Frequência das palavras-chave declaradas pelos autores",
+    "Figura 3 – Rede de coocorrência de palavras-chave",
+    "Figura 4 – Expressões recorrentes nos títulos dos estudos",
+    "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+    "Quadro 2 – Organização das cinco ondas experimentais",
+    "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético",
+    "Quadro 4 – Síntese do desenho experimental executado",
+    "Tabela 3 – Comparação dos principais resultados no conjunto de teste",
+    "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações",
+    "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada",
+    "Tabela 4 – Configurações selecionadas das cinco ondas experimentais",
+    "Tabela 5 – Decomposição do custo computacional documentado",
+    "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+    "Quadro 5 – Síntese da avaliação das hipóteses",
+    "Tabela 7 – Comparação descritiva com Lampugnani (2026)",
+    "Quadro 6 – Delimitação das contribuições e da procedência"
+  ],
+  "alineas": [
+    {
+      "indice": 430,
+      "texto": "a) registrar a versão do modelo, o período de dados, os hiperparâmetros e as matrizes disponíveis;",
+      "recuo_esquerdo_cm": 1.2594166666666666,
+      "primeira_linha_cm": -0.6297083333333333
+    },
+    {
+      "indice": 431,
+      "texto": "b) acompanhar MAE, RMSE e, quando os vetores ponto a ponto estiverem preservados, MAPE em janelas móveis;",
+      "recuo_esquerdo_cm": 1.2594166666666666,
+      "primeira_linha_cm": -0.6297083333333333
+    },
+    {
+      "indice": 432,
+      "texto": "c) detectar degradação ou mudança relevante de regime;",
+      "recuo_esquerdo_cm": 1.2594166666666666,
+      "primeira_linha_cm": -0.6297083333333333
+    },
+    {
+      "indice": 433,
+      "texto": "d) gerar uma configuração candidata;",
+      "recuo_esquerdo_cm": 1.2594166666666666,
+      "primeira_linha_cm": -0.6297083333333333
+    },
+    {
+      "indice": 434,
+      "texto": "e) comparar o candidato com o modelo vigente sob critérios previamente definidos;",
+      "recuo_esquerdo_cm": 1.2594166666666666,
+      "primeira_linha_cm": -0.6297083333333333
+    },
+    {
+      "indice": 435,
+      "texto": "f) promover a nova versão somente após aprovação.",
+      "recuo_esquerdo_cm": 1.2594166666666666,
+      "primeira_linha_cm": -0.6297083333333333
+    }
+  ],
+  "decisoes": {
+    "G54": "19títulos acima dos elementos nas páginas inspecionadas133/146; fonte10 pelo controle137; espaço simples e justificação efetivos conferidos; sem ponto final.",
+    "G68": "Enumeração a–f precedida por dois-pontos,alíneas intermediárias com ponto e vírgula e última com ponto. Recuos registrados; aspecto visual conferido nas páginas60–61 no lote134."
+  },
+  "limite": "Não inferir fidelidade dos dados por formatação."
+}

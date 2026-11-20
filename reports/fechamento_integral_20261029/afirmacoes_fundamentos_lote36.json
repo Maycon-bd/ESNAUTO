@@ -1,0 +1,185 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "63ca3ec4031dafe5a78b6785f2a5d7581f5deacc461c9096c392dedc5963b62e",
+  "alcance": "16 relações de afirmação e fonte; parte das leituras reutiliza evidências anteriores com identidade de fonte e contexto verificados. Afirmações adicionais nos mesmos parágrafos permanecem sujeitas à conferência separada.",
+  "registros": [
+    {
+      "ancora": "P_atual0193",
+      "texto_atual": "As redes Long Short-Term Memory (LSTM) foram introduzidas por Hochreiter e Schmidhuber (1997) para facilitar a aprendizagem de dependências longas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinicialização, hoje conhecida como Gated Recurrent Unit (GRU), no contexto de uma arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador. A simplificação estrutural dessa unidade não constitui, por si, uma garantia de menor erro em séries financeiras.",
+      "referencia": "R25",
+      "fonte_id": "suplementar",
+      "arquivo_fonte": "reports/fechamento_integral_20261029/fontes_suplementares/Hochreiter_Schmidhuber_1997_copia_autor.pdf",
+      "sha256_fonte": "51e319ebc53b96964bc167faa3a45d02eca61964eb7ed6bbc1cb2e70517064f2",
+      "localizador": "PDF 1 e 6; resumo, introdução e seção 4",
+      "evidencia": "A cópia do coautor apresenta o problema das dependências longas, fluxo constante de erro, células de memória e portas de entrada/saída; não se atribui porta de esquecimento à publicação original.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0193",
+      "texto_atual": "As redes Long Short-Term Memory (LSTM) foram introduzidas por Hochreiter e Schmidhuber (1997) para facilitar a aprendizagem de dependências longas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinicialização, hoje conhecida como Gated Recurrent Unit (GRU), no contexto de uma arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador. A simplificação estrutural dessa unidade não constitui, por si, uma garantia de menor erro em séries financeiras.",
+      "referencia": "R12",
+      "fonte_id": "suplementar",
+      "arquivo_fonte": "reports/fechamento_integral_20261029/fontes_suplementares/Cho_2014_EMNLP.pdf",
+      "sha256_fonte": "c948d89ccd33da2a48421b45445f1c30f5fe677a829af9e5e1b6f9ff75a14a81",
+      "localizador": "PDF 2–3, seções 2.2–2.3",
+      "evidencia": "O codificador–decodificador usa unidade com portas reset e update. A observação sobre ausência de garantia financeira é delimitação da monografia, não resultado atribuído à fonte.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0203",
+      "texto_atual": "As ESNs integram o paradigma da Computação de Reservatório (Reservoir Computing – RC). Jaeger (2001) apresenta uma abordagem em que a rede recorrente fornece estados e o treinamento ajusta as conexões de saída por regressão. Na configuração usual descrita por Jaeger (2007), os pesos internos são inicializados aleatoriamente e permanecem fixos durante o ajuste da saída. Essa separação entre dinâmica recorrente e leitura fundamenta a arquitetura utilizada nesta pesquisa.",
+      "referencia": "R27",
+      "fonte_id": "suplementar",
+      "arquivo_fonte": "reports/fechamento_integral_20261029/fontes_suplementares/Jaeger_2001_errata_2010.pdf",
+      "sha256_fonte": "0a0296f586f86a0e49e651e4581ce2aef3a926ca9cb3d57653c8963b7b83e625",
+      "localizador": "PDF 3, resumo, e seções de aprendizagem por regressão",
+      "evidencia": "O relatório, na cópia com errata de 2010, apresenta algoritmo que ajusta conexões de saída a partir dos estados da rede recorrente.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0203",
+      "texto_atual": "As ESNs integram o paradigma da Computação de Reservatório (Reservoir Computing – RC). Jaeger (2001) apresenta uma abordagem em que a rede recorrente fornece estados e o treinamento ajusta as conexões de saída por regressão. Na configuração usual descrita por Jaeger (2007), os pesos internos são inicializados aleatoriamente e permanecem fixos durante o ajuste da saída. Essa separação entre dinâmica recorrente e leitura fundamenta a arquitetura utilizada nesta pesquisa.",
+      "referencia": "R28",
+      "fonte_id": "D15",
+      "arquivo_fonte": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_fonte": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "localizador": "PDF 1–2",
+      "evidencia": "Reservatório recorrente aleatório e fixo fornece respostas combinadas por saída treinável. A referência local é captura de revisão posterior do artigo Scholarpedia de 2007.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0204",
+      "texto_atual": "O reservatório transforma a sequência de entrada em estados dos quais a camada de saída extrai informação preditiva. O ajuste apenas dessa camada reduz o conjunto de pesos treináveis em comparação com o treinamento de toda a rede. Essa organização pode reduzir o custo de ajuste, mas não garante estabilidade numérica nem uma razão universal de tempos frente à retropropagação através do tempo. O condicionamento da regressão, a dinâmica do reservatório e a regularização continuam relevantes (Jaeger, 2007).",
+      "referencia": "R28",
+      "fonte_id": "D15",
+      "arquivo_fonte": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_fonte": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "localizador": "PDF 2–5",
+      "evidencia": "Descrição de regressão da saída, regularização e alternativas de treinamento. Redução do número de parâmetros treináveis e ausência de garantia de tempos universais são delimitadas como interpretação do texto atual.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0257",
+      "texto_atual": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas, Usha e Sangeetha (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros.",
+      "referencia": "R28",
+      "fonte_id": "D15",
+      "arquivo_fonte": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_fonte": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "localizador": "PDF 1–2 e 5",
+      "evidencia": "O contraste entre saída treinável e abordagens que ajustam outras conexões é consistente; o texto evita traduzir isso como tempo universal ou estabilidade garantida.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0200",
+      "texto_atual": "Kumar (2025) realiza comparação empírica entre ARIMA, LSTM, GRU e modelos de Reservoir Computing aplicados à previsão de preços do petróleo, quantificando vantagens e desvantagens de cada abordagem frente a séries voláteis e sinalizando o paradigma de reservatório como alternativa competitiva.",
+      "referencia": "R29",
+      "fonte_id": "D16",
+      "arquivo_fonte": "Artigos citados\\Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256_fonte": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "localizador": "PDF 16–18, Tabela 3",
+      "evidencia": "Comparação própria de ARIMA, LSTM, GRU e RC para preços de petróleo; resultados numéricos pertencem ao protocolo da fonte, não implicam domínio em todas as métricas.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0205",
+      "texto_atual": "Sun et al. (2021) compararam uma ESN com uma LSTM simplificada na previsão do fechamento das ações da Kweichow Moutai e reportaram menores erros nas configurações examinadas. A fonte lista fechamento e fechamento ajustado como campos distintos, mas descreve os experimentos com preços de fechamento. Por isso, esse estudo não é tomado aqui como comprovação inequívoca de uso do fechamento ajustado nem como demonstração de superioridade sobre qualquer configuração LSTM.",
+      "referencia": "R43",
+      "fonte_id": "D26",
+      "arquivo_fonte": "Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256_fonte": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "localizador": "PDF 5–6 e 8, Tabela 3",
+      "evidencia": "A fonte utiliza Kweichow Moutai e compara ESN com LSTM simplificada; apresenta colunas close e adjusted close, mas texto descreve fechamento sem comprovação inequívoca do uso da coluna ajustada.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0212",
+      "texto_atual": "Hassaan, Yacoub e Said (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik, Routaib e Elhaddadi (2023) investigaram uma ESN em trajetórias simuladas de Lorenz, com condições iniciais associadas ao Bitcoin. O texto menciona uma série decimada, sem detalhar o procedimento. As métricas avaliam trajetórias geradas, não previsões de preços observados, e não isolam o efeito da distribuição dos pesos iniciais.",
+      "referencia": "R24",
+      "fonte_id": "D14",
+      "arquivo_fonte": "Artigos citados\\Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256_fonte": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "localizador": "PDF 4–5 e 12–13, Tabela 2",
+      "evidencia": "Seis conjuntos financeiros e comparação entre ESN/GRU com métodos caóticos e não caóticos; métricas não identificam efeito isolado de uma lei probabilística.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0212",
+      "texto_atual": "Hassaan, Yacoub e Said (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik, Routaib e Elhaddadi (2023) investigaram uma ESN em trajetórias simuladas de Lorenz, com condições iniciais associadas ao Bitcoin. O texto menciona uma série decimada, sem detalhar o procedimento. As métricas avaliam trajetórias geradas, não previsões de preços observados, e não isolam o efeito da distribuição dos pesos iniciais.",
+      "referencia": "R39",
+      "fonte_id": "D22",
+      "arquivo_fonte": "Artigos citados\\Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_fonte": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "localizador": "PDF 4–7",
+      "evidencia": "Condições iniciais vinculadas a Bitcoin alimentam trajetórias de Lorenz; a página 7 menciona série decimada sem detalhar o procedimento. Não equivale a previsão direta do preço observado.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0233",
+      "texto_atual": "Hassaan, Yacoub e Said (2025) estudaram sequências caóticas normalizadas para gerar Win e Wres e adotaram controles He e Xavier. Nas Equações 9a e 9b, He usa amostras Gaussianas e Xavier usa amostras Uniformes reescaladas. A descrição de Xavier no texto da seção seguinte não coincide com essa fórmula, o que exige cautela na interpretação. Além disso, uma regra de geração por trajetória caótica não equivale, por si só, à identificação de uma família probabilística ajustada aos dados financeiros.",
+      "referencia": "R24",
+      "fonte_id": "D14",
+      "arquivo_fonte": "Artigos citados\\Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256_fonte": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "localizador": "PDF 7–8, Equações 9a/9b e Figura 4",
+      "evidencia": "As fórmulas representam He com randn e Xavier com rand uniforme reescalado; figura e texto seguinte descrevem Xavier de modo não coincidente. A monografia explicita a divergência.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0251",
+      "texto_atual": "Hassaan, Yacoub e Said (2025) estudaram inicializações por sequências caóticas para ESN e GRU em seis conjuntos financeiros, incluindo índices acionários e pares cambiais. O protocolo compara sistemas como Lorenz, Chen, oscilador de Chen perturbado e Mackey–Glass, além dos controles He e Xavier. Os resultados pertencem às séries, arquiteturas e condições de avaliação adotadas pelos autores.",
+      "referencia": "R24",
+      "fonte_id": "D14",
+      "arquivo_fonte": "Artigos citados\\Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256_fonte": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "localizador": "PDF 4–8 e 12–13",
+      "evidencia": "O estudo inclui dados financeiros e os sistemas citados; comparações permanecem vinculadas às condições do próprio artigo.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0252",
+      "texto_atual": "Os erros reportados por Hassaan, Yacoub e Said (2025) motivam investigar regras de inicialização. Contudo, diferenças numéricas de erro não constituem, por si sós, evidência de significância estatística ou de efeito independente dos demais componentes. A inicialização por uma trajetória caótica também difere da escolha de uma família probabilística dos pesos. A interpretação dos controles deve observar a divergência entre a fórmula e a descrição textual de Xavier, apresentada na Seção 2.5.",
+      "referencia": "R24",
+      "fonte_id": "D14",
+      "arquivo_fonte": "Artigos citados\\Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256_fonte": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "localizador": "PDF 7–8 e 13, Equações 9a/9b e Tabela 2",
+      "evidencia": "Valores reportados não são tratados como teste de significância ou efeito isolado; ressalva sobre Xavier corresponde à divergência identificada.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0256",
+      "texto_atual": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo.",
+      "referencia": "R24",
+      "fonte_id": "D14",
+      "arquivo_fonte": "Artigos citados\\Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+      "sha256_fonte": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+      "localizador": "PDF 12–13 e Tabela 2",
+      "evidencia": "A comparação ESN/GRU é própria do protocolo, sem autorização para concluir superioridade universal.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0256",
+      "texto_atual": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo.",
+      "referencia": "R29",
+      "fonte_id": "D16",
+      "arquivo_fonte": "Artigos citados\\Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256_fonte": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "localizador": "PDF 16–18 e Tabela 3",
+      "evidencia": "RC, LSTM e GRU são comparados em petróleo; os tempos e métricas não são transferidos para o protocolo da monografia.",
+      "diagnostico": "condizente no escopo identificado"
+    },
+    {
+      "ancora": "P_atual0256",
+      "texto_atual": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo.",
+      "referencia": "R43",
+      "fonte_id": "D26",
+      "arquivo_fonte": "Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256_fonte": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "localizador": "PDF 5–8 e Tabela 3",
+      "evidencia": "Comparação própria com LSTM simplificada, limitada à configuração e ao conjunto examinados.",
+      "diagnostico": "condizente no escopo identificado"
+    }
+  ],
+  "acao": "Nenhuma edição adicional nos trechos examinados."
+}

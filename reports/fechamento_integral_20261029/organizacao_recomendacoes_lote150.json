@@ -1,0 +1,262 @@
+{
+  "sha256_docx": "f933c9281afbbab9b3f49a3fccec01278eb77085d6358c2007c2719ed14682ed",
+  "inicios_paginas": {
+    "8": "RESUMO",
+    "9": "ABSTRACT",
+    "10": "LISTA DE FIGURAS",
+    "11": "LISTA DE QUADROS",
+    "12": "LISTA DE TABELAS",
+    "13": "LISTA DE ABREVIATURAS E SIGLAS",
+    "15": "LISTA DE SÍMBOLOS",
+    "16": "SUMÁRIO",
+    "72": "REFERÊNCIAS"
+  },
+  "titulos_espacamento": [
+    {
+      "texto": "INTRODUÇÃO",
+      "antes_pt": 0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "REVISÃO DA LITERATURA",
+      "antes_pt": 0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "MERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "REDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "OTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "TRABALHOS RELACIONADOS",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "ESTADO DA ARTE E LACUNAS IDENTIFICADAS",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "SÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "MATERIAL E MÉTODOS",
+      "antes_pt": 0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "CLASSIFICAÇÃO DA PESQUISA",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "CONJUNTO DE DADOS E PRÉ-PROCESSAMENTO",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "IMPLEMENTAÇÃO DAS ESNS EM R",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "MODELOS DE COMPARAÇÃO: LSTM E GRU",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "DESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "REPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "Ambiente computacional",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "Estrutura do repositório",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "Procedimento de revisão bibliográfica",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "Procedimento de re-execução dos experimentos",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "RESULTADOS E DISCUSSÃO",
+      "antes_pt": 0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "VISÃO GERAL DOS EXPERIMENTOS",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "DESEMPENHO PREDITIVO GLOBAL",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "EFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "DISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "CUSTO COMPUTACIONAL",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "AVALIAÇÃO DAS HIPÓTESES",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "CONTRIBUIÇÕES DO ESNAUTO",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "DISCUSSÃO",
+      "antes_pt": 0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "VALIDADE INTERNA E ESTATÍSTICA",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "VALIDADE EXTERNA",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "TRABALHOS FUTUROS",
+      "antes_pt": 18.0,
+      "depois_pt": 18.0
+    },
+    {
+      "texto": "CONCLUSÃO",
+      "antes_pt": 0,
+      "depois_pt": 18.0
+    }
+  ],
+  "extensao_capitulos_atual": [
+    {
+      "titulo": "INTRODUÇÃO",
+      "inicio": 17,
+      "fim": 18,
+      "paginas": 2
+    },
+    {
+      "titulo": "REVISÃO DA LITERATURA",
+      "inicio": 19,
+      "fim": 38,
+      "paginas": 20
+    },
+    {
+      "titulo": "MATERIAL E MÉTODOS",
+      "inicio": 39,
+      "fim": 51,
+      "paginas": 13
+    },
+    {
+      "titulo": "RESULTADOS E DISCUSSÃO",
+      "inicio": 52,
+      "fim": 64,
+      "paginas": 13
+    },
+    {
+      "titulo": "DISCUSSÃO",
+      "inicio": 65,
+      "fim": 67,
+      "paginas": 3
+    },
+    {
+      "titulo": "CONCLUSÃO",
+      "inicio": 68,
+      "fim": 70,
+      "paginas": 3
+    }
+  ],
+  "decisoes": {
+    "G09": "Elementos pré-textuais iniciam em páginas próprias,conforme sequência visual e posições registradas; listas podem continuar. Referências iniciam em página própria(PDF72),sem pré-textuais no sumário.",
+    "G11": "Títulos com keep_with_next,controle de órfãs/viúvas do corpo aprovado137 e inspeção das renderizações/checkpoints. Não identificado título isolado ou linha órfã nas páginas revistas; recomendação avaliada no exemplar eletrônico.",
+    "G14": "40títulos numerados justificados,com espaçamento antes/depois explícito ou herdado; valores registrados.",
+    "G21": "Recomendação4–7linhas não é universalmente atendida. Hipóteses,transições e parágrafos funcionais curtos preservados; não alongar texto artificialmente. Ressalva editorial explícita,sem inferir reprovação automática.",
+    "G77": "Extensões diferentes justificadas por funções: revisão20p,método13p,resultados13p,discussão3p,conclusão3p. Não igualar capítulos artificialmente; recomendação de concisão/balanceamento mantida como ressalva editorial."
+  },
+  "limite": "RecomendaçõesG21/G77 avaliadas com ressalvas,não certificação de cumprimento literal ou de nota. Não cria regra de700caracteres."
+}

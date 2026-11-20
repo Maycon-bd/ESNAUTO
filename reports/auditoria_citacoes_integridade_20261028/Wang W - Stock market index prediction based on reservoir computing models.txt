@@ -1,0 +1,1299 @@
+
+[PÁGINA PDF 1]
+Expert Systems With Applications 178 (2021) 115022
+Available online 16 April 2021
+0957-4174/© 2021 Elsevier Ltd. All rights reserved.
+Stock market index prediction based on reservoir computing models 
+Wei-Jia Wang
+a , 1
+, Yong Tang
+b , d , * , 2
+, Jason Xiong
+c , 3
+, Yi-Cheng Zhang
+d 
+a
+School of Information and Software Engineering, University of Electronic Science and Technology of China, Chengdu 610054, China 
+b
+School of Computer Science and Engineering, University of Electronic Science and Technology of China, Chengdu 610054, China 
+c
+Department of Computer Information Systems, Walker College of Business, Appalachian State University, Boone, NC 28608, USA 
+d
+Department of Physics, University of Fribourg, Chemin du Mus ´ee 3, CH-1700 Fribourg, Switzerland   
+ARTICLE INFO  
+Keywords: 
+Financial market prediction 
+Stock market index prediction 
+Financial time series 
+Reservoir computing 
+Deep learning 
+ABSTRACT  
+Prediction of the financial market price is critical for financial decision-making and market policy-making. 
+Recently, various machine learning and deep learning methods have been adopted to predict financial mar -
+kets ’ movements using historical time series of prices. However, accurate prediction of financial prices is still a 
+long-standing challenge that always calls for new approaches. In this study, a novel machine learning model of 
+reservoir computing is developed to predict stock market indices. The performance of the proposed new model is 
+systematically evaluated using the time series of daily closing prices of seven major international stock market 
+indices including S & P500 Index, New York Stock Exchange Composite, Dow Jones Industrial Average, Nasdaq 
+Composite Index, Financial Times Stock Exchange 100 Index, Nikkei 225 Index, and Shanghai Stock Exchange 
+Index between January 4, 2010, and December 31, 2018 covering 2,272 trading days. The results show that our 
+model outperforms the widely used deep learning methods of long short-term memory and recurrent neural 
+network in most cases. To further evaluate the predictive capability of our model, we compare our model to the 
+other two newly reported deep learning methods in recent studies. Comparative results also show that our model 
+is competitive to those deep learning methods in predicting stock market indices. Our study contributes to the 
+literature by developing novel reservoir computing models for financial market predictions. Meanwhile, our 
+results also provide practical implications for financial practitioners of potential financial applications of 
+reservoir computing in financial time series analysis and predictions.   
+1. Introduction 
+Prediction of stock price movements is essential for investment 
+decision-making, portfolio management, and risk management. Though 
+researchers and practitioners have made great efforts to understand the 
+price dynamics ( Fama, 1995 ), and various price prediction methodolo -
+gies have been developed ( Abu-Mostafa & Atiya, 1996; Zhou, min Zhou, 
+Yang, & Yang, 2019; Baek & Kim, 2018; Chong, Han, & Park, 2017; 
+Weng, Lu, Wang, Megahed, & Martinez, 2018 ), successful stock market 
+prediction remains as one of the most challenging problems in the 
+studies of financial markets ( Abu-Mostafa & Atiya, 1996 ) for the chaotic 
+nonlinearity and volatility ( Yu & Yan, 2020; Rezaei, Faaljou, & Man -
+sourfar, 2020 ). 
+In traditional financial economics, econometrics provides statistical 
+predictive models such as autoregressive moving average model 
+(ARMA) ( Rounaghi & Zadeh, 2016; Rojas et al., 2008 ) and autore -
+gressive integrated moving average model (ARIMA) ( Ariyo, Adewumi, & 
+Ayo, 2014; Babu & Reddy, 2014; Banerjee, 2014 ). In the past few years, 
+machine learning (ML) and deep learning (DL) have achieved significant 
+developments in various domains ( Silver et al., 2016; LeCun, Bengio, & 
+Hinton, 2015 ). In finance, there is a growing enthusiasm in utilizing 
+techniques of machine learning in prediction of stock price movements 
+such as K-nearest neighbor ( Qian & Rasheed, 2007 ), decision tree ( Qian 
+& Rasheed, 2007 ), support vector machine ( Trafalis & Ince, 2000, 2005, 
+2007, Patel, Shah, Thakkar, & Kotecha, 2015b, 2015a ), random forest 
+( Patel et al., 2015b; Patel, Shah, Thakkar, & Kotecha, 2015a; Ballings, 
+den Poel, Hespeels, & Gryp, 2015; Zhang, Cui, Xu, Li, & Li, 2018; 
+Cervell ´o-Royo & Guijarro, 2020 ), Naïve-Bayes ( Patel et al., 2015a ), and 
+* Corresponding author at: School of Computer Science and Engineering, University of Electronic Science and Technology of China, Chengdu 610054, China. 
+E-mail addresses: tangyong@uestc.edu.cn (Y. Tang), xiongjj@appstate.edu (J. Xiong), yi-cheng.zhang@unifr.ch (Y.-C. Zhang).   
+1 
+ORCID ID: https://orcid.org/0000-0002-5389-9828  
+2 
+ORCID ID: https://orcid.org/0000-0002-5036-4350  
+3 
+ORCID ID: https://orcid.org/0000-0001-9213-5698 
+Contents lists available at ScienceDirect 
+Expert Systems With Applications 
+journal homepag e: www.else vier.com/loc ate/eswa 
+https://doi.org/10.1016/j.eswa.2021.115022 
+Received 13 March 2020; Received in revised form 27 February 2021; Accepted 8 April 2021   
+
+[PÁGINA PDF 2]
+Expert Systems With Applications 178 (2021) 115022
+2
+AdaBoost ( Ballings et al., 2015 ). Unlike these statistical learning ap -
+proaches, a class of deep learning algorithms has been introduced more 
+recently to predict stock prices. A variety of layered neural network 
+structures such as artificial neural network (ANN) ( Kim & Lee, 2004; 
+Chang, Liu, Lin, Fan, & Ng, 2009; Dutta, Jha, Laha, & Mohan, 2006; 
+Qian & Rasheed, 2007; Patel et al., 2015a; Zhang & Wu, 2009 ), recur -
+rent neural network (RNN) ( Zhang, Aggarwal, & Qi, 2017 ), and long 
+short-term memory (LSTM) ( Nelson, Pereira, & de Oliveira, 2017; 
+Zhang, Yan, & Aasma, 2020 ) are proposed and demonstrate various 
+capabilities in the prediction of financial markets. More recently, in -
+vestigations on the activation functions of DL models reveal that recti -
+fied linear unit (ReLU) works better in the prediction of multiple markets 
+and various frequencies ( Orimoloye, Sung, Ma, & Johnson, 2020 ). 
+Rather than directly predicting stock price itself, some studies focus on 
+classifications of the stock market trend using predictive models ( Zhang 
+et al., 2018 ). Most studies target the prediction of daily prices. There are 
+also study reports that novel ML and DL predictive models also work for 
+intraday price time series ( Ar ´evalo, García, Guijarro, & Peris, 2017 ) and 
+challenging long-term market trend prediction ( Liu, Gong, Yang, & 
+Chen, 2020; Cervell ´o-Royo & Guijarro, 2020 ). Instead of using price 
+time series as direct input to the predictive models, some studies first 
+build traditional technical indicators from the time series and conduct 
+feature selections to reduce dimension before input into deep generative 
+models ( Haq, Zeb, Lei, & Zhang, 2021 ) or hybrid fuzzy neural networks 
+( Garcia, Guijarro, Oliver, & Tamo ˇsi ¯unien ˙e, 2018 ). In another approach, 
+neural network-based feature extractors are proposed to predict stock 
+market indices ( Lee & Kim, 2020 ). There is a trend to combine DL or 
+LSTM models with other methods such as knowledge graph ( Long, Chen, 
+He, Wu, & Ren, 2020 ), frequency spectra decomposition models ( Rezaei 
+et al., 2020 ), phase-space reconstruction ( Yu & Yan, 2020 ), error 
+correction model ( Niu, Wang, Lu, Yang, & Du, 2020 ) to enhance the 
+overall predictive power. Meanwhile, DL can also be used to develop 
+predictive models based on market sentiment analysis ( Li, Bu, Li, & Wu, 
+2020 ) and trader emotions ( Chun, Ahn, Kim, & Lee, 2020 ). There is no 
+doubt that with successful stock market predictive models, it would be 
+straightforward to build potential trading strategies ( Ar ´evalo et al., 
+2017; Zhang et al., 2020; Lee & Kim, 2020 ). 
+However, deep learning algorithms usually involve a staggering 
+amount of hyper-parameters, especially when they have multiple layers 
+and many neurons. This often makes the training of a layered deep 
+learning algorithm costly and time-consuming. In another approach, the 
+echo state network (ESN) is proposed by utilizing a sparsely connected 
+hidden layer in which training the whole neural network is waived 
+( Jaeger & Haas, 2004 ). Almost simultaneously, liquid state machines 
+(LSM), which share the same strategy of ESN, are proposed ( Maass, 
+Natschl ¨ager, & Markram, 2002 ). ESN and LSM are suitable in time series 
+analysis such as blast furnace gas ( Sheng, Zhao, Liu, & Wang, 2012 ), 
+financial markets ( Lin, Yang, & Song, 2009 ), and object trajectories in 
+robotics ( Burgsteiner, Kroll, Leopold, & Steinbauer, 2007 ). In this line of 
+ESN and LSM studies, a general novel structure called reservoir 
+computing (RC) is introduced ( Luko ˇsevi ˇcius & Jaeger, 2009; Luko -
+ˇsevi ˇcius, Jaeger, & Schrauwen, 2012; Verstraeten, Schrauwen, D ’ Haene, 
+& Stroobandt, 2007; Appeltant et al., 2011 ). In a typical RC, a set of 
+nodes in a directed random network serves as the reservoir in which 
+nodes update their states based on the incoming connections and their 
+previous states. Inputs and outputs are connected to some random hid -
+den nodes in the reservoir, respectively. In training, the input vector is 
+projected into a high-dimensional space represented by the reservoir. 
+Instead of training a large number of weights in the reservoir, only 
+output weights are trained using available optimization techniques. This 
+approach dramatically reduces training efforts and speeds up the 
+learning process. 
+While much-emerging research attention has been focused on RC in 
+time series ( Wyffels & Schrauwen, 2010; Butcher, Verstraeten, Schrau -
+wen, Day, & Haycock, 2013 ), systematic investigations of applying RC in 
+financial market predictions are still insufficient, compared to the rich 
+literature using machine learning or deep learning. Especially, system -
+atic evaluations of reservoirs in different topologies on multiple inter -
+national markets in substantial time ranges have not been reported yet. 
+To contribute to the study of RC in financial time series prediction, an RC 
+model is proposed in this study. Empirical evaluations have been con -
+ducted on seven major international stock markets ’ daily indices span -
+ning over nine years of 15,723 data points. We systematically 
+investigated three types of network topological structures, namely the 
+Erd ˝os-R ´enyi random network (ER) ( Erd ˝os & R ´enyi, 1960 ), Small-World 
+network (SW) ( Watts & Strogatz, 1998 ), and Scale-Free network (SF) 
+( Barab ´asi & Albert, 1999 ). In comparative experiments, we find that our 
+RC approach outperforms of LSTM ( Kim & Won, 2018; Baek & Kim, 
+2018 ) and RNN ( Rather, Agarwal, & Sastry, 2015; Qin et al., 2017 ) in 
+predictions of some stock market indices. Additionally, we report that 
+our RC also outperforms two newly proposed deep learning methods 
+reported in recent literature using the same stock market indices data -
+sets ( Baek & Kim, 2018; Zhou et al., 2019 ). 
+The rest of this paper is organized as follows. First, we give a brief 
+introduction to RC in Section 2 . Then we describe our proposed RC 
+model as well as the datasets of seven international major stock markets 
+Fig. 1. Diagram of a standard reservoir computing model in which the input vector x
+t 
+of input layer L
+in 
+is projected into the reservoir r and the output vector y
+t 
+is 
+readout from the output layer L
+out
+. Both of W
+in 
+and W
+res 
+are kept un-trained while only W
+out 
+is trained. 
+W.-J. Wang et al.                                                                                                                                                                                                                               
+
+[PÁGINA PDF 3]
+Expert Systems With Applications 178 (2021) 115022
+3
+in Section 3 . Afterward, in Section 4 , we report the results of system -
+atical experiments using RC models in predictions of the seven market 
+indices. The results of comparative studies to two recently proposed 
+deep learning methods are also reported. We also provide discussions of 
+the impacts of different network topological structures and settings. 
+Finally, Section 5 provides conclusions and discussions of future 
+research. 
+2. Architecture of reservoir computing 
+Training the connectivity weight matrices is computationally 
+expensive for most deep learning models ( LeCun et al., 2015 ). Unlike 
+these neural networks in which the weights of all layers are trained, the 
+reservoir computing architecture only requires the readout layer 
+weights to be trained. In contrast, the input network and the reservoir 
+network remain untrained. Initially introduced as Echo State Network 
+(ESN) ( Jaeger, 2001 ) and Liquid State Machines (LSM) ( Maass et al., 
+2002 ), reservoir computing (RC) models have demonstrated success in a 
+variety of high-dimensional and temporal applications ( Schrauwen, 
+Verstraeten, & Campenhout, 2007; Ib ´a ˜nez-Soria, Garcia-Ojalvo, Soria- 
+Frisch, & Ruffini, 2018; Jaeger & Haas, 2004; Jalalvand, Demuynck, 
+Neve, & Martens, 2018 ). Thanks to the dynamical nature of a reservoir, 
+RC models have more recently been even implemented as physical res -
+ervoirs ( Tanaka et al., 2019 ) using photonic systems ( Pauwels, der 
+Sande, Bouwens, Haelterman, & Massar, 2018 ) or dynamic memristors 
+( Du et al., 2017 ). 
+The main structure of an RC model is illustrated in Fig. 1 . At time t , 
+the network of nonlinear nodes serves as the reservoir r
+t 
+to provide the 
+nonlinear mapping of a temporal L -dimensional input vector x
+t 
+into 
+another temporal M -dimensional output vector y
+t
+. Within the reservoir, 
+the internal nodes are connected as a random directed network in which 
+the connectivities are described as a weight matrix W
+res
+∈ R
+N × N
+, where 
+N = | r | is the size of the reservoir. The elements of W
+res 
+are randomly 
+initialized and remain unchanged during the training. The input layer L
+in 
+is a fully connected layer between the input vector x
+t 
+and the internal 
+nodes. Similarly, the output layer L
+out 
+is also a fully connected layer 
+between and the output vector y
+t 
+and the internal nodes. L
+in 
+and L
+out 
+are 
+described by the weight matrices W
+in
+∈ R
+N × L 
+and W
+out
+∈ R
+M × N 
+respec -
+tively. Since only some randomly selected input hidden nodes h
+in 
+in the 
+reservoir are connected to the input vector x
+t
+, only these corresponding 
+elements are non-zero in W
+in
+, otherwise zeros for the rest elements. This 
+is the same to W
+res 
+whereas some randomly selected output hidden 
+nodes h
+out 
+are connected to the output layer L
+out
+. Both W
+in 
+and W
+res 
+are 
+randomly initialized and remain unchanged, while W
+out 
+is trained using 
+techniques like stochastic gradient descent to minimize certain loss 
+functions. This dramatically simplifies the training process, allowing fast 
+learning. The new state vector of the internal reservoir nodes r
+t + 1 
+is 
+excited by the input x
+t 
+and the present states r
+t
+. The updating mecha -
+nism without considering feedbacks is given as ( Schrauwen et al., 2007; 
+Luko ˇsevi ˇcius & Jaeger, 2009; Tanaka et al., 2019 ): 
+r
+t + 1
+= F ( W
+in
+x
+t + 1
++ W
+res
+r
+t
+) + b
+in
+, (1)  
+where F can be nonlinear activation functions such as tanh ( ⋅ ) or ReLU ( ⋅ ) , 
+and b
+in 
+is the input layer bias. For a given node n
+i
+, the state is updated 
+according to its present state s
+t
+i
+, the total states of its incoming neighbors 
+∑
+j ∈ Γ
+i
+s
+t
+j
+, and possible contributions from the input α
+T
+i
+( W
+in
+x
+t + 1
+) , namely: 
+s
+t + 1
+i
+= s
+t
+i
++
+∑
+j ∈ Γ i
+s
+t
+j
++ α
+T
+i
+( W
+in
+x
+t + 1
+) , (2)  
+where α
+T
+i 
+is the transposition of a vector with i -th element equals to 1 
+otherwise 0. From this equation, the reservoir is akin to the Recurrent 
+Neural Network (RNN) ( Rumelhart, Hinton, & Williams, 1986 ) which 
+also utilizes the memories of previous states. This underlying design 
+enables RC to be able to predict time series in scenarios where historical 
+data contains certain levels of information about the evolutions for the 
+systems. The output y ( t ) is straightforwardly readout as: 
+̂y
+t + 1
+= W
+t
+out
+r
+t
++ b
+out
+, (3)  
+in which b
+out 
+is the output layer bias and W
+t
+out 
+is updated iteratively in 
+training stage but unchanged in tests once trainings are finished. The 
+training of W
+t
+out 
+is simply a task of minimizing the loss function of pre -
+dicted ̂y
+t + 1 
+and the ground truth y
+t + 1 
+defined as: 
+min
+W
+t
+out
+‖ ̂y
+t + 1
+  y
+t + 1
+‖
+2
+. (4) 
+Similar to other neural network models, the weight matrices of W
+in
+,
+W
+res
+, and W
+out 
+can be randomly initialized. To allow the reservoir to 
+Fig. 2. Structure of the proposed reservoir applied in indices prediction. The prices of each sliding window form an input vector p
+→
+t 
+and are projected into the 
+reservoir. The internal states of reservoir nodes are updated following the strategy of Eq. 6 . The output is readout as the predicted price ̂p
+t + 1 
+based on the output layer 
+weight W
+out
+. 
+W.-J. Wang et al.                                                                                                                                                                                                                               
+
+[PÁGINA PDF 4]
+Expert Systems With Applications 178 (2021) 115022
+4
+reach steady state, W
+res 
+can be rescaled as 
+W
+res
+: =
+ρ
+| λ
+max
+|
+W
+0
+res
+, (5)  
+where ρ is the spectral radius and λ
+max 
+stands for the largest eigenvalue 
+of W
+res
+, respectively ( Jaeger, 2001 ). 
+3. Methods and materials 
+3.1. Methods 
+In this study, we implement an RC framework to predict stock market 
+indices. The daily closing prices for a given stock market index in the 
+study range form a time series. The whole period is divided into two 
+subsets. The first 80% are used as the training set, while the remaining 
+20% form the test set. In a sliding window approach, a sequence of price 
+data points [ p
+t   k + 1
+, p
+t   k + 2
+, ⋯ , p
+t
+]
+T 
+in k trading days form the input vector 
+p
+→
+t 
+to predict the target price p
+t + 1
+. The predicted output is denoted as 
+̂p
+t + 1
+. Given the length of a window k and the total length of the time 
+series T , in total we have T   k + 1 sliding windows. Three types of to -
+pological network structures, namely ER, SW, and SF are generated as 
+different RC networks. Two subsets of nodes in RC are randomly selected 
+as the input hidden nodes and output hidden nodes, respectively. The 
+weight matrices W
+in
+, and W
+out 
+are randomly initialized. W
+res 
+is the 
+adjacent matrix of the reservoir network. For the nodes in the reservoir, 
+we use the following state updating strategy: 
+s
+t + 1
+i
+= tanh s
+t
+i
++
+∑
+j ∈ Γ
+i
+tanh s
+t
+j
++ α
+T
+i
+( W
+in
+p
+→
+t
+) . (6) 
+Our extensive empirical experiments show that this updating strat -
+egy is able to help the loss convergence, which is essential for the W
+out 
+training in our studies. Fig. 2 provides an overview of the schema of the 
+proposed reservoir structure. 
+3.2. Data 
+A stock market index is a benchmark measurement of the whole 
+market performance computed from a portfolio of components which 
+are usually representative stocks from different economic sectors using 
+various weighting methods. Prediction of the movement of a stock 
+market index is important for investment and economic policy-making. 
+In this study, we collect the daily closing prices of seven leading inter -
+national stock indices, including S & P500 Index (Standard & Poor ’ s), 
+NYSE Composite (New York Stock Exchange), DJI (Dow Jones Industrial 
+Average), Nasdaq Composite Index (Nasdaq Stock Exchange), FTSE 100 
+Index (Financial Times Stock Exchange 100 Index of London Stock Ex -
+change), Nikkei 225 Index (Tokyo Stock Exchange), and SSE Index 
+(Shanghai Stock Exchange). These are the most followed indices repre -
+senting major global economies. On the other hand, the prices of these 
+indices are widely used as benchmarks in the literature on predictions of 
+stock indices. Therefore, our study follows this line of literature by using 
+prices of these indices, though some literature use returns instead of 
+prices. The list of indices is presented in Table 1 . All prices are historical 
+daily closing prices spanning nine years from January 4, 2000, to 
+December 31, 2018. In total, 15,723 data points are collected from the 
+public financial data services of Yahoo Finance and Investing.org. 
+Table 2 shows the descriptive statistics of all indices. On average, there 
+are over 2,000 trading days for each index. This allows our dataset to be 
+one of the largest datasets used in literature of other machine learning 
+methods as well as RC. The movements of all indices are plotted in Fig. 3 . 
+As illustrated, our study period is large enough to contain various 
+market situations. Though the markets are correlated in certain degrees, 
+the predictions of these chaotic markets are conducted as independent 
+tasks. The training and test periods are colored in green and yellow, 
+respectively. 
+4. Experiments and results 
+4.1. Experiment settings 
+As the flowchart illustrated in Fig. 4 , the experiment is divided into 
+four stages. First, we collect the daily closing prices of the indices of 
+seven markets from online financial data sources. Afterward, each of the 
+time series is further split into two parts, namely the first 80% trading 
+days form the training set and the remaining 20% form the test set. The 
+former covers over 1,600 trading days, while the latter covers about 400 
+trading days, respectively. A sliding window approach is adopted to 
+construct each training sample. Different sizes of the window k are 
+considered in this study, namely k = 5 , 10 , 15 , 20. In other words, we 
+consider the ranges from a trading week ( k = 5) to nearly a trading 
+month ( k = 20). The sliding window is moved forward using the win -
+dow as the input into the reservoir to predict the following price. 
+The reservoir might be in different sizes. In this study, three sizes of 
+N = 10 , 50 , 100 are considered. The hidden input nodes h
+in 
+and hidden 
+output nodes h
+out 
+are pN randomly selected nodes from the reservoir, we 
+set p = 0 . 2 , 0 . 5 , 0 . 7. Three types of network structures for the reservoir 
+are considered in this study. The ER networks ( Erd ˝os & R ´enyi, 1960 ) are 
+generated with the edge probability values of p
+er
+= 0 . 1 , 0 . 2 , 0 . 5. The 
+expected edge density would be p
+er
+N ( N   1 ) / 2. For SF networks, we 
+adopt the preferential attachment mechanism ( Barab ´asi & Albert, 1999 ) 
+to generate SF networks with combinations of the attaching probability 
+Table 2 
+Descriptive statistics of the seven stock market indices over a period of nine years.  
+Index Study Period Trading Days Max Min Mean Std . Dev .  
+S & P500 01/04/2010 – 12/28/2018 2,263 2,930.75 1,022.58 1,856.50 520.45 
+NYSE 12/31/2009 – 12/28/2018 2,264 13,637.02 6,434.81 9,859.53 1,807.08 
+DJI 12/31/2009 – 12/28/2018 2,264 26,828.39 9,686.48 16,624.57 4,447.15 
+NASDAQ 12/31/2009 – 12/28/2018 2,264 8,109.69 2,091.79 4,386.49 1,622.66 
+FTSE 01/04/2010 – 12/31/2018 2,272 7,877.45 4,805.80 6,429.09 702.92 
+N225 01/04/2010 – 12/28/2018 2,208 24,270.62 8,160.01 15,141.53 4,759.24 
+SSE 01/04/2010 – 12/28/2018 2,188 5,166.35 1,950.01 2,786.43 555.17  
+Table 1 
+Seven major stock market indices studied in this work.  
+Index Name Components Country 
+S & P 500 S & P 500 Index 500 United States 
+NYSE New York Stock Exchange 100 United States 
+DJI Dow Jones Industrial Average 30 United States 
+NASDAQ Nasdaq Composite Index 2,656 United States 
+FTSE Financial Times and Stock Exchange 100 United 
+Kingdom 
+N225 Nikkei Stock Average 225 Japan 
+SSE Shanghai Stock Exchange 
+Component Index 
+1,239 China  
+W.-J. Wang et al.                                                                                                                                                                                                                               
+
+[PÁGINA PDF 5]
+Expert Systems With Applications 178 (2021) 115022
+5
+Fig. 3. Plots for the time series of daily closing prices for seven major stock market indices. More than 2000 trading days of nine years between 2010 and 2018 are 
+included in this study. The whole dataset is divided into training and test subsets which are colored in green and yellow respectively. 
+W.-J. Wang et al.                                                                                                                                                                                                                               
+
+[PÁGINA PDF 6]
+Expert Systems With Applications 178 (2021) 115022
+6
+Fig. 4. Flowchart of the proposed RC framework used for stock market indices predictions. First, daily closing prices of seven major market indices are collected; of 
+which the first 80% are used for training and the remaining 20% are used for tests. In predictions, the sliding window approach is utilized to input the prices into the 
+reservoir and a predicted ̂p
+t + 1 
+is readout. The weight matrices W
+out 
+is trained in the training periods. The performances of the proposed RC models are further 
+evaluated in the test periods and compared with other approaches. 
+W.-J. Wang et al.                                                                                                                                                                                                                               
+
+[PÁGINA PDF 7]
+Expert Systems With Applications 178 (2021) 115022
+7
+α and the edge adding probability between two existing nodes β . Both 
+probabilities have values of 0.45, 0.47, and 0.49. For SW networks, the 
+rewiring generative algorithm ( Watts & Strogatz, 1998 ) is adopted with 
+the initial neighbor p
+k
+N , we set p
+k
+= 0 . 2 , 0 . 5 , 0 . 7, and rewiring proba -
+bility p
+rewire
+= 0 . 1 , 0 . 2 , 0 . 5. The weight matrices of input layer W
+in 
+and 
+output layer W
+out 
+are both randomly initialized from the uniform dis -
+tribution U (  
+̅̅ ̅
+L
+√
+,
+̅̅ ̅
+L
+√
+) in the same manner to initialize the forward 
+neural networks. The range for W
+in 
+is L = 1 / | p
+→
+t
+| , while L = 1 / | h
+out
+| for 
+W
+out
+, respectively. The input and output bias b
+in 
+are also initialized in the 
+same distribution. The reservoir weight matrix W
+res 
+is the adjacency 
+matrix initialized in network generating, while the starting internal state 
+vector r
+0 
+is sampled randomly from uniform distribution U (   0 . 1 , 0 . 1 ) . 
+During training, the output layer weights W
+out 
+are updated using 
+RMSProp optimizer with learning rates of a = 0 . 001 , 0 . 01 , 0 . 1. For 
+comparative purposes, we also use algorithms of LSTM and RNN to 
+predict the seven stock market indices using the same training and test 
+periods. LSTM and RNN are implemented accordingly to the original 
+models ( Hochreiter & Schmidhuber, 1997; Rumelhart et al., 1986 ). The 
+prediction results of both basis algorithms are compared to our RC 
+models using the same metrics. Since predictions of all market indices 
+are independent tasks, all experiments on the market indices are con -
+ducted independently, namely RC models are developed, trained, and 
+tested specifically for each individual index. 
+4.2. Evaluation metrics 
+In line with previous stock price prediction literature ( Zhang & Wu, 
+2009; Patel et al., 2015b; Hassan, Nath, & Kirley, 2007 ), we calculate a 
+bucket of metrics including the mean squared error ( MSE ), mean abso -
+lute error ( MAE ), R-squared ( R
+2
+), root mean squared error ( RMSE ), and 
+mean absolute percentage error ( MAPE ) to evaluate the performance of 
+our model. The definitions of all the metrics are presented in Table 3 . 
+The target price ̂p
+t 
+is predicted for each sliding window over the test set 
+before calculating the metrics against the ground truth price p
+t
+. For 
+mean values, the results are averaged over the whole test set. 
+4.3. Results 
+In this part, we report the results of two experiments in which the 
+predictions of seven major stock market indices are listed in Section 
+4.3.1 , as well as comparisons to two previous studies ( Baek & Kim, 2018; 
+Zhou et al., 2019 ) in Section 4.3.2 , respectively. Finally, we summarize 
+and discuss the influences of RC network topologies and settings on the 
+performances in Section 4.3.3 . 
+4.3.1. Prediction of seven stock market indices 
+Following the steps as illustrated in the flowchart Fig. 4 , we train 
+seven individual RC models for the seven stock market indices. Table 4 
+presents the results of the best performances of each RC model in the 
+one-day ahead prediction for each index. Values of MSE , MAE , R
+2
+, RMSE , 
+and MAPE are summarized. From the MAPE , we see that the mean ab -
+solute percentage errors for all indices are smaller than 1%. This in -
+dicates the predictions fit the actual prices closely with small errors. This 
+is further visualized as the plots of time series of predicted price ̂p
+t 
+and 
+real price p
+t 
+in Fig. 5 . The absolute percentage errors (APE) between 
+predicted price ̂p
+t 
+and real price p
+t 
+are plotted in Fig. 6 . As shown, the 
+small values of APE indicate the predictive capabilities of RC models for 
+all indices. 
+To compare the proposed RC models ’ predictive capability with RNN 
+and LSTM, we implement the RNN and LSTM algorithms and conduct 
+comparative tests using the same test sets. The test periods cover two 
+trading years of more than 400 days between March 14, 2017, to 
+December 31, 2018. As shown in Table 5 , each index is predicted using 
+the three algorithms and the RMSE and MAE are reported. We find that 
+RC outperforms RNN and LSTM in indices of S & P500, NASDAQ, N225, 
+and SSE with smaller RMSE . According to MAE , RC outperforms RNN 
+and LSTM in indices of NASDAQ, N225, and SSE, while for the rest of 
+indices, RNN has a slightly smaller MAE . For simplicity, we only report 
+the detailed results of RMSE and MAE for the three algorithms in Table 5 . 
+However, we also calculate measurements of R
+2
+, RMSE , and MAPE for 
+the three algorithms. For these three measurements, RC achieves the 
+best performances in three indices (NASDAQ, FTSE, and SSE) except 
+S & P500, NYSE, DJI, and N225, for which RNN has the best perfor -
+mances. The results show that RC can achieve competitive performances 
+of the state-of-the-art deep learning methods of LSTM and RNN. 
+4.3.2. Comparative study 
+To further compare our proposed RC models ’ predictive capabilities 
+with the models reported in recent studies, a comparative experiment is 
+conducted in which we compare with two separate studies of applying 
+deep learning algorithms in predictions of market indices ( Zhou et al., 
+2019; Baek & Kim, 2018 ). In the first study ( Zhou et al., 2019 ), a neural 
+network model EMD2FNN is proposed in predictions of NASDAQ index 
+and SSE index in a study period of 1,214 trading days between January 
+4, 2012, and December 30, 2016, and S & P500 index in a study period of 
+1,260 trading days between January 3, 2007, and December 30, 2011. In 
+another study ( Baek & Kim, 2018 ), a two-parts LSTM model ModAugNet 
+is proposed in predictions of S & P500 index and KOSPI200 (Korea Stock 
+Exchange KOSPI 200 Index) in a study period of more than 4,300 trading 
+days between January 4, 2000, and July 27, 2017. These newly pro -
+posed deep learning models achieve competitive prediction perfor -
+mances ( Zhou et al., 2019; Baek & Kim, 2018 ). In our comparative 
+experiment, we first develop RC models following the strategy as pre -
+viously described. To allow direct comparisons, we train and test RC 
+models using the same study periods and calculate the same metrics of 
+MAE , RMSE , MAPE , and MSE as adopted in the two studies. 
+Table 3 
+Evaluation metrics.  
+Metric Description Definition 
+MSE Mean Squared Error 1
+T
+∑
+T
+t = 1
+( ̂p
+t
+  p
+t
+)
+2  
+MAE Mean Absolute Error 1
+T
+∑
+T
+t = 1
+| ̂p
+t
+  p
+t
+|
+R
+2  
+R-Squared 
+1  
+∑
+T
+t = 1
+(
+̂p
+t
+  p
+t
+̂p
+t
+  〈 p 〉
+)
+2  
+RMSE Root Mean Squared Error 
+̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ ̅
+1
+T
+∑
+T
+t = 1
+( ̂p
+t
+  p
+t
+)
+2
+√
+MAPE Mean Absolute Percentage Error 1
+T
+∑
+T
+t = 1
+| ̂p
+t
+  p
+t
+|
+p
+t
+× 100%   
+Table 4 
+Best performances of RC models for the seven major stock market indices.  
+Index MSE MAE R
+2  
+RMSE MAPE 
+S & P500 540.74 15.80 0.98 23.25 0.60 
+NYSE 9241.06 67.96 0.97 96.13 0.55 
+DJI 50627.75 155.11 0.98 225.01 0.64 
+NASDAQ 6097.45 53.24 0.98 78.09 0.76 
+FTSE 2918.69 41.03 0.95 54.02 0.56 
+N225 52601.34 160.77 0.97 229.35 0.75 
+SSE 946.35 22.07 0.99 30.76 0.74  
+W.-J. Wang et al.                                                                                                                                                                                                                               
+
+[PÁGINA PDF 8]
+Expert Systems With Applications 178 (2021) 115022
+8
+Fig. 5. Plots of predicted index price ̂p
+t 
+and ground truth price p
+t 
+for each stock market index in the test period. The predicted prices are results of respective best 
+performing RC models obtained in the training period. As illustrated, the predicted curves closely follow the movements of ground truth curves. 
+W.-J. Wang et al.                                                                                                                                                                                                                               
+
+[PÁGINA PDF 9]
+Expert Systems With Applications 178 (2021) 115022
+9
+Fig. 6. Absolute percentage error ( APE ) for each stock market index in the test period.  
+W.-J. Wang et al.                                                                                                                                                                                                                               
+
+[PÁGINA PDF 10]
+Expert Systems With Applications 178 (2021) 115022
+10
+Firstly, as shown in Table 6 , RC outperforms the EMD2FNN ( Zhou 
+et al., 2019 ) in predictions of NASDAQ index and SSE index, while 
+slightly underperforms in the prediction of S & P500 index, though the 
+results are very close to EMD2FNN ( Zhou et al., 2019 ). Specifically, in 
+the predictions of NASDAQ and SSE, RC achieves significant 31.59% and 
+23.27% decreases of MAE , 30.13% and 30.55% decreases of RMSE , 
+32.41% and 21.95% decreases of MAPE , respectively. Secondly, as the 
+results shown in Table 7 , RC outperforms ModAugNet ( Baek & Kim, 
+2018 ) in prediction of S & P500 index while slightly underperforms in 
+prediction of KOSPI200. In the prediction of S & P500, RC achieves 
+16.63% and 19.44% decreases of MSE and MAPE , respectively. These 
+comparative investigations into recent results achieved by using 
+EMD2FNN ( Zhou et al., 2019 ) and ModAugNet ( Baek & Kim, 2018 ) 
+demonstrate that RC is also a promising model in stock market index 
+prediction with competitive predictive capabilities. 
+4.3.3. Impacts of RC networks and settings 
+To investigate how the topological structure impacts the perfor -
+mance of a reservoir model, we generated reservoirs in three types of 
+networks, namely random network (ER), scale-free network (SF), and 
+small-world network (SW). As shown in Table 8 , the best performing 
+structure is SF for predictions of DJI, FTSE, and SSE, SW for NYSE, 
+NASDAQ and N225, and ER for S & P500, respectively. These networks 
+are also in different sizes ranging from 10 to 100. This shows that the 
+best performances could be achieved for different index predictions by 
+different structures with different sizes. No single structure with a 
+certain size can perform well in all cases. Furthermore, as illustrated in 
+Fig. 7 , the three types of structures perform close to each other in the 
+prediction of the same index. However, the metrics reported in the 
+Table 8 show that there are still significant differences for different 
+combinations of structures, sizes, lengths of input windows, and learning 
+rates in the training of output weights. The best performances are ach -
+ieved when the learning rate is 0.1 in predictions of S & P500, while the 
+learning rate is 0.001 for the rest indices. Larger learning rates tend to 
+speed up the learning process but might not even converge. From the 
+results, we see that lower learning rates are acceptable, since our main 
+objective is to achieve best predictions. Different sizes of input windows 
+are evaluated to see what is the optimal input size of historical trading 
+data for each index. The results show that RC achieves best perfor -
+mances when the input is set to an optimal length, which is 5 for NAS -
+DAQ, 15 for S & P500, and 20 for NYSE, DJI, FTSE, N225, and SSE, 
+respectively. In the financial industry, the five trading days is a calendar 
+week, 15 trading days is about half of calendar month, and 20 trading 
+days is roughly a calendar month. Our extensive experiments hint that a 
+large input window of 20 trading days is sufficient, and small input 
+windows might not increase the performances in most predictions. The 
+results also tell us that a systematic investigation of different combina -
+tions of determinant factors, including the topological structures, sizes, 
+learning rates, and lengths of input windows, is necessary to achieve 
+good predictions. 
+5. Conclusion 
+Applying innovative machine learning techniques to predict move -
+ments of financial markets using price time series has important impli -
+cations for the financial industry ( Bose & Mahapatra, 2001 ). More 
+recently, machine learning and deep learning models such as LSTM and 
+RNN have been investigated in various stock markets ( Selvin, Vinaya -
+kumar, Gopalakrishnan, Menon, & Soman, 2017 ). Reservoir computing 
+(RC) is proposed as a special RNN model. A set of randomly connected 
+state nodes provides the nonlinearity to project the inputs into a high- 
+dimensional space in the model. Instead of training all weights in 
+traditional methods, RC only requires the output layer weights to be 
+trained while keeping the input layer ’ s weights and the reservoir 
+network fixed. This approach significantly simplifies training. Thanks to 
+the nonlinear memory nature of the reservoir network, RC models have 
+been applied in predictions of time series ( Butcher et al., 2013; Wyffels 
+& Schrauwen, 2010; Ferreira & Ludermir, 2008; Escalona-Mor ´an, 
+Table 5 
+Comparisons of the RMSE and MAE for the models of proposed RC, RNN, and LSTM. The experiments are conducted using the same test periods for all indices. The 
+bolded values are the best results achieved by the best performing corresponding model for each index.  
+Index Test Days RMSE MAE   
+RC RNN LSTM RC RNN LSTM 
+S & P500 453 23.25 23.44 23.89 15.80 15.37 15.66 
+NYSE 453 96.13 94.49 110.82 67.96 63.99 76.04 
+DJI 453 225.01 221.97 256.78 155.11 146.21 173.52 
+NASDAQ 453 78.09 78.80 81.41 53.24 53.80 56.11 
+FTSE 454 54.02 53.70 57.24 41.03 40.62 43.11 
+N225 442 229.35 229.92 267.24 160.77 163.33 190.58 
+SSE 438 30.76 30.89 33.08 22.07 22.08 23.99  
+Table 6 
+Performance comparisons of the reported results of EMD2FNN ( Zhou et al., 
+2019 ) and our RC model for three stock market indices of S & P500, NASDAQ, 
+and SSE. Bolded values indicate better results. The same trading periods are used 
+to form the test sets for S & P500 (January 3, 2011 to December 30, 2011), 
+NASDAQ (January 4, 2016 to December 30, 2016), and SSE (January 5, 2016 to 
+December 30, 2016), respectively.  
+Index Test days EMD2FNN ( Zhou et al., 
+2019 ) 
+Proposed RC   
+MAE RMSE MAPE MAE RMSE MAPE 
+S & P500 252 13.04 17.66 1.05 13.59 18.00 1.10 
+NASDAQ 251 52.48 70.46 1.08 35.90 49.23 0.73 
+SSE 243 37.18 61.51 1.23 28.53 42.72 0.96  
+Table 7 
+Performance comparisons of the reported results of ModAugNet ( Baek & Kim, 
+2018 ) and our RC model for two stock market indices of S & P500 and KOSPI200. 
+Bolded values indicate better results. The trading period between January 2, 
+2008 to July 27, 2017 is used as the test set for S & P500 and KOSPI200.  
+Index Test 
+days 
+ModAugNet ( Baek & Kim, 
+2018 ) 
+Proposed RC 
+MSE MAPE MAE MSE MAPE MAE 
+S & P500 2409 342.48 1.08 12.06 285.54 0.87 12.07 
+KOSPI200 2376 7.56 1.01 1.98 7.85 0.90 2.02  
+W.-J. Wang et al.                                                                                                                                                                                                                               
+
+[PÁGINA PDF 11]
+Expert Systems With Applications 178 (2021) 115022
+11
+Soriano, García-Prieto, Fischer, & Mirasso, 2014 ). As a novel model, 
+applications of RC in financial markets are still far less explored 
+compared to other well-studied machine learning or deep learning 
+models such as LSTM and RNN. 
+In this work, we develop RC models using the random network, 
+small-world network, and scale-free network and systematically inves -
+tigate the predictive capabilities in one-day ahead predictions of seven 
+international major stock market indices with comparisons to LSTM and 
+RNN. The seven market indices of S & P500 Index, NYSE Composite, DJI, 
+Nasdaq Composite Index, FTSE 100 Index, Nikkei 225 Index, and SSE 
+Index are representatives of the most followed global financial markets. 
+We collect the time series of daily closing prices between January 4, 
+2010, and December 28, 2018, covering 2000 trading days for each 
+index. We train and test the models over the first 80% (1600 days) and 
+over the rest 20% (400 days), respectively. Metrics of MSE , MAE , R
+2
+,
+RMSE , and MAPE are evaluated for each model. We find that RC out -
+performs LSTM and RNN in six indices according to RMSE and two 
+indices according to MAE . In another comparative experiment, RC 
+outperforms EMD2FNN ( Zhou et al., 2019 ) in predicting NASDAQ and 
+SSE, and outperforms ModAugNet ( Baek & Kim, 2018 ) in the prediction 
+of S & P500. Overall, the experiments demonstrate that RC can achieve 
+competitive performances in most cases compared to the state-of-the-art 
+models of LSTM and RNN. 
+However, this study still has limitations that need further studies. 
+Firstly, the dataset only covers seven major stock market indices. 
+Though this study unitizes a larger dataset with more indices and larger 
+time ranges compared to other studies, it would be worth doing 
+empirical tests that consider the time series of more individual stocks 
+from different markets. Meanwhile, readers should be noted that these 
+indices are correlated, and using a limited number of indices would 
+hinder the generalization of predictive models. Though the indices are 
+predicted independently, adding more indices into the study would 
+significantly improve the diversity, reduce the correlations among 
+indices, and lead to more reliable models with better generalization. 
+Secondly, the present dataset only considers daily closing prices. One 
+might be interested in investigating how RC performs in other data 
+frequencies of time-scales such as hour, minute, second, or even ultra- 
+high frequencies. Thirdly, this study only focuses on stock markets. 
+However, it would be natural to expand the current research to other 
+financial markets such as bond markets, commodity markets, money 
+markets, derivatives markets, futures markets, foreign exchange mar -
+kets, and interbank markets. Fourthly, considering that the objective of 
+the present study is to investigate the RC models, no practical trading 
+strategies are developed based on the results achieved by RC. In further 
+studies, we might build trading strategies based on predictions of RC 
+models and further evaluate the values of the models in backtesting 
+using real financial time series. Lastly, the proposed method is only 
+applied to the time series of closing prices. It would be interesting to 
+further evaluate the proposed RC models in other price time series of 
+open, high, low, and market time series such as returns and risks. 
+Furthermore, there is a trend of combining different machine learning or 
+deep learning methods together in market predictions ( Cervell ´o-Royo & 
+Guijarro, 2020; Long et al., 2020; Rezaei et al., 2020; Yu & Yan, 2020; 
+Niu et al., 2020 ). However, it ’ s largely unexplored to combine RC with 
+existing machine learning or deep learning methods. This ensemble 
+approach would be exciting and promising for future research lines. 
+The prediction of financial markets is so challenging that it ’ s hard for 
+a single method to achieve the best performances in predictions of all 
+individual indices. As shown by our results, RC outperforms other 
+methods in many cases but still can not dominate in all predictions of all 
+indices. However, this does not undermine the potential value of RC in 
+predictions of financial markets. A practitioner is supposed to evaluate 
+all possible methods before putting them into applications wisely. We 
+believe that RC is a promising candidate adding to the present machine 
+learning toolbox of financial market analysis. Hopefully, these prom -
+ising research directions would open wide, rich possibilities and fruitful 
+study topics for scholars. These further studies of RC in predictions of 
+financial time series will also inspire new tools and applications for 
+financial industry practitioners. 
+Table 8 
+Best performances for individual index achieved by different network structures and settings. Three types of networks are random network (ER), scale-free network 
+(SF), small-world network (SW). The reservoir size, length of input data, and learning rate are denoted as N , k , and α respectively.  
+Index Structure N k α  MSE MAE R
+2  
+RMSE MAPE 
+S & P500 ER 50 15 0.100 540.74 15.80 0.98 23.25 0.60 
+SF 100 20 0.001 573.05 16.33 0.98 23.94 0.62 
+SW 50 20 0.001 563.14 16.22 0.98 23.73 0.62  
+NYSE ER 100 20 0.001 9500.15 69.05 0.97 97.47 0.56 
+SF 100 20 0.001 9504.31 70.48 0.97 97.49 0.57 
+SW 50 20 0.001 9241.06 67.96 0.97 96.13 0.55  
+DJI ER 100 20 0.001 54612.58 157.39 0.98 233.69 0.65 
+SF 100 20 0.001 50627.75 155.11 0.98 225.01 0.64 
+SW 100 20 0.001 53547.44 155.93 0.98 231.40 0.65  
+NASDAQ ER 100 20 0.001 6220.89 54.57 0.98 78.87 0.78 
+SF 50 20 0.001 6333.27 56.05 0.98 79.58 0.80 
+SW 100 5 0.001 6097.45 53.24 0.98 78.09 0.76  
+FTSE ER 100 20 0.001 2939.43 42.07 0.95 54.22 0.57 
+SF 100 20 0.001 2918.69 41.03 0.95 54.02 0.56 
+SW 50 10 0.001 2950.25 41.87 0.95 54.32 0.57  
+N225 ER 100 20 0.001 52934.53 164.47 0.97 230.08 0.76 
+SF 50 15 0.001 52842.90 166.78 0.97 229.88 0.77 
+SW 100 20 0.001 52601.34 160.77 0.97 229.35 0.75  
+SSE ER 50 10 0.001 988.89 22.56 0.99 31.45 0.75 
+SF 50 20 0.001 946.35 22.07 0.99 30.76 0.74 
+SW 10 5 0.001 952.26 22.13 0.99 30.86 0.74  
+W.-J. Wang et al.                                                                                                                                                                                                                               
+
+[PÁGINA PDF 12]
+Expert Systems With Applications 178 (2021) 115022
+12
+Fig. 7. Plots of predicted curves obtained using different reservoir network topologies and the ground truth curves. All of the three topologies of random network 
+(ER), scale-free network (SF), and small-world network (SW) are able to follow the movements of ground truth curves. 
+W.-J. Wang et al.                                                                                                                                                                                                                               
+
+[PÁGINA PDF 13]
+Expert Systems With Applications 178 (2021) 115022
+13
+CRediT authorship contribution statement 
+Wei-Jia Wang: Data curation, Formal analysis, Investigation, 
+Methodology, Software, Visualization, Writing - original draft. Yong 
+Tang: Conceptualization, Data curation, Formal analysis, Funding 
+acquisition, Investigation, Methodology, Project administration, Soft -
+ware, Supervision, Visualization, Validation, Writing - original draft, 
+Writing - review & editing. Jason Xiong: Formal analysis, Investigation, 
+Project administration, Validation, Writing - original draft, Writing - 
+review & editing. Yi-Cheng Zhang: Investigation, Supervision, Writing - 
+review & editing. 
+Declaration of Competing Interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Acknowledgements 
+The authors thank the financial support from the National Natural 
+Science Foundation of China under Grant No. 71872027. 
+References 
+Abu-Mostafa, Y. S., & Atiya, A. F. (1996). Introduction to financial forecasting. Applied 
+Intelligence, 6 , 205 – 213 . 
+Appeltant, L., Soriano, M. C., Van der Sande, G., Danckaert, J., Massar, S., Dambre, J., 
+Schrauwen, B., Mirasso, C. R., & Fischer, I. (2011). Information processing using a 
+single dynamical node as complex system. Nature Communications, 2 , 468 . 
+Ar ´evalo, R., García, J., Guijarro, F., & Peris, A. (2017). A dynamic trading rule based on 
+filtered flag pattern recognition for stock market price forecasting. Expert Systems 
+With Applications, 81 , 177 – 192 . 
+Ariyo, A. A., Adewumi, A. O., & Ayo, C. K. (2014). Stock price prediction using the arima 
+model. In International conference on computer modelling and simulation (pp. 106 – 112) . 
+Babu, C. N., & Reddy, B. E. (2014). Selected indian stock predictions using a hybrid 
+arima-garch model. In International conference on advances in electronics computers 
+and communications (pp. 1 – 6) . 
+Baek, Y., & Kim, H. Y. (2018). Modaugnet: A new forecasting framework for stock market 
+index value with an overfitting prevention lstm module and a prediction lstm 
+module. Expert Systems With Applications, 113 , 457 – 480 . 
+Ballings, M., den Poel, D. V., Hespeels, N., & Gryp, R. (2015). Evaluating multiple 
+classifiers for stock price direction prediction. Expert Systems With Applications, 42 , 
+7046 – 7056 . 
+Banerjee, D. (2014). Forecasting of indian stock market using time-series arima model. In 
+International conference on business and information management (pp. 131 – 135) . 
+Bao, Yu-Kun, Liu, Zhi-Tao, Guo, Lei, & Wang, Wen (2005). Forecasting stock composite 
+index by fuzzy support vector machines regression. In International conference on 
+machine learning and cybernetics (pp. 3535 – 3540). Vol. 6. 
+Barab ´asi, A.-L., & Albert, R. (1999). Emergence of scaling in random networks. Science, 
+286 , 509 . 
+Bose, I., & Mahapatra, R. K. (2001). Business data mining — A machine learning 
+perspective. Information & Management, 39 , 211 – 225 . 
+Burgsteiner, H., Kroll, M., Leopold, A., & Steinbauer, G. (2007). Movement prediction 
+from real-world images using a liquid state machine. Applied Intelligence, 26 , 99 – 109 . 
+Butcher, J., Verstraeten, D., Schrauwen, B., Day, C., & Haycock, P. (2013). Reservoir 
+computing and extreme learning machines for non-linear time-series data analysis. 
+Neural Networks, 38 , 76 – 89 . 
+Cervell ´o-Royo, R., & Guijarro, F. (2020). Forecasting stock market trend: A comparison 
+of machine learning algorithms. Financ. Mark. Valuat., 6 , 37 – 49 . 
+Chang, P.-C., Liu, C.-H., Lin, J.-L., Fan, C.-Y., & Ng, C. S. (2009). A neural network with a 
+case based dynamic window for stock trading prediction. Expert Systems With 
+Applications, 36 , 6889 – 6898 . 
+Chong, E., Han, C., & Park, F. C. (2017). Deep learning networks for stock market 
+analysis and prediction: Methodology, data representations, and case studies. Expert 
+Systems With Applications, 83 , 187 – 205 . 
+Chun, J., Ahn, J., Kim, Y., & Lee, S. (2020). Using deep learning to develop a stock price 
+prediction model based on individual investor emotions. The Journal of Behavioral 
+Finance , 1 – 10 . 
+Du, C., Cai, F., Zidan, M. A., Ma, W., Lee, S. H., & Lu, W. D. (2017). Reservoir computing 
+using dynamic memristors for temporal information processing. Nature 
+Communications, 8 , 2204 . 
+Dutta, G., Jha, P., Laha, A. K., & Mohan, N. (2006). Artificial neural network models for 
+forecasting stock price index in the bombay stock exchange. Journal of Emerging 
+Market Finance, 5 , 283 – 295 . 
+Erd ˝os, P., & R ´enyi, A. (1960). On the evolution of random graphs. Publications of the 
+Mathematical Institute of the Hungarian Academy of Sciences, 5 , 17 – 60 . 
+Escalona-Mor ´an, M., Soriano, M. C., García-Prieto, J., Fischer, I., & Mirasso, C. R. (2014). 
+Multivariate nonlinear time-series estimation using delay-based reservoir 
+computing. European Physical Journal Special Topics, 223 , 2903 – 2912 . 
+Fama, E. F. (1995). Random walks in stock market prices. Financial Analysts Journal, 51 , 
+75 – 80 . 
+Ferreira, A. A., & Ludermir, T. B. (2008). Using reservoir computing for forecasting time 
+series: Brazilian case study. In International conference on hybrid intelligent systems (pp. 
+602 – 607) . 
+Garcia, F., Guijarro, F., Oliver, J., & Tamo ˇsi ¯unien ˙e, R. (2018). Hybrid fuzzy neural 
+network to predict price direction in the german dax-30 index. Technological and 
+Economic Development of Economy, 24 , 2161 – 2178 . 
+Haq, A. U., Zeb, A., Lei, Z., & Zhang, D. (2021). Forecasting daily stock trend using multi- 
+filter feature selection and deep learning. Expert Systems With Applications, 168 , 
+114444 . 
+Hassan, M. R., Nath, B., & Kirley, M. (2007). A fusion model of hmm, ann and ga for stock 
+market forecasting. Expert Systems With Applications, 33 , 171 – 180 . 
+Hochreiter, S., & Schmidhuber, J. (1997). Long short-term memory. Neural Computation, 
+9 , 1735 – 1780 . 
+Ib ´a ˜nez-Soria, D., Garcia-Ojalvo, J., Soria-Frisch, A., & Ruffini, G. (2018). Detection of 
+generalized synchronization using echo state networks. Chaos, 28 , 033118 . 
+Ince, H., & Trafalis, T. B. (2007). Kernel principal component analysis and support vector 
+machines for stock price prediction. IIE Transactions, 39 , 629 – 637 . 
+Jaeger, H. (2001). The echo state approach to analysing and training recurrent neural 
+network-with an erratum note. Ger. Natl. Res. Cent. Inf. Technol. GMD Tech. Rep., 148 , 
+13 . 
+Jaeger, H., & Haas, H. (2004). Harnessing nonlinearity: Predicting chaotic systems and 
+saving energy in wireless communication. Science, 304 , 78 – 80 . 
+Jalalvand, A., Demuynck, K., Neve, W. D., & Martens, J.-P. (2018). On the application of 
+reservoir computing networks for noisy image recognition. Neurocomputing, 277 , 
+237 – 248 . 
+Kim, K.-J., & Lee, W. B. (2004). Stock market prediction using artificial neural network 
+with optimal feature transformation. Neural Computing & Applications, 13 , 255 – 260 . 
+Kim, H. Y., & Won, C. H. (2018). Forecasting the volatility of stock price index: A hybrid 
+model integrating lstm with multiple garch-type models. Expert Systems With 
+Applications, 103 , 25 – 37 . 
+LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. Nature, 521 , 436 – 444 . 
+Lee, S. W., & Kim, H. Y. (2020). Stock market forecasting with super-high dimensional 
+time-series data using convlstm, trend sampling, and specialized data augmentation. 
+Expert Systems With Applications, 161 , 113704 . 
+Li, Y., Bu, H., Li, J., & Wu, J. (2020). The role of text-extracted investor sentiment in 
+chinese stock price prediction with the enhancement of deep learning. International 
+Journal of Forecasting, 36 , 1541 – 1562 . 
+Lin, X., Yang, Z., & Song, Y. (2009). Short-term stock price prediction based on echo state 
+networks. Expert Systems With Applications, 36 , 7313 – 7317 . 
+Liu, Y., Gong, C., Yang, L., & Chen, Y. (2020). Dstp-rnn: A dual-stage two-phase 
+attention-based recurrent neural network for long-term and multivariate time series 
+prediction. Expert Systems With Applications, 143 , 113082 . 
+Long, J., Chen, Z., He, W., Wu, T., & Ren, J. (2020). An integrated framework of deep 
+learning and knowledge graph for prediction of stock price trend: An application in 
+chinese stock exchange market. Applied Soft Computing, 91 , 106205 . 
+Luko ˇsevi ˇcius, M., & Jaeger, H. (2009). Reservoir computing approaches to recurrent 
+neural network training. Computer Science Review, 3 , 127 – 149 . 
+Luko ˇsevi ˇcius, M., Jaeger, H., & Schrauwen, B. (2012). Reservoir computing trends. 
+Künstliche Intelligenz, 26 , 365 – 371 . 
+Maass, W., Natschl ¨ager, T., & Markram, H. (2002). Real-time computing without stable 
+states: A new framework for neural comput. based on perturbations. Neural 
+Computation, 14 , 2531 – 2560 . 
+Nelson, D. M. Q., Pereira, A. C. M., & de Oliveira, R. A. (2017). Stock market ’ s price 
+movement prediction with lstm neural network. In International joint conference on 
+neural networks (pp. 1419 – 1426) . 
+Niu, T., Wang, J., Lu, H., Yang, W., & Du, P. (2020). Developing a deep learning 
+framework with two-stage feature selection for multivariate financial time series 
+forecasting. Expert Systems With Applications, 148 , 113237 . 
+Orimoloye, L. O., Sung, M.-C., Ma, T., & Johnson, J. E. V. (2020). Comparing the 
+effectiveness of deep feedforward neural networks and shallow architectures for 
+predicting stock price indices. Expert Systems With Applications, 139 , 112828 . 
+Patel, J., Shah, S., Thakkar, P., & Kotecha, K. (2015a). Predicting stock and stock price 
+index movement using trend deterministic data preparation and machine learning 
+techniques. Expert Systems With Applications, 42 , 259 – 268 . 
+Patel, J., Shah, S., Thakkar, P., & Kotecha, K.. Predicting stock market index using fusion 
+of machine learning techniques. Expert Systems With Applications, 42 , 2162 – 2172 . 
+Pauwels, J., der Sande, G. V., Bouwens, A., Haelterman, M., & Massar, S. (2018). 
+Towards high-performance spatially parallel optical reservoir computing. In M. 
+Sciamanna, & P. Bienstman (Eds.), Neuro-inspired Photonic Comput. (pp. 7 – 12). 
+International Society for Optics and Photonics SPIE. Vol. 10689. 
+Qian, B., & Rasheed, K. (2007). Stock market prediction with multiple classifiers. Applied 
+Intelligence, 26 , 25 – 33 . 
+Qin, Y., Song, D., Chen, H., Cheng, W., Jiang, G., & Cottrell, G. W. (2017). A dual-stage 
+attention-based recurrent neural network for time series prediction. In International 
+joint conference on artificial intelligence (pp. 2627 – 2633) . 
+Rather, A. M., Agarwal, A., & Sastry, V. (2015). Recurrent neural network and a hybrid 
+model for prediction of stock returns. Expert Systems With Applications, 42 , 
+3234 – 3241 . 
+Rezaei, H., Faaljou, H., & Mansourfar, G. (2020). Stock price prediction using deep 
+learning and frequency decomposition. Expert Systems With Applications (p. 114332). 
+W.-J. Wang et al.                                                                                                                                                                                                                               
+
+[PÁGINA PDF 14]
+Expert Systems With Applications 178 (2021) 115022
+14
+Rojas, I., Valenzuela, O., Rojas, F., Guillen, A., Herrera, L., Pomares, H., Marquez, L., & 
+Pasadas, M. (2008). Soft-computing techniques and arma model for time series 
+prediction. Neurocomputing, 71 , 519 – 537 . 
+Rounaghi, M. M., & Zadeh, F. N. (2016). Investigation of market efficiency and financial 
+stability between s & p 500 and london stock exchange: Monthly and yearly 
+forecasting of time series stock returns using arma model. Physica A, 456 , 10 – 21 . 
+Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by 
+back-propagating errors. Nature, 323 , 533 – 536 . 
+Schrauwen, B., Verstraeten, D., & Campenhout, J. V. (2007). An overview of reservoir 
+computing: Theory, applications and implementations. In Eur. symp. artif. neural 
+netw. (pp. 471 – 482) . 
+Selvin, S., Vinayakumar, R., Gopalakrishnan, E. A., Menon, V. K., & Soman, K. P. (2017). 
+Stock price prediction using lstm, rnn and cnn-sliding window model. In International 
+conference on advances in computing, communications and informatics (pp. 1643 – 1647) . 
+Sheng, C., Zhao, J., Liu, Y., & Wang, W. (2012). Prediction for noisy nonlinear time series 
+by echo state network based on dual estimation. Neurocomputing, 82 , 186 – 195 . 
+Silver, D., Huang, A., Maddison, C. J., Guez, A., Sifre, L., van den Driessche, G., 
+Schrittwieser, J., Antonoglou, I., Panneershelvam, V., Lanctot, M., Dieleman, S., 
+Grewe, D., Nham, J., Kalchbrenner, N., Sutskever, I., Lillicrap, T., Leach, M., 
+Kavukcuoglu, K., Graepel, T., & Hassabis, D. (2016). Mastering the game of go with 
+deep neural network and tree search. Nature, 529 , 484 . 
+Tanaka, G., Yamane, T., H ´eroux, J. B., Nakane, R., Kanazawa, N., Takeda, S., Numata, H., 
+Nakano, D., & Hirose, A. (2019). Recent advances in physical reservoir computing: A 
+review. Neural Networks, 115 , 100 – 123 . 
+Trafalis, T. B., & Ince, H. (2000). Support vector machine for regression and applications 
+to financial forecasting. In IEEE-INNS-ENNS international joint conference on neural 
+networks. neural computing: New challenges and perspectives for the new millennium (pp. 
+348 – 353). Vol. 6. 
+Verstraeten, D., Schrauwen, B., D ’ Haene, M., & Stroobandt, D. (2007). An experimental 
+unification of reservoir computing methods. Neural Networks, 20 , 391 – 403 . 
+Watts, D. J., & Strogatz, S. H. (1998). Collective dynamics of ‘small-world ’ networks. 
+Nature, 393 , 440 – 442 . 
+Weng, B., Lu, L., Wang, X., Megahed, F. M., & Martinez, W. (2018). Predicting short-term 
+stock prices using ensemble methods and online data sources. Expert Systems With 
+Applications, 112 , 258 – 273 . 
+Wyffels, F., & Schrauwen, B. (2010). A comparative study of reservoir computing 
+strategies for monthly time series prediction. Neurocomputing, 73 , 1958 – 1964 . 
+Yu, P., & Yan, X. (2020). Stock price prediction based on deep neural networks. Neural 
+Computing & Applications, 32 , 1609 – 1628 . 
+Zhang, J., Cui, S., Xu, Y., Li, Q., & Li, T. (2018). A novel data-driven stock price trend 
+prediction system. Expert Systems With Applications, 97 , 60 – 69 . 
+Zhang, L., Aggarwal, C., & Qi, G.-J. (2017). Stock price prediction via discovering multi- 
+frequency trading patterns. In ACM SIGKDD international conference on knowledge 
+discovery and data mining KDD ’ 17 (pp. 2141 – 2149). 
+Zhang, Y., & Wu, L. (2009). Stock market prediction of s & p 500 via combination of 
+improved bco approach and bp neural network. Expert Systems With Applications, 36 , 
+8849 – 8854 . 
+Zhang, Y., Yan, B., & Aasma, M. (2020). A novel deep learning framework: Prediction 
+and analysis of financial time series using ceemd and lstm. Expert Systems With 
+Applications, 159 , 113609 . 
+Zhou, F., min Zhou, H., Yang, Z., & Yang, L. (2019). Emd2fnn: A strategy combining 
+empirical mode decomposition and factorization machine based neural network for 
+stock market trend prediction. Expert Systems With Applications, 115 , 136 – 151. 
+W.-J. Wang et al.                                                                                                                                                                                                                               

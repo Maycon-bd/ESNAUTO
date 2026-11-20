@@ -1,0 +1,353 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_examinado": "4d8ad77d6266568f21d1593e1026c4f6a567c439749daafe44b4e6a6ed49efad",
+  "fontes_lidas_integralmente": [
+    {
+      "id": "D09",
+      "arquivo": "Artigos citados\\Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+      "sha256": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48",
+      "paginas": 15,
+      "caracteres_extraidos": 40619,
+      "estado_leitura": "leitura_integral_com_evidencias_visuais",
+      "log_leitura": [
+        {
+          "registro": "leituras_dewick_nelson_soltani_lote8.json",
+          "metodo": "Texto integral das 15 páginas lido em blocos 1–5,6–10,11–15; sete páginas abertas para conferir método, tabela e figuras.",
+          "paginas_visuais_abertas": [
+            1,
+            5,
+            7,
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D20",
+      "arquivo": "Artigos citados\\Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+      "sha256": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+      "paginas": 25,
+      "caracteres_extraidos": 0,
+      "estado_leitura": "leitura_integral_com_evidencias_visuais",
+      "log_leitura": [
+        {
+          "registro": "leituras_dewick_nelson_soltani_lote8.json",
+          "metodo": "PDF sem texto extraível: todas as 25 páginas abertas e lidas visualmente, em blocos 1–5,6–10,11–15,16–20,21–25. Inclui capa JSTOR, artigo347–370 e apêndices/provas.",
+          "paginas_visuais_abertas": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D24",
+      "arquivo": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "paginas": 19,
+      "caracteres_extraidos": 58466,
+      "estado_leitura": "leitura_integral_com_evidencias_visuais",
+      "log_leitura": [
+        {
+          "registro": "leituras_dewick_nelson_soltani_lote8.json",
+          "metodo": "Preprint v1 lido integralmente em blocos1–6,7–10,11–15,16–19; nove páginas abertas para capa, seleção, técnicas, parâmetros, benchmarks e conclusão.",
+          "paginas_visuais_abertas": [
+            1,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ]
+    }
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D09",
+      "arquivo_pdf": "Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+      "sha256_pdf": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48",
+      "tipo": "modelagem_series_estatistica",
+      "dimensao": "P1",
+      "codigo": "-",
+      "localizador": "PDF 9–10, seção 4",
+      "evidencia_e_limite": "Distribuições dos dados e modelos Box–Jenkins/GBM/Tsallis; não pesos ESN.",
+      "escopo_leitura": "Texto integral das 15 páginas lido em blocos 1–5,6–10,11–15; sete páginas abertas para conferir método, tabela e figuras.",
+      "unidade": "U0341"
+    },
+    {
+      "id": "D09",
+      "arquivo_pdf": "Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+      "sha256_pdf": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48",
+      "tipo": "modelagem_series_estatistica",
+      "dimensao": "P2",
+      "codigo": "-",
+      "localizador": "PDF 9–10, seção 4",
+      "evidencia_e_limite": "Modelagem/seleção estatística de séries, não hiperparâmetros ESN.",
+      "escopo_leitura": "Texto integral das 15 páginas lido em blocos 1–5,6–10,11–15; sete páginas abertas para conferir método, tabela e figuras.",
+      "unidade": "U0342"
+    },
+    {
+      "id": "D09",
+      "arquivo_pdf": "Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+      "sha256_pdf": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48",
+      "tipo": "modelagem_series_estatistica",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 9, seção 4.1",
+      "evidencia_e_limite": "Log-diferenciação para estabilizar o conjunto de preços; modela a distribuição resultante.",
+      "escopo_leitura": "Texto integral das 15 páginas lido em blocos 1–5,6–10,11–15; sete páginas abertas para conferir método, tabela e figuras.",
+      "unidade": "U0343"
+    },
+    {
+      "id": "D09",
+      "arquivo_pdf": "Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+      "sha256_pdf": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48",
+      "tipo": "modelagem_series_estatistica",
+      "dimensao": "P4",
+      "codigo": "-",
+      "localizador": "PDF 10, Tabela 1",
+      "evidencia_e_limite": "Compara Log-diff., ARIMA, variantes GARCH, GBM e Tsallis, não arquiteturas LSTM/GRU/Transformer.",
+      "escopo_leitura": "Texto integral das 15 páginas lido em blocos 1–5,6–10,11–15; sete páginas abertas para conferir método, tabela e figuras.",
+      "unidade": "U0344"
+    },
+    {
+      "id": "D09",
+      "arquivo_pdf": "Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+      "sha256_pdf": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48",
+      "tipo": "modelagem_series_estatistica",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 9, seção 4",
+      "evidencia_e_limite": "Preços de contratos futuros de emissões de carbono entre 01/05/2012 e 01/05/2022.",
+      "escopo_leitura": "Texto integral das 15 páginas lido em blocos 1–5,6–10,11–15; sete páginas abertas para conferir método, tabela e figuras.",
+      "unidade": "U0345"
+    },
+    {
+      "id": "D20",
+      "arquivo_pdf": "Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+      "sha256_pdf": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+      "tipo": "modelagem_volatilidade",
+      "dimensao": "P1",
+      "codigo": "-",
+      "localizador": "PDF 7–8 e 11",
+      "evidencia_e_limite": "GED para inovações de modelo de heterocedasticidade; não pesos ESN.",
+      "escopo_leitura": "PDF sem texto extraível: todas as 25 páginas abertas e lidas visualmente, em blocos 1–5,6–10,11–15,16–20,21–25. Inclui capa JSTOR, artigo347–370 e apêndices/provas.",
+      "unidade": "U0407"
+    },
+    {
+      "id": "D20",
+      "arquivo_pdf": "Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+      "sha256_pdf": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+      "tipo": "modelagem_volatilidade",
+      "dimensao": "P2",
+      "codigo": "-",
+      "localizador": "PDF 11, impressa 356",
+      "evidencia_e_limite": "Critério Schwarz para ordem ARMA e máxima verossimilhança, não hiperparâmetros ESN.",
+      "escopo_leitura": "PDF sem texto extraível: todas as 25 páginas abertas e lidas visualmente, em blocos 1–5,6–10,11–15,16–20,21–25. Inclui capa JSTOR, artigo347–370 e apêndices/provas.",
+      "unidade": "U0408"
+    },
+    {
+      "id": "D20",
+      "arquivo_pdf": "Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+      "sha256_pdf": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+      "tipo": "modelagem_volatilidade",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 11, impressa 356 e nota 12",
+      "evidencia_e_limite": "Usa retornos logarítmicos, extrai Treasury bills mensais e aproxima taxa diária sem risco para calcular excessos de retorno.",
+      "escopo_leitura": "PDF sem texto extraível: todas as 25 páginas abertas e lidas visualmente, em blocos 1–5,6–10,11–15,16–20,21–25. Inclui capa JSTOR, artigo347–370 e apêndices/provas.",
+      "unidade": "U0409"
+    },
+    {
+      "id": "D20",
+      "arquivo_pdf": "Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+      "sha256_pdf": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+      "tipo": "modelagem_volatilidade",
+      "dimensao": "P4",
+      "codigo": "-",
+      "localizador": "PDF 11 e 13–15",
+      "evidencia_e_limite": "Modelagem ARCH/ARMA e análise de estimativas; não arquiteturas neurais LSTM/GRU/Transformer.",
+      "escopo_leitura": "PDF sem texto extraível: todas as 25 páginas abertas e lidas visualmente, em blocos 1–5,6–10,11–15,16–20,21–25. Inclui capa JSTOR, artigo347–370 e apêndices/provas.",
+      "unidade": "U0410"
+    },
+    {
+      "id": "D20",
+      "arquivo_pdf": "Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+      "sha256_pdf": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+      "tipo": "modelagem_volatilidade",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 11, impressa 356; PDF 15, Figura 3",
+      "evidencia_e_limite": "Índice de mercado CRSP ponderado por valor, retornos diários julho/1962 a dezembro/1987.",
+      "escopo_leitura": "PDF sem texto extraível: todas as 25 páginas abertas e lidas visualmente, em blocos 1–5,6–10,11–15,16–20,21–25. Inclui capa JSTOR, artigo347–370 e apêndices/provas.",
+      "unidade": "U0411"
+    },
+    {
+      "id": "D24",
+      "arquivo_pdf": "Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "tipo": "revisao_ESN",
+      "dimensao": "P1",
+      "codigo": "?",
+      "localizador": "PDF 2–3 e 10–11, definição e tabela 6",
+      "evidencia_e_limite": "Pesos aleatórios e matriz binária de conectividade não especificam a lei probabilística de Win/W; conectividade e distribuição de elementos são objetos distintos.",
+      "escopo_leitura": "Preprint v1 lido integralmente em blocos1–6,7–10,11–15,16–19; nove páginas abertas para capa, seleção, técnicas, parâmetros, benchmarks e conclusão.",
+      "unidade": "U0431"
+    },
+    {
+      "id": "D24",
+      "arquivo_pdf": "Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "tipo": "revisao_ESN",
+      "dimensao": "P2",
+      "codigo": "S",
+      "localizador": "PDF 8 e 11–13",
+      "evidencia_e_limite": "Revisa PSO, AG e outras técnicas e parâmetros; evidência secundária, frequência não é ranking de eficácia.",
+      "escopo_leitura": "Preprint v1 lido integralmente em blocos1–6,7–10,11–15,16–19; nove páginas abertas para capa, seleção, técnicas, parâmetros, benchmarks e conclusão.",
+      "unidade": "U0432"
+    },
+    {
+      "id": "D24",
+      "arquivo_pdf": "Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "tipo": "revisao_ESN",
+      "dimensao": "P3",
+      "codigo": "?",
+      "localizador": "PDF 11–12, tabela 6 e benchmarks",
+      "evidencia_e_limite": "Input scaling é tratado como parâmetro da rede; a Tabela5/PDF9lista Seasonal Adjustment Method e remete aSP8, mas não descreve a operação concreta aplicada à série. Não inferir pré-processamento apenas pelo rótulo/título bibliográfico. Mantido? no escopo integral.",
+      "escopo_leitura": "Preprint v1 lido integralmente em blocos1–6,7–10,11–15,16–19; nove páginas abertas para capa, seleção, técnicas, parâmetros, benchmarks e conclusão.",
+      "unidade": "U0433"
+    },
+    {
+      "id": "D24",
+      "arquivo_pdf": "Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "tipo": "revisao_ESN",
+      "dimensao": "P4",
+      "codigo": "?",
+      "localizador": "PDF 8–12, síntese e benchmarks",
+      "evidencia_e_limite": "Contagens de técnicas de otimização e desempenho relatado genericamente não constituem comparação quantitativa identificável com LSTM/GRU/Transformer na mesma tarefa.",
+      "escopo_leitura": "Preprint v1 lido integralmente em blocos1–6,7–10,11–15,16–19; nove páginas abertas para capa, seleção, técnicas, parâmetros, benchmarks e conclusão.",
+      "unidade": "U0434"
+    },
+    {
+      "id": "D24",
+      "arquivo_pdf": "Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "tipo": "revisao_ESN",
+      "dimensao": "P5",
+      "codigo": "?",
+      "localizador": "PDF 12, figura 6 e descrição de datasets; figura conferida visualmente",
+      "evidencia_e_limite": "A figura e o texto identificam benchmarks sintéticos e domínios físicos, incluindo NARMA, Mackey-Glass, Lorenz, laser e turbofan. Não identificam ativo financeiro e mercado vinculados à análise nesse escopo.",
+      "escopo_leitura": "Preprint v1 lido integralmente em blocos1–6,7–10,11–15,16–19; nove páginas abertas para capa, seleção, técnicas, parâmetros, benchmarks e conclusão.",
+      "unidade": "U0435"
+    }
+  ],
+  "n_celulas_reexaminadas": 15,
+  "n_codigos_alterados": 0,
+  "unidades_conferidas_sem_edicao": [
+    {
+      "unidade": "U0223",
+      "diagnostico": "condizente_com_delimitacao",
+      "fontes": [
+        "D20"
+      ],
+      "localizador": "PDF7–8(p352–353),PDF15–16(p360–361)",
+      "evidencia": "GED acomoda caudas diferentes; aplicação CRSP com forma estimada~1,58 inferior a2. A monografia usa ocorrência de caudas como motivação e distingue dados de pesos ESN, sem transportar efeito causal."
+    },
+    {
+      "unidade": "U0224",
+      "diagnostico": "condizente",
+      "fontes": [
+        "D20"
+      ],
+      "localizador": "PDF5–8(p350–353),PDF11–16(p356–361)",
+      "evidencia": "Modelo exponencial ARCH/EGARCH, GED padronizada,nu2Normal,nu<2mais pesada,nu>2mais leve. A própria fonte atribui antecedentes GED aHarvey1981/BoxeTiao1973; o TCC não alega invenção absoluta em1991."
+    },
+    {
+      "unidade": "U0219",
+      "diagnostico": "condizente_com_escopo_documental",
+      "fontes": [
+        "D24"
+      ],
+      "localizador": "PDF2,6–9,11–14",
+      "evidencia": "74é a quantidade declarada pelos autores; Tabela5associaPSO16eAG10trabalhos. A monografia relata a versão preliminar, distingue frequência de eficácia e não reivindica lacuna financeira a partir da revisão. Não é auditoria independente dos74trabalhos."
+    },
+    {
+      "unidade": "U0228",
+      "diagnostico": "condizente_com_delimitacao",
+      "fontes": [
+        "D09",
+        "D24"
+      ],
+      "localizador": "D09PDF1–4,9–14;D24PDF8–14",
+      "evidencia": "Dewick discute distribuições financeiras/modelagem; Soltani revisa otimização ESN. Ambas as atribuições foram conferidas, sem inferência de que a lei de pesos deva reproduzir retornos."
+    }
+  ],
+  "unidade_com_conferencia_parcial": {
+    "unidade": "U0257",
+    "conferido": "Sharma e Soltani conferidos; permanecem as atribuições específicas de AG/Deng e SSA/Tian, com conferências próprias."
+  },
+  "alteracoes_word": [],
+  "metadados": [
+    {
+      "referencia": "R16",
+      "diagnostico": "Título,autor,2022,volume15,artigo461 e DOI no PDF; fascículo10e data13/10/2022confirmados no depósito Crossref.",
+      "arquivo": "fontes_suplementares/Dewick_2022_metadados_Crossref.json",
+      "sha256": "0c7fa3436570c5da957bfe7c3783719dce6f37c6e59a3207ffc83583ad699d3d",
+      "url": "https://api.crossref.org/works/10.3390/jrfm15100461"
+    },
+    {
+      "referencia": "R35",
+      "diagnostico": "CapaJSTOR e primeira/última página do artigo confirmam autor,título,Econometrica59(2),março1991,347–370. Copyright2002da capa de reprodução não é ano de publicação."
+    },
+    {
+      "referencia": "R41",
+      "diagnostico": "CapaResearchSquare confirma três autores,título,preprintv1,4agosto2022,DOI10.21203/rs.3.rs-1909702/v1. Não se presume edição posterior."
+    }
+  ],
+  "ressalvas_fontes": [
+    "Dewick contém notações e formulações problemáticas: página5troca referências aAR/ARCHna descrição média/variância e usa d<0ao falar ausência de diferenças; página7menciona quadrado negativo em indicador; página12chama cauda inferior fina apesar dos extremos noQQplot. Nenhuma dessas fórmulas ou caracterizações foi transcrita na afirmação examinada do TCC.",
+    "Dewick compara ajuste de distribuições e trajetórias, selecionando uma simulação GBMentre518; não valida inicialização ESN nem superioridade preditiva fora da amostra. A distinção está preservada no texto.",
+    "Nelson utiliza retornos logarítmicos CRSP1962–1987 e aproximação de taxa sem risco; não são preços PETR4 ou resultados do ESNAUTO.",
+    "Nelson reconhece limitações da GED padronizada para os maiores extremos,notadamente1987, e condições assintóticas não demonstradas no escopo da época. Não transformar flexibilidade em ajuste universal ou garantia de otimização.",
+    "Soltani declara74estudos,mas traz92/97em seleção intermediária e total75emTabela4,que incluiIE9em duas categorias. Registrar sem impor que75signifique75artigos distintos; não se auditou o corpus original74.",
+    "Soltani traz simplificações sobre ESN como feedforward,garantia de estado de eco por raio<1e superioridade ampla de bioinspirados. O TCC não transporta essas generalizações; a contagem daTabela5não foi tratada como ranking de eficácia.",
+    "Não foram reproduzidos cálculos,experimentações ou demonstrações completas das publicações. Leitura integral é conferência documental para as afirmações/decisões registradas, não certificação da validade de todo o conteúdo científico."
+  ],
+  "estado": "conferencia_documental_concluida_neste_lote_sem_edicao_word",
+  "checkpoint_word_preservado": "checkpoint_lote7.json",
+  "limites_meta": "Demais fontes/afirmações,similaridade e Guia permanecem em andamento."
+}

@@ -1,0 +1,503 @@
+
+[PÁGINA PDF 1]
+Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Contents lists available at ScienceDirect 
+Commun Nonlinear Sci Numer Simulat 
+journal homepage: www.elsevier.com/locate/cnsns 
+Research paper 
+Application of ESN prediction model based on compressed 
+sensing in stock market 
+Hao Zhang a , Mingwen Zheng a , ∗, Yanping Zhang a , Xiao Yu b , Wenchao Li a , 
+Hui Gao a 
+a School of Mathematics and Statistics, Shandong University of Technology, Zibo 2550 0 0, China 
+b School of Computer Science and Technology, Shandong University of Technology, Zibo 2550 0 0, China 
+a r t i c l e i n f o 
+Article history: 
+Received 29 December 2020 
+Revised 6 March 2021 
+Accepted 19 April 2021 
+Available online 27 April 2021 
+Keywords: 
+Compressed sensing 
+ESN 
+Reserve pool 
+Time series 
+a b s t r a c t 
+Echo State Network (ESN) is often used for time series prediction and chaotic series pre- 
+diction . But in the training process of ESN model, the reserve pool will involve a large 
+number of calculations, so the reserve pool may have node redundancy, resulting in inac- 
+curate training model. It is very important to select the active nodes in the reserve pool 
+because the predicted nodes are very few compared with all the nodes in the reserve pool. 
+Based on the characteristics of the original vector, compressed sensing can reduce the di- 
+mension of the vector so as to obtain the activated nodes. In this paper, the ESN model is 
+added with compressed sensing, which simpliﬁes the reserve pool part of the ESN model. 
+The simulation results show that our method can not only reduce the calculation amount 
+of training effectively, but also improve the accuracy. 
+©2 0 2 1 Elsevier B.V. All rights reserved. 
+1. Introduction 
+ESN is a new recursive neural network proposed by Jaeger in 2001 [1] , which can avoid the slow convergence speed, high 
+computational complexity and instability of the recursive neural network learning algorithm [2,3] . So ESN becomes a hot 
+issue in academic community, and is widely used in various ﬁelds, including dynamic pattern classiﬁcation, robot control, 
+object tracking and moving target detection, event monitoring, etc. [4,5] , especially on the time series prediction problem, 
+made outstanding contributions. And the ESN in time series prediction and chaotic prediction have done a lot of work, but 
+because of the reserve pool of ESN model involves a large amount of calculation, the ESN training and prediction for a long 
+time [6] . ESN also has many algorithms, such as Pseudo inverse method, Wiener-Hopf method, Ridge Regression (Tikhonov 
+regularization), etc [7] . 
+The compressed sensing (CS) proposed by Tao can obtain the discrete samples of the signal under the condition that 
+the sampling rate is much lower than Nyquist sampling rate, so as to ensure the signal reconstruction without distortion 
+[8] . The key idea of compressed sensing theory mainly includes two points. The ﬁrst is the sparse structure of the signal. 
+The traditional Shannon signal representation method only uses the least priori information of sampled signals, namely 
+the bandwidth of signals. However, many of the signals that attract much attention in real life have some structural char- 
+acteristics of their own [9–11] . Compared with the DOF(Degree of Freedom) of bandwidth information, these structural 
+∗ Corresponding author. 
+E-mail address: sdlgzmw_11@163.com (M. Zheng). 
+https://doi.org/10.1016/j.cnsns.2021.105857 
+1007-5704/© 2021 Elsevier B.V. All rights reserved. 
+
+[PÁGINA PDF 2]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Fig. 1. Where u i is the input layer node, x j is the reserve layer node, and y k is the output layer node( i = 1 , 2 , . . . , K; j = 1 , 2 , . . . , N; k = 1 , 2 , . . . , L ). 
+characteristics are determined by a smaller part of the DOF of the signal. The other is the irrelevant properties. The use- 
+ful information of sparse signals can be obtained by a non-adaptive sampling method to compress the signals into smaller 
+sample data. Because compression has stability (acquisition and reconstruction processes are both numerically stable); gen- 
+erality (the same measurement projection can be used for different signal acquisition); asymmetry (encoding (sampling) is 
+simple, most of the calculation is decoding (reconstruction)); democracy (each measurement carries the same information, 
+which is robust to the loss at the time of measurement). Therefore, the trained ESN reserve pool is reduced in dimension 
+by using compressed sensing to retain only the nodes with the highest value (feature nodes), that is, the activated nodes 
+are screened out and the activated nodes are used for prediction [12,13] . Since only active nodes are used in the prediction 
+process, as long as the model is trained well, the prediction speed will be greatly accelerated. Moreover, the interference 
+of other inactive nodes is relatively small, which can make the error of the whole model smaller, and the mean value and 
+variance value of the error will also be reduced [14] . 
+In this paper, an ESN prediction model based on compressed sensing is proposed to get better prediction results with 
+fewer nodes. The main contributions of this paper are as follows: 
+1. A new algorithm is proposed to optimize the ESN reserve pool using compressed sensing to improve the prediction 
+speed and accuracy. 
+2. Analyze the predicted data and compare the advantages and disadvantages of the original ESN model and the ESN model 
+with CS added. 
+3. Including the use of conventional chaotic systems for simulation veriﬁcation, we also choose more complex stock data 
+to verify the effectiveness and accuracy of the proposed model. The simulation results are satisfactory. 
+The rest of this article is as follows. Section 2 describes ESN model and compressed sensing model. Section 3 will intro- 
+duce the new ESN model with compression sensing, and give its ﬂow chart and algorithm. Section 4 will give two simula- 
+tions, one is the prediction of Logistic chaotic time series, the other is the prediction of 200 stocks. Finally, we provide a 
+summary of the whole work. 
+2. Preliminary 
+2.1. Echo state network 
+2.1.1. The structure of the ESN 
+ESN consists of three parts: 1) an input layer; 2) a reserve pool; 3) an output layer. Where, W in connects the input layer 
+and the reserve layer, W reserve layer internal connection, W out connects the reserve layer and the output layer. Fig. 1 shows 
+the basic structure of ESN. W in , W and the reserve pool are initialized without training. We only need to train the connection 
+between the reserve layer and the output layer W out . Since nodes generated by dynamic reservoirs have short-term memory 
+capacity, we can map data from the lower dimension to the higher dimension, and then reduce the higher dimension data 
+to the speciﬁed dimension by W out , so as to realize the prediction process. 
+Since the ESN prediction model needs to raise the dimension through the reserve pool and reducing the dimension, we 
+need to activate the function at both the reserve pool and the output layer, and the updated rules are as follows: 
+x (n +1) = f(W in · u (n +1) + W · x (n ) ) 
+y (n +1) = f out (W out · x (n +1) ) (1) 
+2 
+
+[PÁGINA PDF 3]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Table 1 
+Commonly used activation functions. 
+Function Expression 
+tanh f(x ) = tanh (x ) 
+identi f y f(x ) = x 
+so f tmax f(x ) = e x ∑ 
+i v (i ) 
+sigmoid f (x ) = 1 
+1+ e − x 
+in v erse sigmoid ln ( 1 
+x − 1) 
+where u = (u 1 , u 2 , . . . , u K ) T ; x = (x 1 , x 2 , . . . , x N ) T and y = (y 1 , y 2 , . . . , y L ) T ; in the number ﬁeld P , W in ∈ P N×K is the connection 
+matrix between the input layer and the reserve pool; W ∈ P N×N is the self-connecting matrix of the reserve pool and W out ∈ 
+P L ×N is the connection matrix between the reserve pool and the output layer; f is the activation function of the reserve 
+pool and f out is the activation function of the output layer. Commonly used activation functions are shown in Table 1 . 
+In order for the ESN model to have an echo state nature, we need to ensure that the spectral radius of the connection 
+weight matrix inside the reserve pool is less than 1. In other words: λmax = max { abs (eig(W )) } , only when the λmax < 1 , 
+ESN has an echo state attribute. To reduce the spectral radius to α: 
+1. Calculate the spectral radius α0 of W; 
+2. Normalize W by dividing by the spectral radius of W( W := W 
+α0 ); 
+3. Set the spectral radius of W to α ( W := α· W ). 
+2.1.2. The training of the ESN 
+Since the ESN prediction model’s parameter is an initialization parameter that does not need to be modiﬁed except for 
+the reserve pool and output layer connection matrix, we only need to train W out . Let’s say we have a total of training data, let 
+U = (u (1) , u (2) , . . . , u (t)) , X = (x (1) , x (2) , . . . , x (t)) , Y = (y (1) , y (2) , . . . , y (t)) , where u (i ) , x (i ) , y (i ) are the input layer data, 
+reserve pool data and output layer data of the i training set respectively. According to the deﬁnition above, we can set 
+X = S T · U, Y = D T · U. The common training method are as follows: 
+Pseudo inverse method 
+W out = (S † D ) T (2) 
+where S † is the pseudo inverse of S. 
+Wiener-Hopf method 
+W out = ((S T S) −1 S T D ) T (3) 
+Ridge regression(Tikhonov regularization) 
+W out = ((S T S + α2 I) −1 S T D ) T (4) 
+When completing the training of the ESN model and need to predict the data, we can get the prediction result only 
+according to the iteration Eq. (1) . Its ﬂowchart is shown in Fig. 2 . 
+2.2. Compressed sensing 
+2.2.1. The basic idea of compressed sensing 
+According to the Nyquist sampling theorem, in order for the sampled digital signal to retain all the information in the 
+original signal, the sampling frequency must be more than 2 times of the highest frequency in the signal. Compressed sens- 
+ing believes that if the signal is sparse, it can be reconstructed and restored by sampling points far below the requirements 
+of the sampling theorem. The key to the breakthrough is the sampling mode, and when we say “sampling frequency”, that 
+means sampling at equal intervals, which is what digital signals usually do, and that also obeys the Nyquist sampling theo- 
+rem. If random subsampling is adopted, then the frequency domain will no longer be extended with a ﬁxed period, but will 
+produce a large number of irrelevant disturbance values. The largest peaks are still faintly visible, and these interference 
+values are somewhat overwritten, which look like random noise and are actually caused by the non-zero energy leakage of 
+several original signals. This can be understood as the random sampling makes the spectrum no longer move in a neat way, 
+but move randomly in a small part. The frequency leakage is uniformly distributed in the whole frequency domain, so the 
+leakage value is relatively small, which makes the recovery possible. 
+The preconditions of compressed sensing are as follows: 1) The signal is sparse in the frequency domain. The signal 
+needs to be sparse in a transform domain, but usually the signal will not be completely sparse . In fact, as long as it 
+approximately meets the sparsity, in other words, most values tend to zero and only a small number of large non-zero 
+values, it can be considered as a compressible signal, and CS subsampling can be carried out on it. If it is not sparse in the 
+frequency domain, we can do discrete wavelet transform (DWT), discrete cosine transform (DCT) and so on to ﬁnd its sparse 
+transform. 2) Random subsampling. It has been pointed out above that in the case of random subsampling, the frequency 
+3 
+
+[PÁGINA PDF 4]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Fig. 2. The ﬂow chart of ESN. 
+Fig. 3. Compressed sensing ﬂow chart. 
+4 
+
+[PÁGINA PDF 5]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Fig. 4. The ESN model with CS. 
+Fig. 5. The ESN ﬂowchart of CS. 
+5 
+
+[PÁGINA PDF 6]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Fig. 6. Comparison between real data and ESN predicted data (part), where both (b) and (c) are part sub-ﬁgures of (a). 
+leakage is uniformly distributed in the whole frequency domain, so the leakage value is relatively small, which makes it 
+possible to recover. Fig. 3 gives the ﬂowchart of compressed sensing. 
+The Eqs. (5) and (6) can be expressed as follows. 
+y = /Phi1· x (5) 
+x = /Psi1· s (6) 
+Substitute the Eq. (6) into the Eq. (5) to get the Eq. (7) , 
+y = /Phi1/Psi1· s (7) 
+We let /Theta1= /Phi1/Psi1and obtain, 
+y = /Theta1· s (8) 
+The Eq. (8) is the mathematical representation of compressed sensing. Where s represents the signal, /Psi1represents the 
+sparse basis, x represents the sparse signal, /Phi1represents the observation matrix, y represents the observed value and /Theta1= 
+/Phi1/Psi1. 
+s is an unknown original signal vector with length N, /Phi1is the observation matrix, which corresponds to the subsampling 
+process. It is known that /Phi1projects the high-dimensional signal s to the low-dimensional vector. y = /Theta1· s is the observa- 
+tion value with length M, in other words, the result after subsampling, and it’s obviously known as well. Therefore, the 
+compressed sensing problem is to solve the underdetermined equations y = /Theta1· s to get the original signal s on the basis of 
+known measurement value y and /Theta1= /Phi1· /Psi1. However, the general signal s itself is not sparse and needs to be represented 
+sparsely on some sparse basis. Let x = /Psi1· s, /Psi1be the sparse basis matrix and x be the sparse signal. So the ﬁnal equation 
+becomes: y = /Phi1/Psi1· s, given y, /Phi1, /Psi1solve s . 
+6 
+
+[PÁGINA PDF 7]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Fig. 7. Error between real data and ESN prediction data, where both (b) and (c) are part sub-ﬁgures of (a). 
+To achieve signal recovery by using random subsampling, Tao and Cand `e s proposed in 2005 that the observation matrix 
+/Phi1should satisfy the condition of Restricted Isometry Property (RIP) [15] : 
+For ∀ c ∈ R | T | and constant δk ∈ (0 , 1) , if: 
+(1 − δk ) · ∥ c∥ 2 
+2 ≤ ∥ ¯/Phi1T · c∥ 2 
+2 ≤ (1 + δk ) · ∥ c∥ 2 
+2 (9) 
+was established, where T ⊂ { 1 , 2 , . . . , N} , | T | ≤ k, ¯/Phi1T is a submatrix whose size is K × | T | formed by the related columns 
+indicated by the index T in ¯/Phi1, then the matrix ¯/Phi1satisﬁes the Restricted Isometry Property. 
+Baraniuk proved that the equivalent condition of RIP is that the observation matrix and sparse representation basis are 
+not relevance [16] , in other words, y = /Phi1/Psi1· s in /Phi1and /Psi1are not correlated. Where the relevance is deﬁned as: u (/Phi1, /Psi1) = √ 
+n · max 
+1 ≤k, j≤n 
+| < /Phi1k , /Psi1j > | , The range of u is u (/Phi1, /Psi1) ∈ [1 , 
+√ 
+n ] , The smaller u is, the less /Phi1and /Psi1are related. 
+Tao and Cand `e s proved that an independent identically distributed Gaussian random measurement matrix can be a gen- 
+eralized compressed sensing measurement matrix. 
+2.2.2. Reconstruction of compressed sensing 
+If a signal is sparse in a transformation domain, then an observation matrix unrelated to the transformation basis can be 
+used to project the higher dimension obtained from the transformation to a lower dimension space, and then the original 
+signal can be reconstructed from the small number of projected values with high probability by solving an optimization 
+problem [17,18] . Reconstruction of CS is the method to solve underdetermined equations y = /Theta1· s . This is a zero norm (L 0 ) 
+minimization problem, and an NP complete problem (no quick solution problem), therefore tends to be converted to a norm 
+(L 1 ) minimization solution, or some approximate estimation algorithms are used [8,19,20] . 
+Orthogonal Matching Pursuit algorithm is one of the commonly used algorithms in CS reconstruction algorithm. Its main 
+ideas are as follows: 
+7 
+
+[PÁGINA PDF 8]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+1) Since the frequency non-zero value of the original signal still retains a large value in the frequency domain after 
+subsampling, the larger value can be detected by setting a threshold value. 
+2) Assuming that only these K values exist in the signal, the interference caused by these K values can be calculated. 
+3) A new non-zero value can be detected by subtracting these K non-zero values and the interference caused by these K 
+values from the original spectrum diagram, and then setting the threshold. 
+4) If there are more non-zero values in the original signal frequency domain, they can be solved by iteration. 
+Therefore, we can get the following Algorithm 1 . 
+Algorithm 1 Orthogonal Matching Pursuit. 
+Input: 
+Measurement Matrix, /Phi1; 
+Sparse Matrix, /Psi1; 
+Observed Signal, y ; 
+Output: 
+Original Signal, s ; 
+1: Let A be equal to the measurement matrix A = /Phi1; 
+2: Let b i be the i column data of A , where i = 1 , 2 , . . . ; 
+3: Standardize the b i , in other words, ˆ b i = b i 
+∥ b i ∥ , and each normalized sparse basis vector is formed into a new matrix 
+ˆ A = [ ˆ b 1 , ˆ b 2 , ...  ] ; 
+4: The residuals of the observations start out as the observations themselves, in other words, r = y ; 
+5: repeat 
+6: Calculate the correlation of each standardized sparse basis vector ˆ b i with the observed signal residual r, in other words, 
+w = ˆ A T · r; 
+7: Find the sparse basis vector with the highest correlation ˆ b sn , delete this vector from ˆ A , and add to the last column of 
+the matrix A new , in other words, A new = [ ˆ b s 1 , ˆ b s 2 , . . . , ˆ b sn ] ; 
+8: Calculate A new pseudo inverse and the product of y have L p = A † 
+new · y , get coeﬃcient vector X rec ∈ R N×1 according to L p , 
+where N is the length of the original signal, the value of the s 1 , s 2 , . . . , sn row of X rec is the value of the 1 , 2 , . . . , n of L p , 
+the remaining rows of X rec have values of 0; 
+9: Calculate the residual for the remainder r = y − A new · L p ; 
+10: until The value of all non-zero values of sparse signal x or residual r is small enough 
+11: X rec is the signal that is sparse, in other words, x = X rec . Calculated original signal s = /Psi1−1 · x ; 
+12: return s ; 
+3. ESN model with compressed sensing 
+The nodes of the reserve pool in ESN model are very many, so when it comes to the operation of the reserve pool, 
+both the operation speed and the accuracy of the operation will deﬁnitely be seriously affected. Because the reserve pool 
+node number directly affects how well the ESN model to predict nonlinear data, we can’t reduce the reserve pool of nodes 
+directly. Compressed sensing can extract node features, so you can use compressed sensing to reduce the number of nodes 
+in the reserve pool. Due to a small number of nodes contain all the features of the original node, which can be used to 
+describe the original node. In fact, this process is the recovery process of compressed sensing. The nodes extracted from 
+the ESN model can not only ensure the accuracy of the original model, but also enhance its robustness and speed up of its 
+prediction. 
+Only the connection matrix ( W out ) from the reserve pool to the output layer needs training in the ESN model. If the 
+nodes after feature extraction are used to train ESN model, which will improve the weight distribution of feature nodes 
+during the training process. This makes the model training process more stable. The ESN model with compressed sensing 
+(for short: CS-ESN model) can be represented as Fig. 4 . A compression layer was added to the original ESN model, where 
+the inverse process of compressed sensing is used. The characteristics of the original reserve pool node x were extracted 
+to obtain cx, and then cx was used to train the output layer connection matrix W out . The W out trained by this method has 
+stronger stability and faster prediction speed. 
+We assume that the reserve pool dimension of the original ESN model is N, and the reserve pool dimension after dimen- 
+sion reduction through compressed sensing is CN. In other words, we ﬁrst get the original reserve pool data x according to 
+compressed sensing and the sparse basis /Psi1, the measurement matrix /Phi1. Then, cx is obtained by compression of x using 
+compressed sensing. That’s the Eq. (10) . 
+cx = /Phi1/Psi1· x (10) 
+By compression sensing, W in ∈ P CN×K , W ∈ P C N×C N , W out ∈ P L ×CN . The iterative formula is Eq. (11) . 
+x (n +1) = f(W in · u (n +1) + W · x (n ) ) 
+8 
+
+[PÁGINA PDF 9]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Fig. 8. Comparison between real data and ESN prediction data with compressed sensing (part), where both (b) and (c) are part sub-ﬁgures of (a). 
+cx (n +1) = /Theta1· x (n +1) = /Phi1/Psi1· x (n +1) 
+y (n +1) = f out (W out · cx (n +1) ) (11) 
+According to the above formula, ﬂow chart 5 can be obtained. 
+4. Numerical experiments 
+4.1. Logistic chaotic sequence prediction 
+In this experiment, Logistic chaotic system was used. In order to ensure the chaotic characteristics of the obtained data, 
+the system was ﬁrst iterated for 10 3 times, and then 10 7 chaotic data were taken. Here, the Logistic parameter is selected 
+as: the u value is 3.58, the initial iteration value is 0.005, and then the data is scaled to the interval [0,1]. The 10 7 data 
+generated by the Logistic chaotic system were divided into 196,078 groups of data, 176,471 groups of training sets, 19,607 
+groups of test sets, and 5 groups of initialization data. We select the number of input nodes as 50, output nodes as 1, and 
+reserve pool nodes as 2048. The activation function of reserve pool node uses identify function, the learning rate is 0.85, and 
+the spectral radius is 0.25. The ESN model can be trained by Eq. (1) , ﬂow chart 2 and Algorithm 1 . The comparison diagram 
+between the real data and ESN prediction data is shown in Fig. 6 . The error between the real data and ESN prediction 
+data is shown in Fig. 7 , where the error calculation formula is ERROR = | ˆ y i − y i | , ˆ y i is predicted value, and y i is true value. 
+At the same time, MAE evaluation index is introduced as a comparison between the two models to predict the degree of 
+good or bad, where the MAE calculation formula is MAE = 1 
+n · ∑ n 
+i =1 | ˆ y i − y i | . The evaluation index is also adopted in the next 
+numerical simulation. 
+In order to test the quality of the ESN model with compressed sensing added, all parameters in the original CS-ESN 
+model remain unchanged, and only the nodes of the reserve pool are compressed, where the compression rate is 50%. Since 
+the data range itself is between [0,1], the sparse basis uses the identity matrix, and the measurement matrix uses part of 
+9 
+
+[PÁGINA PDF 10]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Fig. 9. Error between real data and ESN prediction data with compressed sensing added, where both (b) and (c) are part sub-ﬁgures of (a). 
+Table 2 
+A comparison diagram of real data and predicted data of chaotic model. 
+Model/Data Total sample error Test set error MAE of total sample 
+ESN 980.672523 98.179800 0.005001 
+CS-ESN 186.676942 18.830397 0.000952 
+Model/Data MAE of test set Total sample variance Test set variance 
+ESN 0.005007 0.000001 0.000001 
+CS-ESN 0.000960 0.000001 0.000001 
+Model/Data Samples with an error of 
+more than mean 
+Samples with an error of more than mean account for the total sample 
+ESN 116577 59.45440% 
+CS-ESN 78295 39.930538% 
+the Hadamard matrix. Since some nodes will exceed the range of [-1,1] after the reserve pool is compressed, it needs to 
+be standardized. The data scale between [-1,1], the processing method is: cx := cx/ ( max (cx ) − min (cx )) . By the compression 
+Eq. (10) and the iteration Eq. (11) , the ESN prediction model with CS added can be obtained. The model is trained to compare 
+the error between the real data and the predicted data. Fig. 8 shows the comparison between the real data and the CS-ESN 
+prediction data . Fig. 9 shows the two norms of the error between the real data and the CS-ESN prediction data. 
+By comparing the original ESN model with the CS-ESN model, it is obvious that the model with compressed sensing 
+is more stable, with smaller error and lower dispersion degree of prediction error (the variance of the prediction error is 
+smaller). The detailed data are shown in Table 2 . According to the original ESN error Fig. 7 and the CS-ESN error Fig. 9 , 
+the CS-ESN model is better than the original ESN model in both training samples and test samples in addition to the initial 
+sample. Table 2 shows that, 1) The total sample error value and test set error value of the CS-ESN model are better than the 
+original ESN model; 2) The total sample average prediction error and test set average prediction error of the CS-ESN model 
+10 
+
+[PÁGINA PDF 11]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Fig. 10. Comparison of real data and ESN prediction data, where both (b) and (c) are part sub-ﬁgures of (a). 
+are better than the original ESN model, and the accuracy is improved signiﬁcantly. From Table 2 , the MAE of total samples 
+is 0.0 050 01 in the ESN model, and the MAE of test set is 0.0 050 07 in the ESN model. The MAE of total sample is 0.0 0 0952 
+in the CS-ESN model, and the MAE of test set is 0.0 0 0960 in the CS-ESN model; 3) The total sample variance and test set 
+variance of the CS-ESN model are less than the original ESN model; 4) The number of samples with an error of more than 
+mean the CS-ESN model is much smaller than the original ESN model, and the proportion of samples with an error of more 
+than 0.003 in the total sample is also signiﬁcantly reduced. Therefore, the CS-ESN model is greatly improved both in the 
+range of error generation and in the stability of error. 
+Remark 1. By comparing the prediction result of ESN model 6 and CS-ESN model 8 , it can be seen that the true values and 
+predicted values of the CS-ESN model are basically equal, and the true value curve and predicted value curve of the CS-ESN 
+model basically coincide. There is a certain deviation between the true values and the predicted values of the ESN model, 
+and a certain distance between the true value curve and the predicted value curve of the ESN model can be observed. By 
+comparing the error ﬁgure of ESN model 7 , the error ﬁgure of CS-ESN model 9 and Table 2 , MAE value of ESN model is 
+0.0 050 07, and MAE value of CS-ESN model is 0.0 0 0960, which indicates that CS-ESN model has better precision on chaotic 
+data than ESN model. At the same time, the variance of prediction error of CS-ESN model and ESN model is basically the 
+same, both of which are 0.0 0 0 0 01. This means that CS-ESN model has the same strong robustness as ESN model on chaotic 
+data. 
+4.2. Stock prediction 
+This experiment selected the stock data of 200 stocks in the past 17 years (data sources: http://www.sse.com.cn/market/ 
+overview/ ), with a total of 828,799 data, and classiﬁed 16,250 sets of data, 14,620 sets of training sets, 1,625 sets of test sets, 
+and 5 sets of initialization data. In order to make the stock data more smooth and stable, the stock data is standardized. 
+11 
+
+[PÁGINA PDF 12]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Fig. 11. Error between real data and ESN prediction data, where both (b) and (c) are part sub-ﬁgures of (a). 
+Firstly, the Z-score method is used to normalize the data, that is, the processed data distribution is presented as a normal 
+distribution with a mean of 0 and a variance of 1. The rules of normalization are as follows: the data x 1 , x 2 , . . . , x n . 
+¯x = 
+1 
+n 
+·
+n ∑ 
+i =1 
+x i 
+s = 
+√ 
+1 
+n − 1 
+·
+n ∑ 
+i =1 
+(x i − ¯x ) 2 
+y i = 
+x i − ¯x 
+s 
+Then, min-max normalization processing is carried out on the data, that is, linear transformation is carried out on the 
+data to make it shrink to the interval of [0,1]. The rules of min-max normalization processing are as follows: the data 
+x 1 , x 2 , . . . , x n . 
+y i = 
+x i − min 
+1 ≤ j≤n 
+{ x j } 
+max 
+1 ≤ j≤n 
+{ x j } − min 
+1 ≤ j≤n 
+{ x j } 
+We select the number of input nodes as 50, output nodes as 1, and reserve pool nodes as 2048. The activation function 
+of reserve pool node uses identify function, the learning rate is 0.8, and the spectral radius is 0.75. The ESN model can be 
+trained by the Eq. (1) , ﬂow chart 2 and Algorithm 1 . Fig. 10 shows the comparison between real data and ESN prediction 
+data. Fig. 11 shows the two norms of error between real data and ESN prediction data. 
+12 
+
+[PÁGINA PDF 13]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Fig. 12. Comparison of real data and ESN prediction data with compressed sensing added, where both (b) and (c) are part sub-ﬁgures of (a). 
+In order to compare the degree of effect improvement between the CS-ESN model and the original ESN model, all pa- 
+rameters in the original ESN model remain unchanged and only the node of the reserve pool is compressed, where the 
+compression rate is 50%, the discrete wavelet basis is selected for the sparse basis, and part of the Hadamard matrix is 
+selected for the measurement matrix. Since some nodes may overﬂow after the reserve pool is compressed, all nodes in 
+the reserve pool are scaled down to between [-1, 1] in the same way as in the previous experiment. Through the compres- 
+sion Eq. (10) and the iterative Eq. (11) , the CS-ESN prediction model can be obtained, and the model can be trained, then 
+compare the error value between the real data and the predicted data. Fig. 12 shows the comparison between the real data 
+and the ESN prediction data with compressed sensing. Fig. 13 shows the two norms of error between the real data and the 
+CS-ESN prediction data. 
+At the same time, the total error value and the test set error value of the original ESN model and the CS-ESN model 
+can be obtained, where the total error value refers to the sum of the two norms of the training set and the test set error, 
+and the test set error value refers to the sum of the two norms of the test set error. The total error value of the original 
+ESN model is 66.564432, the test set error value is 4.991433, the MAE of total sample is 0.004096, the MAE of test set is 
+0.003072, the total sample variance is 0.0 0 0122, the test set variance is 0.0 0 0 016. The total error value of the CS-ESN model 
+is 45.667224, the total error value of the test set is 3.715955, the MAE of total sample is 0.002810, the MAE of test set is 
+0.002287, the total sample variance is 0.000058, and the variance of the test set is 0.000011. According to Table 3 , it is easy 
+to see that the CS-ESN model is signiﬁcantly better than the original ESN prediction model, and the stability of the CS-ESN 
+model is also better than the original ESN prediction model. 
+Remark 2. By comparing the forecast ﬁgures of ESN model 10 and CS-ESN model 12 , both ESN model and CS-ESN model 
+can predict the trend of stocks very well. However, according to the error ﬁgure of ESN model 11 and CS-ESN model 13 , it 
+can be seen that CS-ESN model is better than ESN model in predicting the accuracy of stock data except for some points. 
+According to the Table 3 , the MAE value of the CS-ESN model is 0.0025, while the MAE value of the ESN model is 0.0035, 
+which shows that the CS-ESN model has higher accuracy in stock data than the ESN model. Meanwhile, the prediction 
+13 
+
+[PÁGINA PDF 14]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+Fig. 13. Error between real data and ESN prediction data with compressed sensing added, where both (b) and (c) are part sub-ﬁgures of (a). 
+Table 3 
+A chart comparing real stock data with forecast data. 
+Model/Data Total sample error Test set error 
+ESN 66.564432 4.991433 
+CS-ESN 45.667224 3.715955 
+Model/Data MAE of total sample MAE of test set 
+ESN 0.004096 0.003072 
+CS-ESN 0.002810 0.002287 
+Model/Data Total sample variance Test set variance 
+ESN 0.000122 0.000016 
+CS-ESN 0.000058 0.000011 
+error variance of the CS-ESN model is 0.0 0 0 030, while the prediction error variance of the ESN model is 0.0 0 0 069, which 
+indicates that the CS-ESN model has stronger robustness than the ESN model on stock data. 
+5. Conclusion 
+In this paper, a new ESN model is proposed, and compressed sensing is added on the original ESN prediction model. 
+The purpose of extracting the characteristics of the reserve pool node is to reduce the reserve pool node. Since the feature 
+nodes of the reserve pool are extracted, most of the features of the original reserve pool are retained. Therefore, the CS-ESN 
+model can ensure the accuracy of prediction and even have a better effect than the original ESN model. It can be seen 
+from the simulation that both the prediction accuracy and the prediction stability have been improved greatly. Through the 
+simulation of chaotic series prediction and stock prediction, both the average value of prediction error and the variance of 
+14 
+
+[PÁGINA PDF 15]
+H. Zhang, M. Zheng, Y. Zhang et al. Commun Nonlinear Sci Numer Simulat 101 (2021) 105857 
+prediction error are obviously reduced. Therefore, CS-ESN model has a good effect in chaotic series prediction and has a 
+good application market in stock prediction. 
+Declaration of Competing Interest 
+We declare that we do not have any commercial or associative interest that represents a conﬂict of interest in connection 
+with the work submitted. 
+CRediT authorship contribution statement 
+Hao Zhang: Funding acquisition, Writing - original draft. Mingwen Zheng: Conceptualization, Methodology, Supervision, 
+Funding acquisition. Yanping Zhang: Investigation, Resources. Xiao Yu: Investigation. Wenchao Li: Writing - original draft, 
+Validation. Hui Gao: Writing - original draft. 
+References 
+[1] Jaeger H . The “echo state” approach to analysing and training recurrent neural networks-with an erratum note. GMD Technical Report 148. Bonn, 
+Germany: German National Research Center for Information Technology; 2001 . (34) 13 
+[2] Duan H , Wang X . Echo state networks with orthogonal pigeon-inspired optimization for image restoration. IEEE Trans Neural Netw LearnSyst 
+2015;27(11):2413–25 . 
+[3] Jaeger H , Lukoševi ˇcius M , Dan P , Siewert U . Optimization and applications of echo state networks with leaky-integrator neurons.. Neural Netw 
+2007;20(3):335–52 . 
+[4] Fourati R , Ammar B , Aouiti C , Sanchez-Medina J , Alimi AM . Optimized echo state network with intrinsic plasticity for eeg-based emotion recognition. 
+In: International conference on neural information processing; 2017 . 
+[5] Zhong S , Xie X , Lin L , Wang F . Genetic algorithm optimized double-reservoir echo state network for multi-regime time series prediction. Neurocom- 
+puting 2017;238(MAY17):191–204 . 
+[6] Rodan A , Tino P . Minimum complexity echo state network. IEEE Trans Neural Netw 2011;22(1):131–44 . 
+[7] Lukovsevivcius M . A practical guide to applying echo state networks. Lect Notes Comput Sci 2012 . 
+[8] Donoho DL . Compressed sensing. IEEE Trans Inf Theory 2006;52(4):1289–306 . 
+[9] Lustig M , Donoho D , Pauly JM . Sparse MRI: the application of compressed sensing for rapid MR imaging. Magn Reson Med 2007;58(6):1182–95 . 
+[10] Figueiredo MAT , Nowak RD , Wright SJ . Gradient projection for sparse reconstruction: application to compressed sensing and other inverse problems. 
+IEEE J Sel Top Signal Process 2008;1(4):586–97 . 
+[11] Candès EJ . The restricted isometry property and its implications for compressed sensing. C R Math 2008;346(9–10):589–92 . 
+[12] Xu Q , Sun K , He S , Zhu C . An effective image encryption algorithm based on compressive sensing and 2D-SLIM. Opt Lasers Eng 2020;134:106178 . 
+[13] Chai X , Bi J , Gan Z , Liu X , Chen Y . Color image compression and encryption scheme based on compressive sensing and double random encryption 
+strategy. Signal Process 2020:107684 . 
+[14] Beck A , Teboulle M . A fast iterative shrinkage-thresholding algorithm for linear inverse problems. Siam J Imaging Sci 2009;2(1):183–202 . 
+[15] Candes EJ, Tao T. Decoding by linear programming. IEEE Trans Inf Theory 2005;51(12):4203–15. doi: 10.1109/TIT.2005.858979 . 
+[16] Baraniuk R , Davenport M , Devore R , Wakin M . A simple proof of the restricted isometry property for random matrices. Constr Approx 
+2008;28(3):253–63 . 
+[17] Mousavi A, Patel AB, Baraniuk RG. A deep learning approach to structured signal recovery. In: 2015 53rd Annual allerton conference on communication, 
+control, and computing (Allerton); 2015. p. 1336–43. doi: 10.1109/ALLERTON.2015.7447163 . 
+[18] Candès EJ , Eldar YC , Needell D , Randall P . Compressed sensing with coherent and redundant dictionaries. Appl Comput Harmonic Anal 
+2011;31(1):59–73 . 
+[19] Tsaig Y , Donoho DL . Extensions of compressed sensing. Signal Process 2006;86(3):549–71 . 
+[20] Jafarpour S., Cevher V., Schapire R.E. Model-based compressive sensing2008. 
+15 

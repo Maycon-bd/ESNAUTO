@@ -1,0 +1,16 @@
+{
+  "sha_antes": "78035c8c9ec44fb206dc6c5947acc2b469174dde4b5cb5f95115ef7118726527",
+  "alteracoes": [
+    {
+      "indice": 325,
+      "antes": "O motor de busca disponibilizado incorpora um mecanismo de mutação cataclísmica inspirado no CHC (Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation), de Eshelman (1991). Após estagnação, o mecanismo aumenta a mutação para ampliar a exploração. Essa finalidade de implementação não demonstra manutenção de diversidade: não foram produzidas medidas populacionais específicas nem uma ablação que isolasse o efeito do LHS e do operador. O mecanismo não corresponde ao CHC completo.",
+      "depois": "O motor de busca disponibilizado incorpora um mecanismo de mutação cataclísmica inspirado no CHC (Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation), conforme descrito por Eshelman e Schaffer (1995). Após estagnação, o mecanismo aumenta a mutação para ampliar a exploração. Essa finalidade de implementação não demonstra manutenção de diversidade: não foram produzidas medidas populacionais específicas nem uma ablação que isolasse o efeito do LHS e do operador. O mecanismo não corresponde ao CHC completo."
+    },
+    {
+      "indice": 519,
+      "antes": "ESHELMAN, L. J. The CHC Adaptive Search Algorithm: How to Have Safe Search When Engaging in Nontraditional Genetic Recombination. In: RAWLINS, G. J. E. (ed.). Foundations of Genetic Algorithms 1. San Mateo: Morgan Kaufmann, 1991. p. 265-283. DOI: 10.1016/B978-0-08-050684-5.50020-3.",
+      "depois": "ESHELMAN, L. J.; SCHAFFER, J. D. Method for optimizing the configuration of a pick and place machine. Depositante: North American Philips Corporation. US5390283A. Depósito: 23 out. 1992. Concessão: 14 fev. 1995. Disponível em: https://patents.google.com/patent/US5390283A/en. Acesso em: 30 out. 2026."
+    }
+  ],
+  "fundamento": "decisao_eshelman_lote118.json; fonte primária dos inventores consultada na descrição do CHC. Não altera código nem protocolos."
+}

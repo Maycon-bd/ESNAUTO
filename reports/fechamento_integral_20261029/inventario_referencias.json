@@ -1,0 +1,2510 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "referencias": [
+    {
+      "id": "R01",
+      "paragrafo_atual": 500,
+      "autor": "ABEBE",
+      "ano_bibliografico": "2024",
+      "texto": "ABEBE, T. N.; GOSHU, A. T. Asymmetric generalized error distribution with its properties and applications. Frontiers in Applied Mathematics and Statistics, v. 10, art. 1398137, 2024. DOI: 10.3389/fams.2024.1398137.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R02",
+      "paragrafo_atual": 501,
+      "autor": "ARAÚJO",
+      "ano_bibliografico": "2025",
+      "texto": "ARAÚJO, H. V.; CARDOSO, F. C.; MATTOS, V. L. D.; BORGES, E. N.; LUCCA, G.; DALMAZO, B. L.; BERRI, R. A. Comparing MAE and RMSE as fitness of genetic algorithm for optimizing echo state network hyperparameters with different probabilistic distributions. In: JULIAN, V. et al. (ed.). Intelligent Data Engineering and Automated Learning – IDEAL 2024. Cham: Springer, 2025. p. 315-327. (LNCS, v. 15347). DOI: 10.1007/978-3-031-77738-7_26.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D02",
+          "arquivo": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+          "sha256": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+          "paginas": 17,
+          "caracteres_extraidos": 37580,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [],
+          "leitura": "PDF1–17lido integralmente em ordem, incluindo três páginas de metadados, treze do manuscrito e uma de consultas de autor.",
+          "paginas_visuais_abertas": [
+            1,
+            4,
+            7,
+            8,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leitura_D02_araujo_lote6.json"
+      ],
+      "limites_restantes": "Somente prova de autor integral, metadados finais oficiais; afirmações próprias/mistas e similaridade mantêm conferências específicas."
+    },
+    {
+      "id": "R03",
+      "paragrafo_atual": 502,
+      "autor": "ARIA",
+      "ano_bibliografico": "2017",
+      "texto": "ARIA, M.; CUCCURULLO, C. bibliometrix: an R-tool for comprehensive science mapping analysis. Journal of Informetrics, v. 11, n. 4, p. 959-975, 2017. DOI: 10.1016/j.joi.2017.08.007.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R04",
+      "paragrafo_atual": 503,
+      "autor": "ARIA",
+      "ano_bibliografico": "2026",
+      "texto": "ARIA, M.; CUCCURULLO, C.; D’ANIELLO, L.; SPANO, M. Biblioshiny and the SAAS Workflow: an integrated framework for transparent and reproducible science mapping. A demonstration through the replication of a study. Journal of Informetrics, v. 20, n. 3, art. 101837, 2026. DOI: 10.1016/j.joi.2026.101837.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R05",
+      "paragrafo_atual": 504,
+      "autor": "BEHERA",
+      "ano_bibliografico": "2023",
+      "texto": "BEHERA, S.; NAYAK, S. C.; KUMAR, A. V. S. P. A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Time Series Forecasting. Archives of Computational Methods in Engineering, v. 30, p. 4401-4448, 2023. DOI: 10.1007/s11831-023-09942-9.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R06",
+      "paragrafo_atual": 505,
+      "autor": "CARDOSO",
+      "ano_bibliografico": "2022a",
+      "texto": "CARDOSO, F. C.; BERRI, R. A.; MATTOS, V. L. D. Echo state network e sua aplicação na ação PETR4 da B3 para predição do preço de fechamento. In: 66ª REUNIÃO ANUAL DA RBras, 2022, Florianópolis. Anais [...]. Florianópolis: Região Brasileira da Sociedade Internacional de Biometria, 2022a. p. 197-206.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "SUP_CARDOSO_RBRAS",
+          "arquivo": "reports\\fontes_drive_20261029\\Cardoso_RBras_2022_completo.pdf",
+          "sha256": "286bc9f8f90a8ce41d68605462a4656a0290a9f1685859823ddeff1ea4eb1a07",
+          "paginas": 10,
+          "estado_leitura": "nao_examinado_nesta_meta",
+          "log_leitura": [],
+          "leitura": "PDF sem camada textual: todas as10páginas197–206abertas e lidas visualmente, em blocos1–5e6–10.",
+          "paginas_visuais_abertas": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "limites": "Conferência de fidelidade documental; os estudos e o ajuste corporativo não foram reproduzidos."
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_bovdb_rbras_dados_lote5.json"
+      ],
+      "limites_restantes": "Passes globais de forma e similaridade ainda próprios; protocolos publicados não foram repetidos."
+    },
+    {
+      "id": "R07",
+      "paragrafo_atual": 506,
+      "autor": "CARDOSO",
+      "ano_bibliografico": "2022b",
+      "texto": "CARDOSO, F. C.; MALSKA, J. A. V.; RAMIRO, P. J.; LUCCA, G.; BORGES, E. N.; MATTOS, V. L. D.; BERRI, R. A. BovDB: a data set of stock prices of all companies in B3 from 1995 to 2020. Journal of Information and Data Management, v. 13, n. 1, p. 77-94, ago. 2022b.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D04",
+          "arquivo": "Artigos citados\\Cardoso -  A data set of stock prices of all companies in B3from 1995 to 2020.pdf",
+          "sha256": "6409dc381b5eb4889c05cd84177f3ff5487c20cc5a997f87ff3fd9774681e586",
+          "paginas": 18,
+          "caracteres_extraidos": 55137,
+          "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+          "log_leitura": [],
+          "leitura": "Texto completo das18páginas lido em ordem nos blocos1–9e10–18; sete páginas de evidência abertas.",
+          "paginas_visuais_abertas": [
+            1,
+            5,
+            7,
+            8,
+            9,
+            11,
+            16
+          ],
+          "limites": "Conferência de fidelidade documental; os estudos e o ajuste corporativo não foram reproduzidos."
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_bovdb_rbras_dados_lote5.json"
+      ],
+      "limites_restantes": "Passes globais de forma e similaridade ainda próprios; protocolos publicados não foram repetidos."
+    },
+    {
+      "id": "R08",
+      "paragrafo_atual": 507,
+      "autor": "CARDOSO",
+      "ano_bibliografico": "2022c",
+      "texto": "CARDOSO, F. C.; BERRI, R. A.; BORGES, E. N.; LUCCA, G.; MATTOS, V. L. D. Associação de redes de estado de eco com métodos estatísticos clássicos de previsão: uma revisão bibliométrica. In: XXV ENCONTRO NACIONAL DE MODELAGEM COMPUTACIONAL, 2022, evento virtual. Anais [...]. 2022c.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R09",
+      "paragrafo_atual": 508,
+      "autor": "CARDOSO",
+      "ano_bibliografico": "2024",
+      "texto": "CARDOSO, F. C.; BERRI, R. A.; BORGES, E. N.; DALMAZO, B. L.; LUCCA, G.; MATTOS, V. L. D. Echo state network and classical statistical techniques for time series forecasting: a review. Knowledge-Based Systems, v. 293, art. 111639, 2024. DOI: 10.1016/j.knosys.2024.111639.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R10",
+      "paragrafo_atual": 509,
+      "autor": "CARDOSO",
+      "ano_bibliografico": "2025",
+      "texto": "CARDOSO, F. C. Modelo híbrido para previsão de séries temporais financeiras: ARIMA-ESN com algoritmo genético. 2025. Tese (Doutorado em Modelagem Computacional) – Universidade Federal do Rio Grande, Rio Grande, 2025. Disponível em: https://ppgmc.furg.br/dissertacoes-e-teses/publicacoes-de-2025/14475tese-fabian-correa-cardoso. Acesso em: 23 out. 2026.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R11",
+      "paragrafo_atual": 510,
+      "autor": "CHEN",
+      "ano_bibliografico": "2026",
+      "texto": "CHEN, C.; ZHANG, X.; KUO, E.; FU, R.; XIE, Q.; ZHANG, F. Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study. 2026. (Preprint arXiv:2512.06630v2). Submetido ao IEEE Transactions on Quantum Engineering.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R12",
+      "paragrafo_atual": 511,
+      "autor": "CHO",
+      "ano_bibliografico": "2014",
+      "texto": "CHO, K.; VAN MERRIËNBOER, B.; GULCEHRE, C.; BAHDANAU, D.; BOUGARES, F.; SCHWENK, H.; BENGIO, Y. Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation. In: PROCEEDINGS OF EMNLP 2014. Doha: ACL, 2014. p. 1724-1734. DOI: 10.3115/v1/D14-1179.",
+      "status_conferencia_integral": "texto_completo_lido_e_equacoes_visualmente_conferidas",
+      "fontes_primarias": [
+        {
+          "arquivo": "reports\\fechamento_integral_20261029\\fontes_suplementares\\Cho_2014_EMNLP.pdf",
+          "url": "https://aclanthology.org/D14-1179.pdf",
+          "sha256": "c948d89ccd33da2a48421b45445f1c30f5fe677a829af9e5e1b6f9ff75a14a81",
+          "paginas": 11,
+          "estado": "recuperado_nao_lido_integralmente"
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "achados_leituras_lote2.json"
+      ],
+      "limites_restantes": "Verificar parágrafo conjunto com Hochreiter antes de fechar a unidade e fazer passe de similaridade."
+    },
+    {
+      "id": "R13",
+      "paragrafo_atual": 512,
+      "autor": "CORTESI",
+      "ano_bibliografico": "2026",
+      "texto": "CORTESI, F.; IANNONE, G.; CRIPPA, G.; POGGIO, T.; BENEVENTANO, P. Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series. (Preprint arXiv:2603.02620v1), 2026.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R14",
+      "paragrafo_atual": 513,
+      "autor": "COSTA",
+      "ano_bibliografico": "2025",
+      "texto": "COSTA, G. D.; LUNKES, R. J. Aplicação de algoritmo de aprendizado de máquina (AM) para previsão do comportamento das ações negociadas no mercado brasileiro. Contabilidad y Negocios, v. 20, n. esp., p. 48-70, 2025. DOI: 10.18800/contabilidad.2025ESP.002.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R15",
+      "paragrafo_atual": 514,
+      "autor": "DENG",
+      "ano_bibliografico": "2022",
+      "texto": "DENG, Z.; CHEN, Q.; ZHANG, L.; ZHOU, K.; ZONG, Y.; LIU, H.; LI, J.; MA, L. Degradation prediction of PEMFCs using stacked echo state network based on genetic algorithm optimization. IEEE Transactions on Transportation Electrification, v. 8, n. 1, p. 1454-1466, 2022. DOI: 10.1109/TTE.2021.3111906.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D08",
+          "arquivo": "Artigos citados\\Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+          "sha256": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+          "paginas": 26,
+          "caracteres_extraidos": 77191,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [
+            {
+              "registro": "leituras_tian_deng_lote9.json",
+              "metodo": "Versão de autor aceita: texto integral das26páginas lido em blocos1–6,7–12,13–18,19–22,23–26, incluindo apêndice e referências; oito páginas abertas visualmente.",
+              "paginas_visuais_abertas": [
+                1,
+                8,
+                10,
+                12,
+                13,
+                16,
+                18,
+                20
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_tian_deng_lote9.json"
+      ],
+      "limites_restantes": "Passe formal de autoria/citações e similaridade; conteúdo lido nas versões identificadas,sem reprodução dos experimentos."
+    },
+    {
+      "id": "R16",
+      "paragrafo_atual": 515,
+      "autor": "DEWICK",
+      "ano_bibliografico": "2022",
+      "texto": "DEWICK, P. R. On Financial Distributions Modelling Methods: Application on Regression Models for Time Series. Journal of Risk and Financial Management, v. 15, n. 10, art. 461, 2022. DOI: 10.3390/jrfm15100461.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D09",
+          "arquivo": "Artigos citados\\Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+          "sha256": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48",
+          "paginas": 15,
+          "caracteres_extraidos": 40619,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [
+            {
+              "registro": "leituras_dewick_nelson_soltani_lote8.json",
+              "metodo": "Texto integral das 15 páginas lido em blocos 1–5,6–10,11–15; sete páginas abertas para conferir método, tabela e figuras.",
+              "paginas_visuais_abertas": [
+                1,
+                5,
+                7,
+                10,
+                11,
+                12,
+                13
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_dewick_nelson_soltani_lote8.json"
+      ],
+      "limites_restantes": "Similaridade e requisitos globais do Guia mantêm passes específicos; não reprodução independente dos artigos."
+    },
+    {
+      "id": "R17",
+      "paragrafo_atual": 516,
+      "autor": "DIEBOLD",
+      "ano_bibliografico": "1995",
+      "texto": "DIEBOLD, F. X.; MARIANO, R. S. Comparing Predictive Accuracy. Journal of Business & Economic Statistics, v. 13, n. 3, p. 253-263, 1995. DOI: 10.1080/07350015.1995.10524599.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R18",
+      "paragrafo_atual": 517,
+      "autor": "DUTTILO",
+      "ano_bibliografico": "2023",
+      "texto": "DUTTILO, P. Modelling Financial Returns with Mixtures of Generalized Normal Distributions. 2023. Tese (Doutorado em Human Science — Economics and Statistics) — Università degli Studi “G. d’Annunzio” Chieti-Pescara, 2023. Tutor: Prof. Stefano Antonio Gattone; Coordenador: Prof. Marco Di Marzio.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R19",
+      "paragrafo_atual": 518,
+      "autor": "DUTTILO",
+      "ano_bibliografico": "2022",
+      "texto": "DUTTILO, P.; GATTONE, S. A. Modelling Financial Returns with Finite Mixtures of GED. 51st Scientific Meeting of the Italian Statistical Society, p. 1364-1369, 2022. Università degli Studi “G. d’Annunzio” Chieti-Pescara.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D10",
+          "arquivo": "Artigos citados\\Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+          "sha256": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7",
+          "paginas": 6,
+          "caracteres_extraidos": 12943,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [
+            {
+              "registro": "leituras_sharma_duttilo_lote7.json",
+              "metodo": "Texto completo das seis páginas lido; páginas 3–6 abertas visualmente para fórmulas, aplicação, tabelas e figura.",
+              "paginas_visuais_abertas": [
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_sharma_duttilo_lote7.json"
+      ],
+      "limites_restantes": "Passes globais de similaridade e Guia permanecem próprios; não reprodução dos estudos."
+    },
+    {
+      "id": "R20",
+      "paragrafo_atual": 519,
+      "autor": "ECER",
+      "ano_bibliografico": "2020",
+      "texto": "ECER, F.; ARDABILI, S.; BAND, S. S.; MOSAVI, A. Training Multilayer Perceptron with Genetic Algorithms and Particle Swarm Optimization for Modeling Stock Price Index Prediction. Entropy, v. 22, n. 11, art. 1239, 2020. DOI: 10.3390/e22111239.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D12",
+          "arquivo": "Artigos citados\\Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+          "sha256": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+          "paginas": 19,
+          "caracteres_extraidos": 73923,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [
+            {
+              "registro": "leituras_ecer_timbo_lote10.json",
+              "metodo": "Texto integral das 19 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+              "paginas_visuais_abertas": [
+                1,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_ecer_timbo_lote10.json"
+      ],
+      "limites_restantes": "U0218permanece parcial por Behera; autoria de Ecer corrigida no lote11,pendente fechamento visual. Issue11confirmado no Crossref oficial,sem edição da referência."
+    },
+    {
+      "id": "R21",
+      "paragrafo_atual": 520,
+      "autor": "ESHELMAN",
+      "ano_bibliografico": "1991",
+      "texto": "ESHELMAN, L. J. The CHC Adaptive Search Algorithm: How to Have Safe Search When Engaging in Nontraditional Genetic Recombination. In: RAWLINS, G. J. E. (ed.). Foundations of Genetic Algorithms 1. San Mateo: Morgan Kaufmann, 1991. p. 265-283. DOI: 10.1016/B978-0-08-050684-5.50020-3.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R22",
+      "paragrafo_atual": 521,
+      "autor": "GLEICK",
+      "ano_bibliografico": "1987",
+      "texto": "GLEICK, James. Making sense of nature’s mess. The Washington Post, 17 out. 1987. Disponível em: https://www.washingtonpost.com/archive/opinions/1987/10/18/making-sense-of-natures-mess/09f82e1d-5e92-4abf-81ee-9a60f6de1f89/. Acesso em: 28 out. 2026.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R23",
+      "paragrafo_atual": 522,
+      "autor": "HARIHARAN",
+      "ano_bibliografico": "2025",
+      "texto": "HARIHARAN, S.; SURESH, R.; CHANDRASEKAR, V. K. Multivariate time series prediction using clustered echo state network. The European Physical Journal Plus, v. 140, art. 1133, 2025. DOI: 10.1140/epjp/s13360-025-07077-3.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D13",
+          "arquivo": "Artigos citados\\Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+          "sha256": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+          "paginas": 18,
+          "caracteres_extraidos": 65179,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [
+            {
+              "registro": "leituras_liu_hariharan_xiao_lote12.json",
+              "metodo": "Texto integral das 18 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+              "paginas_visuais_abertas": [
+                1,
+                4,
+                7,
+                10,
+                12,
+                17
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_liu_hariharan_xiao_lote12.json"
+      ],
+      "limites_restantes": "Correções do lote12incorporadas e inspecionadas; validação por afirmação. U0196permanece parcial porCortesi eU0231porRibeiro/Wang; análise de similaridade e passe geral do Guia ainda em andamento."
+    },
+    {
+      "id": "R24",
+      "paragrafo_atual": 523,
+      "autor": "HASSAAN",
+      "ano_bibliografico": "2025",
+      "texto": "HASSAAN, Z. A.; YACOUB, M. H.; SAID, L. A. FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction. Machine Learning and Knowledge Extraction, v. 7, art. 160, 2025. DOI: 10.3390/make7040160.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D14",
+          "arquivo": "Artigos citados\\Hassaan Z - FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction.pdf",
+          "sha256": "5a810ed4bd59544475f792170137a1475d9e41662e887ce422706b36a6607278",
+          "paginas": 22,
+          "caracteres_extraidos": 52110,
+          "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+          "log_leitura": [],
+          "leitura_integral": "Texto completo, inclusive referências e declarações finais, lido sequencialmente. D14 em blocos1–11 e12–22; D22em blocos1–6 e7–11.",
+          "paginas_visuais_abertas": [
+            7,
+            8,
+            11,
+            12,
+            13,
+            19,
+            20
+          ],
+          "limites": "Leitura e conferência de coerência documental, sem replicação de experimentos ou comprovação independente dos resultados."
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_chaos_lote4.json"
+      ],
+      "limites_restantes": "Passes globais de similaridade e forma, exportação atual e retomadas compostas têm conferências próprias. D não certifica qualidade metodológica ou reprodução do estudo."
+    },
+    {
+      "id": "R25",
+      "paragrafo_atual": 524,
+      "autor": "HOCHREITER",
+      "ano_bibliografico": "1997",
+      "texto": "HOCHREITER, S.; SCHMIDHUBER, J. Long Short-Term Memory. Neural Computation, v. 9, n. 8, p. 1735-1780, 1997. DOI: 10.1162/neco.1997.9.8.1735.",
+      "status_conferencia_integral": "fonte_lida_e_decisoes_de_conteudo_registradas",
+      "fontes_primarias": [
+        {
+          "id": "SUP_HOCH1997",
+          "arquivo": "reports/fechamento_integral_20261029/fontes_suplementares/Hochreiter_Schmidhuber_1997_copia_autor.pdf",
+          "url": "https://people.idsia.ch/~juergen/lstm1997-2024head.pdf",
+          "sha256": "51e319ebc53b96964bc167faa3a45d02eca61964eb7ed6bbc1cb2e70517064f2",
+          "paginas": 32,
+          "leitura": "Todas as32páginas renderizadas abertas e lidas visualmente em blocos de4, inclusive tabelas, discussão, apêndice e referências.",
+          "visuais_abertos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "limites": "Cópia distribuída pelo coautor, com cabeçalho bibliográfico e modificação de metadados em2024; não é comparação byte a byte com a diagramação da edição publicada. O corpo tem paginação1–32 e identifica a publicação Neural Computation9(8):1735–1780,1997. A extração textual é ilegível e foi descartada como evidência de conteúdo. Não se reproduziram os experimentos."
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_fundamentos_lote3.json"
+      ],
+      "limites_restantes": "Todas as retomadas, atribuição de código, similaridade global e conferência final do Word têm verificações próprias ainda em andamento."
+    },
+    {
+      "id": "R26",
+      "paragrafo_atual": 525,
+      "autor": "HOLLAND",
+      "ano_bibliografico": "1975",
+      "texto": "HOLLAND, J. H. Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence. Ann Arbor: University of Michigan Press, 1975.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R27",
+      "paragrafo_atual": 526,
+      "autor": "JAEGER",
+      "ano_bibliografico": "2001",
+      "texto": "JAEGER, H. The “echo state” approach to analysing and training recurrent neural networks – with an Erratum note. GMD Report 148. Sankt Augustin: GMD Forschungszentrum Informationstechnik, 2001. Versão com errata de 26 jan. 2010. DOI: 10.24406/publica-fhg-291111. Disponível em: https://www.ai.rug.nl/minds/uploads/EchoStatesTechRep.pdf. Acesso em: 28 out. 2026.",
+      "status_conferencia_integral": "fonte_lida_e_decisoes_de_conteudo_registradas",
+      "fontes_primarias": [
+        {
+          "id": "SUP_JAEGER2001",
+          "arquivo": "reports/fechamento_integral_20261029/fontes_suplementares/Jaeger_2001_errata_2010.pdf",
+          "url": "https://www.ai.rug.nl/minds/uploads/EchoStatesTechRep.pdf",
+          "sha256": "0a0296f586f86a0e49e651e4581ce2aef3a926ca9cb3d57653c8963b7b83e625",
+          "paginas": 47,
+          "leitura": "Texto completo, inclusive apêndices e errata, lido sequencialmente em blocos1–10,11–20,21–30,31–40,41–47.",
+          "visuais_abertos": [
+            1,
+            5,
+            8,
+            12,
+            13,
+            27,
+            34,
+            42,
+            43,
+            47
+          ],
+          "limites": "Leitura integral do texto e inspeção visual das10páginas listadas, sem reprodução experimental ou verificação independente de todas as provas. Página2sem texto extraído. A página Fraunhofer bloqueou acesso automatizado; título, autor, ano e identidade do DOI foram confirmados na API oficial DataCite. A versão com errata foi identificada no PDF do repositório do autor.",
+          "metadados_doi_confirmados": {
+            "registro": "fontes_suplementares/Jaeger_2001_metadados_DataCite.json",
+            "evidencia": "API oficial DataCite confirma título, Jaeger,H.,ano2001 e destino Fraunhofer para DOI10.24406/publica-fhg-291111."
+          }
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_fundamentos_lote3.json"
+      ],
+      "limites_restantes": "Todas as retomadas, atribuição de código, similaridade global e conferência final do Word têm verificações próprias ainda em andamento.",
+      "metadados_doi": "Conferidos na API oficial DataCite; arquivo Jaeger_2001_metadados_DataCite.json"
+    },
+    {
+      "id": "R28",
+      "paragrafo_atual": 527,
+      "autor": "JAEGER",
+      "ano_bibliografico": "2007",
+      "texto": "JAEGER, Herbert. Echo state network. Scholarpedia, v. 2, n. 9, p. 2330, 2007. DOI: 10.4249/scholarpedia.2330.",
+      "status_conferencia_integral": "texto_da_fonte_lido_conferencia_em_andamento",
+      "fontes_primarias": [
+        {
+          "id": "D15",
+          "arquivo": "Artigos citados\\Jaeger - Echo state network.pdf",
+          "sha256": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+          "paginas": 9,
+          "caracteres_extraidos": 29412,
+          "estado_leitura": "texto_integral_lido_decisoes_em_andamento",
+          "log_leitura": [
+            {
+              "paginas_pdf": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "metodo": "Leitura sequencial do texto completo extraído, incluindo referências; blocos exibidos sem truncamento.",
+              "visuais_abertos_nesta_etapa": [
+                2,
+                3,
+                4,
+                5
+              ],
+              "limite": "Texto completo lido não é inspeção visual de todas as páginas nem reprodução de experimentos. Passe de similaridade ainda não concluído."
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "achados_leituras_lote2.json"
+      ],
+      "limites_restantes": "Passe de similaridade, todas as retomadas e conferência final do Word ainda não encerrados."
+    },
+    {
+      "id": "R29",
+      "paragrafo_atual": 528,
+      "autor": "KUMAR",
+      "ano_bibliografico": "2025",
+      "texto": "KUMAR, K. Forecasting Crude Oil Prices Using Reservoir Computing Models. Computational Economics, v. 66, p. 2543-2563, 2025. DOI: 10.1007/s10614-024-10797-w.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D16",
+          "arquivo": "Artigos citados\\Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+          "sha256": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+          "paginas": 21,
+          "caracteres_extraidos": 48607,
+          "estado_leitura": "texto_integral_lido_e_evidencias_visuais_inspecionadas",
+          "log_leitura": [
+            {
+              "registro": "leitura_D16_kumar.json",
+              "paginas_lidas": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+              ],
+              "paginas_visuais_abertas": [
+                1,
+                7,
+                8,
+                14,
+                16,
+                17,
+                18
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leitura_D16_kumar.json"
+      ],
+      "limites_restantes": "Passes globais de similaridade e forma ainda em andamento. Procedência empírica não reproduzida."
+    },
+    {
+      "id": "R30",
+      "paragrafo_atual": 529,
+      "autor": "LAMPUGNANI",
+      "ano_bibliografico": "2026",
+      "texto": "LAMPUGNANI, M. T. Alteração das distribuições de probabilidade dos pesos de entrada da Echo State Network para previsão do preço de ações. 2026. Monografia (Bacharelado em Engenharia de Software) - Universidade de Rio Verde, Rio Verde, 2026.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R31",
+      "paragrafo_atual": 530,
+      "autor": "LIU",
+      "ano_bibliografico": "2022",
+      "texto": "LIU, B.; XIE, Y.; JIANG, X.; YE, Y.; SONG, T.; CHAI, J.; TANG, Q.; FENG, M. Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators. Optics Express, v. 30, n. 13, p. 23359-23381, 2022. DOI: 10.1364/OE.454973.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D18",
+          "arquivo": "Artigos citados\\Liu - Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators.pdf",
+          "sha256": "770663f22459383f1286c1ce8b7f5a4f462d8f4bbe2452c33a776803bdbdb2ac",
+          "paginas": 23,
+          "caracteres_extraidos": 71707,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [
+            {
+              "registro": "leituras_liu_hariharan_xiao_lote12.json",
+              "metodo": "Texto integral das 23 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+              "paginas_visuais_abertas": [
+                1,
+                4,
+                6,
+                8,
+                9,
+                12,
+                15
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_liu_hariharan_xiao_lote12.json"
+      ],
+      "limites_restantes": "Correções do lote12incorporadas e inspecionadas; validação por afirmação. U0196permanece parcial porCortesi eU0231porRibeiro/Wang; análise de similaridade e passe geral do Guia ainda em andamento."
+    },
+    {
+      "id": "R32",
+      "paragrafo_atual": 531,
+      "autor": "LIU",
+      "ano_bibliografico": "2025",
+      "texto": "LIU, H.; LIN, Z.; ROJAS, R. R. Enhancing Trading Performance Through Sentiment Analysis with Large Language Models: Evidence from the S&P 500. 2025. (Preprint arXiv:2507.09739).",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R33",
+      "paragrafo_atual": 532,
+      "autor": "MCKAY",
+      "ano_bibliografico": "1979",
+      "texto": "MCKAY, M. D.; BECKMAN, R. J.; CONOVER, W. J. A comparison of three methods for selecting values of input variables in the analysis of output from a computer code. Technometrics, v. 21, n. 2, p. 239-245, 1979. DOI: 10.1080/00401706.1979.10489755.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R34",
+      "paragrafo_atual": 533,
+      "autor": "MILLEA",
+      "ano_bibliografico": "2014",
+      "texto": "MILLEA, A. Explorations in echo state networks. 2014. Dissertação (Mestrado em Ciência da Computação) – University of Groningen, Holanda, 2014.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R35",
+      "paragrafo_atual": 534,
+      "autor": "NELSON",
+      "ano_bibliografico": "1991",
+      "texto": "NELSON, D. B. Conditional Heteroskedasticity in Asset Returns: A New Approach. Econometrica, v. 59, n. 2, p. 347-370, mar. 1991.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D20",
+          "arquivo": "Artigos citados\\Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+          "sha256": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+          "paginas": 25,
+          "caracteres_extraidos": 0,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [
+            {
+              "registro": "leituras_dewick_nelson_soltani_lote8.json",
+              "metodo": "PDF sem texto extraível: todas as 25 páginas abertas e lidas visualmente, em blocos 1–5,6–10,11–15,16–20,21–25. Inclui capa JSTOR, artigo347–370 e apêndices/provas.",
+              "paginas_visuais_abertas": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_dewick_nelson_soltani_lote8.json"
+      ],
+      "limites_restantes": "Similaridade e requisitos globais do Guia mantêm passes específicos; não reprodução independente dos artigos."
+    },
+    {
+      "id": "R36",
+      "paragrafo_atual": 535,
+      "autor": "PAGANI",
+      "ano_bibliografico": "2015",
+      "texto": "PAGANI, R. N.; KOVALESKI, J. L.; RESENDE, L. M. M. Methodi Ordinatio: a proposed methodology to select and rank relevant scientific papers encompassing the impact factor, number of citation, and year of publication. Scientometrics, v. 105, p. 2109-2135, 2015. DOI: 10.1007/s11192-015-1744-x.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R37",
+      "paragrafo_atual": 536,
+      "autor": "PING",
+      "ano_bibliografico": "2023",
+      "texto": "PING, Tongji. Forecasting Financial Market Volatility: Methodologies, Challenges, and Implications. Journal of Stock & Forex Trading, v. 10, n. 2, art. 239, 2023. DOI: 10.35248/2168-9458.23.10.239.",
+      "status_conferencia_integral": "texto_da_fonte_lido_conferencia_em_andamento",
+      "fontes_primarias": [
+        {
+          "id": "D21",
+          "arquivo": "Artigos citados\\Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+          "sha256": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+          "paginas": 2,
+          "caracteres_extraidos": 7385,
+          "estado_leitura": "texto_integral_lido_decisoes_em_andamento",
+          "log_leitura": [
+            {
+              "paginas_pdf": [
+                1,
+                2
+              ],
+              "metodo": "Leitura sequencial do texto completo extraído, incluindo referências; blocos exibidos sem truncamento.",
+              "visuais_abertos_nesta_etapa": [],
+              "limite": "Texto completo lido não é inspeção visual de todas as páginas nem reprodução de experimentos. Passe de similaridade ainda não concluído."
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "achados_leituras_lote2.json"
+      ],
+      "limites_restantes": "Passe de similaridade, todas as retomadas e conferência final do Word ainda não encerrados."
+    },
+    {
+      "id": "R38",
+      "paragrafo_atual": 537,
+      "autor": "RIBEIRO",
+      "ano_bibliografico": "2021",
+      "texto": "RIBEIRO, G. T.; SANTOS, A. A. P.; MARIANI, V. C.; COELHO, L. S. Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility. Expert Systems with Applications, v. 184, art. 115490, 2021. DOI: 10.1016/j.eswa.2021.115490.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R39",
+      "paragrafo_atual": 538,
+      "autor": "SEDDIK",
+      "ano_bibliografico": "2023",
+      "texto": "SEDDIK, S; ROUTAIB, H.; ELHADDADI, A. Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System. International Journal of Computational Methods and Experimental Measurements, v. 11, n. 4, p. 193-203, 2023. DOI: 10.18280/ijcmem.110401.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D22",
+          "arquivo": "Artigos citados\\Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+          "sha256": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+          "paginas": 11,
+          "caracteres_extraidos": 57995,
+          "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+          "log_leitura": [],
+          "leitura_integral": "Texto completo, inclusive referências e declarações finais, lido sequencialmente. D14 em blocos1–11 e12–22; D22em blocos1–6 e7–11.",
+          "paginas_visuais_abertas": [
+            1,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "limites": "Leitura e conferência de coerência documental, sem replicação de experimentos ou comprovação independente dos resultados."
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_chaos_lote4.json"
+      ],
+      "limites_restantes": "Passes globais de similaridade e forma, exportação atual e retomadas compostas têm conferências próprias. D não certifica qualidade metodológica ou reprodução do estudo."
+    },
+    {
+      "id": "R40",
+      "paragrafo_atual": 539,
+      "autor": "SHARMA",
+      "ano_bibliografico": "2025",
+      "texto": "SHARMA, M.; SARTOR, E.; CAVAZZA, M.; PRENDINGER, H. Echo State Networks for Bitcoin Time Series Prediction. Neural Information Processing (ICONIP 2025). 2025. (Preprint arXiv:2508.05416).",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D23",
+          "arquivo": "Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+          "sha256": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+          "paginas": 15,
+          "caracteres_extraidos": 67851,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [
+            {
+              "registro": "leituras_sharma_duttilo_lote7.json",
+              "metodo": "Todas as 15 páginas abertas e lidas visualmente; texto extraído das páginas 1–5 e 7–15 lido como apoio. A camada textual adicional da página 6 não foi usada como evidência.",
+              "paginas_visuais_abertas": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_sharma_duttilo_lote7.json"
+      ],
+      "limites_restantes": "Passes globais de similaridade e Guia permanecem próprios; não reprodução dos estudos."
+    },
+    {
+      "id": "R41",
+      "paragrafo_atual": 540,
+      "autor": "SOLTANI",
+      "ano_bibliografico": "2022",
+      "texto": "SOLTANI, R.; BENMOHAMED, E.; LTIFI, H. Echo State Network Optimization: A Systematic Literature Review. Research Square, versão 1, 4 ago. 2022. Preprint. DOI: 10.21203/rs.3.rs-1909702/v1.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D24",
+          "arquivo": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+          "sha256": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+          "paginas": 19,
+          "caracteres_extraidos": 58466,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [
+            {
+              "registro": "leituras_dewick_nelson_soltani_lote8.json",
+              "metodo": "Preprint v1 lido integralmente em blocos1–6,7–10,11–15,16–19; nove páginas abertas para capa, seleção, técnicas, parâmetros, benchmarks e conclusão.",
+              "paginas_visuais_abertas": [
+                1,
+                6,
+                7,
+                8,
+                9,
+                11,
+                12,
+                13,
+                14
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_dewick_nelson_soltani_lote8.json"
+      ],
+      "limites_restantes": "Similaridade e requisitos globais do Guia mantêm passes específicos; não reprodução independente dos artigos."
+    },
+    {
+      "id": "R42",
+      "paragrafo_atual": 541,
+      "autor": "SUDIATMIKA",
+      "ano_bibliografico": "2024",
+      "texto": "SUDIATMIKA, I. P. G. A.; PUTRA, I M. Agus Wirahadi. Comparison of LSTM and GRU Models Performance in Forecasting Gold Prices: A Case Study Using Historical Data from Yahoo Finance. ARRUS Journal of Engineering and Technology, v. 4, n. 1, p. 157-165, 2024. DOI: 10.35877/jetech2760.",
+      "status_conferencia_integral": "texto_da_fonte_lido_conferencia_em_andamento",
+      "fontes_primarias": [
+        {
+          "id": "D25",
+          "arquivo": "Artigos citados\\Sudiatmika - Comparison of LSTM and GRU Models Performance.pdf",
+          "sha256": "610bedfb14458d480dfd1adb4e89a8ff39487fe2e9b5a7eb3411e87e519af1fc",
+          "paginas": 9,
+          "caracteres_extraidos": 25193,
+          "estado_leitura": "texto_integral_lido_decisoes_em_andamento",
+          "log_leitura": [
+            {
+              "paginas_pdf": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "metodo": "Leitura sequencial do texto completo extraído, incluindo referências; blocos exibidos sem truncamento.",
+              "visuais_abertos_nesta_etapa": [],
+              "limite": "Texto completo lido não é inspeção visual de todas as páginas nem reprodução de experimentos. Passe de similaridade ainda não concluído."
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "achados_leituras_lote2.json"
+      ],
+      "limites_restantes": "Passe de similaridade, todas as retomadas e conferência final do Word ainda não encerrados."
+    },
+    {
+      "id": "R43",
+      "paragrafo_atual": 542,
+      "autor": "SUN",
+      "ano_bibliografico": "2021",
+      "texto": "SUN, G.; LIN, J.; YANG, C.; YIN, X.; LI, Z.; GUO, P.; SUN, J.; FAN, X.; PAN, B. Stock Price Forecasting: An Echo State Network Approach. Computer Systems Science and Engineering, v. 36, n. 3, p. 509-520, 2021. DOI: 10.32604/csse.2021.014189.",
+      "status_conferencia_integral": "texto_completo_e_elementos_visuais_centrais_lidos",
+      "fontes_primarias": [
+        {
+          "id": "D26",
+          "arquivo": "Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+          "sha256": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+          "paginas": 12,
+          "caracteres_extraidos": 25364,
+          "estado_leitura": "texto_integral_lido_decisoes_em_andamento",
+          "log_leitura": [
+            {
+              "paginas_pdf": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "metodo": "Leitura sequencial do texto em blocos1–5 e6–12, sem truncamento; figuras, fluxograma, equações e tabelas das páginas3–10 abertos visualmente.",
+              "visuais_abertos_nesta_meta": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "limite": "Sem execução do modelo ou acesso ao código original do estudo; não supõe reprodução de seus resultados."
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leitura_D26_sun.json"
+      ],
+      "limites_restantes": "Passe global de similaridade e conferência final da cópia revisada."
+    },
+    {
+      "id": "R44",
+      "paragrafo_atual": 543,
+      "autor": "TIAN",
+      "ano_bibliografico": "2024",
+      "texto": "TIAN, Z.; PEI, L. Stocks price prediction based on optimized echo state network by sparrow search algorithm. International Journal of Dynamics and Control, v. 12, p. 2764-2777, 2024. DOI: 10.1007/s40435-024-01405-8.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D27",
+          "arquivo": "Artigos citados\\Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+          "sha256": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+          "paginas": 15,
+          "caracteres_extraidos": 48083,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [
+            {
+              "registro": "leituras_tian_deng_lote9.json",
+              "metodo": "Texto integral das15páginas lido em blocos1–5,6–10,11–15, incluindo referências e página de termos; nove páginas abertas para método,tabelas e metadados.",
+              "paginas_visuais_abertas": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                9,
+                10,
+                11,
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_tian_deng_lote9.json"
+      ],
+      "limites_restantes": "Passe formal de autoria/citações e similaridade; conteúdo lido nas versões identificadas,sem reprodução dos experimentos."
+    },
+    {
+      "id": "R45",
+      "paragrafo_atual": 544,
+      "autor": "TIMBÓ",
+      "ano_bibliografico": "2016",
+      "texto": "TIMBÓ, N. S.; LABIDI, S.; NASCIMENTO, T. P.; LIMA, M. L.; NUNES NETO, G.; MATOS, R. C. Approach Based on Linear Regression for Stock Exchange Prediction – Case Study of Petr4 Petrobrás, Brazil. International Journal of Artificial Intelligence & Applications (IJAIA), v. 7, n. 1, p. 21-31, jan. 2016. DOI: 10.5121/ijaia.2016.7103.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D28",
+          "arquivo": "Artigos citados\\Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+          "sha256": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+          "paginas": 11,
+          "caracteres_extraidos": 31752,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [
+            {
+              "registro": "leituras_ecer_timbo_lote10.json",
+              "metodo": "Texto integral das 11 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+              "paginas_visuais_abertas": [
+                1,
+                5,
+                7,
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_ecer_timbo_lote10.json"
+      ],
+      "limites_restantes": "Passe formal de autoria e similaridade; U0218Behera ainda parcial. R20issue11não confirmado no cabeçalho local. Nenhuma reprodução experimental."
+    },
+    {
+      "id": "R46",
+      "paragrafo_atual": 545,
+      "autor": "VISHWAS",
+      "ano_bibliografico": "2025",
+      "texto": "VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, 2025. DOI: 10.21595/mme.2025.24861.",
+      "status_conferencia_integral": "texto_da_fonte_lido_conferencia_em_andamento",
+      "fontes_primarias": [
+        {
+          "id": "D30",
+          "arquivo": "Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+          "sha256": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+          "paginas": 26,
+          "caracteres_extraidos": 96063,
+          "estado_leitura": "texto_integral_lido_decisoes_em_andamento",
+          "log_leitura": [
+            {
+              "paginas_pdf": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26
+              ],
+              "metodo": "Leitura sequencial em blocos1–5,6–10,11–16,17–21,22–26; sem truncamento dos blocos exibidos.",
+              "visuais_abertos_nesta_meta": [
+                9,
+                15,
+                20,
+                21,
+                22
+              ],
+              "produto": "achados_D30_vishwas.json"
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "achados_D30_vishwas.json"
+      ],
+      "limites_restantes": "Passe de similaridade, todas as retomadas e conferência final do Word ainda não encerrados."
+    },
+    {
+      "id": "R47",
+      "paragrafo_atual": 546,
+      "autor": "WANG",
+      "ano_bibliografico": "2025",
+      "texto": "WANG, F.; BU, T.; HUANG, Y. Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing. International Journal of Computational Intelligence Systems, v. 18, art. 180, 2025. DOI: 10.1007/s44196-025-00906-4.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R48",
+      "paragrafo_atual": 547,
+      "autor": "WANG",
+      "ano_bibliografico": "2021",
+      "texto": "WANG, W.; TANG, Y.; XIONG, J.; ZHANG, Y. Stock market index prediction based on reservoir computing models. Expert Systems with Applications, v. 178, art. 115022, 2021. DOI: 10.1016/j.eswa.2021.115022.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    },
+    {
+      "id": "R49",
+      "paragrafo_atual": 548,
+      "autor": "XIAO",
+      "ano_bibliografico": "2024",
+      "texto": "XIAO, J.; DENG, T.; BI, S. Comparative Analysis of LSTM, GRU, and Transformer Models for Stock Price Prediction. In: INTERNATIONAL CONFERENCE ON DIGITAL ECONOMY, BLOCKCHAIN AND ARTIFICIAL INTELLIGENCE (DEBAI 2024), 2024, Guangzhou. Proceedings [...]. New York: ACM, 2024. p. 103-108. DOI: 10.1145/3700058.3700075.",
+      "status_conferencia_integral": "fonte_lida_decisoes_por_afirmacao_registradas",
+      "fontes_primarias": [
+        {
+          "id": "D33",
+          "arquivo": "Artigos citados\\Xiao J - Comparative analysis of LSTM, GRU, and transformer models for stock price prediction.pdf",
+          "sha256": "482ceb3a009c7f971c60b365b85ca2ad41e9eea657d7ea91c48f06740209d787",
+          "paginas": 7,
+          "caracteres_extraidos": 28260,
+          "estado_leitura": "leitura_integral_com_evidencias_visuais",
+          "log_leitura": [
+            {
+              "registro": "leituras_liu_hariharan_xiao_lote12.json",
+              "metodo": "Texto integral das 7 páginas lido, incluindo referências e limitações; páginas críticas abertas visualmente. Em D33, são capa ACM e seis páginas impressas103–108.",
+              "paginas_visuais_abertas": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "diagnosticos_por_afirmacao": [
+        "leituras_liu_hariharan_xiao_lote12.json"
+      ],
+      "limites_restantes": "Correções do lote12incorporadas e inspecionadas; validação por afirmação. U0196permanece parcial porCortesi eU0231porRibeiro/Wang; análise de similaridade e passe geral do Guia ainda em andamento."
+    },
+    {
+      "id": "R50",
+      "paragrafo_atual": 549,
+      "autor": "ZHANG",
+      "ano_bibliografico": "2021",
+      "texto": "ZHANG, H; ZHENG, M.; ZHANG, Y.; YU, X.; LI, W.; GAO, H. Application of ESN prediction model based on compressed sensing in stock market. Communications in Nonlinear Science and Numerical Simulation, v. 101, art. 105857, 2021. DOI: 10.1016/j.cnsns.2021.105857.",
+      "status_conferencia_integral": "nao_examinada_nesta_meta",
+      "fontes_primarias": [],
+      "diagnosticos_por_afirmacao": []
+    }
+  ],
+  "ocorrencias_nominais_historicas": [
+    {
+      "local": "P_atual0039",
+      "citacao": "Gleick, 1987",
+      "ano": "1987",
+      "referencias": [
+        "R22"
+      ]
+    },
+    {
+      "local": "P_atual0067",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0183",
+      "citacao": "Vishwas et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R46"
+      ]
+    },
+    {
+      "local": "P_atual0185",
+      "citacao": "Ping (2023)",
+      "ano": "2023",
+      "referencias": [
+        "R37"
+      ]
+    },
+    {
+      "local": "P_atual0187",
+      "citacao": "Timbó et al. (2016)",
+      "ano": "2016",
+      "referencias": [
+        "R45"
+      ]
+    },
+    {
+      "local": "P_atual0188",
+      "citacao": "Costa e Lunkes (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R14"
+      ]
+    },
+    {
+      "local": "P_atual0189",
+      "citacao": "Liu H. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R32"
+      ]
+    },
+    {
+      "local": "P_atual0190",
+      "citacao": "Xiao (2024)",
+      "ano": "2024",
+      "referencias": [
+        "R49"
+      ]
+    },
+    {
+      "local": "P_atual0192",
+      "citacao": "Sudiatmika e Putra (2024)",
+      "ano": "2024",
+      "referencias": [
+        "R42"
+      ]
+    },
+    {
+      "local": "P_atual0193",
+      "citacao": "Hochreiter e Schmidhuber (1997)",
+      "ano": "1997",
+      "referencias": [
+        "R25"
+      ]
+    },
+    {
+      "local": "P_atual0193",
+      "citacao": "Cho et al. (2014)",
+      "ano": "2014",
+      "referencias": [
+        "R12"
+      ]
+    },
+    {
+      "local": "P_atual0194",
+      "citacao": "Sudiatmika e Putra (2024)",
+      "ano": "2024",
+      "referencias": [
+        "R42"
+      ]
+    },
+    {
+      "local": "P_atual0196",
+      "citacao": "Vishwas et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R46"
+      ]
+    },
+    {
+      "local": "P_atual0197",
+      "citacao": "Xiao (2024)",
+      "ano": "2024",
+      "referencias": [
+        "R49"
+      ]
+    },
+    {
+      "local": "P_atual0197",
+      "citacao": "Cortesi et al. (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R13"
+      ]
+    },
+    {
+      "local": "P_atual0199",
+      "citacao": "Chen et al. (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R11"
+      ]
+    },
+    {
+      "local": "P_atual0200",
+      "citacao": "Kumar (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R29"
+      ]
+    },
+    {
+      "local": "P_atual0201",
+      "citacao": "Behera (2023)",
+      "ano": "2023",
+      "referencias": [
+        "R05"
+      ]
+    },
+    {
+      "local": "P_atual0203",
+      "citacao": "Jaeger (2001)",
+      "ano": "2001",
+      "referencias": [
+        "R27"
+      ]
+    },
+    {
+      "local": "P_atual0203",
+      "citacao": "Jaeger (2007)",
+      "ano": "2007",
+      "referencias": [
+        "R28"
+      ]
+    },
+    {
+      "local": "P_atual0204",
+      "citacao": "Jaeger, 2007",
+      "ano": "2007",
+      "referencias": [
+        "R28"
+      ]
+    },
+    {
+      "local": "P_atual0205",
+      "citacao": "Sun (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R43"
+      ]
+    },
+    {
+      "local": "P_atual0206",
+      "citacao": "Wang et al. (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R48"
+      ]
+    },
+    {
+      "local": "P_atual0207",
+      "citacao": "Ribeiro et al. (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R38"
+      ]
+    },
+    {
+      "local": "P_atual0208",
+      "citacao": "Wang et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R47"
+      ]
+    },
+    {
+      "local": "P_atual0209",
+      "citacao": "Liu (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R31"
+      ]
+    },
+    {
+      "local": "P_atual0210",
+      "citacao": "Zhang et al. (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R50"
+      ]
+    },
+    {
+      "local": "P_atual0211",
+      "citacao": "Hariharan et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R23"
+      ]
+    },
+    {
+      "local": "P_atual0212",
+      "citacao": "Hassaan et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R24"
+      ]
+    },
+    {
+      "local": "P_atual0212",
+      "citacao": "Seddik (2023)",
+      "ano": "2023",
+      "referencias": [
+        "R39"
+      ]
+    },
+    {
+      "local": "P_atual0213",
+      "citacao": "Sharma (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R40"
+      ]
+    },
+    {
+      "local": "P_atual0216",
+      "citacao": "Millea (2014)",
+      "ano": "2014",
+      "referencias": [
+        "R34"
+      ]
+    },
+    {
+      "local": "P_atual0217",
+      "citacao": "Tian (2024)",
+      "ano": "2024",
+      "referencias": [
+        "R44"
+      ]
+    },
+    {
+      "local": "P_atual0218",
+      "citacao": "Deng et al. (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R15"
+      ]
+    },
+    {
+      "local": "P_atual0219",
+      "citacao": "Ecer (2020)",
+      "ano": "2020",
+      "referencias": [
+        "R20"
+      ]
+    },
+    {
+      "local": "P_atual0219",
+      "citacao": "Behera (2023)",
+      "ano": "2023",
+      "referencias": [
+        "R05"
+      ]
+    },
+    {
+      "local": "P_atual0220",
+      "citacao": "Soltani et al. (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R41"
+      ]
+    },
+    {
+      "local": "P_atual0221",
+      "citacao": "Araújo et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R02"
+      ]
+    },
+    {
+      "local": "P_atual0223",
+      "citacao": "Millea (2014)",
+      "ano": "2014",
+      "referencias": [
+        "R34"
+      ]
+    },
+    {
+      "local": "P_atual0224",
+      "citacao": "Nelson, 1991",
+      "ano": "1991",
+      "referencias": [
+        "R35"
+      ]
+    },
+    {
+      "local": "P_atual0225",
+      "citacao": "Nelson (1991)",
+      "ano": "1991",
+      "referencias": [
+        "R35"
+      ]
+    },
+    {
+      "local": "P_atual0226",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0227",
+      "citacao": "Duttilo e Gattone (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R19"
+      ]
+    },
+    {
+      "local": "P_atual0228",
+      "citacao": "Abebe & Goshu (2024)",
+      "ano": "2024",
+      "referencias": [
+        "R01"
+      ]
+    },
+    {
+      "local": "P_atual0229",
+      "citacao": "Dewick (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R16"
+      ]
+    },
+    {
+      "local": "P_atual0229",
+      "citacao": "Soltani et al. (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R41"
+      ]
+    },
+    {
+      "local": "P_atual0232",
+      "citacao": "Ribeiro et al. (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R38"
+      ]
+    },
+    {
+      "local": "P_atual0232",
+      "citacao": "Hariharan et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R23"
+      ]
+    },
+    {
+      "local": "P_atual0232",
+      "citacao": "Wang et al. (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R48"
+      ]
+    },
+    {
+      "local": "P_atual0233",
+      "citacao": "Hassaan et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R24"
+      ]
+    },
+    {
+      "local": "P_atual0234",
+      "citacao": "Araújo et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R02"
+      ]
+    },
+    {
+      "local": "P_atual0234",
+      "citacao": "Sharma (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R40"
+      ]
+    },
+    {
+      "local": "P_atual0236",
+      "citacao": "Cardoso et al. (2022b)",
+      "ano": "2022b",
+      "referencias": [
+        "R07"
+      ]
+    },
+    {
+      "local": "P_atual0237",
+      "citacao": "Cardoso et al., 2022b",
+      "ano": "2022b",
+      "referencias": [
+        "R07"
+      ]
+    },
+    {
+      "local": "P_atual0238",
+      "citacao": "Cortesi et al. (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R13"
+      ]
+    },
+    {
+      "local": "P_atual0239",
+      "citacao": "Costa e Lunkes (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R14"
+      ]
+    },
+    {
+      "local": "P_atual0242",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0243",
+      "citacao": "Cardoso et al. (2022b)",
+      "ano": "2022b",
+      "referencias": [
+        "R07"
+      ]
+    },
+    {
+      "local": "P_atual0245",
+      "citacao": "Araújo et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R02"
+      ]
+    },
+    {
+      "local": "P_atual0246",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0247",
+      "citacao": "Ribeiro et al. (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R38"
+      ]
+    },
+    {
+      "local": "P_atual0248",
+      "citacao": "Wang et al. (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R48"
+      ]
+    },
+    {
+      "local": "P_atual0249",
+      "citacao": "Wang et al. (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R48"
+      ]
+    },
+    {
+      "local": "P_atual0250",
+      "citacao": "Tian e Pei (2024)",
+      "ano": "2024",
+      "referencias": [
+        "R44"
+      ]
+    },
+    {
+      "local": "P_atual0251",
+      "citacao": "Hassaan et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R24"
+      ]
+    },
+    {
+      "local": "P_atual0252",
+      "citacao": "Hassaan et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R24"
+      ]
+    },
+    {
+      "local": "P_atual0253",
+      "citacao": "Sharma (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R40"
+      ]
+    },
+    {
+      "local": "P_atual0256",
+      "citacao": "Sun (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R43"
+      ]
+    },
+    {
+      "local": "P_atual0256",
+      "citacao": "Kumar (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R29"
+      ]
+    },
+    {
+      "local": "P_atual0256",
+      "citacao": "Hassaan et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R24"
+      ]
+    },
+    {
+      "local": "P_atual0257",
+      "citacao": "Vishwas et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R46"
+      ]
+    },
+    {
+      "local": "P_atual0257",
+      "citacao": "Jaeger, 2007",
+      "ano": "2007",
+      "referencias": [
+        "R28"
+      ]
+    },
+    {
+      "local": "P_atual0258",
+      "citacao": "Deng et al. (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R15"
+      ]
+    },
+    {
+      "local": "P_atual0258",
+      "citacao": "Tian (2024)",
+      "ano": "2024",
+      "referencias": [
+        "R44"
+      ]
+    },
+    {
+      "local": "P_atual0258",
+      "citacao": "Sharma (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R40"
+      ]
+    },
+    {
+      "local": "P_atual0258",
+      "citacao": "Soltani et al. (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R41"
+      ]
+    },
+    {
+      "local": "P_atual0259",
+      "citacao": "Araújo et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R02"
+      ]
+    },
+    {
+      "local": "P_atual0260",
+      "citacao": "Araújo et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R02"
+      ]
+    },
+    {
+      "local": "P_atual0260",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0260",
+      "citacao": "Cardoso (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R10"
+      ]
+    },
+    {
+      "local": "P_atual0264",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0299",
+      "citacao": "Jaeger (2007)",
+      "ano": "2007",
+      "referencias": [
+        "R28"
+      ]
+    },
+    {
+      "local": "P_atual0302",
+      "citacao": "Cardoso et al., 2022b",
+      "ano": "2022b",
+      "referencias": [
+        "R07"
+      ]
+    },
+    {
+      "local": "P_atual0312",
+      "citacao": "Cardoso et al. (2022b)",
+      "ano": "2022b",
+      "referencias": [
+        "R07"
+      ]
+    },
+    {
+      "local": "P_atual0321",
+      "citacao": "Cardoso et al. (2022a)",
+      "ano": "2022a",
+      "referencias": [
+        "R06"
+      ]
+    },
+    {
+      "local": "P_atual0321",
+      "citacao": "Jaeger (2007)",
+      "ano": "2007",
+      "referencias": [
+        "R28"
+      ]
+    },
+    {
+      "local": "P_atual0321",
+      "citacao": "Araújo et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R02"
+      ]
+    },
+    {
+      "local": "P_atual0322",
+      "citacao": "Jaeger, 2007",
+      "ano": "2007",
+      "referencias": [
+        "R28"
+      ]
+    },
+    {
+      "local": "P_atual0325",
+      "citacao": "Holland (1975)",
+      "ano": "1975",
+      "referencias": [
+        "R26"
+      ]
+    },
+    {
+      "local": "P_atual0325",
+      "citacao": "McKay, Beckman e Conover (1979)",
+      "ano": "1979",
+      "referencias": [
+        "R33"
+      ]
+    },
+    {
+      "local": "P_atual0326",
+      "citacao": "Eshelman (1991)",
+      "ano": "1991",
+      "referencias": [
+        "R21"
+      ]
+    },
+    {
+      "local": "P_atual0330",
+      "citacao": "Araújo et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R02"
+      ]
+    },
+    {
+      "local": "P_atual0344",
+      "citacao": "Diebold e Mariano (1995)",
+      "ano": "1995",
+      "referencias": [
+        "R17"
+      ]
+    },
+    {
+      "local": "P_atual0360",
+      "citacao": "Pagani; Kovaleski; Resende, 2015",
+      "ano": "2015",
+      "referencias": [
+        "R36"
+      ]
+    },
+    {
+      "local": "P_atual0365",
+      "citacao": "Aria e Cuccurullo (2017)",
+      "ano": "2017",
+      "referencias": [
+        "R03"
+      ]
+    },
+    {
+      "local": "P_atual0365",
+      "citacao": "Aria et al. (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R04"
+      ]
+    },
+    {
+      "local": "P_atual0366",
+      "citacao": "Cardoso et al. (2022c, 2024)",
+      "ano": "2022c",
+      "referencias": [
+        "R08"
+      ]
+    },
+    {
+      "local": "P_atual0366",
+      "citacao": "Cardoso et al. (2022c, 2024)",
+      "ano": "2024",
+      "referencias": [
+        "R09"
+      ]
+    },
+    {
+      "local": "P_atual0443",
+      "citacao": "Diebold e Mariano (1995)",
+      "ano": "1995",
+      "referencias": [
+        "R17"
+      ]
+    },
+    {
+      "local": "P_atual0450",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0452",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0453",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0454",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0455",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0470",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0489",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "P_atual0498",
+      "citacao": "Jaeger (2001, 2007)",
+      "ano": "2001",
+      "referencias": [
+        "R27"
+      ]
+    },
+    {
+      "local": "P_atual0498",
+      "citacao": "Jaeger (2001, 2007)",
+      "ano": "2007",
+      "referencias": [
+        "R28"
+      ]
+    },
+    {
+      "local": "P_atual0498",
+      "citacao": "Araújo et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R02"
+      ]
+    },
+    {
+      "local": "P_atual0498",
+      "citacao": "Cardoso (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R10"
+      ]
+    },
+    {
+      "local": "P_atual0498",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "T_atual2/L1/C0/P0",
+      "citacao": "Abebe & Goshu (2024)",
+      "ano": "2024",
+      "referencias": [
+        "R01"
+      ]
+    },
+    {
+      "local": "T_atual2/L2/C0/P0",
+      "citacao": "Araújo et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R02"
+      ]
+    },
+    {
+      "local": "T_atual2/L3/C0/P0",
+      "citacao": "Behera (2023)",
+      "ano": "2023",
+      "referencias": [
+        "R05"
+      ]
+    },
+    {
+      "local": "T_atual2/L4/C0/P0",
+      "citacao": "Cardoso et al. (2022b)",
+      "ano": "2022b",
+      "referencias": [
+        "R07"
+      ]
+    },
+    {
+      "local": "T_atual2/L5/C0/P0",
+      "citacao": "Chen et al. (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R11"
+      ]
+    },
+    {
+      "local": "T_atual2/L6/C0/P0",
+      "citacao": "Cortesi et al. (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R13"
+      ]
+    },
+    {
+      "local": "T_atual2/L7/C0/P0",
+      "citacao": "Costa & Lunkes (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R14"
+      ]
+    },
+    {
+      "local": "T_atual2/L8/C0/P0",
+      "citacao": "Deng et al. (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R15"
+      ]
+    },
+    {
+      "local": "T_atual2/L9/C0/P0",
+      "citacao": "Dewick (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R16"
+      ]
+    },
+    {
+      "local": "T_atual2/L10/C0/P0",
+      "citacao": "Duttilo (2023)",
+      "ano": "2023",
+      "referencias": [
+        "R18"
+      ]
+    },
+    {
+      "local": "T_atual2/L11/C0/P0",
+      "citacao": "Duttilo e Gattone (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R19"
+      ]
+    },
+    {
+      "local": "T_atual2/L12/C0/P0",
+      "citacao": "Ecer (2020)",
+      "ano": "2020",
+      "referencias": [
+        "R20"
+      ]
+    },
+    {
+      "local": "T_atual2/L13/C0/P0",
+      "citacao": "Hariharan et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R23"
+      ]
+    },
+    {
+      "local": "T_atual2/L14/C0/P0",
+      "citacao": "Hassaan et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R24"
+      ]
+    },
+    {
+      "local": "T_atual2/L15/C0/P0",
+      "citacao": "Jaeger (2007)",
+      "ano": "2007",
+      "referencias": [
+        "R28"
+      ]
+    },
+    {
+      "local": "T_atual2/L16/C0/P0",
+      "citacao": "Kumar (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R29"
+      ]
+    },
+    {
+      "local": "T_atual2/L17/C0/P0",
+      "citacao": "Liu B. et al. (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R31"
+      ]
+    },
+    {
+      "local": "T_atual2/L18/C0/P0",
+      "citacao": "Liu H. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R32"
+      ]
+    },
+    {
+      "local": "T_atual2/L19/C0/P0",
+      "citacao": "Millea (2014)",
+      "ano": "2014",
+      "referencias": [
+        "R34"
+      ]
+    },
+    {
+      "local": "T_atual2/L20/C0/P0",
+      "citacao": "Nelson (1991)",
+      "ano": "1991",
+      "referencias": [
+        "R35"
+      ]
+    },
+    {
+      "local": "T_atual2/L21/C0/P0",
+      "citacao": "Ping (2023)",
+      "ano": "2023",
+      "referencias": [
+        "R37"
+      ]
+    },
+    {
+      "local": "T_atual2/L22/C0/P0",
+      "citacao": "Seddik (2023)",
+      "ano": "2023",
+      "referencias": [
+        "R39"
+      ]
+    },
+    {
+      "local": "T_atual2/L23/C0/P0",
+      "citacao": "Sharma (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R40"
+      ]
+    },
+    {
+      "local": "T_atual2/L24/C0/P0",
+      "citacao": "Soltani et al. (2022)",
+      "ano": "2022",
+      "referencias": [
+        "R41"
+      ]
+    },
+    {
+      "local": "T_atual2/L25/C0/P0",
+      "citacao": "Sudiatmika & Putra (2024)",
+      "ano": "2024",
+      "referencias": [
+        "R42"
+      ]
+    },
+    {
+      "local": "T_atual2/L26/C0/P0",
+      "citacao": "Sun (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R43"
+      ]
+    },
+    {
+      "local": "T_atual2/L27/C0/P0",
+      "citacao": "Tian (2024)",
+      "ano": "2024",
+      "referencias": [
+        "R44"
+      ]
+    },
+    {
+      "local": "T_atual2/L28/C0/P0",
+      "citacao": "Timbó et al. (2016)",
+      "ano": "2016",
+      "referencias": [
+        "R45"
+      ]
+    },
+    {
+      "local": "T_atual2/L29/C0/P0",
+      "citacao": "Ribeiro et al. (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R38"
+      ]
+    },
+    {
+      "local": "T_atual2/L30/C0/P0",
+      "citacao": "Vishwas et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R46"
+      ]
+    },
+    {
+      "local": "T_atual2/L31/C0/P0",
+      "citacao": "Wang F. et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R47"
+      ]
+    },
+    {
+      "local": "T_atual2/L32/C0/P0",
+      "citacao": "Wang W. et al. (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R48"
+      ]
+    },
+    {
+      "local": "T_atual2/L33/C0/P0",
+      "citacao": "Xiao (2024)",
+      "ano": "2024",
+      "referencias": [
+        "R49"
+      ]
+    },
+    {
+      "local": "T_atual2/L34/C0/P0",
+      "citacao": "Zhang et al. (2021)",
+      "ano": "2021",
+      "referencias": [
+        "R50"
+      ]
+    },
+    {
+      "local": "T_atual12/L1/C0/P0",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    },
+    {
+      "local": "T_atual13/L1/C1/P0",
+      "citacao": "Jaeger (2001, 2007)",
+      "ano": "2001",
+      "referencias": [
+        "R27"
+      ]
+    },
+    {
+      "local": "T_atual13/L1/C1/P0",
+      "citacao": "Jaeger (2001, 2007)",
+      "ano": "2007",
+      "referencias": [
+        "R28"
+      ]
+    },
+    {
+      "local": "T_atual13/L2/C1/P0",
+      "citacao": "Araújo et al. (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R02"
+      ]
+    },
+    {
+      "local": "T_atual13/L2/C1/P0",
+      "citacao": "Cardoso (2025)",
+      "ano": "2025",
+      "referencias": [
+        "R10"
+      ]
+    },
+    {
+      "local": "T_atual13/L2/C1/P0",
+      "citacao": "Lampugnani (2026)",
+      "ano": "2026",
+      "referencias": [
+        "R30"
+      ]
+    }
+  ],
+  "limite": "As 151 correspondências nominais não comprovam fidelidade e não encerram o inventário de citações. Conferir formatos não reconhecidos, atribuições sem citação e conteúdo de tabelas/notas."
+}

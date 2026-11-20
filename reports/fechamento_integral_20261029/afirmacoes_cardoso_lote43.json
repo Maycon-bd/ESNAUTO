@@ -1,0 +1,73 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "4cf48044445c0760210b1206c185487b8406af3eaecb541de6db381cdbf735b0",
+  "registros": [
+    {
+      "ancora": "P_atual0260",
+      "texto_atual": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG.",
+      "referencia": "R10",
+      "fonte": "reports\\tese_Fabian_Correa_Cardoso.pdf",
+      "sha256_fonte": "0713862798eb01327e7534ff86e694d76bb8bf9bc2113ba6407bef04f14b2e26",
+      "localizador": "p. 84 e 101 impressas, Tabelas 16 e 32 (PDF 87 e 104)",
+      "evidencia": "Tabela 16: ITSA4, RMSE ARMA-EGARCH 0,000036582 contra ESN 0,000040582. Tabela 32: PETR4, RMSE ARMA-EGARCH 0,000107948 contra ESN 0,000110424; MAE ARMA-EGARCH 0,000022638 e ESN 0,000016448. O objeto é variância dos retornos, distinto do preço nesta monografia.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0392",
+      "texto_atual": "Para complementar as tabelas, as Figuras 5 e 6 apresentam a evolução da busca genética e a comparação entre valores observados e previstos na mesma execução preservada. A escolha dessas visualizações tomou como referência as Figuras 29 e 30 de Cardoso (2025, p. 90), adaptando-as à previsão do preço ajustado, em vez dos retornos estudados naquela tese.",
+      "referencia": "R10",
+      "fonte": "reports\\tese_Fabian_Correa_Cardoso.pdf",
+      "sha256_fonte": "0713862798eb01327e7534ff86e694d76bb8bf9bc2113ba6407bef04f14b2e26",
+      "localizador": "p. 90 impressa, Figuras 29–30 (PDF 93)",
+      "evidencia": "Figura 29 mostra evolução de aptidão ao longo de gerações; Figura 30 compara retornos alvo e previstos, na validação. A referência é de apresentação; os dados, valores e protocolo não são atribuídos à tese.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0396",
+      "texto_atual": "Fonte: Elaborado pelo autor com o histórico preservado do lote de 200 gerações (2026). Referência de apresentação: Cardoso (2025, Figura 29).",
+      "referencia": "R10",
+      "fonte": "reports\\tese_Fabian_Correa_Cardoso.pdf",
+      "sha256_fonte": "0713862798eb01327e7534ff86e694d76bb8bf9bc2113ba6407bef04f14b2e26",
+      "localizador": "p. 90 impressa, Figura 29 (PDF 93)",
+      "evidencia": "Gráfico de fitness por geração sustenta referência visual; a figura da monografia é identificada como própria e obtida do lote legado de 200 gerações.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0401",
+      "texto_atual": "Fonte: Elaborado pelo autor pela reinjeção das matrizes preservadas, GED × Uniforme, rodada 2 (2026). Referência de apresentação: Cardoso (2025, Figura 30).",
+      "referencia": "R10",
+      "fonte": "reports\\tese_Fabian_Correa_Cardoso.pdf",
+      "sha256_fonte": "0713862798eb01327e7534ff86e694d76bb8bf9bc2113ba6407bef04f14b2e26",
+      "localizador": "p. 90 impressa, Figura 30 (PDF 93)",
+      "evidencia": "Gráfico da tese compara retornos observados e previstos; a monografia apresenta gráfico próprio de preços e explicita sua procedência.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0498",
+      "texto_atual": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados.",
+      "referencia": "R10",
+      "fonte": "reports\\tese_Fabian_Correa_Cardoso.pdf",
+      "sha256_fonte": "0713862798eb01327e7534ff86e694d76bb8bf9bc2113ba6407bef04f14b2e26",
+      "localizador": "ficha, resumo e corpo da tese; p. 84, 90 e 101 impressas",
+      "evidencia": "Tese trata de ESN, otimização genética, modelos ARIMA/ARMA e diferentes distribuições. A atribuição a outras referências do Quadro 6 exige registros próprios.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "T_atual13/L2",
+      "texto_atual": [
+        "ESN, AG e distribuições",
+        "Araújo et al. (2025); Cardoso (2025); Lampugnani (2026)",
+        "O protocolo combina elementos já investigados. A aplicação à PETR4 não demonstra novidade de cada técnica."
+      ],
+      "referencia": "R10",
+      "fonte": "reports\\tese_Fabian_Correa_Cardoso.pdf",
+      "sha256_fonte": "0713862798eb01327e7534ff86e694d76bb8bf9bc2113ba6407bef04f14b2e26",
+      "localizador": "tese, resumo e capítulos metodológicos",
+      "evidencia": "A combinação de ESN, AG e distribuições tem antecedentes na tese; demais autores do quadro são avaliados separadamente.",
+      "diagnostico": "condizente na afirmação delimitada"
+    }
+  ],
+  "limite": "Páginas 87, 93 e 104 do PDF inspecionadas visualmente. Esta conferência não valida automaticamente a reconstrução dos dados das figuras próprias nem outros trechos do parágrafo.",
+  "acao": "Nenhuma edição nesses pontos."
+}

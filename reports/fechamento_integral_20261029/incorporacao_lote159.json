@@ -1,0 +1,40 @@
+{
+  "sha_antes": "46064ee644ae74ba774c5e4adb2e16bc7c00c137914ae2484678e8ff08b6af44",
+  "alteracoes": [
+    {
+      "indice": 355,
+      "antes": "Não foi afirmada reconstrução automática das versões históricas de todas as dependências, pois não havia arquivo de lock de ambiente versionado no conjunto auditado. Para a execução inferencial complementar, foi preparado um ambiente isolado e registrado com R 4.6.0, pacote forecast 9.0.2, TensorFlow 2.20.0 e Keras 3.12.0, executado em CPU com operações determinísticas e semente-base 20260926.",
+      "depois": "Não foi afirmada reconstrução automática das versões históricas de todas as dependências, pois não havia arquivo de fixação das versões das dependências do ambiente versionado no conjunto auditado. Para a execução inferencial complementar, foi preparado um ambiente isolado e registrado com R 4.6.0, pacote forecast 9.0.2, TensorFlow 2.20.0 e Keras 3.12.0, executado em CPU com operações determinísticas e semente-base 20260926."
+    },
+    {
+      "indice": 369,
+      "antes": "Para os títulos, foram extraídos pares de palavras adjacentes (bigrams) dos 34 registros. O texto foi convertido para minúsculas e tokenizado, sem conservar pontuação, algarismos ou hífens nos tokens. Os pares foram formados antes da exclusão de palavras de ligação, evitando unir palavras originalmente distantes. Não foram aplicados stemming, expansão de siglas nem agrupamento entre singular e plural.",
+      "depois": "Para os títulos, foram extraídos pares de palavras adjacentes (bigrams) dos 34 registros. O texto foi convertido para minúsculas e tokenizado, sem conservar pontuação, algarismos ou hífens nas unidades textuais extraídas. Os pares foram formados antes da exclusão de palavras de ligação, evitando unir palavras originalmente distantes. Não foram aplicados stemming, expansão de siglas nem agrupamento entre singular e plural."
+    },
+    {
+      "indice": 369,
+      "antes": "Para os títulos, foram extraídos pares de palavras adjacentes (bigrams) dos 34 registros. O texto foi convertido para minúsculas e tokenizado, sem conservar pontuação, algarismos ou hífens nas unidades textuais extraídas. Os pares foram formados antes da exclusão de palavras de ligação, evitando unir palavras originalmente distantes. Não foram aplicados stemming, expansão de siglas nem agrupamento entre singular e plural.",
+      "depois": "Para os títulos, foram extraídos pares de palavras adjacentes (bigrams) dos 34 registros. O texto foi convertido para minúsculas e tokenizado, sem conservar pontuação, algarismos ou hífens nas unidades textuais extraídas. Os pares foram formados antes da exclusão de palavras de ligação, evitando unir palavras originalmente distantes. Não foram aplicadas redução de palavras a radicais, expansão de siglas nem agrupamento entre singular e plural."
+    },
+    {
+      "indice": 417,
+      "antes": "A volatilidade diária dos retornos simples foi, respectivamente, de aproximadamente 3,99%, 2,56% e 4,32%. Os drawdowns máximos observados nos mesmos intervalos foram de aproximadamente -52,27%, -46,55% e -63,36%. Esses valores mostraram que 2020 concentrou o regime de maior estresse entre os subperíodos do teste, enquanto 2017–2019 apresentou menor volatilidade relativa.",
+      "depois": "A volatilidade diária dos retornos simples foi, respectivamente, de aproximadamente 3,99%, 2,56% e 4,32%. As quedas máximas acumuladas em relação aos picos anteriores observadas nos mesmos intervalos foram de aproximadamente -52,27%, -46,55% e -63,36%. Esses valores mostraram que 2020 concentrou o regime de maior estresse entre os subperíodos do teste, enquanto 2017–2019 apresentou menor volatilidade relativa."
+    },
+    {
+      "indice": 422,
+      "antes": "O ajuste analítico de aproximadamente 0,05 segundo correspondeu ao cálculo da camada de saída após a configuração da ESN ter sido selecionada. Considerando apenas essa etapa, o tempo documentado representou speedup aproximado de 576 vezes em relação à GRU e 708 vezes em relação à LSTM.",
+      "depois": "O ajuste analítico de aproximadamente 0,05 segundo correspondeu ao cálculo da camada de saída após a configuração da ESN ter sido selecionada. Considerando apenas essa etapa, o tempo documentado correspondeu a uma razão de tempos de aproximadamente 576 vezes em relação à GRU e 708 vezes em relação à LSTM."
+    },
+    {
+      "indice": 438,
+      "antes": "A manutenção do modelo anterior permite rollback caso o candidato apresente comportamento inadequado.",
+      "depois": "A manutenção do modelo anterior permite retornar à versão anterior caso o candidato apresente comportamento inadequado."
+    },
+    {
+      "indice": 479,
+      "antes": "A discussão de governança apresentada no Capítulo 4 constitui um enquadramento para eventual implantação e não uma validação operacional em produção. O trabalho não definiu limites organizacionais de risco, não avaliou estratégia de compra e venda, custos de transação, retorno financeiro ou indicadores de carteira e não testou processos de monitoramento, promoção e rollback em ambiente real. Consequentemente, esses mecanismos são tratados como requisitos de engenharia e gestão de modelo derivados das limitações observadas, e não como funcionalidades cuja eficácia financeira tenha sido demonstrada.",
+      "depois": "A discussão de governança apresentada no Capítulo 4 constitui um enquadramento para eventual implantação e não uma validação operacional em produção. O trabalho não definiu limites organizacionais de risco, não avaliou estratégia de compra e venda, custos de transação, retorno financeiro ou indicadores de carteira e não testou processos de monitoramento, promoção e retorno à versão anterior em ambiente real. Consequentemente, esses mecanismos são tratados como requisitos de engenharia e gestão de modelo derivados das limitações observadas, e não como funcionalidades cuja eficácia financeira tenha sido demonstrada."
+    }
+  ]
+}

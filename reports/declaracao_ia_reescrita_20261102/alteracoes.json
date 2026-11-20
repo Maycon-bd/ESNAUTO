@@ -1,0 +1,86 @@
+{
+  "base": "v011",
+  "base_sha256": "6ce846aec1d02f0ab1c6e575f822f082920331f8d7b6c444914bb45d0563ce4a",
+  "trabalho_sha256": "37feaaa77a3257c9e0b2dbc414dfbbaef55db0a14f24e50d8532aa44d0a3a398",
+  "declaracao_sha256": "652d5bc0a56b9a58f099bc34b7879703aa57fa06f5ee1f1d4525d9638815a818",
+  "confirmacao_autor": "Modelos usados sempre foram do Claude Opus 5.5 e do Codex foi o Sol 5.6",
+  "origem_modelos": "Nomes informados pelo autor; não constituem identificação técnica independente por logs.",
+  "alteracoes": [
+    {
+      "antes": "Na extração bibliográfica, utilizou-se Gemini 2.5 Flash, temperatura 0, por script próprio em Python. Claude e OpenAI Codex apoiaram a revisão e a leitura; Codex também apoiou os testes. O autor conferiu pessoalmente os artigos e executou testes. O escopo e a validação humana do uso de inteligência artificial generativa (IAG) constam da declaração no Anexo A.",
+      "depois": "Na extração bibliográfica, empregou-se Gemini 2.5 Flash (temperatura 0), por script próprio em Python. Claude Opus 5.5 e Codex Sol 5.6 auxiliaram na revisão e leitura; apenas o Codex apoiou os testes. O autor conferiu os artigos pessoalmente e executou testes. O Anexo A detalha o uso de inteligência artificial generativa (IAG) e a conferência humana realizada."
+    },
+    {
+      "antes": "Em observância aos princípios de integridade científica regulamentados pela Portaria CNPq nº 2.664/2026, declaramos que todas as ferramentas de IAG abaixo identificadas foram empregadas estritamente em caráter de auxílio instrumental ao desenvolvimento do TFC.",
+      "depois": "Declaramos que as ferramentas de inteligência artificial generativa relacionadas a seguir foram utilizadas como apoio ao desenvolvimento deste TFC. O registro de suas finalidades e da conferência humana realizada atende aos princípios de integridade científica mencionados na Portaria CNPq nº 2.664/2026."
+    },
+    {
+      "antes": "Fica certificado que não houve delegação da autoria intelectual, e que os autores respondem direta e integralmente pela fidedignidade teórica da redação científica, pela correção técnica das arquiteturas de software/jogos geradas, bem como pelo respeito incondicional às normas de integridade, propriedade industrial e direito autoral vigente.",
+      "depois": "A autoria intelectual permanece humana. Os signatários assumem integralmente a responsabilidade pelo conteúdo apresentado, pela consistência das afirmações científicas e pela correção técnica do software, assim como pelo cumprimento das normas de integridade, de propriedade industrial e de direitos autorais."
+    },
+    {
+      "antes": "Extração dos dados",
+      "depois": "Extração bibliográfica"
+    },
+    {
+      "antes": "Script próprio em Python; Gemini 2.5 Flash; temperatura 0",
+      "depois": "Script próprio em Python; Gemini 2.5 Flash; temperatura 0"
+    },
+    {
+      "antes": "Preenchimento inicial do formulário a partir do PDF de cada publicação, com trecho, localização e justificativa de cada resposta.",
+      "depois": "Registro preliminar das respostas ao formulário de extração a partir dos PDFs, com trecho de apoio, localização e justificativa."
+    },
+    {
+      "antes": "Conferência pessoal dos artigos pelo autor.",
+      "depois": "O autor conferiu pessoalmente os artigos consultados."
+    },
+    {
+      "antes": "Revisão e leitura do texto",
+      "depois": "Revisão e leitura do texto"
+    },
+    {
+      "antes": "Claude e OpenAI Codex; versões não informadas",
+      "depois": "Claude Opus 5.5 e Codex Sol 5.6"
+    },
+    {
+      "antes": "Auxílio à revisão e reformulação de trechos, leitura assistida, correção linguística e conferência documental.",
+      "depois": "Leitura assistida e sugestões de ajustes na linguagem e na organização de trechos da monografia."
+    },
+    {
+      "antes": "Leitura com auxílio de IA e conferência pessoal dos artigos pelo autor; devolutiva textual do orientador.",
+      "depois": "O autor confrontou o conteúdo com os artigos. O orientador apresentou correções no texto."
+    },
+    {
+      "antes": "Execução de testes",
+      "depois": "Testes do projeto"
+    },
+    {
+      "antes": "OpenAI Codex; versão não informada",
+      "depois": "Codex Sol 5.6"
+    },
+    {
+      "antes": "Apoio à preparação, execução e análise de testes.",
+      "depois": "Assistência na preparação e execução de testes e na interpretação das saídas obtidas."
+    },
+    {
+      "antes": "Execução de testes pelo autor, tanto pessoalmente quanto com auxílio de IA.",
+      "depois": "O autor executou testes diretamente e também com apoio do Codex."
+    },
+    {
+      "antes": "Padronização e apresentação",
+      "depois": "Formatação e material de defesa"
+    },
+    {
+      "antes": "OpenAI Codex; versão não informada",
+      "depois": "Codex Sol 5.6"
+    },
+    {
+      "antes": "Apoio à formatação, a scripts de conferência documental e à preparação de slides e roteiro.",
+      "depois": "Ajustes na apresentação do documento, verificações por scripts e elaboração de slides e roteiro."
+    },
+    {
+      "antes": "Análise e solicitação de ajustes pelo autor; correções textuais do orientador na monografia.",
+      "depois": "O autor avaliou as propostas e solicitou alterações; o orientador devolveu a monografia com correções."
+    }
+  ]
+}

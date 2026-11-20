@@ -1,0 +1,1278 @@
+
+[PÁGINA PDF 1]
+Echo State Networks for Bitcoin Time Series
+Prediction
+Mansi Sharma1[0000−0001−9196−6342], Enrico Sartor2[0009−0009−2697−6849], Marc
+Cavazza3[0000−0001−6113−9696], and Helmut Prendinger4[0000−0003−4654−9835]
+1 DFKI, Saarland Informatics Campus, Germany
+2 Politecnico di Milano, Italy
+3 University of Stirling, UK
+4 National Institute of Informatics, Japan
+mansi.sharma@dfki.de
+Abstract. Forecasting stock and cryptocurrency prices is challenging
+due to high volatility and non-stationarity, influenced by factors like
+economic changes and market sentiment. Previous research shows that
+Echo State Networks (ESNs) can effectively model short-term stock mar-
+ket movements, capturing nonlinear patterns in dynamic data. To the
+best of our knowledge, this work is among the first to explore ESNs for
+cryptocurrency forecasting, especially during extreme volatility. We also
+conduct chaos analysis through the Lyapunov exponent in chaotic pe-
+riods and show that our approach outperforms existing machine learn-
+ing methods by a significant margin. Our findings are consistent with
+the Lyapunov exponent analysis, showing that ESNs are robust during
+chaotic periods and excel under high chaos compared to Boosting and
+Naïve methods.
+Keywords: chaotic time series, cryptocurrency forecasting, echo state
+networks, lyapunov exponent
+1 Introduction
+Time series data are pervasive in both human activities and natural
+processes, including finance [30,7,15], energy consumption [6], and cli-
+mate variability [23]. Accurate forecasting supports decision-making, but
+volatility, non-linearity, and noise in real-world data challenge traditional
+models. Traditionally, forecasting used statistical models like ARIMA
+and Exponential Smoothing for their simplicity and interpretability
+[2,25], but these often fail to capture complex, non-linear patterns in
+large datasets. ML and DL methods offer adaptability by learning di-
+rectly from data, though debates persist about their interpretability, ef-
+ficiency, and scalability.
+While DL architectures have demonstrated success in modeling com-
+plex temporal relationships their use in time series forecasting presents
+several challenges. These include high computational demands, longer
+training times, sensitivity to hyperparameter tuning, and a lack of inter-
+pretability. Moreover, many DL models require extensive training data
+arXiv:2508.05416v1  [cs.LG]  7 Aug 2025
+
+[PÁGINA PDF 2]
+2 Sharma et al.
+to generalize well, making them less suitable for domains with limited or
+noisy time series data. Their black-box nature also hinders their adoption
+in critical applications where transparency is much needed.
+In contrast, Echo State Networks (ESNs) offer a lightweight and compu-
+tationally efficient alternative for time series (TS) forecasting [16,30,10].
+As a type of Reservoir Computing model, ESNs leverage a fixed, ran-
+domly connected recurrent reservoir, where only the output weights are
+trained [10]. This approach significantly reduces training complexity and
+computational requirements. Because the internal dynamics of the reser-
+voir are not adjusted during training, ESNs tend to be robust to over-
+fitting and can generalize well, even in low-data or noisy settings [16].
+Their architecture naturally captures temporal dependencies without the
+need for backpropagation through time, making them efficient and scal-
+able. Recent studies have shown the applicability of ESNs in various
+domains, including hydrological modeling, control systems, and finan-
+cial forecasting [14,15,7]. Despite their advantages, ESNs remain under-
+explored in the context of cryptocurrency forecasting—a domain char-
+acterized by extreme volatility, noise, and non-stationarity. Bitcoin, in
+particular, presents a highly challenging time series due to its stochastic
+behavior and susceptibility to abrupt market events.
+As a use case, our work addresses the challenge of highly volatile Bit-
+coin prediction by forecasting its daily closing prices. The substantial
+price volatility and stochastic characteristics of Bitcoin time series data
+pose significant challenges in forecasting performance solely based on
+historical price movements. The need for more historical data specific to
+cryptocurrencies compounds these challenges, further complicating the
+identification of long-term patterns and trends over extended periods.
+Our specific contributions are threefold:
+1. To the best of our knowledge, this is among the first explorations of
+ESN to forecast cryptocurrency prices. We show that with extensive
+fine-tuning of the ESN hyperparameters, it is possible to generate
+Bitcoin price predictions outperforming other mainstream ML meth-
+ods.
+2. We evaluate ESNs using short time windows to stabilize the time se-
+ries and compare their performance on uni-variate and multi-variate
+data, highlighting our comprehensive analysis of the choice of fea-
+tures for forecasting.
+3. We analyze results from the perspective of TS chaotic behavior, us-
+ing Lyapunov’s exponent, suggesting a potential further criterion for
+ESN applicability.
+2 Related Work
+Time series forecasting is widely used in fields such as finance, eco-
+nomics, weather prediction, supply chain management, and healthcare
+[13,2,8,9,12]. Hybrid approaches combining statistical methods with ML
+algorithms have gained popularity for improving predictive accuracy [25].
+Makridakis et al. [17] argued that ML methods can identify data re-
+lationships automatically, unlike statistical methods that require trend
+
+[PÁGINA PDF 3]
+Echo State Networks for Bitcoin Time Series Prediction 3
+and seasonality specifications. However, ML performance depends on
+data availability and often lags behind traditional statistical methods
+in non-stationary time series [26]. Makridakiset al. found that statisti-
+cal methods generally outperformed ML across accuracy measures and
+forecasting horizons. Hybrid models combining ML and statistical tech-
+niques have shown improved forecasting accuracy [25]. Makridakiset al.
+[18] later found that ensemble deep learning models perform better for
+long-range predictions, while statistical and ML models excel in short-
+term forecasting. Previous research mainly focuses on price trend clas-
+sification and time series regression. However, evaluation methods vary,
+leading to conflicting results. We provide a comprehensive analysis of
+cryptocurrency forecasting across both tasks.
+2.1 Cryptocurrency F orecasting
+There is growing interest in cryptocurrencies, particularly with Bitcoin
+leading the way as the first digital currency [20]. Studies have assessed
+Bitcoin’s market efficiency over time with mixed findings. Urquhart
+[28] found inefficiency from 2010–2016, while Nadarajah [19] observed
+weak form efficiency using power transformations. Likewise, Bariviera [3]
+showed Bitcoin market was not weak form efficient before 2014, but be-
+came weak form efficient afterwards. Overall, evidence is mixed, though
+many suggest Bitcoin has become more efficient as the market grows.
+Classification. Borgeset al. [5] classify trends by resampling data using
+closing price thresholds and averaging results from four models: Logistic
+RegressionandSupportVectorMachine(linear),andRandomForestand
+Decision Tree Gradient Boosting (non-linear). While ensemble methods
+often improve regression problems, ESNs offer computational efficiency
+and simplicity, requiring only the output layer to be trained. ESNs ex-
+cel at capturing temporal dependencies and non-linear patterns, making
+them ideal for volatile markets like cryptocurrency. Sunet al. [27] show
+that LightGBM outperforms classical ML methods on a dataset of 42
+cryptocurrencies. Jaquart et al. [12] predict trends on a high-frequency
+dataset using various ML and DL models, finding that RNNs and Gra-
+dient Boosting provide the best results.
+Regression. Alessandretti et al. [1] compare two XGBoost models and
+an LSTM to a baseline Simple Moving Averages model, showing that
+LSTMs excel in long-range predictions while XGBoost performs well for
+short-term predictions with a small window of recent data. Elsayedet al.
+[8] enhance XGBoost predictions by adding previous data points as fea-
+tures, an approach we adapted for our model. Woodet al. [29] developed
+a custom transformer model for time series forecasting, but its extended
+training time is a downside. Jaegeret al. [10] first applied ESNs to stock
+prediction in 2009, using the Hurst exponent and PCA to improve per-
+formance. Lin et al. [15] extended this to predict stock market returns,
+demonstrating ESNs’ outperformance of other neural networks, though
+PCA was necessary for some stocks. Danet al. [7] tested a deterministic
+ESN on the Chinese stock market and S&P 500, showing modest im-
+provements. Zhanget al. [30] demonstrated the competitiveness of ESNs
+compared to other ML and DL methods. Kenny [13] is the only study
+
+[PÁGINA PDF 4]
+4 Sharma et al.
+2018 2019 2020 2021 2022 2023
+Date
+0
+20000
+40000
+60000
+80000Close Price ($)
+Fig.1: Bitcoin data showing the closing prices with standard
+deviation computed on a moving windows of 30 days.
+2018 2019 2020 2021 2022 2023
+Date
+7500
+5000
+2500
+0
+2500
+5000
+7500
+Close Price ($)
+Fig.2: Bitcoin differenced prices.
+to apply ESNs to cryptocurrency forecasting but without extensive ESN
+tuning, which is the focus of our work.
+3 Dataset and Descriptive Statistics
+We used daily Bitcoin data evaluated in US dol lars (ticker: BTCUSDT)
+sourced from the Binance trading platform [4]. Missing values were filled
+using linear interpolation, with no additional transformations applied,
+though we considered standardization and converting prices to returns
+or log returns. Our preliminary experiments indicated that returns and
+log returns, despite their stationarity, present higher variance and are
+more challenging to predict. Standardization or scaling could facilitate
+model comparison, but we chose to avoid these preprocessing methods to
+maintain clarity regarding our models’ performance, as even basic stan-
+dardization could significantly affect the dataset due to non-stationarity.
+The dataset spans from August 17th, 2017 to January 24th, 2023, and
+includes opening, closing, high, and low prices. The opening price is
+recorded at the start of the day, while the closing price is recorded at the
+end. Figure 1 illustrates the closing prices and their standard deviation,
+computed using a 30-day moving window, represented as a band with a
+thickness of 3 standard deviations on each side. We opted for daily data
+because the results were almost independent of frequency, a phenomenon
+aligned with the Fractal Market Hypothesis (FMH) [21], which suggests
+
+[PÁGINA PDF 5]
+Echo State Networks for Bitcoin Time Series Prediction 5
+that market behavior exhibits consistent patterns regardless of the time
+scale. The forecasting task focuses on predicting the closing price for the
+following day, with an emphasis on one-day-ahead forecasts.
+Figure 1 shows various types of non-stationarities in the data. These
+include linear and exponential trends (with the latter emerging towards
+the end of 2020), abrupt changes indicative of structural breaks (such
+as at the start of 2021), heteroscedasticity, characterized by fluctuating
+variance over time, and a non-normal, non-symmetric price distribution
+with fat tails.
+Toaddresstheseissues,weperformedfractionaldifferentiation,similarto
+the approach used by [22], to determine the minimum level of differentia-
+tion required to achieve stationarity according to the Augmented Dickey-
+Fuller (ADF) test, while preserving as much memory as possible. The
+analysis revealed a fractional differentiation order of 0.8, indicating that
+the integration order is less than 1. Despite this, the data remains non-
+stationary at higher moments (as depicted in Figure 2), indicating the
+complexity of the forecasting challenge. Cryptocurrency markets, partic-
+ularly Bitcoin, are known for their high volatility. This volatility stems
+from a combination of factors, including speculative trading, regulatory
+news, market sentiment, and the relatively immature state of the mar-
+ket compared to traditional assets like stocks and bonds. Such extreme
+price fluctuations pose a significant challenge for forecasting models, as
+they need to capture the underlying chaotic behavior of the market.
+Our study aims to leverage advanced forecasting techniques, specifically
+ESNs, which are well-suited for handling non-linear and chaotic time
+series data.
+4 Methods
+In this section, we describe the Echo State Network approach, detail the
+chaos analysis using the Lyapunov exponent, and explain our feature
+selection process. Additionally, we present the baseline for comparison.
+4.1 Echo State Network
+Echo State Networks (ESN) belong to the category of recurrent neural
+networks and are inherently chaotic due to the random connections be-
+tween their neurons. ESN was originally proposed by Jager et al. [10] to
+tackle nonlinear system learning and predict chaotic time series.
+During training, Echo State Networks (ESNs) update only the connec-
+tions between the reservoir (observer) and the output. The internal net-
+work forms a large reservoir of coupled oscillators, where input drives
+their states, and predictions rely on their responses. A key advantage of
+ESNs is that only the output connections are trained—hidden and input
+connections remain fixed. Figure 3 illustrates the architecture of the ESN
+model, which is described as follows:
+˜x(k) = tanh( Winu(k) + Wxx(k − 1)) (1)
+
+[PÁGINA PDF 6]
+6 Sharma et al.
+Input Layer Output LayerReservoir
+of randomly generated weight parameters into account. We focus
+on the ESN as proposed by Jaeger and his group [48,50,62]includ-
+ing the leakage concept, a promising ESN evolution. We apply the
+proposed optimization procedure on the challenging task of pre-
+dicting chaotic time series, a benchmark problem in machine
+learning, being representative for and of interest in such diverse
+ﬁelds as ﬁnancial analyses, weather forecasting, and climate
+change modeling. Forecasting of time series in general is applied
+for even more tasks, such as controlling [8,91], fault and signal
+detection[23,68], and reservoir computing even in picture restora-
+tion[27]and pattern recognition [28]. Based on our experimental
+results, we derive a guideline for choosing initial hyper-parameters
+to be used in training or to speed-up the hyper-parameter search,
+depending on the characteristic features of the time-series in
+consideration.
+The contribution of our paper is threefold: Firstly, we provide an
+overview on previous studies applying ESNs for predicting chaotic
+time series with a particular focus on the choice of hyper-
+parameters. Secondly, we propose a systematic hyper-parameter
+grid-search algorithm tailored to the stochastic nature of ESNs.
+Thereby, we propose a method for deriving reservoir weight matri-
+ces of varying size and density from a static initially-seeded set to
+ensure comparability of the conducted experiments despite the
+stochastic model nature. Furthermore, we propose a sequential
+search order that minimizes interactions among the optimized
+parameters as much as possible. Repeating the optimization loop
+several times stabilizes the obtained optimization results. Thirdly,
+we conduct a systematic study with baseline problems in chaotic
+time-series forecasting to derive guidelines for practical use of
+the reservoir computing model. Overall, we study seven hyper-
+parameters across four datasets and 100 randomly-initialized
+ESNs. While many earlier studies solely evaluate single-step pre-
+dictions, we investigate auto-regressive prediction scenarios with
+up to several hundred time steps to make the task at hand even
+more challenging. Fourth, we extensively analyze and discuss the
+outcome of our study. On the one hand, we highlight clear trends.
+On the other hand, we comment on the interplay of the hyper-
+parameters and their dependence on the problem in consideration.
+Doing so allows us to derive guidelines providing orientation on
+the choice of hyper-parameters for other researchers when train-
+ing new models. Hereby, we ﬁll the gap in understanding ESNs
+by not only optimizing the hyper-parameters but also showing
+the reasoning of selecting their actual values in dependence to
+the dataset. While not explicitly studied, our concepts may be
+transferable to other randomly initialized neural networks, e.g.,
+stochastic conﬁguration networks in the future [21,20,19].
+This paper is structured as follows. In Section 2, we introduce
+the fundamentals of echo state networks and their training. In Sec-
+tion3, we brieﬂy overview previous work on applying ESNs for
+time series prediction including the choice of hyper-parameters.
+Then, we brieﬂy introduce four time series datasets to be utilized
+in our systematic study. In Section 5, we discuss our experimental
+setup and the grid search procedure applied in this study and
+report its results in Section 6. In Section7, we derive and discuss
+design guidelines for ESNs based on our ﬁndings and eventually
+conclude the paper in Section 8.
+2. The Echo State Network
+Reservoir Computing refers to the concept of mapping a model’s
+input into a higher dimensional space, the reservoir [48]. This map-
+ping differs from conventional RNNs, such as long short-term
+memory (LSTM, see [44]) and gated recurrent unit (GRU, see
+[25]), by training only the weights Woutconnecting the reservoir
+and the output. The weights Winmapping the input into the state
+space of the reservoir as well as those of Wr(connections edges in
+within the reservoir) are set ﬁxed for each realization according to
+the current set hyper-parameter selection Nevertheless, using the
+validation data similarly to other neural network structures, an
+iterative training process – corresponding to a highly nonlinear
+and, in general, non-convex optimization – needs to be conducted.
+One major contribution of our work is to provide easy-to-
+implement guidelines for this hyper-parameter tuning and an
+excellent educated guess to drastically speed up the otherwise very
+time-consuming optimization – supposing that the time-series
+data of interest exhibits comparable key characteristics to one of
+our four representative ones. Solely the weights mapping the
+high-dimensional reservoir back to the lower-dimensional output
+layer have to be determined using methods with low computa-
+tional costs[90], e.g., linear regression, support-vector machines,
+and multi-layer perceptrons [62,86].
+Primarily, two ﬂavors of reservoir computing have been studied
+in the last two decades: ESNs and LSMs. While the biologically-
+inspired LSMs use so-called spiking neurons and are mainly used
+for modeling in neuroscience, we focus on ESNs as the reservoir-
+computing prototype used in machine learning for time-series
+prediction.
+2.1. Reservoir dynamics and input layer
+An ESN exhibits a recurrent neural network topology consisting
+of three layers: input, hidden, and output, cp. Fig. 1.
+The hidden state hðkÞ
+at time instant k;k2N0(non-negative
+integers), is determined by
+hðkÞ
+¼tanhWinxðkÞþWrsðk/C01Þ
+/C16/C17
+; ð1Þ
+wherexðkÞrepresents the data vector feed into the network aug-
+mented by an additional entry, i.e. xðkÞ
+1 ¼1 holds to include a bias
+term. Hence, in a slight abuse of notation ( Nindenotes the incre-
+mented input dimension to reﬂect this artiﬁcial augmentation),
+the inputxðkÞis combined with the internal state sðk/C01Þof the network
+using the matricesWin2RNr/C2Nin
+andWr2RNr/C2Nr
+. The input weights
+Wincan, in general, be drawn from any random distribution, while
+almost consistently a uniform distribution is used [80], i.e.
+wðinÞ
+ij /C24Uða;bÞwitha<0<b;ði;jÞ2f1;...;NðresÞg/C2f1;...;NðinÞg.
+Furthermore, we sparsely initialize Wr, where the non-zero
+entries satisfy wr
+ij/C24Uð/C01;1Þ;ði;jÞ2f1;...;Nrg2
+. The result
+WinxðkÞþWrsðk/C01Þbecomes the input to the activation function, i.e.
+Fig. 1.Building blocks of an ESN: layered structure, core parameters, and their
+dimensionality.
+J. Viehweg, K. Worthmann and P. Mäder Neurocomputing 522 (2023) 214–228
+215
+of randomly generated weight parameters into account. We focus
+on the ESN as proposed by Jaeger and his group [48,50,62]includ-
+ing the leakage concept, a promising ESN evolution. We apply the
+proposed optimization procedure on the challenging task of pre-
+dicting chaotic time series, a benchmark problem in machine
+learning, being representative for and of interest in such diverse
+ﬁelds as ﬁnancial analyses, weather forecasting, and climate
+change modeling. Forecasting of time series in general is applied
+for even more tasks, such as controlling [8,91], fault and signal
+detection[23,68], and reservoir computing even in picture restora-
+tion[27]and pattern recognition[28]. Based on our experimental
+results, we derive a guideline for choosing initial hyper-parameters
+to be used in training or to speed-up the hyper-parameter search,
+depending on the characteristic features of the time-series in
+consideration.
+The contribution of our paper is threefold: Firstly, we provide an
+overview on previous studies applying ESNs for predicting chaotic
+time series with a particular focus on the choice of hyper-
+parameters. Secondly, we propose a systematic hyper-parameter
+grid-search algorithm tailored to the stochastic nature of ESNs.
+Thereby, we propose a method for deriving reservoir weight matri-
+ces of varying size and density from a static initially-seeded set to
+ensure comparability of the conducted experiments despite the
+stochastic model nature. Furthermore, we propose a sequential
+search order that minimizes interactions among the optimized
+parameters as much as possible. Repeating the optimization loop
+several times stabilizes the obtained optimization results. Thirdly,
+we conduct a systematic study with baseline problems in chaotic
+time-series forecasting to derive guidelines for practical use of
+the reservoir computing model. Overall, we study seven hyper-
+parameters across four datasets and 100 randomly-initialized
+ESNs. While many earlier studies solely evaluate single-step pre-
+dictions, we investigate auto-regressive prediction scenarios with
+up to several hundred time steps to make the task at hand even
+more challenging. Fourth, we extensively analyze and discuss the
+outcome of our study. On the one hand, we highlight clear trends.
+On the other hand, we comment on the interplay of the hyper-
+parameters and their dependence on the problem in consideration.
+Doing so allows us to derive guidelines providing orientation on
+the choice of hyper-parameters for other researchers when train-
+ing new models. Hereby, we ﬁll the gap in understanding ESNs
+by not only optimizing the hyper-parameters but also showing
+the reasoning of selecting their actual values in dependence to
+the dataset. While not explicitly studied, our concepts may be
+transferable to other randomly initialized neural networks, e.g.,
+stochastic conﬁguration networks in the future [21,20,19].
+This paper is structured as follows. In Section 2, we introduce
+the fundamentals of echo state networks and their training. In Sec-
+tion3, we brieﬂy overview previous work on applying ESNs for
+time series prediction including the choice of hyper-parameters.
+Then, we brieﬂy introduce four time series datasets to be utilized
+in our systematic study. In Section5, we discuss our experimental
+setup and the grid search procedure applied in this study and
+report its results in Section6. In Section7, we derive and discuss
+design guidelines for ESNs based on our ﬁndings and eventually
+conclude the paper in Section8.
+2. The Echo State Network
+Reservoir Computing refers to the concept of mapping a model’s
+input into a higher dimensional space, the reservoir[48]. This map-
+ping differs from conventional RNNs, such as long short-term
+memory (LSTM, see [44]) and gated recurrent unit (GRU, see
+[25]), by training only the weights Woutconnecting the reservoir
+and the output. The weightsWinmapping the input into the state
+space of the reservoir as well as those of Wr(connections edges in
+within the reservoir) are set ﬁxed for each realization according to
+the current set hyper-parameter selection Nevertheless, using the
+validation data similarly to other neural network structures, an
+iterative training process – corresponding to a highly nonlinear
+and, in general, non-convex optimization – needs to be conducted.
+One major contribution of our work is to provide easy-to-
+implement guidelines for this hyper-parameter tuning and an
+excellent educated guess to drastically speed up the otherwise very
+time-consuming optimization – supposing that the time-series
+data of interest exhibits comparable key characteristics to one of
+our four representative ones. Solely the weights mapping the
+high-dimensional reservoir back to the lower-dimensional output
+layer have to be determined using methods with low computa-
+tional costs[90], e.g., linear regression, support-vector machines,
+and multi-layer perceptrons[62,86].
+Primarily, two ﬂavors of reservoir computing have been studied
+in the last two decades: ESNs and LSMs. While the biologically-
+inspired LSMs use so-called spiking neurons and are mainly used
+for modeling in neuroscience, we focus on ESNs as the reservoir-
+computing prototype used in machine learning for time-series
+prediction.
+2.1. Reservoir dynamics and input layer
+An ESN exhibits a recurrent neural network topology consisting
+of three layers: input, hidden, and output, cp. Fig. 1.
+The hidden state hðkÞ
+at time instant k;k2N0(non-negative
+integers), is determined by
+hðkÞ
+¼tanhWinxðkÞþWrsðk/C01Þ
+/C16/C17
+; ð1Þ
+wherexðkÞrepresents the data vector feed into the network aug-
+mented by an additional entry, i.e. xðkÞ
+1 ¼1 holds to include a bias
+term. Hence, in a slight abuse of notation ( Nindenotes the incre-
+mented input dimension to reﬂect this artiﬁcial augmentation),
+the inputxðkÞis combined with the internal statesðk/C01Þof the network
+using the matricesWin2RNr/C2Nin
+andWr2RNr/C2Nr
+. The input weights
+Wincan, in general, be drawn from any random distribution, while
+almost consistently a uniform distribution is used [80], i.e.
+wðinÞ
+ij /C24Uða;bÞwitha<0<b;ði;jÞ2f1;...;NðresÞg/C2f1;...;NðinÞg.
+Furthermore, we sparsely initialize Wr, where the non-zero
+entries satisfy wr
+ij/C24Uð/C01;1Þ;ði;jÞ2f1;...;Nrg2
+. The result
+WinxðkÞþWrsðk/C01Þbecomes the input to the activation function, i.e.
+Fig. 1.Building blocks of an ESN: layered structure, core parameters, and their
+dimensionality.
+J. Viehweg, K. Worthmann and P. Mäder Neurocomputing 522 (2023) 214–228
+215
+of randomly generated weight parameters into account. We focus
+on the ESN as proposed by Jaeger and his group[48,50,62]includ-
+ing the leakage concept, a promising ESN evolution. We apply the
+proposed optimization procedure on the challenging task of pre-
+dicting chaotic time series, a benchmark problem in machine
+learning, being representative for and of interest in such diverse
+ﬁelds as ﬁnancial analyses, weather forecasting, and climate
+change modeling. Forecasting of time series in general is applied
+for even more tasks, such as controlling [8,91], fault and signal
+detection[23,68], and reservoir computing even in picture restora-
+tion[27]and pattern recognition[28]. Based on our experimental
+results, we derive a guideline for choosing initial hyper-parameters
+to be used in training or to speed-up the hyper-parameter search,
+depending on the characteristic features of the time-series in
+consideration.
+The contribution of our paper is threefold: Firstly, we provide an
+overview on previous studies applying ESNs for predicting chaotic
+time series with a particular focus on the choice of hyper-
+parameters. Secondly, we propose a systematic hyper-parameter
+grid-search algorithm tailored to the stochastic nature of ESNs.
+Thereby, we propose a method for deriving reservoir weight matri-
+ces of varying size and density from a static initially-seeded set to
+ensure comparability of the conducted experiments despite the
+stochastic model nature. Furthermore, we propose a sequential
+search order that minimizes interactions among the optimized
+parameters as much as possible. Repeating the optimization loop
+several times stabilizes the obtained optimization results. Thirdly,
+we conduct a systematic study with baseline problems in chaotic
+time-series forecasting to derive guidelines for practical use of
+the reservoir computing model. Overall, we study seven hyper-
+parameters across four datasets and 100 randomly-initialized
+ESNs. While many earlier studies solely evaluate single-step pre-
+dictions, we investigate auto-regressive prediction scenarios with
+up to several hundred time steps to make the task at hand even
+more challenging. Fourth, we extensively analyze and discuss the
+outcome of our study. On the one hand, we highlight clear trends.
+On the other hand, we comment on the interplay of the hyper-
+parameters and their dependence on the problem in consideration.
+Doing so allows us to derive guidelines providing orientation on
+the choice of hyper-parameters for other researchers when train-
+ing new models. Hereby, we ﬁll the gap in understanding ESNs
+by not only optimizing the hyper-parameters but also showing
+the reasoning of selecting their actual values in dependence to
+the dataset. While not explicitly studied, our concepts may be
+transferable to other randomly initialized neural networks, e.g.,
+stochastic conﬁguration networks in the future[21,20,19].
+This paper is structured as follows. In Section 2, we introduce
+the fundamentals of echo state networks and their training. In Sec-
+tion3, we brieﬂy overview previous work on applying ESNs for
+time series prediction including the choice of hyper-parameters.
+Then, we brieﬂy introduce four time series datasets to be utilized
+in our systematic study. In Section5, we discuss our experimental
+setup and the grid search procedure applied in this study and
+report its results in Section6. In Section7, we derive and discuss
+design guidelines for ESNs based on our ﬁndings and eventually
+conclude the paper in Section8.
+2. The Echo State Network
+Reservoir Computing refers to the concept of mapping a model’s
+input into a higher dimensional space, the reservoir[48]. This map-
+ping differs from conventional RNNs, such as long short-term
+memory (LSTM, see [44]) and gated recurrent unit (GRU, see
+[25]), by training only the weightsWoutconnecting the reservoir
+and the output. The weightsWinmapping the input into the state
+space of the reservoir as well as those ofWr(connections edges in
+within the reservoir) are set ﬁxed for each realization according to
+the current set hyper-parameter selection Nevertheless, using the
+validation data similarly to other neural network structures, an
+iterative training process – corresponding to a highly nonlinear
+and, in general, non-convex optimization – needs to be conducted.
+One major contribution of our work is to provide easy-to-
+implement guidelines for this hyper-parameter tuning and an
+excellent educated guess to drastically speed up the otherwise very
+time-consuming optimization – supposing that the time-series
+data of interest exhibits comparable key characteristics to one of
+our four representative ones. Solely the weights mapping the
+high-dimensional reservoir back to the lower-dimensional output
+layer have to be determined using methods with low computa-
+tional costs[90], e.g., linear regression, support-vector machines,
+and multi-layer perceptrons[62,86].
+Primarily, two ﬂavors of reservoir computing have been studied
+in the last two decades: ESNs and LSMs. While the biologically-
+inspired LSMs use so-called spiking neurons and are mainly used
+for modeling in neuroscience, we focus on ESNs as the reservoir-
+computing prototype used in machine learning for time-series
+prediction.
+2.1. Reservoir dynamics and input layer
+An ESN exhibits a recurrent neural network topology consisting
+of three layers: input, hidden, and output, cp.Fig. 1.
+The hidden statehðkÞ
+at time instantk;k2N0(non-negative
+integers), is determined by
+hðkÞ¼tanhWinxðkÞþWrsðk/C01Þ
+/C16/C17
+; ð1Þ
+wherexðkÞrepresents the data vector feed into the network aug-
+mented by an additional entry, i.e.xðkÞ
+1 ¼1 holds to include a bias
+term. Hence, in a slight abuse of notation ( Nindenotes the incre-
+mented input dimension to reﬂect this artiﬁcial augmentation),
+the inputxðkÞis combined with the internal statesðk/C01Þof the network
+using the matricesWin2RNr/C2Nin
+andWr2RNr/C2Nr
+. The input weights
+Wincan, in general, be drawn from any random distribution, while
+almost consistently a uniform distribution is used [80], i.e.
+wðinÞ
+ij /C24Uða;bÞwitha<0<b;ði;jÞ2f1;...;NðresÞg/C2f1;...;NðinÞg.
+Furthermore, we sparsely initialize Wr, where the non-zero
+entries satisfy wr
+ij/C24Uð/C01;1Þ;ði;jÞ2f1;...;Nrg2
+. The result
+WinxðkÞþWrsðk/C01Þbecomes the input to the activation function, i.e.
+Fig. 1.Building blocks of an ESN: layered structure, core parameters, and their
+dimensionality.
+J. Viehweg, K. Worthmann and P. Mäder Neurocomputing 522 (2023) 214–228
+215
+of randomly generated weight parameters into account. We focus
+on the ESN as proposed by Jaeger and his group[48,50,62]includ-
+ing the leakage concept, a promising ESN evolution. We apply the
+proposed optimization procedure on the challenging task of pre-
+dicting chaotic time series, a benchmark problem in machine
+learning, being representative for and of interest in such diverse
+ﬁelds as ﬁnancial analyses, weather forecasting, and climate
+change modeling. Forecasting of time series in general is applied
+for even more tasks, such as controlling [8,91], fault and signal
+detection[23,68], and reservoir computing even in picture restora-
+tion[27]and pattern recognition[28]. Based on our experimental
+results, we derive a guideline for choosing initial hyper-parameters
+to be used in training or to speed-up the hyper-parameter search,
+depending on the characteristic features of the time-series in
+consideration.
+The contribution of our paper is threefold: Firstly, we provide an
+overview on previous studies applying ESNs for predicting chaotic
+time series with a particular focus on the choice of hyper-
+parameters. Secondly, we propose a systematic hyper-parameter
+grid-search algorithm tailored to the stochastic nature of ESNs.
+Thereby, we propose a method for deriving reservoir weight matri-
+ces of varying size and density from a static initially-seeded set to
+ensure comparability of the conducted experiments despite the
+stochastic model nature. Furthermore, we propose a sequential
+search order that minimizes interactions among the optimized
+parameters as much as possible. Repeating the optimization loop
+several times stabilizes the obtained optimization results. Thirdly,
+we conduct a systematic study with baseline problems in chaotic
+time-series forecasting to derive guidelines for practical use of
+the reservoir computing model. Overall, we study seven hyper-
+parameters across four datasets and 100 randomly-initialized
+ESNs. While many earlier studies solely evaluate single-step pre-
+dictions, we investigate auto-regressive prediction scenarios with
+up to several hundred time steps to make the task at hand even
+more challenging. Fourth, we extensively analyze and discuss the
+outcome of our study. On the one hand, we highlight clear trends.
+On the other hand, we comment on the interplay of the hyper-
+parameters and their dependence on the problem in consideration.
+Doing so allows us to derive guidelines providing orientation on
+the choice of hyper-parameters for other researchers when train-
+ing new models. Hereby, we ﬁll the gap in understanding ESNs
+by not only optimizing the hyper-parameters but also showing
+the reasoning of selecting their actual values in dependence to
+the dataset. While not explicitly studied, our concepts may be
+transferable to other randomly initialized neural networks, e.g.,
+stochastic conﬁguration networks in the future[21,20,19].
+This paper is structured as follows. In Section 2, we introduce
+the fundamentals of echo state networks and their training. In Sec-
+tion3, we brieﬂy overview previous work on applying ESNs for
+time series prediction including the choice of hyper-parameters.
+Then, we brieﬂy introduce four time series datasets to be utilized
+in our systematic study. In Section5, we discuss our experimental
+setup and the grid search procedure applied in this study and
+report its results in Section6. In Section7, we derive and discuss
+design guidelines for ESNs based on our ﬁndings and eventually
+conclude the paper in Section8.
+2. The Echo State Network
+Reservoir Computing refers to the concept of mapping a model’s
+input into a higher dimensional space, the reservoir[48]. This map-
+ping differs from conventional RNNs, such as long short-term
+memory (LSTM, see [44]) and gated recurrent unit (GRU, see
+[25]), by training only the weights Woutconnecting the reservoir
+and the output. The weightsWinmapping the input into the state
+space of the reservoir as well as those ofWr(connections edges in
+within the reservoir) are set ﬁxed for each realization according to
+the current set hyper-parameter selection Nevertheless, using the
+validation data similarly to other neural network structures, an
+iterative training process – corresponding to a highly nonlinear
+and, in general, non-convex optimization – needs to be conducted.
+One major contribution of our work is to provide easy-to-
+implement guidelines for this hyper-parameter tuning and an
+excellent educated guess to drastically speed up the otherwise very
+time-consuming optimization – supposing that the time-series
+data of interest exhibits comparable key characteristics to one of
+our four representative ones. Solely the weights mapping the
+high-dimensional reservoir back to the lower-dimensional output
+layer have to be determined using methods with low computa-
+tional costs[90], e.g., linear regression, support-vector machines,
+and multi-layer perceptrons[62,86].
+Primarily, two ﬂavors of reservoir computing have been studied
+in the last two decades: ESNs and LSMs. While the biologically-
+inspired LSMs use so-called spiking neurons and are mainly used
+for modeling in neuroscience, we focus on ESNs as the reservoir-
+computing prototype used in machine learning for time-series
+prediction.
+2.1. Reservoir dynamics and input layer
+An ESN exhibits a recurrent neural network topology consisting
+of three layers: input, hidden, and output, cp.Fig. 1.
+The hidden statehðkÞ
+at time instantk;k2N0(non-negative
+integers), is determined by
+hðkÞ
+¼tanhWinxðkÞþWrsðk/C01Þ
+/C16/C17
+; ð1Þ
+wherexðkÞrepresents the data vector feed into the network aug-
+mented by an additional entry, i.e. xðkÞ
+1 ¼1 holds to include a bias
+term. Hence, in a slight abuse of notation ( Nindenotes the incre-
+mented input dimension to reﬂect this artiﬁcial augmentation),
+the inputxðkÞis combined with the internal statesðk/C01Þof the network
+using the matricesWin2RNr/C2Nin
+andWr2RNr/C2Nr
+. The input weights
+Wincan, in general, be drawn from any random distribution, while
+almost consistently a uniform distribution is used [80], i.e.
+wðinÞ
+ij /C24Uða;bÞwitha<0<b;ði;jÞ2f1;...;NðresÞg/C2f1;...;NðinÞg.
+Furthermore, we sparsely initialize Wr, where the non-zero
+entries satisfy wr
+ij/C24Uð/C01;1Þ;ði;jÞ2f1;...;Nrg2
+. The result
+WinxðkÞþWrsðk/C01Þbecomes the input to the activation function, i.e.
+Fig. 1.Building blocks of an ESN: layered structure, core parameters, and their
+dimensionality.
+J. Viehweg, K. Worthmann and P. Mäder Neurocomputing 522 (2023) 214–228
+215
+of randomly generated weight parameters into account. We focus
+on the ESN as proposed by Jaeger and his group [48,50,62]includ-
+ing the leakage concept, a promising ESN evolution. We apply the
+proposed optimization procedure on the challenging task of pre-
+dicting chaotic time series, a benchmark problem in machine
+learning, being representative for and of interest in such diverse
+ﬁelds as ﬁnancial analyses, weather forecasting, and climate
+change modeling. Forecasting of time series in general is applied
+for even more tasks, such as controlling [8,91], fault and signal
+detection[23,68], and reservoir computing even in picture restora-
+tion[27]and pattern recognition [28]. Based on our experimental
+results, we derive a guideline for choosing initial hyper-parameters
+to be used in training or to speed-up the hyper-parameter search,
+depending on the characteristic features of the time-series in
+consideration.
+The contribution of our paper is threefold: Firstly, we provide an
+overview on previous studies applying ESNs for predicting chaotic
+time series with a particular focus on the choice of hyper-
+parameters. Secondly, we propose a systematic hyper-parameter
+grid-search algorithm tailored to the stochastic nature of ESNs.
+Thereby, we propose a method for deriving reservoir weight matri-
+ces of varying size and density from a static initially-seeded set to
+ensure comparability of the conducted experiments despite the
+stochastic model nature. Furthermore, we propose a sequential
+search order that minimizes interactions among the optimized
+parameters as much as possible. Repeating the optimization loop
+several times stabilizes the obtained optimization results. Thirdly,
+we conduct a systematic study with baseline problems in chaotic
+time-series forecasting to derive guidelines for practical use of
+the reservoir computing model. Overall, we study seven hyper-
+parameters across four datasets and 100 randomly-initialized
+ESNs. While many earlier studies solely evaluate single-step pre-
+dictions, we investigate auto-regressive prediction scenarios with
+up to several hundred time steps to make the task at hand even
+more challenging. Fourth, we extensively analyze and discuss the
+outcome of our study. On the one hand, we highlight clear trends.
+On the other hand, we comment on the interplay of the hyper-
+parameters and their dependence on the problem in consideration.
+Doing so allows us to derive guidelines providing orientation on
+the choice of hyper-parameters for other researchers when train-
+ing new models. Hereby, we ﬁll the gap in understanding ESNs
+by not only optimizing the hyper-parameters but also showing
+the reasoning of selecting their actual values in dependence to
+the dataset. While not explicitly studied, our concepts may be
+transferable to other randomly initialized neural networks, e.g.,
+stochastic conﬁguration networks in the future [21,20,19].
+This paper is structured as follows. In Section 2, we introduce
+the fundamentals of echo state networks and their training. In Sec-
+tion3, we brieﬂy overview previous work on applying ESNs for
+time series prediction including the choice of hyper-parameters.
+Then, we brieﬂy introduce four time series datasets to be utilized
+in our systematic study. In Section 5, we discuss our experimental
+setup and the grid search procedure applied in this study and
+report its results in Section 6. In Section 7, we derive and discuss
+design guidelines for ESNs based on our ﬁndings and eventually
+conclude the paper in Section 8.
+2. The Echo State Network
+Reservoir Computing refers to the concept of mapping a model’s
+input into a higher dimensional space, the reservoir [48]. This map-
+ping differs from conventional RNNs, such as long short-term
+memory (LSTM, see [44]) and gated recurrent unit (GRU, see
+[25]), by training only the weights Wout
+connecting the reservoir
+and the output. The weights Win
+mapping the input into the state
+space of the reservoir as well as those of Wr
+(connections edges in
+within the reservoir) are set ﬁxed for each realization according to
+the current set hyper-parameter selection Nevertheless, using the
+validation data similarly to other neural network structures, an
+iterative training process – corresponding to a highly nonlinear
+and, in general, non-convex optimization – needs to be conducted.
+One major contribution of our work is to provide easy-to-
+implement guidelines for this hyper-parameter tuning and an
+excellent educated guess to drastically speed up the otherwise very
+time-consuming optimization – supposing that the time-series
+data of interest exhibits comparable key characteristics to one of
+our four representative ones. Solely the weights mapping the
+high-dimensional reservoir back to the lower-dimensional output
+layer have to be determined using methods with low computa-
+tional costs [90], e.g., linear regression, support-vector machines,
+and multi-layer perceptrons [62,86].
+Primarily, two ﬂavors of reservoir computing have been studied
+in the last two decades: ESNs and LSMs. While the biologically-
+inspired LSMs use so-called spiking neurons and are mainly used
+for modeling in neuroscience, we focus on ESNs as the reservoir-
+computing prototype used in machine learning for time-series
+prediction.
+2.1. Reservoir dynamics and input layer
+An ESN exhibits a recurrent neural network topology consisting
+of three layers: input, hidden, and output, cp. Fig. 1.
+The hidden state hðkÞ
+at time instant k;k2N0(non-negative
+integers), is determined by
+hðkÞ
+¼tanhWin
+xðkÞþWr
+sðk/C01Þ
+/C16/C17
+; ð1Þ
+wherexðkÞrepresents the data vector feed into the network aug-
+mented by an additional entry, i.e. xðkÞ
+1 ¼1 holds to include a bias
+term. Hence, in a slight abuse of notation ( Nin
+denotes the incre-
+mented input dimension to reﬂect this artiﬁcial augmentation),
+the inputxðkÞis combined with the internal state sðk/C01Þof the network
+using the matrices Win
+2RNr/C2Nin
+andWr
+2RNr/C2Nr
+. The input weights
+Win
+can, in general, be drawn from any random distribution, while
+almost consistently a uniform distribution is used [80], i.e.
+wðinÞ
+ij /C24Uða;bÞwith a<0<b;ði;jÞ2f1;...;NðresÞ
+g/C2f1;...;NðinÞ
+g.
+Furthermore, we sparsely initialize Wr
+, where the non-zero
+entries satisfy wr
+ij/C24Uð/C01;1Þ;ði;jÞ2f1;...;Nr
+g2
+. The result
+Win
+xðkÞþWr
+sðk/C01Þbecomes the input to the activation function, i.e.
+Fig. 1. Building blocks of an ESN: layered structure, core parameters, and their
+dimensionality.
+J. Viehweg, K. Worthmann and P. Mäder Neurocomputing 522 (2023) 214–228
+215
+u(n) y(n)
+U1
+U2
+U(n)
+y1
+y2
+yi
+Fig.3:BuildingblockofESN:layeredstructure,coreparameters,
+and their dimensionality. Figure taken from Liet al. [14]
+y(k) = Wout(α˜x(k) + (1 − α)x(k − 1)) (2)
+where α is the leaking rate, a hyper-parameter. The two equations above
+represent, respectively, the dynamic and output equations of the ESN,
+where x(k) stands for the internal state vector of the reservoir,u(k) and
+y(k) are the input vector and model output, respectively. The hyper-
+bolic tangent activation function is denoted bytanh, Wx represents the
+internal connection weight matrix of the reservoir,Win denotes the input
+weight matrix, andWout is the output weight matrix.
+The only trainable part of the ESN is the output weight matrixWout,
+which can be determined using a simple linear regression as shown in:
+y = ΦWout + ϵy (3)
+where
+Φ = [x(k), x(k + 1), .., x(k + N − 1)]T (4)
+y = [y(k), y(k + 1), .., y(k + N − 1)]T (5)
+In Equations (4) and (5),k is the starting index of the training samples,
+typically set to discard the influence of the reservoir’s initial transient.ϵ
+is assumed to be a zero-mean Gaussian noise with varianceβ, and N is
+the number of training samples. We implement ESN usingreservoirpy 5
+and tune the hyper-parameters values as inspired by [16].
+4.2 Chaos Analysis
+We compute the Maximal Lyapunov Exponent (MLE) using Rosenstein
+et al.’s algorithm [24] to quantify chaos in a time series. A positive MLE
+indicates strong chaos, zero indicates a limit cycle or quasi-periodic orbit,
+and a negative MLE suggests a fixed point. The Lyapunov exponent is
+describedasfollows.Foranm-dimensionalsystem,thereare mLyapunov
+exponents denoted as λ1, λ2, ..., λm in descending order of significance.
+Consider a dynamical system described by:
+5 https://reservoirpy.readthedocs.io/en/latest/
+
+[PÁGINA PDF 7]
+Echo State Networks for Bitcoin Time Series Prediction 7
+Table 1: Tuned ESN parameters. Dist. refers to the type of dis-
+tribution. Step applies only when relevant.
+Parameter(s) Dist. From To Step
+Reservoir Size Discrete
+Uniform 50 250 50
+Spectral Radius, Leaking Rate,
+Output Weight Reg., Reservoir Noise,
+Input Noise, Feedback Noise
+Log
+Uniform
+10−7/
+10−6/10−4
+0.1/
+1/10 –
+Input Scaling, Bias Scaling, Feedback
+Scaling, Sparsity Uniform 0.05/0.8 0.5/1 0.1
+Noise Type (Gaussian), Seed (2023) Fixed – – –
+dx(t)
+dt =F(x(t)) (6)
+Taking variation of both sides of ((6)) yields the following equation gov-
+erning the evolution of the infinitesimal vectorδx in the tangent space
+at x(t):
+dδx
+dt = ∂F
+∂x · δx (7)
+Solving for ((7)) gives:
+δx(t) = Atδx(0) (8)
+whereAt = exp(
+R ∂F
+∂x dt) is a linear operator that evolves an infinitesimal
+vector from time 0 to time t. The mean exponential rate of divergence
+of the tangent vector is then given by:
+λ[x(0), δx(0)] = lim
+t→∞
+1
+t ln| δx(t)
+δx(0) | (9)
+The Lyapunov exponents are given as:
+λi = λ[x(0),ei] (10)
+where ei is an m-dimensional basis vector.
+Each Lyapunov exponent, denoted asλi, represents the average diver-
+gence rate over the entire attractor and is computed based on the m-
+dimensional basis vector ei. The values of λi for chaotic systems are
+independent of the initial conditionx(0) due to the property of ergod-
+icity. To determine whether a time series exhibits chaotic behavior, one
+primarily focuses on calculating the maximal Lyapunov exponent,λ1,
+which is denoted asλmax.
+4.3 F eatures
+Jaquart et al. [11] categorized crypto features into four groups: techni-
+cal, blockchain-based, sentiment/interest-based, and asset-based. Tech-
+nical features, such as Bitcoin returns and indicators, were prioritized to
+
+[PÁGINA PDF 8]
+8 Sharma et al.
+improve forecasting accuracy by focusing on price-related data and min-
+imizing external noise. We selected technical features based on market
+knowledge, expert input, and experimental analysis, rather than auto-
+mated methods. Features were evaluated for their impact on prediction
+accuracy across time windows, ensuring computational efficiency while
+maintaining relevance. We use the 3- and 7-day moving averages of the
+closing price, the 7-day closing price standard deviation, the difference
+between the high and low prices, and the difference between the closing
+and opening prices. Additionally, we compute the ratio of the last closing
+price to the 7-day moving average, the trend coefficients of the regres-
+sion line over the last 7 and 14 closing prices, the 7-day Relative Strength
+Index (RSI), and the 7-21 period Moving Average Convergence/Diver-
+gence.
+5 Evaluation
+For a highly non-stationary dataset, we use a rolling-window cross-
+validation approach. The training set size remains fixed while the window
+slides forward, dropping the oldest data for each new forecast. This en-
+sures that each model is evaluated on the same number of training points.
+We pre-split the data into windows with training sizes of 15, 30, and 60
+points, a test size of 10 points, and a stride of 1.
+Evaluation MetricsWe used the classical Root Mean Squared Error
+(RMSE) ((11)). Further, it is easy to understand and popular in the
+previous studies [13,15].
+RM SE =
+vuut 1
+n
+nX
+t=1
+(yt − ˆyt)2 (11)
+Note that the RMSE is always computed over a test set of length 10 days
+(10 points) and is measured in US dollars.
+Hyperparameter Selection Both ESN and XGBoost require tun-
+ing of their respective hyperparameters to achieve optimal results. We
+employed Bayesian Optimization, specifically Tree Parzen Estimators
+(TPE), using the widely adoptedhyperopt 6 Python package, to search
+for the best hyperparameter combinations in their spaces. Table 1 and
+Table 2 describe the list of tuned parameters for ESN and XGB, respec-
+tively.
+5.1 Baseline
+Theclassicbaselineintimeseriesforecastingisknownasthe Last Value
+or simply the Naïve Method. For one-step ahead forecasts, this ap-
+proach uses the current price as the prediction for the next value. Ex-
+treme Gradient Boosting (XGBoost) is widely used for time series fore-
+casting [1,13]. Building on Gradient Boosting Decision Trees (GBDT),
+it improves the cost function using second-order Taylor expansion for
+
+[PÁGINA PDF 9]
+Echo State Networks for Bitcoin Time Series Prediction 9
+Table 2: Tuned XGB parameters. Dist. refers to the sampling
+distribution.
+Hyper-parameters Dist From To Step
+Discrete Uniform
+No. of Estimators 100 300 100
+Max Depth 3 15 1
+Gamma 10−4 10 10−3
+Learning Rate 10−2 0.3 10−2
+Col. Sample by Tree 0.5 1 0.1
+Min Child Weight 0 10 1
+Subsample 0.8 1 0.1
+Fixed
+Random State Fixed 2023
+Time window Time window
+Fig.4: RMSE values on uni- and multi-variate setting using a
+15-day training window across various time periods.
+greater precision. In addition to the baseline methods, we experimented
+with other traditional statistical models such as ARIMA, Exponential
+Smoothing, and regression-based approaches, like Generalized Linear
+Models, Huber Regression, and Weighted Least Squares. However, their
+RMSE ranged from 800 to 2000, performing significantly worse than
+other methods. Thus, we focused on reporting the two best-performing
+baselines.
+6 Results
+We present results on the uni-variate data consisting of the closing prices
+and on a one-step ahead prediction task and also on multi-variate data
+with the technical features described in Section 4.3. To conclude, we
+present an analysis of the Lyapunov exponent and show that the ESN
+performssignificantlybetterthanXGBoostonthemostchaoticwindows.
+Uni-variate dataWe compare ESN with baseline approaches, XGBoost
+and Last Value on uni-variate data (Bitcoin closing prices) and on win-
+dows of training size 15, 30, 60 days.
+6 https://hyperopt.github.io/hyperopt/
+
+[PÁGINA PDF 10]
+10 Sharma et al.
+Time window Time window
+Fig.5: RMSE values on uni- and multi-variate setting using a
+30-day training window across various time periods.
+Time window Time window
+Fig.6: RMSE values on uni- and multi-variate setting using a
+60-day training window across various time periods.
+Figure 4 (left), Figure 5 (left), and Figure 6 (left) shows the RMSEs for
+the years 2017–2022 for all three training windows. Table 3 shows mean
+RMSE values for different training window sizes and uni-variate setting,
+highlighting that ESN achieves lowest RMSE values among all the win-
+dows, especially with larger window sizes, surpassing other methods.
+Note that the RMSE values seem high in absolute value, but they are
+quite low in percentage, as in the year 2022 Bitcoin had high price values,
+compared to the rest of its history. In fact, in percentage with respect to
+the closing price, the ESNs’ RMSEs range between 1.0% and 2.7%, with
+an average value of 1.8%. The XGBoost model, although competitive,
+shows significant peaks in RMSE, particularly around late 2020 and early
+2021, suggesting that it struggles more during this challenging period.
+The Naïve Model, serving as a baseline, consistently shows higher RMSE
+values, reflecting its relative simplicity and lower predictive power.
+Multi-variate dataWe compare ESN with baseline approaches, XG-
+Boost and Last Value, on multi-variate data on windows of training size
+15, 30, 60 days. The data consists of the Bitcoin closing prices plus the
+features introduced in Section 4.3.
+Table 3 presents the RMSE values for various training windows on mul-
+tivariate data. Similar to the results from uni-variate data predictions,
+ESN consistently achieves the lowest RMSE value, demonstrating su-
+perior performance. Figure 4 (Right), Figure 5 (Right), and Figure 6
+(Right) shows the RMSEs for the years 2017–2022 for all three training
+
+[PÁGINA PDF 11]
+Echo State Networks for Bitcoin Time Series Prediction 11
+10000
+20000
+30000
+40000
+50000
+60000
+70000
+Close Price ($)
+2018 2019 2020 2021 2022 2023
+0.00
+0.02
+0.04
+0.06
+0.08
+0.10
+Avg RMSE / Avg Close Price (%)
+Fig.7: (Top) Amount of chaos measured by Lyapunov exponent,
+year by year from 2018 to 2022 using window size 60. The darker
+the color, the higher the chaos. (Bottom) Ratio of ESN’s RMSE
+and closing price year by year using window size 60.
+windows. The multi-variate models generally perform better than their
+uni-variate counterparts, as evidenced by the lower RMSE values in the
+bottom row of each set. This is particularly true for the ESN and XG-
+Boost models, where the inclusion of multiple variables seems to enhance
+the accuracy of the predictions. However, the Naïve Model’s performance
+remains comparatively poor even in the multi-variate setting.
+Table 3: Mean RMSE for uni- and multi-variate settings across
+different window sizes.
+Model Uni-variate Multi-variate
+15 30 60 15 30 60
+XGB 740.43 741.84 675.95 678.59 676.60 572.58
+ESN 442.78 463.96 427.35487.77 533.43 441.23
+Naïve 736.60 751.18 787.02 713.53 749.96 665.62
+6.1 Chaos analysis
+Figure 7 illustrates the challenges of predicting Bitcoin’s closing prices
+using Echo State Networks, particularly during chaotic periods charac-
+terized by high Lyapunov exponents. Figure 7 (Top) suggests periods of
+different dynamics or market behavior, potentially indicating chaotic be-
+havior in certain periods year by year. Darker colors indicate higher levels
+of chaos. Figure 7 (Bottom) shows the ratio of ESN’s RMSE and clos-
+ing price year by year using window size 60. The most prominent peaks
+appear around early 2019 and early 2021, indicating that the Bitcoin
+
+[PÁGINA PDF 12]
+12 Sharma et al.
+market was highly volatile and unpredictable during these times, likely
+reflecting chaotic behavior as suggested by a high Lyapunov exponent.
+WepresentthestatisticaltestsonwhetherESNworkssignificantlybetter
+than XGBoost in the windows where there is higher chaos, as measured
+by Lyapunov exponent. We split the dataset into windows of training
+size 15, 30, 60 days and run the following experiment for each of the
+three scenarios. We compute, for each window, the maximal Lyapunov
+exponent and the ratio between the RMSE obtained with ESN and the
+RMSE obtained with XGBoost, we call this EXratio.
+1. When the EXratio is much smaller than 1, it means that the ESN
+performs much better than XGBoost;
+2. WhentheEXratiovalueapproaches1,itperformsjustslightlybetter
+than XGBoost.
+Since we are using a cross-validation inside each window, the Lyapunov
+exponent is computed 10 times, one for each train-test split, and then av-
+eraged. To run the statistical test, we split the windows into two groups,
+one containing the most chaotic windows and one with the least chaotic.
+We take the EXratio values in each of the two groups and we test if their
+median is different in the two groups.
+To sum up, in statistical terms:
+H0 : median(EXratio)lc = median(EXratio)hc
+H1 : median(EXratio)lc ̸= median(EXratio)hc
+where lc refers to low chaos andhc refers to high chaos. We tested the
+gaussianity of the samples to verify the assumption of the t-test, but they
+are not verified, so we use a Mann-Whitney U test with a significance
+of 5%. Figure 8 presents results for training windows of sizes 30 and 60,
+confirming the hypothesis, whereas this is not observed for window size
+15.Thisdiscrepancymightbeduetotheshortdurationofthesewindows,
+posing challenges in accurately computing the Lyapunov exponent with
+limited points available for constructing trajectories in the embedding
+space.
+Not signiﬁcant
+Signiﬁcant (p < 0.05 (*))
+Signiﬁcant (p < 0.05 (*))
+Fig.8: Chaos analysis
+7 Discussion
+We showed that ESN is particularly effective in forecasting Bitcoin prices
+during highly chaotic market conditions, as highlighted by the Lyapunov
+
+[PÁGINA PDF 13]
+Echo State Networks for Bitcoin Time Series Prediction 13
+exponent analysis. This ability to handle non-linear and chaotic time se-
+ries data, which are prevalent in financial markets, makes ESNs highly
+suitable for financial forecasting tasks, particularly in environments char-
+acterized by high volatility and unpredictability. Our comparative anal-
+ysis demonstrated that ESNs consistently outperformed other state-of-
+the-art methods, such as XGBoost, especially in chaotic conditions. This
+superior performance indicates that ESNs are better at capturing the
+complex, underlying patterns in data than traditional machine learn-
+ing approaches, which often struggle with the non-stationarity and noise
+inherent in financial time series.
+ESNs excel in capturing complex, non-linear temporal patterns, making
+them well-suited for volatile financial markets where traditional mod-
+els often struggle. In real-world trading strategies, ESNs can be used to
+predict asset prices, detect trends, and even optimize trading strategies
+in real-time. For example, they could help traders anticipate short-term
+price movements in stocks, commodities, or cryptocurrencies, enabling
+more informed decision-making. The ability of ESNs to handle large vol-
+umes of data and adapt to changing market conditions without extensive
+retraining gives them a significant advantage in fast-paced environments.
+8 Limitations
+In our paper, we introduced the use of Echo State Networks for fore-
+casting Bitcoin prices, addressing the challenges posed by the market’s
+volatility. As this is one of the first studies of its kind, it inherently has
+some limitations that should be explored in future research. One limita-
+tion is the use of relatively short time windows for stabilizing the time
+series data. While this approach helps to manage the short-term volatil-
+ity of Bitcoin prices, it may not fully capture long-term trends or seasonal
+patterns that could enhance prediction accuracy.
+Another area to be explored is the multi-step ahead forecasting, which
+wouldinvolvepredictingBitcoinpricesovermultipletimehorizonsrather
+than just the next value. Multi-step forecasting is a more challenging task
+as it requires the model to maintain accuracy over a longer sequence of
+predictions, and errors can accumulate across multiple steps. Extending
+the ESN approach to multi-step ahead forecasting could offer deeper
+insights into Bitcoin price trends and provide more practical predictive
+capabilities, particularly for applications requiring long-term forecasts.
+9 Conclusions and Future Work
+This study explores the use of Reservoir Computing, particularly ESNs
+for forecasting daily cryptocurrency closing prices. ESNs proved effective
+across various market conditions including trends, sideways movements,
+and level shifts—by using a window-splitting approach that addressed
+volatility and non-stationarity. The results show that ESNs perform es-
+pecially well in chaotic markets, as measured by the Lyapunov exponent,
+challenging the Efficient Markets Hypothesis (EMH) by demonstrating
+predictability in volatile financial series.
+
+[PÁGINA PDF 14]
+14 Sharma et al.
+This work contributes empirical evidence for the viability of ESNs in
+cryptocurrency forecasting and opens new research directions. Future
+efforts may extend this approach to other cryptocurrencies, integrate
+lagged external features (e.g., via Convergent Cross Mapping), and ex-
+plore techniques like automatic feature selection, multi-step forecasting,
+or trend prediction. While not designed as a trading algorithm, the study
+highlights the strong potential of ESNs under complex market dynamics.
+References
+1. Alessandretti, L., ElBahrawy, A., Aiello, L.M., Baronchelli, A.: An-
+ticipating cryptocurrency prices using machine learning. Complexity
+2018, 1–16 (nov 2018)
+2. Bandara, K., Bergmeir, C., Smyl, S.: Forecasting across time series
+databases using recurrent neural networks on groups of similar se-
+ries: A clustering approach. Expert systems with applications140,
+112896 (2020)
+3. Bariviera, A.F.: The inefficiency of bitcoin revisited: A dynamic ap-
+proach. Economics Letters161, 1–4 (2017)
+4. Binance: Binance: The world’s leading cryptocurrency exchange
+(2025)
+5. Borges, T.A., Neves, R.F.: Ensemble of machine learning algorithms
+for cryptocurrency investment with different data resampling meth-
+ods. Applied Soft Computing90, 106187 (2020)
+6. Chou, J.S., Tran, D.S.: Forecasting energy consumption time series
+using machine learning techniques based on usage patterns of resi-
+dential householders. Energy165, 709–726 (2018)
+7. Dan,J.,Guo,W.,Shi,W.,Fang,B.,Tingping,Z.:Deterministicecho
+state networks based stock price forecasting. Abstract and Applied
+Analysis 2014, 1–6 (06 2014)
+8. Elsayed,S.,Thyssens,D.,Rashed,A.,Jomaa,H.S.,Schmidt-Thieme,
+L.: Do we really need deep learning models for time series forecast-
+ing? arXiv preprint arXiv:2101.02118 (2021)
+9. Fischer, T., Krauss, C.: Deep learning with long short-term mem-
+ory networks for financial market predictions. European Journal of
+Operational Research270(2), 654–669 (2018)
+10. Jaeger, H., Haas, H.: Harnessing nonlinearity: Predicting chaotic sys-
+tems and saving energy in wireless communication. Science304, 78–
+80 (2004)
+11. Jaquart, P., Dann, D., Martin, C.: Machine learning for bitcoin
+pricing-a structured literature review. In: Wirtschaftsinformatik
+(Zentrale Tracks). pp. 174–188 (2020)
+12. Jaquart, P., Dann, D., Weinhardt, C.: Short-term bitcoin market
+prediction via machine learning. The Journal of Finance and Data
+Science (2021)
+13. Kenny, M.: Investigating the Predictability of a Chaotic Time-Series
+Data using Reservoir Computing, Deep-Learning and Machine-
+Learning on the Short-, Medium-and Long-Term Pricing of Bitcoin
+and Ethereum. Master’s thesis, Technological University Dublin,
+Dublin, Ireland (2020)
+
+[PÁGINA PDF 15]
+Echo State Networks for Bitcoin Time Series Prediction 15
+14. Li, G., Li, B.J., Yu, X.G., Cheng, C.T.: Echo state network with
+bayesian regularization for forecasting short-term power production
+of small hydropower plants. Energies8(10), 12228–12241 (2015)
+15. Lin, X., Yang, Z., Song, Y.: Short-term stock price prediction
+based on echo state networks. Expert System Applications36(3),
+7313–7317 (apr 2009)
+16. Lukoeviius, M.: A practical guide to applying echo state networks.
+In: Neural Networks (2012)
+17. Makridakis, S., Spiliotis, E., Assimakopoulos, V.: Statistical and
+machine learning forecasting methods: Concerns and ways forward.
+PLOS ONE13(3), 1–26 (2018)
+18. Makridakis, S., Spiliotis, E., Assimakopoulos, V., Semenoglou, A.A.,
+Mulder, G., Nikolopoulos, K.: Statistical, machine learning and deep
+learning forecasting methods: Comparisons and ways forward. Jour-
+nal of the Operational Research Society74(3), 840–859 (2023)
+19. Nadarajah, S., Chu, J.: On the inefficiency of bitcoin. Economics
+Letters 150, 6–9 (2017)
+20. Nakamoto, S., Bitcoin, A.: A peer-to-peer electronic cash system.
+Bitcoin.–URL: https://bitcoin. org/bitcoin. pdf4(2), 15 (2008)
+21. Peters, E.: Fractal Market Analysis: Applying Chaos Theory to In-
+vestment and Economics. Wiley Finance, Wiley (1994)
+22. dePrado,M.:AdvancesinFinancialMachineLearning.Wiley(2018)
+23. Ren, X., Li, X., Ren, K., Song, J., Xu, Z., Deng, K., Wang, X.: Deep
+learning-based weather prediction: a survey. Big Data Research23,
+100178 (2021)
+24. Rosenstein,M.T.,Collins,J.J.,DeLuca,C.J.:Apracticalmethodfor
+calculating largest lyapunov exponents from small data sets. Physica
+D: Nonlinear Phenomena65(1-2), 117–134 (1993)
+25. Smyl, S.: A hybrid method of exponential smoothing and recurrent
+neural networks for time series forecasting. International Journal of
+Forecasting36 (07 2019)
+26. Spiliotis, E., Nikolopoulos, K., Assimakopoulos, V.: Tales from tails:
+On the empirical distributions of forecasting errors and their impli-
+cation to risk. International Journal of Forecasting35 (11 2018)
+27. Sun, X., Liu, M., Sima, Z.: A novel cryptocurrency price trend
+forecasting model based on lightgbm. Finance Research Letters32,
+101084 (2020)
+28. Urquhart, A.: The inefficiency of bitcoin. Economics Letters148(C),
+80–82 (2016)
+29. Wood, K., Roberts, S., Zohren, S.: Slow momentum with fast re-
+version: A trading strategy using deep learning and changepoint de-
+tection. The Journal of Financial Data Science4(1), 111–129 (dec
+2021)
+30. Zhang, H., Liang, J., Chai, Z.: Stock prediction based on phase space
+reconstruction and echo state networks. Journal of Algorithms &
+Computational Technology7(1), 87–100 (2013)

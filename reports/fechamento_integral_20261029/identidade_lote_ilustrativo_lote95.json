@@ -1,0 +1,28 @@
+{
+  "sha256_docx": "1cdb4613c391611dfffab5e2f9902e38751bd14be9b5e18b96a740e6cb771d00",
+  "procedencia": "reports\\revisao_orientador_petr4\\procedencia.json",
+  "arquivos": [
+    {
+      "arquivo": "Scripts\\results\\Run_20260815_140903_Test\\scenarios\\AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme\\Dados PETR4 Win ESN_mae_otim40X60 com_factor 200_2.csv",
+      "sha256": "8cafb817181f5778a788e974c1aeb848cb1e834c894ed000c13ba942509fc69b",
+      "coincide": true
+    },
+    {
+      "arquivo": "Scripts\\results\\Run_20260815_140903_Test\\scenarios\\AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme\\Dados PETR4 W reservatório ESN_mae_otim40X60 com_factor 200_2.csv",
+      "sha256": "e6f6eedb04e535c5818df833495afc2c4257e926d99281a10c93383242f8e576",
+      "coincide": true
+    },
+    {
+      "arquivo": "Scripts\\results\\Run_20260815_140903_Test\\scenarios\\AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme\\Dados PETR4 Wout ESN_mae_otim40X60 com_factor 200_2.csv",
+      "sha256": "ff3c43c003bacb78324afe3cdba82cfdb6679eaa3ef7dcbb6ad68d045bab9ea6",
+      "coincide": true
+    },
+    {
+      "arquivo": "Scripts\\results\\Run_20260815_140903_Test\\scenarios\\AlgGen PETR4 ESN_mae_otim40x60 com factor 200_2 (9560) Win GED e W Uniforme\\Dados PETR4 resumo fitness ESN_mae_otim40X60 com_factor 200_2.csv",
+      "sha256": "461b14b0f6163e20380d040f1a42f3b81ccee230b4ad033563c7ad1d2c949986",
+      "coincide": true
+    }
+  ],
+  "parecer": "Quatro artefatos originais identificados na procedência permanecem com os mesmos hashes. Registro confirma GED × Uniforme, rodada2, parâmetros, fitness e geração123; lote ilustrativo de200 gerações separado das45 execuções.",
+  "limite": "Hash comprova identidade, não nova verificação das previsões. Nenhuma reinjeção, treinamento ou teste foi executado."
+}

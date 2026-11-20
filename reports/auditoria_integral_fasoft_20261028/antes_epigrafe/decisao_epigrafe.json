@@ -1,0 +1,28 @@
+{
+  "data": "2026-10-28",
+  "fonte_primaria": {
+    "url": "https://www.washingtonpost.com/archive/opinions/1987/10/18/making-sense-of-natures-mess/09f82e1d-5e92-4abf-81ee-9a60f6de1f89/",
+    "autor": "James Gleick",
+    "titulo": "Making sense of nature’s mess",
+    "data_exibida": "1987-10-17",
+    "localizador": "Primeiro parágrafo",
+    "trecho_proposto": "Where chaos begins, classical science stops."
+  },
+  "estado": "proposta_verificada_aguardando_escolha",
+  "word_alterado": false,
+  "sha256_word_verificado": "2d4c16a51c2675bbff7df6bc36b16adec21608f7cb1097166c07e97982925f73",
+  "classificacao_turno": "progresso: fonte primária verificada e proposta concreta registrada",
+  "condicao_pendente": "escolha do autor sobre epígrafe pessoal",
+  "turnos_consecutivos_com_condicao": 3,
+  "classificacao_turno_anterior": "progresso: proposta concreta e fonte primária registradas, sem alteração no Word",
+  "classificacao_turno_atual": "no progress: revalidação confirmou os mesmos arquivos e a mesma decisão pessoal pendente; não há processo em execução sendo aguardado",
+  "auditoria_bloqueio": {
+    "limiar_atingido": true,
+    "word_pdf_identicos_a_entrega_auditada": true,
+    "pendencia_confirmada_no_word": true,
+    "matriz_81_requisitos_reconsultada": true,
+    "demais_correcoes_independentes_identificadas": false,
+    "resposta_do_autor_recebida": false,
+    "proxima_acao": "Após o autor escolher substituir, retirar ou fornecer a fonte, aplicar a decisão e verificar novamente a entrega."
+  }
+}

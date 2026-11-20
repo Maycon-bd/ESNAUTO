@@ -1,0 +1,8 @@
+{
+  "sha_antes": "55316818b048fba182e12b842a87f4afa519524447481e6db2d1919923067521",
+  "sha_depois": "805b30c638a9d58821d2e45ef624f810b5d631742df8d968938e1015d9e43151",
+  "antes": "Laplace × Normal e Laplace × Cauchy superaram Normal × Normal em MAE/RMSE",
+  "depois": "Laplace × Normal teve menor MAE e Laplace × Cauchy menor RMSE que Normal × Normal.",
+  "fundamento": "docs/BASE_ARTIGO_ESNAUTO_RESULTADOS_E_REFERENCIAS.md linhas 312–317: MAE Laplace × Cauchy 0,328949 supera o erro Normal × Normal 0,328365; RMSE 0,495386 é menor que 0,499037. MAE Laplace × Normal 0,327224 é menor que 0,328365.",
+  "backup": "reports\\fechamento_integral_20261029\\antes_edicao_lote63.docx"
+}

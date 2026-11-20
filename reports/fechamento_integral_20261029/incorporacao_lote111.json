@@ -1,0 +1,27 @@
+{
+  "sha_antes": "b8f7675159483d79d0bb638ba914c2ef541220fa49161a406e869d7154ad249f",
+  "sha_apos_edicao": "630e608cfb8ab8d74ad2385dfbfcc4952e02ddb55bf5c47a39c9f9fa81ddc9ad",
+  "alteracoes": [
+    {
+      "indice_anterior": 184,
+      "antes": "A revisão reúne estudos com SVMs, LSTMs, Transformers e modelos quântico-híbridos. Os desafios de custo e escalabilidade aparecem associados a arquiteturas, otimização e infraestrutura distintas. Essas observações sintetizam estudos anteriores e não equivalem a uma comparação experimental própria nem isolam a retropropagação como causa dos custos.",
+      "depois": "A revisão reúne estudos com máquinas de vetores de suporte (Support Vector Machines – SVMs), LSTMs, Transformers e modelos quântico-híbridos. Os desafios de custo e escalabilidade aparecem associados a arquiteturas, otimização e infraestrutura distintas. Essas observações sintetizam estudos anteriores e não equivalem a uma comparação experimental própria nem isolam a retropropagação como causa dos custos."
+    },
+    {
+      "indice_anterior": 234,
+      "antes": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada.",
+      "depois": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca Tree Parzen Estimator (TPE). Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada."
+    },
+    {
+      "indice_anterior": 217,
+      "antes": "Tian e Pei (2024) empregaram o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e MAPE.",
+      "depois": "Tian e Pei (2024) empregaram o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e erro percentual absoluto médio (Mean Absolute Percentage Error – MAPE)."
+    },
+    {
+      "indice_anterior": 93,
+      "antes": "HQNN – Hybrid Quantum Neural Network (Rede Neural Quântico-Híbrida)",
+      "depois": null
+    }
+  ],
+  "nota_indices": "Remoção da entrada HQNN desloca índices posteriores em−1; localizar registros antigos por texto/hash/âncora, não índice isolado."
+}

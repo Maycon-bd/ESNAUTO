@@ -1,0 +1,38 @@
+{
+  "registrado_em_utc": "2026-11-02T08:59:46.620925+00:00",
+  "base": "v010",
+  "arquivo": "reports\\monografia\\versoes\\v010\\MayconGarciaSilva_monografia_v010.docx",
+  "sha256_base": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+  "word_editado": false,
+  "busca_integral_concluida": false,
+  "celulas_ampliadas": 4,
+  "fontes_ampliadas": 3,
+  "insuficiencias_word": 38,
+  "canais_oficiais": [
+    {
+      "url": "https://arxiv.org/abs/2508.05416",
+      "resultado": "Histórico consultado: v1. Fonte editorial arquivada; leitura dirigida, sem compilação."
+    },
+    {
+      "url": "https://arxiv.org/abs/2512.08963",
+      "resultado": "Título/autores/DOI relacionados à publicação EPJ Plus conferidos; v1 consultada."
+    },
+    {
+      "url": "https://www.dfki.de/en/web/research/projects-and-publications/publication/17053",
+      "resultado": "Registro institucional identifica ICONIP, pp.365–380 e remete ao mesmo arXiv; não oferece ali um segundo texto integral."
+    },
+    {
+      "url": "https://link.springer.com/chapter/10.1007/978-981-95-4109-6_25",
+      "resultado": "Capítulo publicado localizado: online17/11/2025, pp365–380. Acesso apenas à prévia; resumo tem diferença de redação. Corpo não lido e não presumido idêntico à preprint."
+    },
+    {
+      "url": "https://orbit.dtu.dk/en/publications/degradation-prediction-of-pemfcs-using-stacked-echo-state-network/",
+      "resultado": "Metadados e acesso ao manuscrito aceito conferidos; nenhum link de código qualificador na ficha consultada."
+    },
+    {
+      "url": "https://api.github.com/repos/DZH001-energy/DZH001-energy.github.io/contents/assets/js/content.js",
+      "resultado": "Conteúdo obtido pelo conector GitHub e arquivado; entrada da publicação e URLs inspecionados. Nenhum JavaScript executado."
+    }
+  ],
+  "execucoes": "Somente leitura/arquivamento, inventário e conferência estrutural. Nenhum treino, GA, DM, R, notebook ou compilação TeX de terceiros."
+}

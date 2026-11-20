@@ -1,0 +1,386 @@
+[
+  {
+    "title": "Aplicação de fator de correção para previsão de preços de ações na bolsa de valores com rede neural de estados de eco",
+    "kind": "cover",
+    "seconds": 45,
+    "body": [
+      "Maycon Garcia Silva",
+      "Engenharia de Software · Universidade de Rio Verde",
+      "Orientador: Prof. Dr. Fabian Corrêa Cardoso",
+      "2026"
+    ],
+    "notes": "Boa tarde. Meu nome é Maycon Garcia Silva e apresento a pesquisa sobre previsão do preço ajustado da PETR4 com redes neurais de estados de eco, sob orientação do professor Fabian Corrêa Cardoso. O trabalho investiga o desempenho preditivo dessas redes, a escolha das distribuições dos pesos e o custo computacional do processo. Ao longo da apresentação, vou explicar o protocolo, discutir os principais resultados e apresentar a contribuição do ESNAUTO como infraestrutura de apoio aos experimentos. A contribuição principal está na pesquisa experimental, com o software como infraestrutura de execução e organização.",
+    "source": "Monografia padronizada, capa, resumo e capítulos 1 e 6."
+  },
+  {
+    "title": "Problema e delimitação",
+    "seconds": 65,
+    "body": [
+      "Prever o fechamento ajustado da PETR4 um passo à frente",
+      "Investigar distribuições de inicialização e hiperparâmetros da ESN",
+      "Comparar erro fora da amostra e custo computacional com GRU e LSTM"
+    ],
+    "callout": "Escopo: PETR4, dados diários de 2000 a 2020",
+    "notes": "O problema de pesquisa é investigar em que medida distribuições não gaussianas, combinadas à otimização dos hiperparâmetros, alteram o desempenho de uma ESN. A tarefa é bem delimitada: prever o próximo preço de fechamento ajustado da PETR4 a partir do contexto temporal disponível. O estudo usa dados diários de 2000 a 2020 e avalia erro fora da amostra. Essa delimitação é importante porque a conclusão se refere a um ativo, a um horizonte e às arquiteturas especificadas. Também comparo custo computacional, distinguindo o esforço para descobrir uma configuração do esforço para ajustar sua camada de saída. O trabalho não avaliou uma estratégia de negociação, portanto as métricas apresentadas descrevem previsão, sem demonstrar rentabilidade.",
+    "source": "Monografia padronizada, capítulo 1 e seção 3.6."
+  },
+  {
+    "title": "Objetivo e dimensões investigadas",
+    "seconds": 65,
+    "body": [
+      "Objetivo geral: avaliar ESNs otimizadas na previsão da PETR4",
+      "H1 e H2: desempenho frente a GRU/LSTM e custo de ajuste",
+      "H3: inicializações não gaussianas frente a Normal × Normal",
+      "H4 e H5: LHS/cataclismo e distribuições ajustadas empiricamente"
+    ],
+    "notes": "O objetivo geral é investigar o desempenho de ESNs na previsão de um passo à frente, com ênfase nas distribuições de entrada e do reservatório e na otimização conjunta dos hiperparâmetros. Organizei a avaliação em cinco hipóteses, aqui resumidas por tema. H1 compara desempenho preditivo. H2 examina eficiência computacional. H3 considera se distribuições não gaussianas produzem melhores resultados que o controle Normal por Normal. H4 trata da integração da amostragem por hipercubo latino e do mecanismo cataclísmico. H5 avalia distribuições ajustadas empiricamente. Essas hipóteses não receberam o mesmo tipo de evidência: algumas têm apoio descritivo, H1 tem análise inferencial complementar, e o efeito causal dos mecanismos de otimização permaneceu sem confirmação por falta de ablação.",
+    "source": "Monografia padronizada, capítulo 1 e seção 4.9. Os enunciados do slide são sínteses temáticas, não transcrições literais de H1–H5."
+  },
+  {
+    "title": "Rede neural de estados de eco",
+    "seconds": 80,
+    "body": [
+      "Win: pesos que conectam a entrada ao reservatório",
+      "W: conexões recorrentes que mantêm a dinâmica temporal",
+      "Wout: camada de saída estimada por regressão Ridge",
+      "Win e W permanecem fixas durante o ajuste de Wout"
+    ],
+    "callout": "A inicialização e os hiperparâmetros condicionam a dinâmica do reservatório",
+    "notes": "Uma ESN é uma rede recorrente com um reservatório de estados. A matriz Win leva a entrada para esse reservatório. A matriz W conecta os seus estados ao longo do tempo. A saída depende desses estados e dos pesos Wout. A característica central para esta pesquisa é que Win e W permanecem fixas durante o ajuste da camada de saída. Estimo Wout por regressão Ridge, que inclui regularização para estabilizar a solução. Assim, não ajusto iterativamente todos os pesos como nas redes recorrentes treinadas por retropropagação. Isso ajuda a explicar o baixo custo de ajuste da configuração escolhida. Entretanto, a qualidade dos estados depende da inicialização e de parâmetros como raio espectral e taxa de vazamento. Por isso, o estudo investiga essas escolhas em conjunto, em vez de supor que qualquer reservatório aleatório será adequado.",
+    "source": "Monografia padronizada, seções 2.3 e 3.3. Referência conceitual citada no manuscrito: Jaeger (2007)."
+  },
+  {
+    "title": "Dados e partição cronológica",
+    "seconds": 80,
+    "kind": "split",
+    "body": [
+      "5.198 observações diárias do fechamento ajustado",
+      "Treino: 2.600 observações, de 2000 a julho de 2010",
+      "Validação: 1.299 observações, até setembro de 2015",
+      "Teste: 1.299 observações, até dezembro de 2020"
+    ],
+    "callout": "Fator de Ajuste como pré-processamento fixo, sem ablação de seu efeito",
+    "notes": "A base contém cinco mil cento e noventa e oito observações diárias do preço ajustado. A divisão mantém a ordem temporal: duas mil e seiscentas observações para treino, mil duzentas e noventa e nove para validação e o mesmo número para teste. O treino termina em primeiro de julho de 2010, a validação em 28 de setembro de 2015, e o teste vai de 29 de setembro de 2015 a 30 de dezembro de 2020. O Fator de Ajuste busca lidar com descontinuidades de eventos corporativos. Nesta pesquisa, ele integra o pré-processamento fixo. Como não executei uma comparação controlada com e sem esse fator, não atribuo a ele um ganho causal isolado de acurácia. A ESN recebeu a série ajustada sem normalização adicional. GRU e LSTM usaram Min-Max calculado apenas sobre o treino.",
+    "source": "Monografia padronizada, seção 3.2. Contagens corroboradas pelo manifesto da execução controlada, partições do conjunto de dados."
+  },
+  {
+    "title": "Otimização dos hiperparâmetros",
+    "seconds": 115,
+    "kind": "table",
+    "headers": [
+      "Hiperparâmetro",
+      "Papel",
+      "Bits"
+    ],
+    "rows": [
+      [
+        "Taxa de vazamento",
+        "Memória dos estados",
+        "17"
+      ],
+      [
+        "Raio espectral",
+        "Dinâmica recorrente",
+        "17"
+      ],
+      [
+        "Descarte inicial",
+        "Remoção de transientes",
+        "7"
+      ],
+      [
+        "Tamanho do reservatório",
+        "Número de neurônios",
+        "5"
+      ],
+      [
+        "Regularização Ridge",
+        "Estabilidade de Wout",
+        "9"
+      ]
+    ],
+    "callout": "55 bits · fitness = −(0,4 MAE de treino + 0,6 MAE de validação)",
+    "notes": "Utilizei um algoritmo genético binário com um cromossomo de cinquenta e cinco bits. Ele representa cinco hiperparâmetros: taxa de vazamento, raio espectral, descarte inicial, tamanho do reservatório e regularização Ridge. A função de aptidão combina quarenta por cento do MAE de treino e sessenta por cento do MAE de validação. O sinal negativo permite maximizar o fitness enquanto se reduz o erro. A população inicial emprega amostragem por hipercubo latino. O algoritmo usa seleção por torneio, cruzamento de um ponto, elitismo e mutação. Quando ocorre estagnação, um mecanismo cataclísmico aumenta a mutação. Esse mecanismo é inspirado no CHC, mas não implementa o CHC completo. As buscas principais tiveram limite de dez mil gerações e interrupção por estagnação. Todo esse esforço de busca precisa entrar na interpretação do custo computacional. Para interpretar o processo, é útil distinguir o indivíduo da população e a execução completa. Cada indivíduo representa uma combinação de hiperparâmetros. A população reúne candidatos que o algoritmo avalia e modifica ao longo das gerações. Ao final, preserva-se a configuração selecionada pelo critério de treino e validação. A avaliação de teste informa seu comportamento posterior. Assim, muitas gerações dentro de uma busca não equivalem a muitas repetições independentes do experimento.",
+    "source": "Monografia padronizada, seção 3.4 e Quadro 2."
+  },
+  {
+    "title": "Cinco ondas experimentais",
+    "seconds": 70,
+    "kind": "table",
+    "headers": [
+      "Onda",
+      "Foco",
+      "Execuções"
+    ],
+    "rows": [
+      [
+        "1",
+        "Caudas pesadas",
+        "9"
+      ],
+      [
+        "2",
+        "Choques e assimetria",
+        "9"
+      ],
+      [
+        "3",
+        "Esparsidade e razão de variâncias",
+        "6"
+      ],
+      [
+        "4",
+        "Controles canônicos",
+        "6"
+      ],
+      [
+        "5",
+        "Ajustes empíricos pelo EasyFit",
+        "15"
+      ]
+    ],
+    "callout": "45 execuções históricas. Lote ilustrativo de 200 gerações separado.",
+    "notes": "As quarenta e cinco execuções históricas estão organizadas em cinco ondas. A primeira investiga caudas pesadas. A segunda considera choques e assimetria. A terceira trabalha com esparsidade e razão de variâncias. A quarta oferece os controles canônicos, incluindo Normal por Normal. A quinta usa distribuições ajustadas empiricamente pelo EasyFit, com quinze execuções. Na notação de cada combinação, a primeira distribuição se aplica a Win e a segunda a W. Cada combinação passa por otimização dos hiperparâmetros. Por isso, uma diferença entre duas execuções expressa o efeito conjunto da distribuição, da configuração e da realização do reservatório. O lote de duzentas gerações usado em ilustrações da monografia pertence a outro protocolo e não entra nessa contagem.",
+    "source": "Monografia padronizada, Quadro 1 e seção 3.6. Resultados históricos consolidados no manuscrito e documentos das ondas."
+  },
+  {
+    "title": "Comparações e critérios de avaliação",
+    "seconds": 70,
+    "body": [
+      "Controle ESN: Normal × Normal",
+      "GRU e LSTM: 50 unidades, janela de 10 passos e 80 épocas",
+      "MAE: magnitude média dos erros absolutos",
+      "RMSE: maior peso para erros grandes. R²: aderência global"
+    ],
+    "callout": "Orçamentos de otimização diferentes limitam a comparação entre arquiteturas",
+    "notes": "A avaliação inclui uma ESN de controle com inicialização Normal por Normal e duas redes recorrentes de comparação: GRU e LSTM. Os modelos profundos usam cinquenta unidades, janela de dez passos, dropout de zero vírgula dois e oitenta épocas. O MAE mede o erro absoluto médio. O RMSE penaliza mais os erros elevados. O R quadrado descreve a aderência global, mas preços em nível podem produzir valores altos por sua persistência temporal. Há uma limitação importante: a ESN recebeu uma busca extensa, enquanto os baselines históricos têm um resultado oficial por arquitetura. Portanto, a comparação não representa igualdade completa de orçamento de otimização. Vou apresentar primeiro os resultados históricos e depois uma rodada controlada separada, que preservou as previsões necessárias ao teste estatístico.",
+    "source": "Monografia padronizada, seções 3.5 e 3.6."
+  },
+  {
+    "title": "Resultados históricos no teste",
+    "seconds": 115,
+    "kind": "table",
+    "headers": [
+      "Modelo/configuração",
+      "MAE",
+      "RMSE",
+      "R²"
+    ],
+    "rows": [
+      [
+        "ESN Laplace × Normal",
+        "0,327224",
+        "0,498527",
+        "0,9940"
+      ],
+      [
+        "ESN Laplace × Cauchy",
+        "0,328949",
+        "0,495386",
+        "0,9941"
+      ],
+      [
+        "ESN Normal × Normal",
+        "0,328365",
+        "0,499037",
+        "0,9940"
+      ],
+      [
+        "GRU",
+        "0,356600",
+        "0,589800",
+        "0,9912"
+      ],
+      [
+        "LSTM",
+        "0,452100",
+        "0,816600",
+        "0,9839"
+      ]
+    ],
+    "callout": "Resultados consolidados na monografia. Menor valor indica melhor MAE/RMSE.",
+    "notes": "Nos resultados históricos, Laplace por Normal apresentou o menor MAE, zero vírgula três dois sete dois dois quatro. Laplace por Cauchy apresentou o menor RMSE e o maior R quadrado. Portanto, as métricas não apontam uma única configuração vencedora. O controle Normal por Normal ficou próximo das melhores alternativas. Os valores de GRU e LSTM aqui são os resultados históricos documentados e não devem ser confundidos com os da rodada controlada que apresentarei adiante. Segundo a consolidação da monografia, quarenta e quatro das quarenta e cinco execuções tiveram MAE inferior aos dois baselines. Esse é um resultado descritivo do conjunto estudado. Como os vetores e matrizes históricos não ficaram integralmente preservados, a inferência estatística precisou de uma execução complementar própria. Para ler a tabela, comparo primeiro uma coluna de cada vez. O MAE resume a magnitude média dos desvios. O RMSE cresce mais quando há erros elevados. Essa diferença explica por que uma configuração pode liderar uma métrica e outra configuração liderar a segunda. O R quadrado próximo de um deve ser interpretado junto desses erros e da persistência da série. Os valores consolidados descrevem as execuções disponíveis e não constituem uma garantia de desempenho em qualquer período futuro.",
+    "source": "Monografia padronizada, Tabelas 4 e 5 e seção 4.4. Documentos docs/08_comparativo_quatro_ondas_estocasticas.md e docs/09_onda_5_ajustes_empiricos_easyfit.md. O CSV histórico atual contém apenas sete registros de execução, não as 45 rodadas; estes valores são a consolidação documental, sem reconferência integral nos registros primários históricos."
+  },
+  {
+    "title": "Ganho incremental das distribuições",
+    "seconds": 70,
+    "kind": "big",
+    "numbers": [
+      [
+        "0,347%",
+        "Redução de MAE: Laplace × Normal frente a Normal × Normal"
+      ],
+      [
+        "0,732%",
+        "Redução de RMSE: Laplace × Cauchy frente a Normal × Normal"
+      ]
+    ],
+    "callout": "Diferenças observadas inferiores a 1%. Sem isolamento causal da distribuição.",
+    "notes": "Quando comparo as melhores configurações com o controle Normal por Normal, o ganho é incremental. A redução relativa do MAE foi de aproximadamente zero vírgula trezentos e quarenta e sete por cento. No RMSE, a redução foi de aproximadamente zero vírgula setecentos e trinta e dois por cento. Esses valores são menores que as diferenças observadas frente aos baselines profundos. Isso recomenda cautela na interpretação do papel das distribuições. As configurações também diferem em hiperparâmetros e realização aleatória do reservatório, então os resultados não isolam causalmente a distribuição. Além disso, ajustar uma distribuição à série de preços não implica que essa mesma distribuição seja ideal para os pesos: o reescalamento espectral e a função de ativação alteram a dinâmica resultante.",
+    "source": "Monografia padronizada, seção 4.3. Reduções calculadas a partir dos valores históricos consolidados."
+  },
+  {
+    "title": "Estabilidade e falhas de generalização",
+    "seconds": 75,
+    "body": [
+      "t assimétrica × Cauchy: MAE 0,558151 e RMSE 3,849416 no teste",
+      "Onda 2 reuniu os melhores erros e a principal falha observada",
+      "Onda 5: MAE entre 0,328395 e 0,328398 nas 15 execuções",
+      "Baixa dispersão observada não demonstra superioridade geral"
+    ],
+    "notes": "A análise das falhas é tão relevante quanto a dos melhores valores. Na combinação t assimétrica por Cauchy, o MAE de teste chegou a zero vírgula cinco cinco oito e o RMSE a três vírgula oito quatro nove, apesar de a validação ter valores próximos das demais configurações. Essa foi a exceção na comparação histórica com os baselines em MAE. A segunda onda concentrou, assim, tanto os melhores resultados quanto a maior deterioração fora da amostra. Na quinta onda, as quinze execuções apresentaram MAEs muito próximos, entre zero vírgula três dois oito três nove cinco e zero vírgula três dois oito três nove oito. Isso descreve estabilidade no conjunto observado, mas não prova robustez universal ou menor erro. Também mostra por que a avaliação em um período temporal posterior precisa acompanhar a otimização.",
+    "source": "Monografia padronizada, seção 4.4, e documentos das ondas 2 e 5."
+  },
+  {
+    "title": "Custo de ajuste e custo de descoberta",
+    "seconds": 75,
+    "kind": "big",
+    "numbers": [
+      [
+        "≈ 0,05 s",
+        "Ajuste da camada de saída da ESN selecionada"
+      ],
+      [
+        "≈ 37,9 h",
+        "Total documentado das 45 buscas genéticas"
+      ]
+    ],
+    "callout": "Treinamentos históricos: GRU ≈ 28,80 s e LSTM ≈ 35,40 s",
+    "notes": "O custo computacional precisa ser separado em etapas. Depois de selecionar uma configuração, o ajuste da camada de saída da ESN demandou cerca de cinco centésimos de segundo. Os treinamentos históricos documentados para GRU e LSTM foram de aproximadamente vinte e oito vírgula oito e trinta e cinco vírgula quatro segundos. Porém, antes do ajuste da ESN houve uma exploração extensa: as quarenta e cinco buscas genéticas totalizaram aproximadamente trinta e sete vírgula nove horas. Assim, a vantagem de custo se refere especificamente ao ajuste posterior à seleção. Não seria correto apresentar os cinco centésimos de segundo como custo total para descobrir o modelo. O ESNAUTO contribuiu ao automatizar essas buscas e organizar os resultados, reduzindo a intervenção manual durante execuções prolongadas.",
+    "source": "Monografia padronizada, Tabela 6 e seção 4.6. Tempos históricos documentados, sem nova medição nesta apresentação."
+  },
+  {
+    "title": "Rodada controlada para análise inferencial",
+    "seconds": 85,
+    "body": [
+      "Semente fixa 20260926 e novas matrizes da ESN",
+      "1.298 datas comuns: 30/09/2015 a 30/12/2020",
+      "Treino estrito de Wout e continuidade temporal dos estados",
+      "Quatro testes DM bilaterais: duas arquiteturas e duas perdas"
+    ],
+    "callout": "Rodada complementar independente dos números históricos",
+    "notes": "Para testar formalmente diferenças de acurácia, eu precisava dos erros ponto a ponto alinhados por data. Como os artefatos históricos da execução de referência não estavam integralmente preservados, conduzi uma rodada controlada complementar, com semente fixa vinte milhões, duzentos e sessenta mil, novecentos e vinte e seis. Ela usa a configuração de referência Laplace por Normal, mas gera novas matrizes. A camada de saída usa estritamente alvos de treino e os estados mantêm continuidade cronológica ao atravessar validação e teste. Os modelos produziram mil duzentas e noventa e nove previsões, das quais a janela previamente definida utiliza mil duzentas e noventa e oito datas comuns. Executei quatro testes bilaterais de Diebold–Mariano: ESN contra GRU e contra LSTM, com perdas absoluta e quadrática. Os resultados pertencem exclusivamente a essa rodada, sem validar retrospectivamente os números históricos.",
+    "source": "Manifesto Scripts/results/diebold_mariano/controlled_runs/seed_20260926/execution_manifest.json e registro dm/dm_execution.json. Monografia padronizada, seção 3.7."
+  },
+  {
+    "title": "Erro na janela controlada",
+    "seconds": 75,
+    "kind": "chart",
+    "chart": "dm",
+    "callout": "1.298 datas comuns. Valores exclusivos da rodada com semente 20260926.",
+    "notes": "Este gráfico apresenta os erros da rodada controlada, calculados nas mesmas mil duzentas e noventa e oito datas. A ESN teve MAE de aproximadamente zero vírgula três dois nove, contra zero vírgula quatro um oito da GRU e zero vírgula quatro seis sete da LSTM. No RMSE, os valores foram aproximadamente zero vírgula quatro nove oito, zero vírgula cinco nove dois e zero vírgula seis três cinco. As duas métricas favorecem a ESN nesta execução. Os valores estão na escala do preço ajustado e menores valores representam menor erro. Como a configuração histórica de referência recebeu novas matrizes e o protocolo controlado impôs fronteira estrita de treino, é esperado que seus números não coincidam com a tabela histórica. A comparação estatística a seguir usa exatamente os vetores desta janela.",
+    "source": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/metrics/metricas_janela_dm.csv. Dados integrais incorporados ao gráfico editável."
+  },
+  {
+    "title": "Teste de Diebold–Mariano",
+    "seconds": 110,
+    "kind": "table",
+    "headers": [
+      "Comparação",
+      "Perda",
+      "DM",
+      "p-valor"
+    ],
+    "rows": [
+      [
+        "ESN × GRU",
+        "Absoluta",
+        "−11,871",
+        "6,296 × 10⁻³¹"
+      ],
+      [
+        "ESN × LSTM",
+        "Absoluta",
+        "−15,497",
+        "8,008 × 10⁻⁵⁰"
+      ],
+      [
+        "ESN × GRU",
+        "Quadrática",
+        "−9,847",
+        "4,117 × 10⁻²²"
+      ],
+      [
+        "ESN × LSTM",
+        "Quadrática",
+        "−9,209",
+        "1,285 × 10⁻¹⁹"
+      ]
+    ],
+    "callout": "H₀ rejeitada nos quatro contrastes a 5%, com menor perda média para a ESN",
+    "notes": "O teste de Diebold–Mariano avalia a hipótese nula de diferença média de perda igual a zero. Defini o diferencial como perda da ESN menos perda do baseline. Por isso, os valores negativos indicam a direção favorável à ESN. Nos quatro contrastes, o p-valor ficou abaixo de cinco por cento e a ESN apresentou menor perda média. Isso oferece apoio inferencial complementar para H1, dentro da execução e das arquiteturas estudadas. Utilizei horizonte de um passo e estimação ACF da variância de longo prazo. O protocolo manteve significância individual de cinco por cento, sem correção de multiplicidade, uma escolha registrada como limitação. Os p-valores pequenos não transformam uma única semente em evidência de superioridade universal. Repetições independentes continuam necessárias para estudar a variabilidade entre inicializações. Há também uma diferença entre significância estatística e tamanho do efeito. O teste informa se a diferença de perda é compatível com a hipótese nula sob suas condições. Para avaliar a magnitude prática, volto aos valores de MAE e RMSE na janela comum. Por isso apresentei primeiro o gráfico de erros e depois os contrastes estatísticos: as duas leituras são complementares e precisam permanecer ligadas ao mesmo protocolo.",
+    "source": "Scripts/results/diebold_mariano/controlled_runs/seed_20260926/dm/resultados_dm.csv. Monografia padronizada, seção 4.8. Método de referência: Diebold e Mariano (1995), citado no manuscrito."
+  },
+  {
+    "title": "Síntese das hipóteses",
+    "seconds": 65,
+    "kind": "table",
+    "headers": [
+      "Hipótese",
+      "Avaliação no escopo estudado"
+    ],
+    "rows": [
+      [
+        "H1 · Desempenho",
+        "Apoio histórico descritivo e inferencial complementar"
+      ],
+      [
+        "H2 · Custo",
+        "Apoio para ajuste após seleção da configuração"
+      ],
+      [
+        "H3 · Distribuições",
+        "Apoio pontual, com ganhos incrementais"
+      ],
+      [
+        "H4 · LHS e cataclismo",
+        "Efeito causal sem confirmação por ablação"
+      ],
+      [
+        "H5 · Ajustes empíricos",
+        "Estabilidade observada, sem menor erro global"
+      ]
+    ],
+    "notes": "Retomando as hipóteses, H1 recebeu apoio descritivo nos resultados históricos e apoio inferencial na rodada complementar. H2 recebeu apoio para o custo de ajuste de uma configuração já selecionada. H3 teve apoio pontual: distribuições não gaussianas produziram os melhores erros observados, mas com melhoria pequena sobre o controle. Para H4, integrei LHS e o mecanismo cataclísmico ao otimizador, porém não realizei a ablação necessária para atribuir a eles um ganho causal. H5 recebeu apoio parcial quanto à estabilidade observada da quinta onda, sem demonstrar superioridade no erro. Essa síntese evita transformar todos os componentes implementados em hipóteses automaticamente confirmadas. A conclusão acompanha o tipo de evidência disponível para cada questão.",
+    "source": "Monografia padronizada, Tabela 8 e capítulo 6."
+  },
+  {
+    "title": "Contribuição de Engenharia de Software",
+    "seconds": 65,
+    "body": [
+      "ESNAUTO integra preparação de dados, ESN, busca genética e baselines",
+      "Interface R Shiny e rotinas em lote compartilham o núcleo de cálculo",
+      "Histórico, métricas e recuperação de configurações apoiam os experimentos",
+      "A rodada controlada preserva previsões, matrizes, modelos e metadados"
+    ],
+    "notes": "O ESNAUTO surgiu da necessidade de organizar os experimentos. O núcleo de cálculo está em R, com rotinas auxiliares em Python e uma interface R Shiny. A estrutura separa preparação de dados, modelos, otimização, métricas e histórico. Essa organização permite reutilizar funções na interface e nas execuções em lote. A contribuição de Engenharia de Software está na automação do processo, na modularização e nos mecanismos de acompanhamento e recuperação. A auditoria também revelou uma limitação: a política histórica de persistência não preservou todos os vetores e matrizes das execuções oficiais. A rodada controlada tratou essa lacuna com persistência dos artefatos necessários à análise. Essa contribuição de software complementa a pesquisa experimental. A seguir, retomo as limitações e as possibilidades de continuidade do estudo.",
+    "source": "Monografia padronizada, seção 4.10. Estrutura local app/modules e app/utils; manifesto da rodada controlada."
+  },
+  {
+    "title": "Limitações e continuidade",
+    "seconds": 105,
+    "body": [
+      "Um ativo, horizonte de um passo e divisão temporal estática",
+      "Busca extensa da ESN frente a baselines com orçamento diferente",
+      "Artefatos históricos incompletos e ausência de ablações",
+      "Continuidade: repetições, validação temporal e comparação com persistência"
+    ],
+    "callout": "VALE3 e evolução JANUS permanecem fora dos resultados centrais desta defesa",
+    "notes": "As conclusões têm limites. O estudo considera um ativo e um horizonte de um passo, com divisão temporal estática. As arquiteturas receberam orçamentos diferentes de otimização. Os artefatos históricos não permitem reconstruir integralmente todas as execuções. Também faltaram ablações para isolar o efeito do Fator de Ajuste, do LHS e do mecanismo cataclísmico. A análise controlada utiliza uma única semente, então não estima toda a variabilidade entre inicializações. Como continuidade, considero repetições independentes, validação em janelas temporais, comparação explícita com persistência e testes que isolem componentes do método. A ampliação para VALE3 pertence ao desdobramento da pesquisa e não compõe estes resultados centrais. A evolução do aplicativo para JANUS também é futura, preservando a identidade ESNAUTO da versão estudada. Uma extensão experimental pode organizar essas limitações em perguntas específicas. Repetições com diferentes sementes permitiriam caracterizar a variabilidade do reservatório. Janelas temporais sucessivas ajudariam a verificar a sensibilidade ao período de avaliação. Ablações permitiriam comparar versões com e sem um componente mantendo as demais escolhas controladas. Essas etapas são propostas de continuidade, sem serem apresentadas como experimentos já realizados nesta monografia.",
+    "source": "Monografia padronizada, capítulo 5. Contexto de assistência: VALE3-EXT fora dos resultados principais."
+  },
+  {
+    "title": "Conclusão",
+    "seconds": 65,
+    "body": [
+      "ESNs pequenas e otimizadas foram competitivas no protocolo PETR4",
+      "Distribuições não gaussianas produziram ganhos pontuais inferiores a 1% sobre o controle",
+      "A rodada controlada favoreceu a ESN nos quatro contrastes DM",
+      "ESNAUTO contribuiu para organizar e automatizar a pesquisa"
+    ],
+    "callout": "Obrigado. Perguntas?",
+    "notes": "Concluo que ESNs pequenas e otimizadas foram uma alternativa competitiva para prever o preço ajustado da PETR4 sob o protocolo adotado. Laplace por Normal apresentou o melhor MAE histórico, enquanto Laplace por Cauchy apresentou o melhor RMSE. As melhorias sobre o controle Normal por Normal foram incrementais e não isolam um efeito causal da distribuição. A rodada controlada complementar apresentou menor perda média para a ESN e diferenças estatisticamente significativas frente às arquiteturas GRU e LSTM especificadas, nas duas funções de perda. O ajuste posterior à seleção teve baixo custo, mas a busca de configurações foi extensa. Por fim, o ESNAUTO contribuiu como infraestrutura de Engenharia de Software para executar e organizar os experimentos. Obrigado pela atenção. Fico à disposição para as perguntas da banca.",
+    "source": "Monografia padronizada, capítulo 6, e resultados primários da rodada controlada."
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_examinado": "3548613bcaf11ce6377cce7e12511d0e146c4b407de261c4eec57ac7456387bc",
+  "fonte": {
+    "id": "D31",
+    "arquivo": "Artigos citados\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+    "sha256": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+    "paginas": 17,
+    "caracteres_extraidos": 52375,
+    "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+    "log_leitura": []
+  },
+  "paginas_textuais_lidas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "paginas_visuais_inspecionadas": [
+    1,
+    4,
+    5,
+    7,
+    8,
+    11,
+    12,
+    13,
+    15
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D31",
+      "arquivo_pdf": "Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_pdf": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "tipo": "RC_optico",
+      "dimensao": "P1",
+      "codigo": "?",
+      "localizador": "PDF 3–4, equações 1–2 e montagem óptica",
+      "evidencia_e_limite": "Win é aleatória e Wres decorre do reservatório físico; a lei de geração dos elementos não é identificada nessas passagens.",
+      "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+    },
+    {
+      "id": "D31",
+      "arquivo_pdf": "Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_pdf": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "tipo": "RC_optico",
+      "dimensao": "P2",
+      "codigo": "?",
+      "localizador": "PDF 3–5 e triagem dirigida das seções de resultados",
+      "evidencia_e_limite": "Há intenção de otimizar ganhos alfa/beta, mas o procedimento explícito de validação cruzada e grid search refere-se aos comparadores ML/LSTM. A intenção de otimizar RC, sem procedimento identificado, não fecha P2.",
+      "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+    },
+    {
+      "id": "D31",
+      "arquivo_pdf": "Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_pdf": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "tipo": "RC_optico",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 6–7, seção 3",
+      "evidencia_e_limite": "Constrói indicadores, atributos macroeconômicos/defasagens e pesos de correlação; normaliza entradas por z-score.",
+      "escopo_leitura": "PDF 3–8: sistema, métodos, dados, atributos e identificação dos baselines."
+    },
+    {
+      "id": "D31",
+      "arquivo_pdf": "Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_pdf": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "tipo": "RC_optico",
+      "dimensao": "P4",
+      "codigo": "D",
+      "localizador": "PDF 5 e 8",
+      "evidencia_e_limite": "Executa LSTM entre os baselines; LSTM é identificada como Best ML para quatro/dez passos. As comparações Best ML de um passo usam Lasso, não sempre LSTM.",
+      "escopo_leitura": "PDF 3–8: sistema, métodos, dados, atributos e identificação dos baselines."
+    },
+    {
+      "id": "D31",
+      "arquivo_pdf": "Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_pdf": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "tipo": "RC_optico",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 5, Tabela 1",
+      "evidencia_e_limite": "Sete séries identificadas por ^HSI, ^IXIC, ^N225, ^NYA, MME=F, UKX.L e VTHR. A classificação genérica da fonte não transforma todos os símbolos em índices de ações.",
+      "escopo_leitura": "PDF 3–8: sistema, métodos, dados, atributos e identificação dos baselines."
+    }
+  ],
+  "n_codigos_alterados": 0,
+  "afirmacoes": {
+    "U0207": "Sistema óptico, ponderação por correlação, comparação com melhor modelo ML e horizontes 1,4,10 confirmados; Figuras 6/7 mostram trajetórias específicas. A amostra inclui sete códigos, não assumir que todos são índices acionários.",
+    "U0472": "Três autores: Fang Wang, Ting Bu e Yuping Huang."
+  },
+  "ressalvas": [
+    "PDF 12: heatmap de MASE e bootstrap usa dados e previsões sintéticos; não atribuir essa significância aos dados históricos observados.",
+    "PDF 8: melhor comparador 1 passo é Lasso; LSTM para 4/10 passos.",
+    "Win é aleatória mas família não identificada; grid search descrita para comparadores ML, não supor procedimento para parâmetros ópticos.",
+    "PDF 11: métricas financeiras não são ganhos da pesquisa PETR4."
+  ],
+  "correcoes_pendentes": [],
+  "correcoes_incorporadas": [
+    "U0207",
+    "U0472"
+  ]
+}

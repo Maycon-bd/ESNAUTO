@@ -1,0 +1,130 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_examinado": "22fad6c5802e350bcfdcf3776f5531086f3fe7220380d8f0a9ede83b90a8a47b",
+  "fonte": {
+    "id": "D17",
+    "arquivo": "Artigos citados\\Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+    "sha256": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+    "paginas": 34,
+    "caracteres_extraidos": 59299,
+    "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+    "log_leitura": []
+  },
+  "paginas_textuais_lidas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "paginas_visuais_inspecionadas": [
+    1,
+    7,
+    8,
+    9,
+    21,
+    25,
+    28
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D17",
+      "arquivo_pdf": "Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+      "sha256_pdf": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+      "tipo": "sentimento_e_estrategias",
+      "dimensao": "P1",
+      "codigo": "-",
+      "localizador": "PDF 21/28, tipos de modelos e tabelas",
+      "evidencia_e_limite": "FinBERT/GPT-2 para sentimentos e modelos estatísticos/indicadores; não inicialização ESN.",
+      "escopo_leitura": "PDF 8–9 e 21/28 relidos; demais métodos/resultados pertinentes consultados no parecer."
+    },
+    {
+      "id": "D17",
+      "arquivo_pdf": "Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+      "sha256_pdf": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+      "tipo": "sentimento_e_estrategias",
+      "dimensao": "P2",
+      "codigo": "-",
+      "localizador": "PDF 21/28",
+      "evidencia_e_limite": "Sem modelo ESN em otimização no objeto dessas comparações.",
+      "escopo_leitura": "PDF 8–9 e 21/28 relidos; demais métodos/resultados pertinentes consultados no parecer."
+    },
+    {
+      "id": "D17",
+      "arquivo_pdf": "Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+      "sha256_pdf": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+      "tipo": "sentimento_e_estrategias",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 8–9, seções 2.2–2.4",
+      "evidencia_e_limite": "Alinha notícias a dias de negociação/defasagens, limpa texto, integra por data e categoriza retornos. Não confundir classificação de notícias com direção do índice.",
+      "escopo_leitura": "PDF 8–9 e 21/28 relidos; demais métodos/resultados pertinentes consultados no parecer."
+    },
+    {
+      "id": "D17",
+      "arquivo_pdf": "Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+      "sha256_pdf": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+      "tipo": "sentimento_e_estrategias",
+      "dimensao": "P4",
+      "codigo": "?",
+      "localizador": "PDF 21 e 23, tabelas 1–5 e discussão",
+      "evidencia_e_limite": "GPT-2/FinBERT são avaliados em classificação de sentimento; o comparativo temporal usa ARIMA, Prophet e ETS. Retornos de estratégias combinadas não isolam um Transformer como previsor temporal no mesmo benchmark exigido por P4.",
+      "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada)."
+    },
+    {
+      "id": "D17",
+      "arquivo_pdf": "Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+      "sha256_pdf": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+      "tipo": "sentimento_e_estrategias",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "Título; PDF 8–9 e 21",
+      "evidencia_e_limite": "S&P500, retornos/estratégias e notícias de fontes financeiras identificadas.",
+      "escopo_leitura": "PDF 8–9 e 21/28 relidos; demais métodos/resultados pertinentes consultados no parecer."
+    }
+  ],
+  "n_codigos_alterados": 0,
+  "afirmacoes": {
+    "U0188": "PDF 21 e 28: FinBERT 75,56% classificação de sentimento na Benzinga; PDF 8–9: notícias são relacionadas a classes de retorno. A fonte não detalha suficientemente o protocolo dessa acurácia para equipará-la a previsão futura de direção.",
+    "U0394": "PDF 1: três autores Haojie Liu, Zihan Lin e Randall R. Rojas."
+  },
+  "ressalvas": [
+    "O estudo testa estratégias S&P 500 de maio a agosto de 2024 e assume custos e slippage zero; não extrapolar desempenho econômico.",
+    "GPT-2 e FinBERT classificam notícias; comparação de séries usa ARIMA, ETS e Prophet, e LSTM/Transformer são sugeridos como trabalho futuro."
+  ],
+  "correcoes_pendentes": [],
+  "correcoes_incorporadas": [
+    "U0188",
+    "U0394"
+  ]
+}

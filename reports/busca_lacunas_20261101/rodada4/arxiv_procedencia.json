@@ -1,0 +1,37 @@
+[
+  {
+    "id": "2508.05416v1",
+    "url": "https://arxiv.org/src/2508.05416v1",
+    "metodo": "Leitura de fonte editorial pública; nenhuma compilação ou código executado.",
+    "sha256": "10138181eb4aff6ff8080c1af331b7d96095a3e35363e8c067d449e12360780a",
+    "bytes": 1800966,
+    "membros_textuais": [
+      {
+        "membro": "ref.bib",
+        "sha256": "0ab8058c265755229d3614cca85085585db523de463787d69d209cba0045c7f8",
+        "caracteres": 55741
+      },
+      {
+        "membro": "samplepaper.tex",
+        "sha256": "59a15997a6dc08212de4fa43178a0ee5330de4813e8a4bd0b60e62f6b84dd550",
+        "caracteres": 125604
+      }
+    ],
+    "ocorrencias_localizadas": 25
+  },
+  {
+    "id": "2512.08963v1",
+    "url": "https://arxiv.org/src/2512.08963v1",
+    "metodo": "Leitura de fonte editorial pública; nenhuma compilação ou código executado.",
+    "sha256": "1b960d914c3ffda7def11b1fdc104a2f60fc97cb03de5cc23f277130ef86f666",
+    "bytes": 7257016,
+    "membros_textuais": [
+      {
+        "membro": "revised_main_mod.tex",
+        "sha256": "bcb09891ce50f4411f09fe7999f09219b4ef954527e2cc8ae89fc91e6439462a",
+        "caracteres": 71481
+      }
+    ],
+    "ocorrencias_localizadas": 0
+  }
+]

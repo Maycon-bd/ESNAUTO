@@ -1,0 +1,47 @@
+{
+  "base": "v009",
+  "sha256_base": "793910fae2daaa2d5dbdcfa0cd76177c6c6a38c353d98d94ecaaaecf118c7b03",
+  "sha256_candidata": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+  "partes_alteradas": [
+    "word/document.xml",
+    "word/media/image1.png"
+  ],
+  "tabelas_total": 14,
+  "tabelas_alteradas_indices": [
+    1,
+    2
+  ],
+  "celulas_alteradas": [
+    {
+      "linha_word": 15,
+      "autor": "Jaeger (2007)",
+      "dimensao": "P1",
+      "antes": "?",
+      "depois": "D"
+    },
+    {
+      "linha_word": 15,
+      "autor": "Jaeger (2007)",
+      "dimensao": "P3",
+      "antes": "?",
+      "depois": "D"
+    },
+    {
+      "linha_word": 19,
+      "autor": "Millea (2014)",
+      "dimensao": "P4",
+      "antes": "?",
+      "depois": "S"
+    }
+  ],
+  "matriz_170_celulas_conferida": true,
+  "insuficientes_restantes": 38,
+  "interrogacoes_textuais": 49,
+  "referencias_anteriores_preservadas": 50,
+  "referencias_total": 51,
+  "introducao_identica": true,
+  "metodo_resultados_discussao_conclusao_identicos_xml": true,
+  "imagens_preservadas": 5,
+  "figura1_atualizada": true,
+  "validacao_visual": "pendente"
+}

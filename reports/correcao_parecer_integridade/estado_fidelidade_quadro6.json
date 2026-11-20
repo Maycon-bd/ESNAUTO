@@ -1,0 +1,25 @@
+{
+  "base": "v001",
+  "sha256_base": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+  "rascunho": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revisao_parecer_integridade.docx",
+  "sha256_rascunho": "29a0f986dd25bf1d0bc73779955a7b45fd065bd54db0bab7eef93b5ed99da8c2",
+  "pdf": "reports\\correcao_parecer_integridade\\revisao_fidelidade_quadro6.pdf",
+  "sha256_pdf": "add322f4acf5523c02dbc81ab5566f3d8ae4e45b9fd7bc95b10387ae1362b9e2",
+  "paginas_pdf": 77,
+  "paragrafos_originais_alterados": 110,
+  "paragrafos_tabelas_originais_alterados": 196,
+  "insercoes": "Quadro6 de6linhas/3colunas, legenda, fonte e entrada na lista; linha Cardoso2022a retirada da Tabela7.",
+  "inspecao_etapa": "PDF desta etapa: páginas físicas11,12,22–26,72,73,75,76 examinadas em exportações desta aplicação e reaplicações tipográficas. Última reaplicação alterou apenas destaque de títulos nas referências506/531/545; páginas73/75/76 abertas novamente. Não equivale à inspeção integral das77páginas.",
+  "resultado": "Sem recortes/sobreposições nas páginas examinadas. Quadro6 inteiro na física72 (impressa71), entrada de lista separada por tab e página71.",
+  "validacoes": [
+    "Hash do rascunho confere com log",
+    "H4/H5 originais preservadas",
+    "Cardoso2025 e Jaeger2001 com chamadas substantivas no corpo",
+    "Oito PDFs desta etapa conferem com os hashes do manifesto inicial",
+    "Validação do construtor por C14N prova preservação dos nós anteriores após remover inserções",
+    "Sem treino, GA ou DM"
+  ],
+  "evidencia": "evidencia_fidelidade_atribuicoes.json",
+  "promocao": "Não realizada; vigente permanecev001 e conferência global pendente.",
+  "objetivo_completo": false
+}

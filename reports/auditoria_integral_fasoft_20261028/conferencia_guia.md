@@ -1,0 +1,93 @@
+# Conferência do guia FASOFT/UniRV — 28/10/2026
+
+Esta matriz distingue obrigações, modelos, recomendações, condições e interpretações. As páginas do guia são as físicas do PDF. Não é certificado de aprovação acadêmica nem garantia absoluta de conformidade. A declaração anterior de conclusão integral foi retirada.
+
+Cópia: `MayconGarciaSilva_monografia_FASOFT_conferida.docx`. 75 páginas no PDF nativo do Word; 86 testes estruturais aprovados. O número de testes não equivale a um percentual de atendimento ao guia.
+
+**Epígrafe regularizada:** alternativa com fonte primária adotada após resposta do autor. A ficha vazia está autorizada e as assinaturas são posteriores à aprovação; não são bloqueios desta formatação. Recomendações qualitativas e interpretações permanecem explicitadas abaixo. A conclusão refere-se à adequação da versão eletrônica para esta etapa acadêmica, sem certificar impressão, emissão da ficha ou aprovação institucional.
+
+| ID | Guia, p. | Requisito | Natureza | Estado | Evidência/decisão |
+|---|---|---|---|---|---|
+| G01 | 10 | A4 de 21 × 29,7 cm | obrigação | verificado | Seções OOXML e dimensões do PDF. |
+| G02 | 10 | Margens superior/esquerda 3 cm e inferior/direita 2 cm | obrigação | verificado | Todas as seções; inspeção de texto fora da mancha. |
+| G03 | 10 | Arial ou Times New Roman, tamanho 12 no texto geral | obrigação | verificado | Corpo em Times New Roman 12; resolver herança em docDefaults. |
+| G04 | 10 | Texto preto, com cores permitidas nas ilustrações | obrigação | verificado | Runs e páginas renderizadas; cores dos seis gráficos preservadas. |
+| G05 | 10 | Corpo justificado | obrigação | verificado | Estilos e parágrafos efetivos, sem fontes/notas/legendas nessa regra geral. |
+| G06 | 10 | Primeira linha de 1,25 cm e espaço 1,5 | obrigação | verificado | Corpo; alíneas e elementos especiais seguem seus modelos. |
+| G07 | 10–11 | Contagem desde a folha de rosto; números visíveis desde a introdução | obrigação | verificado | PDF nativo: página impressa igual à física menos a capa. |
+| G08 | 10 e 50 | Número 12 no alto à direita | obrigação | verificado | Cabeçalhos e inspeção das páginas textuais. |
+| G09 | 11 e 36 | Pré-textuais e pós-textuais em páginas distintas | obrigação | verificado | Elementos obrigatórios, dedicatória, agradecimentos, epígrafe e listas. |
+| G10 | 11–12 e 50 | Seções primárias em nova página | obrigação | verificado | Seis aberturas de capítulos confirmadas no PDF. |
+| G11 | 12 | Evitar órfãs/viúvas e título sem ao menos duas linhas seguintes | obrigação | verificado | Controle do Word e inspeção visual das quebras. |
+| G12 | 12 e 50 | Hierarquia e realce dos títulos | obrigação | verificado | Primário em maiúsculas/negrito; secundário em maiúsculas; terciário em negrito. |
+| G13 | 12 | Numeração arábica, até cinco níveis | obrigação | verificado | Documento utiliza três níveis; os níveis quarto/quinto não são usados. |
+| G14 | 12 e 50 | Títulos justificados e separados do texto | obrigação | verificado | Estilos e espaçamentos; listas e referências centralizadas por exceção. |
+| G15 | 12 | Títulos sem indicativo numérico, centralizados em negrito 12 | obrigação | verificado | Pré-textuais e referências. |
+| G16 | 13–14 e 25 | Introdução contínua, sem subseções | obrigação | verificado | Introdução em duas páginas; H1–H5 mantidas como parágrafos. |
+| G17 | 13–14 | Introdução sem citações, equações, tabelas, figuras e resultados | orientação | verificado | Leitura da introdução e teste de ausência de citações autor–ano. |
+| G18 | 13–14 | Contexto, problema, justificativa, objetivos, hipóteses, contribuição e roteiro | orientação | verificado | Componentes identificados na introdução; não se atribuiu resultado antecipado. |
+| G19 | 13–14 | Introdução com duas a três páginas | recomendação | verificado | Duas páginas no PDF do Word. |
+| G20 | 14 | Preferência por três níveis de seção | recomendação | verificado | Três níveis utilizados. |
+| G21 | 14 | Parágrafos de quatro a sete linhas | recomendação | com ressalva | Parágrafos longos divididos entre frases; hipóteses, enumerações e passagens curtas não foram artificialmente alongadas. Não é uma regra universal satisfeita por todos os parágrafos. |
+| G22 | 18–19 | Estrutura da monografia concluída | obrigação | verificado | Elementos pré-textuais, introdução, revisão, métodos, resultados/discussão, conclusão e referências presentes. |
+| G23 | 18–19 | Ordem dos elementos pré-textuais | obrigação | verificado | Figuras, quadros, tabelas, siglas e símbolos antes do sumário. |
+| G24 | 19, 26–28 | Revisão, estado da arte e trabalhos relacionados | obrigação | verificado | Capítulo 2; manutenção do portfólio e da distinção de fontes conceituais. |
+| G25 | 19, 29–32 | Metodologia efetiva, dados, classificação, procedimentos e análise | obrigação | verificado | Capítulo 3, incluindo critérios de seleção e protocolos distintos. |
+| G26 | 20 e 37 | Capa: instituição/curso, autor, título, local e ano | obrigação | verificado | Fonte 12, negrito, maiúsculas e centralização conforme modelo. |
+| G27 | 37 | Espaços da capa | modelo | verificado | 7 e 10 linhas simples representadas por 84 e 120 pt; local/ano na parte inferior. |
+| G28 | 20 e 38 | Folha de rosto: identificação, natureza, objetivo, instituição, área e orientador | obrigação | verificado | Área de concentração acrescentada; demais dados preservados. |
+| G29 | 38 | Natureza em 11, espaço simples, bloco com recuo de 8 cm | modelo | verificado | Parágrafo de apresentação e orientador; título em 12 e 1,5. |
+| G30 | 21 e 39 | Ficha catalográfica após a folha de rosto | obrigação | etapa posterior autorizada | Espaço vazio preservado por decisão expressa do autor; emissão pela instituição. |
+| G31 | 39 | Caixa da ficha 12,5 × 7,5 cm; cabeçalhos 11 | modelo | verificado | Medidas OOXML e renderização; nenhum conteúdo catalográfico inventado. |
+| G32 | 21 e 40 | Folha de aprovação: identificação, natureza, área e banca | obrigação | verificado | Nomes e títulos fornecidos na origem preservados; disposição conferida. |
+| G33 | 40 | Espaçamentos e fontes da aprovação | modelo | verificado | Autor/título/BANCA em 12; assinaturas, nomes e instituições em 11; afastamentos do modelo. |
+| G34 | 21 | Data e assinaturas após aprovação | condicional | etapa acadêmica posterior | Campos sem preenchimento; não afirmar aprovação institucional. |
+| G35 | 21 e 41 | Dedicatória sem título, na metade direita inferior | modelo | verificado | Recuo esquerdo de 8 cm, 12, simples e justificado. |
+| G36 | 21 e 42 | Agradecimentos: título e corpo | modelo | verificado | Título centralizado/negrito 12; texto 12, 1,5 e primeira linha 1,25 cm. |
+| G37 | 21 e 43 | Epígrafe: sem título, 12 em itálico, recuo 8 cm; autor 11 à direita | modelo | verificado | Disposição visual conferida. |
+| G38 | 21 e 35 | Identificação da fonte da epígrafe | obrigação | verificado | Alternativa de Gleick adotada após resposta do autor; passagem conferida no primeiro parágrafo de publicação primária assinada, com referência eletrônica e localizador. A frase antiga não foi validada nem conservada. |
+| G39 | 22–23 e 44 | Resumo de 150–500 palavras em um parágrafo | obrigação | verificado | Contagem registrada nos testes; objetivo, método, resultados e conclusão presentes. |
+| G40 | 44 | Resumo 12, simples, justificado, sem recuo | modelo | verificado | Parágrafo e renderização. |
+| G41 | 22–23 | Resumo autossuficiente, sem siglas indispensáveis não explicadas | orientação | verificado | Explicadas as medidas e arquiteturas; menção isolada a CHC retirada do resumo, permanecendo no corpo. |
+| G42 | 22–23 e 44–45 | Três a cinco palavras-chave, ponto e vírgula e ponto final | modelo | verificado | Cinco termos, inicial minúscula salvo PETR4; equivalência entre os idiomas. |
+| G43 | 23 e 45 | Abstract como tradução fiel e com as mesmas características | obrigação | verificado | Dados, ressalvas, método, resultados e palavras-chave conferidos; texto inglês em redondo. |
+| G44 | 23 e 46–47 | Listas próprias para cada tipo de elemento | recomendação | verificado | Seis figuras, cinco quadros e sete tabelas em listas separadas. |
+| G45 | 23 e 46–47 | Títulos, ordem, páginas e pontilhado das listas | obrigação | verificado | Reconstruídas das legendas e conferidas no mapa nativo do Word. |
+| G46 | 24 e 48 | Lista de siglas alfabética quando houver mais de dez itens | obrigação | verificado | Lista ampliada e ordenada, em fonte 12 e espaço 1,5. |
+| G47 | 24 e 49 | Sumário somente com partes textuais e pós-textuais | obrigação | verificado | Nenhum elemento pré-textual incluído. |
+| G48 | 24 e 49 | Sumário corresponde a títulos, níveis, realces e páginas | obrigação | verificado | Conferência no mapa do Word e visual, incluindo conclusão e referências após a repaginação. |
+| G49 | 29 | Cronograma e orçamento opcionais na monografia | condicional | não se aplica | Não constam; não foram acrescentados modelos próprios de projeto de pesquisa. |
+| G50 | 32 | Exigências para pesquisa envolvendo participantes humanos | condicional | não se aplica | Estudo computacional de cotações, sem recrutamento de participantes. |
+| G51 | 32–34 | Resultados e discussão retomam procedimentos e interpretam achados | orientação | verificado | Capítulos 4 e 5; sem repetir experimentos para revisar a apresentação. |
+| G52 | 32–33 | Tabela quantitativa versus quadro descritivo | obrigação | verificado | Mapa categórico e avaliação das hipóteses reclassificados; chamadas e listas renumeradas. |
+| G53 | 32–33 | Numeração consecutiva e chamada no texto | obrigação | verificado | Todos os 18 elementos têm chamada e sequência própria por tipo. |
+| G54 | 32–33 e 53–55 | Título acima, sem ponto final, fonte 10 simples | obrigação/modelo | verificado | Todas as legendas, inclusive uma antes guardada como Normal. |
+| G55 | 32–33 | Natureza e abrangência dos dados nos títulos | orientação | verificado | Período nos dados da série e contexto nos títulos/trechos próximos; não inserir datas ou abrangências não pertinentes aos gráficos bibliográficos. |
+| G56 | 32–33 | Fonte e ano, inclusive para produção própria | obrigação | verificado | 18 fontes abaixo dos elementos, com indicação e ano. |
+| G57 | 33 | Usar adaptado de quando alterar dados/imagem de terceiros | condicional | não se aplica à cópia de imagem | Gráficos próprios, com dados e referências de apresentação identificados; nenhuma imagem de terceiros foi copiada/alterada nesta revisão. |
+| G58 | 32–33 | Cabeçalho e corpo com ao menos três linhas e duas colunas | obrigação | verificado | Elementos tabulares do texto; caixa vazia da ficha não é tabela de resultados. |
+| G59 | 53 | Tabelas: 11, cabeçalho em negrito, simples, sem laterais/grade interna | modelo | verificado | Estrutura OOXML e inspeção visual. |
+| G60 | 54 | Quadros: 11, cabeçalho negrito, simples, laterais e 16 cm | modelo | verificado | Larguras preferenciais, grade e células sincronizadas; inspeção visual. |
+| G61 | 53–55 | Legendas sem abreviações desnecessárias | modelo | verificado | Títulos usam nomes descritivos; não contêm ESN, MAE ou RMSE. |
+| G62 | 32–33 e 55 | Elementos próximos ao trecho correspondente e legíveis | obrigação | verificado | Seis gráficos preservados, sem deformação; quadro curto do protocolo mantido inteiro. |
+| G63 | 34–35 | Conclusão responde aos objetivos/hipóteses e admite continuidade | obrigação | verificado | Capítulo 6, com distinção de evidências e remissão à seção 5.3; sem novos resultados. |
+| G64 | 35 e 60–61 | Referências alfabéticas, identificáveis, fonte 12 e espaço simples | obrigação/modelo | verificado | 49 obras anteriores preservadas e referência primária da epígrafe acrescentada: 50 referências. Metadados reconciliados; cruzamento autor–ano separado. |
+| G65 | 35 | Toda citação deve corresponder a uma referência | obrigação | verificado | Cruzamento autor–ano atualizado sem ausência e epígrafe conferida na fonte primária. O cruzamento bibliográfico não comprova a sustentação científica de cada afirmação. |
+| G66 | 35 e 62 | Glossário opcional, alfabético quando incluído | condicional | não se aplica | Não há glossário. |
+| G67 | 35 e 63–66 | Apêndices e anexos, se incluídos, em folhas próprias e identificados | condicional | não se aplica | Não há esses elementos no manuscrito. |
+| G68 | 51–52 | Alíneas: introdução por dois-pontos, letras, ponto e vírgula, ponto final e recuo | modelo | verificado | Fluxo enumerativo de governança convertido em seis alíneas com recuo próprio. |
+| G69 | 51–52 | Notas de rodapé e citações longas | condicional | não se aplica | Não há notas de rodapé autorais nem bloco de citação longa no corpo; epígrafe tratada separadamente. |
+| G70 | 69–70 | Linguagem formal, clara e impessoal; tempos coerentes com a função | orientação | verificado editorialmente | Corpo impessoal; hipóteses e propostas futuras distinguem-se das ações realizadas; agradecimentos pessoais preservados. |
+| G71 | 69 | Termos técnicos contextualizados | orientação | verificado editorialmente | Definições ampliadas para BPTT, HAR, PCO, medidas e critérios; não inventar equivalências para códigos de conjuntos/modelos. |
+| G72 | 71 | Estrangeirismos em itálico, observadas as exceções indicadas pelo guia | obrigação | verificado editorialmente | Revisão contextual; nomes de publicações seguem o realce bibliográfico, sem aplicar termos técnicos isolados aos títulos de artigos. |
+| G73 | 71 | Expressões latinas especificadas pelo guia em itálico | obrigação | verificado | Todas as ocorrências de et al. testadas, inclusive as parentéticas antes não cobertas. |
+| G74 | 72 | Primeira apresentação por extenso e sigla entre parênteses | obrigação | verificado com interpretação registrada | Siglas técnicas revisadas; códigos de ativos, nomes/identificadores de índices e conjuntos, nomes de pacotes, fórmulas e operadores de consulta mantidos como identificadores convencionais, sem inventar expansões. |
+| G75 | 72 | Grafia das siglas conforme uso convencionado | obrigação | verificado editorialmente | ESN, LSTM, GRU e demais formas técnicas convencionadas preservadas; plurais considerados na leitura. |
+| G76 | Orientador | Win e Wout em itálico e notação uniforme | pedido do orientador | verificado | Itálico testado; índices inferiores e distinção de W mantidos. |
+| G77 | 14 e 29 | Balanceamento dos capítulos e concisão | recomendação | com ressalva | Conteúdo e protocolos preservados; não foram igualados números de páginas artificialmente nem suprimida a revisão dos estudos. |
+| G78 | 10–11 | Papel branco/gramatura e impressão com ficha no verso | condicional | fora da entrega eletrônica | Não foram certificados suporte físico, encadernação nem imposição de impressão; PDF é a prova de layout digital. |
+| G79 | 12 e 50 | Divergência interna do guia para quarto nível | condicional | não se aplica | O documento usa no máximo três níveis. |
+| G80 | 40 | Ambiguidade de caixa/negrito no balão da natureza da aprovação | interpretação | decisão registrada | Adotada a frase de apresentação em caixa normal, conforme o próprio exemplo e a descrição da p. 21; autor/título/BANCA em negrito. |
+| G81 | Preservação | Originais, gráficos, valores e separação de protocolos | limite da revisão | verificado | Cópia anterior intacta; seis imagens e tabelas experimentais preservadas. Nenhum treinamento, busca genética ou DM executado. |
+
+Evidências detalhadas: `auditoria_estrutural.json`, `cruzamento_citacoes.json`, `alteracoes.json`, `mapa_paginas.json` e `inspecao_visual.json`. O cruzamento bibliográfico não é uma auditoria de sustentação científica de todas as afirmações.

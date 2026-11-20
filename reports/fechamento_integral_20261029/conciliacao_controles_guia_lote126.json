@@ -1,0 +1,33 @@
+{
+  "sha256_docx": "31ec505d2f39784a17b6d076f5a0893cc8753f25cdab6bb1a4095eeef363268f",
+  "controles": 88,
+  "aprovados": 85,
+  "falhas_brutas": [
+    {
+      "requisito": "Imagens preservadas",
+      "ok": false,
+      "detalhe": 6
+    },
+    {
+      "requisito": "Valores e textos das tabelas experimentais preservados",
+      "ok": false,
+      "detalhe": 11
+    },
+    {
+      "requisito": "Identidade das 49 referências preservada; apenas referência de Gleick acrescentada",
+      "ok": false,
+      "detalhe": null
+    }
+  ],
+  "imagens_diferentes": [
+    "word/media/image1.png"
+  ],
+  "diferencas_detalhadas": "diferencas_preservacao_lote126.json",
+  "interpretacao": [
+    "Controle de imagens é preservação binária histórica; Figura1 foi deliberadamente recodificada para refletir matriz bibliográfica auditada. Demais imagens devem permanecer idênticas, conforme lista de hashes.",
+    "Controle de tabelas compara texto integral comv005 e sinaliza alterações bibliográficas, descrição de descarte inicial e correção de H3. Valores experimentais não foram recalculados; exame detalhado conserva as24diferenças localizadas.",
+    "Controle de referências espera49anteriores+Gleick, masv005já contém50. Oito referências atuais diferem por autoria,versão,metadados ou substituição da fonte consultada; não alegar preservação literal de todas as referências."
+  ],
+  "limite": "85controles estruturais aprovados não equivalem à aprovação dos81requisitos do guia; falhas de preservação exigem conciliação com correções autorizadas, não alteração do teste para ocultar diferenças.",
+  "resultado": "Nenhuma nova falha de formatação foi identificada nestes controles; três divergências são controles de preservação histórica, não testes normativos de formato."
+}

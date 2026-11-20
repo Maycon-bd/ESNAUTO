@@ -1,0 +1,25 @@
+{
+  "sha256_docx": "daad3895feb384d743bd4461f9a0ba228ed4634d2cdeaf30fb571ade82e10c19",
+  "controles": 88,
+  "aprovados": 85,
+  "preservacao_historica_nao_satisfeita": [
+    {
+      "requisito": "Imagens preservadas",
+      "ok": false,
+      "detalhe": 6
+    },
+    {
+      "requisito": "Valores e textos das tabelas experimentais preservados",
+      "ok": false,
+      "detalhe": 11
+    },
+    {
+      "requisito": "Identidade das 49 referências preservada; apenas referência de Gleick acrescentada",
+      "ok": false,
+      "detalhe": null
+    }
+  ],
+  "interpretacao": "Os3controles comparam identidade à versão histórica; não medem defeito de formatação. Figura1e matriz recodificadas, células e referências corrigidas segundo evidências. Não marcar esses testes como passados nem restaurar erros para satisfazê-los.",
+  "conformidade_formal": "Matriz81requisitos162 contém decisões individuais;45controles de exportação161 passaram e76páginas têm trilha de inspeção.",
+  "limite": "Controles automáticos não são certificação integral da qualidade científica ou aprovação acadêmica."
+}

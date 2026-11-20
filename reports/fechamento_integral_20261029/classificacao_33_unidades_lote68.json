@@ -1,0 +1,357 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "unidades": [
+    {
+      "id": "U0129",
+      "texto_atual": "2.5DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO26",
+      "registros_com_texto_exato": [],
+      "categoria": "Entrada do sumário; conferir correspondência e paginação",
+      "evidencias_a_confrontar": [
+        "verificacao_lote63.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0130",
+      "texto_atual": "2.6PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B328",
+      "registros_com_texto_exato": [],
+      "categoria": "Entrada do sumário; conferir correspondência e paginação",
+      "evidencias_a_confrontar": [
+        "verificacao_lote63.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0138",
+      "texto_atual": "3.4OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS44",
+      "registros_com_texto_exato": [],
+      "categoria": "Entrada do sumário; conferir correspondência e paginação",
+      "evidencias_a_confrontar": [
+        "verificacao_lote63.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0170",
+      "texto_atual": "Como objetivos específicos, pretende-se consolidar a revisão da literatura; empregar a série histórica ajustada; desenvolver o ESNAUTO, integrando ESN, regressão Ridge e busca genética; e investigar distribuições canônicas, de cauda pesada, assimétricas, esparsas e empiricamente ajustadas. Também se busca otimizar conjuntamente a taxa de vazamento, o raio espectral, o descarte inicial, o tamanho do reservatório e a regularização Ridge. A implementação atual utiliza um cromossomo binário de 55 bits para esses parâmetros.",
+      "registros_com_texto_exato": [],
+      "categoria": "Redação atualizada para identificar motor atual",
+      "evidencias_a_confrontar": [
+        "edicao_lote57.json",
+        "checkpoint_lote57.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0194",
+      "texto_atual": "Na implementação do ESNAUTO, LSTM e GRU são treinadas iterativamente por retropropagação através do tempo (Backpropagation Through Time – BPTT), ajustando pesos internos e de saída. O custo desse processo depende da configuração da rede e do orçamento de treinamento. A comparação com a ESN deve distinguir esse treinamento do ajuste da camada de saída e da busca de hiperparâmetros, sem pressupor inviabilidade ou superioridade geral.",
+      "registros_com_texto_exato": [],
+      "categoria": "Descrição técnica da implementação; exige conferência direta no código e contexto",
+      "evidencias_a_confrontar": [],
+      "estado": "conferencia_direta_pendente"
+    },
+    {
+      "id": "U0214",
+      "texto_atual": "O comportamento do reservatório depende da configuração de seus hiperparâmetros. O raio espectral é utilizado no reescalonamento da matriz recorrente; a esparsidade regula a conectividade, e a taxa de vazamento pondera a contribuição do estado anterior na atualização. A seleção desses parâmetros deve considerar a tarefa e o protocolo de avaliação.",
+      "registros_com_texto_exato": [],
+      "categoria": "Descrição técnica da implementação; exige conferência direta no código e contexto",
+      "evidencias_a_confrontar": [],
+      "estado": "conferencia_direta_pendente"
+    },
+    {
+      "id": "U0275",
+      "texto_atual": "26 D; 2 S; 6 ?; 0 —",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0281",
+      "texto_atual": "25 D; 3 S; 3 ?; 3 —",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0292",
+      "texto_atual": "Abebe e Goshu (2024)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0304",
+      "texto_atual": "Behera, Nayak e Kumar (2023)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0328",
+      "texto_atual": "Costa e Lunkes (2025)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0346",
+      "texto_atual": "Duttilo (2024)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0358",
+      "texto_atual": "Ecer et al. (2020)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0370",
+      "texto_atual": "Hassaan, Yacoub e Said (2025)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0394",
+      "texto_atual": "Liu, Lin e Rojas (2025)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0405",
+      "texto_atual": "?",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0418",
+      "texto_atual": "Seddik, Routaib e Elhaddadi (2023)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0421",
+      "texto_atual": "D",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0424",
+      "texto_atual": "Sharma et al. (2025)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0436",
+      "texto_atual": "Sudiatmika e Putra (2024)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0442",
+      "texto_atual": "Sun et al. (2021)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0448",
+      "texto_atual": "Tian e Pei (2024)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0472",
+      "texto_atual": "Wang, Bu e Huang (2025)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0484",
+      "texto_atual": "Xiao, Deng e Bi (2024)",
+      "registros_com_texto_exato": [],
+      "categoria": "Célula da matriz ou resumo; conferir com proveniência e matriz atual",
+      "evidencias_a_confrontar": [
+        "proveniencia_170_celulas_lote31.json",
+        "matriz_lote21/matriz_recodificada.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0601",
+      "texto_atual": "Descarta os estados iniciais na estimação de Wout.",
+      "registros_com_texto_exato": [],
+      "categoria": "Descrição do descarte inicial corrigida",
+      "evidencias_a_confrontar": [
+        "guia_lote58/interpretacao.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0619",
+      "texto_atual": "Quando habilitado o mecanismo antiestagnação, o motor atual eleva a taxa de mutação para 40% ao atingir o limite adaptativo e preserva o melhor indivíduo e as matrizes associadas ao recorde. Como o método não implementa Half Uniform Crossover (HUX), prevenção de incesto e reinicialização integral, é caracterizado como Algoritmo Genético com operador cataclísmico inspirado no CHC.",
+      "registros_com_texto_exato": [],
+      "categoria": "Motor atual e limites da atribuição histórica",
+      "evidencias_a_confrontar": [
+        "conferencia_motor_historico_lote27.json",
+        "incorporacao_lote39.json",
+        "incorporacao_lote44.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0660",
+      "texto_atual": "A variância de longo prazo foi estimada pelo método baseado na função de autocorrelação (Autocorrelation Function – ACF) da implementação dm.test do pacote forecast. Como as quatro comparações foram pré-especificadas, os resultados principais mantiveram α individual de 5%, sem correção por multiplicidade; essa escolha foi registrada como limitação metodológica. Com horizonte de um passo, esse cálculo considera apenas a autocovariância de defasagem zero; eventual dependência serial do diferencial de perda em outras defasagens não é incorporada à estimativa, o que limita a interpretação dos valores de p.",
+      "registros_com_texto_exato": [],
+      "categoria": "Ressalva inferencial h=1 e multiplicidade",
+      "evidencias_a_confrontar": [
+        "conferencia_dm_lote25.json",
+        "conferencia_numerica_dm_lote46.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0675",
+      "texto_atual": "Foram preservadas as informações das versões locais consultadas e as ressalvas sobre preprints ou outras versões. Contagens de citações recebidas e listas completas de referências citadas não foram reconstruídas; por esse motivo, não foram produzidos rankings de impacto ou redes de cocitação. No arquivo histórico processado, a tese de Duttilo consta com ano 2023, enquanto a referência foi atualizada para 2024 conforme a versão consultada. As Figuras 2 a 4 usam palavras-chave ou títulos e não dependem desse ano.",
+      "registros_com_texto_exato": [],
+      "categoria": "Metadados bibliométricos e ano de Duttilo; sem alteração das figuras",
+      "evidencias_a_confrontar": [
+        "conferencia_bibliometria_lote47.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0682",
+      "texto_atual": "O procedimento para nova execução utiliza o núcleo matemático disponibilizado pelo ESNAUTO. A série PETR4 com Fator de Ajuste foi carregada e particionada cronologicamente em 2.600 observações de treino, 1.299 de validação e 1.299 de teste. O motor atual permite definir as distribuições de Win e W e executar o Algoritmo Genético binário com cromossomo de 55 bits, população inicial por LHS, seleção por torneio, crossover de um ponto com probabilidade 0,85, mutação padrão de 12% e operador antiestagnação com hipermutação de 40%.",
+      "registros_com_texto_exato": [],
+      "categoria": "Motor atual e limites da atribuição histórica",
+      "evidencias_a_confrontar": [
+        "conferencia_motor_historico_lote27.json",
+        "incorporacao_lote39.json",
+        "incorporacao_lote44.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0916",
+      "texto_atual": "No fluxo experimental, o ESNAUTO centraliza seleção das distribuições de Win e W, configuração ou otimização dos hiperparâmetros, acompanhamento das execuções, cálculo de MAE, RMSE, MAPE e R², comparação com LSTM e GRU, registro de histórico e geração de visualizações. Na implementação atual, o cromossomo binário de 55 bits codifica taxa de vazamento, raio espectral, período de lavagem, tamanho do reservatório e regularização Ridge; a população inicial emprega LHS e o motor inclui seleção por torneio, crossover de um ponto, mutação e mecanismo cataclísmico antiestagnação.",
+      "registros_com_texto_exato": [],
+      "categoria": "Redação atualizada para identificar motor atual",
+      "evidencias_a_confrontar": [
+        "edicao_lote57.json",
+        "checkpoint_lote57.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U0993",
+      "texto_atual": "DUTTILO, P.; GATTONE, S. A. Modelling Financial Returns with Finite Mixtures of GED. In: BALZANELLA, A.; BINI, M.; CAVICCHIA, C.; VERDE, R. (ed.). SIS 2022: 51st Scientific Meeting of the Italian Statistical Society: Book of the Short Papers. [S. l.]: Pearson, 2022. p. 1364-1369. ISBN 9788891932310.",
+      "registros_com_texto_exato": [],
+      "categoria": "Referência bibliográfica revisada",
+      "evidencias_a_confrontar": [
+        "guia_lote58/interpretacao.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U1013",
+      "texto_atual": "SEDDIK, S.; ROUTAIB, H.; ELHADDADI, A. Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System. International Journal of Computational Methods and Experimental Measurements, v. 11, n. 4, p. 193-203, 2023. DOI: 10.18280/ijcmem.110401.",
+      "registros_com_texto_exato": [],
+      "categoria": "Referência bibliográfica revisada",
+      "evidencias_a_confrontar": [
+        "guia_lote58/interpretacao.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    },
+    {
+      "id": "U1014",
+      "texto_atual": "SHARMA, M.; SARTOR, E.; CAVAZZA, M.; PRENDINGER, H. Echo State Networks for Bitcoin Time Series Prediction. arXiv, 2025. Preprint arXiv:2508.05416v1. DOI: 10.48550/arXiv.2508.05416.",
+      "registros_com_texto_exato": [],
+      "categoria": "Referência bibliográfica revisada",
+      "evidencias_a_confrontar": [
+        "guia_lote58/interpretacao.json"
+      ],
+      "estado": "rastreabilidade_identificada_pendente_juizo_individual"
+    }
+  ],
+  "limite": "Classificação e localização de registros; não aprova automaticamente o conteúdo. Prioridade direta U0194 e U0214; demais decisões devem ser vinculadas ao alcance de cada evidência."
+}

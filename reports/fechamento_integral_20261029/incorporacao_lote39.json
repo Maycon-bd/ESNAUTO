@@ -1,0 +1,73 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_antes": "3765c2ca1972edb428ba95dcb1f7e88b049bdd11d01ef7b2222e2774d180bd38",
+  "sha256_apos_edicao": "e7a92473d9969feb699313b9e37edd81b6abd88f262f14e8d6cdb330a948cb49",
+  "fontes": [
+    {
+      "arquivo": "app/utils/ga_engine.R",
+      "sha256": "d107402af08415a0e9cc4913676cc0e3791725736b22145e945ccb5b5d31ecff"
+    },
+    {
+      "arquivo": "Scripts/acoes_petr4_esn.R",
+      "sha256": "3532af9056a46d313a895645a186991e1e30ce781b2a1cc5e9b0104af800dca5"
+    },
+    {
+      "arquivo": "docs/08_comparativo_quatro_ondas_estocasticas.md",
+      "sha256": "037251565c8be1f2edddbcdbb2227bec1cba6793095c669ad335277191208511"
+    },
+    {
+      "arquivo": "docs/09_onda_5_ajustes_empiricos_easyfit.md",
+      "sha256": "6216f5788b3e14eabf405693c2d8e9f68bc36c6839c9a7baa1f0450ad388e7e6"
+    },
+    {
+      "arquivo": "docs/BASE_ARTIGO_ESNAUTO_RESULTADOS_E_REFERENCIAS.md",
+      "sha256": "1ae3e0be5ea1248c738cc106389f92012ac47602f346585d4f0927e95a60664e"
+    }
+  ],
+  "evidencia": "ga_engine.R linhas 28–65, 293–296 e 318–460 descreve a implementação atual. Script legado linhas 361–363 usa 59 bits, crossover 0,8 e mutação 0,1; documentação histórica registra diferença entre 35% e 40%. Relatórios das ondas não vinculam todos os parâmetros ao código de cada execução. Diferenças entre versões não provam qual versão gerou um resultado particular.",
+  "alteracoes": [
+    {
+      "paragrafo": 319,
+      "antes": "codificação de 55 bits utilizada no ESNAUTO",
+      "depois": "codificação de 55 bits implementada no motor atual do ESNAUTO"
+    },
+    {
+      "paragrafo": 327,
+      "antes": "O cromossomo utilizado possuía 55 bits:",
+      "depois": "No motor atual, o cromossomo possui 55 bits:"
+    },
+    {
+      "paragrafo": 327,
+      "antes": "A população foi inicializada por LHS nas cinco dimensões e convertida para a codificação binária. O operador empregou seleção por torneio,",
+      "depois": "A população é inicializada por LHS nas cinco dimensões e convertida para a codificação binária. O operador emprega seleção por torneio,"
+    },
+    {
+      "paragrafo": 327,
+      "antes": "no regime normal.",
+      "depois": "no regime normal. A correspondência desses parâmetros com cada execução histórica não foi estabelecida, conforme a Seção 3.8."
+    },
+    {
+      "paragrafo": 328,
+      "antes": "Quando o limite adaptativo de estagnação foi atingido, a taxa de mutação foi elevada para 40%, preservando-se o melhor indivíduo e as matrizes associadas ao recorde. Como o método não implementou ",
+      "depois": "Quando habilitado o mecanismo antiestagnação, o motor atual eleva a taxa de mutação para 40% ao atingir o limite adaptativo e preserva o melhor indivíduo e as matrizes associadas ao recorde. Como o método não implementa "
+    },
+    {
+      "paragrafo": 328,
+      "antes": "foi caracterizado como Algoritmo Genético",
+      "depois": "é caracterizado como Algoritmo Genético"
+    },
+    {
+      "paragrafo": 330,
+      "antes": "A função de aptidão combinou erros de treino e validação:",
+      "depois": "No motor atual, a função de aptidão combina erros de treino e validação:"
+    },
+    {
+      "paragrafo": 330,
+      "antes": "O sinal negativo converteu a minimização em maximização para o pacote GA. A ponderação atribuiu maior peso à validação",
+      "depois": "O sinal negativo converte a minimização em maximização para o pacote GA. A ponderação atribui maior peso à validação"
+    }
+  ],
+  "estado": "corrigido_exportado_e_paginas_alteradas_inspecionadas",
+  "sha256_apos_exportacao": "4cf48044445c0760210b1206c185487b8406af3eaecb541de6db381cdbf735b0"
+}

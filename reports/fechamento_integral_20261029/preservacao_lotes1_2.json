@@ -1,0 +1,48 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "7398c86f6435c1ab3b0088118645cbcbf0493cad3e61bb8bdde3ca8bbaf210a5",
+  "paragrafos_alterados": [
+    {
+      "indice": 183,
+      "antes": "Vishwas et al. (2025), em revisão sobre falhas, escalabilidade e uso de dados sintéticos em sistemas de inteligência artificial aplicados ao setor financeiro, observam que arquiteturas treinadas por backpropagation, em particular, as LSTMs, tendem a se mostrar lentas e custosas em cenários de alta frequência.",
+      "depois": "Vishwas et al. (2025) revisam métodos de inteligência artificial aplicados à previsão de preços e tendências de ações. Os desafios discutidos incluem qualidade dos dados, não estacionariedade, sobreajuste, interpretabilidade e custo computacional. A revisão também aborda requisitos de infraestrutura e latência em aplicações de tempo real."
+    },
+    {
+      "indice": 184,
+      "antes": "Os autores comparam máquinas de vetores de suporte (Support Vector Machines – SVMs), LSTMs, Transformers e redes quântico-híbridas (HQNN), e identificam o custo de retreinamento em ambientes dinâmicos como uma das principais barreiras à adoção em larga escala de redes profundas no mercado financeiro.",
+      "depois": "A revisão reúne estudos com SVMs, LSTMs, Transformers e modelos quântico-híbridos. Os desafios de custo e escalabilidade aparecem associados a arquiteturas, otimização e infraestrutura distintas. Essas observações sintetizam estudos anteriores e não equivalem a uma comparação experimental própria nem isolam a retropropagação como causa dos custos."
+    },
+    {
+      "indice": 185,
+      "antes": "Ping (2023) acrescenta a essa discussão a perspectiva do uso prático: variações abruptas de preço impactam decisões de investimento em escala global, o que confere à modelagem preditiva relevância tanto para o investidor individual quanto para o gestor de risco institucional. No contexto brasileiro, prever preços de ativos negociados na B3 traz uma camada adicional de dificuldade.",
+      "depois": "Ping (2023) discute a previsão de volatilidade como apoio à avaliação de riscos, à precificação de opções e à alocação de ativos. Essa discussão trata da incerteza das variações de preços e não comprova a rentabilidade de um modelo de previsão do fechamento. Nesta pesquisa, o objeto é a predição de um passo à frente da PETR4, sob as condições experimentais descritas."
+    },
+    {
+      "indice": 192,
+      "antes": "Para tratar dados com estrutura temporal, uma das classes de modelos mais utilizadas é a das Redes Neurais Recorrentes (RNRs). Sudiatmika e Putra (2024) explicam que, ao contrário das redes neurais convencionais, que processam cada entrada de forma independente, as RNRs mantêm um estado interno atualizado a cada novo dado recebido. Essa memória interna permite que cada saída dependa não apenas da entrada atual, mas também do histórico acumulado ao longo da sequência, o que torna possível capturar dependências entre observações distantes no tempo.",
+      "depois": "As Redes Neurais Recorrentes (RNRs) são uma classe de modelos para processar sequências. Sudiatmika e Putra (2024) descrevem um estado interno atualizado a cada passo a partir da entrada atual e do estado anterior. Em contraste com redes feedforward sem estado recorrente, essa organização permite incorporar o histórico da sequência ao cálculo das saídas. A aprendizagem de dependências longas, contudo, permanece condicionada à arquitetura e ao treinamento."
+    },
+    {
+      "indice": 194,
+      "antes": "As LSTMs utilizam portas para controlar preservação, atualização e descarte de informação, enquanto as GRUs adotam arquitetura mais enxuta e menor número de parâmetros treináveis. Sudiatmika e Putra (2024) observam que, em séries mais curtas, a GRU pode ser computacionalmente mais eficiente que a LSTM em razão dessa estrutura simplificada.",
+      "depois": "As LSTMs utilizam portas para controlar a preservação, a atualização e o descarte de informação, enquanto as GRUs empregam uma estrutura simplificada de atualização e reinicialização do estado. Na revisão de Sudiatmika e Putra (2024), essa simplificação é associada a possíveis ganhos de eficiência e ao tratamento de sequências mais curtas. Trata-se de discussão de estudos anteriores; o experimento de previsão do ouro apresentado pelos autores compara erros, sem fornecer uma medição de tempo de treinamento."
+    },
+    {
+      "indice": 196,
+      "antes": "Vishwas et al. (2025) corroboram esse quadro ao apontar que a dependência de redes baseadas em backpropagation gera tempos de treinamento elevados em cenários de alta frequência financeira. Em ambientes que exigem retreinamento frequente uma característica frequente nos mercados esse custo pode tornar inviável o uso prático dessas arquiteturas em larga escala.",
+      "depois": "Vishwas et al. (2025) discutem custo computacional e latência como desafios para aplicações financeiras em tempo real. Esse tratamento é qualitativo: não estabelece um limite universal de treinamento nem demonstra que a retropropagação, por si só, inviabilize LSTM ou GRU. Nesta pesquisa, a análise de eficiência depende dos tempos medidos e da distinção entre ajuste do modelo e busca de hiperparâmetros."
+    },
+    {
+      "indice": 545,
+      "antes": "VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, 2025. DOI: 10.21595/mme.2025.24861.",
+      "depois": "VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, n. 4, p. 204-229, 2025. DOI: 10.21595/mme.2025.24861."
+    }
+  ],
+  "tabelas_inalteradas": true,
+  "partes_alteradas": [
+    "word/document.xml"
+  ],
+  "sem_alteracao_de_dados_ou_resultados": true,
+  "conferencia_visual_final": "pendente_fechamento"
+}

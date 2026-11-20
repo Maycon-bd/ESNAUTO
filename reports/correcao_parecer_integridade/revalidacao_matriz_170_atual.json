@@ -1,0 +1,43 @@
+{
+  "sha256_rascunho": "e4049a30202e5732fcbfdc1ec72e008c6c52e1e47264b553962a78d5ecce78df",
+  "n_fontes_identidade_conferida": 34,
+  "n_celulas_conferidas_word_matriz": 170,
+  "informacao_insuficiente": 43,
+  "contagens": {
+    "P1": {
+      "D": 5,
+      "S": 0,
+      "?": 13,
+      "-": 16
+    },
+    "P2": {
+      "D": 10,
+      "S": 4,
+      "?": 5,
+      "-": 15
+    },
+    "P3": {
+      "D": 25,
+      "S": 2,
+      "?": 7,
+      "-": 0
+    },
+    "P4": {
+      "D": 10,
+      "S": 2,
+      "?": 16,
+      "-": 6
+    },
+    "P5": {
+      "D": 25,
+      "S": 3,
+      "?": 2,
+      "-": 4
+    }
+  },
+  "figura1_sha256": "ec328d388f581b9689e08afa279d309d66f697a33f5e98649e8297ece0c3e947",
+  "regra": "Não somarD eS como experimentos independentes; ? não demonstra ausência; — é nãoaplicável. Revisão conceitual/prova de conteúdo limitada ao escopo registrado para cada fonte.",
+  "validacao_integral_das_fontes": false,
+  "matriz_json_sha256": "00e5f13d6effd8df2c01b34eb6370e79b521e80ee03e8bca8a1998518a6bd4e9",
+  "limite": "Conferência de transcrição, identidade e critérios registrados, não nova leitura integral de34PDFs."
+}

@@ -1,0 +1,34 @@
+{
+  "data": "2026-10-29",
+  "autor": "Maycon Garcia Silva",
+  "origem": "Respostas diretas do autor em quatro anotações nesta conversa",
+  "base_editorial": "v003",
+  "sha256_base": "eb31ed353550c8d13e388a7f51995917c1d20f52acdd946aa15a8908e0381785",
+  "declaracoes": [
+    {
+      "anotacao": 1,
+      "texto_literal": "Foi um pouco complexos selecionar esses artigos pois tive que fazer buscas externas a string de busca para complementar o trabalho. então esses registros ai n foram utilizados da melhor maneira",
+      "interpretacao_aplicada": "A seleção incluiu buscas complementares externas à string inicial; as planilhas preservam registros parciais e não comprovam a seleção final por ranking Methodi.",
+      "limite": "Não inventar consultas, datas, decisões individuais ou fluxo de triagem retrospectivo."
+    },
+    {
+      "anotacao": 2,
+      "texto_literal": "Já recebi os dados ajustado do orientador",
+      "interpretacao_aplicada": "O orientador forneceu ao autor os dados já ajustados; atribuir o fornecimento e delimitar o início da modelagem.",
+      "limite": "Fornecimento não identifica necessariamente quem executou materialmente cada transformação original. Não atribuir ao autor a aplicação do fator."
+    },
+    {
+      "anotacao": 3,
+      "texto_literal": "Os resultados de cada onde deve estar nesse projeto",
+      "interpretacao_aplicada": "Reabrir a busca dos registros locais por onda, mantendo separados relatório compilado e arquivos primários das execuções.",
+      "limite": "Expectativa de localização não comprova automaticamente a identidade de cada arquivo ou a preservação dos 15 registros primários da Onda 5."
+    },
+    {
+      "anotacao": 4,
+      "texto_literal": "Recebi uns códigos em R do meu orientador, pq foi que ele fez em R, eu só adaptei para meu contexto e contrui a interface",
+      "interpretacao_aplicada": "O autor recebeu do orientador a base em R, adaptou-a ao contexto da pesquisa e construiu a interface do ESNAUTO.",
+      "limite": "Não atribuir automaticamente ao autor a criação de cada técnica ou de todas as rotinas; não inferir a divisão individual de cada arquivo além do relato."
+    }
+  ],
+  "natureza_da_evidencia": "Declaração direta do pesquisador sobre o próprio processo; não apresentada como documento histórico independente ou fonte bibliográfica publicada."
+}

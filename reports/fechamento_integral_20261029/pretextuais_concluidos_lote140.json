@@ -1,0 +1,180 @@
+{
+  "sha256_docx": "a6c9512dd7503795b6b7921c0d33c6dd327c42c6ec14442ccfbd463846e54a35",
+  "paginas_pdf_inspecionadas": [
+    5,
+    6,
+    7
+  ],
+  "decisoes": {
+    "G35": "Dedicatória sem título, na metade direita inferior; recuo direto7,999cm e posicionamento inferior conferidos.",
+    "G36": "Agradecimentos com título centralizado e corpo em parágrafos; conteúdo pessoal do elemento pré-textual preservado.",
+    "G37": "Epígrafe sem título, na metade direita inferior; recuo7,999cm, citação em itálico e autoria à direita. Localizador e referência constam do documento.",
+    "G38": "Fonte da epígrafe é Gleick1987,par.1; referência eletrônica própria e conferência primária registradas no controle137 e lote53."
+  },
+  "medidas": {
+    "31": {
+      "texto": "Dedico este trabalho à minha mãe Gizele Garcia Martins Silva e ao meu pai Cleidiomar Ferreira da Silva por todo o apoio prestado desde o começo da minha vida até os dias de hoje.",
+      "recuo_esquerdo_cm": 7.999236111111111,
+      "runs": [
+        {
+          "texto": "Dedico este trabalho à minha mãe Gizele Garcia Martins Silva e ao meu pai Cleidiomar Ferreira da Silva por todo o apoio prestado desde o começo da minha vida até os dias de hoje.",
+          "italico": null,
+          "fonte_pt": null
+        }
+      ]
+    },
+    "32": {
+      "texto": "AGRADECIMENTOS",
+      "recuo_esquerdo_cm": null,
+      "runs": [
+        {
+          "texto": "AGRADECIMENTOS",
+          "italico": null,
+          "fonte_pt": null
+        }
+      ]
+    },
+    "38": {
+      "texto": "“Where chaos begins, classical science stops.”",
+      "recuo_esquerdo_cm": 7.999236111111111,
+      "runs": [
+        {
+          "texto": "“Where chaos begins, classical science stops.”",
+          "italico": true,
+          "fonte_pt": null
+        }
+      ]
+    },
+    "39": {
+      "texto": "(Gleick, 1987, par. 1)",
+      "recuo_esquerdo_cm": 7.999236111111111,
+      "runs": [
+        {
+          "texto": "(Gleick, 1987, par. 1)",
+          "italico": null,
+          "fonte_pt": 11.0
+        }
+      ]
+    }
+  },
+  "limite": "Propriedades e posição visual conferidas para estes elementos; não atesta aprovação institucional.",
+  "propriedades_efetivas": [
+    {
+      "indice": 31,
+      "alinhamento": "JUSTIFY (3)",
+      "espacamento": 1.0,
+      "runs": [
+        {
+          "texto": "Dedico este trabalho à minha mãe Gizele Garcia Martins Silva e ao meu pai Cleidiomar Ferreira da Silva por todo o apoio prestado desde o começo da minha vida até os dias de hoje.",
+          "fonte_pt": 12.0,
+          "negrito": false,
+          "italico": false
+        }
+      ]
+    },
+    {
+      "indice": 32,
+      "alinhamento": "CENTER (1)",
+      "espacamento": 1.5,
+      "runs": [
+        {
+          "texto": "AGRADECIMENTOS",
+          "fonte_pt": 12.0,
+          "negrito": true,
+          "italico": false
+        }
+      ]
+    },
+    {
+      "indice": 33,
+      "alinhamento": "JUSTIFY (3)",
+      "espacamento": 1.5,
+      "runs": [
+        {
+          "texto": "Agradeço primeiramente a Deus por ter me dado forças para persistir no curso.",
+          "fonte_pt": 12.0,
+          "negrito": false,
+          "italico": false
+        }
+      ]
+    },
+    {
+      "indice": 34,
+      "alinhamento": "JUSTIFY (3)",
+      "espacamento": 1.5,
+      "runs": [
+        {
+          "texto": "Agradeço também aos meus colegas Danilo, Gilberto e Gabriel, que fizeram parte de maneira significativa desta jornada.",
+          "fonte_pt": 12.0,
+          "negrito": false,
+          "italico": false
+        }
+      ]
+    },
+    {
+      "indice": 35,
+      "alinhamento": "JUSTIFY (3)",
+      "espacamento": 1.5,
+      "runs": [
+        {
+          "texto": "Agradeço ao meu orientador, Fabian Corrêa Cardoso, por todo o tempo dedicado a me orientar neste trabalho.",
+          "fonte_pt": 12.0,
+          "negrito": false,
+          "italico": false
+        }
+      ]
+    },
+    {
+      "indice": 36,
+      "alinhamento": "JUSTIFY (3)",
+      "espacamento": 1.5,
+      "runs": [
+        {
+          "texto": "Agradeço também ao professor Adriano Ferraz da Costa pelos auxílios prestados.",
+          "fonte_pt": 12.0,
+          "negrito": false,
+          "italico": false
+        }
+      ]
+    },
+    {
+      "indice": 37,
+      "alinhamento": "JUSTIFY (3)",
+      "espacamento": 1.5,
+      "runs": [
+        {
+          "texto": "Agradeço também a Matheus Teixeira Lampugnani pela disponibilização de seu trabalho, que contribuiu como referência acadêmica correlata para esta pesquisa.",
+          "fonte_pt": 12.0,
+          "negrito": false,
+          "italico": false
+        }
+      ]
+    },
+    {
+      "indice": 38,
+      "alinhamento": "JUSTIFY (3)",
+      "espacamento": 1.0,
+      "runs": [
+        {
+          "texto": "“Where chaos begins, classical science stops.”",
+          "fonte_pt": 12.0,
+          "negrito": false,
+          "italico": true
+        }
+      ]
+    },
+    {
+      "indice": 39,
+      "alinhamento": "RIGHT (2)",
+      "espacamento": 1.0,
+      "runs": [
+        {
+          "texto": "(Gleick, 1987, par. 1)",
+          "fonte_pt": 11.0,
+          "negrito": false,
+          "italico": false
+        }
+      ]
+    }
+  ]
+}

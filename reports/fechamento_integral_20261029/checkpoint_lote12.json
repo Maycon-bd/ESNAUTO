@@ -1,0 +1,42 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "copia": "reports\\monografia\\trabalho\\fechamento_integral_20261029.docx",
+  "sha256_atual_apos_exportacao_nativa": "f7377019848a9ffc69278210a02051003fd7f7d347e0187a8e98b3f2d27b0235",
+  "unidades_textuais_alteradas_acumuladas": 53,
+  "figuras_alteradas_acumuladas": 1,
+  "nota_contagem": "Nove unidades novas neste lote,somadas às44anteriores. Duas linhas automáticas de listas diferem adicionalmente da base e não contam como revisão de prosa.",
+  "paginas_pdf": 76,
+  "validacao_estrutural": "45verificações sem falhas; não é validação semântica integral.",
+  "validacao_nominal": "50referências,154chamadas reconhecidas,sem órfãs nos padrões examinados. O parser não cobre universalmente toda forma de chamada qualificada por página.",
+  "paginas_inspecionadas": [
+    20,
+    21,
+    22,
+    24,
+    25,
+    26,
+    28,
+    31,
+    32,
+    34,
+    35,
+    44,
+    63
+  ],
+  "resultado_visual": "Sem cortes,sobreposições,títulos isolados ou tabelas estouradas observados. Autores expandidos e explicaçãoP4cabem;63páginas idênticas ao checkpoint11.",
+  "tabelas_e_resultados": "Quatro células de autoria/explicação alteradas. Todas as demais células idênticas ao checkpoint11,170códigos conciliados,77D/12S/40?/41não aplicáveis. Mídias e resultados preservados.",
+  "fontes_com_leitura_integral": 26,
+  "fontes_corpus34_lidas_integralmente": 22,
+  "revalidacoes_de_celulas_estruturadas": 105,
+  "evidencias_conteudo": [
+    "leituras_liu_hariharan_xiao_lote12.json",
+    "incorporacao_lote12.json",
+    "preservacao_lote12.json",
+    "comparacao_visual_lote12.json",
+    "verificacao_lote12.json",
+    "../correcao_parecer_integridade/cruzamento_fechamento_integral_lote12.json"
+  ],
+  "limites": "U0196continua parcial quanto aCortesi;U0231quanto aRibeiro/Wang. U0279teve os dois exemplos conferidos. Restantes fontes,afirmações,formalidades,similaridade e Guia pendentes. Não certifica ausência universal de plágio ou qualidade científica integral das publicações.",
+  "estado": "rascunho_nao_promovido_meta_ativa"
+}

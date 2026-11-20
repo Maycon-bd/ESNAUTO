@@ -1,0 +1,310 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_examinado": "f7377019848a9ffc69278210a02051003fd7f7d347e0187a8e98b3f2d27b0235",
+  "fontes_lidas_integralmente": [
+    {
+      "id": "D29",
+      "arquivo": "Artigos citados\\Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "paginas_textuais_lidas": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "paginas_visuais_inspecionadas": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "D32",
+      "arquivo": "Artigos citados\\Wang W - Stock market index prediction based on reservoir computing models.pdf",
+      "sha256": "7485fa096c0855232ab45109b346462e14790d945c6f491dfbab2b26db63d761",
+      "paginas_textuais_lidas": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "paginas_visuais_inspecionadas": [
+        1,
+        4,
+        6,
+        7,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "D34",
+      "arquivo": "Artigos citados\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "paginas_textuais_lidas": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "paginas_visuais_inspecionadas": [
+        1,
+        5,
+        7,
+        9,
+        12,
+        13,
+        14
+      ]
+    }
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D29",
+      "arquivo_pdf": "Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256_pdf": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P1",
+      "codigo": "D",
+      "localizador": "PDF 4, seção 3.2.4",
+      "evidencia_e_limite": "Win, W recorrente e W feedback são inicializadas com distribuição Uniforme. Intervalo não individualizado nesse trecho.",
+      "escopo_leitura": "PDF 4–8, descrição ESN, dados, preparação, modelos e resultados.",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D29",
+      "arquivo_pdf": "Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256_pdf": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P2",
+      "codigo": "D",
+      "localizador": "PDF 8, seção 4.4",
+      "evidencia_e_limite": "HAR-PSO-ESN utiliza PSO para selecionar hiperparâmetros ESN.",
+      "escopo_leitura": "PDF 4–8, descrição ESN, dados, preparação, modelos e resultados.",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D29",
+      "arquivo_pdf": "Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256_pdf": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 6–8, seções 4.1–4.3",
+      "evidencia_e_limite": "Calcula volatilidade realizada com retornos intradiários, gera janelas e normaliza usando mínimo/máximo de treino.",
+      "escopo_leitura": "PDF 4–8, descrição ESN, dados, preparação, modelos e resultados.",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D29",
+      "arquivo_pdf": "Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256_pdf": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 6, seção 4.1",
+      "evidencia_e_limite": "CAT, EBAY e MSFT, volatilidades realizadas diárias derivadas de retornos de cinco minutos.",
+      "escopo_leitura": "PDF 4–8, descrição ESN, dados, preparação, modelos e resultados.",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D32",
+      "arquivo_pdf": "Wang W - Stock market index prediction based on reservoir computing models.pdf",
+      "sha256_pdf": "7485fa096c0855232ab45109b346462e14790d945c6f491dfbab2b26db63d761",
+      "tipo": "aplicacao_RC",
+      "dimensao": "P1",
+      "codigo": "D",
+      "localizador": "PDF 7, seção 4.1",
+      "evidencia_e_limite": "Win tem distribuição Uniforme com escala dependente da dimensão de entrada; Wres é a adjacência da rede gerada. Não confundir lei de Win com topologia de Wres.",
+      "escopo_leitura": "PDF 6–7 e 11–12 relidos; construção e discussão também consultadas na etapa anterior.",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D32",
+      "arquivo_pdf": "Wang W - Stock market index prediction based on reservoir computing models.pdf",
+      "sha256_pdf": "7485fa096c0855232ab45109b346462e14790d945c6f491dfbab2b26db63d761",
+      "tipo": "aplicacao_RC",
+      "dimensao": "P2",
+      "codigo": "D",
+      "localizador": "PDF 7 e 11, configurações e Tabela 8",
+      "evidencia_e_limite": "Explora topologias, tamanho, janela e taxa de aprendizado, selecionando configurações por índice. Não é evidência de causa única da topologia.",
+      "escopo_leitura": "PDF 6–7 e 11–12 relidos; construção e discussão também consultadas na etapa anterior.",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D32",
+      "arquivo_pdf": "Wang W - Stock market index prediction based on reservoir computing models.pdf",
+      "sha256_pdf": "7485fa096c0855232ab45109b346462e14790d945c6f491dfbab2b26db63d761",
+      "tipo": "aplicacao_RC",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 6, Figura 4; PDF 7, seção 4.1",
+      "evidencia_e_limite": "Constrói janelas móveis dos fechamentos como entradas de previsão de um passo. P3 admite construção de janelas, sem presumir normalização não documentada.",
+      "escopo_leitura": "PDF 6–7 e 11–12 relidos; construção e discussão também consultadas na etapa anterior.",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D32",
+      "arquivo_pdf": "Wang W - Stock market index prediction based on reservoir computing models.pdf",
+      "sha256_pdf": "7485fa096c0855232ab45109b346462e14790d945c6f491dfbab2b26db63d761",
+      "tipo": "aplicacao_RC",
+      "dimensao": "P4",
+      "codigo": "D",
+      "localizador": "PDF 7, seção 4.3",
+      "evidencia_e_limite": "Executa RNN/LSTM nos mesmos períodos de teste e compara métricas; a segunda comparação usa modelos de outros estudos, separadamente.",
+      "escopo_leitura": "PDF 6–7 e 11–12 relidos; construção e discussão também consultadas na etapa anterior.",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D32",
+      "arquivo_pdf": "Wang W - Stock market index prediction based on reservoir computing models.pdf",
+      "sha256_pdf": "7485fa096c0855232ab45109b346462e14790d945c6f491dfbab2b26db63d761",
+      "tipo": "aplicacao_RC",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 11, conclusão e Tabela 8",
+      "evidencia_e_limite": "S&P500, NYSE, DJI, Nasdaq, FTSE100, Nikkei225 e SSE.",
+      "escopo_leitura": "PDF 6–7 e 11–12 relidos; construção e discussão também consultadas na etapa anterior.",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D34",
+      "arquivo_pdf": "Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "tipo": "aplicacao_CS_ESN",
+      "dimensao": "P1",
+      "codigo": "?",
+      "localizador": "PDF 2–5 e 7–9; fluxogramas das páginas 4–5 conferidos visualmente",
+      "evidencia_e_limite": "A matriz gaussiana descrita é a matriz Phi de sensoriamento comprimido. Não é identificada como lei de Win/W. Os fluxogramas inicializam os parâmetros sem família explícita.",
+      "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada).",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D34",
+      "arquivo_pdf": "Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "tipo": "aplicacao_CS_ESN",
+      "dimensao": "P2",
+      "codigo": "?",
+      "localizador": "PDF 7–9, OMP e configuração",
+      "evidencia_e_limite": "OMP estima coeficientes na representação comprimida; não é apresentado como busca de hiperparâmetros ESN. A configuração fixa não documenta seleção com critério.",
+      "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada).",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D34",
+      "arquivo_pdf": "Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "tipo": "aplicacao_CS_ESN",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 9 e 11, seções 4.1–4.2",
+      "evidencia_e_limite": "Escala sequência Logistic e padroniza dados de 200 ações. Compressão de estados é registrada separadamente da preparação das séries.",
+      "escopo_leitura": "PDF 2–3 e 9–11: arquitetura, compressão, experimentos e dados.",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D34",
+      "arquivo_pdf": "Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "tipo": "aplicacao_CS_ESN",
+      "dimensao": "P4",
+      "codigo": "?",
+      "localizador": "PDF 9–12, ESN versus CS-ESN; página 11 conferida visualmente",
+      "evidencia_e_limite": "Os comparativos experimentais consultados são de ESN e CS-ESN. Não há comparação numérica qualificadora com LSTM/GRU/Transformer nesse escopo.",
+      "escopo_leitura": "Releitura dirigida às páginas/passagens do localizador; triagem textual do PDF para localizar seções, sem declaração de leitura integral (exceto quando explicitada).",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    },
+    {
+      "id": "D34",
+      "arquivo_pdf": "Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "tipo": "aplicacao_CS_ESN",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 11, seção 4.2",
+      "evidencia_e_limite": "200 ações obtidas da Shanghai Stock Exchange, dados de 17 anos. Mercado e conjunto identificados, sem inventar tickers ausentes do trecho.",
+      "escopo_leitura": "PDF 2–3 e 9–11: arquitetura, compressão, experimentos e dados.",
+      "estado_lote13": "confirmado_apos_leitura_integral"
+    }
+  ],
+  "n_celulas_reexaminadas": 14,
+  "n_codigos_alterados": 0,
+  "afirmacoes_conferidas": [
+    "U0205",
+    "U0206",
+    "U0209",
+    "U0231",
+    "U0247",
+    "U0248"
+  ],
+  "alteracoes_propostas": [
+    {
+      "unidade": "U0246",
+      "antes": "Ribeiro et al. (2021) propuseram o HAR-PSO-ESN para prever volatilidade realizada de três ações da Nasdaq, combinando atributos do modelo HAR, ESN e seleção de hiperparâmetros por PSO. Os pesos de entrada, recorrentes e de realimentação foram inicializados com distribuição Uniforme. O modelo apresentou melhores resultados na maioria dos casos estudados, com comparações por Friedman e Nemenyi. Essa evidência se refere à combinação avaliada, sem estabelecer superioridade universal ou isolar o efeito de leis alternativas de inicialização.",
+      "depois": "Ribeiro et al. (2021) propuseram o HAR-PSO-ESN para prever volatilidade realizada de CAT, EBAY e MSFT, combinando atributos do modelo HAR, ESN e seleção de hiperparâmetros por PSO. Os pesos de entrada, recorrentes e de realimentação foram inicializados com distribuição Uniforme. O modelo apresentou melhores resultados na maioria dos casos estudados, com comparações por Friedman e Nemenyi. Essa evidência se refere à combinação avaliada, sem estabelecer superioridade universal ou isolar o efeito de leis alternativas de inicialização.",
+      "motivo": "A CAT era listada na NYSE; o próprio artigo usa classificação Nasdaq inadequada. Manter os ativos sem reproduzir essa classificação."
+    }
+  ],
+  "pendencia_de_conciliacao": {
+    "id": "D29",
+    "dimensao": "P4",
+    "codigo_atual": "?",
+    "localizador": "PDF 2, introdução e Tabela 1",
+    "evidencia": "Identifica LSTM-GARCH de Kim e Won (2018) e apresenta MSE 0.00149 para KOSPI200 na tabela retrospectiva. A justificativa anterior cobria apenas comparadores próprios e omitia esse quadro.",
+    "decisao_pendente": "Conciliar se catálogo quantitativo heterogêneo constitui comparação secundária S nos critérios atuais; não concluir ausência de LSTM nem promover a matriz sem decidir."
+  },
+  "conferencia_externa_CAT": {
+    "titulo": "Caterpillar Celebrates 90 Years on the New York Stock Exchange",
+    "data": "2019-12-17",
+    "url": "https://www.caterpillar.com/en/news/corporate-press-releases/h/caterpillar-celebrates-90-years-on-the-nyse.html",
+    "fato_confirmado": "Comunicado oficial identifica CAT como NYSE e informa listagem iniciada em 2/12/1929.",
+    "uso": "Justifica retirar classificação Nasdaq; não foi acrescentada nova referência à monografia."
+  },
+  "ressalvas_fontes": [
+    "D29: Uniforme é explícita para Win, recorrentes e realimentação; não individualiza intervalo. Normalização descrita com extremos de treino e partição por ativos, não supor divisão temporal interna por ativo.",
+    "D29: equação 10 imprime 1/(1-exp(-x)); equações 17–22 imprimem mínimo menos mínimo no denominador. Confirmado visualmente em PDF 4/8. Não copiar essas expressões como fórmulas corretas; não são reproduzidas nos trechos conferidos.",
+    "D32: Uniforme de Win não é lei do reservatório, que usa adjacência. Wout é ajustado por RMSProp, não Ridge. Tabela 5 compara RNN/LSTM próprios; tabelas 6/7 usam números de outros estudos em comparação separada.",
+    "D32: tabela 5 mostra melhores RMSE em quatro índices e MAE em três, mas conclusão menciona seis e dois. A monografia não reproduz essas contagens. Datas/amostras também divergem entre narrativa e tabelas; não importá-las sem ressalva.",
+    "D34: Gaussiana refere-se à matriz de medição Phi, não a Win/W. Valores fixos e OMP não comprovam seleção de hiperparâmetros ESN. P3 documenta operações; P5 identifica conjunto de 200 ações/SSE, sem lista de tickers.",
+    "D34: z-score não garante normalidade; números de Remark 2 divergem da tabela 3. Melhorias ESN/CS-ESN não provam preservação geral de picos/caos ou comparação com LSTM. Essas extrapolações não são adotadas."
+  ],
+  "estado": "leituras_concluidas_conciliacao_P4_Ribeiro_pendente_rascunho_aguarda_QA",
+  "sha256_rascunho_apos_correcao": "0dfd7ef97d6fbcc995c7cd56a4da11d3947fe1a2d6419855488901583203259b"
+}

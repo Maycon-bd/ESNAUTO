@@ -1,0 +1,72 @@
+[
+  {
+    "url": "https://api.osf.io/v2/nodes/rq82a/",
+    "arquivo": "OSF_rq82a_node.json",
+    "sha256": "c3cbbf982f81236e2679a9d223b2b3fb9f14454ba621c055d91eeea32003c656",
+    "titulo": "Data and analyses",
+    "descricao": ""
+  },
+  {
+    "url": "https://api.osf.io/v2/nodes/rq82a/files/osfstorage/",
+    "arquivo": "OSF_rq82a_arquivos.json",
+    "sha256": "94b7df0545948655ffc918ec99132efd9b5641e17b993c487ce8d5dcc1715d49",
+    "itens": [
+      {
+        "id": "5873ab19594d9001fb01faa0",
+        "nome": "cyber_event_binned_data.csv",
+        "kind": "file",
+        "download": "https://osf.io/download/mv98y/",
+        "files": null
+      },
+      {
+        "id": "59bbf398594d9002524ee4a1",
+        "nome": "plots",
+        "kind": "folder",
+        "download": null,
+        "files": {
+          "href": "https://api.osf.io/v2/nodes/rq82a/files/osfstorage/59bbf398594d9002524ee4a1/",
+          "meta": {}
+        }
+      },
+      {
+        "id": "59f0cac7b83f69026176b7f4",
+        "nome": "Modified_01_mar_2017_malware_forecasting.Rmd",
+        "kind": "file",
+        "download": "https://osf.io/download/rdwfa/",
+        "files": null
+      },
+      {
+        "id": "59f0cac76c613b026430be09",
+        "nome": "Modified_01_mar_2017_malware_forecasting.html",
+        "kind": "file",
+        "download": "https://osf.io/download/hegyc/",
+        "files": null
+      },
+      {
+        "id": "5b1a9a68ec24e20013b52e7d",
+        "nome": "Archived analyses",
+        "kind": "folder",
+        "download": null,
+        "files": {
+          "href": "https://api.osf.io/v2/nodes/rq82a/files/osfstorage/5b1a9a68ec24e20013b52e7d/",
+          "meta": {}
+        }
+      },
+      {
+        "id": "5b1a9c6cb796ba000d3f2bf9",
+        "nome": "06.05.2018.Forecasting_CyberEvents_Bayesian_model.Rmd",
+        "kind": "file",
+        "download": "https://osf.io/download/b8f62/",
+        "files": null
+      },
+      {
+        "id": "5b1a9c72b796ba000d3f2bfd",
+        "nome": "06.05.2018.Forecasting_CyberEvents_Bayesian_model.pdf",
+        "kind": "file",
+        "download": "https://osf.io/download/dzyxp/",
+        "files": null
+      }
+    ],
+    "next": null
+  }
+]

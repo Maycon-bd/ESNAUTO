@@ -1,0 +1,1018 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fitting Probability distribution in R
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Code 
+
+
+Show All Code
+
+Hide All Code
+
+
+
+Download Rmd
+
+
+
+
+
+
+Fitting Probability distribution in R
+
+Discrete and Continuous random Variables
+Eralda Gjika (Dhamo)
+18 January 2021
+
+
+
+
+
+
+
+
+Fitting Probability distributions
+
+
+
+
+DATASET CYBER DATA
+
+data used for this session are imported from: https://osf.io/aj7vr/
+
+
+
+
+# read the data and save it as "cyber.data"
+head(cyber.data,10)
+
+
+
+
+
+
+
+
+
+
+Because the data are weekly observations we can have as a first graph a time series plot.
+
+
+
+
+library(forecast)
+# ts.plot() will create a time series plot 
+ts.plot(cyber.data[,2],main="Event count", col="red",xlab="week", ylab="number of attacs",lwd=2) 
+text(280,120,"Maximum",col="blue")# will add text to our graph
+
+
+
+
+
+
+
+ts.plot(cyber.data[,3],main="Average length", col="blue",xlab="week", ylab="Average time of attacs",lwd=2)
+text(110,1700,"Maximum",col="red")
+
+
+
+
+
+
+
+summary(cyber.data[,c(2,3)])# descriptive statistics of our dataset
+
+
+
+  event.count     avg.report.length
+ Min.   :  0.00   Min.   :   0.0   
+ 1st Qu.: 10.00   1st Qu.: 394.0   
+ Median : 21.00   Median : 509.0   
+ Mean   : 25.42   Mean   : 533.7   
+ 3rd Qu.: 35.00   3rd Qu.: 654.0   
+ Max.   :126.00   Max.   :1700.0   
+
+
+
+
+Analyse the data by observing boxplot for any outliers.
+
+
+
+
+boxplot(cyber.data[,2],col="green",main="BoxPlot attacs",xlab="Count")
+
+
+
+
+
+
+
+boxplot(cyber.data[,3],col="orange",main="BoxPlot av.length",xlab="time")
+#
+par(mfrow=c(1,2))
+
+
+
+
+
+
+
+hist(cyber.data[,2],col="green",main="Histogram attacs",xlab="number of attacs",ylab="Freq")
+hist(cyber.data[,3],col="orange",main="Histogram av.length",xlab="time")
+
+
+
+
+
+
+
+
+we observe some outliers in both variables, especially in the upper region. This was also observed in the time series plot. For now we are not dealing with this outliers . The aim of this material is just to show some basic functions from the library(fitdistr) and library(fitdistrplus) which are used for fitting probability distributions to a vector of numerical data.
+
+
+
+
+FITTING DISTRIBUTIONS IN R
+
+Packages needed for this part are:
+
+
+
+
+library(fitdistrplus)
+library(stats4)
+library(MASS)
+# for other necessary test or graphical tools
+library(survival)
+library(actuar)
+library(distrMod)
+
+
+
+
+
+
+Probability density function (p.d.f) and Cummulative density function (c.d.f)
+
+We can use the function plotdist(data) to obtain the histogram and the cummulative distribution graph of teh data.
+
+
+
+
+plotdist(cyber.data$event.count, histo = TRUE, demp = TRUE)
+
+
+
+
+
+
+
+plotdist(cyber.data$avg.report.length, histo = TRUE, demp = TRUE)
+
+
+
+
+
+
+
+
+Exercise: Try to simulate 10^5 observations from the most known probability distributions you know and plot their Empirical density and Cummulative distribution. Are these graphs as you expected?
+
+
+
+
+Skewness-kurtosis graph for the choice of distributions (Cullen and Frey, 1999)
+
+The function descdist() provides a skewness-kurtosis graph to help to choose the best candidate(s) to fit a given dataset. If we want to use it for discrete distributions we may use argument discrete=TRUE.
+
+
+
+
+descdist(cyber.data[,3])
+
+
+
+summary statistics
+------
+min:  0   max:  1700 
+median:  509 
+mean:  533.7213 
+estimated sd:  211.2284 
+estimated skewness:  1.014491 
+estimated kurtosis:  6.198751 
+
+
+
+
+
+
+
+descdist(cyber.data[,3], boot = 1000)# bootstrapped values 1000
+
+
+
+summary statistics
+------
+min:  0   max:  1700 
+median:  509 
+mean:  533.7213 
+estimated sd:  211.2284 
+estimated skewness:  1.014491 
+estimated kurtosis:  6.198751 
+
+
+
+
+
+
+
+descdist(cyber.data[,3], boot = 10000)# bootstrapped values 10^4
+
+
+
+summary statistics
+------
+min:  0   max:  1700 
+median:  509 
+mean:  533.7213 
+estimated sd:  211.2284 
+estimated skewness:  1.014491 
+estimated kurtosis:  6.198751 
+
+
+
+
+
+
+
+# observe the concentration of the simulations
+descdist(cyber.data[,3], boot = 1000,discrete=TRUE)
+
+
+
+summary statistics
+------
+min:  0   max:  1700 
+median:  509 
+mean:  533.7213 
+estimated sd:  211.2284 
+estimated skewness:  1.014491 
+estimated kurtosis:  6.198751 
+
+
+
+
+
+
+
+
+Trying to fit probability distributions to the number of cyber attacs.
+
+
+
+
+# Negative Binomial
+nbinom.f<- fitdist(cyber.data$event.count, "nbinom") 
+
+
+
+NaNs producedNaNs producedNaNs produced
+
+
+
+pois.f<- fitdist(cyber.data$event.count, "pois")# Poisson
+
+
+
+NaNs producedNaNs produced
+
+
+
+norm.f <- fitdist(cyber.data$event.count, "norm") # Normal
+
+
+
+NaNs producedNaNs produced
+
+
+
+exp.f <- fitdist(cyber.data$event.count, "exp") # Exponential
+
+
+
+NaNs producedNaNs produced
+
+
+
+
+Information about the parameter estimation
+
+
+
+
+summary(nbinom.f)
+
+
+
+Fitting of the distribution ' nbinom ' by maximum likelihood 
+Parameters : 
+
+
+
+
+
+
+
+
+
+Loglikelihood:  -1536.555   AIC:  3077.11   BIC:  3084.916 
+Correlation matrix:
+             size           mu
+size 1.000000e+00 7.175825e-06
+mu   7.175825e-06 1.000000e+00
+
+
+
+summary(pois.f)
+
+
+
+Fitting of the distribution ' pois ' by maximum likelihood 
+Parameters : 
+
+
+
+
+
+
+
+
+
+Loglikelihood:  -3522.192   AIC:  7046.384   BIC:  7050.287 
+
+
+
+summary(norm.f)
+
+
+
+Fitting of the distribution ' norm ' by maximum likelihood 
+Parameters : 
+
+
+
+
+
+
+
+
+
+Loglikelihood:  -1612.522   AIC:  3229.044   BIC:  3236.849 
+Correlation matrix:
+     mean sd
+mean    1  0
+sd      0  1
+
+
+
+summary(exp.f)
+
+
+
+Fitting of the distribution ' exp ' by maximum likelihood 
+Parameters : 
+
+
+
+
+
+
+
+
+
+Loglikelihood:  -1550.139   AIC:  3102.277   BIC:  3106.18 
+
+
+
+
+
+
+Compare the distributions
+
+we can use these graphical test to compare the fitted distribiutions with the real observations. We expect the distributions to follow the patterns of teh real observations in the histogram, QQ-plot, CDF plot and also PP-plot.
+
+
+
+
+par(mfrow = c(2, 2))
+plot.legend <- c("Binomial neg", "Poisson","Normal","Exponential")
+denscomp(list(nbinom.f,pois.f,norm.f,exp.f), legendtext = plot.legend)
+qqcomp(list(nbinom.f,pois.f,norm.f,exp.f), legendtext = plot.legend)
+
+
+
+cdfcomp(list(nbinom.f,pois.f,norm.f,exp.f), legendtext = plot.legend)
+ppcomp(list(nbinom.f,pois.f,norm.f,exp.f), legendtext = plot.legend)
+
+
+
+
+
+
+
+
+
+
+
+Simulate based on the parameter estimated
+
+Scatterplot view. we expect a high linear relationship.We use now the parameter estimated above to simulate random observations from these distributions. And we are using the scatterplot to understand the fitting. We are looking for scatterplots which show a linear pattern.
+
+
+
+
+set.seed(512)
+Ex=rexp(length(cyber.data$event.count),0.03934638)# estimated rate= 0.03934638
+plot(cyber.data$event.count,Ex)# scatterplot observed vs fitted
+
+
+
+
+
+
+
+
+No.r=rnorm(length(cyber.data$event.count),25.41530,19.82332) # estimated parameters
+plot(cyber.data$event.count,No.r)#  scatterplot observed vs fitted
+
+
+
+
+
+
+
+
+Po=rpois(length(cyber.data$event.count),25.4153)# estimated parameters
+plot(cyber.data$event.count,Po)#  scatterplot observed vs fitted
+
+
+
+
+
+
+
+
+neg.bin=rnbinom(length(cyber.data$event.count),size=1.658441, mu=25.415193)# estimated parameters
+plot(cyber.data$event.count,neg.bin)#  scatterplot observed vs fitted
+
+
+
+
+
+
+
+
+
+
+
+
+
+Two fitted distribution
+
+To observe more clear the fitting between the two most accurate fitting we can construct graphics above only for these two distributions.
+
+
+
+
+par(mfrow = c(2, 2))
+plot.legend <- c("Normal","Exponencial")
+denscomp(list(norm.f,exp.f), legendtext = plot.legend)
+qqcomp(list(norm.f,exp.f), legendtext = plot.legend)
+
+
+
+cdfcomp(list(norm.f,exp.f), legendtext = plot.legend)
+ppcomp(list(norm.f,exp.f), legendtext = plot.legend)
+
+
+
+
+
+
+
+
+Compare the Negative Binomial fit and the normal fit.
+
+
+
+
+nbinom.f <- fitdist(cyber.data$event.count, "nbinom") # 
+
+
+
+NaNs producedNaNs producedNaNs produced
+
+
+
+norm.f <- fitdist(cyber.data$event.count, "norm") # 
+
+
+
+NaNs producedNaNs produced
+
+
+
+#
+par(mfrow = c(2, 2))
+plot.legend <- c("Binomial neg", "Normal")
+denscomp(list(nbinom.f,norm.f), legendtext = plot.legend)
+qqcomp(list(nbinom.f,norm.f), legendtext = plot.legend)
+
+
+
+cdfcomp(list(nbinom.f,norm.f), legendtext = plot.legend)
+ppcomp(list(nbinom.f,norm.f), legendtext = plot.legend)
+
+
+
+
+
+
+
+
+
+
+
+Average time of attacks
+
+First we substitute the 0 values with values very close to 0 (example 0.1) because for some probability distributions there are conditions of values > zero.
+
+
+
+
+avg.report.length=ifelse(cyber.data$avg.report.length==0,0.01,cyber.data$avg.report.length)
+expo.f <- fitdist(avg.report.length, "exp",method="mme")# 
+
+
+
+NaNs producedNaNs produced
+
+
+
+lnorm.f<- fitdist(avg.report.length, "lnorm",method="mme")# 
+
+
+
+NaNs producedNaNs produced
+
+
+
+norma.f<- fitdist(avg.report.length, "norm")#  
+
+
+
+NaNs producedNaNs produced
+
+
+
+weib <- fitdist(avg.report.length, "weibull", start = list(shape = 1, scale = 500))# 
+
+
+
+NaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs produced
+
+
+
+logis.f <- fitdist(avg.report.length, "llogis",start=NULL, fix.arg=NULL, discrete=FALSE, keepdata = TRUE)
+
+
+
+NaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs producedNaNs produced
+
+
+
+
+Cullen and Frey graph
+
+
+
+
+descdist(avg.report.length)
+
+
+
+summary statistics
+------
+min:  0.01   max:  1700 
+median:  509 
+mean:  533.7214 
+estimated sd:  211.2282 
+estimated skewness:  1.0145 
+estimated kurtosis:  6.198748 
+
+
+
+
+
+
+
+descdist(avg.report.length, boot = 1000)# bootstrapped values 1000
+
+
+
+summary statistics
+------
+min:  0.01   max:  1700 
+median:  509 
+mean:  533.7214 
+estimated sd:  211.2282 
+estimated skewness:  1.0145 
+estimated kurtosis:  6.198748 
+
+
+
+
+
+
+
+descdist(avg.report.length, boot = 10000)# bootstrapped values 10^4
+
+
+
+summary statistics
+------
+min:  0.01   max:  1700 
+median:  509 
+mean:  533.7214 
+estimated sd:  211.2282 
+estimated skewness:  1.0145 
+estimated kurtosis:  6.198748 
+
+
+
+
+
+
+
+# observe the concentration of the simulations
+descdist(avg.report.length, boot = 1000,discrete=TRUE)
+
+
+
+summary statistics
+------
+min:  0.01   max:  1700 
+median:  509 
+mean:  533.7214 
+estimated sd:  211.2282 
+estimated skewness:  1.0145 
+estimated kurtosis:  6.198748 
+
+
+
+
+
+
+
+
+Parameter estimations:
+
+
+
+
+summary(expo.f)
+
+
+
+Fitting of the distribution ' exp ' by matching moments 
+Parameters : 
+
+
+
+
+
+
+
+
+
+Loglikelihood:  -2664.434   AIC:  5330.868   BIC:  5334.77 
+
+
+
+summary(lnorm.f)
+
+
+
+Fitting of the distribution ' lnorm ' by matching moments 
+Parameters : 
+
+
+
+
+
+
+
+
+
+Loglikelihood:  -3620.588   AIC:  7245.177   BIC:  7252.982 
+
+
+
+summary(norma.f)
+
+
+
+Fitting of the distribution ' norm ' by maximum likelihood 
+Parameters : 
+
+
+
+
+
+
+
+
+
+Loglikelihood:  -2478.007   AIC:  4960.013   BIC:  4967.818 
+Correlation matrix:
+     mean sd
+mean    1  0
+sd      0  1
+
+
+
+summary(weib)
+
+
+
+Fitting of the distribution ' weibull ' by maximum likelihood 
+Parameters : 
+
+
+
+
+
+
+
+
+
+Loglikelihood:  -2510.2   AIC:  5024.4   BIC:  5032.205 
+Correlation matrix:
+          shape     scale
+shape 1.0000000 0.2850167
+scale 0.2850167 1.0000000
+
+
+
+summary(logis.f)
+
+
+
+Fitting of the distribution ' llogis ' by maximum likelihood 
+Parameters : 
+
+
+
+
+
+
+
+
+
+Loglikelihood:  -2538.638   AIC:  5081.277   BIC:  5089.082 
+Correlation matrix:
+           shape      scale
+shape 1.00000000 0.02488679
+scale 0.02488679 1.00000000
+
+
+
+
+Graphic test check:
+
+
+
+
+par(mfrow = c(2, 2))
+plot.legend <- c("Exponential","Normal", "log-Normal","Weibull","Logis")
+denscomp(list(expo.f,norma.f,lnorm.f,weib,logis.f), legendtext = plot.legend)
+qqcomp(list(expo.f,norma.f,lnorm.f,weib,logis.f), legendtext = plot.legend)
+
+
+
+cdfcomp(list(expo.f,norma.f,lnorm.f,weib,logis.f), legendtext = plot.legend)
+ppcomp(list(expo.f,norma.f,lnorm.f,weib,logis.f), legendtext = plot.legend)
+
+
+
+
+
+
+
+#
+gofstat(list(expo.f,norma.f,lnorm.f,weib,logis.f),fitnames = c("Exponential","Normal", "log-Normal","Weibull","Logis"))
+
+
+
+Goodness-of-fit statistics
+                             Exponential     Normal  log-Normal
+Kolmogorov-Smirnov statistic   0.3433618 0.06189011  0.03403799
+Cramer-von Mises statistic    13.4476900 0.42673770  0.14139236
+Anderson-Darling statistic    66.2372441 2.74835073 11.17728575
+                                Weibull      Logis
+Kolmogorov-Smirnov statistic 0.09875598 0.08651839
+Cramer-von Mises statistic   0.76792533 0.51785182
+Anderson-Darling statistic   5.80145260 4.89002332
+
+Goodness-of-fit criteria
+                               Exponential   Normal log-Normal
+Akaike's Information Criterion    5330.868 4960.013   7245.177
+Bayesian Information Criterion    5334.770 4967.818   7252.982
+                                Weibull    Logis
+Akaike's Information Criterion 5024.400 5081.277
+Bayesian Information Criterion 5032.205 5089.082
+
+
+
+
+We are looking for the lowest value of the test statistics and also the lowest value of the information criteria. The fitting which has the lowest value is supposed to be the most accurate among those compared. In this situation the “best” fitting of the data is from the Normal or Log-normal distributions. (observe the values of test statistics and AIC/BIC).
+
+
+
+
+Log-normal and Normal distributions
+
+
+
+
+par(mfrow = c(2, 2))
+plot.legend <- c("Normal","Log-normal")
+denscomp(list(norma.f,logis.f), legendtext = plot.legend)
+qqcomp(list(norma.f,logis.f), legendtext = plot.legend)
+
+
+
+cdfcomp(list(norma.f,logis.f), legendtext = plot.legend)
+ppcomp(list(norma.f,logis.f), legendtext = plot.legend)
+
+
+
+
+
+
+
+
+
+
+
+Simulation Normal and Log normal
+
+
+
+
+Log.nor=rlnorm(length(cyber.data$avg.report.length),6.2073341,0.3809332)
+plot(cyber.data$avg.report.length,Log.nor)# 
+
+
+
+
+
+
+
+Nor=rnorm(length(cyber.data$avg.report.length),533.7214 ,210.9395)
+plot(cyber.data$avg.report.length,Nor)# 
+# 
+par(mfrow=c(1,3))
+
+
+
+
+
+
+
+hist(cyber.data$avg.report.length)
+hist(Log.nor)
+
+
+
+hist(Nor)
+
+
+
+
+
+
+
+
+
+
+Eralda Gjika (Dhamo)
+
+
+
+
+January 2021
+
+Reference:
+
+https://www.r-project.org/conferences/useR-2009/slides/Delignette-Muller+Pouillot+Denis.pdf
+
+rdocumentation.org/packages/fitdistrplus/versions/1.1-3/topics/descdist
+
+
+
+
+
+LS0tDQp0aXRsZTogIkZpdHRpbmcgUHJvYmFiaWxpdHkgZGlzdHJpYnV0aW9uIGluIFIiDQpzdWJ0aXRsZTogIkRpc2NyZXRlIGFuZCBDb250aW51b3VzIHJhbmRvbSBWYXJpYWJsZXMiDQphdXRob3I6ICJFcmFsZGEgR2ppa2EgKERoYW1vKSINCmRhdGU6ICIxOCBKYW51YXJ5IDIwMjEiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCiMgRml0dGluZyBQcm9iYWJpbGl0eSBkaXN0cmlidXRpb25zDQoNCg0KIyBEQVRBU0VUIENZQkVSIERBVEENCiBkYXRhIHVzZWQgZm9yIHRoaXMgc2Vzc2lvbiBhcmUgaW1wb3J0ZWQgZnJvbTogaHR0cHM6Ly9vc2YuaW8vYWo3dnIvDQogIA0KYGBge3J9DQojIHJlYWQgdGhlIGRhdGEgYW5kIHNhdmUgaXQgYXMgImN5YmVyLmRhdGEiDQpoZWFkKGN5YmVyLmRhdGEsMTApDQpgYGANCg0KQmVjYXVzZSB0aGUgZGF0YSBhcmUgd2Vla2x5IG9ic2VydmF0aW9ucyB3ZSBjYW4gaGF2ZSBhcyBhIGZpcnN0IGdyYXBoIGEgdGltZSBzZXJpZXMgcGxvdC4NCmBgYHtyfQ0KbGlicmFyeShmb3JlY2FzdCkNCiMgdHMucGxvdCgpIHdpbGwgY3JlYXRlIGEgdGltZSBzZXJpZXMgcGxvdCANCnRzLnBsb3QoY3liZXIuZGF0YVssMl0sbWFpbj0iRXZlbnQgY291bnQiLCBjb2w9InJlZCIseGxhYj0id2VlayIsIHlsYWI9Im51bWJlciBvZiBhdHRhY3MiLGx3ZD0yKSANCnRleHQoMjgwLDEyMCwiTWF4aW11bSIsY29sPSJibHVlIikjIHdpbGwgYWRkIHRleHQgdG8gb3VyIGdyYXBoDQp0cy5wbG90KGN5YmVyLmRhdGFbLDNdLG1haW49IkF2ZXJhZ2UgbGVuZ3RoIiwgY29sPSJibHVlIix4bGFiPSJ3ZWVrIiwgeWxhYj0iQXZlcmFnZSB0aW1lIG9mIGF0dGFjcyIsbHdkPTIpDQp0ZXh0KDExMCwxNzAwLCJNYXhpbXVtIixjb2w9InJlZCIpDQpzdW1tYXJ5KGN5YmVyLmRhdGFbLGMoMiwzKV0pIyBkZXNjcmlwdGl2ZSBzdGF0aXN0aWNzIG9mIG91ciBkYXRhc2V0DQpgYGANCkFuYWx5c2UgdGhlIGRhdGEgYnkgb2JzZXJ2aW5nIGJveHBsb3QgZm9yIGFueSBvdXRsaWVycy4NCmBgYHtyfQ0KYm94cGxvdChjeWJlci5kYXRhWywyXSxjb2w9ImdyZWVuIixtYWluPSJCb3hQbG90IGF0dGFjcyIseGxhYj0iQ291bnQiKQ0KYm94cGxvdChjeWJlci5kYXRhWywzXSxjb2w9Im9yYW5nZSIsbWFpbj0iQm94UGxvdCBhdi5sZW5ndGgiLHhsYWI9InRpbWUiKQ0KIw0KcGFyKG1mcm93PWMoMSwyKSkNCmhpc3QoY3liZXIuZGF0YVssMl0sY29sPSJncmVlbiIsbWFpbj0iSGlzdG9ncmFtIGF0dGFjcyIseGxhYj0ibnVtYmVyIG9mIGF0dGFjcyIseWxhYj0iRnJlcSIpDQpoaXN0KGN5YmVyLmRhdGFbLDNdLGNvbD0ib3JhbmdlIixtYWluPSJIaXN0b2dyYW0gYXYubGVuZ3RoIix4bGFiPSJ0aW1lIikNCmBgYA0Kd2Ugb2JzZXJ2ZSBzb21lIG91dGxpZXJzIGluIGJvdGggdmFyaWFibGVzLCBlc3BlY2lhbGx5IGluIHRoZSB1cHBlciByZWdpb24uIFRoaXMgd2FzIGFsc28gb2JzZXJ2ZWQgaW4gdGhlIHRpbWUgc2VyaWVzIHBsb3QuIA0KRm9yIG5vdyB3ZSBhcmUgbm90IGRlYWxpbmcgd2l0aCB0aGlzIG91dGxpZXJzIC4gVGhlIGFpbSBvZiB0aGlzIG1hdGVyaWFsIGlzIGp1c3QgdG8gc2hvdyBzb21lIGJhc2ljIGZ1bmN0aW9ucyBmcm9tIHRoZSBsaWJyYXJ5KGZpdGRpc3RyKSBhbmQgbGlicmFyeShmaXRkaXN0cnBsdXMpIHdoaWNoIGFyZSB1c2VkIGZvciBmaXR0aW5nIHByb2JhYmlsaXR5IGRpc3RyaWJ1dGlvbnMgdG8gYSB2ZWN0b3Igb2YgbnVtZXJpY2FsIGRhdGEuIA0KDQojICAgRklUVElORyBESVNUUklCVVRJT05TIElOIFINClBhY2thZ2VzIG5lZWRlZCBmb3IgdGhpcyBwYXJ0IGFyZToNCg0KYGBge3J9DQpsaWJyYXJ5KGZpdGRpc3RycGx1cykNCmxpYnJhcnkoc3RhdHM0KQ0KbGlicmFyeShNQVNTKQ0KIyBmb3Igb3RoZXIgbmVjZXNzYXJ5IHRlc3Qgb3IgZ3JhcGhpY2FsIHRvb2xzDQpsaWJyYXJ5KHN1cnZpdmFsKQ0KbGlicmFyeShhY3R1YXIpDQpsaWJyYXJ5KGRpc3RyTW9kKQ0KYGBgDQoNCiMjIyBQcm9iYWJpbGl0eSBkZW5zaXR5IGZ1bmN0aW9uIChwLmQuZikgYW5kIEN1bW11bGF0aXZlIGRlbnNpdHkgZnVuY3Rpb24gKGMuZC5mKSANCg0KV2UgY2FuIHVzZSB0aGUgZnVuY3Rpb24gcGxvdGRpc3QoZGF0YSkgdG8gb2J0YWluIHRoZSBoaXN0b2dyYW0gYW5kIHRoZSBjdW1tdWxhdGl2ZSBkaXN0cmlidXRpb24gZ3JhcGggb2YgdGVoIGRhdGEuDQpgYGB7cn0NCnBsb3RkaXN0KGN5YmVyLmRhdGEkZXZlbnQuY291bnQsIGhpc3RvID0gVFJVRSwgZGVtcCA9IFRSVUUpDQpwbG90ZGlzdChjeWJlci5kYXRhJGF2Zy5yZXBvcnQubGVuZ3RoLCBoaXN0byA9IFRSVUUsIGRlbXAgPSBUUlVFKQ0KYGBgDQpFeGVyY2lzZTogVHJ5IHRvIHNpbXVsYXRlIDEwXjUgb2JzZXJ2YXRpb25zIGZyb20gdGhlIG1vc3Qga25vd24gcHJvYmFiaWxpdHkgZGlzdHJpYnV0aW9ucyB5b3Uga25vdyBhbmQgcGxvdCB0aGVpciBFbXBpcmljYWwgZGVuc2l0eSBhbmQgQ3VtbXVsYXRpdmUgZGlzdHJpYnV0aW9uLiBBcmUgdGhlc2UgZ3JhcGhzIGFzIHlvdSBleHBlY3RlZD8NCg0KIyMgU2tld25lc3Mta3VydG9zaXMgZ3JhcGggZm9yIHRoZSBjaG9pY2Ugb2YgZGlzdHJpYnV0aW9ucyAoQ3VsbGVuIGFuZCBGcmV5LCAxOTk5KQ0KDQpUaGUgZnVuY3Rpb24gZGVzY2Rpc3QoKSBwcm92aWRlcyBhIHNrZXduZXNzLWt1cnRvc2lzIGdyYXBoIHRvIGhlbHAgdG8NCmNob29zZSB0aGUgYmVzdCBjYW5kaWRhdGUocykgdG8gZml0IGEgZ2l2ZW4gZGF0YXNldC4gDQpJZiB3ZSB3YW50IHRvIHVzZSBpdCBmb3IgZGlzY3JldGUgZGlzdHJpYnV0aW9ucyB3ZSBtYXkgdXNlIGFyZ3VtZW50IGRpc2NyZXRlPVRSVUUuDQoNCmBgYHtyfQ0KZGVzY2Rpc3QoY3liZXIuZGF0YVssM10pDQpkZXNjZGlzdChjeWJlci5kYXRhWywzXSwgYm9vdCA9IDEwMDApIyBib290c3RyYXBwZWQgdmFsdWVzIDEwMDANCmRlc2NkaXN0KGN5YmVyLmRhdGFbLDNdLCBib290ID0gMTAwMDApIyBib290c3RyYXBwZWQgdmFsdWVzIDEwXjQNCiMgb2JzZXJ2ZSB0aGUgY29uY2VudHJhdGlvbiBvZiB0aGUgc2ltdWxhdGlvbnMNCmRlc2NkaXN0KGN5YmVyLmRhdGFbLDNdLCBib290ID0gMTAwMCxkaXNjcmV0ZT1UUlVFKQ0KYGBgDQpUcnlpbmcgdG8gZml0IHByb2JhYmlsaXR5IGRpc3RyaWJ1dGlvbnMgdG8gdGhlIG51bWJlciBvZiBjeWJlciBhdHRhY3MuIA0KYGBge3J9DQojIE5lZ2F0aXZlIEJpbm9taWFsDQpuYmlub20uZjwtIGZpdGRpc3QoY3liZXIuZGF0YSRldmVudC5jb3VudCwgIm5iaW5vbSIpIA0KcG9pcy5mPC0gZml0ZGlzdChjeWJlci5kYXRhJGV2ZW50LmNvdW50LCAicG9pcyIpIyBQb2lzc29uDQpub3JtLmYgPC0gZml0ZGlzdChjeWJlci5kYXRhJGV2ZW50LmNvdW50LCAibm9ybSIpICMgTm9ybWFsDQpleHAuZiA8LSBmaXRkaXN0KGN5YmVyLmRhdGEkZXZlbnQuY291bnQsICJleHAiKSAjIEV4cG9uZW50aWFsDQpgYGANCkluZm9ybWF0aW9uIGFib3V0IHRoZSBwYXJhbWV0ZXIgZXN0aW1hdGlvbg0KYGBge3J9DQpzdW1tYXJ5KG5iaW5vbS5mKQ0Kc3VtbWFyeShwb2lzLmYpDQpzdW1tYXJ5KG5vcm0uZikNCnN1bW1hcnkoZXhwLmYpDQpgYGANCiMjIyAgQ29tcGFyZSB0aGUgZGlzdHJpYnV0aW9ucw0KDQp3ZSBjYW4gdXNlIHRoZXNlIGdyYXBoaWNhbCB0ZXN0IHRvIGNvbXBhcmUgdGhlIGZpdHRlZCBkaXN0cmliaXV0aW9ucyB3aXRoIHRoZSByZWFsIG9ic2VydmF0aW9ucy4gV2UgZXhwZWN0IHRoZSBkaXN0cmlidXRpb25zIHRvIGZvbGxvdyB0aGUgcGF0dGVybnMgb2YgdGVoIHJlYWwgb2JzZXJ2YXRpb25zIGluIHRoZSBoaXN0b2dyYW0sIFFRLXBsb3QsIENERiBwbG90IGFuZCBhbHNvIFBQLXBsb3QuIA0KYGBge3J9DQpwYXIobWZyb3cgPSBjKDIsIDIpKQ0KcGxvdC5sZWdlbmQgPC0gYygiQmlub21pYWwgbmVnIiwgIlBvaXNzb24iLCJOb3JtYWwiLCJFeHBvbmVudGlhbCIpDQpkZW5zY29tcChsaXN0KG5iaW5vbS5mLHBvaXMuZixub3JtLmYsZXhwLmYpLCBsZWdlbmR0ZXh0ID0gcGxvdC5sZWdlbmQpDQpxcWNvbXAobGlzdChuYmlub20uZixwb2lzLmYsbm9ybS5mLGV4cC5mKSwgbGVnZW5kdGV4dCA9IHBsb3QubGVnZW5kKQ0KY2RmY29tcChsaXN0KG5iaW5vbS5mLHBvaXMuZixub3JtLmYsZXhwLmYpLCBsZWdlbmR0ZXh0ID0gcGxvdC5sZWdlbmQpDQpwcGNvbXAobGlzdChuYmlub20uZixwb2lzLmYsbm9ybS5mLGV4cC5mKSwgbGVnZW5kdGV4dCA9IHBsb3QubGVnZW5kKQ0KYGBgDQoNCiMjIyBTaW11bGF0ZSBiYXNlZCBvbiB0aGUgcGFyYW1ldGVyIGVzdGltYXRlZA0KDQpTY2F0dGVycGxvdCB2aWV3LiB3ZSBleHBlY3QgYSBoaWdoIGxpbmVhciByZWxhdGlvbnNoaXAuV2UgdXNlIG5vdyB0aGUgcGFyYW1ldGVyIGVzdGltYXRlZCBhYm92ZSB0byBzaW11bGF0ZSByYW5kb20gb2JzZXJ2YXRpb25zIGZyb20gdGhlc2UgZGlzdHJpYnV0aW9ucy4gQW5kIHdlIGFyZSB1c2luZyB0aGUgc2NhdHRlcnBsb3QgdG8gdW5kZXJzdGFuZCB0aGUgZml0dGluZy4gV2UgYXJlIGxvb2tpbmcgZm9yIHNjYXR0ZXJwbG90cyB3aGljaCBzaG93IGEgbGluZWFyIHBhdHRlcm4uDQoNCmBgYHtyfQ0Kc2V0LnNlZWQoNTEyKQ0KRXg9cmV4cChsZW5ndGgoY3liZXIuZGF0YSRldmVudC5jb3VudCksMC4wMzkzNDYzOCkjIGVzdGltYXRlZCByYXRlPSAwLjAzOTM0NjM4DQpwbG90KGN5YmVyLmRhdGEkZXZlbnQuY291bnQsRXgpIyBzY2F0dGVycGxvdCBvYnNlcnZlZCB2cyBmaXR0ZWQNCg0KTm8ucj1ybm9ybShsZW5ndGgoY3liZXIuZGF0YSRldmVudC5jb3VudCksMjUuNDE1MzAsMTkuODIzMzIpICMgZXN0aW1hdGVkIHBhcmFtZXRlcnMNCnBsb3QoY3liZXIuZGF0YSRldmVudC5jb3VudCxOby5yKSMgIHNjYXR0ZXJwbG90IG9ic2VydmVkIHZzIGZpdHRlZA0KDQpQbz1ycG9pcyhsZW5ndGgoY3liZXIuZGF0YSRldmVudC5jb3VudCksMjUuNDE1MykjIGVzdGltYXRlZCBwYXJhbWV0ZXJzDQpwbG90KGN5YmVyLmRhdGEkZXZlbnQuY291bnQsUG8pIyAgc2NhdHRlcnBsb3Qgb2JzZXJ2ZWQgdnMgZml0dGVkDQoNCm5lZy5iaW49cm5iaW5vbShsZW5ndGgoY3liZXIuZGF0YSRldmVudC5jb3VudCksc2l6ZT0xLjY1ODQ0MSwgbXU9MjUuNDE1MTkzKSMgZXN0aW1hdGVkIHBhcmFtZXRlcnMNCnBsb3QoY3liZXIuZGF0YSRldmVudC5jb3VudCxuZWcuYmluKSMgIHNjYXR0ZXJwbG90IG9ic2VydmVkIHZzIGZpdHRlZA0KYGBgDQoNCiMgVHdvIGZpdHRlZCBkaXN0cmlidXRpb24gDQpUbyBvYnNlcnZlIG1vcmUgY2xlYXIgdGhlIGZpdHRpbmcgYmV0d2VlbiB0aGUgdHdvIG1vc3QgYWNjdXJhdGUgZml0dGluZyB3ZSBjYW4gY29uc3RydWN0IGdyYXBoaWNzIGFib3ZlIG9ubHkgZm9yIHRoZXNlIHR3byBkaXN0cmlidXRpb25zLg0KYGBge3J9DQpwYXIobWZyb3cgPSBjKDIsIDIpKQ0KcGxvdC5sZWdlbmQgPC0gYygiTm9ybWFsIiwiRXhwb25lbmNpYWwiKQ0KZGVuc2NvbXAobGlzdChub3JtLmYsZXhwLmYpLCBsZWdlbmR0ZXh0ID0gcGxvdC5sZWdlbmQpDQpxcWNvbXAobGlzdChub3JtLmYsZXhwLmYpLCBsZWdlbmR0ZXh0ID0gcGxvdC5sZWdlbmQpDQpjZGZjb21wKGxpc3Qobm9ybS5mLGV4cC5mKSwgbGVnZW5kdGV4dCA9IHBsb3QubGVnZW5kKQ0KcHBjb21wKGxpc3Qobm9ybS5mLGV4cC5mKSwgbGVnZW5kdGV4dCA9IHBsb3QubGVnZW5kKQ0KYGBgDQpDb21wYXJlIHRoZSBOZWdhdGl2ZSBCaW5vbWlhbCBmaXQgYW5kIHRoZSBub3JtYWwgZml0Lg0KYGBge3J9DQpuYmlub20uZiA8LSBmaXRkaXN0KGN5YmVyLmRhdGEkZXZlbnQuY291bnQsICJuYmlub20iKSAjIA0Kbm9ybS5mIDwtIGZpdGRpc3QoY3liZXIuZGF0YSRldmVudC5jb3VudCwgIm5vcm0iKSAjIA0KIw0KcGFyKG1mcm93ID0gYygyLCAyKSkNCnBsb3QubGVnZW5kIDwtIGMoIkJpbm9taWFsIG5lZyIsICJOb3JtYWwiKQ0KZGVuc2NvbXAobGlzdChuYmlub20uZixub3JtLmYpLCBsZWdlbmR0ZXh0ID0gcGxvdC5sZWdlbmQpDQpxcWNvbXAobGlzdChuYmlub20uZixub3JtLmYpLCBsZWdlbmR0ZXh0ID0gcGxvdC5sZWdlbmQpDQpjZGZjb21wKGxpc3QobmJpbm9tLmYsbm9ybS5mKSwgbGVnZW5kdGV4dCA9IHBsb3QubGVnZW5kKQ0KcHBjb21wKGxpc3QobmJpbm9tLmYsbm9ybS5mKSwgbGVnZW5kdGV4dCA9IHBsb3QubGVnZW5kKQ0KYGBgDQoNCg0KIyBBdmVyYWdlIHRpbWUgb2YgYXR0YWNrcw0KDQpGaXJzdCB3ZSBzdWJzdGl0dXRlIHRoZSAwIHZhbHVlcyB3aXRoIHZhbHVlcyB2ZXJ5IGNsb3NlIHRvIDAgKGV4YW1wbGUgMC4xKSBiZWNhdXNlIGZvciBzb21lIHByb2JhYmlsaXR5IGRpc3RyaWJ1dGlvbnMgdGhlcmUgYXJlIGNvbmRpdGlvbnMgb2YgdmFsdWVzID4gemVyby4NCg0KYGBge3J9DQphdmcucmVwb3J0Lmxlbmd0aD1pZmVsc2UoY3liZXIuZGF0YSRhdmcucmVwb3J0Lmxlbmd0aD09MCwwLjAxLGN5YmVyLmRhdGEkYXZnLnJlcG9ydC5sZW5ndGgpDQpleHBvLmYgPC0gZml0ZGlzdChhdmcucmVwb3J0Lmxlbmd0aCwgImV4cCIsbWV0aG9kPSJtbWUiKSMgDQpsbm9ybS5mPC0gZml0ZGlzdChhdmcucmVwb3J0Lmxlbmd0aCwgImxub3JtIixtZXRob2Q9Im1tZSIpIyANCm5vcm1hLmY8LSBmaXRkaXN0KGF2Zy5yZXBvcnQubGVuZ3RoLCAibm9ybSIpIyAgDQp3ZWliIDwtIGZpdGRpc3QoYXZnLnJlcG9ydC5sZW5ndGgsICJ3ZWlidWxsIiwgc3RhcnQgPSBsaXN0KHNoYXBlID0gMSwgc2NhbGUgPSA1MDApKSMgDQpsb2dpcy5mIDwtIGZpdGRpc3QoYXZnLnJlcG9ydC5sZW5ndGgsICJsbG9naXMiLHN0YXJ0PU5VTEwsIGZpeC5hcmc9TlVMTCwgZGlzY3JldGU9RkFMU0UsIGtlZXBkYXRhID0gVFJVRSkNCmBgYA0KQ3VsbGVuIGFuZCBGcmV5IGdyYXBoIA0KYGBge3J9DQpkZXNjZGlzdChhdmcucmVwb3J0Lmxlbmd0aCkNCmRlc2NkaXN0KGF2Zy5yZXBvcnQubGVuZ3RoLCBib290ID0gMTAwMCkjIGJvb3RzdHJhcHBlZCB2YWx1ZXMgMTAwMA0KZGVzY2Rpc3QoYXZnLnJlcG9ydC5sZW5ndGgsIGJvb3QgPSAxMDAwMCkjIGJvb3RzdHJhcHBlZCB2YWx1ZXMgMTBeNA0KIyBvYnNlcnZlIHRoZSBjb25jZW50cmF0aW9uIG9mIHRoZSBzaW11bGF0aW9ucw0KZGVzY2Rpc3QoYXZnLnJlcG9ydC5sZW5ndGgsIGJvb3QgPSAxMDAwLGRpc2NyZXRlPVRSVUUpDQpgYGANCiANCiBQYXJhbWV0ZXIgZXN0aW1hdGlvbnM6DQpgYGB7cn0NCnN1bW1hcnkoZXhwby5mKQ0Kc3VtbWFyeShsbm9ybS5mKQ0Kc3VtbWFyeShub3JtYS5mKQ0Kc3VtbWFyeSh3ZWliKQ0Kc3VtbWFyeShsb2dpcy5mKQ0KYGBgDQpHcmFwaGljIHRlc3QgY2hlY2s6DQpgYGB7cn0NCnBhcihtZnJvdyA9IGMoMiwgMikpDQpwbG90LmxlZ2VuZCA8LSBjKCJFeHBvbmVudGlhbCIsIk5vcm1hbCIsICJsb2ctTm9ybWFsIiwiV2VpYnVsbCIsIkxvZ2lzIikNCmRlbnNjb21wKGxpc3QoZXhwby5mLG5vcm1hLmYsbG5vcm0uZix3ZWliLGxvZ2lzLmYpLCBsZWdlbmR0ZXh0ID0gcGxvdC5sZWdlbmQpDQpxcWNvbXAobGlzdChleHBvLmYsbm9ybWEuZixsbm9ybS5mLHdlaWIsbG9naXMuZiksIGxlZ2VuZHRleHQgPSBwbG90LmxlZ2VuZCkNCmNkZmNvbXAobGlzdChleHBvLmYsbm9ybWEuZixsbm9ybS5mLHdlaWIsbG9naXMuZiksIGxlZ2VuZHRleHQgPSBwbG90LmxlZ2VuZCkNCnBwY29tcChsaXN0KGV4cG8uZixub3JtYS5mLGxub3JtLmYsd2VpYixsb2dpcy5mKSwgbGVnZW5kdGV4dCA9IHBsb3QubGVnZW5kKQ0KIw0KZ29mc3RhdChsaXN0KGV4cG8uZixub3JtYS5mLGxub3JtLmYsd2VpYixsb2dpcy5mKSxmaXRuYW1lcyA9IGMoIkV4cG9uZW50aWFsIiwiTm9ybWFsIiwgImxvZy1Ob3JtYWwiLCJXZWlidWxsIiwiTG9naXMiKSkNCmBgYA0KV2UgYXJlIGxvb2tpbmcgZm9yIHRoZSBsb3dlc3QgdmFsdWUgb2YgdGhlIHRlc3Qgc3RhdGlzdGljcyBhbmQgYWxzbyB0aGUgbG93ZXN0IHZhbHVlIG9mIHRoZSBpbmZvcm1hdGlvbiBjcml0ZXJpYS4gVGhlIGZpdHRpbmcgd2hpY2ggaGFzIHRoZSBsb3dlc3QgdmFsdWUgaXMgc3VwcG9zZWQgdG8gYmUgdGhlIG1vc3QgYWNjdXJhdGUgYW1vbmcgdGhvc2UgY29tcGFyZWQuIEluIHRoaXMgc2l0dWF0aW9uIHRoZSAiYmVzdCIgZml0dGluZyBvZiB0aGUgZGF0YSBpcyBmcm9tIHRoZSBOb3JtYWwgb3IgTG9nLW5vcm1hbCBkaXN0cmlidXRpb25zLiAob2JzZXJ2ZSB0aGUgdmFsdWVzIG9mIHRlc3Qgc3RhdGlzdGljcyBhbmQgQUlDL0JJQykuIA0KDQojIExvZy1ub3JtYWwgYW5kIE5vcm1hbCBkaXN0cmlidXRpb25zDQpgYGB7cn0NCnBhcihtZnJvdyA9IGMoMiwgMikpDQpwbG90LmxlZ2VuZCA8LSBjKCJOb3JtYWwiLCJMb2ctbm9ybWFsIikNCmRlbnNjb21wKGxpc3Qobm9ybWEuZixsb2dpcy5mKSwgbGVnZW5kdGV4dCA9IHBsb3QubGVnZW5kKQ0KcXFjb21wKGxpc3Qobm9ybWEuZixsb2dpcy5mKSwgbGVnZW5kdGV4dCA9IHBsb3QubGVnZW5kKQ0KY2RmY29tcChsaXN0KG5vcm1hLmYsbG9naXMuZiksIGxlZ2VuZHRleHQgPSBwbG90LmxlZ2VuZCkNCnBwY29tcChsaXN0KG5vcm1hLmYsbG9naXMuZiksIGxlZ2VuZHRleHQgPSBwbG90LmxlZ2VuZCkNCmBgYA0KDQoNCiMgU2ltdWxhdGlvbiBOb3JtYWwgYW5kIExvZyBub3JtYWwgDQpgYGB7cn0NCkxvZy5ub3I9cmxub3JtKGxlbmd0aChjeWJlci5kYXRhJGF2Zy5yZXBvcnQubGVuZ3RoKSw2LjIwNzMzNDEsMC4zODA5MzMyKQ0KcGxvdChjeWJlci5kYXRhJGF2Zy5yZXBvcnQubGVuZ3RoLExvZy5ub3IpIyANCk5vcj1ybm9ybShsZW5ndGgoY3liZXIuZGF0YSRhdmcucmVwb3J0Lmxlbmd0aCksNTMzLjcyMTQJLDIxMC45Mzk1KQ0KcGxvdChjeWJlci5kYXRhJGF2Zy5yZXBvcnQubGVuZ3RoLE5vcikjIA0KIyANCnBhcihtZnJvdz1jKDEsMykpDQpoaXN0KGN5YmVyLmRhdGEkYXZnLnJlcG9ydC5sZW5ndGgpDQpoaXN0KExvZy5ub3IpDQpoaXN0KE5vcikNCmBgYA0KDQoNCiMjIyBFcmFsZGEgR2ppa2EgKERoYW1vKQ0KIyMgSmFudWFyeSAyMDIxDQoNCg0KUmVmZXJlbmNlOg0KDQpodHRwczovL3d3dy5yLXByb2plY3Qub3JnL2NvbmZlcmVuY2VzL3VzZVItMjAwOS9zbGlkZXMvRGVsaWduZXR0ZS1NdWxsZXIrUG91aWxsb3QrRGVuaXMucGRmDQoNCnJkb2N1bWVudGF0aW9uLm9yZy9wYWNrYWdlcy9maXRkaXN0cnBsdXMvdmVyc2lvbnMvMS4xLTMvdG9waWNzL2Rlc2NkaXN0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

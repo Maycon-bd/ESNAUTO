@@ -1,0 +1,141 @@
+{
+  "base": {
+    "id": "v001",
+    "anterior": null,
+    "arquivo": "reports/monografia/versoes/v001/MayconGarciaSilva_monografia_v001.docx",
+    "sha256": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+    "registrada_em_utc": "2026-10-29T01:16:23.098557+00:00",
+    "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\MayconGarciaSilva_monografia_FASOFT_conferida.docx",
+    "responsavel": "Codex nesta conversa, por solicitação de Maycon Garcia Silva",
+    "resumo": "Importação inicial da versão FASOFT conferida, sem alteração do Word. Versões anteriores permanecem históricas.",
+    "estado_editorial": "em_revisao",
+    "validacao_declarada": "Identidade conferida por SHA256. Há auditoria anterior de apresentação e parecer de citações com divergências; esta importação não certifica coerência integral ou ausência de plágio.",
+    "evidencias": [
+      {
+        "arquivo": "reports/auditoria_integral_fasoft_20261028/estado_revisao.json",
+        "sha256": "8459094e327cb83d2294c5c2ebb85a7e34b1f8920f67d825b9656f00043d9eee"
+      },
+      {
+        "arquivo": "reports/auditoria_citacoes_integridade_20261028/parecer.md",
+        "sha256": "651403ec4c7d1b383e202a559b25cdd6ba74919fbc7d4ce69dc889fc0b5e8329"
+      }
+    ],
+    "pendencias": [
+      "Tratar os 25 achados do parecer de citações e integridade; propostas ainda não incorporadas ao Word.",
+      "Fechar consultas primárias pendentes e recodificação uniforme da matriz P1–P5; não afirmar validação integral."
+    ]
+  },
+  "skills": [
+    {
+      "skill": "quadro-tabela-validator-docx",
+      "sha256_skill": "79c542d0c9eec78da862962ea8513da936f5ab258d2edd623e8437f42eeb9250",
+      "estado": "executada",
+      "edicao_word": false
+    },
+    {
+      "skill": "ingles-italico-checker-docx",
+      "sha256_skill": "ca8f95c4536261052e9a5fd13215e1e0739ce1d314e3cb24a8591e8fbcc4ac5c",
+      "estado": "executada",
+      "edicao_word": false
+    },
+    {
+      "skill": "siglas-checker-docx",
+      "sha256_skill": "ad26058546175527ec8e30559d561385d4943056b06438ce7eedf1d7e084dc1a",
+      "estado": "executada",
+      "edicao_word": false
+    },
+    {
+      "skill": "tcc-writer-docx",
+      "sha256_skill": "f4cb0565ede173d18d12d3ef8ad6d4db34f43bebc3578006e554dfc1d0569a1f",
+      "estado": "executada",
+      "edicao_word": false
+    },
+    {
+      "skill": "tcc-citation-checker-docx",
+      "sha256_skill": "9db797a4969a189cac237b256e56f8d97a2da3b1af032076ad3799d433d73101",
+      "estado": "executada",
+      "edicao_word": false
+    }
+  ],
+  "modo": "Auditoria e propostas de redação; sem edição do Word e sem nova versão editorial.",
+  "cruzamento": {
+    "referencias": 50,
+    "ocorrencias": 184,
+    "sem_correspondencia": 0
+  },
+  "writer_caracteres": 357,
+  "renderizacao": {
+    "paginas": 75,
+    "pdf_sha256": "97cb5c90d8080cc112635d39b968eaa5e1bb6705e31b18715e7d654eb5a4c6f0",
+    "elementos": {
+      "Tabela 1": [
+        33
+      ],
+      "Quadro 1": [
+        34
+      ],
+      "Tabela 2": [
+        42
+      ],
+      "Quadro 2": [
+        43
+      ],
+      "Quadro 3": [
+        44
+      ],
+      "Quadro 4": [
+        47
+      ],
+      "Tabela 3": [
+        54
+      ],
+      "Tabela 4": [
+        57
+      ],
+      "Tabela 5": [
+        59
+      ],
+      "Tabela 6": [
+        61
+      ],
+      "Quadro 5": [
+        62
+      ],
+      "Tabela 7": [
+        63
+      ]
+    }
+  },
+  "inspecao_visual_paginas_fisicas": [
+    12,
+    13,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    42,
+    43,
+    44,
+    47,
+    54,
+    57,
+    59,
+    61,
+    62,
+    63
+  ],
+  "limitacoes": [
+    "Fidelidade científica testada em amostra de afirmações sobre uma obra lida integralmente, não nas 50 referências",
+    "Sem ensaio de salvamento/reabertura de Word modificado ou de Google Docs",
+    "Varredura de estrangeirismos orientada a candidatos; não garante ausência de todo termo estrangeiro",
+    "Checagem de snapshot antiga falhou por caminho absoluto do guia; registro vigente e SHA256 conferidos diretamente"
+  ],
+  "conferencia_final": {
+    "vigente": "v001",
+    "sha256_word": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+    "sem_alteracao": true,
+    "hora_utc": "2026-10-29T03:53:41.381134+00:00"
+  }
+}

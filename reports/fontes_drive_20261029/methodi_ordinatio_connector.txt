@@ -1,0 +1,230 @@
+,PROTOCOLO DE REVISÃO SISTEMÁTICA — METHODI ORDINATIO,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6
+0,TFC — Aplicação de ESN na Análise Preditiva de Preços na Bolsa de Valores | Maycon Garcia Silva | UNIRV 2026,,,,,,
+1,,,,,,,
+2,Autor:,,,Maycon Garcia Silva,,,
+3,Orientador:,,,Prof. Dr. Fabian Corrêa Cardoso,,,
+4,Instituição:,,,UNIRV — Faculdade de Engenharia de Software,,,
+5,Data da busca:,,,23/03/2026,,,
+6,Bases:,,,Scopus + Springer Nature Link,,,
+7,Protocolo:,,,"Methodi Ordinatio (Pagani & Kovaleski, 2015)",,,
+8,α (alfa):,,,5,,,
+9,,,,,,,
+10,STRING DE BUSCA,,,,,,
+11, ,,,,,,
+12,,,,,,,
+13,CRITÉRIOS DE INCLUSÃO,,,,CRITÉRIOS DE EXCLUSÃO,,
+14,CI1,,2021–2026,,CE1,,Duplicatas entre bases
+15,CI2,,Inglês ou português,,CE2,,ESN apenas como comparativo secundário
+16,CI3,,Texto completo disponível,,CE3,,Domínio não-financeiro
+17,CI4,,Trata ESN ou Reservoir Computing,,CE4,,Conference Review sem conteúdo
+18,CI5,,Aplica a dados financeiros / mercado de ações,,CE5,,Anterior a 2021 (exceto referências seminais)
+19,,,,,,,
+20,FÓRMULA INORDINATIO,,,,,,
+21,InOrdinatio = (IF / 1000) + α × [10 − (Ano_atual − Ano_pub)] + (Ci / 100)     onde α = 5  |  Ano_atual = 2026,,,,,,
+22,,,,,,,
+23,FLUXO PRISMA SIMPLIFICADO,,,,,,
+24,Etapa,Base,Recuperados,Após CE,Observação,,
+25,Identificação,Scopus,41,—,Busca em 23/03/2026,,
+26,Identificação,Springer Nature,59,—,Busca em 23/03/2026,,
+27,Triagem por título,Scopus,41,24,CE3+CE4+CE5 aplicados,,
+28,Triagem por título,Springer,59,35,CE1+CE3+CE5+Chapter,,
+29,Remoção duplicatas,Ambas,—,5,CE1: 5 títulos idênticos,,
+30,Portfólio final,Ambas,—,59,Pendente triagem abstract,,
+31,Inclusão final,—,—,?,Após leitura completa,,
+,METHODI ORDINATIO — Portfólio Consolidado (Scopus + Springer) | α = 5 | Ano_atual = 2026,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18,Unnamed: 19,Unnamed: 20
+0,✅ Triagem importada: 7 INCLUÍDOS  |  ❌ 4 EXCLUÍDOS  |  ⏳ 48 pendentes de avaliação  —  Total: 59 artigos,,,,,,,,,,,,,,,,,,,,
+1,#,Classe,Fonte,Ano,Título,Autores,Revista / Conferência,Tipo Doc.,DOI,"SJR / IF
+(preencher)","Citações
+(preencher se Springer)","Citações
+(auto Scopus)","Ci
+(usar)","InOrdinatio
+(α=5, 2026)","Rank
+InOrdinatio","CI4
+(ESN/RC)","CI5
+(Finanças)",DECISÃO,Motivo / Obs.,"Prioridade
+Triagem",Motivos Score
+2,1,A,Scopus,2026,Echo State Networks for Bitcoin Time Series Prediction,Sharma M.; Sartor E.; Cavazza M.; Prendinger H.,Communications in Computer and Information Science,Conference paper,10.1007/978-981-95-4109-6_25,0,—,0,0,50,1,S,S,INCLUIR,,✅ Concluído,"ESN/RC no título, Finanças no título"
+3,2,A,Scopus,2025,Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing,Wang F.; Bu T.; Huang Y.,International Journal of Computational Intelligence Systems,Article,10.1007/s44196-025-00906-4,0,—,0,0,45,4,S,S,INCLUIR,,✅ Concluído,"ESN/RC no título, Finanças no título"
+4,3,A,Scopus,2024,Enhancing African market predictions: Integrating quantum computing with Echo State Networks,Seddik S.; Routaib H.; Elmounadi A.; El Haddadi A.,Scientific African,Article,10.1016/j.sciaf.2024.e02299,0,—,5,5,40.05,16,S,S,EXCLUIR,Download não disponivel,✅ Concluído,"ESN/RC no título, Finanças no título, 5 cit."
+5,4,A,Springer,2024,Forecasting Crude Oil Prices Using Reservoir Computing Models,Kaushal Kumar,Computational Economics,Article,10.1007/s10614-024-10797-w,0,0,0,0,40,19,S/N,S/N,— preencher —,,🔴 ALTA,"ESN/RC no título, Finanças no título"
+6,5,A,Scopus,2023,Stocks price prediction based on optimized echo state network by sparrow search algorithm,Tian Z.; Pei L.,International Journal of Dynamics and Control,Article,10.1007/s40435-024-01405-8,0,—,6,6,35.06,35,S,S,INCLUIR,,✅ Concluído,"ESN/RC no título, Finanças no título, Otimização, 6 cit."
+7,6,A,Scopus,2023,A novel time series prediction method based on pooling compressed sensing echo state network and its application in stoc,Wang Z.; Zhao H.; Zheng M.; Niu S.; Gao X.; Li L.,Neural Networks,Article,10.1016/j.neunet.2023.04.031,0,—,23,23,35.23,34,S,S,EXCLUIR,,✅ Concluído,"ESN/RC no título, 23 cit."
+8,7,A,Scopus,2022,Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators,Liu B.; Xie Y.; Jiang X.; Ye Y.; Song T.; Chai J.; Tang Q.; Feng M.,Optics Express,Article,10.1364/OE.454973,0,—,8,8,30.08,43,S,S,INCLUIR,,✅ Concluído,"ESN/RC no título, Finanças no título, 8 cit."
+9,8,A,Scopus,2022,Reservoir computing vs. neural networks in financial forecasting,Georgopoulos S.P.; Tziatzios P.; Stavrinides S.G.; Antoniades I.P.; Hanias M.P.,International Journal of Computational Economics and Econome,Article,10.1504/ijcee.2023.127283,0,—,7,7,30.07,44,S,S,EXCLUIR,,✅ Concluído,"ESN/RC no título, Finanças no título, LSTM/GRU/DL, 7 cit."
+10,9,A,Scopus,2021,Stock market index prediction based on reservoir computing models,Wang W.-J.; Tang Y.; Xiong J.; Zhang Y.-C.,Expert Systems with Applications,Article,10.1016/j.eswa.2021.115022,0,—,52,52,25.52,52,S,S,INCLUIR,,✅ Concluído,"ESN/RC no título, Finanças no título, 52 cit."
+11,10,A,Scopus,2021,Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility,Trierweiler Ribeiro G.; Alves Portela Santos A.; Cocco Mariani V.; dos Santos Co,Expert Systems with Applications,Article,10.1016/j.eswa.2021.115490,0,—,103,103,26.03,51,S,S,INCLUIR,,✅ Concluído,"ESN/RC no título, Finanças no título, LSTM/GRU/DL, Otimização, 103 cit."
+12,11,A,Scopus,2021,Echo state networks and existing paradigms for stock market prediction,Mallya A.,2021 International Conference on Emerging Smart Computing an,Conference paper,10.1109/ESCI50559.2021.9396961,0,—,4,4,25.04,55,S,S,EXCLUIR,,✅ Concluído,"ESN/RC no título, Finanças no título"
+13,12,A,Scopus,2021,Stock Price Forecasting: An Echo State Network Approach,Sun G.; Lin J.; Yang C.; Yin X.; Li Z.; Guo P.; Sun J.; Fan X.; Pan B.,Computer Systems Science and Engineering,Article,10.32604/csse.2021.014189,0,—,11,11,25.11,54,S,S,INCLUIR,,✅ Concluído,"ESN/RC no título, Finanças no título, 11 cit."
+14,13,B,Scopus,2025,Multivariate time series prediction using clustered echo state network,Hariharan S.; Suresh R.; Chandrasekar V.K.,European Physical Journal Plus,Article,10.1140/epjp/s13360-025-07077-3,0,—,0,0,45,4,S/N,S/N,— preencher —,,🟡 MÉDIA,ESN/RC no título
+15,14,B,Springer,2024,Predicting multi-parametric dynamics of an externally forced oscillator using reservoir computing and minimal data,Manish YadavSwati ChauhanManish Dev ShrimaliMerten Stender,Nonlinear Dynamics,Article,10.1007/s11071-024-10720-w,0,0,0,0,40,19,S/N,S/N,— preencher —,,🟡 MÉDIA,ESN/RC no título
+16,15,B,Scopus,2023,Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System,Seddik S.; Routaib H.; Elhaddadi A.,International Journal of Computational Methods and Experimen,Article,10.18280/ijcmem.110401,0,—,1,1,35.01,36,S/N,S/N,— preencher —,,🟡 MÉDIA,"ESN/RC no título, Otimização"
+17,16,B,Springer,2023,A minimum complexity interaction echo state network,Jianming LiuXu XuEric Li,Neural Computing and Applications,Article,10.1007/s00521-023-09271-9,0,0,0,0,35,37,S/N,S/N,— preencher —,,🟡 MÉDIA,ESN/RC no título
+18,17,C,Scopus,2026,Optimizing Stock Market Investment Decisions: A Comparative Analysis of Machine Learning and Deep Learning Algorithms,Jadhav B.; Shetty S.; Patyane G.; Yadav S.; Pawar H.,Lecture Notes in Networks and Systems,Conference paper,10.1007/978-981-96-4933-4_57,0,—,0,0,50,1,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, LSTM/GRU/DL, Otimização"
+19,18,C,Scopus,2025,Deep learning for financial forecasting: A review of recent trends,Giantsidi S.; Tarantola C.,International Review of Economics and Finance,Article,10.1016/j.iref.2025.104719,0,—,2,2,45.02,3,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, Survey/Review, LSTM/GRU/DL"
+20,19,C,Scopus,2025,FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction,Hassaan Z.A.; Yacoub M.H.; Said L.A.,Machine Learning and Knowledge Extraction,Article,10.3390/make7040160,0,—,0,0,45,4,S/N,S/N,— preencher —,,🔴 ALTA,"ESN/RC no título, Finanças no título"
+21,20,C,Scopus,2025,A Novel Artificial Intelligence Based Framework for Stock Market Prediction,Singh O.N.; Gupta R.,Lecture Notes in Networks and Systems,Conference paper,10.1007/978-981-96-6515-0_35,0,—,0,0,45,4,S/N,S/N,— preencher —,,🟡 MÉDIA,Finanças no título
+22,21,C,Scopus,2025,Exploring Different Machine Learning-Based Methods for Learning the Language of Shepna Stock Price,Ansari Z.; Gahruei J.R.; Khademi M.,"Iranian Conference on Electrical Engineering, ICEE",Conference paper,10.1109/ICEE67339.2025.11213927,0,—,0,0,45,4,S/N,S/N,— preencher —,,🟡 MÉDIA,Finanças no título
+23,22,C,Springer,2025,"DQVAE: leveraging adaptive modulated sigmoid, attention, and quantization for high-fidelity synthetic stock market data",Mohammad DiqiEma UtamiKusriniFerry Wahyu Wibowo,International Journal of Information Technology,Article,10.1007/s41870-025-02575-0,0,0,0,0,45,4,S/N,S/N,— preencher —,,🟡 MÉDIA,Finanças no título
+24,23,C,Springer,2025,Forecasting of exchange rate time series based on event-aware transformer mode,Siyi ZhangTong CheZhiliang ZhuGuoli LuoPing Feng,Soft Computing,Article,10.1007/s00500-025-10558-3,0,0,0,0,45,4,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, LSTM/GRU/DL"
+25,24,C,Scopus,2024,On the Gaussian Process for Stationary and Non-stationary Time Series Prediction for the Qatar Stock Market,Al Fakih B.; Abdel-Salam A.-S.G.,"Studies in Systems, Decision and Control",Book chapter,10.1007/978-3-031-71649-2_5,0,—,1,1,40.01,18,S/N,S/N,— preencher —,,🟡 MÉDIA,Finanças no título
+26,25,C,Scopus,2024,Time Series Forecasting of KSE-100 Index Using a Hybrid ESN-LSTM Model,Gill T.S.; Zahid S.I.,6th International Conference on Robotics and Automation in I,Conference paper,10.1109/ICRAI62391.2024.10894346,0,—,0,0,40,19,S/N,S/N,— preencher —,,🔴 ALTA,"ESN/RC no título, Finanças no título, LSTM/GRU/DL, Otimização"
+27,26,C,Scopus,2024,Optimizing Stock Market Predictions: A Comprehensive 3-Stage Model with Residual Modeling,Sabharwal R.; Syal S.K.; Pankaj P.; Arti M.K.,Proceedings - 11th International Conference on Signal Proces,Conference paper,10.1109/SPIN60856.2024.10511826,0,—,0,0,40,19,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, Survey/Review"
+28,27,C,Springer,2024,Synergizing Deep Belief Networks and Arithmetic Optimization for Stock Market Price Prediction: A Hybrid Approach,Noura MetawaHussein Al TamimiRania Itani,Business Analytics and Decision Making in Practice,Conference paper,10.1007/978-3-031-61589-4_14,0,0,0,0,40,19,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, Otimização"
+29,28,C,Springer,2024,Fusion of Wavelet Decomposition and N-BEATS for Improved Stock Market Forecasting,Neha PramanickVatsal SinghalNeerajJimson MathewMayank Agarwal,SN Computer Science,Article,10.1007/s42979-024-03222-4,0,0,0,0,40,19,S/N,S/N,— preencher —,,🟡 MÉDIA,Finanças no título
+30,29,C,Springer,2024,Analyzing the performance of geometric mean optimization-based artificial neural networks for cryptocurrency forecasting,Sudersan BeheraA V S Pavan KumarSarat Chandra Nayak,International Journal of Information Technology,Article,10.1007/s41870-024-01953-4,0,0,0,0,40,19,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, LSTM/GRU/DL, Otimização"
+31,30,C,Springer,2024,Feature selection with annealing for forecasting financial time series,Hakan PabuccuAdrian Barbu,Financial Innovation,Article,10.1186/s40854-024-00617-3,0,0,0,0,40,19,S/N,S/N,— preencher —,,🟡 MÉDIA,Finanças no título
+32,31,C,Springer,2024,PCA-ICA-LSTM: A Hybrid Deep Learning Model Based on Dimension Reduction Methods to Predict S P 500 Index Price,Mehmet SarıkoçMete Celik,Computational Economics,Article,10.1007/s10614-024-10629-x,0,0,0,0,40,19,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, LSTM/GRU/DL, Otimização"
+33,32,C,Springer,2023,Stock Market Prediction Techniques Using Artificial Intelligence: A Systematic Review,Chandravesh ChaudhariGeetanjali Purswani,Third Congress on Intelligent Systems,Conference paper,10.1007/978-981-19-9225-4_17,0,0,0,0,35,37,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, Survey/Review"
+34,33,C,Springer,2023,A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Ti,Sudersan BeheraSarat Chandra NayakA. V. S. Pavan Kumar,Archives of Computational Methods in Engineering,Article,10.1007/s11831-023-09942-9,0,0,0,0,35,37,S/N,S/N,— preencher —,,🔴 ALTA,"Finanças no título, Survey/Review, LSTM/GRU/DL, Otimização"
+35,34,C,Springer,2023,Data-Driven Volatile Cryptocurrency Price Forecasting via Variational Mode Decomposition and BiLSTM,Rohith RamakrishnanAnirudh VadakedathAnirudh BhaskarS. Sachin KumarK. P. Soman,International Conference on Innovative Computing and Communi,Conference paper,10.1007/978-981-19-2821-5_55,0,0,0,0,35,37,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, LSTM/GRU/DL"
+36,35,C,Springer,2022,An efficient real-time stock prediction exploiting incremental learning and deep learning,Tinku SinghRiya KalraSuryanshi MishraSatakshiManish Kumar,Evolving Systems,Article,10.1007/s12530-022-09481-x,0,0,0,0,30,45,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, LSTM/GRU/DL"
+37,36,C,Springer,2022,Path signature-based phase space reconstruction for stock trend prediction,Cuiting LiKe Liu,International Journal of Data Science and Analytics,Article,10.1007/s41060-022-00326-z,0,0,0,0,30,45,S/N,S/N,— preencher —,,🟡 MÉDIA,Finanças no título
+38,37,C,Scopus,2021,Application of ESN prediction model based on compressed sensing in stock market,Zhang H.; Zheng M.; Zhang Y.; Yu X.; Li W.; Gao H.,Communications in Nonlinear Science and Numerical Simulation,Article,10.1016/j.cnsns.2021.105857,0,—,18,18,25.18,53,S/N,S/N,— preencher —,,🔴 ALTA,"ESN/RC no título, Finanças no título, 18 cit."
+39,38,C,Springer,2021,Currency Exchange Prediction for Financial Stock Market: An Extensive Survey,Asit Kumar DasDebahuti MishraKaberi Das,Cognitive Informatics and Soft Computing,Conference paper,10.1007/978-981-16-1056-1_54,0,0,0,0,25,56,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, Survey/Review"
+40,39,C,Springer,2021,A Literature Review on Machine Learning Techniques and Strategies Applied to Stock Market Price Prediction,Pankaj Rambhau PatilDeepa ParasarShrikant Charhate,Emerging Trends in Data Driven Computing and Communications,Conference paper,10.1007/978-981-16-3915-9_10,0,0,0,0,25,56,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, Survey/Review"
+41,40,C,Springer,2021,Prognosticate of the financial market utilizing ensemble-based conglomerate model with technical indicators,Dushmanta Kumar PadhiNeelamadhab Padhy,Evolutionary Intelligence,Article,10.1007/s12065-020-00528-z,0,0,0,0,25,56,S/N,S/N,— preencher —,,🟡 MÉDIA,Finanças no título
+42,41,C,Springer,2021,Ultra-short-term trading system using a neural network-based ensemble of financial technical indicators,Theodoros ZafeiriouDimitris Kalles,Neural Computing and Applications,Article,10.1007/s00521-021-05945-4,0,0,0,0,25,56,S/N,S/N,— preencher —,,🟡 MÉDIA,"Finanças no título, LSTM/GRU/DL"
+43,42,D,Scopus,2025,Tree-based learning for high-fidelity prediction of chaos,Giammarese A.; Rana K.; Bollt E.M.; Malik N.,Scientific Reports,Article,10.1038/s41598-025-25939-9,0,—,0,0,45,4,S/N,S/N,— preencher —,,⚪ Descartar,Baixa relevância
+44,43,D,Springer,2025,Artificial intelligence and classical statistical models for time series forecasting: a comprehensive review,Essam H. HousseinMeran MohamedEman M. G. YounisWaleed M. Mohamed,Journal of Big Data,Article,10.1186/s40537-025-01318-z,0,0,0,0,45,4,S/N,S/N,— preencher —,,🔵 BAIXA,Survey/Review
+45,44,D,Springer,2025,Design of an integrated model combining recurrent convolutions and attention mechanism for time series prediction,Nirmalajyothi NarisettyKunda Suresh BabuLakshmi Naga Jayaprada GavarrajuMunigeti,The Journal of Supercomputing,Article,10.1007/s11227-025-07154-5,0,0,0,0,45,4,S/N,S/N,— preencher —,,⚪ Descartar,Baixa relevância
+46,45,D,Springer,2025,Efficient time-series approximation with linear recurrent neural networks: architecture learning and predictive power,Frieder StolzenburgSandra LitzOlivia MichaelOliver Obst,Neural Computing and Applications,Article,10.1007/s00521-025-11655-y,0,0,0,0,45,4,S/N,S/N,— preencher —,,🔵 BAIXA,LSTM/GRU/DL
+47,46,D,Springer,2025,Adapting to the stream: an instance-attention GNN method for irregular multivariate time series data,Kun HanAbigail M. Y. KoayRyan K. L. KoWeitong ChenMiao Xu,Frontiers of Computer Science,Article,10.1007/s11704-024-40449-z,0,0,0,0,45,4,S/N,S/N,— preencher —,,⚪ Descartar,Baixa relevância
+48,47,D,Scopus,2024,A novel multivariate time series combination prediction model,Lian L.; Tian Z.,Communications in Statistics - Theory and Methods,Article,10.1080/03610926.2022.2124522,0,—,3,3,40.03,17,S/N,S/N,— preencher —,,⚪ Descartar,Baixa relevância
+49,48,D,Springer,2024,A fundamental overview of ensemble deep learning models and applications: systematic literature and state of the art,Tawseef Ayoub ShaikhTabasum RasoolPrabal VermaWaseem Ahmad Mir,Annals of Operations Research,Article,10.1007/s10479-024-06444-0,0,0,0,0,40,19,S/N,S/N,— preencher —,,🔵 BAIXA,"Survey/Review, LSTM/GRU/DL"
+50,49,D,Springer,2024,A Comparative Analysis of Time Series Prediction Techniques a Systematic Literature Review (SLR),Sawssen BrikiNesrine KhabouIsmael Bouassida Rodriguez,Model and Data Engineering,Conference paper,10.1007/978-3-031-49333-1_1,0,0,0,0,40,19,S/N,S/N,— preencher —,,🔵 BAIXA,Survey/Review
+51,50,D,Springer,2024,"Ensemble deep learning techniques for time series analysis: a comprehensive review, applications, open issues, challenge",Mohd SakibSuhel MustajabMahfooz Alam,Cluster Computing,Article,10.1007/s10586-024-04684-0,0,0,0,0,40,19,S/N,S/N,— preencher —,,🔵 BAIXA,"Survey/Review, LSTM/GRU/DL"
+52,51,D,Springer,2024,Using Feedback-Matching Algorithm in Time Series Future Values Prediction,Louay Al NuaimyHazem MigdadyMahammad Mastan,Proceedings of Ninth International Congress on Information a,Conference paper,10.1007/978-981-97-3556-3_33,0,0,0,0,40,19,S/N,S/N,— preencher —,,🔵 BAIXA,Otimização
+53,52,D,Springer,2024,Universal approximation property of stochastic configuration networks for time series,Jin-Xi ZhangHangyi ZhaoXuefeng Zhang,Industrial Artificial Intelligence,Article,10.1007/s44244-024-00017-7,0,0,0,0,40,19,S/N,S/N,— preencher —,,⚪ Descartar,Baixa relevância
+54,53,D,Springer,2024,Data stream classification using a deep transfer learning method based on extreme learning machine and recurrent neural ,Mehdi EskandariHassan Khotanlou,Multimedia Tools and Applications,Article,10.1007/s11042-023-18075-x,0,0,0,0,40,19,S/N,S/N,— preencher —,,⚪ Descartar,Baixa relevância
+55,54,D,Springer,2023,Deep learning in economics: a systematic and critical review,Yuanhang ZhengZeshui XuAnran Xiao,Artificial Intelligence Review,Article,10.1007/s10462-022-10272-8,0,0,0,0,35,37,S/N,S/N,— preencher —,,🔵 BAIXA,"Survey/Review, LSTM/GRU/DL"
+56,55,D,Springer,2023,"Deep learning modelling techniques: current progress, applications, advantages, and challenges",Shams Forruque AhmedMd. Sakib Bin AlamMaruf HassanMahtabin Rodela RozbuTaoseef I,Artificial Intelligence Review,Article,10.1007/s10462-023-10466-8,0,0,0,0,35,37,S/N,S/N,— preencher —,,⚪ Descartar,LSTM/GRU/DL
+57,56,D,Springer,2022,Taylor-based optimized recursive extended exponential smoothed neural networks forecasting method,Emna KricheneWael OuardaHabib ChabchoubAjith AbrahamAbdulrahman M. QahtaniOmar A,Applied Intelligence,Article,10.1007/s10489-022-03890-w,0,0,0,0,30,45,S/N,S/N,— preencher —,,⚪ Descartar,LSTM/GRU/DL
+58,57,D,Springer,2022,Hybridization of hybrid structures for time series forecasting: a review,Zahra HajirahimiMehdi Khashei,Artificial Intelligence Review,Article,10.1007/s10462-022-10199-0,0,0,0,0,30,45,S/N,S/N,— preencher —,,🔵 BAIXA,"Survey/Review, Otimização"
+59,58,D,Springer,2022,A new hybrid recurrent artificial neural network for time series forecasting,Erol EgriogluEren Bas,Neural Computing and Applications,Article,10.1007/s00521-022-07753-w,0,0,0,0,30,45,S/N,S/N,— preencher —,,🔵 BAIXA,"LSTM/GRU/DL, Otimização"
+60,59,D,Springer,2022,25 Years of Particle Swarm Optimization: Flourishing Voyage of Two Decades,Janmenjoy NayakH. SwapnarekhaBighnaraj NaikGaurav DhimanS. Vimal,Archives of Computational Methods in Engineering,Article,10.1007/s11831-022-09849-x,0,0,0,0,30,45,S/N,S/N,— preencher —,,⚪ Descartar,Otimização
+,GUIA RÁPIDO — COMO BUSCAR O SJR NO SCIMAGO,Unnamed: 1,Unnamed: 2,Unnamed: 3
+0,,,,
+1,Passo,Ação,Link / Detalhe,
+2,1,Acesse o site do Scimago,https://www.scimagojr.com,
+3,2,Cole o nome da revista na barra de busca,"Ex: ""Expert Systems with Applications""",
+4,3,Clique no periódico na lista de resultados,Evite selecionar nome errado,
+5,4,Anote o SJR do ano mais recente disponível,"Campo ""SJR"" no topo da página",
+6,5,Cole o valor na coluna J da aba InOrdinatio,Use ponto como separador decimal,
+7,—,Artigos de conferência e capítulos,Use SJR = 0 (metodologicamente correto),
+8,—,Artigo do orientador (LNCS Springer),Lecture Notes: SJR ≈ 0.15 (verifique),
+9,,,,
+10,REVISTAS DO SEU PORTFÓLIO — BUSCAR PRIORITARIAMENTE,,,
+11,"2021 International Conference on Emerging Smart Computing and Informatics, ESCI ",,,SJR =
+12,"6th International Conference on Robotics and Automation in Industry, ICRAI 2024",,,SJR =
+13,Annals of Operations Research,,,SJR =
+14,Applied Intelligence,,,SJR =
+15,Archives of Computational Methods in Engineering,,,SJR =
+16,Artificial Intelligence Review,,,SJR =
+17,Business Analytics and Decision Making in Practice,,,SJR =
+18,Cluster Computing,,,SJR =
+19,Cognitive Informatics and Soft Computing,,,SJR =
+20,Communications in Computer and Information Science,,,SJR =
+21,Communications in Nonlinear Science and Numerical Simulation,,,SJR =
+22,Communications in Statistics - Theory and Methods,,,SJR =
+23,Computational Economics,,,SJR =
+24,Computer Systems Science and Engineering,,,SJR =
+25,Emerging Trends in Data Driven Computing and Communications,,,SJR =
+26,European Physical Journal Plus,,,SJR =
+27,Evolutionary Intelligence,,,SJR =
+28,Evolving Systems,,,SJR =
+29,Expert Systems with Applications,,,SJR =
+30,Financial Innovation,,,SJR =
+31,Frontiers of Computer Science,,,SJR =
+32,Industrial Artificial Intelligence,,,SJR =
+33,International Conference on Innovative Computing and Communications,,,SJR =
+34,International Journal of Computational Economics and Econometrics,,,SJR =
+35,International Journal of Computational Intelligence Systems,,,SJR =
+36,International Journal of Computational Methods and Experimental Measurements,,,SJR =
+37,International Journal of Data Science and Analytics,,,SJR =
+38,International Journal of Dynamics and Control,,,SJR =
+39,International Journal of Information Technology,,,SJR =
+40,International Review of Economics and Finance,,,SJR =
+41,"Iranian Conference on Electrical Engineering, ICEE",,,SJR =
+42,Journal of Big Data,,,SJR =
+43,Lecture Notes in Networks and Systems,,,SJR =
+44,Machine Learning and Knowledge Extraction,,,SJR =
+45,Model and Data Engineering,,,SJR =
+46,Multimedia Tools and Applications,,,SJR =
+47,Neural Computing and Applications,,,SJR =
+48,Neural Networks,,,SJR =
+49,Nonlinear Dynamics,,,SJR =
+50,Optics Express,,,SJR =
+51,Proceedings - 11th International Conference on Signal Processing and Integrated ,,,SJR =
+52,Proceedings of Ninth International Congress on Information and Communication Tec,,,SJR =
+53,SN Computer Science,,,SJR =
+54,Scientific African,,,SJR =
+55,Scientific Reports,,,SJR =
+56,Soft Computing,,,SJR =
+57,"Studies in Systems, Decision and Control",,,SJR =
+58,The Journal of Supercomputing,,,SJR =
+59,Third Congress on Intelligent Systems,,,SJR =
+,EXTRAÇÃO DE DADOS — Artigos aprovados na triagem de abstracts (ordenados pelo InOrdinatio),Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12
+0,#,"Ref. (Autor, Ano)",Título,Objetivo Principal,Modelo(s) Usado(s),Dataset,Métricas,Resultado Principal,Usa AG?,Usa Fator Ajuste?,Compara LSTM/GRU?,Lacunas Identificadas,Relevância p/ TFC
+1,1,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —
+2,2,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —
+3,3,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —
+4,4,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —
+5,5,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —
+6,6,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —
+7,7,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —,— preencher após leitura —
+,LEGENDA E INSTRUÇÕES,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9
+0,Autor Principal,Nome do Artigo,Revista / Tipo de Publicação,Fator de impacto SJR,,Ano ,Citações scholar,Citações Scopus,Citações Springer Nature,Calculo
+1,Abebe,Asymmetric generalized error distribution with its properties and applications,Frontiers in Applied Mathematics and Statistics,359,Q3,2024,3,0,,
+2,Henrique Vaz de Araújo,Comparing MAE and RMSE as Fitness of Genetic Algorithm for Optimizing Echo State Network Hyperparameters with Different Probabilistic Distributions,Intelligent Data Engineering and Automated Learning (Série Springer),325,Q2,2025,1,1,,
+3,Sudersan Behera,A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization Learning Algorithms in Financial Time Series Forecasting,Archives of Computational Methods in Engineering,2038,Q1,2022,42,27,,
+4,F. C. Cardoso,BovDB: a data set of stock prices of all companies in B3 from 1995 to 2020,Journal of Information and Data Management,419,Q1,2021,8,,,
+5,"Chen, C. et al.",Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction,IEEE Transactions on Quantum Engineering,1045,Q1,2025,1,,,
+6,"Costa, G. & Lunkes, R.",Aplicação de algoritmo de aprendizado de máquina para previsão do comportamento das ações no mercado brasileiro,Contabilidad y Negocios,,,2025,0,,,
+7,"Deng, Z. et al.",Degradation prediction of PEMFCs using stacked echo state network based on genetic algorithm optimization,IEEE Transactions on Transportation Electrification,26220,Q1,2020,44,36,,
+8,Paul R. Dewick,On Financial Distributions Modelling Methods: Application on Regression Models for Time Series,Journal of Risk and Financial Management,480,Q2,2022,5,,,
+9,P. Duttilo,Modelling financial returns with mixtures of generalized normal distributions,AStA Advances in Statistical Analysis / Tese,590,Q1,2023,3,,,
+10,"Ecer, F.",Training multilayer perceptron with genetic algorithms and particle swarm optimization,Entropy (MDPI),524,Q2,2020,100,,,
+11,S. Hariharan,Multivariate time series prediction using clustered echo state network,European Physical Journal Plus,487,Q2,2023,0,,,
+12,Z. A. Hassaan,FPGA-Accelerated ESN with Chaos Training for Financial Time Series Prediction,Machine Learning and Knowledge Extraction,1437,Q2,2025,1,,,
+13,Herbert Jaeger,Echo state network,Scholarpedia,,,2007,541,,,
+14,K. Kumar,Forecasting Crude Oil Prices Using Reservoir Computing Models,Manuscrito / Preprint,194,Q2,2024,9,,,
+15,"Liu, Y.",Enhancing Trading Performance Through Sentiment Analysis with Large Language Models: Evidence from the S&P 500,Preprint / SSRN,,,2025,1,,,
+16,Bocheng Liu,Forecasting stock market with nanophotonic reservoir computing system based on silicon optomechanical oscillators,Optics Express,930,Q1,2022,9,,,
+17,Adrian Millea,Explorations in Echo State Networks,University of Groningen,,,2014,12,,,
+18,Daniel B. Nelson,Conditional Heteroskedasticity in Asset Returns: A New Approach,Econometrica,21091,Q1,1991,17315,,,
+19,Tongji Ping,"Forecasting Financial Market Volatility: Methodologies, Challenges, and Implications",Journal of Stock and Forex Trading,,,2023,0,,,
+20,Soukaina Seddik,Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System,Publicação da IIETA,226,Q3,2023,1,,,
+21,Mansi Sharma,Echo State Networks for Bitcoin Time Series Prediction,Preprint,,,2021,1,,,
+22,Rebh Soltani,Echo State Network Optimization: A Systematic Literature Review,Neural Processing Letters,672,Q2,2022,26,,,
+23,I Putu Gede Abdi Sudiatmika,Comparison of LSTM and GRU Models Performance in Forecasting Gold Prices: A Case Study Using Historical Data from Yahoo Finance,ARRUS Journal of Engineering and Technology,,,2024,9,,,
+24,Guang Sun,Stock Price Forecasting: An Echo State Network Approach,Computer Systems Science and Engineering,,,2021,15,,,
+25,Zhengjie Tian,Stocks price prediction based on optimized echo state network by sparrow search algorithm,International Journal of Dynamics and Control,469,Q2,2024,9,,,
+26,"Timbó, N. et al.",Approach based linear regression for stock exchange prediction: case study of PETR4 Petrobras Brazil,International Journal of Artificial Intelligence & Applications,469,Q2,2016,3,,,
+27,"Trierweiler Ribeiro, G.",Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility,Expert Systems with Applications,1854,Q1,2021,125,,,
+28,Vishwas H. N.,"Artificial intelligence-based stock market price prediction, a review",Mathematical Models in Engineering,179,Q4,2025,0,,,
+29,Wei-Jia Wang,Stock market index prediction based on reservoir computing models,Expert Systems with Applications,1854,Q1,2021,72,,,
+30,Fang Wang,Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing,International Journal of Computational Intelligence Systems,593,Q2,2025,0,,,
+31,"Wang, W. J. et al.",Stock market index prediction based on reservoir computing models,Expert Systems with Applications,1854,Q1,2021,72,,,
+32,"Xiao, J. et al.","Comparative analysis of LSTM, GRU, and transformer models for stock price prediction",DEBAI 2024 (ACM),,,2024,65,,,
+33,Hao Zhang,Application of ESN prediction model based on compressed sensing in stock market,Communications in Nonlinear Science and Numerical Simulation,956,Q1,2021,19,,,
+,LEGENDA E INSTRUÇÕES,Unnamed: 1,Unnamed: 2,Unnamed: 3
+0,,,,
+1,CLASSES DE RELEVÂNCIA,,,
+2,A,ESN/RC + Finanças no título,,Leitura obrigatória
+3,B,ESN/RC no título (sem finanças),,Ler abstract com atenção
+4,C,Finanças (ESN pode estar no corpo),,Confirmar no abstract
+5,D,Não classificado automaticamente,,Verificar manualmente
+6,,,,
+7,COLUNAS AMARELAS (Aba InOrdinatio),,,
+8,Col. J — SJR/IF,Buscar no scimagojr.com,,0 para conferências
+9,Col. K — Citações Springer,Buscar no Google Scholar,,0 se não encontrar
+10,,,,
+11,DECISÃO (Col. R),,,
+12,INCLUIR,Passou CI4 e CI5 no abstract,,
+13,EXCLUIR,Não passou CI4 ou CI5,,
+14,DÚVIDA,Discutir com orientador,,
+15,,,,
+16,INORDINATIO,,,
+17,Fórmula,(IF/1000) + 5×(10−(2026−Ano)) + (Ci/100),,Calculado automaticamente
+18,Rank,Menor número = maior relevância,,Ordenar por esta coluna
+

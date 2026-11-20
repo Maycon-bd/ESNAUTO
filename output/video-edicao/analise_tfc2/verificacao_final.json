@@ -1,0 +1,225 @@
+{
+  "arquivo": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\exportados\\ESNAUTO_apresentacao_25min_v001.mp4",
+  "sha256": "913496781fff51286f6c810063599ed4816feef062d0b2efa6e69a739481a595",
+  "original_preservado_sha256": "75b7f1c1f41422683e7915eda8a68d1ed5758e84e5a8bedd2242396ec9c222d8",
+  "duracao_s": 1490.233333,
+  "quadros": 44707,
+  "resolucao": [
+    1920,
+    1080
+  ],
+  "fps": "30/1",
+  "audio_video_diferenca_s": 0.010249999999814463,
+  "decodificacao_integral": "sucesso",
+  "quadros_para_inspecao_visual": [
+    {
+      "original_frame": 0,
+      "editado_frame": 0,
+      "original_s": 0.0,
+      "editado_s": 0.0
+    },
+    {
+      "original_frame": 10940,
+      "editado_frame": 10940,
+      "original_s": 364.6666666666667,
+      "editado_s": 364.6666666666667
+    },
+    {
+      "original_frame": 12766,
+      "editado_frame": 10964,
+      "original_s": 425.53333333333336,
+      "editado_s": 365.46666666666664
+    },
+    {
+      "original_frame": 14385,
+      "editado_frame": 12583,
+      "original_s": 479.5,
+      "editado_s": 419.43333333333334
+    },
+    {
+      "original_frame": 14484,
+      "editado_frame": 12607,
+      "original_s": 482.8,
+      "editado_s": 420.23333333333335
+    },
+    {
+      "original_frame": 22500,
+      "editado_frame": 20607,
+      "original_s": 750.0,
+      "editado_s": 686.9
+    },
+    {
+      "original_frame": 25165,
+      "editado_frame": 23216,
+      "original_s": 838.8333333333334,
+      "editado_s": 773.8666666666667
+    },
+    {
+      "original_frame": 39428,
+      "editado_frame": 37453,
+      "original_s": 1314.2666666666667,
+      "editado_s": 1248.4333333333334
+    },
+    {
+      "original_frame": 41580,
+      "editado_frame": 39573,
+      "original_s": 1386.0,
+      "editado_s": 1319.1
+    },
+    {
+      "original_frame": 44940,
+      "editado_frame": 42910,
+      "original_s": 1498.0,
+      "editado_s": 1430.3333333333333
+    },
+    {
+      "original_frame": 46000,
+      "editado_frame": 43970,
+      "original_s": 1533.3333333333333,
+      "editado_s": 1465.6666666666667
+    },
+    {
+      "original_frame": 46760,
+      "editado_frame": 44697,
+      "original_s": 1558.6666666666667,
+      "editado_s": 1489.9
+    }
+  ],
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 22889984,
+        "duration": "1490.233333",
+        "bit_rate": "2904330",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "44707",
+        "extradata_size": 60,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc63.1.102 h264_nvenc"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 1024,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 71530708,
+        "duration": "1490.223083",
+        "bit_rate": "192745",
+        "nb_frames": "69856",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler"
+        }
+      }
+    ],
+    "format": {
+      "filename": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\output\\video-edicao\\exportados\\ESNAUTO_apresentacao_25min_v001.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "1490.233333",
+      "size": "578564745",
+      "bit_rate": "3105901",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "title": "ESNAUTO - ApresentaÃ§Ã£o do TFC - ediÃ§Ã£o v001",
+        "encoder": "Lavf63.1.102"
+      }
+    }
+  }
+}

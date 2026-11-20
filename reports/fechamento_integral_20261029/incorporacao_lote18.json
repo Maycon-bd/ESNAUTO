@@ -1,0 +1,12 @@
+{
+  "sha256_antes": "24cb3fa4d96b9fed434173262037a597acb0ca5aad6671ae1b962d12df75d1ee",
+  "sha256_apos_edicao": "d9d9f08ec4844175db3019543176f61900142324c2452fef7941d2fd0d8648fb",
+  "alteracoes": [
+    {
+      "unidade": "U0196",
+      "antes": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores idênticos de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo.",
+      "depois": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores semelhantes de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo."
+    }
+  ],
+  "estado": "pendente_exportacao_e_inspecao"
+}

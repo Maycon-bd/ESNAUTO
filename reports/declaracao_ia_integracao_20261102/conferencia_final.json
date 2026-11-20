@@ -1,0 +1,654 @@
+{
+  "base": "v010",
+  "base_sha256": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+  "trabalho_sha256": "6ce846aec1d02f0ab1c6e575f822f082920331f8d7b6c444914bb45d0563ce4a",
+  "paginas": 81,
+  "partes_alteradas": [
+    "word/document.xml"
+  ],
+  "paragrafos_anteriores_preservados": 554,
+  "tabelas_anteriores_com_dados_preservados": 14,
+  "tabelas_curta_metodologia_mantidas_juntas": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "entradas_conferidas": [
+    {
+      "entrada": "Figura 1 – Documentação localizada nas cinco dimensões analíticas\t37",
+      "pagina": 37
+    },
+    {
+      "entrada": "Figura 2 – Frequência das palavras-chave declaradas pelos autores\t38",
+      "pagina": 38
+    },
+    {
+      "entrada": "Figura 3 – Rede de coocorrência de palavras-chave\t39",
+      "pagina": 39
+    },
+    {
+      "entrada": "Figura 4 – Expressões recorrentes nos títulos dos estudos\t40",
+      "pagina": 40
+    },
+    {
+      "entrada": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações\t57",
+      "pagina": 57
+    },
+    {
+      "entrada": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada\t58",
+      "pagina": 58
+    },
+    {
+      "entrada": "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica\t35",
+      "pagina": 35
+    },
+    {
+      "entrada": "Quadro 2 – Organização das cinco ondas experimentais\t45",
+      "pagina": 45
+    },
+    {
+      "entrada": "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético\t46",
+      "pagina": 46
+    },
+    {
+      "entrada": "Quadro 4 – Síntese do desenho experimental executado\t48",
+      "pagina": 48
+    },
+    {
+      "entrada": "Quadro 5 – Síntese da avaliação das hipóteses\t64",
+      "pagina": 64
+    },
+    {
+      "entrada": "Quadro 6 – Delimitação das contribuições e da procedência\t73",
+      "pagina": 73
+    },
+    {
+      "entrada": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico\t34",
+      "pagina": 34
+    },
+    {
+      "entrada": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)\t44",
+      "pagina": 44
+    },
+    {
+      "entrada": "Tabela 3 – Comparação dos principais resultados no conjunto de teste\t56",
+      "pagina": 56
+    },
+    {
+      "entrada": "Tabela 4 – Configurações selecionadas das cinco ondas experimentais\t59",
+      "pagina": 59
+    },
+    {
+      "entrada": "Tabela 5 – Decomposição do custo computacional documentado\t61",
+      "pagina": 61
+    },
+    {
+      "entrada": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar\t64",
+      "pagina": 64
+    },
+    {
+      "entrada": "Tabela 7 – Comparação descritiva com Lampugnani (2026)\t65",
+      "pagina": 65
+    },
+    {
+      "entrada": "1\tINTRODUÇÃO\t17",
+      "pagina": 17
+    },
+    {
+      "entrada": "2\tREVISÃO DA LITERATURA\t20",
+      "pagina": 20
+    },
+    {
+      "entrada": "2.1\tMERCADO DE CAPITAIS BRASILEIRO E A PREVISÃO DE SÉRIES TEMPORAIS FINANCEIRAS\t20",
+      "pagina": 20
+    },
+    {
+      "entrada": "2.2\tREDES NEURAIS RECORRENTES: LSTM E GRU\t21",
+      "pagina": 21
+    },
+    {
+      "entrada": "2.3\tREDES NEURAIS DE ESTADOS DE ECO E COMPUTAÇÃO DE RESERVATÓRIO\t23",
+      "pagina": 23
+    },
+    {
+      "entrada": "2.4\tOTIMIZAÇÃO DE HIPERPARÂMETROS DA ESN POR ALGORITMOS EVOLUTIVOS\t25",
+      "pagina": 25
+    },
+    {
+      "entrada": "2.5\tDISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO\t27",
+      "pagina": 27
+    },
+    {
+      "entrada": "2.6\tPRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B3\t29",
+      "pagina": 29
+    },
+    {
+      "entrada": "2.7\tTRABALHOS RELACIONADOS\t30",
+      "pagina": 30
+    },
+    {
+      "entrada": "2.8\tESTADO DA ARTE E LACUNAS IDENTIFICADAS\t32",
+      "pagina": 32
+    },
+    {
+      "entrada": "2.9\tSÍNTESE DO PORTFÓLIO BIBLIOGRÁFICO\t33",
+      "pagina": 33
+    },
+    {
+      "entrada": "3\tMATERIAL E MÉTODOS\t41",
+      "pagina": 41
+    },
+    {
+      "entrada": "3.1\tCLASSIFICAÇÃO DA PESQUISA\t41",
+      "pagina": 41
+    },
+    {
+      "entrada": "3.2\tCONJUNTO DE DADOS E PRÉ-PROCESSAMENTO\t42",
+      "pagina": 42
+    },
+    {
+      "entrada": "3.3\tIMPLEMENTAÇÃO DAS ESNS EM R\t44",
+      "pagina": 44
+    },
+    {
+      "entrada": "3.4\tOTIMIZAÇÃO POR ALGORITMOS GENÉTICOS\t46",
+      "pagina": 46
+    },
+    {
+      "entrada": "3.5\tMODELOS DE COMPARAÇÃO: LSTM E GRU\t48",
+      "pagina": 48
+    },
+    {
+      "entrada": "3.6\tDESENHO EXPERIMENTAL E CRITÉRIOS DE AVALIAÇÃO\t48",
+      "pagina": 48
+    },
+    {
+      "entrada": "3.7\tANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO\t49",
+      "pagina": 49
+    },
+    {
+      "entrada": "3.8\tREPRODUTIBILIDADE E REPLICAÇÃO DOS EXPERIMENTOS\t50",
+      "pagina": 50
+    },
+    {
+      "entrada": "3.8.1\tAmbiente computacional\t51",
+      "pagina": 51
+    },
+    {
+      "entrada": "3.8.2\tEstrutura do repositório\t51",
+      "pagina": 51
+    },
+    {
+      "entrada": "3.8.3\tProcedimento de revisão bibliográfica\t51",
+      "pagina": 51
+    },
+    {
+      "entrada": "3.8.4\tProcedimento de reexecução dos experimentos\t53",
+      "pagina": 53
+    },
+    {
+      "entrada": "4\tRESULTADOS E DISCUSSÃO\t55",
+      "pagina": 55
+    },
+    {
+      "entrada": "4.1\tVISÃO GERAL DOS EXPERIMENTOS\t55",
+      "pagina": 55
+    },
+    {
+      "entrada": "4.2\tDESEMPENHO PREDITIVO GLOBAL\t56",
+      "pagina": 56
+    },
+    {
+      "entrada": "4.3\tEFEITO DAS DISTRIBUIÇÕES PROBABILÍSTICAS\t59",
+      "pagina": 59
+    },
+    {
+      "entrada": "4.4\tDISPERSÃO ENTRE CONFIGURAÇÕES E GENERALIZAÇÃO\t60",
+      "pagina": 60
+    },
+    {
+      "entrada": "4.5\tCARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE\t60",
+      "pagina": 60
+    },
+    {
+      "entrada": "4.6\tCUSTO COMPUTACIONAL\t61",
+      "pagina": 61
+    },
+    {
+      "entrada": "4.7\tAPLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO\t62",
+      "pagina": 62
+    },
+    {
+      "entrada": "4.8\tANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO\t63",
+      "pagina": 63
+    },
+    {
+      "entrada": "4.9\tAVALIAÇÃO DAS HIPÓTESES\t64",
+      "pagina": 64
+    },
+    {
+      "entrada": "4.10\tCONTRIBUIÇÕES DO ESNAUTO\t66",
+      "pagina": 66
+    },
+    {
+      "entrada": "5\tDISCUSSÃO\t68",
+      "pagina": 68
+    },
+    {
+      "entrada": "5.1\tVALIDADE INTERNA E ESTATÍSTICA\t68",
+      "pagina": 68
+    },
+    {
+      "entrada": "5.2\tVALIDADE EXTERNA\t69",
+      "pagina": 69
+    },
+    {
+      "entrada": "5.3\tTRABALHOS FUTUROS\t70",
+      "pagina": 70
+    },
+    {
+      "entrada": "6\tCONCLUSÃO\t71",
+      "pagina": 71
+    },
+    {
+      "entrada": "REFERÊNCIAS\t74",
+      "pagina": 74
+    },
+    {
+      "entrada": "ANEXOS\t79",
+      "pagina": 79
+    }
+  ],
+  "paginas_a_inspecionar": [
+    10,
+    11,
+    12,
+    16,
+    17,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    80,
+    81
+  ],
+  "corpos_identicos": [
+    {
+      "pagina": 1,
+      "base": [
+        1
+      ]
+    },
+    {
+      "pagina": 2,
+      "base": [
+        2
+      ]
+    },
+    {
+      "pagina": 3,
+      "base": [
+        3
+      ]
+    },
+    {
+      "pagina": 4,
+      "base": [
+        4
+      ]
+    },
+    {
+      "pagina": 5,
+      "base": [
+        5
+      ]
+    },
+    {
+      "pagina": 6,
+      "base": [
+        6
+      ]
+    },
+    {
+      "pagina": 7,
+      "base": [
+        7
+      ]
+    },
+    {
+      "pagina": 8,
+      "base": [
+        8
+      ]
+    },
+    {
+      "pagina": 9,
+      "base": [
+        9
+      ]
+    },
+    {
+      "pagina": 13,
+      "base": [
+        13
+      ]
+    },
+    {
+      "pagina": 14,
+      "base": [
+        14
+      ]
+    },
+    {
+      "pagina": 15,
+      "base": [
+        15
+      ]
+    },
+    {
+      "pagina": 18,
+      "base": [
+        18
+      ]
+    },
+    {
+      "pagina": 19,
+      "base": [
+        19
+      ]
+    },
+    {
+      "pagina": 20,
+      "base": [
+        20
+      ]
+    },
+    {
+      "pagina": 21,
+      "base": [
+        21
+      ]
+    },
+    {
+      "pagina": 22,
+      "base": [
+        22
+      ]
+    },
+    {
+      "pagina": 23,
+      "base": [
+        23
+      ]
+    },
+    {
+      "pagina": 24,
+      "base": [
+        24
+      ]
+    },
+    {
+      "pagina": 25,
+      "base": [
+        25
+      ]
+    },
+    {
+      "pagina": 26,
+      "base": [
+        26
+      ]
+    },
+    {
+      "pagina": 27,
+      "base": [
+        27
+      ]
+    },
+    {
+      "pagina": 28,
+      "base": [
+        28
+      ]
+    },
+    {
+      "pagina": 29,
+      "base": [
+        29
+      ]
+    },
+    {
+      "pagina": 30,
+      "base": [
+        30
+      ]
+    },
+    {
+      "pagina": 31,
+      "base": [
+        31
+      ]
+    },
+    {
+      "pagina": 32,
+      "base": [
+        32
+      ]
+    },
+    {
+      "pagina": 33,
+      "base": [
+        33
+      ]
+    },
+    {
+      "pagina": 34,
+      "base": [
+        34
+      ]
+    },
+    {
+      "pagina": 35,
+      "base": [
+        35
+      ]
+    },
+    {
+      "pagina": 36,
+      "base": [
+        36
+      ]
+    },
+    {
+      "pagina": 37,
+      "base": [
+        37
+      ]
+    },
+    {
+      "pagina": 38,
+      "base": [
+        38
+      ]
+    },
+    {
+      "pagina": 39,
+      "base": [
+        39
+      ]
+    },
+    {
+      "pagina": 40,
+      "base": [
+        40
+      ]
+    },
+    {
+      "pagina": 41,
+      "base": [
+        41
+      ]
+    },
+    {
+      "pagina": 42,
+      "base": [
+        42
+      ]
+    },
+    {
+      "pagina": 56,
+      "base": [
+        55
+      ]
+    },
+    {
+      "pagina": 57,
+      "base": [
+        56
+      ]
+    },
+    {
+      "pagina": 58,
+      "base": [
+        57
+      ]
+    },
+    {
+      "pagina": 59,
+      "base": [
+        58
+      ]
+    },
+    {
+      "pagina": 60,
+      "base": [
+        59
+      ]
+    },
+    {
+      "pagina": 61,
+      "base": [
+        60
+      ]
+    },
+    {
+      "pagina": 62,
+      "base": [
+        61
+      ]
+    },
+    {
+      "pagina": 63,
+      "base": [
+        62
+      ]
+    },
+    {
+      "pagina": 64,
+      "base": [
+        63
+      ]
+    },
+    {
+      "pagina": 65,
+      "base": [
+        64
+      ]
+    },
+    {
+      "pagina": 66,
+      "base": [
+        65
+      ]
+    },
+    {
+      "pagina": 67,
+      "base": [
+        66
+      ]
+    },
+    {
+      "pagina": 68,
+      "base": [
+        67
+      ]
+    },
+    {
+      "pagina": 69,
+      "base": [
+        68
+      ]
+    },
+    {
+      "pagina": 70,
+      "base": [
+        69
+      ]
+    },
+    {
+      "pagina": 71,
+      "base": [
+        70
+      ]
+    },
+    {
+      "pagina": 72,
+      "base": [
+        71
+      ]
+    },
+    {
+      "pagina": 73,
+      "base": [
+        72
+      ]
+    },
+    {
+      "pagina": 74,
+      "base": [
+        73
+      ]
+    },
+    {
+      "pagina": 75,
+      "base": [
+        74
+      ]
+    },
+    {
+      "pagina": 76,
+      "base": [
+        75
+      ]
+    },
+    {
+      "pagina": 77,
+      "base": [
+        76
+      ]
+    },
+    {
+      "pagina": 78,
+      "base": [
+        77
+      ]
+    },
+    {
+      "pagina": 79,
+      "base": [
+        78
+      ]
+    }
+  ],
+  "declaracao_sha256": "a6d2d166ab952850bca59bef2fee18ec7d25ecbf9ccb2f5c43d954a983b5e438"
+}

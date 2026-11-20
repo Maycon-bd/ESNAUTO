@@ -1,0 +1,42 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,28,&H00FFFFFF,&H00FFFFFF,&H000F2818,&H000F2818,-1,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:10:39.13,0:10:44.93,Default,,0,0,0,,{\an7\pos(1000,550)\fad(140,140)\p1\1c&H332015&\1a&H08&}m 0 0 l 430 0 430 90 0 90
+Dialogue: 2,0:10:39.13,0:10:44.93,Default,,0,0,0,,{\an7\pos(1000,550)\fad(140,140)\p1\1c&HA8B710&}m 0 0 l 5 0 5 90 0 90
+Dialogue: 3,0:10:39.13,0:10:44.93,Default,,0,0,0,,{\an7\pos(1018,562)\fad(140,140)\fs28\1c&HFFFFFF&\p0}1 · Dados da ação\Ne divisão temporal
+Dialogue: 1,0:10:39.13,0:10:44.93,Default,,0,0,0,,{\an7\pos(110,350)\fad(140,140)\p1\1a&HFF&\3a&H00&\3c&HA8B710&\bord3}m 0 0 l 770 0 770 160 0 160 0 0
+Dialogue: 2,0:10:39.13,0:10:44.93,Default,,0,0,0,,{\an7\pos(0,0)\fad(140,140)\p1\1c&HA8B710&}m 1000.8 547.6 l 896.9 513.0 l 899.0 506.8 l 880.0 510.0 l 893.3 523.9 l 895.3 517.7 l 999.2 552.4
+Dialogue: 1,0:10:52.93,0:10:55.93,Default,,0,0,0,,{\an7\pos(35,405)\fad(140,140)\p1\1c&H332015&\1a&H08&}m 0 0 l 315 0 315 100 0 100
+Dialogue: 2,0:10:52.93,0:10:55.93,Default,,0,0,0,,{\an7\pos(35,405)\fad(140,140)\p1\1c&HA8B710&}m 0 0 l 5 0 5 100 0 100
+Dialogue: 3,0:10:52.93,0:10:55.93,Default,,0,0,0,,{\an7\pos(53,417)\fad(140,140)\fs28\1c&HFFFFFF&\p0}2 · Escolha das\Ndistribuições
+Dialogue: 1,0:10:52.93,0:10:55.93,Default,,0,0,0,,{\an7\pos(425,445)\fad(140,140)\p1\1a&HFF&\3a&H00&\3c&HA8B710&\bord3}m 0 0 l 920 0 920 135 0 135 0 0
+Dialogue: 2,0:10:52.93,0:10:55.93,Default,,0,0,0,,{\an7\pos(0,0)\fad(140,140)\p1\1c&HA8B710&}m 348.6 457.1 l 409.5 497.7 l 405.9 503.1 l 425.0 505.0 l 415.8 488.1 l 412.2 493.5 l 351.4 452.9
+Dialogue: 1,0:11:01.33,0:11:04.73,Default,,0,0,0,,{\an7\pos(35,430)\fad(140,140)\p1\1c&H332015&\1a&H08&}m 0 0 l 315 0 315 100 0 100
+Dialogue: 2,0:11:01.33,0:11:04.73,Default,,0,0,0,,{\an7\pos(35,430)\fad(140,140)\p1\1c&HA8B710&}m 0 0 l 5 0 5 100 0 100
+Dialogue: 3,0:11:01.33,0:11:04.73,Default,,0,0,0,,{\an7\pos(53,442)\fad(140,140)\fs28\1c&HFFFFFF&\p0}3 · Cataclismo\NAtivação opcional
+Dialogue: 1,0:11:01.33,0:11:04.73,Default,,0,0,0,,{\an7\pos(422,447)\fad(140,140)\p1\1a&HFF&\3a&H00&\3c&HA8B710&\bord3}m 0 0 l 900 0 900 47 0 47 0 0
+Dialogue: 2,0:11:01.33,0:11:04.73,Default,,0,0,0,,{\an7\pos(0,0)\fad(140,140)\p1\1c&HA8B710&}m 350.3 482.5 l 405.5 474.8 l 406.4 481.3 l 422.0 470.0 l 403.9 463.4 l 404.8 469.9 l 349.7 477.5
+Dialogue: 1,0:11:06.03,0:11:09.33,Default,,0,0,0,,{\an7\pos(35,600)\fad(140,140)\p1\1c&H332015&\1a&H08&}m 0 0 l 315 0 315 100 0 100
+Dialogue: 2,0:11:06.03,0:11:09.33,Default,,0,0,0,,{\an7\pos(35,600)\fad(140,140)\p1\1c&HA8B710&}m 0 0 l 5 0 5 100 0 100
+Dialogue: 3,0:11:06.03,0:11:09.33,Default,,0,0,0,,{\an7\pos(53,612)\fad(140,140)\fs28\1c&HFFFFFF&\p0}4 · Perfil de treino\NGRU e LSTM
+Dialogue: 1,0:11:06.03,0:11:09.33,Default,,0,0,0,,{\an7\pos(406,594)\fad(140,140)\p1\1a&HFF&\3a&H00&\3c&HA8B710&\bord3}m 0 0 l 680 0 680 202 0 202 0 0
+Dialogue: 2,0:11:06.03,0:11:09.33,Default,,0,0,0,,{\an7\pos(0,0)\fad(140,140)\p1\1c&HA8B710&}m 348.5 652.0 l 391.1 685.5 l 387.1 690.6 l 406.0 694.0 l 398.2 676.4 l 394.2 681.5 l 351.5 648.0
+Dialogue: 1,0:11:10.33,0:11:12.43,Default,,0,0,0,,{\an7\pos(1540,800)\fad(140,140)\p1\1c&H332015&\1a&H08&}m 0 0 l 330 0 330 100 0 100
+Dialogue: 2,0:11:10.33,0:11:12.43,Default,,0,0,0,,{\an7\pos(1540,800)\fad(140,140)\p1\1c&HA8B710&}m 0 0 l 5 0 5 100 0 100
+Dialogue: 3,0:11:10.33,0:11:12.43,Default,,0,0,0,,{\an7\pos(1558,812)\fad(140,140)\fs28\1c&HFFFFFF&\p0}5 · Iniciar\Nbenchmark
+Dialogue: 1,0:11:10.33,0:11:12.43,Default,,0,0,0,,{\an7\pos(1260,896)\fad(140,140)\p1\1a&HFF&\3a&H00&\3c&HA8B710&\bord3}m 0 0 l 238 0 238 73 0 73 0 0
+Dialogue: 2,0:11:10.33,0:11:12.43,Default,,0,0,0,,{\an7\pos(0,0)\fad(140,140)\p1\1c&HA8B710&}m 1537.8 848.8 l 1503.8 912.8 l 1498.0 909.8 l 1498.0 929.0 l 1513.9 918.2 l 1508.2 915.2 l 1542.2 851.2
+Dialogue: 1,0:11:18.93,0:11:26.33,Default,,0,0,0,,{\an7\pos(35,575)\fad(140,140)\p1\1c&H332015&\1a&H08&}m 0 0 l 315 0 315 100 0 100
+Dialogue: 2,0:11:18.93,0:11:26.33,Default,,0,0,0,,{\an7\pos(35,575)\fad(140,140)\p1\1c&HA8B710&}m 0 0 l 5 0 5 100 0 100
+Dialogue: 3,0:11:18.93,0:11:26.33,Default,,0,0,0,,{\an7\pos(53,587)\fad(140,140)\fs28\1c&HFFFFFF&\p0}6 · Resumo\NÚltima execução
+Dialogue: 1,0:11:18.93,0:11:26.33,Default,,0,0,0,,{\an7\pos(405,442)\fad(140,140)\p1\1a&HFF&\3a&H00&\3c&HA8B710&\bord3}m 0 0 l 1090 0 1090 307 0 307 0 0
+Dialogue: 2,0:11:18.93,0:11:26.33,Default,,0,0,0,,{\an7\pos(0,0)\fad(140,140)\p1\1c&HA8B710&}m 350.0 627.5 l 388.0 627.5 l 388.0 634.0 l 405.0 625.0 l 388.0 616.0 l 388.0 622.5 l 350.0 622.5

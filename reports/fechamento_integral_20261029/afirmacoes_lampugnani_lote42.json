@@ -1,0 +1,170 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "4cf48044445c0760210b1206c185487b8406af3eaecb541de6db381cdbf735b0",
+  "n_registros_fonte": 24,
+  "min_mae": {
+    "tabela_docx": 12,
+    "linha": 1,
+    "Win": "Cauchy",
+    "W": "Normal",
+    "RMSE": "0.568769",
+    "MAE": "0.378706"
+  },
+  "min_rmse": {
+    "tabela_docx": 12,
+    "linha": 6,
+    "Win": "Cauchy",
+    "W": "Uniforme",
+    "RMSE": "0.568178",
+    "MAE": "0.379632"
+  },
+  "registros": [
+    {
+      "ancora": "P_atual0226",
+      "texto_atual": "A GED é parametrizada por um coeficiente de forma ν: para ν = 2, recupera-se a distribuição Normal; para ν = 1, a Laplace; para valores ν < 2, as caudas tornam-se mais pesadas que as da Normal, captando com maior flexibilidade eventos extremos típicos dos mercados financeiros. Lampugnani (2026), em versão de Trabalho Final de Curso disponibilizada ao autor, apresentou resultados competitivos com distribuições alternativas na predição de preços da PETR4. O trabalho foi utilizado como referência acadêmica correlata e como elemento complementar de comparação dos resultados.",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "P 397, 402, 435; tabelas DOCX 9–12",
+      "evidencia": "Fonte estuda distribuições para Win/W e GA em PETR4; comparação genérica não afirma identidade de protocolo.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0242",
+      "texto_atual": "Entre os artigos do portfólio formal, foi identificado um subconjunto diretamente relacionado a ESNs, otimização, inicialização probabilística e aplicações financeiras; adicionalmente, a monografia de Lampugnani (2026) é considerada separadamente como referência acadêmica correlata.",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "P 397, 402; matriz de 34 obras",
+      "evidencia": "Fonte é monografia correlata e não integra a matriz reconstruída; é decisão de organização do portfólio, não atributo extraído do título.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0246",
+      "texto_atual": "Como referência acadêmica correlata, Lampugnani (2026) investigou diferentes distribuições probabilísticas aplicadas aos pesos de uma ESN na previsão da PETR4. Por se tratar de monografia e não de artigo do portfólio formal, o estudo foi considerado separadamente na revisão e utilizado também na comparação descritiva apresentada nos resultados.",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "P 397, 402, 435 e tabelas DOCX 9–12",
+      "evidencia": "Tema, GA, distribuições e aplicação à PETR4 são confirmados; utilização separada é decisão metodológica do trabalho.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0260",
+      "texto_atual": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG.",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "P 397, 435 e 459–460",
+      "evidencia": "Distribuições e AG aparecem na monografia anterior; demais atribuições a Araújo e Cardoso requerem suas próprias evidências.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0264",
+      "texto_atual": "Lampugnani (2026) é discutido separadamente e não integra os 34 documentos da matriz. As dimensões são: P1 lei probabilística ligada à geração de Win ou W; P2 procedimento de seleção de hiperparâmetros de ESN/RC; P3 preparação concreta de séries temporais, incluindo transformações e construção de atributos ou janelas; P4 comparação quantitativa de previsão com LSTM, GRU ou Transformer; e P5 mercado e ativo identificados. A codificação distingue aplicações próprias de tratamentos secundários e registra informação insuficiente, sem pressupor que todos os temas sejam aplicáveis a cada fonte.",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "Matriz de 34 obras; fonte DOCX",
+      "evidencia": "A referência é excluída do corpus da matriz por decisão documentada; definição dos critérios da matriz é própria do estudo atual.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0450",
+      "texto_atual": "Os resultados foram contextualizados pela monografia de Lampugnani (2026), que investigou ESNs com Algoritmo Genético na PETR4 e apresentou erros de teste para diferentes combinações de distribuições. A Tabela 7 reúne os menores erros documentados em cada trabalho. Trata-se de comparação entre estudos, sem execução de ambos sob um protocolo comum.",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "P 397, 402, 435; tabelas DOCX 9–12",
+      "evidencia": "ESN, AG, PETR4 e erros de teste estão documentados; confronto é entre estudos sem execução conjunta.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0452",
+      "texto_atual": "Tabela 7 – Comparação descritiva com Lampugnani (2026)",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "Tabela DOCX 12 do trabalho atual",
+      "evidencia": "Título identifica uma comparação descritiva e é acompanhado pela fonte e resultados.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0453",
+      "texto_atual": "Fonte: Elaborado pelo autor (2026), com base nas tabelas de resultados de Lampugnani (2026) e nos resultados desta pesquisa. Os mínimos de MAE e RMSE podem corresponder a configurações distintas.",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "Tabelas DOCX 9–12 da fonte e tabela 12 do trabalho atual",
+      "evidencia": "Fonte da tabela identifica o outro trabalho; mínimos de MAE e RMSE são efetivamente de combinações distintas.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0454",
+      "texto_atual": "Os menores MAE e RMSE documentados nesta pesquisa são numericamente inferiores aos mínimos apresentados por Lampugnani (2026). Essa comparação descritiva não demonstra superioridade sob condições equivalentes: não foi executado um contraste conjunto com os mesmos dados de entrada, pesos, sementes e orçamento de otimização. As diferenças entre os estudos não identificam o efeito de um componente isolado.",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "Tabelas DOCX 9–12; relatório das quatro ondas do projeto",
+      "evidencia": "Mínimos da fonte são 0,378706 e 0,568178, versus 0,327224 e 0,495386 nos registros consolidados. A diferença não identifica um efeito causal.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0455",
+      "texto_atual": "Lampugnani (2026) declara não realizar tratamento adicional dos dados. Essa declaração não comprova que os valores recebidos fossem desprovidos de ajuste corporativo. Nesta pesquisa, os modelos também receberam arquivos identificados como previamente ajustados. Sem a cadeia de preparação de ambas as séries e uma comparação controlada, não se atribui a diferença de erro ao Fator de Ajuste, ao LHS ou ao mecanismo cataclísmico.",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "P 408 da fonte",
+      "evidencia": "A fonte declara ausência de tratamento adicional; isso não determina se houve ajuste anterior ao recebimento.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0470",
+      "texto_atual": "Entre as configurações avaliadas, Laplace × Normal apresentou o menor MAE, enquanto Laplace × Cauchy apresentou o menor RMSE e o maior R². Na maior parte das execuções documentadas, as ESNs obtiveram MAE menor que os baselines LSTM e GRU definidos no protocolo. A comparação documental com Lampugnani (2026) contextualizou os erros, sem transformar protocolos distintos em um experimento comum.",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "Tabelas DOCX 9–12 da fonte",
+      "evidencia": "A menção à comparação é descritiva; melhores próprios e baselines dependem de evidências do projeto examinadas separadamente.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0489",
+      "texto_atual": "Os quatro testes de Diebold-Mariano rejeitaram a hipótese de igualdade de acurácia preditiva a 5%, sempre com menor perda média para a ESN na rodada controlada. Essa inferência não se estende aos resultados históricos de outras sementes. A comparação com Lampugnani (2026) permaneceu descritiva, sem tratar protocolos distintos como equivalentes.",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "Tabelas DOCX 9–12 da fonte",
+      "evidencia": "O vínculo a Lampugnani indica comparação descritiva; o teste DM é dependente de evidências separadas da rodada controlada.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0498",
+      "texto_atual": "Fonte: Elaborado pelo autor (2026), com base em Jaeger (2001, 2007), Araújo et al. (2025), Cardoso (2025), Lampugnani (2026) e nos artefatos examinados.",
+      "referencia": "R30",
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "P 397, 435 e 459–460; Quadro 6",
+      "evidencia": "A contribuição de ESN, AG e distribuições é antecedida pelo trabalho correlato; demais atribuições do quadro dependem de fontes próprias.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "T_atual12/L1",
+      "referencia": "R30",
+      "texto_atual": [
+        "Lampugnani (2026)",
+        "0,378706\n(Cauchy × Normal)",
+        "0,568178\n(Cauchy × Uniforme)",
+        "ESN com Algoritmo Genético; distribuições alternativas; declaração de ausência de tratamento adicional dos dados."
+      ],
+      "fonte": "MatheusTeixeiraLampugnani_monografia (1).docx",
+      "sha256_fonte": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+      "localizador": "Tabelas 9–12 do DOCX da fonte",
+      "evidencia": "24 linhas conferidas diretamente; mínimos e combinações indicados nesta linha conferem; tratamento declarado não prova estado inicial dos dados.",
+      "diagnostico": "condizente no ponto delimitado"
+    }
+  ],
+  "limite": "Não certifica equivalência dos protocolos nem sustenta automaticamente as demais fontes ou números no mesmo parágrafo."
+}

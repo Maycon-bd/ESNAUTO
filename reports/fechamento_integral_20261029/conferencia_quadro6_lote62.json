@@ -1,0 +1,70 @@
+{
+  "sha256_rascunho": "55316818b048fba182e12b842a87f4afa519524447481e6db2d1919923067521",
+  "local": "Quadro 6; tabela OOXML índice 13",
+  "fonte_declarada": "parágrafo 498",
+  "registros": [
+    {
+      "celulas": [
+        "Fundamentos da ESN",
+        "Jaeger (2001, 2007)",
+        "Reservatório fixo e ajuste da saída são fundamentos anteriores, não algoritmos originais deste trabalho."
+      ],
+      "evidencias": [
+        "afirmacoes_fundamentos_lote36.json"
+      ],
+      "parecer": "Fundamentos de reservatório e saída treinável são atribuídos a Jaeger; qualificativo fixo refere-se ao ajuste, não a uma propriedade universal de todas as redes de reservatório.",
+      "resultado": "condizente no escopo descrito, com limites registrados"
+    },
+    {
+      "celulas": [
+        "ESN, AG e distribuições",
+        "Araújo et al. (2025); Cardoso (2025); Lampugnani (2026)",
+        "O protocolo combina elementos já investigados. A aplicação à PETR4 não demonstra novidade de cada técnica."
+      ],
+      "evidencias": [
+        "afirmacoes_antecedentes_lote37.json",
+        "afirmacoes_cardoso_lote43.json",
+        "afirmacoes_lampugnani_lote42.json"
+      ],
+      "parecer": "As obras indicam antecedentes; Cardoso trata também de variância, Araújo de ITSA4 e Lampugnani de PETR4, sem pressupor protocolos idênticos.",
+      "resultado": "condizente no escopo descrito, com limites registrados"
+    },
+    {
+      "celulas": [
+        "LHS e antiestagnação",
+        "Implementação do ESNAUTO; Seção 3.4",
+        "Integração no motor genético, sem constituir CHC completo nem demonstrar ganho de diversidade por ablação."
+      ],
+      "evidencias": [
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "parecer": "Atribuição corresponde ao motor atual; não comprova cada configuração histórica nem efeito causal sem ablação.",
+      "resultado": "condizente no escopo descrito, com limites registrados"
+    },
+    {
+      "celulas": [
+        "Organização e auditoria",
+        "Artefatos do protocolo; Seção 3.8",
+        "Infraestrutura experimental e preservação complementar documentadas; as 45 execuções históricas têm preservação incompleta."
+      ],
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_motor_historico_lote27.json"
+      ],
+      "parecer": "Registros documentam execução controlada e lacunas históricas; preservação complementar não reconstrói os resultados históricos.",
+      "resultado": "condizente no escopo descrito, com limites registrados"
+    },
+    {
+      "celulas": [
+        "Dados e código legado",
+        "Dados e códigos em R fornecidos pelo orientador",
+        "Série recebida já ajustada. O autor adaptou as rotinas à pesquisa e desenvolveu a interface; a transformação original dos preços não foi reconstruída nesta auditoria."
+      ],
+      "evidencias": [],
+      "parecer": "Procedência e contribuição relatadas diretamente pelo autor nesta conversa: dados ajustados e códigos em R recebidos do orientador; adaptação e interface pelo autor. Procedimento de ajuste não foi identificado.",
+      "resultado": "condizente no escopo descrito, com limites registrados"
+    }
+  ],
+  "limites": "Confronto de atribuições por linha; não certifica autoria de cada linha do código nem valida todas as métricas históricas. A identificação do motor atual não é prova da versão exata de cada execução.",
+  "acao": "Nenhuma correção necessária nestas linhas."
+}

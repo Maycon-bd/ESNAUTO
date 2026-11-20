@@ -1,0 +1,30 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\User\Documents\PROJETOS SOFTWARE\ESNAUTO\output\video-edicao\exportados\ESNAUTO_apresentacao_25min_v001.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    title           : ESNAUTO - Apresentação do TFC - edição v001
+    encoder         : Lavf63.1.102
+  Duration: 00:24:50.23, start: 0.000000, bitrate: 3105 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 2904 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.102 h264_nvenc
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Output #0, wav, to 'C:\Users\User\Documents\PROJETOS SOFTWARE\ESNAUTO\output\video-edicao\analise_audio_v002\audio_v001.wav':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    INAM            : ESNAUTO - Apresentação do TFC - edição v001
+    ISFT            : Lavf63.1.102
+  Stream #0:0(und): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s (default)
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+      handler_name    : SoundHandler
+[out#0/wav @ 000001af0ed2e5c0] video:0KiB audio:279417KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000047%
+size=  279417KiB time=00:24:50.22 bitrate=1536.0kbits/s speed= 515x elapsed=0:00:02.89    

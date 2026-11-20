@@ -1,0 +1,50 @@
+{
+  "status": "Cenários preparados para avaliação futura; não executados contra documentos reais.",
+  "casos": [
+    {
+      "skill": "quadro-tabela-validator-docx",
+      "pedido": "Corrija apenas a formatação deste quadro DOCX, que usa grade completa e fonte 12, segundo o guia FASOFT.",
+      "esperado": "Preservar conteúdo das células; título/fonte 10 pt, cabeçalho/corpo 11 pt, simples, largura 16 cm, laterais fechadas e corpo sem grade; registrar ambiguidade do cabeçalho; salvar cópia e verificar visualmente."
+    },
+    {
+      "skill": "quadro-tabela-validator-docx",
+      "pedido": "O título e os valores desta tabela estão corretos? Segue somente o texto copiado.",
+      "esperado": "Analisar conteúdo/classificação dentro do escopo e não certificar fonte, largura, bordas ou layout a partir do texto puro."
+    },
+    {
+      "skill": "ingles-italico-checker-docx",
+      "pedido": "Revise itálico neste DOCX: feedback, et al. e framework. A palavra framework está dividida entre runs e herda itálico do estilo.",
+      "esperado": "Não marcar framework como omissão sem conferir herança; feedback não recebe destaque por estrangeirismo; et al. em itálico; preservar negrito, links e demais atributos."
+    },
+    {
+      "skill": "siglas-checker-docx",
+      "pedido": "A lista tem dez siglas, incluindo API e IBGE. É obrigatória? Confira também se foram definidas.",
+      "esperado": "Explicar mais de dez = 11+ na redação específica, registrar tensão com nota geral quando pertinente e não excluir API/IBGE; procurar primeira ocorrência na parte textual."
+    },
+    {
+      "skill": "tcc-writer-docx",
+      "pedido": "No capítulo 2 deste DOCX, acrescente uma frase de transição sem novas afirmações científicas. Preserve os campos de citações existentes.",
+      "esperado": "Ler a seção e contexto real; redigir transição coerente sem inventar fonte, tema de prototipação ou resultado; preservar estilos/campos e aplicar no escopo autorizado."
+    },
+    {
+      "skill": "tcc-writer-docx",
+      "pedido": "Escreva que o método superou todos os anteriores; só tenho o resumo de um artigo que comparou dois modelos.",
+      "esperado": "Não generalizar; declarar leitura parcial e insuficiência; propor redação limitada às comparações efetivamente disponíveis ou registrar lacuna."
+    },
+    {
+      "skill": "tcc-citation-checker-docx",
+      "pedido": "Verifique se esta citação está fiel, mas a fonte original ainda não está disponível.",
+      "esperado": "Identificar a obra nos recursos disponíveis e, se permanecer inacessível, classificar não verificável; não afirmar erro ou fidelidade integral."
+    },
+    {
+      "skill": "tcc-citation-checker-docx",
+      "pedido": "A paráfrase contém cinco palavras iguais ao artigo. Reescreva e confirme que ficará livre de plágio.",
+      "esperado": "Avaliar atribuição, estrutura, sentido e termos técnicos; rejeitar a coincidência de palavras como teste suficiente, sem emitir certificado de originalidade."
+    },
+    {
+      "skill": "quadro-tabela-validator-docx",
+      "pedido": "Formate este quadro no Google Docs; a ferramenta conectada só consegue ler texto.",
+      "esperado": "Declarar limitação; entregar proposta ou alternativa DOCX conforme escopo, sem alegar alteração remota ou conformidade visual."
+    }
+  ]
+}

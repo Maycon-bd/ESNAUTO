@@ -1,0 +1,95 @@
+{
+  "base": {
+    "id": "v007",
+    "anterior": "v006",
+    "arquivo": "reports/monografia/versoes/v007/MayconGarciaSilva_monografia_v007.docx",
+    "sha256": "983c46424ad039472bb12071540d392d73eb29cb08a07e0bc784e0ede008ff1c",
+    "registrada_em_utc": "2026-10-31T01:14:09.348897+00:00",
+    "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revisao_linguistica_v006.docx",
+    "responsavel": "Codex, revisao linguistica solicitada por Maycon Garcia Silva",
+    "resumo": "Conclui leitura de portugues e ingles e incorpora nove ajustes de concordancia, ortografia, comparacoes e pontuacao. Atualiza titulo no sumario. Preserva numeros, imagens, atribuicoes e limites da auditoria v006.",
+    "estado_editorial": "conferida",
+    "validacao_declarada": "76 paginas; 45 verificacoes finais aprovadas; nove paginas alteradas inspecionadas e 67 identicas a v006; numeros e imagens preservados; 50 referencias e157chamadas automaticas sem orfas. Ingles do abstract lido integralmente, sem erro gramatical inequivoco identificado.",
+    "evidencias": [
+      {
+        "arquivo": "reports/revisao_linguistica_v006/relatorio.md",
+        "sha256": "26a79b70f55a55950e95064216c0d73293760a0944eac6436e647530c1529127"
+      },
+      {
+        "arquivo": "reports/revisao_linguistica_v006/estado_revisao.json",
+        "sha256": "d9b4c2e6108b97c5ce946348f1a269cb964312834799852ec7dfc79e471885bb"
+      },
+      {
+        "arquivo": "reports/revisao_linguistica_v006/leitura_linguistica_parte1.json",
+        "sha256": "cafa7e2bdebcc2087d41b9dc16e09fbe36b8c8d26f4242f32fb30d9fd11e0271"
+      },
+      {
+        "arquivo": "reports/revisao_linguistica_v006/leitura_linguistica_parte2.json",
+        "sha256": "44712815671f75e8888ff3f6b42c61791546a9c9d9419698e707ac3127b18e32"
+      },
+      {
+        "arquivo": "reports/revisao_linguistica_v006/verificacao_final.json",
+        "sha256": "688030e9c85ffba0aa70c24137bcc85c7f5f01bb2f28b4b15f55f09dc8b46498"
+      },
+      {
+        "arquivo": "reports/revisao_linguistica_v006/revisao_final.pdf",
+        "sha256": "2ea9a334f061be016f94a32495f3192689aa9d970af09e21748231e114db7d1d"
+      },
+      {
+        "arquivo": "reports/correcao_parecer_integridade/cruzamento_revisao_linguistica_v006.json",
+        "sha256": "f1fd77664cb803d4e1785cfe5a3672cd43d5a69b969094114447f70266b5dbe7"
+      }
+    ],
+    "pendencias": [
+      "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+      "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+      "Limitacao bibliografica preservada: buscas complementares, registros de selecao parciais e41marcacoes de informacao insuficiente; sem alegacao de revisao sistematica integral.",
+      "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+      "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Correcao de portugues devera ser incorporada em nova versao."
+    ]
+  },
+  "sha256_conferido": "0daacd3ea1753bca97619df025923b92a44a047b5c1252a4677f802dfe870dad",
+  "paragrafos_corpo": 551,
+  "paragrafos_com_celulas": 1035,
+  "quadros_tabelas": 13,
+  "referencias": 50,
+  "siglas_listadas": 50,
+  "candidatos_italico": 138,
+  "partes_zip": [
+    "[Content_Types].xml",
+    "_rels/.rels",
+    "word/document.xml",
+    "word/_rels/document.xml.rels",
+    "word/footnotes.xml",
+    "word/endnotes.xml",
+    "word/header1.xml",
+    "word/header2.xml",
+    "word/header3.xml",
+    "word/header4.xml",
+    "word/header5.xml",
+    "word/header6.xml",
+    "word/header7.xml",
+    "word/header8.xml",
+    "word/header9.xml",
+    "word/header10.xml",
+    "word/header11.xml",
+    "word/media/image1.png",
+    "word/media/image2.png",
+    "word/media/image3.png",
+    "word/media/image4.png",
+    "word/media/image5.png",
+    "word/media/image6.png",
+    "word/theme/theme1.xml",
+    "word/settings.xml",
+    "word/numbering.xml",
+    "word/styles.xml",
+    "word/webSettings.xml",
+    "word/fontTable.xml",
+    "docProps/core.xml",
+    "docProps/app.xml"
+  ],
+  "notas_rodape": 0,
+  "notas_fim": 0,
+  "caixas_texto": 0,
+  "revisoes": 0
+}

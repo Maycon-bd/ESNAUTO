@@ -1,0 +1,154 @@
+{
+  "sha256_docx": "daad3895feb384d743bd4461f9a0ba228ed4634d2cdeaf30fb571ade82e10c19",
+  "triagem_atual": "reports\\correcao_parecer_integridade\\triagem_lote167\\triagem.json",
+  "fontes_corpus": 39,
+  "blocos": [
+    {
+      "id": "B001",
+      "alvo": "P_atual0194",
+      "secao": "REDES NEURAIS RECORRENTES: LSTM E GRU",
+      "texto_alvo": "As redes Long Short-Term Memory (LSTM) foram introduzidas por Hochreiter e Schmidhuber (1997) para facilitar a aprendizagem de dependências longas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinicialização, hoje conhecida como Gated Recurrent Unit (GRU), no contexto de uma arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador. A simplificação estrutural dessa unidade não constitui, por si, uma garantia de menor erro em séries financeiras.",
+      "fonte": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\bibliometria_reconstrucao\\referencias_graficas\\ENMC_texto.txt",
+      "localizador_fonte": "PÁGINA PDF 2",
+      "inicio_token": 56,
+      "fim_token_exclusivo": 64,
+      "trecho_normalizado": "de rede neural recorrente recurrent neural network rnn",
+      "estado": "conferido_em_contexto",
+      "decisao": "Denominação técnica convencional com atribuição no contexto; não constitui bloco extenso de prosa reproduzida e não motiva correção."
+    },
+    {
+      "id": "B002",
+      "alvo": "P_atual0228",
+      "secao": "DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO",
+      "texto_alvo": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do índice Dow Jones Industrial Average (DJIA) entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade.",
+      "fonte": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\tese_Fabian_Correa_Cardoso.pdf",
+      "localizador_fonte": "PÁGINA PDF 38",
+      "inicio_token": 45,
+      "fim_token_exclusivo": 53,
+      "trecho_normalizado": "de informacao de akaike akaike information criterion aic",
+      "estado": "conferido_em_contexto",
+      "decisao": "Denominação técnica convencional com atribuição no contexto; não constitui bloco extenso de prosa reproduzida e não motiva correção."
+    }
+  ],
+  "lampugnani": {
+    "alvo_sha256": "daad3895feb384d743bd4461f9a0ba228ed4634d2cdeaf30fb571ade82e10c19",
+    "fonte": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\MatheusTeixeiraLampugnani_monografia (1).docx",
+    "fonte_sha256": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+    "n_paragrafos_alvo": 259,
+    "n_paragrafos_fonte": 151,
+    "n_pares_examinados": 39109,
+    "limiar": 0.4,
+    "metodo": "SequenceMatcher em tokens normalizados, autojunk=False; corpo entre Introdução e Referências, parágrafos15+ palavras. Os filtros quick_ratio são limites superiores.",
+    "limite": "Heurística de triagem, não escore de originalidade ou detector semântico.",
+    "pares": []
+  },
+  "cardoso_pares_conciliados": [
+    {
+      "par": 1,
+      "alvo": "P_atual0484",
+      "pagina_pdf_tese": 7,
+      "sha256_texto_alvo": "553ceca43e2897809ba1cefb2c2bb6314e9a0c4730ccafb859d26baa52c53859",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Objetivo/conclusão local e trecho da tese compartilham denominação convencional Redes Neurais de Estados de Eco e tema previsão. A afirmação local se refere ao objetivo próprio; não reproduz o argumento da tese sobre ausência de treinamento, que seria tecnicamente amplo demais.",
+      "indices_atuais": [
+        486
+      ],
+      "equivalencia": "texto exatamente idêntico ao contexto anteriormente julgado"
+    },
+    {
+      "par": 2,
+      "alvo": "P_atual0484",
+      "pagina_pdf_tese": 7,
+      "sha256_texto_alvo": "553ceca43e2897809ba1cefb2c2bb6314e9a0c4730ccafb859d26baa52c53859",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Objetivo/conclusão local e trecho da tese compartilham denominação convencional Redes Neurais de Estados de Eco e tema previsão. A afirmação local se refere ao objetivo próprio; não reproduz o argumento da tese sobre ausência de treinamento, que seria tecnicamente amplo demais.",
+      "indices_atuais": [
+        486
+      ],
+      "equivalencia": "texto exatamente idêntico ao contexto anteriormente julgado"
+    },
+    {
+      "par": 3,
+      "alvo": "P_atual0484",
+      "pagina_pdf_tese": 5,
+      "sha256_texto_alvo": "553ceca43e2897809ba1cefb2c2bb6314e9a0c4730ccafb859d26baa52c53859",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Objetivo/conclusão local e trecho da tese compartilham denominação convencional Redes Neurais de Estados de Eco e tema previsão. A afirmação local se refere ao objetivo próprio; não reproduz o argumento da tese sobre ausência de treinamento, que seria tecnicamente amplo demais.",
+      "indices_atuais": [
+        486
+      ],
+      "equivalencia": "texto exatamente idêntico ao contexto anteriormente julgado"
+    },
+    {
+      "par": 4,
+      "alvo": "P_atual0484",
+      "pagina_pdf_tese": 7,
+      "sha256_texto_alvo": "553ceca43e2897809ba1cefb2c2bb6314e9a0c4730ccafb859d26baa52c53859",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Objetivo/conclusão local e trecho da tese compartilham denominação convencional Redes Neurais de Estados de Eco e tema previsão. A afirmação local se refere ao objetivo próprio; não reproduz o argumento da tese sobre ausência de treinamento, que seria tecnicamente amplo demais.",
+      "indices_atuais": [
+        486
+      ],
+      "equivalencia": "texto exatamente idêntico ao contexto anteriormente julgado"
+    },
+    {
+      "par": 5,
+      "alvo": "P_atual0484",
+      "pagina_pdf_tese": 7,
+      "sha256_texto_alvo": "553ceca43e2897809ba1cefb2c2bb6314e9a0c4730ccafb859d26baa52c53859",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Objetivo/conclusão local e trecho da tese compartilham denominação convencional Redes Neurais de Estados de Eco e tema previsão. A afirmação local se refere ao objetivo próprio; não reproduz o argumento da tese sobre ausência de treinamento, que seria tecnicamente amplo demais.",
+      "indices_atuais": [
+        486
+      ],
+      "equivalencia": "texto exatamente idêntico ao contexto anteriormente julgado"
+    },
+    {
+      "par": 6,
+      "alvo": "P_atual0484",
+      "pagina_pdf_tese": 7,
+      "sha256_texto_alvo": "553ceca43e2897809ba1cefb2c2bb6314e9a0c4730ccafb859d26baa52c53859",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Objetivo/conclusão local e trecho da tese compartilham denominação convencional Redes Neurais de Estados de Eco e tema previsão. A afirmação local se refere ao objetivo próprio; não reproduz o argumento da tese sobre ausência de treinamento, que seria tecnicamente amplo demais.",
+      "indices_atuais": [
+        486
+      ],
+      "equivalencia": "texto exatamente idêntico ao contexto anteriormente julgado"
+    },
+    {
+      "par": 7,
+      "alvo": "P_atual0311",
+      "pagina_pdf_tese": 60,
+      "sha256_texto_alvo": "1b1a79689802f29bce5c079a032189a2ef995d35ebd2d3a48a3422ec29485b52",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Nota de procedência da tabela local compartilha a chamada Cardoso et al.(2022b). Não há passagem autoral extensa compartilhada; a nota identifica expressamente a série recebida já ajustada e delimita a fonte como contexto do fator.",
+      "indices_atuais": [
+        313
+      ],
+      "equivalencia": "texto exatamente idêntico ao contexto anteriormente julgado"
+    },
+    {
+      "par": 8,
+      "alvo": "P_atual0206",
+      "pagina_pdf_tese": 59,
+      "sha256_texto_alvo": "10905b0a86b62c6ddaa69a03092cf6f0bd5bd46fc8b27ac9d190ebec854a59b9",
+      "decisao": "Sem correção por reprodução textual identificada neste par.",
+      "fundamento": "Ambos resumem Ribeiro2021, expressamente citado na monografia. Correspondência se concentra em nomes de métodos, horizontes e tarefa comuns à fonte original; a conferência de Ribeiro já realizada sustenta esses fatos. Não se atribuem à própria pesquisa resultados alheios.",
+      "indices_atuais": [
+        208
+      ],
+      "equivalencia": "texto exatamente idêntico ao contexto anteriormente julgado"
+    }
+  ],
+  "holland_complemento": {
+    "tokens_extraidos": 82737,
+    "coincidencias_oito_palavras": []
+  },
+  "correcao_de_alcance_lote122": "RBras é PDFimagem10páginas e sua extração contém0caracteres. Zero coincidências dessa extração não é resultado informativo de similaridade. Não o contar como fonte efetivamente indexada. Conteúdo relevante foi lido visualmente no lote5; atribuições164e originalRBras são evidências semânticas distintas. Preservar relatório122como histórico e esta ressalva como vigente.",
+  "limites": [
+    "Sem certificado de ausência universal de plágio,percentual de originalidade ou perícia integral da autoria do código.",
+    "Corpus não cobre todas as páginas eletrônicas,documentos privados,traduções ou paráfrases que escapam aos filtros. Nelson eRBras não são indexáveis por texto nesta análise.",
+    "Procedência dos códigosRatribuída ao orientador; adaptação e interface ao autor, conforme declaração e texto atual."
+  ],
+  "conclusao": "Nenhuma nova correção textual motivada pelos candidatos examinados; limitações de alcance explicitadas, incluindo o resultado não informativo deRBras no lote122."
+}

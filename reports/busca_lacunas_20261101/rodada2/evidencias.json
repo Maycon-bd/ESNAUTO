@@ -1,0 +1,690 @@
+{
+  "base": "v010",
+  "sha256_base": "1da5ea82344c177d75af723362017e3e558bbb127bd9995f7ec0cbd6964f81ed",
+  "word_alterado": false,
+  "insuficiencias_na_vigente": 38,
+  "busca_integral_concluida": false,
+  "celulas_com_escopo_ampliado_nesta_rodada": 21,
+  "leitura_textual_integral_nova": [
+    "D15: 9 páginas",
+    "D21: 2 páginas",
+    "D22: 11 páginas",
+    "D26: 12 páginas"
+  ],
+  "leituras": [
+    {
+      "id": "D15",
+      "dimensoes": [
+        "P4"
+      ],
+      "alcance": "Nova leitura do texto das nove páginas da versão local Scholarpedia, revisão 196567, inclusive referências e identificação da revisão.",
+      "achado": "O exemplo é um gerador de frequência, e as afirmações de desempenho são qualitativas. Não apresenta tabela nem números de contraste com LSTM/GRU/Transformer. A referência Evolino (2007) é listada, mas seus números não são reproduzidos aqui. Não transferir para Jaeger a comparação localizada em Millea.",
+      "decisao": "Mantido ?. Nenhuma evidência numérica qualificadora no texto integral consultado. O suplemento do gerador já foi lido na rodada anterior."
+    },
+    {
+      "id": "D22",
+      "dimensoes": [
+        "P1",
+        "P4"
+      ],
+      "alcance": "Nova leitura do texto das 11 páginas, inclusive método, tabelas 1–5, conclusões e referências.",
+      "achado": "P1: pesos descritos como aleatórios/fixos; matriz de conectividade, tanh e ajuste de escala não individualizam lei dos elementos de Win/W. P4: LSTM aparece na revisão e nas referências 8/32, mas tabelas 2–5 comparam Lorenz e variantes ESN, sem arquitetura qualificadora. As tabelas 4 e 5 das páginas posteriores também foram verificadas no texto.",
+      "decisao": "Dois ? mantidos. Não apresentar resultados de obras citadas como se fossem números comparativos deste artigo."
+    },
+    {
+      "id": "D16",
+      "dimensoes": [
+        "P1"
+      ],
+      "alcance": "PDF 11–14; célula 11 do código público já arquivada; fontes oficiais de ReservoirPy em 19 etiquetas de lançamento/pré-lançamento até novembro de 2024.",
+      "achado": "O notebook importa Reservoir de reservoirpy.nodes e não passa W/Win locais ao construtor. As 19 assinaturas conferidas usam W normal e Win Bernoulli simétrica (nomes antigos generate_internal_weights/generate_input_weights na série 0.3.0). Os respectivos geradores foram arquivados por etiqueta. Isso recupera o comportamento das versões públicas consultadas, mas não fixa o ambiente efetivamente usado por Kumar.",
+      "decisao": "Mantido ?. A inferência sobre os padrões públicos da biblioteca deve ficar identificada como condicional. Não atribuir distribuição uniforme ao modelo nem certificar a versão da execução. Próxima análise: distinguir documentação do exemplo público de prova da configuração histórica, conforme o protocolo já adotado."
+    },
+    {
+      "id": "D26",
+      "dimensoes": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "alcance": "Nova leitura do texto das 12 páginas, incluindo referências. Fluxograma da Figura 2 (PDF 4, impressa 512) e configuração da página 6 (impressa 514) conferidos visualmente.",
+      "achado": "P1: pesos descritos como aleatórios, sem família. P2: fixados 500 neurônios, raio 0.999 e esparsidade 0.02, sem procedimento de seleção. P3: coleta/limpeza aparece no fluxo, mas não há operação especificada; seleção do fechamento e partições não demonstram limpeza ou transformação. O fluxograma visível não contém operação adicional oculta na extração.",
+      "decisao": "Três ? mantidos após ampliar a conferência para todo o texto local. Não inventar operação a partir de diferenças numéricas entre tabelas."
+    },
+    {
+      "id": "D21",
+      "dimensoes": [
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "alcance": "Nova leitura integral do texto das duas páginas, inclusive dez referências.",
+      "achado": "Comunicação conceitual, sem dados identificados, preparação aplicada ou comparação numérica qualificadora. Os estudos listados nas referências são obras distintas; seus resultados não são resultados apresentados nesta comunicação.",
+      "decisao": "Três ? mantidos. Não há uma experiência incompleta do TCC a realizar para preencher estas células; faltam informações na obra examinada."
+    },
+    {
+      "id": "D30",
+      "dimensoes": [
+        "P4"
+      ],
+      "alcance": "PDF local 1, 2, 17 e 25; tabelas 3/4 da página 17 conferidas visualmente; HTML da editora. Fonte de apoio Pagliaro (2025): seção 6.1.4, PDF/impressa 13, e referências da página 46; busca textual nas 48 páginas para 72/90 seguidos de percentual.",
+      "achado": "As tabelas 3 e 4 listam métricas e vantagens, sem resultados numéricos comparáveis. A referência 10 de Vishwas é Pagliaro; a menção a Hong como [10] no corpo é inconsistente com sua própria lista. Pagliaro atribui 72% a Google/horizonte de cinco dias e discute CNN em outra obra; não foi localizado 90% pela busca textual. Essa leitura não comprova contraste comum 72% versus 90%. Não é leitura integral nova de Pagliaro.",
+      "decisao": "Mantido ?. Retificar o localizador anterior: não existe uma Tabela 17 nesse ponto; são tabelas 3 e 4 na página 17. Preservar o relatório histórico e registrar esta retificação no novo relatório."
+    },
+    {
+      "id": "D19",
+      "dimensoes": [
+        "P3",
+        "P5"
+      ],
+      "alcance": "Páginas 1–6, 48–49 e passagens de 64–80; busca dirigida por normalização, reescala, Forex, moedas e negociação no texto. PDF oficial de Groningen consultado, com 90 páginas, correspondente à estrutura local.",
+      "achado": "As alterações de feedback/matriz e o ruído de estado não são preparação da série. O resumo menciona Forex, mas o texto examinado e o sumário não identificam par de moedas/ativo de uma análise financeira. Um artigo posterior do mesmo autor, sobre Forex, é outra obra e não preenche automaticamente o campo da dissertação.",
+      "decisao": "Dois ? mantidos no escopo lido. Não declarar leitura integral das 90 páginas; persistem alternativas documentais a conferir."
+    },
+    {
+      "id": "D02",
+      "dimensoes": [
+        "P1",
+        "P4"
+      ],
+      "alcance": "Páginas 1–9 da prova local; busca externa por título/código.",
+      "achado": "A descrição das cinco famílias e dos hiperparâmetros não individualiza sua geração em Win/W. A busca não forneceu um código do estudo com procedência demonstrada. Os scripts locais do TCC recebidos do orientador não têm ligação documental estabelecida com as execuções do artigo de Araújo.",
+      "decisao": "Dois ? mantidos. Não transportar a distribuição dos scripts do TCC para o artigo."
+    },
+    {
+      "id": "D08",
+      "dimensoes": [
+        "P1"
+      ],
+      "alcance": "Texto das páginas 7–8 e 12–14.",
+      "achado": "Win/Wres/Wenc aleatórias e fixas; IS/SR escalonam as matrizes. Filtro gaussiano é aplicado à tensão, não define geração dos pesos.",
+      "decisao": "Mantido ?."
+    },
+    {
+      "id": "D27",
+      "dimensoes": [
+        "P1"
+      ],
+      "alcance": "Texto das páginas 1–5, incluindo método e passos SSA–ESN.",
+      "achado": "Famílias normais e sinais ±1 pertencem a Q/beta/A da SSA. Passo 3 apenas manda gerar Win/W aleatoriamente; não vincula essas famílias aos pesos.",
+      "decisao": "Mantido ?."
+    },
+    {
+      "id": "D34",
+      "dimensoes": [
+        "P1",
+        "P2"
+      ],
+      "alcance": "Texto das páginas 6–9, algoritmo OMP e configuração.",
+      "achado": "A matriz gaussiana é Phi de medição. OMP seleciona átomos e atualiza resíduos; a configuração fixa compressão de 50% e demais parâmetros. Não foi identificado procedimento de escolha dos hiperparâmetros da ESN nessas páginas.",
+      "decisao": "Dois ? mantidos."
+    },
+    {
+      "id": "D24",
+      "dimensoes": [
+        "P3"
+      ],
+      "alcance": "Busca em todo o texto por normalização, pré-processamento, escala, janelas e padronização; leitura das passagens recuperadas.",
+      "achado": "Escalas de entradas/saídas são listadas como parâmetros; normalização sináptica descreve conexões da rede. Nenhuma dessas passagens individualiza uma operação aplicada de preparação temporal.",
+      "decisao": "Mantido ?. Busca lexical não é leitura integral nova."
+    },
+    {
+      "id": "D03",
+      "dimensoes": [
+        "P4"
+      ],
+      "alcance": "Busca por LSTM/GRU/Transformer em todo o PDF e por referência 187 no corpo; passagens das páginas 21 e 48.",
+      "achado": "LSTM aparece no título da referência 187. A chamada no corpo integra uma enumeração de variantes IPSO, sem números de contraste com a arquitetura.",
+      "decisao": "Mantido ?. Não atribuir a esta revisão uma tabela numérica da obra referenciada."
+    }
+  ],
+  "pendentes_na_vigente": [
+    {
+      "id": "D01",
+      "linha_word": 1,
+      "autor": "Abebe e Goshu (2024)",
+      "dimensao": "P3",
+      "pdf": "Artigos citados\\Abebe - Asymmetric generalized error distribution with its properties and applications.pdf",
+      "sha256_pdf": "6c09320127ccbfa9c16dbbdcf716b021ab7e82e2c3ac86926db098920514f7d8",
+      "localizador": "PDF8–10,12–14",
+      "sintese": "O artigo ajusta distribuições aos dados recebidos, incluindo médias semanais de ciberataques; não explicita operação de preparação temporal aplicada nessa análise. A agregação semanal caracteriza o dado recebido, sem procedimento de transformação atribuído aos autores."
+    },
+    {
+      "id": "D02",
+      "linha_word": 2,
+      "autor": "Araújo et al. (2025)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_pdf": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF4–9; página oficial Springer e nota de dados",
+      "sintese": "Normal, Uniforme, Student-t, GED e Student-t assimétrica são associadas à ESN, mas sem ligação individualizada suficiente a Win ou W. Fórmulas das famílias não demonstram em qual matriz foram aplicadas. A nota oficial vincula BovDB como dados, sem código da ESN."
+    },
+    {
+      "id": "D02",
+      "linha_word": 2,
+      "autor": "Araújo et al. (2025)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Araújo - Comparing MAE and RMSE as Fitness.pdf",
+      "sha256_pdf": "cbf3101a4e98dc4b09f9a43f4f555910a9aeffccc53faa4200335db20f2e24b2",
+      "localizador": "PDF10–15; síntese experimental da prova local",
+      "sintese": "A comparação apresentada varia famílias e fitness MAE/RMSE da ESN com AG. Menção bibliográfica a LSTM não é um contraste quantitativo com essa arquitetura."
+    },
+    {
+      "id": "D03",
+      "linha_word": 3,
+      "autor": "Behera, Nayak e Kumar (2023)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "localizador": "PDF11–12, subseção sobre ESN e redes correlatas",
+      "sintese": "A revisão descreve aplicações e otimização de ESNs, sem individualizar lei de geração de Win/W nos trechos examinados. Leis dos otimizadores não são distribuições dos pesos."
+    },
+    {
+      "id": "D03",
+      "linha_word": 3,
+      "autor": "Behera, Nayak e Kumar (2023)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_pdf": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "localizador": "PDF11–12 e localização textual de LSTM no PDF48",
+      "sintese": "A ocorrência localizada de LSTM consta da referência187. A passagem examinada não fornece comparação numérica qualificadora na mesma tarefa; é necessário distinguir a referência de resultados reproduzidos na revisão."
+    },
+    {
+      "id": "D07",
+      "linha_word": 7,
+      "autor": "Costa e Lunkes (2025)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256_pdf": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "localizador": "PDF14–17, resultados e discussão",
+      "sintese": "Os modelos A, B e C aplicam SVM com atributos fundamentalistas, técnicos e combinados. Acurácias56.46%,55.72%e70.7% são desses modelos, sem contraste com LSTM/GRU/Transformer nas passagens examinadas."
+    },
+    {
+      "id": "D08",
+      "linha_word": 8,
+      "autor": "Deng et al. (2022)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_pdf": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "localizador": "PDF7–8,12–13, método e seção4.2",
+      "sintese": "Win/Wres/Wenc são descritas como aleatórias e fixas; IS e SR escalam as matrizes. O filtro gaussiano da tensão é pré-processamento, não a lei dos pesos. Nenhuma família individualizada localizada nesses trechos."
+    },
+    {
+      "id": "D12",
+      "linha_word": 12,
+      "autor": "Ecer et al. (2020)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256_pdf": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "localizador": "PDF8–11, tabelas5–10",
+      "sintese": "Os treze modelos são configurações de MLP, MLP-GA e MLP-PSO; comparação quantitativa dessas configurações não satisfaz o critério específico de LSTM/GRU/Transformer."
+    },
+    {
+      "id": "D13",
+      "linha_word": 13,
+      "autor": "Hariharan, Suresh e Chandrasekar (2025)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Hariharan S - Multivariate time series prediction using clustered echo state network.pdf",
+      "sha256_pdf": "58de263dd596dd7d1dd0f393b1f78c388bfe4099526b123391c032e735c55287",
+      "localizador": "PDF8–11, tabelas4–5",
+      "sintese": "Os comparadores são ESN convencional, AEESN, DeepESN, BrESN e CESNs com três topologias; DeepESN não é LSTM/GRU/Transformer. Nenhum contraste qualificável localizado nessas tabelas."
+    },
+    {
+      "id": "D15",
+      "linha_word": 15,
+      "autor": "Jaeger (2007)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Jaeger - Echo state network.pdf",
+      "sha256_pdf": "9f207b8186bd4c243aec12e7026bea12cbb06335947d268b63667bbecca05537",
+      "localizador": "PDF1–5; distinção em relação ao suplemento oficial",
+      "sintese": "O artigo apresenta exemplo de geração de frequência e discussão de vantagens de treinamento, sem comparação numérica identificada com LSTM/GRU/Transformer. O suplemento do exemplo não implementa esses comparadores."
+    },
+    {
+      "id": "D16",
+      "linha_word": 16,
+      "autor": "Kumar (2025)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Kumar k - Forecasting Crude Oil Prices Using Reservoir Computing Models.pdf",
+      "sha256_pdf": "16b18efd47e6e7c0a3f1f27d87ccdd552021e174198d69251b9fe686392d8ee1",
+      "localizador": "Célula11, id c6b55531, construção de W/Win e chamada Reservoir",
+      "sintese": "A célula cria W e Win por rng.random-0.5 e mascara conexões; porém não passa essas matrizes à chamada Reservoir. O objeto usa seus inicializadores próprios. Não há versão de ReservoirPy fixada no notebook."
+    },
+    {
+      "id": "D17",
+      "linha_word": 18,
+      "autor": "Liu, Lin e Rojas (2025)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Liu - Enhancing Trading Performance Through Sentiment Analysis with Large Language Models Evidence from the S&P 500.pdf",
+      "sha256_pdf": "d7067ca845b763a3d2af11250ddecaf4948f091ca3f5d1638c14aa9214fe5612",
+      "localizador": "PDF21–23, seções4.1–4.4; tabelas1–5",
+      "sintese": "GPT-2/FinBERT classificam sentimento, ARIMA/Prophet/ETS fazem previsão temporal e estratégias combinadas geram retornos. Comparar classificadores de sentimento ou retornos combinados não isola uma comparação quantitativa de previsão temporal com Transformer."
+    },
+    {
+      "id": "D19",
+      "linha_word": 19,
+      "autor": "Millea (2014)",
+      "dimensao": "P3",
+      "pdf": "Artigos citados\\Millea - Explorations in Echo State Network.pdf",
+      "sha256_pdf": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+      "localizador": "PDF48,64–68, métodos dos benchmarks",
+      "sintese": "Geração Mackey-Glass, partições, washout, ruído de estado e reescala da matriz são descritos; não foi localizada operação concreta de preparação da série de entrada nessas passagens. Não confundir normalização do erro com normalização dos dados."
+    },
+    {
+      "id": "D19",
+      "linha_word": 19,
+      "autor": "Millea (2014)",
+      "dimensao": "P5",
+      "pdf": "Artigos citados\\Millea - Explorations in Echo State Network.pdf",
+      "sha256_pdf": "9c9702290d75eca9f1bb6d2a9a4c9463c2b65a82d318270cfafaa3730a318052",
+      "localizador": "PDF3,64–68,81–83; tabela6.1",
+      "sintese": "Os experimentos sintetizados são MSO, Mackey-Glass, Sunspots e Laser. A menção introdutória a previsão de ações não identifica ativo/mercado submetido a análise. Não foi localizada evidência qualificadora de P5 no escopo examinado."
+    },
+    {
+      "id": "D21",
+      "linha_word": 21,
+      "autor": "Ping (2023)",
+      "dimensao": "P3",
+      "pdf": "Artigos citados\\Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+      "sha256_pdf": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+      "localizador": "PDF1–2",
+      "sintese": "Comunicação conceitual sobre volatilidade, GARCH, limitações e aplicações. Não descreve preparação concreta aplicada a série identificada."
+    },
+    {
+      "id": "D21",
+      "linha_word": 21,
+      "autor": "Ping (2023)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+      "sha256_pdf": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+      "localizador": "PDF1–2",
+      "sintese": "O texto não apresenta comparação quantitativa de LSTM/GRU/Transformer na mesma tarefa; a bibliografia contém artigos sobre deep learning, que são fontes distintas."
+    },
+    {
+      "id": "D21",
+      "linha_word": 21,
+      "autor": "Ping (2023)",
+      "dimensao": "P5",
+      "pdf": "Artigos citados\\Ping - forecasting-financial-market-volatility-methodologies-challenges-and-implications.pdf",
+      "sha256_pdf": "a764367020b9f5154fb5d58a1e6601a877f07ceebf391665df89e56e0fa9f801",
+      "localizador": "PDF1–2",
+      "sintese": "Discussão genérica de mercados, ativos, opções e carteiras, sem mercado e ativo identificados ligados à análise."
+    },
+    {
+      "id": "D22",
+      "linha_word": 22,
+      "autor": "Seddik, Routaib e Elhaddadi (2023)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_pdf": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "localizador": "PDF2–5, método de ESN-Lorenz",
+      "sintese": "A fonte representa Win/W e descreve ajuste/esparsidade sem especificar família probabilística de inicialização. Evolução do Lorenz e inicialização dos dados não individualizam a lei de pesos."
+    },
+    {
+      "id": "D22",
+      "linha_word": 22,
+      "autor": "Seddik, Routaib e Elhaddadi (2023)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Seddik S - Minimizing Chaos in Echo State Networks A Hybrid Approach Using the Lorenz System.pdf",
+      "sha256_pdf": "162afda49ce6704d53515d9a000d3e7a33c92fc606f8e384cf434a68e1549ec7",
+      "localizador": "PDF2–5,8, revisão e tabela3",
+      "sintese": "A revisão menciona RNNLSTM, mas a comparação numérica consultada é entre Lorenz e variantes de ESN. Não transportar números de outros artigos como se estivessem nesta tabela."
+    },
+    {
+      "id": "D23",
+      "linha_word": 23,
+      "autor": "Sharma et al. (2025)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_pdf": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "localizador": "PDF5–7 e HTML oficial arXiv2508.05416v1, seção4.1",
+      "sintese": "A tabela1define distribuições para amostragem de hiperparâmetros e ruídoGaussiano, sem família de Win/W. Trecho extraído não visível do PDF6pertence a outra obra; foi rejeitado como evidência. Nenhum repositório do experimento foi identificado no HTML consultado."
+    },
+    {
+      "id": "D23",
+      "linha_word": 23,
+      "autor": "Sharma et al. (2025)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_pdf": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "localizador": "PDF9–12 e HTML oficial, resultados",
+      "sintese": "Experimentos próprios comparam ESN, XGBoost e LastValue. Discussão qualitativa de LSTM em trabalhos anteriores não fornece números de uma comparação qualificadora no escopo lido."
+    },
+    {
+      "id": "D24",
+      "linha_word": 24,
+      "autor": "Soltani, Benmohamed e Ltifi (2022)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "localizador": "PDF2–3,10–11, definição e tabela6",
+      "sintese": "As conexões aleatórias e a representação binária de topologia não individualizam a distribuição de valores de Win/W. Não converter matriz de conectividade em lei de pesos."
+    },
+    {
+      "id": "D24",
+      "linha_word": 24,
+      "autor": "Soltani, Benmohamed e Ltifi (2022)",
+      "dimensao": "P3",
+      "pdf": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "localizador": "PDF11–12, tabela6e seção4.4",
+      "sintese": "Escalas de entrada/saída aparecem como hiperparâmetros. A apresentação dos benchmarks NARMA/Mackey-Glass/Lorenz não fornece tratamento temporal concreto aplicado que feche P3 nessas passagens."
+    },
+    {
+      "id": "D24",
+      "linha_word": 24,
+      "autor": "Soltani, Benmohamed e Ltifi (2022)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "localizador": "PDF8–12, síntese de métodos, métricas e benchmarks",
+      "sintese": "A síntese consultada não apresenta comparação quantitativa identificada entre LSTM/GRU/Transformer na mesma tarefa; enumeração de métodos de otimização de ESN não é essa comparação."
+    },
+    {
+      "id": "D24",
+      "linha_word": 24,
+      "autor": "Soltani, Benmohamed e Ltifi (2022)",
+      "dimensao": "P5",
+      "pdf": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_pdf": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "localizador": "PDF12, figura6e descrição dos benchmarks",
+      "sintese": "São nomeados benchmarks sintéticos e físicos, inclusive NARMA, Mackey-Glass, Lorenz, laser e turbofan. Não foi localizado ativo/mercado financeiro ligado à análise nessa síntese; não se inventa um mercado a partir da motivação de previsão."
+    },
+    {
+      "id": "D26",
+      "linha_word": 26,
+      "autor": "Sun et al. (2021)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256_pdf": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "localizador": "PDF3–4 e HTML seção2",
+      "sintese": "Win, pesos recorrentes e feedback são descritos como aleatoriamente inicializados; não é individualizada a família probabilística."
+    },
+    {
+      "id": "D26",
+      "linha_word": 26,
+      "autor": "Sun et al. (2021)",
+      "dimensao": "P2",
+      "pdf": "Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256_pdf": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "localizador": "PDF5–6; HTML seção3.2",
+      "sintese": "São informados500neurônios, raio0.999e esparsidade0.02, mas não o procedimento que selecionou os valores."
+    },
+    {
+      "id": "D26",
+      "linha_word": 26,
+      "autor": "Sun et al. (2021)",
+      "dimensao": "P3",
+      "pdf": "Artigos citados\\Sun G - Stock Price Forecasting - An Echo State Network Approach.pdf",
+      "sha256_pdf": "8d15f79fca9e34fb059d7873b4b8bf9159bc38cd58fc48b4af2450b980b92b6f",
+      "localizador": "PDF4–7; HTML seções3.1–3.3",
+      "sintese": "O fluxograma menciona coleta e limpeza, mas a prosa identifica coleta no Yahoo Finance, escolha do fechamento e partições. Não especifica operação concreta de limpeza ou transformação."
+    },
+    {
+      "id": "D27",
+      "linha_word": 27,
+      "autor": "Tian e Pei (2024)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_pdf": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "localizador": "PDF3–5, equações1–8e algoritmo passo3",
+      "sintese": "Win/W são geradas aleatoriamente e mantidas fixas. Variáveis normalmente distribuídas Q/beta e valores±1pertencem à movimentação dos pardais/SSA, não à geração dos elementos de Win/W."
+    },
+    {
+      "id": "D28",
+      "linha_word": 28,
+      "autor": "Timbó et al. (2016)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256_pdf": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "localizador": "PDF5–7, seleção e regressão, nova leitura dirigida",
+      "sintese": "O desenho examinado utiliza regressão linear múltipla por mínimos quadrados para PETR4. As tabelas2–3apresentam indicadores selecionados e valores previstos/reais; não foi localizada comparação quantitativa qualificadora com LSTM/GRU/Transformer nessas passagens."
+    },
+    {
+      "id": "D29",
+      "linha_word": 29,
+      "autor": "Ribeiro et al. (2021)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Trierweiler Ribeiro G - Novel hybrid model based on echo state neural network applied to the prediction of stock price return volatility.pdf",
+      "sha256_pdf": "84f8c97e1a6c152e5b18c07f3b28d87f1c3f35f5edb16d7fae5fa4f49a24b6ba",
+      "localizador": "PDF7–10, tabelas3–6e seção4.5",
+      "sintese": "Comparadores listados: GS-ARIMA, PSO-ESN, HAR-PSO-ESN, HAR e GS-MLP. Os números e testes desses modelos não são comparação com LSTM/GRU/Transformer."
+    },
+    {
+      "id": "D30",
+      "linha_word": 30,
+      "autor": "Vishwas, Usha e Sangeetha (2025)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+      "sha256_pdf": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+      "localizador": "PDF8, discussão de SSA-ESN",
+      "sintese": "A revisão relata otimização de ESN por SSA, sem lei individualizada de geração dos pesos. A fonte primária Tian/Pei também separa aleatoriedade de pesos das variáveis do otimizador."
+    },
+    {
+      "id": "D30",
+      "linha_word": 30,
+      "autor": "Vishwas, Usha e Sangeetha (2025)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+      "sha256_pdf": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+      "localizador": "PDF2,8e17, números gerais e tabelas de síntese",
+      "sintese": "A revisão apresenta72%paraLSTM e90%paraCNN em tarefas descritas de forma geral, além de discussões de superioridade. Não há na passagem vínculo inequívoco desses valores ao mesmo benchmark/protocolo. A tabela17lista métricas e vantagens, sem os resultados numéricos que estabeleçam o contraste exigido."
+    },
+    {
+      "id": "D31",
+      "linha_word": 31,
+      "autor": "Wang, Bu e Huang (2025)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_pdf": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "localizador": "PDF3–4, equações1–2; PDF15, Data Availability; repositório Supplymentary, README e inventário de arquivos",
+      "sintese": "O artigo descreve Win aleatória e Wres como efeito acumulado do sistema óptico, sem lei probabilística individualizada. O repositório contém README, CITATION.cff e train_correlation.png; o README explica features/correlações, sem a lei de Win."
+    },
+    {
+      "id": "D31",
+      "linha_word": 31,
+      "autor": "Wang, Bu e Huang (2025)",
+      "dimensao": "P2",
+      "pdf": "Artigos citados\\Wang F - Enhanced Multistep Prediction of Multivariate Market Indices Using Weighted Optical Reservoir Computing.pdf",
+      "sha256_pdf": "4627a923f344724e552d78e85cea5c74a339a46213c01e226cc0f40d32da42ac",
+      "localizador": "PDF3, definição de alpha/beta; PDF5, busca de modelos ML; suplemento README",
+      "sintese": "O artigo afirma que ganhos de entrada e feedback serão otimizados, mas não especifica como os escolhe. Grid search e validação temporal são descritas para os comparadores ML; não podem ser atribuídas ao reservatório óptico sem ligação explícita."
+    },
+    {
+      "id": "D34",
+      "linha_word": 34,
+      "autor": "Zhang et al. (2021)",
+      "dimensao": "P1",
+      "pdf": "Artigos citados\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "localizador": "PDF2–9, matrizes ESN e compressed sensing",
+      "sintese": "A matriz gaussiana é a matriz de observação do compressed sensing. Win/W são inicializadas sem família especificada. A normalização espectral não determina sua lei de geração."
+    },
+    {
+      "id": "D34",
+      "linha_word": 34,
+      "autor": "Zhang et al. (2021)",
+      "dimensao": "P2",
+      "pdf": "Artigos citados\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "localizador": "PDF7–9, algoritmoOMP e configuração",
+      "sintese": "OMP seleciona átomos/nós do reservatório e ajusta a representação; não descreve por si a escolha de hiperparâmetros da ESN. Valores fixos e compressão50% não provam busca/sensibilidade com critério de escolha."
+    },
+    {
+      "id": "D34",
+      "linha_word": 34,
+      "autor": "Zhang et al. (2021)",
+      "dimensao": "P4",
+      "pdf": "Artigos citados\\Zhang H - Application of ESN prediction model based on compressed sensing in stock market.pdf",
+      "sha256_pdf": "c11e768c8e76ab2602deab231067bb6bbc504e6cc1fdacb0c192f40dafb249e8",
+      "localizador": "PDF9–12, experimentos caóticos e de ações",
+      "sintese": "Os contrastes examinados são ESN versus CS-ESN. Sem comparação quantitativa com LSTM/GRU/Transformer localizada nessas páginas."
+    }
+  ],
+  "manifesto_codigo_oficial": [
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\geradores.json",
+      "sha256": "cedb3c6bb78c98dcbff5d665884ee78dc36503e0acf425a213b290f67faf0333"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\inventario.json",
+      "sha256": "2f2c7529a240b688db2258deef25101d65d6f953a569ceeb2d5b1abfaeb9065a"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_0-b.py",
+      "sha256": "154e8d175d4c60e86db0100c33f7461324df24c889f4b68bf1ea313fb2f579a6"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_0-b1.py",
+      "sha256": "154e8d175d4c60e86db0100c33f7461324df24c889f4b68bf1ea313fb2f579a6"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_0-b2.py",
+      "sha256": "154e8d175d4c60e86db0100c33f7461324df24c889f4b68bf1ea313fb2f579a6"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_0.py",
+      "sha256": "995397d00a67976192847fb829fb5876ceb4d67b57771bd7b9f95a738d64b08b"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_1.py",
+      "sha256": "5f2d6688b06ecac3d65289fc49d5d5f8249096ca8fed4e63b12520bb3d8d1be6"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_10.py",
+      "sha256": "e1b84463f523ec146bb90118e3c04ddc61055f686cef806086beace3163cf28a"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_11.py",
+      "sha256": "e8f42e405d07a8e1f9b55d08aff2610a56c763cb14596923fabe42279424a397"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_12.py",
+      "sha256": "65939ffe5d63ea17efebde16598bec174a5751c362e92f68559810bc42666a44"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_1_post1.py",
+      "sha256": "183fd707ccc1701cc89039cc3b9cac10a704c89c074c2ae7e9b53c6cf9b76426"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_2.py",
+      "sha256": "141a966b710f0eb0b7efe20695e08d2c98dbccb3d640e8a91cdfb19712deac25"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_2_post1.py",
+      "sha256": "141a966b710f0eb0b7efe20695e08d2c98dbccb3d640e8a91cdfb19712deac25"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_3.py",
+      "sha256": "e1b84463f523ec146bb90118e3c04ddc61055f686cef806086beace3163cf28a"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_4.py",
+      "sha256": "e1b84463f523ec146bb90118e3c04ddc61055f686cef806086beace3163cf28a"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_5.py",
+      "sha256": "e1b84463f523ec146bb90118e3c04ddc61055f686cef806086beace3163cf28a"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_6.py",
+      "sha256": "e1b84463f523ec146bb90118e3c04ddc61055f686cef806086beace3163cf28a"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_7.py",
+      "sha256": "e1b84463f523ec146bb90118e3c04ddc61055f686cef806086beace3163cf28a"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_8.py",
+      "sha256": "e1b84463f523ec146bb90118e3c04ddc61055f686cef806086beace3163cf28a"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_9.py",
+      "sha256": "e1b84463f523ec146bb90118e3c04ddc61055f686cef806086beace3163cf28a"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\mat_gen_v0_3_9_post1.py",
+      "sha256": "e1b84463f523ec146bb90118e3c04ddc61055f686cef806086beace3163cf28a"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_0-b.py",
+      "sha256": "5e46ae5738febd36039df7a311d49f242fed1fb31138e62968b2512670d79b22"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_0-b1.py",
+      "sha256": "5e46ae5738febd36039df7a311d49f242fed1fb31138e62968b2512670d79b22"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_0-b2.py",
+      "sha256": "5e46ae5738febd36039df7a311d49f242fed1fb31138e62968b2512670d79b22"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_0.py",
+      "sha256": "0b72c89daa1e1cec42d31d6e8b947c55fd62653cd1bd3e8ba2dbd421b410818d"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_1.py",
+      "sha256": "5bbe6e87bd8a2bc26aa99ab6c9d6e94a0b57199660414aefe7fc1db64c883662"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_10.py",
+      "sha256": "83a83192c93c95c74d63638c18ac84424ade2f4699b04dde3d3eea12741eedfe"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_11.py",
+      "sha256": "6cef7e4b10423b9e971d0a4242c21da9edafe435ebe264ff2cd4dc3979359e59"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_12.py",
+      "sha256": "d79566d61015c3a7b021b76a3ecdd20ac5d8e74e705223b7257142a255802981"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_1_post1.py",
+      "sha256": "5bbe6e87bd8a2bc26aa99ab6c9d6e94a0b57199660414aefe7fc1db64c883662"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_2.py",
+      "sha256": "8ee7376b088be2e1637e83af4b928a9623874724227d89a93b1f1f78917e7856"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_2_post1.py",
+      "sha256": "109a070fa6beeeb54b9e46a032226e0043797ed3681d04432faedb7608056d84"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_3.py",
+      "sha256": "109a070fa6beeeb54b9e46a032226e0043797ed3681d04432faedb7608056d84"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_4.py",
+      "sha256": "dd7125f30504a621cbc562aa95e4b6009ca6ecf21fb99f31623f15e533eb4710"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_5.py",
+      "sha256": "dd7125f30504a621cbc562aa95e4b6009ca6ecf21fb99f31623f15e533eb4710"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_6.py",
+      "sha256": "dd7125f30504a621cbc562aa95e4b6009ca6ecf21fb99f31623f15e533eb4710"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_7.py",
+      "sha256": "f64bb3e9abd0262245f76ecac7a6c3961d0fbd99bfb6a3f79c62bbb6ff131a07"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_8.py",
+      "sha256": "bef89461a4ffb2d71726b5c990d412b0e9e140021e36a51f500c43192e79647f"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_9.py",
+      "sha256": "3ec09aee39ca59f05e654f1431e372b5947c6ab6e68554b31337ae4c04d594ba"
+    },
+    {
+      "arquivo": "reports\\busca_lacunas_20261101\\suplementos\\historico_reservoirpy\\reservoir_v0_3_9_post1.py",
+      "sha256": "3ec09aee39ca59f05e654f1431e372b5947c6ab6e68554b31337ae4c04d594ba"
+    }
+  ],
+  "limites": [
+    "Os arquivos de código foram apenas lidos; nenhum notebook, treino, GA ou DM executado.",
+    "Sem edição do Word: não criar versão v011 por esta auditoria.",
+    "Nenhuma das 38 células recebeu nova classificação aprovada nesta rodada."
+  ]
+}

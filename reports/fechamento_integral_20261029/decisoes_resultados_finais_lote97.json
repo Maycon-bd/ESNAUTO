@@ -1,0 +1,496 @@
+{
+  "sha256_docx": "1cdb4613c391611dfffab5e2f9902e38751bd14be9b5e18b96a740e6cb771d00",
+  "registros": [
+    {
+      "paragrafo_atual": 414,
+      "texto": "CARACTERIZAÇÃO DOS REGIMES DO CONJUNTO DE TESTE",
+      "decisao": "Regimes descrevem preços/retornos observados, não desempenho da ESN por subperíodo; dados e limites coerentes.",
+      "evidencias": [
+        "varredura_citacoes_e_risco_lote54.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 415,
+      "texto": "Como complemento voltado à aplicabilidade gerencial e à gestão de risco, o conjunto de teste foi segmentado descritivamente em três subperíodos: 29/09/2015 a 29/12/2016 (311 observações), 02/01/2017 a 30/12/2019 (739 observações) e 02/01/2020 a 30/12/2020 (249 observações).",
+      "decisao": "Regimes descrevem preços/retornos observados, não desempenho da ESN por subperíodo; dados e limites coerentes.",
+      "evidencias": [
+        "varredura_citacoes_e_risco_lote54.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 416,
+      "texto": "A volatilidade diária dos retornos simples foi, respectivamente, de aproximadamente 3,99%, 2,56% e 4,32%. Os drawdowns máximos observados nos mesmos intervalos foram de aproximadamente -52,27%, -46,55% e -63,36%. Esses valores mostraram que 2020 concentrou o regime de maior estresse entre os subperíodos do teste, enquanto 2017–2019 apresentou menor volatilidade relativa.",
+      "decisao": "Regimes descrevem preços/retornos observados, não desempenho da ESN por subperíodo; dados e limites coerentes.",
+      "evidencias": [
+        "varredura_citacoes_e_risco_lote54.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 417,
+      "texto": "A decomposição do MAE, RMSE ou MAPE da ESN por esses subperíodos, entretanto, não pôde ser reconstruída com segurança a partir dos artefatos atualmente versionados. O histórico das execuções oficiais registrou métricas agregadas por rodada, mas não persistiu os vetores de valores previstos ponto a ponto; as matrizes e saídas de sessão permaneceram em diretórios locais excluídos do versionamento. Por esse motivo, esta monografia utilizou a segmentação acima apenas para caracterizar os regimes de mercado e não atribuiu desempenho preditivo por crise ou estabilidade sem evidência reproduzível.",
+      "decisao": "Regimes descrevem preços/retornos observados, não desempenho da ESN por subperíodo; dados e limites coerentes.",
+      "evidencias": [
+        "varredura_citacoes_e_risco_lote54.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 418,
+      "texto": "CUSTO COMPUTACIONAL",
+      "decisao": "Tempos são documentados e busca separada de ajuste;28,8/0,05=576 e35,4/0,05=708. Automação não prova redução matemática do custo.",
+      "evidencias": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 419,
+      "texto": "Tabela 5 – Decomposição do custo computacional documentado",
+      "decisao": "Tempos são documentados e busca separada de ajuste;28,8/0,05=576 e35,4/0,05=708. Automação não prova redução matemática do custo.",
+      "evidencias": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 420,
+      "texto": "Fonte: Elaborado pelo autor (2026).",
+      "decisao": "Tempos são documentados e busca separada de ajuste;28,8/0,05=576 e35,4/0,05=708. Automação não prova redução matemática do custo.",
+      "evidencias": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 421,
+      "texto": "O ajuste analítico de aproximadamente 0,05 segundo correspondeu ao cálculo da camada de saída após a configuração da ESN ter sido selecionada. Considerando apenas essa etapa, o tempo documentado representou speedup aproximado de 576 vezes em relação à GRU e 708 vezes em relação à LSTM.",
+      "decisao": "Tempos são documentados e busca separada de ajuste;28,8/0,05=576 e35,4/0,05=708. Automação não prova redução matemática do custo.",
+      "evidencias": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 422,
+      "texto": "Essa diferença não corresponde ao custo integral de descoberta do modelo. As buscas por Algoritmo Genético consumiram de aproximadamente 21 a 102 minutos por cenário e totalizaram cerca de 37,9 horas nas 45 execuções. Assim, a ESN apresentou baixo custo de ajuste depois de configurada, enquanto a exploração extensa do espaço de hiperparâmetros representou um custo off-line significativo.",
+      "decisao": "Tempos são documentados e busca separada de ajuste;28,8/0,05=576 e35,4/0,05=708. Automação não prova redução matemática do custo.",
+      "evidencias": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 423,
+      "texto": "O ESNAUTO contribuiu operacionalmente nesse ponto ao automatizar a geração dos cenários, manter histórico, preservar matrizes recordistas e organizar os artefatos de execuções prolongadas. A ferramenta não reduz matematicamente o custo do Algoritmo Genético, mas reduz a intervenção manual necessária para executar, acompanhar, registrar e recuperar os experimentos.",
+      "decisao": "Tempos são documentados e busca separada de ajuste;28,8/0,05=576 e35,4/0,05=708. Automação não prova redução matemática do custo.",
+      "evidencias": [
+        "conferencia_tabelas_historicas_lote65.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 424,
+      "texto": "APLICABILIDADE GERENCIAL, GOVERNANÇA E RISCO DE MODELO",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 425,
+      "texto": "A leitura gerencial dos resultados exigiu distinguir precisão preditiva de desempenho financeiro. O MAE de 0,327224 obtido pela configuração Laplace × Normal indicou desvio absoluto médio de aproximadamente R$ 0,33 na escala dos preços ajustados da série analisada.",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 426,
+      "texto": "Quando normalizado pela média do preço observado no conjunto de teste, esse erro correspondeu a NMAE aproximado de 2,02%, frente a 2,20% para a GRU e 2,80% para a LSTM. Esses percentuais facilitam a interpretação relativa do erro, mas não representam rentabilidade, perda monetária de uma carteira ou desempenho de uma estratégia de negociação, pois tais dimensões não foram avaliadas neste trabalho.",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 427,
+      "texto": "Sob essa perspectiva, o ESNAUTO deve ser entendido como infraestrutura de experimentação e comparação de modelos, e não como sistema de negociação automática. Seu público de uso mais diretamente compatível com o escopo validado inclui pesquisadores de séries temporais, analistas quantitativos, profissionais de Ciência de Dados e equipes acadêmicas ou técnicas interessadas em configurar, executar e comparar ESNs e modelos recorrentes sobre séries temporais. A adoção em decisões de investimento exigiria validações adicionais específicas de estratégia, custos de transação, liquidez, risco e retorno.",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 428,
+      "texto": "O custo computacional também assume significado distinto conforme a etapa do ciclo do modelo. As aproximadamente 37,9 horas consumidas pelas 45 buscas genéticas constituem custo off-line de descoberta e calibração de configurações. Após a seleção de uma configuração, o ajuste analítico documentado da camada de saída da ESN demanda aproximadamente 0,05 segundo.",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 429,
+      "texto": "Assim, a vantagem operacional da arquitetura aparece principalmente depois que o espaço de busca foi explorado e uma configuração candidata foi definida; não é metodologicamente adequado comparar o custo integral do Algoritmo Genético com um único treinamento de LSTM ou GRU como se fossem a mesma tarefa computacional.",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 430,
+      "texto": "Em eventual implantação, o risco de modelo deve ser tratado por governança explícita. Um fluxo compatível com os mecanismos do ESNAUTO inclui:",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 431,
+      "texto": "a) registrar a versão do modelo, o período de dados, os hiperparâmetros e as matrizes disponíveis;",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 432,
+      "texto": "b) acompanhar MAE, RMSE e, quando os vetores ponto a ponto estiverem preservados, MAPE em janelas móveis;",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 433,
+      "texto": "c) detectar degradação ou mudança relevante de regime;",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 434,
+      "texto": "d) gerar uma configuração candidata;",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 435,
+      "texto": "e) comparar o candidato com o modelo vigente sob critérios previamente definidos;",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 436,
+      "texto": "f) promover a nova versão somente após aprovação.",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 437,
+      "texto": "A manutenção do modelo anterior permite rollback caso o candidato apresente comportamento inadequado.",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 438,
+      "texto": "Não se propõe uma frequência fixa de retreinamento, pois o protocolo deste trabalho não fornece evidência para definir um intervalo temporal universal. A recalibração deve ser condicionada a indicadores de degradação e às regras do contexto de implantação. A falha fora da amostra observada em t de Student Assimétrica × Cauchy e o maior estresse de mercado identificado no ano de 2020 reforçam que baixo erro em validação não elimina o risco de deterioração posterior, tornando monitoramento, versionamento e critérios de promoção componentes relevantes de um uso responsável do modelo.",
+      "decisao": "NMAE e custos coerentes; públicos e governança são propostas de uso e requisitos, sem teste de retorno financeiro ou implantação. Alíneas são recomendações condicionais.",
+      "evidencias": [
+        "expressoes_matematicas_lote85.json",
+        "alineas_e_fontes_lote84.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 439,
+      "texto": "ANÁLISE INFERENCIAL: TESTE DE DIEBOLD-MARIANO",
+      "decisao": "Valores controlados e decisões H1–H5 correspondem às evidências; comparações históricas e inferenciais separadas.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_hipoteses_lote64.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 440,
+      "texto": "A execução controlada complementar produziu, na janela congelada de 1.298 observações entre 30/09/2015 e 30/12/2020, MAE de 0,328850 e RMSE de 0,498452 para a ESN; MAE de 0,418175 e RMSE de 0,592452 para a GRU; e MAE de 0,466612 e RMSE de 0,635287 para a LSTM. Esses valores pertencem exclusivamente à execução controlada com semente 20260926 e não substituem os resultados históricos apresentados na Tabela 3. A finalidade dessa rodada foi fornecer vetores de previsão íntegros, alinhados por data e reproduzíveis para a avaliação inferencial de H1.",
+      "decisao": "Valores controlados e decisões H1–H5 correspondem às evidências; comparações históricas e inferenciais separadas.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_hipoteses_lote64.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 441,
+      "texto": "Nos quatro testes, a hipótese nula de igualdade de acurácia preditiva foi rejeitada ao nível de 5%. Sob perda absoluta, a comparação ESN × GRU resultou em estatística DM = −11,870611 e p = 6,296 × 10⁻³¹, enquanto ESN × LSTM resultou em DM = −15,496644 e p = 8,008 × 10⁻⁵⁰. Sob perda quadrática, ESN × GRU apresentou DM = −9,846951 e p = 4,117 × 10⁻²², e ESN × LSTM apresentou DM = −9,208792 e p = 1,285 × 10⁻¹⁹. Em todas as comparações, o diferencial médio de perda indicou menor perda para a ESN.",
+      "decisao": "Valores controlados e decisões H1–H5 correspondem às evidências; comparações históricas e inferenciais separadas.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_hipoteses_lote64.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 442,
+      "texto": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+      "decisao": "Valores controlados e decisões H1–H5 correspondem às evidências; comparações históricas e inferenciais separadas.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_hipoteses_lote64.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 443,
+      "texto": "Fonte: Elaborado pelo autor (2026), com base na execução controlada e em Diebold e Mariano (1995).",
+      "decisao": "Valores controlados e decisões H1–H5 correspondem às evidências; comparações históricas e inferenciais separadas.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_hipoteses_lote64.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 444,
+      "texto": "Os resultados satisfizeram o critério inferencial de superioridade definido para H1 na execução controlada complementar: além de apresentar menores MAE e RMSE na mesma janela, a ESN apresentou menor perda média e diferença estatisticamente significativa frente à GRU e à LSTM sob as duas funções de perda. Essa evidência não deve ser interpretada como teste retrospectivo dos valores históricos da Tabela 3, pois a rodada inferencial utilizou novos pesos, fronteira de treino estrita e continuidade cronológica explicitamente corrigida.",
+      "decisao": "Valores controlados e decisões H1–H5 correspondem às evidências; comparações históricas e inferenciais separadas.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_hipoteses_lote64.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 445,
+      "texto": "AVALIAÇÃO DAS HIPÓTESES",
+      "decisao": "Valores controlados e decisões H1–H5 correspondem às evidências; comparações históricas e inferenciais separadas.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_hipoteses_lote64.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 446,
+      "texto": "Quadro 5 – Síntese da avaliação das hipóteses",
+      "decisao": "Valores controlados e decisões H1–H5 correspondem às evidências; comparações históricas e inferenciais separadas.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_hipoteses_lote64.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 447,
+      "texto": "Fonte: Elaborado pelo autor (2026).",
+      "decisao": "Valores controlados e decisões H1–H5 correspondem às evidências; comparações históricas e inferenciais separadas.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_hipoteses_lote64.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 448,
+      "texto": "H1 recebeu apoio em duas camadas de evidência. Nos resultados históricos, a ESN campeã apresentou menor MAE e RMSE que os valores registrados para GRU e LSTM, e 44 das 45 execuções obtiveram MAE inferior aos dois baselines. Na execução controlada complementar, os quatro testes de Diebold-Mariano rejeitaram a hipótese nula a 5% sob perdas absoluta e quadrática, sempre com menor perda média para a ESN. H2 também recebeu apoio quando restrita ao custo de ajuste da configuração selecionada; o custo da busca genética é tratado separadamente.",
+      "decisao": "Valores controlados e decisões H1–H5 correspondem às evidências; comparações históricas e inferenciais separadas.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_hipoteses_lote64.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 449,
+      "texto": "Para H3, variantes não gaussianas produziram os menores erros observados, com ganhos inferiores a 1% frente a Normal × Normal. Para H4, a integração do LHS e do operador cataclísmico foi documentada, mas a diversidade não foi mensurada e seus efeitos não foram isolados por ablação. Para H5, observou-se baixa dispersão entre configurações da Onda 5, sem menor erro global; esse resultado não demonstra redução da variabilidade entre repetições de uma mesma configuração.",
+      "decisao": "Valores controlados e decisões H1–H5 correspondem às evidências; comparações históricas e inferenciais separadas.",
+      "evidencias": [
+        "conferencia_numerica_dm_lote46.json",
+        "conferencia_hipoteses_lote64.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 450,
+      "texto": "Os resultados foram contextualizados pela monografia de Lampugnani (2026), que investigou ESNs com Algoritmo Genético na PETR4 e apresentou erros de teste para diferentes combinações de distribuições. A Tabela 7 reúne os menores erros documentados em cada trabalho. Trata-se de comparação entre estudos, sem execução de ambos sob um protocolo comum.",
+      "decisao": "Comparação documental com Lampugnani e RBras limitada a contextos distintos; nenhuma causalidade de ajuste, LHS ou cataclismo atribuída.",
+      "evidencias": [
+        "afirmacoes_lampugnani_lote42.json",
+        "afirmacoes_cardoso_lote43.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 451,
+      "texto": "Cardoso, Berri e Mattos (2022a, p. 202–205) avaliaram a PETR4 com e sem fator de ajuste, com 5.197 observações e divisão de 75% para treino e 25% para teste. Com hiperparâmetros fixos, relataram RMSE de 11,1785 sem fator e de 0,4987 com fator. Esses valores contextualizam um estudo anterior, mas não constituem um teste de superioridade desta pesquisa: a partição, os hiperparâmetros e o procedimento de seleção diferem. O resultado com fator não deve ser atribuído à série sem ajuste.",
+      "decisao": "Comparação documental com Lampugnani e RBras limitada a contextos distintos; nenhuma causalidade de ajuste, LHS ou cataclismo atribuída.",
+      "evidencias": [
+        "afirmacoes_lampugnani_lote42.json",
+        "afirmacoes_cardoso_lote43.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 452,
+      "texto": "Tabela 7 – Comparação descritiva com Lampugnani (2026)",
+      "decisao": "Comparação documental com Lampugnani e RBras limitada a contextos distintos; nenhuma causalidade de ajuste, LHS ou cataclismo atribuída.",
+      "evidencias": [
+        "afirmacoes_lampugnani_lote42.json",
+        "afirmacoes_cardoso_lote43.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 453,
+      "texto": "Fonte: Elaborado pelo autor (2026), com base nas tabelas de resultados de Lampugnani (2026) e nos resultados desta pesquisa. Os mínimos de MAE e RMSE podem corresponder a configurações distintas.",
+      "decisao": "Comparação documental com Lampugnani e RBras limitada a contextos distintos; nenhuma causalidade de ajuste, LHS ou cataclismo atribuída.",
+      "evidencias": [
+        "afirmacoes_lampugnani_lote42.json",
+        "afirmacoes_cardoso_lote43.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 454,
+      "texto": "Os menores MAE e RMSE documentados nesta pesquisa são numericamente inferiores aos mínimos apresentados por Lampugnani (2026). Essa comparação descritiva não demonstra superioridade sob condições equivalentes: não foi executado um contraste conjunto com os mesmos dados de entrada, pesos, sementes e orçamento de otimização. As diferenças entre os estudos não identificam o efeito de um componente isolado.",
+      "decisao": "Comparação documental com Lampugnani e RBras limitada a contextos distintos; nenhuma causalidade de ajuste, LHS ou cataclismo atribuída.",
+      "evidencias": [
+        "afirmacoes_lampugnani_lote42.json",
+        "afirmacoes_cardoso_lote43.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 455,
+      "texto": "Lampugnani (2026) declara não realizar tratamento adicional dos dados. Essa declaração não comprova que os valores recebidos fossem desprovidos de ajuste corporativo. Nesta pesquisa, os modelos também receberam arquivos identificados como previamente ajustados. Sem a cadeia de preparação de ambas as séries e uma comparação controlada, não se atribui a diferença de erro ao Fator de Ajuste, ao LHS ou ao mecanismo cataclísmico.",
+      "decisao": "Comparação documental com Lampugnani e RBras limitada a contextos distintos; nenhuma causalidade de ajuste, LHS ou cataclismo atribuída.",
+      "evidencias": [
+        "afirmacoes_lampugnani_lote42.json",
+        "afirmacoes_cardoso_lote43.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 456,
+      "texto": "CONTRIBUIÇÕES DO ESNAUTO",
+      "decisao": "Atribuição ao orientador, adaptação/interface pelo autor e mecanismo atual coerentes; capacidade de persistência não confundida com preservação histórica completa. Qualidades de manutenção são interpretação de arquitetura, sem avaliação empírica de manutenção.",
+      "evidencias": [
+        "conferencia_quadro6_lote62.json",
+        "conferencia_codigo_unidades_lote69.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 457,
+      "texto": "O desenvolvimento do ESNAUTO partiu de códigos em R fornecidos pelo orientador. O autor adaptou essas rotinas ao contexto da pesquisa e construiu a interface para organizar a execução dos experimentos. A aplicação reúne seleção de configurações, acompanhamento de execuções, histórico e visualização dos resultados. Essa contribuição compreende adaptação e desenvolvimento da interface sobre uma base computacional recebida; não se apresenta toda a implementação matemática como criação original do autor.",
+      "decisao": "Atribuição ao orientador, adaptação/interface pelo autor e mecanismo atual coerentes; capacidade de persistência não confundida com preservação histórica completa. Qualidades de manutenção são interpretação de arquitetura, sem avaliação empírica de manutenção.",
+      "evidencias": [
+        "conferencia_quadro6_lote62.json",
+        "conferencia_codigo_unidades_lote69.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 458,
+      "texto": "Do ponto de vista arquitetural, o repositório separa responsabilidades entre a aplicação R Shiny, módulos específicos de ESN, LSTM, GRU e comparação, utilitários de preparação de dados, métricas, histórico e motor do Algoritmo Genético, além de scripts auxiliares em Python e R para orquestração em lote, pós-processamento e empacotamento dos resultados. Essa decomposição modular favorece manutenção, substituição de componentes e reutilização do mesmo núcleo de cálculo entre a interface interativa e as rotinas prolongadas de execução.",
+      "decisao": "Atribuição ao orientador, adaptação/interface pelo autor e mecanismo atual coerentes; capacidade de persistência não confundida com preservação histórica completa. Qualidades de manutenção são interpretação de arquitetura, sem avaliação empírica de manutenção.",
+      "evidencias": [
+        "conferencia_quadro6_lote62.json",
+        "conferencia_codigo_unidades_lote69.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 459,
+      "texto": "No fluxo experimental, o ESNAUTO centraliza seleção das distribuições de Win e W, configuração ou otimização dos hiperparâmetros, acompanhamento das execuções, cálculo de MAE, RMSE, MAPE e R², comparação com LSTM e GRU, registro de histórico e geração de visualizações. Na implementação atual, o cromossomo binário de 55 bits codifica taxa de vazamento, raio espectral, período de lavagem, tamanho do reservatório e regularização Ridge; a população inicial emprega LHS e o motor inclui seleção por torneio, crossover de um ponto, mutação e mecanismo cataclísmico antiestagnação.",
+      "decisao": "Atribuição ao orientador, adaptação/interface pelo autor e mecanismo atual coerentes; capacidade de persistência não confundida com preservação histórica completa. Qualidades de manutenção são interpretação de arquitetura, sem avaliação empírica de manutenção.",
+      "evidencias": [
+        "conferencia_quadro6_lote62.json",
+        "conferencia_codigo_unidades_lote69.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 460,
+      "texto": "A rastreabilidade constitui uma qualidade central, mas deve ser descrita de forma compatível com os artefatos efetivamente preservados. O software possui mecanismo para registrar hiperparâmetros e métricas e para salvar Win, W e Wout quando um recorde global é estabelecido, bem como rotina de reinjeção de configurações preservadas.",
+      "decisao": "Atribuição ao orientador, adaptação/interface pelo autor e mecanismo atual coerentes; capacidade de persistência não confundida com preservação histórica completa. Qualidades de manutenção são interpretação de arquitetura, sem avaliação empírica de manutenção.",
+      "evidencias": [
+        "conferencia_quadro6_lote62.json",
+        "conferencia_codigo_unidades_lote69.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 461,
+      "texto": "Entretanto, a auditoria realizada durante a consolidação desta monografia mostrou que os vetores ponto a ponto e as matrizes de todas as execuções oficiais não foram versionados. Assim, o ESNAUTO oferece mecanismos de rastreabilidade, mas a política de persistência aplicada às execuções históricas ainda não cobre integralmente todos os artefatos necessários para reconstrução retrospectiva de qualquer rodada.",
+      "decisao": "Atribuição ao orientador, adaptação/interface pelo autor e mecanismo atual coerentes; capacidade de persistência não confundida com preservação histórica completa. Qualidades de manutenção são interpretação de arquitetura, sem avaliação empírica de manutenção.",
+      "evidencias": [
+        "conferencia_quadro6_lote62.json",
+        "conferencia_codigo_unidades_lote69.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 462,
+      "texto": "A contribuição de Engenharia de Software pode, portanto, ser sintetizada em automação do processo experimental, modularização do código, comparação padronizada de modelos, persistência de resultados, mecanismos de recuperação e redução da intervenção manual em execuções prolongadas. Essas características não constituem um novo algoritmo de aprendizado isolado; representam a integração coordenada de técnicas existentes em um artefato reutilizável para o protocolo estudado.",
+      "decisao": "Atribuição ao orientador, adaptação/interface pelo autor e mecanismo atual coerentes; capacidade de persistência não confundida com preservação histórica completa. Qualidades de manutenção são interpretação de arquitetura, sem avaliação empírica de manutenção.",
+      "evidencias": [
+        "conferencia_quadro6_lote62.json",
+        "conferencia_codigo_unidades_lote69.json"
+      ],
+      "acao": "manter_com_limites"
+    },
+    {
+      "paragrafo_atual": 463,
+      "texto": "Considerando o escopo validado, o ESNAUTO permanece uma plataforma experimental. A versão utilizada nesta monografia é identificada exclusivamente por esse nome e não é apresentada como produto de negociação financeira. Sua evolução visual e funcional é tratada como continuidade do artefato, descrita na Seção de Trabalhos Futuros, sem alterar a identidade da versão que produziu os resultados reportados.",
+      "decisao": "Atribuição ao orientador, adaptação/interface pelo autor e mecanismo atual coerentes; capacidade de persistência não confundida com preservação histórica completa. Qualidades de manutenção são interpretação de arquitetura, sem avaliação empírica de manutenção.",
+      "evidencias": [
+        "conferencia_quadro6_lote62.json",
+        "conferencia_codigo_unidades_lote69.json"
+      ],
+      "acao": "manter_com_limites"
+    }
+  ],
+  "limite": "Conferência contextual e numérica com relatórios existentes. Propostas de governança não foram implementadas/testadas nesta passagem; não houve execução de modelos."
+}

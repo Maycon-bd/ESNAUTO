@@ -1,0 +1,75 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "4c9110f8995438f956f965db10ae5f26391c91f45757322758c1e4c83a6f2742",
+  "registros": [
+    {
+      "ancora": "P_atual0365",
+      "referencia": "R03",
+      "texto_atual": "O processamento utilizou bibliometrix 5.5.0 em R, pacote para análise bibliométrica e mapeamento científico descrito por Aria e Cuccurullo (2017). A coleção foi salva em formato compatível com Biblioshiny e validada com o carregador dessa interface, apresentada por Aria et al. (2026).",
+      "fonte": "https://arquivos-producao.ufopa.edu.br/arquivos/202319207961ac761891c0c27aad4249/Aria__Cuccurullo_2017_Bibliometrix.pdf",
+      "localizador": "p. 959, 963 e 968–969",
+      "evidencia": "O artigo apresenta bibliometrix como pacote R para bibliometria e mapeamento científico; descreve biblioNetwork para redes e coocorrência. A versão usada no projeto é comprovada pelos arquivos locais, não pelo artigo de 2017.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0365",
+      "referencia": "R04",
+      "texto_atual": "O processamento utilizou bibliometrix 5.5.0 em R, pacote para análise bibliométrica e mapeamento científico descrito por Aria e Cuccurullo (2017). A coleção foi salva em formato compatível com Biblioshiny e validada com o carregador dessa interface, apresentada por Aria et al. (2026).",
+      "fonte": "https://doi.org/10.1016/j.joi.2026.101837",
+      "localizador": "artigo publicado de 2026, resumo e descrição da interface",
+      "evidencia": "A publicação original identifica Biblioshiny como interface gráfica do pacote Bibliometrix em R; a validação local do carregador não demonstra sessão gráfica interativa.",
+      "diagnostico": "condizente no ponto delimitado"
+    },
+    {
+      "ancora": "P_atual0366",
+      "referencia": "R08",
+      "texto_atual": "As matrizes foram calculadas em scripts de R, com a função biblioNetwork, e a apresentação das figuras utilizou ggplot2 e igraph. A validação de carregamento não corresponde a uma execução das análises pela interface gráfica do Biblioshiny. As revisões de Cardoso et al. (2022c, 2024) serviram como referências para a escolha dos formatos de visualização.",
+      "fonte": {
+        "id": "ENMC",
+        "arquivo": "C:\\Users\\User\\Downloads\\Artigo para XXV ENMC ASSOCIACAO-DE-REDES-DE-ESTADO-DE-ECO-COM-METODOS-ESTATISTICOS-CLASSICOS-DE-PREVISAO-Uma-revisao-bibliometrica publicado.pdf",
+        "sha256": "c5d77693669f8e06c93e0d6839841082124727bcadaa4b2377c9a567db634fd8",
+        "paginas_pdf_inspecionadas": [
+          6,
+          8
+        ]
+      },
+      "localizador": "PDF 6 e 8, Figuras 2 e 7",
+      "evidencia": "A revisão de 2022 apresenta frequência de palavras-chave e expressões nos títulos como formatos gráficos. Os valores e dados da revisão não são usados como resultados do projeto.",
+      "diagnostico": "condizente como referência de formato"
+    },
+    {
+      "ancora": "P_atual0366",
+      "referencia": "R09",
+      "texto_atual": "As matrizes foram calculadas em scripts de R, com a função biblioNetwork, e a apresentação das figuras utilizou ggplot2 e igraph. A validação de carregamento não corresponde a uma execução das análises pela interface gráfica do Biblioshiny. As revisões de Cardoso et al. (2022c, 2024) serviram como referências para a escolha dos formatos de visualização.",
+      "fonte": {
+        "id": "KBS",
+        "arquivo": "C:\\Users\\User\\Downloads\\Artigo para Knowledge Based Systems Echo state network and classical statistical techniques for time series forecasting- A review de Cardoso et alii 1-s2.0-S0950705124002740-main publicado.pdf",
+        "sha256": "89d97780ebca6100cdee8523f7e9c4659b4193d5be167fd9b2308ff2eee5976f",
+        "paginas_pdf_inspecionadas": [
+          6,
+          7
+        ]
+      },
+      "localizador": "PDF 6 e 7, Figuras 1 e 2",
+      "evidencia": "A revisão de 2024 apresenta gráficos de frequência de palavras-chave e de pares de palavras dos resumos como referências visuais gerais; os dados das figuras do projeto são os da coleção reconstruída.",
+      "diagnostico": "condizente como referência de formato"
+    }
+  ],
+  "arquivos_projeto": [
+    {
+      "arquivo": "Scripts/analisar_bibliometria_reconstruida.R",
+      "sha256": "63f016ea7f71028004373943f5b637ca8b8bd6c516f8297cbddd3a01fe5e43aa"
+    },
+    {
+      "arquivo": "reports/bibliometria_reconstrucao/validacao_bibliometrix.json",
+      "sha256": "a9af161afc4e1e596a84ed83112b73a5dff97ddc6892e68dde19552438748bcd"
+    },
+    {
+      "arquivo": "Scripts/results/bibliometria_ambiente/R-library/bibliometrix/DESCRIPTION",
+      "sha256": "5ba4ab05d24b2b0a2033a146dd45828817a33d71b161c5bc22b69ed6f8df730b"
+    }
+  ],
+  "limites": "Artigos consultados nas passagens pertinentes; não se alega leitura integral. Comparação visual de formatos não prova a cronologia das escolhas do autor. Uso local depende dos arquivos do projeto e da validação de carregamento registrada.",
+  "acao": "Nenhuma edição Word."
+}

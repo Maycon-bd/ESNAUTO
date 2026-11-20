@@ -1,0 +1,31 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "registros": [
+    {
+      "paragrafo": 322,
+      "parecer": "Expressão Ridge coincide com produto Yt X transposta e inversa regularizada em esn_core.R:39 e ga_engine.R:263. Atualização leaky coincide com esn_core.R:31, com deslocamento convencional t versus t+1; X inclui constante, entrada e estado.",
+      "codigo": [
+        "app/utils/esn_core.R",
+        "app/utils/ga_engine.R"
+      ]
+    },
+    {
+      "paragrafo": 330,
+      "parecer": "Fitness negativo ponderado 0,4 treino e 0,6 validação corresponde a ga_engine.R:296.",
+      "codigo": [
+        "app/utils/ga_engine.R"
+      ]
+    },
+    {
+      "paragrafo": 388,
+      "parecer": "NMAE definido como MAE dividido pela média observada, vezes 100; com média arredondada 16,1738, valores históricos resultam aproximadamente 2,02%, 2,20% e 2,80%. É normalização descritiva, não retorno financeiro.",
+      "calculo": [
+        2.0231732802433564,
+        2.2048003561315213,
+        2.795261472257602
+      ]
+    }
+  ],
+  "limite": "Conferência das expressões textuais específicas com código atual e aritmética; não identifica código histórico de cada rodada nem testa pressupostos estatísticos.",
+  "acao": "Nenhuma correção necessária nestas expressões."
+}

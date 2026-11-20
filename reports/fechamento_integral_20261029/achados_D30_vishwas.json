@@ -1,0 +1,132 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "fonte_pdf": {
+    "id": "D30",
+    "arquivo": "Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+    "sha256": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+    "paginas": 26,
+    "caracteres_extraidos": 96063,
+    "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+    "log_leitura": []
+  },
+  "alteracoes_propostas": [
+    {
+      "id": "FECH-D30-U0182",
+      "unidade": "U0182",
+      "sha256_texto_base": "86ea7121420b65a0929281a55a6f91db9e9dc7c05c5fa7ebb956487f6e70a82f",
+      "texto_anterior": "Vishwas et al. (2025), em revisão sobre falhas, escalabilidade e uso de dados sintéticos em sistemas de inteligência artificial aplicados ao setor financeiro, observam que arquiteturas treinadas por backpropagation, em particular, as LSTMs, tendem a se mostrar lentas e custosas em cenários de alta frequência.",
+      "referencia": "R46",
+      "fonte": {
+        "id": "D30",
+        "arquivo": "Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+        "sha256": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+        "paginas": 26,
+        "caracteres_extraidos": 96063,
+        "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+        "log_leitura": []
+      },
+      "alcance_leitura": "Texto das 26 páginas do PDF lido nesta meta, inclusive tabelas e referências. Inspeção visual das páginas 9,15,20,21,22 nesta etapa; páginas 2 e17 já inspecionadas na revisão anterior, com mesma fonte. Não declara inspeção visual de cada página nem leitura dos trabalhos citados pela revisão.",
+      "afirmacoes": [
+        {
+          "afirmacao": "A revisão reúne modelos de IA e discute desafios computacionais e de escalabilidade.",
+          "diagnostico": "condizente",
+          "localizador": "PDF 1, 4–5, 10–13, 19–22",
+          "tipo_evidencia": "síntese do conteúdo lido, não citação literal"
+        },
+        {
+          "afirmacao": "A retropropagação causa tempos altos ou inviabilidade de uso de LSTM em alta frequência, conforme atribuída na redação atual.",
+          "diagnostico": "nao_sustentada_nesse_grau_de_certeza",
+          "localizador": "PDF 20–22: discussão qualitativa de aplicações e direções futuras, sem isolamento causal ou benchmark próprio de tempos."
+        }
+      ],
+      "diagnostico": "parcialmente_condizente",
+      "localizador": "PDF 1, 4–5, 10–13, 19–22",
+      "motivo": "A revisão sustenta desafios de custo e escalabilidade, mas não demonstra que a retropropagação seja causa isolada de lentidão das LSTMs em alta frequência.",
+      "proposta": "Vishwas et al. (2025) revisam métodos de inteligência artificial aplicados à previsão de preços e tendências de ações. Os desafios discutidos incluem qualidade dos dados, não estacionariedade, sobreajuste, interpretabilidade e custo computacional. A revisão também aborda requisitos de infraestrutura e latência em aplicações de tempo real.",
+      "estado": "incorporado_em_copia_de_trabalho_pendente_conferencia_nativa"
+    },
+    {
+      "id": "FECH-D30-U0183",
+      "unidade": "U0183",
+      "sha256_texto_base": "560313e563a6e870757ea5a670b21a38af26c6ef9583f23d52528a9d411ed1af",
+      "texto_anterior": "Os autores comparam máquinas de vetores de suporte (Support Vector Machines – SVMs), LSTMs, Transformers e redes quântico-híbridas (HQNN), e identificam o custo de retreinamento em ambientes dinâmicos como uma das principais barreiras à adoção em larga escala de redes profundas no mercado financeiro.",
+      "referencia": "R46",
+      "fonte": {
+        "id": "D30",
+        "arquivo": "Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+        "sha256": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+        "paginas": 26,
+        "caracteres_extraidos": 96063,
+        "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+        "log_leitura": []
+      },
+      "alcance_leitura": "Texto das 26 páginas do PDF lido nesta meta, inclusive tabelas e referências. Inspeção visual das páginas 9,15,20,21,22 nesta etapa; páginas 2 e17 já inspecionadas na revisão anterior, com mesma fonte. Não declara inspeção visual de cada página nem leitura dos trabalhos citados pela revisão.",
+      "afirmacoes": [
+        {
+          "afirmacao": "A revisão reúne modelos de IA e discute desafios computacionais e de escalabilidade.",
+          "diagnostico": "condizente",
+          "localizador": "PDF 4–13, 15–18 e 20–22",
+          "tipo_evidencia": "síntese do conteúdo lido, não citação literal"
+        },
+        {
+          "afirmacao": "O custo de retreinamento constitui uma das principais barreiras gerais à adoção em larga escala, demonstrada pela revisão.",
+          "diagnostico": "nao_sustentada_nesse_grau_de_certeza",
+          "localizador": "PDF 20–22: discussão qualitativa de aplicações e direções futuras, sem isolamento causal ou benchmark próprio de tempos."
+        }
+      ],
+      "diagnostico": "parcialmente_condizente",
+      "localizador": "PDF 4–13, 15–18 e 20–22",
+      "motivo": "A fonte reúne arquiteturas e desafios qualitativos; não há benchmark próprio nem hierarquia quantificada em que custo de retreinamento seja uma das principais barreiras gerais.",
+      "proposta": "A revisão reúne estudos com SVMs, LSTMs, Transformers e modelos quântico-híbridos. Os desafios de custo e escalabilidade aparecem associados a arquiteturas, otimização e infraestrutura distintas. Essas observações sintetizam estudos anteriores e não equivalem a uma comparação experimental própria nem isolam a retropropagação como causa dos custos.",
+      "estado": "incorporado_em_copia_de_trabalho_pendente_conferencia_nativa"
+    },
+    {
+      "id": "FECH-D30-U0195",
+      "unidade": "U0195",
+      "sha256_texto_base": "5b714611b7140bcef263a2a296468a607161af0698a6437b09183712ca3877c7",
+      "texto_anterior": "Vishwas et al. (2025) corroboram esse quadro ao apontar que a dependência de redes baseadas em backpropagation gera tempos de treinamento elevados em cenários de alta frequência financeira. Em ambientes que exigem retreinamento frequente uma característica frequente nos mercados esse custo pode tornar inviável o uso prático dessas arquiteturas em larga escala.",
+      "referencia": "R46",
+      "fonte": {
+        "id": "D30",
+        "arquivo": "Artigos citados\\Vishwas - Artificial_intelligence-based_stock_market_price_p.pdf",
+        "sha256": "c67de2a6c5f328a5449f0a247969a6501939fa3845b16e9c79f9dfe10ebf9a67",
+        "paginas": 26,
+        "caracteres_extraidos": 96063,
+        "estado_leitura": "extraido_para_localizacao_nao_equivale_a_leitura",
+        "log_leitura": []
+      },
+      "alcance_leitura": "Texto das 26 páginas do PDF lido nesta meta, inclusive tabelas e referências. Inspeção visual das páginas 9,15,20,21,22 nesta etapa; páginas 2 e17 já inspecionadas na revisão anterior, com mesma fonte. Não declara inspeção visual de cada página nem leitura dos trabalhos citados pela revisão.",
+      "afirmacoes": [
+        {
+          "afirmacao": "A revisão reúne modelos de IA e discute desafios computacionais e de escalabilidade.",
+          "diagnostico": "condizente",
+          "localizador": "PDF 15, 17, 20–22; seção 9.2",
+          "tipo_evidencia": "síntese do conteúdo lido, não citação literal"
+        },
+        {
+          "afirmacao": "A retropropagação causa tempos altos ou inviabilidade de uso de LSTM em alta frequência, conforme atribuída na redação atual.",
+          "diagnostico": "nao_sustentada_nesse_grau_de_certeza",
+          "localizador": "PDF 20–22: discussão qualitativa de aplicações e direções futuras, sem isolamento causal ou benchmark próprio de tempos."
+        }
+      ],
+      "diagnostico": "parcialmente_condizente",
+      "localizador": "PDF 15, 17, 20–22; seção 9.2",
+      "motivo": "O artigo discute intensidade computacional e latência qualitativamente, mas não demonstra inviabilidade prática generalizada por dependência de retropropagação.",
+      "proposta": "Vishwas et al. (2025) discutem custo computacional e latência como desafios para aplicações financeiras em tempo real. Esse tratamento é qualitativo: não estabelece um limite universal de treinamento nem demonstra que a retropropagação, por si só, inviabilize LSTM ou GRU. Nesta pesquisa, a análise de eficiência depende dos tempos medidos e da distinção entre ajuste do modelo e busca de hiperparâmetros.",
+      "estado": "incorporado_em_copia_de_trabalho_pendente_conferencia_nativa"
+    }
+  ],
+  "conferencia_parcial_U0256": "A oração sobre desafios computacionais discutidos por Vishwas é condizente; a parte sobre arquitetura ESN depende da conferência de Jaeger e não foi aprovada pelo conjunto automaticamente.",
+  "metadados_confirmados": {
+    "url_primaria": "https://www.extrica.com/article/24861",
+    "volume": 11,
+    "numero": 4,
+    "paginas": "204–229",
+    "publicado": "2025-11-12",
+    "doi": "10.21595/mme.2025.24861",
+    "alteracao_proposta_referencia": "Completar número4 e páginas204–229; não alterar autoria por inversão automática do exportador BibTeX/RIS."
+  },
+  "matriz_P1_P5": "Manter ?, S, S, ?, S. Outro artigo não é usado para preencher informação ausente nesta linha.",
+  "limites": "Afirmações propostas só serão encerradas depois da incorporação e conferência na cópia final. Similaridade e atribuição desta fonte ainda precisam do passe específico."
+}

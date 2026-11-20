@@ -1,0 +1,253 @@
+{
+  "alvo": "reports\\monografia\\trabalho\\revisao_parecer_integridade.docx",
+  "sha256_alvo": "95f84d82dbc429754febee49d1b5ff3448dc5e1c303752fc5e5f5e2b22f2661d",
+  "checks": [
+    {
+      "item": "A4 e margens seção1",
+      "ok": true,
+      "detalhe": [
+        21.00086111111111,
+        29.70036111111111,
+        3.000375,
+        3.000375,
+        2.00025,
+        2.00025
+      ]
+    },
+    {
+      "item": "A4 e margens seção2",
+      "ok": true,
+      "detalhe": [
+        21.00086111111111,
+        29.70036111111111,
+        3.000375,
+        3.000375,
+        2.00025,
+        2.00025
+      ]
+    },
+    {
+      "item": "A4 e margens seção3",
+      "ok": true,
+      "detalhe": [
+        21.00086111111111,
+        29.70036111111111,
+        3.000375,
+        3.000375,
+        2.00025,
+        2.00025
+      ]
+    },
+    {
+      "item": "A4 e margens seção4",
+      "ok": true,
+      "detalhe": [
+        21.00086111111111,
+        29.70036111111111,
+        3.000375,
+        3.000375,
+        2.00025,
+        2.00025
+      ]
+    },
+    {
+      "item": "A4 e margens seção5",
+      "ok": true,
+      "detalhe": [
+        21.00086111111111,
+        29.70036111111111,
+        3.000375,
+        3.000375,
+        2.00025,
+        2.00025
+      ]
+    },
+    {
+      "item": "A4 e margens seção6",
+      "ok": true,
+      "detalhe": [
+        21.00086111111111,
+        29.70036111111111,
+        3.000375,
+        3.000375,
+        2.00025,
+        2.00025
+      ]
+    },
+    {
+      "item": "RESUMO150–500palavras",
+      "ok": true,
+      "detalhe": 331
+    },
+    {
+      "item": "ABSTRACT150–500palavras",
+      "ok": true,
+      "detalhe": 275
+    },
+    {
+      "item": "TabelaXML1:11pt",
+      "ok": true,
+      "detalhe": 48
+    },
+    {
+      "item": "TabelaXML1:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML2:11pt",
+      "ok": true,
+      "detalhe": 243
+    },
+    {
+      "item": "TabelaXML2:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML3:11pt",
+      "ok": true,
+      "detalhe": 14
+    },
+    {
+      "item": "TabelaXML3:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML4:11pt",
+      "ok": true,
+      "detalhe": 25
+    },
+    {
+      "item": "TabelaXML4:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML5:11pt",
+      "ok": true,
+      "detalhe": 33
+    },
+    {
+      "item": "TabelaXML5:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML6:11pt",
+      "ok": true,
+      "detalhe": 21
+    },
+    {
+      "item": "TabelaXML6:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML7:11pt",
+      "ok": true,
+      "detalhe": 20
+    },
+    {
+      "item": "TabelaXML7:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML8:11pt",
+      "ok": true,
+      "detalhe": 56
+    },
+    {
+      "item": "TabelaXML8:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML9:11pt",
+      "ok": true,
+      "detalhe": 20
+    },
+    {
+      "item": "TabelaXML9:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML10:11pt",
+      "ok": true,
+      "detalhe": 25
+    },
+    {
+      "item": "TabelaXML10:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML11:11pt",
+      "ok": true,
+      "detalhe": 18
+    },
+    {
+      "item": "TabelaXML11:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML12:11pt",
+      "ok": true,
+      "detalhe": 16
+    },
+    {
+      "item": "TabelaXML12:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "TabelaXML13:11pt",
+      "ok": true,
+      "detalhe": 20
+    },
+    {
+      "item": "TabelaXML13:cabeçalho negrito",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "Legendas10pt",
+      "ok": true,
+      "detalhe": 19
+    },
+    {
+      "item": "Legendas sem ponto final",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "item": "Fontes10pt",
+      "ok": true,
+      "detalhe": 19
+    },
+    {
+      "item": "Títulos de quadros/tabelas sem siglas",
+      "ok": true,
+      "detalhe": [
+        "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico",
+        "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica",
+        "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+        "Quadro 2 – Organização das cinco ondas experimentais",
+        "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético",
+        "Quadro 4 – Síntese do desenho experimental executado",
+        "Tabela 3 – Comparação dos principais resultados no conjunto de teste",
+        "Tabela 4 – Configurações selecionadas das cinco ondas experimentais",
+        "Tabela 5 – Decomposição do custo computacional documentado",
+        "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+        "Quadro 5 – Síntese da avaliação das hipóteses",
+        "Tabela 7 – Comparação descritiva com Lampugnani (2026)",
+        "Quadro 6 – Delimitação das contribuições e da procedência"
+      ]
+    }
+  ],
+  "limite": "Auditoria estrutural parcial, sem atualizar listas/campos e sem avaliar autoria ou conformidade integral. Tamanho explícito, não cálculo de toda herança de estilos. Ficha e aprovação mantidas sem preenchimento inventado."
+}

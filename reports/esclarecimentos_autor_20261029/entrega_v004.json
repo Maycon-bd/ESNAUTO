@@ -1,0 +1,24 @@
+{
+  "vigente": "v004",
+  "base": "v003",
+  "estado": "em_revisao",
+  "arquivos": [
+    {
+      "arquivo": "reports/monografia/versoes/v004/MayconGarciaSilva_monografia_v004.docx",
+      "sha256": "110b1d19223e23f9e4b27e4c2b0ba74e92072ebcc3f1cd4ec4f0200bba059f5b"
+    },
+    {
+      "arquivo": "reports/monografia/versoes/v004/MayconGarciaSilva_monografia_v004.pdf",
+      "sha256": "c1932dbc6071f2318a7e51b1408e34daf9d1ca5d3bb1a73d96e714d2137cd9be"
+    }
+  ],
+  "evidencias_registradas_conferidas": 10,
+  "relatorio": "reports/esclarecimentos_autor_20261029/relatorio.md",
+  "pendencias": [
+    "R08: relatórios locais das5ondas localizados; Onda5 tem15linhas compiladas, mas a ligação com saídas primárias GA_RUN_0053–0067 ainda não foi estabelecida.",
+    "Manter a revisão como literatura com buscas complementares e registros históricos parciais, conforme declaração do autor; não reivindicar aplicação integral de ranking Methodi ou fluxo sistemático reproduzível.",
+    "Fornecedor dos dados ajustados e códigos R confirmado:orientador. Autor confirmou adaptação e interface. A cadeia técnica do ajuste anterior ao recebimento não foi reconstruída; não atribuir ao autor sua execução original.",
+    "43células da matriz permanecem com informação insuficiente no escopo documentado; isso não demonstra ausência universal ou erro comprovado.",
+    "Ficha catalográfica e formalidades de aprovação são etapas institucionais posteriores; ficha vazia autorizada pelo autor, sem inventar dados."
+  ]
+}

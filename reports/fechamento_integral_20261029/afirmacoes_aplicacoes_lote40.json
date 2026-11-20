@@ -1,0 +1,196 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "4cf48044445c0760210b1206c185487b8406af3eaecb541de6db381cdbf735b0",
+  "escopo": "17 relações de afirmação e fonte; leituras primárias e evidências anteriores foram confrontadas com as passagens atuais. Outras afirmações do mesmo parágrafo não são automaticamente aprovadas.",
+  "registros": [
+    {
+      "ancora": "P_atual0187",
+      "texto_atual": "Timbó et al. (2016) aplicaram regressão linear à previsão do fechamento da PETR4 e selecionaram indicadores com apoio da correlação de Pearson. O estudo avaliou o acerto das previsões por uma tolerância absoluta de 0,50 em relação ao fechamento observado. Esse critério mede proximidade de preços e não deve ser interpretado como taxa de acerto da direção da variação do ativo.",
+      "referencia": "R45",
+      "fonte_id": "D28",
+      "arquivo_fonte": "Artigos citados\\Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256_fonte": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "localizador": "PDF 4–8, Tabelas 2–3",
+      "evidencia": "Regressão múltipla para PETR4; correlação de Pearson apoia seleção de indicadores. O sucesso é tolerância de erro absoluto até 0,50, sem identificação com acerto de direção. A fonte contém outras inconsistências de contagem não reproduzidas.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0188",
+      "texto_atual": "Costa e Lunkes (2025) combinaram indicadores técnicos e fundamentalistas em um modelo de classificação com máquina de vetores de suporte (Support Vector Machine – SVM). O modelo híbrido apresentou F1-score de aproximadamente 72,7% na amostra de ações brasileiras analisada, sem atribuição desse valor especificamente à PETR4. Os autores recomendaram investigar outros algoritmos, incluindo redes neurais e métodos de conjunto; a escolha de arquiteturas recorrentes constitui uma decisão da presente pesquisa.",
+      "referencia": "R14",
+      "fonte_id": "D07",
+      "arquivo_fonte": "Artigos citados\\Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256_fonte": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "localizador": "PDF 13–15 e 19",
+      "evidencia": "SVM classifica com indicadores técnicos e fundamentalistas; F1 é 72,74% na amostra e a recomendação inclui redes e ensembles. A fonte tem divergências de datas e contagens, não transferidas ao texto.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0199",
+      "texto_atual": "Em paralelo, novas arquiteturas estendem a discussão para além da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quânticas (Quantum Temporal Convolutional Neural Networks – QTCNN) e relatam Sharpe superior ao de LSTM, Transformer e TConv-MLP no conjunto JPX, em avaliação fora da amostra de 22 dias. Os resultados são restritos ao protocolo estudado.",
+      "referencia": "R11",
+      "fonte_id": "D05",
+      "arquivo_fonte": "Artigos citados\\Chen - Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction A Comparative Benchmark Study.pdf",
+      "sha256_fonte": "703cec38e2b31cc6b2e3f38258db73ef814c238b13f70ffa0b58f23622476a80",
+      "localizador": "PDF 13–14, Tabela 6",
+      "evidencia": "No conjunto JPX, Sharpe da QTCNN é 0,538 versus 0,313 Transformer, 0,044 LSTM e 0,412 TConv-MLP, em avaliação de 22 dias. Circuitos simulados; não se extrapola a superioridade.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0201",
+      "texto_atual": "Behera, Nayak e Kumar (2023) revisam redes neurais de ordem superior (Higher Order Neural Networks – HONNs) e otimização evolucionária em previsão financeira. O levantamento examina modelos, seleção de hiperparâmetros e métodos como AG e otimização por enxame de partículas (Particle Swarm Optimization – PSO). Trata-se de síntese de estudos com tarefas e protocolos distintos; os ganhos relatados não constituem uma comparação experimental própria nem demonstram que a associação a uma metaheurística melhore qualquer rede ou série.",
+      "referencia": "R05",
+      "fonte_id": "D03",
+      "arquivo_fonte": "Artigos citados\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_fonte": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "localizador": "PDF 1 e 12–33",
+      "evidencia": "Revisão de HONNs e métodos evolucionários para séries financeiras; seu conjunto reúne pesquisas heterogêneas. Não relata um novo experimento comparativo universal.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0213",
+      "texto_atual": "Sharma et al. (2025) avaliaram ESNs para preços de Bitcoin, com XGBoost e previsão pelo último valor como comparadores. O estudo relacionou o erro ao caos estimado por expoentes de Lyapunov. O teste de Mann–Whitney comparou, entre grupos de menor e maior caos, a razão dos RMSEs da ESN e do XGBoost. Foi relatada diferença para janelas de treino de 30 e 60 dias, mas não de 15. Isso não demonstra superioridade estatística geral da ESN sobre ARIMA ou em todos os períodos.",
+      "referencia": "R40",
+      "fonte_id": "D23",
+      "arquivo_fonte": "Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_fonte": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "localizador": "PDF 7–8, 11–12, Tabela 3 e Figura 8; inspeção visual de PDF 6",
+      "evidencia": "Prevê Bitcoin e compara ESN, XGBoost e previsão ingênua; Mann–Whitney compara razões ESN/XGBoost entre grupos de caos, com diferença nas janelas 30 e 60, não em 15. A camada textual indevida da página 6 foi excluída na leitura.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0217",
+      "texto_atual": "Tian e Pei (2024) empregaram o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e MAPE.",
+      "referencia": "R44",
+      "fonte_id": "D27",
+      "arquivo_fonte": "Artigos citados\\Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_fonte": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "localizador": "PDF 4–6 e 9–12, Tabelas 1–3",
+      "evidencia": "SSA ajusta ESN; 10 ações dos EUA e 10 da China; comparação inclui BP, Elman, LSTM e ESN. Página 5 diz que ESN e SSA-ESN usam as mesmas matrizes Win e W.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0218",
+      "texto_atual": "Deng et al. (2022) aplicaram AG à seleção do escalonamento de entrada, raio espectral e taxa de vazamento de ESNs empilhadas para prever degradação de células de combustível de membrana de troca de prótons (Proton Exchange Membrane Fuel Cells – PEMFCs). A Tabela 6 compara os erros obtidos com valores de LSTM e outros métodos provenientes de um estudo anterior. Os resultados apoiam a estratégia nessa aplicação, sem estabelecer superioridade geral frente a LSTM nem identificar uma fragilidade principal de toda a literatura de ESNs.",
+      "referencia": "R15",
+      "fonte_id": "D08",
+      "arquivo_fonte": "Artigos citados\\Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_fonte": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "localizador": "PDF 10–13 e 20, Tabela 6",
+      "evidencia": "AG seleciona escalonamento de entrada, raio espectral e vazamento para ESNs empilhadas em PEMFC. A tabela credita comparadores LSTM, ARIMA e Fusion à referência 36; a monografia não os apresenta como experimento direto independente.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0219",
+      "texto_atual": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+      "referencia": "R20",
+      "fonte_id": "D12",
+      "arquivo_fonte": "Artigos citados\\Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256_fonte": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "localizador": "PDF 5–11, seções 3.1–3.3",
+      "evidencia": "O estudo BIST 100 compara MLP, MLP-GA e MLP-PSO, com funções e populações diferentes; não é uma ESN nem prova estabilidade universal.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0219",
+      "texto_atual": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+      "referencia": "R05",
+      "fonte_id": "D03",
+      "arquivo_fonte": "Artigos citados\\Behera S - A Comprehensive Survey on Higher Order Neural Networks and Evolutionary Optimization in Financial Time Series.pdf",
+      "sha256_fonte": "a0ee79884ff7e003d2ec54d432047b9fe179fa25792fbb098d56e1292aa098d8",
+      "localizador": "PDF 1 e seções de revisão",
+      "evidencia": "Fonte resume trabalhos sobre redes de ordem superior e otimização evolucionária; o trecho atual não atribui a ela consenso universal.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0220",
+      "texto_atual": "Soltani, Benmohamed e Ltifi (2022), na versão preliminar consultada, revisaram 74 estudos sobre otimização de ESNs. A Tabela 5 relaciona PSO a 16 trabalhos e AG a dez, além de outras técnicas bio-inspiradas e não bio-inspiradas. Essas frequências descrevem o emprego dos métodos na coleção dos autores; não constituem uma classificação de eficácia. A revisão discute custos, parâmetros e topologias, sem sustentar uma lacuna específica sobre distribuições de inicialização em aplicações financeiras.",
+      "referencia": "R41",
+      "fonte_id": "D24",
+      "arquivo_fonte": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_fonte": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "localizador": "PDF 2 e 8–14, Tabela 5",
+      "evidencia": "Pré-print apresenta revisão de 74 estudos e associa PSO a 16 trabalhos e AG a dez; a frequência é relato da revisão, não ranking de eficácia ou contagem independentemente refeita.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0239",
+      "texto_atual": "Costa e Lunkes (2025) informam o uso de preços ajustados a desdobramentos e dividendos na construção de indicadores e da variável de classificação. O tratamento de eventos corporativos é relevante quando suas descontinuidades afetam a variável e a tarefa investigadas. A necessidade e a forma do ajuste dependem do objeto da modelagem; seu emprego, isoladamente, não garante resultados confiáveis para qualquer modelo.",
+      "referencia": "R14",
+      "fonte_id": "D07",
+      "arquivo_fonte": "Artigos citados\\Costa E Lunkes - Application of machine learning algorithm to predict the behavior of stocks marketed in Brazil.pdf",
+      "sha256_fonte": "41b8b74d3a1361a61cd8cc132abc02e8fd1750577ac4428d156e3378475fb829",
+      "localizador": "PDF 12, dados e variáveis",
+      "evidencia": "Descreve preços ajustados por desdobramentos e dividendos na classe e indicadores; uso do ajuste não demonstra desempenho geral de qualquer modelo.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0250",
+      "texto_atual": "Tian e Pei (2024) avaliaram uma ESN otimizada por SSA em dez ações dos Estados Unidos e dez da China. O estudo apresenta comparações com ESN, LSTM e redes BP e Elman. Os resultados de erro favorecem o modelo proposto nas condições examinadas, mas não estabelecem uma garantia geral de superioridade nem isolam o efeito de uma família probabilística dos pesos. A geração aleatória das matrizes não deve ser confundida com sua especificação estatística completa.",
+      "referencia": "R44",
+      "fonte_id": "D27",
+      "arquivo_fonte": "Artigos citados\\Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_fonte": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "localizador": "PDF 3–6 e 9–12",
+      "evidencia": "Comparadores, tarefa, SSA e 20 ações são confirmados; as distribuições de atualização da SSA não são automaticamente leis dos pesos da ESN.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0253",
+      "texto_atual": "Sharma et al. (2025) empregaram otimização Bayesiana via Tree Parzen Estimator (TPE) na seleção de hiperparâmetros da ESN. A Tabela 1 do estudo apresenta as distribuições de amostragem dos hiperparâmetros, que não equivalem à lei de geração dos elementos de Win ou W. A avaliação usou janelas de treino de 15, 30 e 60 observações, teste de dez pontos e avanço de um ponto. Assim, esses tamanhos de treino não representam horizontes de previsão de 15, 30 e 60 dias.",
+      "referencia": "R40",
+      "fonte_id": "D23",
+      "arquivo_fonte": "Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_fonte": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "localizador": "PDF 7–8, Tabela 1",
+      "evidencia": "TPE/Hyperopt seleciona hiperparâmetros; treinamento 15/30/60 observações, teste 10 e avanço 1. Os comprimentos das janelas não equivalem a horizontes de previsão.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0258",
+      "texto_atual": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+      "referencia": "R15",
+      "fonte_id": "D08",
+      "arquivo_fonte": "Artigos citados\\Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_fonte": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "localizador": "PDF 10–13",
+      "evidencia": "AG otimiza parâmetros das ESNs empilhadas na tarefa de degradação; os efeitos são restritos ao protocolo estudado.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0258",
+      "texto_atual": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+      "referencia": "R44",
+      "fonte_id": "D27",
+      "arquivo_fonte": "Artigos citados\\Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_fonte": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "localizador": "PDF 4–6",
+      "evidencia": "A seleção de hiperparâmetros por SSA está descrita; uso de heurística não comprova ótimo global.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0258",
+      "texto_atual": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+      "referencia": "R40",
+      "fonte_id": "D23",
+      "arquivo_fonte": "Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_fonte": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "localizador": "PDF 7–8",
+      "evidencia": "Otimização Bayesiana via TPE para hiperparâmetros, sem inferência de garantia de ótimo global.",
+      "diagnostico": "condizente na afirmação delimitada"
+    },
+    {
+      "ancora": "P_atual0258",
+      "texto_atual": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+      "referencia": "R41",
+      "fonte_id": "D24",
+      "arquivo_fonte": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_fonte": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "localizador": "PDF 8–14",
+      "evidencia": "A revisão reúne técnicas distintas; diversidade de uso não demonstra consenso de superioridade.",
+      "diagnostico": "condizente na afirmação delimitada"
+    }
+  ],
+  "acao": "Nenhuma edição nos pontos examinados."
+}

@@ -1,0 +1,109 @@
+{
+  "unidades_alteradas": [
+    "U0189",
+    "U0196",
+    "U0208",
+    "U0210",
+    "U0231",
+    "U0279",
+    "U0364",
+    "U0436",
+    "U0484"
+  ],
+  "celulas_alteradas": [
+    {
+      "xpath": "/w:document/w:body/w:tbl[2]/w:tr[5]/w:tc[3]",
+      "antes": "Separa comparação própria de LSTM/GRU/Transformer e números importados, como em Deng e Liu B. (S).",
+      "depois": "Separa comparações próprias com LSTM/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S."
+    },
+    {
+      "xpath": "/w:document/w:body/w:tbl[3]/w:tr[14]/w:tc[1]",
+      "antes": "Hariharan et al. (2025)",
+      "depois": "Hariharan, Suresh e Chandrasekar (2025)"
+    },
+    {
+      "xpath": "/w:document/w:body/w:tbl[3]/w:tr[26]/w:tc[1]",
+      "antes": "Sudiatmika & Putra (2024)",
+      "depois": "Sudiatmika e Putra (2024)"
+    },
+    {
+      "xpath": "/w:document/w:body/w:tbl[3]/w:tr[34]/w:tc[1]",
+      "antes": "Xiao (2024)",
+      "depois": "Xiao, Deng e Bi (2024)"
+    }
+  ],
+  "demais_celulas_identicas": true,
+  "midias_identicas": {
+    "word/media/image1.png": "6fe1248a9a8de934bb0fb51a75ab87a5b42c29d6a19f181da3c03026854518ae",
+    "word/media/image2.png": "b5478bf6d3b43dfbfdf6c3049a1152c753aa5b55aea76d982de4ba6bb14f1aaf",
+    "word/media/image3.png": "b656ee31e9cbb254e135fccc892cf6a14d38480523946aa9894050c4e1a6b56d",
+    "word/media/image4.png": "2b9b3ad06629f692e31511326e3e4dd9fdbdcbdc9f62c81cb8c8d72d619d4390",
+    "word/media/image5.png": "43f3d08f3a311b449d3b0db2bc85ce3993cdf5f021b9b19cfd8921e56886ca5d",
+    "word/media/image6.png": "f3d5b9dc563cd70ec9592077e1e2cc47155206c1d6b664ba4c4ea634f85efd7c"
+  },
+  "n_codigos_conciliados": 170,
+  "contagens": {
+    "-": 41,
+    "?": 40,
+    "D": 77,
+    "S": 12
+  },
+  "diferencas_textuais_contra_inventario_base_incluindo_listas": [
+    "U0130",
+    "U0138",
+    "U0182",
+    "U0183",
+    "U0184",
+    "U0189",
+    "U0191",
+    "U0192",
+    "U0193",
+    "U0194",
+    "U0195",
+    "U0196",
+    "U0204",
+    "U0208",
+    "U0210",
+    "U0211",
+    "U0212",
+    "U0214",
+    "U0216",
+    "U0218",
+    "U0219",
+    "U0228",
+    "U0231",
+    "U0232",
+    "U0233",
+    "U0244",
+    "U0250",
+    "U0251",
+    "U0252",
+    "U0255",
+    "U0256",
+    "U0257",
+    "U0275",
+    "U0279",
+    "U0358",
+    "U0364",
+    "U0370",
+    "U0418",
+    "U0421",
+    "U0424",
+    "U0430",
+    "U0436",
+    "U0442",
+    "U0448",
+    "U0466",
+    "U0484",
+    "U0502",
+    "U0580",
+    "U0601",
+    "U0612",
+    "U0896",
+    "U0993",
+    "U1013",
+    "U1014",
+    "U1020"
+  ],
+  "resultados_experimentais_preservados": true
+}

@@ -1,0 +1,345 @@
+{
+  "sha256_docx": "46064ee644ae74ba774c5e4adb2e16bc7c00c137914ae2484678e8ff08b6af44",
+  "entradas_lista": [
+    "ACF – Autocorrelation Function (Função de Autocorrelação)",
+    "AG – Algoritmo Genético",
+    "AGED – Asymmetric Generalized Error Distribution (Distribuição Generalizada de Erro Assimétrica)",
+    "AIC – Akaike Information Criterion (Critério de Informação de Akaike)",
+    "ARIMA – Autoregressive Integrated Moving Average",
+    "B3 – Brasil, Bolsa, Balcão",
+    "BIC – Bayesian Information Criterion (Critério de Informação Bayesiano)",
+    "BIST – Borsa Istanbul",
+    "BP – Backpropagation (Retropropagação)",
+    "BPTT – Backpropagation Through Time",
+    "CHC – Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation",
+    "CPU – Central Processing Unit (Unidade Central de Processamento)",
+    "CRSP – Center for Research in Security Prices",
+    "CS-ESN – Compressed Sensing Echo State Network (Rede de Estados de Eco com Sensoriamento Compressivo)",
+    "DJIA – Dow Jones Industrial Average",
+    "DL – Deep Learning (Aprendizado Profundo)",
+    "DM – Diebold-Mariano",
+    "DOI – Digital Object Identifier (Identificador Digital de Objeto)",
+    "EGARCH – Exponential Generalized Autoregressive Conditional Heteroskedasticity",
+    "ESN – Echo State Network (Rede Neural de Estados de Eco)",
+    "GED – Generalized Error Distribution",
+    "GPU – Graphics Processing Unit (Unidade de Processamento Gráfico)",
+    "GRU – Gated Recurrent Unit",
+    "HAR – Heterogeneous Autoregressive (Autorregressivo Heterogêneo)",
+    "HONN – Higher-Order Neural Network (Rede Neural de Ordem Superior)",
+    "HQIC – Hannan–Quinn Information Criterion (Critério de Informação de Hannan–Quinn)",
+    "HUX – Half Uniform Crossover",
+    "LHS – Latin Hypercube Sampling (Amostragem por Hipercubo Latino)",
+    "LLM – Large Language Model (Modelo de Linguagem de Grande Escala)",
+    "LSTM – Long Short-Term Memory",
+    "MAE – Mean Absolute Error (Erro Médio Absoluto)",
+    "MAPE – Mean Absolute Percentage Error (Erro Percentual Absoluto Médio)",
+    "MLP – Multilayer Perceptron (Perceptron Multicamadas)",
+    "MSE – Mean Squared Error (Erro Quadrático Médio)",
+    "NLP – Natural Language Processing (Processamento de Linguagem Natural)",
+    "NMAE – Normalized Mean Absolute Error (Erro Médio Absoluto Normalizado)",
+    "NMSE – Normalized Mean Squared Error (Erro Quadrático Médio Normalizado)",
+    "PDF – Portable Document Format (Formato de Documento Portátil)",
+    "PEMFC – Proton Exchange Membrane Fuel Cell (Célula de Combustível de Membrana de Troca de Prótons)",
+    "PETR4 – Ação preferencial da Petróleo Brasileiro S.A.",
+    "PF – Power Function",
+    "PSO – Particle Swarm Optimization",
+    "QTCNN – Quantum Temporal Convolutional Neural Network (Rede Convolucional Temporal Quântica)",
+    "RC – Reservoir Computing (Computação de Reservatório)",
+    "RMSE – Root Mean Squared Error (Raiz do Erro Médio Quadrático)",
+    "RNN – Recurrent Neural Network (Rede Neural Recorrente)",
+    "RNR – Rede Neural Recorrente",
+    "SSA – Sparrow Search Algorithm",
+    "SVM – Support Vector Machine",
+    "TPE – Tree Parzen Estimator"
+  ],
+  "simbolos_verificados": [
+    {
+      "indice_paragrafo_agregado": 121,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 122,
+      "simbolo": "Wout",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 168,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 170,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 171,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 177,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 218,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 222,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 232,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 233,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 233,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 234,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 235,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 254,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 262,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 265,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 276,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 277,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 287,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 295,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 296,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 296,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 296,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 315,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 315,
+      "simbolo": "Wout",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 315,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 316,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 323,
+      "simbolo": "Wout",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 323,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 324,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 324,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 324,
+      "simbolo": "Wout",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 332,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 341,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 347,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 348,
+      "simbolo": "Wout",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 348,
+      "simbolo": "Wout",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 372,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 374,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 374,
+      "simbolo": "Wout",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 380,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 384,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 384,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 384,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 394,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 399,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 399,
+      "simbolo": "Wout",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 460,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 461,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 461,
+      "simbolo": "Wout",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 487,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 556,
+      "simbolo": "Win",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 561,
+      "simbolo": "Wout",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 838,
+      "simbolo": "Wout",
+      "italico": true
+    },
+    {
+      "indice_paragrafo_agregado": 848,
+      "simbolo": "Wout",
+      "italico": true
+    }
+  ],
+  "evidencias": [
+    "siglas_atuais_lote153.json",
+    "siglas_fora_lista_lote154.json",
+    "expansoes_mercados_lote155.json",
+    "incorporacao_lote156.json",
+    "checkpoint_lote156.json"
+  ],
+  "decisoes": {
+    "G74": "Primeiras ocorrências das48entradas anteriores examinadas153; BIST/DJIA acrescentadas com nomes confirmados nos originais155/156. NomeJPX explicitado como título do conjunto. Tickers,nomes de software,pacotes e identificadores não recebem expansões inventadas. MLPdentro deTConv-MLP é nome de modelo; conceito próprio explicado na ocorrência deEcer.",
+    "G75": "Lista50alfabética; siglas convencionais preservadas,plural emsminúsculo como convenção editorial; nomes,tickers e códigos de hipóteses/perguntas distinguidos. RNN/RNR têm equivalentes explícitos.",
+    "G76": "Todas as ocorrências textuaisWin/Wout nos parágrafos e células têm itálico efetivo. Definições de matrizes e uso deW como reservatório preservados; subscritos conferidos nas páginas técnicas e lista de símbolos."
+  },
+  "limite": "Inventário por texto de parágrafos/células e análise contextual; nomes em referências e títulos originais não devem ser mecanicamente expandidos. Itálico de símbolos não valida fórmulas,conferidas separadamente no lote85."
+}

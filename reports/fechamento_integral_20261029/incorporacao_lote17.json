@@ -1,0 +1,17 @@
+{
+  "sha256_antes": "8dfd5a933764a8607a4dbc08d9f08c3704f10a91e51e92e40451e807a3361f38",
+  "sha256_apos_edicao": "65d5545a781b18001d957b8846caf0ab1f857585f387658d55de89ba3aa76b54",
+  "alteracoes": [
+    {
+      "unidade": "U0198",
+      "antes": "Em paralelo, novas arquiteturas estendem a discussão para além da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quânticas (Quantum Temporal Convolutional Neural Networks – QTCNN) e mostram superioridade frente a LSTM, Multilayer Perceptron (MLP) e Transformers no retorno ajustado ao risco para ações japonesas (dataset JPX).",
+      "depois": "Em paralelo, novas arquiteturas estendem a discussão para além da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quânticas (Quantum Temporal Convolutional Neural Networks – QTCNN) e relatam Sharpe superior ao de LSTM, Transformer e TConv-MLP no conjunto JPX, em avaliação fora da amostra de 22 dias. Os resultados são restritos ao protocolo estudado."
+    },
+    {
+      "unidade": "U0985",
+      "antes": "CHEN, C.; ZHANG, X.; KUO, E.; FU, R.; XIE, Q.; ZHANG, F. Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study. 2026. (Preprint arXiv:2512.06630v2). Submetido ao IEEE Transactions on Quantum Engineering.",
+      "depois": "CHEN, C.; ZHANG, X.; KUO, E.; FU, R.; XIE, Q.; ZHANG, F. Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study. 2026. (Preprint arXiv:2512.06630v2). Disponível em: https://doi.org/10.48550/arXiv.2512.06630."
+    }
+  ],
+  "estado": "pendente_exportacao_e_inspecao"
+}

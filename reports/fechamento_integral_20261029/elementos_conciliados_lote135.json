@@ -1,0 +1,313 @@
+{
+  "sha256_docx": "a6c9512dd7503795b6b7921c0d33c6dd327c42c6ec14442ccfbd463846e54a35",
+  "elementos": [
+    {
+      "titulo": "Tabela 1 – Síntese das dimensões investigadas nos 34 estudos do portfólio bibliográfico",
+      "pagina_impressa": 33,
+      "pagina_pdf": 34,
+      "chamadas": [
+        {
+          "indice": 252,
+          "texto": "Sharma et al. (2025) empregaram otimização Bayesiana via Tree Parzen Estimator (TPE) na seleção de hiperparâmetros da ESN. A Tabela 1 do estudo apresenta as distribuições de amostragem dos hiperparâmetros, que não equivalem à lei de geração dos elementos de Win ou W. A avaliação usou janelas de treino de 15, 30 e 60 observações, teste de dez pontos e avanço de um ponto. Assim, esses tamanhos de treino não representam horizontes de previsão de 15, 30 e 60 dias."
+        },
+        {
+          "indice": 361,
+          "texto": "Referências anteriores a 2021 e trabalhos de outros domínios foram utilizados como apoio conceitual, metodológico ou histórico. A coleção descritiva de 34 documentos, apresentada na Tabela 1, no Quadro 1 e nas Figuras 1 a 4, reúne essas fontes com estudos financeiros recentes. Seu tamanho corresponde ao material recuperado para análise, sem representar a quantidade de estudos que teria atendido a todos os critérios da busca originalmente relatada."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Quadro 1 – Mapa de cobertura: estudo × dimensão analítica",
+      "pagina_impressa": 33,
+      "pagina_pdf": 34,
+      "chamadas": [
+        {
+          "indice": 266,
+          "texto": "O Quadro 1 apresenta a codificação por documento: D indica evidência direta localizada na aplicação da própria fonte; S indica tratamento secundário ou contextual; ? indica informação insuficiente no escopo consultado; e — indica dimensão não aplicável ao objeto estudado. A marca ? não demonstra que o assunto inexista na obra. A presença de uma informação também não representa reprodução independente, aprovação da qualidade do estudo ou equivalência entre os protocolos comparados."
+        },
+        {
+          "indice": 270,
+          "texto": "A caracterização da coleção é complementada pelas Figuras 1 a 4. A cobertura temática utiliza a codificação do Quadro 1, enquanto as demais representações utilizam metadados reconstruídos dos documentos. Esses materiais descrevem o acervo recuperado e não substituem exportações bibliográficas originais ou registros de seleção. O procedimento e seus limites de procedência são apresentados na Seção 3.8.3."
+        },
+        {
+          "indice": 273,
+          "texto": "Fonte: Elaborado pelo autor a partir do Quadro 1 (2026)."
+        },
+        {
+          "indice": 274,
+          "texto": "Nota: P1: distribuição de Win/W; P2: seleção de hiperparâmetros ESN/RC; P3: preparação das séries; P4: comparação com LSTM/GRU/Transformer; P5: mercado e ativo. Cada barra distribui os 34 documentos entre D, S, ? e não aplicável, conforme a legenda do Quadro 1. Informação insuficiente não é prova de ausência."
+        },
+        {
+          "indice": 360,
+          "texto": "A planilha extracao_completa.xlsx preserva 34 registros de extração, com respostas às perguntas P1–P5, status e datas de processamento. Os nomes correspondem aos 34 PDFs locais. Essas respostas constituem registros intermediários de leitura, cuja fidelidade depende da conferência nos trabalhos originais. Por isso, a síntese desta monografia utiliza a matriz recodificada do Quadro 1, com localizadores, distinção entre evidência direta e secundária e marcação de informação insuficiente, preservando separadamente a extração histórica."
+        },
+        {
+          "indice": 361,
+          "texto": "Referências anteriores a 2021 e trabalhos de outros domínios foram utilizados como apoio conceitual, metodológico ou histórico. A coleção descritiva de 34 documentos, apresentada na Tabela 1, no Quadro 1 e nas Figuras 1 a 4, reúne essas fontes com estudos financeiros recentes. Seu tamanho corresponde ao material recuperado para análise, sem representar a quantidade de estudos que teria atendido a todos os critérios da busca originalmente relatada."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Figura 1 – Documentação localizada nas cinco dimensões analíticas",
+      "pagina_impressa": 35,
+      "pagina_pdf": 36,
+      "chamadas": [
+        {
+          "indice": 275,
+          "texto": "A Figura 1 registra evidência direta de preparação de séries em 26 documentos e de mercado/ativo em 25; comparações com LSTM, GRU ou Transformer aparecem diretamente em dez documentos, e a seleção de hiperparâmetros, em onze. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Figura 2 – Frequência das palavras-chave declaradas pelos autores",
+      "pagina_impressa": 36,
+      "pagina_pdf": 37,
+      "chamadas": [
+        {
+          "indice": 280,
+          "texto": "Na Figura 2, echo state network foi identificado em nove documentos (37,5% dos 24), e reservoir computing, em cinco (20,8%). Deep learning, stock price forecasting e time series aparecem em três documentos cada (12,5%). Os resultados caracterizam os temas declarados pelos autores no subconjunto com esse campo disponível. A ausência de um termo entre as palavras-chave não implica ausência de discussão do conceito no texto do estudo."
+        },
+        {
+          "indice": 284,
+          "texto": "Nota: Os mesmos 24 documentos da Figura 2 originam a matriz. A frequência mínima de dois documentos resulta em 14 termos e 33 ligações. A área dos nós representa frequência documental; a espessura das ligações, documentos compartilhados; as cores, comunidades Walktrap. A rede não representa coautoria ou citações."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Figura 3 – Rede de coocorrência de palavras-chave",
+      "pagina_impressa": 37,
+      "pagina_pdf": 38,
+      "chamadas": [
+        {
+          "indice": 285,
+          "texto": "A Figura 3 mostra relações entre echo state network, reservoir computing, deep learning e termos associados à previsão financeira. LSTM e GRU também integram a rede com optimization e machine learning. As ligações indicam declaração conjunta das palavras-chave nos documentos analisados. Essa caracterização temática complementa a leitura dos estudos; as afirmações específicas sobre inicialização de Win/W, otimização e pré-processamento continuam apoiadas na extração P1–P5."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Figura 4 – Expressões recorrentes nos títulos dos estudos",
+      "pagina_impressa": 38,
+      "pagina_pdf": 39,
+      "chamadas": [
+        {
+          "indice": 290,
+          "texto": "A Figura 4 apresenta 19 expressões recorrentes nos títulos. Echo state ocorre em 11 títulos (32,4%), state network em sete (20,6%) e time series em seis (17,6%). Reservoir computing, stock market e stock price aparecem em quatro títulos cada (11,8%), enquanto genetic algorithm ocorre em dois (5,9%). Echo state e state network são partes da denominação Echo State Network; suas frequências não devem ser somadas para estimar a quantidade de estudos sobre ESN."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Tabela 2 – Caracterização estatística dos preços ajustados da ação preferencial da Petrobras (2000–2020)",
+      "pagina_impressa": 41,
+      "pagina_pdf": 42,
+      "chamadas": [
+        {
+          "indice": 189,
+          "texto": "Xiao, Deng e Bi (2024) compararam LSTM, GRU e Transformer na previsão de preços da Tesla, sem investigar arquiteturas de reservatório. O artigo descreve preparação dos dados, mas sua Tabela 2 registra ausência de valores faltantes; esse relato não comprova uma avaliação de imputação. A diversidade de propostas com SVM, Aprendizado Profundo (Deep Learning – DL) e processamento de linguagem natural contextualiza a escolha das ESNs nesta pesquisa, cuja eficiência deve ser examinada no protocolo adotado."
+        },
+        {
+          "indice": 309,
+          "texto": "A caracterização estatística foi utilizada como descrição da série de preços empregada nos experimentos. A Tabela 2 apresentou as medidas descritivas calculadas sobre as 5.198 observações da série ajustada."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Quadro 2 – Organização das cinco ondas experimentais",
+      "pagina_impressa": 42,
+      "pagina_pdf": 43,
+      "chamadas": [
+        {
+          "indice": 314,
+          "texto": "As execuções foram organizadas em cinco ondas conceituais, diferenciadas pelas famílias probabilísticas empregadas em Win e W. Essa organização permitiu comparar distribuições canônicas, de cauda pesada, assimétricas, esparsas e ajustadas empiricamente, mantendo a mesma arquitetura de ESN e o mesmo procedimento de avaliação. O Quadro 2 sintetiza as ondas e o número de execuções documentadas."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Quadro 3 – Hiperparâmetros codificados pelo Algoritmo Genético",
+      "pagina_impressa": 43,
+      "pagina_pdf": 44,
+      "chamadas": [
+        {
+          "indice": 318,
+          "texto": "O Quadro 3 apresenta a codificação de 55 bits implementada no motor atual do ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Quadro 4 – Síntese do desenho experimental executado",
+      "pagina_impressa": 46,
+      "pagina_pdf": 47,
+      "chamadas": [
+        {
+          "indice": 335,
+          "texto": "O desenho experimental foi organizado em cinco ondas: caudas pesadas; choques e assimetria; esparsidade e razão de variâncias; controles canônicos; e distribuições ajustadas empiricamente pelo EasyFit. Foram documentadas 45 execuções de ESN. A inicialização Normal × Normal foi utilizada como controle canônico, enquanto LSTM e GRU foram utilizadas como baselines externos. O desenho efetivamente executado foi sintetizado no Quadro 4."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Tabela 3 – Comparação dos principais resultados no conjunto de teste",
+      "pagina_impressa": 53,
+      "pagina_pdf": 54,
+      "chamadas": [
+        {
+          "indice": 196,
+          "texto": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores semelhantes de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo."
+        },
+        {
+          "indice": 392,
+          "texto": "A execução ilustrada pertence ao lote legado de 12 cenários com limite de 200 gerações, de 15 de agosto de 2026. Foi selecionada pelo maior fitness de treino/validação nesse lote: segunda rodada de GED em Win e Uniforme em W, com a = 0,424701, raio espectral = 0,513577, lavagem de 34 passos, 31 neurônios e regularização de aproximadamente 4,84 × 10⁻⁵. Trata-se de uma ilustração complementar do motor legado, distinta das 45 execuções de produção com LHS e cataclismo. Não constitui a reconstrução da trajetória do GA_RUN_0030 nem substitui os resultados da Tabela 3."
+        },
+        {
+          "indice": 439,
+          "texto": "A execução controlada complementar produziu, na janela congelada de 1.298 observações entre 30/09/2015 e 30/12/2020, MAE de 0,328850 e RMSE de 0,498452 para a ESN; MAE de 0,418175 e RMSE de 0,592452 para a GRU; e MAE de 0,466612 e RMSE de 0,635287 para a LSTM. Esses valores pertencem exclusivamente à execução controlada com semente 20260926 e não substituem os resultados históricos apresentados na Tabela 3. A finalidade dessa rodada foi fornecer vetores de previsão íntegros, alinhados por data e reproduzíveis para a avaliação inferencial de H1."
+        },
+        {
+          "indice": 443,
+          "texto": "Os resultados satisfizeram o critério inferencial de superioridade definido para H1 na execução controlada complementar: além de apresentar menores MAE e RMSE na mesma janela, a ESN apresentou menor perda média e diferença estatisticamente significativa frente à GRU e à LSTM sob as duas funções de perda. Essa evidência não deve ser interpretada como teste retrospectivo dos valores históricos da Tabela 3, pois a rodada inferencial utilizou novos pesos, fronteira de treino estrita e continuidade cronológica explicitamente corrigida."
+        },
+        {
+          "indice": 472,
+          "texto": "Consequentemente, o teste de Diebold-Mariano não pôde ser aplicado retrospectivamente aos mesmos vetores que originaram a Tabela 3. A execução controlada complementar superou essa limitação apenas para a análise inferencial de H1, preservando previsões datadas, modelos, matrizes, configuração, versões de dependências e hashes; ela não reconstrói os vetores históricos ausentes."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Figura 5 – Evolução da função de aptidão na execução preservada da ação preferencial da Petrobras com 200 gerações",
+      "pagina_impressa": 54,
+      "pagina_pdf": 55,
+      "chamadas": [
+        {
+          "indice": 396,
+          "texto": "Na Figura 5, valores maiores de fitness correspondem a menores erros ponderados de treino e validação. O melhor fitness atingiu −0,237607 na geração 123 e permaneceu nesse nível até a geração 200. As oscilações das curvas de média e mínimo descrevem a variação da população durante a busca; a estabilização do melhor valor não demonstra que tenha sido encontrado um ótimo global."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Figura 6 – Preços observados e previstos da ação preferencial da Petrobras na mesma execução preservada",
+      "pagina_impressa": 55,
+      "pagina_pdf": 56,
+      "chamadas": [
+        {
+          "indice": 397,
+          "texto": "A Figura 6 foi produzida pela reinjeção das matrizes Win, W e Wout preservadas da mesma execução, sem gerar novos pesos aleatórios nem repetir o GA. As previsões foram alinhadas aos 1.298 alvos avaliados do conjunto de teste e as métricas foram conferidas contra o relatório arquivado: MAE de 0,327894 e RMSE de 0,498699. A apresentação inclui o período completo e um detalhe fixo dos últimos 100 pregões, permitindo observar desvios que ficam pouco visíveis na escala de toda a série."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Tabela 4 – Configurações selecionadas das cinco ondas experimentais",
+      "pagina_impressa": 56,
+      "pagina_pdf": 57,
+      "chamadas": [
+        {
+          "indice": 405,
+          "texto": "A Tabela 4 reúne configurações selecionadas das cinco ondas experimentais. O controle Normal × Normal apresentou MAE de 0,328365. A configuração Laplace × Normal reduziu esse valor para 0,327224, correspondendo a uma melhoria relativa de aproximadamente 0,347%. No RMSE, o controle registrou 0,499037 e Laplace × Cauchy atingiu 0,495386, redução aproximada de 0,732%."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Tabela 5 – Decomposição do custo computacional documentado",
+      "pagina_impressa": 58,
+      "pagina_pdf": 59,
+      "chamadas": [
+        {
+          "indice": 219,
+          "texto": "Soltani, Benmohamed e Ltifi (2022), na versão preliminar consultada, revisaram 74 estudos sobre otimização de ESNs. A Tabela 5 relaciona PSO a 16 trabalhos e AG a dez, além de outras técnicas bio-inspiradas e não bio-inspiradas. Essas frequências descrevem o emprego dos métodos na coleção dos autores; não constituem uma classificação de eficácia. A revisão discute custos, parâmetros e topologias, sem sustentar uma lacuna específica sobre distribuições de inicialização em aplicações financeiras."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+      "pagina_impressa": 61,
+      "pagina_pdf": 62,
+      "chamadas": [
+        {
+          "indice": 217,
+          "texto": "Deng et al. (2022) aplicaram AG à seleção do escalonamento de entrada, raio espectral e taxa de vazamento de ESNs empilhadas para prever degradação de células de combustível de membrana de troca de prótons (Proton Exchange Membrane Fuel Cells – PEMFCs). A Tabela 6 compara os erros obtidos com valores de LSTM e outros métodos provenientes de um estudo anterior. Os resultados apoiam a estratégia nessa aplicação, sem estabelecer superioridade geral frente a LSTM nem identificar uma fragilidade principal de toda a literatura de ESNs."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Quadro 5 – Síntese da avaliação das hipóteses",
+      "pagina_impressa": 61,
+      "pagina_pdf": 62,
+      "chamadas": [
+        {
+          "indice": 447,
+          "texto": "O Quadro 5 sintetiza as evidências e os limites da avaliação de H1 a H5. H1 recebeu apoio em duas camadas de evidência. Nos resultados históricos, a ESN campeã apresentou menor MAE e RMSE que os valores registrados para GRU e LSTM, e 44 das 45 execuções obtiveram MAE inferior aos dois baselines. Na execução controlada complementar, os quatro testes de Diebold-Mariano rejeitaram a hipótese nula a 5% sob perdas absoluta e quadrática, sempre com menor perda média para a ESN. H2 também recebeu apoio quando restrita ao custo de ajuste da configuração selecionada; o custo da busca genética é tratado separadamente."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Tabela 7 – Comparação descritiva com Lampugnani (2026)",
+      "pagina_impressa": 62,
+      "pagina_pdf": 63,
+      "chamadas": [
+        {
+          "indice": 449,
+          "texto": "Os resultados foram contextualizados pela monografia de Lampugnani (2026), que investigou ESNs com Algoritmo Genético na PETR4 e apresentou erros de teste para diferentes combinações de distribuições. A Tabela 7 reúne os menores erros documentados em cada trabalho. Trata-se de comparação entre estudos, sem execução de ambos sob um protocolo comum."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    },
+    {
+      "titulo": "Quadro 6 – Delimitação das contribuições e da procedência",
+      "pagina_impressa": 70,
+      "pagina_pdf": 71,
+      "chamadas": [
+        {
+          "indice": 298,
+          "texto": "A implementação partiu de códigos em R fornecidos pelo orientador, adaptados pelo autor ao contexto da pesquisa, com desenvolvimento da interface do ESNAUTO. Os fundamentos da ESN seguem Jaeger (2007). O código atual usa GA, fGarch e PearsonDS; mede tempo com proc.time e usa pracma como pseudoinversa alternativa. O script anterior carrega outras bibliotecas e contém exemplos de ajuste comentados. O Quadro 6 distingue a base recebida e a contribuição de adaptação e interface."
+        },
+        {
+          "indice": 492,
+          "texto": "A contribuição de Engenharia de Software compreendeu a adaptação dos códigos em R fornecidos pelo orientador ao contexto da pesquisa e a construção da interface do ESNAUTO. A aplicação organiza preparação dos dados recebidos, execução dos modelos, configurações, métricas, histórico e visualizações. O Quadro 6 distingue fundamentos anteriores, base computacional recebida e desenvolvimento do autor. Essa atribuição reconhece a procedência das rotinas sem reivindicar criação original das técnicas combinadas."
+        }
+      ],
+      "lista_e_pdf_conciliados": true
+    }
+  ],
+  "mudancas_mapa_desde131": [
+    {
+      "antes": {
+        "texto": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+        "pagina": 60,
+        "estilo": "Legenda",
+        "numero": ""
+      },
+      "depois": {
+        "texto": "Tabela 6 – Teste de Diebold-Mariano na execução controlada complementar",
+        "pagina": 61,
+        "estilo": "Legenda",
+        "numero": ""
+      }
+    }
+  ],
+  "decisoes": {
+    "G44": "Listas separadas por tipo, com6figuras,6quadros e7tabelas.",
+    "G45": "19títulos e páginas conciliados ao mapa134 e PDF; listas inspecionadas nos lotes129/134.",
+    "G53": "19elementos possuem chamada narrativa singular; chamadas faltantes Tabela4/Quadro5 corrigidas no lote134.",
+    "G62": "Páginas dos19elementos e continuidade do Quadro1 inspecionadas no lote133; páginas alteradas134 reinspecionadas. Sem corte/sobreposição; colocação acompanha a seção e discussão pertinente."
+  },
+  "evidencias": [
+    "listas_elementos_atual_lote129.json",
+    "proximidade_elementos_lote133.json",
+    "checkpoint_lote134.json"
+  ],
+  "limite": "Conclui critérios de lista,chamada e legibilidade no exemplar eletrônico auditado. Fidelidade de dados e fontes depende dos relatórios específicos, sem certificação institucional."
+}

@@ -1,0 +1,581 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "total_alteradas": 86,
+  "com_vinculo": 53,
+  "registros": [
+    {
+      "id": "U0129",
+      "texto_atual": "2.5DISTRIBUIÇÕES DE PROBABILIDADE NA INICIALIZAÇÃO DOS PESOS DO RESERVATÓRIO26",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0130",
+      "texto_atual": "2.6PRÉ-PROCESSAMENTO: O FATOR DE AJUSTE PARA DADOS DA B328",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0138",
+      "texto_atual": "3.4OTIMIZAÇÃO POR ALGORITMOS GENÉTICOS44",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0170",
+      "texto_atual": "Como objetivos específicos, pretende-se consolidar a revisão da literatura; empregar a série histórica ajustada; desenvolver o ESNAUTO, integrando ESN, regressão Ridge e busca genética; e investigar distribuições canônicas, de cauda pesada, assimétricas, esparsas e empiricamente ajustadas. Também se busca otimizar conjuntamente a taxa de vazamento, o raio espectral, o descarte inicial, o tamanho do reservatório e a regularização Ridge. A implementação atual utiliza um cromossomo binário de 55 bits para esses parâmetros.",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0182",
+      "texto_atual": "Vishwas, Usha e Sangeetha (2025) revisam métodos de inteligência artificial aplicados à previsão de preços e tendências de ações. Os desafios discutidos incluem qualidade dos dados, não estacionariedade, sobreajuste, interpretabilidade e custo computacional. A revisão também aborda requisitos de infraestrutura e latência em aplicações de tempo real.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_contexto_lote45.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0183",
+      "texto_atual": "A revisão reúne estudos com SVMs, LSTMs, Transformers e modelos quântico-híbridos. Os desafios de custo e escalabilidade aparecem associados a arquiteturas, otimização e infraestrutura distintas. Essas observações sintetizam estudos anteriores e não equivalem a uma comparação experimental própria nem isolam a retropropagação como causa dos custos.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\incorporacao_lote1.json"
+      ]
+    },
+    {
+      "id": "U0184",
+      "texto_atual": "Ping (2023) discute a previsão de volatilidade como apoio à avaliação de riscos, à precificação de opções e à alocação de ativos. Essa discussão trata da incerteza das variações de preços e não comprova a rentabilidade de um modelo de previsão do fechamento. Nesta pesquisa, o objeto é a predição de um passo à frente da PETR4, sob as condições experimentais descritas.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_contexto_lote45.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote2.json"
+      ]
+    },
+    {
+      "id": "U0188",
+      "texto_atual": "Liu, Lin e Rojas (2025) integraram indicadores técnicos, modelos temporais e análise de sentimentos com modelos de linguagem de grande escala (Large Language Models – LLMs), incluindo FinBERT e GPT-2, em estratégias associadas ao índice Standard and Poor’s (S&P) 500. O FinBERT atingiu 75,56% de acurácia na classificação de sentimento das notícias da Benzinga, em uma tarefa de processamento de linguagem natural (Natural Language Processing – NLP). O estudo também associou notícias a classes de retorno do índice; essa acurácia não comprova previsão fora da amostra da direção futura.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_previsao_lote34.json"
+      ]
+    },
+    {
+      "id": "U0189",
+      "texto_atual": "Xiao, Deng e Bi (2024) compararam LSTM, GRU e Transformer na previsão de preços da Tesla, sem investigar arquiteturas de reservatório. O artigo descreve preparação dos dados, mas sua Tabela 2 registra ausência de valores faltantes; esse relato não comprova uma avaliação de imputação. A diversidade de propostas com SVM, Aprendizado Profundo (Deep Learning – DL) e processamento de linguagem natural contextualiza a escolha das ESNs nesta pesquisa, cuja eficiência deve ser examinada no protocolo adotado.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_previsao_lote34.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote12.json"
+      ]
+    },
+    {
+      "id": "U0191",
+      "texto_atual": "As Redes Neurais Recorrentes (RNRs) são uma classe de modelos para processar sequências. Sudiatmika e Putra (2024) descrevem um estado interno atualizado a cada passo a partir da entrada atual e do estado anterior. Em contraste com redes feedforward sem estado recorrente, essa organização permite incorporar o histórico da sequência ao cálculo das saídas. A aprendizagem de dependências longas, contudo, permanece condicionada à arquitetura e ao treinamento.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_contexto_lote45.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote2.json"
+      ]
+    },
+    {
+      "id": "U0192",
+      "texto_atual": "As redes Long Short-Term Memory (LSTM) foram introduzidas por Hochreiter e Schmidhuber (1997) para facilitar a aprendizagem de dependências longas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinicialização, hoje conhecida como Gated Recurrent Unit (GRU), no contexto de uma arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador. A simplificação estrutural dessa unidade não constitui, por si, uma garantia de menor erro em séries financeiras.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json"
+      ]
+    },
+    {
+      "id": "U0193",
+      "texto_atual": "As LSTMs utilizam portas para controlar a preservação, a atualização e o descarte de informação, enquanto as GRUs empregam uma estrutura simplificada de atualização e reinicialização do estado. Na revisão de Sudiatmika e Putra (2024), essa simplificação é associada a possíveis ganhos de eficiência e ao tratamento de sequências mais curtas. Trata-se de discussão de estudos anteriores; o experimento de previsão do ouro apresentado pelos autores compara erros, sem fornecer uma medição de tempo de treinamento.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_contexto_lote45.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote2.json"
+      ]
+    },
+    {
+      "id": "U0194",
+      "texto_atual": "Na implementação do ESNAUTO, LSTM e GRU são treinadas iterativamente por retropropagação através do tempo (Backpropagation Through Time – BPTT), ajustando pesos internos e de saída. O custo desse processo depende da configuração da rede e do orçamento de treinamento. A comparação com a ESN deve distinguir esse treinamento do ajuste da camada de saída e da busca de hiperparâmetros, sem pressupor inviabilidade ou superioridade geral.",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0195",
+      "texto_atual": "Vishwas, Usha e Sangeetha (2025) discutem custo computacional e latência como desafios para aplicações financeiras em tempo real. Esse tratamento é qualitativo: não estabelece um limite universal de treinamento nem demonstra que a retropropagação, por si só, inviabilize LSTM ou GRU. Nesta pesquisa, a análise de eficiência depende dos tempos medidos e da distinção entre ajuste do modelo e busca de hiperparâmetros.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_contexto_lote45.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0196",
+      "texto_atual": "Na comparação de Xiao, Deng e Bi (2024), a Tabela 3 contém valores de erro quadrático médio (Mean Squared Error – MSE) e RMSE incoerentes entre si para alguns modelos, limitando sua interpretação. O artigo não demonstra o efeito isolado de incorporar informações de mercado. Cortesi et al. (2026), na previsão de volatilidade de ações do S&P 500, mostram que valores semelhantes de erro quadrático médio normalizado (Normalized Mean Squared Error – NMSE) podem corresponder a funções de previsão distintas conforme o otimizador. A métrica agregada, isoladamente, não descreve todo o comportamento preditivo.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_previsao_lote34.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote18.json"
+      ]
+    },
+    {
+      "id": "U0198",
+      "texto_atual": "Em paralelo, novas arquiteturas estendem a discussão para além da família LSTM/GRU. Chen et al. (2026) propõem redes convolucionais temporais quânticas (Quantum Temporal Convolutional Neural Networks – QTCNN) e relatam Sharpe superior ao de LSTM, Transformer e TConv-MLP no conjunto JPX, em avaliação fora da amostra de 22 dias. Os resultados são restritos ao protocolo estudado.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote17.json"
+      ]
+    },
+    {
+      "id": "U0200",
+      "texto_atual": "Behera, Nayak e Kumar (2023) revisam redes neurais de ordem superior (Higher Order Neural Networks – HONNs) e otimização evolucionária em previsão financeira. O levantamento examina modelos, seleção de hiperparâmetros e métodos como AG e otimização por enxame de partículas (Particle Swarm Optimization – PSO). Trata-se de síntese de estudos com tarefas e protocolos distintos; os ganhos relatados não constituem uma comparação experimental própria nem demonstram que a associação a uma metaheurística melhore qualquer rede ou série.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote20.json"
+      ]
+    },
+    {
+      "id": "U0204",
+      "texto_atual": "Sun et al. (2021) compararam uma ESN com uma LSTM simplificada na previsão do fechamento das ações da Kweichow Moutai e reportaram menores erros nas configurações examinadas. A fonte lista fechamento e fechamento ajustado como campos distintos, mas descreve os experimentos com preços de fechamento. Por isso, esse estudo não é tomado aqui como comprovação inequívoca de uso do fechamento ajustado nem como demonstração de superioridade sobre qualquer configuração LSTM.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0207",
+      "texto_atual": "Wang, Bu e Huang (2025) avaliaram um sistema óptico de Computação de Reservatório com ponderação de atributos em sete séries de mercado, integrando dados de mercado e indicadores macroeconômicos e técnicos. O protocolo inclui modelos de aprendizado de máquina, entre eles LSTM, e apresenta o melhor comparador por horizonte de previsão. Os autores relatam ganhos nos horizontes de um, quatro e dez passos. A análise de atraso em trajetórias específicas não demonstra que a ponderação elimine atrasos em qualquer regime de mercado.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote38.json"
+      ]
+    },
+    {
+      "id": "U0208",
+      "texto_atual": "Liu et al. (2022) avaliaram, por simulação numérica, um sistema nanofotônico de Computação de Reservatório para índices de mercados chineses, norte-americano e britânico. Os autores observaram previsões conservadoras, mas também maiores erros nos pontos de flutuação intensa, discutidos como efeito de ancoragem nos dados históricos. Os resultados caracterizam as condições do sistema estudado e não demonstram imunidade a mudanças de regime nem superioridade geral sobre implementações de software em tempo real.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_previsao_lote34.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote12.json"
+      ]
+    },
+    {
+      "id": "U0210",
+      "texto_atual": "Hariharan, Suresh e Chandrasekar (2025) propuseram ESNs com reservatórios divididos em grupos para séries multivariadas, incluindo dados do NIFTYBEES. Cada variável foi direcionada a um grupo, mantendo conexões entre grupos segundo a topologia examinada. Os erros e a sensibilidade à conectividade variaram entre as estruturas. O estudo apoia investigar a organização do reservatório, sem demonstrar que todo intercâmbio entre variáveis seja prejudicial ou que uma topologia domine em qualquer tarefa.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_contexto_lote45.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote12.json"
+      ]
+    },
+    {
+      "id": "U0211",
+      "texto_atual": "Hassaan, Yacoub e Said (2025) compararam ESN e GRU com inicializações caóticas e controles Xavier e He em seis conjuntos financeiros. Seddik, Routaib e Elhaddadi (2023) investigaram uma ESN em trajetórias simuladas de Lorenz, com condições iniciais associadas ao Bitcoin. O texto menciona uma série decimada, sem detalhar o procedimento. As métricas avaliam trajetórias geradas, não previsões de preços observados, e não isolam o efeito da distribuição dos pesos iniciais.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0212",
+      "texto_atual": "Sharma et al. (2025) avaliaram ESNs para preços de Bitcoin, com XGBoost e previsão pelo último valor como comparadores. O estudo relacionou o erro ao caos estimado por expoentes de Lyapunov. O teste de Mann–Whitney comparou, entre grupos de menor e maior caos, a razão dos RMSEs da ESN e do XGBoost. Foi relatada diferença para janelas de treino de 30 e 60 dias, mas não de 15. Isso não demonstra superioridade estatística geral da ESN sobre ARIMA ou em todos os períodos.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0214",
+      "texto_atual": "O comportamento do reservatório depende da configuração de seus hiperparâmetros. O raio espectral é utilizado no reescalonamento da matriz recorrente; a esparsidade regula a conectividade, e a taxa de vazamento pondera a contribuição do estado anterior na atualização. A seleção desses parâmetros deve considerar a tarefa e o protocolo de avaliação.",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0216",
+      "texto_atual": "Tian e Pei (2024) empregaram o Sparrow Search Algorithm (SSA) para otimizar uma ESN na previsão de dez ações dos Estados Unidos e dez da China. O estudo comparou SSA-ESN com ESN, LSTM e redes de retropropagação (Backpropagation – BP) e Elman, reportando menores erros para o modelo proposto nas condições examinadas. ESN e SSA-ESN utilizaram as mesmas matrizes Win e W. Essa evidência motiva a seleção de hiperparâmetros, mas não garante evitar mínimos locais nem demonstra significância estatística apenas pela comparação de RMSE e MAPE.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0218",
+      "texto_atual": "Ecer et al. (2020) compararam Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera, Nayak e Kumar (2023) revisaram redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote20.json"
+      ]
+    },
+    {
+      "id": "U0219",
+      "texto_atual": "Soltani, Benmohamed e Ltifi (2022), na versão preliminar consultada, revisaram 74 estudos sobre otimização de ESNs. A Tabela 5 relaciona PSO a 16 trabalhos e AG a dez, além de outras técnicas bio-inspiradas e não bio-inspiradas. Essas frequências descrevem o emprego dos métodos na coleção dos autores; não constituem uma classificação de eficácia. A revisão discute custos, parâmetros e topologias, sem sustentar uma lacuna específica sobre distribuições de inicialização em aplicações financeiras.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0227",
+      "texto_atual": "Abebe e Goshu (2024) avançam mais uma etapa ao propor a Distribuição Generalizada de Erro Assimétrica (AGED), derivando matematicamente uma família de distribuições capaz de lidar simultaneamente com assimetria e curtose excessiva, com valores menores de AIC e BIC que os da GED e da Normal nos três conjuntos de dados examinados.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_distribuicoes_lote33.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote14.json"
+      ]
+    },
+    {
+      "id": "U0228",
+      "texto_atual": "Dewick (2022) discute a modelagem de distribuições financeiras e sua relação com séries temporais. Essa discussão pertence à representação estatística dos dados, enquanto Soltani, Benmohamed e Ltifi (2022) examinam estratégias de otimização de ESNs. As duas frentes oferecem contexto para esta pesquisa, mas não demonstram, em conjunto, que uma distribuição de pesos deva reproduzir a distribuição dos retornos. A comparação entre inicializações é uma escolha experimental do presente trabalho.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_distribuicoes_lote33.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0231",
+      "texto_atual": "Os estudos consultados descrevem diferentes objetos de inicialização. Ribeiro et al. (2021) informam distribuição Uniforme para pesos de entrada, recorrentes e de realimentação. Hariharan, Suresh e Chandrasekar (2025) geram as entradas não nulas de Win por amostragem Uniforme(-1,1), seguida de escalonamento, enquanto Wang et al. (2021) distinguem a geração de Win da topologia de W. Identificar a matriz é necessário à comparação: conectividade e reescalonamento espectral, isoladamente, não especificam a distribuição probabilística de seus elementos.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_previsao_lote34.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote12.json"
+      ]
+    },
+    {
+      "id": "U0232",
+      "texto_atual": "Hassaan, Yacoub e Said (2025) estudaram sequências caóticas normalizadas para gerar Win e Wres e adotaram controles He e Xavier. Nas Equações 9a e 9b, He usa amostras Gaussianas e Xavier usa amostras Uniformes reescaladas. A descrição de Xavier no texto da seção seguinte não coincide com essa fórmula, o que exige cautela na interpretação. Além disso, uma regra de geração por trajetória caótica não equivale, por si só, à identificação de uma família probabilística ajustada aos dados financeiros.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0233",
+      "texto_atual": "Araújo et al. (2025) compararam ESNs associadas a cinco famílias: Normal, Uniforme, t de Student, GED e t assimétrica. Essa fonte é pertinente à investigação de distribuições, embora a descrição consultada não individualize completamente sua aplicação em Win e W. Sharma et al. (2025), por outro lado, apresentam Uniforme e Log Uniforme como distribuições de amostragem de hiperparâmetros na busca TPE. Essas informações não devem ser reunidas como se descrevessem, com o mesmo grau de detalhe, a geração dos pesos de entrada.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_antecedentes_lote37.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0244",
+      "texto_atual": "Araújo et al. (2025) compararam MAE e RMSE como aptidão de um AG para ESNs com cinco distribuições. A prova consultada descreve retornos de fechamento da ITSA4 e variâncias diárias, com partição declarada de 60%/20%/20%. Esse protocolo difere da previsão do preço ajustado da PETR4 no ESNAUTO. A presente pesquisa adapta essa linha de trabalho, integra LHS e um operador antiestagnação inspirado no CHC. A preservação histórica parcial dos artefatos está descrita na Seção 3.8. Foi consultada a prova de autor; os metadados da edição final foram conferidos no editor.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_antecedentes_lote37.json"
+      ]
+    },
+    {
+      "id": "U0246",
+      "texto_atual": "Ribeiro et al. (2021) propuseram o HAR-PSO-ESN para prever volatilidade realizada de CAT, EBAY e MSFT, combinando atributos do modelo HAR, ESN e seleção de hiperparâmetros por PSO. Os pesos de entrada, recorrentes e de realimentação foram inicializados com distribuição Uniforme. O modelo apresentou melhores resultados na maioria dos casos estudados, com comparações por Friedman e Nemenyi. Essa evidência se refere à combinação avaliada, sem estabelecer superioridade universal ou isolar o efeito de leis alternativas de inicialização.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_previsao_lote34.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote13.json"
+      ]
+    },
+    {
+      "id": "U0250",
+      "texto_atual": "Hassaan, Yacoub e Said (2025) estudaram inicializações por sequências caóticas para ESN e GRU em seis conjuntos financeiros, incluindo índices acionários e pares cambiais. O protocolo compara sistemas como Lorenz, Chen, oscilador de Chen perturbado e Mackey–Glass, além dos controles He e Xavier. Os resultados pertencem às séries, arquiteturas e condições de avaliação adotadas pelos autores.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0251",
+      "texto_atual": "Os erros reportados por Hassaan, Yacoub e Said (2025) motivam investigar regras de inicialização. Contudo, diferenças numéricas de erro não constituem, por si sós, evidência de significância estatística ou de efeito independente dos demais componentes. A inicialização por uma trajetória caótica também difere da escolha de uma família probabilística dos pesos. A interpretação dos controles deve observar a divergência entre a fórmula e a descrição textual de Xavier, apresentada na Seção 2.5.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0252",
+      "texto_atual": "Sharma et al. (2025) empregaram otimização Bayesiana via Tree Parzen Estimator (TPE) na seleção de hiperparâmetros da ESN. A Tabela 1 do estudo apresenta as distribuições de amostragem dos hiperparâmetros, que não equivalem à lei de geração dos elementos de Win ou W. A avaliação usou janelas de treino de 15, 30 e 60 observações, teste de dez pontos e avanço de um ponto. Assim, esses tamanhos de treino não representam horizontes de previsão de 15, 30 e 60 dias.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0255",
+      "texto_atual": "A literatura examinada apresenta aplicações de ESNs em problemas financeiros e comparações com LSTM ou GRU, como em Sun et al. (2021), Kumar (2025) e Hassaan, Yacoub e Said (2025). Os resultados dependem dos dados, configurações, métricas e comparadores de cada estudo. Essas aplicações fundamentam a avaliação da ESN no protocolo desta pesquisa, incluindo seu custo de ajuste, sem demonstrar que uma arquitetura seja universalmente mais eficiente ou que o custo das redes profundas seja sempre proibitivo.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0256",
+      "texto_atual": "O ajuste da camada de saída, mantendo fixos os pesos do reservatório, distingue a ESN das arquiteturas treinadas integralmente por BPTT (Jaeger, 2007). Essa diferença pode reduzir o custo de ajuste, mas não elimina problemas de condicionamento numérico ou de dinâmica do reservatório. Os desafios computacionais discutidos por Vishwas, Usha e Sangeetha (2025) motivam comparar custos sob condições explícitas, distinguindo treinamento do modelo e busca de hiperparâmetros.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_contexto_lote45.json",
+        "reports\\fechamento_integral_20261029\\afirmacoes_fundamentos_lote36.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0257",
+      "texto_atual": "A literatura examinada apresenta diferentes estratégias de seleção de hiperparâmetros: AG em Deng et al. (2022), SSA em Tian e Pei (2024) e otimização Bayesiana em Sharma et al. (2025). Soltani, Benmohamed e Ltifi (2022) também registram diversidade de técnicas em sua revisão. Esse conjunto fundamenta investigar a busca de configurações, mas não estabelece consenso sobre um otimizador universalmente superior nem garante a eliminação de mínimos locais ou de instabilidades em toda ESN.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_aplicacoes_lote40.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0259",
+      "texto_atual": "Araújo et al. (2025) e Lampugnani (2026) já investigaram distribuições e otimização em ESNs. Cardoso (2025) estudou a combinação ARIMA-ESN com Algoritmo Genético, incluindo ITSA4 e PETR4 e distribuições alternativas de pesos. Nas comparações da tese, o ARMA-EGARCH obteve menor RMSE nas duas ações, enquanto a ESN apresentou menor MAE para PETR4. A avaliação de volatilidade da tese pertence a outro protocolo e não fornece um comparador numérico para este experimento. A contribuição desta pesquisa é delimitada pela aplicação e organização dos experimentos no ESNAUTO, sem reivindicar a criação da ESN ou da combinação ESN-AG.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_antecedentes_lote37.json",
+        "reports\\fechamento_integral_20261029\\afirmacoes_cardoso_lote43.json",
+        "reports\\fechamento_integral_20261029\\afirmacoes_lampugnani_lote42.json"
+      ]
+    },
+    {
+      "id": "U0275",
+      "texto_atual": "26 D; 2 S; 6 ?; 0 —",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0279",
+      "texto_atual": "Separa comparações próprias com LSTM/GRU/Transformer de números importados: Deng et al. (2022) e Liu et al. (2022), classificados como S.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote12.json"
+      ]
+    },
+    {
+      "id": "U0281",
+      "texto_atual": "25 D; 3 S; 3 ?; 3 —",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0292",
+      "texto_atual": "Abebe e Goshu (2024)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0304",
+      "texto_atual": "Behera, Nayak e Kumar (2023)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0328",
+      "texto_atual": "Costa e Lunkes (2025)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0346",
+      "texto_atual": "Duttilo (2024)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0358",
+      "texto_atual": "Ecer et al. (2020)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0364",
+      "texto_atual": "Hariharan, Suresh e Chandrasekar (2025)",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\incorporacao_lote12.json"
+      ]
+    },
+    {
+      "id": "U0370",
+      "texto_atual": "Hassaan, Yacoub e Said (2025)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0394",
+      "texto_atual": "Liu, Lin e Rojas (2025)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0405",
+      "texto_atual": "?",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0418",
+      "texto_atual": "Seddik, Routaib e Elhaddadi (2023)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0421",
+      "texto_atual": "D",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0424",
+      "texto_atual": "Sharma et al. (2025)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0430",
+      "texto_atual": "Soltani, Benmohamed e Ltifi (2022)",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0436",
+      "texto_atual": "Sudiatmika e Putra (2024)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0442",
+      "texto_atual": "Sun et al. (2021)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0448",
+      "texto_atual": "Tian e Pei (2024)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0466",
+      "texto_atual": "Vishwas, Usha e Sangeetha (2025)",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0472",
+      "texto_atual": "Wang, Bu e Huang (2025)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0484",
+      "texto_atual": "Xiao, Deng e Bi (2024)",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0502",
+      "texto_atual": "A Figura 1 registra evidência direta de preparação de séries em 26 documentos e de mercado/ativo em 25; comparações com LSTM, GRU ou Transformer aparecem diretamente em dez documentos, e a seleção de hiperparâmetros, em onze. A distribuição de Win/W tem cinco registros diretos segundo o critério de identificação da matriz e de sua lei. Tratamentos secundários, informação insuficiente e itens não aplicáveis são exibidos separadamente. Esses números não demonstram que apenas essas fontes tratem dos temas nem que as escolhas documentadas sejam superiores.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\exame_atribuicoes_sem_ano_lote60.json"
+      ]
+    },
+    {
+      "id": "U0522",
+      "texto_atual": "A implementação partiu de códigos em R fornecidos pelo orientador, adaptados pelo autor ao contexto da pesquisa, com desenvolvimento da interface do ESNAUTO. Os fundamentos da ESN seguem Jaeger (2007). O código atual usa GA, fGarch e PearsonDS; mede tempo com proc.time e usa pracma como pseudoinversa alternativa. O script anterior carrega outras bibliotecas e contém exemplos de ajuste comentados. O Quadro 6 distingue a base recebida e a contribuição de adaptação e interface.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json"
+      ]
+    },
+    {
+      "id": "U0549",
+      "texto_atual": "Fonte: Elaborado pelo autor (2026) a partir da série recebida já ajustada; contexto do fator em Cardoso et al. (2022b).",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_lote50.json"
+      ]
+    },
+    {
+      "id": "U0580",
+      "texto_atual": "O Quadro 3 apresenta a codificação de 55 bits implementada no motor atual do ESNAUTO, com alocação e faixas conferidas no código. Araújo et al. (2025) também empregaram cromossomos de 55 bits para cinco hiperparâmetros, sem detalhar na prova consultada a repartição de bits. Cardoso, Berri e Mattos (2022a, p. 203) utilizaram valores fixos de 1,25 para o raio espectral, 0,2 para a taxa de vazamento e 10⁻⁸ para a regularização. Esses antecedentes fundamentam o método e devem ser distinguidos das configurações utilizadas nesta pesquisa.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json"
+      ]
+    },
+    {
+      "id": "U0601",
+      "texto_atual": "Descarta os estados iniciais na estimação de Wout.",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0612",
+      "texto_atual": "Fonte: Autor (2026), com base em Cardoso, Berri e Mattos (2022a), Jaeger (2007) e Araújo et al. (2025).",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0618",
+      "texto_atual": "No motor atual, o cromossomo possui 55 bits: 17 para a taxa de vazamento, 17 para o raio espectral, 7 para o descarte inicial, 5 para o tamanho do reservatório e 9 para a regularização Ridge. A população é inicializada por LHS nas cinco dimensões e convertida para a codificação binária. O operador emprega seleção por torneio, crossover de um ponto com probabilidade 0,85, elitismo de aproximadamente 10% e mutação binária de 12% no regime normal. A correspondência desses parâmetros com cada execução histórica não foi estabelecida, conforme a Seção 3.8.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\exame_atribuicoes_sem_ano_lote60.json"
+      ]
+    },
+    {
+      "id": "U0619",
+      "texto_atual": "Quando habilitado o mecanismo antiestagnação, o motor atual eleva a taxa de mutação para 40% ao atingir o limite adaptativo e preserva o melhor indivíduo e as matrizes associadas ao recorde. Como o método não implementa Half Uniform Crossover (HUX), prevenção de incesto e reinicialização integral, é caracterizado como Algoritmo Genético com operador cataclísmico inspirado no CHC.",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0621",
+      "texto_atual": "No motor atual, a função de aptidão combina erros de treino e validação: fitness = −(0,4 · MAEtreino + 0,6 · MAEvalidação). O sinal negativo converte a minimização em maximização para o pacote GA. A ponderação atribui maior peso à validação e segue a combinação descrita por Araújo et al. (2025). O software dispõe de serialização dos pesos e hiperparâmetros associados a recordes; contudo, esse mecanismo não resultou na preservação integral de todas as saídas históricas.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_ocorrencias_lote52.json"
+      ]
+    },
+    {
+      "id": "U0660",
+      "texto_atual": "A variância de longo prazo foi estimada pelo método baseado na função de autocorrelação (Autocorrelation Function – ACF) da implementação dm.test do pacote forecast. Como as quatro comparações foram pré-especificadas, os resultados principais mantiveram α individual de 5%, sem correção por multiplicidade; essa escolha foi registrada como limitação metodológica. Com horizonte de um passo, esse cálculo considera apenas a autocovariância de defasagem zero; eventual dependência serial do diferencial de perda em outras defasagens não é incorporada à estimativa, o que limita a interpretação dos valores de p.",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0675",
+      "texto_atual": "Foram preservadas as informações das versões locais consultadas e as ressalvas sobre preprints ou outras versões. Contagens de citações recebidas e listas completas de referências citadas não foram reconstruídas; por esse motivo, não foram produzidos rankings de impacto ou redes de cocitação. No arquivo histórico processado, a tese de Duttilo consta com ano 2023, enquanto a referência foi atualizada para 2024 conforme a versão consultada. As Figuras 2 a 4 usam palavras-chave ou títulos e não dependem desse ano.",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0682",
+      "texto_atual": "O procedimento para nova execução utiliza o núcleo matemático disponibilizado pelo ESNAUTO. A série PETR4 com Fator de Ajuste foi carregada e particionada cronologicamente em 2.600 observações de treino, 1.299 de validação e 1.299 de teste. O motor atual permite definir as distribuições de Win e W e executar o Algoritmo Genético binário com cromossomo de 55 bits, população inicial por LHS, seleção por torneio, crossover de um ponto com probabilidade 0,85, mutação padrão de 12% e operador antiestagnação com hipermutação de 40%.",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0683",
+      "texto_atual": "Os relatórios consolidados associam as execuções oficiais ao motor com LHS e mecanismo antiestagnação. O projeto também contém uma interface Shiny e rotinas em lote; contudo, a correspondência do código preservado com cada execução histórica não pôde ser verificada individualmente. Segundo esses relatórios, o conjunto final compreendeu 45 execuções de produção, organizadas em cinco ondas, com limite de 10.000 gerações por rodada. O lote reduzido de 12 cenários e 200 gerações pertenceu à prototipação e não integra as 45 execuções de produção; seus registros preservados são utilizados somente nas ilustrações complementares das Figuras 5 e 6.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\exame_atribuicoes_sem_ano_lote60.json"
+      ]
+    },
+    {
+      "id": "U0685",
+      "texto_atual": "Contudo, a auditoria do repositório mostrou que essa persistência não foi aplicada de forma completa a todas as execuções oficiais; por isso, o procedimento para nova execução foi documentado, enquanto a reprodução exata de cada rodada histórica permaneceu condicionada aos artefatos efetivamente preservados. A execução complementar de Diebold-Mariano preservou semente, dependências, matrizes, modelos, previsões datadas, métricas, validações e hashes antes da análise inferencial.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\exame_atribuicoes_sem_ano_lote60.json"
+      ]
+    },
+    {
+      "id": "U0884",
+      "texto_atual": "Laplace × Normal teve menor MAE e Laplace × Cauchy menor RMSE que Normal × Normal.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\edicao_lote63.json"
+      ]
+    },
+    {
+      "id": "U0896",
+      "texto_atual": "Cardoso, Berri e Mattos (2022a, p. 202–205) avaliaram a PETR4 com e sem fator de ajuste, com 5.197 observações e divisão de 75% para treino e 25% para teste. Com hiperparâmetros fixos, relataram RMSE de 11,1785 sem fator e de 0,4987 com fator. Esses valores contextualizam um estudo anterior, mas não constituem um teste de superioridade desta pesquisa: a partição, os hiperparâmetros e o procedimento de seleção diferem. O resultado com fator não deve ser atribuído à série sem ajuste.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\afirmacoes_antecedentes_lote37.json",
+        "reports\\fechamento_integral_20261029\\incorporacao_autoria_lote11.json"
+      ]
+    },
+    {
+      "id": "U0916",
+      "texto_atual": "No fluxo experimental, o ESNAUTO centraliza seleção das distribuições de Win e W, configuração ou otimização dos hiperparâmetros, acompanhamento das execuções, cálculo de MAE, RMSE, MAPE e R², comparação com LSTM e GRU, registro de histórico e geração de visualizações. Na implementação atual, o cromossomo binário de 55 bits codifica taxa de vazamento, raio espectral, período de lavagem, tamanho do reservatório e regularização Ridge; a população inicial emprega LHS e o motor inclui seleção por torneio, crossover de um ponto, mutação e mecanismo cataclísmico antiestagnação.",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U0985",
+      "texto_atual": "CHEN, C.; ZHANG, X.; KUO, E.; FU, R.; XIE, Q.; ZHANG, F. Quantum Temporal Convolutional Neural Networks for Cross-Sectional Equity Return Prediction: A Comparative Benchmark Study. 2026. (Preprint arXiv:2512.06630v2). Disponível em: https://doi.org/10.48550/arXiv.2512.06630.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\incorporacao_lote17.json"
+      ]
+    },
+    {
+      "id": "U0992",
+      "texto_atual": "DUTTILO, P. Modelling Financial Returns with Mixtures of Generalized Normal Distributions. 2024. Tese (Doutorado em Human Science — Economics and Statistics) — Università degli Studi “G. d’Annunzio” Chieti-Pescara, 2024. Tutor: Prof. Stefano Antonio Gattone; Coordenador: Prof. Marco Di Marzio.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\incorporacao_lote22.json"
+      ]
+    },
+    {
+      "id": "U0993",
+      "texto_atual": "DUTTILO, P.; GATTONE, S. A. Modelling Financial Returns with Finite Mixtures of GED. In: BALZANELLA, A.; BINI, M.; CAVICCHIA, C.; VERDE, R. (ed.). SIS 2022: 51st Scientific Meeting of the Italian Statistical Society: Book of the Short Papers. [S. l.]: Pearson, 2022. p. 1364-1369. ISBN 9788891932310.",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U1013",
+      "texto_atual": "SEDDIK, S.; ROUTAIB, H.; ELHADDADI, A. Minimizing Chaos in Echo State Networks: A Hybrid Approach Using the Lorenz System. International Journal of Computational Methods and Experimental Measurements, v. 11, n. 4, p. 193-203, 2023. DOI: 10.18280/ijcmem.110401.",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U1014",
+      "texto_atual": "SHARMA, M.; SARTOR, E.; CAVAZZA, M.; PRENDINGER, H. Echo State Networks for Bitcoin Time Series Prediction. arXiv, 2025. Preprint arXiv:2508.05416v1. DOI: 10.48550/arXiv.2508.05416.",
+      "registros_com_texto_exato": []
+    },
+    {
+      "id": "U1020",
+      "texto_atual": "VISHWAS, H. N.; USHA, B. A.; SANGEETHA, K. N. Artificial intelligence-based stock market price prediction, a review. Mathematical Models in Engineering, v. 11, n. 4, p. 204-229, 2025. DOI: 10.21595/mme.2025.24861.",
+      "registros_com_texto_exato": [
+        "reports\\fechamento_integral_20261029\\incorporacao_lote1.json"
+      ]
+    }
+  ],
+  "limite": "Vínculo textual não é validação; células curtas e referências podem ter evidência fora deste conjunto de arquivos."
+}

@@ -1,0 +1,259 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_examinado": "05333a74f190adc9cf7cc18387b502e9ff2073021147a71195863a1555be2ddc",
+  "fontes_lidas_integralmente": [
+    {
+      "id": "D23",
+      "arquivo": "Artigos citados\\Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "paginas": 15,
+      "caracteres_extraidos": 67851,
+      "estado_leitura": "leitura_integral_com_evidencias_visuais",
+      "log_leitura": [
+        {
+          "registro": "leituras_sharma_duttilo_lote7.json",
+          "metodo": "Todas as 15 páginas abertas e lidas visualmente; texto extraído das páginas 1–5 e 7–15 lido como apoio. A camada textual adicional da página 6 não foi usada como evidência.",
+          "paginas_visuais_abertas": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D10",
+      "arquivo": "Artigos citados\\Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+      "sha256": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7",
+      "paginas": 6,
+      "caracteres_extraidos": 12943,
+      "estado_leitura": "leitura_integral_com_evidencias_visuais",
+      "log_leitura": [
+        {
+          "registro": "leituras_sharma_duttilo_lote7.json",
+          "metodo": "Texto completo das seis páginas lido; páginas 3–6 abertas visualmente para fórmulas, aplicação, tabelas e figura.",
+          "paginas_visuais_abertas": [
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D23",
+      "arquivo_pdf": "Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_pdf": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P1",
+      "codigo": "?",
+      "localizador": "PDF 5–7; conferência visual obrigatória da página 6",
+      "evidencia_e_limite": "Na página visível, a figura 3 é reproduzida de Li et al.; o ruído gaussiano é de estado, não lei de Win/W. A extração textual da página 6 contém parágrafos adicionais não visíveis sobre leis Uniformes e outro estudo: foram descartados como artefato da camada textual. Não inferir lei por padrão de biblioteca.",
+      "escopo_leitura": "Todas as 15 páginas abertas e lidas visualmente; texto extraído das páginas 1–5 e 7–15 lido como apoio. A camada textual adicional da página 6 não foi usada como evidência.",
+      "unidade": "U0425"
+    },
+    {
+      "id": "D23",
+      "arquivo_pdf": "Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_pdf": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P2",
+      "codigo": "D",
+      "localizador": "PDF 8, seção 5, Hyperparameter Selection",
+      "evidencia_e_limite": "TPE/Hyperopt para selecionar hiperparâmetros ESN e XGBoost.",
+      "escopo_leitura": "Todas as 15 páginas abertas e lidas visualmente; texto extraído das páginas 1–5 e 7–15 lido como apoio. A camada textual adicional da página 6 não foi usada como evidência.",
+      "unidade": "U0426"
+    },
+    {
+      "id": "D23",
+      "arquivo_pdf": "Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_pdf": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 7–8, seção 4.3",
+      "evidencia_e_limite": "Constrói médias móveis, desvios, RSI, MACD e razões de preços; janelas móveis com treino 15/30/60 e teste 10.",
+      "escopo_leitura": "Todas as 15 páginas abertas e lidas visualmente; texto extraído das páginas 1–5 e 7–15 lido como apoio. A camada textual adicional da página 6 não foi usada como evidência.",
+      "unidade": "U0427"
+    },
+    {
+      "id": "D23",
+      "arquivo_pdf": "Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_pdf": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P4",
+      "codigo": "?",
+      "localizador": "PDF 9–12, resultados",
+      "evidencia_e_limite": "Os comparativos consultados são com último valor e XGBoost. Não sustentam o critério específico de LSTM/GRU/Transformer. Texto não visível da camada de extração não foi usado como evidência.",
+      "escopo_leitura": "Todas as 15 páginas abertas e lidas visualmente; texto extraído das páginas 1–5 e 7–15 lido como apoio. A camada textual adicional da página 6 não foi usada como evidência.",
+      "unidade": "U0428"
+    },
+    {
+      "id": "D23",
+      "arquivo_pdf": "Sharma - Echo State Networks for Bitcoin Time Series.pdf",
+      "sha256_pdf": "71a9aabbbd4cef36b322677896c2f06167ec4ebe88f2f39f3c396b712cbdddbc",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 7–8, características e avaliação",
+      "evidencia_e_limite": "Preços de Bitcoin; RMSE expresso em dólares.",
+      "escopo_leitura": "Todas as 15 páginas abertas e lidas visualmente; texto extraído das páginas 1–5 e 7–15 lido como apoio. A camada textual adicional da página 6 não foi usada como evidência.",
+      "unidade": "U0429"
+    },
+    {
+      "id": "D10",
+      "arquivo_pdf": "Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+      "sha256_pdf": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7",
+      "tipo": "modelagem_distribuicoes",
+      "dimensao": "P1",
+      "codigo": "-",
+      "localizador": "PDF 3–4, seção 2",
+      "evidencia_e_limite": "Misturas de distribuições de retornos; não inicialização de redes ESN.",
+      "escopo_leitura": "Texto completo das seis páginas lido; páginas 3–6 abertas visualmente para fórmulas, aplicação, tabelas e figura.",
+      "unidade": "U0353"
+    },
+    {
+      "id": "D10",
+      "arquivo_pdf": "Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+      "sha256_pdf": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7",
+      "tipo": "modelagem_distribuicoes",
+      "dimensao": "P2",
+      "codigo": "-",
+      "localizador": "PDF 3–4, seção 2",
+      "evidencia_e_limite": "Estimativa de misturas por ECM não é seleção de hiperparâmetros ESN.",
+      "escopo_leitura": "Texto completo das seis páginas lido; páginas 3–6 abertas visualmente para fórmulas, aplicação, tabelas e figura.",
+      "unidade": "U0354"
+    },
+    {
+      "id": "D10",
+      "arquivo_pdf": "Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+      "sha256_pdf": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7",
+      "tipo": "modelagem_distribuicoes",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 4, seção 3",
+      "evidencia_e_limite": "Converte fechamentos em retornos logarítmicos multiplicados por 100 e separa subperíodos.",
+      "escopo_leitura": "Texto completo das seis páginas lido; páginas 3–6 abertas visualmente para fórmulas, aplicação, tabelas e figura.",
+      "unidade": "U0355"
+    },
+    {
+      "id": "D10",
+      "arquivo_pdf": "Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+      "sha256_pdf": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7",
+      "tipo": "modelagem_distribuicoes",
+      "dimensao": "P4",
+      "codigo": "-",
+      "localizador": "PDF 4–5, seção 3 e Tabela 1",
+      "evidencia_e_limite": "Comparadores são misturas Gaussianas/Gaussiana-Laplace/GED e estimativas VaR; não arquiteturas elegíveis de previsão.",
+      "escopo_leitura": "Texto completo das seis páginas lido; páginas 3–6 abertas visualmente para fórmulas, aplicação, tabelas e figura.",
+      "unidade": "U0356"
+    },
+    {
+      "id": "D10",
+      "arquivo_pdf": "Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+      "sha256_pdf": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7",
+      "tipo": "modelagem_distribuicoes",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 4, seção 3",
+      "evidencia_e_limite": "DJIA, fechamentos de 04/01/2016 a 31/01/2022; S&P500 aparece como resultado de outro trabalho, não esta aplicação.",
+      "escopo_leitura": "Texto completo das seis páginas lido; páginas 3–6 abertas visualmente para fórmulas, aplicação, tabelas e figura.",
+      "unidade": "U0357"
+    }
+  ],
+  "n_celulas_reexaminadas": 10,
+  "n_codigos_alterados": 0,
+  "unidades_conferidas_sem_edicao": [
+    {
+      "unidade": "U0233",
+      "diagnostico": "condizente",
+      "evidencia": "Araújo D02 PDF7–11, conferido no lote6; Sharma D23 PDF6visível,7Tabela1e8TPE. Famílias da ESN, amostragem de hiperparâmetros e ruído de estado não são intercambiáveis."
+    },
+    {
+      "unidade": "U0252",
+      "diagnostico": "condizente",
+      "evidencia": "D23 PDF7Tabela1e8: TPE/Hyperopt, janelas de treino15/30/60,teste10,stride1 e tarefa de um passo. Não são horizontes de previsão15/30/60."
+    },
+    {
+      "unidade": "U0226",
+      "diagnostico": "condizente_com_escopo_documental",
+      "evidencia": "D10 PDF1–6: misturas de duas GED sobre retornos do DJIA2016–2022 e comparação por LR/AIC/BIC/HQIC. O parágrafo não transcreve os valores dos critérios nem os confunde com testes de normalidade."
+    }
+  ],
+  "unidades_com_conferencia_parcial": [
+    {
+      "unidade": "U0257",
+      "conferido": "Somente otimização Bayesiana de Sharma; Deng,Tian e Soltani mantêm conferências próprias."
+    }
+  ],
+  "alteracoes_word": [
+    {
+      "unidade": "U0212",
+      "antes": "Sharma (2025) avaliou ESNs para preços de Bitcoin, com XGBoost e previsão pelo último valor como comparadores. A análise relacionou o erro preditivo ao grau de caos estimado por expoentes de Lyapunov. Os testes de Mann–Whitney discutidos no estudo compararam ESN e XGBoost em condições específicas de caos e tamanho de janela; esse resultado não demonstra superioridade estatística geral da ESN sobre ARIMA ou sobre todos os períodos.",
+      "depois": "Sharma (2025) avaliou ESNs para preços de Bitcoin, com XGBoost e previsão pelo último valor como comparadores. O estudo relacionou o erro ao caos estimado por expoentes de Lyapunov. O teste de Mann–Whitney comparou, entre grupos de menor e maior caos, a razão dos RMSEs da ESN e do XGBoost. Foi relatada diferença para janelas de treino de 30 e 60 dias, mas não de 15. Isso não demonstra superioridade estatística geral da ESN sobre ARIMA ou em todos os períodos."
+    },
+    {
+      "unidade": "U1014",
+      "antes": "SHARMA, M.; SARTOR, E.; CAVAZZA, M.; PRENDINGER, H. Echo State Networks for Bitcoin Time Series Prediction. Neural Information Processing (ICONIP 2025). 2025. (Preprint arXiv:2508.05416).",
+      "depois": "SHARMA, M.; SARTOR, E.; CAVAZZA, M.; PRENDINGER, H. Echo State Networks for Bitcoin Time Series Prediction. arXiv, 2025. Preprint arXiv:2508.05416v1. DOI: 10.48550/arXiv.2508.05416."
+    },
+    {
+      "unidade": "U0993",
+      "antes": "DUTTILO, P.; GATTONE, S. A. Modelling Financial Returns with Finite Mixtures of GED. 51st Scientific Meeting of the Italian Statistical Society, p. 1364-1369, 2022. Università degli Studi “G. d’Annunzio” Chieti-Pescara.",
+      "depois": "DUTTILO, P.; GATTONE, S. A. Modelling Financial Returns with Finite Mixtures of GED. In: BALZANELLA, A.; BINI, M.; CAVICCHIA, C.; VERDE, R. (ed.). SIS 2022: 51st Scientific Meeting of the Italian Statistical Society: Book of the Short Papers. [S. l.]: Pearson, 2022. p. 1364-1369. ISBN 9788891932310."
+    }
+  ],
+  "metadados": [
+    {
+      "referencia": "R40",
+      "fonte": "https://arxiv.org/abs/2508.05416",
+      "diagnostico": "Título,quatro autores,data7agosto2025,v1 e DOI conferidos no arXiv oficial. Referência normalizada para a versão efetivamente consultada, sem presumir edição final de anais ICONIP."
+    },
+    {
+      "referencia": "R19",
+      "fonte": {
+        "url": "https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Docenti/Universit%C3%A0/Sis-2022-4c-low.pdf",
+        "sha256_original": "dac83cbfd0245c50886f8af270874164e327056dce532ea26eebd0cde289098e",
+        "paginas_original": 2094,
+        "extrato": "reports\\fechamento_integral_20261029\\fontes_suplementares\\SIS2022_Pearson_final_frontispicio_sumario.pdf",
+        "sha256_extrato": "0a336b45cb5943cbba63d3db1d83b841cbeee42dc260e9c161a1f114269c92a9",
+        "paginas_extraidas": [
+          1,
+          2,
+          18
+        ],
+        "escopo": "Apenas identificação editorial e sumário; não leitura integral dos anais."
+      },
+      "diagnostico": "Capa,créditos e sumário final abertos: quatro editores,obra,evento emCaserta22–24junho2022,Pearson,ISBN9788891932310e início1364. Fim1369no artigo local. Universidade dos autores não foi mantida como editora. Local de publicação não consta das páginas de identificação; indicado[S.l.],sem confundir com a cidade do evento."
+    }
+  ],
+  "ressalvas_fontes": [
+    "Sharma: Uniforme/LogUniforme da Tabela1são amostragem de hiperparâmetros; ruído Gaussiano da página6visível não individualiza Win/W.",
+    "Sharma: Mann–Whitney compara razões de RMSE entre grupos de caos; os p-valores0,258/0,022/0,038referem-se a treinos15/30/60. Não é teste geral contra ARIMA ou arquiteturas profundas.",
+    "Sharma: texto diz que atributos multivariados melhoram ESN, mas Tabela3tem RMSEmultivariado maior que univariado nas três janelas. Isso não é transportado ao TCC.",
+    "Sharma: interpolação e atributos técnicos estão documentados; texto sobre ausência de transformações e análise de diferenciação fracionária devem ser lidos em seus contextos,sem inferir que toda entrada de previsão foi diferenciada.",
+    "Duttilo: a frase da página3inverte os casos Normal/Laplace para nu1/2; fórmula e casos da página4indicam Normalnu2eLaplacenu1. O TCC não copia a inversão.",
+    "Duttilo: AIC na Tabela1aparenta usar penalização k em vez de2k para contagens usuais5/5/7,considerando os LL publicados. Não transcrever os valores como cálculo validado. A descrição documental do uso de critérios continua condizente; não endossa toda a análise original.",
+    "Duttilo: ajuste incondicional de distribuições e aplicação VaR não são inicialização de ESN ou teste causal de efeito de caudas sobre previsão de preços.",
+    "O arquivo preliminar Sis-2022-A.pdf do editor tinha ISBNDraft e paginação1375no sumário. Foi descartado para paginação/edição final, substituído pelo arquivo finalSis-2022-4c-low.pdf; os extratos e origens distinguem ambos."
+  ],
+  "sha256_copia_apos_edicao": "423b19fd8ff0dbbbfe96eeb00673f1a7fc3b0675911b3d3d365d28812e17c976",
+  "estado": "incorporado_renderizado_e_inspecionado_pendente_fechamento_integral",
+  "sha256_apos_exportacao_nativa": "4d8ad77d6266568f21d1593e1026c4f6a567c439749daafe44b4e6a6ed49efad"
+}

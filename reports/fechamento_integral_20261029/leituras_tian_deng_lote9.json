@@ -1,0 +1,259 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_examinado": "4d8ad77d6266568f21d1593e1026c4f6a567c439749daafe44b4e6a6ed49efad",
+  "fontes_lidas_integralmente": [
+    {
+      "id": "D27",
+      "arquivo": "Artigos citados\\Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "paginas": 15,
+      "caracteres_extraidos": 48083,
+      "estado_leitura": "leitura_integral_com_evidencias_visuais",
+      "log_leitura": [
+        {
+          "registro": "leituras_tian_deng_lote9.json",
+          "metodo": "Texto integral das15páginas lido em blocos1–5,6–10,11–15, incluindo referências e página de termos; nove páginas abertas para método,tabelas e metadados.",
+          "paginas_visuais_abertas": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D08",
+      "arquivo": "Artigos citados\\Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "paginas": 26,
+      "caracteres_extraidos": 77191,
+      "estado_leitura": "leitura_integral_com_evidencias_visuais",
+      "log_leitura": [
+        {
+          "registro": "leituras_tian_deng_lote9.json",
+          "metodo": "Versão de autor aceita: texto integral das26páginas lido em blocos1–6,7–12,13–18,19–22,23–26, incluindo apêndice e referências; oito páginas abertas visualmente.",
+          "paginas_visuais_abertas": [
+            1,
+            8,
+            10,
+            12,
+            13,
+            16,
+            18,
+            20
+          ]
+        }
+      ]
+    }
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D27",
+      "arquivo_pdf": "Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_pdf": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P1",
+      "codigo": "?",
+      "localizador": "PDF 3–5, ESN e SSA",
+      "evidencia_e_limite": "Win/W são geradas aleatoriamente. Distribuições normais descritas na SSA pertencem às posições/perturbações dos agentes, não são explicitamente leis dos pesos da ESN.",
+      "escopo_leitura": "Texto integral das15páginas lido em blocos1–5,6–10,11–15, incluindo referências e página de termos; nove páginas abertas para método,tabelas e metadados.",
+      "unidade": "U0449"
+    },
+    {
+      "id": "D27",
+      "arquivo_pdf": "Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_pdf": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P2",
+      "codigo": "D",
+      "localizador": "PDF 4, seção 2.3; PDF 6, Tabela 3",
+      "evidencia_e_limite": "SSA seleciona taxa de aprendizado e regularização; não atribuir otimização de todos os parâmetros ou das matrizes.",
+      "escopo_leitura": "Texto integral das15páginas lido em blocos1–5,6–10,11–15, incluindo referências e página de termos; nove páginas abertas para método,tabelas e metadados.",
+      "unidade": "U0450"
+    },
+    {
+      "id": "D27",
+      "arquivo_pdf": "Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_pdf": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 4–5, seções 2.3 e 3.2",
+      "evidencia_e_limite": "Normaliza dados em [0,1]; fonte informa que não realizou limpeza dos dados.",
+      "escopo_leitura": "Texto integral das15páginas lido em blocos1–5,6–10,11–15, incluindo referências e página de termos; nove páginas abertas para método,tabelas e metadados.",
+      "unidade": "U0451"
+    },
+    {
+      "id": "D27",
+      "arquivo_pdf": "Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_pdf": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P4",
+      "codigo": "D",
+      "localizador": "PDF5–6e9–12, Tabelas6–18; comparações quantitativas próprias com LSTM.",
+      "evidencia_e_limite": "Compara BP, Elman, LSTM, ESN e SSA-ESN; tabelas de métricas especificadas nos resultados.",
+      "escopo_leitura": "Texto integral das15páginas lido em blocos1–5,6–10,11–15, incluindo referências e página de termos; nove páginas abertas para método,tabelas e metadados.",
+      "unidade": "U0452"
+    },
+    {
+      "id": "D27",
+      "arquivo_pdf": "Tian Z - Stocks price prediction based on optimized echo state network by sparrow search algorithm.pdf",
+      "sha256_pdf": "9fada25b44742813e0b94f481578f47044a596a17ec80d5167353c4041c276a5",
+      "tipo": "aplicacao_ESN",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 5, Tabelas 1–2",
+      "evidencia_e_limite": "Dez ações americanas e dez chinesas, incluindo INTC, QCOM e Vanke.",
+      "escopo_leitura": "Texto integral das15páginas lido em blocos1–5,6–10,11–15, incluindo referências e página de termos; nove páginas abertas para método,tabelas e metadados.",
+      "unidade": "U0453"
+    },
+    {
+      "id": "D08",
+      "arquivo_pdf": "Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_pdf": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "tipo": "aplicacao_ESN_nao_financeira",
+      "dimensao": "P1",
+      "codigo": "?",
+      "localizador": "PDF 8 e 13, equações 1–5 e seção 4.2",
+      "evidencia_e_limite": "Win, Wres e Wenc são descritas como aleatórias. A família probabilística de Win/Wres não é especificada nesses trechos; filtro gaussiano da série é outro objeto.",
+      "escopo_leitura": "Versão de autor aceita: texto integral das26páginas lido em blocos1–6,7–12,13–18,19–22,23–26, incluindo apêndice e referências; oito páginas abertas visualmente.",
+      "unidade": "U0335"
+    },
+    {
+      "id": "D08",
+      "arquivo_pdf": "Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_pdf": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "tipo": "aplicacao_ESN_nao_financeira",
+      "dimensao": "P2",
+      "codigo": "D",
+      "localizador": "PDF 10 e 13, seções 3.2 e 4.2",
+      "evidencia_e_limite": "AG seleciona input scaling, spectral radius e leak rate de cada reservatório.",
+      "escopo_leitura": "Versão de autor aceita: texto integral das26páginas lido em blocos1–6,7–12,13–18,19–22,23–26, incluindo apêndice e referências; oito páginas abertas visualmente.",
+      "unidade": "U0336"
+    },
+    {
+      "id": "D08",
+      "arquivo_pdf": "Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_pdf": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "tipo": "aplicacao_ESN_nao_financeira",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 12, seção 4",
+      "evidencia_e_limite": "Suaviza as tensões FC1/FC2 com filtro de média móvel ponderada Gaussiana. Não atribuir wavelet de trabalhos relacionados ao procedimento deste artigo.",
+      "escopo_leitura": "Versão de autor aceita: texto integral das26páginas lido em blocos1–6,7–12,13–18,19–22,23–26, incluindo apêndice e referências; oito páginas abertas visualmente.",
+      "unidade": "U0337"
+    },
+    {
+      "id": "D08",
+      "arquivo_pdf": "Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_pdf": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "tipo": "aplicacao_ESN_nao_financeira",
+      "dimensao": "P4",
+      "codigo": "S",
+      "localizador": "PDF 20, Tabela 6",
+      "evidencia_e_limite": "LSTM RNN, ARIMA e Fusion têm valores provenientes de [36]; são comparação quantitativa secundária, não novas execuções correspondentes.",
+      "escopo_leitura": "Versão de autor aceita: texto integral das26páginas lido em blocos1–6,7–12,13–18,19–22,23–26, incluindo apêndice e referências; oito páginas abertas visualmente.",
+      "unidade": "U0338"
+    },
+    {
+      "id": "D08",
+      "arquivo_pdf": "Deng - Degradation prediction of PEMFCs using stacked echo state network based on genetic.pdf",
+      "sha256_pdf": "7d31ec530557dc05adc197491f8dd66b86b4f619f042b3f0e1eaf56e9a9bdc69",
+      "tipo": "aplicacao_ESN_nao_financeira",
+      "dimensao": "P5",
+      "codigo": "-",
+      "localizador": "PDF 6 e 12, problema e dados",
+      "evidencia_e_limite": "Degradação de células PEMFC, testes IEEE PHM 2014; não mercado financeiro.",
+      "escopo_leitura": "Versão de autor aceita: texto integral das26páginas lido em blocos1–6,7–12,13–18,19–22,23–26, incluindo apêndice e referências; oito páginas abertas visualmente.",
+      "unidade": "U0339"
+    }
+  ],
+  "n_celulas_reexaminadas": 10,
+  "n_codigos_alterados": 0,
+  "unidades_conferidas_sem_edicao": [
+    {
+      "unidade": "U0216",
+      "diagnostico": "conteudo_condizente",
+      "fontes": [
+        "D27"
+      ],
+      "localizador": "PDF4–6e9–12",
+      "evidencia": "SSA otimiza parâmetros,20ações(10EUA/10China),mesmasWin/WparaESNeSSA-ESN(PDF5),comparações comBP,Elman,LSTM,ESN. TCC distingue erros reportados de significância estatística geral."
+    },
+    {
+      "unidade": "U0249",
+      "diagnostico": "conteudo_condizente",
+      "fontes": [
+        "D27"
+      ],
+      "localizador": "PDF3–6e9–12",
+      "evidencia": "Comparadores e tarefa confirmados; lei das matrizes não é individualizada por distribuições do operadorSSA. Não isola causalmente família de pesos."
+    },
+    {
+      "unidade": "U0217",
+      "diagnostico": "conteudo_condizente",
+      "fontes": [
+        "D08"
+      ],
+      "localizador": "PDF10–13,15–20",
+      "evidencia": "AG selecionaIS,SR,leak-rate por reservatório empilhado; PEMFC,FC1/FC2. Tabela6(PDF20)rotula LSTM,ARIMA,Fusioncom[36],comparação secundária. Não é experimento financeiro nem prova de vantagem universal."
+    },
+    {
+      "unidade": "U0257",
+      "diagnostico": "conteudo_condizente_com_limites",
+      "fontes": [
+        "D08",
+        "D27",
+        "D23",
+        "D24"
+      ],
+      "localizador": "D08PDF10–13;D27PDF4–6;D23PDF7–8;D24PDF8–14",
+      "evidencia": "As quatro atribuições foram conferidas integralmente nos lotes7–9:AG,SSA,TPEe revisão de técnicas. Heurísticas não garantem ótimo global; frequência de uso não estabelece consenso de superioridade."
+    }
+  ],
+  "unidade_com_conferencia_parcial": {
+    "unidade": "U0279",
+    "conferido": "Somente exemploDeng/P4S; a parte LiuB.depende da leituraD18. É linha explicativa da matriz, não sua aprovação global."
+  },
+  "metadados": [
+    {
+      "referencia": "R15",
+      "diagnostico": "DTU Orbit,capaPDF1: oito autores,2022,IEEETransactions onTransportationElectrification8(1):1454–1466,DOI10.1109/TTE.2021.3111906. Conteúdo integral foi lido na versão aceita,não se presume identidade com a diagramação final."
+    },
+    {
+      "referencia": "R44",
+      "diagnostico": "PDF1: dois autores,DOI10.1007/s40435-024-01405-8,online11/03/2024e copyright2024; artigo2764–2777. O cabeçalho2023contradiz as datas recebida2023/aceita2024 e não foi usado para substituir o ano2024."
+    }
+  ],
+  "ressalvas_fontes": [
+    "Tian: aprende/otimiza learning rate e regularização; a geração aleatória Win/W não tem família completa. Normais da SSA são perturbações de agentes, não pesos da ESN.",
+    "Tian: há empates ao arredondamento e valores MAPE inconsistentes com sua apresentação percentual em figuras(BAC/WFC). Não copiar esses números ou prometer ganho universal/significância por tabelas de erro.",
+    "Tian: condição de raio<1é apresentada como garantia geral, mas a reescala daEq5aponta para raio1. A monografia não endossa essa garantia; fundamentos matemáticos foram conferidos em Jaeger.",
+    "Deng: filtro gaussiano é tratamento da tensão, não distribuição de pesos; o input scaling atua sobreWin. Não preencherP1por analogia.",
+    "Deng:Eq5da versão aceita imprime argmax para erro regularizado; prosa fala em minimizar. A Tabela4destacaMAPE2camadas emboraMAPE4camadas impresso seja menor; razão16,2vezes da prosa não coincide com os RMSEs tabulados. Não foram transferidas essas fórmulas,razões ou alegações de melhor camada ao TCC.",
+    "Deng: LSTM daTabela6é importado de[36]/Maetal. Não se declara conferência independente do original[36]ou reprodução dessas comparações. O TCC descreve essa origem secundária."
+  ],
+  "fila_formal_autoria": [
+    {
+      "unidades": [
+        "U0216",
+        "U0257",
+        "U0448"
+      ],
+      "observacao": "Chamadas abreviadas Tian(2024)em obra de dois autores; confrontar com a regra de autoria do Guia e harmonizar no passe formal. Não confundir aprovação de conteúdo com aprovação formal."
+    },
+    {
+      "observacao": "Revisar globalmente chamadas de primeiro autor comoSharma/Sun e abreviações cometalà luz do Guia; a bibliografia fornece coautorias. Não presumir que o cruzamento nominal detecta essa questão."
+    }
+  ],
+  "alteracoes_word": [],
+  "checkpoint_word_preservado": "checkpoint_lote7.json",
+  "estado": "conteudo_conferido_sem_edicao_word_passe_formal_pendente"
+}

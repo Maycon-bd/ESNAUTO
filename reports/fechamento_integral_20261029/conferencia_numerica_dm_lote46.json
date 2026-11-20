@@ -1,0 +1,58 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "4c9110f8995438f956f965db10ae5f26391c91f45757322758c1e4c83a6f2742",
+  "fonte_primaria_testes": "Scripts\\results\\diebold_mariano\\controlled_runs\\seed_20260926\\dm\\resultados_dm.csv",
+  "sha256_csv": "bbd0a1bae158726bbf48f0b3e7d52e8fb9f981f4aed9824e7fafabb06f44126b",
+  "metodo": "Comparação decimal da tabela e do texto com CSV armazenado, sem executar o teste novamente; expoentes Unicode são normalizados antes da leitura.",
+  "resultados": [
+    {
+      "comparacao": "ESN x GRU",
+      "perda": "Absoluta",
+      "estatistica_tabela": "-11.870611",
+      "p_tabela": "6.296E-31",
+      "p_csv": "6.2957059221758E-31",
+      "perda_media_esn": "0.328850012455254",
+      "perda_media_baseline": "0.418175291762921",
+      "confirmado": true
+    },
+    {
+      "comparacao": "ESN x LSTM",
+      "perda": "Absoluta",
+      "estatistica_tabela": "-15.496644",
+      "p_tabela": "8.008E-50",
+      "p_csv": "8.00831279029858E-50",
+      "perda_media_esn": "0.328850012455254",
+      "perda_media_baseline": "0.466612261009446",
+      "confirmado": true
+    },
+    {
+      "comparacao": "ESN x GRU",
+      "perda": "Quadrática",
+      "estatistica_tabela": "-9.846951",
+      "p_tabela": "4.117E-22",
+      "p_csv": "4.11717775606302E-22",
+      "perda_media_esn": "0.248454709543754",
+      "perda_media_baseline": "0.35099989374435",
+      "confirmado": true
+    },
+    {
+      "comparacao": "ESN x LSTM",
+      "perda": "Quadrática",
+      "estatistica_tabela": "-9.208792",
+      "p_tabela": "1.285E-19",
+      "p_csv": "1.28507243104446E-19",
+      "perda_media_esn": "0.248454709543754",
+      "perda_media_baseline": "0.403589863643433",
+      "confirmado": true
+    }
+  ],
+  "correcao_interpretacao": "O primeiro valor do manuscrito é 6,296 × 10⁻³¹ e coincide, por arredondamento, com 6,2957059221758e-31. A leitura inicial do expoente como 39 foi um erro de interpretação da representação Unicode, corrigido antes de qualquer edição.",
+  "fonte_teorica": {
+    "referencia": "Diebold e Mariano (1995)",
+    "url_editor": "https://doi.org/10.1080/07350015.1995.10524599",
+    "escopo": "Artigo formula teste de igualdade de acurácia sob função de perda. O método implementado usa forecast::dm.test; detalhes e ressalva de h=1 estão em conferencia_dm_lote25.json."
+  },
+  "limites": "Conferência da transcrição e direção das perdas; não é nova execução do teste ou validação de pressupostos de dependência serial nem evidência sobre rodadas históricas.",
+  "acao": "Nenhuma alteração Word."
+}

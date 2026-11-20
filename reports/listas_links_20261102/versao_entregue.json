@@ -1,0 +1,43 @@
+{
+  "id": "v015",
+  "anterior": "v014",
+  "arquivo": "reports/monografia/versoes/v015/MayconGarciaSilva_monografia_v015.docx",
+  "sha256": "0e6ed169859d1aca3538c291f870053444fec7fb4d5ec58098500de25b869256",
+  "registrada_em_utc": "2026-11-02T22:54:22.353544+00:00",
+  "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\listas_links_20261102.docx",
+  "responsavel": "Codex para Maycon Garcia Silva",
+  "resumo": "Adiciona 19 links internos às listas de figuras (6), quadros (6) e tabelas (7), preservando os 42 links do sumário. Conteúdo, aparência e paginação mantidos.",
+  "estado_editorial": "em_revisao",
+  "validacao_declarada": "61 hyperlinks seguidos no Word com marcador e página corretos, incluindo os 19 novos e os 42 do sumário. 81 páginas renderizadas, todas pixel a pixel idênticas à v014; páginas das listas inspecionadas. Texto, 15 tabelas e 81 localizadores preservados. Apenas navegação adicionada em document.xml. Validação funcional no Word, sem certificação de outros visualizadores.",
+  "evidencias": [
+    {
+      "arquivo": "reports/listas_links_20261102/relatorio.md",
+      "sha256": "9447b357ed159a10553531bd5875aa465609e976d5d077ad0c516d2c609c8a35"
+    },
+    {
+      "arquivo": "reports/listas_links_20261102/conferencia_final.json",
+      "sha256": "baa9fe4dfb9a8b14906896416a1d37533f61d4e3ba4eb4d5aaf6795664ed56ff"
+    },
+    {
+      "arquivo": "reports/listas_links_20261102/estrutura.json",
+      "sha256": "de23cc31dbacf40f36f0e7da3a7f7f78c24f173151b1e3a018441cdc796159bb"
+    },
+    {
+      "arquivo": "reports/listas_links_20261102/links.json",
+      "sha256": "75c371f1b8b52f7f5428752320bca2d19977d3791c71000886c1c569a49e5a82"
+    },
+    {
+      "arquivo": "reports/listas_links_20261102/teste_links_word.json",
+      "sha256": "9f3550c80e07cc79a21515550f475d4be6f587cb7aadd02a17e2b8eb63874d79"
+    }
+  ],
+  "pendencias": [
+    "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+    "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+    "Limitação bibliográfica preservada: buscas complementares e registros de seleção parciais. Três células resolvidas com evidência; restam 38 marcações de informação insuficiente, com pesquisa em andamento. Sem alegação de revisão sistemática integral.",
+    "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+    "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills.",
+    "Declaração de IAG reescrita a pedido do autor, com Claude Opus 5.5 e Codex Sol 5.6 informados por ele; somente Codex nos testes. Data preenchida em 2 de novembro de 2026; assinaturas do autor e orientador permanecem em branco, com espaço ampliado. Redação adaptada do modelo institucional, sem aprovação institucional nesta revisão."
+  ],
+  "caminho_absoluto": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\versoes\\v015\\MayconGarciaSilva_monografia_v015.docx"
+}

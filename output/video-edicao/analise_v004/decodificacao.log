@@ -1,0 +1,33 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\User\Documents\PROJETOS SOFTWARE\ESNAUTO\output\video-edicao\exportados\ESNAUTO_apresentacao_v004.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    title           : ESNAUTO - Apresentação v004
+    encoder         : Lavf63.1.102
+  Duration: 00:24:36.00, start: 0.000000, bitrate: 3167 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 2905 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.102 h264_nvenc
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 252 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+  Stream #0:2[0x3](por): Subtitle: mov_text (tx3g / 0x67337874), 0 kb/s (default)
+    Metadata:
+      handler_name    : SubtitleHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> rawvideo (native))
+Output #0, rawvideo, to 'C:\Users\User\Documents\PROJETOS SOFTWARE\ESNAUTO\output\video-edicao\analise_v004\rodapes_amostrados.rgb':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    title           : ESNAUTO - Apresentação v004
+    encoder         : Lavf63.1.102
+  Stream #0:0(und): Video: rawvideo (RGB[24] / 0x18424752), rgb24(pc, gbr/unknown/unknown, progressive), 110x4 [SAR 1:1 DAR 55:2], q=2-31, 10 kb/s, 1 fps, 1 tbn (default)
+    Metadata:
+      encoder         : Lavc63.1.102 rawvideo
+      handler_name    : VideoHandler
+[out#0/rawvideo @ 000002b629cada80] video:1903KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+frame= 1476 fps= 16 q=-0.0 Lsize=    1903KiB time=00:24:36.00 bitrate=  10.6kbits/s speed=15.8x elapsed=0:01:33.52    

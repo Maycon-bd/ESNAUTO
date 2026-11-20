@@ -1,0 +1,21 @@
+{
+  "sha256_docx": "b8f7675159483d79d0bb638ba914c2ef541220fa49161a406e869d7154ad249f",
+  "achados": [
+    {
+      "sigla": "HQNN",
+      "diagnostico": "Aparece somente na própria lista, sem uso encontrado em outras partes XML e células. Entrada herdada deve ser retirada da lista."
+    },
+    {
+      "sigla": "SVM",
+      "paragrafo": 184,
+      "diagnostico": "Primeira ocorrência SVMs antecede a expansão posterior; expandir neste contexto de síntese."
+    },
+    {
+      "sigla": "TPE",
+      "paragrafo": 234,
+      "diagnostico": "Primeira ocorrência antecede expansão no parágrafo252; apresentar nome por extenso em234."
+    }
+  ],
+  "estado": "correcoes_tipograficas_pendentes",
+  "limite": "Auditoria das três candidatas específicas; demais siglas continuam em conferência."
+}

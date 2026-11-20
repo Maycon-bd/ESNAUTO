@@ -1,0 +1,637 @@
+﻿{
+    "links":  [
+                  {
+                      "subAddress":  "257,2, ",
+                      "shape":  "nav-2-5",
+                      "action":  7,
+                      "slide":  1
+                  },
+                  {
+                      "subAddress":  "260,5, ",
+                      "shape":  "nav-5-6",
+                      "action":  7,
+                      "slide":  1
+                  },
+                  {
+                      "subAddress":  "267,12, ",
+                      "shape":  "nav-12-7",
+                      "action":  7,
+                      "slide":  1
+                  },
+                  {
+                      "subAddress":  "278,23, ",
+                      "shape":  "nav-23-8",
+                      "action":  7,
+                      "slide":  1
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-5",
+                      "action":  7,
+                      "slide":  2
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-6",
+                      "action":  7,
+                      "slide":  2
+                  },
+                  {
+                      "subAddress":  "258,3, ",
+                      "shape":  "nav-3-7",
+                      "action":  7,
+                      "slide":  2
+                  },
+                  {
+                      "subAddress":  "271,16, ",
+                      "shape":  "nav-16-2",
+                      "action":  7,
+                      "slide":  3
+                  },
+                  {
+                      "subAddress":  "273,18, ",
+                      "shape":  "nav-18-4",
+                      "action":  7,
+                      "slide":  3
+                  },
+                  {
+                      "subAddress":  "268,13, ",
+                      "shape":  "nav-13-6",
+                      "action":  7,
+                      "slide":  3
+                  },
+                  {
+                      "subAddress":  "262,7, ",
+                      "shape":  "nav-7-8",
+                      "action":  7,
+                      "slide":  3
+                  },
+                  {
+                      "subAddress":  "263,8, ",
+                      "shape":  "nav-8-10",
+                      "action":  7,
+                      "slide":  3
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-13",
+                      "action":  7,
+                      "slide":  3
+                  },
+                  {
+                      "subAddress":  "257,2, ",
+                      "shape":  "nav-2-14",
+                      "action":  7,
+                      "slide":  3
+                  },
+                  {
+                      "subAddress":  "259,4, ",
+                      "shape":  "nav-4-15",
+                      "action":  7,
+                      "slide":  3
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-6",
+                      "action":  7,
+                      "slide":  4
+                  },
+                  {
+                      "subAddress":  "258,3, ",
+                      "shape":  "nav-3-7",
+                      "action":  7,
+                      "slide":  4
+                  },
+                  {
+                      "subAddress":  "260,5, ",
+                      "shape":  "nav-5-8",
+                      "action":  7,
+                      "slide":  4
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-11",
+                      "action":  7,
+                      "slide":  5
+                  },
+                  {
+                      "subAddress":  "259,4, ",
+                      "shape":  "nav-4-12",
+                      "action":  7,
+                      "slide":  5
+                  },
+                  {
+                      "subAddress":  "261,6, ",
+                      "shape":  "nav-6-13",
+                      "action":  7,
+                      "slide":  5
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-12",
+                      "action":  7,
+                      "slide":  6
+                  },
+                  {
+                      "subAddress":  "260,5, ",
+                      "shape":  "nav-5-13",
+                      "action":  7,
+                      "slide":  6
+                  },
+                  {
+                      "subAddress":  "262,7, ",
+                      "shape":  "nav-7-14",
+                      "action":  7,
+                      "slide":  6
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-4",
+                      "action":  7,
+                      "slide":  7
+                  },
+                  {
+                      "subAddress":  "261,6, ",
+                      "shape":  "nav-6-5",
+                      "action":  7,
+                      "slide":  7
+                  },
+                  {
+                      "subAddress":  "263,8, ",
+                      "shape":  "nav-8-6",
+                      "action":  7,
+                      "slide":  7
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-4",
+                      "action":  7,
+                      "slide":  8
+                  },
+                  {
+                      "subAddress":  "262,7, ",
+                      "shape":  "nav-7-5",
+                      "action":  7,
+                      "slide":  8
+                  },
+                  {
+                      "subAddress":  "264,9, ",
+                      "shape":  "nav-9-6",
+                      "action":  7,
+                      "slide":  8
+                  },
+                  {
+                      "subAddress":  "267,12, ",
+                      "shape":  "nav-12-2",
+                      "action":  7,
+                      "slide":  9
+                  },
+                  {
+                      "subAddress":  "270,15, ",
+                      "shape":  "nav-15-5",
+                      "action":  7,
+                      "slide":  9
+                  },
+                  {
+                      "subAddress":  "269,14, ",
+                      "shape":  "nav-14-8",
+                      "action":  7,
+                      "slide":  9
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-12",
+                      "action":  7,
+                      "slide":  9
+                  },
+                  {
+                      "subAddress":  "263,8, ",
+                      "shape":  "nav-8-13",
+                      "action":  7,
+                      "slide":  9
+                  },
+                  {
+                      "subAddress":  "265,10, ",
+                      "shape":  "nav-10-14",
+                      "action":  7,
+                      "slide":  9
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-6",
+                      "action":  7,
+                      "slide":  10
+                  },
+                  {
+                      "subAddress":  "264,9, ",
+                      "shape":  "nav-9-7",
+                      "action":  7,
+                      "slide":  10
+                  },
+                  {
+                      "subAddress":  "266,11, ",
+                      "shape":  "nav-11-8",
+                      "action":  7,
+                      "slide":  10
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-9",
+                      "action":  7,
+                      "slide":  11
+                  },
+                  {
+                      "subAddress":  "265,10, ",
+                      "shape":  "nav-10-10",
+                      "action":  7,
+                      "slide":  11
+                  },
+                  {
+                      "subAddress":  "267,12, ",
+                      "shape":  "nav-12-11",
+                      "action":  7,
+                      "slide":  11
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-5",
+                      "action":  7,
+                      "slide":  12
+                  },
+                  {
+                      "subAddress":  "266,11, ",
+                      "shape":  "nav-11-6",
+                      "action":  7,
+                      "slide":  12
+                  },
+                  {
+                      "subAddress":  "268,13, ",
+                      "shape":  "nav-13-7",
+                      "action":  7,
+                      "slide":  12
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-5",
+                      "action":  7,
+                      "slide":  13
+                  },
+                  {
+                      "subAddress":  "267,12, ",
+                      "shape":  "nav-12-6",
+                      "action":  7,
+                      "slide":  13
+                  },
+                  {
+                      "subAddress":  "269,14, ",
+                      "shape":  "nav-14-7",
+                      "action":  7,
+                      "slide":  13
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-3",
+                      "action":  7,
+                      "slide":  14
+                  },
+                  {
+                      "subAddress":  "268,13, ",
+                      "shape":  "nav-13-4",
+                      "action":  7,
+                      "slide":  14
+                  },
+                  {
+                      "subAddress":  "270,15, ",
+                      "shape":  "nav-15-5",
+                      "action":  7,
+                      "slide":  14
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-7",
+                      "action":  7,
+                      "slide":  15
+                  },
+                  {
+                      "subAddress":  "269,14, ",
+                      "shape":  "nav-14-8",
+                      "action":  7,
+                      "slide":  15
+                  },
+                  {
+                      "subAddress":  "271,16, ",
+                      "shape":  "nav-16-9",
+                      "action":  7,
+                      "slide":  15
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-5",
+                      "action":  7,
+                      "slide":  16
+                  },
+                  {
+                      "subAddress":  "270,15, ",
+                      "shape":  "nav-15-6",
+                      "action":  7,
+                      "slide":  16
+                  },
+                  {
+                      "subAddress":  "272,17, ",
+                      "shape":  "nav-17-7",
+                      "action":  7,
+                      "slide":  16
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-4",
+                      "action":  7,
+                      "slide":  17
+                  },
+                  {
+                      "subAddress":  "271,16, ",
+                      "shape":  "nav-16-5",
+                      "action":  7,
+                      "slide":  17
+                  },
+                  {
+                      "subAddress":  "273,18, ",
+                      "shape":  "nav-18-6",
+                      "action":  7,
+                      "slide":  17
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-7",
+                      "action":  7,
+                      "slide":  18
+                  },
+                  {
+                      "subAddress":  "272,17, ",
+                      "shape":  "nav-17-8",
+                      "action":  7,
+                      "slide":  18
+                  },
+                  {
+                      "subAddress":  "274,19, ",
+                      "shape":  "nav-19-9",
+                      "action":  7,
+                      "slide":  18
+                  },
+                  {
+                      "subAddress":  "271,16, ",
+                      "shape":  "nav-16-1",
+                      "action":  7,
+                      "slide":  19
+                  },
+                  {
+                      "subAddress":  "273,18, ",
+                      "shape":  "nav-18-3",
+                      "action":  7,
+                      "slide":  19
+                  },
+                  {
+                      "subAddress":  "268,13, ",
+                      "shape":  "nav-13-5",
+                      "action":  7,
+                      "slide":  19
+                  },
+                  {
+                      "subAddress":  "262,7, ",
+                      "shape":  "nav-7-7",
+                      "action":  7,
+                      "slide":  19
+                  },
+                  {
+                      "subAddress":  "263,8, ",
+                      "shape":  "nav-8-9",
+                      "action":  7,
+                      "slide":  19
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-12",
+                      "action":  7,
+                      "slide":  19
+                  },
+                  {
+                      "subAddress":  "273,18, ",
+                      "shape":  "nav-18-13",
+                      "action":  7,
+                      "slide":  19
+                  },
+                  {
+                      "subAddress":  "275,20, ",
+                      "shape":  "nav-20-14",
+                      "action":  7,
+                      "slide":  19
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-7",
+                      "action":  7,
+                      "slide":  20
+                  },
+                  {
+                      "subAddress":  "274,19, ",
+                      "shape":  "nav-19-8",
+                      "action":  7,
+                      "slide":  20
+                  },
+                  {
+                      "subAddress":  "276,21, ",
+                      "shape":  "nav-21-9",
+                      "action":  7,
+                      "slide":  20
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-12",
+                      "action":  7,
+                      "slide":  21
+                  },
+                  {
+                      "subAddress":  "275,20, ",
+                      "shape":  "nav-20-13",
+                      "action":  7,
+                      "slide":  21
+                  },
+                  {
+                      "subAddress":  "277,22, ",
+                      "shape":  "nav-22-14",
+                      "action":  7,
+                      "slide":  21
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-8",
+                      "action":  7,
+                      "slide":  22
+                  },
+                  {
+                      "subAddress":  "276,21, ",
+                      "shape":  "nav-21-9",
+                      "action":  7,
+                      "slide":  22
+                  },
+                  {
+                      "subAddress":  "278,23, ",
+                      "shape":  "nav-23-10",
+                      "action":  7,
+                      "slide":  22
+                  },
+                  {
+                      "subAddress":  "256,1, ",
+                      "shape":  "nav-1-10",
+                      "action":  7,
+                      "slide":  23
+                  },
+                  {
+                      "subAddress":  "277,22, ",
+                      "shape":  "nav-22-11",
+                      "action":  7,
+                      "slide":  23
+                  }
+              ],
+    "slideCount":  23,
+    "effects":  [
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  1
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  2
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  3
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  4
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  5
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  6
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  7
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  8
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  9
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  10
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  11
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  12
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  13
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  14
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  15
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  16
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  17
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  18
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  19
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  20
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  21
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  22
+                    },
+                    {
+                        "effect":  3849,
+                        "onClick":  -1,
+                        "onTime":  0,
+                        "slide":  23
+                    }
+                ]
+}

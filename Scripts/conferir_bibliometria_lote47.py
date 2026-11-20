@@ -1,0 +1,18 @@
+"""Reconta termos e pares documentais sem executar scripts de análise."""
+import hashlib,json,re,unicodedata
+from collections import Counter
+from itertools import combinations
+from pathlib import Path
+from docx import Document
+root=Path(__file__).resolve().parents[1];out=root/'reports/fechamento_integral_20261029';doc=root/'reports/monografia/trabalho/fechamento_integral_20261029.docx';base=root/'reports/bibliometria_reconstrucao/base_reconstruida.json';titles=root/'reports/bibliometria_reconstrucao/expressoes_titulos.json';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert sha(doc)=='4c9110f8995438f956f965db10ae5f26391c91f45757322758c1e4c83a6f2742'
+b=json.loads(base.read_text(encoding='utf8')); t=json.loads(titles.read_text(encoding='utf8')); assert len(b['records'])==len(t['records'])==34 and len({r['id'] for r in b['records']})==34
+docs=[set(r['keywords_normalizadas']) for r in b['records']];kw=Counter(w for d in docs for w in d);nodes={w for w,n in kw.items() if n>=2};edges=Counter(pair for d in docs for pair in combinations(sorted(d & nodes),2));assert sum(bool(d) for d in docs)==24 and len(kw)==92 and len(nodes)==14 and len(edges)==33
+stop=set(t['stopwords']);tc=Counter(); mismatches=[]
+for r in t['records']:
+ tokens=re.findall('[a-z]+',unicodedata.normalize('NFKC',r['titulo_analisado']).lower());pairs={a+' '+b for a,b in zip(tokens,tokens[1:]) if a not in stop and b not in stop};tc.update(pairs)
+ if tokens!=r['tokens'] or pairs!=set(r['bigrams']):mismatches.append(r['id'])
+assert not mismatches and sum(n>=2 for n in tc.values())==19
+assert [kw[w] for w in ['echo state network','reservoir computing','deep learning','stock price forecasting','time series']]==[9,5,3,3,3]
+assert [tc[w] for w in ['echo state','state network','time series','reservoir computing','stock market','stock price','genetic algorithm']]==[11,7,6,4,4,4,2]
+D=Document(doc); assert '14 nós e 33 ligações' in D.paragraphs[367].text and '19 expressões' in D.paragraphs[290].text
+result={'base':'v005','sha256_base':'2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b','sha256_rascunho':sha(doc),'fontes':[{'arquivo':str(p.relative_to(root)),'sha256':sha(p)} for p in [base,titles]],'keywords':{'documentos':34,'com_termos':24,'termos_distintos':len(kw),'minimo':2,'termos_rede':len(nodes),'ligacoes_rede':len(edges),'frequencias':dict(sorted(kw.items())),'pares':{' | '.join(k):v for k,v in sorted(edges.items())}},'titulos':{'documentos':34,'pares_recorrentes':19,'frequencias':dict(sorted(tc.items())),'recontagem_tokens_e_pares':'coincide por documento'},'paginas_figuras_inspecionadas':'PDF 37–39 (físicas), figuras 2–4; barras e notas compatíveis com totais e frequências recontados. A imagem de rede tem 14 rótulos; não se certificou visualmente cada ligação individual.','limites':'Recontagem sobre metadados já reconstruídos não verifica novamente todas as palavras-chave contra cada PDF; a fonte e o procedimento da reconstrução devem ser tratados separadamente. Não se refizeram figuras, modelos ou experimentos.','acao':'Nenhuma alteração Word.'};f=out/'conferencia_bibliometria_lote47.json';assert not f.exists();f.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8');s=out/'estado_meta.json';state=json.loads(s.read_text(encoding='utf8'));state['ultimo_registro_de_leitura']=str(f.relative_to(root));state['proxima_passagem']='Concluir fontes suplementares, validação de citações restantes e requisitos qualitativos do Guia.';s.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n',encoding='utf8');print('Contagens bibliográficas reconstituídas e conferidas.')

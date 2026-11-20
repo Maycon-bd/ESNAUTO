@@ -1,0 +1,46 @@
+{
+  "base": "v001",
+  "sha256_base": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+  "rascunho": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\revisao_parecer_integridade.docx",
+  "sha256_rascunho": "f6d5cd96992ea22d1f3a0ce469525069960248221a74e5a51a9dd61b80220813",
+  "pdf": "reports\\correcao_parecer_integridade\\revisao_metadados_comparadores.pdf",
+  "sha256_pdf": "86f65a5a19a52d0cac3c03e50f5d7ff0fb6035a98a11ad83a60d6a77a479bc75",
+  "paginas_pdf": 76,
+  "paragrafos_corpo_alterados": 99,
+  "paragrafos_tabelas_alterados": 196,
+  "linhas_tabela_removidas": [
+    {
+      "tabela_origem": 12,
+      "linha_origem": 1,
+      "achado": "F19",
+      "antes": "Cardoso  | et al | . |  (2022a) | Não informado | 0,4987 | ESN aplicada à PETR4 sem Algoritmo Genético; hiperparâmetros definidos com base na literatura.",
+      "evidencia": "Comparador Cardoso 2022a sem original conferido; RMSE 0,4987 e descrição do protocolo retirados, sem declarar o resultado falso."
+    }
+  ],
+  "paginas_fisicas_inspecionadas_nesta_etapa": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    9,
+    42,
+    59,
+    63,
+    64,
+    70,
+    71,
+    72
+  ],
+  "resultado_visual": "Sem recortes ou sobreposições identificados nas páginas inspecionadas. Não equivale à inspeção integral das 76 páginas.",
+  "invariantes": "Construtor validou mudanças contra v001: demais parágrafos e partes OOXML preservados, exceto Figura 1 e linha removida explicitamente. H4/H5 originais preservadas; interpretação dos resultados corrigida. Sem execução de treino, GA ou DM.",
+  "promocao": "Não realizada: revisão completa e conferência final pendentes. Registro oficial permanece v001.",
+  "evidencias": [
+    "lote1_alteracoes.json",
+    "evidencia_procedencia_h4_h5.json",
+    "evidencia_comparacao_lampugnani.json",
+    "metadados_araujo_reconciliados.json",
+    "estado_matriz170.json"
+  ],
+  "objetivo_completo": false
+}

@@ -1,0 +1,69 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho": "ee6e179ab0ba157fb9f1348a1ac75c38813be767c3a27367481727f59641af50",
+  "escopo": "Cinco parágrafos, seis afirmações de cinco fontes; conferência dirigida com fonte local e limites, sem classificar os demais contextos.",
+  "registros": [
+    {
+      "ancora": "P_atual0224",
+      "texto_atual": "A ocorrência de caudas pesadas em retornos financeiros motiva o exame de distribuições além da Normal (Nelson, 1991). Entretanto, a distribuição dos retornos observados e a lei usada para gerar pesos de uma ESN são objetos distintos. A adoção de distribuições alternativas nos pesos constitui uma hipótese de modelagem desta pesquisa; sua pertinência deve ser avaliada pelos resultados preditivos e não decorre automaticamente da semelhança entre suas caudas e as dos dados.",
+      "fonte_id": "D20",
+      "arquivo_fonte": "Artigos citados\\Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+      "sha256_fonte": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+      "localizador": "PDF 7–8, páginas impressas 352–353, e PDF 9, página impressa 354",
+      "evidencia": "Nelson descreve GED com caudas maiores ou menores que a Normal e usa GED para a inovação na modelagem de retornos e volatilidade de um índice. O restante do parágrafo separa essa evidência da hipótese própria sobre pesos de ESN.",
+      "diagnostico": "condizente com escopo e distinção registrados"
+    },
+    {
+      "ancora": "P_atual0225",
+      "texto_atual": "Nelson (1991) empregou a Distribuição Generalizada de Erro (Generalized Error Distribution – GED) na modelagem de retornos com heterocedasticidade condicional, no contexto do modelo exponencial autorregressivo de heterocedasticidade condicional generalizada (Exponential Generalized Autoregressive Conditional Heteroskedasticity – EGARCH). A família permite representar caudas mais pesadas ou mais leves que as da Normal. Essa aplicação fundamenta sua flexibilidade em finanças, sem estabelecer prioridade histórica absoluta nem validar sua transferência para os pesos de ESNs.",
+      "fonte_id": "D20",
+      "arquivo_fonte": "Artigos citados\\Nelson - Conditional Heteroskedasticity in Asset Returns.pdf",
+      "sha256_fonte": "ede8b2c983d847acec875f8e5fed56db84525936ea985dcb928a0287b43afa6c",
+      "localizador": "PDF 7–9, páginas impressas 352–354",
+      "evidencia": "A seção 2 descreve a GED e caudas; a seção 3 usa a GED em modelo de variância condicional e retornos de mercado. A fonte não é tomada como prova de aplicação da GED em pesos de ESN.",
+      "diagnostico": "condizente"
+    },
+    {
+      "ancora": "P_atual0227",
+      "texto_atual": "Duttilo e Gattone (2022) ajustaram misturas de duas GED a retornos diários do DJIA entre 2016 e 2022 e compararam-nas com misturas Gaussianas e Gaussiana-Laplace. A preferência pelo modelo GED foi avaliada por razões de verossimilhança e critérios de informação: de Akaike (Akaike Information Criterion – AIC), bayesiano (Bayesian Information Criterion – BIC) e de Hannan–Quinn (Hannan–Quinn Information Criterion – HQIC). Esses critérios comparam modelos ajustados; não constituem, isoladamente, testes de normalidade.",
+      "fonte_id": "D10",
+      "arquivo_fonte": "Artigos citados\\Duttilo P - Modelling Financial Returns with Finite Mixtures of GED.pdf",
+      "sha256_fonte": "48dfc8703d8eacc1b4c39e4d93c52a65e76bb321fe0f98b89ff06b29e3cb81e7",
+      "localizador": "PDF 1–2 e 4–5, introdução, aplicação empírica e Tabela 1, página impressa 1368",
+      "evidencia": "O resumo identifica DJIA entre 2016 e janeiro de 2022 e mistura de duas GED; introdução e Tabela 1 comparam duas Gaussianas, Gaussiana-Laplace e duas GED por verossimilhança e critérios, incluindo AIC, BIC e HQIC.",
+      "diagnostico": "condizente com o estudo e comparadores"
+    },
+    {
+      "ancora": "P_atual0228",
+      "texto_atual": "Abebe e Goshu (2024) avançam mais uma etapa ao propor a Distribuição Generalizada de Erro Assimétrica (AGED), derivando matematicamente uma família de distribuições capaz de lidar simultaneamente com assimetria e curtose excessiva, com valores menores de AIC e BIC que os da GED e da Normal nos três conjuntos de dados examinados.",
+      "fonte_id": "D01",
+      "arquivo_fonte": "Artigos citados\\Abebe - Asymmetric generalized error distribution with its properties and applications.pdf",
+      "sha256_fonte": "6c09320127ccbfa9c16dbbdcf716b021ab7e82e2c3ac86926db098920514f7d8",
+      "localizador": "PDF 1–2 e 12, Tabelas 6–8",
+      "evidencia": "O artigo apresenta AGED; as três tabelas exibem AIC e BIC menores para AGED que para GED e Normal nos conjuntos de dados analisados. As conclusões se restringem aos três conjuntos.",
+      "diagnostico": "condizente quanto à família e aos critérios informados; não generalizar outros indicadores"
+    },
+    {
+      "ancora": "P_atual0229",
+      "texto_atual": "Dewick (2022) discute a modelagem de distribuições financeiras e sua relação com séries temporais. Essa discussão pertence à representação estatística dos dados, enquanto Soltani, Benmohamed e Ltifi (2022) examinam estratégias de otimização de ESNs. As duas frentes oferecem contexto para esta pesquisa, mas não demonstram, em conjunto, que uma distribuição de pesos deva reproduzir a distribuição dos retornos. A comparação entre inicializações é uma escolha experimental do presente trabalho.",
+      "fonte_id": "D09",
+      "arquivo_fonte": "Artigos citados\\Dewick - On financial distributions modelling methods Application on regression models for time series.pdf",
+      "sha256_fonte": "c8787db291b6a5d5ec843941d15bbd8d657cc8811ab7ad8b99cbf60901371c48",
+      "localizador": "PDF 2, 9–10 e 14, seções 2, 4 e conclusões",
+      "evidencia": "O texto trata de distribuições financeiras e modelagem de séries; o parágrafo evita atribuir ao artigo uma justificativa automática de distribuição para pesos de ESN.",
+      "diagnostico": "condizente quanto à atribuição a Dewick; afirmação sobre Soltani depende de sua própria conferência"
+    },
+    {
+      "ancora": "P_atual0229",
+      "texto_atual": "Dewick (2022) discute a modelagem de distribuições financeiras e sua relação com séries temporais. Essa discussão pertence à representação estatística dos dados, enquanto Soltani, Benmohamed e Ltifi (2022) examinam estratégias de otimização de ESNs. As duas frentes oferecem contexto para esta pesquisa, mas não demonstram, em conjunto, que uma distribuição de pesos deva reproduzir a distribuição dos retornos. A comparação entre inicializações é uma escolha experimental do presente trabalho.",
+      "fonte_id": "D24",
+      "arquivo_fonte": "Artigos citados\\Soltani - Echo State Network Optimization A Systematic Literature.pdf",
+      "sha256_fonte": "00a6c175163a737ec559c94584d52cf01bae2159c9dd8e03a01f716944cea75d",
+      "localizador": "PDF 2 e 4, resumo e estratégia de busca",
+      "evidencia": "A versão consultada é preprint de 2022 e apresenta revisão de estratégias para otimização de parâmetros de ESN, incluindo métodos bioinspirados e não bioinspirados.",
+      "diagnostico": "condizente para esta afirmação; sem endossar contagens inconsistentes da revisão."
+    }
+  ],
+  "acao": "Nenhuma correção adicional identificada nos trechos examinados."
+}

@@ -1,0 +1,220 @@
+{
+  "fonte": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\MatheusTeixeiraLampugnani_monografia (1).docx",
+  "sha256": "21bcfd9deefb4535540978b3b8007dbe1bdcd8351676ab97116c7f3745f7e94f",
+  "n_registros": 24,
+  "menor_MAE": {
+    "tabela_xml": 12,
+    "linha": 1,
+    "Win": "Cauchy",
+    "W": "Normal",
+    "RMSE": "0.568769",
+    "MAE": "0.378706"
+  },
+  "menor_RMSE": {
+    "tabela_xml": 12,
+    "linha": 6,
+    "Win": "Cauchy",
+    "W": "Uniforme",
+    "RMSE": "0.568178",
+    "MAE": "0.379632"
+  },
+  "declaracao_tratamento": {
+    "paragrafo": 408,
+    "texto": "Opta-se por não fazer tratamento dos dados, já que os dados de todo período estão disponíveis, também não foi feito qualquer embaralhamento de dados, por não fazer nenhum sentido, uma vez que se trata de uma série temporal e os valores estão autocorrelacionados."
+  },
+  "limite": "Conferência documental; não estabelece equivalência de protocolos nem ausência de ajuste corporativo prévio. Cardoso 2022a retirado da comparação quantitativa por falta de original conferido. A atribuição histórica na fonte da Quadro 3 e a referência correspondente permanecem pendentes de conferência primária.",
+  "registros": [
+    {
+      "tabela_xml": 9,
+      "linha": 1,
+      "Win": "Normal",
+      "W": "Normal",
+      "RMSE": "0.569686",
+      "MAE": "0.379957"
+    },
+    {
+      "tabela_xml": 9,
+      "linha": 2,
+      "Win": "Normal",
+      "W": "Normal",
+      "RMSE": "0.653569",
+      "MAE": "0.452605"
+    },
+    {
+      "tabela_xml": 9,
+      "linha": 3,
+      "Win": "Normal",
+      "W": "Normal",
+      "RMSE": "0.601419",
+      "MAE": "0.420305"
+    },
+    {
+      "tabela_xml": 9,
+      "linha": 4,
+      "Win": "Uniforme",
+      "W": "Uniforme",
+      "RMSE": "0.571254",
+      "MAE": "0.381703"
+    },
+    {
+      "tabela_xml": 9,
+      "linha": 5,
+      "Win": "Uniforme",
+      "W": "Uniforme",
+      "RMSE": "0.573965",
+      "MAE": "0.384569"
+    },
+    {
+      "tabela_xml": 9,
+      "linha": 6,
+      "Win": "Uniforme",
+      "W": "Uniforme",
+      "RMSE": "0.573487",
+      "MAE": "0.384254"
+    },
+    {
+      "tabela_xml": 10,
+      "linha": 1,
+      "Win": "GED",
+      "W": "Normal",
+      "RMSE": "0.568937",
+      "MAE": "0.379025"
+    },
+    {
+      "tabela_xml": 10,
+      "linha": 2,
+      "Win": "GED",
+      "W": "Normal",
+      "RMSE": "0.583043",
+      "MAE": "0.395436"
+    },
+    {
+      "tabela_xml": 10,
+      "linha": 3,
+      "Win": "GED",
+      "W": "Normal",
+      "RMSE": "0.601201",
+      "MAE": "0.421019"
+    },
+    {
+      "tabela_xml": 10,
+      "linha": 4,
+      "Win": "GED",
+      "W": "Uniforme",
+      "RMSE": "0.568669",
+      "MAE": "0.378730"
+    },
+    {
+      "tabela_xml": 10,
+      "linha": 5,
+      "Win": "GED",
+      "W": "Uniforme",
+      "RMSE": "0.571017",
+      "MAE": "0.381728"
+    },
+    {
+      "tabela_xml": 10,
+      "linha": 6,
+      "Win": "GED",
+      "W": "Uniforme",
+      "RMSE": "0.569805",
+      "MAE": "0.379995"
+    },
+    {
+      "tabela_xml": 11,
+      "linha": 1,
+      "Win": "Pearson V",
+      "W": "Normal",
+      "RMSE": "0.761948",
+      "MAE": "0.600655"
+    },
+    {
+      "tabela_xml": 11,
+      "linha": 2,
+      "Win": "Pearson V",
+      "W": "Normal",
+      "RMSE": "0.583116",
+      "MAE": "0.399786"
+    },
+    {
+      "tabela_xml": 11,
+      "linha": 3,
+      "Win": "Pearson V",
+      "W": "Normal",
+      "RMSE": "0.579886",
+      "MAE": "0.395286"
+    },
+    {
+      "tabela_xml": 11,
+      "linha": 4,
+      "Win": "Pearson V",
+      "W": "Uniforme",
+      "RMSE": "0.599621",
+      "MAE": "0.419151"
+    },
+    {
+      "tabela_xml": 11,
+      "linha": 5,
+      "Win": "Pearson V",
+      "W": "Uniforme",
+      "RMSE": "0.608318",
+      "MAE": "0.429740"
+    },
+    {
+      "tabela_xml": 11,
+      "linha": 6,
+      "Win": "Pearson V",
+      "W": "Uniforme",
+      "RMSE": "0.600645",
+      "MAE": "0.420358"
+    },
+    {
+      "tabela_xml": 12,
+      "linha": 1,
+      "Win": "Cauchy",
+      "W": "Normal",
+      "RMSE": "0.568769",
+      "MAE": "0.378706"
+    },
+    {
+      "tabela_xml": 12,
+      "linha": 2,
+      "Win": "Cauchy",
+      "W": "Normal",
+      "RMSE": "0.569622",
+      "MAE": "0.379895"
+    },
+    {
+      "tabela_xml": 12,
+      "linha": 3,
+      "Win": "Cauchy",
+      "W": "Normal",
+      "RMSE": "0.569096",
+      "MAE": "0.378948"
+    },
+    {
+      "tabela_xml": 12,
+      "linha": 4,
+      "Win": "Cauchy",
+      "W": "Uniforme",
+      "RMSE": "0.576617",
+      "MAE": "0.433526"
+    },
+    {
+      "tabela_xml": 12,
+      "linha": 5,
+      "Win": "Cauchy",
+      "W": "Uniforme",
+      "RMSE": "0.588313",
+      "MAE": "0.407172"
+    },
+    {
+      "tabela_xml": 12,
+      "linha": 6,
+      "Win": "Cauchy",
+      "W": "Uniforme",
+      "RMSE": "0.568178",
+      "MAE": "0.379632"
+    }
+  ]
+}

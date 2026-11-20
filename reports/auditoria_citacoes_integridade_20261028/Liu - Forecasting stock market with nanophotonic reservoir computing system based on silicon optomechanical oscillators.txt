@@ -1,0 +1,1325 @@
+
+[PÁGINA PDF 1]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23359
+Forecasting stock market with nanophotonic
+reservoir computing system based on silicon
+optomechanical oscillators
+BOCHENG LIU,1 YIYUAN XIE,1,2,* XIAO JIANG ,1 YICHEN YE,1
+TINGTING SONG ,3 JUNXIONG CHAI ,1 QIANFENG TANG ,1 AND
+MANYING FENG 1
+1School of Electronics and Information Engineering, Southwest University, Chongqing 400715, China
+2School of Optoelectronic Information, University of Electronic Science and Technology of Chengdu,
+Sichuan 611731, China
+3School of Computer and Information Science, Chongqing Normal University, Chongqing 401331, China
+*yyxie@swu.edu.cn
+Abstract: Theessenceofstockmarketforecastingistorevealtheintrinsicoperationrulesofstock
+market, however it is a terribly arduous challenge for investors. The application of nanophotonic
+technology in the intelligence field provides a new approach for stock market forecasting with
+its unique advantages. In this work, a novel nanophotonic reservoir computing (RC) system
+based on silicon optomechanical oscillators (OMO) with photonic crystal (PhC) cavities for
+stock market forecasting is implemented. The long-term closing prices of four representative
+stock indexes are accurately forecast with small prediction errors, and the forecasting results
+with distinct characteristics are exhibited in the mature stock market and emerging stock market
+separately. Our work offers solutions and suggestions for surmounting the concept drift problem
+in stock market environment. The comprehensive influence of RC parameters on forecasting
+performance are displayed via the mapping diagrams, while some intriguing results indicate that
+the mature stock markets are more sensitive to the variation of RC parameters than the emerging
+stock markets. Furthermore, the direction trend forecasting results illustrate that our system has
+certain direction forecasting ability. Additionally, the stock forecasting problem with short listing
+timeandfewdatainthestockmarketissolvedthroughtransferlearning(TL)instocksector. The
+generalization ability (GA) of our nanophotonic reservoir computing system is also verified via
+four stocks in the same region and industry. Therefore, our work contributes to a novel RC model
+for stock market forecasting in the nanophotonic field, and provides a new prototype system for
+more applications in the intelligent information processing field.
+© 2022 Optica Publishing Group under the terms of the Optica Open Access Publishing Agreement
+1. Introduction
+Stockmarketisinextricablylinkedtothefinancialassetsofthestates,enterprisesandindividuals,
+while its movement tendency is impacted by various macroeconomic and microeconomic factors
+as diverse as political climate, interest rates, market news, fiscal policy, commodity price index,
+investor psychology [1,2]. Accordingly in this sense, the prediction of stock market trend is
+an extremely arduous challenge due to the stock market is generally noisy, complex, nonlinear,
+nonparametric, and nonstationary in nature [3,4]. Conventional stock market prediction is
+commonly based merely on economics, finance and simple mathematical statistical analysis.
+Nevertheless, with the vigorous advance of artificial intelligence (AI) related technologies and
+the soaring demand for stock market prediction, the stock market forecasting manipulated by
+intelligent technologies has been evolved into a research upsurge in economic and financial fields
+during the latest years.
+#454973 https://doi.org/10.1364/OE.454973
+Journal © 2022 Received 31 Jan 2022; revised 27 May 2022; accepted 6 Jun 2022; published 13 Jun 2022
+
+
+[PÁGINA PDF 2]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23360
+The stock market prediction schemes based on intelligent technologies typically models the
+historical data of stock price as time series, and deems the assumptions that historical tendency
+of price repeats itself consistently and the stock price data contain all the fundamental factors
+influencing the movements of stock market, which eludes the evaluation of empirical economic
+factors [5,6]. According to such comprehension, stock market prediction systems with a variety
+kindofintelligenttechnologieshasbeenproposedinsuccession,suchasartificialneuralnetworks
+(ANN) [7,8], convolutional neural network (CNN) [9,10], recurrent neural network (RNN) [11],
+support vector machine (SVM) [12,13], stochastic neural network (SNN) [14], and long-short
+term memory (LSTM) networks [15]. However, there are more or less problems and defects in
+exploiting a single intelligent technology to predict stock price data with different characteristics,
+including local optimization, overfitting the learning model and parameter selection difficulties
+[6,16]. Toremedythesedrawbacks,abatchoftechniciansadopthybridmechanismandensemble
+method to synthesize two or more intelligent technologies for enhancing prediction capabilities
+andgeneralizationperformance[6,17–20]. However, thesuccessoftheseintelligenttechnologies
+in predicting the stock market commonly acquires to configure multilayer connection weights,
+massive neurons and astonishing amount of hyper-parameters [21,22].
+Instead of training vast weights in multiple layers, the reservoir computing (RC) as a particular
+RNNmodelonlyrequirestotraintheoutputweightsexploitingpracticableoptimizationtechniques
+while maintaining the weights of input layer and reservoir internal connection fixed randomly
+[21,23]. Therefore, the RC can map input signals to high-dimensional space with simpler
+learning algorithm, lower calculation power and faster learning process to complete prediction
+and classification tasks in electronics, photonics, spintronics, mechanics, biology and other fields
+[22–25]. Among them, the photonics-based implementation is one of the most perspective fields
+for constructing high efficient RC owing to thoroughly utilize the advantages of optical intrinsic
+properties, containing high data processing speed, large bandwidth, inherent parallelism, and low
+energy consumption [24,26]. On this account, a mass of ingenious approaches for implementing
+RC have been gradually proposed based on both spatially distributed and time delayed photonic
+nodes [24,25,27].
+The RC composed of spatially distributed nonlinear photonic nodes allows for a variety of
+connection topologies using integrated photonic devices on chip, standard diffractive optical
+elements (DOE), and excitable photonic devices, along with reflecting its parallel processing
+capability by dealing with large-scale input data without immolating calculation velocity
+[24,26–32]. Another RC is constituted by a single nonlinear node with one or more time-delayed
+optoelectronicorall-opticalfeedbackforobtainingtime-multiplexedvirtualnodesinthetemporal
+domain, in which the nonlinearity alternatively originates from either the discrete element in the
+feedback loop or the laser response as the feedback delay signal reenters its cavity [24,25]. A
+number of practical implementations based on vertical cavity surface emitting lasers (VCSEL),
+semiconductoropticalamplifier(SOA),semiconductorringlaser(SRL),semiconductornanolaser
+(SNL), and Fabry-Perot laser (FPL) etc. fall into this time-delayed RC [33–37]. Compared
+to these conventional semiconductor laser (SL), the silicon optomechanical oscillators (OMO)
+characterized by high quality factor and small mode volume have some unique advantages of
+small device size, low cost, low power consumption, high scalability, good complementary metal
+oxide semiconductor (CMOS) fabrication compatibility, favourable monolithic integration and
+massproduction[38–42]. Furthermore,diversenonlineardynamicsofsiliconOMOderivedfrom
+the strong optomechanical coupling and optical confinement have been successfully observed in
+recent works [43–46]. In these cases, the above advantages and nonlinearity of the silicon OMO
+make these oscillators good potential candidates for implementing RC. However, to the best of
+our knowledge, we have noted that the investigations about nanophotonic reservoir computing
+based on silicon OMO remained scarce, and especially there are no reports on its application in
+forecasting stock market.
+
+[PÁGINA PDF 3]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23361
+In this paper, a novel nanophotonic reservoir computing system based on silicon OMO with
+photonic crystal (PhC) cavities for stock market forecasting is implemented. Firstly, we introduce
+the time-delayed feedback mechanism and the injection signal affected by the stock market
+information into the silicon-based OMO to construct the nanophotonic reservoir computing
+systemwithcompetenceinpredictingstockmarket. Inordertoensuretheaccuracyofprediction,
+theoriginalstockmarketdataisnormalized, andthenthenormalizeddataisdenoisedbydiscrete
+wavelet transform (DWT). Four globally representative stock indices are selected, and their data
+are collected for the training and testing process of the forecasting task. This paper presents the
+long-term prediction results of these four stock indices, and reflects the prediction performance
+through four relevant error evaluation metrics. On the basis of above, we study the impact
+of concept drift on the prediction performance of four stock indices over time, and depict the
+corresponding conclusions. Moreover, the influence of injected light wavelength and injected
+light power of silicon OMO on the prediction performance is demonstrated by the mapping
+diagrams, while the effect of time-delayed feedback intensity and injection signal intensity of
+siliconOMOonthepredictionperformanceisalsostudiedviathemappingdiagrams. According
+to the latest data updated every day, we continuously track and forecast the four stock indices in
+theonerecentyear,andcomparethedailyforecastresultswiththerealvaluesofthestockmarket,
+together with statistically analyzing the consistency of their rising and falling trends. Moreover,
+we explore the capacity of transfer learning (TL) in nanophotonic reservoir computing system
+based on silicon OMO, i.e., embodied by using the massive data accumulated for a long time in
+the stock sector to predict the stock prices of several companies with short listing time under this
+sector. This has important strategic significance and practical value for predicting stocks with
+short issuance time and less time series data. Ultimately, we discuss the generalization ability
+(GA) of nanophotonic reservoir computing system based on silicon OMO, which is reflected by
+training any one of the four selected stocks in the same region and industry to predict the other
+three stocks.
+The remainder of this paper is organized as follows. In Section 2, the system scheme is
+introduced in detail. In Section 3, the selection and setting of stock market data associating
+with the measurement indicators of its prediction performance are illustrated. In Section 4, the
+forecastingresultsandtheinfluenceofsystemparametersarepresented. InSection5,thetransfer
+learningandgeneralizationabilityofstockpredictionsystemareexploredanddiscussed. Section
+6 summarizes the results and provides advices for further research.
+2. System scheme
+The schematic diagram of nanophotonic reservoir computing system based on silicon OMO with
+PhC cavities for forecasting stock market is elaborated in Fig. 1. The whole system is comprised
+of three main parts: the input layer, reservoir, and output layer. In the input layer, the original
+stockmarketdataiscollectedandrecordedas u(n)withaperiodoftimeduration T,where nisthe
+discrete time index. Henceforth theu(n)is transformed into preprocessed stock market dataU(n)
+through pretreatment operations of normalization and wavelet denoising. A chaotic mask signal
+M(t)with identical time durationT generated by our previous work [47] is exploited to guarantee
+the variability of input signal over the distinct virtual nodes where the information is read out
+[33,48]. On this foundation, theU(n)is multiplied byM(t)and rescaled within appropriate range
+to acquire the masked input signalS(t), thereafter theS(t) is transmitted into the reservoir via
+modulation. In essence, the stock price information of input signal is hidden in the amplitude
+of masked signal per period after the input layer processed. In the reservoir, the injection laser
+(I-Laser) is utilized as the input light source to stimulate the silicon OMO. And the physical
+fabrication parameters corresponding to the silicon OMO have been elaborated in literatures [43]
+and [39]. The reservoir is a master-slave configuration constructed by silicon OMO injected by a
+drive laser (D-Laser), where the output signal of I-Laser and the modulated signal of D-Laser
+
+[PÁGINA PDF 4]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23362
+enter the silicon OMO as one signal through the beam combiner (BC). The states with a time
+interval θ output by silicon OMO constitutes the virtual network nodes. There areL virtual
+nodes at each intervalθ in the feedback loop with a delay timeτ. This feedback delay timeτ
+nearly matches the input time durationT (= Lθ) in the case of de-synchronization scheme, i.e.,
+τ = T + θ [23,33,34]. In the output layer, all the states of virtual nodesx(n) corresponding to
+the transient response of silicon OMO are read out for training the output weightWout, and the
+ultimate outputy(n) are weighted and linearly summed up, i.e.,y(n) = ∑︁x(n)Wout. Notably, the
+optimal output weights are calculated by exploiting linear least-squares method in this paper for
+minimizing the mean-square error between the anticipant target values and RC output values
+during the training stage.
+Fig. 1. The schematic diagram of nanophotonic reservoir computing system for forecasting
+stock market based on silicon OMO with time-delay feedback loop. The processing scheme
+consists of the input layer, reservoir, and output layer.u(n): original stock market data;U(n):
+preprocessed stock market data;M(t): chaotic mask signal;T: input holding time;S(t):
+masked input signal; D-Laser: drive laser; I-Laser: injection laser; BC: beam combiner;θ:
+virtual node interval;Wout: trained output weight;y(n): RC output.
+With regard to the nanophotonic reservoir computing system implemented in this work,
+we model the nonlinear dynamics of the silicon OMO under feedback loop and information
+injection by considering the OMO and several strong nonlinear effects as diverse as the two-
+photon absorption (TPA), free-carriers absorption (FCA) and thermo-optic effect [40,41,43,44].
+Consequently, the entire operation process in the reservoir can be modeled as follows:
+dE
+dt = − 1
+2 (γi + γe + ΓTPAβsic2
+VTPAn2g
+|E(t)|2 + σsicN(t)
+ng
+)E(t)
++i(−g0
+√︃
+2meff Ωm
+ℏ x(t) + ω0
+nsi
+(dnsi
+dT ∆T(t) + dnsi
+dN N(t)) + δω)E(t)
++
+√︂
+γe(Pin +kfbE(t − τ) +kinjEinj(t))
+(1)
+d2x
+dt2 + Γm
+dx
+dt + Ω2
+mx(t) = g0
+ω0
+√︄
+2Ωm
+ℏmeff
+|E(t)|2 (2)
+dN
+dt = −N(t)
+τfc
++ ΓFCA βsic2
+2ℏω0n2gV2
+FCA
+|E(t)|4 (3)
+d∆T
+dt = − ∆T(t)
+τth
++ ΓPhC
+ρsicpVPhC
+(γi + ΓTPAβsic2
+VTPAn2g
+|E(t)|2 + σsicN(t)
+ng
+)|E(t)|2 (4)
+where E is the intracavity electric-field amplitude,x is the motional displacement,N denotes
+the free-carrier density, and∆T represents the cavity temperature variation.δω is the angular
+frequency detuning, i.e.,δω = ωL − ω0, whereωL and ω0 are the angular frequency of injection
+
+[PÁGINA PDF 5]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23363
+light and photonic crystal cavity resonance respectively, andξw = δω/γi is the normalized
+injection detuning.Pin is the injected optical power,kfb and τ are the feedback strength and time
+delay of feedback loop.kinj denotes the injection strength from the D-Laser to Silicon OMO, and
+theEinj(t)denotes the slowly varying complex electric field of the D-Laser. In consideration of
+modulating the masked input signalS(t)with D-Laser, theEinj(t)can be depicted as following
+equation [23,33]:
+Einj(t) =
+√︁
+Ide(iπS(t)) (5)
+where theId is the output intensity of D-Laser, and the masked input signalS(t)can be expressed
+as:
+S(t) = M(t) ×U(n)γ (6)
+where M(t)is the chaotic mask signal with periodicityT, U(n)is the preprocessed stock market
+data with time durationT, and theγ is the scaling factor.
+Table 1. Modeling parameters.
+Symbol Physical meaning Value
+γi Linear loss 19 GHz
+γe/2π External coupling rate 2.2 GHz
+ΓTPA TPA confinement factor 0.8012
+βsi TPA coefficient 8.4 ×10−12 m/W
+VTPA TPA mode volume 6.4 ×10−19 m3
+ng Group index 3.476
+σsi FCA cross section 1 ×10−21 m2
+g0 Vacuum optomechanics coupling strength 690 kHz
+meff Mechanical osc. effective mass 2.4 ×10−14 kg
+Ωm/2π Mechanical frequency 110 MHz
+λ0 Resonance wavelength 1572.8 nm
+λL I-Laser resonance wavelength 1572.8 nm
+nsi Refractive index of Si 3.476
+dnsi/dT Thermo-optic coefficient 1.86 ×10−4 K−1
+dnsi/dN Free carrier coefficient -1.73 ×10−27 m3
+Pin Injected optical power 1.3 ×10−3 W
+L Virtual node number 100
+T Input time duration 1 ns
+Id D-Laser intensity 6.56 ×1020
+γ Scaling factor 1
+Γm/2π Mechanical dissipation rate 110 kHz
+τfc Free-carrier lifetime 150 ps
+ΓFCA FCA confinement factor 0.79
+VFCA FCA mode volume 6.9 ×10−19 m3
+τth Thermal dissipation life time 9.7 ns
+ΓPhC Thermal confinement factor 0.769
+ρsi Density of material Si 2.33 ×103 kg/m3
+cp Specific heat capacity 700 J/(kg · K)
+VPhC Thermal mode volume 1 ×10−18 m3
+
+[PÁGINA PDF 6]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23364
+The aforementioned equations (1)–(4) can be solved by utilizing fourth-order Runge-Kutta
+algorithm in numerical simulation, while the physical meaning and value of reservoir parameters
+are shown in Table 1 unless otherwise specified.
+Moreover, the original stock market datau(n)can be normalized in a desired range as follows
+[1]:
+u′
+i = a × ui −umin
+umax −umin
+± b (7)
+whereu′
+i is the normalized stock market data (i = 1,2, . . .,n), umin andumax are the minimum
+and maximum value of the original data, respectively. Here,a and b are two coefficients to make
+the preprocessed data in a desired range, here we seta = 1 andb = 0 in the work.
+Meanwhile,theDWTalgorithmisadoptedfordenoisingthenormalizeddatainthepretreatment
+process, since it can flexibly handle the non-stationarity and highly irregular stock market data by
+time and frequency scale decomposition [3]. This work utilizes the computationally efficient
+Daubechies (db3) wavelet with three level decomposition as the DWT tool. In addition, it merits
+our attention that the first one hundred stock market data are left out in the RC training process as
+the initialization data for purpose of stabilizing its performance and also washing out the initial
+memory of the RC system.
+3. Stock market data and evaluation metrics
+3.1. Stock market data selection and setting
+In the stock market, the overall level of various stock prices and their variations are generally
+reflected by the stock indices, which can provide the dynamic information and development
+form of the stock market. The maturity of stock market is determined by multiple factors such
+as operation mechanism, market scale, competition degree and order degree, thus different
+market maturities may affect the accuracy of the prediction model. After several hundred years
+of successive development, European and American stock markets have become mature stock
+marketswithsophisticatedmarketoperationsystem,hugemarketscaleandreasonablesupervision
+institution. In contrast, the stock market in mainland China has a relatively short development
+time while the market operation and supervision system are imperfect. Although it is developing
+rapidly, the stock market in mainland China is still in the developing stage and is an emerging
+stock market. In this work, we select two of the most representative stock indices in mainland
+China to delegate the emerging stock market, namely Shanghai Stock Exchange Composite
+Index (SHSECI, stock symbol (SS): 000001) and Shenzhen Stock Exchange Component Index
+(SZSECI, SS: 399001). Besides, we also select the National Association of Securities Dealers
+Automated Quotations (NASDAQ) Composite Index (NASDAQCI, SS: IXIC), one of the most
+representative indexes in Americas, and the London Financial Times Stock Exchange 100 Index
+(LFTSE100I, SS: FTSE), one of the most representative indexes in Europe, as the delegate stock
+indexes of mature stock market. The historical daily closing prices of these four representative
+stock indexes are collected from the public financial data services of Royalflush client software
+providedbyHithinkRoyalflushInformationNetworkCo.,Ltd. Detailsofthefourselectedindexes
+are presented in Table 2.
+Table 2. Stock market data settings.
+Stock Index Dataset Period Trading
+Days
+Training-dataset Period Training
+Days
+Test-dataset Period Test
+Days
+SHSECI 06/01/1992-25/12/2020 7073 19/07/2004-18/11/2016 3000 21/11/2016-25/12/2020 1000
+SZSECI 06/01/1992-25/12/2020 7062 19/07/2004-18/11/2016 3000 21/11/2016-25/12/2020 1000
+NASDAQCI 06/01/1992-24/12/2020 7293 27/01/2005-03/01/2017 3000 04/01/2017-24/12/2020 1000
+LFTSE100I 06/01/1992-24/12/2020 7332 01/03/2005-12/01/2017 3000 13/01/2017-24/12/2020 1000
+
+[PÁGINA PDF 7]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23365
+As illustrated in Table 2, all four stock indexes roughly span twenty nine years from 6th
+January 1992 to 24th/25th December 2020, with 7073, 7062, 7293, and 7332 trading days
+respectively. The total volume of 28760 stock index data over a long period of time is large
+enough to accommodate almost all sorts of market conditions. The last 1000 data from 21st
+November 2016 (4th January 2017, 13th January 2017) to 25th December 2020 (24th December
+2020) are used as the test dataset. And the previous 3000 data before the test dataset from 19th
+July 2004 (27th January 2005, 1st March 2005) to 18th November 2016 (3rd January 2017, 12th
+January 2017) are used as the training dataset. The amount of data in the training set and test
+set will not change unless otherwise specified. It’s worth noting that the remaining data of the
+overall dataset except the training set and test set will be occupied in the subsequent section of
+concept drift.
+3.2. Evaluation metrics of prediction performance
+Prediction performance can usually be measured by evaluating the error between the predicted
+value and the real value. In this work, the normalized mean square error (NMSE), root mean
+square error (RMSE), mean absolute error (MAE), and mean absolute percentage error (MAPE)
+are employed to evaluate the prediction error, which can be calculated by the following equations
+[1,3,4,21,33]:
+NMSE = 1
+H
+∑︁H
+n=1(y(n) − ¯y(n))2
+var(y(n)) (8)
+RMSE =
+⌜⃓⎷
+1
+H
+H∑︂
+n=1
+(y(n) − ¯y(n))2 (9)
+MAE = 1
+H
+H∑︂
+n=1
+|y(n) − ¯y(n)| (10)
+MAPE = 1
+H
+H∑︂
+n=1
+|︁|︁|︁|︁
+y(n) − ¯y(n)
+y(n)
+|︁|︁|︁|︁ (11)
+where y(n) and ¯y(n) are the real value and the forecast value, respectively.H represents the total
+number of samples, and thevar indicates the variance. In general, the predictive performance of
+a RC system can be considered good when the NMSE is below 0.1 [33].
+Furthermore, the consistency of stock fluctuation trend direction between forecast value and
+realvaluecanbeevaluatedbythedirectionalsymmetry(DS),whichisexpressedasthefollowing
+equation [4]:
+DS = 1
+H
+H∑︂
+n=1
+µn, µn =
+⎧⎪⎪ ⎨
+⎪⎪⎩
+1, [y(n +1) −y(n)][¯y(n +1) − ¯y(n)]>0
+0, others
+(12)
+4. Forecasting results and discussion
+4.1. Forecasting results and comparative analysis
+In accordance with the system scheme illustrated in Fig. 1, the four stock indexes are trained in
+training-datasetperiodofTable2,afterwardsthefourstockindexesaretestedintest-datasetperiod.
+In order to make the prediction performance of each stock index better, we configure different
+parametervaluesforfourstockindexesrespectively,owingtothestockmarketsrepresentedbythe
+four stock indexes have different market characteristics and the identical parameter values cannot
+meet the four stock indexes at the same time. Following the modeling parameters in Table 1, the
+different parameter values configured for each four stock indexes are shown in Table 3.
+
+[PÁGINA PDF 8]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23366
+Table 3. Parameter values for each of the four stock
+indexes.
+Stock Index kfb kinj
+SHSECI 1 ×104 1×10−13
+SZSECI 1 ×104 2.8×10−13
+NASDAQCI 9.6 ×103 1×10−15
+LFTSE100I 1 ×104 9.3×10−15
+Figures 2(a)-(d) successively demonstrate the forecasting results of SHSECI, SZSECI, NAS-
+DAQCI, and LFTSE100I in test-dataset period, where the red lines represent the real values and
+the blue lines denote the forecast values respectively. As can be seen from all the four subgraphs
+in Fig. 2, the forecast blue curves are highly consistent with the real red curves, indicating
+the tiny errors between the forecast values and real values. Besides, such phenomenon can be
+found through careful observation, i.e., the forecast blue curves at the point where the real red
+curves with violent fluctuations usually cannot fit the real red curves very well, thus there are
+larger errors between the forecast values and real values than the small fluctuation spots. This
+phenomenon coincides with the actual situation that the more severe of the fluctuation resulting
+in the worse prediction performance under the real stock market circumstance. Such reasonable
+and conservative prediction verifies the impact of the anchoring effect on the forecasting system,
+due to the past historical data is the crucial determinant to the prediction results.
+Day
+0 200 400 600 800 1000
+Stock Index
+2000
+2500
+3000
+3500
+4000
+(a)
+Real
+Forecast
+Day
+0 200 400 600 800 1000
+Stock Index
+7000 
+9000 
+11000
+13000
+15000
+(b)
+Real
+Forecast
+Day
+0 200 400 600 800 1000
+Stock Index
+5000
+7000
+9000
+11000
+13000
+(c)
+Real
+Forecast
+Day
+0 200 400 600 800 1000
+Stock Index
+4000
+5000
+6000
+7000
+8000
+(d)
+Real
+Forecast
+Fig. 2. The forecasting results of four stock indexes in test-dataset period, where the red
+and blue lines represent the real values and the forecast values respectively. (a) SHSECI; (b)
+SZSECI; (c) NASDAQCI; (d) LFTSE100I.
+For specific quantization errors of four stock indexes in Fig. 2, four relevant error evaluation
+metricscontainingNMSE,RMSE,MAE,andMAPEarecalculatedinTable4. Theresultsofour
+
+[PÁGINA PDF 9]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23367
+work in Table 4 corroborate the fact in Fig. 2 that the forecast blue curves are very close to real
+red curves, since all the NMSEs, RMSEs, MAEs, and MAPEs are less than 0.024, 0.019, 0.013,
+and 1.764×10−5, respectively. In the case of similar prediction errors shown in Table 4, the
+injection strengthskinj of mature stock market represented by NASDAQCI and LFTSE100I are
+about two orders of magnitude smaller than the emerging stock market represented by SHSECI
+and SZSECI. Furthermore, the NMSEs of mature stock market are marginally smaller than the
+emerging stock market, while the opposite results are displayed in RMSEs, MAEs, and MAPEs.
+The comparison between the parameter configuration of Table 3 and prediction errors of Table 4
+reveals that the stock indexes with different market maturity have distinct properties, yet the stock
+indexes with same market maturity have certain intrinsic relations.
+Table 4. Evaluation metrics of forecasting results and comparison results.
+Work Index NMSE RMSE MAE MAPE
+Our Work
+SHSECI 0.0232 0.0074 0.0056 5.6857 ×10−7
+SZSECI 0.0203 0.0132 0.0092 3.8394 ×10−7
+NASDAQCI 0.0167 0.0183 0.0125 1.7634 ×10−5
+LFTSE100I 0.0145 0.0161 0.0115 1.6127 ×10−6
+Ref. [1] SHSECI N/A 847.5841 675.9543 0.1948
+Ref. [3] LFTSE100I N/A 31.0000 25.0000 0.0056
+Ref. [4] SHSECI 0.8251 0.0141 0.0092 N/A
+SZSECI 0.9371 0.0172 0.0110 N/A
+Ref. [14] LFTSE100I N/A 54.2607 43.8524 0.0096
+Ref. [21]
+SHSECI N/A 30.7600 22.0700 0.0074
+NASDAQCI N/A 78.0900 53.2400 0.0076
+LFTSE100I N/A 54.0200 41.0300 0.0056
+To comparatively analyze the prediction system performance implemented in our work,
+some literatures containing the same research objects (SHSECI, SZSECI, NASDAQCI, and
+LFTSE100I) and evaluation indicators (NMSE, RMSE, MAE, and MAPE) are added to Table 4.
+It can be find from the comparison results in Table 4, the prediction errors of Ref. [3] is close to
+the Ref. [14] and Ref. [21]. The work of Ref. [3], Ref. [14] and Ref. [21] have all achieved
+good stock index prediction performance, and our work is fortunate to have smaller prediction
+errors while obtaining good stock index prediction results. Additionally, the RMSEs and MAEs
+of Ref. [4] are very close to the prediction errors of our work, however its NMSEs are much
+higher than the NMSEs of our work. As a consequence, these contrastive analyses show that our
+work also has a powerful prediction capacity for stock index, and even has smaller prediction
+errors than the literatures listed in Table 4.
+4.2. Concept drift and stock market forecast
+Concept drift phenomenon constantly appears in stock market technical analysis owing to the
+financial time series is a special dynamic data stream, whose potential statistical characteristics
+change in an unpredictable way over time, resulting in the continuous depreciation of the
+knowledge learned from historical data analysis, thus reducing the prediction accuracy of the
+constructed model. Evidently, it is a vital issue to detect and surmount the concept drift in stock
+analysis in time. However, there are rare studies on maintaining the prediction accuracy of
+learned model in the operation process.
+In this work, the impact of concept drift on forecasting performance is studied in Fig. 3 by
+changingthetraining-datasetperiodandtrainingdaysinTable2,togetherwithtakingtheforecast
+
+[PÁGINA PDF 10]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23368
+error of 1000 test days in the fixed test-dataset period as the research object. The prediction
+errors of SHSECI, SZSECI, NASDAQCI, and LFTSE100I are represented by the red, blue, gray,
+and green curves respectively. The NMSE results of four stock indexes are shown in Fig. 3(a),
+where the NMSE larger than 1 is set equal to 1, since the NMSE less than 0.1 is regarded as a
+good prediction result, and an excessively large NMSE is meaningless. For SHSECI depicted by
+the red curve, the NMSE are all smaller than 0.05 with good forecasting performance when the
+training day of training-dataset is less than 4000. Nevertheless, the NMSE increases gradually
+when the training day is greater than 4000, especially in the range of 4500 to 4720, it even
+shows a step-like increase. As the training day of training-dataset bigger than 4720, the NMSE
+maintains basically at 1 excepting for the reduction to 0.92 at 4900, leading to a sharp decline
+in the forecasting performance. For SZSECI depicted by the blue curve, the NMSE are nearly
+all smaller than 0.1 with a relatively good forecasting performance when the training day is
+less than 1860. In the range of 1860 to 1960, the NMSE curve rises slightly and drops rapidly
+to 0.1, afterwards the system temporarily recovers its good forecasting performance until the
+training day increases to 2340. As the training day continues to increase from 2340, the NMSE
+curve increases sharply and then decreases swiftly with a peak. After that, the good forecasting
+performance briefly appears again with NMSE less than 0.1 until training day increases to 3060.
+From then on, NMSE increased violently, although there are some significant declines after
+4740, the NMSE is still all over 0.7, implying very poor prediction effect. For NASDAQCI
+depicted by the gray curve, the NMSE curve fluctuates frequently and substantially within all
+the training days, thus it is difficult to capture the relatively stable change within a certain range
+and meet the good forecast condition of NMSE less than 0.1. For LFTSE100I depicted by the
+green curve, the NMSE varies dramatically despite there exist a tremendous amount of good
+forecasting performance cases as training day less than 1880 or more than 3800. Moreover, the
+NMSE almost always remains below 0.04 when training day varies from 1880 to 3800, hence the
+system has good predictive performance in this range. However, the relative variation trend of
+forecast error can not be fully reflected only by the NMSE.
+The RMSE results of four stock indexes are shown in Fig. 3(b), the relative errors of the four
+indexes are effectively controlled within a smaller error range benefiting from root mean square
+operation. SHSECI has minimum RMSE in the range of training days less than 4000, and the
+overall growth range of SHSECI is also smaller than SZSECI and NASDAQCI. The range of
+minimum forecast error for NASDAQCI is also easier to observe from the RMSE compared with
+NMSE in Fig. 3(a), i.e., the range of training day is from 2340 to 3080. In fact, the forecast error
+of NASDAQCI is much larger than the other three stock indexes when the training day is greater
+than 4000. The MAE results of four stock indexes are shown in Fig. 3(c), where the similar
+variation trends of the forecast errors are separated more clearly. The MAPE results of four stock
+indexes are shown in Fig. 3(d), in which the closest forecast errors appear in the range of 2440 to
+3240. As a result, both too much or less training days make the prediction error large, and this
+study find that for the 1000 test days in the fixed test-dataset period, smaller forecast errors with
+good prediction performance are more likely to occur in the range of 2000 to 4000 training days.
+Analyzed at a deeper level, the results in Fig. 3 expound that the concept drift has a great impact
+on the prediction performance of stock market. It is difficult to learn the internal change law of
+current stock market in a short training-dataset period, while the internal change law of stock
+market learned in a long-term training-dataset period is outdated. By selecting the appropriate
+trainingdaysoftraining-datasetinthesamewayasthisworkcanprovidesolutionandsuggestion
+for overcoming the concept drift problem in stock market environment to a certain extent.
+4.3. RC parameters and forecasting performance
+For the sake of comprehensively exploring the influence of RC parameters on forecasting
+performance, the mapping diagrams of the forecast errors in the parameter space of (ξw, Pin)
+
+[PÁGINA PDF 11]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23369
+1000 2000 3000 4000 5000 6000
+Day
+0
+0.2
+0.4
+0.6
+0.8
+1
+NMSE
+(a)
+SHSECI
+SZSECI
+NASDAQCI
+LFTSE100I
+1000 2000 3000 4000 5000 6000
+Day
+0
+0.1
+0.2
+0.3RMSE
+(b)
+SHSECI
+SZSECI
+NASDAQCI
+LFTSE100I
+1000 2000 3000 4000 5000 6000
+Day
+0
+0.05
+0.1
+0.15MAE
+(c)
+SHSECI
+SZSECI
+NASDAQCI
+LFTSE100I
+1000 2000 3000 4000 5000 6000
+Day
+0
+1
+2
+3MAPE
+10-4 (d)
+SHSECI
+SZSECI
+NASDAQCI
+LFTSE100I
+Fig. 3. The impact of concept drift on forecasting performance. The red, blue, gray, and
+greencurvesdenotestheforecasterrorsofSHSECI,SZSECI,NASDAQCI,andLFTSE100I,
+respectively. (a) NMSE; (b) RMSE; (c) MAE; (d) MAPE.
+are demonstrated in Fig. 4, where the first to fourth rows respectively represent the results of
+SHSECI, SZSECI, NASDAQCI, and LFTSE100I, while the first to fourth columns represent the
+results of NMSE, RMSE, MAE, and MAPE respectively. As can be seen from Figs. 4(a1)-(a4),
+all the four evaluation metrics of SHSECI are dark blue in the whole area except for the range
+of ξw<1 along withPin>2.6, indicating that the prediction errors are exceedingly small with
+good forecasting performance in the parameter range. In the region ofξw<1 andPin>2.6, the
+prediction errors gradually increases with the rise ofPin, and finally present red high error
+regions. Through careful observation in Fig. 4(a4), the dark blue becomes slightly lighter in
+the area aroundξw = 5 and ξw = 15, where the prediction error increases marginally but is
+still very small. The variation of SZSECI prediction errors presented in Figs. 4(b1)-(b4) are
+very similar to SHSECI, the difference is that the errors of SZSECI in the region ofξw<1 and
+Pin<0.8 with lighter blue are larger than SHSECI, and the errors of SZSECI increase faster with
+Pin rise for bigger red areas than SHSECI. However, the situations of NASDAQCI presented in
+Figs. 4(c1)-(c4) are utterly distant from SHSECI and SZSECI. In Fig. 4(c1), the red area almost
+fills the range ofPin<1, regardless of the variation withξw. For the region ofPin>1, the red
+regions with high prediction errors mainly appear in the areas whereξw are 0, 5, 8, 11, 14 to
+20. The variation trends of RMSE, MAE, and MAPE in Figs. 4(c2)-(c4) are consistent with
+the NMSE in Fig. 4(c1). Therefore, NASDAQCI is sensitive to parameter variation, and it is
+difficult to capture the dark blue region with high prediction performance in the parameter range.
+Furthermore, the red area is almost full in the region withPin<0.7 in Fig. 4(d1), while the most
+significant feature of LFTSE100I is that there is a straight-line area with red high prediction
+error wherePin equals to 1.2 andξw ranges from 4 to 20. Fortunately, instead of a mass of
+red prediction error regions like NASDAQCI in Fig. 4(c1), vast amounts of dark blue regions
+
+[PÁGINA PDF 12]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23370
+with lower forecast errors of LFTSE100I appear in the region ofPin>1. Likewise, the variation
+tendencies in Figs. 4(d2)-(d4) are in accordance with Fig. 4(d1).
+Fig. 4. Mapping diagrams of the forecast errors in the parameter space of (ξw, Pin), where:
+(a1)-(a4) SHSECI; (b1)-(b4) SZSECI; (c1)-(c4) NASDAQCI; (d1)-(d4) LFTSE100I.
+In addition, the mapping diagrams of the forecast errors in the parameter space of (kinj,
+kfb) are demonstrated in Fig. 5, where the representative meaning of each letter serial number
+is the same as Fig. 5. In Fig. 5(a1), the dark blue region with low prediction error mainly
+appears in the area ofkinj<2.55 × 10−13 and kfb<1 × 104. On the other hand, the red region
+with high prediction error primarily appears in two areas ofkinj<9.5 ×10−14 and kfb>1.4 ×104,
+together withkinj>9.9 ×10−14 andkfb>1.1 ×104. More particularly, when thekinj is greater than
+2.61 ×10−13 regardless of the value ofkfb, the prediction error is relatively high resulting in a
+large red area. Even more interesting is that the gradient variation process from the dark blue
+region with low forecast error to the red region with high forecast error presents an image in
+Fig. 5(a1) similar to the coastline in geographical map. The changing trends of Figs. 5(a2)-(a4)
+are consistent with Fig. 5(a1). In Figs. 5(b1)-(b4), the red region with high forecast error
+mostly appears in the area ofkinj<9.3 × 10−14 and kfb>1.4 × 104, together with the area of
+kinj>1.09 ×10−13 and kfb>0.9 ×104. In most of the remaining parameter space, the forecast
+errors of the system are extremely small and there are more dark blue areas than Figs. 5(a1)-(a4).
+In the displayed parameter space of Fig. 5(c1), almost all of its NMSE are in red regions with
+high forecast errors, while the dark blue regions with low forecast error only exist in the very
+narrow range ofkinj<9 ×10−15 andkfb<1.25 ×104. Besides, more evident relative changes of
+forecast errors are exhibited in Figs. 5(c2)-(c4), the forecast errors are higher in the range of
+6.5 ×10−14<kinj<2.31 ×10−13 and kfb<0.6 ×104. The changing trend of Figs. 5(c2)-(c4) are in
+accordancewithFig.5(c1),anditisalsohardtoacquirethedarkblueregionwithhighprediction
+performance in the parameter range. In Fig. 5(d1), the red regions are principally distributed
+in the following four areas. The first distribution red area is the largest, which is in the range
+
+[PÁGINA PDF 13]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23371
+ofkfb>1.3 ×104, irrespective of the valuekinj. The second distribution red area is in the range
+of 1.61×10−13<kinj<2.69 ×10−13 and 0.85×104<kfb<1.65 ×104, and its shape is similar to
+the head of a trident. The third distribution area is V-shaped sporadically spread in range of
+2.5 ×10−14<kinj<1.63 ×10−13 and 0.05×104<kfb<1.4 ×104. At last, the fourth distribution red
+area is in the range ofkinj>1.81 ×10−13 andkfb<0.6 ×104. Intriguingly, the gradient variation
+process from dark blue area to red area shows an image in Fig. 5(d1), which is similar to the
+archipelago in the geographic map. The changing tendencies of Figs. 5(d2)-(d4) are coincided
+with Fig. 5(d1).
+Fig. 5. Mapping diagrams of the forecast errors in the parameter space of (kinj, kfb), where:
+(a1)-(a4) SHSECI; (b1)-(b4) SZSECI; (c1)-(c4) NASDAQCI; (d1)-(d4) LFTSE100I.
+Consequently, the results in Fig. 4 and Fig. 5 once again sufficiently validate that the variation
+of RC parameters between the emerging stock markets (represented by SHSECI and SZSECI)
+and the mature stock markets (represented by NASDAQCI and LFTSE100I) complies different
+variation rules, while the stock indexes with the same stock maturity follow similar variation
+laws. Furthermore, we find that the mature stock markets are more sensitive to the change of RC
+parameters than the emerging stock markets.
+4.4. Direction forecast of stock market fluctuation trend
+Focusing on the latest data updated every day in the stock market, we persistently track and
+forecast the four stock indexes in the one recent year for contrasting the daily forecast results with
+the real values of the real time stock market, thereafter the consistency of their rising and falling
+tendency are calculated by DS. The stock market data of the latest one year are specifically listed
+in Table 5, where the corresponding training-dataset and the overall dataset of each stock index
+are also enumerated.
+In Table 5, the test-dataset period of four stock indexes are uniformly set to the latest one
+year from 3rd August 2020 to 6th August 2021. To acquire better DS results, we tried different
+
+[PÁGINA PDF 14]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23372
+Table 5. Stock market data settings for direction forecast of stock market fluctuation trend.
+Stock Index Dataset Period Trading
+Days
+Training-dataset Period Training
+Days
+Test-dataset Period Test
+Days
+SHSECI 01/04/2008-06/08/2021 3250 01/04/2008-31/07/2020 3002 03/08/2020-06/08/2021 248
+SZSECI 19/11/2009-06/08/2021 2850 19/11/2009-31/07/2020 2602 03/08/2020-06/08/2021 248
+NASDAQCI 24/03/2010-06/08/2021 2857 24/03/2010-31/07/2020 2601 03/08/2020-06/08/2021 256
+LFTSE100I 10/09/2010-06/08/2021 2756 10/09/2010-31/07/2020 2499 03/08/2020-06/08/2021 257
+training days for four stock indexes and ultimately settled on 3002 days, 2602 days, 2601 days,
+and 2499 days. The direction forecast results of stock market fluctuation trend for four stock
+indexes are demonstrated in Fig. 6, and its DS results are manifested in Table 6.
+0 40 80 120 160 200 240
+Day
+3200
+3400
+3600
+3800Stock Index
+(a)
+Real
+Forecast
+0 40 80 120 160 200 240
+Day
+12500
+13500
+14500
+15500
+16500Stock Index
+(b)
+Real
+Forecast
+0 40 80 120 160 200 240
+Day
+10500
+11500
+12500
+13500
+14500Stock Index
+(c)
+Real
+Forecast
+0 40 80 120 160 200 240
+Day
+5400
+5800
+6200
+6600
+7000Stock Index
+(d)
+Real
+Forecast
+Fig. 6. The forecasting results of four stock indexes for direction forecast of stock market
+fluctuation trend, where the red and blue lines represent the real values and the forecast
+values respectively. (a) SHSECI; (b) SZSECI; (c) NASDAQCI; (d) LFTSE100I.
+As can be seen from Table 6, the DS results of four stock indexes in our work are 0.5282,
+0.5242, 0.5078, and 0.5097, respectively. The DS results of our RC forecasting system are
+compared with the RNN in Ref. [4] since RC is a special RNN, and it is find that our results of
+SHSECI and SZSECI are little higher with better direction forecasting performance. In order
+to compare the DS results in a more comprehensive view, we also add the DS results of other
+forecasting models to Table 6. By comparison, we find that the DS results of the forecasting
+model using one single intelligent technology are similar to the results of our work, while all
+of them float around 0.5, such as LSTM in Ref. [4], BPNN, STNN, and SVM in Ref. [14].
+However, the results of the hybrid forecasting model using multiple intelligent technologies have
+a huge advancement, while all of them are greater than 0.7, such as CEEMD-PCA-LSTM in Ref.
+
+[PÁGINA PDF 15]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23373
+Table 6. The DS results of our work and comparison results with other works.
+Work SHSECI SZSECI NASDAQCI LFTSE100I
+Our Work 0.5282 0.5242 0.5078 0.5097
+RNN in Ref. [4] 0.4769 0.4867 N/A N/A
+LSTM in Ref. [4] 0.4631 0.5015 N/A N/A
+CEEMD-PCA-LSTM in Ref. [4] 0.7345 0.7443 N/A N/A
+BPNN in Ref. [14] N/A N/A N/A 0.5299
+STNN in Ref. [14] N/A N/A N/A 0.5331
+SVM in Ref. [14] N/A N/A N/A 0.5283
+EMD-STNN in Ref. [14] N/A N/A N/A 0.7507
+[4] and EMD-STNN in Ref. [14]. We speculate on the reason behind this phenomenon that the
+forecasting model based on single intelligent technology lacks the ability of feature extraction
+and analysis, which is not as good as the hybrid forecasting model based on multiple intelligent
+technologies. Hence, our forecasting system has certain direction trend prediction ability, yet it is
+weaker than the hybrid prediction system.
+5. Transfer learning and generalization ability
+5.1. Transfer learning in stock sector
+Stocks with short issuance time and few available data are often encountered in stock market
+forecasting. It is difficult for the forecasting system to predict these stocks with little data
+effectively by utilizing the previous training and testing methods. Nevertheless, transfer learning,
+whichappliesthelearnedknowledgeinthesourcedomaintothenewtargetdomain,canskillfully
+solve the above difficult problem, since the stock price changes of companies in the same stock
+sector and the stock sector itself often have correlation and linkage.
+In this work, the capacity of transfer learning capacity in nanophotonic reservoir computing
+system based on silicon OMO is explored by exploiting the massive data accumulated for a long
+time in the agricultural service stock sector (ASSS, SS: 881104) to forecast the stock prices
+of four companies with short listing time under this sector. The four companies under ASSS
+are Tianjin Ringpu Bio-technology Co.,Ltd. (RPBT, SS: 300119), Dayu Water-Saving Group
+Co.,Ltd. (DYWS, SS: 300021), Jinhe Biotechnology Co.,Ltd. (JHBT, SS: 002688), and Wuhan
+Keqian Biology Co.,Ltd. (KQBL, SS: 688526), respectively. The data settings for the stock
+sector of agricultural service is presented in Table 7, where the corresponding training-dataset
+are all from ASSS, and the test-dataset are all from the four stocks under ASSS.
+Table 7. Data settings for the stock sector of agricultural service.
+Stock Listing Date Training-dataset Period Training Days Test-dataset Period Test Days
+RPBT 17/09/2010 17/07/2009-03/08/2018 2200 06/08/2018-06/08/2021 731
+DYWS 30/10/2009 17/07/2009-03/08/2018 2200 06/08/2018-06/08/2021 731
+JHBT 13/07/2012 17/07/2009-03/08/2018 2200 06/08/2018-06/08/2021 731
+KQBL 22/09/2020 12/02/2018-22/09/2020 635 23/09/2020-06/08/2021 211
+The listing date of ASSS is 1st August 2007, which is earlier than all the four stocks shown in
+Table 7. Furthermore, the start dates of the training-dataset periods in Table 7 are all earlier than
+therespectivelistingdate. Undoubtedly,theamountofdataaccumulatedfromtheissuanceofthe
+four stocks cannot provide sufficient training data to support their respective training processes,
+especially the KQBL whose listing time is less than one year old. Accordingly, the transfer
+
+[PÁGINA PDF 16]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23374
+learning has vital strategic implication and practical worth to forecast stocks with short issuance
+time and less data, such as RPBT, DYWS, JHBT, and KQBL benefiting from ASSS. In Table 7,
+the test-dataset period of RPBT, DYWS, and JHBT are all set to be three years from 6th August
+2018to6thAugust2021,whilethetest-datasetperiodofKQBLissetfrom23rdSeptember2020
+to 6th August 2021. For good forecast performance, we tried different training days and finally
+determineditas2200daysand635daysinTable7. Itmeritsourspecialattentionthatthetraining
+set data from ASSS and the test set data from four stocks under ASSS need to be normalized
+separately due to the gaps between them are excessive large. In addition, the individual training
+and testing processes of RPBT, DYWS, JHBT, KQBL, and ASSS in this section are all set in the
+situation ofkfb = 1×104 andkinj = 1×10−15.
+TheforecastingresultsoffourstocksunderASSSviaemployingtransferlearningareshownin
+Fig. 7, where the red and blue lines represent the real values and the forecast values respectively.
+In Figs. 7(a)-(d), the forecast blue curves are very close to real red curves, and the forecast
+errors between them are quantified in Table 8. As Table 8 illustrated, all the NMSEs, RMSEs,
+MAEs, and MAPEs are less than 0.09, 0.06, 0.05, and 4.32×10−5, respectively. In order to more
+intuitively reflect the practicability of the transfer learning prediction results shown in Fig. 7, we
+explore the percentage change of the predicted stock price compared to the previous day with
+rising or falling. Figure 8 demonstrate the forecast percentage error of four stocks compared to
+the previous day, where the red and blue lines represent the real errors and the forecast errors,
+respectively. It can be seen from Figs. 8(a)-(d), the forecast percentage errors with blue curves
+are very close to the real percentage errors with red curves, and the real and forecast percentage
+errors are mainly concentrated in the range of -10% to 10%. Moreover, for more accurately
+reflecting the difference between the daily real percentage error and the predicted percentage
+error in Fig. 8, we calculate the average values of the difference between them for four stocks.
+The average values of the difference between real and predicted percentage errors for RPBT,
+DYWS, JHBT, and KQBL are separately 2.9765%, 2.1095%, 2.1633%, and 2.5369%. These
+average errors of no more than 3% confirm that the forecast percentage errors in Fig. 8 are very
+close to the real percentage errors, and further illustrate the good prediction effect of transfer
+learninginFig.7. Therefore,theresultsofFig.7,Fig.8andTable8verifythatournanophotonic
+reservoir computing system based on silicon OMO has the capacity of transfer learning to solve
+the problem of stock forecasting with short listing time and few data in the stock market.
+Table 8. Evaluation metrics of forecasting results for TL.
+Stock NMSE RMSE MAE MAPE
+RPBT 0.0102 0.0209 0.0146 1.2313 ×10−5
+DYWS 0.0474 0.0317 0.0223 1.0952 ×10−5
+JHBT 0.0288 0.0366 0.0263 2.1050 ×10−6
+KQBL 0.0840 0.0595 0.0456 4.3113 ×10−5
+5.2. Generalization ability with stocks in same region and industry
+The price of a stock in the stock market is affected not only by the company itself with the
+developmentoftheindustryintheregion, butalsobyothercompetitivestocksinthesameregion
+andindustry. Hence, thestocksinthesameregionandindustryordinarilyhavethesameinherent
+lawsandcoincidentcorrelation. Inthiswork, thegeneralizationabilityofnanophotonicreservoir
+computing system is investigated by training any one of the four selected stocks in the securities
+industry of Shanghai to forecast the other three stocks. These four stocks are from companies
+of East Money Information Co.,Ltd. (EMI, SS: 300059), Haitong Securities Co.,Ltd. (HTS,
+SS: 600837), Shanghai Chinafortune Co.,Ltd (SHCF, SS: 600621), and Everbright Securities
+Co.,Ltd. (EBS, SS: 601788), respectively. The data settings for the four stocks in the securities
+
+[PÁGINA PDF 17]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23375
+0 100 200 300 400 500 600 700
+Day
+5
+10
+15
+20
+25
+30
+35
+40
+45Stock Price
+(a)
+Real
+Forecast
+0 100 200 300 400 500 600 700
+Day
+4
+5
+6
+7
+8
+9Stock Price
+(b)
+Real
+Forecast
+0 100 200 300 400 500 600 700
+Day
+4
+5
+6
+7
+8
+9
+10Stock Price
+(c)
+Real
+Forecast
+0 40 80 120 160 200
+Day
+28
+32
+36
+40
+44
+48Stock Price
+(d)
+Real
+Forecast
+Fig. 7. The forecasting results of four stocks under ASSS by exploiting transfer learning,
+where the red and blue lines represent the real values and the forecast values respectively. (a)
+RPBT; (b) DYWS; (c) JHBT; (d) KQBL.
+industry of Shanghai are presented in Table 9, where the corresponding training-dataset and the
+test-dataset are independent of each other in one stock. The format of “AAA-BBB” represents
+that the training-dataset of stock “AAA” is used for training, and the trained model is applied
+for testing the test-dataset of stock “BBB”, where “AAA” and “BBB” denote any two different
+stocks in Table 9 respectively. In Table 9, the test days of four stocks are all 248 days from
+3rd August 2020 to 6th August 2021. Meantime, the training days of four stocks are all 1500
+days, but they have different training-dataset period, which may probably caused by the different
+suspension time of each stocks in the stock market. Additionally, the individual training and
+testing processes are all set in the situation ofkfb = 1×104 andkinj = 1×10−15.
+Table 9. Data settings for four stocks in the securities industry of Shanghai.
+Stock Dataset Period Trading
+Days
+Training-dataset Period Training
+Days
+Test-dataset Period Test
+Days
+EMI 17/03/2014-06/08/2021 1748 17/03/2014-31/07/2020 1500 03/08/2020-06/08/2021 248
+HTS 06/06/2014-06/08/2021 1748 06/06/2014-31/07/2020 1500 03/08/2020-06/08/2021 248
+SHCF 06/03/2014-06/08/2021 1748 06/03/2014-31/07/2020 1500 03/08/2020-06/08/2021 248
+EBS 30/05/2014-06/08/2021 1748 30/05/2014-31/07/2020 1500 03/08/2020-06/08/2021 248
+The forecasting results of four stocks in the securities industry of Shanghai are presented in
+Fig. 9, where the red and blue lines represent the real values and the forecast values respectively.
+In Figs. 9(a1)-(a3), the training-dataset are all from EMI, while tested on the test-dataset of HTS,
+SHCF,andEBSrespectively. ThesimilarprocessforHTS,SHCF,andEBSasthetraining-dataset
+
+[PÁGINA PDF 18]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23376
+0 100 200 300 400 500 600 700
+Day
+-30
+-20
+-10
+0
+10
+20
+Forecast Percentage Error (%)
+(a)
+Real
+Forecast
+0 100 200 300 400 500 600 700
+Day
+-10
+-5 
+0  
+5  
+10 
+15 Forecast Percentage Error (%)
+(b)
+Real
+Forecast
+0 100 200 300 400 500 600 700
+Day
+-10
+-5
+0
+5
+10
+Forecast Percentage Error (%)
+(c)
+Real
+Forecast
+0 40 80 120 160 200
+Day
+-10
+-5
+0
+5
+10
+Forecast Percentage Error (%)
+(d)
+Real
+Forecast
+Fig. 8. The forecast percentage errors of four stocks compared to the previous day, where
+theredandbluelinesrepresenttherealerrorsandtheforecasterrors,respectively. (a)RPBT;
+(b) DYWS; (c) JHBT; (d) KQBL.
+to forecast the other three stocks are also exhibited in Figs. 9(b1)-(b3), Figs. 9(c1)-(c3), and
+Figs. 9(d1)-(d3). The whole results of Fig. 9 show that the forecast blue curves are very close
+to real red curves, confirming the generalization ability of nanophotonic reservoir computing
+system. In addition, the quantified evaluation metrics of forecasting results corresponding to
+Fig. 9 is listed in Table 10. As Table 10 illustrated, all the NMSEs, RMSEs, MAEs, and MAPEs
+are less than 0.07, 0.07, 0.05, and 8.72×10−5, respectively. Hence, the results of Fig. 9 and
+Table 10 corroborate that our nanophotonic reservoir computing system based on silicon OMO
+has the generalization ability to forecast the competitive stocks in the same region and industry in
+the stock market.
+
+[PÁGINA PDF 19]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23377
+0 40 80 120 160 200 240
+10
+12
+14
+16Stock Price
+(a1)
+Real
+Forecast
+0 40 80 120 160 200 240
+14
+16
+18
+20
+22
+(a2)
+Real
+Forecast
+0 40 80 120 160 200 240
+14
+16
+18
+20
+22
+24
+(a3)
+Real
+Forecast
+0 40 80 120 160 200 240
+20
+25
+30
+35
+40Stock Price
+(b1)
+Real
+Forecast
+0 40 80 120 160 200 240
+14
+16
+18
+20
+22
+(b2)
+Real
+Forecast
+0 40 80 120 160 200 240
+14
+16
+18
+20
+22
+24
+(b3)
+Real
+Forecast
+0 40 80 120 160 200 240
+20
+25
+30
+35
+40Stock Price
+(c1)
+Real
+Forecast
+0 40 80 120 160 200 240
+10
+12
+14
+16
+(c2)
+Real
+Forecast
+0 40 80 120 160 200 240
+14
+16
+18
+20
+22
+24
+(c3)
+Real
+Forecast
+0 40 80 120 160 200 240
+Day
+20
+25
+30
+35
+40Stock Price
+(d1)
+Real
+Forecast
+0 40 80 120 160 200 240
+Day
+10
+12
+14
+16
+(d2)
+Real
+Forecast
+0 40 80 120 160 200 240
+Day
+14
+16
+18
+20
+22
+(d3)
+Real
+Forecast
+Fig. 9. The forecasting results of four stocks in the securities industry of Shanghai, where
+the red and blue lines represent the real values and the forecast values respectively. (a1)
+EMI-HTS; (a2) EMI-SHCF; (a3) EMI-EBS; (b1) HTS-EMI; (b2) HTS-SHCF; (b3) HTS-
+EBS; (c1) SHCF-EMI; (c2) SHCF-HTS; (c3) SHCF-EBS; (d1) EBS-EMI; (d2) EBS-HTS;
+(d3) EBS-SHCF.
+
+[PÁGINA PDF 20]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23378
+Table 10. Evaluation metrics of forecasting results for GA.
+Stock NMSE RMSE MAE MAPE
+EMI-HTS 0.0221 0.0401 0.0302 8.5573 ×10−6
+EMI-SHCF 0.0458 0.0576 0.0445 3.6631 ×10−5
+EMI-EBS 0.0396 0.0492 0.0367 2.4038 ×10−5
+HTS-EMI 0.0614 0.0603 0.0457 6.3319 ×10−5
+HTS-SHCF 0.0434 0.0561 0.0421 2.0297 ×10−5
+HTS-EBS 0.0434 0.0576 0.0380 2.2189 ×10−5
+SHCF-EMI 0.0667 0.0629 0.0473 6.6066 ×10−5
+SHCF-HTS 0.0207 0.0388 0.0299 2.7996 ×10−5
+SHCF-EBS 0.0431 0.0514 0.0383 3.1258 ×10−5
+EBS-EMI 0.0639 0.0616 0.0458 8.7171 ×10−5
+EBS-HTS 0.0196 0.0378 0.0288 3.9832 ×10−5
+EBS-SHCF 0.0417 0.0549 0.0429 4.7934 ×10−5
+6. Conclusion
+In this work, we implement a novel nanophotonic reservoir computing system based on silicon
+OMO using PhC cavities for stock market forecasting. The nanophotonic reservoir computing
+system based on silicon OMO with time-delayed feedback mechanism and DWT denoising is
+successfully established for the first time. The long-term closing prices of SHSECI, SZSECI,
+NASDAQCI, and LFTSE100I are precisely forecast with tiny NMSE, RMSE, MAE, and MAPE,
+revealing the stock forecast of mature stock market and emerging stock market has disparate
+characteristics. Meanwhile,thecomparisonresultsshowthatoursystemcanachievehigh-quality
+stock index prediction as the listed literature. The influence of concept drift phenomenon on
+forecasting performance in stock market is investigated by changing training days, and we find
+that the good prediction performance prefers to appear in the range of 2000 to 4000 training
+days for the fixed 1000 test days. Moreover, the overall impact of RC parameters on forecasting
+performanceareexhibitedthroughthemappingdiagramsofforecasterrorsintheparameterspace
+(ξw,Pin)and( kinj,kfb), wheretheinterestingvariationprocessesareresembletothecoastlineand
+archipelago in the geographic map. The results of these two mapping diagrams also illustrate
+the different variation regulations for mature stock market and emerging stock market, while the
+mature stock markets are more sensitive to the change of RC parameters than the emerging stock
+markets. The direction trend forecasting results show that our direction forecasting performance
+is similar to the prediction system based on single intelligence technology in the literature, and
+miserably worse than the hybrid prediction system. In addition, the four stocks RPBT, DYWS,
+JHBT, and KQBL with short issuance time and few data from ASSS are effectively forecast via
+transfer learning, which indicate the transfer learning capacity of our nanophotonic reservoir
+computing system. The other four stocks EMI, HTS, SHCF, and EBS in the securities industry
+of Shanghai are availably forecast with each other, revealing the generalization ability of our
+nanophotonic reservoir computing system.
+Although the above summary illustrates the achievements of this work, there are still some
+limitations in this work that need to be investigated in the future. In the first instance, explore
+optical means that can improve the feature extraction and analysis ability of the nanophotonic
+reservoir computing system, or cooperate with other optical computing systems to construct
+hybrid forecasting systems, such as the optical neural networks (ONNs) based on programmable
+nanophotonic processor with deep learning application potential [49] and the integrated photonic
+tensor core based on optical soliton frequency comb with parallel convolutional processing
+
+[PÁGINA PDF 21]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23379
+capacity [50]. The second aspect is that the present dataset only covers the closing prices of
+four stock indices, one stock sector, and eight individual stocks. It is interesting to study more
+regionally representative stock indexes around the world with its open, high, and low prices
+etc. Meantime, the more individual stocks in diverse stock sectors, industries, and regions are
+waiting to explore more capabilities of the RC system and discover more meaningful financial
+phenomena. Besides, the research object can not only be limited to the stock market, but also
+focus on the futures market, option market, bond market, fund market, foreign exchange market
+and etc. The third facet is that with the improvement of feature extraction and analysis ability,
+more relevant information sources can be utilized to enhance the prediction ability of the stock
+market, such as financial news, macroeconomic factors, corporate disclosure news, investors
+sentiments, and even Internet social platform information. The final aspect is to improve the
+forecasting accuracy of stock market direction trend and construct practical trading strategies for
+portfolio management, which is the ultimate goal and challenge for all the investors. Desirably
+from these research advices to inspire scholars for splendid and wide-vision works in the future.
+Funding. Chongqing Normal University Ph.D. Startup Fund (21XLB035); Special funds for Postdoctoral research of
+Chongqing (2010010004713415); Fundamental Research Funds for the Central Universities (XDJK2018B012).
+Acknowledgments. We thank the Fundamental Research Funds for the Central Universities under Grant
+XDJK2018B012, by the Special funds for Postdoctoral research of Chongqing under Grant 2010010004713415,
+by the Chongqing Normal University Ph.D. Startup Fund under Grant 21XLB035.
+Disclosures. The authors declare no conflicts of interest.
+Data availability. Data underlying the results presented in this paper are not publicly available at this time but may
+be obtained from the authors upon reasonable request.
+References
+1. J.Z.Wang, J.J.Wang, Z.G.Zhang, andS.P.Guo, “Forecastingstockindiceswithbackpropagationneuralnetwork,”
+Expert. Syst. with Appl.38, 14346–14355 (2011).
+2. J. L. Ticknor, “A bayesian regularized artificial neural network for stock market forecasting,” Expert. Syst. with Appl.
+40(14), 5501–5506 (2013).
+3. T. J. Hsieh, H. F. Hsiao, and W. C. Yeh, “Forecasting stock markets using wavelet transforms and recurrent neural
+networks: An integrated system based on artificial bee colony algorithm,” Appl. Soft Comput.11(2), 2510–2525
+(2011).
+4. Y. A. Zhang, B. Yan, and M. Aasma, “A novel deep learning framework: Prediction and analysis of financial time
+series using CEEMD and LSTM,” Expert. Syst. with Appl.159, 113609 (2020).
+5. J.J.Murphy,“Technicalanalysisofthefinancialmarkets: Acomprehensiveguidetotradingmethodsandapplications,”
+New York Institute of Finance (1999).
+6. R. C. Cavalcante, R. C. Brasileiro, V. L. Souza, J. P. Nobrega, and A. L. Oliveira, “Computational intelligence and
+financial markets: A survey and future directions,” Expert. Syst. with Appl.55, 194–211 (2016).
+7. L. A. Laboissiere, R. A. Fernandes, and G. G. Lage, “Maximum and minimum stock price forecasting of brazilian
+power distribution companies based on artificial neural networks,” Appl. Soft Comput.35, 66–74 (2015).
+8. M. Göçken, M. Özçalıcı, A. Boru, and A. T. Dosdoğru, “Integrating metaheuristics and artificial neural networks for
+improved stock price prediction,” Expert. Syst. with Appl.44, 320–331 (2016).
+9. H. Gunduz, Y. Yaslan, and Z. Cataltepe, “Intraday prediction of borsa istanbul using convolutional neural networks
+and feature correlations,” Knowledge-Based Syst.137, 138–148 (2017).
+10. W. Chen, M. Jiang, W. G. Zhang, and Z. S. Chen, “A novel graph convolutional feature based convolutional neural
+network for stock trend prediction,” Inf. Sci.556, 67–94 (2021).
+11. J. H. Zhao, D. L. Zeng, S. Liang, H. L. Kang, and Q. M. Liu, “Prediction model for stock price trend based on
+recurrent neural network,” J. Ambient Intell. Humaniz. Comput.12(1), 745–753 (2021).
+12. W. Huang, Y. Nakamori, and S. Y. Wang, “Forecasting stock market movement direction with support vector
+machine,” Comput. Oper. Res.32(10), 2513–2522 (2005).
+13. R. J. Yang, L. Yu, Y. J. Zhao, H. X. Yu, G. P. Xu, Y. T. Wu, and Z. K. Liu, “Big data analytics for financial market
+volatility forecast based on support vector machine,” Int. J. Inf. Manag.50, 452–462 (2020).
+14. J. Wang and J. Wang, “Forecasting stochastic neural network based on financial empirical mode decomposition,”
+Neural Networks90, 8–20 (2017).
+15. Y.J.BaekandH.Y.Kim,“Modaugnet: Anewforecastingframeworkforstockmarketindexvaluewithanoverfitting
+prevention LSTM module and a prediction LSTM module,” Expert. Syst. with Appl.113, 457–480 (2018).
+16. I. A. Gheyas and L. S. Smith, “A novel neural network ensemble architecture for time series forecasting,”
+Neurocomputing 74(18), 3855–3864 (2011).
+
+[PÁGINA PDF 22]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23380
+17. O. Bustos and A. Pomares-Quimbaya, “Stock market movement forecast: A systematic review,” Expert. Syst. with
+Appl. 156, 113464 (2020).
+18. Y. Hu, J. Ni, and L. Wen, “A hybrid deep learning approach by integrating LSTM-ANN networks with GARCH
+model for copper price volatility prediction,” Phys. A557, 124907 (2020).
+19. H. Chung and K. S. Shin, “Genetic algorithm-optimized multi-channel convolutional neural network for stock market
+prediction,” Neural Comput. Appl.32(12), 7897–7914 (2020).
+20. Y. Xu, C. J. Yang, S. L. Peng, and Y. Nojima, “A hybrid two-stage financial stock forecasting algorithm based on
+clustering and ensemble learning,” Appl. Intell.50(11), 3852–3867 (2020).
+21. W. J. Wang, Y. Tang, J. Xiong, and Y. C. Zhang, “Stock market index prediction based on reservoir computing
+models,” Expert. Syst. with Appl.178, 115022 (2021).
+22. Y. Kuriki, J. Nakayama, K. Takano, and A. Uchida, “Impact of input mask signals on delay-based photonic reservoir
+computing with semiconductor lasers,” Opt. Express26(5), 5777–5788 (2018).
+23. J. Nakayama, K. Kanno, and A. Uchida, “Laser dynamical reservoir computing with consistency: an approach of a
+chaos mask signal,” Opt. Express24(8), 8679–8692 (2016).
+24. M.Rafayelyan,J.Dong,Y.Tan,F.Krzakala,andS.Gigan,“Large-scaleopticalreservoircomputingforspatiotemporal
+chaotic systems prediction,” Phys. Rev. X10(4), 041037 (2020).
+25. G. Tanaka, T. Yamane, J. B. Héroux, R. Nakane, N. Kanazawa, S. Takeda, H. Numata, D. Nakano, and A. Hirose,
+“Recent advances in physical reservoir computing: A review,” Neural Networks115, 100–123 (2019).
+26. K. Vandoorne, P. Mechet, T. Van Vaerenbergh, M. Fiers, G. Morthier, D. Verstraeten, B. Schrauwen, J. Dambre, and
+P. Bienstman, “Experimental demonstration of reservoir computing on a silicon photonics chip,” Nat. Commun.5(1),
+3541 (2014).
+27. G. Van der Sande, D. Brunner, and M. C. Soriano, “Advances in photonic reservoir computing,” Nanophotonics6(3),
+561–576 (2017).
+28. D. Brunner, M. C. Soriano, C. R. Mirasso, and I. Fischer, “Parallel photonic information processing at gigabyte per
+second data rates using transient states,” Nat. Commun.4(1), 1364 (2013).
+29. J. Bueno, S. Maktoobi, L. Froehly, I. Fischer, M. Jacquot, L. Larger, and D. Brunner, “Reinforcement learning in a
+large-scale photonic recurrent neural network,” Optica5(6), 756–760 (2018).
+30. D. Brunner and I. Fischer, “Reconfigurable semiconductor laser networks based on diffractive coupling,” Opt. Lett.
+40(16), 3854–3857 (2015).
+31. B. J. Shastri, M. A. Nahmias, A. N. Tait, A. W. Rodriguez, B. Wu, and P. R. Prucnal, “Spike processing with a
+graphene excitable laser,” Sci. Rep.6(1), 19126 (2016).
+32. S. Rotter and S. Gigan, “Light fields in complex media: Mesoscopic scattering meets wave control,” Rev. Mod. Phys.
+89(1), 015005 (2017).
+33. Y. S. Hou, G. Q. Xia, W. Y. Yang, D. Wang, E. Jayaprasath, Z. F. Jiang, C. X. Hu, and Z. M. Wu, “Prediction
+performance of reservoir computing system based on a semiconductor laser subject to double optical feedback and
+optical injection,” Opt. Express26(8), 10211–10219 (2018).
+34. F.Duport,B.Schneider,A.Smerieri,M.Haelterman,andS.Massar,“All-opticalreservoircomputing,”Opt.Express
+20(20), 22783–22795 (2012).
+35. R.M.Nguimdo,G.Verschaffelt,J.Danckaert,andG.VanderSande,“Simultaneouscomputationoftwoindependent
+tasks using reservoir computing based on a single photonic nonlinear node with optical feedback,” IEEE Trans.
+Neural Netw. Learning Syst.26(12), 3301–3307 (2015).
+36. X. X. Guo, S. Y. Xiang, Y. H. Zhang, L. Lin, A. J. Wen, and Y. Hao, “High-speed neuromorphic reservoir computing
+based on a semiconductor nanolaser with optical feedback under electrical modulation,” IEEE J. Sel. Top. Quantum
+Electron. 26(5), 1–7 (2020).
+37. A.Bogris,C.Mesaritakis,S.Deligiannidis,andP.Li,“Fabry-perotlasersasenablersforparallelreservoircomputing,”
+IEEE J. Sel. Top. Quantum Electron.27, 7500307 (2020).
+38. G. Arregui, M. F. Colombano, J. Maire, A. Pitanti, N. E. Capuj, A. Griol, A. Martínez, C. M. Sotomayor-Torres,
+and D. Navarro-Urrios, “Injection locking in an optomechanical coherent phonon source,” Nanophotonics10(4),
+1319–1327 (2021).
+39. X. S. Luan, Y. J. Huang, Y. Li, J. F. McMillan, J. J. Zheng, S. W. Huang, P. C. Hsieh, T. Y. Gu, D. Wang, A.
+Hati, D. Howe, G. Wen, M. B. Yu, G. Q. Lo, D. L. Kwong, and C. W. Wong, “An integrated low phase noise
+radiation-pressure-driven optomechanical oscillator chipset,” Sci. Rep.4(1), 6842 (2014).
+40. J. H. Yang, T. Y. Gu, J. J. Zheng, M. B. Yu, G. Q. Lo, D. L. Kwong, and C. W. Wong, “Radio frequency regenerative
+oscillations in monolithic high-Q/V heterostructured photonic crystal cavities,” Appl. Phys. Lett.104(6), 061104
+(2014).
+41. M. Aspelmeyer, T. J. Kippenberg, and F. Marquardt, “Cavity optomechanics,” Rev. Mod. Phys.86(4), 1391–1452
+(2014).
+42. T. J. Kippenberg and K. J. Vahala, “Cavity optomechanics: back-action at the mesoscale,” Science321(5893),
+1172–1176 (2008).
+43. J. G. Wu, S. W. Huang, Y. J. Huang, H. Zhou, J. H. Yang, J. M. Liu, M. B. Yu, G. Q. Lo, D. L. Kwong, S. K. Duan,
+and C. W. Wong, “Mesoscopic chaos mediated by drude electron-hole plasma in silicon optomechanical oscillators,”
+Nat. Commun.8(1), 15570 (2017).
+
+[PÁGINA PDF 23]
+Research Article Vol. 30, No. 13 / 20 Jun 2022 / Optics Express 23381
+44. D. Navarro-Urrios, N. E. Capuj, M. F. Colombano, P. D. García, M. Sledzinska, F. Alzina, A. Griol, A. Martínez, and
+C. M. Sotomayor-Torres, “Nonlinear dynamics and chaos in an optomechanical beam,” Nat. Commun.8(1), 14965
+(2017).
+45. L. Bakemeier, A. Alvermann, and H. Fehske, “Route to chaos in optomechanics,” Phys. Rev. Lett.114(1), 013601
+(2015).
+46. F. Monifi, J. Zhang, Ş. K. Özdemir, B. Peng, Y. X. Liu, F. Bo, F. Nori, and L. Yang, “Optomechanically induced
+stochastic resonance and chaos transfer between optical fields,” Nat. Photonics10(6), 399–405 (2016).
+47. Y. Y. Xie, J. C. Li, C. He, Z. D. Zhang, T. T. Song, C. J. Xu, and G. J. Wang, “Long-distance multi-channel
+bidirectional chaos communication based on synchronized vcsels subject to chaotic signal injection,” Opt. Commun.
+377, 1–9 (2016).
+48. R. M. Nguimdo, E. Lacot, O. Jacquin, O. Hugon, G. Van der Sande, and H. G. de Chatellus, “Prediction performance
+of reservoir computing systems based on a diode-pumped erbium-doped microchip laser subject to optical feedback,”
+Opt. Lett.42(3), 375–378 (2017).
+49. Y. C. Shen, N. C. Harris, S. Skirlo, M. Prabhu, T. Baehr-Jones, M. Hochberg, X. Sun, S. J. Zhao, H. Larochelle, D.
+Englund, and M. Soljacic, “Deep learning with coherent nanophotonic circuits,” Nat. Photonics11(7), 441–446
+(2017).
+50. J. Feldmann, N. Youngblood, M. Karpov, H. Gehring, X. Li, M. Stappers, M. Le Gallo, X. Fu, A. Lukashchuk,
+A. S. Raja, J. Liu, C. D. Wright, A. Sebastian, T. J. Kippenberg, W. H. P. Pernice, and H. Bhaskaran, “Parallel
+convolutional processing using an integrated photonic tensor core,” Nature589(7840), 52–58 (2021).

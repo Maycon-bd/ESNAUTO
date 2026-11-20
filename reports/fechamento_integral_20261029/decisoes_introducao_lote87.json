@@ -1,0 +1,117 @@
+{
+  "sha256_docx": "0ca47981f6ed3a5926ca3db171a997aca04970fd3bb987090da0798b9df7b82e",
+  "registros": [
+    {
+      "paragrafo_atual": 165,
+      "texto": "INTRODUÇÃO",
+      "sha256_texto": "24d8033af8a330994cbb953db924bfe070ea88b4d486379ed30958cd54465aec",
+      "decisao": "Título de capítulo, sem afirmação científica.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 166,
+      "texto": "A previsão de preços de ações reúne desafios de análise temporal, escolha de modelos e qualidade dos dados. No mercado brasileiro, esta pesquisa delimita esse problema à previsão de um passo à frente do preço de fechamento ajustado da ação preferencial da Petróleo Brasileiro S.A. (PETR4), negociada na Brasil, Bolsa, Balcão (B3). O interesse está em avaliar o desempenho preditivo e o custo computacional de configurações de redes neurais sob um protocolo experimental definido, sem interpretar a previsão de preços como demonstração de rentabilidade de uma estratégia de negociação.",
+      "sha256_texto": "f00c1cdd8fc37f0d29407687d5bc5f61c5281b9388582fd6e937a5198293fa95",
+      "decisao": "Delimita ativo, horizonte, tarefa e custo; não promete rentabilidade. Coerente com métodos e validade externa.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 167,
+      "texto": "A abordagem central emprega Redes Neurais de Estados de Eco (Echo State Networks – ESNs), pertencentes à Computação de Reservatório (Reservoir Computing – RC). Nessa arquitetura, as matrizes de entrada e do reservatório, designadas por Win e W, permanecem fixas durante o ajuste da camada de saída. Essa organização motiva o estudo de alternativas à otimização iterativa de todos os pesos. A escolha das distribuições de inicialização e dos hiperparâmetros, entretanto, integra o problema experimental e não permite pressupor superioridade de uma configuração antes de sua avaliação.",
+      "sha256_texto": "b2361661eaecd64d5d7e0890816dc10db8c7e041c17f17b8790f820983d14736",
+      "decisao": "Pesos fixos durante ajuste da saída correspondem ao núcleo ESN preservado; seleção de inicialização não é alegada superior antes da avaliação.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 168,
+      "texto": "A pesquisa utiliza preços ajustados para lidar com descontinuidades associadas a eventos corporativos, sem isolar o efeito do Fator de Ajuste por uma ablação. Também distingue o custo da busca por hiperparâmetros do ajuste da configuração selecionada, delimitando a interpretação da acurácia e da eficiência computacional.",
+      "sha256_texto": "c75843c9697e60d82608ca3c0242c4adc516c69c6b78a825cb7dd04d818c6a7e",
+      "decisao": "Dados ajustados recebidos; ausência de ablação e distinção busca/ajuste explicitadas, coerentes com conclusão.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 169,
+      "texto": "O problema de pesquisa consiste em investigar em que medida distribuições não gaussianas para Win e W, combinadas a um Algoritmo Genético (AG), alteram a acurácia e o custo computacional de uma ESN na previsão fora da amostra da PETR4 em comparação com inicializações canônicas e com redes Long Short-Term Memory (LSTM) e Gated Recurrent Unit (GRU). A justificativa está na necessidade de documentar essas escolhas de inicialização, avaliá-las em conjunto com os hiperparâmetros e explicitar as condições em que as comparações são sustentadas pelos registros disponíveis.",
+      "sha256_texto": "0d88dfe1e321b477d7a568de5da59ae35cc2b97784bec5aad502c13c3a2489b4",
+      "decisao": "Problema e justificativa formulados como investigação; não afirma efeito isolado já demonstrado.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 170,
+      "texto": "O objetivo geral é investigar o desempenho de ESNs na predição de um passo à frente do preço ajustado da PETR4, com ênfase nas distribuições aplicadas a Win e W e na otimização conjunta dos hiperparâmetros por AG. A busca utiliza inicialização por Amostragem por Hipercubo Latino (Latin Hypercube Sampling – LHS) e mutação cataclísmica inspirada no algoritmo Cross-generational elitist selection, Heterogeneous recombination and Cataclysmic mutation (CHC). O mecanismo antiestagnação não corresponde à implementação do CHC completo.",
+      "sha256_texto": "78094d95c91451286526e10b35be4aae72d87c9be3ebda9bcc8a5d9413e04a58",
+      "decisao": "Objetivo e descrição do motor; relação com CHC limitada a inspiração. Uso histórico individual permanece ressalvado na Seção 3.8.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 171,
+      "texto": "Como objetivos específicos, pretende-se consolidar a revisão da literatura; empregar a série histórica ajustada; desenvolver o ESNAUTO, integrando ESN, regressão Ridge e busca genética; e investigar distribuições canônicas, de cauda pesada, assimétricas, esparsas e empiricamente ajustadas. Também se busca otimizar conjuntamente a taxa de vazamento, o raio espectral, o descarte inicial, o tamanho do reservatório e a regularização Ridge. A implementação atual utiliza um cromossomo binário de 55 bits para esses parâmetros.",
+      "sha256_texto": "49a4452570044e0bc6941cbc9eb856a4b76ef0e561bdef22ef309f15e3e2397c",
+      "decisao": "Objetivos específicos e motor atual identificados; codificação de 55 bits não é atribuída a todas as execuções históricas.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 172,
+      "texto": "A avaliação contempla o Erro Médio Absoluto (Mean Absolute Error – MAE), a Raiz do Erro Quadrático Médio (Root Mean Squared Error – RMSE) e o coeficiente de determinação (R²), a comparação com a ESN Normal × Normal e com LSTM e GRU e a separação entre custo de otimização e ajuste final. Inclui ainda o exame da dispersão entre configurações, a comparação inferencial complementar pelo teste de Diebold–Mariano (DM), a documentação do procedimento e a discussão de limitações e condições de replicação.",
+      "sha256_texto": "e98acc7752a434eefeba3cbd42141f8de1d0016d410fdbcd9ff98193609ee0b2",
+      "decisao": "Desfechos correspondem às tabelas e protocolo controlado; separação dos custos e limites mantida.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 173,
+      "texto": "Cinco hipóteses orientam a pesquisa e são apresentadas a seguir. Sua avaliação deve distinguir resultados descritivos, evidência inferencial e limites de atribuição causal.",
+      "sha256_texto": "b7d956995308819578180c95d6fbbd614733b8773a6243d2c64bfdc03261c2f4",
+      "decisao": "Enuncia distinção entre observação, inferência e causalidade; não constitui resultado.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 174,
+      "texto": "H1 - desempenho: a ESN otimizada apresentará menor perda preditiva que os modelos LSTM e GRU definidos no protocolo. A comparação histórica será descritiva; na rodada controlada complementar, a avaliação considerará a diferença de acurácia pelo teste bilateral de Diebold-Mariano e a direção do diferencial médio de perda. A ausência de significância será interpretada como evidência insuficiente de diferença, sem demonstrar equivalência entre os modelos.",
+      "sha256_texto": "82815ba044f038cd10668242793a7680de6e7ea485c7b897f05a4fcf27d317f4",
+      "decisao": "Hipótese H1 e critério de leitura coerentes com rodada controlada e limites; ausência de significância não tratada como equivalência.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 175,
+      "texto": "H2 - eficiência: após a seleção da configuração, o ajuste analítico da camada de saída da ESN demandará menos tempo computacional que o treinamento iterativo de LSTM e GRU.",
+      "sha256_texto": "1bbff23fd8055eabcc7504547104e6994dd0962d4b2515dcd435fab7efd4a2a1",
+      "decisao": "H2 restringe eficiência ao ajuste após seleção, coerente com análise de custos.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 176,
+      "texto": "H3 - inicialização: ao menos uma distribuição não gaussiana em Win ou W produzirá erro fora da amostra menor que a inicialização Normal × Normal.",
+      "sha256_texto": "d1415075af3a32d163c92a2069e806a0a949ca9dd587a819ddf8717edb54f07c",
+      "decisao": "H3 admite apoio pontual por menor erro; síntese corrigida identifica métricas distintas.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 177,
+      "texto": "H4 - exploração evolucionária: a combinação de inicialização LHS e mutação cataclísmica manterá diversidade de busca e produzirá soluções competitivas sob o orçamento experimental definido.",
+      "sha256_texto": "6e2ab3b1d09aef31f7db0086650caf99d0d1ba477238e8b071d32e207b5922c4",
+      "decisao": "H4 é proposição testável; avaliação posterior informa efeito não demonstrado por ausência de diversidade/ablação.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 178,
+      "texto": "H5 - ajuste empírico: distribuições ajustadas aos dados de treino pelo EasyFit produzirão melhor desempenho ou menor variabilidade que distribuições canônicas.",
+      "sha256_texto": "578f0b1919130f15803c0bf3fb7be8c21508400d5631646eb150fd1059b5b43c",
+      "decisao": "H5 é proposição; avaliação posterior restringe evidência à dispersão entre configurações, sem estabilidade estocástica demonstrada.",
+      "acao": "manter"
+    },
+    {
+      "paragrafo_atual": 179,
+      "texto": "O texto apresenta revisão da literatura, material e métodos, resultados, discussão das limitações e conclusão. A revisão fundamenta os modelos; a metodologia distingue os blocos experimentais; os capítulos finais avaliam os resultados e seu alcance. Os resultados principais se restringem à PETR4.",
+      "sha256_texto": "bf8e0bfbf6ae17b576ffff11e47d7d41a33f083924a0dbd15c51ae7325c9cab7",
+      "decisao": "Roteiro corresponde aos capítulos e delimita resultados a PETR4.",
+      "acao": "manter"
+    }
+  ],
+  "evidencias": [
+    "conferencia_hipoteses_lote64.json",
+    "conferencia_codigo_unidades_lote69.json",
+    "expressoes_matematicas_lote85.json",
+    "edicao_lote57.json"
+  ],
+  "limite": "Decisões de coerência da introdução com trabalho e evidências; não declara confirmação das cinco hipóteses."
+}

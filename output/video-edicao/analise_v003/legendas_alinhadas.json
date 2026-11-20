@@ -1,0 +1,1557 @@
+[
+  {
+    "start": 0,
+    "end": 4.56,
+    "text": "Olá, meu nome é Maycon Garcia Silva, do\ncurso de Engenharia de Software da"
+  },
+  {
+    "start": 4.585,
+    "end": 9.899999999999999,
+    "text": "Universidade de Rio Verde. Neste trabalho,\norientado pelo meu professor,"
+  },
+  {
+    "start": 10.084999999999999,
+    "end": 15.080000000000002,
+    "text": "doutor Fabian Corrêa Cardoso, eu estudei\numa forma de prever o preço de"
+  },
+  {
+    "start": 15.105000000000002,
+    "end": 18.380000000000003,
+    "text": "fechamento ajustado da ação PETR4."
+  },
+  {
+    "start": 18.725,
+    "end": 23.86,
+    "text": "Para isso, eu usei uma rede neural chamada\nrede de estados de eco,"
+  },
+  {
+    "start": 24.165,
+    "end": 29.380000000000003,
+    "text": "Echo State Network, ESN, um algoritmo\ngenético para procurar boas"
+  },
+  {
+    "start": 29.405,
+    "end": 33.660000000000004,
+    "text": "configurações dessa rede e também\ntrabalhei na adaptação de uma interface do"
+  },
+  {
+    "start": 33.685,
+    "end": 39.14666666666667,
+    "text": "sistema ESNAUTO. Vou mostrar como cheguei\naos testes, o que os resultados"
+  },
+  {
+    "start": 39.17166666666667,
+    "end": 42.22666666666667,
+    "text": "indicam e até onde podemos chegar com\nessas conclusões."
+  },
+  {
+    "start": 44.51166666666667,
+    "end": 49.64666666666667,
+    "text": "Falando agora sobre o problema da\npesquisa: o que guiou o trabalho foi usar"
+  },
+  {
+    "start": 49.67166666666667,
+    "end": 53.046666666666674,
+    "text": "os preços anteriores da PETR4."
+  },
+  {
+    "start": 53.07166666666667,
+    "end": 56.92666666666666,
+    "text": "Como essa rede se sai ao prever o próximo\nfechamento?"
+  },
+  {
+    "start": 57.73166666666667,
+    "end": 60.56666666666668,
+    "text": "Além de olhar o erro dessa previsão, eu\nquis saber quanto tempo"
+  },
+  {
+    "start": 60.591666666666676,
+    "end": 64.60666666666667,
+    "text": "o computador leva para fazer os ajustes\ndesses modelos computacionais."
+  },
+  {
+    "start": 65.55166666666666,
+    "end": 69.48666666666666,
+    "text": "O gráfico mostra como o preço mudou ao\nlongo dos anos."
+  },
+  {
+    "start": 69.53166666666667,
+    "end": 73.52666666666667,
+    "text": "Há períodos de alta, períodos de baixa,\nmudanças mais fortes."
+  },
+  {
+    "start": 74.05166666666666,
+    "end": 79.80666666666666,
+    "text": "Esse comportamento, se a gente observar,\ntem mudanças muito diferentes na"
+  },
+  {
+    "start": 79.83166666666666,
+    "end": 84.92666666666668,
+    "text": "crise de 2008, na crise de 2014 e na\npandemia de 2020."
+  },
+  {
+    "start": 85.33166666666666,
+    "end": 89.36666666666666,
+    "text": "Eu comparei a rede de estados de eco com\noutras duas redes usadas para fazer"
+  },
+  {
+    "start": 89.39166666666667,
+    "end": 95.06666666666668,
+    "text": "essas análises de ações, nessa sequência\nde dados, que são a GRU e a"
+  },
+  {
+    "start": 95.09166666666668,
+    "end": 97.78666666666666,
+    "text": "LSTM. O foco foi avaliar essas previsões."
+  },
+  {
+    "start": 97.81166666666667,
+    "end": 100.48666666666666,
+    "text": "Não testei nenhuma estratégia de compra e\nvenda de ações."
+  },
+  {
+    "start": 102.92166666666667,
+    "end": 106.25666666666669,
+    "text": "Falando um pouco sobre o objetivo das\nminhas hipóteses."
+  },
+  {
+    "start": 106.30166666666666,
+    "end": 112.27666666666666,
+    "text": "A primeira pergunta se a rede ESN consegue\ncompetir com GRU e"
+  },
+  {
+    "start": 112.30166666666666,
+    "end": 117.33666666666667,
+    "text": "LSTM. A segunda olha para o tempo\nnecessário para ajustar uma configuração"
+  },
+  {
+    "start": 117.36166666666668,
+    "end": 122.05666666666666,
+    "text": "escolhida. A terceira investiga se, ao\nmudar a forma de gerar os pesos"
+  },
+  {
+    "start": 122.08166666666666,
+    "end": 126.69666666666666,
+    "text": "iniciais, pode trazer resultados melhores\ndo que a distribuição Normal usada"
+  },
+  {
+    "start": 126.72166666666666,
+    "end": 130.65666666666667,
+    "text": "como referência. A gente quer tentar\natingir resultados melhores que a Normal."
+  },
+  {
+    "start": 131.68166666666667,
+    "end": 136.9366666666667,
+    "text": "A quarta trata dos recursos do algoritmo\ngenético para explorar diferentes"
+  },
+  {
+    "start": 136.9616666666667,
+    "end": 141.83666666666667,
+    "text": "soluções. A quinta considera distribuições\najustadas aos próprios dados de"
+  },
+  {
+    "start": 141.86166666666668,
+    "end": 145.25666666666666,
+    "text": "treino. Mais adiante vou voltar em cada\numa delas e explicar melhor."
+  },
+  {
+    "start": 147.7516666666667,
+    "end": 151.52666666666667,
+    "text": "Falando agora sobre fundamentação e\ntrabalhos relacionados: o meu trabalho se"
+  },
+  {
+    "start": 151.55166666666668,
+    "end": 156.86666666666667,
+    "text": "apoia em três assuntos, que foram a rede\nde estados de eco, a busca"
+  },
+  {
+    "start": 156.89166666666668,
+    "end": 162.78666666666666,
+    "text": "genética e a preparação de dados\nfinanceiros, na proposta"
+  },
+  {
+    "start": 162.81166666666667,
+    "end": 168.42666666666665,
+    "text": "de tentar prever esse valor. Jaeger"
+  },
+  {
+    "start": 168.45166666666665,
+    "end": 173.76666666666665,
+    "text": "trouxe essa característica da rede de\nestados de eco: manter as conexões"
+  },
+  {
+    "start": 173.79166666666666,
+    "end": 178.2266666666667,
+    "text": "internas fixas durante o ajuste e calcular\nos pesos de saída."
+  },
+  {
+    "start": 178.2516666666667,
+    "end": 182.02666666666667,
+    "text": "Vou explicar esse funcionamento no próximo\nconjunto de slides."
+  },
+  {
+    "start": 182.31166666666667,
+    "end": 187.44666666666666,
+    "text": "Os trabalhos de Araújo e colaboradores\najudaram a fundamentar o"
+  },
+  {
+    "start": 187.47166666666666,
+    "end": 190.8666666666667,
+    "text": "estudo dessas distribuições e da busca\ngenética."
+  },
+  {
+    "start": 191.39166666666668,
+    "end": 197.33666666666667,
+    "text": "O BovDB, do meu orientador, dá o contexto\ndo ajuste"
+  },
+  {
+    "start": 197.36166666666668,
+    "end": 201.91666666666666,
+    "text": "dos preços por eventos corporativos:\ninplits, splits e pagamentos de"
+  },
+  {
+    "start": 201.94166666666666,
+    "end": 206.21666666666667,
+    "text": "dividendos. Tudo isso mexe no preço da\nação."
+  },
+  {
+    "start": 206.72166666666666,
+    "end": 210.75666666666666,
+    "text": "Por exemplo, se eu faço um split, eu\ndivido o preço da ação."
+  },
+  {
+    "start": 210.78166666666667,
+    "end": 213.89666666666668,
+    "text": "Se ela está a 40, eu divido e ela vira\nduas ações de 20."
+  },
+  {
+    "start": 214.12166666666667,
+    "end": 219.07666666666665,
+    "text": "Se eu faço um inplit, é o oposto: você\nestá com duas ações de 20, junta e vira"
+  },
+  {
+    "start": 219.10166666666666,
+    "end": 224.10666666666665,
+    "text": "uma de 40. O pagamento de dividendos\ntambém mexe no preço da ação."
+  },
+  {
+    "start": 224.13166666666666,
+    "end": 229.48666666666665,
+    "text": "Então, o meu orientador trouxe que isso\ninfluencia no"
+  },
+  {
+    "start": 229.51166666666666,
+    "end": 233.60666666666665,
+    "text": "preço da ação e trouxe esse tratamento."
+  },
+  {
+    "start": 234.07166666666666,
+    "end": 239.98666666666665,
+    "text": "Eu fiz uma revisão com 34 documentos e\nbuscas complementares"
+  },
+  {
+    "start": 240.01166666666666,
+    "end": 245.88666666666666,
+    "text": "para ajudar. Essa coleção ajudou a\norientar toda a minha pesquisa, mas"
+  },
+  {
+    "start": 245.91166666666666,
+    "end": 250.12666666666667,
+    "text": "os registros disponíveis não permitem\ndizer se ela cobre toda a literatura"
+  },
+  {
+    "start": 250.15166666666667,
+    "end": 254.38666666666668,
+    "text": "desse tema. Vamos falar apenas do que\nconseguimos achar aqui."
+  },
+  {
+    "start": 254.81166666666667,
+    "end": 259.94666666666666,
+    "text": "Falando agora sobre os dados e a divisão\ntemporal: foram"
+  },
+  {
+    "start": 259.97166666666664,
+    "end": 265.68666666666667,
+    "text": "5.198 observações, desde o dia"
+  },
+  {
+    "start": 265.71166666666664,
+    "end": 271.4266666666667,
+    "text": "3 de janeiro de 2000 até 30 de dezembro de\n2020."
+  },
+  {
+    "start": 271.5116666666667,
+    "end": 277.3066666666667,
+    "text": "Foram separadas 2.600 para treino, 1.299\npara"
+  },
+  {
+    "start": 277.33166666666665,
+    "end": 283.06666666666666,
+    "text": "validação e 1.299 para teste. Falando\nagora sobre a"
+  },
+  {
+    "start": 283.09166666666664,
+    "end": 288.9266666666667,
+    "text": "rede neural de estados de eco: ela é uma\nestrutura que vou chamar de ESN,"
+  },
+  {
+    "start": 288.95166666666665,
+    "end": 291.2266666666667,
+    "text": "porque em inglês é Echo State Network."
+  },
+  {
+    "start": 291.7116666666667,
+    "end": 296.9866666666667,
+    "text": "Podemos acompanhar o funcionamento da\nesquerda para a direita: temos Win, que"
+  },
+  {
+    "start": 297.01166666666666,
+    "end": 300.7466666666667,
+    "text": "são as conexões de entrada; W, que é o\nreservatório; e Wout."
+  },
+  {
+    "start": 301.2516666666666,
+    "end": 307.1166666666667,
+    "text": "Win e W se mantêm fixos no ajuste, e a\ngente faz uma"
+  },
+  {
+    "start": 307.14166666666665,
+    "end": 313.0366666666667,
+    "text": "estimativa apenas do cálculo da saída, que\né Wout."
+  },
+  {
+    "start": 313.3616666666666,
+    "end": 319.21666666666664,
+    "text": "A gente faz isso em regressão Ridge, para\ncontrolar o"
+  },
+  {
+    "start": 319.2416666666666,
+    "end": 322.66999999999996,
+    "text": "valor desses pesos. Isso torna o ajuste\nfinal muito mais rápido."
+  },
+  {
+    "start": 322.69499999999994,
+    "end": 324.12999999999994,
+    "text": "Ela não tem que ficar retreinando."
+  },
+  {
+    "start": 324.1549999999999,
+    "end": 328.89000000000004,
+    "text": "Como tudo já é fixo, você só dá uma\npassada, ela faz"
+  },
+  {
+    "start": 329.975,
+    "end": 334.61,
+    "text": "os cálculos no reservatório e a gente\ncalcula apenas a"
+  },
+  {
+    "start": 334.635,
+    "end": 339.66999999999996,
+    "text": "saída. Trazendo agora a busca genética de\nhiperparâmetros:"
+  },
+  {
+    "start": 339.69499999999994,
+    "end": 345.45000000000005,
+    "text": "para procurar essa melhor configuração, a\ngente usa um algoritmo"
+  },
+  {
+    "start": 345.475,
+    "end": 348.27,
+    "text": "genético, que trabalha com várias opções."
+  },
+  {
+    "start": 349.055,
+    "end": 354.33000000000004,
+    "text": "Ele avalia o erro de cada uma e produz\nnovas opções a partir daquelas que"
+  },
+  {
+    "start": 354.355,
+    "end": 358.25,
+    "text": "foram selecionadas. Esse processo se\nrepete ao longo das gerações."
+  },
+  {
+    "start": 360.86499999999995,
+    "end": 364.17999999999995,
+    "text": "Nos cromossomos que a gente está usando, a\ngente usa cinco tipos de"
+  },
+  {
+    "start": 364.2049999999999,
+    "end": 369.58000000000004,
+    "text": "cromossomos diferentes: o vazamento, o\nraio espectral, o"
+  },
+  {
+    "start": 369.605,
+    "end": 374.98,
+    "text": "descarte inicial, o tamanho do\nreservatório e o Ridge."
+  },
+  {
+    "start": 375.005,
+    "end": 380.52,
+    "text": "Esses cromossomos guardam cinco escolhas:"
+  },
+  {
+    "start": 382.7049999999999,
+    "end": 388.64,
+    "text": "quanto do estado anterior a rede deverá\nmanter, a escala das conexões"
+  },
+  {
+    "start": 388.66499999999996,
+    "end": 393.86,
+    "text": "internas, quantos estados iniciais são\ndescartados, o tamanho do reservatório"
+  },
+  {
+    "start": 393.885,
+    "end": 399.78000000000003,
+    "text": "e a regularização da saída. A avaliação\ncombina o erro de treino com"
+  },
+  {
+    "start": 399.805,
+    "end": 402.8,
+    "text": "o de validação, dando mais peso à\nvalidação."
+  },
+  {
+    "start": 403.12499999999994,
+    "end": 406.5,
+    "text": "O sistema também usa o hipercubo latino, o\nLHS, que"
+  },
+  {
+    "start": 407.78499999999997,
+    "end": 413.12,
+    "text": "distribui essas opções iniciais, e o\nmecanismo de cataclismo para"
+  },
+  {
+    "start": 413.145,
+    "end": 416.64000000000004,
+    "text": "renovar as soluções e não ficar estagnado."
+  },
+  {
+    "start": 418.36499999999995,
+    "end": 424.3,
+    "text": "Falando agora sobre as cinco ondas\nexperimentais, eu separei"
+  },
+  {
+    "start": 425.265,
+    "end": 429.16,
+    "text": "distribuições em ondas de execuções."
+  },
+  {
+    "start": 429.545,
+    "end": 433.86,
+    "text": "As que mais se pareciam, eu coloquei para\nserem executadas juntas, para fazer"
+  },
+  {
+    "start": 433.885,
+    "end": 437.96000000000004,
+    "text": "uma comparação melhor. Foram organizados\ncinco grupos."
+  },
+  {
+    "start": 438.86499999999995,
+    "end": 444.66,
+    "text": "As duas primeiras ondas tiveram nove\nexecuções cada e"
+  },
+  {
+    "start": 444.685,
+    "end": 447.88000000000005,
+    "text": "exploraram famílias de distribuições com\ncomportamentos diferentes."
+  },
+  {
+    "start": 448.34499999999997,
+    "end": 452.66,
+    "text": "A terceira teve seis configurações\nrelacionadas à esparsidade, isto é, à"
+  },
+  {
+    "start": 452.685,
+    "end": 454.84000000000003,
+    "text": "presença de conexões com peso zero."
+  },
+  {
+    "start": 455.32499999999993,
+    "end": 459.04,
+    "text": "A quarta teve seis controles de\nreferência."
+  },
+  {
+    "start": 459.725,
+    "end": 464.79999999999995,
+    "text": "A quinta reuniu 15 configurações com\ndistribuições ajustadas aos dados de"
+  },
+  {
+    "start": 464.82499999999993,
+    "end": 470.62,
+    "text": "treino. Quando aparece uma combinação como\nLaplace com Normal, o primeiro"
+  },
+  {
+    "start": 470.645,
+    "end": 473.3,
+    "text": "nome indica como foram gerados os pesos de\nentrada."
+  },
+  {
+    "start": 473.685,
+    "end": 477.74,
+    "text": "O segundo indica os pesos do reservatório,\ne essa é a ordem que eu vou usar"
+  },
+  {
+    "start": 477.765,
+    "end": 481.62,
+    "text": "nos relatórios. Cada execução também\nenvolve uma configuração e um sorteio de"
+  },
+  {
+    "start": 481.645,
+    "end": 486.78000000000003,
+    "text": "pesos. Por isso, uma diferença no erro não\npode ser atribuída somente ao nome"
+  },
+  {
+    "start": 486.805,
+    "end": 491.0266666666667,
+    "text": "dessa distribuição. Não tem como a gente\nfalar: “uma"
+  },
+  {
+    "start": 491.0516666666667,
+    "end": 494.6066666666667,
+    "text": "distribuição é muito superior à outra”."
+  },
+  {
+    "start": 495.41166666666663,
+    "end": 499.32666666666665,
+    "text": "Agora falando sobre os três blocos de\nevidência: antes dos resultados, é"
+  },
+  {
+    "start": 499.35166666666663,
+    "end": 503.08666666666664,
+    "text": "importante separar esses três blocos que\nquero trazer."
+  },
+  {
+    "start": 504.6716666666667,
+    "end": 510.3866666666666,
+    "text": "O primeiro é o histórico das 45 execuções,\nque permite comparar os"
+  },
+  {
+    "start": 510.4116666666666,
+    "end": 515.7966666666667,
+    "text": "resultados das ondas. O segundo é uma\nrodada complementar para comparar os"
+  },
+  {
+    "start": 515.8216666666667,
+    "end": 519.5166666666667,
+    "text": "modelos nas mesmas datas e aplicar um\nteste estatístico."
+  },
+  {
+    "start": 519.7216666666667,
+    "end": 523.0966666666667,
+    "text": "Nela, os pesos foram gerados novamente com\numa semente fixa."
+  },
+  {
+    "start": 523.2416666666667,
+    "end": 527.0566666666666,
+    "text": "A semente é um número que controla o\nsorteio e permite repeti-lo."
+  },
+  {
+    "start": 528.2616666666667,
+    "end": 532.2566666666667,
+    "text": "O terceiro é um lote de 200 gerações,\nusado apenas para ilustrar o"
+  },
+  {
+    "start": 532.2816666666666,
+    "end": 536.1166666666667,
+    "text": "funcionamento e as previsões. Ele fica\nfora dessas 45 execuções."
+  },
+  {
+    "start": 536.5416666666666,
+    "end": 540.8866666666667,
+    "text": "Portanto, os números do histórico, o teste\nestatístico e a figura ilustrativa"
+  },
+  {
+    "start": 540.9116666666666,
+    "end": 545.4466666666667,
+    "text": "vêm de conjuntos diferentes. Vou manter\nessa separação para explicar cada"
+  },
+  {
+    "start": 545.4716666666667,
+    "end": 550.7566666666667,
+    "text": "resultado. Falando agora do ESNAUTO,"
+  },
+  {
+    "start": 551.7816666666668,
+    "end": 555.6766666666666,
+    "text": "vou mostrar aqui também o software que\ndesenvolvi."
+  },
+  {
+    "start": 556.1616666666666,
+    "end": 558.2166666666667,
+    "text": "Ele faz todo esse levantamento."
+  },
+  {
+    "start": 558.9416666666668,
+    "end": 562.1766666666666,
+    "text": "Todos os códigos em R foram fornecidos\npelo meu orientador."
+  },
+  {
+    "start": 562.7216666666667,
+    "end": 568.3366666666667,
+    "text": "Eu tinha que entrar num software chamado\nRStudio, que rodava"
+  },
+  {
+    "start": 568.9516666666668,
+    "end": 572.4666666666667,
+    "text": "esses scripts que o orientador me\ndisponibilizou."
+  },
+  {
+    "start": 572.7516666666667,
+    "end": 576.0066666666668,
+    "text": "Só que, sempre que eu rodava, ele criava\num arquivo; eu tinha que alterar o"
+  },
+  {
+    "start": 576.0316666666668,
+    "end": 578.2333333333333,
+    "text": "nome e salvar numa pasta diferente."
+  },
+  {
+    "start": 578.2583333333333,
+    "end": 580.2333333333332,
+    "text": "Dava muito trabalho para rodar esses\nscripts."
+  },
+  {
+    "start": 580.2783333333334,
+    "end": 584.7133333333334,
+    "text": "Então eu desenvolvi, com as técnicas de\nEngenharia de Software que aprendi ao"
+  },
+  {
+    "start": 584.7383333333333,
+    "end": 589.9133333333333,
+    "text": "decorrer do curso, um aplicativo que roda\ntodos esses"
+  },
+  {
+    "start": 589.9383333333333,
+    "end": 595.8533333333335,
+    "text": "scripts em R. Tanto a criação da"
+  },
+  {
+    "start": 595.8783333333334,
+    "end": 601.4133333333333,
+    "text": "rede neural quanto a busca por\nconfigurações melhores do algoritmo"
+  },
+  {
+    "start": 601.4383333333333,
+    "end": 606.8733333333333,
+    "text": "genético. Ele salva tudo isso, mantém\nmétricas, histórico, visualização"
+  },
+  {
+    "start": 606.8983333333333,
+    "end": 610.1333333333333,
+    "text": "e os registros mais organizados."
+  },
+  {
+    "start": 610.1583333333333,
+    "end": 616.1733333333333,
+    "text": "É só apertar um botão: ele vai rodar com\nas coisas que você especificar,"
+  },
+  {
+    "start": 617.6583333333333,
+    "end": 620.4133333333333,
+    "text": "executa tudo e guarda tudo. É uma beleza."
+  },
+  {
+    "start": 621.0983333333334,
+    "end": 625.9933333333333,
+    "text": "Estou rodando de forma local, aqui na\nminha máquina, no navegador Google"
+  },
+  {
+    "start": 626.0183333333333,
+    "end": 631.2733333333334,
+    "text": "Chrome. Aqui é o ESNAUTO"
+  },
+  {
+    "start": 632.1083333333335,
+    "end": 637.1033333333335,
+    "text": "Benchmark Studio. Eu estava fazendo\nalgumas comparações com a VALE3; depois"
+  },
+  {
+    "start": 637.1283333333334,
+    "end": 643.0633333333334,
+    "text": "cito um pouco sobre ela. Já configurei as"
+  },
+  {
+    "start": 643.0883333333334,
+    "end": 644.7633333333334,
+    "text": "separações que tinha citado antes."
+  },
+  {
+    "start": 645.5083333333333,
+    "end": 650.9433333333335,
+    "text": "Com um botão, fazemos a organização geral\ndo modelo de"
+  },
+  {
+    "start": 650.9683333333335,
+    "end": 655.3233333333334,
+    "text": "otimização, das configurações e\ndistribuições estocásticas."
+  },
+  {
+    "start": 655.3483333333334,
+    "end": 659.7033333333334,
+    "text": "Estou usando os quatro cenários que tinha\ndito anteriormente."
+  },
+  {
+    "start": 660.0483333333334,
+    "end": 662.2633333333334,
+    "text": "Todas as ondas que trouxe aqui."
+  },
+  {
+    "start": 662.5883333333334,
+    "end": 668.2433333333333,
+    "text": "Se eu ativo ou não a regeneração por\ncataclismo; o perfil de treinamento de"
+  },
+  {
+    "start": 668.2683333333333,
+    "end": 671.4433333333334,
+    "text": "deep learning, LSTM e GRU. Tudo aqui é\nfeito."
+  },
+  {
+    "start": 671.5883333333334,
+    "end": 677.1233333333333,
+    "text": "Quando clico em iniciar, ele vai rodar\ntudo o que expliquei antes e"
+  },
+  {
+    "start": 677.1483333333333,
+    "end": 683.0833333333335,
+    "text": "trazer para mim. Também traz o resumo da\núltima execução: tudo organizado, a"
+  },
+  {
+    "start": 683.1083333333335,
+    "end": 686.0433333333333,
+    "text": "configuração, a distribuição e o erro."
+  },
+  {
+    "start": 686.0683333333333,
+    "end": 691.4433333333335,
+    "text": "Já traz tudo organizado de forma que seja\nmais fácil analisar esses"
+  },
+  {
+    "start": 691.4683333333335,
+    "end": 697.4433333333335,
+    "text": "resultados. Essa é a minha contribuição\npara a Engenharia"
+  },
+  {
+    "start": 697.4683333333335,
+    "end": 702.3233333333334,
+    "text": "de Software. Esse software ficará\ndisponível para qualquer pessoa que quiser"
+  },
+  {
+    "start": 702.3483333333334,
+    "end": 706.4033333333333,
+    "text": "baixar direto do GitHub e executar os\nmesmos testes que eu."
+  },
+  {
+    "start": 708.0083333333333,
+    "end": 711.8833333333334,
+    "text": "Agora avançando para os critérios de\navaliação."
+  },
+  {
+    "start": 712.2483333333333,
+    "end": 715.8433333333332,
+    "text": "Eu usei três medidas para avaliar as\nprevisões."
+  },
+  {
+    "start": 716.1883333333333,
+    "end": 722.1033333333335,
+    "text": "O MAE mostra o tamanho médio do erro,\ntanto das previsões acima"
+  },
+  {
+    "start": 722.1283333333334,
+    "end": 724.3233333333333,
+    "text": "quanto abaixo do preço observado."
+  },
+  {
+    "start": 724.5283333333334,
+    "end": 730.2233333333334,
+    "text": "Quanto menor, melhor. Por exemplo, um MAE\nde 30 centavos significa um desvio"
+  },
+  {
+    "start": 730.2483333333333,
+    "end": 735.5833333333335,
+    "text": "médio nessa escala de preço. Ele pode ser\ntanto 30 centavos"
+  },
+  {
+    "start": 735.6083333333335,
+    "end": 739.3833333333334,
+    "text": "acima quanto 30 centavos abaixo do preço\nque vai ser observado."
+  },
+  {
+    "start": 739.5083333333333,
+    "end": 741.7633333333334,
+    "text": "Ele faz uma média desses erros em módulo."
+  },
+  {
+    "start": 742.2683333333333,
+    "end": 748.1233333333333,
+    "text": "O RMSE dá mais peso a erros grandes, e o\nR² descreve"
+  },
+  {
+    "start": 748.1483333333333,
+    "end": 752.0233333333334,
+    "text": "quanto essas previsões acompanhavam os\npreços observados."
+  },
+  {
+    "start": 752.0483333333334,
+    "end": 756.0833333333333,
+    "text": "Mas exige cuidado: os preços próximos no\ntempo já podem ser parecidos."
+  },
+  {
+    "start": 756.5483333333334,
+    "end": 761.2033333333335,
+    "text": "Também medi o tempo para procurar uma\nconfiguração e o tempo de ajuste da rede"
+  },
+  {
+    "start": 761.2283333333335,
+    "end": 764.3633333333333,
+    "text": "já escolhida. Resultados históricos de\nprevisão."
+  },
+  {
+    "start": 764.5083333333333,
+    "end": 766.1433333333333,
+    "text": "O MAE é o nosso mais importante."
+  },
+  {
+    "start": 766.1683333333333,
+    "end": 771.5833333333335,
+    "text": "Quanto menor, melhor; mais próximo de\nacertar o preço de fechamento do próximo"
+  },
+  {
+    "start": 771.6083333333335,
+    "end": 777.4633333333334,
+    "text": "dia. A configuração escolhida foi a ESN\nLaplace com Normal,"
+  },
+  {
+    "start": 777.6483333333333,
+    "end": 782.9233333333333,
+    "text": "que teve cerca de R$ 0,32 de erro."
+  },
+  {
+    "start": 785.0283333333334,
+    "end": 790.6166666666667,
+    "text": "GRU e LSTM erraram mais. Tiveram um erro\nmaior: R$ 0,35"
+  },
+  {
+    "start": 790.6416666666667,
+    "end": 794.2433333333333,
+    "text": "da GRU, muito próximo até da ESN, e R$\n0,45 da LSTM."
+  },
+  {
+    "start": 795.9316666666667,
+    "end": 801.8566666666667,
+    "text": "A ESN traz um resultado superior ao da GRU"
+  },
+  {
+    "start": 801.8816666666667,
+    "end": 807.2166666666667,
+    "text": "e da LSTM. Os resultados são muito\nfavoráveis nos registros, mas a"
+  },
+  {
+    "start": 807.2416666666667,
+    "end": 812.8766666666667,
+    "text": "ESN passa por essa busca externa de\nconfigurações do algoritmo genético,"
+  },
+  {
+    "start": 812.9016666666666,
+    "end": 818.8366666666668,
+    "text": "e GRU e LSTM não. Agora falando sobre a"
+  },
+  {
+    "start": 818.8616666666668,
+    "end": 824.7566666666668,
+    "text": "inicialização e os ganhos observados: a\ncomparação é entre duas configurações"
+  },
+  {
+    "start": 824.7816666666668,
+    "end": 830.7166666666667,
+    "text": "da própria ESN. A referência usada é a\nNormal, a distribuição Normal"
+  },
+  {
+    "start": 830.7416666666667,
+    "end": 832.4566666666667,
+    "text": "tanto na entrada quanto no reservatório."
+  },
+  {
+    "start": 832.7416666666667,
+    "end": 835.6366666666667,
+    "text": "A outra é Laplace na entrada e Normal no\nreservatório."
+  },
+  {
+    "start": 835.8816666666667,
+    "end": 841.5966666666667,
+    "text": "As barras são muito próximas, e os dois\nerros médios ficam perto de"
+  },
+  {
+    "start": 841.6216666666667,
+    "end": 847.3366666666668,
+    "text": "33 centavos. Usando os valores completos,\na redução"
+  },
+  {
+    "start": 847.3616666666668,
+    "end": 853.0366666666667,
+    "text": "foi de 0,35%. Houve uma melhora"
+  },
+  {
+    "start": 853.0616666666667,
+    "end": 854.8566666666668,
+    "text": "registrada, mas ela foi pequena."
+  },
+  {
+    "start": 855.1616666666666,
+    "end": 859.7566666666668,
+    "text": "Vale olhar a escala do gráfico para não\nentender essa diferença como maior do"
+  },
+  {
+    "start": 859.7816666666668,
+    "end": 865.5566666666666,
+    "text": "que ela é. Outra combinação, Laplace com\nCauchy, apresentou o menor RMSE."
+  },
+  {
+    "start": 865.7216666666667,
+    "end": 870.8366666666668,
+    "text": "Isso mostra que a escolha da configuração\ntambém depende da medida usada."
+  },
+  {
+    "start": 870.8616666666668,
+    "end": 875.0566666666667,
+    "text": "Esses testes favorecem algumas\nconfigurações, mas não mostram que uma"
+  },
+  {
+    "start": 875.0816666666667,
+    "end": 878.3566666666668,
+    "text": "distribuição sempre será melhor que as\noutras."
+  },
+  {
+    "start": 879.2416666666667,
+    "end": 885.1766666666668,
+    "text": "Falando agora sobre o exemplo visual\npreservado: esse gráfico ajuda a"
+  },
+  {
+    "start": 885.2016666666668,
+    "end": 890.9966666666667,
+    "text": "visualizar uma previsão. Uma curva\napresenta o preço observado e a"
+  },
+  {
+    "start": 891.0216666666666,
+    "end": 896.0766666666667,
+    "text": "outra, o preço previsto. Se a gente\nanalisar, a azul é"
+  },
+  {
+    "start": 896.1016666666667,
+    "end": 901.4566666666667,
+    "text": "mais grossa do que a preta, porque a"
+  },
+  {
+    "start": 901.4816666666667,
+    "end": 907.4966666666667,
+    "text": "preta é apenas o observado: é o ponto\nexato."
+  },
+  {
+    "start": 907.5616666666667,
+    "end": 913.3366666666668,
+    "text": "O previsto tem um erro médio; ele pode\nestar errado para o"
+  },
+  {
+    "start": 913.3616666666668,
+    "end": 919.2766666666666,
+    "text": "positivo ou para o negativo. A figura\nmostrada abaixo"
+  },
+  {
+    "start": 919.9616666666667,
+    "end": 922.7366666666667,
+    "text": "também detalha os últimos cem pregões\navaliados."
+  },
+  {
+    "start": 923.7016666666668,
+    "end": 928.0966666666667,
+    "text": "As curvas próximas ajudam a enxergar o\ncomportamento da rede, mas essa"
+  },
+  {
+    "start": 928.1216666666667,
+    "end": 932.0566666666666,
+    "text": "aparência não basta. Os preços de dias\npróximos já tendem a ser parecidos."
+  },
+  {
+    "start": 932.2016666666668,
+    "end": 935.5766666666667,
+    "text": "Por isso considero o gráfico junto com as\nmedidas de erro, sempre"
+  },
+  {
+    "start": 935.6016666666667,
+    "end": 937.7566666666667,
+    "text": "identificando o teste de onde ele veio."
+  },
+  {
+    "start": 938.6716666666667,
+    "end": 942.9066666666666,
+    "text": "Falando agora sobre a rodada controlada\ncomplementar."
+  },
+  {
+    "start": 943.3316666666667,
+    "end": 947.2466666666667,
+    "text": "Para fazer essa comparação estatística,\npreparei uma rodada complementar com"
+  },
+  {
+    "start": 947.2716666666666,
+    "end": 950.3466666666667,
+    "text": "os arquivos necessários para conferir as\nprevisões de cada modelo."
+  },
+  {
+    "start": 950.3716666666667,
+    "end": 956.3466666666667,
+    "text": "A ESN usou uma configuração de referência\nLaplace com Normal, com 22"
+  },
+  {
+    "start": 956.3716666666667,
+    "end": 961.9066666666668,
+    "text": "neurônios no reservatório. Mantive essa\nescolha e gerei novos pesos usando a"
+  },
+  {
+    "start": 961.9316666666667,
+    "end": 965.4866666666667,
+    "text": "semente indicada no slide: 20260926."
+  },
+  {
+    "start": 966.8616666666668,
+    "end": 972.6766666666668,
+    "text": "Essa rodada não repetiu a busca genética,\nporque eu já tinha achado uma busca"
+  },
+  {
+    "start": 972.7016666666668,
+    "end": 976.6566666666668,
+    "text": "boa. A saída da rede foi ajustada apenas\ncom dados de treino, e o"
+  },
+  {
+    "start": 976.6816666666667,
+    "end": 980.7166666666667,
+    "text": "processamento seguiu a ordem das datas\npela validação e pelo teste."
+  },
+  {
+    "start": 981.0616666666667,
+    "end": 985.2966666666666,
+    "text": "Cada modelo produziu 1.299 previsões."
+  },
+  {
+    "start": 986.1416666666667,
+    "end": 991.1766666666668,
+    "text": "Depois de alinhar os arquivos pelas datas,\na comparação usou 1.298 datas"
+  },
+  {
+    "start": 991.2016666666668,
+    "end": 996.3366666666667,
+    "text": "comuns, entre setembro de 2015 e dezembro\nde 2020."
+  },
+  {
+    "start": 996.8216666666667,
+    "end": 1000.4166666666666,
+    "text": "Os erros dos três modelos foram comparados\nnos mesmos dias."
+  },
+  {
+    "start": 1002.1216666666667,
+    "end": 1007.8366666666668,
+    "text": "Falando agora sobre os erros na janela\ncomum controlada: aqui estão os"
+  },
+  {
+    "start": 1007.8616666666668,
+    "end": 1009.5566666666666,
+    "text": "erros dessa rodada complementar."
+  },
+  {
+    "start": 1009.6616666666666,
+    "end": 1014.6566666666668,
+    "text": "No gráfico à esquerda, o MAE da ESN ficou\nperto de 33 centavos; o da GRU ficou"
+  },
+  {
+    "start": 1014.6816666666667,
+    "end": 1018.8766666666667,
+    "text": "cerca de 42; e o da LSTM, 47 centavos."
+  },
+  {
+    "start": 1019.0216666666666,
+    "end": 1021.1366666666667,
+    "text": "No gráfico à direita está o RMSE."
+  },
+  {
+    "start": 1021.4416666666668,
+    "end": 1026.6166666666666,
+    "text": "A ordem foi a mesma: ESN teve o menor\nerro, seguida de GRU e LSTM."
+  },
+  {
+    "start": 1026.7816666666665,
+    "end": 1030.0166666666667,
+    "text": "Esses números são da nova execução, com os\nnovos pesos."
+  },
+  {
+    "start": 1030.1616666666666,
+    "end": 1033.8966666666665,
+    "text": "Não substituem os valores históricos\napresentados antes."
+  },
+  {
+    "start": 1034.1616666666666,
+    "end": 1038.4166666666665,
+    "text": "O resultado que podemos confirmar é que,\nnessa comparação com as mesmas datas,"
+  },
+  {
+    "start": 1038.7816666666665,
+    "end": 1042.4566666666665,
+    "text": "a ESN selecionada teve menor erro nas duas\nmedidas."
+  },
+  {
+    "start": 1042.9816666666666,
+    "end": 1046.7966666666666,
+    "text": "O próximo passo foi examinar essa\ndiferença com um teste estatístico."
+  },
+  {
+    "start": 1047.6316666666667,
+    "end": 1051.4266666666665,
+    "text": "Na comparação estatística de acurácia dos\nmodelos, eu usei o teste de"
+  },
+  {
+    "start": 1051.4516666666666,
+    "end": 1054.0066666666664,
+    "text": "Diebold–Mariano para comparar os erros."
+  },
+  {
+    "start": 1054.7916666666665,
+    "end": 1059.8266666666664,
+    "text": "A pergunta do teste é se eles têm a mesma\nacurácia média, considerando a forma"
+  },
+  {
+    "start": 1059.8516666666665,
+    "end": 1065.8066666666664,
+    "text": "de medir o erro escolhida. Fiz quatro\ncomparações: ESN com GRU e ESN"
+  },
+  {
+    "start": 1065.8316666666665,
+    "end": 1071.7666666666664,
+    "text": "com LSTM, tanto com erro absoluto quanto\ncom erro quadrático."
+  },
+  {
+    "start": 1071.7916666666665,
+    "end": 1076.4766666666665,
+    "text": "Por isso ficaram quatro. Em todas, o teste\nrejeitou a igualdade no nível"
+  },
+  {
+    "start": 1076.5016666666666,
+    "end": 1082.3766666666668,
+    "text": "individual de 5%. Como a ESN teve menor\nperda média nos quatro contrastes, o"
+  },
+  {
+    "start": 1082.4016666666669,
+    "end": 1085.9966666666664,
+    "text": "resultado foi favorável a ela nessa\nrodada."
+  },
+  {
+    "start": 1086.1216666666667,
+    "end": 1090.1566666666665,
+    "text": "Também mostro os valores de p obtidos no\nteste."
+  },
+  {
+    "start": 1091.2416666666668,
+    "end": 1096.2166666666667,
+    "text": "Mas há limites nessa análise: foi usado\napenas um único sorteio controlado,"
+  },
+  {
+    "start": 1096.2416666666668,
+    "end": 1101.6766666666665,
+    "text": "sem correção para as quatro comparações, e\no cálculo considerou defasagem"
+  },
+  {
+    "start": 1101.7016666666666,
+    "end": 1104.7166666666665,
+    "text": "zero. A configuração também veio da busca\nhistórica."
+  },
+  {
+    "start": 1104.8616666666667,
+    "end": 1110.7966666666664,
+    "text": "O teste apoia o resultado nesta rodada,\nmas não demonstra superioridade em"
+  },
+  {
+    "start": 1110.8216666666665,
+    "end": 1116.7966666666664,
+    "text": "qualquer outra situação. Falando agora\nsobre o custo de ajuste"
+  },
+  {
+    "start": 1116.8216666666665,
+    "end": 1121.2966666666666,
+    "text": "e o custo da busca: o resultado de tempo\ntem duas partes."
+  },
+  {
+    "start": 1121.5416666666665,
+    "end": 1126.2566666666664,
+    "text": "Depois de escolher a configuração, ajustar\na ESN levou cerca de cinco"
+  },
+  {
+    "start": 1126.2816666666665,
+    "end": 1132.1566666666665,
+    "text": "centésimos de segundo. Os tempos\nregistrados para GRU e LSTM foram,"
+  },
+  {
+    "start": 1132.1816666666666,
+    "end": 1137.3966666666668,
+    "text": "respectivamente, cerca de 29 e 35\nsegundos."
+  },
+  {
+    "start": 1138.5916666666665,
+    "end": 1144.2866666666666,
+    "text": "Nessa etapa, a ESN foi rápida porque o\najuste se concentra nos pesos de saída."
+  },
+  {
+    "start": 1144.6516666666669,
+    "end": 1148.6066666666666,
+    "text": "Mas antes foi preciso encontrar uma boa\nconfiguração."
+  },
+  {
+    "start": 1148.9516666666666,
+    "end": 1154.6666666666665,
+    "text": "A busca genética levou de 21 a 102 minutos\npor cenário."
+  },
+  {
+    "start": 1154.7916666666665,
+    "end": 1159.6066666666666,
+    "text": "Somando as 45 buscas, foram\naproximadamente 38 horas"
+  },
+  {
+    "start": 1159.6316666666667,
+    "end": 1164.2266666666665,
+    "text": "nessas buscas genéticas."
+  },
+  {
+    "start": 1166.0916666666665,
+    "end": 1170.2066666666665,
+    "text": "Retomando as hipóteses: a primeira recebeu\napoio."
+  },
+  {
+    "start": 1170.2316666666666,
+    "end": 1176.0066666666664,
+    "text": "A ESN foi competitiva com GRU e LSTM nos\nresultados históricos, e a"
+  },
+  {
+    "start": 1176.0316666666665,
+    "end": 1180.2066666666665,
+    "text": "rodada complementar também apresentou\ndiferenças favoráveis a ela."
+  },
+  {
+    "start": 1180.7316666666666,
+    "end": 1185.4066666666665,
+    "text": "A segunda recebeu apoio pelo ajuste rápido\nda rede, depois de"
+  },
+  {
+    "start": 1185.4316666666666,
+    "end": 1191.3066666666664,
+    "text": "escolhida a configuração. A terceira\nmostrou que algumas"
+  },
+  {
+    "start": 1191.3316666666665,
+    "end": 1197.1066666666666,
+    "text": "combinações tiveram erro menor que a\nreferência Normal com Normal."
+  },
+  {
+    "start": 1197.8716666666667,
+    "end": 1200.5066666666664,
+    "text": "A melhora foi pequena, mas está\nregistrada."
+  },
+  {
+    "start": 1201.0916666666665,
+    "end": 1205.6866666666665,
+    "text": "Isso ajuda a identificar configurações que\nmerecem continuar sendo estudadas."
+  },
+  {
+    "start": 1206.2716666666665,
+    "end": 1210.3666666666666,
+    "text": "Na quarta, os recursos para explorar\nsoluções foram incorporados ao sistema,"
+  },
+  {
+    "start": 1210.7716666666665,
+    "end": 1213.7866666666666,
+    "text": "mas sua contribuição isolada ainda precisa\nser medida."
+  },
+  {
+    "start": 1214.0416666666665,
+    "end": 1219.6766666666665,
+    "text": "Na quinta, observei erros próximos entre\nconfigurações da última onda."
+  },
+  {
+    "start": 1220.0616666666665,
+    "end": 1225.3566666666666,
+    "text": "Para afirmar a estabilidade quando o\nsorteio dos pesos muda, serão necessárias"
+  },
+  {
+    "start": 1225.3816666666667,
+    "end": 1229.8766666666668,
+    "text": "repetições. O trabalho responde às\nhipóteses com resultados concretos e"
+  },
+  {
+    "start": 1229.9016666666669,
+    "end": 1233.3166666666666,
+    "text": "identifica o que fica para os próximos\ntestes."
+  },
+  {
+    "start": 1234.6416666666667,
+    "end": 1240.4766666666665,
+    "text": "Vamos falar sobre o que esse trabalho\nentrega: uma avaliação de 45 execuções"
+  },
+  {
+    "start": 1240.5016666666666,
+    "end": 1245.8566666666666,
+    "text": "históricas da ESN com a ação PETR4,\norganizadas em cinco ondas."
+  },
+  {
+    "start": 1246.7016666666666,
+    "end": 1251.3766666666668,
+    "text": "Essa comparação mostrou configurações\ncompetitivas e diferenças de erro que"
+  },
+  {
+    "start": 1251.4016666666669,
+    "end": 1253.2566666666664,
+    "text": "ajudam a orientar novas escolhas."
+  },
+  {
+    "start": 1253.6416666666667,
+    "end": 1258.3766666666668,
+    "text": "Além disso, a rodada complementar permitiu\ncomparar os erros nas mesmas datas"
+  },
+  {
+    "start": 1258.4016666666669,
+    "end": 1260.3566666666666,
+    "text": "e aplicar o teste estatístico."
+  },
+  {
+    "start": 1260.5816666666665,
+    "end": 1265.5066666666664,
+    "text": "Na Engenharia de Software, minha\ncontribuição foi adaptar as rotinas em R"
+  },
+  {
+    "start": 1265.5316666666665,
+    "end": 1270.2166666666665,
+    "text": "fornecidas pelo orientador e desenvolver a\ninterface do ESNAUTO."
+  },
+  {
+    "start": 1270.2816666666665,
+    "end": 1276.1366666666665,
+    "text": "Com isso, configurações, acompanhamento\ndas execuções, gráficos e consulta"
+  },
+  {
+    "start": 1276.1616666666666,
+    "end": 1278.9366666666665,
+    "text": "ao histórico ficam reunidos num só\nsistema."
+  },
+  {
+    "start": 1279.6216666666667,
+    "end": 1283.7766666666664,
+    "text": "Também foram preservados os arquivos da\nrodada complementar, incluindo"
+  },
+  {
+    "start": 1283.8016666666665,
+    "end": 1287.7166666666665,
+    "text": "previsões, modelos e informações das\nexecuções."
+  },
+  {
+    "start": 1288.0516666666665,
+    "end": 1291.7466666666664,
+    "text": "Portanto, existem resultados registrados e\nmaterial para conferência."
+  },
+  {
+    "start": 1292.3316666666665,
+    "end": 1297.8266666666664,
+    "text": "A preservação parcial se refere a parte\ndos arquivos necessários para repetir"
+  },
+  {
+    "start": 1297.8516666666665,
+    "end": 1300.4666666666665,
+    "text": "exatamente as execuções antigas."
+  },
+  {
+    "start": 1300.9116666666666,
+    "end": 1304.1866666666665,
+    "text": "Não significa que os resultados do\ntrabalho foram perdidos."
+  },
+  {
+    "start": 1305.3916666666667,
+    "end": 1310.4266666666665,
+    "text": "Falando agora sobre o alcance dos\nresultados e os próximos testes: esses"
+  },
+  {
+    "start": 1310.4516666666666,
+    "end": 1315.7666666666667,
+    "text": "resultados se aplicam à PETR4, no período\ne nas condições estudadas."
+  },
+  {
+    "start": 1316.0716666666665,
+    "end": 1319.5066666666664,
+    "text": "Para saber se o comportamento se mantém em\noutras situações, precisamos testar"
+  },
+  {
+    "start": 1319.5316666666665,
+    "end": 1325.1866666666665,
+    "text": "outras sementes, períodos e ações, com\nesforço comparável na escolha dos"
+  },
+  {
+    "start": 1325.2116666666666,
+    "end": 1330.4966666666664,
+    "text": "modelos. As execuções antigas têm\nresultados registrados, mas parte das"
+  },
+  {
+    "start": 1330.5216666666665,
+    "end": 1333.1566666666665,
+    "text": "matrizes e dos vetores não foi preservada."
+  },
+  {
+    "start": 1333.4816666666666,
+    "end": 1337.7366666666665,
+    "text": "A rodada complementar ficou com registros\nmais completos para conferência."
+  },
+  {
+    "start": 1337.9616666666666,
+    "end": 1341.6366666666665,
+    "text": "A revisão bibliográfica também tem\nregistros parciais de seleção."
+  },
+  {
+    "start": 1341.9416666666666,
+    "end": 1347.1966666666665,
+    "text": "Ainda precisamos separar a contribuição de\ncada componente e comparar com a"
+  },
+  {
+    "start": 1347.2216666666666,
+    "end": 1349.5566666666664,
+    "text": "previsão simples que repete o último\npreço."
+  },
+  {
+    "start": 1349.5816666666665,
+    "end": 1353.9166666666665,
+    "text": "Estratégias de investimento e\nrentabilidade exigem outra avaliação."
+  },
+  {
+    "start": 1354.3816666666667,
+    "end": 1358.5966666666666,
+    "text": "Aqui as conclusões tratam do erro de\nprevisão, do tempo de ajuste e da"
+  },
+  {
+    "start": 1358.6216666666667,
+    "end": 1364.2666666666664,
+    "text": "aplicação desenvolvida. A partir desses\nresultados, o próximo passo é"
+  },
+  {
+    "start": 1364.2916666666665,
+    "end": 1370.0066666666664,
+    "text": "verificar quanto eles se mantêm quando\nmudamos as condições: as ações, o"
+  },
+  {
+    "start": 1370.0316666666665,
+    "end": 1375.2466666666664,
+    "text": "período e a base de dados. Isso inclui\nrepetir com outras"
+  },
+  {
+    "start": 1375.2716666666665,
+    "end": 1377.6466666666668,
+    "text": "sementes e tudo o que eu disse."
+  },
+  {
+    "start": 1377.9516666666666,
+    "end": 1383.8866666666665,
+    "text": "Também é importante comparar os modelos\ncom esforço semelhante de otimização e"
+  },
+  {
+    "start": 1383.9116666666666,
+    "end": 1387.6666666666665,
+    "text": "avaliar os componentes da busca\nseparadamente, mantendo as outras"
+  },
+  {
+    "start": 1387.6916666666666,
+    "end": 1392.9266666666665,
+    "text": "condições iguais. No software, a evolução\nprevista é alterar o nome ESNAUTO,"
+  },
+  {
+    "start": 1392.9516666666666,
+    "end": 1398.6266666666668,
+    "text": "que foi um nome genérico que achei, para\nJANUS, que achei mais"
+  },
+  {
+    "start": 1398.6516666666669,
+    "end": 1402.5066666666664,
+    "text": "adequado, com melhorias na interface e na\norganização dos arquivos de"
+  },
+  {
+    "start": 1402.5316666666665,
+    "end": 1408.0266666666664,
+    "text": "execução. A VALE3 também aparece como\nextensão experimental, fora dos"
+  },
+  {
+    "start": 1408.0516666666665,
+    "end": 1410.5466666666666,
+    "text": "resultados principais desta apresentação."
+  },
+  {
+    "start": 1410.6716666666666,
+    "end": 1414.7866666666664,
+    "text": "Essas frentes dão continuidade ao que foi\nconstruído e precisam de testes"
+  },
+  {
+    "start": 1414.8116666666665,
+    "end": 1420.5466666666664,
+    "text": "próprios. As conclusões agora para a\nPETR4: o"
+  },
+  {
+    "start": 1420.5716666666665,
+    "end": 1423.8466666666666,
+    "text": "trabalho mostrou que a ESN foi uma\nalternativa competitiva para prever o"
+  },
+  {
+    "start": 1423.8716666666667,
+    "end": 1427.6266666666666,
+    "text": "fechamento da PETR4 nas condições\nestudadas."
+  },
+  {
+    "start": 1428.0116666666665,
+    "end": 1433.4866666666665,
+    "text": "No histórico, 44 das 45 tiveram MAE menor\nque os"
+  },
+  {
+    "start": 1433.5116666666665,
+    "end": 1436.8266666666666,
+    "text": "valores documentados para GRU e LSTM."
+  },
+  {
+    "start": 1437.0516666666665,
+    "end": 1441.8666666666666,
+    "text": "Na rodada complementar, a ESN teve menor\nerro, com apoio dos testes"
+  },
+  {
+    "start": 1441.8916666666667,
+    "end": 1443.3466666666666,
+    "text": "estatísticos daquela execução."
+  },
+  {
+    "start": 1443.6516666666669,
+    "end": 1449.4666666666667,
+    "text": "Outro resultado foi o ajuste rápido da\nrede selecionada, com o custo da busca"
+  },
+  {
+    "start": 1449.4916666666668,
+    "end": 1453.8266666666664,
+    "text": "apresentado separadamente. Minha\ncontribuição de Engenharia de Software foi"
+  },
+  {
+    "start": 1453.8516666666665,
+    "end": 1459.2066666666665,
+    "text": "adaptar essas rotinas e desenvolver a\ninterface ESNAUTO, reunindo"
+  },
+  {
+    "start": 1459.2316666666666,
+    "end": 1462.9066666666665,
+    "text": "configuração, acompanhamento e análise dos\ntestes."
+  },
+  {
+    "start": 1463.0816666666665,
+    "end": 1467.9366666666665,
+    "text": "O trabalho entrega resultados de previsão,\numa aplicação e registros para"
+  },
+  {
+    "start": 1467.9616666666666,
+    "end": 1471.5366666666666,
+    "text": "conferência. Essa base foi construída para\nos próximos estudos."
+  },
+  {
+    "start": 1471.7616666666665,
+    "end": 1475.1166666666666,
+    "text": "Agradeço a atenção da banca. Muito\nobrigado."
+  }
+]

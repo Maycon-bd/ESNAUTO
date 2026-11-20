@@ -1,0 +1,589 @@
+/* =========================================================================
+   content.js — THE ONLY FILE YOU NEED TO EDIT
+   -------------------------------------------------------------------------
+   Everything on this site is generated from the SITE object below.
+   Rules that make editing painless:
+     • To ADD an item   → copy one block inside an array and change the text.
+     • To REMOVE        → delete the block (mind the trailing comma).
+     • To REORDER       → move blocks up/down.
+     • To HIGHLIGHT your name in an author list → wrap it in ** like this:
+         authors: "Bin Miao, **Zhihua Deng**, Siew Hwa Chan"
+     • Leave a field as "" and it simply won't be rendered.
+     • Empty arrays show a friendly placeholder — nothing breaks.
+   NOTE: this file uses JS object/array syntax. Keep the commas and quotes.
+   ========================================================================= */
+
+const SITE = {
+
+  /* ------------------------------------------------------------------
+     0. SITE STATUS  ·  ★ 网站发布开关
+     ------------------------------------------------------------------
+       status: "online"        → 正常展示
+       status: "maintenance"   → 全站切换为"暂未开放"维护页（对全球所有访客生效）
+
+       ⚠️ 维护模式是"内容级"开关：改这里之后执行 publish.bat，
+          全世界访问到的都是维护页；改回 "online" 再发布一次即可恢复。
+          仅本机预览时，也可以在右上角齿轮面板里临时切换（只影响这台电脑）。
+     ------------------------------------------------------------------ */
+  site: {
+    status: "online",
+    maintenance: {
+      title: "This site is temporarily offline",
+      titleCn: "",
+      note: "The Author is updating this website. For enquiries, please use the email link below.",
+      noteCn: "",
+      email: "zhihua.deng@ntu.edu.sg"
+    }
+  },
+
+  /* ------------------------------------------------------------------
+     1. IDENTITY  · 姓名 / 头衔 / 单位 / 联系方式
+     ------------------------------------------------------------------ */
+  profile: {
+    name: "Dr. Zhihua Deng",
+    shortName: "Zhihua Deng",
+    /* ── 照片说明 ──────────────────────────────────────────────
+       · 放在 assets/img/ 下，改这一行即可换图
+       · 推荐 4:5 竖版半身照，800×1000，JPG < 200 KB
+       · 相框会自动居中裁切，object-position 固定在 16%（头部不会被切）
+       · profile.jpg 是已优化好的成品（82 KB）；profile.png 是你的原图备份
+       ───────────────────────────────────────────────────────── */
+    photo: "assets/img/profile.jpg",
+    photoAlt: "Portrait of Dr. Zhihua Deng",
+    badge: "ERI@N · NTU Singapore",
+    eyebrow: "Energy Research Institute @ NTU · Singapore",
+    title: "Senior Research Engineer I",
+    affiliation: "Energy Research Institute at NTU (ERI@N), Nanyang Technological University",
+    location: "Singapore 637141",
+    tagline: "Research on modelling, control and diagnostics of fuel cells, hydrogen production and ammonia-based "
+           + "energy systems, with applications in hybrid propulsion and energy management.",
+    email: "zhihua.deng@ntu.edu.sg",
+    /* 把下面的 URL 换成你自己的主页（留空则该按钮自动隐藏） */
+    links: {
+      scholar:  "",   // e.g. "https://scholar.google.com/citations?user=XXXX"
+      orcid:    "",   // e.g. "https://orcid.org/0000-0002-XXXX-XXXX"
+      scopus:   "",
+      linkedin: "",
+      github:   "",
+      researchgate: ""
+    },
+    cvFile: "",       // e.g. "assets/ZhihuaDeng_CV.pdf"  → 显示 "Download CV" 按钮
+    /* 顶部导航（可增删；href 必须与下面各 section 的 id 对应） */
+    nav: [
+      { href: "#home",          label: "Home" },
+      { href: "#about",         label: "About" },
+      { href: "#news",          label: "News" },
+      { href: "#research",      label: "Research" },
+      { href: "#media",         label: "Demos" },
+      { href: "#publications",  label: "Publications" },
+      { href: "#patents",       label: "Patents" },
+      { href: "#talks",         label: "Talks" },
+      { href: "#projects",      label: "Projects" },
+      { href: "#service",       label: "Service" },
+      { href: "#teaching",      label: "Teaching" },
+      { href: "#awards",        label: "Awards" },
+      { href: "#background",    label: "Background" },
+      { href: "#contact",       label: "Contact" }
+    ]
+  },
+
+  /* ------------------------------------------------------------------
+     2. HERO STATS  ·  首页数字（建议保持 4 个）
+     ------------------------------------------------------------------ */
+  stats: [
+    { value: "30",  label: "Publications" },
+    { value: "25",  label: "Journal articles" },
+    { value: "3",   label: "Granted patents" },
+    { value: "5",   label: "Funded projects" }
+  ],
+
+  /* ------------------------------------------------------------------
+     3. ABOUT  ·  个人简介（支持 **加粗**）
+     说明：采用第三人称学术简介；作者称谓使用 Dr. Deng / the Author。
+           职称 Senior Research Engineer I 中的 I 为职级，不作人称替换。
+     ------------------------------------------------------------------ */
+  about: {
+    externalProfile: {
+      label: "Dr. Zhihua Deng at AIone Lab",
+      role: "AI Engineer · Energy systems, robotics and embedded AI",
+      href: "https://aionelab.com/about/#our-team"
+    },
+    paragraphs: [
+      "Dr. Deng is a <strong>Senior Research Engineer I</strong> at the <strong>Energy Research Institute at NTU "
+      + "(ERI@N)</strong>, Nanyang Technological University, Singapore. His research focuses on "
+      + "<strong>electrochemical energy systems</strong>, including fuel cells, electrolysers and ammonia-based power "
+      + "systems, using mechanistic modelling, control theory and <strong>machine learning</strong>.",
+
+      "Research topics include <strong>control-oriented modelling</strong> of air-supply and thermal subsystems, "
+      + "<strong>model predictive and data-driven control</strong>, <strong>degradation modelling and remaining useful "
+      + "life estimation</strong>, and <strong>energy management</strong> for hybrid powertrains. Current projects "
+      + "include UAV propulsion, maritime energy systems and Unity–Simulink co-simulation.",
+
+      "Before joining NTU, Dr. Deng was a postdoctoral researcher at the <strong>Southern University of Science and "
+      + "Technology</strong>, and completed the Ph.D. at the <strong>Wuhan University of Technology</strong> with joint "
+      + "training at NTU. His publications include reviews of fuel-cell modelling and degradation prediction in "
+      + "<em>Renewable &amp; Sustainable Energy Reviews</em>. His academic service includes guest editing, "
+      + "editorial board membership and peer review."
+    ],
+    /* 右侧 Research Areas 标签 */
+    areas: [
+      "Renewable energy systems", "Artificial intelligence", "PEM fuel cells", "Solid oxide fuel cells",
+      "Green hydrogen", "Green ammonia", "Model predictive control", "Machine learning",
+      "Remaining useful life", "Energy management", "System optimisation", "Hybrid powertrains"
+    ],
+    /* 右侧 Facts 面板（键值对） */
+    facts: [
+      { k: "Current role",   v: "Senior Research Engineer I" },
+      { k: "Affiliation",    v: "ERI@N, NTU Singapore" },
+      { k: "Ph.D.",          v: "Wuhan Univ. of Technology" },
+      { k: "Joint training", v: "NTU, Singapore" },
+      { k: "Postdoc",        v: "SUSTech, Shenzhen" },
+      { k: "Focus",          v: "Fuel cells · Hydrogen · AI" }
+    ]
+  },
+
+  /* ------------------------------------------------------------------
+     4. NEWS  ·  最新动态（越靠上越新；可随时增删）
+     ------------------------------------------------------------------ */
+  news: [
+    { date: "2026-06", text: "Thematic presentation at the <b>25th World Hydrogen Energy Conference (WHEC 2026)</b>, Singapore." },
+    { date: "2026",    text: "Review on <b>PEMFC degradation prediction and RUL estimation</b> accepted in <i>Renewable &amp; Sustainable Energy Reviews</i> (IF 18.0)." },
+    { date: "2025-11", text: "Thematic presentation at the <b>8th ICIEV</b> (Energy Storage and Intelligent Vehicles), Singapore." },
+    { date: "2025-04", text: "Appointed <b>Guest Editor</b> of <i>Applied Sciences</i> (MDPI)." }
+  ],
+
+  /* ------------------------------------------------------------------
+     5. RESEARCH  ·  研究方向卡片（icon 可选：bolt / chip / drop / leaf / graph / ctrl）
+     ------------------------------------------------------------------ */
+  research: [
+    {
+      icon: "ctrl",
+      title: "Fuel-Cell Modelling &amp; Control",
+      desc: "Control-oriented and interpretable models of proton exchange membrane fuel cells — linear parameter-varying "
+          + "models, NARMAX identification, data-driven reconstruction of the air-supply subsystem, and model predictive "
+          + "control for oxygen starvation avoidance and temperature regulation.",
+      keywords: ["LPV", "NARMAX", "MPC", "Air supply", "Thermal"]
+    },
+    {
+      icon: "chip",
+      title: "AI for Diagnostics &amp; Lifetime Prediction",
+      desc: "Machine-learning and neuro-fuzzy methods for degradation trend prediction and remaining useful life estimation, "
+          + "including echo state networks, broad learning systems, ELM-autoencoders and hybrid models.",
+      keywords: ["ESN", "BLS", "Neuro-fuzzy", "RUL", "Health management"]
+    },
+    {
+      icon: "graph",
+      title: "Machine Learning for Energy Devices",
+      desc: "Data-driven design and lifetime prediction of solid oxide fuel cells, catalyst and materials screening, "
+          + "and machine-learning methods for analysing device performance and experimental data.",
+      keywords: ["SOFC", "Materials informatics", "ML pipeline"]
+    },
+    {
+      icon: "drop",
+      title: "Hydrogen &amp; Ammonia Value Chain",
+      desc: "Ammonia cracking reactors coupled with SOFC waste heat, green ammonia synthesis modelling and optimisation, "
+          + "catalytic pre-cracking for pure ammonia combustion, and methanol production from municipal solid waste "
+          + "via gasification and solid-oxide electrolysis.",
+      keywords: ["NH₃ cracking", "Green NH₃", "SOEC", "Combustion"]
+    },
+    {
+      icon: "bolt",
+      title: "Energy Management &amp; Optimal Control",
+      desc: "Multi-frequency energy management for PEMFC–battery–supercapacitor hybrid UAVs with hydrogen economy and "
+          + "lifetime awareness, approximate dynamic programming strategies, and economic MPC for fuel-cell vehicles.",
+      keywords: ["EMS", "Hybrid powertrain", "UAV", "ADHDP"]
+    },
+    {
+      icon: "leaf",
+      title: "Low-Carbon Processes &amp; Industrial Decarbonisation",
+      desc: "Biomass gasification and combustion in industrial steam boilers, CO₂ methanation catalysts, and "
+          + "thermodynamic analysis of waste-to-fuel and renewable-electricity-driven conversion processes.",
+      keywords: ["Biomass", "CO₂ utilisation", "Steam boilers", "Waste-to-fuel"]
+    }
+  ],
+
+  /* ------------------------------------------------------------------
+     5.5 MEDIA  ·  ★ 图片 / 视频 / 图集
+     ------------------------------------------------------------------
+       type 可选：
+         "image"  → 常规图片（点击放大灯箱）
+         "video"  → 本地视频（mp4/webm），可带封面 poster
+         "embed"  → 外部视频（YouTube / Bilibili）iframe 内嵌
+
+       文件放 assets/media/ 下，可建子目录（lab/ photos/ demos/）
+       建议：图片 ≤1600px 宽、JPG/PNG < 500 KB；视频 mp4(H.264) < 15 MB
+             （GitHub Pages 单文件超 100 MB 会被拒；大视频建议放 YouTube/Bilibili）
+
+       ★ 加自己的照片/视频：复制下面任意一条改路径即可
+     ------------------------------------------------------------------ */
+  // Add future projects here; cards automatically wrap into new rows.
+  // Set published: false for drafts. Publish only verified, playable recordings.
+  projectVideos: [
+    {
+      title: "Renewable hydrogen production",
+      category: "HYDROGRID AEM",
+      duration: "60 seconds",
+      src: "assets/media/demos/hydrogrid-aem-professional-v7.mp4",
+      poster: "assets/media/demos/hydrogrid-aem-professional-v7.jpg",
+      captions: "assets/media/demos/hydrogrid-aem-professional-v7.vtt",
+      authors: "Dr. Zhihua Deng, Dr. Bin Miao, Prof. Siew Hwa Chan",
+      chapters: [{time: 0, title: "System"}, {time: 12, title: "Renewables"}, {time: 24, title: "Stack"}, {time: 36, title: "Cooling"}, {time: 48, title: "Gas circuits"}],
+      transcript: ["Unity-Simulink co-simulation of a renewable-powered AEM electrolyser.", "Solar and wind generation are integrated with the DC bus.", "Simulated electrical and process signals describe electrolyser operation.", "Electrolyte circulation and cooling are shown with process signals.", "Hydrogen and oxygen storage vessels with pressure and flow signals."],
+      description: "A Unity–Simulink platform linking variable solar and wind generation to an AEM electrolyser, electrical storage and balance-of-plant systems. The demonstration follows the power supply, stack and cooling circuits alongside live process signals.",
+      recording: "Recorded from the local HYDROGRID AEM V1.0 software on 25 October 2026. Edited views show renewable input, the stack, circulation and cooling, and DC-bus and power trends. This is an uncalibrated research model; the 3D layout is not as-built equipment. Any accelerated footage is labelled."
+    },
+    {
+      title: "Robotic fuel-cell experimentation",
+      category: "Autonomous PEMFC lab",
+      duration: "60 seconds",
+      src: "assets/media/demos/pemfc-autonomous-lab-professional-v8.mp4",
+      poster: "assets/media/demos/pemfc-autonomous-lab-professional-v8.jpg",
+      captions: "assets/media/demos/pemfc-autonomous-lab-professional-v8.vtt",
+      authors: "Dr. Zhihua Deng, Dr. Bin Miao, Prof. Siew Hwa Chan",
+      chapters: [{time: 0, title: "Engagement"}, {time: 8, title: "Load adjustment"}, {time: 20, title: "Response"}, {time: 30, title: "Shutdown"}, {time: 35, title: "Valve closure"}, {time: 50, title: "Release"}],
+      transcript: ["The gripper engages the load-adjustment knob.", "The robot increases the current demand from 1 A to 2 A.", "Simulated current and stack voltage show the response to the load change.", "Separate shutdown run - load removal precedes valve closure.", "The robot turns the valve handle towards the closed position.", "Valve-status feedback indicates closure before gripper release."],
+      description: "A robotic-arm testbed model for fuel-cell experimentation. Close-up views connect gripper and valve actions, load adjustment and electrical feedback within a native Simulink co-simulation.",
+      recording: "Recorded from the local PEMFC Autonomous Lab V21 software on 25 October 2026. Highlights combine separate sessions: robot-operated load-knob adjustment from 1 A to 2 A, electrical feedback, and an unloaded shutdown with valve closure and gripper release. Accelerated sections are labelled. Robot, valve and sensor dynamics require physical calibration; this is not a completed optimisation benchmark."
+    },
+    {
+      title: "Hybrid hydrogen UAV co-simulation",
+      category: "Fuel-cell–battery propulsion",
+      duration: "1 min 52 s",
+      src: "assets/media/demos/hybrid-uav-cinematic-v8.mp4",
+      poster: "assets/media/demos/hybrid-uav-cinematic-v8.jpg",
+      captions: "assets/media/demos/hybrid-uav-cinematic-v8.vtt",
+      authors: "Dr. Zhihua Deng, Dr. Bin Miao, Prof. Siew Hwa Chan",
+      description: "Integrated flight and powertrain co-simulation, from takeoff and accelerating climb to cruise, obstacle avoidance, descent and touchdown. Close-up views retain the complete flight-path trace, synchronized power data and native Simulink histories of DC-bus voltage, battery SOC and stack temperature.",
+      recording: "Recorded on 25 October 2026 from an independently verified mission copy. The visible and headless runs matched at all 36,000 integration intervals for position, velocity and propulsion-power fields. Each captured frame is aligned to its native model tick; delivered shaft power is computed from logged torque and angular speed. Continuous captured wall time is preserved without acceleration; only initialization and terminal idle are trimmed. The model clock is visible. This reference-aircraft software demonstration is not a calibrated flight model, hardware test, real-time qualification or energy-management benchmark."
+    }
+  ],
+  // External research pages are separate from recordings: no placeholder video.
+  researchLinks: [
+    {
+      title: "AIone Lab",
+      category: "Applied AI & robotics",
+      strapline: "Intelligent systems, from software to hardware.",
+      topics: ["Intelligent automation", "Hardware–AI integration", "Applied AI education"],
+      description: "AIone Lab brings together projects in intelligent automation, hardware–AI integration and applied AI education. Dr. Zhihua Deng contributes as an AI Engineer, with interests in energy management, robotics and embedded AI.",
+      href: "https://aionelab.com/about/#our-team",
+      linkLabel: "View Dr. Deng’s team profile"
+    }
+  ],
+  media: [
+    /* 当前为空：Figures & Media 板块会自动隐藏。
+       往这里添加你自己的图片 / 视频即可自动显示（见 README 二之二节）。
+       type 可选："image"（点击放大）/ "video"（本地 mp4 + poster）/ "embed"（YouTube / Bilibili）
+
+    { type: "image", src: "assets/media/lab/your-photo.jpg",
+      title: "Your title", caption: "Short caption.", tag: "Lab" },
+    */ 
+  ],
+
+  /* ------------------------------------------------------------------
+     6. PUBLICATIONS  ·  论文（三组；type 用于筛选）
+        badges: "TOP" / "Q1" / "IF 18.0" / "Corresponding Author" / 自定义文字
+        highlight: true → 该条显示为"通讯作者"
+     ------------------------------------------------------------------ */
+  publications: {
+
+    journal: [
+      { year: 2026, authors: "**Zhihua Deng**, Bin Miao, Hao Liu, Yunjia Cui, Liang Shen, Zehua Pan, Chengguang Tong, Lan Zhang, Ovi Lian Ding, Deendarlianto, Suwarno, Siew Hwa Chan",
+        title: "Multi-frequency energy management strategy for PEMFC-battery-supercapacitor hybrid UAVs with hydrogen economy and lifetime awareness",
+        venue: "Green Energy and Intelligent Transportation",
+        badges: ["TOP", "IF 21.5", "Accepted"], doi: "" },
+
+      { year: 2026, authors: "**Zhihua Deng**, Bin Miao, Jian Chen, Hao Liu, Deendarlianto, Suwarno, Siew Hwa Chan",
+        title: "Degradation prediction and remaining useful life estimation of PEMFCs: Mechanisms, methods, datasets, and challenges",
+        venue: "Renewable and Sustainable Energy Reviews, 229:116598",
+        badges: ["TOP", "Q1", "IF 18.0"], doi: "https://doi.org/10.1016/j.rser.2025.116598" },
+
+      { year: 2026, authors: "**Zhihua Deng**, Bin Miao, Qinglin Liu, Zehua Pan, Chengguang Tong, Lan Zhang, Qihong Chen, Jian Chen, Hao Liu, Siew Hwa Chan",
+        title: "Adaptive hybrid model-based and data-driven control for air-cooled proton exchange membrane fuel cells temperature regulation",
+        venue: "Energy, 344:139751", badges: ["TOP", "Q1", "IF 10.1"], doi: "https://doi.org/10.1016/j.energy.2025.139751" },
+
+      { year: 2026, authors: "Chengguang Tong, Zuobing Chen, Ling Zhu, **Zhihua Deng***, Siew Hwa Chan",
+        title: "Experimental Investigation and Numerical Simulation of Biomass Gasification and Combustion Processes in Industrial Steam Boilers",
+        venue: "Chemical Engineering Journal", badges: ["TOP", "Q1", "IF 12.5", "Corresponding Author"], doi: "", highlight: true },
+
+      { year: 2026, authors: "Shimeng Kang, Yunjia Cui, Bin Miao, **Zhihua Deng***, Xuerui Zhang, Haolong Li, Haijun Zhong, Siyu Liu, Yexin Zhou, Siew Hwa Chan, Zheng Zhong, Zehua Pan*",
+        title: "Machine learning-enabled design and lifetime prediction of solid oxide fuel cells",
+        venue: "Journal of Materials Informatics, 6, 30:1-18", badges: ["Q2", "Co-corresponding Author"], doi: "https://dx.doi.org/10.20517/jmi.2025.100", highlight: true },
+
+      { year: 2025, authors: "**Zhihua Deng**, Bin Miao, Yunjia Cui, Jian Chen, Zehua Pan, Hao Liu, Deendarlianto, Suwarno, Siew Hwa Chan",
+        title: "Towards high-performance fuel cell systems: Comprehensive review of methods for modeling, control, and optimization",
+        venue: "Renewable and Sustainable Energy Reviews, 224:116122", badges: ["TOP", "Q1", "IF 18.0"], doi: "https://doi.org/10.1016/j.rser.2025.116122" },
+
+      { year: 2025, authors: "**Zhihua Deng**, Bin Miao, Lan Zhang, Qinglin Liu, Zehua Pan, Weike Zhang, Ovi Lian Ding, Sirui Tong, Hao Liu, Siew Hwa Chan, et al.",
+        title: "Accurate long-step degradation trends prediction and remaining useful life estimation for proton exchange membrane fuel cells",
+        venue: "Renewable Energy, 122924", badges: ["TOP", "Q1", "IF 9.1"], doi: "https://doi.org/10.1016/j.renene.2025.122924" },
+
+      { year: 2025, authors: "Chengguang Tong, Zuobing Chen, Jing Cao, **Zhihua Deng***, Siew Hwa Chan",
+        title: "Improvement of pure ammonia combustion performance using the catalytic pre-cracking method",
+        venue: "International Journal of Heat and Mass Transfer, 241:1-13", badges: ["Q1", "IF 6.6", "Corresponding Author"], doi: "https://doi.org/10.1016/j.ijheatmasstransfer.2025.126667", highlight: true },
+
+      { year: 2025, authors: "Jian Shen, Yinong Li, Shimeng Kang, Bin Miao, **Zhihua Deng***, Penghui Yao*, Siyu Liu, Jingyi Wang, Zheng Zhong, Siew Hwa Chan, Zehua Pan*",
+        title: "Efficient methanol production by combining municipal solid waste gasification, SOEC and methanolation reactor: A thermodynamic study",
+        venue: "Energy, 334:137642", badges: ["TOP", "Q1", "IF 10.1", "Co-corresponding Author"], doi: "https://doi.org/10.1016/j.energy.2025.137642", highlight: true },
+
+      { year: 2025, authors: "Chengguang Tong, Zuobing Chen, Jing Cao, **Zhihua Deng***, Siew Hwa Chan",
+        title: "Mechanism-based prediction of ignition delay and intermediate species in ammonia-methane co-combustion",
+        venue: "Thermal Science and Engineering Progress, 66:103944", badges: ["Q1", "IF 5.6", "Corresponding Author"], doi: "https://doi.org/10.1016/j.tsep.2025.103944", highlight: true },
+
+      { year: 2025, authors: "Bin Miao, **Zhihua Deng**, Peijie Han, Bing Yan, Zehua Pan, Siew Hwa Chan",
+        title: "The modelling of a multi-tubular packed-bed reactor for ammonia cracking and SOFC waste heat utilization",
+        venue: "Chemical Engineering Journal, 504:159062", badges: ["Q1", "IF 13.4"], doi: "https://doi.org/10.1016/j.cej.2024.159062" },
+
+      { year: 2025, authors: "Lan Zhang, **Zhihua Deng**, Bin Miao, Hongquan He, Chee Kok Poh, Lili Zhang, Siew Hwa Chan",
+        title: "Aqueous gel-casting synthesis and the characterization of cobalt oxide as a catalyst precursor for sodium borohydride hydrolysis",
+        venue: "Catalysts, 15(4):380", badges: ["Q2", "IF 4.5"], doi: "https://doi.org/10.3390/catal15040380" },
+
+      { year: 2025, authors: "Lan Zhang, Zhi Li, Ying Gao, Qingshan Li, **Zhihua Deng**, Bin Miao, Hongquan He, Chee Kok Poh, Lili Zhang, Siew Hwa Chan",
+        title: "Recent advances in supported metal catalysts for CO₂ methanation: mechanisms, materials design, and the promise of perovskite-based supports",
+        venue: "Energy Conversion and Management: X, 27:101066", badges: ["Q1", "IF 8.8"], doi: "https://doi.org/10.1016/j.ecmx.2025.101066" },
+
+      { year: 2024, authors: "**Zhihua Deng**, Haijiang Wang, Hao Liu, Qihong Chen, Jiashun Zhang",
+        title: "Degradation prediction of proton exchange membrane fuel cell using a novel neuron-fuzzy model based on light spectrum optimizer",
+        venue: "Renewable Energy, 234:1-13", badges: ["TOP", "Q1", "IF 9.1"], doi: "https://doi.org/10.1016/j.renene.2024.121192" },
+
+      { year: 2024, authors: "**Zhihua Deng**, Lan Zhang, Bin Miao, Qinglin Liu, Zehua Pan, Weike Zhang, Ovi Lian Ding, Sirui Tong, Hao Liu, Siew Hwa Chan, et al.",
+        title: "A novel combination of machine learning and intelligent optimization algorithm for modeling and optimization of green ammonia synthesis",
+        venue: "Energy Conversion and Management, 311:118429", badges: ["TOP", "Q1", "IF 11.8"], doi: "https://doi.org/10.1016/j.enconman.2024.118429" },
+
+      { year: 2024, authors: "**Zhihua Deng**, Ming Chen, Qihong Chen, Haijiang Wang",
+        title: "Oxygen starvation control of proton exchange membrane fuel cell through fusion control strategy",
+        venue: "Applied Soft Computing, 159:111655", badges: ["Q1", "IF 7.8"], doi: "https://doi.org/10.1016/j.asoc.2024.111655" },
+
+      { year: 2024, authors: "**Zhihua Deng**, Ming Chen, Haijiang Wang, Qihong Chen",
+        title: "Performance-oriented model learning and model predictive control for PEMFC air supply system",
+        venue: "International Journal of Hydrogen Energy, 64:339-348", badges: ["Q1", "IF 9.2"], doi: "https://doi.org/10.1016/j.ijhydene.2024.01.351" },
+
+      { year: 2023, authors: "**Zhihua Deng**, Siew Hwa Chan, Qihong Chen, Hao Liu, Liyan Zhang, Keliang Zhou, Sirui Tong, Zhichao Fu",
+        title: "Efficient degradation prediction of PEMFCs using ELM-AE based on fuzzy extension broad learning system",
+        venue: "Applied Energy, 331:120385", badges: ["TOP", "Q1", "IF 12.2"], doi: "https://doi.org/10.1016/j.apenergy.2022.120385" },
+
+      { year: 2021, authors: "**Zhihua Deng**, Qihong Chen, Liyan Zhang, Keliang Zhou, Yi Zong, Zhichao Fu, Hao Liu",
+        title: "Data-driven reconstruction of interpretable model for air supply system of proton exchange membrane fuel cell",
+        venue: "Applied Energy, 299:117266", badges: ["TOP", "Q1", "IF 12.2"], doi: "https://doi.org/10.1016/j.apenergy.2021.117266" },
+
+      { year: 2021, authors: "**Zhihua Deng**, Qihong Chen, Liyan Zhang, Keliang Zhou, Yi Zong",
+        title: "Degradation prediction of PEMFCs using stacked echo state network based on genetic algorithm optimization",
+        venue: "IEEE Transactions on Transportation Electrification, 8(1):1454-1466", badges: ["TOP", "Q1", "IF 8.5"], doi: "https://doi.org/10.1109/TTE.2021.3111906" },
+
+      { year: 2021, authors: "Zhichao Fu, Qihong Chen, Liyan Zhang, Haoran Zhang, **Zhihua Deng**",
+        title: "Research on ADHDP energy management strategy for fuel cell hybrid power system",
+        venue: "International Journal of Hydrogen Energy, 46(57):29432-29442", badges: ["Q1", "IF 9.2"], doi: "https://doi.org/10.1016/j.ijhydene.2021.02.055" },
+
+      { year: 2021, authors: "Zhichao Fu, Qihong Chen, Liyan Zhang, Jing Fan, Haoran Zhang, **Zhihua Deng**",
+        title: "Research on energy management strategy of fuel cell power generation system based on Grey-Markov chain power prediction",
+        venue: "Energy Reports, 7(1):319-325", badges: ["Q2", "IF 6.6"], doi: "https://doi.org/10.1016/j.egyr.2021.01.063" },
+
+      { year: 2020, authors: "**Zhihua Deng**, Qihong Chen, Liyan Zhang, Yi Zong, Keliang Zhou, Zhichao Fu",
+        title: "Control oriented data driven linear parameter varying model for proton exchange membrane fuel cell systems",
+        venue: "Applied Energy, 277:115540", badges: ["TOP", "Q1", "IF 12.2"], doi: "https://doi.org/10.1016/j.apenergy.2020.115540" },
+
+      { year: 2020, authors: "**Zhihua Deng**, Qihong Chen, Liyan Zhang, Zhichao Fu, Keliang Zhou",
+        title: "Weighted fusion control for proton exchange membrane fuel cell system",
+        venue: "International Journal of Hydrogen Energy, 45(30):15327-15335", badges: ["Q1", "IF 9.2"], doi: "https://doi.org/10.1016/j.ijhydene.2020.01.137" },
+
+      { year: 2020, authors: "**Zhihua Deng**, Qihong Chen, Liyan Zhang, Zhichao Fu",
+        title: "Data driven NARMAX modeling for PEMFC air compressor",
+        venue: "International Journal of Hydrogen Energy, 45(39):20321-20328", badges: ["Q1", "IF 9.2"], doi: "https://doi.org/10.1016/j.ijhydene.2019.11.228" }
+    ],
+
+    conference: [
+      { year: 2024, authors: "Shijie Gao, Yong Wu, **Zhihua Deng**, Pan Wang",
+        title: "Research on improved Kalman filtering and robust identification for dynamic power system state estimation",
+        venue: "2024 8th International Workshop on Control Engineering and Advanced Algorithms (IWCEAA), Nanjing, China, pp. 47-54",
+        badges: ["EI"], doi: "https://doi.org/10.1109/IWCEAA63616.2024.10823950" },
+
+      { year: 2020, authors: "Yang Zhang, Zhichao Fu, Qihong Chen, Liyan Zhang, Keliang Zhou, **Zhihua Deng**",
+        title: "Data-driven active disturbance rejection net power control of proton exchange membrane fuel cell",
+        venue: "2020 4th CAA International Conference on Vehicular Control and Intelligence (CVCI), Hangzhou, China, pp. 47-52",
+        badges: ["EI"], doi: "https://doi.org/10.1109/CVCI51460.2020.9338567" }
+    ],
+
+    underReview: [
+      { year: 2026, authors: "Hao Liu, Yanbin Zhao, Huarong Zheng, Xiulin Fan, **Zhihua Deng**, Mengchi Chen, Xingkai Wang, Zhiyang Liu, Jianguo Lu, Jian Chen",
+        title: "Two points are enough",
+        venue: "Submitted to Nature Energy (with editor) · Preprint: arXiv:2408.11872",
+        badges: ["Under review", "IF 70.1"], doi: "https://arxiv.org/abs/2408.11872v1" },
+
+      { year: 2026, authors: "Yanbin Zhao, Hao Liu, **Zhihua Deng**, Haoyi Jiang, Zhenfei Ling, Zhiyang Liu, Xingkai Wang, Tong Li, Xiaoping Ouyang",
+        title: "Machine learning accelerates fuel cell life testing",
+        venue: "Submitted to Nature Machine Intelligence (with editor) · Preprint: arXiv:2504.18835",
+        badges: ["Under review", "IF 29.8"], doi: "https://arxiv.org/abs/2504.18835v2" },
+
+      { year: 2026, authors: "Yanbin Zhao, Hao Liu, **Zhihua Deng**, Tong Li, Haoyi Jiang, Zhenfei Ling, Xingkai Wang, Lei Zhang, Xiaoping Ouyang",
+        title: "Machine learning bridging battery field data and laboratory data",
+        venue: "Submitted to Nature Communications (with editor) · Preprint: arXiv:2505.05364",
+        badges: ["Under review", "IF 18.1"], doi: "https://arxiv.org/abs/2505.05364v2" }
+    ]
+  },
+
+  /* ------------------------------------------------------------------
+     7. PATENTS  ·  专利
+     ------------------------------------------------------------------ */
+  patents: [
+    { year: 2021, authors: "Qihong Chen, **Zhihua Deng**, Peng Xiao, et al.",
+      title: "Fuel cell air supply controller and control method for fast dynamic response",
+      venue: "China, ZL 201910907034.1 [P]. Granted 2021-01-26",
+      note: "Transferred to Wuhan Feisite New Energy Co., Ltd." },
+
+    { year: 2020, authors: "Huafeng Li, **Zhihua Deng**, Zhengtao Yu, et al.",
+      title: "A method for enhancing image clarity based on sparse representation",
+      venue: "China, ZL 201710397773.1 [P]. Granted 2020-08-25",
+      note: "Transferred to Yunnan United Vision Technology Co., Ltd." },
+
+    { year: 2020, authors: "Huafeng Li, **Zhihua Deng**, Zhengtao Yu, et al.",
+      title: "A multimodal medical image fusion method based on low-rank decomposition and sparse representation",
+      venue: "China, ZL 201710363457.2 [P]. Granted 2020-07-10",
+      note: "Transferred to Yunnan United Vision Technology Co., Ltd." }
+  ],
+
+  /* ------------------------------------------------------------------
+     8. TALKS  ·  学术报告 / 会议演讲
+     ------------------------------------------------------------------ */
+  talks: [
+    { when: "22 June 2026", what: "Thematic Presentation (Presenter)",
+      where: "25th World Hydrogen Energy Conference (WHEC 2026), Singapore", desc: "" },
+    { when: "17 November 2025", what: "Thematic Presentation",
+      where: "8th International Conference on Energy Storage and Intelligent Vehicles (ICIEV 2025), Singapore", desc: "" }
+  ],
+
+  /* ------------------------------------------------------------------
+     9. PROJECTS  ·  科研项目（role 可写 PI / Co-PI / Participant）
+     ------------------------------------------------------------------ */
+  projects: [
+    { title: "AI controller integrated high-power-density proton exchange membrane fuel cells",
+      funder: "MOE Academic Research Fund", grant: "Grant 12076", period: "Ongoing", role: "",
+      desc: "Embedding AI-based controllers into high-power-density PEMFC stacks to improve dynamic response and durability." },
+    { title: "Ammonia-fed solid oxide fuel cell as a power source for maritime industries",
+      funder: "Singapore Maritime Institute", grant: "Grant SMI-2023-MTP-02", period: "Ongoing", role: "",
+      desc: "Ammonia cracking, SOFC integration and system-level study for maritime propulsion and auxiliary power." },
+    { title: "High-power fast-response fuel cell membrane electrode and control technology",
+      funder: "National Key Research and Development Program", grant: "Grant 2017YFB0103001", period: "", role: "",
+      desc: "Membrane electrode assembly and fast-response control for high-power fuel cell systems." },
+    { title: "Economic model predictive control for long-life and high-efficiency fuel-cell vehicle power systems",
+      funder: "National Natural Science Foundation of China", grant: "Grant 62173264", period: "", role: "",
+      desc: "Economic MPC that trades off efficiency against degradation for fuel-cell vehicle powertrains." },
+    { title: "Excellent Doctoral Thesis Cultivation Project",
+      funder: "Wuhan University of Technology — Fundamental Research Funds for the Central Universities",
+      grant: "Grant 2020YB034", period: "", role: "", desc: "" }
+  ],
+
+  /* ------------------------------------------------------------------
+     10. ACADEMIC SERVICE  ·  客座编辑 / 编委 / 青年委员 / 审稿
+     ------------------------------------------------------------------ */
+  service: {
+    editorial: [
+      { role: "Guest Editor", org: "Applied Sciences (MDPI)", when: "04/2025 – 01/2026" },
+      { role: "Editorial Board Member", org: "Applied Sciences (MDPI)", when: "01/2024 – 01/2025" }
+    ],
+    committee: [
+      { role: "Youth Committee Member &amp; Science Popularization Committee Member",
+        org: "Academic Committee of the Guangdong International Science and Technology Cooperation Base of Evolutionary "
+           + "Intelligence and Robotics / Guangdong International Joint Research Center for Evolutionary Intelligence "
+           + "and Robotics in Universities", when: "12/2022 – Present" }
+    ],
+    /* 同行评审：国际期刊 */
+    reviewer: [
+      { role: "Peer Reviewer",
+        journals: ["eTransportation", "Advanced Energy Materials", "Energy Conversion and Management",
+                   "Applied Energy", "Energy", "Renewable Energy"],
+        when: "Ongoing" }
+    ]
+  },
+
+  /* ------------------------------------------------------------------
+     11. TEACHING  ·  教学 / 讲座
+     ------------------------------------------------------------------ */
+  teaching: [
+    { what: "Guest Lecturer — “New Energy and Emerging Technologies”",
+      org: "Nanyang Business School (NBS), Nanyang Technological University",
+      when: "31/07/2024 · 18/03/2026 · 26/07/2026",
+      points: [
+        "Invited by NBS to deliver three full-day intensive modules for the Global Innovation Executive Development Programme.",
+        "Taught over 100 C-level executives and general managers on energy technologies and their industrial applications.",
+        "Combined lectures with laboratory visits and discussions of technology commercialisation."
+      ] }
+  ],
+
+  /* ------------------------------------------------------------------
+     12. STUDENTS  ·  指导学生（简历未提供名单 → 留空模板，随时补充）
+        每项：{ name, topic, period, note }
+     ------------------------------------------------------------------ */
+  students: {
+    phd: [
+      { name: "Chengguang Tong",
+        topic: "Joint Ph.D. programme — Wuhan University of Technology & Nanyang Technological University",
+        period: "202401-202502" }
+    ],
+    master: [
+      { name: "Yunshu Duan",        
+        topic: "M.Sc. student — School of Mechanical and Aerospace Engineering, NTU",
+        period: "202609-Now" },
+      { name:  "Shijie Gao",
+        topic: "M.Sc. student — Wuhan University of Technology",
+        period: "202209-202504" }
+   ],
+    undergrad: [
+      { name: "Wilson Wongosari",
+        topic: "Undergraduate student — School of Mechanical and Aerospace Engineering, NTU",
+        period: "202407-202505" }
+    ],
+    empty: ""
+  },
+
+  /* ------------------------------------------------------------------
+     13. AWARDS  ·  获奖与荣誉
+     ------------------------------------------------------------------ */
+  awards: [
+    { when: "01/2024", text: "University-level Excellent Doctoral Dissertation Award, Wuhan University of Technology (2022–2023 academic year)" },
+    { when: "12/2023", text: "Organization Award, 2023 ICIICII (7th International Conference on Industrial Informatics)" },
+    { when: "05/2023", text: "Outstanding Doctoral Dissertation Award, Guangdong Province Evolutionary Intelligence and Robot International Technology Cooperation Base (INTERACT&amp;SEEDS)" },
+    { when: "08/2021", text: "Outstanding Seminar Performance Award, 2021 INTERACT&amp;SEEDS" },
+    { when: "12/2020", text: "Young Investigator Seminar Speech Award, 2020 ICIICII (4th International Conference on Industrial Informatics)" },
+    { when: "2020",    text: "CSC Scholarship (No. 202006950031)" },
+    { when: "09/2020", text: "First-class Academic Scholarship" },
+    { when: "09/2019", text: "Second-class Academic Scholarship" },
+    { when: "09/2018", text: "Second-class Academic Scholarship" },
+    { when: "2017",    text: "Second prize, 14th “Huawei Cup” China Graduate Student Mathematical Modeling Competition (No. 106980202288)" },
+    { when: "2017",    text: "Second prize (Stage 2), 10th “Certification Cup” National Mathematical Modeling Network Challenge (No. 20170103031871)" },
+    { when: "2017",    text: "Second prize (Stage 1), 10th “Certification Cup” National Mathematical Modeling Network Challenge (No. 20170203031871)" },
+    { when: "09/2017", text: "First-class Academic Scholarship" },
+    { when: "09/2016", text: "Second-class Academic Scholarship" },
+    { when: "09/2015", text: "First-class Academic Scholarship" }
+  ],
+
+  /* ------------------------------------------------------------------
+     14. BACKGROUND  ·  工作与学历（时间线）
+     ------------------------------------------------------------------ */
+  experience: [
+    { when: "09/2023 – Present", what: "Senior Research Engineer I",
+      where: "Energy Research Institute at NTU (ERI@N), Nanyang Technological University, Singapore", desc: "" },
+    { when: "10/2022 – 09/2023", what: "Postdoctoral Researcher",
+      where: "Southern University of Science and Technology, Shenzhen, China", desc: "" }
+  ],
+  education: [
+    { when: "08/2021 – 09/2022", what: "Joint Ph.D. Training",
+      where: "School of Mechanical and Aerospace Engineering, Nanyang Technological University, Singapore", desc: "" },
+    { when: "09/2018 – 10/2022", what: "Ph.D., School of Automation",
+      where: "Wuhan University of Technology, China", desc: "" },
+    { when: "09/2015 – 07/2018", what: "Master, Faculty of Information Engineering and Automation",
+      where: "Kunming University of Science and Technology, China", desc: "" },
+    { when: "09/2010 – 07/2014", what: "Bachelor, Electrical and Information Engineering",
+      where: "North Minzu University, China", desc: "" }
+  ],
+
+  /* ------------------------------------------------------------------
+     15. CONTACT  ·  联系方式（icon: mail / pin / globe / scholar / doc）
+     ------------------------------------------------------------------ */
+  contact: [
+    { icon: "mail", label: "Email", value: "zhihua.deng@ntu.edu.sg", href: "mailto:zhihua.deng@ntu.edu.sg" },
+    { icon: "pin", label: "Office", value: "Energy Research Institute at NTU (ERI@N), Nanyang Technological University, Singapore 637141", href: "" },
+    { icon: "globe", label: "Institute", value: "ERI@N, Nanyang Technological University", href: "https://www.ntu.edu.sg/eri" }
+  ],
+
+  footerNote: "Energy systems modelling, control and artificial intelligence."
+};
+

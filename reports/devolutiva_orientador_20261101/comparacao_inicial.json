@@ -1,0 +1,185 @@
+{
+  "base": "reports\\monografia\\versoes\\v008\\MayconGarciaSilva_monografia_v008.docx",
+  "base_sha256": "0daacd3ea1753bca97619df025923b92a44a047b5c1252a4677f802dfe870dad",
+  "recebido": "C:\\Users\\User\\Downloads\\MayconGarciaSilva_monografia_correcao final antes da banca.docx",
+  "recebido_sha256": "5c80490f4f698b27011037779c84622fc0aed3fd4d0ff54fee71385ffd7d2376",
+  "cores": {
+    "FF0000": 6
+  },
+  "alteracoes_textuais": [
+    {
+      "tag": "replace",
+      "base_range": [
+        167,
+        168
+      ],
+      "incoming_range": [
+        167,
+        168
+      ],
+      "base": [
+        ""
+      ],
+      "incoming": [
+        "Estão faltando as seções e subseções."
+      ]
+    },
+    {
+      "tag": "replace",
+      "base_range": [
+        169,
+        173
+      ],
+      "incoming_range": [
+        169,
+        171
+      ],
+      "base": [
+        "A previsão de preços de ações reúne desafios de análise temporal, escolha de modelos e qualidade dos dados. No mercado brasileiro, esta pesquisa delimita esse problema à previsão de um passo à frente do preço de fechamento ajustado da ação preferencial da Petróleo Brasileiro S.A. (PETR4), negociada na Brasil, Bolsa, Balcão (B3). O interesse está em avaliar o desempenho preditivo e o custo computacional de configurações de redes neurais sob um protocolo experimental definido, sem interpretar a previsão de preços como demonstração de rentabilidade de uma estratégia de negociação.",
+        "A abordagem central emprega Redes Neurais de Estados de Eco (Echo State Networks – ESNs), pertencentes à Computação de Reservatório (Reservoir Computing – RC). Nessa arquitetura, as matrizes de entrada e do reservatório, designadas por Win e W, permanecem fixas durante o ajuste da camada de saída. Essa organização motiva o estudo de alternativas à otimização iterativa de todos os pesos. A escolha das distribuições de inicialização e dos hiperparâmetros, entretanto, integra o problema experimental e não permite pressupor superioridade de uma configuração antes de sua avaliação.",
+        "A pesquisa utiliza preços ajustados para lidar com descontinuidades associadas a eventos corporativos, sem isolar o efeito do Fator de Ajuste por uma ablação. Também distingue o custo da busca por hiperparâmetros do ajuste da configuração selecionada, delimitando a interpretação da acurácia e da eficiência computacional.",
+        "O problema de pesquisa consiste em investigar em que medida distribuições não gaussianas para Win e W, combinadas a um Algoritmo Genético (AG), alteram a acurácia e o custo computacional de uma ESN na previsão fora da amostra da PETR4 em comparação com inicializações canônicas e com redes Long Short-Term Memory (LSTM) e Gated Recurrent Unit (GRU). A justificativa está na necessidade de documentar essas escolhas de inicialização, avaliá-las em conjunto com os hiperparâmetros e explicitar as condições em que as comparações são sustentadas pelos registros disponíveis."
+      ],
+      "incoming": [
+        "O mercado acionário ocupa posição central nas economias contemporâneas. De um lado, oferece às empresas um canal de captação de recursos para financiar suas operações e seus projetos de expansão; de outro, abre aos investidores a possibilidade de aplicar poupança em ativos com perfis de risco e retorno variados. A previsão de preços de ações reúne desafios de análise temporal, escolha de modelos e qualidade dos dados. No mercado brasileiro, esta pesquisa delimita esse problema à previsão de um passo à frente do preço de fechamento ajustado da ação preferencial da Petróleo Brasileiro S.A. (PETR4), negociada na Brasil, Bolsa, Balcão (B3).",
+        "O problema de pesquisa consiste em investigar em que medida distribuições não gaussianas para Win e W, combinadas a um Algoritmo Genético (AG), alteram a acurácia e o custo computacional de uma ESN na previsão fora da amostra da PETR4 em comparação com inicializações canônicas e com redes Long Short-Term Memory (LSTM) e Gated Recurrent Unit (GRU)."
+      ]
+    },
+    {
+      "tag": "delete",
+      "base_range": [
+        175,
+        176
+      ],
+      "incoming_range": [
+        173,
+        173
+      ],
+      "base": [
+        "A avaliação contempla o Erro Médio Absoluto (Mean Absolute Error – MAE), a Raiz do Erro Quadrático Médio (Root Mean Squared Error – RMSE) e o coeficiente de determinação (R²), a comparação com a ESN Normal × Normal e com LSTM e GRU e a separação entre custo de otimização e ajuste final. Inclui ainda o exame da dispersão entre configurações, a comparação inferencial complementar pelo teste de Diebold–Mariano (DM), a documentação do procedimento e a discussão de limitações e condições de replicação."
+      ],
+      "incoming": []
+    },
+    {
+      "tag": "insert",
+      "base_range": [
+        182,
+        182
+      ],
+      "incoming_range": [
+        179,
+        183
+      ],
+      "base": [],
+      "incoming": [
+        "A abordagem central emprega Redes Neurais de Estados de Eco (Echo State Networks – ESNs), pertencentes à Computação de Reservatório (Reservoir Computing – RC). Nessa arquitetura, as matrizes de entrada e do reservatório, designadas por Win e W, permanecem fixas durante o ajuste da camada de saída. Essa organização motiva o estudo de alternativas à otimização iterativa de todos os pesos. A escolha das distribuições de inicialização e dos hiperparâmetros, entretanto, integra o problema experimental e não permite pressupor superioridade de uma configuração antes de sua avaliação.",
+        "A pesquisa utiliza preços ajustados para lidar com descontinuidades associadas a eventos corporativos, sem isolar o efeito do Fator de Ajuste por uma ablação. Também distingue o custo da busca por hiperparâmetros do ajuste da configuração selecionada, delimitando a interpretação da acurácia e da eficiência computacional.",
+        "A avaliação contempla o Erro Médio Absoluto (Mean Absolute Error – MAE), a Raiz do Erro Quadrático Médio (Root Mean Squared Error – RMSE) e o coeficiente de determinação (R²), a comparação com a ESN Normal × Normal e com LSTM e GRU e a separação entre custo de otimização e ajuste final. Inclui ainda o exame da dispersão entre configurações, a comparação inferencial complementar pelo teste de Diebold–Mariano (DM), a documentação do procedimento e a discussão de limitações e condições de replicação.",
+        "A justificativa está na necessidade de documentar essas escolhas de inicialização, avaliá-las em conjunto com os hiperparâmetros e explicitar as condições em que as comparações são sustentadas pelos registros disponíveis. O interesse está em avaliar o desempenho preditivo e o custo computacional de configurações de redes neurais sob um protocolo experimental definido, sem interpretar a previsão de preços como demonstração de rentabilidade de uma estratégia de negociação."
+      ]
+    },
+    {
+      "tag": "replace",
+      "base_range": [
+        826,
+        827
+      ],
+      "incoming_range": [
+        827,
+        828
+      ],
+      "base": [
+        "Busca por AG por cenário ESN"
+      ],
+      "incoming": [
+        "Busca GA por cenário ESN"
+      ]
+    },
+    {
+      "tag": "replace",
+      "base_range": [
+        833,
+        834
+      ],
+      "incoming_range": [
+        834,
+        835
+      ],
+      "base": [
+        "A Tabela 5 apresenta a decomposição do custo computacional. O ajuste analítico de aproximadamente 0,05 segundo correspondeu ao cálculo da camada de saída após a configuração da ESN ter sido selecionada. Considerando apenas essa etapa, o tempo documentado correspondeu a uma razão de tempos de aproximadamente 576 vezes em relação à GRU e 708 vezes em relação à LSTM."
+      ],
+      "incoming": [
+        "O ajuste analítico de aproximadamente 0,05 segundo correspondeu ao cálculo da camada de saída após a configuração da ESN ter sido selecionada. Considerando apenas essa etapa, o tempo documentado correspondeu a uma razão de tempos de aproximadamente 576 vezes em relação à GRU e 708 vezes em relação à LSTM."
+      ]
+    },
+    {
+      "tag": "replace",
+      "base_range": [
+        853,
+        854
+      ],
+      "incoming_range": [
+        854,
+        855
+      ],
+      "base": [
+        "Nos quatro testes apresentados na Tabela 6, a hipótese nula de igualdade de acurácia preditiva foi rejeitada ao nível de 5%. Sob perda absoluta, a comparação ESN × GRU resultou em estatística DM = −11,870611 e p = 6,296 × 10⁻³¹, enquanto ESN × LSTM resultou em DM = −15,496644 e p = 8,008 × 10⁻⁵⁰. Sob perda quadrática, ESN × GRU apresentou DM = −9,846951 e p = 4,117 × 10⁻²², e ESN × LSTM apresentou DM = −9,208792 e p = 1,285 × 10⁻¹⁹. Em todas as comparações, o diferencial médio de perda indicou menor perda para a ESN."
+      ],
+      "incoming": [
+        "Nos quatro testes, a hipótese nula de igualdade de acurácia preditiva foi rejeitada ao nível de 5%. Sob perda absoluta, a comparação ESN × GRU resultou em estatística DM = −11,870611 e p = 6,296 × 10⁻³¹, enquanto ESN × LSTM resultou em DM = −15,496644 e p = 8,008 × 10⁻⁵⁰. Sob perda quadrática, ESN × GRU apresentou DM = −9,846951 e p = 4,117 × 10⁻²², e ESN × LSTM apresentou DM = −9,208792 e p = 1,285 × 10⁻¹⁹. Em todas as comparações, o diferencial médio de perda indicou menor perda para a ESN."
+      ]
+    }
+  ],
+  "marcacoes_coloridas": [
+    {
+      "p": 167,
+      "text": "Estão faltando as seções e subseções.",
+      "runs": [
+        {
+          "color": "FF0000",
+          "text": "Estão faltando as seções e subseções."
+        }
+      ]
+    },
+    {
+      "p": 169,
+      "text": "O mercado acionário ocupa posição central nas economias contemporâneas. De um lado, oferece às empresas um canal de captação de recursos para financiar suas operações e seus projetos de expansão; de outro, abre aos investidores a possibilidade de aplicar poupança em ativos com perfis de risco e retorno variados. A previsão de preços de ações reúne desafios de análise temporal, escolha de modelos e qualidade dos dados. No mercado brasileiro, esta pesquisa delimita esse problema à previsão de um passo à frente do preço de fechamento ajustado da ação preferencial da Petróleo Brasileiro S.A. (PETR4), negociada na Brasil, Bolsa, Balcão (B3).",
+      "runs": [
+        {
+          "color": "FF0000",
+          "text": "O mercado acionário ocupa posição central nas economias contemporâneas. De um lado, oferece às empresas um canal de captação de recursos para financiar suas operações e seus projetos de expansão; de outro, abre aos investidores a possibilidade de aplicar poupança em ativos com perfis de risco e retorno variados. "
+        }
+      ]
+    },
+    {
+      "p": 182,
+      "text": "A justificativa está na necessidade de documentar essas escolhas de inicialização, avaliá-las em conjunto com os hiperparâmetros e explicitar as condições em que as comparações são sustentadas pelos registros disponíveis. O interesse está em avaliar o desempenho preditivo e o custo computacional de configurações de redes neurais sob um protocolo experimental definido, sem interpretar a previsão de preços como demonstração de rentabilidade de uma estratégia de negociação.",
+      "runs": [
+        {
+          "color": "FF0000",
+          "text": "A justificativa está na necessidade de documentar essas escolhas de inicialização, avaliá-las em conjunto com os hiperparâmetros e explicitar as condições em que as comparações são sustentadas pelos registros disponíveis. O interesse está em avaliar o desempenho preditivo e o custo computacional de configurações de redes neurais sob um protocolo experimental definido, sem interpretar a previsão de preços como demonstração de rentabilidade de uma estratégia de negociação."
+        }
+      ]
+    },
+    {
+      "p": 289,
+      "text": "O Quadro 1 apresenta a codificação por documento: D indica evidência direta localizada na aplicação da própria fonte; S indica tratamento secundário ou contextual; ? indica informação insuficiente no escopo consultado; e — indica dimensão não aplicável ao objeto estudado. A marca ? não demonstra que o assunto inexista na obra. A presença de uma informação também não representa reprodução independente, aprovação da qualidade do estudo ou equivalência entre os protocolos comparados.",
+      "runs": [
+        {
+          "color": "FF0000",
+          "text": " ? "
+        }
+      ]
+    },
+    {
+      "p": 502,
+      "text": "A distinção entre D e S evita somar uma revisão e o experimento por ela descrito como duas execuções independentes. Os códigos ? e — também têm sentidos diferentes: o primeiro conserva uma incerteza de leitura ou de especificação; o segundo delimita o objeto da fonte. Assim, as frequências desta coleção descrevem a documentação localizada segundo os critérios adotados, sem estimar a prevalência de métodos em toda a literatura nem comprovar, isoladamente, uma lacuna científica.",
+      "runs": [
+        {
+          "color": "FF0000",
+          "text": "s ? e "
+        }
+      ]
+    }
+  ]
+}

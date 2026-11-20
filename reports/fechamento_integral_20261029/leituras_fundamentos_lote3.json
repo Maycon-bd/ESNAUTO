@@ -1,0 +1,166 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_copia_antes_lote": "a4db12e6c368fbf21fef8281464e850b330b8803f4539b5b9ee7718d14334ff3",
+  "sha256_copia_apos_lote": "8737f4494ebb5066722d201c615b209995e5b0054c20d0a14196d34afeccbf3e",
+  "fontes": [
+    {
+      "id": "SUP_JAEGER2001",
+      "arquivo": "reports/fechamento_integral_20261029/fontes_suplementares/Jaeger_2001_errata_2010.pdf",
+      "url": "https://www.ai.rug.nl/minds/uploads/EchoStatesTechRep.pdf",
+      "sha256": "0a0296f586f86a0e49e651e4581ce2aef3a926ca9cb3d57653c8963b7b83e625",
+      "paginas": 47,
+      "leitura": "Texto completo, inclusive apêndices e errata, lido sequencialmente em blocos1–10,11–20,21–30,31–40,41–47.",
+      "visuais_abertos": [
+        1,
+        5,
+        8,
+        12,
+        13,
+        27,
+        34,
+        42,
+        43,
+        47
+      ],
+      "limites": "Leitura integral do texto e inspeção visual das10páginas listadas, sem reprodução experimental ou verificação independente de todas as provas. Página2sem texto extraído. A página Fraunhofer bloqueou acesso automatizado; título, autor, ano e identidade do DOI foram confirmados na API oficial DataCite. A versão com errata foi identificada no PDF do repositório do autor.",
+      "metadados_doi_confirmados": {
+        "registro": "fontes_suplementares/Jaeger_2001_metadados_DataCite.json",
+        "evidencia": "API oficial DataCite confirma título, Jaeger,H.,ano2001 e destino Fraunhofer para DOI10.24406/publica-fhg-291111."
+      }
+    },
+    {
+      "id": "SUP_HOCH1997",
+      "arquivo": "reports/fechamento_integral_20261029/fontes_suplementares/Hochreiter_Schmidhuber_1997_copia_autor.pdf",
+      "url": "https://people.idsia.ch/~juergen/lstm1997-2024head.pdf",
+      "sha256": "51e319ebc53b96964bc167faa3a45d02eca61964eb7ed6bbc1cb2e70517064f2",
+      "paginas": 32,
+      "leitura": "Todas as32páginas renderizadas abertas e lidas visualmente em blocos de4, inclusive tabelas, discussão, apêndice e referências.",
+      "visuais_abertos": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "limites": "Cópia distribuída pelo coautor, com cabeçalho bibliográfico e modificação de metadados em2024; não é comparação byte a byte com a diagramação da edição publicada. O corpo tem paginação1–32 e identifica a publicação Neural Computation9(8):1735–1780,1997. A extração textual é ilegível e foi descartada como evidência de conteúdo. Não se reproduziram os experimentos.",
+      "ordem_das_aberturas": "1–24na sequência; tentativa25–28com saída truncada foi desconsiderada;29–32abertas;25–28reabertas e lidas integralmente. Todas1–32têm leitura visual efetiva."
+    }
+  ],
+  "codigo_atual_lido": [
+    {
+      "arquivo": "app/modules/mod_lstm.R",
+      "sha256": "0b389cbc1d7bdd4a26fcd6bca99c926dc8d29828068bafb7a4e6988f2c30caa9",
+      "escopo_lido": "Arquitetura, compile e fit, aproximadamente linhas75–120; procura de épocas/otimizador no arquivo.",
+      "evidencia": "Camadas LSTM/GRU e Dense, compile com MSE e otimizador configurável; fit com épocas/lotes e medição elapsed.",
+      "limite": "Estado atual lido; não prova identidade com cada execução histórica. Não foi executado, restaurado ou alterado."
+    },
+    {
+      "arquivo": "app/modules/mod_gru.R",
+      "sha256": "70b14d67664cd38fbc75bc2280ac61fd507acab212b677cae66a9a92a9a9114a",
+      "escopo_lido": "Arquitetura, compile e fit, aproximadamente linhas75–120; procura de épocas/otimizador no arquivo.",
+      "evidencia": "Camadas LSTM/GRU e Dense, compile com MSE e otimizador configurável; fit com épocas/lotes e medição elapsed.",
+      "limite": "Estado atual lido; não prova identidade com cada execução histórica. Não foi executado, restaurado ou alterado."
+    }
+  ],
+  "alteracoes": [
+    {
+      "unidade": "U0192",
+      "diagnostico": "condizente_com_precisao_de_escopo",
+      "motivo": "Retirar ranking de uso não medido pelas fontes, corrigir a expansão de LSTM e distinguir a motivação original de LSTM da unidade simplificada de Cho. Não atribuir resultados financeiros aos estudos de tarefas artificiais/tradução.",
+      "evidencias": [
+        {
+          "referencia": "R25",
+          "localizador": "Hochreiter/Schmidhuber PDF1–8 e22–30: fluxo de erro, células, portas e limites do algoritmo original."
+        },
+        {
+          "referencia": "R12",
+          "localizador": "Cho PDF1–3 e10: proposta de codificador–decodificador e unidade de duas portas; não é benchmark financeiro."
+        }
+      ],
+      "proposta": "As redes Long Short-Term Memory (LSTM) foram introduzidas por Hochreiter e Schmidhuber (1997) para facilitar a aprendizagem de dependências longas, usando células de memória e controle do fluxo de erro. Cho et al. (2014) propuseram uma unidade com portas de atualização e reinicialização, hoje conhecida como Gated Recurrent Unit (GRU), no contexto de uma arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador. A simplificação estrutural dessa unidade não constitui, por si, uma garantia de menor erro em séries financeiras.",
+      "texto_anterior": "Entre as variantes mais empregadas estão as redes Long-Short Term Memory (LSTM), introduzidas por Hochreiter e Schmidhuber (1997), e as Gated Recurrent Units (GRU), propostas no contexto da arquitetura de rede neural recorrente (Recurrent Neural Network – RNN) do tipo codificador–decodificador por Cho et al. (2014). Ambas surgem como resposta à dificuldade clássica do desvanecimento de gradiente.",
+      "sha256_texto_base": "8af4ea39ecedfd66ef8effb520594e8a26568eaf5e66183f134063e3d1c76d5a",
+      "estado": "incorporado_em_copia_pendente_conferencia_nativa"
+    },
+    {
+      "unidade": "U0194",
+      "diagnostico": "generalizacao_nao_sustentada_no_alcance_enunciado",
+      "motivo": "A redação anterior estendia instabilidades residuais a ambas as arquiteturas em séries muito longas. Hochreiter descreve solução e limites específicos do algoritmo original; Cho descreve outra unidade em tradução, sem demonstrar essa generalização financeira. Delimitar o contraste ao treinamento implementado e à avaliação de custos.",
+      "evidencias": [
+        {
+          "referencia": "R25",
+          "localizador": "PDF8–10,22–30: algoritmo original com truncamento, complexidade e limites específicos, não teorema de instabilidade residual das duas arquiteturas."
+        },
+        {
+          "referencia": "R12",
+          "localizador": "PDF3 e5–6: unidade simplificada treinada por gradiente na tarefa de tradução."
+        },
+        {
+          "artefatos": [
+            {
+              "arquivo": "app/modules/mod_lstm.R",
+              "sha256": "0b389cbc1d7bdd4a26fcd6bca99c926dc8d29828068bafb7a4e6988f2c30caa9",
+              "escopo_lido": "Arquitetura, compile e fit, aproximadamente linhas75–120; procura de épocas/otimizador no arquivo.",
+              "evidencia": "Camadas LSTM/GRU e Dense, compile com MSE e otimizador configurável; fit com épocas/lotes e medição elapsed.",
+              "limite": "Estado atual lido; não prova identidade com cada execução histórica. Não foi executado, restaurado ou alterado."
+            },
+            {
+              "arquivo": "app/modules/mod_gru.R",
+              "sha256": "70b14d67664cd38fbc75bc2280ac61fd507acab212b677cae66a9a92a9a9114a",
+              "escopo_lido": "Arquitetura, compile e fit, aproximadamente linhas75–120; procura de épocas/otimizador no arquivo.",
+              "evidencia": "Camadas LSTM/GRU e Dense, compile com MSE e otimizador configurável; fit com épocas/lotes e medição elapsed.",
+              "limite": "Estado atual lido; não prova identidade com cada execução histórica. Não foi executado, restaurado ou alterado."
+            }
+          ]
+        }
+      ],
+      "proposta": "Na implementação do ESNAUTO, LSTM e GRU são treinadas iterativamente por retropropagação através do tempo (Backpropagation Through Time – BPTT), ajustando pesos internos e de saída. O custo desse processo depende da configuração da rede e do orçamento de treinamento. A comparação com a ESN deve distinguir esse treinamento do ajuste da camada de saída e da busca de hiperparâmetros, sem pressupor inviabilidade ou superioridade geral.",
+      "texto_anterior": "Mesmo após essa mitigação, contudo, ambas as arquiteturas convivem com uma limitação prática: o treinamento via retropropagação através do tempo (Backpropagation Through Time – BPTT) permanece iterativo, exige ajuste de pesos em todas as camadas internas e pode apresentar instabilidades numéricas residuais em séries muito longas.",
+      "sha256_texto_base": "97fcf0e12ee7ebfa0bc0fdc91be4ecc6257ead6446806873048d074aaa6e1502",
+      "estado": "incorporado_em_copia_pendente_conferencia_nativa"
+    }
+  ],
+  "unidades_conferidas_sem_mudanca": [
+    "U0202"
+  ],
+  "notas_fonte_Jaeger": [
+    "A condição suficiente da proposição3 usa maior valor singular, e o raio espectral não é identificado como garantia universal da ESP.",
+    "A definição corrigida na errata42–45 requer contração uniforme; não repetir a definição falha da página7.",
+    "A fonte2001descreve leis discretas explícitas em Win/W nas páginas13/17/29. Não transportá-las à célula de Jaeger2007(D15), que é outra obra e mantém P1?.",
+    "A equação21 da página27 é o modelo geral com parâmetros de passo, escala e decaimento; não igualar nomes de parâmetros a taxas da implementação sem conferir as convenções."
+  ],
+  "notas_fonte_LSTM": [
+    "A arquitetura original tem portas de entrada e saída; não atribuir a porta moderna de esquecimento ao artigo1997sem fonte adicional. A descrição moderna da monografia se apoia em Sudiatmika2024.",
+    "Os benchmarks são artificiais, não de ações; custo em apresentações de sequências ou complexidade assintótica não é tempo medido para PETR4.",
+    "O artigo original analisa uma versão eficiente truncada, com discussão de gradientes completos; não descrever todos os detalhes dessa versão como idênticos a treinamento moderno de bibliotecas."
+  ],
+  "limites_pendentes": "Verificação nativa dos dois novos parágrafos, passe global de similaridade, números próprios e Guia ainda não encerrados."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "v012",
+  "anterior": "v011",
+  "arquivo": "reports/monografia/versoes/v012/MayconGarciaSilva_monografia_v012.docx",
+  "sha256": "37feaaa77a3257c9e0b2dbc414dfbbaef55db0a14f24e50d8532aa44d0a3a398",
+  "registrada_em_utc": "2026-11-02T20:41:19.719063+00:00",
+  "origem_importada": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\trabalho\\declaracao_ia_reescrita_20261102.docx",
+  "responsavel": "Codex para Maycon Garcia Silva",
+  "resumo": "Reescreve declaração de responsabilidade coletiva e suas descrições conforme pedido do autor; informa Claude Opus 5.5 e Codex Sol 5.6, superando a pendência anterior de modelos desconhecidos. Atualiza indicação em 3.1. Preserva resultados, referências e paginação.",
+  "estado_editorial": "em_revisao",
+  "validacao_declarada": "81 páginas renderizadas; 79 imagens idênticas à v011 e duas páginas alteradas inspecionadas. Declaração separada de uma página renderizada e inspecionada. 81 localizadores com paginação preservada; 14 tabelas científicas e demais elementos fora de quatro alterações preservados em XML. Modelos conforme relato do autor; sem novos experimentos ou aprovação institucional.",
+  "evidencias": [
+    {
+      "arquivo": "reports/declaracao_ia_reescrita_20261102/relatorio.md",
+      "sha256": "dd666fcdf87a25840140b3762d2fc6d15bc381326789670a3a42e500abce446e"
+    },
+    {
+      "arquivo": "reports/declaracao_ia_reescrita_20261102/conferencia_final.json",
+      "sha256": "541b495736680e6174a5015f130d83106c138c38c11bd235bbdf2c16e0aa0e7e"
+    },
+    {
+      "arquivo": "reports/declaracao_ia_reescrita_20261102/inspecao_visual.json",
+      "sha256": "b473c1a73e1e6f4aed97ec9ea2c834128ea46bcdb9ae04f9ac018bc253b6d912"
+    },
+    {
+      "arquivo": "reports/declaracao_ia_reescrita_20261102/alteracoes.json",
+      "sha256": "bd316fde207bdfdcdeddca1a8c9e78479865bd0e79d7c646a26904be3956c1e2"
+    }
+  ],
+  "pendencias": [
+    "Limitacao cientifica preservada: matrizes e vetores historicos nao integralmente preservados; Onda5 tem15resultados compilados, sem correspondencia primaria individual integral. Nao exige novos arquivos para esta revisao.",
+    "Limitacao cientifica preservada: dados ajustados e codigosR recebidos do orientador; autor adaptou e construiu interface; cadeia original do ajuste nao reconstruida.",
+    "Limitação bibliográfica preservada: buscas complementares e registros de seleção parciais. Três células resolvidas com evidência; restam 38 marcações de informação insuficiente, com pesquisa em andamento. Sem alegação de revisão sistemática integral.",
+    "Limites de inferencia preservados: orcamentos distintos, uma sementeDM, sem ablacdes causais ou demonstracao de ganho sobre persistencia/utilidade economica.",
+    "Ficha catalografica, assinaturas e data de aprovacao dependem das etapas institucionais posteriores. Revisao linguistica incorporada na v007 e preservada nesta revisao. Sem correcao conhecida pendente no escopo das cinco skills.",
+    "Declaração de IAG reescrita a pedido do autor, com Claude Opus 5.5 e Codex Sol 5.6 informados por ele; somente Codex nos testes. Data e assinaturas do autor e orientador permanecem em branco. Redação adaptada do modelo institucional, sem aprovação institucional nesta revisão."
+  ],
+  "caminho_absoluto": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\versoes\\v012\\MayconGarciaSilva_monografia_v012.docx"
+}

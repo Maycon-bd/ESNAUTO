@@ -1,0 +1,27 @@
+{
+  "vigente": "v003",
+  "base": "v002",
+  "estado": "em_revisao",
+  "arquivos": [
+    {
+      "arquivo": "reports/monografia/versoes/v003/MayconGarciaSilva_monografia_v003.docx",
+      "sha256": "eb31ed353550c8d13e388a7f51995917c1d20f52acdd946aa15a8908e0381785"
+    },
+    {
+      "arquivo": "reports/monografia/versoes/v003/MayconGarciaSilva_monografia_v003.pdf",
+      "sha256": "a3b508bcbd0ade48dd23c7489cd237530b83c186bf5dcd60375fb2a11de78181"
+    }
+  ],
+  "evidencias_registradas_conferidas": 9,
+  "verificacoes": 45,
+  "paginas": 76,
+  "relatorio": "reports/fontes_drive_20261029/relatorio.md",
+  "pendencias": [
+    "R03: séries do Drive correspondem textualmente às locais; cadeia original de aplicação do fator e responsável pela transformação ainda não estabelecidos.",
+    "R08: registros primários GA_RUN_0053–0067 da Onda5 ainda não identificados; quatro cenários antigos do Drive não foram assimilados a essa onda.",
+    "F18/R01: planilhas originais recuperadas; permanecem string vazia,48candidatos sem decisão,contagens de fluxo a conciliar,indicadores e ranking sem validação completa; exportações diretas das plataformas não recuperadas nesta etapa.",
+    "R13: versão anterior do script recuperada e comparada; atribuição integral das rotinas legadas,adaptações e licenças ainda não estabelecida.",
+    "43 células da matriz permanecem com informação insuficiente no escopo documentado; não significam ausência universal ou erro comprovado.",
+    "Ficha catalográfica e formalidades de aprovação são etapas institucionais posteriores; ficha vazia autorizada pelo autor, sem inventar dados."
+  ]
+}

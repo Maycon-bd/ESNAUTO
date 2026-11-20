@@ -1,0 +1,131 @@
+{
+  "comparacao": "antes_autoria_lote11.docx versus cópia exportada",
+  "celulas_de_autoria_alteradas": [
+    {
+      "tabela_xml": 3,
+      "celula_sequencial": 72,
+      "antes": "Ecer (2020)",
+      "depois": "Ecer et al. (2020)"
+    },
+    {
+      "tabela_xml": 3,
+      "celula_sequencial": 84,
+      "antes": "Hassaan et al. (2025)",
+      "depois": "Hassaan, Yacoub e Said (2025)"
+    },
+    {
+      "tabela_xml": 3,
+      "celula_sequencial": 138,
+      "antes": "Sharma (2025)",
+      "depois": "Sharma et al. (2025)"
+    },
+    {
+      "tabela_xml": 3,
+      "celula_sequencial": 144,
+      "antes": "Soltani et al. (2022)",
+      "depois": "Soltani, Benmohamed e Ltifi (2022)"
+    },
+    {
+      "tabela_xml": 3,
+      "celula_sequencial": 156,
+      "antes": "Sun (2021)",
+      "depois": "Sun et al. (2021)"
+    },
+    {
+      "tabela_xml": 3,
+      "celula_sequencial": 162,
+      "antes": "Tian (2024)",
+      "depois": "Tian e Pei (2024)"
+    },
+    {
+      "tabela_xml": 3,
+      "celula_sequencial": 180,
+      "antes": "Vishwas et al. (2025)",
+      "depois": "Vishwas, Usha e Sangeetha (2025)"
+    }
+  ],
+  "outras_celulas_identicas": true,
+  "matriz_170_codigos_conciliada": true,
+  "ordem_fontes_nas_linhas": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08",
+    "D09",
+    "D11",
+    "D10",
+    "D12",
+    "D13",
+    "D14",
+    "D15",
+    "D16",
+    "D18",
+    "D17",
+    "D19",
+    "D20",
+    "D21",
+    "D22",
+    "D23",
+    "D24",
+    "D25",
+    "D26",
+    "D27",
+    "D28",
+    "D29",
+    "D30",
+    "D31",
+    "D32",
+    "D33",
+    "D34"
+  ],
+  "contagens": {
+    "-": 41,
+    "?": 40,
+    "D": 77,
+    "S": 12
+  },
+  "midias_identicas": {
+    "word/media/image1.png": "6fe1248a9a8de934bb0fb51a75ab87a5b42c29d6a19f181da3c03026854518ae",
+    "word/media/image2.png": "b5478bf6d3b43dfbfdf6c3049a1152c753aa5b55aea76d982de4ba6bb14f1aaf",
+    "word/media/image3.png": "b656ee31e9cbb254e135fccc892cf6a14d38480523946aa9894050c4e1a6b56d",
+    "word/media/image4.png": "2b9b3ad06629f692e31511326e3e4dd9fdbdcbdc9f62c81cb8c8d72d619d4390",
+    "word/media/image5.png": "43f3d08f3a311b449d3b0db2bc85ce3993cdf5f021b9b19cfd8921e56886ca5d",
+    "word/media/image6.png": "f3d5b9dc563cd70ec9592077e1e2cc47155206c1d6b664ba4c4ea634f85efd7c"
+  },
+  "n_formulas_OMML": 0,
+  "limite_matematica": "Não há OMML. O conteúdo textual fora das27unidades de autoria não mudou; mídias idênticas. Isto prova preservação neste lote, não correção científica universal das equações.",
+  "unidades_com_texto_alterado": [
+    "U0182",
+    "U0195",
+    "U0204",
+    "U0211",
+    "U0212",
+    "U0216",
+    "U0218",
+    "U0219",
+    "U0228",
+    "U0232",
+    "U0233",
+    "U0250",
+    "U0251",
+    "U0252",
+    "U0255",
+    "U0256",
+    "U0257",
+    "U0358",
+    "U0370",
+    "U0424",
+    "U0430",
+    "U0442",
+    "U0448",
+    "U0466",
+    "U0580",
+    "U0612",
+    "U0896"
+  ],
+  "resultados_experimentais_preservados": true
+}

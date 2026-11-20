@@ -1,0 +1,40 @@
+{
+  "data": "2026-10-28",
+  "word": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\MayconGarciaSilva_monografia_FASOFT_conferida.docx",
+  "sha256_word": "2d4c16a51c2675bbff7df6bc36b16adec21608f7cb1097166c07e97982925f73",
+  "pdf": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_integral_fasoft_20261028\\monografia.pdf",
+  "sha256_pdf": "c7900854ba5f9d7b9529a1108b625b36895d4c2c41d9d125c117ed40b90041d4",
+  "paginas": 75,
+  "testes_estruturais": {
+    "aprovados": 85,
+    "total": 85
+  },
+  "citacoes_autor_ano_reconhecidas": 183,
+  "citacoes_reconhecidas_sem_referencia": 0,
+  "inspecao_visual": "75 páginas verificadas; ver inspecao_visual.json",
+  "matriz": "conferencia_guia.md",
+  "objetivo_integral_concluido": false,
+  "pendencias": [
+    {
+      "requisito": "Fonte e referência da epígrafe atribuída a James Gleick",
+      "situacao": "aguardando_fonte_ou_decisao_do_autor",
+      "evidencia": "Atribuição não confirmada em fonte primária; solicitada fonte ou preferência entre substituir e retirar."
+    }
+  ],
+  "etapas_institucionais_posteriores": [
+    {
+      "requisito": "Ficha catalográfica emitida pela biblioteca",
+      "situacao": "etapa_institucional_posterior_autorizada",
+      "evidencia": "Espaço reservado preservado por decisão expressa do autor, sem bloquear a formatação."
+    },
+    {
+      "requisito": "Folha de aprovação assinada e datada após aprovação",
+      "situacao": "dependente_da_etapa_academica",
+      "evidencia": "Campos de data e assinatura preservados, sem inventar aprovação."
+    }
+  ],
+  "ressalvas": "Recomendações qualitativas e interpretações registradas na matriz; não converter testes em percentual ou certificado de conformidade. Nenhum experimento executado.",
+  "proxima_acao": "Resolver a fonte/decisão da epígrafe; aplicar a decisão e verificar novamente o documento e os números de página se alterados.",
+  "situacao_objetivo": "bloqueado_aguardando_decisao_epigrafe",
+  "auditoria_bloqueio": "decisao_epigrafe.json"
+}

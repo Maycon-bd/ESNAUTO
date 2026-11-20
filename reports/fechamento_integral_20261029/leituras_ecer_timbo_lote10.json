@@ -1,0 +1,223 @@
+{
+  "base": "v005",
+  "sha256_base": "2af31abca4e3ba9fd5caf7cd161e55472dc94edc136cdf89732c0d0401118d6b",
+  "sha256_rascunho_examinado": "4d8ad77d6266568f21d1593e1026c4f6a567c439749daafe44b4e6a6ed49efad",
+  "fontes_lidas_integralmente": [
+    {
+      "id": "D12",
+      "arquivo": "Artigos citados\\Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "paginas": 19,
+      "caracteres_extraidos": 73923,
+      "estado_leitura": "leitura_integral_com_evidencias_visuais",
+      "log_leitura": [
+        {
+          "registro": "leituras_ecer_timbo_lote10.json",
+          "metodo": "Texto integral das 19 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+          "paginas_visuais_abertas": [
+            1,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D28",
+      "arquivo": "Artigos citados\\Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "paginas": 11,
+      "caracteres_extraidos": 31752,
+      "estado_leitura": "leitura_integral_com_evidencias_visuais",
+      "log_leitura": [
+        {
+          "registro": "leituras_ecer_timbo_lote10.json",
+          "metodo": "Texto integral das 11 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+          "paginas_visuais_abertas": [
+            1,
+            5,
+            7,
+            8
+          ]
+        }
+      ]
+    }
+  ],
+  "celulas_reexaminadas": [
+    {
+      "id": "D12",
+      "arquivo_pdf": "Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256_pdf": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "tipo": "aplicacao_MLP",
+      "dimensao": "P1",
+      "codigo": "-",
+      "localizador": "PDF 6, seção 3.2.1",
+      "evidencia_e_limite": "MLP feedforward, não ESN; aleatoriedade dos pesos MLP não satisfaz P1.",
+      "escopo_leitura": "Texto integral das 19 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+      "unidade": "U0359"
+    },
+    {
+      "id": "D12",
+      "arquivo_pdf": "Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256_pdf": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "tipo": "aplicacao_MLP",
+      "dimensao": "P2",
+      "codigo": "-",
+      "localizador": "PDF 7–8, seções 3.2.2–3.2.3",
+      "evidencia_e_limite": "AG e PSO estimam pesos/vieses da MLP. Não é seleção de hiperparâmetros de ESN.",
+      "escopo_leitura": "Texto integral das 19 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+      "unidade": "U0360"
+    },
+    {
+      "id": "D12",
+      "arquivo_pdf": "Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256_pdf": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "tipo": "aplicacao_MLP",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 5, seção 3.1 e Tabela 4",
+      "evidencia_e_limite": "Constrói nove indicadores técnicos, incluindo médias, momentum e RSI, com fórmulas e critério de seleção por estudos/especialistas.",
+      "escopo_leitura": "Texto integral das 19 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+      "unidade": "U0361"
+    },
+    {
+      "id": "D12",
+      "arquivo_pdf": "Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256_pdf": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "tipo": "aplicacao_MLP",
+      "dimensao": "P4",
+      "codigo": "?",
+      "localizador": "PDF 8–11, tabelas 5–10",
+      "evidencia_e_limite": "O conjunto de treze configurações é de MLP, MLP-GA e MLP-PSO; funções de ativação e otimizadores não identificam LSTM/GRU/Transformer no comparativo examinado.",
+      "escopo_leitura": "Texto integral das 19 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+      "unidade": "U0362"
+    },
+    {
+      "id": "D12",
+      "arquivo_pdf": "Ecer - Training multilayer perceptron with genetic algorithms and particle swarm optimization.pdf",
+      "sha256_pdf": "3a7eb2af29c2658513ebf74901672d9a087c8a3485ed938052e118a1d3fee557",
+      "tipo": "aplicacao_MLP",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 5–6, seção 3.1",
+      "evidencia_e_limite": "Borsa Istanbul BIST100, março/1996 a fevereiro/2020, 5.968 pregões.",
+      "escopo_leitura": "Texto integral das 19 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+      "unidade": "U0363"
+    },
+    {
+      "id": "D28",
+      "arquivo_pdf": "Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256_pdf": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "tipo": "aplicacao_regressao_linear",
+      "dimensao": "P1",
+      "codigo": "-",
+      "localizador": "PDF 6, método de mineração",
+      "evidencia_e_limite": "Regressão linear múltipla, não reservatório ESN.",
+      "escopo_leitura": "Texto integral das 11 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+      "unidade": "U0455"
+    },
+    {
+      "id": "D28",
+      "arquivo_pdf": "Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256_pdf": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "tipo": "aplicacao_regressao_linear",
+      "dimensao": "P2",
+      "codigo": "-",
+      "localizador": "PDF 6, método de mineração",
+      "evidencia_e_limite": "Mínimos quadrados para regressão, não seleção de hiperparâmetros ESN.",
+      "escopo_leitura": "Texto integral das 11 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+      "unidade": "U0456"
+    },
+    {
+      "id": "D28",
+      "arquivo_pdf": "Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256_pdf": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "tipo": "aplicacao_regressao_linear",
+      "dimensao": "P3",
+      "codigo": "D",
+      "localizador": "PDF 4–5, processo KDD e Tabela 2",
+      "evidencia_e_limite": "Verifica inconsistências, constrói indicadores e seleciona variáveis por correlação/Pearson e determinação. Valores iguais em dias distintos não foram excluídos como duplicatas.",
+      "escopo_leitura": "Texto integral das 11 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+      "unidade": "U0457"
+    },
+    {
+      "id": "D28",
+      "arquivo_pdf": "Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256_pdf": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "tipo": "aplicacao_regressao_linear",
+      "dimensao": "P4",
+      "codigo": "?",
+      "localizador": "PDF 5–7, seleção e regressão",
+      "evidencia_e_limite": "O experimento consultado usa seleção por correlação e regressão linear no WEKA. Lista conceitual de redes não equivale a comparação numérica com LSTM/GRU/Transformer.",
+      "escopo_leitura": "Texto integral das 11 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+      "unidade": "U0458"
+    },
+    {
+      "id": "D28",
+      "arquivo_pdf": "Timbo - Approach based linear regression for stock exchange prediction case study of PETR4 Petrobras Brazil.pdf",
+      "sha256_pdf": "3a853535dd920214c0ba15765e4ff0959e35d4af8f80ac26a4f4e45fd0326353",
+      "tipo": "aplicacao_regressao_linear",
+      "dimensao": "P5",
+      "codigo": "D",
+      "localizador": "PDF 4 e 6–7",
+      "evidencia_e_limite": "PETR4/Bovespa, Yahoo Finance; as datas finais diferem entre trechos da fonte, portanto o código não confirma um período único.",
+      "escopo_leitura": "Texto integral das 11 páginas lido, incluindo referências; páginas críticas abertas visualmente. Em D12, textos de versões de layout anteriores extraídos de figuras foram distinguidos da página visível.",
+      "unidade": "U0459"
+    }
+  ],
+  "n_celulas_reexaminadas": 10,
+  "n_codigos_alterados": 0,
+  "unidades_conferidas_sem_edicao": [
+    {
+      "unidade": "U0186",
+      "diagnostico": "conteudo_condizente",
+      "fontes": [
+        "D28"
+      ],
+      "texto_examinado": "Timbó et al. (2016) aplicaram regressão linear à previsão do fechamento da PETR4 e selecionaram indicadores com apoio da correlação de Pearson. O estudo avaliou o acerto das previsões por uma tolerância absoluta de 0,50 em relação ao fechamento observado. Esse critério mede proximidade de preços e não deve ser interpretado como taxa de acerto da direção da variação do ativo.",
+      "localizador": "PDF4–8 (impressas24–28), Tabelas2/3 e Figura2",
+      "evidencia": "PETR4, regressão linear múltipla, indicadores selecionados por correlação de Pearson. Tabela3 calcula desvios absolutos de preços e sucesso até0,50; não é acerto da direção da variação. A unidade não replica as contagens e datas contraditórias."
+    }
+  ],
+  "unidades_parcialmente_conferidas": [
+    {
+      "unidade": "U0218",
+      "diagnostico": "conferencia_parcial_com_escopo_explicito",
+      "conferido": "Somente duas frases de Ecer: MLP com AG/PSO paraBIST100, funções Gaussian/tanh e tamanhos de população. Não é ESN e não garante estabilidade geral. O segmento Behera depende da leituraD03. Forma da chamada Ecer para quatro autores exige passe formal.",
+      "localizador": "D12PDF1,5–12e14",
+      "texto_examinado": "Ecer (2020) comparou Perceptrons Multicamadas (MLP) ajustados por AG e PSO para o índice BIST 100, examinando funções de saída e tamanhos de população. O modelo estudado não é uma ESN, e os resultados não garantem estabilidade de qualquer rede. Behera (2023) revisou redes de ordem superior e otimização evolucionária em séries financeiras. Essa revisão amplia o contexto das combinações entre redes e otimizadores, sem estabelecer um consenso de superioridade universal de AG ou PSO."
+    }
+  ],
+  "metadados": [
+    {
+      "referencia": "R20",
+      "diagnostico": "Quatro autores e DOI10.3390/e22111239 conferidos na primeira página: Entropy2020,22,1239, publicado31/10/2020. Número11 não é explicitado no cabeçalho do PDF; preservado do registro anterior, com URL oficial de issue11 encontrada, mas página MDPI retornou429. Não inferir issue apenas do DOI."
+    },
+    {
+      "referencia": "R45",
+      "diagnostico": "Seis autores na ordem da primeira página,2016,IJAIA7(1),21–31, janeiro,DOI10.5121/ijaia.2016.7103; título exato visualmente conferido."
+    }
+  ],
+  "ressalvas_fontes": [
+    "Timbó: fim19/06/2015 na metodologia(PDF4) versus30/12/2015 nos resultados(PDF7);342observações e66de validação não correspondem diretamente ao70/30declarado. A unidade não afirma um período nem esses quantitativos.",
+    "Timbó: o cabeçalho daTabela3 é inadequado aos valores de preço/desvio; os valores mostram que0,50é o limiar absoluto efetivamente usado. Não transformar isso em critério oficial de Bovespa nem em acurácia direcional. Comparações entre estudos com métricas/tarefas diferentes não comprovam superioridade.",
+    "Timbó: a prosa diz que o mínimo tem coeficiente zero, mas aFigura2mostraLow0,0796; não reproduzido no TCC. Não presumir implementação de LSTM pela lista conceitual de algoritmos.",
+    "Ecer: a seleção aleatória80/20não é teste temporal estrito; Gaussian é função de saída e Uniform naTabela5é seleção do AG, não lei de Win/W de ESN.",
+    "Ecer: o resumo/conclusão mistura MAPE de treino28,16% com teste: Tabela12mostra29,09% paraModelo13 e29,16% paraModelo7. Tanh não reduz todos os RMSEs (Modelo7teste0,733063 versus0,729959 Gaussian). O TCC não copia essas cifras nem promete ganho geral.",
+    "Ecer: Tabela8imprime denominador de correlação incorreto e MAPE rotulado percentual sem fator100; equações não foram importadas para a monografia. Textos duplicados de layout antigo na camada extraída de figuras não servem como evidência adicional."
+  ],
+  "alteracoes_word": [],
+  "checkpoint_word_preservado": "checkpoint_lote7.json",
+  "estado": "duas_fontes_lidas_sem_edicao_word",
+  "metadados_complementares": {
+    "R20": "Crossref oficial DOI10.3390/e22111239 confirmou volume22,número11 e data31/10/2020; quatro autores. Evidência:fontes_suplementares/Ecer_2020_metadados_Crossref.json. A lacuna do cabeçalho foi resolvida sem alteração da referência."
+  }
+}

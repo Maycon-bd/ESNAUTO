@@ -1,0 +1,42 @@
+{
+  "data": "2026-10-28",
+  "word": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\monografia\\MayconGarciaSilva_monografia_FASOFT_conferida.docx",
+  "sha256_word": "2b233d00b880f0f8727baf587828419b591f45428b409be5ec680932d09805aa",
+  "pdf": "C:\\Users\\User\\Documents\\PROJETOS SOFTWARE\\ESNAUTO\\reports\\auditoria_integral_fasoft_20261028\\monografia.pdf",
+  "sha256_pdf": "124860ca51a1a2c19c1ad6f2de52b4cc42d4f8c6a11f07d6fd74f0b1e2c02147",
+  "paginas": 75,
+  "testes_estruturais": {
+    "aprovados": 86,
+    "total": 86
+  },
+  "citacoes_autor_ano_reconhecidas": 184,
+  "citacoes_reconhecidas_sem_referencia": 0,
+  "inspecao_visual": "75 páginas: oito examinadas nesta etapa e 67 idênticas à versão já examinada; ver inspecao_visual.json",
+  "matriz": "conferencia_guia.md",
+  "objetivo_integral_concluido": true,
+  "pendencias": [],
+  "etapas_institucionais_posteriores": [
+    {
+      "requisito": "Ficha catalográfica emitida pela biblioteca",
+      "situacao": "etapa_institucional_posterior_autorizada",
+      "evidencia": "Espaço reservado preservado por decisão expressa do autor, sem bloquear a formatação."
+    },
+    {
+      "requisito": "Folha de aprovação assinada e datada após aprovação",
+      "situacao": "dependente_da_etapa_academica",
+      "evidencia": "Campos de data e assinatura preservados, sem inventar aprovação."
+    }
+  ],
+  "ressalvas": "Recomendações qualitativas e interpretações documentadas na matriz. Contagens não são percentual nem certificação institucional. Ficha vazia e campos de aprovação preservados conforme a etapa acadêmica e a decisão expressa do autor.",
+  "proxima_acao": "Documento pronto para avaliação do orientador; ficha e formalidades de aprovação permanecem nas etapas institucionais autorizadas.",
+  "situacao_objetivo": "adequacao_versao_eletronica_concluida",
+  "referencias": 50,
+  "escopo_conclusao": "Adequação da versão eletrônica ao guia institucional identificado e às decisões expressas do autor. Ressalvas de recomendações qualitativas e interpretações constam na matriz; conclusão não certifica aprovação acadêmica, suporte físico ou impressão.",
+  "fundamentacao_conclusao": [
+    "81 requisitos classificados e conferidos na matriz vigente, sem obrigação aplicável pendente.",
+    "86 verificações estruturais e de preservação aprovadas.",
+    "50 referências, incluindo as 49 anteriores e a fonte primária da nova epígrafe; 184 citações reconhecidas sem ausência.",
+    "75 páginas verificadas em renderizações, com oito alterações inspecionadas e 67 igualdades de imagem comprovadas.",
+    "Nenhum experimento, busca genética, treino ou teste DM executado."
+  ]
+}

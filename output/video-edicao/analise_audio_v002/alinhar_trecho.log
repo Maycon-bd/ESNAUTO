@@ -1,0 +1,18 @@
+[aist#0:0/pcm_f32le @ 0000027a355084c0] Guessed Channel Layout: stereo
+Input #0, wav, from 'C:\Users\User\Documents\PROJETOS SOFTWARE\ESNAUTO\output\video-edicao\analise_audio_v002\trecho_tratado_contexto.wav':
+  Metadata:
+    title           : ESNAUTO - Apresentação do TFC - edição v001
+    encoder         : Lavf63.1.102
+  Duration: 00:02:45.00, bitrate: 3072 kb/s
+  Stream #0:0: Audio: pcm_f32le ([3][0][0][0] / 0x0003), 48000 Hz, stereo, flt, 3072 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_f32le (native) -> pcm_s16le (native))
+Output #0, wav, to 'C:\Users\User\Documents\PROJETOS SOFTWARE\ESNAUTO\output\video-edicao\analise_audio_v002\trecho_alinhado.wav':
+  Metadata:
+    INAM            : ESNAUTO - Apresentação do TFC - edição v001
+    ISFT            : Lavf63.1.102
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+[out#0/wav @ 0000027a354c10c0] video:0KiB audio:29062KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000450%
+size=   29063KiB time=00:02:35.00 bitrate=1536.0kbits/s speed=1.95e+03x elapsed=0:00:00.07    
